@@ -22,7 +22,7 @@ const schemaData = {
   <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-content">
-      <h1>Giải pháp bôi trơn toàn diện<br/>cho nền công nghiệp Việt Nam</h1>
+      <h1>Đại Lý Phân Phối Dầu Công Nghiệp & Mỡ Bôi Trơn Chính Hãng</h1>
       <p>Cung cấp Dầu Thủy Lực, Dầu Bánh Răng công nghiệp chính hãng 100%. Tối ưu hiệu suất, kéo dài tuổi thọ máy móc.</p>
       <a href="/dau-thuy-luc" class="btn-primary" style="padding: 15px 30px; font-size: 1.1rem; display: inline-block;">Xem Sản Phẩm Tốt Nhất</a>
     </div>
@@ -40,9 +40,33 @@ const schemaData = {
         <h3>Dầu Bánh Răng</h3>
         <p>Hộp số công nghiệp, giảm tốc kín</p>
       </a>
-      <a href="/dau-cat-got" class="category-card">
-        <h3>Dầu Cắt Gọt</h3>
-        <p>Làm mát máy CNC, gia công cơ khí</p>
+      <a href="/mo-boi-tron-cong-nghiep" class="category-card">
+        <h3>Mỡ bôi trơn</h3>
+        <p>Bôi trơn vòng bi, ổ đỡ</p>
+      </a>
+      <a href="/mo-chiu-nhiet" class="category-card">
+        <h3>Mỡ chịu nhiệt</h3>
+        <p>Ứng dụng nhiệt độ cao</p>
+      </a>
+      <a href="/dau-may-nen-khi" class="category-card">
+        <h3>Dầu máy nén khí</h3>
+        <p>Máy nén khí trục vít, piston</p>
+      </a>
+      <a href="/dau-ranh-truot" class="category-card">
+        <h3>Dầu rãnh trượt</h3>
+        <p>Hệ thống rãnh trượt máy CNC</p>
+      </a>
+      <a href="/dau-hop-so-tu-dong" class="category-card">
+        <h3>Dầu hộp số tự động</h3>
+        <p>Hộp số ATF, tuần hoàn</p>
+      </a>
+      <a href="/dau-chong-gi-set" class="category-card">
+        <h3>Dầu chống gỉ sét</h3>
+        <p>Bảo vệ kim loại chống ăn mòn</p>
+      </a>
+      <a href="/dau-xung-dien-edm" class="category-card">
+        <h3>Dầu xung điện EDM</h3>
+        <p>Gia công tia lửa điện</p>
       </a>
     </div>
   </section>
@@ -53,7 +77,7 @@ const schemaData = {
     <div class="grid">
       {products.map(product => (
         <div class="product-card">
-          <img src={product.data.image} alt={product.data.title} />
+          <img src={product.data.image} alt={product.data.title} loading="lazy" decoding="async" />
           <div class="product-info">
             <span class="badge">{product.data.brand}</span>
             <span class="badge badge-outline">VG {product.data.vg}</span>

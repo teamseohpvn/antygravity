@@ -14,7 +14,7 @@ const fullTitle = `${title} | ${siteName}`;
 
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
-{canonical && <link rel="canonical" href={canonical} />}
+<link rel="canonical" href={canonical || Astro.url.href} />
 
 <meta property="og:type" content={type} />
 <meta property="og:title" content={fullTitle} />

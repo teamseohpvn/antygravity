@@ -25,6 +25,26 @@ const { title, description, canonical, type, schemaData } = Astro.props;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Dầu Công Nghiệp Pro",
+      "image": "https://antygravity.nhadat339shangdao.workers.dev/favicon.svg",
+      "@id": "https://antygravity.nhadat339shangdao.workers.dev/#localbusiness",
+      "url": "https://antygravity.nhadat339shangdao.workers.dev/",
+      "telephone": "0901511313",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "108 Đường Thanh Bình",
+        "addressLocality": "P Lê Thanh Nghị",
+        "addressRegion": "TP Hải Phòng",
+        "postalCode": "180000",
+        "addressCountry": "VN"
+      }
+    }
+    </script>
+    
     <style is:global>
       :root {
         --color-primary: #003366; /* Xanh Navy B2B */
@@ -110,6 +130,39 @@ const { title, description, canonical, type, schemaData } = Astro.props;
       .btn-primary:hover {
         opacity: 0.9;
       }
+
+      /* Dropdown styles */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--color-white);
+        min-width: 220px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        z-index: 101;
+        border-radius: 6px;
+        top: 100%;
+        border: 1px solid var(--border-color);
+        overflow: hidden;
+      }
+      .dropdown-content a {
+        color: var(--color-text);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-weight: 500;
+        border-bottom: 1px solid var(--border-color);
+      }
+      .dropdown-content a:hover {
+        background-color: var(--color-bg);
+        color: var(--color-accent);
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -118,8 +171,20 @@ const { title, description, canonical, type, schemaData } = Astro.props;
         <a href="/" class="logo">DầuCôngNghiệp<span style="color:var(--color-accent)">.pro</span></a>
         <ul class="nav-links">
           <li><a href="/">Trang chủ</a></li>
-          <li><a href="/dau-thuy-luc">Dầu Thủy Lực</a></li>
-          <li><a href="/dau-banh-rang">Dầu Bánh Răng</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Sản phẩm ▾</a>
+            <div class="dropdown-content">
+              <a href="/dau-thuy-luc">Dầu Thủy Lực</a>
+              <a href="/dau-banh-rang">Dầu Bánh Răng</a>
+              <a href="/mo-boi-tron-cong-nghiep">Mỡ bôi trơn công nghiệp</a>
+              <a href="/mo-chiu-nhiet">Mỡ chịu nhiệt</a>
+              <a href="/dau-may-nen-khi">Dầu máy nén khí</a>
+              <a href="/dau-ranh-truot">Dầu rãnh trượt</a>
+              <a href="/dau-hop-so-tu-dong">Dầu hộp số tự động</a>
+              <a href="/dau-chong-gi-set">Dầu chống gỉ sét</a>
+              <a href="/dau-xung-dien-edm">Dầu xung điện EDM</a>
+            </div>
+          </li>
         </ul>
         <a href="#contact" class="btn-primary">Nhận Báo Giá</a>
       </div>
