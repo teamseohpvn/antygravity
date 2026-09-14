@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  // Lấy danh sách các category duy nhất từ sản phẩm
+  const categories = [...new Set(products.map(p => p.data.category))];
+  
+  return categories.map(category => {
+    const categoryProducts = products.filter(p => p.data.category === category);
+    return {
+      params: { category },
+      props: { products: categoryProducts, categoryName: categoryProducts[0].data.categoryName }
+    };
+  });
+}
+
+const { category } = Astro.params;
+const { products, categoryName } = Astro.props;
+
+// Schema Category
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${categoryName} Chính Hãng`,
+  "description": `Danh mục sản phẩm ${categoryName} nhập khẩu trực tiếp.`
+};
+---
+
+<Layout 
+  title={`${categoryName} Chính Hãng | Báo Giá Tốt Nhất 2026`}
+  description={`Tổng hợp các loại ${categoryName.toLowerCase()} chất lượng cao, đầy đủ độ nhớt, hàng nhập khẩu chính hãng 100%.`}
+  schemaData={schemaData}
+>
+  <div class="container">
+    <div class="category-header">
+      <h1>{categoryName}</h1>
+      <p>Lựa chọn sản phẩm tối ưu nhất cho hệ thống máy móc của bạn. Phân phối chính thức hàng Castrol, Shell, Total.</p>
+    </div>
+
+    <div class="layout-grid">
+      <!-- Sidebar / Faceted Filter -->
+      <aside class="sidebar">
+        <div class="filter-box">
+          <h3>Bộ Lọc Sản Phẩm</h3>
+          <div class="filter-group">
+            <h4>Thương hiệu</h4>
+            <label><input type="checkbox" /> Castrol</label>
+            <label><input type="checkbox" /> Shell</label>
+            <label><input type="checkbox" /> Total</label>
+          </div>
+          <div class="filter-group">
+            <h4>Độ nhớt ISO VG</h4>
+            <label><input type="checkbox" /> VG 32</label>
+            <label><input type="checkbox" /> VG 46</label>
+            <label><input type="checkbox" /> VG 68</label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Products Grid -->
+      <div class="products-area">
+        <div class="grid">
+          {products.map(product => (
+            <div class="product-card">
+              <img src={product.data.image} alt={product.data.title} />
+              <div class="product-info">
+                <div class="tags">
+                  <span class="badge">{product.data.brand}</span>
+                  <span class="badge badge-outline">VG {product.data.vg}</span>
+                </div>
+                <h3><a href={`/${category}/${product.id}`}>{product.data.title}</a></h3>
+                <p>{product.data.description.substring(0, 100)}...</p>
+                <a href={`/${category}/${product.id}`} class="btn-view">Xem chi tiết &rarr;</a>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <!-- SEO Content Area (At bottom) -->
+        <div class="seo-content">
+          <h2>Bảng giá {categoryName.toLowerCase()} tham khảo 2026</h2>
+          <p>Lưu ý: Bảng giá dưới đây chỉ mang tính chất tham khảo. Giá dầu phụ thuộc vào biến động thị trường xăng dầu thế giới và số lượng nhập của quý khách.</p>
+          <table class="seo-table">
+            <tr><th>Tên Sản Phẩm</th><th>Bao Bì</th><th>Giá Tham Khảo</th></tr>
+            <tr><td>Dầu Hyspin AWS 68</td><td>Phuy 209L</td><td>Liên hệ</td></tr>
+            <tr><td>Shell Tellus S2 MX 46</td><td>Xô 20L</td><td>Liên hệ</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .category-header { background: white; padding: 40px; border-radius: 8px; margin: 40px 0; border: 1px solid var(--border-color); text-align: center; }
+  .category-header h1 { font-size: 2.5rem; color: var(--color-primary); margin-bottom: 10px; }
+  
+  .layout-grid { display: grid; grid-template-columns: 250px 1fr; gap: 40px; margin-bottom: 60px; }
+  
+  .sidebar .filter-box { background: white; padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); position: sticky; top: 100px; }
+  .filter-group { margin-top: 20px; }
+  .filter-group h4 { margin-bottom: 10px; font-size: 1rem; }
+  .filter-group label { display: block; margin-bottom: 8px; color: var(--color-text-light); cursor: pointer; }
+  
+  .products-area .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+  
+  .product-card { background: white; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); display: flex; flex-direction: column; }
+  .product-card img { width: 100%; height: 200px; object-fit: cover; }
+  .product-info { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+  .product-info h3 { margin: 15px 0 10px; font-size: 1.1rem; }
+  .product-info p { color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1; }
+  .btn-view { color: var(--color-accent); font-weight: 600; }
+  .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-right: 5px; }
+  
+  .seo-content { background: white; padding: 40px; border-radius: 8px; border: 1px solid var(--border-color); }
+  .seo-content h2 { color: var(--color-primary); margin-bottom: 15px; }
+  .seo-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  .seo-table th, .seo-table td { border: 1px solid var(--border-color); padding: 12px; text-align: left; }
+  .seo-table th { background: #f1f5f9; }
+</style>

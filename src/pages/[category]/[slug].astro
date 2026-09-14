@@ -1,0 +1,101 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  return products.map(product => ({
+    params: { category: product.data.category, slug: product.id },
+    props: { product },
+  }));
+}
+
+const { product } = Astro.props;
+const { Content } = await render(product);
+
+// Schema Product
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": product.data.title,
+  "description": product.data.description,
+  "brand": {
+    "@type": "Brand",
+    "name": product.data.brand
+  }
+};
+---
+
+<Layout 
+  title={`${product.data.title} Chính Hãng`}
+  description={product.data.description}
+  type="product"
+  schemaData={schemaData}
+>
+  <div class="container product-page">
+    <div class="breadcrumbs">
+      <a href="/">Trang chủ</a> &gt; 
+      <a href={`/${product.data.category}`}>{product.data.categoryName}</a> &gt; 
+      <span>{product.data.title}</span>
+    </div>
+
+    <div class="product-top">
+      <div class="product-image">
+        <img src={product.data.image} alt={product.data.title} />
+      </div>
+      <div class="product-summary">
+        <h1>{product.data.title}</h1>
+        <div class="tags">
+          <span class="badge">{product.data.brand}</span>
+          <span class="badge badge-outline">VG {product.data.vg}</span>
+        </div>
+        <p class="description">{product.data.description}</p>
+        
+        <div class="cta-box">
+          <p class="status">✓ Còn hàng tại kho</p>
+          <a href="#contact" class="btn-primary" style="display:block; text-align:center; margin-bottom: 10px;">Nhận Báo Giá (Zalo)</a>
+          <div class="docs">
+            <a href="#" class="btn-outline">📄 Tải thông số kỹ thuật (TDS)</a>
+            <a href="#" class="btn-outline">📄 Phiếu an toàn (MSDS)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Content (Markdown rendered here) -->
+    <div class="product-content">
+      <h2>Thông tin chi tiết sản phẩm</h2>
+      <div class="markdown-body">
+        <Content />
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .product-page { margin-top: 20px; margin-bottom: 60px; }
+  .breadcrumbs { margin-bottom: 30px; color: var(--color-text-light); font-size: 0.9rem; }
+  .breadcrumbs a { color: var(--color-primary); }
+  
+  .product-top { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-bottom: 50px; background: white; padding: 40px; border-radius: 8px; border: 1px solid var(--border-color); }
+  .product-image img { width: 100%; border-radius: 8px; border: 1px solid var(--border-color); }
+  
+  .product-summary h1 { font-size: 2.2rem; color: var(--color-primary); margin-bottom: 15px; }
+  .tags { margin-bottom: 20px; }
+  .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-right: 5px; }
+  .description { font-size: 1.1rem; color: var(--color-text-light); margin-bottom: 30px; }
+  
+  .cta-box { background: #f8fafc; padding: 25px; border-radius: 8px; border: 1px dashed var(--border-color); }
+  .status { color: #16a34a; font-weight: 600; margin-bottom: 15px; }
+  
+  .docs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .btn-outline { display: block; text-align: center; padding: 10px; border: 1px solid var(--border-color); border-radius: 6px; background: white; font-size: 0.9rem; transition: background 0.2s; }
+  .btn-outline:hover { background: #f1f5f9; }
+
+  .product-content { background: white; padding: 40px; border-radius: 8px; border: 1px solid var(--border-color); }
+  .product-content h2 { color: var(--color-primary); margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid var(--border-color); }
+  
+  .markdown-body h3 { margin: 20px 0 10px; color: var(--color-primary); }
+  .markdown-body ul { margin-left: 20px; margin-bottom: 20px; }
+  .markdown-body li { margin-bottom: 8px; }
+</style>

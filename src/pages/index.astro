@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const products = await getCollection('products');
+
+// Schema Homepage
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Dầu Công Nghiệp Pro",
+  "url": "https://daucongnghiep-pro.vn",
+  "description": "Nhà phân phối dầu thủy lực, dầu bánh răng, dầu cắt gọt chính hãng Castrol, Shell, Total."
+};
+---
+
+<Layout 
+  title="Nhà Phân Phối Dầu Nhớt Công Nghiệp Chính Hãng" 
+  description="Giải pháp bôi trơn toàn diện cho nền công nghiệp Việt Nam. Cung cấp Dầu Thủy Lực, Dầu Bánh Răng từ các hãng hàng đầu."
+  schemaData={schemaData}
+>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Giải pháp bôi trơn toàn diện<br/>cho nền công nghiệp Việt Nam</h1>
+      <p>Cung cấp Dầu Thủy Lực, Dầu Bánh Răng công nghiệp chính hãng 100%. Tối ưu hiệu suất, kéo dài tuổi thọ máy móc.</p>
+      <a href="/dau-thuy-luc" class="btn-primary" style="padding: 15px 30px; font-size: 1.1rem; display: inline-block;">Xem Sản Phẩm Tốt Nhất</a>
+    </div>
+  </section>
+
+  <!-- Categories Grid -->
+  <section class="categories container">
+    <h2 class="section-title">Khám Phá Theo Ứng Dụng</h2>
+    <div class="grid">
+      <a href="/dau-thuy-luc" class="category-card">
+        <h3>Dầu Thủy Lực</h3>
+        <p>Hệ thống bơm thủy lực, máy ép nhựa</p>
+      </a>
+      <a href="/dau-banh-rang" class="category-card">
+        <h3>Dầu Bánh Răng</h3>
+        <p>Hộp số công nghiệp, giảm tốc kín</p>
+      </a>
+      <a href="/dau-cat-got" class="category-card">
+        <h3>Dầu Cắt Gọt</h3>
+        <p>Làm mát máy CNC, gia công cơ khí</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products container">
+    <h2 class="section-title">Sản Phẩm Bán Chạy</h2>
+    <div class="grid">
+      {products.map(product => (
+        <div class="product-card">
+          <img src={product.data.image} alt={product.data.title} />
+          <div class="product-info">
+            <span class="badge">{product.data.brand}</span>
+            <span class="badge badge-outline">VG {product.data.vg}</span>
+            <h3><a href={`/${product.data.category}/${product.id}`}>{product.data.title}</a></h3>
+            <p>{product.data.description.substring(0, 80)}...</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  .hero h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+  .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; opacity: 0.9; }
+  
+  .section-title { text-align: center; font-size: 2rem; margin: 60px 0 30px; color: var(--color-primary); }
+  
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 40px; }
+  
+  .category-card { background: white; padding: 40px 20px; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s; border: 1px solid var(--border-color); }
+  .category-card:hover { transform: translateY(-5px); border-color: var(--color-accent); }
+  .category-card h3 { color: var(--color-primary); margin-bottom: 10px; font-size: 1.5rem; }
+  
+  .product-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid var(--border-color); }
+  .product-card img { width: 100%; height: 200px; object-fit: cover; }
+  .product-info { padding: 20px; }
+  .product-info h3 { margin: 15px 0 10px; font-size: 1.25rem; }
+  .product-info h3 a { color: var(--color-primary); }
+  .product-info h3 a:hover { color: var(--color-accent); }
+  .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-right: 5px; }
+  .badge-outline { background: transparent; border: 1px solid #cbd5e1; }
+</style>

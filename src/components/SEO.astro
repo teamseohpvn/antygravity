@@ -1,0 +1,26 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  type?: 'website' | 'article' | 'product';
+  schemaData?: any;
+}
+
+const { title, description, canonical, type = 'website', schemaData } = Astro.props;
+const siteName = "Chuyên Trang Dầu Công Nghiệp Chính Hãng";
+const fullTitle = `${title} | ${siteName}`;
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+{canonical && <link rel="canonical" href={canonical} />}
+
+<meta property="og:type" content={type} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:site_name" content={siteName} />
+
+{schemaData && (
+  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+)}
