@@ -1,0 +1,67 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('support');
+posts.sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf());
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Hỗ Trợ Kỹ Thuật - Dầu Công Nghiệp Pro",
+  "url": "https://antygravity.nhadat339shangdao.workers.dev/ho-tro-ky-thuat"
+};
+---
+
+<Layout 
+  title="Hỗ Trợ Kỹ Thuật & Hướng Dẫn Sử Dụng"
+  description="Chia sẻ kiến thức chuyên sâu về dầu nhớt công nghiệp, hướng dẫn lựa chọn và bảo trì hệ thống bôi trơn máy móc."
+  schemaData={schemaData}
+>
+  <div class="container section-padding">
+    <div class="header-section">
+      <h1>Kiến Thức & Hỗ Trợ Kỹ Thuật</h1>
+      <p>Tổng hợp các bài viết hướng dẫn chuyên sâu từ các kỹ sư bôi trơn hàng đầu.</p>
+    </div>
+
+    <div class="blog-grid">
+      {posts.map(post => (
+        <article class="blog-card">
+          {post.data.image && (
+            <a href={`/ho-tro-ky-thuat/${post.id}`}>
+              <img src={post.data.image} alt={post.data.title} loading="lazy" decoding="async" />
+            </a>
+          )}
+          <div class="blog-content">
+            <div class="meta">
+              <span>{post.data.date}</span> • <span>{post.data.author}</span>
+            </div>
+            <h2><a href={`/ho-tro-ky-thuat/${post.id}`}>{post.data.title}</a></h2>
+            <p>{post.data.description}</p>
+            <a href={`/ho-tro-ky-thuat/${post.id}`} class="read-more">Đọc tiếp →</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .section-padding { padding: 60px 20px; }
+  .header-section { text-align: center; margin-bottom: 50px; }
+  .header-section h1 { color: var(--color-primary); font-size: 2.5rem; margin-bottom: 15px; }
+  .header-section p { font-size: 1.1rem; color: var(--color-text-light); max-width: 700px; margin: 0 auto; }
+  
+  .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px; }
+  .blog-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid var(--border-color); transition: transform 0.2s; }
+  .blog-card:hover { transform: translateY(-5px); border-color: var(--color-accent); }
+  .blog-card img { width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid var(--border-color); }
+  .blog-content { padding: 25px; }
+  .meta { font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 10px; }
+  .blog-content h2 { font-size: 1.3rem; margin-bottom: 15px; line-height: 1.4; }
+  .blog-content h2 a { color: var(--color-primary); }
+  .blog-content h2 a:hover { color: var(--color-accent); }
+  .blog-content p { color: var(--color-text-light); margin-bottom: 20px; }
+  .read-more { color: var(--color-accent); font-weight: 600; font-size: 0.95rem; }
+  .read-more:hover { text-decoration: underline; }
+</style>

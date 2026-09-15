@@ -15,6 +15,19 @@ const productsCollection = defineCollection({
   }),
 });
 
+const supportCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/support" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.string(),
+    author: z.string().default('Dầu Công Nghiệp Pro'),
+    image: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+  }),
+});
+
 export const collections = {
   'products': productsCollection,
+  'support': supportCollection,
 };
