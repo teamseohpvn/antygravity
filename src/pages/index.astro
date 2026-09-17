@@ -32,39 +32,39 @@ const schemaData = {
   <section class="categories container">
     <h2 class="section-title">Khám Phá Theo Ứng Dụng</h2>
     <div class="grid">
-      <a href="/dau-thuy-luc" class="category-card">
+      <a href="/dau-thuy-luc" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg');">
         <h3>Dầu Thủy Lực</h3>
         <p>Hệ thống bơm thủy lực, máy ép nhựa</p>
       </a>
-      <a href="/dau-banh-rang" class="category-card">
+      <a href="/dau-banh-rang" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-banh-rang-cong-nghiep.jpg');">
         <h3>Dầu Bánh Răng</h3>
         <p>Hộp số công nghiệp, giảm tốc kín</p>
       </a>
-      <a href="/mo-boi-tron-cong-nghiep" class="category-card">
+      <a href="/mo-boi-tron-cong-nghiep" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/mo-boi-tron-cong-nghiep.jpg');">
         <h3>Mỡ bôi trơn</h3>
         <p>Bôi trơn vòng bi, ổ đỡ</p>
       </a>
-      <a href="/mo-chiu-nhiet" class="category-card">
+      <a href="/mo-chiu-nhiet" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/mo-boi-tron-cong-nghiep.jpg');">
         <h3>Mỡ chịu nhiệt</h3>
         <p>Ứng dụng nhiệt độ cao</p>
       </a>
-      <a href="/dau-may-nen-khi" class="category-card">
+      <a href="/dau-may-nen-khi" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg');">
         <h3>Dầu máy nén khí</h3>
         <p>Máy nén khí trục vít, piston</p>
       </a>
-      <a href="/dau-ranh-truot" class="category-card">
+      <a href="/dau-ranh-truot" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-banh-rang-cong-nghiep.jpg');">
         <h3>Dầu rãnh trượt</h3>
         <p>Hệ thống rãnh trượt máy CNC</p>
       </a>
-      <a href="/dau-hop-so-tu-dong" class="category-card">
+      <a href="/dau-hop-so-tu-dong" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg');">
         <h3>Dầu hộp số tự động</h3>
         <p>Hộp số ATF, tuần hoàn</p>
       </a>
-      <a href="/dau-chong-gi-set" class="category-card">
+      <a href="/dau-chong-gi-set" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-banh-rang-cong-nghiep.jpg');">
         <h3>Dầu chống gỉ sét</h3>
         <p>Bảo vệ kim loại chống ăn mòn</p>
       </a>
-      <a href="/dau-xung-dien-edm" class="category-card">
+      <a href="/dau-xung-dien-edm" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-banh-rang-cong-nghiep.jpg');">
         <h3>Dầu xung điện EDM</h3>
         <p>Gia công tia lửa điện</p>
       </a>
@@ -104,9 +104,26 @@ const schemaData = {
   
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 40px; }
   
-  .category-card { background: white; padding: 40px 20px; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s; border: 1px solid var(--border-color); }
-  .category-card:hover { transform: translateY(-5px); border-color: var(--color-accent); }
-  .category-card h3 { color: var(--color-primary); margin-bottom: 10px; font-size: 1.5rem; }
+  .category-card { 
+    background-color: #333; 
+    background-size: cover; 
+    background-position: center; 
+    padding: 60px 20px; 
+    text-align: center; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+    border: none; 
+    color: white; 
+    text-decoration: none; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    min-height: 220px;
+  }
+  .category-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+  .category-card h3 { color: white; margin-bottom: 10px; font-size: 1.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.7); }
+  .category-card p { text-shadow: 0 1px 3px rgba(0,0,0,0.7); font-size: 1rem; opacity: 0.9; color: white; }
   
   .product-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid var(--border-color); }
   .product-card img { width: 100%; height: 200px; object-fit: cover; }

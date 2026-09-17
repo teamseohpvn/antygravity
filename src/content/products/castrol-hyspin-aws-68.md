@@ -1,20 +1,20 @@
----
+﻿---
 title: "Castrol Hyspin AWS 68"
-description: "Dầu thủy lực chống mài mòn cao cấp Castrol Hyspin AWS 68, độ nhớt 68, thích hợp cho các hệ thống thủy lực công nghiệp tải trọng nặng."
+description: "Dáº§u thá»§y lá»±c chá»‘ng mÃ i mÃ²n cao cáº¥p Castrol Hyspin AWS 68, Ä‘á»™ nhá»›t 68, thÃ­ch há»£p cho cÃ¡c há»‡ thá»‘ng thá»§y lá»±c cÃ´ng nghiá»‡p táº£i trá»ng náº·ng."
 category: "dau-thuy-luc"
-categoryName: "Dầu Thủy Lực"
+categoryName: "Dáº§u Thá»§y Lá»±c"
 brand: "Castrol"
 vg: 68
-image: "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-tags: ["chống mài mòn", "độ nhớt 68", "chính hãng"]
+image: "/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg"
+tags: ["chá»‘ng mÃ i mÃ²n", "Ä‘á»™ nhá»›t 68", "chÃ­nh hÃ£ng"]
 ---
 
-Dầu thủy lực **Castrol Hyspin AWS 68** được pha chế từ dầu gốc khoáng tinh chế và hệ phụ gia chống mài mòn gốc kẽm ổn định.
+Dáº§u thá»§y lá»±c **Castrol Hyspin AWS 68** Ä‘Æ°á»£c pha cháº¿ tá»« dáº§u gá»‘c khoÃ¡ng tinh cháº¿ vÃ  há»‡ phá»¥ gia chá»‘ng mÃ i mÃ²n gá»‘c káº½m á»•n Ä‘á»‹nh.
 
-### Ưu điểm vượt trội:
-- Khả năng chống mài mòn tuyệt hảo, giúp kéo dài tuổi thọ các chi tiết bơm thủy lực.
-- Độ bền nhiệt và độ bền ô-xi hóa cao, giảm thiểu sự hình thành cặn bùn.
-- Khả năng tách nước tốt và chống tạo bọt hiệu quả.
+### Æ¯u Ä‘iá»ƒm vÆ°á»£t trá»™i:
+- Kháº£ nÄƒng chá»‘ng mÃ i mÃ²n tuyá»‡t háº£o, giÃºp kÃ©o dÃ i tuá»•i thá» cÃ¡c chi tiáº¿t bÆ¡m thá»§y lá»±c.
+- Äá»™ bá»n nhiá»‡t vÃ  Ä‘á»™ bá»n Ã´-xi hÃ³a cao, giáº£m thiá»ƒu sá»± hÃ¬nh thÃ nh cáº·n bÃ¹n.
+- Kháº£ nÄƒng tÃ¡ch nÆ°á»›c tá»‘t vÃ  chá»‘ng táº¡o bá»t hiá»‡u quáº£.
 
-### Ứng dụng:
-Sản phẩm đặc biệt phù hợp cho các hệ thống thủy lực đòi hỏi tính năng chống mài mòn cao, các máy ép nhựa, máy công cụ và hệ thống tuần hoàn.
+### á»¨ng dá»¥ng:
+Sáº£n pháº©m Ä‘áº·c biá»‡t phÃ¹ há»£p cho cÃ¡c há»‡ thá»‘ng thá»§y lá»±c Ä‘Ã²i há»i tÃ­nh nÄƒng chá»‘ng mÃ i mÃ²n cao, cÃ¡c mÃ¡y Ã©p nhá»±a, mÃ¡y cÃ´ng cá»¥ vÃ  há»‡ thá»‘ng tuáº§n hoÃ n.
