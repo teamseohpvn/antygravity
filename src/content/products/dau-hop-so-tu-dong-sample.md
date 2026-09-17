@@ -3,7 +3,7 @@ title: "Dầu Hộp Số Tự Động Mẫu"
 description: "Sản phẩm Dầu Hộp Số Tự Động chất lượng cao."
 category: "dau-hop-so-tu-dong"
 categoryName: "Dầu Hộp Số Tự Động"
-image: "/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg"
+image: "/images/dau-hop-so-tu-dong.jpg"
 brand: "Caltex"
 vg: 68
 ---

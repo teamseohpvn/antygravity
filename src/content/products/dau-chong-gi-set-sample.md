@@ -3,7 +3,7 @@ title: "Dầu Chống Gỉ Sét Mẫu"
 description: "Sản phẩm Dầu Chống Gỉ Sét chất lượng cao."
 category: "dau-chong-gi-set"
 categoryName: "Dầu Chống Gỉ Sét"
-image: "/images/dau-banh-rang-cong-nghiep.jpg"
+image: "/images/dau-chong-gi-set-kim-loai.jpg"
 brand: "Gadus"
 vg: 68
 ---
