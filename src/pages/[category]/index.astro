@@ -3,21 +3,24 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const products = await getCollection('products');
-  // Lấy danh sách các category duy nhất từ sản phẩm
-  const categories = [...new Set(products.map(p => p.data.category))];
+  const products = await getCollection('sanpham');
+  const categories = await getCollection('danhmuc');
   
-  return categories.map(category => {
-    const categoryProducts = products.filter(p => p.data.category === category);
+  return categories.map(cat => {
+    const categoryProducts = products.filter(p => p.data.category === cat.id);
     return {
-      params: { category },
-      props: { products: categoryProducts, categoryName: categoryProducts[0].data.categoryName }
+      params: { category: cat.id },
+      props: { 
+        products: categoryProducts, 
+        categoryName: cat.data.title,
+        categoryInfo: cat
+      }
     };
   });
 }
 
 const { category } = Astro.params;
-const { products, categoryName } = Astro.props;
+const { products, categoryName, categoryInfo } = Astro.props;
 
 // Schema Category
 const schemaData = {
@@ -30,7 +33,10 @@ const schemaData = {
 
 <Layout 
   title={`${categoryName} Chính Hãng | Báo Giá Tốt Nhất 2026`}
-  description={`Tổng hợp các loại ${categoryName.toLowerCase()} chất lượng cao, đầy đủ độ nhớt, hàng nhập khẩu chính hãng 100%.`}
+  seoTitle={categoryInfo.data.seo_title}
+  description={categoryInfo.data.description || `Tổng hợp các loại ${categoryName.toLowerCase()} chất lượng cao, đầy đủ độ nhớt, hàng nhập khẩu chính hãng 100%.`}
+  keywords={categoryInfo.data.keywords}
+  canonical={categoryInfo.data.canonical_url}
   schemaData={schemaData}
 >
   <div class="container">

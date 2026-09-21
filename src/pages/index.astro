@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-const products = await getCollection('products');
+const products = await getCollection('sanpham');
 
 // Schema Homepage
 const schemaData = {
@@ -15,8 +15,11 @@ const schemaData = {
 ---
 
 <Layout 
-  title="Nhà Phân Phối Dầu Nhớt Công Nghiệp Chính Hãng" 
+  title="Nhà Phân Phối Dầu Nhớt Công Nghiệp Chính Hãng"
+  seoTitle="Đại Lý Phân Phối Dầu Công Nghiệp Chính Hãng Cấp 1"
   description="Giải pháp bôi trơn toàn diện cho nền công nghiệp Việt Nam. Cung cấp Dầu Thủy Lực, Dầu Bánh Răng từ các hãng hàng đầu."
+  keywords={["dầu công nghiệp", "dầu thủy lực", "dầu bánh răng", "mỡ bôi trơn"]}
+  canonical="https://daucongnghiep-pro.vn/"
   schemaData={schemaData}
 >
   <!-- Hero Section -->
@@ -77,7 +80,7 @@ const schemaData = {
     <div class="grid">
       {products.map(product => (
         <div class="product-card">
-          <img src={product.data.image} alt={product.data.title} loading="lazy" decoding="async" />
+          <img src={product.data.images && product.data.images.length > 0 ? product.data.images[0] : (product.data.image || '/images/product-default.jpg')} alt={product.data.title} loading="lazy" decoding="async" />
           <div class="product-info">
             <span class="badge">{product.data.brand}</span>
             <span class="badge badge-outline">VG {product.data.vg}</span>

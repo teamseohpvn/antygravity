@@ -3,13 +3,15 @@ import SEO from '../components/SEO.astro';
 
 interface Props {
   title: string;
+  seoTitle?: string;
   description: string;
+  keywords?: string[];
   canonical?: string;
   type?: 'website' | 'article' | 'product';
   schemaData?: any;
 }
 
-const { title, description, canonical, type, schemaData } = Astro.props;
+const { title, seoTitle, description, keywords, canonical, type, schemaData } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,7 +20,7 @@ const { title, description, canonical, type, schemaData } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <SEO {title} {description} {canonical} {type} {schemaData} />
+    <SEO {title} {seoTitle} {description} {keywords} {canonical} {type} {schemaData} />
     
     <!-- Google Fonts cho UI B2B -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

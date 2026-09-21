@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('support');
+  const posts = await getCollection('blog');
   return posts.map(post => ({
     params: { slug: post.id },
     props: { post },
@@ -30,7 +30,10 @@ const schemaData = {
 
 <Layout 
   title={post.data.title}
+  seoTitle={post.data.seo_title}
   description={post.data.description}
+  keywords={post.data.keywords}
+  canonical={post.data.canonical_url}
   type="article"
   schemaData={schemaData}
 >

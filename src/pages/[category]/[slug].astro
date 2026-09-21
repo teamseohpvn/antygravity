@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  const products = await getCollection('products');
+  const products = await getCollection('sanpham');
   return products.map(product => ({
     params: { category: product.data.category, slug: product.id },
     props: { product },
@@ -28,7 +28,10 @@ const schemaData = {
 
 <Layout 
   title={`${product.data.title} Chính Hãng`}
+  seoTitle={product.data.seo_title}
   description={product.data.description}
+  keywords={product.data.keywords}
+  canonical={product.data.canonical_url}
   type="product"
   schemaData={schemaData}
 >
@@ -41,7 +44,14 @@ const schemaData = {
 
     <div class="product-top">
       <div class="product-image">
-        <img src={product.data.image} alt={product.data.title} loading="lazy" decoding="async" />
+        <img src={product.data.images && product.data.images.length > 0 ? product.data.images[0] : (product.data.image || '/images/product-default.jpg')} alt={product.data.title} loading="lazy" decoding="async" />
+        {product.data.images && product.data.images.length > 1 && (
+          <div class="thumbnail-gallery" style="display: flex; gap: 10px; margin-top: 15px; overflow-x: auto;">
+            {product.data.images.map(img => (
+              <img src={img} alt={product.data.title} style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border-color);" />
+            ))}
+          </div>
+        )}
       </div>
       <div class="product-summary">
         <h1>{product.data.title}</h1>
