@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
   const products = await getCollection('sanpham');
@@ -21,6 +21,7 @@ export async function getStaticPaths() {
 
 const { category } = Astro.params;
 const { products, categoryName, categoryInfo } = Astro.props;
+const { Content } = await render(categoryInfo);
 
 // Schema Category
 const schemaData = {
@@ -85,14 +86,8 @@ const schemaData = {
         </div>
         
         <!-- SEO Content Area (At bottom) -->
-        <div class="seo-content">
-          <h2>Bảng giá {categoryName.toLowerCase()} tham khảo 2026</h2>
-          <p>Lưu ý: Bảng giá dưới đây chỉ mang tính chất tham khảo. Giá dầu phụ thuộc vào biến động thị trường xăng dầu thế giới và số lượng nhập của quý khách.</p>
-          <table class="seo-table">
-            <tr><th>Tên Sản Phẩm</th><th>Bao Bì</th><th>Giá Tham Khảo</th></tr>
-            <tr><td>Dầu Hyspin AWS 68</td><td>Phuy 209L</td><td>0901511313</td></tr>
-            <tr><td>Shell Tellus S2 MX 46</td><td>Xô 20L</td><td>0901511313</td></tr>
-          </table>
+        <div class="seo-content markdown-body">
+          <Content />
         </div>
       </div>
     </div>
@@ -121,8 +116,10 @@ const schemaData = {
   .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-right: 5px; }
   
   .seo-content { background: white; padding: 40px; border-radius: 8px; border: 1px solid var(--border-color); }
-  .seo-content h2 { color: var(--color-primary); margin-bottom: 15px; }
-  .seo-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-  .seo-table th, .seo-table td { border: 1px solid var(--border-color); padding: 12px; text-align: left; }
-  .seo-table th { background: #f1f5f9; }
+  :global(.seo-content h2) { color: var(--color-primary); margin: 30px 0 15px; font-size: 1.8rem; }
+  :global(.seo-content h3) { color: var(--color-primary); margin: 25px 0 10px; font-size: 1.4rem; }
+  :global(.seo-content p) { margin-bottom: 15px; line-height: 1.7; font-size: 1.05rem; }
+  :global(.seo-content ul), :global(.seo-content ol) { margin: 0 0 15px 20px; line-height: 1.7; font-size: 1.05rem; }
+  :global(.seo-content li) { margin-bottom: 8px; }
+  :global(.seo-content strong) { font-weight: 700; color: #111; }
 </style>
