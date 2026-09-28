@@ -1,75 +1,82 @@
 ---
-title: "Mỡ Chịu Nhiệt Độ Cao (High Temperature Grease)"
-seo_title: "Mỡ Chịu Nhiệt 150°C, 200°C, 300°C, 1000°C | Shell Gadus S3, Castrol Tribol Cao Cấp"
-description: "Tổng đại lý phân phối mỡ chịu nhiệt độ cao 150°C đến 300°C, 1000°C chính hãng Shell Gadus S3 V220C, Castrol Tribol GR. Bôi trơn bạc đạn lò nung, máy cán, quạt hút lò sấy."
-keywords: ["mỡ chịu nhiệt", "mỡ chịu nhiệt 200 độ", "mỡ chịu nhiệt 300 độ", "mỡ bò chịu nhiệt độ cao", "mỡ shell gadus s3 v220c 2", "mỡ castrol chịu nhiệt", "mỡ lò nung", "mỡ bôi trơn bạc đạn quạt hút lò hơi"]
-tags: ["mo-chiu-nhiet", "shell-gadus-s3", "castrol-tribol", "lithium-complex", "polyurea", "nhiet-do-cao"]
+title: "Mỡ Chịu Nhiệt (Mỡ Bò Chịu Nhiệt) 150 – 300 Độ C"
+seo_title: "Mỡ Bò Chịu Nhiệt Độ Cao 150–300 Độ C – Báo Giá Sỉ"
+description: "Mỡ bò chịu nhiệt cho vòng bi quạt lò, lò sấy, máy cán: lithium phức, polyurea, bentonite, PFPE. Shell Gadus S3, Castrol Tribol. Tư vấn chọn theo nhiệt độ."
+keywords: ["mỡ chịu nhiệt", "mỡ bò chịu nhiệt", "mỡ bôi trơn chịu nhiệt", "mỡ chịu nhiệt độ cao", "mỡ bò chịu nhiệt cao cấp", "mỡ chịu nhiệt 300 độ", "mỡ bò chịu nhiệt 500 độ", "mỡ bôi trơn vòng bi chịu nhiệt", "mỡ chịu nhiệt cho vòng bi", "mỡ bò trắng chịu nhiệt", "giá mỡ chịu nhiệt", "shell gadus s3 v220c 2"]
+tags: ["mo-chiu-nhiet", "mo-bo-chiu-nhiet", "shell-gadus", "castrol-tribol", "polyurea", "lithium-complex"]
 image: "/images/mo-chiu-nhiet-do-cao.jpg"
 canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/mo-chiu-nhiet"
 ---
 
-## Tổng quan về Mỡ Chịu Nhiệt Độ Cao (High Temperature Grease)
+**Mỡ chịu nhiệt** (thường gọi là **mỡ bò chịu nhiệt**) là mỡ bôi trơn dùng cho vị trí nóng hơn khoảng 120 °C, nơi mỡ lithium thông thường nhanh chảy, khô và cháy thành cặn. Cách chọn đúng là **đo nhiệt độ thực tế tại vòng bi**, rồi chọn chất làm đặc và dầu gốc phù hợp. Với phần lớn quạt lò, lò sấy và máy sóng giấy chạy ở khoảng 150–180 °C, mỡ **polyurea** hoặc **lithium phức** tổng hợp là đủ. Từ khoảng 200–260 °C mới cần mỡ đặc chủng như **PFPE**.
 
-Mỡ chịu nhiệt độ cao là dòng chất bôi trơn kỹ thuật đặc biệt được phát triển nhằm duy trì khả năng bôi trơn ổn định tại những vị trí cơ cấu chuyển động làm việc trong môi trường nhiệt độ khắc nghiệt (thường xuyên trên 120°C, 150°C, 200°C và thậm chí lên đến 300°C - 1000°C). Ở nhiệt độ này, các loại mỡ Lithium thông thường sẽ bị chảy lỏng, oxy hóa cháy thành cặn carbon đen và mất hoàn toàn khả năng bảo vệ, dẫn tới cháy bạc đạn và dừng cả dây chuyền sản xuất.
+## Chọn mỡ chịu nhiệt theo nhiệt độ làm việc
 
-Để chịu được nhiệt độ cao mà không bị phân hủy hay nóng chảy, mỡ chịu nhiệt sử dụng các gốc **chất làm đặc tiên tiến** như **Lithium Complex (phức Lithium)**, **Calcium Sulfonate Complex**, **Polyurea**, **Bentonite (đất sét vô cơ không điểm chảy)** hoặc gốc **PTFE/PFPE (Fluorinated)**, kết hợp cùng dầu gốc tổng hợp (PAO, Ester, Silicone) và hệ phụ gia chống oxy hóa đa tầng.
+Nhiệt độ trong bảng là **nhiệt độ làm việc liên tục tham khảo**. Giới hạn cụ thể của từng sản phẩm ghi trên bảng thông số kỹ thuật (TDS).
 
----
-
-## Phân Loại Mỡ Chịu Nhiệt Theo Dải Nhiệt Độ Hoạt Động & Gốc Làm Đặc
-
-| Phân khúc nhiệt độ | Dải nhiệt độ làm việc | Gốc chất làm đặc & Dầu gốc | Ứng dụng công nghiệp phổ biến |
+| Nhiệt độ tại vòng bi | Loại mỡ nên dùng | Ghi chú | Ứng dụng thường gặp |
 | :--- | :--- | :--- | :--- |
-| **Chịu nhiệt vừa (120°C – 160°C)** | -20°C đến 150°C (đỉnh 180°C) | Phức Lithium (Lithium Complex) + Dầu khoáng chọn lọc | Bạc đạn động cơ điện công suất lớn, trục quạt thông gió, máy ép viên nén gỗ, con lăn máy dệt. |
-| **Chịu nhiệt cao (160°C – 220°C)** | -30°C đến 200°C (đỉnh 250°C) | Polyurea hoặc Calcium Sulfonate Complex + Dầu tổng hợp PAO | Quạt hút lò hơi (Boiler fan), quạt hút khói nhiệt điện, máy căng kim định hình dệt nhuộm (Stenter frame). |
-| **Chịu nhiệt siêu cao (220°C – 300°C)** | -20°C đến 280°C | Gốc Bentonite (Đất sét vô cơ không điểm nhỏ giọt) | Xe gòong lò nung gạch tuy-nen, bạc đạn lò nung gốm sứ ceramic, cửa lò sấy sơn tĩnh điện. |
-| **Chịu nhiệt cực hạn (> 300°C – 1000°C)** | -40°C đến 1000°C | Dầu Silicone hoặc Mỡ chứa bôi trơn rắn (Đồng, Nhôm, Graphite, MoS2) | Chống bó kẹt bu-lông ốc vít nhiệt độ cao (Anti-seize), con lăn lò cán thép nóng, bôi trơn ty đúc khuôn nhôm. |
+| **Tới khoảng 150 °C** | Lithium phức (lithium complex), dầu gốc khoáng | Phổ biến, kinh tế | Moay-ơ xe tải, vòng bi động cơ lớn, quạt thông gió |
+| **Khoảng 150 – 180 °C** | Polyurea hoặc canxi sulfonate phức | Tuổi thọ dài, ít tạo cặn | Quạt hút lò hơi, máy sóng giấy, lò sấy |
+| **Khoảng 180 – 200 °C** | Bentonite (đất sét) hoặc polyurea với dầu gốc tổng hợp | Bentonite không có điểm nhỏ giọt, giới hạn do dầu gốc | Xe goòng lò nung, cửa lò sấy sơn |
+| **Khoảng 200 – 260 °C** | Mỡ PFPE / PTFE (flo hóa) | Giá cao, không trộn với mỡ khác | Vòng bi trong lò, máy căng định hình dệt nhuộm |
+| **Trên 300 °C** | Không có mỡ bôi trơn vòng bi. Dùng **keo chống bó kẹt (anti-seize)** hoặc bôi trơn khô | Chỉ để chống kẹt ren, bu-lông | Bu-lông mặt bích lò, ống xả |
+
+### Về các loại "mỡ chịu nhiệt 300 độ, 500 độ, 1000 độ"
+
+Trên thị trường có sản phẩm ghi "chịu 500 độ" hay "1000 độ". Con số này thường là **giới hạn của keo chống bó kẹt** (anti-seize, chứa bột đồng, nhôm, graphite), hoặc là nhiệt độ mà chất bôi trơn rắn còn lại sau khi dầu gốc đã bay hơi hết. Các sản phẩm này không dùng để bôi trơn vòng bi quay. Nếu vòng bi nóng trên 260 °C, cần xem lại giải pháp làm mát hoặc cách nhiệt chứ không chỉ đổi mỡ.
+
+## Dòng sản phẩm
+
+- **Shell Gadus S3 V220C 2:** mỡ lithium phức, dầu gốc VG 220, phụ gia EP. Chịu nhiệt, kháng nước và bám dính tốt. Dùng cho moay-ơ, vòng bi chịu tải nặng ở nhiệt độ cao.
+- **Shell Gadus S3 T100 2:** mỡ polyurea, dầu gốc VG 100. Tuổi thọ dài ở nhiệt độ cao, hợp với vòng bi động cơ điện và quạt.
+- **Castrol Tribol GR PD:** mỡ chịu tải nặng có công nghệ Microflux Trans (MFT) của Castrol, dùng cho vòng bi chịu va đập và nhiệt.
+- **Mobil Mobilith SHC 220:** mỡ lithium phức với dầu gốc tổng hợp PAO. Dải nhiệt rộng, tuổi thọ dài.
+
+<!-- TODO: xác minh mã đang có hàng và mã mỡ PFPE / bentonite phân phối. -->
+
+## Chỉ tiêu cần xem trên bảng thông số (TDS)
+
+- **Dải nhiệt độ làm việc khuyến nghị:** đây là con số quan trọng nhất, không phải điểm nhỏ giọt.
+- **Điểm nhỏ giọt (ASTM D2265):** mỡ lithium phức và polyurea thường trên 250 °C. Nhiệt độ làm việc luôn thấp hơn điểm nhỏ giọt khá nhiều.
+- **Độ bay hơi dầu gốc (ASTM D972):** dầu gốc bay hơi nhanh làm mỡ khô cứng.
+- **Độ nhớt dầu gốc:** chọn theo tốc độ vòng bi, giống mỡ thường.
+- **Tương thích:** mỡ PFPE không trộn được với mỡ gốc khoáng. Phải làm sạch ổ khi chuyển đổi.
+
+## Ứng dụng theo ngành
+
+- **Gạch, gốm sứ:** xe goòng lò nung tuy-nen, con lăn lò.
+- **Thép và kim loại:** con lăn bàn truyền phôi, máy cán, máy đúc liên tục.
+- **Giấy, bao bì:** vòng bi trục lô sóng máy tạo sóng carton, lô sấy.
+- **Nhiệt điện, lò hơi:** vòng bi quạt hút khói, quạt cấp gió, bơm cấp nước.
+- **Dệt nhuộm:** máy căng định hình (stenter), buồng sấy.
+
+## Quy cách và báo giá
+
+- **Quy cách:** tuýp 400 g, hộp 1 kg, xô 16–18 kg, phuy 180 kg. Quy cách tùy mã hàng.
+- **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS.
+- **Tư vấn:** gửi nhiệt độ đo được tại vòng bi, tốc độ quay và loại mỡ đang dùng. Đo bằng súng đo nhiệt hồng ngoại khi máy đang chạy ổn định.
+
+**Nhận báo giá mỡ bò chịu nhiệt:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**.
+
+## Câu hỏi thường gặp
+
+### Vì sao mỡ chịu nhiệt tra vào vòng bi quạt lò chỉ vài tuần đã khô đen?
+
+Thường là do nhiệt độ thực tế tại vòng bi cao hơn giới hạn làm việc của loại mỡ đang dùng. Ví dụ, dùng mỡ lithium phức cho vị trí đo được 180–200 °C. Dầu gốc bay hơi, chỉ còn chất làm đặc cháy thành cặn. Cách xử lý là đo lại nhiệt độ, chuyển sang polyurea tổng hợp, bentonite hoặc PFPE tùy mức nhiệt, và rút ngắn chu kỳ tra mỡ.
+
+### Mỡ màu đỏ có phải là mỡ chịu nhiệt không?
+
+Không. Màu mỡ (đỏ, xanh, vàng, đen) là do nhà sản xuất pha màu để nhận diện sản phẩm. Khả năng chịu nhiệt phải xem trên TDS: loại chất làm đặc, dải nhiệt độ làm việc và điểm nhỏ giọt.
+
+### Có mỡ bôi trơn chịu được 500 độ không?
+
+Không có mỡ nào bôi trơn vòng bi quay liên tục ở 500 °C. Sản phẩm ghi "500 độ" thường là keo chống bó kẹt cho ren, bu-lông, hoặc chất bôi trơn rắn. Với vòng bi, giới hạn thực tế của mỡ đặc chủng PFPE là khoảng 250–260 °C.
+
+### Có trộn mỡ chịu nhiệt với mỡ thường được không?
+
+Không nên. Chất làm đặc khác nhau thường không tương thích, và mỡ trộn sẽ chịu nhiệt kém hơn cả hai loại ban đầu. Khi đổi sang mỡ chịu nhiệt, cần làm sạch hoặc bơm đẩy hết mỡ cũ.
 
 ---
 
-## Các Dòng Mỡ Chịu Nhiệt Hàng Đầu Thị Trường: Shell & Castrol
-
-### 1. Dòng mỡ Shell Gadus S3 (Phức Lithium & Polyurea cao cấp)
-* **Shell Gadus S3 V220C 2 (Màu đỏ mận - Phức Lithium Complex):** Dòng mỡ chịu nhiệt cao cấp bán chạy số 1 của Shell. Điểm nhỏ giọt (Dropping Point) đạt trên **260°C**, dải nhiệt độ làm việc liên tục -20°C đến 140°C (chịu đỉnh 180°C). Khả năng bám dính siêu hạng, kháng nước xối tuyệt đối, chịu tải cực áp FZG stage cao, cực kỳ bền nhiệt và cơ học. Chuyên dùng cho bạc đạn moay-ơ xe tải nặng thắng đĩa, ngỗng trục máy nghiền, con lăn nhà xưởng nhiệt độ cao.
-* **Shell Gadus S3 T100 2 / S3 T220 2 (Gốc Polyurea):** Tuổi thọ mỡ siêu bền ở nhiệt độ 160°C, chuyên trị bạc đạn động cơ điện công nghiệp tốc độ cao và cụm quạt hút lò đốt.
-
-### 2. Dòng mỡ Castrol Tribol & Molub-Alloy
-* **Castrol Tribol GR 100-2 PD / 400-2 PD:** Dòng mỡ chịu nhiệt và tải trọng va đập đỉnh cao với công nghệ phụ gia vi dòng biến dạng dẻo MFT. Khi nhiệt độ và áp suất tăng cao, phụ gia MFT tự động kích hoạt san phẳng các vi đỉnh gồ ghề của kim loại, triệt tiêu ma sát và hạ nhiệt độ vận hành ổ bi.
-* **Castrol Molub-Alloy 777 ES:** Mỡ phức Lithium bổ sung các hạt bôi trơn rắn phân tán siêu mịn, chuyên bôi trơn ngỗng trục máy cán thép, máy đúc phôi liên tục làm việc gần dòng kim loại nóng chảy.
-
----
-
-## Đặc Điểm Kỹ Thuật Quan Trọng Khi Lựa Chọn Mỡ Chịu Nhiệt
-
-1. **Điểm nhỏ giọt (Dropping Point):** Thể hiện nhiệt độ giới hạn mà cấu trúc mỡ bắt đầu mất liên kết thể sệt và hóa lỏng. Mỡ chịu nhiệt đạt chuẩn phải có điểm nhỏ giọt tối thiểu > 260°C (với mỡ vô cơ Bentonite thì hoàn toàn không có điểm nhỏ giọt).
-2. **Tỷ lệ bay hơi dầu gốc (Evaporation Loss - ASTM D972):** Ở nhiệt độ 150°C - 200°C, dầu gốc kém chất lượng sẽ bay hơi nhanh làm mỡ bị khô cứng như sáp đá. Mỡ chất lượng cao duy trì tỷ lệ bay hơi cực thấp (< 0.5% sau 22 giờ).
-3. **Độ ổn định oxy hóa màng mỏng (Thin Film Oxidation):** Chống lại sự hình thành cặn than keo hóa đen làm kẹt cứng các viên bi trong rãnh lăn.
-4. **Khả năng bơm mỡ và độ ổn định cơ tính:** Không bị tách dầu (bleeding) dưới lực ly tâm và nhiệt độ cao.
-
----
-
-## Ứng Dụng Trong Các Ngành Công Nghiệp Nhiệt Độ Cao
-
-* **Ngành Gạch men & Gốm sứ Ceramic:** Bôi trơn bạc đạn xe gòong lò nung tuynen, con lăn dẫn phôi lò nung gạch ở nhiệt độ 180°C - 250°C.
-* **Nhà máy Luyện thép & Cán kim loại:** Bạc đạn con lăn bàn truyền phôi đúc liên tục, giá cán thép nóng, máy uốn thép xây dựng.
-* **Ngành Giấy & Bao bì Carton:** Bạc đạn trục lô sóng máy tạo sóng giấy carton bao bì hoạt động liên tục với hơi nước bão hòa nhiệt độ 170°C - 190°C.
-* **Hệ thống Nhiệt điện & Nồi hơi công nghiệp:** Vòng bi động cơ và trục quạt hút khói lò hơi (ID Fan / FD Fan), bơm cấp nước lò hơi.
-
----
-
-## Phân Phối Mỡ Chịu Nhiệt Chính Hãng Tại Miền Bắc
-
-Chúng tôi cung cấp đầy đủ các dòng mỡ chịu nhiệt chính hãng từ 150°C đến 1000°C:
-* **Đóng gói đa dạng:** Xô 18 kg, Hộp lon 1 kg, Tuýp 400g (dùng cho súng bơm mỡ cầm tay) và Phuy 180 kg.
-* **Giấy tờ đầy đủ:** CO/CQ nguồn gốc xuất xứ, chứng nhận chất lượng từ nhà máy sản xuất, bảng thông số an toàn kỹ thuật MSDS.
-* **Tư vấn kỹ sư chuyên gia:** Đội ngũ chuyên gia kỹ thuật hỗ trợ khảo sát trực tiếp nhiệt độ máy móc tại nhà xưởng để chọn cấp mỡ tối ưu kinh tế và độ bền nhất.
-
----
-
-## Câu Hỏi Thường Gặp (FAQ)
-
-### 1. Tại sao mỡ chịu nhiệt tra vào bạc đạn quạt hút chỉ được vài tuần là bị khô cứng đen lại?
-Nguyên nhân phổ biến nhất là nhiệt độ thực tế tại vị trí vòng bi vượt quá giới hạn làm việc liên tục của loại mỡ đang dùng (ví dụ dùng mỡ phức Lithium chịu 140°C cho vị trí nhiệt độ đo được lên đến 180°C - 200°C). Khi đó, dầu gốc bị bay hơi và bốc khói, chỉ còn lại cặn than làm đặc. Khắc phục bằng cách chuyển sang dòng mỡ Polyurea tổng hợp hoặc mỡ gốc vô cơ Bentonite/Fluorinated.
-
-### 2. Mỡ màu đỏ có phải mặc định là mỡ chịu nhiệt không?
-**Không hẳn.** Màu sắc của mỡ (đỏ, xanh dương, vàng hổ phách, đen) chủ yếu do nhà sản xuất pha phẩm màu để dễ nhận diện thương hiệu hoặc tránh tra nhầm lẫn tại xưởng. Khả năng chịu nhiệt thực tế phải dựa trên **bảng thông số kỹ thuật (TDS)** của nhà sản xuất, bao gồm điểm nhỏ giọt, dải nhiệt độ khuyến cáo và loại chất làm đặc (Thickener).
+**Xem thêm:** [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep) · [Dầu truyền nhiệt](/dau-truyen-nhiet) · [Dầu bánh răng](/dau-banh-rang)

@@ -1,77 +1,89 @@
 ---
-title: "Dầu Máy Nén Khí (Air Compressor Oil)"
-seo_title: "Dầu Máy Nén Khí Trục Vít & Piston 32, 46, 68 | Shell Corena, Castrol Aircol 4000h - 8000h"
-description: "Đại lý phân phối dầu máy nén khí trục vít, piston ISO VG 32, 46, 68 chính hãng Shell Corena S3/S4, Castrol Aircol MR/SR. Tuổi thọ 4.000h - 8.000h, giá sỉ tốt nhất 2026."
-keywords: ["dầu máy nén khí", "dầu máy nén khí trục vít", "dầu máy nén khí 46", "dầu máy nén khí 32", "dầu máy nén khí shell corena s3 r 46", "castrol aircol mr 46", "dầu máy nén khí 8000h", "thay dầu máy nén khí trục vít"]
-tags: ["dau-may-nen-khi", "shell-corena", "castrol-aircol", "may-nen-khi-truc-vit", "may-nen-khi-piston", "iso-vg-46"]
+title: "Dầu Máy Nén Khí (Nhớt Máy Nén Khí) Trục Vít & Piston"
+seo_title: "Dầu Máy Nén Khí Trục Vít, Piston 32, 46, 68 – Báo Giá Sỉ"
+description: "Dầu nén khí trục vít, piston ISO VG 32, 46, 68, 100: Shell Corena, Castrol Aircol, dầu tương đương cho Kobelco, Hitachi, Atlas Copco. Có CO/CQ, VAT."
+keywords: ["dầu máy nén khí", "dầu nén khí", "nhớt máy nén khí", "dầu máy nén khí trục vít", "nhớt máy nén khí trục vít", "dầu máy nén khí piston", "dầu máy nén khí kobelco", "dầu máy nén khí hitachi", "dầu máy nén khí atlas copco", "shell corena s3 r 46", "mobil rarus 425", "total dacnis sh 46"]
+tags: ["dau-may-nen-khi", "shell-corena", "castrol-aircol", "truc-vit", "piston"]
 image: "/images/dau-may-nen-khi-cong-nghiep.jpg"
 canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/dau-may-nen-khi"
 ---
 
-## Tổng quan về Dầu Máy Nén Khí (Air Compressor Oil)
+**Dầu máy nén khí** (còn gọi là **dầu nén khí** hay **nhớt máy nén khí**) vừa bôi trơn, vừa làm mát và làm kín khe hở trong buồng nén. Loại dầu phụ thuộc vào kiểu máy. **Máy nén khí trục vít ngâm dầu** thường dùng dầu **ISO VG 46**, một số dùng VG 32 hoặc 68. **Máy nén khí piston** thường dùng VG 68 hoặc 100. Dầu gốc khoáng có chu kỳ thay ngắn hơn. Dầu tổng hợp đắt hơn nhưng chạy được lâu hơn nhiều giờ, hợp với máy chạy 24/7.
 
-Dầu máy nén khí là loại dầu bôi trơn chuyên biệt đóng vai trò sống còn trong việc vận hành máy nén khí trục vít ngập dầu (*Rotary Screw Compressor*) và máy nén khí piston (*Reciprocating Compressor*). Khí nén được ví như nguồn năng lượng thứ tư trong mọi nhà máy công nghiệp (sau điện, nước và gas). Trong buồng nén, nhiệt độ nén xả thường xuyên đạt mức 85°C – 110°C, không khí giàu oxy liên tục bị nén ép hòa trộn cùng hơi dầu ở áp suất 7 – 13 bar.
+## Chọn dầu theo loại máy nén khí
 
-Do đó, dầu máy nén khí phải đảm nhận đồng thời 4 chức năng cốt lõi:
-1. **Làm mát hạ nhiệt:** Hấp thụ và giải phóng nhiệt lượng khổng lồ sinh ra trong quá trình nén khí.
-2. **Làm kín khe hở trục vít:** Tạo màng dầu siêu mỏng bịt kín khe hở cơ học giữa hai trục vít đực - cái và thành buồng nén, ngăn khí nén rò rỉ ngược trở lại.
-3. **Bôi trơn cơ cấu:** Bôi trơn các cặp vòng bi đỡ chặn, ổ lăn trục vít quay với tốc độ hàng nghìn vòng/phút.
-4. **Chống oxy hóa & Ngăn cặn carbon:** Ngăn ngừa hiện tượng dầu bị nhiệt phân tạo keo vecni làm cháy kẹt cụm đầu nén và nghẽn bình lọc tách dầu (Air/Oil Separator).
+| Loại máy | Cấp độ nhớt thường dùng | Đặc điểm | Ghi chú |
+| :--- | :--- | :--- | :--- |
+| **Trục vít ngâm dầu** | ISO VG 46 (có máy dùng 32 hoặc 68) | Dầu tuần hoàn liên tục, đi qua bình tách dầu | Cần thoát khí, tách nước và chống oxy hóa tốt |
+| **Piston (pít-tông)** | ISO VG 68 / 100 | Nhiệt độ xả cao, dễ đóng cặn ở van xả | Cần dầu ít tạo cặn carbon |
+| **Cánh gạt (vane)** | ISO VG 68 / 100 | Cánh gạt trượt trên thành stator | Theo khuyến cáo nhà sản xuất |
+| **Trục vít không dầu** | Chỉ bôi trơn hộp số và vòng bi | Không có dầu trong buồng nén | Dùng dầu hộp số theo sổ tay máy |
+
+**Dầu khoáng hay tổng hợp?** Tùy nhiệt độ đầu nén và số giờ chạy mỗi năm. Dầu khoáng thường thay sau khoảng 2.000–4.000 giờ, dầu tổng hợp PAO sau khoảng 6.000–8.000 giờ trở lên. Số giờ cụ thể lấy theo TDS, sổ tay máy và kết quả phân tích dầu.
+
+## Dòng sản phẩm và sản phẩm tương đương
+
+| Loại | Shell | Castrol | Mobil | TotalEnergies |
+| :--- | :--- | :--- | :--- | :--- |
+| Trục vít, gốc khoáng / bán tổng hợp | Corena S3 R 32 / 46 / 68 | Aircol MR 32 / 46 / 68 | Rarus 425 / 426 / 427 | Dacnis 32 / 46 / 68 |
+| Trục vít, tổng hợp | Corena S4 R 32 / 46 / 68 | Aircol SR 32 / 46 / 68 | Rarus SHC 1024 / 1025 / 1026 | Dacnis SH 32 / 46 / 68 |
+| Piston | Corena S2 P / S4 P 68 / 100 | Aircol PD 68 / 100 | Rarus 427 / 429 | Dacnis 68 / 100 |
+
+<!-- TODO: xác minh mã đang có hàng; bỏ cột hãng không phân phối. -->
+
+### Dầu tương đương cho máy Kobelco, Hitachi, Atlas Copco
+
+Nhiều máy nén khí trục vít được châm dầu chính hãng của nhà sản xuất máy lúc xuất xưởng. Khi hết bảo hành, có thể chuyển sang dầu thương hiệu dầu nhớt (Shell, Castrol, Mobil…) **có cùng gốc dầu và cùng cấp độ nhớt**. Cần lưu ý:
+
+- Xác định **gốc dầu hiện tại** (khoáng, PAO hay PAG). Dầu gốc PAG **không tương thích** với dầu khoáng và PAO.
+- Trong thời gian bảo hành, dùng đúng dầu nhà sản xuất máy yêu cầu.
+- Khi đổi dầu, thay luôn lọc dầu và kiểm tra bình tách dầu.
+
+Dầu Công Nghiệp Pro cung cấp dầu **tương đương**, không phải dầu OEM mang thương hiệu của nhà sản xuất máy.
+
+## Chỉ tiêu cần xem trên bảng thông số (TDS)
+
+- **Độ bền oxy hóa:** quyết định số giờ chạy trước khi dầu đặc lại và tạo cặn. Ví dụ phép thử RPVOT (ASTM D2272).
+- **Thoát khí (ASTM D3427) và chống tạo bọt (ASTM D892):** dầu nhiều bọt làm nóng đầu nén và tăng lượng dầu bị cuốn theo khí nén.
+- **Tách nước (ASTM D1401):** khí nén luôn có hơi ẩm, dầu phải tách nước để xả đáy được.
+- **Xu hướng tạo cặn carbon:** đặc biệt quan trọng với máy piston.
+
+## Ứng dụng theo ngành
+
+- **Điện tử, lắp ráp:** khí nén cho robot, máy gắp linh kiện. Nên có hệ thống lọc khí đạt chuẩn.
+- **Thực phẩm, dược phẩm:** nếu khí nén có thể tiếp xúc sản phẩm, cần dầu cấp thực phẩm NSF H1 hoặc máy không dầu.
+- **Dệt may, da giày:** cấp khí cho máy may, máy dệt khí.
+- **Cơ khí, sơn:** súng phun sơn, máy phun cát, dụng cụ khí nén.
+
+## Quy cách và báo giá
+
+- **Quy cách:** xô 18–20 lít, phuy 209 lít. Quy cách tùy mã hàng.
+- **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS.
+- **Tư vấn:** gửi hãng máy, model, công suất (kW) và loại dầu đang dùng để được đề xuất dầu tương đương.
+
+**Nhận báo giá dầu máy nén khí:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**.
+
+## Câu hỏi thường gặp
+
+### Có trộn dầu khoáng với dầu tổng hợp trong máy nén khí được không?
+
+Tùy loại dầu tổng hợp. Dầu gốc **PAG (polyglycol)** không tương thích với dầu khoáng và PAO, trộn vào có thể tạo keo và làm nghẹt lọc tách dầu. Dầu **PAO** thường tương thích với dầu khoáng, nhưng trộn lẫn sẽ làm giảm tuổi thọ của dầu tổng hợp. Khi chuyển đổi, tốt nhất là xả sạch, thay lọc, và súc rửa nếu dầu cũ đã bẩn.
+
+### Khi nào cần thay dầu máy nén khí?
+
+Theo số giờ chạy khuyến cáo trên sổ tay máy và TDS của dầu, hoặc sớm hơn nếu thấy các dấu hiệu sau:
+
+- Nhiệt độ đầu nén thường xuyên cao hơn bình thường.
+- Dầu sẫm màu, có mùi khét.
+- Lượng dầu hao hụt tăng.
+- Chênh áp qua bình tách dầu tăng.
+
+Phân tích mẫu dầu (độ nhớt, chỉ số axit TAN, nước) giúp xác định thời điểm thay chính xác.
+
+### Máy nén khí trục vít dùng dầu thủy lực 46 thay được không?
+
+Không nên. Dầu máy nén khí được pha để chịu oxy hóa ở nhiệt độ cao, tiếp xúc liên tục với không khí nén, và để ít bị cuốn theo khí nén. Dầu thủy lực thông thường xuống cấp nhanh hơn trong điều kiện này, dễ tạo cặn và làm nghẹt bình tách dầu.
 
 ---
 
-## Phân Loại Dầu Máy Nén Khí Theo Cấp Độ Nhớt ISO VG & Dòng Máy
-
-| Loại máy nén khí | Cấp độ nhớt chuẩn | Đặc điểm vận hành & Khuyến nghị |
-| :--- | :--- | :--- |
-| **Máy nén khí Trục Vít (Rotary Screw)** | **ISO VG 32 / ISO VG 46** | Dòng máy phổ biến nhất trong nhà máy công nghiệp (Atlas Copco, Ingersoll Rand, Hitachi, Kobelco, Fusheng, Sullair). Tốc độ quay cao, yêu cầu dầu loãng tuần hoàn tản nhiệt nhanh, tách khí bọt xuất sắc. Phổ biến nhất là cấp **VG 46**. |
-| **Máy nén khí Piston (Reciprocating)** | **ISO VG 68 / ISO VG 100** | Xylanh và piston chuyển động tịnh tiến qua lại, nhiệt độ xả đỉnh buồng nén có thể lên tới 150°C - 200°C. Yêu cầu độ nhớt cao để bôi trơn séc-măng và xupap nạp/xả, chống tạo cặn than bám van xả gây cháy nổ. |
-| **Máy nén khí Cánh Gạt (Rotary Vane)** | **ISO VG 68 / ISO VG 100** | Cánh gạt trượt liên tục trên thành stator, chịu áp lực ma sát trượt cao. |
-
----
-
-## Các Dòng Dầu Máy Nén Khí Shell & Castrol Đáng Mua Nhất 2026
-
-### 1. Dòng dầu Shell Corena (Công nghệ dẫn đầu về độ sạch và tuổi thọ)
-* **Shell Corena S3 R (ISO VG 32, 46, 68):** Dòng dầu máy nén khí gốc khoáng tăng cường chất lượng cao, tuổi thọ vận hành thực tế đạt **4.000 giờ làm việc** (hoặc 1 năm). Khả năng chống hình thành cặn bùn và cặn carbon tuyệt hảo, duy trì bề mặt kim loại bên trong sạch sẽ, giúp lọc tách dầu hoạt động thông suốt và giảm tối đa mức sụt áp.
-* **Shell Corena S4 R (ISO VG 46, 68):** Dòng dầu gốc tổng hợp hoàn toàn công nghệ Polyalphaolefin (PAO) không tro, mang lại tuổi thọ vận hành đỉnh cao lên đến **8.000 – 12.000 giờ làm việc** liên tục trong điều kiện nhiệt độ nén xả cao trên 100°C. Tiết kiệm điện năng nhờ giảm ma sát và kéo dài chu kỳ bảo dưỡng gấp đôi.
-* **Shell Corena S2 P / S4 P (ISO VG 68, 100):** Chuyên dụng cho máy nén khí piston áp suất cao, ngăn ngừa nguy cơ cháy nổ buồng nén.
-
-### 2. Dòng dầu Castrol Aircol
-* **Castrol Aircol MR (ISO VG 32, 46, 68):** Dầu khoáng chọn lọc với hệ phụ gia chống oxy hóa đa nhân và chống gỉ sét, tuổi thọ 3.000 – 4.000 giờ, tách khí và tách nước nhanh, tương thích tốt với mọi vật liệu làm kín cao su Nitrile và Viton.
-* **Castrol Aircol SR / PG:** Dầu tổng hợp cao cấp gốc PAO và Polyglycol (PAG), tuổi thọ lên tới 8.000 giờ, khả năng chống keo dầu tuyệt đối cho các cụm trục vít chạy tải 24/7.
-
----
-
-## Tiêu Chuẩn Kỹ Thuật Đánh Giá Dầu Máy Nén Khí Chuẩn
-
-1. **Khả năng tách khí và chống tạo bọt (Air Release - ASTM D3427):** Khí hòa lẫn trong dầu phải được giải phóng cực nhanh (< 4 - 5 phút). Bọt khí tồn đọng trong dầu sẽ làm giảm hiệu suất tản nhiệt, gây quá nhiệt đầu nén và làm dầu bị xối qua bình tách dầu ra ngoài đường ống khí nén.
-2. **Khả năng tách nước (Water Demulsibility - ASTM D1401):** Khí nén luôn chứa hàm lượng ẩm cao từ khí quyển ngưng tụ. Dầu phải tách nước hoàn hảo để xả nước tự động qua van xả đáy bình dầu mà không bị tạo nhũ trắng sữa.
-3. **Độ ổn định oxy hóa nhiệt (Oxidation Stability):** Không bị biến chất khi tiếp xúc với luồng khí nóng nhiệt độ cao, kiểm soát chặt chẽ chỉ số axit tổng (TAN).
-
----
-
-## Ứng Dụng Trong Dây Chuyền Sản Xuất Công Nghiệp
-
-* **Dây chuyền Lắp ráp Điện tử & Bán dẫn:** Máy nén khí không dầu hoặc ngập dầu trang bị lọc khí tiêu chuẩn sạch cấp khí cho các cụm gắp chip, robot SMT.
-* **Nhà máy Chế biến Thực phẩm & Dược phẩm:** Cung cấp khí nén sạch điều khiển van khí nén, đóng nắp chai, sấy khô sản phẩm.
-* **Ngành Dệt May & Da Giày:** Cấp khí nén cho hàng trăm máy may, máy dệt khí, máy ép nhiệt.
-* **Xưởng Cơ khí & Sơn tĩnh điện:** Khí nén dẫn động súng phun sơn, máy bắn cát làm sạch bề mặt kim loại, dụng cụ cầm tay khí nén.
-
----
-
-## Dịch Vụ Phân Phối Dầu Máy Nén Khí Chính Hãng Toàn Miền Bắc
-
-* **Quy cách đóng gói:** Xô nhựa tiện dụng 18 Lít / 20 Lít và Phuy thép 209 Lít tiêu chuẩn.
-* **Chính sách hỗ trợ kỹ thuật:** Miễn phí test mẫu dầu định kỳ (độ nhớt, độ ẩm, cặn kim loại mài mòn) để cảnh báo sớm rủi ro hỏng bạc đạn trục vít.
-* **Cam kết:** 100% hàng chính hãng nhà máy, đền bù gấp 10 lần nếu phát hiện hàng tái chế, hàng pha trộn kém chất lượng.
-
----
-
-## Câu Hỏi Thường Gặp (FAQ)
-
-### 1. Có thể đổ lẫn dầu máy nén khí gốc khoáng (4000h) với dầu tổng hợp (8000h) không?
-**Tuyệt đối không.** Trộn lẫn hai gốc dầu khác nhau (khoáng và tổng hợp PAO hoặc PAG) có thể gây kết tủa, phản ứng đông keo dầu (gôm hóa), làm tắc nghẹt hoàn toàn lọc tách dầu chỉ sau vài ngày hoạt động, khiến áp suất buồng nén tăng vọt làm nổ van an toàn hoặc kẹt cứng trục vít.
-
-### 2. Dấu hiệu nào cho thấy dầu máy nén khí đã hết hạn và cần thay gấp?
-Khi nhiệt độ đầu nén báo lỗi thường xuyên (vượt 100°C), dầu chuyển sang màu nâu cánh gián đậm hoặc đen, có mùi khét chua nồng nặc, chỉ số TAN tăng cao hoặc mức tiêu hao dầu qua đường khí nén tăng đột biến do màng lọc tách dầu bị bám cặn nghẹt.
+**Xem thêm:** [Dầu thủy lực](/dau-thuy-luc) · [Dầu bánh răng](/dau-banh-rang) · [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep)
