@@ -19,7 +19,7 @@
 | Breadcrumb hiển thị trên mọi trang con | ✅ Xong | `src/components/Breadcrumbs.astro` |
 | Bộ lọc sinh từ sản phẩm thật (không còn "ISO VG" trên trang mỡ) | ✅ Xong | `src/pages/[category]/index.astro` |
 | Bỏ 7 sản phẩm mẫu; trạng thái "đang cập nhật" khi danh mục chưa có sản phẩm | ✅ Xong | `src/content/sanpham/` |
-| Trang `/bao-gia` (form nhiều sản phẩm), `/bao-gia/da-gui` (noindex), `/lien-he`, `404` | ✅ Xong | `src/pages/` |
+| Trang `/bao-gia` (form nhiều sản phẩm), `/bao-gia-thanh-cong` (noindex), `/lien-he`, `404` | ✅ Xong | `src/pages/` |
 | API báo giá gửi Telegram / webhook, chống spam bằng trường bẫy | ✅ Xong, **cần cấu hình biến môi trường** | `src/pages/api/bao-gia.ts` |
 | CTA gọi / Zalo / báo giá trên header, thanh dính mobile, mọi trang danh mục và sản phẩm | ✅ Xong | `QuoteCta.astro`, `Layout.astro` |
 | GA4 + sự kiện `generate_lead`, `click_tel`, `click_zalo`, `add_to_quote`, `download_tds` | ✅ Xong, **cần `PUBLIC_GA4_ID`** | `Layout.astro`, `bao-gia.astro` |
@@ -104,7 +104,7 @@ Quy ước: chữ thường, không dấu, gạch ngang, **không có `/` ở cu
 ```
 /                                   Trang chủ
 ├── /bao-gia                        MỚI · P1 · form yêu cầu báo giá nhiều sản phẩm
-├── /bao-gia/da-gui                 MỚI · trang cảm ơn (noindex) để đo chuyển đổi
+├── /bao-gia-thanh-cong                 MỚI · trang cảm ơn (noindex) để đo chuyển đổi
 ├── /lien-he                        MỚI · P1 · NAP, bản đồ, giờ làm việc
 ├── /gioi-thieu                     MỚI · kho, giấy ủy quyền, CO/CQ, khách hàng
 ├── /{danh-muc}                     11 danh mục (src/content/danhmuc)
@@ -268,7 +268,7 @@ Form nhiều dòng sản phẩm:
 | Địa điểm giao, thời gian cần hàng | | |
 | File đính kèm | | Danh sách vật tư, ảnh nhãn dầu |
 
-**Xử lý phía server:** Astro endpoint `src/pages/api/bao-gia.ts` chạy trên Workers. Lưu vào Cloudflare D1 và gửi thông báo (email / Telegram / Zalo OA webhook). Có chống spam: Cloudflare Turnstile. Sau khi gửi, chuyển tới `/bao-gia/da-gui` (`noindex`).
+**Xử lý phía server:** Astro endpoint `src/pages/api/bao-gia.ts` chạy trên Workers. Lưu vào Cloudflare D1 và gửi thông báo (email / Telegram / Zalo OA webhook). Có chống spam: Cloudflare Turnstile. Sau khi gửi, chuyển tới `/bao-gia-thanh-cong` (`noindex`).
 
 "Giỏ báo giá" lưu phía client trong `localStorage` và chỉ gửi khi submit, nên không cần tài khoản.
 
@@ -293,7 +293,7 @@ Bảng có thể lọc, gồm: loại dầu, cấp VG/NLGI, Shell, Castrol, Mobi
 | `siteName = "Chuyên Trang Dầu Công Nghiệp Chính Hãng"` làm title dài | `siteName = "Dầu Công Nghiệp Pro"`; fallback title `{title} \| Dầu Công Nghiệp Pro` |
 | Không có `og:url`, `og:image`, `og:locale`, Twitter card | Thêm `og:url` = canonical, `og:image` tuyệt đối từ `image`, `og:locale = vi_VN`, `twitter:card = summary_large_image` |
 | `meta keywords` | Có thể bỏ, vì Google không dùng. Giữ dữ liệu `keywords` trong frontmatter để làm việc nội bộ |
-| Không có robots meta | Thêm prop `noindex`, dùng cho `/bao-gia/da-gui`, trang có tham số lọc và mọi trang trên host staging |
+| Không có robots meta | Thêm prop `noindex`, dùng cho `/bao-gia-thanh-cong`, trang có tham số lọc và mọi trang trên host staging |
 
 ### 6.2. Canonical sinh tự động
 
@@ -355,13 +355,13 @@ Trang build tĩnh (prerender) sẽ không đi qua middleware. Khi đó dùng fil
 ### 7.2. Sitemap và robots
 
 - Sitemap có tại `/sitemap-index.xml` (plugin `@astrojs/sitemap`). Cần:
-  - Loại trừ `/bao-gia/da-gui` và trang noindex bằng option `filter`.
+  - Loại trừ `/bao-gia-thanh-cong` và trang noindex bằng option `filter`.
   - Thêm `lastmod` từ trường `updated`.
 - Tạo `public/robots.txt` (hiện robots.txt do Cloudflare tự sinh, chỉ có content-signal):
 
 ```
 User-agent: *
-Disallow: /bao-gia/da-gui
+Disallow: /bao-gia-thanh-cong
 Disallow: /*?*hang=
 Disallow: /*?*vg=
 Sitemap: https://{domain-chính}/sitemap-index.xml

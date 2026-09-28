@@ -8,7 +8,7 @@ import { join } from 'node:path';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const DIRS = { danhmuc: 'src/content/danhmuc', sanpham: 'src/content/sanpham', blog: 'src/content/blog' };
-const STATIC_ROUTES = ['/', '/bao-gia', '/bao-gia/da-gui', '/lien-he', '/ho-tro-ky-thuat'];
+const STATIC_ROUTES = ['/', '/bao-gia', '/bao-gia-thanh-cong', '/lien-he', '/ho-tro-ky-thuat'];
 
 const read = (dir) =>
   existsSync(join(ROOT, dir))

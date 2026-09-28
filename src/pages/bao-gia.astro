@@ -230,7 +230,7 @@ const crumbs = [
       const body = await res.json().catch(() => ({}));
       if (res.ok && body.ok) {
         (window as any).gtag?.('event', 'generate_lead', { items: data.items.length });
-        location.href = '/bao-gia/da-gui';
+        location.href = '/bao-gia-thanh-cong';
         return;
       }
       if (res.status === 400) { errorBox.textContent = body.error ?? 'Thông tin chưa hợp lệ.'; errorBox.hidden = false; }

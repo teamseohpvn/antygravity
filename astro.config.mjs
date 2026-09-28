@@ -20,7 +20,7 @@ export default defineConfig({
   adapter: cloudflare(),
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/bao-gia/da-gui') && !page.includes('/api/'),
+      filter: (page) => !page.includes('/bao-gia-thanh-cong') && !page.includes('/api/'),
     }),
     react(),
   ],

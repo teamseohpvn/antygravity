@@ -30,9 +30,12 @@ export const SITE_URL = (import.meta.env.PUBLIC_SITE_URL || FALLBACK_SITE).repla
  */
 export const INDEXABLE = import.meta.env.PUBLIC_INDEXABLE === 'true';
 
-/** Chuẩn hoá đường dẫn: bỏ "/" cuối (trừ trang chủ). */
+/**
+ * Chuẩn hoá đường dẫn: bỏ đuôi ".html", "/index" và "/" cuối (trừ trang chủ).
+ * Cần thiết vì build.format 'file' khiến Astro.url.pathname có dạng "/dau-thuy-luc.html".
+ */
 export function normalizePath(pathname: string): string {
-  const p = pathname.replace(/\/+$/, '');
+  const p = pathname.replace(/\.html$/, '').replace(/\/index$/, '').replace(/\/+$/, '');
   return p === '' ? '/' : p;
 }
 

@@ -9,7 +9,7 @@ export const GET: APIRoute = () =>
       'User-agent: *',
       'Allow: /',
       'Disallow: /api/',
-      'Disallow: /bao-gia/da-gui',
+      'Disallow: /bao-gia-thanh-cong',
       '',
       `Sitemap: ${SITE_URL}/sitemap-index.xml`,
       '',

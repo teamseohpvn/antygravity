@@ -128,7 +128,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
   const reply = (status: number, body: Record<string, unknown>) =>
     wantsJson
       ? new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json; charset=utf-8' } })
-      : redirect(status === 200 ? '/bao-gia/da-gui' : `/bao-gia?loi=${encodeURIComponent(String(body.error ?? 'Không gửi được'))}`, 303);
+      : redirect(status === 200 ? '/bao-gia-thanh-cong' : `/bao-gia?loi=${encodeURIComponent(String(body.error ?? 'Không gửi được'))}`, 303);
 
   let raw: Record<string, unknown>;
   try {
