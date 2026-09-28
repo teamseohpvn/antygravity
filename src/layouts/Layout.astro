@@ -1,52 +1,57 @@
 ---
+import { getCollection } from 'astro:content';
 import SEO from '../components/SEO.astro';
+import { BUSINESS, ADDRESS_TEXT, SITE_NAME, organizationSchema, websiteSchema } from '../lib/site';
 
 interface Props {
   title: string;
   seoTitle?: string;
   description: string;
-  keywords?: string[];
   canonical?: string;
+  image?: string;
   type?: 'website' | 'article' | 'product';
-  schemaData?: any;
+  noindex?: boolean;
+  schemaData?: object | object[];
 }
 
-const { title, seoTitle, description, keywords, canonical, type, schemaData } = Astro.props;
+const { title, seoTitle, description, canonical, image, type, noindex, schemaData } = Astro.props;
+
+// Menu danh mục sinh từ content collection, sắp theo trường `order`.
+const categories = (await getCollection('danhmuc')).sort(
+  (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99),
+);
+
+const pageSchemas = schemaData ? (Array.isArray(schemaData) ? schemaData : [schemaData]) : [];
+const schemas = [organizationSchema(), websiteSchema(), ...pageSchemas];
+
+const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
 ---
 
 <!doctype html>
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <SEO {title} {seoTitle} {description} {keywords} {canonical} {type} {schemaData} />
-    
-    <!-- Google Fonts cho UI B2B -->
+    <SEO {title} {seoTitle} {description} {canonical} {image} {type} {noindex} schemaData={schemas} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Dầu Công Nghiệp Pro",
-      "image": "https://antygravity.nhadat339shangdao.workers.dev/favicon.svg",
-      "@id": "https://antygravity.nhadat339shangdao.workers.dev/#localbusiness",
-      "url": "https://antygravity.nhadat339shangdao.workers.dev/",
-      "telephone": "0901511313",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "108 Đường Thanh Bình",
-        "addressLocality": "P Lê Thanh Nghị",
-        "addressRegion": "TP Hải Phòng",
-        "postalCode": "180000",
-        "addressCountry": "VN"
-      }
-    }
-    </script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+
+    {GA4_ID && (
+      <>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
+        <script is:inline define:vars={{ GA4_ID }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', GA4_ID);
+        </script>
+      </>
+    )}
+
     <style is:global>
       :root {
         --color-primary: #003366; /* Xanh Navy B2B */
@@ -57,153 +62,209 @@ const { title, seoTitle, description, keywords, canonical, type, schemaData } = 
         --color-white: #ffffff;
         --border-color: #e2e8f0;
       }
-      
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
         color: var(--color-text);
         background-color: var(--color-bg);
         line-height: 1.6;
       }
-      
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
 
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
+      a { text-decoration: none; color: inherit; }
+      img { max-width: 100%; height: auto; }
 
-      /* Header Style */
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+      /* Header */
       .site-header {
         background-color: var(--color-white);
         border-bottom: 1px solid var(--border-color);
-        padding: 15px 0;
+        padding: 12px 0;
         position: sticky;
         top: 0;
         z-index: 100;
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       }
-
-      .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .logo {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: var(--color-primary);
-      }
-
-      .nav-links {
-        display: flex;
-        gap: 30px;
-        list-style: none;
-      }
-
-      .nav-links a {
-        font-weight: 500;
-        transition: color 0.2s;
-      }
-
-      .nav-links a:hover {
-        color: var(--color-accent);
-      }
+      .nav-container { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+      .logo { font-size: 1.4rem; font-weight: 700; color: var(--color-primary); white-space: nowrap; }
+      .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+      .nav-links a { font-weight: 500; transition: color 0.2s; }
+      .nav-links a:hover { color: var(--color-accent); }
 
       .btn-primary {
+        display: inline-block;
         background-color: var(--color-accent);
         color: white;
         padding: 10px 20px;
         border-radius: 6px;
         font-weight: 600;
         transition: opacity 0.2s;
+        text-align: center;
       }
-
-      .btn-primary:hover {
-        opacity: 0.9;
-      }
-
-      /* Dropdown styles */
-      .dropdown {
-        position: relative;
+      .btn-primary:hover { opacity: 0.9; }
+      .btn-secondary {
         display: inline-block;
+        background: white;
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+        padding: 9px 18px;
+        border-radius: 6px;
+        font-weight: 600;
+        text-align: center;
       }
+      .btn-secondary:hover { background: #f1f5f9; }
+      a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+        outline: 2px solid var(--color-accent);
+        outline-offset: 2px;
+      }
+
+      /* Dropdown desktop */
+      .dropdown { position: relative; }
+      .dropdown > summary { list-style: none; cursor: pointer; font-weight: 500; }
+      .dropdown > summary::-webkit-details-marker { display: none; }
       .dropdown-content {
-        display: none;
         position: absolute;
         background-color: var(--color-white);
-        min-width: 220px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        min-width: 240px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         z-index: 101;
         border-radius: 6px;
-        top: 100%;
+        top: calc(100% + 10px);
         border: 1px solid var(--border-color);
         overflow: hidden;
       }
       .dropdown-content a {
         color: var(--color-text);
-        padding: 12px 16px;
-        text-decoration: none;
+        padding: 11px 16px;
         display: block;
         font-weight: 500;
         border-bottom: 1px solid var(--border-color);
       }
-      .dropdown-content a:hover {
-        background-color: var(--color-bg);
-        color: var(--color-accent);
+      .dropdown-content a:hover { background-color: var(--color-bg); color: var(--color-accent); }
+
+      /* Mobile */
+      .mobile-menu { display: none; }
+      .mobile-cta { display: none; }
+      @media (max-width: 860px) {
+        .nav-links, .header-cta { display: none; }
+        .mobile-menu { display: block; position: relative; }
+        .mobile-menu > summary { list-style: none; cursor: pointer; font-weight: 600; padding: 8px 12px; border: 1px solid var(--border-color); border-radius: 6px; }
+        .mobile-menu > summary::-webkit-details-marker { display: none; }
+        .mobile-menu nav { position: absolute; right: 0; top: calc(100% + 8px); background: white; border: 1px solid var(--border-color); border-radius: 6px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); width: min(300px, calc(100vw - 32px)); max-height: 70vh; overflow-y: auto; }
+        .mobile-menu nav a { display: block; padding: 12px 16px; border-bottom: 1px solid var(--border-color); }
+        .mobile-cta {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          position: fixed;
+          left: 0; right: 0; bottom: 0;
+          z-index: 99;
+          background: white;
+          border-top: 1px solid var(--border-color);
+          padding: 8px 8px calc(8px + env(safe-area-inset-bottom, 0px));
+          gap: 8px;
+        }
+        .mobile-cta a { padding: 10px 4px; font-size: 0.95rem; }
+        body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
       }
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
+
+      /* Footer */
+      .site-footer { background: var(--color-primary); color: white; padding: 40px 0; margin-top: 60px; }
+      .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; }
+      .site-footer h2 { font-size: 1.05rem; margin-bottom: 12px; }
+      .site-footer ul { list-style: none; }
+      .site-footer li { margin-bottom: 6px; }
+      .site-footer a { color: #e2e8f0; }
+      .site-footer a:hover { color: white; text-decoration: underline; }
+      .footer-bottom { margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 0.9rem; color: #cbd5e1; }
     </style>
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-container">
         <a href="/" class="logo">DầuCôngNghiệp<span style="color:var(--color-accent)">.pro</span></a>
+
         <ul class="nav-links">
           <li><a href="/">Trang chủ</a></li>
-          <li><a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Sản phẩm ▾</a>
-            <div class="dropdown-content">
-              <a href="/dau-thuy-luc">Dầu Thủy Lực</a>
-              <a href="/dau-banh-rang">Dầu Bánh Răng</a>
-              <a href="/mo-boi-tron-cong-nghiep">Mỡ bôi trơn công nghiệp</a>
-              <a href="/mo-chiu-nhiet">Mỡ chịu nhiệt</a>
-              <a href="/dau-truyen-nhiet">Dầu truyền nhiệt</a>
-              <a href="/dau-may-nen-khi">Dầu máy nén khí</a>
-              <a href="/dau-cat-got">Dầu cắt gọt</a>
-              <a href="/dau-ranh-truot">Dầu rãnh trượt</a>
-              <a href="/dau-hop-so-tu-dong">Dầu hộp số tự động</a>
-              <a href="/dau-chong-gi-set">Dầu chống gỉ sét</a>
-              <a href="/dau-xung-dien-edm">Dầu xung điện EDM</a>
-            </div>
+          <li>
+            <details class="dropdown">
+              <summary>Sản phẩm ▾</summary>
+              <div class="dropdown-content">
+                {categories.map((c) => <a href={`/${c.id}`}>{c.data.nav_label ?? c.data.title}</a>)}
+              </div>
+            </details>
           </li>
+          <li><a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a></li>
+          <li><a href="/lien-he">Liên hệ</a></li>
         </ul>
-        <a href="#contact" class="btn-primary">Nhận Báo Giá</a>
+        <a href="/bao-gia" class="btn-primary header-cta" data-track="add_to_quote">Nhận Báo Giá</a>
+
+        <details class="mobile-menu">
+          <summary aria-label="Mở menu">☰ Menu</summary>
+          <nav aria-label="Menu chính">
+            <a href="/">Trang chủ</a>
+            {categories.map((c) => <a href={`/${c.id}`}>{c.data.nav_label ?? c.data.title}</a>)}
+            <a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a>
+            <a href="/lien-he">Liên hệ</a>
+            <a href="/bao-gia">Nhận báo giá</a>
+          </nav>
+        </details>
       </div>
     </header>
-    
+
     <main>
       <slot />
     </main>
 
-    <footer style="background: var(--color-primary); color: white; padding: 40px 0; margin-top: 60px; text-align: center;">
+    <footer class="site-footer">
       <div class="container">
-        <p><strong>Hotline/Zalo:</strong> 0901511313 | <strong>Địa chỉ:</strong> 108 Đường Thanh Bình , P Lê Thanh Nghị , TP Hải Phòng</p>
-        <p style="margin-top: 10px;">&copy; {new Date().getFullYear()} Dầu Công Nghiệp Pro. Chuyên cung cấp giải pháp bôi trơn tối ưu nhất.</p>
+        <div class="footer-grid">
+          <div>
+            <h2>{SITE_NAME}</h2>
+            <p>{ADDRESS_TEXT}</p>
+            <p>Hotline / Zalo: <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></p>
+            <p><a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a> · <a href="/bao-gia">Gửi yêu cầu báo giá</a></p>
+          </div>
+          <div>
+            <h2>Sản phẩm</h2>
+            <ul>
+              {categories.map((c) => <li><a href={`/${c.id}`}>{c.data.nav_label ?? c.data.title}</a></li>)}
+            </ul>
+          </div>
+          <div>
+            <h2>Thông tin</h2>
+            <ul>
+              <li><a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a></li>
+              <li><a href="/lien-he">Liên hệ</a></li>
+              <li><a href="/bao-gia">Báo giá</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-bottom">&copy; {new Date().getFullYear()} {SITE_NAME}. Dầu nhớt và mỡ bôi trơn công nghiệp cho nhà máy tại Hải Phòng và miền Bắc.</p>
       </div>
     </footer>
+
+    <div class="mobile-cta" aria-label="Liên hệ nhanh">
+      <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi</a>
+      <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
+      <a href="/bao-gia" class="btn-primary" data-track="add_to_quote">Báo giá</a>
+    </div>
+
+    <script>
+      // Gửi sự kiện GA4 cho các liên kết có data-track (gọi, Zalo, báo giá).
+      document.addEventListener('click', (e) => {
+        const el = (e.target as HTMLElement | null)?.closest<HTMLElement>('[data-track]');
+        const gtag = (window as any).gtag;
+        if (!el || typeof gtag !== 'function') return;
+        gtag('event', el.dataset.track, { link_url: (el as HTMLAnchorElement).href, page_path: location.pathname });
+      });
+      // Đóng menu thả xuống khi bấm ra ngoài.
+      document.addEventListener('click', (e) => {
+        document.querySelectorAll<HTMLDetailsElement>('details.dropdown[open], details.mobile-menu[open]').forEach((d) => {
+          if (!d.contains(e.target as Node)) d.open = false;
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,11 +1,13 @@
 ---
 title: "Dầu Hộp Số Tự Động ATF (Dexron III, Dexron VI)"
+nav_label: "Dầu hộp số tự động"
+order: 9
+summary: "ATF cho xe nâng, xe tải, trợ lực lái"
 seo_title: "Dầu Hộp Số Tự Động ATF Dexron III, VI – Báo Giá Sỉ Phuy"
 description: "Dầu hộp số tự động ATF Dexron III, Dexron VI, Allison cho xe nâng, xe tải, trợ lực lái. Shell Spirax, Castrol Transmax. Có CO/CQ, VAT. Báo giá sỉ phuy, xô."
 keywords: ["dầu hộp số tự động", "dầu ATF", "dầu ATF dexron III", "nhớt hộp số tự động", "dầu hộp số xe nâng", "dầu trợ lực lái", "giá dầu hộp số tự động", "shell spirax s2 atf ax", "castrol transmax dex III", "dầu ATF dexron III phuy"]
 tags: ["dau-hop-so-tu-dong", "atf", "dexron", "shell-spirax", "castrol-transmax"]
 image: "/images/dau-hop-so-tu-dong.jpg"
-canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/dau-hop-so-tu-dong"
 ---
 
 **Dầu hộp số tự động (ATF)** vừa truyền lực trong bộ biến mô, vừa điều khiển áp suất đóng mở ly hợp, bôi trơn bánh răng hành tinh và làm mát hộp số. Mỗi hộp số yêu cầu một **tiêu chuẩn ATF** cụ thể (Dexron, Mercon, Allison, JASO hoặc tiêu chuẩn riêng của hãng xe). Chọn sai tiêu chuẩn có thể làm sang số giật hoặc trượt ly hợp. Trong nhà máy, ATF dùng nhiều nhất cho **hộp số xe nâng** và **hệ thống trợ lực lái**.

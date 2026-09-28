@@ -1,10 +1,12 @@
 ---
 title: "Dầu Truyền Nhiệt (Dầu Tải Nhiệt) Cho Lò Dầu"
+nav_label: "Dầu truyền nhiệt"
+order: 4
+summary: "Lò dầu tải nhiệt, máy ép gỗ, máy sấy"
 seo_title: "Dầu Truyền Nhiệt, Dầu Tải Nhiệt Chính Hãng – Báo Giá Sỉ"
 description: "Dầu truyền nhiệt cho lò dầu tải nhiệt, máy sấy, ép gỗ, nhuộm: Shell Heat Transfer Oil S2, Castrol Perfecto HT 5. Tư vấn chọn theo nhiệt độ. Có CO/CQ, VAT."
 keywords: ["dầu truyền nhiệt", "dầu tải nhiệt", "dầu truyền nhiệt shell", "shell heat transfer oil s2", "dầu lò dầu tải nhiệt", "dầu truyền nhiệt tổng hợp", "castrol perfecto ht 5", "mobiltherm 605"]
 tags: ["dau-truyen-nhiet", "dau-tai-nhiet", "shell-heat-transfer", "castrol-perfecto"]
-canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/dau-truyen-nhiet"
 ---
 
 **Dầu truyền nhiệt** (còn gọi là **dầu tải nhiệt**) là chất lỏng mang nhiệt từ lò đốt tới thiết bị sử dụng nhiệt trong một vòng tuần hoàn kín: máy ép gỗ, máy sấy, trục cán nóng, bồn nấu nhựa đường, máy nhuộm, lô sấy. Hệ thống dầu tải nhiệt làm việc ở **áp suất thấp** mà vẫn đạt nhiệt độ cao, thường **200–300 °C**, cao hơn nhiều so với lò hơi nước ở cùng áp suất. Chọn dầu theo **nhiệt độ dầu tối đa (bulk temperature)** của hệ thống. **Dầu gốc khoáng** dùng cho phần lớn hệ thống tới khoảng 300 °C. **Dầu tổng hợp** dùng cho mức nhiệt cao hơn.

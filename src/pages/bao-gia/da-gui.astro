@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { BUSINESS } from '../../lib/site';
+---
+
+<Layout
+  title="Đã Gửi Yêu Cầu Báo Giá"
+  description="Yêu cầu báo giá của bạn đã được gửi tới Dầu Công Nghiệp Pro."
+  noindex
+>
+  <div class="container thanks">
+    <h1>Đã gửi yêu cầu báo giá</h1>
+    <p>Cảm ơn bạn. Nhân viên kinh doanh sẽ liên hệ lại qua điện thoại hoặc Zalo trong giờ làm việc.</p>
+    <p>Cần gấp? Gọi hoặc nhắn Zalo <a href={`tel:${BUSINESS.phone}`} data-track="click_tel"><strong>{BUSINESS.phoneDisplay}</strong></a>.</p>
+    <p><a href="/" class="btn-secondary">Về trang chủ</a></p>
+  </div>
+</Layout>
+
+<style>
+  .thanks { max-width: 640px; margin: 60px auto; background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 40px; display: grid; gap: 14px; }
+  .thanks h1 { color: var(--color-primary); }
+  .thanks a strong { color: var(--color-accent); }
+</style>

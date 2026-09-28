@@ -1,0 +1,8 @@
+# Sao chép thành .dev.vars khi chạy local (không commit .dev.vars).
+# Biến PUBLIC_* đọc lúc build; đặt trong môi trường build cho production.
+PUBLIC_SITE_URL=https://antygravity.nhadat339shangdao.workers.dev
+PUBLIC_INDEXABLE=false
+PUBLIC_GA4_ID=
+QUOTE_TELEGRAM_BOT_TOKEN=
+QUOTE_TELEGRAM_CHAT_ID=
+QUOTE_WEBHOOK_URL=

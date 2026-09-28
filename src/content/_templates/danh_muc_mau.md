@@ -1,12 +1,13 @@
 ---
-title: "[Tên Danh Mục Hấp Dẫn - Tối đa 60-70 ký tự]"
-seo_title: "[Title SEO - Tiêu đề hiển thị trên Google]"
-description: "[Mô tả chuẩn SEO dài 155-160 ký tự, chứa từ khóa chính và kêu gọi hành động (Call to Action)]"
+title: "[H1: tên loại + tên gọi thông dụng + cấp phổ biến]"
+nav_label: "[Tên ngắn trên menu]"
+order: 99
+summary: "[Mô tả ngắn trên thẻ danh mục ở trang chủ]"
+seo_title: "[Title SEO <= 60 ký tự, từ khóa chính ở đầu, không ghi năm]"
+description: "[<= 155 ký tự: từ khóa, hãng, CO/CQ, quy cách, khu vực]"
 keywords: ["từ khóa 1", "từ khóa 2", "từ khóa phụ"]
 tags: ["the-1", "the-2"]
 image: "/images/danh-muc/default-bg.jpg"
-canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/danh-muc/[slug-danh-muc]"
-order: 1
 ---
 
 ## Tổng quan danh mục

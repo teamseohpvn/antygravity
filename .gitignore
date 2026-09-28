@@ -26,3 +26,6 @@ pnpm-debug.log*
 # wrangler state
 .wrangler/
 
+
+# local Cloudflare secrets
+.dev.vars

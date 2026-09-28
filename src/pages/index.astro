@@ -1,111 +1,111 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import QuoteCta from '../components/QuoteCta.astro';
 import { getCollection } from 'astro:content';
 
 const products = await getCollection('sanpham');
+const categories = (await getCollection('danhmuc')).sort(
+  (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99),
+);
+const posts = (await getCollection('blog'))
+  .sort((a, b) => new Date(b.data.date ?? 0).valueOf() - new Date(a.data.date ?? 0).valueOf())
+  .slice(0, 3);
 
-// Schema Homepage
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Dầu Công Nghiệp Pro",
-  "url": "https://daucongnghiep-pro.vn",
-  "description": "Nhà phân phối dầu thủy lực, dầu bánh răng, dầu cắt gọt chính hãng Castrol, Shell, Total."
-};
+const grade = (p: (typeof products)[number]) =>
+  p.data.vg ? `VG ${p.data.vg}` : p.data.nlgi ? `NLGI ${p.data.nlgi}` : null;
 ---
 
-<Layout 
-  title="Nhà Phân Phối Dầu Nhớt Công Nghiệp Chính Hãng"
-  seoTitle="Đại Lý Phân Phối Dầu Công Nghiệp Chính Hãng Cấp 1"
-  description="Giải pháp bôi trơn toàn diện cho nền công nghiệp Việt Nam. Cung cấp Dầu Thủy Lực, Dầu Bánh Răng từ các hãng hàng đầu."
-  keywords={["dầu công nghiệp", "dầu thủy lực", "dầu bánh răng", "mỡ bôi trơn"]}
-  canonical="https://daucongnghiep-pro.vn/"
-  schemaData={schemaData}
+<Layout
+  title="Dầu Nhớt Công Nghiệp, Mỡ Bôi Trơn Chính Hãng"
+  seoTitle="Dầu Nhớt Công Nghiệp, Mỡ Bôi Trơn Chính Hãng – Hải Phòng"
+  description="Dầu thủy lực, mỡ bò, dầu bánh răng, dầu truyền nhiệt, dầu máy nén khí Shell, Castrol cho nhà máy. Có CO/CQ, VAT. Báo giá sỉ phuy, xô tại Hải Phòng."
+  image="/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg"
 >
-  <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-content">
-      <h1>Đại Lý Phân Phối Dầu Công Nghiệp & Mỡ Bôi Trơn Chính Hãng</h1>
-      <p>Cung cấp Dầu Thủy Lực, Dầu Bánh Răng công nghiệp chính hãng 100%. Tối ưu hiệu suất, kéo dài tuổi thọ máy móc.</p>
-      <a href="/dau-thuy-luc" class="btn-primary" style="padding: 15px 30px; font-size: 1.1rem; display: inline-block;">Xem Sản Phẩm Tốt Nhất</a>
+      <h1>Dầu nhớt công nghiệp và mỡ bôi trơn chính hãng cho nhà máy</h1>
+      <p>Dầu thủy lực, mỡ bò, dầu bánh răng, dầu truyền nhiệt, dầu máy nén khí Shell, Castrol. Có CO/CQ, hóa đơn VAT, tư vấn chọn sản phẩm tương đương. Giao tại Hải Phòng và các tỉnh miền Bắc.</p>
+      <div class="hero-actions">
+        <a href="/bao-gia" class="btn-primary" data-track="add_to_quote">Nhận báo giá sỉ</a>
+        <a href="/dau-thuy-luc" class="btn-secondary">Xem dầu thủy lực</a>
+      </div>
     </div>
   </section>
 
-  <!-- Categories Grid -->
-  <section class="categories container">
-    <h2 class="section-title">Khám Phá Theo Ứng Dụng</h2>
+  <section class="categories container" aria-labelledby="cat-title">
+    <h2 class="section-title" id="cat-title">Danh mục sản phẩm</h2>
     <div class="grid">
-      <a href="/dau-thuy-luc" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg');">
-        <h3>Dầu Thủy Lực</h3>
-        <p>Hệ thống bơm thủy lực, máy ép nhựa</p>
-      </a>
-      <a href="/dau-banh-rang" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-banh-rang-cong-nghiep.jpg');">
-        <h3>Dầu Bánh Răng</h3>
-        <p>Hộp số công nghiệp, giảm tốc kín</p>
-      </a>
-      <a href="/mo-boi-tron-cong-nghiep" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/mo-boi-tron-cong-nghiep.jpg');">
-        <h3>Mỡ bôi trơn</h3>
-        <p>Bôi trơn vòng bi, ổ đỡ</p>
-      </a>
-      <a href="/mo-chiu-nhiet" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/mo-chiu-nhiet-do-cao.jpg');">
-        <h3>Mỡ chịu nhiệt</h3>
-        <p>Ứng dụng nhiệt độ cao</p>
-      </a>
-      <a href="/dau-may-nen-khi" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-may-nen-khi-cong-nghiep.jpg');">
-        <h3>Dầu máy nén khí</h3>
-        <p>Máy nén khí trục vít, piston</p>
-      </a>
-      <a href="/dau-ranh-truot" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-ranh-truot-may-cnc.jpg');">
-        <h3>Dầu rãnh trượt</h3>
-        <p>Hệ thống rãnh trượt máy CNC</p>
-      </a>
-      <a href="/dau-hop-so-tu-dong" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-hop-so-tu-dong.jpg');">
-        <h3>Dầu hộp số tự động</h3>
-        <p>Hộp số ATF, tuần hoàn</p>
-      </a>
-      <a href="/dau-chong-gi-set" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-chong-gi-set-kim-loai.jpg');">
-        <h3>Dầu chống gỉ sét</h3>
-        <p>Bảo vệ kim loại chống ăn mòn</p>
-      </a>
-      <a href="/dau-xung-dien-edm" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/dau-xung-dien-edm.jpg');">
-        <h3>Dầu xung điện EDM</h3>
-        <p>Gia công tia lửa điện</p>
-      </a>
-    </div>
-  </section>
-
-  <!-- Featured Products -->
-  <section class="products container">
-    <h2 class="section-title">Sản Phẩm Bán Chạy</h2>
-    <div class="grid">
-      {products.map(product => (
-        <div class="product-card">
-          <img src={product.data.images && product.data.images.length > 0 ? product.data.images[0] : (product.data.image || '/images/product-default.jpg')} alt={product.data.title} loading="lazy" decoding="async" />
-          <div class="product-info">
-            <span class="badge">{product.data.brand}</span>
-            <span class="badge badge-outline">VG {product.data.vg}</span>
-            <h3><a href={`/${product.data.category}/${product.id}`}>{product.data.title}</a></h3>
-            <p>{product.data.description.substring(0, 80)}...</p>
-          </div>
-        </div>
+      {categories.map((c) => (
+        <a
+          href={`/${c.id}`}
+          class="category-card"
+          style={c.data.image ? `background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('${c.data.image}');` : undefined}
+        >
+          <h3>{c.data.nav_label ?? c.data.title}</h3>
+          {c.data.summary && <p>{c.data.summary}</p>}
+        </a>
       ))}
     </div>
   </section>
+
+  <section class="why container" aria-labelledby="why-title">
+    <h2 class="section-title" id="why-title">Vì sao nhà máy chọn Dầu Công Nghiệp Pro</h2>
+    <ul class="why-grid">
+      <li><strong>Hàng chính hãng, đủ giấy tờ</strong><span>CO/CQ theo lô, hóa đơn VAT, TDS và SDS cho hồ sơ mua hàng.</span></li>
+      <li><strong>Tư vấn sản phẩm tương đương</strong><span>Đối chiếu Shell, Castrol, Mobil, TotalEnergies theo cấp độ nhớt và tiêu chuẩn.</span></li>
+      <li><strong>Giao tại Hải Phòng và miền Bắc</strong><span>Phục vụ KCN Đình Vũ, Tràng Duệ, VSIP, Đại An, Quế Võ, Phố Nối.</span></li>
+    </ul>
+    <QuoteCta />
+  </section>
+
+  {products.length > 0 && (
+    <section class="products container" aria-labelledby="prod-title">
+      <h2 class="section-title" id="prod-title">Sản phẩm tiêu biểu</h2>
+      <div class="grid">
+        {products.map((product) => (
+          <article class="product-card">
+            {(product.data.images?.[0] ?? product.data.image) && (
+              <img src={product.data.images?.[0] ?? product.data.image} alt={product.data.title} width="400" height="200" loading="lazy" decoding="async" />
+            )}
+            <div class="product-info">
+              <span class="badge">{product.data.brand}</span>
+              {grade(product) && <span class="badge badge-outline">{grade(product)}</span>}
+              <h3><a href={`/${product.data.category}/${product.id}`}>{product.data.title}</a></h3>
+              <p>{product.data.description.length > 90 ? product.data.description.slice(0, 90) + '…' : product.data.description}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {posts.length > 0 && (
+    <section class="posts container" aria-labelledby="post-title">
+      <h2 class="section-title" id="post-title">Kiến thức kỹ thuật</h2>
+      <ul class="post-list">
+        {posts.map((post) => (
+          <li><a href={`/ho-tro-ky-thuat/${post.id}`}>{post.data.title}</a><span>{post.data.description}</span></li>
+        ))}
+      </ul>
+    </section>
+  )}
 </Layout>
 
 <style>
   .hero {
-    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover;
+    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)), url('/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg') center/cover;
     color: white;
     padding: 100px 0;
     text-align: center;
   }
-  .hero h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
-  .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; opacity: 0.9; }
+  .hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); margin-bottom: 20px; line-height: 1.2; text-wrap: balance; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .hero-actions .btn-primary, .hero-actions .btn-secondary { padding: 14px 26px; font-size: 1.05rem; }
+  .hero p { font-size: 1.15rem; max-width: 720px; margin: 0 auto 30px; opacity: 0.9; }
   
   .section-title { text-align: center; font-size: 2rem; margin: 60px 0 30px; color: var(--color-primary); }
   
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 40px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 30px; margin-bottom: 40px; }
   
   .category-card { 
     background-color: #333; 
@@ -136,4 +136,14 @@ const schemaData = {
   .product-info h3 a:hover { color: var(--color-accent); }
   .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-right: 5px; }
   .badge-outline { background: transparent; border: 1px solid #cbd5e1; }
+  .hero { padding: clamp(60px, 10vw, 100px) 0; }
+  .category-card { background-color: var(--color-primary); }
+  .why-grid { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px; }
+  .why-grid li { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 6px; }
+  .why-grid strong { color: var(--color-primary); }
+  .why-grid span { color: var(--color-text-light); }
+  .post-list { list-style: none; display: grid; gap: 12px; }
+  .post-list li { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px 20px; display: flex; flex-direction: column; gap: 4px; }
+  .post-list a { color: var(--color-primary); font-weight: 600; }
+  .post-list span { color: var(--color-text-light); font-size: 0.95rem; }
 </style>
