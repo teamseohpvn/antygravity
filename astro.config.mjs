@@ -14,6 +14,9 @@ export default defineConfig({
   // Xuất /dau-thuy-luc.html thay vì /dau-thuy-luc/index.html để Cloudflare phục vụ
   // URL không có "/" cuối trực tiếp (trước đây bị redirect 307 sang URL có "/").
   build: { format: 'file' },
+  // Site không dùng Astro sessions. Tắt để adapter không yêu cầu KV binding "SESSION"
+  // (deploy từng lỗi khi wrangler cố tạo lại namespace "antygravity-session" đã tồn tại).
+  session: false,
   adapter: cloudflare(),
   integrations: [
     sitemap({
