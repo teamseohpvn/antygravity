@@ -1,78 +1,77 @@
 ---
-title: "Dầu Bánh Răng Công Nghiệp (Industrial Gear Oil)"
-seo_title: "Dầu Bánh Răng Hộp Số Công Nghiệp 150, 220, 320, 460 | Shell Omala, Castrol Alpha SP Chính Hãng"
-description: "Đại lý phân phối dầu bánh răng công nghiệp ISO VG 150, 220, 320, 460 chịu cực áp EP. Chính hãng Shell Omala, Castrol Alpha SP, cam kết CO/CQ, giá sỉ tốt nhất 2026."
-keywords: ["dầu bánh răng", "dầu bánh răng công nghiệp", "dầu bánh răng 220", "dầu bánh răng 320", "dầu bánh răng 150", "dầu bánh răng 460", "shell omala s2 gx 220", "castrol alpha sp 220", "dầu hộp giảm tốc", "báo giá dầu bánh răng phuy 209l"]
-tags: ["dau-banh-rang", "shell-omala", "castrol-alpha-sp", "iso-vg-220", "iso-vg-320", "iso-vg-460"]
+title: "Dầu Bánh Răng Công Nghiệp 150, 220, 320, 460"
+seo_title: "Dầu Bánh Răng Công Nghiệp 220, 320 Chính Hãng – Báo Giá Sỉ"
+description: "Dầu bánh răng, dầu hộp giảm tốc công nghiệp ISO VG 150–680 Shell Omala, Castrol Alpha SP, Mobilgear 600 XP. Có CO/CQ, VAT. Báo giá sỉ phuy 209L, xô 20L."
+keywords: ["dầu bánh răng", "dầu bánh răng công nghiệp", "dầu bánh răng 220", "dầu bánh răng 320", "dầu bánh răng 150", "dầu hộp giảm tốc", "dầu bánh răng tổng hợp", "shell omala s2 gx 220", "shell omala s2 gx 320", "mobilgear 600 xp 220", "castrol alpha sp 220", "total carter ep 220"]
+tags: ["dau-banh-rang", "dau-hop-giam-toc", "shell-omala", "castrol-alpha", "iso-vg-220", "iso-vg-320"]
 image: "/images/dau-banh-rang-cong-nghiep.jpg"
 canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/dau-banh-rang"
 ---
 
-## Tổng quan về Dầu Bánh Răng Công Nghiệp (Industrial Gear Oil)
+**Dầu bánh răng công nghiệp** dùng cho hộp số kín và **hộp giảm tốc** của băng tải, máy khuấy, máy đùn, máy nghiền, cẩu trục. Phần lớn là **dầu chịu cực áp (EP)** loại **CLP** theo DIN 51517-3. Cấp phổ biến nhất là **ISO VG 220**, tiếp theo là **320**. Cấp độ nhớt đúng luôn là cấp ghi trên nhãn hộp số, vì nhà sản xuất tính theo tốc độ, tải và nhiệt độ làm việc.
 
-Dầu bánh răng công nghiệp (*Industrial Enclosed Gear Oil*) là chất bôi trơn chuyên dụng được thiết kế đặc thù cho các bộ truyền bánh răng kín, hộp giảm tốc, khớp nối trục và ổ đỡ chịu tải trọng từ trung bình đến cực nặng. Trong các nhà máy luyện kim, sản xuất xi măng, dệt may, chế biến gỗ, nhựa và khai thác khoáng sản, các cặp bánh răng trụ răng thẳng, răng nghiêng, bánh răng nón và trục vít - bánh vít phải làm việc dưới ứng suất tiếp xúc bề mặt khổng lồ lên tới hàng nghìn megapascal.
+## Chọn độ nhớt dầu bánh răng
 
-Năm 2026, các tiêu chuẩn sản xuất hiện đại đòi hỏi dầu bánh răng không chỉ có khả năng chịu cực áp (EP - Extreme Pressure) vượt trội để chống hiện tượng rỗ tế vi (micro-pitting), nứt vỡ chân răng mà còn phải có tính năng khử nhũ tương nhanh, chống oxy hóa bền bỉ và tương thích hoàn hảo với gioăng phớt cao su kỹ thuật.
-
----
-
-## Bảng Cấp Độ Nhớt Tiêu Chuẩn Dầu Bánh Răng ISO VG
-
-Theo phân cấp độ nhớt ISO 3448 và tiêu chuẩn Hiệp hội các nhà sản xuất bánh răng Hoa Kỳ (AGMA):
-
-| Cấp độ nhớt ISO VG | Cấp AGMA tương đương | Độ nhớt tại 40°C (cSt) | Cơ cấu bánh răng & Điều kiện vận hành |
+| ISO VG | AGMA tương đương | Độ nhớt ở 40 °C (cSt) | Dùng cho |
 | :--- | :--- | :--- | :--- |
-| **ISO VG 150** | AGMA 4 EP | 135 – 165 | Hộp số tốc độ cao, tải nhẹ đến vừa, hoạt động ở nhiệt độ môi trường mát hoặc mùa đông. |
-| **ISO VG 220** | AGMA 5 EP | 198 – 242 | Cấp độ nhớt phổ biến nhất (>65% thị trường). Dùng cho hộp giảm tốc băng tải, cẩu trục, máy khuấy, máy đùn. |
-| **ISO VG 320** | AGMA 6 EP | 288 – 352 | Hộp giảm tốc tải nặng, tốc độ quay thấp hoặc làm việc trong môi trường nhiệt độ cao (lò nung, máy ép gỗ). |
-| **ISO VG 460** | AGMA 7 EP | 414 – 506 | Hộp số máy nghiền quặng, máy cán thép, máy nghiền clinker xi măng, trục vít bánh vít chịu tải trọng va đập lớn. |
-| **ISO VG 680** | AGMA 8 EP | 612 – 748 | Hộp số hở hoặc kín siêu tải, tốc độ cực chậm, truyền động trục vít chịu ma sát trượt lớn. |
+| **150** | 4 EP | 135 – 165 | Hộp số tốc độ cao, tải nhẹ đến vừa |
+| **220** | 5 EP | 198 – 242 | Phổ biến nhất: hộp giảm tốc băng tải, máy khuấy, cẩu trục |
+| **320** | 6 EP | 288 – 352 | Tải nặng, tốc độ chậm, môi trường nóng |
+| **460** | 7 EP | 414 – 506 | Máy nghiền, máy cán, hộp số trục vít – bánh vít |
+| **680** | 8 EP | 612 – 748 | Tải rất nặng, tốc độ rất chậm, trục vít – bánh vít lớn |
+
+**Hộp số trục vít – bánh vít** (bánh vít bằng đồng) cần lưu ý thêm. Một số dầu EP chứa lưu huỳnh – phốt pho có thể không phù hợp với bánh vít đồng ở nhiệt độ cao. Nhiều nhà sản xuất khuyến nghị dầu tổng hợp PAG hoặc dầu bánh răng chuyên cho trục vít. Hãy đối chiếu sổ tay hộp số.
+
+## Dòng sản phẩm và sản phẩm tương đương
+
+| Loại | Shell | Castrol | Mobil | TotalEnergies |
+| :--- | :--- | :--- | :--- | :--- |
+| Gốc khoáng EP (CLP) | Omala S2 GX 150 / 220 / 320 / 460 | Alpha SP 150 / 220 / 320 / 460 | Mobilgear 600 XP 150 / 220 / 320 / 460 | Carter EP 150 / 220 / 320 / 460 |
+| Tổng hợp PAO | Omala S4 GX 220 / 320 / 460 | Optigear Synthetic X 220 / 320 / 460 | Mobil SHC 630 / 632 / 634 | Carter SH 220 / 320 / 460 |
+
+<!-- TODO: xác minh mã đang có hàng; bỏ cột hãng không phân phối. -->
+
+- **Shell Omala S2 GX:** dầu bánh răng gốc khoáng chịu cực áp, đáp ứng DIN 51517-3 (CLP). Cấp tải hỏng FZG (A/8.3/90) **trên 12**, là cấp cao nhất của phép thử.
+- **Shell Omala S4 GX:** dầu tổng hợp PAO, dải nhiệt rộng, kéo dài chu kỳ thay dầu so với dầu khoáng.
+- **Castrol Alpha SP:** dầu bánh răng EP gốc khoáng, đáp ứng DIN 51517-3 và AGMA 9005.
+- **Castrol Optigear Synthetic X:** dầu tổng hợp cho hộp số chịu tải nặng, nhiệt độ cao.
+
+## Chỉ tiêu cần xem trên bảng thông số (TDS)
+
+- **Khả năng chịu tải FZG (ISO 14635-1, A/8.3/90):** DIN 51517-3 yêu cầu tối thiểu cấp tải hỏng 12. Dầu bánh răng EP tốt thường ghi "> 12".
+- **Chống rỗ tế vi (micropitting, FVA 54):** quan trọng với bánh răng tôi cứng bề mặt.
+- **Tách nước (ASTM D1401):** hộp số trong môi trường ẩm dễ lẫn nước.
+- **Chống tạo bọt (ASTM D892)** và **tương thích phớt** (NBR, FKM).
+
+## Ứng dụng theo ngành
+
+- **Thép, cán kim loại:** hộp số giá cán, bàn con lăn. Thường dùng VG 320 hoặc 460.
+- **Xi măng, khai khoáng:** máy nghiền, băng tải đá, lò quay.
+- **Nhựa, cao su:** hộp số máy đùn, máy luyện cao su.
+- **Đóng gói, thực phẩm:** hộp giảm tốc băng chuyền. Vị trí có thể tiếp xúc thực phẩm cần dầu NSF H1.
+
+## Quy cách và báo giá
+
+- **Quy cách:** phuy 209 lít; xô 18–20 lít. Quy cách tùy mã hàng.
+- **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS.
+- **Giao hàng:** KCN Đình Vũ, Tràng Duệ, Nomura (Hải Phòng); Đại An, Nam Sách (khu vực Hải Dương cũ); VSIP, Quế Võ (Bắc Ninh); Phố Nối (Hưng Yên).
+
+**Nhận báo giá dầu bánh răng:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**. Gửi ảnh nhãn hộp số (hãng, model, cấp dầu) để được tư vấn đúng loại.
+
+## Câu hỏi thường gặp
+
+### Dầu bánh răng 220 và 320 thay cho nhau được không?
+
+Không nên tự thay. VG 320 đặc hơn VG 220 khoảng 45%. Dùng dầu đặc hơn yêu cầu làm tăng ma sát khuấy dầu, hộp số nóng hơn và tốn điện hơn. Dùng dầu loãng hơn làm màng dầu mỏng, bánh răng mòn nhanh. Chỉ đổi cấp khi nhà sản xuất hộp số cho phép, ví dụ dùng cấp cao hơn cho mùa nóng.
+
+### Khi nào nên dùng dầu bánh răng tổng hợp?
+
+Khi nhiệt độ dầu trong hộp số thường xuyên trên khoảng 80–90 °C, khi hộp số khó tiếp cận để thay dầu, hoặc khi muốn kéo dài chu kỳ thay dầu. Dầu tổng hợp đắt hơn nhưng tổng chi phí có thể thấp hơn nhờ ít lần thay và ít dừng máy.
+
+### Bao lâu thay dầu hộp giảm tốc?
+
+Với dầu khoáng, nhiều nhà sản xuất hộp số khuyến nghị thay sau khoảng 5.000–10.000 giờ chạy, hoặc ít nhất 1–2 năm một lần. Lần thay đầu tiên sau chạy rà thường sớm hơn. Dầu tổng hợp có thể kéo dài gấp 2–3 lần. Phân tích mẫu dầu giúp xác định chính xác.
 
 ---
 
-## Các Dòng Dầu Bánh Răng Shell & Castrol Đáng Mua Nhất 2026
-
-### 1. Dòng dầu Shell Omala (Công nghệ bảo vệ bánh răng chuẩn quốc tế)
-* **Shell Omala S2 GX (ISO VG 68, 100, 150, 220, 320, 460, 680):** Dòng dầu khoáng chịu cực áp (EP) không chì chất lượng cao, đạt tiêu chuẩn DIN 51517-3 (CLP), ISO 12925-1 CKD và Siemens/Flender. Khả năng chịu tải FZG > 14, tính năng tách nước xuất sắc giúp bảo vệ bề mặt răng khỏi hiện tượng rỗ bề mặt (micro-pitting).
-* **Shell Omala S4 GX (ISO VG 150, 220, 320, 460):** Dòng dầu bánh răng gốc tổng hợp toàn phần Polyalphaolefin (PAO), mang lại tuổi thọ kéo dài gấp 3 - 5 lần so với dầu khoáng, hoạt động bền bỉ trong dải nhiệt độ cực hạn từ -40°C đến 150°C, giảm ma sát và tiết kiệm tới 3% điện năng tiêu thụ cho mô tơ.
-
-### 2. Dòng dầu Castrol Alpha SP & Tribol
-* **Castrol Alpha SP (ISO VG 68, 100, 150, 220, 320, 460, 680):** Dầu bánh răng công nghiệp phụ gia lưu huỳnh - phốt pho cao cấp, bền nhiệt, khả năng chống tạo bọt tuyệt vời và không gây ăn mòn hợp kim đồng, thau. Đáp ứng đầy đủ tiêu chuẩn DIN 51517 Part 3 và AGMA 9005-E02.
-* **Castrol Tribol GR / Optigear:** Giải pháp bôi trơn bánh răng đặc biệt bổ sung công nghệ làm phẳng bề mặt ma sát vi mô (MFT - Microflux Trans), tự làm lành các vết xước vi mô trên bề mặt răng bị tổn thương.
-
----
-
-## Đặc Tính Kỹ Thuật Bắt Buộc của Dầu Bánh Răng Chất Lượng Cao
-
-1. **Khả năng chịu tải trọng cực áp và tải va đập (EP Property):** Ngăn ngừa hiện tượng hàn dính bề mặt kim loại khi răng ăn khớp dưới áp lực cực cao nhờ màng sunfua - photphat bền vững.
-2. **Khả năng chống rỗ tế vi (Micro-pitting Resistance):** Rỗ tế vi là nguyên nhân hàng đầu gây mẻ răng hộp số công nghiệp hiện đại. Dầu chuẩn DIN CLP kiểm soát triệt để hiện tượng này.
-3. **Tính năng khử nhũ tương và tách nước (Water Demulsibility):** Môi trường nhà máy ẩm ướt dễ khiến nước xâm nhập hộp số. Dầu phải tách nước hoàn toàn để hệ số bôi trơn không bị suy giảm.
-4. **Tương thích vật liệu làm kín (Seal Compatibility):** Không gây co ngót, phồng rộp hay giòn rách phớt cao su NBR, FKM (Viton), ngăn chặn rò rỉ dầu gây thất thoát và bẩn sàn xưởng.
-
----
-
-## Ứng Dụng Trong Các Ngành Công Nghiệp Nặng
-
-* **Nhà máy sản xuất Thép & Cán kim loại:** Hộp số truyền động giá cán thô, cán tinh, bàn con lăn tiếp liệu yêu cầu dầu VG 320 hoặc VG 460 chịu nhiệt và nước làm mát.
-* **Ngành Xi măng & Khai khoáng:** Máy nghiền bi, nghiền trục con lăn đứng, lò quay clinker, băng tải vận chuyển đá dăm sử dụng Shell Omala S2 GX 460/320.
-* **Công nghiệp Nhựa & Cao su:** Máy đùn nhựa trục vít đôi, máy luyện cao su hai trục chịu mô-men xoắn cao liên tục.
-* **Dây chuyền Đóng gói & Thực phẩm:** Hộp số giảm tốc băng chuyền đóng thùng, máy dán nhãn, máy chiết rót.
-
----
-
-## Phân Phối Dầu Bánh Răng Giá Sỉ Toàn Miền Bắc
-
-Tổng kho dầu công nghiệp chúng tôi cung cấp đầy đủ các mã dầu bánh răng Shell, Castrol, TotalEnergies, Mobil:
-* **Bao bì chuẩn:** Phuy sắt 209 Lít nguyên đai nguyên kiện hoặc Xô nhựa 20 Lít cho các nhu cầu bảo dưỡng định kỳ nhỏ lẻ.
-* **Giao hàng thần tốc:** Hệ thống xe tải giao hàng tận xưởng tại các KCN Tràng Duệ, Đình Vũ, Nomura (Hải Phòng), Đại An, Nam Sách, Tân Trường (Hải Dương), VSIP Bắc Ninh, Phố Nối (Hưng Yên).
-* **Đầy đủ hồ sơ năng lực:** CO, CQ, chứng chỉ xuất xưởng từ nhà máy Shell/Castrol Việt Nam, hóa đơn VAT điện tử ngay trong ngày.
-
----
-
-## Câu Hỏi Thường Gặp (FAQ)
-
-### 1. Khi nào nên dùng dầu bánh răng tổng hợp (PAO) thay vì dầu khoáng thông thường?
-Nên chuyển sang dùng dầu bánh răng tổng hợp (như Shell Omala S4 GX) khi hộp số làm việc trong điều kiện: nhiệt độ bồn dầu thường xuyên vượt quá 90°C, hộp số đặt ở vị trí khó bảo dưỡng trên cao, hoặc dây chuyền đòi hỏi kéo dài chu kỳ thay dầu lên trên 2 - 3 năm không gián đoạn.
-
-### 2. Dầu bánh răng 220 và 320 khác nhau thế nào, có thay thế cho nhau được không?
-Dầu VG 220 loãng hơn dầu VG 320 ở cùng nhiệt độ làm việc. Khuyến cáo tuân thủ nghiêm ngặt chỉ dẫn của nhà sản xuất hộp số (OEM). Nếu hộp số đang dùng 220 mà thay bằng 320 có thể làm tăng ma sát nhớt, tăng nhiệt độ hoạt động và hao phí năng lượng; ngược lại nếu thay bằng dầu quá loãng sẽ không đủ độ dày màng dầu chịu tải gây mài mòn răng.
+**Xem thêm:** [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep) · [Dầu thủy lực](/dau-thuy-luc) · [Dầu máy nén khí](/dau-may-nen-khi)

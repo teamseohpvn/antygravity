@@ -1,83 +1,97 @@
 ---
-title: "Dầu Thủy Lực (Hydraulic Oil)"
-seo_title: "Dầu Thủy Lực 32, 46, 68 Chính Hãng Shell, Castrol | Báo Giá Sỉ Phuy 209L, Xô 20L 2026"
-description: "Tổng đại lý phân phối dầu thủy lực 32, 46, 68 chính hãng Shell Tellus, Castrol Hyspin. Cam kết CO/CQ, giá sỉ tốt nhất tại Hải Phòng, Hải Dương, Bắc Ninh, giao nhanh trong ngày."
-keywords: ["dầu thủy lực", "dầu thủy lực 68", "dầu thủy lực 46", "dầu thủy lực 32", "dầu thủy lực castrol", "dầu thủy lực shell", "shell tellus s2 mx 68", "castrol hyspin aws 68", "giá dầu thủy lực phuy 209l", "đại lý dầu thủy lực hải phòng", "mua dầu thủy lực tại hải dương"]
+title: "Dầu Thủy Lực (Dầu Nhớt Thủy Lực) 32, 46, 68"
+seo_title: "Dầu Thủy Lực 32, 46, 68 Chính Hãng – Báo Giá Sỉ Phuy, Xô"
+description: "Dầu nhớt thủy lực ISO VG 32, 46, 68 Shell Tellus, Castrol Hyspin, có CO/CQ và VAT. Báo giá sỉ phuy 209L, xô 18–20L, giao tại Hải Phòng và miền Bắc."
+keywords: ["dầu thủy lực", "dầu nhớt thủy lực", "nhớt thủy lực", "dầu thủy lực 68", "dầu thủy lực 46", "dầu thủy lực 32", "dầu thủy lực AW 68", "nhớt thủy lực 68", "dầu thủy lực vg 68", "dầu thủy lực shell", "dầu thủy lực castrol", "shell tellus s2 mx 68", "shell tellus s2 mx 46", "castrol hyspin aws 68"]
 tags: ["dau-thuy-luc", "shell-tellus", "castrol-hyspin", "iso-vg-68", "iso-vg-46", "iso-vg-32"]
 image: "/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg"
 canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/dau-thuy-luc"
 ---
 
-## Tổng quan về Dầu Thủy Lực Công Nghiệp (Hydraulic Oil)
+**Dầu thủy lực** (còn gọi là **dầu nhớt thủy lực** hay **nhớt thủy lực**) là chất lỏng truyền áp lực trong bơm, van và xi-lanh, đồng thời bôi trơn, làm mát và chống gỉ cho hệ thống. Ba cấp phổ biến nhất là **ISO VG 32, 46 và 68**. Chọn cấp nào phụ thuộc vào nhiệt độ dầu khi máy chạy và khuyến cáo của nhà sản xuất bơm. Với máy ép nhựa và máy ép thủy lực chạy liên tục trong nhà xưởng ở miền Bắc, **dầu thủy lực 68** là lựa chọn thường gặp nhất. Máy công trình và hệ thống làm việc ngoài trời hay dùng **dầu thủy lực 46**.
 
-Dầu thủy lực (*Hydraulic Fluid*) đóng vai trò như "mạch máu" vận hành toàn bộ hệ thống cơ cấu chấp hành, bơm và xi-lanh thủy lực trong các nhà máy sản xuất, thiết bị công trình và tàu biển. Không chỉ đơn thuần thực hiện nhiệm vụ truyền tải áp lực năng lượng, dầu thủy lực cao cấp thế hệ mới còn chịu trách nhiệm bôi trơn các bề mặt ma sát trượt, tản nhiệt làm mát, chống oxy hóa, làm kín khe hở và bảo vệ chi tiết kim loại trước sự ăn mòn và mài mòn khắc nghiệt.
+## Chọn độ nhớt dầu thủy lực: 32, 46 hay 68?
 
-Trong môi trường vận hành công nghiệp hiện đại năm 2026, áp suất làm việc của bơm thủy lực ngày càng nâng cao (vượt mức 250 - 350 bar) kết hợp với chu kỳ hoạt động liên tục. Việc lựa chọn đúng dòng dầu thủy lực chất lượng cao với độ nhớt tiêu chuẩn ISO VG 32, 46 hoặc 68 là yếu tố sống còn giúp kéo dài tuổi thọ bơm van, ngăn ngừa tắc nghẽn van tỉ lệ và cắt giảm tối đa chi phí bảo trì đột xuất.
+Độ nhớt được đo ở 40 °C theo ISO 3448. Mỗi cấp VG cho phép sai lệch ±10% quanh giá trị danh định.
 
----
-
-## Phân loại Dầu Thủy Lực theo Cấp Độ Nhớt ISO VG
-
-Độ nhớt động học đo ở 40°C theo tiêu chuẩn ISO 3448 là chỉ số cốt lõi xác định khả năng bôi trơn và truyền lực của dầu thủy lực:
-
-| Cấp độ nhớt | Độ nhớt tại 40°C (cSt) | Thiết bị & Ứng dụng phổ biến | Khuyến nghị sử dụng |
+| Cấp độ nhớt | Độ nhớt ở 40 °C (cSt) | Tên gọi thường dùng | Thiết bị thường dùng |
 | :--- | :--- | :--- | :--- |
-| **ISO VG 32** | 28.8 – 35.2 | Hệ thống thủy lực làm việc ngoài trời nhiệt độ thấp, hệ thống điều khiển chính xác, máy CNC thế hệ mới, cánh tay robot. | Thích hợp mùa đông hoặc môi trường khởi động nguội. |
-| **ISO VG 46** | 41.4 – 50.6 | Xe cơ giới (máy xúc, máy đào, xe nâng), hệ thống thủy lực nhà xưởng nhiệt độ trung bình, máy dập, máy uốn kim loại. | Dải độ nhớt cân bằng và đa dụng nhất. |
-| **ISO VG 68** | 61.2 – 74.8 | Máy ép nhựa (Injection Molding), máy ép thủy lực tải nặng, máy chấn tôn, hệ thống thủy lực hàng hải, sà lan khai thác. | Hoạt động tải cao liên tục trong điều kiện nhiệt đới nóng ẩm. |
+| **ISO VG 32** | 28,8 – 35,2 | Dầu thủy lực 32, nhớt thủy lực số 32 | Máy công cụ CNC, hệ thống điều khiển chính xác, thiết bị khởi động lạnh |
+| **ISO VG 46** | 41,4 – 50,6 | Dầu thủy lực 46, AW 46 | Máy xúc, máy đào, xe nâng, máy dập, hệ thống thủy lực nhà xưởng tải trung bình |
+| **ISO VG 68** | 61,2 – 74,8 | Dầu thủy lực 68, AW 68, nhớt thủy lực 68 | Máy ép nhựa, máy ép thủy lực tải nặng, máy chấn tôn, tời và cẩu cảng |
+
+**Cách chọn nhanh:** luôn ưu tiên cấp độ nhớt ghi trong sổ tay máy hoặc trên nhãn bơm. Nếu nhiệt độ dầu trong bồn thường xuyên trên 55–60 °C, cấp 68 giữ màng dầu tốt hơn. Nếu máy khởi động nguội hoặc đường ống dài, cấp 32 hoặc 46 bơm dễ hơn. Không nên tự đổi cấp độ nhớt khi chưa hỏi nhà sản xuất máy.
+
+Chữ **"AW"** (anti-wear) nghĩa là dầu có phụ gia chống mài mòn. Theo tiêu chuẩn, dầu AW tương ứng loại **HM** trong ISO 11158 và **HLP** trong DIN 51524-2. Dầu chỉ số độ nhớt cao dùng cho máy làm việc ngoài trời là loại **HV / HVLP**.
+
+## Dòng sản phẩm và sản phẩm tương đương
+
+| Loại | Shell | Castrol | Mobil | TotalEnergies |
+| :--- | :--- | :--- | :--- | :--- |
+| Chống mài mòn (HM / HLP) | Tellus S2 MX 32 / 46 / 68 | Hyspin AWS 32 / 46 / 68 | DTE 24 / 25 / 26 | Azolla ZS 32 / 46 / 68 |
+| Chỉ số độ nhớt cao (HV / HVLP) | Tellus S2 VX 32 / 46 / 68 | Hyspin AWH-M 32 / 46 / 68 | Univis N 32 / 46 / 68 | Equivis ZS 32 / 46 / 68 |
+
+Các sản phẩm cùng hàng trong bảng có cùng cấp độ nhớt và cùng loại tiêu chuẩn, nên thường thay thế được cho nhau. Trước khi chuyển hãng, nên đối chiếu phê duyệt của nhà sản xuất bơm (ví dụ Bosch Rexroth, Parker, Eaton) ghi trên bảng thông số kỹ thuật (TDS). Khi đổi sang dầu khác hãng, nên xả sạch dầu cũ thay vì châm lẫn.
+
+<!-- TODO: xác minh với nhà cung cấp các mã đang có hàng; bỏ cột hãng không phân phối. -->
+
+### Shell Tellus
+
+- **Shell Tellus S2 MX:** dầu gốc khoáng có phụ gia chống mài mòn chứa kẽm, loại HM / HLP. Dùng cho hầu hết hệ thống thủy lực công nghiệp trong nhà xưởng.
+- **Shell Tellus S2 VX:** chỉ số độ nhớt cao, độ nhớt ít thay đổi theo nhiệt độ. Hợp với máy công trình và thiết bị ngoài trời.
+- **Shell Tellus S4 ME:** dòng cao cấp hướng tới giảm tổn hao năng lượng và kéo dài chu kỳ thay dầu. Nên xem TDS của Shell để biết mức tiết kiệm cụ thể trong điều kiện thử nghiệm.
+
+### Castrol Hyspin
+
+- **Castrol Hyspin AWS:** dầu chống mài mòn loại HM, dải VG từ 10 đến 100. Tách nước và lọc tốt.
+- **Castrol Hyspin AWH-M:** chỉ số độ nhớt cao, dùng cho máy chịu dao động nhiệt độ lớn.
+
+**Lưu ý với chi tiết mạ bạc:** dầu chống mài mòn gốc kẽm thường không được khuyến nghị cho bơm có chi tiết mạ bạc. Trường hợp này cần chọn dầu không kẽm (zinc-free) theo khuyến cáo của nhà sản xuất bơm.
+
+## Chỉ tiêu cần xem trên bảng thông số (TDS)
+
+- **Độ nhớt ở 40 °C và chỉ số độ nhớt (VI):** VI càng cao thì độ nhớt càng ít thay đổi khi nhiệt độ lên xuống.
+- **Chống mài mòn:** thể hiện qua phép thử bơm cánh gạt và phép thử FZG (A/8.3/90). Dầu HLP theo DIN 51524-2 phải đạt tối thiểu cấp tải hỏng 10.
+- **Tách nước (ASTM D1401):** thời gian nước và dầu tách lớp. Nước tách nhanh thì dễ xả đáy bồn.
+- **Thoát khí (ASTM D3427):** khí thoát chậm dễ gây xâm thực (cavitation), làm rỗ mặt bơm.
+- **Độ bền oxy hóa (TOST, ASTM D943):** số giờ đến khi chỉ số axit tăng tới ngưỡng. Càng dài thì dầu càng bền.
+- **Độ sạch:** mã độ sạch ISO 4406. Bơm piston và van servo cần dầu sạch hơn bơm bánh răng.
+
+## Ứng dụng theo ngành
+
+- **Ép nhựa:** dầu thủy lực 68 cho máy ép Haitian, Sumitomo, JSW, Nissei chạy 3 ca. Dầu thủy lực cho máy ép nhựa cần độ bền oxy hóa tốt vì bồn dầu thường nóng.
+- **Máy công trình:** máy xúc, máy đào, xe nâng thường dùng dầu thủy lực 46, loại HV nếu làm việc ngoài trời. Luôn kiểm tra sổ tay máy vì một số hãng yêu cầu dầu riêng.
+- **Gia công kim loại:** máy chấn tôn, máy dập thủy lực, máy cắt tôn.
+- **Cảng và hàng hải:** cẩu bờ, tời neo, sà lan tại Hải Phòng và Quảng Ninh. Cần dầu tách nước tốt.
+
+Máy CNC có hệ thống bôi trơn băng trượt riêng: không dùng dầu thủy lực thay dầu rãnh trượt. Xem [dầu rãnh trượt](/dau-ranh-truot).
+
+## Quy cách và báo giá
+
+- **Quy cách:** phuy 209 lít; xô 18 lít (Castrol) hoặc 20 lít (Shell). Quy cách thực tế tùy mã hàng.
+- **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS (phiếu an toàn hóa chất) bản tiếng Việt hoặc tiếng Anh.
+- **Giao hàng:** Hải Phòng (gồm khu vực Hải Dương cũ), Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc.
+
+**Nhận báo giá dầu thủy lực:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**. Gửi kèm mã dầu hoặc tên máy, cấp độ nhớt, số phuy/xô cần mua và địa chỉ giao. Nếu chưa biết chọn loại nào, gửi ảnh nhãn dầu đang dùng để được tư vấn sản phẩm tương đương.
+
+## Câu hỏi thường gặp
+
+### Dầu thủy lực 46 và 68 khác nhau thế nào?
+
+Dầu 68 đặc hơn dầu 46 khoảng 1,5 lần ở cùng nhiệt độ (68 so với 46 cSt ở 40 °C). Dầu 68 giữ màng dầu dày hơn khi bồn dầu nóng và tải nặng. Dầu 46 bơm nhẹ hơn khi khởi động và hợp với máy làm việc ở nhiệt độ vừa phải. Không nên tự đổi 46 sang 68 hay ngược lại nếu nhà sản xuất máy không cho phép.
+
+### Bao lâu thì thay dầu thủy lực?
+
+Không có một con số chung. Chu kỳ phụ thuộc nhiệt độ bồn dầu, độ sạch và loại dầu. Nhiều nhà máy thay sau khoảng 4.000–8.000 giờ chạy hoặc 1–2 năm. Cách chính xác nhất là **phân tích mẫu dầu định kỳ** (độ nhớt, chỉ số axit TAN, hàm lượng nước, độ sạch) và thay khi các chỉ số vượt ngưỡng cảnh báo.
+
+### Làm sao biết dầu thủy lực đã bị nhiễm bẩn?
+
+Dầu chuyển đục trắng là đã lẫn nước. Dầu chuyển nâu sẫm và có mùi khét là đã bị oxy hóa. Bọt nổi lâu tan trên mặt bồn là thoát khí kém hoặc máy bị hút khí. Khi thấy các dấu hiệu này, nên lấy mẫu dầu đi phân tích, xử lý nguyên nhân rồi súc rửa hệ thống trước khi châm dầu mới.
+
+### Có trộn dầu thủy lực hai hãng khác nhau được không?
+
+Châm bổ sung một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng cấp VG) thường không gây sự cố. Tuy vậy, phụ gia của các hãng khác nhau, nên khi chuyển hãng hẳn thì tốt nhất là xả sạch dầu cũ. Tuyệt đối không trộn dầu gốc khoáng với dầu chống cháy gốc nước glycol (HFC) hoặc dầu gốc ester.
 
 ---
 
-## Các Thương Hiệu Dầu Thủy Lực Hàng Đầu 2026: Shell & Castrol
-
-### 1. Dầu thủy lực Shell Tellus
-Shell là tập đoàn dầu nhớt số 1 thế giới với dòng sản phẩm Tellus huyền thoại, ứng dụng công nghệ phụ gia chống mài mòn không tro hoặc chứa kẽm tối ưu:
-* **Shell Tellus S2 MX (ISO VG 32, 46, 68):** Dòng dầu thủy lực gốc khoáng tăng cường phụ gia chống mài mòn gốc kẽm cao cấp, đáp ứng tiêu chuẩn khắt khe Bosch Rexroth, ISO 11158 HM và DIN 51524-2 HLP. Tuổi thọ dầu đạt chuẩn TOST trên 5.000 giờ, chống hình thành cặn bùn bùn và cặn sơn vecni.
-* **Shell Tellus S2 VX (ISO VG 32, 46, 68):** Dòng dầu thủy lực dải nhiệt độ rộng (High Viscosity Index - HVLP), chuyên dụng cho máy đào, máy xúc, cẩu tháp vận hành ngoài trời với biến thiên nhiệt độ lớn từ -20°C đến trên 90°C.
-* **Shell Tellus S4 ME:** Dòng dầu thủy lực tổng hợp cao cấp nhất, nâng cao hiệu suất năng lượng hệ thống thủy lực lên 4 - 8%, tiết kiệm điện năng cho nhà máy ép nhựa.
-
-### 2. Dầu thủy lực Castrol Hyspin
-Castrol mang lại độ tin cậy cơ khí vượt trội cho các dây chuyền gia công và chế tạo tự động hóa:
-* **Castrol Hyspin AWS (ISO VG 32, 46, 68, 100):** Dòng dầu thủy lực chống mài mòn tiêu chuẩn công nghiệp (HM), tính bền nhiệt cao, lọc tốt cả trong tình trạng nhiễm nước nhẹ, không gây ăn mòn kim loại màu (đồng, bạc).
-* **Castrol Hyspin AWH-M (ISO VG 32, 46, 68):** Dòng dầu chỉ số độ nhớt cao (VI > 150), giữ ổn định độ dày màng dầu ở nhiệt độ cao và áp suất cực đại, chống hiện tượng sụt áp suất hệ thống.
-
----
-
-## Tiêu Chí Kỹ Thuật Đánh Giá Dầu Thủy Lực Đạt Chuẩn
-
-Một sản phẩm dầu thủy lực đạt chuẩn chất lượng quốc tế cần đáp ứng các thông số kiểm nghiệm phòng Lab:
-1. **Khả năng chống mài mòn (Anti-wear FZG Stage):** Đạt tối thiểu cấp 11 - 12 trong bài kiểm tra FZG (DIN 51354), bảo vệ tối đa răng bơm bánh răng, cánh gạt bơm vane và piston.
-2. **Khả năng tách nước và khử nhũ (Demulsibility):** Tách nước nhanh chóng (ASTM D1401 < 20 phút) giúp lắng nước xuống đáy bồn để xả đáy dễ dàng, tránh tình trạng tạo nhũ sữa phá hủy màng bôi trơn.
-3. **Khả năng khử bọt khí và tách khí (Air Release):** Thoát bọt nhanh chóng (ASTM D3427), ngăn ngừa hiện tượng xâm thực (cavitation) gây rỗ mặt bơm và dao động áp suất ngoài ý muốn.
-4. **Độ ổn định oxy hóa (TOST Life):** Đảm bảo dầu không bị phân hủy, không đổi màu nâu đen hoặc có mùi khét chua sau hàng nghìn giờ vận hành liên tục.
-
----
-
-## Ứng Dụng Thực Tế Trong Sản Xuất & Thi Công
-
-* **Ngành ép nhựa kỹ thuật:** Cung cấp dầu thủy lực 68 chuyên dụng cho dàn máy ép nhựa Haitian, Sumitomo, Fanuc, JSW, Nissei... hoạt động 3 ca liên tục.
-* **Thiết bị cơ giới & công trình:** Máy xúc Komatsu, Caterpillar, Kobelco, Doosan sử dụng dầu thủy lực 46 chịu dải nhiệt rộng ngoài công trường.
-* **Ngành gia công dập uốn kim loại:** Máy chấn tôn CNC, máy dập thủy lực 100 - 1000 tấn cần dầu chịu áp suất thủy lực lớn và chống rung giật.
-* **Hàng hải & Cảng biển:** Cẩu bờ trục, tời neo, sà lan và tàu sông biển khu vực Hải Phòng, Quảng Ninh, Nam Định.
-
----
-
-## Báo Giá Phân Phối Sỉ Dầu Thủy Lực Chính Hãng Tại Miền Bắc
-
-Chúng tôi là đại lý cấp 1 phân phối ủy quyền dầu thủy lực Shell, Castrol, TotalEnergies, Mobil tại khu vực Hải Phòng, Hải Dương, Bắc Ninh, Hưng Yên, Quảng Ninh:
-* **Quy cách đóng gói:** Phuy thép tiêu chuẩn 209 Lít / Phuy 200 Lít và Xô nhựa tiện lợi 18 Lít / 20 Lít.
-* **Cam kết giấy tờ:** 100% lô hàng có chứng chỉ CO/CQ xuất xưởng, hóa đơn GTGT (VAT), bản phân tích thông số TDS/MSDS.
-* **Chính sách hỗ trợ kỹ thuật:** Lấy mẫu dầu định kỳ xét nghiệm độ nhớt, hàm lượng cặn, tư vấn thời điểm thay dầu tối ưu cho doanh nghiệp hoàn toàn miễn phí.
-
----
-
-## Câu Hỏi Thường Gặp (FAQ) Về Dầu Thủy Lực
-
-### 1. Bao lâu thì cần thay dầu thủy lực một lần?
-Đối với dầu gốc khoáng cao cấp như Shell Tellus S2 MX hoặc Castrol Hyspin AWS, thời gian thay dầu thông thường là **3.000 – 5.000 giờ làm việc** (hoặc 12 – 18 tháng tùy theo điều kiện lọc và nhiệt độ bồn dầu). Nên kiểm tra chỉ số axit (TAN) và độ nhớt định kỳ sau mỗi 1.000 giờ.
-
-### 2. Dầu thủy lực 46 và 68 khác nhau ở điểm nào?
-Điểm khác biệt căn bản là độ nhớt động học ở 40°C (dầu 46 dao động ~46 cSt, dầu 68 dao động ~68 cSt). Dầu 46 loãng hơn, tuần hoàn nhanh hơn, phù hợp nhiệt độ vừa và máy móc lưu động; trong khi dầu 68 đặc hơn, duy trì màng dầu dày hơn dưới tải nặng và nhiệt độ vận hành cao của nhà xưởng kín.
-
-### 3. Dấu hiệu nhận biết dầu thủy lực bị nhiễm bẩn và cần thay thế?
-Khi dầu chuyển màu từ vàng nhạt trong suốt sang nâu sẫm, đục trắng sữa (nhiễm nước), xuất hiện bọt khí lâu tan trên bề mặt bồn hoặc có mùi khét khó chịu, đó là lúc hệ thống cần được súc rửa và thay mới toàn bộ dầu nhớt.
+**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot)
