@@ -1,11 +1,13 @@
 ---
 title: "Dầu Thủy Lực (Dầu Nhớt Thủy Lực) 32, 46, 68"
+nav_label: "Dầu thủy lực"
+order: 1
+summary: "Máy ép nhựa, máy công trình, hệ thống thủy lực"
 seo_title: "Dầu Thủy Lực 32, 46, 68 Chính Hãng – Báo Giá Sỉ Phuy, Xô"
 description: "Dầu nhớt thủy lực ISO VG 32, 46, 68 Shell Tellus, Castrol Hyspin, có CO/CQ và VAT. Báo giá sỉ phuy 209L, xô 18–20L, giao tại Hải Phòng và miền Bắc."
 keywords: ["dầu thủy lực", "dầu nhớt thủy lực", "nhớt thủy lực", "dầu thủy lực 68", "dầu thủy lực 46", "dầu thủy lực 32", "dầu thủy lực AW 68", "nhớt thủy lực 68", "dầu thủy lực vg 68", "dầu thủy lực shell", "dầu thủy lực castrol", "shell tellus s2 mx 68", "shell tellus s2 mx 46", "castrol hyspin aws 68"]
 tags: ["dau-thuy-luc", "shell-tellus", "castrol-hyspin", "iso-vg-68", "iso-vg-46", "iso-vg-32"]
 image: "/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg"
-canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/dau-thuy-luc"
 ---
 
 **Dầu thủy lực** (còn gọi là **dầu nhớt thủy lực** hay **nhớt thủy lực**) là chất lỏng truyền áp lực trong bơm, van và xi-lanh, đồng thời bôi trơn, làm mát và chống gỉ cho hệ thống. Ba cấp phổ biến nhất là **ISO VG 32, 46 và 68**. Chọn cấp nào phụ thuộc vào nhiệt độ dầu khi máy chạy và khuyến cáo của nhà sản xuất bơm. Với máy ép nhựa và máy ép thủy lực chạy liên tục trong nhà xưởng ở miền Bắc, **dầu thủy lực 68** là lựa chọn thường gặp nhất. Máy công trình và hệ thống làm việc ngoài trời hay dùng **dầu thủy lực 46**.

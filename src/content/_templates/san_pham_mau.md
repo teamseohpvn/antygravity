@@ -12,7 +12,6 @@ images:
   - "/images/san-pham/anh-phu-2.jpg"
 keywords: ["từ khóa chính", "từ khóa ngách", "tên sản phẩm"]
 tags: ["dac-tinh-1", "dac-tinh-2"]
-canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/[slug-danh-muc]/[slug-san-pham]"
 ---
 
 ## Giới thiệu chung

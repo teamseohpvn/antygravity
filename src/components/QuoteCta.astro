@@ -1,0 +1,31 @@
+---
+import { BUSINESS } from '../lib/site';
+
+interface Props {
+  /** Sản phẩm hoặc danh mục để điền sẵn vào form báo giá. */
+  item?: string;
+  heading?: string;
+  compact?: boolean;
+}
+
+const { item, heading = 'Nhận báo giá sỉ', compact = false } = Astro.props;
+const quoteHref = item ? `/bao-gia?sp=${encodeURIComponent(item)}` : '/bao-gia';
+---
+
+<div class:list={['quote-cta', { compact }]}>
+  {!compact && <p class="quote-cta__heading">{heading}</p>}
+  <div class="quote-cta__actions">
+    <a href={quoteHref} class="btn-primary" data-track="add_to_quote">Nhận báo giá</a>
+    <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
+    <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
+  </div>
+  {!compact && <p class="quote-cta__note">Có CO/CQ, hóa đơn VAT, TDS/SDS. Giao tại Hải Phòng và các tỉnh miền Bắc.</p>}
+</div>
+
+<style>
+  .quote-cta { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+  .quote-cta.compact { background: transparent; border: 0; padding: 0; margin: 16px 0 0; }
+  .quote-cta__heading { font-weight: 700; color: var(--color-primary); margin-bottom: 12px; font-size: 1.1rem; }
+  .quote-cta__actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .quote-cta__note { margin-top: 10px; font-size: 0.9rem; color: var(--color-text-light); }
+</style>

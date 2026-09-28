@@ -1,0 +1,278 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { BUSINESS, breadcrumbSchema } from '../lib/site';
+
+const categories = (await getCollection('danhmuc')).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+const products = await getCollection('sanpham');
+const suggestions = [
+  ...products.map((p) => p.data.title),
+  ...categories.map((c) => c.data.nav_label ?? c.data.title),
+];
+
+const crumbs = [
+  { name: 'Trang chủ', href: '/' },
+  { name: 'Nhận báo giá', href: '/bao-gia' },
+];
+---
+
+<Layout
+  title="Nhận Báo Giá Dầu Nhớt, Mỡ Bôi Trơn Công Nghiệp"
+  seoTitle="Nhận Báo Giá Sỉ Dầu Nhớt, Mỡ Bôi Trơn Công Nghiệp"
+  description="Gửi danh sách dầu thủy lực, mỡ bò, dầu bánh răng, dầu máy nén khí cần mua để nhận báo giá sỉ phuy, xô. Có CO/CQ, hóa đơn VAT, giao tại Hải Phòng và miền Bắc."
+  schemaData={breadcrumbSchema(crumbs)}
+>
+  <div class="container quote-page">
+    <Breadcrumbs items={crumbs} />
+
+    <div class="quote-layout">
+      <section class="quote-form-wrap">
+        <h1>Nhận báo giá sỉ</h1>
+        <p class="lead">Điền sản phẩm cần mua, quy cách và số lượng. Nhân viên kinh doanh sẽ liên hệ lại qua điện thoại hoặc Zalo.</p>
+
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+
+        <form id="quote-form" action="/api/bao-gia" method="post" novalidate>
+          <fieldset>
+            <legend>Sản phẩm cần báo giá</legend>
+            <div id="items">
+              <div class="item-row">
+                <label>Sản phẩm <span aria-hidden="true">*</span>
+                  <input name="product" list="product-suggestions" required placeholder="VD: Shell Tellus S2 MX 68" />
+                </label>
+                <label>Quy cách
+                  <select name="packaging">
+                    <option value="">Chọn</option>
+                    <option>Phuy 209L</option>
+                    <option>Xô 18–20L</option>
+                    <option>Phuy 180kg (mỡ)</option>
+                    <option>Xô 16–18kg (mỡ)</option>
+                    <option>Khác</option>
+                  </select>
+                </label>
+                <label>Số lượng
+                  <input name="quantity" inputmode="numeric" placeholder="VD: 4" />
+                </label>
+                <button type="button" class="remove-item" aria-label="Xóa dòng" hidden>✕</button>
+              </div>
+            </div>
+            <button type="button" id="add-item" class="btn-link">+ Thêm sản phẩm</button>
+            <datalist id="product-suggestions">
+              {suggestions.map((s) => <option value={s} />)}
+            </datalist>
+          </fieldset>
+
+          <fieldset>
+            <legend>Thông tin liên hệ</legend>
+            <div class="grid-2">
+              <label>Họ tên <span aria-hidden="true">*</span>
+                <input id="f-name" name="name" required autocomplete="name" />
+              </label>
+              <label>Số điện thoại / Zalo <span aria-hidden="true">*</span>
+                <input id="f-phone" name="phone" required inputmode="tel" autocomplete="tel" placeholder="09xx xxx xxx" />
+              </label>
+              <label>Công ty <span aria-hidden="true">*</span>
+                <input id="f-company" name="company" required autocomplete="organization" />
+              </label>
+              <label>Mã số thuế (để xuất VAT)
+                <input id="f-tax" name="taxId" inputmode="numeric" />
+              </label>
+              <label>Địa điểm giao hàng
+                <input id="f-location" name="location" placeholder="VD: KCN Đình Vũ, Hải Phòng" />
+              </label>
+              <label>Thời gian cần hàng
+                <input id="f-deadline" name="deadline" placeholder="VD: trong tuần này" />
+              </label>
+            </div>
+            <label>Ghi chú (máy đang dùng, tên dầu hiện tại, yêu cầu giấy tờ…)
+              <textarea id="f-note" name="note" rows="4"></textarea>
+            </label>
+            <label class="hp" aria-hidden="true">Website
+              <input name="website" tabindex="-1" autocomplete="off" />
+            </label>
+            <input type="hidden" name="page" id="f-page" />
+          </fieldset>
+
+          <button type="submit" class="btn-primary submit" id="submit-btn">Gửi yêu cầu báo giá</button>
+          <p class="privacy">Thông tin chỉ dùng để liên hệ báo giá, không chia sẻ cho bên thứ ba.</p>
+        </form>
+
+        <div id="fallback" class="fallback" hidden>
+          <p><strong>Chưa gửi được qua form.</strong> <span id="fallback-reason"></span></p>
+          <p>Nội dung yêu cầu của bạn đã được soạn sẵn dưới đây. Hãy sao chép và gửi qua Zalo, hoặc gọi trực tiếp.</p>
+          <textarea id="fallback-text" rows="8" readonly></textarea>
+          <div class="fallback-actions">
+            <button type="button" class="btn-secondary" id="copy-btn">Sao chép nội dung</button>
+            <a href={BUSINESS.zaloUrl} class="btn-primary" target="_blank" rel="noopener" data-track="click_zalo">Mở Zalo {BUSINESS.phoneDisplay}</a>
+            <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
+          </div>
+          <p class="copy-status" id="copy-status" role="status"></p>
+        </div>
+      </section>
+
+      <aside class="quote-aside">
+        <h2>Liên hệ nhanh</h2>
+        <p>Hotline / Zalo: <a href={`tel:${BUSINESS.phone}`} data-track="click_tel"><strong>{BUSINESS.phoneDisplay}</strong></a></p>
+        <p><a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a></p>
+        <h2>Gửi kèm để báo giá nhanh hơn</h2>
+        <ul>
+          <li>Ảnh nhãn dầu đang dùng hoặc tên máy</li>
+          <li>Cấp độ nhớt (VG 32, 46, 68…) hoặc cấp NLGI của mỡ</li>
+          <li>Số phuy / xô và địa chỉ giao</li>
+          <li>Yêu cầu giấy tờ: CO/CQ, VAT, TDS, SDS</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const form = document.getElementById('quote-form') as HTMLFormElement;
+  const itemsBox = document.getElementById('items')!;
+  const errorBox = document.getElementById('form-error')!;
+  const fallback = document.getElementById('fallback')!;
+  const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+  const params = new URLSearchParams(location.search);
+
+  (document.getElementById('f-page') as HTMLInputElement).value = document.referrer || location.href;
+
+  // Điền sẵn sản phẩm khi đi từ nút "Báo giá" (?sp=...).
+  const sp = params.get('sp');
+  if (sp) (itemsBox.querySelector('input[name="product"]') as HTMLInputElement).value = sp;
+
+  // Hiện lỗi khi form gửi không cần JavaScript bị trả về (?loi=...).
+  const loi = params.get('loi');
+  if (loi) { errorBox.textContent = loi; errorBox.hidden = false; }
+
+  const refreshRemoveButtons = () => {
+    const rows = itemsBox.querySelectorAll('.item-row');
+    rows.forEach((r) => ((r.querySelector('.remove-item') as HTMLButtonElement).hidden = rows.length < 2));
+  };
+
+  document.getElementById('add-item')!.addEventListener('click', () => {
+    const first = itemsBox.querySelector('.item-row')!;
+    const row = first.cloneNode(true) as HTMLElement;
+    row.querySelectorAll<HTMLInputElement | HTMLSelectElement>('input, select').forEach((el) => (el.value = ''));
+    itemsBox.appendChild(row);
+    refreshRemoveButtons();
+    (row.querySelector('input[name="product"]') as HTMLInputElement).focus();
+  });
+
+  itemsBox.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest('.remove-item');
+    if (btn) { btn.closest('.item-row')!.remove(); refreshRemoveButtons(); }
+  });
+
+  const collect = () => {
+    const fd = new FormData(form);
+    const products = fd.getAll('product').map(String);
+    const packagings = fd.getAll('packaging').map(String);
+    const quantities = fd.getAll('quantity').map(String);
+    return {
+      name: String(fd.get('name') ?? ''),
+      phone: String(fd.get('phone') ?? ''),
+      company: String(fd.get('company') ?? ''),
+      taxId: String(fd.get('taxId') ?? ''),
+      location: String(fd.get('location') ?? ''),
+      deadline: String(fd.get('deadline') ?? ''),
+      note: String(fd.get('note') ?? ''),
+      website: String(fd.get('website') ?? ''),
+      page: String(fd.get('page') ?? ''),
+      items: products.map((product, i) => ({ product, packaging: packagings[i], quantity: quantities[i] })).filter((it) => it.product.trim()),
+    };
+  };
+
+  const toText = (d: ReturnType<typeof collect>) =>
+    [
+      'Yêu cầu báo giá',
+      `Họ tên: ${d.name}`, `SĐT: ${d.phone}`, `Công ty: ${d.company}`,
+      d.taxId && `MST: ${d.taxId}`, d.location && `Giao tại: ${d.location}`, d.deadline && `Cần hàng: ${d.deadline}`,
+      'Sản phẩm:',
+      ...d.items.map((it, i) => `${i + 1}. ${it.product}${it.packaging ? ' · ' + it.packaging : ''}${it.quantity ? ' · SL: ' + it.quantity : ''}`),
+      d.note && `Ghi chú: ${d.note}`,
+    ].filter(Boolean).join('\n');
+
+  const showFallback = (reason: string, data: ReturnType<typeof collect>) => {
+    (document.getElementById('fallback-reason') as HTMLElement).textContent = reason;
+    (document.getElementById('fallback-text') as HTMLTextAreaElement).value = toText(data);
+    fallback.hidden = false;
+    fallback.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  document.getElementById('copy-btn')!.addEventListener('click', async () => {
+    const ta = document.getElementById('fallback-text') as HTMLTextAreaElement;
+    const status = document.getElementById('copy-status')!;
+    try {
+      await navigator.clipboard.writeText(ta.value);
+      status.textContent = 'Đã sao chép. Dán vào Zalo để gửi.';
+    } catch {
+      ta.select();
+      status.textContent = 'Không sao chép tự động được. Nội dung đã được bôi đen, hãy bấm Ctrl+C (hoặc giữ để sao chép).';
+    }
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errorBox.hidden = true;
+    const data = collect();
+    if (!data.items.length) { errorBox.textContent = 'Vui lòng nhập ít nhất một sản phẩm.'; errorBox.hidden = false; return; }
+    if (!form.reportValidity()) return;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Đang gửi…';
+    try {
+      const res = await fetch('/api/bao-gia', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', accept: 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const body = await res.json().catch(() => ({}));
+      if (res.ok && body.ok) {
+        (window as any).gtag?.('event', 'generate_lead', { items: data.items.length });
+        location.href = '/bao-gia/da-gui';
+        return;
+      }
+      if (res.status === 400) { errorBox.textContent = body.error ?? 'Thông tin chưa hợp lệ.'; errorBox.hidden = false; }
+      else showFallback(body.error ?? 'Máy chủ không phản hồi.', data);
+    } catch {
+      showFallback('Mất kết nối mạng.', data);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Gửi yêu cầu báo giá';
+    }
+  });
+</script>
+
+<style>
+  .quote-page { margin-bottom: 60px; }
+  .quote-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 30px; align-items: start; }
+  @media (max-width: 860px) { .quote-layout { grid-template-columns: minmax(0, 1fr); } }
+  .quote-form-wrap, .quote-aside { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: clamp(20px, 4vw, 32px); }
+  h1 { color: var(--color-primary); font-size: clamp(1.7rem, 4vw, 2.2rem); margin-bottom: 8px; }
+  .lead { color: var(--color-text-light); margin-bottom: 20px; }
+  fieldset { border: 0; margin-bottom: 24px; }
+  legend { font-weight: 700; color: var(--color-primary); margin-bottom: 12px; font-size: 1.1rem; }
+  label { display: flex; flex-direction: column; gap: 4px; font-weight: 500; font-size: 0.95rem; margin-bottom: 12px; }
+  input, select, textarea { font: inherit; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; background: white; width: 100%; }
+  .item-row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 0.8fr) auto; gap: 10px; align-items: end; }
+  @media (max-width: 600px) { .item-row { grid-template-columns: 1fr 1fr; } .item-row label:first-child { grid-column: 1 / -1; } }
+  .remove-item { border: 1px solid #cbd5e1; background: white; border-radius: 6px; padding: 10px 12px; margin-bottom: 12px; cursor: pointer; }
+  .btn-link { background: none; border: 0; color: var(--color-accent); font-weight: 600; cursor: pointer; padding: 4px 0; font-size: 1rem; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 0 16px; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .submit { border: 0; font-size: 1.05rem; padding: 14px 28px; cursor: pointer; width: 100%; }
+  .submit:disabled { opacity: 0.6; cursor: wait; }
+  .privacy { margin-top: 10px; font-size: 0.85rem; color: var(--color-text-light); }
+  .form-error { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; border-radius: 6px; padding: 10px 14px; margin-bottom: 16px; }
+  .fallback { margin-top: 24px; background: #fff7ed; border: 1px solid #fed7aa; border-radius: 8px; padding: 20px; display: grid; gap: 10px; }
+  .fallback-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .fallback .btn-secondary { cursor: pointer; font: inherit; font-weight: 600; }
+  .copy-status { font-size: 0.9rem; color: #166534; }
+  .quote-aside h2 { font-size: 1.1rem; color: var(--color-primary); margin: 0 0 10px; }
+  .quote-aside h2 + p { margin-bottom: 6px; }
+  .quote-aside ul { margin: 0 0 0 18px; }
+  .quote-aside li { margin-bottom: 6px; }
+  .quote-aside p + h2 { margin-top: 20px; }
+  .quote-aside a { color: var(--color-accent); }
+</style>

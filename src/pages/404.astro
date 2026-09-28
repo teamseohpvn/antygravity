@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const categories = (await getCollection('danhmuc')).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+---
+
+<Layout title="Không Tìm Thấy Trang" description="Trang bạn tìm không tồn tại hoặc đã được chuyển." noindex>
+  <div class="container not-found">
+    <h1>Không tìm thấy trang</h1>
+    <p>Trang bạn tìm không tồn tại hoặc đã được chuyển. Bạn có thể xem các danh mục sản phẩm dưới đây hoặc <a href="/bao-gia">gửi yêu cầu báo giá</a>.</p>
+    <ul>
+      {categories.map((c) => <li><a href={`/${c.id}`}>{c.data.nav_label ?? c.data.title}</a></li>)}
+    </ul>
+  </div>
+</Layout>
+
+<style>
+  .not-found { max-width: 720px; margin: 60px auto; background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 40px; }
+  .not-found h1 { color: var(--color-primary); margin-bottom: 12px; }
+  .not-found ul { margin: 16px 0 0 20px; columns: 2; }
+  .not-found li { margin-bottom: 6px; }
+  .not-found a { color: var(--color-accent); }
+  @media (max-width: 600px) { .not-found ul { columns: 1; } }
+</style>

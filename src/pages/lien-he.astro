@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import { BUSINESS, ADDRESS_TEXT, breadcrumbSchema } from '../lib/site';
+
+const crumbs = [
+  { name: 'Trang chủ', href: '/' },
+  { name: 'Liên hệ', href: '/lien-he' },
+];
+const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${BUSINESS.name}, ${ADDRESS_TEXT}`)}`;
+---
+
+<Layout
+  title="Liên Hệ"
+  seoTitle="Liên Hệ Dầu Công Nghiệp Pro – Hải Phòng, Miền Bắc"
+  description={`Liên hệ Dầu Công Nghiệp Pro: ${ADDRESS_TEXT}. Hotline/Zalo ${BUSINESS.phoneDisplay}. Báo giá dầu nhớt, mỡ bôi trơn công nghiệp cho nhà máy miền Bắc.`}
+  schemaData={breadcrumbSchema(crumbs)}
+>
+  <div class="container contact-page">
+    <Breadcrumbs items={crumbs} />
+    <div class="contact-card">
+      <h1>Liên hệ</h1>
+      <dl>
+        <dt>Địa chỉ</dt>
+        <dd>{ADDRESS_TEXT} · <a href={mapsUrl} target="_blank" rel="noopener">Xem bản đồ</a></dd>
+        <dt>Hotline / Zalo</dt>
+        <dd><a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> · <a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a></dd>
+        <dt>Khu vực giao hàng</dt>
+        <dd>Hải Phòng (gồm khu vực Hải Dương cũ), Quảng Ninh, Bắc Ninh, Hưng Yên, Hà Nội và các tỉnh miền Bắc. Phục vụ KCN Đình Vũ, Tràng Duệ, Nomura, VSIP, Đại An, Nam Sách, Quế Võ, Phố Nối.</dd>
+        <!-- TODO: bổ sung giờ làm việc và email khi có. -->
+      </dl>
+      <QuoteCta heading="Gửi danh sách sản phẩm cần mua" />
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .contact-page { margin-bottom: 60px; }
+  .contact-card { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: clamp(20px, 4vw, 40px); max-width: 800px; }
+  .contact-card h1 { color: var(--color-primary); margin-bottom: 20px; }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 12px 20px; }
+  @media (max-width: 600px) { dl { grid-template-columns: 1fr; gap: 4px; } dd { margin-bottom: 12px; } }
+  dt { font-weight: 700; color: var(--color-primary); }
+  dd a { color: var(--color-accent); }
+</style>

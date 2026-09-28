@@ -2,7 +2,48 @@
 
 > Tài liệu thiết kế cho repo `antygravity` (Astro 7 + Cloudflare Workers).
 > Dựa trên: kế hoạch SEO nội bộ (`ke-hoach-seo-dau-cong-nghiep-pro.md`, không lưu trong repo), dữ liệu từ khóa DataForSEO (Google Việt Nam, 28/09/2026), audit site dev và đánh giá nội dung danh mục.
-> Trạng thái: **đề xuất**. Mỗi mục ghi rõ file cần sửa và tiêu chí hoàn thành.
+> Trạng thái: **đang triển khai**. Xem bảng [Trạng thái triển khai](#trạng-thái-triển-khai) và [Biến môi trường](#biến-môi-trường).
+
+## Trạng thái triển khai
+
+| Hạng mục | Trạng thái | File |
+| :--- | :--- | :--- |
+| Viết lại 9 danh mục, thêm dầu truyền nhiệt và dầu cắt gọt | ✅ Xong | `src/content/danhmuc/*.md` |
+| Canonical tự sinh từ `PUBLIC_SITE_URL`, không có `/` cuối | ✅ Xong | `src/lib/site.ts`, `src/components/SEO.astro` |
+| Sửa lỗi redirect 307 sang URL có `/` cuối (`build.format: 'file'`) | ✅ Xong | `astro.config.mjs` |
+| Noindex mặc định, chỉ index khi `PUBLIC_INDEXABLE=true` | ✅ Xong | `src/lib/site.ts`, `SEO.astro` |
+| `robots.txt` có dòng Sitemap; sitemap loại trang cảm ơn | ✅ Xong | `src/pages/robots.txt.ts`, `astro.config.mjs` |
+| og:url, og:image, og:locale, Twitter card; bỏ meta keywords | ✅ Xong | `SEO.astro` |
+| Schema Organization + LocalBusiness + WebSite toàn site; BreadcrumbList, CollectionPage, ItemList, Product, Article | ✅ Xong | `Layout.astro`, các trang |
+| Menu, footer, thẻ danh mục trang chủ sinh từ dữ liệu (`order`, `nav_label`, `summary`) | ✅ Xong | `Layout.astro`, `index.astro` |
+| Breadcrumb hiển thị trên mọi trang con | ✅ Xong | `src/components/Breadcrumbs.astro` |
+| Bộ lọc sinh từ sản phẩm thật (không còn "ISO VG" trên trang mỡ) | ✅ Xong | `src/pages/[category]/index.astro` |
+| Bỏ 7 sản phẩm mẫu; trạng thái "đang cập nhật" khi danh mục chưa có sản phẩm | ✅ Xong | `src/content/sanpham/` |
+| Trang `/bao-gia` (form nhiều sản phẩm), `/bao-gia/da-gui` (noindex), `/lien-he`, `404` | ✅ Xong | `src/pages/` |
+| API báo giá gửi Telegram / webhook, chống spam bằng trường bẫy | ✅ Xong, **cần cấu hình biến môi trường** | `src/pages/api/bao-gia.ts` |
+| CTA gọi / Zalo / báo giá trên header, thanh dính mobile, mọi trang danh mục và sản phẩm | ✅ Xong | `QuoteCta.astro`, `Layout.astro` |
+| GA4 + sự kiện `generate_lead`, `click_tel`, `click_zalo`, `add_to_quote`, `download_tds` | ✅ Xong, **cần `PUBLIC_GA4_ID`** | `Layout.astro`, `bao-gia.astro` |
+| Script kiểm tra nội dung (`npm run check:content`) | ✅ Xong | `scripts/check-content.mjs` |
+| Sản phẩm thật (6–10 mỗi danh mục P1), ảnh thật, link TDS | ⏳ Cần dữ liệu từ bạn | `src/content/sanpham/` |
+| Xác minh tên sản phẩm có `TODO` | ⏳ Cần dữ liệu từ bạn | `src/content/danhmuc/` |
+| Trang độ nhớt, trang hãng, trang ứng dụng, bảng tương đương | ⏳ Giai đoạn 2 | |
+| Thay workflow GitHub Pages bằng deploy Cloudflare | ⏳ Cần quyền Cloudflare | `.github/workflows/` |
+| Cloudflare Turnstile cho form | ⏳ Tùy chọn khi bị spam | |
+
+## Biến môi trường
+
+Đặt trong Cloudflare dashboard (Workers → Settings → Variables and Secrets), hoặc file `.dev.vars` khi chạy local. Biến `PUBLIC_*` được đọc **lúc build**, nên cần có trong môi trường build (Workers Builds hoặc CI).
+
+| Biến | Loại | Ví dụ | Tác dụng |
+| :--- | :--- | :--- | :--- |
+| `PUBLIC_SITE_URL` | Build | `https://daucongnghiep-pro.vn` | Domain chính thức cho canonical, sitemap, schema, robots. Mặc định là domain workers.dev |
+| `PUBLIC_INDEXABLE` | Build | `true` | **Chỉ đặt `true` trên bản production chính thức.** Không đặt thì mọi trang có `noindex` |
+| `PUBLIC_GA4_ID` | Build | `G-XXXXXXX` | Bật Google Analytics 4 và các sự kiện chuyển đổi |
+| `QUOTE_TELEGRAM_BOT_TOKEN` | Secret | `123456:ABC…` | Gửi yêu cầu báo giá vào Telegram (tạo bot bằng @BotFather) |
+| `QUOTE_TELEGRAM_CHAT_ID` | Secret | `-100123…` | Nhóm / người nhận tin Telegram |
+| `QUOTE_WEBHOOK_URL` | Secret | URL Google Apps Script | POST JSON `{ text, lead }` để ghi Google Sheet, Make, Zapier, n8n… |
+
+Nếu chưa cấu hình kênh nhận, form vẫn hoạt động theo kiểu dự phòng: hiện nội dung yêu cầu đã soạn sẵn để khách sao chép gửi Zalo hoặc gọi điện.
 
 ## Mục lục
 
@@ -313,7 +354,7 @@ Trang build tĩnh (prerender) sẽ không đi qua middleware. Khi đó dùng fil
 
 ### 7.2. Sitemap và robots
 
-- Sitemap **đã có** tại `/sitemap-index.xml` (plugin `@astrojs/sitemap`). Cần:
+- Sitemap có tại `/sitemap-index.xml` (plugin `@astrojs/sitemap`). Cần:
   - Loại trừ `/bao-gia/da-gui` và trang noindex bằng option `filter`.
   - Thêm `lastmod` từ trường `updated`.
 - Tạo `public/robots.txt` (hiện robots.txt do Cloudflare tự sinh, chỉ có content-signal):

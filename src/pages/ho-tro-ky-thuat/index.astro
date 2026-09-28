@@ -1,16 +1,26 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { absUrl, breadcrumbSchema } from '../../lib/site';
 
 const posts = await getCollection('blog');
-posts.sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf());
+posts.sort((a, b) => new Date(b.data.date ?? 0).valueOf() - new Date(a.data.date ?? 0).valueOf());
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Hỗ Trợ Kỹ Thuật - Dầu Công Nghiệp Pro",
-  "url": "https://antygravity.nhadat339shangdao.workers.dev/ho-tro-ky-thuat"
-};
+const crumbs = [
+  { name: 'Trang chủ', href: '/' },
+  { name: 'Hỗ trợ kỹ thuật', href: '/ho-tro-ky-thuat' },
+];
+
+const schemaData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Hỗ Trợ Kỹ Thuật - Dầu Công Nghiệp Pro',
+    url: absUrl('/ho-tro-ky-thuat'),
+  },
+  breadcrumbSchema(crumbs),
+];
 ---
 
 <Layout 
@@ -19,9 +29,10 @@ const schemaData = {
   schemaData={schemaData}
 >
   <div class="container section-padding">
+    <Breadcrumbs items={crumbs} />
     <div class="header-section">
       <h1>Kiến Thức & Hỗ Trợ Kỹ Thuật</h1>
-      <p>Tổng hợp các bài viết hướng dẫn chuyên sâu từ các kỹ sư bôi trơn hàng đầu.</p>
+      <p>Hướng dẫn chọn, sử dụng và bảo dưỡng dầu nhớt, mỡ bôi trơn công nghiệp.</p>
     </div>
 
     <div class="blog-grid">

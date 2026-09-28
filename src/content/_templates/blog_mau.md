@@ -7,7 +7,6 @@ date: "2026-09-18"
 image: "/images/blog/blog-cover.jpg"
 keywords: ["kiến thức bôi trơn", "cách chọn dầu", "từ khóa dài"]
 tags: ["kien-thuc", "huong-dan"]
-canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/ho-tro-ky-thuat/[slug-bai-viet]"
 ---
 
 > **Tóm tắt bài viết (Executive Summary):** 

@@ -1,29 +1,40 @@
 ---
+import { SITE_NAME, INDEXABLE, absUrl, normalizePath } from '../lib/site';
+
 interface Props {
   title: string;
   seoTitle?: string;
   description: string;
-  keywords?: string[];
   canonical?: string;
+  image?: string;
   type?: 'website' | 'article' | 'product';
-  schemaData?: any;
+  noindex?: boolean;
+  schemaData?: object | object[];
 }
 
-const { title, seoTitle, description, keywords, canonical, type = 'website', schemaData } = Astro.props;
-const siteName = "Chuyên Trang Dầu Công Nghiệp Chính Hãng";
-const fullTitle = seoTitle ? seoTitle : `${title} | ${siteName}`;
+const { title, seoTitle, description, canonical, image, type = 'website', noindex = false, schemaData } = Astro.props;
+
+const fullTitle = seoTitle ?? `${title} | ${SITE_NAME}`;
+// Canonical luôn sinh từ domain chính thức + đường dẫn hiện tại (không "/" cuối),
+// trừ khi trang truyền vào một canonical khác có chủ đích.
+const canonicalHref = canonical ? absUrl(canonical) : absUrl(normalizePath(Astro.url.pathname));
+const ogImage = image ? absUrl(image) : undefined;
+const robots = !INDEXABLE || noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large';
+const schemas = schemaData ? (Array.isArray(schemaData) ? schemaData : [schemaData]) : [];
 ---
 
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
-{keywords && keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
-<link rel="canonical" href={canonical || Astro.url.href} />
+<meta name="robots" content={robots} />
+<link rel="canonical" href={canonicalHref} />
 
-<meta property="og:type" content={type} />
+<meta property="og:type" content={type === 'product' ? 'website' : type} />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:site_name" content={SITE_NAME} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
-<meta property="og:site_name" content={siteName} />
+<meta property="og:url" content={canonicalHref} />
+{ogImage && <meta property="og:image" content={ogImage} />}
+<meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
 
-{schemaData && (
-  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-)}
+{schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}

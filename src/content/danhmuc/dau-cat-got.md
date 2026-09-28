@@ -1,10 +1,12 @@
 ---
 title: "Dầu Cắt Gọt Kim Loại (Dầu Tưới Nguội) Pha Nước & Không Pha Nước"
+nav_label: "Dầu cắt gọt"
+order: 7
+summary: "Dầu tưới nguội máy CNC, tiện, phay"
 seo_title: "Dầu Cắt Gọt Kim Loại, Dầu Tưới Nguội CNC – Báo Giá Sỉ"
 description: "Dầu cắt gọt pha nước (nhũ tương, bán tổng hợp) và dầu cắt gọt không pha nước cho máy CNC, tiện, phay, taro. Castrol Hysol, Shell Adrana. Có CO/CQ, VAT."
 keywords: ["dầu cắt gọt", "dầu cắt gọt kim loại", "dầu cắt gọt pha nước", "dầu tưới nguội", "dầu tưới nguội máy CNC", "dầu cắt gọt không pha nước", "dầu cắt gọt kim loại pha nước", "castrol hysol", "shell adrana"]
 tags: ["dau-cat-got", "dau-tuoi-nguoi", "may-cnc", "castrol-hysol", "shell-adrana"]
-canonical_url: "https://antygravity.nhadat339shangdao.workers.dev/dau-cat-got"
 ---
 
 **Dầu cắt gọt** (còn gọi là **dầu tưới nguội** hay dung dịch cắt gọt) làm mát và bôi trơn vùng tiếp xúc giữa dao và phôi, cuốn phoi đi và chống gỉ cho phôi và máy. Có hai nhóm chính. **Dầu cắt gọt pha nước** pha 3–10% với nước, làm mát tốt, là loại phổ biến trên máy CNC phay, tiện. **Dầu cắt gọt không pha nước** (dầu cắt nguyên chất) bôi trơn tốt hơn, dùng cho taro, chuốt, cắt răng, gia công ren khó.

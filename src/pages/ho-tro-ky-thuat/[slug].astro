@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { absUrl, breadcrumbSchema, ORG_ID } from '../../lib/site';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -13,36 +15,39 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
-// Schema Article
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": post.data.title,
-  "description": post.data.description,
-  "image": post.data.image,
-  "author": {
-    "@type": "Person",
-    "name": post.data.author
+const pagePath = `/ho-tro-ky-thuat/${post.id}`;
+const crumbs = [
+  { name: 'Trang chủ', href: '/' },
+  { name: 'Hỗ trợ kỹ thuật', href: '/ho-tro-ky-thuat' },
+  { name: post.data.title, href: pagePath },
+];
+
+const schemaData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.data.title,
+    description: post.data.description,
+    url: absUrl(pagePath),
+    ...(post.data.image ? { image: absUrl(post.data.image) } : {}),
+    ...(post.data.author ? { author: { '@type': 'Person', name: post.data.author } } : {}),
+    ...(post.data.date ? { datePublished: String(post.data.date) } : {}),
+    publisher: { '@id': ORG_ID },
   },
-  "datePublished": post.data.date
-};
+  breadcrumbSchema(crumbs),
+];
 ---
 
 <Layout 
   title={post.data.title}
   seoTitle={post.data.seo_title}
   description={post.data.description}
-  keywords={post.data.keywords}
-  canonical={post.data.canonical_url}
+  image={post.data.image}
   type="article"
   schemaData={schemaData}
 >
   <div class="container blog-container">
-    <div class="breadcrumbs">
-      <a href="/">Trang chủ</a> &gt; 
-      <a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a> &gt; 
-      <span>{post.data.title}</span>
-    </div>
+    <Breadcrumbs items={crumbs} />
 
     <article class="blog-post">
       <header class="post-header">
