@@ -7,7 +7,7 @@ seo_title: "Dầu Bánh Răng Công Nghiệp 220, 320 Chính Hãng – Báo Giá
 description: "Dầu bánh răng, dầu hộp giảm tốc công nghiệp ISO VG 150–680 Shell Omala, Castrol Alpha SP, Mobilgear 600 XP. Có CO/CQ, VAT. Báo giá sỉ phuy 209L, xô 20L."
 keywords: ["dầu bánh răng", "dầu bánh răng công nghiệp", "dầu bánh răng 220", "dầu bánh răng 320", "dầu bánh răng 150", "dầu hộp giảm tốc", "dầu bánh răng tổng hợp", "shell omala s2 gx 220", "shell omala s2 gx 320", "mobilgear 600 xp 220", "castrol alpha sp 220", "total carter ep 220"]
 tags: ["dau-banh-rang", "dau-hop-giam-toc", "shell-omala", "castrol-alpha", "iso-vg-220", "iso-vg-320"]
-image: "/images/dau-banh-rang-cong-nghiep.jpg"
+image: "/images/danh-muc/dau-banh-rang.webp"
 ---
 
 **Dầu bánh răng công nghiệp** dùng cho hộp số kín và **hộp giảm tốc** của băng tải, máy khuấy, máy đùn, máy nghiền, cẩu trục. Phần lớn là **dầu chịu cực áp (EP)** loại **CLP** theo DIN 51517-3. Cấp phổ biến nhất là **ISO VG 220**, tiếp theo là **320**. Cấp độ nhớt đúng luôn là cấp ghi trên nhãn hộp số, vì nhà sản xuất tính theo tốc độ, tải và nhiệt độ làm việc.
@@ -56,7 +56,7 @@ image: "/images/dau-banh-rang-cong-nghiep.jpg"
 
 - **Quy cách:** phuy 209 lít; xô 18–20 lít. Quy cách tùy mã hàng.
 - **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS.
-- **Giao hàng:** KCN Đình Vũ, Tràng Duệ, Nomura (Hải Phòng); Đại An, Nam Sách (khu vực Hải Dương cũ); VSIP, Quế Võ (Bắc Ninh); Phố Nối (Hưng Yên).
+- **Giao hàng:** kho tại TP Hải Phòng (Hải Dương cũ), giao nhanh KCN Đại An, Nam Sách, Phúc Điền; giao thêm KCN Tràng Duệ, Nomura, Đình Vũ (Hải Phòng), VSIP, Quế Võ (Bắc Ninh), Phố Nối (Hưng Yên).
 
 **Nhận báo giá dầu bánh răng:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**. Gửi ảnh nhãn hộp số (hãng, model, cấp dầu) để được tư vấn đúng loại.
 

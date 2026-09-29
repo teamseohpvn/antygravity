@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import { getCollection, getEntry, render } from 'astro:content';
-import { absUrl, breadcrumbSchema } from '../../lib/site';
+import { absUrl, breadcrumbSchema, webpSrcset } from '../../lib/site';
 
 export async function getStaticPaths() {
   const products = await getCollection('sanpham');
@@ -64,7 +64,7 @@ const schemaData = [
 
     <div class="product-top">
       <div class="product-image">
-        {mainImage && <img src={mainImage} alt={d.title} width="600" height="600" loading="eager" decoding="async" />}
+        {mainImage && <img src={mainImage} srcset={webpSrcset(mainImage)} sizes="(max-width: 700px) 100vw, 600px" alt={d.title} width="600" height="600" loading="eager" fetchpriority="high" decoding="async" />}
         {d.images && d.images.length > 1 && (
           <div class="thumbnail-gallery">
             {d.images.map((img) => <img src={img} alt={d.title} width="80" height="80" loading="lazy" />)}

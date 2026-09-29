@@ -5,6 +5,7 @@ order: 4
 summary: "Lò dầu tải nhiệt, máy ép gỗ, máy sấy"
 seo_title: "Dầu Truyền Nhiệt, Dầu Tải Nhiệt Chính Hãng – Báo Giá Sỉ"
 description: "Dầu truyền nhiệt cho lò dầu tải nhiệt, máy sấy, ép gỗ, nhuộm: Shell Heat Transfer Oil S2, Castrol Perfecto HT 5. Tư vấn chọn theo nhiệt độ. Có CO/CQ, VAT."
+image: "/images/danh-muc/dau-truyen-nhiet.webp" # TODO: ảnh chưa có, xem docs/prompt-anh-danh-muc.md
 keywords: ["dầu truyền nhiệt", "dầu tải nhiệt", "dầu truyền nhiệt shell", "shell heat transfer oil s2", "dầu lò dầu tải nhiệt", "dầu truyền nhiệt tổng hợp", "castrol perfecto ht 5", "mobiltherm 605"]
 tags: ["dau-truyen-nhiet", "dau-tai-nhiet", "shell-heat-transfer", "castrol-perfecto"]
 ---

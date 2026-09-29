@@ -7,7 +7,7 @@ seo_title: "Dầu Rãnh Trượt Máy CNC 68, 220 – Shell Tonna, Mobil Vactra"
 description: "Dầu rãnh trượt, dầu băng trượt máy CNC ISO VG 68, 220 chống rung giật stick-slip, tách khỏi dung dịch tưới nguội. Shell Tonna, Mobil Vactra, Castrol Magna."
 keywords: ["dầu rãnh trượt", "dầu rãnh trượt 68", "dầu băng trượt máy CNC", "dầu bôi trơn máy CNC", "mobil vactra no 2", "shell tonna s2 m 68", "total drosera ms 68", "castrol magna bd 68"]
 tags: ["dau-ranh-truot", "may-cnc", "shell-tonna", "mobil-vactra", "iso-vg-68", "iso-vg-220"]
-image: "/images/dau-ranh-truot-may-cnc.jpg"
+image: "/images/danh-muc/dau-ranh-truot.webp"
 ---
 
 **Dầu rãnh trượt** (hay **dầu băng trượt**) bôi trơn băng trượt, sống trượt và vít me của máy phay, tiện, mài CNC. Dầu có thêm **phụ gia bám dính** để không bị gạt khỏi băng trượt, và phụ gia **chống rung giật (stick-slip)** để bàn máy di chuyển êm ở tốc độ chạy dao chậm. Cấp phổ biến nhất là **ISO VG 68** cho băng trượt ngang. **VG 220** dùng cho băng trượt đứng hoặc tải nặng. Loại dầu theo tiêu chuẩn là **ISO 6743-13 GA/GB** hoặc **DIN 51502 CGLP**.
@@ -56,7 +56,7 @@ Dầu rãnh trượt chảy xuống bồn dung dịch tưới nguội. Dầu t�
 
 - **Quy cách:** xô 18–20 lít, phuy 208–209 lít. Quy cách tùy mã hàng.
 - **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS.
-- **Giao hàng:** KCN Quế Võ, VSIP Bắc Ninh, Tràng Duệ, Đình Vũ (Hải Phòng), Phố Nối (Hưng Yên) và các cụm cơ khí miền Bắc.
+- **Giao hàng:** kho tại TP Hải Phòng (Hải Dương cũ), giao nhanh KCN Đại An, Nam Sách, Phúc Điền; giao thêm KCN Quế Võ, VSIP Bắc Ninh, Tràng Duệ, Đình Vũ (Hải Phòng), Phố Nối (Hưng Yên) và các cụm cơ khí miền Bắc.
 
 **Nhận báo giá dầu rãnh trượt:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**. Gửi hãng và model máy CNC, cấp dầu yêu cầu và số lượng máy.
 

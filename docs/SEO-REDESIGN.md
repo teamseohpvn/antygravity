@@ -36,7 +36,7 @@
 
 | Biến | Loại | Ví dụ | Tác dụng |
 | :--- | :--- | :--- | :--- |
-| `PUBLIC_SITE_URL` | Build | `https://daucongnghiep-pro.vn` | Domain chính thức cho canonical, sitemap, schema, robots. Mặc định là domain workers.dev |
+| `PUBLIC_SITE_URL` | Build | `https://daucongnghiephp.com.vn` | Domain chính thức cho canonical, sitemap, schema, robots. Mặc định là domain chính thức |
 | `PUBLIC_INDEXABLE` | Build | `true` | **Chỉ đặt `true` trên bản production chính thức.** Không đặt thì mọi trang có `noindex` |
 | `PUBLIC_GA4_ID` | Build | `G-XXXXXXX` | Bật Google Analytics 4 và các sự kiện chuyển đổi |
 | `QUOTE_TELEGRAM_BOT_TOKEN` | Secret | `123456:ABC…` | Gửi yêu cầu báo giá vào Telegram (tạo bot bằng @BotFather) |

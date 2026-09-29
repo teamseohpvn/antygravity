@@ -9,7 +9,7 @@ vg: 68
 standards: ["ISO 11158 HM", "DIN 51524-2 HLP"]
 packaging: ["Phuy 209L", "Xô 18L"] # TODO: xác minh quy cách đang có hàng
 equivalents: ["Shell Tellus S2 MX 68", "Mobil DTE 26", "TotalEnergies Azolla ZS 68"]
-image: "/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg"
+image: "/images/danh-muc/dau-thuy-luc.webp" # TODO: thay bằng ảnh chụp thật phuy/xô Castrol Hyspin AWS 68
 tags: ["chống mài mòn", "gốc kẽm", "độ nhớt 68"]
 ---
 

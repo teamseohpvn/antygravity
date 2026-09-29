@@ -7,7 +7,7 @@ seo_title: "Dầu Máy Nén Khí Trục Vít, Piston 32, 46, 68 – Báo Giá S�
 description: "Dầu nén khí trục vít, piston ISO VG 32, 46, 68, 100: Shell Corena, Castrol Aircol, dầu tương đương cho Kobelco, Hitachi, Atlas Copco. Có CO/CQ, VAT."
 keywords: ["dầu máy nén khí", "dầu nén khí", "nhớt máy nén khí", "dầu máy nén khí trục vít", "nhớt máy nén khí trục vít", "dầu máy nén khí piston", "dầu máy nén khí kobelco", "dầu máy nén khí hitachi", "dầu máy nén khí atlas copco", "shell corena s3 r 46", "mobil rarus 425", "total dacnis sh 46"]
 tags: ["dau-may-nen-khi", "shell-corena", "castrol-aircol", "truc-vit", "piston"]
-image: "/images/dau-may-nen-khi-cong-nghiep.jpg"
+image: "/images/danh-muc/dau-may-nen-khi.webp"
 ---
 
 **Dầu máy nén khí** (còn gọi là **dầu nén khí** hay **nhớt máy nén khí**) vừa bôi trơn, vừa làm mát và làm kín khe hở trong buồng nén. Loại dầu phụ thuộc vào kiểu máy. **Máy nén khí trục vít ngâm dầu** thường dùng dầu **ISO VG 46**, một số dùng VG 32 hoặc 68. **Máy nén khí piston** thường dùng VG 68 hoặc 100. Dầu gốc khoáng có chu kỳ thay ngắn hơn. Dầu tổng hợp đắt hơn nhưng chạy được lâu hơn nhiều giờ, hợp với máy chạy 24/7.
@@ -69,7 +69,7 @@ Dầu Công Nghiệp Pro cung cấp dầu **tương đương**, không phải d�
 
 ### Có trộn dầu khoáng với dầu tổng hợp trong máy nén khí được không?
 
-Tùy loại dầu tổng hợp. Dầu gốc **PAG (polyglycol)** không tương thích với dầu khoáng và PAO, trộn vào có thể tạo keo và làm nghẹt lọc tách dầu. Dầu **PAO** thường tương thích với dầu khoáng, nhưng trộn lẫn sẽ làm giảm tuổi thọ của dầu tổng hợp. Khi chuyển đổi, tốt nhất là xả sạch, thay lọc, và súc rửa nếu dầu cũ đã bẩn.
+Tùy loại dầu tổng hợp. Dầu gốc **PAG (polyglycol)** không tương thích với dầu khoáng và PAO, trộn vào có thể tạo keo và làm nghẹt lọc tách dầu. Dầu **PAO** thường tương thích với dầu khoáng, nhưng trộn lẫn sẽ làm giảm tuổi thọ của dầu tổng hợp. Khi chuyển đổi, nên xả sạch, thay lọc, và súc rửa nếu dầu cũ đã bẩn.
 
 ### Khi nào cần thay dầu máy nén khí?
 
