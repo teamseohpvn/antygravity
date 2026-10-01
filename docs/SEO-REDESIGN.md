@@ -1,4 +1,4 @@
-# Thiết kế lại website tối ưu SEO: Dầu Công Nghiệp Pro
+# Thiết kế lại website tối ưu SEO: Dầu Công Nghiệp HP
 
 > Tài liệu thiết kế cho repo `antygravity` (Astro 7 + Cloudflare Workers).
 > Dựa trên: kế hoạch SEO nội bộ (`ke-hoach-seo-dau-cong-nghiep-pro.md`, không lưu trong repo), dữ liệu từ khóa DataForSEO (Google Việt Nam, 28/09/2026), audit site dev và đánh giá nội dung danh mục.
@@ -36,7 +36,7 @@
 
 | Biến | Loại | Ví dụ | Tác dụng |
 | :--- | :--- | :--- | :--- |
-| `PUBLIC_SITE_URL` | Build | `https://daucongnghiep-pro.vn` | Domain chính thức cho canonical, sitemap, schema, robots. Mặc định là domain workers.dev |
+| `PUBLIC_SITE_URL` | Build | `https://daucongnghiephp.com.vn` | Domain chính thức cho canonical, sitemap, schema, robots. Mặc định là domain chính thức |
 | `PUBLIC_INDEXABLE` | Build | `true` | **Chỉ đặt `true` trên bản production chính thức.** Không đặt thì mọi trang có `noindex` |
 | `PUBLIC_GA4_ID` | Build | `G-XXXXXXX` | Bật Google Analytics 4 và các sự kiện chuyển đổi |
 | `QUOTE_TELEGRAM_BOT_TOKEN` | Secret | `123456:ABC…` | Gửi yêu cầu báo giá vào Telegram (tạo bot bằng @BotFather) |
@@ -290,7 +290,7 @@ Bảng có thể lọc, gồm: loại dầu, cấp VG/NLGI, Shell, Castrol, Mobi
 
 | Vấn đề hiện tại | Sửa |
 | :--- | :--- |
-| `siteName = "Chuyên Trang Dầu Công Nghiệp Chính Hãng"` làm title dài | `siteName = "Dầu Công Nghiệp Pro"`; fallback title `{title} \| Dầu Công Nghiệp Pro` |
+| `siteName = "Chuyên Trang Dầu Công Nghiệp Chính Hãng"` làm title dài | `siteName = "Dầu Công Nghiệp HP"`; fallback title `{title} \| Dầu Công Nghiệp HP` |
 | Không có `og:url`, `og:image`, `og:locale`, Twitter card | Thêm `og:url` = canonical, `og:image` tuyệt đối từ `image`, `og:locale = vi_VN`, `twitter:card = summary_large_image` |
 | `meta keywords` | Có thể bỏ, vì Google không dùng. Giữ dữ liệu `keywords` trong frontmatter để làm việc nội bộ |
 | Không có robots meta | Thêm prop `noindex`, dùng cho `/bao-gia-thanh-cong`, trang có tham số lọc và mọi trang trên host staging |

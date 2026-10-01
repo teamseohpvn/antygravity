@@ -5,6 +5,7 @@ order: 7
 summary: "Dầu tưới nguội máy CNC, tiện, phay"
 seo_title: "Dầu Cắt Gọt Kim Loại, Dầu Tưới Nguội CNC – Báo Giá Sỉ"
 description: "Dầu cắt gọt pha nước (nhũ tương, bán tổng hợp) và dầu cắt gọt không pha nước cho máy CNC, tiện, phay, taro. Castrol Hysol, Shell Adrana. Có CO/CQ, VAT."
+image: "/images/danh-muc/dau-cat-got.webp" # TODO: ảnh chưa có, xem docs/prompt-anh-danh-muc.md
 keywords: ["dầu cắt gọt", "dầu cắt gọt kim loại", "dầu cắt gọt pha nước", "dầu tưới nguội", "dầu tưới nguội máy CNC", "dầu cắt gọt không pha nước", "dầu cắt gọt kim loại pha nước", "castrol hysol", "shell adrana"]
 tags: ["dau-cat-got", "dau-tuoi-nguoi", "may-cnc", "castrol-hysol", "shell-adrana"]
 ---
@@ -17,8 +18,8 @@ tags: ["dau-cat-got", "dau-tuoi-nguoi", "may-cnc", "castrol-hysol", "shell-adran
 | :--- | :--- | :--- | :--- |
 | **Nhũ tương (soluble oil)** | Nhiều dầu khoáng, pha ra màu trắng sữa | Bôi trơn tốt, giá hợp lý | Tiện, phay thép và gang thông thường |
 | **Bán tổng hợp** | Ít dầu hơn, pha ra màu trắng trong hoặc trong mờ | Bền với vi khuẩn, sạch máy, dễ quan sát | Phần lớn máy CNC, gia công nhôm và thép |
-| **Tổng hợp** | Gần như không có dầu khoáng, pha ra trong suốt | Làm mát tốt nhất, sạch | Mài, gia công tốc độ cao |
-| **Không pha nước (neat oil)** | Dầu gốc và phụ gia chịu cực áp | Bôi trơn tốt nhất, bề mặt đẹp | Taro, chuốt, cắt răng, khoan sâu, máy tiện tự động |
+| **Tổng hợp** | Gần như không có dầu khoáng, pha ra trong suốt | Làm mát mạnh nhất trong các loại, sạch | Mài, gia công tốc độ cao |
+| **Không pha nước (neat oil)** | Dầu gốc và phụ gia chịu cực áp | Bôi trơn mạnh nhất trong các loại, bề mặt đẹp | Taro, chuốt, cắt răng, khoan sâu, máy tiện tự động |
 
 **Gia công nhôm** cần dầu không làm ố hoặc ăn mòn nhôm. **Gia công gang** tạo nhiều bột mịn, cần dung dịch có khả năng lắng tốt. Hãy cho nhà cung cấp biết vật liệu chính khi hỏi mua.
 

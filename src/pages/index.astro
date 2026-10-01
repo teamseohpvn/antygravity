@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import { getCollection } from 'astro:content';
+import { AREA_TEXT, BRANDS, KCN_NEAR, KCN_FAR, publicImageExists, webpSrcset } from '../lib/site';
 
 const products = await getCollection('sanpham');
 const categories = (await getCollection('danhmuc')).sort(
@@ -17,14 +18,25 @@ const grade = (p: (typeof products)[number]) =>
 
 <Layout
   title="Dầu Nhớt Công Nghiệp, Mỡ Bôi Trơn Chính Hãng"
-  seoTitle="Dầu Nhớt Công Nghiệp, Mỡ Bôi Trơn Chính Hãng – Hải Phòng"
-  description="Dầu thủy lực, mỡ bò, dầu bánh răng, dầu truyền nhiệt, dầu máy nén khí Shell, Castrol cho nhà máy. Có CO/CQ, VAT. Báo giá sỉ phuy, xô tại Hải Phòng."
-  image="/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg"
+  seoTitle="Dầu Nhớt Công Nghiệp, Mỡ Bôi Trơn – Hải Phòng (Hải Dương cũ)"
+  description="Dầu thủy lực, mỡ bò, dầu bánh răng, dầu máy nén khí Shell, Castrol, Mobil cho nhà máy. Kho tại TP Hải Phòng (Hải Dương cũ). Có CO/CQ, VAT, báo giá sỉ."
+  image="/images/hero-trang-chu.webp"
 >
   <section class="hero">
+    <img
+      class="hero-bg"
+      src="/images/hero-trang-chu.webp"
+      srcset={webpSrcset('/images/hero-trang-chu.webp')}
+      sizes="100vw"
+      alt=""
+      width="1200"
+      height="1200"
+      fetchpriority="high"
+      decoding="async"
+    />
     <div class="container hero-content">
       <h1>Dầu nhớt công nghiệp và mỡ bôi trơn chính hãng cho nhà máy</h1>
-      <p>Dầu thủy lực, mỡ bò, dầu bánh răng, dầu truyền nhiệt, dầu máy nén khí Shell, Castrol. Có CO/CQ, hóa đơn VAT, tư vấn chọn sản phẩm tương đương. Giao tại Hải Phòng và các tỉnh miền Bắc.</p>
+      <p>Kho tại {AREA_TEXT}. Dầu thủy lực, mỡ bò, dầu bánh răng, dầu truyền nhiệt, dầu máy nén khí {BRANDS.slice(0, 4).join(', ')}. Có CO/CQ, hóa đơn VAT, tư vấn chọn sản phẩm tương đương. Giao tại các KCN Hải Phòng và các tỉnh miền Bắc.</p>
       <div class="hero-actions">
         <a href="/bao-gia" class="btn-primary" data-track="add_to_quote">Nhận báo giá sỉ</a>
         <a href="/dau-thuy-luc" class="btn-secondary">Xem dầu thủy lực</a>
@@ -36,11 +48,20 @@ const grade = (p: (typeof products)[number]) =>
     <h2 class="section-title" id="cat-title">Danh mục sản phẩm</h2>
     <div class="grid">
       {categories.map((c) => (
-        <a
-          href={`/${c.id}`}
-          class="category-card"
-          style={c.data.image ? `background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('${c.data.image}');` : undefined}
-        >
+        <a href={`/${c.id}`} class="category-card">
+          {publicImageExists(c.data.image) && (
+            <img
+              class="card-bg"
+              src={c.data.image}
+              srcset={webpSrcset(c.data.image)}
+              sizes="(max-width: 600px) 100vw, 380px"
+              alt=""
+              width="600"
+              height="400"
+              loading="lazy"
+              decoding="async"
+            />
+          )}
           <h3>{c.data.nav_label ?? c.data.title}</h3>
           {c.data.summary && <p>{c.data.summary}</p>}
         </a>
@@ -49,11 +70,11 @@ const grade = (p: (typeof products)[number]) =>
   </section>
 
   <section class="why container" aria-labelledby="why-title">
-    <h2 class="section-title" id="why-title">Vì sao nhà máy chọn Dầu Công Nghiệp Pro</h2>
+    <h2 class="section-title" id="why-title">Vì sao nhà máy chọn Dầu Công Nghiệp HP</h2>
     <ul class="why-grid">
       <li><strong>Hàng chính hãng, đủ giấy tờ</strong><span>CO/CQ theo lô, hóa đơn VAT, TDS và SDS cho hồ sơ mua hàng.</span></li>
-      <li><strong>Tư vấn sản phẩm tương đương</strong><span>Đối chiếu Shell, Castrol, Mobil, TotalEnergies theo cấp độ nhớt và tiêu chuẩn.</span></li>
-      <li><strong>Giao tại Hải Phòng và miền Bắc</strong><span>Phục vụ KCN Đình Vũ, Tràng Duệ, VSIP, Đại An, Quế Võ, Phố Nối.</span></li>
+      <li><strong>Tư vấn sản phẩm tương đương</strong><span>Đối chiếu {BRANDS.join(', ')} theo cấp độ nhớt và tiêu chuẩn.</span></li>
+      <li><strong>Kho tại Hải Dương cũ, giao nhanh KCN lân cận</strong><span>Phục vụ KCN {KCN_NEAR.slice(0, 3).join(', ')}, và {KCN_FAR.slice(0, 4).join(', ')}.</span></li>
     </ul>
     <QuoteCta />
   </section>
@@ -65,7 +86,7 @@ const grade = (p: (typeof products)[number]) =>
         {products.map((product) => (
           <article class="product-card">
             {(product.data.images?.[0] ?? product.data.image) && (
-              <img src={product.data.images?.[0] ?? product.data.image} alt={product.data.title} width="400" height="200" loading="lazy" decoding="async" />
+              <img src={product.data.images?.[0] ?? product.data.image} srcset={webpSrcset((product.data.images?.[0] ?? product.data.image)!)} sizes="(max-width: 600px) 100vw, 400px" alt={product.data.title} width="400" height="200" loading="lazy" decoding="async" />
             )}
             <div class="product-info">
               <span class="badge">{product.data.brand}</span>
@@ -93,11 +114,18 @@ const grade = (p: (typeof products)[number]) =>
 
 <style>
   .hero {
-    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)), url('/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg') center/cover;
+    position: relative;
+    overflow: hidden;
+    background: var(--color-primary);
     color: white;
     padding: 100px 0;
     text-align: center;
   }
+  .hero-bg, .card-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)); z-index: 1; }
+  .hero-content { position: relative; z-index: 2; }
+  .category-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)); z-index: 1; }
+  .category-card > h3, .category-card > p { position: relative; z-index: 2; }
   .hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); margin-bottom: 20px; line-height: 1.2; text-wrap: balance; }
   .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
   .hero-actions .btn-primary, .hero-actions .btn-secondary { padding: 14px 26px; font-size: 1.05rem; }
@@ -108,6 +136,8 @@ const grade = (p: (typeof products)[number]) =>
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 30px; margin-bottom: 40px; }
   
   .category-card { 
+    position: relative;
+    overflow: hidden;
     background-color: #333; 
     background-size: cover; 
     background-position: center; 

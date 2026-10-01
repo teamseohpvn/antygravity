@@ -9,7 +9,7 @@ vg: 220
 standards: ["DIN 51517-3 CLP"]
 packaging: ["Phuy 209L", "Xô 20L"] # TODO: xác minh quy cách đang có hàng
 equivalents: ["Castrol Alpha SP 220", "Mobilgear 600 XP 220", "TotalEnergies Carter EP 220"]
-image: "/images/dau-banh-rang-cong-nghiep.jpg"
+image: "/images/danh-muc/dau-banh-rang.webp" # TODO: thay bằng ảnh chụp thật phuy/xô Shell Omala S2 GX 220
 tags: ["chịu cực áp", "hộp số kín", "độ nhớt 220"]
 ---
 

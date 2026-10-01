@@ -7,7 +7,7 @@ seo_title: "Dầu Thủy Lực 32, 46, 68 Chính Hãng – Báo Giá Sỉ Phuy, 
 description: "Dầu nhớt thủy lực ISO VG 32, 46, 68 Shell Tellus, Castrol Hyspin, có CO/CQ và VAT. Báo giá sỉ phuy 209L, xô 18–20L, giao tại Hải Phòng và miền Bắc."
 keywords: ["dầu thủy lực", "dầu nhớt thủy lực", "nhớt thủy lực", "dầu thủy lực 68", "dầu thủy lực 46", "dầu thủy lực 32", "dầu thủy lực AW 68", "nhớt thủy lực 68", "dầu thủy lực vg 68", "dầu thủy lực shell", "dầu thủy lực castrol", "shell tellus s2 mx 68", "shell tellus s2 mx 46", "castrol hyspin aws 68"]
 tags: ["dau-thuy-luc", "shell-tellus", "castrol-hyspin", "iso-vg-68", "iso-vg-46", "iso-vg-32"]
-image: "/images/dau-thuy-luc-may-ep-nhua-chinh-hang.jpg"
+image: "/images/danh-muc/dau-thuy-luc.webp"
 ---
 
 **Dầu thủy lực** (còn gọi là **dầu nhớt thủy lực** hay **nhớt thủy lực**) là chất lỏng truyền áp lực trong bơm, van và xi-lanh, đồng thời bôi trơn, làm mát và chống gỉ cho hệ thống. Ba cấp phổ biến nhất là **ISO VG 32, 46 và 68**. Chọn cấp nào phụ thuộc vào nhiệt độ dầu khi máy chạy và khuyến cáo của nhà sản xuất bơm. Với máy ép nhựa và máy ép thủy lực chạy liên tục trong nhà xưởng ở miền Bắc, **dầu thủy lực 68** là lựa chọn thường gặp nhất. Máy công trình và hệ thống làm việc ngoài trời hay dùng **dầu thủy lực 46**.
@@ -92,7 +92,7 @@ Dầu chuyển đục trắng là đã lẫn nước. Dầu chuyển nâu sẫm 
 
 ### Có trộn dầu thủy lực hai hãng khác nhau được không?
 
-Châm bổ sung một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng cấp VG) thường không gây sự cố. Tuy vậy, phụ gia của các hãng khác nhau, nên khi chuyển hãng hẳn thì tốt nhất là xả sạch dầu cũ. Tuyệt đối không trộn dầu gốc khoáng với dầu chống cháy gốc nước glycol (HFC) hoặc dầu gốc ester.
+Châm bổ sung một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng cấp VG) thường không gây sự cố. Tuy vậy, phụ gia của các hãng khác nhau, nên khi chuyển hãng hẳn thì nên xả sạch dầu cũ. Tuyệt đối không trộn dầu gốc khoáng với dầu chống cháy gốc nước glycol (HFC) hoặc dầu gốc ester.
 
 ---
 

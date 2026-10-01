@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import { absUrl, breadcrumbSchema, ORG_ID } from '../../lib/site';
+import { absUrl, breadcrumbSchema, ORG_ID, SITE_NAME } from '../../lib/site';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -30,8 +30,13 @@ const schemaData = [
     description: post.data.description,
     url: absUrl(pagePath),
     ...(post.data.image ? { image: absUrl(post.data.image) } : {}),
-    ...(post.data.author ? { author: { '@type': 'Person', name: post.data.author } } : {}),
+    mainEntityOfPage: absUrl(pagePath),
+    // Chưa có tác giả thật thì ghi doanh nghiệp, không dùng tên giả định.
+    author: post.data.author
+      ? { '@type': 'Person', name: post.data.author, ...(post.data.author_title ? { jobTitle: post.data.author_title } : {}) }
+      : { '@id': ORG_ID },
     ...(post.data.date ? { datePublished: String(post.data.date) } : {}),
+    ...(post.data.updated || post.data.date ? { dateModified: String(post.data.updated ?? post.data.date) } : {}),
     publisher: { '@id': ORG_ID },
   },
   breadcrumbSchema(crumbs),
@@ -53,7 +58,9 @@ const schemaData = [
       <header class="post-header">
         <h1>{post.data.title}</h1>
         <div class="meta">
-          Đăng ngày: <span>{post.data.date}</span> | Tác giả: <span>{post.data.author}</span>
+          Đăng ngày: <span>{post.data.date}</span>
+          {post.data.updated && <> | Cập nhật: <span>{post.data.updated}</span></>}
+          | Tác giả: <span>{post.data.author ?? SITE_NAME}{post.data.author_title && `, ${post.data.author_title}`}</span>
         </div>
         {post.data.tags && (
           <div class="tags">

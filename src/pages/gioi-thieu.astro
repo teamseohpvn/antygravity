@@ -1,0 +1,185 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import { getCollection } from 'astro:content';
+import {
+  BUSINESS, ADDRESS_FULL, AREA_TEXT, SITE_NAME, LEGAL_NAME, LEGAL_SHORT, TAX_ID,
+  BRANDS, KCN_NEAR, KCN_FAR, ORG_ID, absUrl, breadcrumbSchema,
+} from '../lib/site';
+
+const categories = (await getCollection('danhmuc')).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const crumbs = [
+  { name: 'Trang chủ', href: '/' },
+  { name: 'Giới thiệu', href: '/gioi-thieu' },
+];
+
+// Cập nhật khi nội dung thay đổi thực chất (hãng, địa chỉ, danh mục), không đổi ngày chỉ để "làm mới".
+const UPDATED = '2026-09-29';
+
+const schemaData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: `Giới thiệu ${LEGAL_SHORT} – ${SITE_NAME}`,
+    url: absUrl('/gioi-thieu'),
+    inLanguage: 'vi-VN',
+    dateModified: UPDATED,
+    mainEntity: { '@id': ORG_ID },
+    isPartOf: { '@id': absUrl('/') + '#website' },
+  },
+  breadcrumbSchema(crumbs),
+];
+---
+
+<Layout
+  title="Giới Thiệu"
+  seoTitle="Giới Thiệu HT VINA – Dầu Công Nghiệp Hải Phòng (Hải Dương cũ)"
+  description="HT VINA cung cấp dầu thủy lực, dầu bánh răng, dầu máy nén khí, mỡ bôi trơn công nghiệp cho nhà máy. Kho tại TP Hải Phòng (Hải Dương cũ), có CO/CQ, VAT, TDS."
+  image="/images/hero-trang-chu.webp"
+  {schemaData}
+>
+  <div class="container about-page">
+    <Breadcrumbs items={crumbs} />
+
+    <article class="about-card">
+      <h1>Giới thiệu {LEGAL_SHORT}: dầu nhớt công nghiệp cho nhà máy tại {AREA_TEXT}</h1>
+
+      <p class="lead">
+        <strong>{SITE_NAME}</strong> là thương hiệu của <strong>{LEGAL_NAME}</strong>. Chúng tôi cung cấp dầu nhớt và mỡ bôi trơn
+        công nghiệp cho nhà máy, xưởng cơ khí và đội thiết bị tại {AREA_TEXT} và các tỉnh miền Bắc. Hàng xuất từ kho tại phường
+        Lê Thanh Nghị, gồm nhiều hãng, quy cách phuy và xô, kèm CO/CQ, hóa đơn VAT, bảng thông số kỹ thuật (TDS) và phiếu an toàn (SDS).
+      </p>
+
+      <p class="updated">Cập nhật: <time datetime={UPDATED}>29/09/2026</time></p>
+
+      <h2>Thông tin doanh nghiệp</h2>
+      <div class="table-wrap">
+        <table>
+          <tbody>
+            <tr><th scope="row">Tên pháp lý</th><td>{LEGAL_NAME}</td></tr>
+            <tr><th scope="row">Tên viết tắt</th><td>{LEGAL_SHORT}</td></tr>
+            <tr><th scope="row">Thương hiệu website</th><td>{SITE_NAME}</td></tr>
+            <tr><th scope="row">Mã số thuế</th><td>{TAX_ID}</td></tr>
+            <tr><th scope="row">Địa chỉ kho</th><td>{ADDRESS_FULL}</td></tr>
+            <tr><th scope="row">Hotline / Zalo</th><td><a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Chúng tôi cung cấp những gì</h2>
+      <p>
+        Danh mục tập trung vào dầu và mỡ dùng trong sản xuất công nghiệp. Mỗi nhóm có trang riêng với bảng chọn cấp độ nhớt,
+        tiêu chuẩn và sản phẩm tương đương giữa các hãng.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Nhóm sản phẩm</th><th scope="col">Thiết bị sử dụng</th></tr></thead>
+          <tbody>
+            {categories.map((c) => (
+              <tr>
+                <td><a href={`/${c.id}`}>{c.data.nav_label ?? c.data.title}</a></td>
+                <td>{c.data.summary}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Quy cách phổ biến là <strong>phuy 209L</strong> và <strong>xô 18–20L</strong> cho dầu, <strong>phuy 180kg</strong>
+        và <strong>xô 16–18kg</strong> cho mỡ. Quy cách cụ thể của từng mã hàng được ghi trong báo giá.
+      </p>
+
+      <h2>Các hãng dầu có tại kho</h2>
+      <p>
+        Chúng tôi bán nhiều hãng, không phải đại lý độc quyền của một hãng nào. Hàng đang có tại kho gồm:
+      </p>
+      <ul class="brand-list">
+        {BRANDS.map((b) => <li>{b}</li>)}
+      </ul>
+      <p>
+        Vì bán nhiều hãng, chúng tôi so sánh trung lập. Không có hãng dầu nào hợp với mọi máy. Loại dầu phù hợp là loại đáp
+        ứng yêu cầu của nhà sản xuất thiết bị và điều kiện vận hành thực tế: nhiệt độ, tải, tốc độ, môi trường bụi hay ẩm.
+      </p>
+
+      <h2>Cách chúng tôi tư vấn chọn dầu</h2>
+      <ol class="steps">
+        <li>
+          <strong>Đọc yêu cầu của máy.</strong> Cấp độ nhớt, tiêu chuẩn và phê duyệt ghi trong tài liệu hướng dẫn hoặc trên
+          nhãn máy. Ví dụ, dầu thủy lực cho máy ép nhựa thường yêu cầu loại HM theo ISO 11158 hoặc HLP theo DIN 51524-2.
+        </li>
+        <li>
+          <strong>Đối chiếu bảng thông số (TDS) của hãng.</strong> So các chỉ tiêu như độ nhớt ở 40 °C, chỉ số độ nhớt, điểm
+          chớp cháy và phê duyệt của nhà sản xuất bơm hoặc hộp số.
+        </li>
+        <li>
+          <strong>Đề xuất sản phẩm và phương án tương đương.</strong> Khi mã đang dùng hết hàng hoặc cần tối ưu chi phí, chúng
+          tôi đưa ra sản phẩm cùng cấp độ nhớt và cùng tiêu chuẩn của hãng khác, kèm lưu ý khi chuyển hãng.
+        </li>
+        <li>
+          <strong>Khuyến nghị thay dầu theo tình trạng dầu.</strong> Với hệ thống lớn, nên theo dõi dầu bằng phân tích mẫu
+          (độ nhớt, hàm lượng nước, độ nhiễm bẩn) thay vì chỉ thay theo số giờ cố định.
+        </li>
+      </ol>
+      <p>
+        Cách nhanh nhất để được tư vấn là gửi ảnh nhãn dầu đang dùng hoặc tên và model máy qua Zalo. Xem thêm các bài hướng
+        dẫn tại mục <a href="/ho-tro-ky-thuat">hỗ trợ kỹ thuật</a>.
+      </p>
+
+      <h2>Hồ sơ đi kèm hàng hóa</h2>
+      <p>Bộ phận mua hàng và kiểm soát chất lượng của nhà máy thường cần các giấy tờ sau. Chúng tôi cung cấp theo từng lô:</p>
+      <ul>
+        <li><strong>CO/CQ:</strong> chứng nhận xuất xứ và chứng nhận chất lượng theo lô hàng.</li>
+        <li><strong>Hóa đơn VAT:</strong> xuất theo thông tin doanh nghiệp mua hàng.</li>
+        <li><strong>TDS (Technical Data Sheet):</strong> bảng thông số kỹ thuật chính hãng của sản phẩm.</li>
+        <li><strong>SDS (Safety Data Sheet):</strong> phiếu an toàn hóa chất, dùng cho hồ sơ an toàn và kho bãi.</li>
+      </ul>
+
+      <h2>Kho hàng và khu vực giao hàng</h2>
+      <p>
+        Kho của chúng tôi đặt tại {ADDRESS_FULL}. Theo Nghị quyết 202/2025/QH15 của Quốc hội, tỉnh Hải Dương và TP Hải Phòng
+        hợp nhất thành TP Hải Phòng từ ngày 01/07/2025. Vì vậy, địa chỉ kho hiện ghi là TP Hải Phòng, dù vị trí vẫn ở khu vực
+        TP Hải Dương cũ.
+      </p>
+      <p>
+        Từ kho, chúng tôi giao hàng tới các khu công nghiệp lân cận như KCN {KCN_NEAR.join(', ')}. Chúng tôi cũng giao tới
+        KCN {KCN_FAR.join(', ')} và các tỉnh Bắc Ninh, Hưng Yên, Quảng Ninh, Hà Nội. Thời gian giao cụ thể được xác nhận
+        khi báo giá, tùy số lượng và địa điểm.
+      </p>
+
+      <h2>Chúng tôi phục vụ ai</h2>
+      <ul>
+        <li><strong>Kỹ sư, tổ trưởng bảo trì:</strong> cần đúng loại dầu theo yêu cầu thiết bị, có TDS để đối chiếu.</li>
+        <li><strong>Nhân viên mua hàng:</strong> cần báo giá rõ quy cách, hóa đơn VAT và hồ sơ CO/CQ cho từng lô.</li>
+        <li><strong>Chủ xưởng cơ khí, đội máy công trình:</strong> cần tư vấn nhanh qua Zalo và mua số lượng vừa phải.</li>
+      </ul>
+
+      <h2>Liên hệ và nhận báo giá</h2>
+      <p>
+        Gửi danh sách sản phẩm, quy cách và số lượng cần mua qua <a href="/bao-gia">form báo giá</a>, hoặc gọi, nhắn Zalo
+        {' '}{BUSINESS.phoneDisplay}. Thông tin chi tiết xem tại trang <a href="/lien-he">liên hệ</a>.
+      </p>
+      <QuoteCta heading="Nhận báo giá dầu nhớt công nghiệp" />
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .about-page { margin-bottom: 60px; }
+  .about-card { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: clamp(20px, 4vw, 48px); max-width: 900px; }
+  .about-card h1 { color: var(--color-primary); font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.3; margin-bottom: 16px; }
+  .about-card h2 { color: var(--color-primary); font-size: 1.4rem; margin: 32px 0 12px; }
+  .about-card p { margin-bottom: 14px; }
+  .about-card ul, .about-card ol { margin: 0 0 14px 22px; }
+  .about-card li { margin-bottom: 8px; }
+  .about-card a { color: var(--color-accent); }
+  .lead { font-size: 1.1rem; }
+  .updated { color: var(--color-text-light); font-size: 0.9rem; }
+  .table-wrap { overflow-x: auto; margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
+  thead th, tbody th { color: var(--color-primary); white-space: nowrap; }
+  .brand-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin-left: 0 !important; }
+  .brand-list li { background: #e2e8f0; border-radius: 20px; padding: 4px 12px; font-weight: 600; margin: 0; }
+</style>

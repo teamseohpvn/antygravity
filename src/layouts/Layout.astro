@@ -1,7 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
+// Font Inter tự host (có subset tiếng Việt), không chặn render như Google Fonts.
+import '@fontsource-variable/inter/wght.css';
 import SEO from '../components/SEO.astro';
-import { BUSINESS, ADDRESS_TEXT, SITE_NAME, organizationSchema, websiteSchema } from '../lib/site';
+import { BUSINESS, ADDRESS_FULL, AREA_TEXT, SITE_NAME, LEGAL_NAME, TAX_ID, organizationSchema, websiteSchema } from '../lib/site';
 
 interface Props {
   title: string;
@@ -35,10 +37,6 @@ const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <SEO {title} {seoTitle} {description} {canonical} {image} {type} {noindex} schemaData={schemas} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
-
     {GA4_ID && (
       <>
         <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
@@ -66,7 +64,7 @@ const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
       * { box-sizing: border-box; margin: 0; padding: 0; }
 
       body {
-        font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        font-family: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
         color: var(--color-text);
         background-color: var(--color-bg);
         line-height: 1.6;
@@ -183,7 +181,7 @@ const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
   <body>
     <header class="site-header">
       <div class="container nav-container">
-        <a href="/" class="logo">DầuCôngNghiệp<span style="color:var(--color-accent)">.pro</span></a>
+        <a href="/" class="logo">DầuCôngNghiệp<span style="color:var(--color-accent)">HP</span></a>
 
         <ul class="nav-links">
           <li><a href="/">Trang chủ</a></li>
@@ -196,6 +194,7 @@ const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
             </details>
           </li>
           <li><a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a></li>
+          <li><a href="/gioi-thieu">Giới thiệu</a></li>
           <li><a href="/lien-he">Liên hệ</a></li>
         </ul>
         <a href="/bao-gia" class="btn-primary header-cta" data-track="add_to_quote">Nhận Báo Giá</a>
@@ -206,6 +205,7 @@ const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
             <a href="/">Trang chủ</a>
             {categories.map((c) => <a href={`/${c.id}`}>{c.data.nav_label ?? c.data.title}</a>)}
             <a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a>
+            <a href="/gioi-thieu">Giới thiệu</a>
             <a href="/lien-he">Liên hệ</a>
             <a href="/bao-gia">Nhận báo giá</a>
           </nav>
@@ -222,7 +222,8 @@ const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
         <div class="footer-grid">
           <div>
             <h2>{SITE_NAME}</h2>
-            <p>{ADDRESS_TEXT}</p>
+            <p>{LEGAL_NAME}<br />MST: {TAX_ID}</p>
+            <p>Kho: {ADDRESS_FULL}</p>
             <p>Hotline / Zalo: <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></p>
             <p><a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a> · <a href="/bao-gia">Gửi yêu cầu báo giá</a></p>
           </div>
@@ -235,13 +236,14 @@ const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
           <div>
             <h2>Thông tin</h2>
             <ul>
+              <li><a href="/gioi-thieu">Giới thiệu HT VINA</a></li>
               <li><a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a></li>
               <li><a href="/lien-he">Liên hệ</a></li>
               <li><a href="/bao-gia">Báo giá</a></li>
             </ul>
           </div>
         </div>
-        <p class="footer-bottom">&copy; {new Date().getFullYear()} {SITE_NAME}. Dầu nhớt và mỡ bôi trơn công nghiệp cho nhà máy tại Hải Phòng và miền Bắc.</p>
+        <p class="footer-bottom">&copy; {new Date().getFullYear()} {SITE_NAME} là thương hiệu của {LEGAL_NAME}. Dầu nhớt và mỡ bôi trơn công nghiệp cho nhà máy tại {AREA_TEXT} và miền Bắc.</p>
       </div>
     </footer>
 

@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import { getCollection, render } from 'astro:content';
-import { absUrl, breadcrumbSchema, ORG_ID } from '../../lib/site';
+import { absUrl, breadcrumbSchema, ORG_ID, publicImageExists, webpSrcset } from '../../lib/site';
 
 export async function getStaticPaths() {
   const products = await getCollection('sanpham');
@@ -21,7 +21,9 @@ export async function getStaticPaths() {
 const { category } = Astro.params;
 const { products, categoryInfo } = Astro.props;
 const { Content } = await render(categoryInfo);
-const { title, nav_label, description, seo_title, image, reviewed_by, updated } = categoryInfo.data;
+const { title, nav_label, description, seo_title, reviewed_by, updated } = categoryInfo.data;
+// Bỏ ảnh khi file chưa được tạo (tránh og:image và schema trỏ tới ảnh 404).
+const image = publicImageExists(categoryInfo.data.image) ? categoryInfo.data.image : undefined;
 const pagePath = `/${category}`;
 
 const crumbs = [
@@ -107,7 +109,7 @@ const schemaData = [
             {products.map((product) => (
               <article class="product-card" data-brand={product.data.brand} data-grade={productGrade(product) ?? ''}>
                 {(product.data.images?.[0] ?? product.data.image) && (
-                  <img src={product.data.images?.[0] ?? product.data.image} alt={product.data.title} width="400" height="200" loading="lazy" decoding="async" />
+                  <img src={product.data.images?.[0] ?? product.data.image} srcset={webpSrcset((product.data.images?.[0] ?? product.data.image)!)} sizes="(max-width: 600px) 100vw, 400px" alt={product.data.title} width="400" height="200" loading="lazy" decoding="async" />
                 )}
                 <div class="product-info">
                   <div class="tags">

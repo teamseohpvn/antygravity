@@ -53,7 +53,9 @@ const blogCollection = defineCollection({
     description: z.string(),
     keywords: z.array(z.string()).optional(),
     author: z.string().optional(),
+    author_title: z.string().optional(), // Chức vụ, kinh nghiệm của tác giả (E-E-A-T)
     date: z.string().or(z.date()).optional(),
+    updated: z.string().or(z.date()).optional(),
     image: z.string().optional(),
     tags: z.array(z.string()).optional(),
     canonical_url: z.string().optional(),
