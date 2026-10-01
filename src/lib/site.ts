@@ -5,7 +5,7 @@ declare const __PUBLIC_IMAGES__: string[];
 const PUBLIC_IMAGES = new Set<string>(typeof __PUBLIC_IMAGES__ === 'undefined' ? [] : __PUBLIC_IMAGES__);
 const existsSync = (publicPath: string) => PUBLIC_IMAGES.has(publicPath.replace(/^public/, ''));
 
-export const SITE_NAME = 'Dầu Công Nghiệp Pro';
+export const SITE_NAME = 'Dầu Công Nghiệp HP';
 
 // Pháp nhân đứng sau thương hiệu. Hiển thị ở footer, trang liên hệ và schema (legalName, taxID).
 export const LEGAL_NAME = 'Công ty Cổ phần Thương mại Dịch vụ HT VINA';

@@ -41,7 +41,7 @@ Nhiều máy nén khí trục vít được châm dầu chính hãng của nhà 
 - Trong thời gian bảo hành, dùng đúng dầu nhà sản xuất máy yêu cầu.
 - Khi đổi dầu, thay luôn lọc dầu và kiểm tra bình tách dầu.
 
-Dầu Công Nghiệp Pro cung cấp dầu **tương đương**, không phải dầu OEM mang thương hiệu của nhà sản xuất máy.
+Dầu Công Nghiệp HP cung cấp dầu **tương đương**, không phải dầu OEM mang thương hiệu của nhà sản xuất máy.
 
 ## Chỉ tiêu cần xem trên bảng thông số (TDS)
 

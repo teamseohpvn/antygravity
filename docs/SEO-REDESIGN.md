@@ -1,4 +1,4 @@
-# Thiết kế lại website tối ưu SEO: Dầu Công Nghiệp Pro
+# Thiết kế lại website tối ưu SEO: Dầu Công Nghiệp HP
 
 > Tài liệu thiết kế cho repo `antygravity` (Astro 7 + Cloudflare Workers).
 > Dựa trên: kế hoạch SEO nội bộ (`ke-hoach-seo-dau-cong-nghiep-pro.md`, không lưu trong repo), dữ liệu từ khóa DataForSEO (Google Việt Nam, 28/09/2026), audit site dev và đánh giá nội dung danh mục.
@@ -290,7 +290,7 @@ Bảng có thể lọc, gồm: loại dầu, cấp VG/NLGI, Shell, Castrol, Mobi
 
 | Vấn đề hiện tại | Sửa |
 | :--- | :--- |
-| `siteName = "Chuyên Trang Dầu Công Nghiệp Chính Hãng"` làm title dài | `siteName = "Dầu Công Nghiệp Pro"`; fallback title `{title} \| Dầu Công Nghiệp Pro` |
+| `siteName = "Chuyên Trang Dầu Công Nghiệp Chính Hãng"` làm title dài | `siteName = "Dầu Công Nghiệp HP"`; fallback title `{title} \| Dầu Công Nghiệp HP` |
 | Không có `og:url`, `og:image`, `og:locale`, Twitter card | Thêm `og:url` = canonical, `og:image` tuyệt đối từ `image`, `og:locale = vi_VN`, `twitter:card = summary_large_image` |
 | `meta keywords` | Có thể bỏ, vì Google không dùng. Giữ dữ liệu `keywords` trong frontmatter để làm việc nội bộ |
 | Không có robots meta | Thêm prop `noindex`, dùng cho `/bao-gia-thanh-cong`, trang có tham số lọc và mọi trang trên host staging |
