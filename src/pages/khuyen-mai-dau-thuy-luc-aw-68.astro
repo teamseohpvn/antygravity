@@ -1,0 +1,206 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import {
+  BUSINESS, ADDRESS_FULL, AREA_TEXT, LEGAL_SHORT, KCN_NEAR, KCN_FAR, absUrl, breadcrumbSchema,
+} from '../lib/site';
+
+import { PROMO } from '../lib/promo';
+
+// Đợt khuyến mại: sửa trong src/lib/promo.ts (giữ nguyên URL để dồn tín hiệu SEO qua các tháng).
+const { label: PROMO_LABEL, end: PROMO_END, endText: PROMO_END_TEXT, sameDayCutoff: CUTOFF } = PROMO;
+
+// Cập nhật khi nội dung thay đổi thực chất (ưu đãi, mã hàng, điều kiện giao), không đổi ngày chỉ để "làm mới".
+const UPDATED = '2026-10-03';
+
+// Mã ISO VG 68 có hàng theo file kho 02/10/2026. Không đưa Petrolimex lên web (quyết định 02/10/2026).
+const PRODUCTS = [
+  { name: 'ENEOS Super Hyrando 68', brand: 'ENEOS', packs: 'Phuy 200L, can 18L' },
+  { name: 'ENEOS Super Hyrando SE68', brand: 'ENEOS', packs: 'Phuy 200L' },
+  { name: 'Castrol Hyspin AWS 68', brand: 'Castrol', packs: 'Phuy 209L', href: '/dau-thuy-luc/castrol-hyspin-aws-68' },
+  { name: 'Caltex Hydraulic AW 68', brand: 'Caltex', packs: 'Phuy 208L' },
+  { name: 'Cosmo Hydro AW 68', brand: 'Cosmo', packs: 'Phuy 200L' },
+  { name: 'Isonas AW68', brand: 'VHP', packs: 'Phuy 200L, can 18L' },
+  { name: 'Spinax AW68', brand: 'VHP', packs: 'Phuy 200L' },
+  { name: 'Dầu thủy lực X-One 68', brand: 'X-One', packs: 'Phuy 200L, xô 18L' },
+  { name: 'EMI AW68', brand: 'EMI', packs: 'Phuy 200L, xô' },
+];
+
+const tel = `tel:${BUSINESS.phone}`;
+
+const crumbs = [
+  { name: 'Trang chủ', href: '/' },
+  { name: 'Dầu thủy lực', href: '/dau-thuy-luc' },
+  { name: 'Khuyến mại dầu thủy lực AW 68', href: '/khuyen-mai-dau-thuy-luc-aw-68' },
+];
+
+const schemaData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: `Khuyến mại dầu thủy lực AW 68 ${PROMO_LABEL}`,
+    url: absUrl('/khuyen-mai-dau-thuy-luc-aw-68'),
+    inLanguage: 'vi-VN',
+    dateModified: UPDATED,
+    isPartOf: { '@id': absUrl('/') + '#website' },
+    about: { '@type': 'Thing', name: 'Dầu thủy lực AW 68 (ISO VG 68)' },
+    publisher: { '@id': absUrl('/') + '#organization' },
+  },
+  breadcrumbSchema(crumbs),
+];
+---
+
+<Layout
+  title="Khuyến Mại Dầu Thủy Lực AW 68"
+  seoTitle="Khuyến Mại Dầu Thủy Lực AW 68 Tháng 10 – Kho Hải Dương Cũ"
+  description={`Ưu đãi dầu thủy lực AW 68 ${PROMO_LABEL}: giảm theo số lượng, miễn phí vận chuyển, giao trong ngày nếu đặt trước 16h. Kho Hải Dương cũ. Gọi ${BUSINESS.phoneDisplay}.`}
+  image="/images/danh-muc/dau-thuy-luc.webp"
+  {schemaData}
+>
+  <div class="container promo-page">
+    <Breadcrumbs items={crumbs} />
+
+    <article class="promo-card">
+      <p class="promo-badge">Ưu đãi {PROMO_LABEL} · đến hết <time datetime={PROMO_END}>{PROMO_END_TEXT}</time></p>
+      <h1>Khuyến mại dầu thủy lực AW 68 {PROMO_LABEL}: giảm theo số lượng, miễn phí vận chuyển</h1>
+
+      <div class="answer-box">
+        <p>
+          <strong>Tóm tắt nhanh:</strong> từ nay đến hết {PROMO_END_TEXT}, dầu thủy lực AW 68 (ISO VG 68) tại kho
+          {' '}{AREA_TEXT} được <strong>giảm giá theo số lượng</strong> và <strong>miễn phí vận chuyển</strong>. Ưu đãi áp dụng cho
+          cả phuy 200–209L và can, xô 18L, không yêu cầu đơn tối thiểu. Chốt đơn trước {CUTOFF} (thứ Hai đến thứ Sáu) để được giao trong ngày tới các KCN gần kho. Mức giảm được báo riêng theo hãng, quy cách và số lượng.
+        </p>
+        <a href={tel} class="btn-primary btn-call" data-track="click_tel">Gọi ngay {BUSINESS.phoneDisplay} để nhận báo giá ưu đãi</a>
+      </div>
+
+      <p class="updated">Cập nhật: <time datetime={UPDATED}>03/10/2026</time></p>
+
+      <h2>Ưu đãi dầu thủy lực AW 68 {PROMO_LABEL} gồm những gì</h2>
+      <div class="offer-grid">
+        <div class="offer">
+          <h3>Giảm giá theo số lượng</h3>
+          <p>Mua càng nhiều phuy hoặc can thì đơn giá càng giảm. Mức giảm cụ thể được báo khi bạn gọi, theo mã dầu và số lượng cần mua.</p>
+        </div>
+        <div class="offer">
+          <h3>Miễn phí vận chuyển</h3>
+          <p>Không tính phí giao hàng cho đơn dầu thủy lực AW 68 đặt trong đợt ưu đãi, kể cả đơn một can.</p>
+        </div>
+        <div class="offer">
+          <h3>Mọi quy cách, không đơn tối thiểu</h3>
+          <p>Áp dụng cho phuy 200–209L và can, xô 18L. Xưởng nhỏ cần một can vẫn được hưởng ưu đãi.</p>
+        </div>
+      </div>
+
+      <h2>Các mã dầu thủy lực AW 68 có sẵn tại kho</h2>
+      <p>
+        Chúng tôi bán nhiều hãng, nên có thể đề xuất mã phù hợp với máy và ngân sách của bạn. Danh sách dưới đây là các mã ISO VG 68
+        đang có hàng tại kho:
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Sản phẩm</th><th scope="col">Hãng</th><th scope="col">Quy cách</th></tr></thead>
+          <tbody>
+            {PRODUCTS.map((p) => (
+              <tr>
+                <td>{p.href ? <a href={p.href}>{p.name}</a> : p.name}</td>
+                <td>{p.brand}</td>
+                <td>{p.packs}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        Tình trạng hàng có thể thay đổi trong tháng. Khi bạn gọi, chúng tôi xác nhận mã còn hàng và gửi TDS (bảng thông số kỹ thuật)
+        của hãng để đối chiếu.
+      </p>
+
+      <h2>Dầu thủy lực AW 68 dùng cho máy nào</h2>
+      <p>
+        "AW 68", "VG 68" và "dầu thủy lực 68" là cùng một cấp độ nhớt. Theo ISO 3448, dầu ISO VG 68 có độ nhớt động học từ 61,2 đến
+        74,8 cSt ở 40 °C. Chữ "AW" (anti-wear) nghĩa là dầu có phụ gia chống mài mòn. Loại này thường tương ứng nhóm HM theo
+        ISO 11158 hoặc HLP theo DIN 51524-2.
+      </p>
+      <p>
+        Dầu thủy lực 68 thường được dùng cho máy ép nhựa, máy ép thủy lực, máy công cụ CNC, xe nâng và máy công trình chạy trong nhà
+        xưởng nóng. Cấp độ nhớt đúng cho máy của bạn là cấp ghi trong tài liệu của nhà sản xuất thiết bị. Nếu chưa rõ nên dùng 46
+        hay 68, hãy gửi ảnh nhãn dầu đang dùng hoặc model máy qua Zalo để được tư vấn trước khi đặt hàng. Xem thêm
+        {' '}<a href="/dau-thuy-luc">các loại dầu thủy lực</a> và <a href="/ho-tro-ky-thuat/huong-dan-chon-do-nhot">hướng dẫn chọn độ nhớt</a>.
+      </p>
+
+      <h2>Kho tại Hải Dương cũ và giao hàng trong ngày</h2>
+      <p>
+        Kho của {LEGAL_SHORT} đặt tại {ADDRESS_FULL}. Tỉnh Hải Dương đã hợp nhất vào TP Hải Phòng từ ngày 01/07/2025, nên địa chỉ
+        kho hiện ghi là TP Hải Phòng, dù vị trí vẫn ở khu vực TP Hải Dương cũ.
+      </p>
+      <ul>
+        <li>
+          <strong>Giao trong ngày</strong> cho các khu công nghiệp gần kho: KCN {KCN_NEAR.join(', ')}, khi chốt đơn trước {CUTOFF} từ thứ Hai đến thứ Sáu.
+        </li>
+        <li>
+          <strong>Khu vực xa hơn</strong> như KCN {KCN_FAR.join(', ')} và các tỉnh Bắc Ninh, Hưng Yên, Quảng Ninh, Hà Nội: vẫn miễn
+          phí vận chuyển, thời gian giao được xác nhận cùng báo giá.
+        </li>
+        <li><strong>Giờ làm việc:</strong> thứ Hai đến thứ Sáu 8:00–17:00, thứ Bảy 8:00–15:00.</li>
+        <li><strong>Hồ sơ đi kèm:</strong> CO/CQ theo lô, hóa đơn VAT, TDS và SDS của hãng.</li>
+      </ul>
+      <p>Bạn cũng có thể đến kho xem hàng trực tiếp. Gọi trước để chúng tôi chuẩn bị đúng mã cần xem.</p>
+
+      <h2>Cách nhận báo giá ưu đãi</h2>
+      <ol class="steps">
+        <li><strong>Gọi hoặc nhắn Zalo <a href={tel} data-track="click_tel">{BUSINESS.phoneDisplay}</a>.</strong></li>
+        <li><strong>Cho biết mã dầu (hoặc model máy), quy cách, số lượng và địa điểm giao.</strong> Nếu chưa chọn được mã, chỉ cần nói máy đang dùng loại nào.</li>
+        <li><strong>Nhận báo giá ưu đãi và lịch giao.</strong> Báo giá ghi rõ mức giảm theo số lượng. Chốt đơn trước {CUTOFF} để được giao trong ngày.</li>
+      </ol>
+      <p>Nếu muốn gửi danh sách nhiều mặt hàng cùng lúc, hãy dùng <a href="/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c%20AW%2068">form báo giá</a>.</p>
+
+      <h2>Câu hỏi thường gặp</h2>
+      <h3>Ưu đãi dầu thủy lực AW 68 áp dụng đến khi nào?</h3>
+      <p>Đến hết ngày {PROMO_END_TEXT}, tính theo ngày đặt hàng.</p>
+      <h3>Đặt hàng mấy giờ thì được giao trong ngày?</h3>
+      <p>Chốt đơn trước {CUTOFF} từ thứ Hai đến thứ Sáu để được giao trong ngày tới các khu công nghiệp gần kho.</p>
+      <h3>Có cần mua số lượng tối thiểu không?</h3>
+      <p>Không. Ưu đãi áp dụng cho cả can, xô 18L và phuy. Mua càng nhiều thì mức giảm theo số lượng càng cao.</p>
+      <h3>Vì sao trang không ghi giá cụ thể?</h3>
+      <p>
+        Giá dầu thủy lực 68 chênh nhau nhiều giữa các hãng và quy cách, và còn phụ thuộc số lượng. Chúng tôi báo giá theo từng đơn để
+        áp đúng mức ưu đãi cho bạn.
+      </p>
+      <h3>Có giao ngoài TP Hải Phòng không?</h3>
+      <p>Có. Chúng tôi giao tới Bắc Ninh, Hưng Yên, Quảng Ninh, Hà Nội và các tỉnh miền Bắc, miễn phí vận chuyển trong đợt ưu đãi. Thời gian giao được báo cùng báo giá.</p>
+
+      <div class="final-cta">
+        <p class="final-cta__heading">Nhận báo giá ưu đãi dầu thủy lực AW 68 {PROMO_LABEL}</p>
+        <a href={tel} class="btn-primary btn-call" data-track="click_tel">Gọi ngay {BUSINESS.phoneDisplay}</a>
+      </div>
+      <QuoteCta item="Dầu thủy lực AW 68" heading="Hoặc gửi yêu cầu báo giá" />
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .promo-page { margin-bottom: 60px; }
+  .promo-card { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: clamp(20px, 4vw, 48px); max-width: 900px; }
+  .promo-card h1 { color: var(--color-primary); font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.3; margin-bottom: 16px; }
+  .promo-card h2 { color: var(--color-primary); font-size: 1.4rem; margin: 32px 0 12px; }
+  .promo-card h3 { color: var(--color-primary); font-size: 1.1rem; margin: 18px 0 8px; }
+  .promo-card p { margin-bottom: 14px; }
+  .promo-card ul, .promo-card ol { margin: 0 0 14px 22px; }
+  .promo-card li { margin-bottom: 8px; }
+  .promo-card a:not(.btn-primary) { color: var(--color-accent); }
+  .promo-badge { display: inline-block; background: var(--color-accent); color: white; font-weight: 700; border-radius: 20px; padding: 4px 14px; font-size: 0.9rem; }
+  .answer-box { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 8px; padding: 20px 24px; margin-bottom: 12px; }
+  .btn-call { display: inline-block; font-size: 1.05rem; }
+  .updated, .note { color: var(--color-text-light); font-size: 0.9rem; }
+  .offer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-bottom: 14px; }
+  .offer { border: 1px solid var(--border-color); border-radius: 8px; padding: 16px; }
+  .offer h3 { margin-top: 0; }
+  .offer p { margin-bottom: 0; }
+  .table-wrap { overflow-x: auto; margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
+  thead th { color: var(--color-primary); white-space: nowrap; }
+  .final-cta { text-align: center; background: var(--color-primary); color: white; border-radius: 8px; padding: 24px; margin-top: 32px; }
+  .final-cta__heading { font-weight: 700; font-size: 1.2rem; margin-bottom: 14px; }
+</style>
