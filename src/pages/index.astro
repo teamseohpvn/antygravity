@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import QuoteCta from '../components/QuoteCta.astro';
+import PromoBanner from '../components/PromoBanner.astro';
 import { getCollection } from 'astro:content';
 import { AREA_TEXT, BRANDS, KCN_NEAR, KCN_FAR, publicImageExists, webpSrcset } from '../lib/site';
 
@@ -43,6 +44,8 @@ const grade = (p: (typeof products)[number]) =>
       </div>
     </div>
   </section>
+
+  <div class="container"><PromoBanner /></div>
 
   <section class="categories container" aria-labelledby="cat-title">
     <h2 class="section-title" id="cat-title">Danh mục sản phẩm</h2>

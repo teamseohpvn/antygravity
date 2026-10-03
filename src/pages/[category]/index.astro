@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
+import PromoBanner from '../../components/PromoBanner.astro';
 import { getCollection, render } from 'astro:content';
 import { absUrl, breadcrumbSchema, ORG_ID, publicImageExists, webpSrcset } from '../../lib/site';
 
@@ -81,6 +82,8 @@ const schemaData = [
       <p>{description}</p>
       <QuoteCta item={nav_label ?? title} compact />
     </header>
+
+    {category === 'dau-thuy-luc' && <PromoBanner />}
 
     <div class:list={['layout-grid', { 'no-filter': !showFilter }]}>
       {showFilter && (
