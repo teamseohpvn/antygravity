@@ -41,7 +41,8 @@ export const CONSENT_KEY = 'hp-cookie-consent-v1';
 export const POLICY_LINKS = [
   { href: '/chinh-sach-giao-hang', label: 'Chính sách giao hàng' },
   { href: '/chinh-sach-thanh-toan', label: 'Chính sách thanh toán' },
-  { href: '/chinh-sach-bao-mat', label: 'Chính sách bảo mật' },
+  { href: '/chinh-sach-bao-mat', label: 'Chính sách bảo mật', rel: 'privacy-policy' },
+  { href: '/dieu-khoan-su-dung', label: 'Điều khoản sử dụng', rel: 'terms-of-service' },
   { href: '/tuy-chon-cookie', label: 'Tùy chọn cookie' },
 ];
 export const BRANDS = ['Shell', 'Castrol', 'Mobil', 'TotalEnergies', 'ENEOS', 'EMI', 'VHP', 'XONE'];
@@ -114,6 +115,14 @@ export function organizationSchema() {
       addressCountry: BUSINESS.country,
     },
     areaServed: ['Hải Phòng', 'Bắc Ninh', 'Hưng Yên', 'Quảng Ninh', 'Hà Nội'].map((name) => ({ '@type': 'AdministrativeArea', name })),
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      telephone: '+84' + BUSINESS.phone.replace(/^0/, ''),
+      areaServed: 'VN',
+      availableLanguage: 'vi',
+      url: absUrl('/lien-he'),
+    },
     knowsAbout: ['Dầu thủy lực', 'Dầu bánh răng', 'Mỡ bôi trơn công nghiệp', 'Dầu máy nén khí', 'Dầu truyền nhiệt'],
     // TODO: thêm geo (tọa độ ghim Google Maps), openingHoursSpecification (giờ làm việc thật),
     // sameAs (Google Business Profile, Facebook, Zalo OA) khi có. Không điền giá trị đoán.

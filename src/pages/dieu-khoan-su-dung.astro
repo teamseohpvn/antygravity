@@ -1,0 +1,65 @@
+---
+import PolicyPage from '../components/PolicyPage.astro';
+import { BUSINESS, ADDRESS_FULL, LEGAL_NAME, TAX_ID, SITE_URL } from '../lib/site';
+const domain = SITE_URL.replace(/^https?:\/\//, '');
+---
+
+<PolicyPage
+  path="/dieu-khoan-su-dung"
+  title="Điều khoản sử dụng"
+  seoTitle="Điều Khoản Sử Dụng Website – Dầu Công Nghiệp HP"
+  description="Điều khoản khi sử dụng website: phạm vi thông tin sản phẩm và thông số kỹ thuật, giá và báo giá, nhãn hiệu, giới hạn trách nhiệm và luật áp dụng."
+  updated="2026-10-06"
+>
+  <p>
+    Website {domain} do {LEGAL_NAME} (MST {TAX_ID}, địa chỉ {ADDRESS_FULL}) quản lý. Khi truy cập và sử dụng website,
+    bạn đồng ý với các điều khoản dưới đây.
+  </p>
+
+  <h2>1. Thông tin sản phẩm và thông số kỹ thuật</h2>
+  <ul>
+    <li>Thông số kỹ thuật trên website là giá trị điển hình lấy từ bảng thông số (TDS) của nhà sản xuất, ghi rõ ngày phát hành TDS trên từng trang. Giá trị thực tế có thể thay đổi theo lô sản xuất.</li>
+    <li>Hướng dẫn chọn dầu, ngưỡng thay dầu và cách test dầu chỉ mang tính tham khảo. Khuyến cáo trong sổ tay thiết bị và của nhà sản xuất dầu được ưu tiên áp dụng.</li>
+    <li>Hình ảnh sản phẩm có thể khác thực tế về mẫu nhãn, màu vỏ phuy hoặc can do nhà sản xuất thay đổi bao bì.</li>
+  </ul>
+
+  <h2>2. Giá và báo giá</h2>
+  <ul>
+    <li>Giá trên website (nếu có) là khoảng giá tham khảo, chưa phải giá bán cuối cùng.</li>
+    <li>Giá bán, quy cách, thời gian giao và điều kiện thanh toán được xác nhận trong báo giá gửi riêng cho bạn qua Zalo, email hoặc văn bản.</li>
+    <li>Chi tiết xem <a href="/chinh-sach-thanh-toan">Chính sách thanh toán</a> và <a href="/chinh-sach-giao-hang">Chính sách giao hàng</a>.</li>
+  </ul>
+
+  <h2>3. Nhãn hiệu và nội dung</h2>
+  <ul>
+    <li>Tên và logo các hãng dầu (Shell, Castrol, Mobil, TotalEnergies, ENEOS…) thuộc quyền sở hữu của các chủ nhãn hiệu tương ứng, chỉ dùng để mô tả sản phẩm.</li>
+    <li>Bài viết, bảng so sánh và hình ảnh do chúng tôi biên soạn, chụp. Bạn được trích dẫn một phần nếu ghi rõ nguồn kèm liên kết về trang gốc.</li>
+  </ul>
+
+  <h2>4. Liên kết đến website khác</h2>
+  <p>
+    Website có liên kết đến tài liệu của nhà sản xuất và tổ chức tiêu chuẩn (TDS, SDS, ISO, ASTM). Chúng tôi không kiểm soát và không chịu trách nhiệm
+    về nội dung của các website đó.
+  </p>
+
+  <h2>5. Giới hạn trách nhiệm</h2>
+  <p>
+    Chúng tôi cố gắng giữ thông tin chính xác và cập nhật, nhưng không bảo đảm website không có sai sót. Chúng tôi không chịu trách nhiệm về thiệt hại phát sinh
+    từ việc tự ý sử dụng thông tin trên website mà không đối chiếu với tài liệu kỹ thuật của thiết bị hoặc không trao đổi với chúng tôi trước khi mua.
+  </p>
+
+  <h2>6. Dữ liệu cá nhân</h2>
+  <p>
+    Việc thu thập và xử lý dữ liệu khi bạn gửi yêu cầu báo giá được nêu tại <a href="/chinh-sach-bao-mat" rel="privacy-policy">Chính sách bảo mật</a>.
+  </p>
+
+  <h2>7. Thay đổi điều khoản và luật áp dụng</h2>
+  <p>
+    Chúng tôi có thể cập nhật điều khoản này, ngày cập nhật ghi ở đầu trang. Điều khoản được điều chỉnh theo pháp luật Việt Nam.
+  </p>
+
+  <h2>8. Liên hệ</h2>
+  <p>
+    Hotline / Zalo: <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a>. Xem thêm trang <a href="/lien-he">Liên hệ</a>.
+  </p>
+</PolicyPage>

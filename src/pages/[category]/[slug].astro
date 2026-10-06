@@ -5,7 +5,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
-import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset } from '../../lib/site';
+import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
   const products = await getActiveProducts();
@@ -45,6 +45,11 @@ const crumbs = [
   { name: d.title, href: pagePath },
 ];
 
+// Ngày cập nhật và người biên soạn: hiển thị trên trang, thẻ meta và schema (E-E-A-T).
+const updatedIso = d.updated ? d.updated.toISOString().slice(0, 10) : undefined;
+const updatedText = updatedIso ? updatedIso.split('-').reverse().join('/') : undefined;
+const authorName = d.reviewed_by ?? `${SITE_NAME} (${LEGAL_SHORT})`;
+
 const additionalProperty = [
   ...(grade ? [{ '@type': 'PropertyValue', name: d.vg ? 'Cấp độ nhớt' : 'Cấp NLGI', value: grade }] : []),
   ...(d.sae ? [{ '@type': 'PropertyValue', name: 'Cấp SAE', value: d.sae }] : []),
@@ -67,6 +72,18 @@ const schemaData = [
     ...(additionalProperty.length ? { additionalProperty } : {}),
     // Không thêm offers / aggregateRating khi chưa công bố giá và đánh giá thật.
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemPage',
+    name: d.seo_title ?? d.title,
+    url: absUrl(pagePath),
+    inLanguage: 'vi-VN',
+    ...(updatedIso ? { dateModified: updatedIso } : {}),
+    author: d.reviewed_by ? { '@type': 'Person', name: d.reviewed_by } : { '@id': ORG_ID },
+    publisher: { '@id': ORG_ID },
+    isPartOf: { '@id': absUrl('/') + '#website' },
+    ...(d.tds_url ? { citation: d.tds_url } : {}),
+  },
   breadcrumbSchema(crumbs),
 ];
 ---
@@ -77,6 +94,8 @@ const schemaData = [
   description={d.description}
   image={mainImage?.src}
   type="product"
+  modified={updatedIso}
+  author={authorName}
   {schemaData}
 >
   <div class="container product-page">
@@ -93,6 +112,10 @@ const schemaData = [
       </div>
       <div class="product-summary">
         <h1>{d.title}</h1>
+        <p class="byline">
+          {updatedText && <>Cập nhật: <time datetime={updatedIso}>{updatedText}</time> · </>}
+          Biên soạn: <a href="/gioi-thieu" rel="author">{authorName}</a>
+        </p>
         <div class="tags">
           <span class="badge">{d.brand}</span>
           {grade && <span class="badge badge-outline">{grade}</span>}
@@ -206,6 +229,8 @@ const schemaData = [
   .product-content table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
   .product-content th, .product-content td { border: 1px solid var(--border-color); padding: 8px 12px; text-align: left; }
   .product-content th { background: #f1f5f9; }
+  .byline { font-size: 0.85rem; color: var(--color-text-light); margin: -4px 0 12px; }
+  .byline a { color: inherit; }
   .note { margin-top: 10px; font-size: 0.9rem; color: var(--color-text-light); }
   .back-link { margin-top: 24px; }
   .product-content > ul { margin: 0 0 16px 20px; }

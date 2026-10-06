@@ -15,9 +15,11 @@ interface Props {
   type?: 'website' | 'article' | 'product';
   noindex?: boolean;
   schemaData?: object | object[];
+  modified?: string;
+  author?: string;
 }
 
-const { title, seoTitle, description, canonical, image, type, noindex, schemaData } = Astro.props;
+const { title, seoTitle, description, canonical, image, type, noindex, schemaData, modified, author } = Astro.props;
 
 // Menu danh mục sinh từ content collection, sắp theo trường `order`.
 const categories = (await getActiveCategories()).sort(
@@ -37,7 +39,7 @@ const schemas = [organizationSchema(), websiteSchema(), ...pageSchemas];
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <SEO {title} {seoTitle} {description} {canonical} {image} {type} {noindex} schemaData={schemas} />
+    <SEO {title} {seoTitle} {description} {canonical} {image} {type} {noindex} {modified} {author} schemaData={schemas} />
 
     {GA4_ID && (
       <>
@@ -257,7 +259,7 @@ const schemas = [organizationSchema(), websiteSchema(), ...pageSchemas];
           <div>
             <h2>Chính sách</h2>
             <ul>
-              {POLICY_LINKS.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+              {POLICY_LINKS.map((l) => <li><a href={l.href} rel={l.rel}>{l.label}</a></li>)}
             </ul>
           </div>
         </div>

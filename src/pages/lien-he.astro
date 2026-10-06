@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
-import { BUSINESS, ADDRESS_TEXT, ADDRESS_FULL, AREA_TEXT, LEGAL_NAME, TAX_ID, KCN_NEAR, KCN_FAR, breadcrumbSchema } from '../lib/site';
+import { BUSINESS, ADDRESS_TEXT, ADDRESS_FULL, AREA_TEXT, LEGAL_NAME, TAX_ID, KCN_NEAR, KCN_FAR, breadcrumbSchema, absUrl, ORG_ID } from '../lib/site';
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
@@ -16,7 +16,18 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
   title="Liên Hệ"
   seoTitle="Liên Hệ Dầu Công Nghiệp HP – Kho Hải Phòng (Hải Dương cũ)"
   description={`Liên hệ Dầu Công Nghiệp HP (${LEGAL_NAME}): kho ${ADDRESS_FULL}. Hotline/Zalo ${BUSINESS.phoneDisplay}. Báo giá dầu nhớt công nghiệp.`}
-  schemaData={breadcrumbSchema(crumbs)}
+  schemaData={[
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ContactPage',
+      name: 'Liên hệ',
+      url: absUrl('/lien-he'),
+      inLanguage: 'vi-VN',
+      mainEntity: { '@id': ORG_ID },
+      isPartOf: { '@id': absUrl('/') + '#website' },
+    },
+    breadcrumbSchema(crumbs),
+  ]}
 >
   <div class="container contact-page">
     <Breadcrumbs items={crumbs} />

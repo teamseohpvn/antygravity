@@ -37,7 +37,7 @@ const schemaData = [
 const others = POLICY_LINKS.filter((l) => l.href !== path);
 ---
 
-<Layout {title} {seoTitle} {description} {noindex} {schemaData}>
+<Layout {title} {seoTitle} {description} {noindex} {schemaData} modified={updated}>
   <div class="container policy-page">
     <Breadcrumbs items={crumbs} />
     <article class="policy-card">
