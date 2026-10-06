@@ -107,7 +107,11 @@ Cách lấy mẫu, đọc kết quả và các dấu hiệu dầu kém chất l�
 ## Câu hỏi thường gặp
 
 ### Castrol Hyspin AWS 68 có trộn với dầu thủy lực hãng khác được không?
-Về nguyên tắc nên thay toàn bộ, không châm lẫn. Nếu bắt buộc phải châm bổ sung, chỉ trộn với dầu cùng loại HM/HLP cùng cấp 68, và theo dõi bọt và độ trong của dầu sau vài ngày chạy.
+Về nguyên tắc nên thay toàn bộ, không châm lẫn.
+
+**Thực tế từ khách hàng của chúng tôi:** HT VINA có hơn 10 năm cung cấp và tư vấn dầu thủy lực cho các doanh nghiệp ở Hải Dương (cũ) và Hải Phòng. Chúng tôi nhận thấy gần như không khách hàng nào đang dùng dầu AW 68 châm lẫn dầu khác cấp độ nhớt như 32 hay 46. Phần lớn khách hàng cũng không châm dầu AW 68 của hãng khác vào bồn đang dùng. Trong thực tế, các nhà máy ưu tiên sự ổn định: đã chọn một sản phẩm thì dùng liên tục sản phẩm đó.
+
+Nếu bắt buộc phải châm bổ sung, chỉ trộn với dầu cùng loại HM/HLP cùng cấp 68, và theo dõi bọt và độ trong của dầu sau vài ngày chạy. Không trộn dầu có kẽm như Hyspin AWS với dầu thủy lực không kẽm, vì hai hệ phụ gia khác nhau có thể tạo cặn và bọt.
 
 ### Bao lâu thì thay dầu thủy lực Castrol Hyspin AWS?
 Không có một mốc giờ chạy đúng cho mọi máy. Cùng là Castrol Hyspin AWS, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả test dầu đang dùng so với dầu mới, với các ngưỡng ở mục "Kiểm tra nhanh dầu đang dùng" phía trên. Chu kỳ test và bảng quyết định thay dầu xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
