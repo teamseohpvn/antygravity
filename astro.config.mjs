@@ -3,7 +3,10 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 import cloudflare from '@astrojs/cloudflare';
-import { readdirSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
 
 // Domain chính thức: đặt PUBLIC_SITE_URL khi build production (https://daucongnghiephp.com.vn).
 const SITE = (process.env.PUBLIC_SITE_URL || 'https://daucongnghiephp.com.vn').replace(/\/+$/, '');
@@ -13,6 +16,44 @@ const SITE = (process.env.PUBLIC_SITE_URL || 'https://daucongnghiephp.com.vn').r
 const PUBLIC_IMAGES = readdirSync('public/images', { recursive: true })
   .map((f) => '/images/' + String(f).replaceAll('\\', '/'))
   .filter((f) => /\.(webp|avif|jpe?g|png|svg)$/.test(f));
+
+// Ảnh giữ nguyên tên khi thay ảnh mới, trình duyệt lại cache /images/* 7 ngày (public/_headers),
+// nên khách cũ vẫn thấy ảnh cũ. Sau khi build, gắn ?v=<mã nội dung> vào mọi đường dẫn /images/...
+// trong HTML: ảnh đổi nội dung thì URL đổi, trình duyệt tải ảnh mới ngay.
+function imageCacheBust() {
+  let clientDir;
+  return {
+    name: 'image-cache-bust',
+    hooks: {
+      'astro:config:done': ({ config }) => { clientDir = fileURLToPath(config.build.client); },
+      'astro:build:done': () => {
+        const hashes = new Map();
+        const version = (img) => {
+          if (!hashes.has(img)) {
+            try {
+              hashes.set(img, createHash('md5').update(readFileSync(path.join('public', img))).digest('hex').slice(0, 8));
+            } catch {
+              hashes.set(img, null);
+            }
+          }
+          return hashes.get(img);
+        };
+        let files = 0;
+        for (const f of readdirSync(clientDir, { recursive: true })) {
+          if (!String(f).endsWith('.html')) continue;
+          const file = path.join(clientDir, String(f));
+          const html = readFileSync(file, 'utf8');
+          const out = html.replace(/\/images\/[\w\-/.]+?\.(?:webp|avif|png|jpe?g|svg)(?![\w?])/g, (img) => {
+            const v = version(img);
+            return v ? `${img}?v=${v}` : img;
+          });
+          if (out !== html) { writeFileSync(file, out); files++; }
+        }
+        console.log(`[image-cache-bust] gắn ?v= cho ảnh trong ${files} trang`);
+      },
+    },
+  };
+}
 
 // https://astro.build/config
 export default defineConfig({
@@ -31,5 +72,6 @@ export default defineConfig({
       filter: (page) => !page.includes('/bao-gia-thanh-cong') && !page.includes('/api/'),
     }),
     react(),
+    imageCacheBust(),
   ],
 });
