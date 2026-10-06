@@ -26,6 +26,7 @@ export const NHAN_SU: NhanSu[] = [
     // TODO: xác nhận tên chính thức của khoa/trường.
     affiliation: 'Khoa Hóa dầu mỏ – Địa chất',
     since: 2011,
+    photo: '/images/nhan-su/nguyen-van-thinh.webp',
     desc: 'Phụ trách tư vấn chất lượng: kiểm duyệt thông số kỹ thuật trên website theo TDS của hãng, tư vấn chọn dầu theo yêu cầu thiết bị và đánh giá chất lượng dầu đang sử dụng.',
     knowsAbout: ['Hóa dầu', 'Dầu nhớt công nghiệp', 'Dầu thủy lực', 'Kiểm tra chất lượng dầu bôi trơn'],
   },
