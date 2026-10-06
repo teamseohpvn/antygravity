@@ -15,6 +15,8 @@ export interface NhanSu {
   knowsAbout?: string[];
   /** Ảnh chân dung trong public/, ví dụ /images/nhan-su/tran-tuan-huynh.webp */
   photo?: string;
+  /** Email công việc (hộp thư chung của vị trí) */
+  email?: string;
   /** Hồ sơ công khai bên ngoài (LinkedIn...) cho schema sameAs */
   sameAs?: string[];
   /** Đoạn giới thiệu dài, hiển thị ở hồ sơ người kiểm duyệt */
@@ -28,12 +30,13 @@ export const NHAN_SU: NhanSu[] = [
     role: 'Chuyên viên tư vấn chất lượng',
     degree: 'Kỹ sư',
     affiliation: 'Petrovietnam Engineering Company (PV Engineering)',
-    since: 2011,
+    since: 2009,
+    email: 'tvcl@daucongnghiephp.com.vn',
     photo: '/images/nhan-su/tran-tuan-huynh.webp',
     sameAs: ['https://vn.linkedin.com/in/thanhtuan1386'],
     desc: 'Phụ trách tư vấn chất lượng: kiểm duyệt thông số kỹ thuật trên website theo TDS của hãng, tư vấn chọn dầu theo yêu cầu thiết bị và đánh giá chất lượng dầu đang sử dụng.',
     bio: [
-      'Kỹ sư Trần Tuấn Huỳnh làm chuyên môn trong ngành dầu khí từ năm 2011 và hiện công tác tại Petrovietnam Engineering Company (PV Engineering).',
+      'Kỹ sư Trần Tuấn Huỳnh làm chuyên môn trong ngành dầu khí từ năm 2009 và hiện công tác tại Petrovietnam Engineering Company (PV Engineering).',
       'Tại HT VINA, anh Huỳnh kiểm duyệt nội dung kỹ thuật trước khi đăng lên website: đối chiếu thông số với bảng TDS của hãng và tiêu chuẩn thử nghiệm ASTM, ISO, TCVN; rà soát khuyến cáo sử dụng, ngưỡng thay dầu và hướng dẫn kiểm tra dầu tại xưởng.',
     ],
     knowsAbout: ['Kỹ thuật dầu khí', 'Dầu nhớt công nghiệp', 'Dầu thủy lực', 'Kiểm tra chất lượng dầu bôi trơn'],
@@ -90,6 +93,7 @@ export function personSchema(p: NhanSu) {
       : {}),
     ...(p.knowsAbout ? { knowsAbout: p.knowsAbout } : {}),
     ...(p.sameAs ? { sameAs: p.sameAs } : {}),
+    ...(p.email ? { email: p.email } : {}),
     description: p.bio ? p.bio.join(' ') : p.desc,
   };
 }
