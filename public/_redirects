@@ -5,3 +5,6 @@
 # Đổi hub hộp số tự động thành hub dầu cầu, dầu hộp số (02/10/2026).
 /dau-hop-so-tu-dong /dau-cau-hop-so 301
 /dau-hop-so-tu-dong.html /dau-cau-hop-so 301
+# Gõ nhầm gạch dưới vẫn vào được trang quản trị giá (06/10/2026).
+/quan_tri /quan-tri 301
+/quan_tri/* /quan-tri/:splat 301
