@@ -95,38 +95,55 @@ export function breadcrumbSchema(items: Crumb[]) {
 export const ORG_ID = `${SITE_URL}/#organization`;
 
 export function organizationSchema() {
-  return {
-    '@context': 'https://schema.org',
-    '@type': ['WholesaleStore', 'Organization'],
-    '@id': ORG_ID,
-    name: BUSINESS.name,
-    alternateName: LEGAL_SHORT,
-    legalName: LEGAL_NAME,
-    taxID: TAX_ID,
-    url: SITE_URL + '/',
-    logo: absUrl(BUSINESS.logo),
-    image: absUrl(BUSINESS.image),
-    telephone: '+84' + BUSINESS.phone.replace(/^0/, ''),
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: BUSINESS.streetAddress,
-      addressLocality: BUSINESS.locality,
-      addressRegion: BUSINESS.region,
-      addressCountry: BUSINESS.country,
-    },
-    areaServed: ['Hải Phòng', 'Bắc Ninh', 'Hưng Yên', 'Quảng Ninh', 'Hà Nội'].map((name) => ({ '@type': 'AdministrativeArea', name })),
-    contactPoint: {
-      '@type': 'ContactPoint',
-      contactType: 'sales',
-      telephone: '+84' + BUSINESS.phone.replace(/^0/, ''),
-      areaServed: 'VN',
-      availableLanguage: 'vi',
-      url: absUrl('/lien-he'),
-    },
-    knowsAbout: ['Dầu thủy lực', 'Dầu bánh răng', 'Mỡ bôi trơn công nghiệp', 'Dầu máy nén khí', 'Dầu truyền nhiệt'],
-    // TODO: thêm geo (tọa độ ghim Google Maps), openingHoursSpecification (giờ làm việc thật),
-    // sameAs (Google Business Profile, Facebook, Zalo OA) khi có. Không điền giá trị đoán.
+  // Hai khối riêng: Organization (pháp nhân) và WholesaleStore (kho/cửa hàng). Một số công cụ không đọc
+  // @type dạng mảng nên không gộp ["WholesaleStore", "Organization"].
+  const telephone = '+84' + BUSINESS.phone.replace(/^0/, '');
+  const address = {
+    '@type': 'PostalAddress',
+    streetAddress: BUSINESS.streetAddress,
+    addressLocality: BUSINESS.locality,
+    addressRegion: BUSINESS.region,
+    addressCountry: BUSINESS.country,
   };
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      '@id': ORG_ID,
+      name: BUSINESS.name,
+      alternateName: LEGAL_SHORT,
+      legalName: LEGAL_NAME,
+      taxID: TAX_ID,
+      url: SITE_URL + '/',
+      logo: absUrl(BUSINESS.logo),
+      image: absUrl(BUSINESS.image),
+      telephone,
+      address,
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        telephone,
+        areaServed: 'VN',
+        availableLanguage: 'vi',
+        url: absUrl('/lien-he'),
+      },
+      knowsAbout: ['Dầu thủy lực', 'Dầu bánh răng', 'Mỡ bôi trơn công nghiệp', 'Dầu máy nén khí', 'Dầu truyền nhiệt'],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WholesaleStore',
+      '@id': `${SITE_URL}/#store`,
+      name: `${BUSINESS.name} – Kho Hải Phòng (Hải Dương cũ)`,
+      parentOrganization: { '@id': ORG_ID },
+      url: SITE_URL + '/',
+      image: absUrl(BUSINESS.image),
+      telephone,
+      address,
+      areaServed: ['Hải Phòng', 'Bắc Ninh', 'Hưng Yên', 'Quảng Ninh', 'Hà Nội'].map((name) => ({ '@type': 'AdministrativeArea', name })),
+      // TODO: thêm geo (tọa độ ghim Google Maps), openingHoursSpecification (giờ làm việc thật),
+      // sameAs (Google Business Profile, Facebook, Zalo OA) khi có. Không điền giá trị đoán.
+    },
+  ];
 }
 
 export function websiteSchema() {

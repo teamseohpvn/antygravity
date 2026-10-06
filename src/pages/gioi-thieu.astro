@@ -7,6 +7,7 @@ import {
   BUSINESS, ADDRESS_FULL, AREA_TEXT, SITE_NAME, LEGAL_NAME, LEGAL_SHORT, TAX_ID,
   BRANDS, KCN_NEAR, KCN_FAR, ORG_ID, absUrl, breadcrumbSchema,
 } from '../lib/site';
+import { NHAN_SU, personSchema, yearsOf } from '../lib/nhan-su';
 
 const categories = (await getActiveCategories()).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 
@@ -16,7 +17,7 @@ const crumbs = [
 ];
 
 // Cập nhật khi nội dung thay đổi thực chất (hãng, địa chỉ, danh mục), không đổi ngày chỉ để "làm mới".
-const UPDATED = '2026-09-29';
+const UPDATED = '2026-10-06';
 
 const schemaData = [
   {
@@ -29,8 +30,10 @@ const schemaData = [
     mainEntity: { '@id': ORG_ID },
     isPartOf: { '@id': absUrl('/') + '#website' },
   },
+  ...NHAN_SU.map(personSchema),
   breadcrumbSchema(crumbs),
 ];
+const initials = (name: string) => name.split(' ').slice(-2).map((w) => w[0]).join('');
 ---
 
 <Layout
@@ -52,7 +55,7 @@ const schemaData = [
         Lê Thanh Nghị, gồm nhiều hãng, quy cách phuy và xô, kèm CO/CQ, hóa đơn VAT, bảng thông số kỹ thuật (TDS) và phiếu an toàn (SDS).
       </p>
 
-      <p class="updated">Cập nhật: <time datetime={UPDATED}>29/09/2026</time></p>
+      <p class="updated">Cập nhật: <time datetime={UPDATED}>06/10/2026</time></p>
 
       <h2>Thông tin doanh nghiệp</h2>
       <div class="table-wrap">
@@ -127,6 +130,31 @@ const schemaData = [
         dẫn tại mục <a href="/ho-tro-ky-thuat">hỗ trợ kỹ thuật</a>.
       </p>
 
+      <h2 id="doi-ngu">Đội ngũ</h2>
+      <p>
+        Nội dung kỹ thuật trên website, gồm thông số, khuyến cáo sử dụng và hướng dẫn kiểm tra dầu, do chuyên viên tư vấn chất
+        lượng kiểm duyệt trước khi đăng.
+      </p>
+      <div class="team">
+        {NHAN_SU.map((p) => (
+          <section class="member" id={p.id}>
+            {p.photo
+              ? <img src={p.photo} alt={`${p.name}, ${p.role} ${LEGAL_SHORT}`} width="96" height="96" loading="lazy" />
+              : <span class="avatar" aria-hidden="true">{initials(p.name)}</span>}
+            <div>
+              <h3>{p.name}</h3>
+              <p class="role">{p.role}</p>
+              <ul>
+                {p.degree && <li><strong>Học vị, trình độ:</strong> {p.degree}</li>}
+                {p.affiliation && <li><strong>Nơi công tác chuyên môn:</strong> {p.affiliation}</li>}
+                {p.since && <li><strong>Kinh nghiệm:</strong> làm chuyên môn từ năm {p.since} ({yearsOf(p)} năm)</li>}
+              </ul>
+              <p>{p.desc}</p>
+            </div>
+          </section>
+        ))}
+      </div>
+
       <h2>Hồ sơ đi kèm hàng hóa</h2>
       <p>Bộ phận mua hàng và kiểm soát chất lượng của nhà máy thường cần các giấy tờ sau. Chúng tôi cung cấp theo từng lô:</p>
       <ul>
@@ -176,6 +204,15 @@ const schemaData = [
   .about-card a { color: var(--color-accent); }
   .lead { font-size: 1.1rem; }
   .updated { color: var(--color-text-light); font-size: 0.9rem; }
+  .team { display: grid; gap: 16px; margin-bottom: 14px; }
+  .member { display: flex; gap: 16px; align-items: flex-start; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px; scroll-margin-top: 90px; }
+  .member img, .member .avatar { width: 72px; height: 72px; border-radius: 50%; flex-shrink: 0; object-fit: cover; }
+  .member .avatar { display: grid; place-items: center; background: var(--color-primary); color: white; font-weight: 700; font-size: 1.3rem; }
+  .member h3 { margin: 0; font-size: 1.1rem; color: var(--color-primary); }
+  .member .role { margin: 2px 0 8px; font-weight: 600; }
+  .member ul { margin: 0 0 8px 18px; }
+  .member li { margin-bottom: 4px; }
+  .member p:last-child { margin-bottom: 0; }
   .table-wrap { overflow-x: auto; margin-bottom: 14px; }
   table { width: 100%; border-collapse: collapse; }
   th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
