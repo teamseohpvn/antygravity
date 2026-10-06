@@ -85,6 +85,15 @@ Thông số theo trang sản phẩm của VHP (06/2023). VHP cũng sản xuất 
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu thủy lực VHP Isonas AW?
+Thay VHP Isonas AW theo tình trạng dầu sẽ chính xác hơn thay theo lịch. Lấy mẫu ở đường hồi khi máy đang chạy và so với dầu mới theo ba chỉ tiêu:
+
+- **Độ nhớt ở 40 °C** lệch quá ±10%: 32: dầu mới 32 mm²/s → ngưỡng 28,8–35,2 mm²/s; 68: dầu mới 68 mm²/s → ngưỡng 61,2–74,8 mm²/s. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
+- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
+
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Isonas AW 68 có thay được dầu thủy lực ngoại cùng cấp không?
 Isonas AW 68 cùng loại HM/HLP với nhiều dầu thủy lực chống mài mòn cấp 68 trên thị trường. Khi đổi, xả hết dầu cũ và thay lọc, không châm lẫn. Nếu bơm có yêu cầu phê duyệt riêng của hãng bơm, hãy kiểm tra trước.
 

@@ -70,6 +70,11 @@ Các mã 85W-140 khác trong kho: [Shell Spirax S2 A 85W-140](/dau-cau-hop-so/sh
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu Castrol Transmax Axle 85W-140?
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
+
+Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (dầu mới 365 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 328,5–401,5 mm²/s là vượt ngưỡng) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Castrol Transmax Axle 85W-140 có thay được dầu cầu 140 đơn cấp không?
 Ở nhiệt độ làm việc, hai loại có độ nhớt gần nhau nên thường thay được nếu cùng cấp API. Bản 85W-140 chảy tốt hơn khi lạnh. Nếu xe đang dùng dầu GL-4, hãy hỏi thợ hoặc hãng xe trước khi đổi sang GL-5.
 

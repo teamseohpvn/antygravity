@@ -109,6 +109,7 @@ Mã nhóm sản phẩm:
 | RT | Dầu rãnh trượt | EDM | Dầu xung điện |
 | CD | Dầu cách điện | BCK | Dầu bơm chân không |
 | XM | Dầu nhớt xe máy | NLM | Nước làm mát |
+| TB | Thiết bị kiểm tra dầu (nhớt kế, kit test) | | |
 
 Quy tắc:
 - Không trùng, không tái sử dụng mã của bài đã xóa.

@@ -54,6 +54,15 @@ Thông số kỹ thuật của APEX TL 68 sẽ được cập nhật theo TDS c�
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu thủy lực APEX TL 68?
+Thay APEX TL 68 theo tình trạng dầu sẽ chính xác hơn thay theo lịch. Lấy mẫu ở đường hồi khi máy đang chạy và so với dầu mới theo ba chỉ tiêu:
+
+- **Độ nhớt ở 40 °C** lệch quá ±10%: cấp ISO VG 68 có độ nhớt danh định 68 mm²/s, tức ngưỡng 61,2–74,8 mm²/s. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
+- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
+
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Dầu giá rẻ có làm hỏng bơm không?
 Dầu đúng cấp độ nhớt và có phụ gia chống mài mòn thì dùng được cho máy thông dụng. Quan trọng là thay lọc đúng hạn, giữ bồn sạch và thay dầu khi dầu đổi màu hoặc lẫn nước. Hãy so thông số trên TDS với yêu cầu của máy trước khi đổi.
 

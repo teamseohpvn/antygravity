@@ -81,6 +81,15 @@ Hai mã cùng cấp 68 và cùng loại chống mài mòn. Super Hyrando có ch�
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu thủy lực ENEOS Super Hyrando 68?
+Không có một mốc giờ chạy đúng cho mọi máy. Cùng là ENEOS Super Hyrando 68, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả test dầu đang dùng, so với dầu mới:
+
+- **Độ nhớt ở 40 °C** lệch quá ±10%: dầu mới 68 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 61,2–74,8 mm²/s là vượt ngưỡng. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
+- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
+
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Super Hyrando SE 68 khác Super Hyrando 68 thế nào?
 Cả hai cùng cấp 68 và cùng là dầu chống mài mòn. Bản SE là dòng riêng của ENEOS. Hãy gọi cho chúng tôi để nhận bảng thông số và so sánh trước khi đổi từ mã này sang mã kia.
 

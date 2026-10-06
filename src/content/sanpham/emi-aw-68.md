@@ -61,6 +61,15 @@ Chọn khi máy yêu cầu dầu thủy lực **AW/HM cấp 68** và bạn cần
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu thủy lực EMI AW 68?
+Không có một mốc giờ chạy đúng cho mọi máy. Cùng là EMI AW 68, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả test dầu đang dùng, so với dầu mới:
+
+- **Độ nhớt ở 40 °C** lệch quá ±10%: cấp ISO VG 68 có độ nhớt danh định 68 mm²/s, tức ngưỡng 61,2–74,8 mm²/s. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
+- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
+
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### EMI AW 68 và AW 46 khác nhau thế nào?
 Hai cấp chỉ khác độ nhớt. Cấp 68 đặc hơn, hợp xưởng nóng và máy áp cao; cấp 46 hợp máy chạy nhiệt độ vừa phải hoặc khởi động lạnh. Luôn theo cấp ghi trong sổ tay máy. Kho hiện có sẵn cấp 68.
 

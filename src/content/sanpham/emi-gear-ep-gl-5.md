@@ -67,6 +67,11 @@ Cần thương hiệu quốc tế cùng cấp, xem [Shell Spirax S2 A 85W-140](/
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu EMI Gear EP GL-5?
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
+
+Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Dùng dầu GL-5 cho hộp số yêu cầu GL-4 được không?
 Không nên nếu sổ tay chỉ cho phép GL-4. Một số dầu GL-5 có lượng phụ gia EP cao, có thể ảnh hưởng tới bộ đồng tốc bằng đồng. Dùng đúng cấp sổ tay ghi.
 

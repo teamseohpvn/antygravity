@@ -69,6 +69,15 @@ Nếu máy chạy nóng liên tục, muốn kéo dài thời gian thay dầu, ho
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu thủy lực Caltex Hydraulic Oil AW 68?
+Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết Caltex Hydraulic Oil AW 68 trong máy của bạn còn dùng được không, kiểm tra ba chỉ tiêu sau:
+
+- **Độ nhớt ở 40 °C** lệch quá ±10%: dầu mới 65 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 58,5–71,5 mm²/s là vượt ngưỡng. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
+- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
+
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Caltex và Chevron có phải cùng một hãng?
 Có. Caltex là thương hiệu của Chevron, dùng tại châu Á – Thái Bình Dương. Bảng thông số kỹ thuật do Chevron phát hành.
 

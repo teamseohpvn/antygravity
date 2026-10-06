@@ -85,6 +85,15 @@ Hai dòng cùng là dầu bánh răng cực áp gốc khoáng và cùng đạt D
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu bánh răng VHP Rosia EP?
+Tùy nhiệt độ dầu, tải và mức nhiễm bẩn của hộp số, nên thay theo kết quả test thay vì theo lịch cố định. Với VHP Rosia EP, theo dõi:
+
+- **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (EP 100: dầu mới 100 mm²/s → ngưỡng 90–110 mm²/s; EP 150: dầu mới 150 mm²/s → ngưỡng 135–165 mm²/s; EP 220: dầu mới 220 mm²/s → ngưỡng 198–242 mm²/s; EP 320: dầu mới 320 mm²/s → ngưỡng 288–352 mm²/s). Dầu bánh răng đặc nên đo bằng [nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5) cỡ ống lớn.
+- **Trị số axit** tăng thêm 0,5 mg KOH/g so với dầu mới, mức cảnh báo cho dầu bánh răng theo ASTM D6224.
+- **Nước** trên 0,1%, nhất là hộp số đặt ngoài trời hoặc gần nguồn nước làm mát.
+
+Kiểm tra thêm mạt kim loại bám ở nút xả từ tính. Cách test chi tiết xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Rosia EP có dùng cho hộp số xe tải được không?
 Không nên. Rosia EP là dầu bánh răng công nghiệp. Hộp số và cầu xe tải cần dầu cầu hộp số theo cấp API GL-4 hoặc GL-5, xem trang [dầu cầu hộp số](/dau-cau-hop-so).
 

@@ -72,6 +72,11 @@ Thông số theo bảng dữ liệu sản phẩm khu vực châu Á – Thái B�
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu Caltex Delo Silver Multigrade 20W-50?
+Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó.
+
+Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của Caltex Delo Silver Multigrade 20W-50: **độ nhớt** lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Delo Silver dùng cho máy phát điện và tàu cá được không?
 Được. Chevron liệt kê máy phát điện và động cơ diesel cao tốc trên tàu cá, tàu sông trong nhóm ứng dụng của dòng này. Vẫn cần đúng cấp API và cấp nhớt mà nhà sản xuất máy yêu cầu.
 

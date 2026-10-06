@@ -73,6 +73,11 @@ Dầu gốc khoáng phù hợp phần lớn lò dầu thông dụng. Dầu tổn
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu truyền nhiệt SHL Syn Therm 32L?
+Không thay theo lịch cố định mà theo kết quả kiểm tra, ít nhất mỗi năm một lần. Dầu truyền nhiệt xuống cấp theo hai hướng: **nứt gãy nhiệt** làm dầu loãng ra, điểm chớp cháy giảm; **oxy hóa** làm dầu đặc lên, trị số axit tăng, đóng cặn trong ống.
+
+Tại chỗ có thể đo **độ nhớt ở 40 °C** (dầu mới 32 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 28,8–35,2 mm²/s là vượt ngưỡng) và **trị số axit** bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb). Điểm chớp cháy và cặn cacbon cần gửi phòng thí nghiệm. Dầu có mùi khét, lò khó đạt nhiệt hoặc bơm ồn là lúc phải test ngay. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Đổi từ dầu gốc khoáng sang Syn Therm 32L cần làm gì?
 Nên xả hết dầu cũ và súc rửa hệ trước khi nạp dầu mới, không pha lẫn hai loại. Hãy hỏi nhà sản xuất lò dầu về khả năng tương thích của gioăng, phớt với dầu gốc alkyl benzene.
 

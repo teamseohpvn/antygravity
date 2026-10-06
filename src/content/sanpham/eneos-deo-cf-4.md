@@ -72,6 +72,11 @@ Thông số theo trang sản phẩm của ENEOS Việt Nam. Nếu xe đời mớ
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu ENEOS DEO CF-4?
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn.
+
+Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của ENEOS DEO CF-4: **độ nhớt** lệch quá ±10% so với dầu mới (15W-40: dầu mới 108 mm²/s → ngưỡng 97,2–118,8 mm²/s; 20W-50: dầu mới 166,1 mm²/s → ngưỡng 149,5–182,7 mm²/s), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### CF-4 khác CI-4 thế nào?
 CF-4 là cấp API cho động cơ diesel tải nặng đời trước năm 2000. CI-4 ra sau, thêm yêu cầu kiểm soát muội than cho động cơ có EGR. Máy cũ dùng CF-4 là đủ; máy đời mới cần đúng cấp sổ tay ghi.
 

@@ -73,6 +73,11 @@ Thông số theo bảng dữ liệu kỹ thuật của TotalEnergies Việt Nam.
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu TotalEnergies Rubia XT 20W-50?
+Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó.
+
+Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của TotalEnergies Rubia XT 20W-50: **độ nhớt** lệch quá ±10% so với dầu mới (dầu mới 175 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 157,5–192,5 mm²/s là vượt ngưỡng), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Rubia XT 20W-50 dùng cho máy phát điện được không?
 Được, nếu máy phát là động cơ diesel và nhà sản xuất chỉ yêu cầu cấp CF-4 hoặc thấp hơn với cấp nhớt 20W-50. Kiểm tra sổ tay máy trước khi dùng.
 

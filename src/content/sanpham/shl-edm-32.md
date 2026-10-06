@@ -68,7 +68,7 @@ Dầu loãng hơn dễ thoát phoi khi gia công tinh, khe nhỏ. Dầu đặc h
 ## Câu hỏi thường gặp
 
 ### Bao lâu phải thay dầu EDM?
-Tùy khối lượng gia công và chất lượng hệ lọc. Khi dầu sẫm màu, nhiều cặn dù đã thay lọc, hoặc gia công kém ổn định, nên thay dầu và vệ sinh bể.
+Tùy khối lượng gia công và chất lượng hệ lọc. Khi dầu sẫm màu, nhiều cặn dù đã thay lọc, hoặc gia công kém ổn định, nên thay dầu và vệ sinh bể. Muốn kiểm tra khách quan hơn, so độ nhớt dầu trong bể với dầu mới bằng [nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5) cỡ nhỏ: dầu loãng hoặc đặc bất thường là đã lẫn dầu khác hoặc xuống cấp. Cách đo xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Có dùng dầu hỏa hoặc dầu DO thay dầu EDM được không?
 Không nên. Dầu hỏa, dầu DO không được pha chế cho gia công xung điện, thường có điểm chớp cháy thấp hơn và nhiều mùi. Dầu EDM chuyên dụng an toàn hơn cho người vận hành.

@@ -61,6 +61,15 @@ Chọn khi sổ tay máy ghi dầu thủy lực **ISO VG 68, loại HM/AW** và 
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu thủy lực X-One AW 68?
+Không có một mốc giờ chạy đúng cho mọi máy. Cùng là X-One AW 68, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả test dầu đang dùng, so với dầu mới:
+
+- **Độ nhớt ở 40 °C** lệch quá ±10%: cấp ISO VG 68 có độ nhớt danh định 68 mm²/s, tức ngưỡng 61,2–74,8 mm²/s. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
+- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
+
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Châm X-One AW 68 vào máy đang dùng dầu hãng khác được không?
 Hai dầu cùng cấp VG 68 loại AW gốc khoáng thường trộn được khi châm bổ sung. Khi đổi hẳn sang mã mới, nên xả hết dầu cũ và thay lọc để dễ theo dõi chất lượng dầu.
 

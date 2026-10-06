@@ -77,6 +77,11 @@ updated: 2026-10-03
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu VHP Hymatran Oil 10W?
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
+
+Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (dầu mới 34,5 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 31,1–38 mm²/s là vượt ngưỡng) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Hymatran 10W có phải dầu động cơ không?
 VHP xếp đây là dầu động cơ đơn cấp, nhưng mục đích chính là dùng cho hộp số, biến mô và thủy lực của máy công trình. Động cơ xe đời mới nên dùng dầu động cơ diesel đa cấp đúng chuẩn.
 

@@ -73,6 +73,11 @@ Thông số theo bảng dữ liệu kỹ thuật của từng hãng. Ba dòng c�
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu TotalEnergies Rubia TIR 7400 15W-40?
+Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó.
+
+Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của TotalEnergies Rubia TIR 7400 15W-40: **độ nhớt** lệch quá ±10% so với dầu mới (dầu mới 98,7 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 88,8–108,6 mm²/s là vượt ngưỡng), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Rubia TIR 7400 dùng cho xe Euro 4, Euro 5 được không?
 TotalEnergies cho biết dầu cũng dùng được cho động cơ Euro 5 trở về trước của một số hãng, với chu kỳ thay dầu phù hợp. Hãy kiểm tra sổ tay xe xem có chấp nhận dầu ACEA E7 không.
 

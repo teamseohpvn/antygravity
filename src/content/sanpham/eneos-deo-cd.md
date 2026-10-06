@@ -74,6 +74,11 @@ Thông số theo trang sản phẩm của ENEOS Việt Nam. Trị số kiềm c�
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu ENEOS DEO CD?
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn.
+
+Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của ENEOS DEO CD: **độ nhớt** lệch quá ±10% so với dầu mới (15W-40: dầu mới 105,4 mm²/s → ngưỡng 94,9–115,9 mm²/s; 20W-50: dầu mới 162,8 mm²/s → ngưỡng 146,5–179,1 mm²/s), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Máy phát điện nên dùng 15W-40 hay 20W-50?
 Theo sổ tay máy phát. Máy đặt ngoài trời, khởi động lúc lạnh thì 15W-40 dễ khởi động hơn. Máy đã chạy nhiều giờ, có dấu hiệu hao dầu thì 20W-50 thường phù hợp hơn.
 

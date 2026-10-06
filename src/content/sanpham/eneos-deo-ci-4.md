@@ -78,8 +78,10 @@ Thông số theo trang sản phẩm của ENEOS Việt Nam. Luôn ưu tiên cấ
 ### Dầu CI-4 dùng thay cho CF-4 được không?
 Được. Cấp API CI-4 cao hơn CF-4 và tương thích ngược, nên máy cần CF-4 dùng CI-4 vẫn đạt yêu cầu. Chiều ngược lại thì không: máy yêu cầu CI-4 không nên hạ xuống CF-4.
 
-### Bao lâu thì thay dầu?
-Theo sổ tay của nhà sản xuất xe hoặc máy. Máy công trình làm việc nhiều bụi, tải nặng hoặc chạy không tải lâu thì nên thay sớm hơn mốc tiêu chuẩn. ENEOS Việt Nam xếp dòng CI-4 vào nhóm dầu thay dài kỳ, nhưng mốc cụ thể vẫn theo nhà sản xuất máy.
+### Bao lâu thì thay dầu ENEOS DEO CI-4?
+Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó. ENEOS Việt Nam xếp dòng CI-4 vào nhóm dầu thay dài kỳ, nhưng mốc cụ thể vẫn theo nhà sản xuất máy.
+
+Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của ENEOS DEO CI-4: **độ nhớt** lệch quá ±10% so với dầu mới (15W-40: dầu mới 106,7 mm²/s → ngưỡng 96–117,4 mm²/s; 20W-50: dầu mới 161,9 mm²/s → ngưỡng 145,7–178,1 mm²/s), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Mua số lượng lớn cho đội xe thì báo giá thế nào?
 Gửi số xe, loại máy và lượng dầu dùng mỗi tháng qua trang [báo giá](/bao-gia). Chúng tôi báo giá theo khoảng, kèm CO/CQ và hóa đơn VAT.

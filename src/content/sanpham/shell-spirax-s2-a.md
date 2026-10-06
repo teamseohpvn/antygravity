@@ -75,6 +75,11 @@ Hai mã cùng cấp, thông số gần nhau, thay thế được cho nhau trong 
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu Shell Spirax S2 A 85W-140?
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
+
+Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (dầu mới 358 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 322,2–393,8 mm²/s là vượt ngưỡng) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Spirax S2 A khác Spirax S2 G thế nào?
 Chữ **A** (axle) là dòng dầu cầu GL-5 cho bánh răng hypoid. Chữ **G** (gear) là dòng dầu hộp số tay GL-4. Cầu xe tải nên dùng dòng A; hộp số có đồng tốc mà hãng ghi GL-4 thì không nên dùng dòng A.
 

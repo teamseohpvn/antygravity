@@ -83,6 +83,11 @@ Cấp 32 loãng hơn, bơm tuần hoàn dễ hơn khi khởi động nguội. C�
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu truyền nhiệt VHP Heatrans Oil?
+Không thay theo lịch cố định mà theo kết quả kiểm tra, ít nhất mỗi năm một lần. Dầu truyền nhiệt xuống cấp theo hai hướng: **nứt gãy nhiệt** làm dầu loãng ra, điểm chớp cháy giảm; **oxy hóa** làm dầu đặc lên, trị số axit tăng, đóng cặn trong ống.
+
+Tại chỗ có thể đo **độ nhớt ở 40 °C** (Heatrans 32: dầu mới 32 mm²/s → ngưỡng 28,8–35,2 mm²/s; Heatrans 46: dầu mới 46 mm²/s → ngưỡng 41,4–50,6 mm²/s) và **trị số axit** bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb). Điểm chớp cháy và cặn cacbon cần gửi phòng thí nghiệm. Dầu có mùi khét, lò khó đạt nhiệt hoặc bơm ồn là lúc phải test ngay. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Lò dầu chạy 300 °C có dùng Heatrans được không?
 Được, nếu nhiệt độ bồn dầu không vượt 300 °C và nhiệt độ màng dầu tại ống gia nhiệt không vượt 320 °C. Dầu chỉ dùng cho hệ tuần hoàn kín.
 

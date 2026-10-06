@@ -79,6 +79,11 @@ Chọn Rosia CS 46 khi sổ tay máy ghi dầu loại C/CL hoặc dầu tuần h
 
 ## Câu hỏi thường gặp
 
+### Dầu rãnh trượt VHP Rosia CS 46 có phải thay định kỳ không?
+Không theo kiểu xả cả bồn như dầu thủy lực. Dầu rãnh trượt bôi trơn kiểu mất dầu: dầu bơm lên băng trượt rồi trôi theo phoi, nên chỉ cần châm bổ sung. Việc cần kiểm tra là **bồn chứa VHP Rosia CS 46** có bị nước làm mát hoặc dầu cắt gọt lọt vào không. Quét kem thử nước xuống đáy bồn là biết, xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong).
+
+Nếu dầu trong bồn đục hoặc loãng bất thường (lệch quá ±10% so với dầu mới: dầu mới 46 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 41,4–50,6 mm²/s là vượt ngưỡng), xả bồn, vệ sinh và nạp dầu mới. Cách đo độ nhớt xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Rosia CS 46 có dùng làm dầu thủy lực được không?
 VHP xếp Rosia CS vào nhóm dầu tuần hoàn, không phải dầu thủy lực chống mài mòn. Với bơm áp cao, hãy chọn dầu thủy lực AW. Nếu không chắc máy cần loại nào, hãy [liên hệ](/lien-he) để được tư vấn theo sổ tay máy.
 
