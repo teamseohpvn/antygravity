@@ -5,6 +5,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
+import { tachPhuongPhap } from '../../lib/tieu-chuan';
 import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -154,13 +155,24 @@ const schemaData = [
         <h2>Thông số kỹ thuật điển hình</h2>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Chỉ tiêu</th><th>Giá trị</th><th>Phương pháp thử</th></tr></thead>
+            <thead><tr><th>Chỉ tiêu</th><th>Giá trị</th><th>Phương pháp thử</th><th>TCVN tương đương</th></tr></thead>
             <tbody>
-              {d.specs.map((s) => <tr><td>{s.name}</td><td>{s.value}</td><td>{s.method ?? '–'}</td></tr>)}
+              {d.specs.map((s) => {
+                const parts = s.method ? tachPhuongPhap(s.method) : [];
+                const tcvn = parts.find((p) => p.tc?.tcvn)?.tc;
+                return (
+                  <tr>
+                    <td>{s.name}</td>
+                    <td>{s.value}</td>
+                    <td>{parts.length ? parts.map((p, i) => <>{i > 0 && ' / '}{p.tc ? <a href={p.tc.url} target="_blank" rel="noopener">{p.text}</a> : p.text}</>) : '–'}</td>
+                    <td>{tcvn ? <a href={tcvn.tcvnUrl} target="_blank" rel="noopener" title={tcvn.tcvnNote}>{tcvn.tcvn}</a> : '–'}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
-        <p class="note">Giá trị điển hình theo bảng thông số của nhà sản xuất{d.tds_date ? ` (TDS ${d.tds_date})` : ''}, có thể thay đổi theo lô.</p>
+        <p class="note">Giá trị điển hình theo bảng thông số của nhà sản xuất{d.tds_date ? ` (TDS ${d.tds_date})` : ''}, có thể thay đổi theo lô. Phương pháp thử dẫn tới công bố của ASTM, ISO; TCVN tương đương tra tại Viện Tiêu chuẩn Chất lượng Việt Nam.</p>
       </section>
     )}
 
