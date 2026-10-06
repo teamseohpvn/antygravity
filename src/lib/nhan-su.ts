@@ -13,22 +13,30 @@ export interface NhanSu {
   /** Năm bắt đầu làm chuyên môn, để tính số năm kinh nghiệm */
   since?: number;
   knowsAbout?: string[];
-  /** Ảnh chân dung trong public/, ví dụ /images/nhan-su/nguyen-van-thinh.webp */
+  /** Ảnh chân dung trong public/, ví dụ /images/nhan-su/tran-tuan-huynh.webp */
   photo?: string;
+  /** Hồ sơ công khai bên ngoài (LinkedIn...) cho schema sameAs */
+  sameAs?: string[];
+  /** Đoạn giới thiệu dài, hiển thị ở hồ sơ người kiểm duyệt */
+  bio?: string[];
 }
 
 export const NHAN_SU: NhanSu[] = [
   {
-    id: 'nguyen-van-thinh',
-    name: 'Nguyễn Văn Thịnh',
+    id: 'tran-tuan-huynh',
+    name: 'Trần Tuấn Huỳnh',
     role: 'Chuyên viên tư vấn chất lượng',
-    degree: 'Thạc sĩ',
-    // TODO: xác nhận tên chính thức của khoa/trường.
-    affiliation: 'Khoa Hóa dầu mỏ – Địa chất',
+    degree: 'Kỹ sư',
+    affiliation: 'Petrovietnam Engineering Company (PV Engineering)',
     since: 2011,
-    photo: '/images/nhan-su/nguyen-van-thinh.webp',
+    photo: '/images/nhan-su/tran-tuan-huynh.webp',
+    sameAs: ['https://vn.linkedin.com/in/thanhtuan1386'],
     desc: 'Phụ trách tư vấn chất lượng: kiểm duyệt thông số kỹ thuật trên website theo TDS của hãng, tư vấn chọn dầu theo yêu cầu thiết bị và đánh giá chất lượng dầu đang sử dụng.',
-    knowsAbout: ['Hóa dầu', 'Dầu nhớt công nghiệp', 'Dầu thủy lực', 'Kiểm tra chất lượng dầu bôi trơn'],
+    bio: [
+      'Kỹ sư Trần Tuấn Huỳnh làm chuyên môn trong ngành dầu khí từ năm 2011 và hiện công tác tại Petrovietnam Engineering Company (PV Engineering).',
+      'Tại HT VINA, anh Huỳnh kiểm duyệt nội dung kỹ thuật trước khi đăng lên website: đối chiếu thông số với bảng TDS của hãng và tiêu chuẩn thử nghiệm ASTM, ISO, TCVN; rà soát khuyến cáo sử dụng, ngưỡng thay dầu và hướng dẫn kiểm tra dầu tại xưởng.',
+    ],
+    knowsAbout: ['Kỹ thuật dầu khí', 'Dầu nhớt công nghiệp', 'Dầu thủy lực', 'Kiểm tra chất lượng dầu bôi trơn'],
   },
   {
     id: 'vu-minh-toan',
@@ -53,7 +61,7 @@ export const NHAN_SU: NhanSu[] = [
 ];
 
 /** Người kiểm duyệt mặc định cho trang sản phẩm khi file không ghi reviewed_by. */
-export const DEFAULT_REVIEWER_ID = 'nguyen-van-thinh';
+export const DEFAULT_REVIEWER_ID = 'tran-tuan-huynh';
 
 export const personUrl = (p: NhanSu) => `/gioi-thieu#${p.id}`;
 export const personId = (p: NhanSu) => `${SITE_URL}/gioi-thieu#${p.id}`;
@@ -81,7 +89,8 @@ export function personSchema(p: NhanSu) {
       ? { hasCredential: { '@type': 'EducationalOccupationalCredential', credentialCategory: 'degree', name: p.degree } }
       : {}),
     ...(p.knowsAbout ? { knowsAbout: p.knowsAbout } : {}),
-    description: p.desc,
+    ...(p.sameAs ? { sameAs: p.sameAs } : {}),
+    description: p.bio ? p.bio.join(' ') : p.desc,
   };
 }
 
