@@ -22,7 +22,7 @@ export const NHAN_SU: NhanSu[] = [
     id: 'nguyen-van-thinh',
     name: 'Nguyễn Văn Thịnh',
     role: 'Chuyên viên tư vấn chất lượng',
-    degree: 'Thạc sĩ',
+    degree: 'Tiến sĩ',
     // TODO: xác nhận tên chính thức của khoa/trường.
     affiliation: 'Khoa Hóa dầu mỏ – Địa chất',
     since: 2011,

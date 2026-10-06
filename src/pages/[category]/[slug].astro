@@ -6,7 +6,7 @@ import QuoteCta from '../../components/QuoteCta.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
-import { timNhanSu, DEFAULT_REVIEWER_ID, personRef, personUrl } from '../../lib/nhan-su';
+import { timNhanSu, DEFAULT_REVIEWER_ID, personRef, personUrl, personSchema } from '../../lib/nhan-su';
 import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -88,6 +88,8 @@ const schemaData = [
     isPartOf: { '@id': absUrl('/') + '#website' },
     ...(d.tds_url ? { citation: d.tds_url } : {}),
   },
+  // Khối Person đầy đủ của người kiểm duyệt, để công cụ và AI đọc được tác giả ngay trên trang.
+  ...(reviewer ? [personSchema(reviewer)] : []),
   breadcrumbSchema(crumbs),
 ];
 ---
