@@ -9,6 +9,7 @@ description: "Dầu nén khí trục vít, piston ISO VG 32, 46, 68, 100: Shell 
 keywords: ["dầu máy nén khí", "dầu nén khí", "nhớt máy nén khí", "dầu máy nén khí trục vít", "nhớt máy nén khí trục vít", "dầu máy nén khí piston", "dầu máy nén khí kobelco", "dầu máy nén khí hitachi", "dầu máy nén khí atlas copco", "shell corena s3 r 46", "mobil rarus 425", "total dacnis sh 46"]
 tags: ["dau-may-nen-khi", "shell-corena", "castrol-aircol", "truc-vit", "piston"]
 image: "/images/danh-muc/dau-may-nen-khi.webp"
+image_alt: "Kỹ thuật viên châm dầu máy nén khí vào máy nén khí trục vít"
 ---
 
 **Dầu máy nén khí** (còn gọi là **dầu nén khí** hay **nhớt máy nén khí**) vừa bôi trơn, vừa làm mát và làm kín khe hở trong buồng nén. Loại dầu phụ thuộc vào kiểu máy. **Máy nén khí trục vít ngâm dầu** thường dùng dầu **ISO VG 46**, một số dùng VG 32 hoặc 68. **Máy nén khí piston** thường dùng VG 68 hoặc 100. Dầu gốc khoáng có chu kỳ thay ngắn hơn. Dầu tổng hợp đắt hơn nhưng chạy được lâu hơn nhiều giờ, hợp với máy chạy 24/7.

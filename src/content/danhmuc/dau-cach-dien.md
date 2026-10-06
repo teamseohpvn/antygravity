@@ -10,7 +10,7 @@ description: "Dầu cách điện, dầu máy biến áp (dầu biến thế) g�
 keywords: ["dầu máy biến áp", "dầu cách điện", "dầu biến áp", "dầu biến thế", "dầu máy biến thế", "dầu cách điện máy biến áp"]
 tags: ["dau-cach-dien", "dau-bien-the", "may-bien-ap"]
 image: "/images/danh-muc/dau-cach-dien.webp"
-image_alt: "Máy biến áp ngâm dầu trong trạm điện nhà máy"
+image_alt: "Kỹ thuật viên lấy mẫu dầu cách điện từ van xả máy biến áp"
 updated: 2026-10-03
 ---
 

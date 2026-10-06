@@ -10,7 +10,7 @@ description: "Dầu động cơ diesel, nhớt xe tải 15W-40, 20W-50 cấp API
 keywords: ["dầu động cơ diesel", "nhớt xe tải", "nhớt 15w40", "nhớt 20w50", "dầu 15w40", "dầu 20w50", "dầu động cơ 15w40", "nhớt máy dầu", "dầu nhớt ci-4", "dầu nhớt cf-4", "castrol crb turbomax", "eneos deo"]
 tags: ["dau-dong-co-diesel", "15w-40", "20w-50", "ci-4", "cf-4"]
 image: "/images/danh-muc/dau-dong-co-diesel.webp"
-image_alt: "Can và phuy dầu động cơ diesel cạnh đầu xe tải"
+image_alt: "Kỹ thuật viên kiểm tra que thăm dầu động cơ diesel của máy phát điện"
 updated: 2026-10-03
 ---
 

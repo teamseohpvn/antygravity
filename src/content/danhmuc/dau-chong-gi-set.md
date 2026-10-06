@@ -9,6 +9,7 @@ description: "Dầu chống rỉ sét cho chi tiết cơ khí, khuôn, hàng xu�
 keywords: ["dầu chống gỉ", "dầu chống rỉ", "dầu chống rỉ sét", "dầu chống gỉ sét", "dầu chống rỉ sét kim loại", "dầu chống gỉ kim loại", "dầu chống gỉ khuôn", "dầu bôi trơn chống rỉ sét", "castrol rustilo dwx 30", "báo giá dầu chống gỉ phuy"]
 tags: ["dau-chong-gi", "dau-chong-ri", "castrol-rustilo", "bao-quan-kim-loai"]
 image: "/images/danh-muc/dau-chong-gi-set.webp"
+image_alt: "Phun dầu chống gỉ lên khuôn và chi tiết thép gia công"
 ---
 
 **Dầu chống gỉ** (hay **dầu chống rỉ sét**) tạo một lớp màng bảo vệ tạm thời trên bề mặt kim loại, chặn hơi ẩm và oxy trong thời gian lưu kho hoặc vận chuyển. Ở miền Bắc, độ ẩm thường trên 80%, nên chi tiết thép vừa gia công xong có thể **ố gỉ chỉ sau vài giờ**. Chọn dầu chống gỉ theo ba yếu tố: **thời gian cần bảo vệ**, **điều kiện kho** (trong nhà, có mái che hay ngoài trời, đường biển) và **có cần tẩy sạch trước công đoạn sau không**.

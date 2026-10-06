@@ -10,7 +10,7 @@ description: "Dầu máy may, dầu máy khâu công nghiệp ISO VG 10 trong, �
 keywords: ["dầu máy may", "dầu máy khâu", "dầu máy may công nghiệp", "dầu máy may công nghiệp loại nào tốt", "dầu máy may 10", "dầu máy khâu công nghiệp"]
 tags: ["dau-may-may", "iso-vg-10", "det-may"]
 image: "/images/danh-muc/dau-may-may.webp"
-image_alt: "Máy may công nghiệp trong xưởng may và xô dầu máy may"
+image_alt: "Tra dầu máy may vào cơ cấu kim của máy may công nghiệp trong xưởng may"
 updated: 2026-10-03
 ---
 

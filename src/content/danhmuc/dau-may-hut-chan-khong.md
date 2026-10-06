@@ -10,7 +10,7 @@ description: "Dầu máy hút chân không, dầu bơm chân không ISO VG 100 �
 keywords: ["dầu máy hút chân không", "dầu bơm chân không", "dầu máy bơm chân không", "dầu chân không", "dầu bơm chân không 100"]
 tags: ["dau-bom-chan-khong", "iso-vg-100"]
 image: "/images/danh-muc/dau-may-hut-chan-khong.webp"
-image_alt: "Bơm chân không cánh gạt trong nhà xưởng và xô dầu bơm chân không"
+image_alt: "Bơm chân không nối với dây chuyền đóng gói hút chân không thực phẩm"
 updated: 2026-10-03
 ---
 

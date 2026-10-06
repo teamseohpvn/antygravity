@@ -9,6 +9,7 @@ description: "Dầu xung điện cho máy EDM xung định hình: độ nhớt t
 keywords: ["dầu xung điện", "dầu máy xung điện EDM", "dầu EDM", "dầu máy bắn điện", "dầu điện môi EDM", "shell paraol 250"]
 tags: ["dau-xung-dien", "edm", "khuon-mau"]
 image: "/images/danh-muc/dau-xung-dien-edm.webp"
+image_alt: "Điện cực đồng máy xung điện EDM ngâm trong bể dầu điện môi"
 ---
 
 **Dầu xung điện EDM** (còn gọi là **dầu máy bắn điện** hay **dầu điện môi**) là chất lỏng cách điện dùng trong **máy xung định hình** (sinker EDM). Dầu có ba nhiệm vụ: cách điện giữa điện cực và phôi cho tới khi tia lửa phóng, làm nguội vùng gia công và cuốn phoi kim loại ra khỏi khe hở. Dầu xung điện tốt có **độ nhớt thấp** để len vào khe hẹp, **điểm chớp cháy cao** để an toàn, và **hàm lượng hợp chất thơm thấp** để ít mùi, ít kích ứng da.

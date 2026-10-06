@@ -297,6 +297,91 @@ Oil-immersed power transformer in a factory substation, radiator fins, porcelain
 
 ---
 
+## 5B. Phương án B cho 5 danh mục còn thiếu ảnh (thêm 06/10/2026)
+
+Ngày 06/10/2026, 5 danh mục sau chưa có ảnh mới. Prompt phương án A nằm ở các mục 5.5, 5.9, 5.10, 5.14 và 5.15 phía trên. Dưới đây là **phương án B** với góc chụp khác, dùng khi phương án A ra ảnh chưa ưng.
+
+Cả 5 ảnh dùng khung **3:2**, cỡ 1536 × 1024. Ảnh tạo xong lưu vào `anh-goc/danh-muc/`.
+
+### Dầu máy may
+- **Lưu thành:** `dau-may-may.png`
+- **Alt gợi ý:** Xưởng may công nghiệp với dãy máy may và công nhân đang làm việc
+
+**Prompt đầy đủ**
+```
+Wide view of a bright, modern garment factory in Vietnam: long rows of industrial sewing machines with workers in light uniforms sewing fabric, colourful fabric rolls on the side, the nearest sewing machine in sharp focus with its metal needle bar and presser foot glistening with a thin film of oil, the rest of the room softly blurred. Photorealistic industrial photography, full-frame camera, 35mm lens, bright natural lighting, shallow depth of field, cool blue-grey tones with subtle warm orange accents. No text, no logos, no brand names, no labels, no watermark.
+```
+
+**Canva / CapCut (ngắn)**
+```
+Bright garment factory, rows of industrial sewing machines and workers, nearest machine sharp with oiled needle bar, rest blurred. Photorealistic, natural light, no text, no logos.
+```
+*Toàn cảnh xưởng may, máy gần nhất nét, bóng dầu ở cơ cấu kim.*
+
+### Dầu cắt gọt (dầu tưới nguội)
+- **Lưu thành:** `dau-cat-got.png`
+- **Alt gợi ý:** Máy tiện CNC đang tiện trục thép, dầu tưới nguội phun vào dao
+
+**Prompt đầy đủ**
+```
+Close-up inside a CNC lathe while turning a steel shaft: a carbide cutting insert removing a curling silver metal chip, a nozzle spraying a steady stream of milky white coolant onto the cutting zone, splashes and droplets frozen in motion, the machine's interior lamp creating bright highlights on the wet metal. Photorealistic industrial photography, full-frame camera, 85mm lens, fast shutter speed, shallow depth of field, cool blue-grey tones with subtle warm orange accents. No text, no logos, no brand names, no labels, no watermark.
+```
+
+**Canva / CapCut (ngắn)**
+```
+CNC lathe turning a steel shaft, curling metal chip, milky white coolant spraying on the insert, droplets frozen. Photorealistic macro, blue-grey tones, no text, no logos.
+```
+*Máy tiện CNC, phoi xoắn, dung dịch tưới nguội trắng sữa.*
+
+### Dầu động cơ diesel
+- **Lưu thành:** `dau-dong-co-diesel.png`
+- **Alt gợi ý:** Động cơ diesel máy phát điện công nghiệp, kỹ thuật viên kiểm tra que thăm dầu
+
+**Prompt đầy đủ**
+```
+Large industrial diesel generator set in a clean factory generator room, the engine side in focus, a technician in a navy work uniform pulling out the dipstick to check golden engine oil, the oil filler cap open, thick cables and the radiator in the background. Photorealistic industrial photography, full-frame camera, 35mm lens, natural factory lighting, shallow depth of field, cool blue-grey tones with subtle warm orange accents. No text, no logos, no brand names, no labels, no watermark.
+```
+
+**Canva / CapCut (ngắn)**
+```
+Industrial diesel generator engine, technician pulling the dipstick to check golden oil, clean generator room. Photorealistic factory photo, blue-grey tones, no text, no logos.
+```
+*Máy phát điện diesel, kiểm tra que thăm dầu động cơ.*
+
+### Dầu máy hút chân không
+- **Lưu thành:** `dau-may-hut-chan-khong.png`
+- **Alt gợi ý:** Bơm chân không công nghiệp nối với máy đóng gói hút chân không thực phẩm
+
+**Prompt đầy đủ**
+```
+Food packaging line in a clean factory: an industrial vacuum packaging machine sealing plastic bags of product, connected by a steel pipe to a rotary vane vacuum pump in the foreground, the pump's oil sight glass showing clear light-yellow oil, a technician in a white coat and hairnet softly out of focus. Photorealistic industrial photography, full-frame camera, 35mm lens, bright clean lighting, shallow depth of field, cool blue-grey tones with subtle warm orange accents. No text, no logos, no brand names, no labels, no watermark.
+```
+
+**Canva / CapCut (ngắn)**
+```
+Rotary vane vacuum pump in foreground with oil sight glass, connected to a food vacuum packaging machine, clean factory. Photorealistic, bright light, no text, no logos.
+```
+*Bơm chân không cạnh máy đóng gói hút chân không.*
+
+### Dầu cách điện (dầu máy biến áp)
+- **Lưu thành:** `dau-cach-dien.png`
+- **Alt gợi ý:** Kỹ thuật viên lấy mẫu dầu cách điện từ van xả máy biến áp
+
+**Prompt đầy đủ**
+```
+Close-up of a technician wearing safety gloves and a helmet taking a sample of clear pale-yellow transformer insulating oil from the drain valve of a large grey oil-filled power transformer into a glass sample bottle, cooling radiator fins in the background, outdoor substation with soft daylight. Photorealistic industrial photography, full-frame camera, 50mm lens, shallow depth of field, cool blue-grey tones with subtle warm orange accents. No text, no logos, no brand names, no labels, no warning signs, no watermark.
+```
+
+**Canva / CapCut (ngắn)**
+```
+Technician sampling clear yellow transformer oil from a power transformer drain valve into a glass bottle, radiator fins behind, substation. Photorealistic, no text, no logos.
+```
+*Lấy mẫu dầu biến thế từ van máy biến áp.*
+
+**Mẹo:** Nếu cả hai phương án vẫn chưa ưng, giữ nguyên prompt nhưng đổi góc chụp ở đầu câu, ví dụ "Wide shot of…", "Close-up of…" hoặc "Low-angle view of…", rồi tạo lại 2–3 lượt.
+
+---
+
 ## 6. Danh mục đang tắt (làm sau, khi bật trang)
 
 ### Dầu nhớt xe máy

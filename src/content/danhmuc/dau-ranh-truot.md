@@ -9,6 +9,7 @@ description: "Dầu rãnh trượt, dầu băng trượt máy CNC ISO VG 68, 220
 keywords: ["dầu rãnh trượt", "dầu rãnh trượt 68", "dầu băng trượt máy CNC", "dầu bôi trơn máy CNC", "mobil vactra no 2", "shell tonna s2 m 68", "total drosera ms 68", "castrol magna bd 68"]
 tags: ["dau-ranh-truot", "may-cnc", "shell-tonna", "mobil-vactra", "iso-vg-68", "iso-vg-220"]
 image: "/images/danh-muc/dau-ranh-truot.webp"
+image_alt: "Băng trượt máy CNC phủ màng dầu rãnh trượt bóng"
 ---
 
 **Dầu rãnh trượt** (hay **dầu băng trượt**) bôi trơn băng trượt, sống trượt và vít me của máy phay, tiện, mài CNC. Dầu có thêm **phụ gia bám dính** để không bị gạt khỏi băng trượt, và phụ gia **chống rung giật (stick-slip)** để bàn máy di chuyển êm ở tốc độ chạy dao chậm. Cấp phổ biến nhất là **ISO VG 68** cho băng trượt ngang. **VG 220** dùng cho băng trượt đứng hoặc tải nặng. Loại dầu theo tiêu chuẩn là **ISO 6743-13 GA/GB** hoặc **DIN 51502 CGLP**.
