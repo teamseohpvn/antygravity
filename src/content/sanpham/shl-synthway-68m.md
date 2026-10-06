@@ -70,7 +70,7 @@ Chúng tôi có sẵn **can 20 L**. Hàng có CO/CQ và hóa đơn VAT, giao t�
 | Synthway 100M | 100 cSt | 100 | > 240 °C |
 | Synthway 220M | 220 cSt | 101 | > 260 °C |
 
-Cấp 68 phổ biến cho băng trượt ngang của máy tiện, máy phay cỡ vừa. Băng trượt đứng hoặc máy tải nặng thường dùng cấp 220. Kho chúng tôi hiện có sẵn cấp 68M; cấp khác vui lòng [liên hệ](/lien-he). Luôn ưu tiên cấp ghi trong sổ tay máy. Xem thêm ở trang [dầu rãnh trượt](/dau-ranh-truot).
+Cấp 68 phổ biến cho băng trượt ngang của máy tiện, máy phay cỡ vừa. Băng trượt đứng hoặc máy tải nặng thường dùng cấp 220. Kho chúng tôi hiện có sẵn cấp 68M; cấp khác vui lòng [liên hệ](/contact). Luôn ưu tiên cấp ghi trong sổ tay máy. Xem thêm ở trang [dầu rãnh trượt](/dau-ranh-truot).
 
 ## Câu hỏi thường gặp
 

@@ -3,7 +3,7 @@
 import { ORG_ID, SITE_URL } from './site';
 
 export interface NhanSu {
-  id: string; // dùng làm anchor: /gioi-thieu#<id>
+  id: string; // dùng làm anchor: /about#<id>
   name: string;
   role: string;
   /** Mô tả công việc, chuyên môn, hiển thị trên trang */
@@ -66,8 +66,13 @@ export const NHAN_SU: NhanSu[] = [
 /** Người kiểm duyệt mặc định cho trang sản phẩm khi file không ghi reviewed_by. */
 export const DEFAULT_REVIEWER_ID = 'tran-tuan-huynh';
 
-export const personUrl = (p: NhanSu) => `/gioi-thieu#${p.id}`;
-export const personId = (p: NhanSu) => `${SITE_URL}/gioi-thieu#${p.id}`;
+/** Người có đoạn giới thiệu (bio) có trang hồ sơ tác giả riêng /author/<id>; người khác dùng anchor ở trang Giới thiệu. */
+export const hasProfile = (p: NhanSu) => Boolean(p.bio);
+export const personUrl = (p: NhanSu) => (hasProfile(p) ? `/author/${p.id}` : `/about#${p.id}`);
+export const personId = (p: NhanSu) => (hasProfile(p) ? `${SITE_URL}/author/${p.id}#person` : `${SITE_URL}/about#${p.id}`);
+/** Dòng chứng chỉ ngắn cạnh tên tác giả, ví dụ "Kỹ sư, 17 năm kinh nghiệm" */
+export const credentialLine = (p: NhanSu) =>
+  [p.degree, p.since ? `${new Date().getFullYear() - p.since} năm kinh nghiệm` : undefined].filter(Boolean).join(', ');
 export const yearsOf = (p: NhanSu) => (p.since ? new Date().getFullYear() - p.since : undefined);
 
 /** Tra theo id hoặc họ tên (giá trị trường reviewed_by). */

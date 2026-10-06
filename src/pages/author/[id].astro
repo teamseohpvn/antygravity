@@ -1,0 +1,114 @@
+---
+// Trang hồ sơ tác giả: người kiểm duyệt nội dung kỹ thuật (có bio trong src/lib/nhan-su.ts).
+// Trang sản phẩm link về đây từ dòng "Tác giả"; schema ProfilePage + Person.
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getActiveProducts } from '../../lib/content';
+import { NHAN_SU, DEFAULT_REVIEWER_ID, hasProfile, personSchema, personUrl, timNhanSu, yearsOf, type NhanSu } from '../../lib/nhan-su';
+import { LEGAL_SHORT, SITE_NAME, absUrl, breadcrumbSchema } from '../../lib/site';
+
+export async function getStaticPaths() {
+  return NHAN_SU.filter(hasProfile).map((p) => ({ params: { id: p.id }, props: { person: p } }));
+}
+
+const { person: p } = Astro.props as { person: NhanSu };
+const path = personUrl(p);
+const crumbs = [
+  { name: 'Trang chủ', href: '/' },
+  { name: 'Giới thiệu', href: '/about' },
+  { name: p.name, href: path },
+];
+
+// Trang sản phẩm do người này đứng tên (reviewed_by trùng, hoặc người mặc định khi không ghi).
+const products = (await getActiveProducts())
+  .filter((x) => (timNhanSu(x.data.reviewed_by) ?? timNhanSu(DEFAULT_REVIEWER_ID))?.id === p.id)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, 'vi'));
+
+const schemaData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    name: `${p.name} – ${p.role} ${LEGAL_SHORT}`,
+    url: absUrl(path),
+    inLanguage: 'vi-VN',
+    mainEntity: { '@id': personSchema(p)['@id'] },
+    isPartOf: { '@id': absUrl('/') + '#website' },
+  },
+  personSchema(p),
+  breadcrumbSchema(crumbs),
+];
+---
+
+<Layout
+  title={`${p.name}, ${p.role}`}
+  seoTitle={`${p.name} – ${p.role} | ${SITE_NAME}`}
+  description={`${p.name}, ${p.degree ?? ''} ${p.role} tại ${LEGAL_SHORT}. ${p.since ? `Làm chuyên môn từ năm ${p.since}. ` : ''}Kiểm duyệt thông số kỹ thuật và khuyến cáo sử dụng dầu nhớt công nghiệp trên website.`.replace(/\s+/g, ' ')}
+  image={p.photo}
+  {schemaData}
+>
+  <div class="container author-page">
+    <Breadcrumbs items={crumbs} />
+    <article class="author-card">
+      <header class="author-head">
+        {p.photo && <img src={p.photo} alt={`${p.name}, ${p.role} ${LEGAL_SHORT}`} width="160" height="160" loading="eager" />}
+        <div>
+          <h1>{p.name}</h1>
+          <p class="role">{p.role}, {LEGAL_SHORT}</p>
+          <ul class="facts">
+            {p.degree && <li><strong>Học vị, trình độ:</strong> {p.degree}</li>}
+            {p.affiliation && <li><strong>Nơi công tác chuyên môn:</strong> {p.affiliation}</li>}
+            {p.since && <li><strong>Kinh nghiệm:</strong> làm chuyên môn từ năm {p.since} ({yearsOf(p)} năm)</li>}
+            {p.email && <li><strong>Email:</strong> <a href={`mailto:${p.email}`}>{p.email}</a></li>}
+            {p.sameAs?.map((u) => <li><strong>Hồ sơ:</strong> <a href={u} target="_blank" rel="noopener me">LinkedIn</a></li>)}
+          </ul>
+        </div>
+      </header>
+
+      <h2>Giới thiệu</h2>
+      {p.bio?.map((t) => <p>{t}</p>)}
+
+      {p.knowsAbout && (
+        <>
+          <h2>Lĩnh vực chuyên môn</h2>
+          <ul>{p.knowsAbout.map((k) => <li>{k}</li>)}</ul>
+        </>
+      )}
+
+      <h2>Cách kiểm duyệt nội dung</h2>
+      <ol>
+        <li>Đối chiếu từng thông số trên trang với bảng thông số kỹ thuật (TDS) bản mới nhất của hãng.</li>
+        <li>Kiểm tra phương pháp thử theo công bố của ASTM, ISO và TCVN tương đương.</li>
+        <li>Rà soát khuyến cáo sử dụng, trường hợp không nên dùng, ngưỡng thay dầu và hướng dẫn kiểm tra dầu tại xưởng.</li>
+        <li>Ghi ngày cập nhật khi nội dung thay đổi thực chất.</li>
+      </ol>
+
+      {products.length > 0 && (
+        <>
+          <h2>Trang sản phẩm do {p.name} đứng tên</h2>
+          <ul class="products">
+            {products.map((x) => <li><a href={`/${x.data.category}/${x.id}`}>{x.data.title}</a></li>)}
+          </ul>
+        </>
+      )}
+
+      <p class="back"><a href="/about#doi-ngu">Xem đội ngũ {LEGAL_SHORT}</a></p>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .author-page { margin-bottom: 60px; }
+  .author-card { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: clamp(20px, 4vw, 48px); max-width: 900px; }
+  .author-head { display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; }
+  .author-head img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+  .author-card h1 { color: var(--color-primary); font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.3; margin: 0 0 4px; }
+  .author-card h2 { color: var(--color-primary); font-size: 1.35rem; margin: 32px 0 12px; }
+  .author-card p { margin-bottom: 14px; }
+  .author-card ul, .author-card ol { margin: 0 0 14px 22px; }
+  .author-card li { margin-bottom: 6px; }
+  .author-card a { color: var(--color-accent); }
+  .role { font-weight: 600; margin-bottom: 10px; }
+  .facts { list-style: none; margin-left: 0 !important; }
+  .products { columns: 2; }
+  @media (max-width: 600px) { .products { columns: 1; } }
+</style>

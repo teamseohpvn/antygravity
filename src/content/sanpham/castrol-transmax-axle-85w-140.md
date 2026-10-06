@@ -79,7 +79,7 @@ Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, c
 Ở nhiệt độ làm việc, hai loại có độ nhớt gần nhau nên thường thay được nếu cùng cấp API. Bản 85W-140 chảy tốt hơn khi lạnh. Nếu xe đang dùng dầu GL-4, hãy hỏi thợ hoặc hãng xe trước khi đổi sang GL-5.
 
 ### Phuy 209 L có chia lẻ không?
-Mã này chúng tôi đang có phuy 209 L. Nếu cần lượng nhỏ, hãy [liên hệ](/lien-he) để được tư vấn mã dầu cầu 85W-140 khác có xô 18–20 L.
+Mã này chúng tôi đang có phuy 209 L. Nếu cần lượng nhỏ, hãy [liên hệ](/contact) để được tư vấn mã dầu cầu 85W-140 khác có xô 18–20 L.
 
 ### Có CO/CQ và hóa đơn VAT không?
 Có. Mỗi lô giao kèm hóa đơn VAT, CO/CQ cung cấp theo lô khi khách yêu cầu.

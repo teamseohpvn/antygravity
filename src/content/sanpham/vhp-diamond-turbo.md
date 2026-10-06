@@ -80,7 +80,7 @@ Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy
 Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của VHP Diamond Turbo 20W-50: **độ nhớt** lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Diamond Turbo có cấp 15W-40 không?
-VHP có công bố cấp 15W-40 cho dòng này. Kho của chúng tôi hiện để sẵn cấp 20W-50. Cần 15W-40, vui lòng [liên hệ](/lien-he) để kiểm tra trước.
+VHP có công bố cấp 15W-40 cho dòng này. Kho của chúng tôi hiện để sẵn cấp 20W-50. Cần 15W-40, vui lòng [liên hệ](/contact) để kiểm tra trước.
 
 ### Dầu VHP có hóa đơn và chứng từ chất lượng không?
 Có. Hàng giao kèm hóa đơn VAT, CO/CQ cung cấp theo lô khi khách yêu cầu. Bảng chỉ tiêu ở trên lấy từ trang sản phẩm của VHP.

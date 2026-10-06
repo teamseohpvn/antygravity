@@ -94,7 +94,7 @@ Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test ch�
 Hai mã cùng cấp 68, cùng nhóm dầu chống mài mòn HM. Thông số chính khá gần nhau. Khi đổi mã, nên xả hết dầu cũ thay vì châm lẫn, nhất là với máy áp cao.
 
 ### Có loại can nhỏ không?
-Hiện chúng tôi có loại phuy 200 L. Nếu cần quy cách khác, hãy [liên hệ](/lien-he) để kiểm tra hàng.
+Hiện chúng tôi có loại phuy 200 L. Nếu cần quy cách khác, hãy [liên hệ](/contact) để kiểm tra hàng.
 
 ### Có xuất hóa đơn và CO/CQ không?
 Có. Mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu.

@@ -75,7 +75,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dư�
 | Quy cách trong kho | Phuy 180 kg | Xô 15 kg |
 | Thường dùng cho | Ổ bi, đầu trục, máy công cụ, máy nông nghiệp | Ổ bi lớn tốc độ chậm, chỗ rung mạnh hoặc dễ chảy mỡ |
 
-Bảng thông số ở trên là bảng VHP công bố cho cấp NLGI 3 (VHP GRE MIL 3). Nếu cần phiếu chỉ tiêu riêng của cấp NLGI 4, hãy [liên hệ](/lien-he) để nhận theo lô.
+Bảng thông số ở trên là bảng VHP công bố cho cấp NLGI 3 (VHP GRE MIL 3). Nếu cần phiếu chỉ tiêu riêng của cấp NLGI 4, hãy [liên hệ](/contact) để nhận theo lô.
 
 Opal có nhiệt độ nhỏ giọt 140 °C, nên vẫn là mỡ đa dụng. Nếu ổ bi chạy nhanh và nóng liên tục, [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) có nhiệt độ nhỏ giọt cao hơn (tối thiểu 190 °C). Ổ bi nóng trên 120 °C cần [mỡ chịu nhiệt](/mo-chiu-nhiet). Xem các dòng khác ở trang [mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep).
 

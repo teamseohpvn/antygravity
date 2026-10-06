@@ -84,7 +84,7 @@ Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, c
 Chữ **A** (axle) là dòng dầu cầu GL-5 cho bánh răng hypoid. Chữ **G** (gear) là dòng dầu hộp số tay GL-4. Cầu xe tải nên dùng dòng A; hộp số có đồng tốc mà hãng ghi GL-4 thì không nên dùng dòng A.
 
 ### Xô 20 L đủ thay cho mấy cầu xe?
-Tùy dung tích cầu trong sổ tay xe. Hãy đối chiếu dung tích từng cầu, cộng thêm phần châm bù khi kiểm tra định kỳ, rồi [liên hệ](/lien-he) để chúng tôi tính số xô cần đặt.
+Tùy dung tích cầu trong sổ tay xe. Hãy đối chiếu dung tích từng cầu, cộng thêm phần châm bù khi kiểm tra định kỳ, rồi [liên hệ](/contact) để chúng tôi tính số xô cần đặt.
 
 ### Có CO/CQ và hóa đơn VAT không?
 Có. Mỗi lô giao kèm hóa đơn VAT, CO/CQ cung cấp theo lô khi khách yêu cầu.

@@ -89,7 +89,7 @@ Theo mốc giờ chạy của hãng máy nén, nhưng nên điều chỉnh theo 
 Kiểm tra kèm **độ nhớt ở 40 °C** (dầu mới 32,8 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 29,5–36 mm²/s là vượt ngưỡng) và nước ngưng ở đáy bình tách. Khi thay ENEOS Faircol RA 32, thay luôn lọc dầu và lọc tách. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Máy nén khí của tôi ghi dầu VG 46, dùng Faircol RA 32 được không?
-Không nên. Hãy dùng đúng cấp độ nhớt nhà sản xuất máy quy định. ENEOS có Faircol RA 46 và 68, nhưng hiện kho chúng tôi chỉ có sẵn cấp 32. Cần cấp khác, vui lòng [liên hệ](/lien-he) để đặt hàng.
+Không nên. Hãy dùng đúng cấp độ nhớt nhà sản xuất máy quy định. ENEOS có Faircol RA 46 và 68, nhưng hiện kho chúng tôi chỉ có sẵn cấp 32. Cần cấp khác, vui lòng [liên hệ](/contact) để đặt hàng.
 
 ### Dầu đổi sang màu đỏ nhạt có phải dầu hỏng?
 Không. Đây là hiện tượng ENEOS đã ghi trong tài liệu kỹ thuật, do phụ gia chống oxy hóa. Tính năng của dầu không thay đổi.
