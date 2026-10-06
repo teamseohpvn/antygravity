@@ -1,0 +1,14 @@
+---
+// Bọc thân bài markdown (<Content />): bỏ thẻ <a> trỏ tới bài đang tắt (active: false), giữ nguyên chữ.
+// Nhờ vậy tắt một bài không để lại link 404 trong các bài khác.
+import { getHiddenPaths } from '../lib/content';
+
+const hidden = await getHiddenPaths();
+const html = await Astro.slots.render('default');
+const clean = (href: string) => href.split(/[?#]/)[0].replace(/\.html$/, '').replace(/\/+$/, '') || '/';
+const output = html.replace(/<a\s[^>]*href="(\/[^"]*)"[^>]*>([\s\S]*?)<\/a>/g, (tag, href, text) =>
+  hidden.has(clean(href)) ? text : tag,
+);
+---
+
+<Fragment set:html={output} />

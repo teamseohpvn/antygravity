@@ -35,17 +35,17 @@ export const KCN_NEAR = ['Đại An', 'Nam Sách', 'Phúc Điền', 'Tân Trư�
 export const KCN_FAR = ['Tràng Duệ', 'Nomura', 'Đình Vũ', 'VSIP', 'Quế Võ', 'Phố Nối'];
 export const BRANDS = ['Shell', 'Castrol', 'Mobil', 'TotalEnergies', 'ENEOS', 'EMI', 'VHP', 'XONE'];
 
-// Domain chính thức. Staging vẫn dùng noindex (PUBLIC_INDEXABLE), nên canonical trỏ về domain thật cũng an toàn.
+// Domain chính thức. Bản preview *.workers.dev cũng có canonical trỏ về domain thật, nên Google chỉ index domain chính.
 const FALLBACK_SITE = 'https://daucongnghiephp.com.vn';
 
 /** Domain chính thức, không có dấu "/" ở cuối. */
 export const SITE_URL = (import.meta.env.PUBLIC_SITE_URL || FALLBACK_SITE).replace(/\/+$/, '');
 
 /**
- * Chỉ cho Google index khi build production có PUBLIC_INDEXABLE=true.
- * Mặc định (dev, staging, *.workers.dev) mọi trang đều có noindex.
+ * Công bố cho Google index từ 06/10/2026: mặc định mọi trang "index, follow".
+ * Muốn chặn lại (bảo trì, staging riêng) thì build với PUBLIC_INDEXABLE=false.
  */
-export const INDEXABLE = import.meta.env.PUBLIC_INDEXABLE === 'true';
+export const INDEXABLE = import.meta.env.PUBLIC_INDEXABLE !== 'false';
 
 /**
  * Chuẩn hoá đường dẫn: bỏ đuôi ".html", "/index" và "/" cuối (trừ trang chủ).
@@ -135,4 +135,35 @@ export function webpSrcset(src: string): string | undefined {
   const small = src.replace(/\.webp$/, '-600.webp');
   if (small === src || !existsSync(`public${small}`)) return undefined;
   return `${small} 600w, ${src} 1200w`;
+}
+
+export interface ImageWithAlt {
+  src: string;
+  alt: string;
+}
+
+/**
+ * Danh sách ảnh sản phẩm dạng {src, alt}, ảnh chính đứng đầu.
+ * Hỗ trợ cả dạng cũ (image: "...", images: ["..."]); ảnh thiếu alt thì dùng tên sản phẩm.
+ * Ảnh chưa upload bị bỏ qua; nếu chưa có ảnh nào thì dùng tạm ảnh danh mục.
+ */
+export function productImages(d: {
+  title: string;
+  category?: string;
+  categoryName?: string;
+  image?: string;
+  images?: (string | ImageWithAlt)[];
+}): ImageWithAlt[] {
+  const list = d.images?.length ? d.images : d.image ? [d.image] : [];
+  const found = list
+    .map((img) => (typeof img === 'string' ? { src: img, alt: d.title } : img))
+    .filter((img) => publicImageExists(img.src));
+  if (found.length || !d.category) return found;
+  const fallback = `/images/danh-muc/${d.category}.webp`;
+  return publicImageExists(fallback) ? [{ src: fallback, alt: d.categoryName ?? d.title }] : [];
+}
+
+/** Tên quy cách để hiển thị, chấp nhận cả dạng chuỗi và dạng {name, weight, sku}. */
+export function packagingLabel(p: string | { name: string; weight?: string }): string {
+  return typeof p === 'string' ? p : p.weight ? `${p.name} (${p.weight})` : p.name;
 }

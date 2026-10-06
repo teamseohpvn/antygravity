@@ -1,4 +1,5 @@
 ---
+active: true
 title: "Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) NLGI 0, 1, 2, 3"
 nav_label: "Mỡ bôi trơn (mỡ bò)"
 order: 2
@@ -8,6 +9,7 @@ description: "Mỡ bò bôi trơn công nghiệp NLGI 0–3 Shell Gadus, Castrol
 keywords: ["mỡ bôi trơn", "mỡ bò", "mỡ bò bôi trơn", "mỡ bôi trơn công nghiệp", "mỡ công nghiệp", "mỡ bò công nghiệp", "mỡ bôi trơn vòng bi", "mỡ vòng bi", "mỡ bôi trơn máy", "mỡ bơm máy xúc", "shell gadus s2 v220 2", "mobilux ep 2", "castrol spheerol epl 2", "mỡ đa dụng ep2"]
 tags: ["mo-boi-tron", "mo-bo", "shell-gadus", "castrol-spheerol", "nlgi-2", "nlgi-3"]
 image: "/images/danh-muc/mo-boi-tron-cong-nghiep.webp"
+image_alt: "Bơm mỡ bò vào gối đỡ vòng bi bằng súng bơm mỡ"
 ---
 
 **Mỡ bôi trơn công nghiệp**, thường gọi là **mỡ bò**, là chất bôi trơn dạng sệt gồm ba phần: dầu gốc (khoảng 70–95%), chất làm đặc (xà phòng lithium, canxi, polyurea…) và phụ gia. Mỡ bò bôi trơn dùng ở những chỗ dầu lỏng không giữ lại được: vòng bi, gối đỡ, khớp nối, chốt, bạc trượt. Loại dùng nhiều nhất là **mỡ lithium chịu cực áp (EP) cấp NLGI 2**, thường gọi là mỡ đa dụng EP2. Nếu vị trí làm việc nóng trên khoảng 120 °C, hãy xem [mỡ chịu nhiệt](/mo-chiu-nhiet).

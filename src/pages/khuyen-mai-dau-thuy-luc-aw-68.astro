@@ -12,19 +12,18 @@ import { PROMO } from '../lib/promo';
 const { label: PROMO_LABEL, end: PROMO_END, endText: PROMO_END_TEXT, sameDayCutoff: CUTOFF } = PROMO;
 
 // Cập nhật khi nội dung thay đổi thực chất (ưu đãi, mã hàng, điều kiện giao), không đổi ngày chỉ để "làm mới".
-const UPDATED = '2026-10-03';
+const UPDATED = '2026-10-05';
 
-// Mã ISO VG 68 có hàng theo file kho 02/10/2026. Không đưa Petrolimex lên web (quyết định 02/10/2026).
+// Mã ISO VG 68 có hàng theo file kho tháng 10 (05/10/2026). Không đưa Petrolimex lên web (quyết định 02/10/2026).
+// href chỉ ghi cho mã có trang sản phẩm đang bật (active: true).
 const PRODUCTS = [
-  { name: 'ENEOS Super Hyrando 68', brand: 'ENEOS', packs: 'Phuy 200L, can 18L' },
-  { name: 'ENEOS Super Hyrando SE68', brand: 'ENEOS', packs: 'Phuy 200L' },
+  { name: 'ENEOS Super Hyrando 68', brand: 'ENEOS', packs: 'Phuy 200L', href: '/dau-thuy-luc/eneos-super-hyrando-68' },
   { name: 'Castrol Hyspin AWS 68', brand: 'Castrol', packs: 'Phuy 209L', href: '/dau-thuy-luc/castrol-hyspin-aws-68' },
-  { name: 'Caltex Hydraulic AW 68', brand: 'Caltex', packs: 'Phuy 208L' },
-  { name: 'Cosmo Hydro AW 68', brand: 'Cosmo', packs: 'Phuy 200L' },
-  { name: 'Isonas AW68', brand: 'VHP', packs: 'Phuy 200L, can 18L' },
-  { name: 'Spinax AW68', brand: 'VHP', packs: 'Phuy 200L' },
   { name: 'Dầu thủy lực X-One 68', brand: 'X-One', packs: 'Phuy 200L, xô 18L' },
   { name: 'EMI AW68', brand: 'EMI', packs: 'Phuy 200L, xô' },
+  { name: 'EMER LAW68', brand: 'EMER', packs: 'Phuy 200L, xô 18L' },
+  { name: 'APEX TL 68', brand: 'Quốc Trung', packs: 'Phuy 200L' },
+  { name: 'Maxima 68', brand: 'Maxima', packs: 'Xô 18L' },
 ];
 
 const tel = `tel:${BUSINESS.phone}`;

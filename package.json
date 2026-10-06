@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "check:content": "node scripts/check-content.mjs",
-    "images": "node scripts/optimize-images.mjs"
+    "images": "node scripts/optimize-images.mjs",
+    "anh": "node scripts/list-images.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.3.2",

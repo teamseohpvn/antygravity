@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import { getCollection } from 'astro:content';
+import { getActiveProducts, getActiveCategories } from '../lib/content';
 import { BUSINESS, breadcrumbSchema } from '../lib/site';
 
-const categories = (await getCollection('danhmuc')).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
-const products = await getCollection('sanpham');
+const categories = (await getActiveCategories()).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+const products = await getActiveProducts();
 const suggestions = [
   ...products.map((p) => p.data.title),
   ...categories.map((c) => c.data.nav_label ?? c.data.title),

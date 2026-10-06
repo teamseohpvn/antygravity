@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getActiveCategories } from '../lib/content';
 // Font Inter tự host (có subset tiếng Việt), không chặn render như Google Fonts.
 import '@fontsource-variable/inter/wght.css';
 import SEO from '../components/SEO.astro';
@@ -19,7 +19,7 @@ interface Props {
 const { title, seoTitle, description, canonical, image, type, noindex, schemaData } = Astro.props;
 
 // Menu danh mục sinh từ content collection, sắp theo trường `order`.
-const categories = (await getCollection('danhmuc')).sort(
+const categories = (await getActiveCategories()).sort(
   (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99),
 );
 

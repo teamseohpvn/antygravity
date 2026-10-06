@@ -1,11 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection, render } from 'astro:content';
+import ContentBody from '../../components/ContentBody.astro';
+import { render } from 'astro:content';
+import { getActivePosts } from '../../lib/content';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { absUrl, breadcrumbSchema, ORG_ID, SITE_NAME } from '../../lib/site';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getActivePosts();
   return posts.map(post => ({
     params: { slug: post.id },
     props: { post },
@@ -73,12 +75,12 @@ const schemaData = [
 
       {post.data.image && (
         <div class="featured-image">
-          <img src={post.data.image} alt={post.data.title} loading="lazy" decoding="async" />
+          <img src={post.data.image} alt={post.data.image_alt ?? post.data.title} loading="lazy" decoding="async" />
         </div>
       )}
 
       <div class="markdown-body">
-        <Content />
+        <ContentBody><Content /></ContentBody>
       </div>
     </article>
   </div>

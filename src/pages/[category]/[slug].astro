@@ -1,12 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ContentBody from '../../components/ContentBody.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
-import { getCollection, getEntry, render } from 'astro:content';
-import { absUrl, breadcrumbSchema, webpSrcset } from '../../lib/site';
+import { getEntry, render } from 'astro:content';
+import { getActiveProducts } from '../../lib/content';
+import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset } from '../../lib/site';
 
 export async function getStaticPaths() {
-  const products = await getCollection('sanpham');
+  const products = await getActiveProducts();
   return products.map((product) => ({
     params: { category: product.data.category, slug: product.id },
     props: { product },
@@ -19,8 +21,16 @@ const d = product.data;
 const categoryEntry = await getEntry('danhmuc', d.category);
 const categoryLabel = categoryEntry?.data.nav_label ?? d.categoryName;
 const pagePath = `/${d.category}/${product.id}`;
-const mainImage = d.images?.[0] ?? d.image;
+const gallery = productImages(d);
+const mainImage = gallery[0];
 const grade = d.vg ? `ISO VG ${d.vg}` : d.nlgi ? `NLGI ${d.nlgi}` : null;
+const sku = d.sku ?? d.packaging?.map((p) => (typeof p === 'string' ? undefined : p.sku)).find(Boolean);
+const STOCK_TEXT = {
+  'co-san': 'Có sẵn tại kho TP Hải Phòng (Hải Dương cũ). Liên hệ để nhận báo giá.',
+  'dat-hang': 'Hàng đặt theo yêu cầu. Liên hệ để biết thời gian giao.',
+  'ngung-ban': 'Sản phẩm đã ngừng kinh doanh. Liên hệ để được tư vấn mã thay thế.',
+} as const;
+const stockText = d.stock_status ? STOCK_TEXT[d.stock_status] : 'Liên hệ để nhận báo giá và kiểm tra tồn kho.';
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
@@ -30,6 +40,8 @@ const crumbs = [
 
 const additionalProperty = [
   ...(grade ? [{ '@type': 'PropertyValue', name: d.vg ? 'Cấp độ nhớt' : 'Cấp NLGI', value: grade }] : []),
+  ...(d.sae ? [{ '@type': 'PropertyValue', name: 'Cấp SAE', value: d.sae }] : []),
+  ...(d.api ? [{ '@type': 'PropertyValue', name: 'Cấp API', value: d.api }] : []),
   ...(d.specs ?? []).map((s) => ({ '@type': 'PropertyValue', name: s.name, value: s.value, ...(s.method ? { description: s.method } : {}) })),
 ];
 
@@ -42,8 +54,9 @@ const schemaData = [
     url: absUrl(pagePath),
     brand: { '@type': 'Brand', name: d.brand },
     category: categoryLabel,
-    ...(d.sku ? { sku: d.sku } : {}),
-    ...(mainImage ? { image: absUrl(mainImage) } : {}),
+    ...(sku ? { sku } : {}),
+    ...(d.origin ? { countryOfOrigin: d.origin } : {}),
+    ...(gallery.length ? { image: gallery.map((img) => absUrl(img.src)) } : {}),
     ...(additionalProperty.length ? { additionalProperty } : {}),
     // Không thêm offers / aggregateRating khi chưa công bố giá và đánh giá thật.
   },
@@ -55,7 +68,7 @@ const schemaData = [
   title={`${d.title} Chính Hãng`}
   seoTitle={d.seo_title}
   description={d.description}
-  image={mainImage}
+  image={mainImage?.src}
   type="product"
   {schemaData}
 >
@@ -64,10 +77,10 @@ const schemaData = [
 
     <div class="product-top">
       <div class="product-image">
-        {mainImage && <img src={mainImage} srcset={webpSrcset(mainImage)} sizes="(max-width: 700px) 100vw, 600px" alt={d.title} width="600" height="600" loading="eager" fetchpriority="high" decoding="async" />}
-        {d.images && d.images.length > 1 && (
+        {mainImage && <img src={mainImage.src} srcset={webpSrcset(mainImage.src)} sizes="(max-width: 700px) 100vw, 600px" alt={mainImage.alt} width="600" height="600" loading="eager" fetchpriority="high" decoding="async" />}
+        {gallery.length > 1 && (
           <div class="thumbnail-gallery">
-            {d.images.map((img) => <img src={img} alt={d.title} width="80" height="80" loading="lazy" />)}
+            {gallery.map((img) => <img src={img.src} alt={img.alt} width="80" height="80" loading="lazy" />)}
           </div>
         )}
       </div>
@@ -76,16 +89,25 @@ const schemaData = [
         <div class="tags">
           <span class="badge">{d.brand}</span>
           {grade && <span class="badge badge-outline">{grade}</span>}
+          {d.sae && <span class="badge badge-outline">SAE {d.sae}</span>}
+          {d.api && <span class="badge badge-outline">API {d.api}</span>}
           {d.standards?.map((s) => <span class="badge badge-outline">{s}</span>)}
         </div>
         <p class="description">{d.description}</p>
 
         {d.packaging && d.packaging.length > 0 && (
-          <p class="packaging"><strong>Quy cách:</strong> {d.packaging.join(' · ')}</p>
+          <p class="packaging"><strong>Quy cách:</strong> {d.packaging.map(packagingLabel).join(' · ')}</p>
+        )}
+        {(d.origin || d.base_oil) && (
+          <p class="packaging">
+            {d.origin && <><strong>Xuất xứ:</strong> {d.origin}</>}
+            {d.origin && d.base_oil && ' · '}
+            {d.base_oil && <><strong>Dầu gốc:</strong> {d.base_oil}</>}
+          </p>
         )}
 
         <div class="cta-box">
-          <p class="status">Liên hệ để nhận báo giá và kiểm tra tồn kho.</p>
+          <p class="status">{stockText}</p>
           <QuoteCta item={d.title} compact />
           {(d.tds_url || d.sds_url) && (
             <div class="docs">
@@ -108,19 +130,38 @@ const schemaData = [
             </tbody>
           </table>
         </div>
-        <p class="note">Giá trị điển hình theo bảng thông số của nhà sản xuất, có thể thay đổi theo lô.</p>
+        <p class="note">Giá trị điển hình theo bảng thông số của nhà sản xuất{d.tds_date ? ` (TDS ${d.tds_date})` : ''}, có thể thay đổi theo lô.</p>
       </section>
     )}
 
     <section class="product-content">
       <h2>Thông tin chi tiết sản phẩm</h2>
       <div class="markdown-body">
-        <Content />
+        <ContentBody><Content /></ContentBody>
       </div>
       {d.equivalents && d.equivalents.length > 0 && (
         <>
           <h3>Sản phẩm tương đương</h3>
           <p>{d.equivalents.join(' · ')}</p>
+        </>
+      )}
+      {(d.applications?.length || d.not_for?.length) && (
+        <>
+          <h3>Ứng dụng</h3>
+          {d.applications?.length && <ul>{d.applications.map((a) => <li>{a}</li>)}</ul>}
+          {d.not_for?.length && (
+            <p><strong>Không nên dùng cho:</strong> {d.not_for.join('; ')}.</p>
+          )}
+        </>
+      )}
+      {(d.warnings?.length || d.storage || d.shelf_life) && (
+        <>
+          <h3>Bảo quản và an toàn</h3>
+          <ul>
+            {d.storage && <li><strong>Bảo quản:</strong> {d.storage}</li>}
+            {d.shelf_life && <li><strong>Hạn sử dụng:</strong> {d.shelf_life}</li>}
+            {d.warnings?.map((w) => <li>{w}</li>)}
+          </ul>
         </>
       )}
       <p class="back-link">Xem thêm các sản phẩm khác trong danh mục <a href={`/${d.category}`}>{categoryLabel}</a>.</p>
@@ -159,6 +200,8 @@ const schemaData = [
   .product-content th { background: #f1f5f9; }
   .note { margin-top: 10px; font-size: 0.9rem; color: var(--color-text-light); }
   .back-link { margin-top: 24px; }
+  .product-content > ul { margin: 0 0 16px 20px; }
+  .product-content > ul li { margin-bottom: 6px; }
   .back-link a { color: var(--color-accent); text-decoration: underline; }
 
   :global(.markdown-body h3) { margin: 20px 0 10px; color: var(--color-primary); }

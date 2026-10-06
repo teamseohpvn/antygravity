@@ -1,4 +1,5 @@
 ---
+active: true
 title: "Mỡ Chịu Nhiệt (Mỡ Bò Chịu Nhiệt) 150 – 300 Độ C"
 nav_label: "Mỡ chịu nhiệt"
 order: 3
@@ -8,6 +9,7 @@ description: "Mỡ bò chịu nhiệt cho vòng bi quạt lò, lò sấy, máy c
 keywords: ["mỡ chịu nhiệt", "mỡ bò chịu nhiệt", "mỡ bôi trơn chịu nhiệt", "mỡ chịu nhiệt độ cao", "mỡ bò chịu nhiệt cao cấp", "mỡ chịu nhiệt 300 độ", "mỡ bò chịu nhiệt 500 độ", "mỡ bôi trơn vòng bi chịu nhiệt", "mỡ chịu nhiệt cho vòng bi", "mỡ bò trắng chịu nhiệt", "giá mỡ chịu nhiệt", "shell gadus s3 v220c 2"]
 tags: ["mo-chiu-nhiet", "mo-bo-chiu-nhiet", "shell-gadus", "castrol-tribol", "polyurea", "lithium-complex"]
 image: "/images/danh-muc/mo-chiu-nhiet.webp"
+image_alt: "Kỹ thuật viên tra mỡ chịu nhiệt cho vòng bi quạt lò"
 ---
 
 **Mỡ chịu nhiệt** (thường gọi là **mỡ bò chịu nhiệt**) là mỡ bôi trơn dùng cho vị trí nóng hơn khoảng 120 °C, nơi mỡ lithium thông thường nhanh chảy, khô và cháy thành cặn. Cách chọn đúng là **đo nhiệt độ thực tế tại vòng bi**, rồi chọn chất làm đặc và dầu gốc phù hợp. Với phần lớn quạt lò, lò sấy và máy sóng giấy chạy ở khoảng 150–180 °C, mỡ **polyurea** hoặc **lithium phức** tổng hợp là đủ. Từ khoảng 200–260 °C mới cần mỡ đặc chủng như **PFPE**.

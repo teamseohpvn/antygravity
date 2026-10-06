@@ -1,13 +1,15 @@
 ---
+active: true
 title: "Dầu Bánh Răng Công Nghiệp 150, 220, 320, 460"
 nav_label: "Dầu bánh răng"
-order: 6
+order: 7
 summary: "Hộp giảm tốc, hộp số công nghiệp"
 seo_title: "Dầu Bánh Răng Công Nghiệp 220, 320 Chính Hãng – Báo Giá Sỉ"
 description: "Dầu bánh răng, dầu hộp giảm tốc công nghiệp ISO VG 150–680 Shell Omala, Castrol Alpha SP, Mobilgear 600 XP. Có CO/CQ, VAT. Báo giá sỉ phuy 209L, xô 20L."
 keywords: ["dầu bánh răng", "dầu bánh răng công nghiệp", "dầu bánh răng 220", "dầu bánh răng 320", "dầu bánh răng 150", "dầu hộp giảm tốc", "dầu bánh răng tổng hợp", "shell omala s2 gx 220", "shell omala s2 gx 320", "mobilgear 600 xp 220", "castrol alpha sp 220", "total carter ep 220"]
 tags: ["dau-banh-rang", "dau-hop-giam-toc", "shell-omala", "castrol-alpha", "iso-vg-220", "iso-vg-320"]
 image: "/images/danh-muc/dau-banh-rang.webp"
+image_alt: "Hộp giảm tốc công nghiệp mở nắp, bánh răng nghiêng phủ dầu bánh răng"
 ---
 
 **Dầu bánh răng công nghiệp** dùng cho hộp số kín và **hộp giảm tốc** của băng tải, máy khuấy, máy đùn, máy nghiền, cẩu trục. Phần lớn là **dầu chịu cực áp (EP)** loại **CLP** theo DIN 51517-3. Cấp phổ biến nhất là **ISO VG 220**, tiếp theo là **320**. Cấp độ nhớt đúng luôn là cấp ghi trên nhãn hộp số, vì nhà sản xuất tính theo tốc độ, tải và nhiệt độ làm việc.

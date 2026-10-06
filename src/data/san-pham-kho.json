@@ -1,0 +1,303 @@
+[
+ {
+  "ten": "X-One AW 68",
+  "hang": "X-One",
+  "danh_muc": "dau-thuy-luc",
+  "cap": "ISO VG 68",
+  "quy_cach": [
+   "Phuy 200 L",
+   "Xô 18 L"
+  ],
+  "trang": "x-one-aw-68",
+  "nguon": "khac"
+ },
+ {
+  "ten": "VHP Spadila ATF",
+  "hang": "VHP",
+  "danh_muc": "dau-cau-hop-so",
+  "cap": "ATF Dexron II, III",
+  "quy_cach": [
+   "Xô 18 L"
+  ],
+  "trang": "vhp-spadila-atf",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "VHP Rosia CPR",
+  "hang": "VHP",
+  "danh_muc": "dau-may-nen-khi",
+  "cap": "ISO VG 32, 46",
+  "quy_cach": [
+   "Xô 18 L"
+  ],
+  "trang": "vhp-rosia-cpr",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "VHP dầu cầu P140",
+  "hang": "VHP",
+  "danh_muc": "dau-cau-hop-so",
+  "cap": "SAE 140",
+  "quy_cach": [
+   "Xô 18 L"
+  ],
+  "trang": "vhp-p140",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "VHP Licas Grease",
+  "hang": "VHP",
+  "danh_muc": "mo-boi-tron-cong-nghiep",
+  "cap": "NLGI 3",
+  "quy_cach": [
+   "Ống 400 g (thùng 30 ống)"
+  ],
+  "trang": "licas-grease",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "VHP Lithium Grease",
+  "hang": "VHP",
+  "danh_muc": "mo-boi-tron-cong-nghiep",
+  "cap": "NLGI 4",
+  "quy_cach": [
+   "Xô 17 kg"
+  ],
+  "trang": "vhp-lithium-grease",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "SHL Synthway 68M",
+  "hang": "SHL Lubricants",
+  "danh_muc": "dau-ranh-truot",
+  "cap": "ISO VG 68",
+  "quy_cach": [
+   "Can 20 L"
+  ],
+  "trang": "shl-synthway-68m",
+  "nguon": "khac"
+ },
+ {
+  "ten": "Shell Spirax S2 A 85W-140",
+  "hang": "Shell",
+  "danh_muc": "dau-cau-hop-so",
+  "cap": "API GL-5 · 85W-140",
+  "quy_cach": [
+   "Xô 20 L"
+  ],
+  "trang": "shell-spirax-s2-a",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "APEX TL 68",
+  "hang": "Quốc Trung",
+  "danh_muc": "dau-thuy-luc",
+  "cap": "ISO VG 68",
+  "quy_cach": [
+   "Phuy 200 L"
+  ],
+  "trang": "apex-tl-68",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "PVOIL PV Transmission EP GL-4",
+  "hang": "PVOIL Lube",
+  "danh_muc": "dau-cau-hop-so",
+  "cap": "API GL-4 · SAE 90",
+  "quy_cach": [
+   "Phuy 200 L"
+  ],
+  "trang": "pv-transmission-ep-gl4",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "Maxxi Coolant Red",
+  "hang": "Maxxi",
+  "danh_muc": "nuoc-lam-mat",
+  "cap": "",
+  "quy_cach": [
+   "Can 5 L"
+  ],
+  "trang": "maxxi-coolant-red",
+  "nguon": "khac"
+ },
+ {
+  "ten": "Maxima 68",
+  "hang": "Maxima Racing Oils",
+  "danh_muc": "dau-thuy-luc",
+  "cap": "ISO VG 68",
+  "quy_cach": [
+   "Xô 18 L"
+  ],
+  "trang": "maxima-68",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "ENEOS MC SJ 20W-40 (MA, MB)",
+  "hang": "ENEOS",
+  "danh_muc": "dau-nhot-xe-may",
+  "cap": "API SJ · 20W-40",
+  "quy_cach": [
+   "Chai"
+  ],
+  "trang": "eneos-mc-sj-20w-40",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "ENEOS DEO CF-4",
+  "hang": "ENEOS",
+  "danh_muc": "dau-dong-co-diesel",
+  "cap": "API CF-4 · 15W-40, 20W-50",
+  "quy_cach": [
+   "Can 18 L"
+  ],
+  "trang": "eneos-deo-cf-4",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "ENEOS DEO CI-4",
+  "hang": "ENEOS",
+  "danh_muc": "dau-dong-co-diesel",
+  "cap": "API CI-4 · 15W-40, 20W-50",
+  "quy_cach": [
+   "Can 18 L",
+   "Phuy 200 L"
+  ],
+  "trang": "eneos-deo-ci-4",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "ENEOS Super Hyrando",
+  "hang": "ENEOS",
+  "danh_muc": "dau-thuy-luc",
+  "cap": "ISO VG 68",
+  "quy_cach": [
+   "Phuy 200 L"
+  ],
+  "trang": "eneos-super-hyrando-68",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "ENEOS Bonnoc TS",
+  "hang": "ENEOS",
+  "danh_muc": "dau-banh-rang",
+  "cap": "ISO VG 220",
+  "quy_cach": [
+   "Xô 18 L"
+  ],
+  "trang": "eneos-bonnoc-ts",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "ENEOS Faircol RA 32",
+  "hang": "ENEOS",
+  "danh_muc": "dau-may-nen-khi",
+  "cap": "ISO VG 32",
+  "quy_cach": [
+   "Can 18 L"
+  ],
+  "trang": "eneos-faircol-ra",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "EMI AW 68",
+  "hang": "EMI",
+  "danh_muc": "dau-thuy-luc",
+  "cap": "ISO VG 68",
+  "quy_cach": [
+   "Phuy 200 L",
+   "Xô"
+  ],
+  "trang": "emi-aw-68",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "EMI CF-4 20W-50",
+  "hang": "EMI",
+  "danh_muc": "dau-dong-co-diesel",
+  "cap": "API CF-4 · 20W-50",
+  "quy_cach": [
+   "Phuy 200 L"
+  ],
+  "trang": "emi-cf-4-20w-50",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "EMI CI-4 20W-50",
+  "hang": "EMI",
+  "danh_muc": "dau-dong-co-diesel",
+  "cap": "API CI-4 · 20W-50",
+  "quy_cach": [
+   "Xô"
+  ],
+  "trang": "emi-ci-4-20w-50",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "EMI Gear EP GL-5",
+  "hang": "EMI",
+  "danh_muc": "dau-cau-hop-so",
+  "cap": "API GL-5 · 80W-90, 85W-140",
+  "quy_cach": [
+   "Xô 18 L"
+  ],
+  "trang": "emi-gear-ep-gl-5",
+  "nguon": "trong-nuoc"
+ },
+ {
+  "ten": "EMER LAW 68",
+  "hang": "EMER",
+  "danh_muc": "dau-thuy-luc",
+  "cap": "ISO VG 68",
+  "quy_cach": [
+   "Phuy 200 L",
+   "Xô 18 L"
+  ],
+  "trang": "emer-law-68",
+  "nguon": "khac"
+ },
+ {
+  "ten": "Castrol CRB Turbomax CI-4",
+  "hang": "Castrol",
+  "danh_muc": "dau-dong-co-diesel",
+  "cap": "API CI-4 · 20W-50",
+  "quy_cach": [
+   "Phuy 209 L"
+  ],
+  "trang": "castrol-crb-turbomax",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "Castrol Hyspin AWS",
+  "hang": "Castrol",
+  "danh_muc": "dau-thuy-luc",
+  "cap": "ISO VG 68",
+  "quy_cach": [
+   "Phuy 209 L"
+  ],
+  "trang": "castrol-hyspin-aws-68",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "Castrol Vecton 15W-40",
+  "hang": "Castrol",
+  "danh_muc": "dau-dong-co-diesel",
+  "cap": "API CI-4 · 15W-40",
+  "quy_cach": [
+   "Phuy 209 L"
+  ],
+  "trang": "castrol-vecton",
+  "nguon": "nhap-khau"
+ },
+ {
+  "ten": "Calix Ceno Grease No3",
+  "hang": "Calix",
+  "danh_muc": "mo-boi-tron-cong-nghiep",
+  "cap": "NLGI 3",
+  "quy_cach": [
+   "Phuy 180 kg"
+  ],
+  "trang": "calix-ceno-grease",
+  "nguon": "khac"
+ }
+]

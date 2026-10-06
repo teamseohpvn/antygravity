@@ -2,13 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
-import { getCollection } from 'astro:content';
+import { getActiveCategories } from '../lib/content';
 import {
   BUSINESS, ADDRESS_FULL, AREA_TEXT, SITE_NAME, LEGAL_NAME, LEGAL_SHORT, TAX_ID,
   BRANDS, KCN_NEAR, KCN_FAR, ORG_ID, absUrl, breadcrumbSchema,
 } from '../lib/site';
 
-const categories = (await getCollection('danhmuc')).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+const categories = (await getActiveCategories()).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
