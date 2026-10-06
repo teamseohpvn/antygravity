@@ -1,0 +1,149 @@
+---
+// Bảng giá dầu thủy lực. Trang chỉ render (đọc D1) khi quản trị lưu giá; HTML kết quả được lưu vào KV
+// và trả nguyên cho khách (xem src/middleware.ts, src/lib/trang-tinh.ts). Giá nằm sẵn trong HTML cho Google.
+import Layout from '../layouts/Layout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import PriceTable from '../components/PriceTable.astro';
+import { getActiveProducts } from '../lib/content';
+import { bangGiaCongKhai, fmtNgay, type DongGiaCongKhai, type CauHinh } from '../lib/gia';
+import { absUrl, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR } from '../lib/site';
+
+export const prerender = false;
+
+const CATEGORY = 'dau-thuy-luc';
+const pagePath = '/bang-gia-dau-thuy-luc';
+
+let rows: DongGiaCongKhai[] = [];
+let cauHinh: CauHinh = { he_so_tren: 1.15, gom_vat: false, ngay_ra_soat: '', nhan_dinh: '' };
+let loiDb = false;
+try {
+  ({ rows, cauHinh } = await bangGiaCongKhai(CATEGORY));
+} catch (e) {
+  // Không để trang lỗi 500 khi D1 có sự cố: vẫn hiện nội dung và nút báo giá.
+  console.error('bang-gia: không đọc được D1', e);
+  loiDb = true;
+}
+
+const activePages = new Set((await getActiveProducts()).filter((p) => p.data.category === CATEGORY).map((p) => p.id));
+const thang = fmtNgay(cauHinh.ngay_ra_soat, 'thang');
+const ngay = fmtNgay(cauHinh.ngay_ra_soat);
+const coGia = rows.some((r) => r.thap);
+
+// Tiêu đề chỉ nêu cấp độ nhớt thật sự có giá trong bảng (không hứa VG 32/46 khi kho chỉ có VG 68).
+const grades = [...new Set(rows.filter((r) => r.thap).map((r) => Number(/VG\s*(\d+)/i.exec(r.cap ?? '')?.[1])).filter(Boolean))].sort((a, b) => a - b);
+const gradeText = grades.length ? ` ${grades.join(', ')}` : '';
+const title = `Bảng Giá Dầu Thủy Lực${gradeText}${thang ? ` Tháng ${thang}` : ''}`;
+const seoTitle = `${title} – Phuy, Xô`;
+const description = `Khoảng giá dầu thủy lực${grades.length ? ` VG${gradeText}` : ''} phuy 200–209 L và xô 18 L${thang ? ` tháng ${thang}` : ''}, quy đổi theo lít. Hàng có sẵn tại kho ${AREA_TEXT}, có CO/CQ, VAT.`;
+
+const crumbs = [
+  { name: 'Trang chủ', href: '/' },
+  { name: 'Dầu thủy lực', href: `/${CATEGORY}` },
+  { name: 'Bảng giá', href: pagePath },
+];
+
+const schemaData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: title,
+    description,
+    url: absUrl(pagePath),
+    ...(cauHinh.ngay_ra_soat ? { dateModified: cauHinh.ngay_ra_soat } : {}),
+    isPartOf: { '@id': absUrl('/') + '#website' },
+    publisher: { '@id': ORG_ID },
+  },
+  breadcrumbSchema(crumbs),
+];
+
+---
+
+<Layout {title} {seoTitle} {description} type="website" {schemaData}>
+  <div class="container price-page">
+    <Breadcrumbs items={crumbs} />
+
+    <header class="price-hero">
+      <h1>{title}</h1>
+      {ngay && <p class="updated">Rà soát giá ngày <strong>{ngay}</strong>. Giá áp dụng đến khi có thông báo mới trên trang này.</p>}
+      <ul class="trust">
+        <li>Hàng có sẵn tại kho {AREA_TEXT}, giao các KCN {KCN_NEAR.slice(0, 3).join(', ')} trong ngày</li>
+        <li>Có CO/CQ, TDS và hóa đơn VAT cho từng lô</li>
+        <li>Báo giá chính xác theo số lượng trong ngày làm việc</li>
+      </ul>
+      <QuoteCta item="Dầu thủy lực" compact />
+    </header>
+
+    <section class="price-body">
+      <h2>Khoảng giá dầu thủy lực theo cấp độ nhớt</h2>
+      {cauHinh.nhan_dinh && <p class="market-note">{cauHinh.nhan_dinh}</p>}
+
+      {coGia && !loiDb ? (
+        <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} />
+      ) : (
+        <div class="empty">
+          <p><strong>Bảng giá đang được cập nhật.</strong> Gửi tên dầu và số lượng cần mua để nhận báo giá trong ngày.</p>
+          <QuoteCta item="Dầu thủy lực" compact />
+        </div>
+      )}
+
+      <ul class="notes">
+        <li>Giá là <strong>khoảng tham khảo</strong> cho một đơn vị đóng gói, {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT. Giá chính xác phụ thuộc số lượng, quy cách và điểm giao.</li>
+        <li>Cột "Quy đổi" chia khoảng giá cho số lít trong phuy hoặc xô, để so sánh hai quy cách với nhau.</li>
+        <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
+      </ul>
+      <QuoteCta heading="Cần giá chính xác cho đơn hàng của bạn?" item="Dầu thủy lực" />
+    </section>
+
+    <section class="price-body">
+      <h2>Vì sao cùng cấp độ nhớt mà giá chênh nhau</h2>
+      <ul>
+        <li><strong>Hãng và nguồn gốc.</strong> Dầu nhập khẩu (Castrol, ENEOS, Caltex) thường cao hơn dầu sản xuất trong nước (VHP, X-One) do dầu gốc và hệ phụ gia khác nhau, và do được nhà sản xuất bơm phê duyệt.</li>
+        <li><strong>Loại dầu.</strong> Dầu chỉ số độ nhớt cao (HV) hoặc dầu không kẽm (HLP-Z) đắt hơn dầu chống mài mòn thông thường (HM/AW).</li>
+        <li><strong>Quy cách.</strong> Tính theo lít, phuy 200–209 L luôn rẻ hơn xô 18 L.</li>
+        <li><strong>Số lượng và hợp đồng.</strong> Đơn nhiều phuy hoặc hợp đồng cung cấp định kỳ được giá tốt hơn.</li>
+        <li><strong>Giá dầu gốc.</strong> Khi giá dầu gốc thế giới thay đổi, các hãng điều chỉnh giá bán; chúng tôi cập nhật lại bảng này.</li>
+      </ul>
+      <p>Chưa chắc nên dùng cấp nào? Xem <a href="/ho-tro-ky-thuat/huong-dan-chon-do-nhot">hướng dẫn chọn độ nhớt 32, 46 hay 68</a> và trang <a href={`/${CATEGORY}`}>dầu thủy lực</a>. Muốn biết dầu trong máy đã cần thay chưa, xem <a href="/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau">hướng dẫn test chất lượng dầu tại xưởng</a>.</p>
+    </section>
+
+    <section class="price-body">
+      <h2>Quy trình nhận báo giá</h2>
+      <ol>
+        <li><strong>Gửi nhu cầu:</strong> tên dầu đang dùng (hoặc loại máy), quy cách, số lượng, nơi giao. Gửi qua <a href="/bao-gia">form báo giá</a>, gọi <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a> hoặc Zalo.</li>
+        <li><strong>Tư vấn mã phù hợp:</strong> nếu mã đang dùng hết hàng hoặc giá cao, chúng tôi đề xuất mã tương đương cùng cấp ISO VG và tiêu chuẩn.</li>
+        <li><strong>Gửi báo giá chính thức</strong> có đóng dấu, kèm thời gian giao và điều kiện thanh toán.</li>
+        <li><strong>Giao hàng</strong> kèm CO/CQ, hóa đơn VAT.</li>
+      </ol>
+    </section>
+
+    <section class="price-body">
+      <h2>Câu hỏi thường gặp</h2>
+      <h3>Giá trên bảng đã gồm VAT chưa?</h3>
+      <p>Giá trên bảng {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} thuế VAT. Báo giá chính thức ghi rõ giá trước thuế, tiền thuế và tổng tiền.</p>
+      <h3>Vì sao chỉ ghi khoảng giá, không ghi giá chính xác?</h3>
+      <p>Giá thực tế phụ thuộc số lượng, quy cách và điểm giao. Khoảng giá giúp bạn dự trù ngân sách; giá chính xác được gửi trong ngày khi bạn cho biết số lượng.</p>
+      <h3>Mua bao nhiêu thì được giá tốt?</h3>
+      <p>Mua theo phuy tiết kiệm hơn mua xô. Đơn từ vài phuy trở lên hoặc hợp đồng định kỳ được báo giá riêng.</p>
+      <h3>Bảng giá cập nhật khi nào?</h3>
+      <p>Mỗi khi hãng thay đổi giá và được rà lại ít nhất mỗi tháng. Ngày rà soát gần nhất ghi ở đầu trang.</p>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .price-page { margin-bottom: 60px; }
+  .price-hero, .price-body { background: white; border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; padding: clamp(20px, 4vw, 32px); margin-bottom: 24px; }
+  .price-hero h1 { color: var(--color-primary); font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.25; margin-bottom: 10px; }
+  .updated { color: var(--color-text-light); margin-bottom: 14px; }
+  .trust { margin: 0 0 4px 20px; }
+  .trust li { margin-bottom: 4px; }
+  .price-body h2 { color: var(--color-primary); margin-bottom: 16px; }
+  .price-body h3 { color: var(--color-primary); margin: 18px 0 6px; font-size: 1.05rem; }
+  .price-body p, .price-body li { margin-bottom: 8px; }
+  .price-body ul, .price-body ol { margin-left: 20px; }
+  .price-body a { color: var(--color-primary); text-decoration: underline; }
+  .market-note { background: #f1f5f9; border-left: 4px solid var(--color-primary); padding: 10px 14px; border-radius: 4px; }
+  .notes { font-size: 0.93rem; color: var(--color-text-light); margin-top: 8px; }
+  .empty { background: #f8fafc; border: 1px dashed var(--border-color, #e2e8f0); padding: 20px; border-radius: 8px; margin-bottom: 16px; }
+</style>

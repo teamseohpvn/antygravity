@@ -67,7 +67,8 @@ export default defineConfig({
   // (deploy từng lỗi khi wrangler cố tạo lại namespace "antygravity-session" đã tồn tại).
   session: false,
   vite: {
-    define: { __PUBLIC_IMAGES__: JSON.stringify(PUBLIC_IMAGES) },
+    // __BUILD_ID__: mã bản build, gắn vào trang bảng giá tĩnh trong KV để bỏ bản cũ sau mỗi lần deploy.
+    define: { __PUBLIC_IMAGES__: JSON.stringify(PUBLIC_IMAGES), __BUILD_ID__: JSON.stringify(Date.now().toString(36)) },
     // Giữ cú pháp @media (max-width: …) cũ: cú pháp mới (width<=…) không chạy trên iPhone iOS < 16.4
     // và công cụ kiểm tra SEO báo "không dùng media query".
     build: { cssTarget: ['chrome87', 'safari14', 'firefox78', 'edge88'] },
@@ -75,7 +76,9 @@ export default defineConfig({
   adapter: cloudflare(),
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/bao-gia-thanh-cong') && !page.includes('/api/'),
+      // Trang render phía server (giá đọc từ D1) không tự vào sitemap, phải khai báo tay.
+      customPages: [`${SITE}/bang-gia-dau-thuy-luc`],
+      filter: (page) => !page.includes('/bao-gia-thanh-cong') && !page.includes('/api/') && !page.includes('/quan-tri'),
     }),
     react(),
     imageCacheBust(),

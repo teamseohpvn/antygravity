@@ -1,0 +1,25 @@
+// Cấu hình Cloudflare Worker. Adapter @astrojs/cloudflare tự bổ sung main, assets, images.
+// Xem docs/BANG-GIA.md để tạo database D1 và đặt secret cho trang quản trị.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "clauderseo",
+  "compatibility_date": "2026-09-16",
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      // Truy cập trong code: env.DB (xem src/lib/gia.ts).
+      "binding": "DB",
+      "database_name": "gia-dau",
+      // Không ghi database_id: lần deploy đầu wrangler tự tạo database "gia-dau" và gắn vào Worker.
+      // Bảng được tạo tự động ở lần truy cập đầu (src/lib/khoi-tao.ts).
+      "migrations_dir": "migrations"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      // Trang bảng giá đã xuất bản dạng HTML tĩnh (src/lib/trang-tinh.ts).
+      "binding": "TRANG_TINH"
+      // Không ghi id: lần deploy đầu wrangler tự tạo namespace KV và gắn vào Worker.
+    }
+  ]
+}

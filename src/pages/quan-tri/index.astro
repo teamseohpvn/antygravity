@@ -1,0 +1,401 @@
+---
+// Trang quản trị bảng giá. Đã đăng nhập mới vào được (src/middleware.ts).
+// Dữ liệu tải qua /api/quan-tri/gia; giá công khai được tính ở src/lib/gia-tinh.ts.
+import AdminShell from '../../components/AdminShell.astro';
+import { getActiveCategories } from '../../lib/content';
+
+export const prerender = false;
+const user = Astro.locals.adminUser ?? '';
+const categories = (await getActiveCategories())
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99))
+  .map((c) => ({ id: c.id, name: c.data.nav_label ?? c.data.title }));
+// Trang bảng giá công khai đã có (thêm vào khi tạo trang mới).
+const PUBLIC_PAGES: Record<string, string> = { 'dau-thuy-luc': '/bang-gia-dau-thuy-luc' };
+---
+
+<AdminShell title="Quản trị bảng giá">
+  <header class="top">
+    <strong>Quản trị bảng giá</strong>
+    <span class="who">Đang đăng nhập: {user}</span>
+    <a href="/bang-gia-dau-thuy-luc" target="_blank" rel="noopener">Xem trang bảng giá ↗</a>
+    <form method="post" action="/api/quan-tri/dang-nhap"><input type="hidden" name="dang_xuat" value="1" /><button class="link">Đăng xuất</button></form>
+  </header>
+
+  <main class="wrap">
+    <p id="msg" class="msg" role="status" hidden></p>
+
+    <section class="card" id="settings">
+      <h2>Cấu hình chung</h2>
+      <div class="grid">
+        <label class="inline"><input type="checkbox" id="gom_vat" /> Giá nhập vào <b>đã gồm VAT</b></label>
+        <label>Hệ số đầu cao của khoảng giá
+          <input id="he_so_tren" type="number" step="0.01" min="1" max="2" />
+          <small>Chính sách hiện tại: 1,15 (giá hiện tại → +15%).</small>
+        </label>
+        <label class="wide">Nhận định thị trường (hiện trên đầu bảng giá, để trống = không hiện)
+          <textarea id="nhan_dinh" rows="2" maxlength="600" placeholder="VD: Giá tháng 10 giữ nguyên so với tháng 9."></textarea>
+        </label>
+      </div>
+      <p class="meta">Ngày rà giá gần nhất (hiện trên web): <b id="ngay_ra_soat">–</b>. Ngày này tự cập nhật mỗi khi lưu giá.</p>
+      <p class="meta" id="xb-info">Trang bảng giá tĩnh: đang kiểm tra…</p>
+      <div class="row">
+        <button id="save-settings">Lưu cấu hình</button>
+        <button id="publish" class="secondary">Xuất bản lại trang bảng giá</button>
+        <button id="confirm-review" class="secondary">Đã rà giá hôm nay, giữ nguyên</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <h2>Giá sản phẩm</h2>
+        <select id="f-cat">
+          <option value="">Tất cả danh mục</option>
+          {categories.map((c) => <option value={c.id}>{c.name}{PUBLIC_PAGES[c.id] ? ' (có trang bảng giá)' : ''}</option>)}
+        </select>
+        <input id="f-q" type="search" placeholder="Tìm tên, hãng, mã HH…" />
+        <label class="inline"><input type="checkbox" id="f-empty" /> Chưa có giá</label>
+        <button id="add" class="secondary">+ Thêm dòng</button>
+      </div>
+      <p class="meta">Nhập <b>giá hiện tại</b> cho một đơn vị đóng gói (phuy, xô). Web tự hiện khoảng giá đã làm tròn, không hiện số bạn nhập. Để trống giá = web hiện "Liên hệ".</p>
+      <div class="table-wrap">
+        <table id="tbl">
+          <thead>
+            <tr><th>Mã HH</th><th>Sản phẩm</th><th>Quy cách</th><th>Giá hiện tại (đ)</th><th>Web hiển thị</th><th>Hiện</th><th>Sửa lúc</th><th></th></tr>
+          </thead>
+          <tbody><tr><td colspan="8">Đang tải…</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Nhật ký thay đổi (100 dòng gần nhất)</h2>
+      <div class="table-wrap"><table id="log"><thead><tr><th>Lúc</th><th>Người sửa</th><th>Sản phẩm</th><th>Thao tác</th><th>Giá cũ → mới</th></tr></thead><tbody></tbody></table></div>
+    </section>
+  </main>
+
+  <div class="savebar" id="savebar" hidden>
+    <span id="dirty-count"></span>
+    <button id="discard" class="secondary">Hủy thay đổi</button>
+    <button id="save">Lưu tất cả</button>
+  </div>
+
+  <dialog id="dlg">
+    <form id="dlg-form" method="dialog">
+      <h2 id="dlg-title">Thêm dòng</h2>
+      <div class="grid">
+        <label>Tên hiển thị * <input name="ten" required maxlength="120" placeholder="ENEOS Super Hyrando 68" /></label>
+        <label>Hãng * <input name="hang" required maxlength="60" /></label>
+        <label>Danh mục *
+          <select name="danh_muc" required>{categories.map((c) => <option value={c.id}>{c.name}</option>)}</select>
+        </label>
+        <label>Cấp <input name="cap" maxlength="60" placeholder="ISO VG 68" /></label>
+        <label>Nguồn
+          <select name="nguon"><option value="nhap-khau">Nhập khẩu</option><option value="trong-nuoc">Sản xuất trong nước</option></select>
+        </label>
+        <label>Quy cách * <input name="quy_cach" required maxlength="60" placeholder="Phuy 209 L" /></label>
+        <label>Dung tích / đơn vị <input name="dung_tich" type="number" step="0.1" min="0" placeholder="209" /></label>
+        <label>Đơn vị đo <select name="don_vi_do"><option value="L">lít</option><option value="kg">kg</option></select></label>
+        <label>Mã HH (kho) <input name="ma_hh" maxlength="60" /></label>
+        <label>Slug trang sản phẩm <input name="trang" maxlength="80" placeholder="eneos-super-hyrando-68" /></label>
+        <label>Thứ tự <input name="thu_tu" type="number" value="0" /></label>
+        <label class="new-only">Giá hiện tại (đ) <input name="gia" inputmode="numeric" placeholder="VD: 13.500.000" /></label>
+        <label class="wide">Ghi chú nội bộ <input name="ghi_chu" maxlength="300" /></label>
+      </div>
+      <p class="err" id="dlg-err" hidden></p>
+      <div class="row">
+        <button value="cancel" formnovalidate class="secondary">Đóng</button>
+        <button id="dlg-ok" value="ok">Lưu</button>
+      </div>
+    </form>
+  </dialog>
+</AdminShell>
+
+<script>
+  import { khoangGia, fmtVnd } from '../../lib/gia-tinh';
+
+  type Row = {
+    id: number; ma_hh: string | null; ten: string; hang: string; danh_muc: string; cap: string | null;
+    nguon: 'nhap-khau' | 'trong-nuoc'; quy_cach: string; dung_tich: number | null; don_vi_do: 'L' | 'kg';
+    gia: number | null; trang: string | null; hien_thi: number; thu_tu: number; ghi_chu: string | null; cap_nhat_luc: string;
+  };
+  type Config = { he_so_tren: number; gom_vat: boolean; ngay_ra_soat: string; nhan_dinh: string };
+
+  const $ = <T extends HTMLElement>(sel: string) => document.querySelector(sel) as T;
+  const esc = (s: unknown) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+  const parseGia = (v: string) => { const n = Number(v.replace(/[^\d]/g, '')); return n > 0 ? n : null; };
+  const giaHopLe = (v: string) => v.trim() === '' || (/^[\d.,\s]+$/.test(v) && (parseGia(v) ?? 0) >= 1000);
+  const vnTime = (iso: string) => new Date(iso).toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh', hour12: false });
+  const ACTION: Record<string, string> = { 'sua-gia': 'Đổi giá', them: 'Thêm', xoa: 'Xóa', an: 'Ẩn', hien: 'Hiện', 'sua-thong-tin': 'Sửa thông tin', 'sua-cau-hinh': 'Sửa cấu hình', 'xac-nhan-ra-soat': 'Xác nhận rà giá' };
+
+  let rows: Row[] = [];
+  let config: Config = { he_so_tren: 1.15, gom_vat: false, ngay_ra_soat: '', nhan_dinh: '' };
+  // Thay đổi chưa lưu: id → { gia, hien_thi }
+  const dirty = new Map<number, { gia: number | null; hien_thi: number }>();
+
+  function flash(text: string, ok = true) {
+    const el = $('#msg');
+    el.textContent = text;
+    el.className = 'msg ' + (ok ? 'ok' : 'bad');
+    el.hidden = false;
+    clearTimeout((flash as any).t);
+    (flash as any).t = setTimeout(() => (el.hidden = true), ok ? 4000 : 10000);
+  }
+
+  async function api(method: 'GET' | 'POST', body?: unknown) {
+    const res = await fetch('/api/quan-tri/gia', {
+      method,
+      headers: body ? { 'content-type': 'application/json' } : undefined,
+      body: body ? JSON.stringify(body) : undefined,
+    });
+    if (res.status === 401) { location.href = '/quan-tri/dang-nhap'; throw new Error('401'); }
+    const data = await res.json().catch(() => ({ ok: false, error: `Lỗi máy chủ (${res.status})` }));
+    if (!data.ok) throw new Error(data.error || 'Có lỗi xảy ra.');
+    return data;
+  }
+
+  function preview(gia: number | null, r: Row) {
+    const k = khoangGia(gia, r.dung_tich, config.he_so_tren);
+    if (!k.thap) return '<span class="muted">Liên hệ</span>';
+    const per = k.thap_don_vi ? `<small>${fmtVnd(k.thap_don_vi)} – ${fmtVnd(k.cao_don_vi)} đ/${r.don_vi_do === 'kg' ? 'kg' : 'lít'}</small>` : '';
+    return `${fmtVnd(k.thap)} – ${fmtVnd(k.cao)} đ${per}`;
+  }
+
+  function visibleRows() {
+    const cat = ($('#f-cat') as HTMLSelectElement).value;
+    const q = ($('#f-q') as HTMLInputElement).value.trim().toLowerCase();
+    const onlyEmpty = ($('#f-empty') as HTMLInputElement).checked;
+    return rows.filter((r) =>
+      (!cat || r.danh_muc === cat) &&
+      (!q || `${r.ten} ${r.hang} ${r.ma_hh ?? ''} ${r.cap ?? ''}`.toLowerCase().includes(q)) &&
+      (!onlyEmpty || !(dirty.get(r.id)?.gia ?? r.gia)));
+  }
+
+  function render() {
+    const list = visibleRows();
+    const tbody = $('#tbl').querySelector('tbody')!;
+    if (!list.length) { tbody.innerHTML = '<tr><td colspan="8" class="muted">Không có dòng nào.</td></tr>'; return; }
+    let lastCat = '';
+    tbody.innerHTML = list.map((r) => {
+      const d = dirty.get(r.id);
+      const gia = d ? d.gia : r.gia;
+      const hien = d ? d.hien_thi : r.hien_thi;
+      const head = r.danh_muc !== lastCat ? `<tr class="cat"><td colspan="8">${esc(r.danh_muc)}</td></tr>` : '';
+      lastCat = r.danh_muc;
+      return `${head}<tr data-id="${r.id}" class="${d ? 'dirty' : ''} ${hien ? '' : 'hidden-row'}">
+        <td class="mono">${esc(r.ma_hh)}</td>
+        <td><b>${esc(r.ten)}</b><small>${esc(r.hang)} · ${esc(r.cap)} · ${r.nguon === 'trong-nuoc' ? 'Trong nước' : 'Nhập khẩu'}</small></td>
+        <td>${esc(r.quy_cach)}${r.dung_tich ? `<small>${r.dung_tich} ${r.don_vi_do === 'kg' ? 'kg' : 'L'}</small>` : '<small class="warn">thiếu dung tích</small>'}</td>
+        <td><input class="gia" inputmode="numeric" value="${gia ? fmtVnd(gia) : ''}" placeholder="Liên hệ" aria-label="Giá ${esc(r.ten)} ${esc(r.quy_cach)}" />
+          ${d && r.gia && gia && Math.abs(gia - r.gia) / r.gia > 0.2 ? '<small class="warn">Lệch &gt;20% so với giá cũ</small>' : ''}</td>
+        <td class="pv">${preview(gia, r)}</td>
+        <td><input type="checkbox" class="hien" ${hien ? 'checked' : ''} aria-label="Hiện trên web" /></td>
+        <td class="muted small">${esc(vnTime(r.cap_nhat_luc))}</td>
+        <td class="actions"><button class="link edit">Sửa</button><button class="link danger del">Xóa</button></td>
+      </tr>`;
+    }).join('');
+  }
+
+  function updateSavebar() {
+    $('#savebar').hidden = dirty.size === 0;
+    $('#dirty-count').textContent = `${dirty.size} dòng chưa lưu`;
+  }
+
+  function markDirty(id: number, patch: Partial<{ gia: number | null; hien_thi: number }>) {
+    const r = rows.find((x) => x.id === id)!;
+    const cur = dirty.get(id) ?? { gia: r.gia, hien_thi: r.hien_thi };
+    const next = { ...cur, ...patch };
+    if (next.gia === r.gia && next.hien_thi === r.hien_thi) dirty.delete(id); else dirty.set(id, next);
+    updateSavebar();
+  }
+
+  async function load() {
+    const data = await api('GET');
+    rows = data.rows;
+    config = data.cauHinh;
+    ($('#gom_vat') as HTMLInputElement).checked = config.gom_vat;
+    ($('#he_so_tren') as HTMLInputElement).value = String(config.he_so_tren);
+    ($('#nhan_dinh') as HTMLTextAreaElement).value = config.nhan_dinh;
+    $('#ngay_ra_soat').textContent = config.ngay_ra_soat ? config.ngay_ra_soat.split('-').reverse().join('/') : '–';
+    $('#log').querySelector('tbody')!.innerHTML = data.lichSu.map((l: any) => `<tr>
+      <td class="small">${esc(vnTime(l.luc))}</td><td>${esc(l.nguoi_sua)}</td><td>${esc(l.ten)}</td>
+      <td>${esc(ACTION[l.hanh_dong] ?? l.hanh_dong)}</td>
+      <td class="mono">${l.gia_cu != null || l.gia_moi != null ? `${l.gia_cu != null ? fmtVnd(l.gia_cu) : '–'} → ${l.gia_moi != null ? fmtVnd(l.gia_moi) : '–'}` : ''}</td></tr>`).join('') || '<tr><td colspan="5" class="muted">Chưa có thay đổi.</td></tr>';
+    renderXuatBan(data.xuatBan);
+    render();
+  }
+
+  function renderXuatBan(list: Array<{ path: string; meta: { luc: string; nguoi: string } | null }> = []) {
+    $('#xb-info').innerHTML = list.length
+      ? list.map((x) => `Trang <a href="${esc(x.path)}" target="_blank" rel="noopener">${esc(x.path)}</a>: ${x.meta ? `xuất bản lúc <b>${esc(vnTime(x.meta.luc))}</b> (${esc(x.meta.nguoi)})` : '<b class="warn">chưa xuất bản</b>'}`).join('<br>')
+      : 'Chưa cấu hình kho trang tĩnh (KV).';
+  }
+
+  /** Thông báo sau khi lưu, kèm kết quả xuất bản trang tĩnh. */
+  function ketQuaXuatBan(res: any): { text: string; ok: boolean } {
+    const xb: Array<{ path: string; ok: boolean; loi?: string }> = res?.xuatBan ?? [];
+    const loi = xb.filter((x) => !x.ok);
+    if (!xb.length) return { text: '', ok: true };
+    return loi.length
+      ? { text: ` Lưu xong nhưng CHƯA xuất bản được ${loi.map((x) => x.path).join(', ')}: ${loi[0].loi}. Bấm "Xuất bản lại".`, ok: false }
+      : { text: ' Đã xuất bản trang bảng giá tĩnh, khách thấy giá mới trong khoảng 1 phút.', ok: true };
+  }
+
+  // Bảng giá: nhập giá, bật/tắt hiện, sửa, xóa.
+  const tbl = $('#tbl');
+  tbl.addEventListener('input', (e) => {
+    const t = e.target as HTMLInputElement;
+    if (!t.classList.contains('gia')) return;
+    const tr = t.closest('tr')!;
+    const id = Number(tr.dataset.id);
+    const gia = parseGia(t.value);
+    t.classList.toggle('invalid', !giaHopLe(t.value));
+    markDirty(id, { gia });
+    tr.classList.toggle('dirty', dirty.has(id));
+    tr.querySelector('.pv')!.innerHTML = preview(gia, rows.find((x) => x.id === id)!);
+  });
+  tbl.addEventListener('change', (e) => {
+    const t = e.target as HTMLInputElement;
+    const tr = t.closest('tr');
+    if (!tr?.dataset.id) return;
+    if (t.classList.contains('hien')) { markDirty(Number(tr.dataset.id), { hien_thi: t.checked ? 1 : 0 }); render(); }
+    if (t.classList.contains('gia')) { const g = parseGia(t.value); t.value = g ? fmtVnd(g) : ''; render(); }
+  });
+  tbl.addEventListener('click', async (e) => {
+    const b = e.target as HTMLElement;
+    const tr = b.closest('tr');
+    if (!tr?.dataset.id) return;
+    const r = rows.find((x) => x.id === Number(tr.dataset.id))!;
+    if (b.classList.contains('edit')) openDialog(r);
+    if (b.classList.contains('del')) {
+      if (!confirm(`Xóa "${r.ten} – ${r.quy_cach}" khỏi bảng giá?\n(Muốn tạm ẩn thì bỏ tích cột "Hiện".)`)) return;
+      try { const res = await api('POST', { action: 'xoa', id: r.id }); dirty.delete(r.id); const xb = ketQuaXuatBan(res); flash(`Đã xóa.${xb.text}`, xb.ok); await load(); updateSavebar(); }
+      catch (err: any) { flash(err.message, false); }
+    }
+  });
+
+  ['#f-cat', '#f-q', '#f-empty'].forEach((s) => $(s).addEventListener('input', render));
+
+  $('#save').addEventListener('click', async () => {
+    const items = [...dirty].map(([id, v]) => ({ id, ...v }));
+    if (tbl.querySelector('input.gia.invalid')) { flash('Có ô giá không hợp lệ (tô đỏ). Chỉ nhập số, tối thiểu 1.000 đ.', false); return; }
+    const big = items.filter((it) => { const r = rows.find((x) => x.id === it.id)!; return r.gia && it.gia && Math.abs(it.gia - r.gia) / r.gia > 0.2; });
+    if (big.length && !confirm(`${big.length} dòng có giá lệch trên 20% so với giá cũ. Vẫn lưu?`)) return;
+    const btn = $('#save') as HTMLButtonElement;
+    btn.disabled = true;
+    try { const res = await api('POST', { action: 'cap-nhat', items }); dirty.clear(); updateSavebar(); const xb = ketQuaXuatBan(res); flash(`Đã lưu ${items.length} dòng.${xb.text}`, xb.ok); await load(); }
+    catch (err: any) { flash(err.message, false); }
+    finally { btn.disabled = false; }
+  });
+  $('#discard').addEventListener('click', () => { dirty.clear(); updateSavebar(); render(); });
+  window.addEventListener('beforeunload', (e) => { if (dirty.size) e.preventDefault(); });
+
+  // Cấu hình chung.
+  $('#save-settings').addEventListener('click', async () => {
+    try {
+      const res = await api('POST', {
+        action: 'cau-hinh',
+        gom_vat: ($('#gom_vat') as HTMLInputElement).checked,
+        he_so_tren: Number(($('#he_so_tren') as HTMLInputElement).value),
+        nhan_dinh: ($('#nhan_dinh') as HTMLTextAreaElement).value,
+      });
+      const xb = ketQuaXuatBan(res); flash(`Đã lưu cấu hình.${xb.text}`, xb.ok); await load();
+    } catch (err: any) { flash(err.message, false); }
+  });
+  $('#publish').addEventListener('click', async () => {
+    const btn = $('#publish') as HTMLButtonElement;
+    btn.disabled = true;
+    try { const res = await api('POST', { action: 'xuat-ban' }); const xb = ketQuaXuatBan(res); flash(xb.text.trim() || 'Đã xuất bản.', xb.ok); await load(); }
+    catch (err: any) { flash(err.message, false); }
+    finally { btn.disabled = false; }
+  });
+  $('#confirm-review').addEventListener('click', async () => {
+    if (!confirm('Xác nhận đã rà giá hôm nay và giữ nguyên? Ngày rà soát trên web sẽ đổi thành hôm nay.')) return;
+    try { const res = await api('POST', { action: 'cau-hinh', xac_nhan: true }); const xb = ketQuaXuatBan(res); flash(`Đã cập nhật ngày rà soát.${xb.text}`, xb.ok); await load(); }
+    catch (err: any) { flash(err.message, false); }
+  });
+
+  // Hộp thoại thêm / sửa dòng.
+  const dlg = $('#dlg') as HTMLDialogElement;
+  const form = $('#dlg-form') as HTMLFormElement;
+  let editing: Row | null = null;
+  function openDialog(r: Row | null) {
+    editing = r;
+    form.reset();
+    $('#dlg-title').textContent = r ? `Sửa: ${r.ten}` : 'Thêm dòng';
+    form.querySelectorAll<HTMLElement>('.new-only').forEach((el) => (el.hidden = !!r));
+    $('#dlg-err').hidden = true;
+    const cat = ($('#f-cat') as HTMLSelectElement).value;
+    const src: Record<string, unknown> = r ?? { danh_muc: cat || 'dau-thuy-luc', nguon: 'nhap-khau', don_vi_do: 'L', thu_tu: 0 };
+    for (const el of Array.from(form.elements) as HTMLInputElement[]) {
+      if (el.name && src[el.name] != null) el.value = String(src[el.name]);
+    }
+    dlg.showModal();
+  }
+  $('#add').addEventListener('click', () => openDialog(null));
+  $('#dlg-ok').addEventListener('click', async (e) => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    const row = Object.fromEntries(new FormData(form));
+    try {
+      const res = editing ? await api('POST', { action: 'sua', id: editing.id, row }) : await api('POST', { action: 'them', row });
+      dlg.close();
+      const xb = ketQuaXuatBan(res);
+      flash((editing ? 'Đã sửa thông tin.' : 'Đã thêm dòng.') + xb.text, xb.ok);
+      await load();
+    } catch (err: any) {
+      const el = $('#dlg-err'); el.textContent = err.message; el.hidden = false;
+    }
+  });
+
+  load().catch((err) => flash(err.message, false));
+</script>
+
+<!-- Global: các dòng bảng được tạo bằng JavaScript (innerHTML) nên không nhận style có phạm vi của Astro. -->
+<style is:global>
+  .top { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 12px 20px; background: #003366; color: white; }
+  .top a, .top .link { color: #fde68a; }
+  .top .who { opacity: 0.85; font-size: 0.9rem; margin-right: auto; }
+  .wrap { max-width: 1200px; margin: 20px auto; padding: 0 16px 100px; display: grid; gap: 20px; }
+  .card { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+  .card h2 { font-size: 1.1rem; color: #003366; margin-bottom: 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px 16px; }
+  .grid label, dialog label { display: grid; gap: 4px; font-size: 0.88rem; font-weight: 600; }
+  .grid .wide { grid-column: 1 / -1; }
+  .inline { display: flex !important; align-items: center; gap: 6px; font-weight: 600; }
+  input, select, textarea { padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: white; }
+  small { display: block; font-weight: 400; color: #64748b; font-size: 0.8rem; }
+  .meta { font-size: 0.88rem; color: #475569; margin: 10px 0; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+  button { padding: 9px 16px; border: 0; border-radius: 6px; background: #003366; color: white; font-weight: 600; cursor: pointer; }
+  button.secondary { background: #e2e8f0; color: #0f172a; }
+  button.link { background: none; padding: 2px 6px; color: #1d4ed8; text-decoration: underline; font-weight: 500; }
+  button.danger { color: #b91c1c; }
+  button:disabled { opacity: 0.6; cursor: wait; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .toolbar h2 { margin: 0 auto 0 0; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  th, td { border-bottom: 1px solid #e2e8f0; padding: 8px; text-align: left; vertical-align: top; }
+  th { background: #f8fafc; position: sticky; top: 0; }
+  tr.cat td { background: #eef2ff; font-weight: 700; color: #3730a3; }
+  tr.dirty { background: #fffbeb; }
+  tr.hidden-row td { opacity: 0.55; }
+  input.gia.invalid { border-color: #dc2626; background: #fef2f2; }
+  input.gia { width: 140px; text-align: right; font-variant-numeric: tabular-nums; }
+  .pv { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .mono { font-family: ui-monospace, monospace; font-size: 0.82rem; }
+  .muted { color: #94a3b8; }
+  .small { font-size: 0.8rem; white-space: nowrap; }
+  .warn { color: #b45309 !important; }
+  .actions { white-space: nowrap; }
+  #xb-info a { color: #1d4ed8; }
+  .msg { padding: 10px 14px; border-radius: 8px; }
+  .msg.ok { background: #ecfdf5; color: #065f46; }
+  .msg.bad { background: #fef2f2; color: #991b1b; }
+  .err { color: #b91c1c; margin-top: 10px; }
+  .savebar { position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: 12px; align-items: center; justify-content: flex-end; padding: 12px 20px; background: #0f172a; color: white; }
+  .savebar span { margin-right: auto; }
+  dialog { border: 0; border-radius: 12px; padding: 24px; width: min(760px, 95vw); }
+  dialog::backdrop { background: rgb(15 23 42 / 0.5); }
+  dialog h2 { color: #003366; margin-bottom: 14px; }
+</style>

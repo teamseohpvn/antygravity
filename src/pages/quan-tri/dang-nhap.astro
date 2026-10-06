@@ -1,0 +1,33 @@
+---
+import AdminShell from '../../components/AdminShell.astro';
+import { adminConfigured } from '../../lib/admin-auth';
+
+export const prerender = false;
+const loi = Astro.url.searchParams.get('loi');
+---
+
+<AdminShell title="Đăng nhập quản trị giá">
+  <form class="login" method="post" action="/api/quan-tri/dang-nhap">
+    <h1>Quản trị bảng giá</h1>
+    {!adminConfigured() && <p class="err">Chưa cấu hình ADMIN_PASSWORD / ADMIN_SECRET (xem docs/BANG-GIA.md).</p>}
+    {loi && <p class="err" role="alert">{loi}</p>}
+    <label>Tên người sửa giá
+      <input name="ten" required maxlength="60" autocomplete="username" placeholder="VD: Hùng – kinh doanh" />
+    </label>
+    <label>Mật khẩu
+      <input name="mat_khau" type="password" required autocomplete="current-password" />
+    </label>
+    <button type="submit">Đăng nhập</button>
+    <p class="hint">Tên người sửa được ghi vào nhật ký mỗi lần đổi giá.</p>
+  </form>
+</AdminShell>
+
+<style>
+  .login { max-width: 380px; margin: 10vh auto; background: white; padding: 28px; border-radius: 10px; border: 1px solid #e2e8f0; display: grid; gap: 14px; }
+  .login h1 { font-size: 1.3rem; color: #003366; }
+  .login label { display: grid; gap: 6px; font-weight: 600; font-size: 0.92rem; }
+  .login input { padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font: inherit; }
+  .login button { padding: 11px; border: 0; border-radius: 6px; background: #003366; color: white; font-weight: 700; cursor: pointer; }
+  .err { color: #b91c1c; background: #fef2f2; padding: 8px 10px; border-radius: 6px; }
+  .hint { font-size: 0.85rem; color: #64748b; }
+</style>

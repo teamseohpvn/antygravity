@@ -7,3 +7,7 @@ PUBLIC_GA4_ID=
 QUOTE_TELEGRAM_BOT_TOKEN=
 QUOTE_TELEGRAM_CHAT_ID=
 QUOTE_WEBHOOK_URL=
+# Trang quản trị giá /quan-tri (production: đặt bằng `wrangler secret put` hoặc Dashboard).
+ADMIN_PASSWORD=
+# Chuỗi ngẫu nhiên ≥ 32 ký tự: openssl rand -hex 32
+ADMIN_SECRET=

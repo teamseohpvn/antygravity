@@ -1,0 +1,93 @@
+---
+// Bảng khoảng giá đọc từ D1, nhóm theo cấp (VG 32, 46, 68...). Mỗi dòng có nút "Báo giá" điền sẵn form.
+import type { DongGiaCongKhai } from '../lib/gia';
+import { fmtVnd } from '../lib/gia';
+
+interface Props {
+  rows: DongGiaCongKhai[];
+  /** Slug trang sản phẩm đang bật, để chỉ gắn link tới trang có thật. */
+  activePages: Set<string>;
+  category: string;
+  gomVat: boolean;
+}
+
+const { rows, activePages, category, gomVat } = Astro.props;
+const groups = new Map<string, DongGiaCongKhai[]>();
+for (const r of rows) {
+  const key = r.cap ?? 'Khác';
+  groups.set(key, [...(groups.get(key) ?? []), r]);
+}
+// Sắp nhóm theo số trong tên cấp (VG 32 → 46 → 68 → 100), không theo chữ cái.
+const capNum = (c: string) => Number(/\d+/.exec(c)?.[0] ?? 1e9);
+const sortedGroups = [...groups].sort(([a], [b]) => capNum(a) - capNum(b) || a.localeCompare(b));
+const NGUON = { 'nhap-khau': 'Nhập khẩu', 'trong-nuoc': 'Sản xuất trong nước' } as const;
+const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r.ten} – ${r.quy_cach}`)}`;
+---
+
+{sortedGroups.map(([cap, list]) => (
+  <section class="price-group">
+    <h3>{cap}</h3>
+    <div class="table-wrap">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th scope="col">Sản phẩm</th>
+            <th scope="col">Quy cách</th>
+            <th scope="col">Khoảng giá ({gomVat ? 'đã gồm VAT' : 'chưa VAT'})</th>
+            <th scope="col">Quy đổi</th>
+            <th scope="col"><span class="sr-only">Báo giá</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {list.map((r) => (
+            <tr>
+              <td data-label="Sản phẩm">
+                {r.trang && activePages.has(r.trang)
+                  ? <a href={`/${category}/${r.trang}`}>{r.ten}</a>
+                  : <span>{r.ten}</span>}
+                <small>{r.hang} · {NGUON[r.nguon]}</small>
+              </td>
+              <td data-label="Quy cách">{r.quy_cach}</td>
+              <td data-label="Khoảng giá" class="num">
+                {r.thap ? <>{fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</> : <span class="muted">Liên hệ</span>}
+              </td>
+              <td data-label="Quy đổi" class="num">
+                {r.thap_don_vi ? <>{fmtVnd(r.thap_don_vi)} – {fmtVnd(r.cao_don_vi)} đ/{r.don_vi_do === 'kg' ? 'kg' : 'lít'}</> : <span class="muted">–</span>}
+              </td>
+              <td class="act">
+                <a href={quoteHref(r)} class="btn-row" data-track="add_to_quote">Báo giá trong ngày</a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+))}
+
+<style>
+  .price-group { margin: 0 0 28px; }
+  .price-group h3 { color: var(--color-primary); margin: 0 0 10px; font-size: 1.15rem; }
+  .table-wrap { overflow-x: auto; }
+  .price-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; background: white; }
+  .price-table th, .price-table td { border: 1px solid var(--border-color, #e2e8f0); padding: 10px 12px; text-align: left; vertical-align: middle; }
+  .price-table th { background: #f1f5f9; font-weight: 600; }
+  .price-table td small { display: block; color: var(--color-text-light); font-size: 0.82rem; margin-top: 2px; }
+  .price-table td a { color: var(--color-primary); font-weight: 600; text-decoration: underline; }
+  .price-table .num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .price-table .muted { color: var(--color-text-light); }
+  .price-table .act { width: 1%; white-space: nowrap; }
+  .btn-row { display: inline-block; padding: 7px 12px; border-radius: 6px; background: var(--color-accent); color: white !important; text-decoration: none !important; font-size: 0.88rem; font-weight: 600; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* Điện thoại: mỗi dòng thành một thẻ, không cuộn ngang. */
+  @media (max-width: 700px) {
+    .price-table thead { display: none; }
+    .price-table, .price-table tbody, .price-table tr, .price-table td { display: block; width: 100%; }
+    .price-table tr { border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; margin-bottom: 12px; padding: 8px 12px; }
+    .price-table td { border: 0; padding: 4px 0; }
+    .price-table td[data-label]:not([data-label="Sản phẩm"])::before { content: attr(data-label) ": "; color: var(--color-text-light); font-size: 0.85rem; }
+    .price-table .act { width: auto; padding-top: 8px; }
+    .btn-row { display: block; text-align: center; }
+  }
+</style>
