@@ -1,0 +1,83 @@
+---
+// Banner hỏi đồng ý cookie phân tích (Google Analytics). Lựa chọn lưu trong localStorage (CONSENT_KEY),
+// đọc lại ở <head> của Layout để đặt Consent Mode trước khi gtag chạy.
+// Trang /tuy-chon-cookie dùng window.hpCookie để xem và đổi lựa chọn.
+import { CONSENT_KEY } from '../lib/site';
+---
+
+<div class="cookie-banner" id="cookie-banner" data-key={CONSENT_KEY} role="dialog" aria-live="polite" aria-label="Thông báo cookie" hidden>
+  <p>
+    Chúng tôi dùng cookie Google Analytics để đếm lượt truy cập và cải thiện website. Không dùng cookie quảng cáo.
+    Xem <a href="/chinh-sach-bao-mat">Chính sách bảo mật</a> hoặc <a href="/tuy-chon-cookie">Tùy chọn cookie</a>.
+  </p>
+  <div class="cookie-actions">
+    <button type="button" class="btn-secondary" data-consent="denied">Từ chối</button>
+    <button type="button" class="btn-primary" data-consent="granted">Đồng ý</button>
+  </div>
+</div>
+
+<style>
+  .cookie-banner {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    z-index: 200;
+    max-width: 720px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 16px 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .cookie-banner[hidden] { display: none; }
+  .cookie-banner p { font-size: 0.92rem; margin: 0; }
+  .cookie-banner a { color: var(--color-accent); text-decoration: underline; }
+  .cookie-actions { display: flex; gap: 8px; flex-shrink: 0; }
+  .cookie-actions button { cursor: pointer; font: inherit; border: none; }
+  .cookie-actions .btn-secondary { border: 1px solid var(--color-primary); }
+  @media (max-width: 860px) {
+    /* Nằm trên thanh Gọi / Zalo / Báo giá cố định ở đáy màn hình. */
+    .cookie-banner { flex-direction: column; align-items: stretch; left: 8px; right: 8px; bottom: calc(72px + env(safe-area-inset-bottom, 0px)); padding: 14px; }
+    .cookie-actions button { flex: 1; }
+  }
+</style>
+
+<script>
+  type Choice = 'granted' | 'denied';
+  const banner = document.getElementById('cookie-banner') as HTMLElement;
+  const KEY = banner.dataset.key as string;
+
+  function read(): Choice | null {
+    try {
+      const v = localStorage.getItem(KEY);
+      return v === 'granted' || v === 'denied' ? v : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function set(choice: Choice) {
+    try {
+      localStorage.setItem(KEY, choice);
+    } catch {
+      // Trình duyệt chặn lưu trữ: vẫn áp dụng cho lần xem này.
+    }
+    const gtag = (window as any).gtag;
+    if (typeof gtag === 'function') gtag('consent', 'update', { analytics_storage: choice });
+    banner.hidden = true;
+    document.dispatchEvent(new CustomEvent('hp-cookie-change', { detail: choice }));
+  }
+
+  (window as any).hpCookie = { read, set };
+
+  // Không hiện banner ngay trên trang tùy chọn cookie (trang đó có nút riêng).
+  if (!read() && !location.pathname.startsWith('/tuy-chon-cookie')) banner.hidden = false;
+  banner.querySelectorAll<HTMLButtonElement>('[data-consent]').forEach((b) =>
+    b.addEventListener('click', () => set(b.dataset.consent as Choice)),
+  );
+</script>

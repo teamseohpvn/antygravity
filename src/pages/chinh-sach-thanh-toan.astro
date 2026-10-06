@@ -1,0 +1,57 @@
+---
+import PolicyPage from '../components/PolicyPage.astro';
+import { BUSINESS, LEGAL_NAME, TAX_ID } from '../lib/site';
+---
+
+<PolicyPage
+  path="/chinh-sach-thanh-toan"
+  title="Chính sách thanh toán"
+  seoTitle="Chính Sách Thanh Toán và Hóa Đơn VAT – Dầu Công Nghiệp HP"
+  description="Cách báo giá, phương thức thanh toán chuyển khoản hoặc tiền mặt, thanh toán theo hợp đồng cho doanh nghiệp và xuất hóa đơn VAT điện tử khi mua dầu công nghiệp."
+  updated="2026-10-06"
+>
+  <p>
+    Chính sách này áp dụng cho đơn hàng đặt với {LEGAL_NAME} (MST {TAX_ID}) qua website, điện thoại hoặc Zalo.
+  </p>
+
+  <h2>1. Giá và báo giá</h2>
+  <ul>
+    <li>Giá trên website là <strong>khoảng giá tham khảo</strong>. Giá chính xác phụ thuộc hãng, quy cách, số lượng và địa điểm giao.</li>
+    <li>Giá chính thức được gửi trong báo giá, ghi rõ giá đã hay chưa gồm VAT, phí giao hàng (nếu có) và thời hạn hiệu lực của báo giá.</li>
+    <li>Đơn hàng được xác nhận khi bạn đồng ý báo giá qua tin nhắn, email hoặc đơn đặt hàng (PO).</li>
+  </ul>
+
+  <h2>2. Phương thức thanh toán</h2>
+  <h3>Chuyển khoản ngân hàng</h3>
+  <p>
+    Chuyển vào tài khoản ngân hàng <strong>đứng tên {LEGAL_NAME}</strong>. Số tài khoản được ghi trong báo giá hoặc hợp đồng.
+    Nội dung chuyển khoản ghi tên công ty hoặc số điện thoại đặt hàng để chúng tôi đối chiếu.
+  </p>
+  <p>
+    <strong>Lưu ý an toàn:</strong> chúng tôi không yêu cầu chuyển tiền vào tài khoản cá nhân lạ. Nếu nhận được yêu cầu đổi số tài khoản,
+    vui lòng gọi xác nhận qua hotline {BUSINESS.phoneDisplay} trước khi chuyển.
+  </p>
+  <h3>Tiền mặt khi nhận hàng</h3>
+  <p>Áp dụng cho đơn lẻ giao trong khu vực TP Hải Phòng. Nhân viên giao hàng giao kèm phiếu giao hàng có xác nhận số tiền.</p>
+  <h3>Thanh toán theo hợp đồng cho doanh nghiệp</h3>
+  <p>
+    Với khách hàng doanh nghiệp mua định kỳ, thời hạn thanh toán và hạn mức công nợ được thỏa thuận trong hợp đồng mua bán hoặc đơn đặt hàng.
+  </p>
+  <h3>Hàng đặt riêng</h3>
+  <p>
+    Với hàng không có sẵn trong kho, phải đặt từ hãng hoặc nhà phân phối, chúng tôi có thể đề nghị đặt cọc. Mức đặt cọc được ghi rõ trong báo giá.
+  </p>
+
+  <h2>3. Hóa đơn VAT</h2>
+  <ul>
+    <li>Xuất hóa đơn giá trị gia tăng điện tử cho mọi đơn hàng có yêu cầu.</li>
+    <li>Vui lòng cung cấp tên công ty, mã số thuế, địa chỉ và email nhận hóa đơn khi đặt hàng.</li>
+    <li>Hóa đơn được gửi qua email theo quy định về hóa đơn điện tử. Nếu cần điều chỉnh thông tin, hãy báo cho chúng tôi sớm để xử lý theo quy định.</li>
+  </ul>
+
+  <h2>4. Liên hệ</h2>
+  <p>
+    Mọi câu hỏi về giá, thanh toán và hóa đơn: hotline / Zalo <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a>,
+    hoặc gửi <a href="/bao-gia">yêu cầu báo giá</a>. Thông tin về giao hàng xem tại <a href="/chinh-sach-giao-hang">Chính sách giao hàng</a>.
+  </p>
+</PolicyPage>

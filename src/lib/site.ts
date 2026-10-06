@@ -33,6 +33,17 @@ export const ADDRESS_FULL = `${ADDRESS_TEXT} (TP Hải Dương cũ)`;
 // KCN gần kho trước, xa kho sau.
 export const KCN_NEAR = ['Đại An', 'Nam Sách', 'Phúc Điền', 'Tân Trường', 'Lai Vu'];
 export const KCN_FAR = ['Tràng Duệ', 'Nomura', 'Đình Vũ', 'VSIP', 'Quế Võ', 'Phố Nối'];
+/** Google Analytics 4 (du-lieu-noi-bo/script_anylytics_google.md). Đổi bằng biến PUBLIC_GA4_ID khi build. */
+export const GA4_ID: string = import.meta.env.PUBLIC_GA4_ID || 'G-DSZVP9WS37';
+/** Khóa localStorage lưu lựa chọn cookie: "granted" | "denied". Đổi tên khóa nếu muốn hỏi lại mọi người. */
+export const CONSENT_KEY = 'hp-cookie-consent-v1';
+/** Các trang chính sách, hiện ở chân trang. */
+export const POLICY_LINKS = [
+  { href: '/chinh-sach-giao-hang', label: 'Chính sách giao hàng' },
+  { href: '/chinh-sach-thanh-toan', label: 'Chính sách thanh toán' },
+  { href: '/chinh-sach-bao-mat', label: 'Chính sách bảo mật' },
+  { href: '/tuy-chon-cookie', label: 'Tùy chọn cookie' },
+];
 export const BRANDS = ['Shell', 'Castrol', 'Mobil', 'TotalEnergies', 'ENEOS', 'EMI', 'VHP', 'XONE'];
 
 // Domain chính thức. Bản preview *.workers.dev cũng có canonical trỏ về domain thật, nên Google chỉ index domain chính.

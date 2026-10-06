@@ -38,7 +38,7 @@
 | :--- | :--- | :--- | :--- |
 | `PUBLIC_SITE_URL` | Build | `https://daucongnghiephp.com.vn` | Domain chính thức cho canonical, sitemap, schema, robots. Mặc định là domain chính thức |
 | `PUBLIC_INDEXABLE` | Build | `false` | Từ 06/10/2026 mặc định cho index. Chỉ đặt `false` khi muốn chặn Google (bảo trì, staging riêng) |
-| `PUBLIC_GA4_ID` | Build | `G-XXXXXXX` | Bật Google Analytics 4 và các sự kiện chuyển đổi |
+| `PUBLIC_GA4_ID` | Build | `G-DSZVP9WS37` | Mặc định `G-DSZVP9WS37` (trong `src/lib/site.ts`). Chỉ đặt khi muốn đổi mã GA4 |
 | `QUOTE_TELEGRAM_BOT_TOKEN` | Secret | `123456:ABC…` | Gửi yêu cầu báo giá vào Telegram (tạo bot bằng @BotFather) |
 | `QUOTE_TELEGRAM_CHAT_ID` | Secret | `-100123…` | Nhóm / người nhận tin Telegram |
 | `QUOTE_WEBHOOK_URL` | Secret | URL Google Apps Script | POST JSON `{ text, lead }` để ghi Google Sheet, Make, Zapier, n8n… |

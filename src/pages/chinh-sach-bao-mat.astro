@@ -1,0 +1,99 @@
+---
+import PolicyPage from '../components/PolicyPage.astro';
+import { BUSINESS, ADDRESS_FULL, LEGAL_NAME, TAX_ID, SITE_URL } from '../lib/site';
+const domain = SITE_URL.replace(/^https?:\/\//, '');
+---
+
+<PolicyPage
+  path="/chinh-sach-bao-mat"
+  title="Chính sách bảo mật"
+  seoTitle="Chính Sách Bảo Mật Thông Tin Cá Nhân – Dầu Công Nghiệp HP"
+  description="Dữ liệu cá nhân chúng tôi thu thập khi bạn gửi yêu cầu báo giá hoặc truy cập website, mục đích sử dụng, thời gian lưu, bên xử lý và quyền của bạn."
+  updated="2026-10-06"
+>
+  <p>
+    {LEGAL_NAME} (MST {TAX_ID}, địa chỉ {ADDRESS_FULL}) là đơn vị quản lý website {domain} và chịu trách nhiệm xử lý dữ liệu cá nhân
+    mà bạn cung cấp qua website. Chính sách này giải thích chúng tôi thu thập gì, dùng vào việc gì và bạn có những quyền gì,
+    theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân.
+  </p>
+
+  <h2>1. Dữ liệu chúng tôi thu thập</h2>
+  <h3>Khi bạn gửi yêu cầu báo giá</h3>
+  <ul>
+    <li>Họ tên, số điện thoại, tên công ty (bắt buộc).</li>
+    <li>Mã số thuế, địa điểm nhận hàng, thời hạn cần hàng, ghi chú (không bắt buộc).</li>
+    <li>Sản phẩm, quy cách, số lượng bạn quan tâm và trang bạn gửi yêu cầu.</li>
+  </ul>
+  <h3>Khi bạn liên hệ qua điện thoại hoặc Zalo</h3>
+  <p>Số điện thoại, tên hiển thị và nội dung trao đổi, nhằm báo giá và giao hàng.</p>
+  <h3>Khi bạn truy cập website</h3>
+  <ul>
+    <li>Dữ liệu kỹ thuật do máy chủ ghi nhận: địa chỉ IP, loại trình duyệt, thời điểm truy cập. Dữ liệu này dùng để vận hành và chống tấn công.</li>
+    <li>Dữ liệu thống kê qua Google Analytics: trang đã xem, nguồn truy cập, loại thiết bị, khu vực ở mức tỉnh/thành. Google Analytics chỉ ghi cookie khi bạn đồng ý, xem <a href="/tuy-chon-cookie">Tùy chọn cookie</a>.</li>
+  </ul>
+  <p>Chúng tôi không thu thập thông tin thẻ thanh toán và không cố ý thu thập dữ liệu cá nhân nhạy cảm.</p>
+
+  <h2>2. Mục đích sử dụng</h2>
+  <ul>
+    <li>Liên hệ, tư vấn kỹ thuật và gửi báo giá theo yêu cầu của bạn.</li>
+    <li>Xác nhận đơn hàng, giao hàng, xuất hóa đơn VAT và chăm sóc sau bán hàng.</li>
+    <li>Thống kê lượt truy cập để cải thiện nội dung website.</li>
+    <li>Thực hiện nghĩa vụ theo quy định pháp luật về kế toán, thuế.</li>
+  </ul>
+  <p>Chúng tôi không bán, cho thuê dữ liệu cá nhân và không dùng dữ liệu của bạn cho quảng cáo nhắm mục tiêu.</p>
+
+  <h2>3. Bên tham gia xử lý dữ liệu</h2>
+  <p>Để vận hành website, một số nhà cung cấp dịch vụ xử lý dữ liệu thay mặt chúng tôi, chỉ trong phạm vi cần thiết:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Nhà cung cấp</th><th>Vai trò</th><th>Dữ liệu liên quan</th></tr></thead>
+      <tbody>
+        <tr><td>Cloudflare</td><td>Lưu trữ website, chuyển tiếp form báo giá, chống tấn công</td><td>Dữ liệu kỹ thuật, nội dung form khi gửi</td></tr>
+        <tr><td>Telegram, Google (Google Sheets)</td><td>Nhận thông báo yêu cầu báo giá cho nhân viên kinh doanh</td><td>Nội dung form báo giá</td></tr>
+        <tr><td>Google (Google Analytics)</td><td>Thống kê truy cập</td><td>Dữ liệu thống kê nêu ở mục 1</td></tr>
+        <tr><td>Đơn vị vận chuyển, nhà xe</td><td>Giao hàng ngoài khu vực xe của công ty</td><td>Tên người nhận, số điện thoại, địa chỉ giao</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    Một số nhà cung cấp trên lưu trữ dữ liệu tại máy chủ ngoài Việt Nam. Ngoài các trường hợp trên, chúng tôi chỉ cung cấp dữ liệu
+    cho cơ quan nhà nước có thẩm quyền khi pháp luật yêu cầu.
+  </p>
+
+  <h2>4. Thời gian lưu trữ</h2>
+  <ul>
+    <li>Dữ liệu yêu cầu báo giá và liên hệ: lưu tối đa 24 tháng kể từ lần liên hệ cuối, sau đó xóa nếu không phát sinh đơn hàng.</li>
+    <li>Dữ liệu gắn với đơn hàng và hóa đơn: lưu theo thời hạn pháp luật về kế toán, thuế quy định.</li>
+    <li>Dữ liệu Google Analytics: lưu theo thời hạn cài đặt trong Google Analytics, tối đa 14 tháng.</li>
+  </ul>
+
+  <h2>5. Bảo vệ dữ liệu</h2>
+  <p>
+    Website dùng kết nối mã hóa HTTPS. Thông tin báo giá chỉ chuyển tới nhân viên phụ trách kinh doanh. Tài khoản quản trị các dịch vụ trên
+    được giới hạn người truy cập.
+  </p>
+
+  <h2>6. Quyền của bạn</h2>
+  <p>Bạn có quyền:</p>
+  <ul>
+    <li>Được biết về việc xử lý dữ liệu và xem dữ liệu chúng tôi đang lưu về bạn.</li>
+    <li>Yêu cầu chỉnh sửa dữ liệu sai, hoặc xóa dữ liệu khi không còn nhu cầu giao dịch (trừ dữ liệu phải lưu theo luật).</li>
+    <li>Rút lại sự đồng ý, phản đối việc xử lý, hoặc yêu cầu hạn chế xử lý dữ liệu.</li>
+    <li>Thay đổi lựa chọn cookie bất cứ lúc nào tại <a href="/tuy-chon-cookie">Tùy chọn cookie</a>.</li>
+    <li>Khiếu nại hoặc yêu cầu bồi thường theo quy định pháp luật.</li>
+  </ul>
+  <p>
+    Để thực hiện các quyền này, liên hệ hotline / Zalo <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a> hoặc gửi văn bản tới địa chỉ
+    {ADDRESS_FULL}. Chúng tôi phản hồi trong thời hạn pháp luật quy định.
+  </p>
+
+  <h2>7. Liên kết tới website khác</h2>
+  <p>
+    Website có liên kết tới Zalo, tài liệu của hãng dầu và các trang khác. Khi bạn rời website, chính sách bảo mật của trang đó được áp dụng.
+  </p>
+
+  <h2>8. Thay đổi chính sách</h2>
+  <p>
+    Khi chính sách thay đổi, chúng tôi cập nhật trang này và ghi ngày cập nhật ở đầu trang.
+  </p>
+</PolicyPage>

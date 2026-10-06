@@ -3,7 +3,8 @@ import { getActiveCategories } from '../lib/content';
 // Font Inter tự host (có subset tiếng Việt), không chặn render như Google Fonts.
 import '@fontsource-variable/inter/wght.css';
 import SEO from '../components/SEO.astro';
-import { BUSINESS, ADDRESS_FULL, AREA_TEXT, SITE_NAME, LEGAL_NAME, TAX_ID, organizationSchema, websiteSchema } from '../lib/site';
+import { BUSINESS, ADDRESS_FULL, AREA_TEXT, SITE_NAME, LEGAL_NAME, TAX_ID, GA4_ID, CONSENT_KEY, POLICY_LINKS, organizationSchema, websiteSchema } from '../lib/site';
+import CookieBanner from '../components/CookieBanner.astro';
 
 interface Props {
   title: string;
@@ -26,7 +27,6 @@ const categories = (await getActiveCategories()).sort(
 const pageSchemas = schemaData ? (Array.isArray(schemaData) ? schemaData : [schemaData]) : [];
 const schemas = [organizationSchema(), websiteSchema(), ...pageSchemas];
 
-const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
 ---
 
 <!doctype html>
@@ -41,14 +41,24 @@ const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
 
     {GA4_ID && (
       <>
-        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
-        <script is:inline define:vars={{ GA4_ID }}>
+        <script is:inline define:vars={{ GA4_ID, CONSENT_KEY }}>
+          // Google tag (gtag.js) + Consent Mode v2: chưa đồng ý thì GA không ghi cookie (analytics_storage: denied).
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           window.gtag = gtag;
+          var consent = null;
+          try { consent = localStorage.getItem(CONSENT_KEY); } catch (e) {}
+          gtag('consent', 'default', {
+            analytics_storage: consent === 'granted' ? 'granted' : 'denied',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            wait_for_update: 500,
+          });
           gtag('js', new Date());
           gtag('config', GA4_ID);
         </script>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
       </>
     )}
 
@@ -244,10 +254,18 @@ const GA4_ID = import.meta.env.PUBLIC_GA4_ID;
               <li><a href="/bao-gia">Báo giá</a></li>
             </ul>
           </div>
+          <div>
+            <h2>Chính sách</h2>
+            <ul>
+              {POLICY_LINKS.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+            </ul>
+          </div>
         </div>
         <p class="footer-bottom">&copy; {new Date().getFullYear()} {SITE_NAME} là thương hiệu của {LEGAL_NAME}. Dầu nhớt và mỡ bôi trơn công nghiệp cho nhà máy tại {AREA_TEXT} và miền Bắc.</p>
       </div>
     </footer>
+
+    <CookieBanner />
 
     <div class="mobile-cta" aria-label="Liên hệ nhanh">
       <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi</a>
