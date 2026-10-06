@@ -148,8 +148,10 @@ const initials = (name: string) => name.split(' ').slice(-2).map((w) => w[0]).jo
                 {p.degree && <li><strong>Học vị, trình độ:</strong> {p.degree}</li>}
                 {p.affiliation && <li><strong>Nơi công tác chuyên môn:</strong> {p.affiliation}</li>}
                 {p.since && <li><strong>Kinh nghiệm:</strong> làm chuyên môn từ năm {p.since} ({yearsOf(p)} năm)</li>}
+                {p.email && <li><strong>Email:</strong> <a href={`mailto:${p.email}`}>{p.email}</a></li>}
               </ul>
-              <p>{p.desc}</p>
+              {p.bio ? p.bio.map((t) => <p>{t}</p>) : <p>{p.desc}</p>}
+              {p.sameAs?.map((u) => <p><a href={u} target="_blank" rel="noopener me">Hồ sơ LinkedIn</a></p>)}
             </div>
           </section>
         ))}
