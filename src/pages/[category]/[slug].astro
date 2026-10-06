@@ -6,6 +6,7 @@ import QuoteCta from '../../components/QuoteCta.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
+import { timNhanSu, DEFAULT_REVIEWER_ID, personRef, personUrl } from '../../lib/nhan-su';
 import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -49,7 +50,8 @@ const crumbs = [
 // Ngày cập nhật và người biên soạn: hiển thị trên trang, thẻ meta và schema (E-E-A-T).
 const updatedIso = d.updated ? d.updated.toISOString().slice(0, 10) : undefined;
 const updatedText = updatedIso ? updatedIso.split('-').reverse().join('/') : undefined;
-const authorName = d.reviewed_by ?? `${SITE_NAME} (${LEGAL_SHORT})`;
+const reviewer = timNhanSu(d.reviewed_by) ?? timNhanSu(DEFAULT_REVIEWER_ID);
+const authorName = reviewer ? reviewer.name : d.reviewed_by ?? `${SITE_NAME} (${LEGAL_SHORT})`;
 
 const additionalProperty = [
   ...(grade ? [{ '@type': 'PropertyValue', name: d.vg ? 'Cấp độ nhớt' : 'Cấp NLGI', value: grade }] : []),
@@ -80,7 +82,8 @@ const schemaData = [
     url: absUrl(pagePath),
     inLanguage: 'vi-VN',
     ...(updatedIso ? { dateModified: updatedIso } : {}),
-    author: d.reviewed_by ? { '@type': 'Person', name: d.reviewed_by } : { '@id': ORG_ID },
+    author: reviewer ? personRef(reviewer) : { '@id': ORG_ID },
+    ...(reviewer ? { reviewedBy: personRef(reviewer) } : {}),
     publisher: { '@id': ORG_ID },
     isPartOf: { '@id': absUrl('/') + '#website' },
     ...(d.tds_url ? { citation: d.tds_url } : {}),
@@ -115,7 +118,9 @@ const schemaData = [
         <h1>{d.title}</h1>
         <p class="byline">
           {updatedText && <>Cập nhật: <time datetime={updatedIso}>{updatedText}</time> · </>}
-          Biên soạn: <a href="/gioi-thieu" rel="author">{authorName}</a>
+          {reviewer
+            ? <>Kiểm duyệt kỹ thuật: <a href={personUrl(reviewer)} rel="author">{reviewer.name}</a>, {reviewer.role}</>
+            : <>Biên soạn: <a href="/gioi-thieu" rel="author">{authorName}</a></>}
         </p>
         <div class="tags">
           <span class="badge">{d.brand}</span>

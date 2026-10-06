@@ -27,7 +27,7 @@ const categories = (await getActiveCategories()).sort(
 );
 
 const pageSchemas = schemaData ? (Array.isArray(schemaData) ? schemaData : [schemaData]) : [];
-const schemas = [organizationSchema(), websiteSchema(), ...pageSchemas];
+const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
 
 ---
 
