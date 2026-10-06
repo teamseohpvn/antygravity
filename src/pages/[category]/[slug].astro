@@ -30,6 +30,13 @@ const STOCK_TEXT = {
   'dat-hang': 'Hàng đặt theo yêu cầu. Liên hệ để biết thời gian giao.',
   'ngung-ban': 'Sản phẩm đã ngừng kinh doanh. Liên hệ để được tư vấn mã thay thế.',
 } as const;
+// Sản phẩm tương đương: gắn link nếu tên khớp một trang sản phẩm đang bật, còn lại để chữ thường.
+const norm = (t: string) => t.toLowerCase().replace(/^dầu thủy lực\s+/, '').replace(/\s*\(.*\)\s*$/, '').trim();
+const activeProducts = await getActiveProducts();
+const equivalents = (d.equivalents ?? []).map((name) => {
+  const match = activeProducts.find((p) => p.id !== product.id && norm(p.data.title) === norm(name));
+  return { name, href: match ? `/${match.data.category}/${match.id}` : undefined };
+});
 const stockText = d.stock_status ? STOCK_TEXT[d.stock_status] : 'Liên hệ để nhận báo giá và kiểm tra tồn kho.';
 
 const crumbs = [
@@ -134,29 +141,30 @@ const schemaData = [
       </section>
     )}
 
+    {(d.applications?.length || d.not_for?.length) && (
+      <section class="product-content">
+        <h2>Ứng dụng và khuyến cáo sử dụng</h2>
+        {d.applications?.length && <ul>{d.applications.map((a) => <li>{a}</li>)}</ul>}
+        {d.not_for?.length && (
+          <p><strong>Không nên dùng cho:</strong> {d.not_for.join('; ')}.</p>
+        )}
+      </section>
+    )}
+
     <section class="product-content">
       <h2>Thông tin chi tiết sản phẩm</h2>
       <div class="markdown-body">
         <ContentBody><Content /></ContentBody>
       </div>
-      {d.equivalents && d.equivalents.length > 0 && (
+      {equivalents.length > 0 && (
         <>
-          <h3>Sản phẩm tương đương</h3>
-          <p>{d.equivalents.join(' · ')}</p>
-        </>
-      )}
-      {(d.applications?.length || d.not_for?.length) && (
-        <>
-          <h3>Ứng dụng</h3>
-          {d.applications?.length && <ul>{d.applications.map((a) => <li>{a}</li>)}</ul>}
-          {d.not_for?.length && (
-            <p><strong>Không nên dùng cho:</strong> {d.not_for.join('; ')}.</p>
-          )}
+          <h2>Sản phẩm tương đương</h2>
+          <p>{equivalents.map((e, i) => <>{i > 0 && ' · '}{e.href ? <a href={e.href}>{e.name}</a> : e.name}</>)}</p>
         </>
       )}
       {(d.warnings?.length || d.storage || d.shelf_life) && (
         <>
-          <h3>Bảo quản và an toàn</h3>
+          <h2>Bảo quản và an toàn</h2>
           <ul>
             {d.storage && <li><strong>Bảo quản:</strong> {d.storage}</li>}
             {d.shelf_life && <li><strong>Hạn sử dụng:</strong> {d.shelf_life}</li>}
