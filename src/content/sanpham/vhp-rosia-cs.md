@@ -85,7 +85,7 @@ Không theo kiểu xả cả bồn như dầu thủy lực. Dầu rãnh trượt
 Nếu dầu trong bồn đục hoặc loãng bất thường (lệch quá ±10% so với dầu mới: dầu mới 46 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 41,4–50,6 mm²/s là vượt ngưỡng), xả bồn, vệ sinh và nạp dầu mới. Cách đo độ nhớt xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Rosia CS 46 có dùng làm dầu thủy lực được không?
-VHP xếp Rosia CS vào nhóm dầu tuần hoàn, không phải dầu thủy lực chống mài mòn. Với bơm áp cao, hãy chọn dầu thủy lực AW. Nếu không chắc máy cần loại nào, hãy [liên hệ](/lien-he) để được tư vấn theo sổ tay máy.
+VHP xếp Rosia CS vào nhóm dầu tuần hoàn, không phải dầu thủy lực chống mài mòn. Với bơm áp cao, hãy chọn dầu thủy lực AW. Nếu không chắc máy cần loại nào, hãy [liên hệ](/contact) để được tư vấn theo sổ tay máy.
 
 ### Rosia CS có những cấp nào?
 VHP sản xuất Rosia CS từ cấp 10 đến 220. Hiện kho chúng tôi có sẵn cấp 46. Cấp khác vui lòng liên hệ để đặt hàng.

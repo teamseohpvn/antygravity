@@ -76,7 +76,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dư�
 | Bơm bằng súng mỡ | Dễ bơm, hợp vú mỡ và ổ bi | Cần lực bơm lớn hơn |
 | Thường dùng cho | Vòng bi, ổ trục, máy nông nghiệp | Sát xi, bản lề, bánh răng hở, chỗ dễ chảy mỡ |
 
-VHP công bố bảng chỉ tiêu cho cấp No2 (theo chứng thư giám định số 14/VHP/2024). Nếu cần phiếu kiểm nghiệm riêng của cấp No3, hãy [liên hệ](/lien-he) chúng tôi để nhận theo lô.
+VHP công bố bảng chỉ tiêu cho cấp No2 (theo chứng thư giám định số 14/VHP/2024). Nếu cần phiếu kiểm nghiệm riêng của cấp No3, hãy [liên hệ](/contact) chúng tôi để nhận theo lô.
 
 Caxilium có nhiệt độ nhỏ giọt 141 °C và làm việc từ −10 °C đến 110 °C. Đây là mức của mỡ đa dụng, không phải mỡ chịu nhiệt. Ổ bi động cơ điện, quạt chạy nóng hơn nên dùng [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease). Ổ bi nóng trên 120 °C cần [mỡ chịu nhiệt](/mo-chiu-nhiet). Xem thêm các dòng khác ở trang [mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep).
 

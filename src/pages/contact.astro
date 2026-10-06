@@ -6,7 +6,7 @@ import { BUSINESS, ADDRESS_TEXT, ADDRESS_FULL, AREA_TEXT, LEGAL_NAME, TAX_ID, KC
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
-  { name: 'Liên hệ', href: '/lien-he' },
+  { name: 'Liên hệ', href: '/contact' },
 ];
 // TODO: khi có Google Business Profile, thay bằng link địa điểm (maps.app.goo.gl/...) và nhúng bản đồ.
 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS_TEXT)}`;
@@ -21,7 +21,7 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
       '@context': 'https://schema.org',
       '@type': 'ContactPage',
       name: 'Liên hệ',
-      url: absUrl('/lien-he'),
+      url: absUrl('/contact'),
       inLanguage: 'vi-VN',
       mainEntity: { '@id': ORG_ID },
       isPartOf: { '@id': absUrl('/') + '#website' },

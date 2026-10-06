@@ -82,4 +82,4 @@ Tại chỗ có thể đo **độ nhớt ở 40 °C** (dầu mới 32 mm²/s the
 Nên xả hết dầu cũ và súc rửa hệ trước khi nạp dầu mới, không pha lẫn hai loại. Hãy hỏi nhà sản xuất lò dầu về khả năng tương thích của gioăng, phớt với dầu gốc alkyl benzene.
 
 ### Syn Therm 32L chịu được nhiệt độ bồn dầu tối đa bao nhiêu?
-Bảng thông số công khai của SHL không ghi nhiệt độ làm việc tối đa. Vui lòng [liên hệ](/lien-he) để chúng tôi hỏi hãng và gửi tài liệu kỹ thuật đầy đủ trước khi dùng cho hệ của bạn.
+Bảng thông số công khai của SHL không ghi nhiệt độ làm việc tối đa. Vui lòng [liên hệ](/contact) để chúng tôi hỏi hãng và gửi tài liệu kỹ thuật đầy đủ trước khi dùng cho hệ của bạn.

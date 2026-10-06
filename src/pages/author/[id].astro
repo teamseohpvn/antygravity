@@ -15,7 +15,7 @@ const { person: p } = Astro.props as { person: NhanSu };
 const path = personUrl(p);
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
-  { name: 'Giới thiệu', href: '/gioi-thieu' },
+  { name: 'Giới thiệu', href: '/about' },
   { name: p.name, href: path },
 ];
 
@@ -91,7 +91,7 @@ const schemaData = [
         </>
       )}
 
-      <p class="back"><a href="/gioi-thieu#doi-ngu">Xem đội ngũ {LEGAL_SHORT}</a></p>
+      <p class="back"><a href="/about#doi-ngu">Xem đội ngũ {LEGAL_SHORT}</a></p>
     </article>
   </div>
 </Layout>

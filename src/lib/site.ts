@@ -41,8 +41,8 @@ export const CONSENT_KEY = 'hp-cookie-consent-v1';
 export const POLICY_LINKS = [
   { href: '/chinh-sach-giao-hang', label: 'Chính sách giao hàng' },
   { href: '/chinh-sach-thanh-toan', label: 'Chính sách thanh toán' },
-  { href: '/chinh-sach-bao-mat', label: 'Chính sách bảo mật', rel: 'privacy-policy' },
-  { href: '/dieu-khoan-su-dung', label: 'Điều khoản sử dụng', rel: 'terms-of-service' },
+  { href: '/privacy-policy', label: 'Chính sách bảo mật', rel: 'privacy-policy' },
+  { href: '/terms-of-service', label: 'Điều khoản sử dụng', rel: 'terms-of-service' },
   { href: '/tuy-chon-cookie', label: 'Tùy chọn cookie' },
 ];
 export const BRANDS = ['Shell', 'Castrol', 'Mobil', 'TotalEnergies', 'ENEOS', 'EMI', 'VHP', 'XONE'];
@@ -125,7 +125,7 @@ export function organizationSchema() {
         telephone,
         areaServed: 'VN',
         availableLanguage: 'vi',
-        url: absUrl('/lien-he'),
+        url: absUrl('/contact'),
       },
       knowsAbout: ['Dầu thủy lực', 'Dầu bánh răng', 'Mỡ bôi trơn công nghiệp', 'Dầu máy nén khí', 'Dầu truyền nhiệt'],
     },

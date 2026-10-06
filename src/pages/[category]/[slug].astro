@@ -122,7 +122,7 @@ const schemaData = [
           {updatedText && <>Cập nhật: <time datetime={updatedIso}>{updatedText}</time> · </>}
           {reviewer
             ? <>Tác giả: <a href={personUrl(reviewer)} rel="author">{reviewer.name}</a>, {credentialLine(reviewer) ? `${credentialLine(reviewer)}, ` : ''}{reviewer.role}</>
-            : <>Biên soạn: <a href="/gioi-thieu" rel="author">{authorName}</a></>}
+            : <>Biên soạn: <a href="/about" rel="author">{authorName}</a></>}
         </p>
         <div class="tags">
           <span class="badge">{d.brand}</span>

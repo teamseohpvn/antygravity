@@ -92,7 +92,7 @@ Thay dầu Spinax AW theo tình trạng dầu sẽ chính xác hơn thay theo l�
 Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Spinax AW có cấp 32, 46 không?
-VHP sản xuất Spinax AW các cấp 32, 46, 68 và 100. Hiện kho chúng tôi có sẵn cấp 68. Cấp khác vui lòng [liên hệ](/lien-he) để đặt hàng.
+VHP sản xuất Spinax AW các cấp 32, 46, 68 và 100. Hiện kho chúng tôi có sẵn cấp 68. Cấp khác vui lòng [liên hệ](/contact) để đặt hàng.
 
 ### Có trộn Spinax AW với dầu thủy lực hãng khác được không?
 Không nên trộn dầu khác hãng vì phụ gia có thể không tương thích. Khi đổi dầu, xả hết dầu cũ và thay lọc.

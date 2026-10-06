@@ -8,3 +8,12 @@
 # Gõ nhầm gạch dưới vẫn vào được trang quản trị giá (06/10/2026).
 /quan_tri /quan-tri 301
 /quan_tri/* /quan-tri/:splat 301
+# Trang tiện ích đổi URL sang tiếng Anh (06/10/2026); nội dung vẫn tiếng Việt.
+/gioi-thieu /about 301
+/gioi-thieu.html /about 301
+/lien-he /contact 301
+/lien-he.html /contact 301
+/chinh-sach-bao-mat /privacy-policy 301
+/chinh-sach-bao-mat.html /privacy-policy 301
+/dieu-khoan-su-dung /terms-of-service 301
+/dieu-khoan-su-dung.html /terms-of-service 301

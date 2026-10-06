@@ -57,7 +57,7 @@ updated: 2026-10-03
 
 **ENEOS Epnoc Grease AP(N)** là mỡ đa dụng chịu cực áp (EP) gốc lithium của ENEOS Nhật Bản. Mỡ màu nâu nhạt, ít mùi, không chứa chì. Mỡ dùng dầu gốc khoáng tinh chế cao và phụ gia chống oxy hóa, chống gỉ. Dòng này có bốn cấp NLGI 0, 1, 2, 3. Cấp 0 và 1 đặc biệt hợp với hệ thống bơm mỡ tập trung.
 
-Kho tại TP Hải Phòng (Hải Dương cũ) đang có Epnoc Grease AP(N) đóng **can**. Hãy [liên hệ](/lien-he) để xác nhận cấp NLGI đang có sẵn trước khi đặt. Hàng có CO/CQ và hóa đơn VAT.
+Kho tại TP Hải Phòng (Hải Dương cũ) đang có Epnoc Grease AP(N) đóng **can**. Hãy [liên hệ](/contact) để xác nhận cấp NLGI đang có sẵn trước khi đặt. Hàng có CO/CQ và hóa đơn VAT.
 
 ## Tính năng chính
 

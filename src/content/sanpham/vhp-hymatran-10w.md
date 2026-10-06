@@ -86,7 +86,7 @@ Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, c
 VHP xếp đây là dầu động cơ đơn cấp, nhưng mục đích chính là dùng cho hộp số, biến mô và thủy lực của máy công trình. Động cơ xe đời mới nên dùng dầu động cơ diesel đa cấp đúng chuẩn.
 
 ### Xe nâng của tôi ghi dầu TO-4, dùng Hymatran 10W được không?
-Theo công bố của VHP, Hymatran 10W đáp ứng Caterpillar TO-2, không ghi TO-4. Nếu sổ tay bắt buộc TO-4, hãy gửi model xe qua trang [liên hệ](/lien-he) để chúng tôi kiểm tra trước khi giao.
+Theo công bố của VHP, Hymatran 10W đáp ứng Caterpillar TO-2, không ghi TO-4. Nếu sổ tay bắt buộc TO-4, hãy gửi model xe qua trang [liên hệ](/contact) để chúng tôi kiểm tra trước khi giao.
 
 ### Có CO/CQ và hóa đơn VAT không?
 Có. Mỗi lô giao kèm hóa đơn VAT, CO/CQ cung cấp theo lô khi khách yêu cầu.

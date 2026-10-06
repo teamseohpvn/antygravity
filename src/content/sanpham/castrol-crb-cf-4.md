@@ -87,4 +87,4 @@ CRB là cấp API CF-4, trị số kiềm 6,6 mg KOH/g. Turbomax là cấp CI-4,
 Ở miền Bắc, nhiệt độ hiếm khi xuống dưới 0 °C nên 20W-50 vẫn khởi động bình thường. Nếu máy đặt ở vùng núi lạnh hoặc sổ tay ghi 15W-40, nên dùng cấp 15W-40.
 
 ### Mua phuy cho đội xe thì đặt thế nào?
-Gửi số phuy, cấp nhớt và địa chỉ giao qua trang [báo giá](/bao-gia) hoặc gọi theo trang [liên hệ](/lien-he).
+Gửi số phuy, cấp nhớt và địa chỉ giao qua trang [báo giá](/bao-gia) hoặc gọi theo trang [liên hệ](/contact).

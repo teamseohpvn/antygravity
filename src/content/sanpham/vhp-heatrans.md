@@ -95,4 +95,4 @@ Tại chỗ có thể đo **độ nhớt ở 40 °C** (Heatrans 32: dầu mới 
 Nên lấy mẫu dầu kiểm tra định kỳ. Dầu sẫm màu nhanh, có cặn, độ nhớt hoặc trị số axit tăng rõ là dấu hiệu cần thay. Khi thay, nên súc rửa hệ để loại cặn cũ.
 
 ### Có trộn Heatrans với dầu truyền nhiệt hãng khác được không?
-Không nên. Pha lẫn hai loại dầu khác nhau làm khó kiểm soát chất lượng và tuổi thọ dầu. Hãy [liên hệ](/lien-he) để được tư vấn trước khi đổi dầu.
+Không nên. Pha lẫn hai loại dầu khác nhau làm khó kiểm soát chất lượng và tuổi thọ dầu. Hãy [liên hệ](/contact) để được tư vấn trước khi đổi dầu.
