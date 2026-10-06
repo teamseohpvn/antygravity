@@ -2,14 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import PromoBanner from '../components/PromoBanner.astro';
-import { getCollection } from 'astro:content';
-import { AREA_TEXT, BRANDS, KCN_NEAR, KCN_FAR, publicImageExists, webpSrcset } from '../lib/site';
+import { getActiveProducts, getActiveCategories, getActivePosts } from '../lib/content';
+import { AREA_TEXT, BRANDS, KCN_NEAR, KCN_FAR, publicImageExists, webpSrcset, productImages } from '../lib/site';
 
-const products = await getCollection('sanpham');
-const categories = (await getCollection('danhmuc')).sort(
+const products = await getActiveProducts();
+const categories = (await getActiveCategories()).sort(
   (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99),
 );
-const posts = (await getCollection('blog'))
+const posts = (await getActivePosts())
   .sort((a, b) => new Date(b.data.date ?? 0).valueOf() - new Date(a.data.date ?? 0).valueOf())
   .slice(0, 3);
 
@@ -88,8 +88,8 @@ const grade = (p: (typeof products)[number]) =>
       <div class="grid">
         {products.map((product) => (
           <article class="product-card">
-            {(product.data.images?.[0] ?? product.data.image) && (
-              <img src={product.data.images?.[0] ?? product.data.image} srcset={webpSrcset((product.data.images?.[0] ?? product.data.image)!)} sizes="(max-width: 600px) 100vw, 400px" alt={product.data.title} width="400" height="200" loading="lazy" decoding="async" />
+            {productImages(product.data)[0] && (
+              <img src={productImages(product.data)[0].src} srcset={webpSrcset(productImages(product.data)[0].src)} sizes="(max-width: 600px) 100vw, 400px" alt={productImages(product.data)[0].alt} width="400" height="200" loading="lazy" decoding="async" />
             )}
             <div class="product-info">
               <span class="badge">{product.data.brand}</span>

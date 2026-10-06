@@ -1,7 +1,8 @@
 ---
+active: true
 title: "Dầu Xung Điện EDM (Dầu Máy Bắn Điện)"
 nav_label: "Dầu xung điện EDM"
-order: 11
+order: 13
 summary: "Máy xung định hình, khuôn mẫu"
 seo_title: "Dầu Xung Điện EDM, Dầu Máy Bắn Điện – Báo Giá Sỉ Phuy"
 description: "Dầu xung điện cho máy EDM xung định hình: độ nhớt thấp, điểm chớp cháy cao, ít mùi. Tư vấn chọn dầu cho máy Sodick, Makino, Mitsubishi. Có CO/CQ, VAT."

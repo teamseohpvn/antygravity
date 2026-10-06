@@ -1,31 +1,60 @@
 ---
-title: "[Tiêu Đề Bài Viết Blog Thu Hút Click - Chứa Từ Khóa]"
-seo_title: "[Title SEO - Tối đa 70 ký tự]"
-description: "[Mô tả chuẩn SEO dài 155-160 ký tự, tóm tắt giá trị người đọc nhận được]"
-author: "Chuyên gia bôi trơn"
-date: "2026-09-18"
-image: "/images/blog/blog-cover.jpg"
-keywords: ["kiến thức bôi trơn", "cách chọn dầu", "từ khóa dài"]
-tags: ["kien-thuc", "huong-dan"]
+# ============================================================
+# MẪU BÀI VIẾT (blog, hướng dẫn sử dụng, so sánh, tin tức)
+# copy vào src/content/blog/<slug>.md · Hướng dẫn: docs/CAU-TRUC-NOI-DUNG.md
+#
+# URL = /ho-tro-ky-thuat/<tên file>
+# Tên file (slug) = từ khóa chính của bài, không dấu, gạch ngang, 3–7 từ, không ghi năm.
+# Không tạo thư mục con trong blog/ (sẽ làm đổi URL) – phân loại bằng trường `loai`.
+# ============================================================
+ma: "BV-001"                      # Mã bài viết: BV-<số 3 chữ số>
+active: true                      # Bật/tắt bài: true = build và hiển thị trên web; false = ẩn (không xóa file).
+                                  # Thiếu trường này = ẩn. Link tới bài đang ẩn trong bài khác tự bỏ khi build.
+loai: "kien-thuc"                 # kien-thuc | huong-dan-su-dung | so-sanh | tin-tuc
+title: "[H1: câu hỏi/vấn đề người đọc tìm, chứa từ khóa chính]"
+seo_title: "[<= 60 ký tự, từ khóa chính ở đầu]"
+description: "[<= 155 ký tự: trả lời ngắn + lợi ích người đọc nhận được]"
+keywords: ["[từ khóa chính]", "[từ khóa phụ]", "[câu hỏi dài]"]
+category: "[slug danh mục mà bài hỗ trợ – vd: dau-thuy-luc]"
+related_products: ["[slug sản phẩm 1]", "[slug sản phẩm 2]"]
+
+# Tác giả thật (E-E-A-T). Chưa có thì xóa 2 dòng – bài sẽ đứng tên doanh nghiệp.
+author: "[Họ tên kỹ sư]"
+author_title: "[Chức vụ, số năm kinh nghiệm]"
+date: "2026-10-03"
+updated: "2026-10-03"
+
+# KÍCH THƯỚC ẢNH BÀI VIẾT:
+#   - Ảnh bìa: tỉ lệ 16:9, ảnh gốc tối thiểu 1200 × 675 px, khuyến nghị 1600 × 900 px.
+#   - Ảnh trong thân bài: rộng tối thiểu 1200 px, tỉ lệ 16:9 hoặc 4:3; bảng/sơ đồ xuất PNG.
+#   - `npm run images` tạo bản .webp rộng 1200 px và -600 px.
+# Ảnh gốc: anh-goc/blog/<slug>.jpg -> npm run images
+image: "/images/blog/[slug].webp"
+image_alt: "[Mô tả thật của ảnh]"
+tags: ["[the-1]", "[the-2]"]
 ---
 
-> **Tóm tắt bài viết (Executive Summary):** 
-> (Đoạn ngắn tóm tắt 3 ý chính của bài viết giúp giữ chân người đọc)
+[Đoạn đầu trả lời thẳng câu hỏi trong 2–3 câu. Có link về danh mục, ví dụ [dầu thủy lực](/dau-thuy-luc).]
 
-## 1. Đặt vấn đề (H2)
-(Trình bày nỗi đau/vấn đề khách hàng đang gặp phải)
+## [H2: ý chính 1]
 
-## 2. Giải pháp phân tích (H2)
-(Nội dung chuyên sâu, chia nhỏ bằng H3, H4)
+[Nội dung, chia H3 khi cần. Bảng so sánh nếu có số liệu, ghi nguồn TDS/tiêu chuẩn.]
 
-### Phân tích chi tiết 1 (H3)
-...
+## [H2: ý chính 2 – với bài hướng dẫn sử dụng: các bước 1, 2, 3]
 
-### Phân tích chi tiết 2 (H3)
-...
+1. [Bước 1]
+2. [Bước 2]
 
-## 3. Lời khuyên từ chuyên gia (H2)
-(Đúc kết lại và đưa ra hướng dẫn hành động cụ thể)
+## Lưu ý an toàn
 
-## 4. Kết luận & Đề xuất (H2)
-(Chèn liên kết nội bộ (internal link) về các sản phẩm/danh mục liên quan)
+- [Lưu ý lấy từ SDS hoặc kinh nghiệm thực tế]
+
+## Câu hỏi thường gặp
+
+### [Câu hỏi 1]
+[Trả lời 2–3 câu.]
+
+## Xem thêm
+
+- [Tên trang hub](/[slug-danh-muc])
+- [Tên sản phẩm](/[slug-danh-muc]/[slug-san-pham])

@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getActiveCategories } from '../lib/content';
 
-const categories = (await getCollection('danhmuc')).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+const categories = (await getActiveCategories()).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 ---
 
 <Layout title="Không Tìm Thấy Trang" description="Trang bạn tìm không tồn tại hoặc đã được chuyển." noindex>

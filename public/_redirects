@@ -1,0 +1,7 @@
+# Chuyển hướng 301 cho URL đã đổi hoặc đã xóa. Cloudflare đọc file này khi deploy.
+# Kho không có Shell Omala (02/10/2026): xóa trang sản phẩm, chuyển về hub dầu bánh răng.
+/dau-banh-rang/shell-omala-s2-gx-220 /dau-banh-rang 301
+/dau-banh-rang/shell-omala-s2-gx-220.html /dau-banh-rang 301
+# Đổi hub hộp số tự động thành hub dầu cầu, dầu hộp số (02/10/2026).
+/dau-hop-so-tu-dong /dau-cau-hop-so 301
+/dau-hop-so-tu-dong.html /dau-cau-hop-so 301

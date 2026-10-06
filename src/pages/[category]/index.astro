@@ -1,14 +1,18 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ContentBody from '../../components/ContentBody.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import PromoBanner from '../../components/PromoBanner.astro';
-import { getCollection, render } from 'astro:content';
-import { absUrl, breadcrumbSchema, ORG_ID, publicImageExists, webpSrcset } from '../../lib/site';
+import StockTable from '../../components/StockTable.astro';
+import stockRows from '../../data/san-pham-kho.json';
+import { render } from 'astro:content';
+import { getActiveProducts, getActiveCategories } from '../../lib/content';
+import { absUrl, breadcrumbSchema, ORG_ID, publicImageExists, webpSrcset, productImages } from '../../lib/site';
 
 export async function getStaticPaths() {
-  const products = await getCollection('sanpham');
-  const categories = await getCollection('danhmuc');
+  const products = await getActiveProducts();
+  const categories = await getActiveCategories();
 
   return categories.map((cat) => ({
     params: { category: cat.id },
@@ -26,6 +30,7 @@ const { title, nav_label, description, seo_title, reviewed_by, updated } = categ
 // Bỏ ảnh khi file chưa được tạo (tránh og:image và schema trỏ tới ảnh 404).
 const image = publicImageExists(categoryInfo.data.image) ? categoryInfo.data.image : undefined;
 const pagePath = `/${category}`;
+const hasStock = stockRows.some((r) => r.danh_muc === category);
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
@@ -111,9 +116,9 @@ const schemaData = [
           <div class="grid" id="product-grid">
             {products.map((product) => (
               <article class="product-card" data-brand={product.data.brand} data-grade={productGrade(product) ?? ''}>
-                {(product.data.images?.[0] ?? product.data.image) && (
-                  <img src={product.data.images?.[0] ?? product.data.image} srcset={webpSrcset((product.data.images?.[0] ?? product.data.image)!)} sizes="(max-width: 600px) 100vw, 400px" alt={product.data.title} width="400" height="200" loading="lazy" decoding="async" />
-                )}
+                {productImages(product.data)[0] && (
+              <img src={productImages(product.data)[0].src} srcset={webpSrcset(productImages(product.data)[0].src)} sizes="(max-width: 600px) 100vw, 400px" alt={productImages(product.data)[0].alt} width="400" height="200" loading="lazy" decoding="async" />
+            )}
                 <div class="product-info">
                   <div class="tags">
                     <span class="badge">{product.data.brand}</span>
@@ -129,7 +134,7 @@ const schemaData = [
               </article>
             ))}
           </div>
-        ) : (
+        ) : !hasStock && (
           <div class="empty-state">
             <p><strong>Danh sách sản phẩm {(nav_label ?? title).toLowerCase()} đang được cập nhật.</strong></p>
             <p>Các mã hàng phổ biến và sản phẩm tương đương được liệt kê trong phần nội dung bên dưới. Gửi yêu cầu để nhận báo giá và kiểm tra tồn kho.</p>
@@ -137,8 +142,10 @@ const schemaData = [
           </div>
         )}
 
+        <StockTable category={category!} label={nav_label ?? title} pages={products.map((p) => p.id)} />
+
         <div class="seo-content markdown-body">
-          <Content />
+          <ContentBody><Content /></ContentBody>
           <QuoteCta item={nav_label ?? title} />
           {(reviewed_by || updated) && (
             <p class="review-meta">

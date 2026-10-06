@@ -1,4 +1,5 @@
 ---
+active: true
 title: "Mỡ Chịu Nhiệt (Mỡ Bò Chịu Nhiệt) 150 – 300 Độ C"
 nav_label: "Mỡ chịu nhiệt"
 order: 3

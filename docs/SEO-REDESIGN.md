@@ -11,7 +11,7 @@
 | Viết lại 9 danh mục, thêm dầu truyền nhiệt và dầu cắt gọt | ✅ Xong | `src/content/danhmuc/*.md` |
 | Canonical tự sinh từ `PUBLIC_SITE_URL`, không có `/` cuối | ✅ Xong | `src/lib/site.ts`, `src/components/SEO.astro` |
 | Sửa lỗi redirect 307 sang URL có `/` cuối (`build.format: 'file'`) | ✅ Xong | `astro.config.mjs` |
-| Noindex mặc định, chỉ index khi `PUBLIC_INDEXABLE=true` | ✅ Xong | `src/lib/site.ts`, `SEO.astro` |
+| Index mặc định từ 06/10/2026, chặn bằng `PUBLIC_INDEXABLE=false` | ✅ Xong | `src/lib/site.ts`, `SEO.astro` |
 | `robots.txt` có dòng Sitemap; sitemap loại trang cảm ơn | ✅ Xong | `src/pages/robots.txt.ts`, `astro.config.mjs` |
 | og:url, og:image, og:locale, Twitter card; bỏ meta keywords | ✅ Xong | `SEO.astro` |
 | Schema Organization + LocalBusiness + WebSite toàn site; BreadcrumbList, CollectionPage, ItemList, Product, Article | ✅ Xong | `Layout.astro`, các trang |
@@ -37,7 +37,7 @@
 | Biến | Loại | Ví dụ | Tác dụng |
 | :--- | :--- | :--- | :--- |
 | `PUBLIC_SITE_URL` | Build | `https://daucongnghiephp.com.vn` | Domain chính thức cho canonical, sitemap, schema, robots. Mặc định là domain chính thức |
-| `PUBLIC_INDEXABLE` | Build | `true` | **Chỉ đặt `true` trên bản production chính thức.** Không đặt thì mọi trang có `noindex` |
+| `PUBLIC_INDEXABLE` | Build | `false` | Từ 06/10/2026 mặc định cho index. Chỉ đặt `false` khi muốn chặn Google (bảo trì, staging riêng) |
 | `PUBLIC_GA4_ID` | Build | `G-XXXXXXX` | Bật Google Analytics 4 và các sự kiện chuyển đổi |
 | `QUOTE_TELEGRAM_BOT_TOKEN` | Secret | `123456:ABC…` | Gửi yêu cầu báo giá vào Telegram (tạo bot bằng @BotFather) |
 | `QUOTE_TELEGRAM_CHAT_ID` | Secret | `-100123…` | Nhóm / người nhận tin Telegram |

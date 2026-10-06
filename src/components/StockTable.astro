@@ -1,0 +1,76 @@
+---
+// Bảng "Sản phẩm có tại kho" trên trang danh mục, chia Nhập khẩu / Trong nước và hãng khác.
+// Dữ liệu: src/data/san-pham-kho.json (sinh bằng scripts/build-product-table.py, không có giá, không có tồn kho).
+// Dòng nào có trang sản phẩm riêng (trường `trang`) thì tên là link.
+import rows from '../data/san-pham-kho.json';
+
+interface Row {
+  ten: string;
+  hang: string;
+  danh_muc: string;
+  cap: string;
+  quy_cach: string[];
+  nguon: 'nhap-khau' | 'trong-nuoc' | 'khac';
+  trang?: string;
+}
+
+interface Props {
+  category: string;
+  label: string;
+  /** Slug các trang sản phẩm đang có trong danh mục, để không link tới trang chưa tồn tại. */
+  pages: string[];
+}
+
+const { category, label, pages } = Astro.props;
+const list = (rows as Row[]).filter((r) => r.danh_muc === category);
+const groups = [
+  { title: 'Hàng nhập khẩu', items: list.filter((r) => r.nguon === 'nhap-khau') },
+  { title: 'Sản xuất trong nước và thương hiệu khác', items: list.filter((r) => r.nguon !== 'nhap-khau') },
+].filter((g) => g.items.length);
+const href = (r: Row) => (r.trang && pages.includes(r.trang) ? `/${category}/${r.trang}` : null);
+---
+
+{list.length > 0 && (
+  <section class="stock-table" aria-labelledby="stock-title">
+    <h2 id="stock-title">{label} có tại kho</h2>
+    <p class="stock-note">
+      {list.length} dòng sản phẩm đang kinh doanh. Bấm "Báo giá" để nhận giá và thời gian giao. Quy cách theo thực tế từng lô hàng.
+    </p>
+    {groups.map((g) => (
+      <>
+        <h3>{g.title}</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Sản phẩm</th><th>Hãng</th><th>Cấp</th><th>Quy cách</th><th><span class="sr-only">Báo giá</span></th></tr></thead>
+            <tbody>
+              {g.items.map((r) => (
+                <tr>
+                  <td>{href(r) ? <a href={href(r)!}>{r.ten}</a> : r.ten}</td>
+                  <td>{r.hang}</td>
+                  <td>{r.cap || '–'}</td>
+                  <td>{r.quy_cach.join(' · ')}</td>
+                  <td><a class="quote" href={`/bao-gia?sp=${encodeURIComponent(r.ten)}`} data-track="add_to_quote">Báo giá</a></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    ))}
+  </section>
+)}
+
+<style>
+  .stock-table { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: clamp(18px, 3vw, 28px); margin-bottom: 30px; }
+  .stock-table h2 { color: var(--color-primary); margin-bottom: 6px; font-size: 1.35rem; }
+  .stock-table h3 { color: var(--color-primary); margin: 20px 0 8px; font-size: 1.05rem; }
+  .stock-note { color: var(--color-text-light); font-size: 0.92rem; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+  th, td { border-bottom: 1px solid var(--border-color); padding: 9px 10px; text-align: left; vertical-align: top; }
+  th { background: #f1f5f9; font-weight: 600; white-space: nowrap; }
+  td:first-child { font-weight: 600; min-width: 170px; }
+  td:first-child a { color: var(--color-accent); text-decoration: underline; }
+  .quote { color: var(--color-accent); font-weight: 600; white-space: nowrap; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>

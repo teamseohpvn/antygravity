@@ -1,4 +1,5 @@
 ---
+active: true
 title: "Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) NLGI 0, 1, 2, 3"
 nav_label: "Mỡ bôi trơn (mỡ bò)"
 order: 2

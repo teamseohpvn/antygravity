@@ -1,7 +1,8 @@
 ---
+active: true
 title: "Dầu Máy Nén Khí (Nhớt Máy Nén Khí) Trục Vít & Piston"
 nav_label: "Dầu máy nén khí"
-order: 5
+order: 8
 summary: "Máy nén khí trục vít, piston"
 seo_title: "Dầu Máy Nén Khí Trục Vít, Piston 32, 46, 68 – Báo Giá Sỉ"
 description: "Dầu nén khí trục vít, piston ISO VG 32, 46, 68, 100: Shell Corena, Castrol Aircol, dầu tương đương cho Kobelco, Hitachi, Atlas Copco. Có CO/CQ, VAT."
