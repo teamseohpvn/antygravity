@@ -51,10 +51,10 @@ images:
 
 related_posts: ["huong-dan-chon-do-nhot"]
 tags: ["iso-vg-68", "chong-mai-mon", "goc-kem"]
-updated: 2026-10-05
+updated: 2026-10-06
 ---
 
-**Castrol Hyspin AWS 68** là dầu nhớt thủy lực chống mài mòn cấp độ nhớt ISO VG 68 của Castrol. Dầu được pha chế từ dầu gốc khoáng tinh chế cao với phụ gia chống mài mòn gốc kẽm đã ổn định hóa. Dầu đạt loại **HM** theo ISO 11158 và **HLP** theo DIN 51524-2, dùng để bôi trơn và bảo vệ hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và piston.
+**Castrol Hyspin AWS 68** là dầu nhớt thủy lực chống mài mòn cấp độ nhớt ISO VG 68 của Castrol. Dầu được pha chế từ dầu gốc khoáng tinh chế cao với phụ gia chống mài mòn gốc kẽm đã ổn định hóa. Dầu đạt loại **HM** theo [ISO 11158](https://www.iso.org/obp/ui/#iso:std:iso:11158:en) và **HLP** theo DIN 51524-2, dùng để bôi trơn và bảo vệ hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và piston.
 
 Hàng có sẵn tại kho: Castrol Hyspin AWS 68 **phuy 209 lít**, có CO/CQ và hóa đơn VAT. Cấp **AWS 46** nhận đặt theo yêu cầu. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
@@ -63,7 +63,7 @@ Hàng có sẵn tại kho: Castrol Hyspin AWS 68 **phuy 209 lít**, có CO/CQ v�
 - **Chống mài mòn cho bơm áp cao.** Hệ phụ gia kẽm tạo màng bảo vệ trên bề mặt kim loại. Dầu đạt cấp 12 trong thử tải bánh răng FZG, nên dùng được cả cho bánh răng tải nhẹ trong hệ thủy lực.
 - **Bền oxy hóa, ít cặn.** Thử TOST trên 2.500 giờ. Dầu lâu xuống cấp, ít tạo bùn trong bồn và ít bám van. Theo TDS Castrol, hệ thống sạch hơn giúp kéo dài tuổi thọ dầu và có thể kéo dài tuổi thọ máy.
 - **Tách nước nhanh, lọc tốt khi lẫn nước.** Nước tách khỏi dầu trong khoảng 15 phút ở 54 °C. Lọc ít bị nghẹt khi hệ thống bị lẫn nước, nên kéo dài tuổi thọ lõi lọc, phù hợp xưởng ẩm.
-- **Chống gỉ và ăn mòn cho kim loại đen và kim loại màu** (thép, đồng, đồng thau trong hệ thủy lực). Đạt thử gỉ ASTM D665 cả với nước cất và nước biển tổng hợp.
+- **Chống gỉ và ăn mòn cho kim loại đen và kim loại màu** (thép, đồng, đồng thau trong hệ thủy lực). Đạt thử gỉ [ASTM D665](https://store.astm.org/d0665-19.html) cả với nước cất và nước biển tổng hợp.
 - **Tương thích phớt thông dụng:** nitrile, silicone, fluoropolymer.
 - **Được nhà sản xuất bơm phê duyệt:** Parker Denison HF-0, HF-1, HF-2 và Eaton.
 
@@ -99,7 +99,7 @@ Lấy mẫu dầu trong bồn khi máy vừa chạy, để cạnh một chai Hys
 | Chỉ tiêu | Ngưỡng với Hyspin AWS 68 | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (lệch quá ±10% so với 68 mm²/s) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
-| Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo ASTM D6224) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
+| Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://store.astm.org/d6224-16.html)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
 | Nước | Trên 0,05% (500 ppm) | Xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
 Cách lấy mẫu, đọc kết quả và các dấu hiệu dầu kém chất lượng được trình bày đầy đủ trong bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
