@@ -29,14 +29,14 @@ tds_url: "https://www.castrol.com/content/dam/castrol/country-sites-new/en_us/un
 packaging:
   - { name: "Phuy 209 L (cấp 68)", sku: "CASTR68" }
 stock_status: "co-san"
-equivalents: ["ENEOS Super Hyrando 68", "Caltex Hydraulic Oil AW 68", "Shell Tellus S2 MX 68"]
+equivalents: ["ENEOS Super Hyrando 68", "Shell Tellus S2 MX 68", "Caltex Hydraulic Oil AW 68", "VHP Isonas AW 68", "EMI AW 68", "X-One AW 68", "Cosmo Hydro AW 68", "EMER LAW 68"]
 
 applications:
-  - "Máy ép nhựa, máy ép thủy lực, máy chấn tôn, máy dập"
-  - "Bơm bánh răng, bơm cánh gạt, bơm piston cần dầu chống mài mòn"
-  - "Bộ biến tốc, ổ đỡ và bánh răng tải nhẹ dùng chung dầu với hệ thủy lực"
+  - "Thiết bị: máy ép nhựa, máy ép thủy lực, máy chấn tôn, máy dập chạy liên tục 2–3 ca"
+  - "Loại bơm: bơm bánh răng, bơm cánh gạt, bơm piston cần dầu chống mài mòn (Parker Denison HF-0/HF-1/HF-2, Eaton)"
+  - "Dùng chung dầu: bộ biến tốc, ổ đỡ và bánh răng tải nhẹ trong hệ thủy lực"
 not_for:
-  - "Bơm có chi tiết mạ bạc hoặc yêu cầu dầu không kẽm"
+  - "Bơm có chi tiết mạ bạc hoặc yêu cầu dầu không tro, không kẽm (ashless)"
   - "Máy làm việc ngoài trời lạnh cần dầu chỉ số độ nhớt cao (HV/HVLP)"
 warnings:
   - "Tránh để dầu tiếp xúc lâu với da; nếu dính da, rửa ngay bằng xà phòng và nước."
@@ -54,16 +54,16 @@ tags: ["iso-vg-68", "chong-mai-mon", "goc-kem"]
 updated: 2026-10-05
 ---
 
-**Castrol Hyspin AWS 68** là dầu thủy lực chống mài mòn cấp độ nhớt ISO VG 68 của Castrol. Dầu pha từ dầu gốc khoáng tinh chế cao với phụ gia chống mài mòn gốc kẽm đã ổn định hóa. Dầu đạt loại **HM** theo ISO 11158 và **HLP** theo DIN 51524-2, dùng cho hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và piston.
+**Castrol Hyspin AWS 68** là dầu nhớt thủy lực chống mài mòn cấp độ nhớt ISO VG 68 của Castrol. Dầu được pha chế từ dầu gốc khoáng tinh chế cao với phụ gia chống mài mòn gốc kẽm đã ổn định hóa. Dầu đạt loại **HM** theo ISO 11158 và **HLP** theo DIN 51524-2, dùng để bôi trơn và bảo vệ hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và piston.
 
 Hàng có sẵn tại kho: Castrol Hyspin AWS 68 **phuy 209 lít**, có CO/CQ và hóa đơn VAT. Cấp **AWS 46** nhận đặt theo yêu cầu. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Tính năng chính
 
 - **Chống mài mòn cho bơm áp cao.** Hệ phụ gia kẽm tạo màng bảo vệ trên bề mặt kim loại. Dầu đạt cấp 12 trong thử tải bánh răng FZG, nên dùng được cả cho bánh răng tải nhẹ trong hệ thủy lực.
-- **Bền oxy hóa, ít cặn.** Thử TOST trên 2.500 giờ. Dầu lâu xuống cấp, ít tạo bùn trong bồn và ít bám van.
-- **Tách nước nhanh, lọc tốt khi lẫn nước.** Nước tách khỏi dầu trong khoảng 15 phút ở 54 °C. Lọc ít bị nghẹt khi hệ thống bị lẫn nước, phù hợp xưởng ẩm.
-- **Chống gỉ cho kim loại đen và kim loại màu.** Đạt thử gỉ cả với nước cất và nước biển tổng hợp.
+- **Bền oxy hóa, ít cặn.** Thử TOST trên 2.500 giờ. Dầu lâu xuống cấp, ít tạo bùn trong bồn và ít bám van. Theo TDS Castrol, hệ thống sạch hơn giúp kéo dài tuổi thọ dầu và có thể kéo dài tuổi thọ máy.
+- **Tách nước nhanh, lọc tốt khi lẫn nước.** Nước tách khỏi dầu trong khoảng 15 phút ở 54 °C. Lọc ít bị nghẹt khi hệ thống bị lẫn nước, nên kéo dài tuổi thọ lõi lọc, phù hợp xưởng ẩm.
+- **Chống gỉ và ăn mòn cho kim loại đen và kim loại màu** (thép, đồng, đồng thau trong hệ thủy lực). Đạt thử gỉ ASTM D665 cả với nước cất và nước biển tổng hợp.
 - **Tương thích phớt thông dụng:** nitrile, silicone, fluoropolymer.
 - **Được nhà sản xuất bơm phê duyệt:** Parker Denison HF-0, HF-1, HF-2 và Eaton.
 
@@ -83,19 +83,34 @@ Chọn cấp 68 khi sổ tay máy yêu cầu ISO VG 68, hoặc khi dầu trong b
 
 Nếu cần một mã dầu Nhật cùng cấp, xem [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68). Nếu cần phương án tiết kiệm hơn cho máy hay rò rỉ, xem [Caltex Hydraulic AW 68](/dau-thuy-luc/caltex-hydraulic-aw-68).
 
+## Kiểm tra nhanh dầu đang dùng
+
+Lấy mẫu dầu trong bồn khi máy vừa chạy, để cạnh một chai Hyspin AWS 68 mới làm mốc so sánh.
+
+**Quan sát không cần dụng cụ:**
+
+- **Màu và độ trong:** dầu đục hoặc màu sữa là đã lẫn nước. Dầu sẫm màu nhanh là dấu hiệu oxy hóa hoặc quá nhiệt.
+- **Mùi:** mùi khét, chua là dầu đã oxy hóa nặng.
+- **Nhỏ dầu lên tấm kim loại nóng:** nghe tiếng lách tách là có nước.
+- **Nhỏ một giọt lên giấy lọc:** vết loang có quầng đen đậm ở giữa là nhiều cặn.
+
+**Ba phép đo nhanh và ngưỡng nên thay dầu:**
+
+| Chỉ tiêu | Ngưỡng với Hyspin AWS 68 | Dụng cụ đo tại xưởng |
+| :--- | :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (lệch quá ±10% so với 68 mm²/s) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo ASTM D6224) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
+| Nước | Trên 0,05% (500 ppm) | Xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+
+Cách lấy mẫu, đọc kết quả và các dấu hiệu dầu kém chất lượng được trình bày đầy đủ trong bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ## Câu hỏi thường gặp
 
 ### Castrol Hyspin AWS 68 có trộn với dầu thủy lực hãng khác được không?
 Về nguyên tắc nên thay toàn bộ, không châm lẫn. Nếu bắt buộc phải châm bổ sung, chỉ trộn với dầu cùng loại HM/HLP cùng cấp 68, và theo dõi bọt và độ trong của dầu sau vài ngày chạy.
 
 ### Bao lâu thì thay dầu thủy lực Castrol Hyspin AWS?
-Không có một mốc giờ chạy đúng cho mọi máy. Cùng là Castrol Hyspin AWS, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả test dầu đang dùng, so với dầu mới:
-
-- **Độ nhớt ở 40 °C** lệch quá ±10%: dầu mới 68 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 61,2–74,8 mm²/s là vượt ngưỡng. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
-- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
-- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
-
-Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Không có một mốc giờ chạy đúng cho mọi máy. Cùng là Castrol Hyspin AWS, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả test dầu đang dùng so với dầu mới, với các ngưỡng ở mục "Kiểm tra nhanh dầu đang dùng" phía trên. Chu kỳ test và bảng quyết định thay dầu xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Dầu có dùng cho bơm Denison không?
 Có. Dòng Hyspin AWS được Parker Denison phê duyệt HF-0, HF-1 và HF-2 cho cấp độ nhớt phù hợp.
