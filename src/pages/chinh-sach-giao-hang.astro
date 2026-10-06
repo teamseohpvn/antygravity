@@ -1,0 +1,82 @@
+---
+import PolicyPage from '../components/PolicyPage.astro';
+import { BUSINESS, ADDRESS_FULL, AREA_TEXT, LEGAL_NAME, KCN_NEAR, KCN_FAR } from '../lib/site';
+import { PROMO } from '../lib/promo';
+
+const CUTOFF = PROMO.sameDayCutoff;
+---
+
+<PolicyPage
+  path="/chinh-sach-giao-hang"
+  title="Chính sách giao hàng"
+  seoTitle="Chính Sách Giao Hàng Dầu Công Nghiệp – Hải Phòng và Miền Bắc"
+  description={`Phạm vi, thời gian, phí giao hàng và cách kiểm tra khi nhận dầu nhớt, mỡ công nghiệp. Kho tại ${AREA_TEXT}, giao trong ngày tới các KCN gần kho.`}
+  updated="2026-10-06"
+>
+  <p>
+    Chính sách này áp dụng cho mọi đơn hàng dầu nhớt và mỡ bôi trơn công nghiệp đặt với {LEGAL_NAME} qua website, điện thoại hoặc Zalo.
+    Hàng xuất từ kho tại {ADDRESS_FULL}.
+  </p>
+
+  <h2>1. Phạm vi giao hàng</h2>
+  <ul>
+    <li><strong>TP Hải Phòng</strong>, gồm cả khu vực Hải Dương cũ.</li>
+    <li><strong>Các tỉnh lân cận:</strong> Bắc Ninh, Hưng Yên, Quảng Ninh, Hà Nội, Vĩnh Phúc.</li>
+    <li><strong>Các tỉnh miền Bắc khác:</strong> giao qua nhà xe hoặc đơn vị vận chuyển, thời gian báo cùng báo giá.</li>
+  </ul>
+
+  <h2>2. Thời gian giao hàng</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Khu vực</th><th>Thời gian</th></tr></thead>
+      <tbody>
+        <tr><td>KCN gần kho: {KCN_NEAR.join(', ')}</td><td>Giao trong ngày khi chốt đơn trước {CUTOFF}, thứ Hai đến thứ Sáu</td></tr>
+        <tr><td>KCN xa hơn: {KCN_FAR.join(', ')}</td><td>Theo lịch hẹn, báo cụ thể khi xác nhận đơn</td></tr>
+        <tr><td>Các tỉnh miền Bắc khác</td><td>Báo cùng báo giá, tùy tuyến xe</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    Thời gian trên áp dụng cho hàng có sẵn trong kho. Với hàng phải đặt từ hãng, chúng tôi báo thời gian dự kiến khi gửi báo giá.
+    Đơn chốt sau {CUTOFF}, vào thứ Bảy, Chủ nhật hoặc ngày lễ được xếp giao vào ngày làm việc kế tiếp.
+  </p>
+
+  <h2>3. Phí giao hàng</h2>
+  <p>
+    Phí giao hàng phụ thuộc quãng đường, số lượng và quy cách (phuy 200–209 L, xô, can). Phí được ghi rõ trong báo giá trước khi bạn xác nhận đơn,
+    không phát sinh thêm khi giao. Một số chương trình ưu đãi có miễn phí giao hàng, điều kiện ghi trên trang chương trình.
+  </p>
+
+  <h2>4. Chứng từ đi kèm</h2>
+  <ul>
+    <li>Phiếu giao hàng ghi tên hàng, quy cách, số lượng.</li>
+    <li>Hóa đơn giá trị gia tăng (VAT) điện tử theo thông tin doanh nghiệp bạn cung cấp. Xem thêm <a href="/chinh-sach-thanh-toan">Chính sách thanh toán</a>.</li>
+    <li>CO/CQ theo lô hàng với các hãng có cấp chứng từ này. Bảng thông số kỹ thuật (TDS) và phiếu an toàn (SDS) gửi kèm khi bạn yêu cầu.</li>
+  </ul>
+
+  <h2>5. Nhận hàng và kiểm tra</h2>
+  <p>Khi nhận hàng, vui lòng kiểm tra cùng nhân viên giao hàng:</p>
+  <ol>
+    <li>Tên sản phẩm, cấp độ nhớt và quy cách đúng với đơn đã xác nhận.</li>
+    <li>Số lượng phuy, xô, can.</li>
+    <li>Nắp và niêm phong còn nguyên, vỏ không thủng, không rò rỉ.</li>
+  </ol>
+  <p>
+    Nếu hàng sai chủng loại, thiếu số lượng, hoặc vỏ bị thủng, rò rỉ do vận chuyển, hãy ghi chú ngay trên phiếu giao hàng và báo cho chúng tôi
+    trong ngày qua hotline / Zalo {BUSINESS.phoneDisplay}. Chúng tôi sẽ đổi hoặc giao bù sau khi kiểm tra.
+  </p>
+  <p>
+    Phuy 200–209 L nặng khoảng 180–200 kg. Vui lòng báo trước nếu nơi nhận không có xe nâng hoặc lối vào hạn chế, để chúng tôi bố trí xe và người bốc xếp phù hợp.
+  </p>
+
+  <h2>6. Nhận hàng tại kho</h2>
+  <p>
+    Bạn có thể đến lấy hàng tại kho: {ADDRESS_FULL}. Vui lòng gọi trước qua {BUSINESS.phoneDisplay} để chúng tôi chuẩn bị hàng và chứng từ.
+  </p>
+
+  <h2>7. Liên hệ</h2>
+  <p>
+    Hotline / Zalo: <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a>.
+    Hoặc gửi <a href="/bao-gia">yêu cầu báo giá</a>, ghi rõ địa điểm nhận hàng để được báo phí và thời gian giao chính xác.
+  </p>
+</PolicyPage>

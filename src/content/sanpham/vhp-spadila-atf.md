@@ -57,6 +57,11 @@ Thông số kỹ thuật của Spadila ATF sẽ được cập nhật theo TDS c
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu VHP Spadila ATF?
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
+
+Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Dexron II và Dexron III khác nhau thế nào?
 Dexron III là tiêu chuẩn mới hơn của GM, yêu cầu cao hơn về độ bền oxy hóa và đặc tính ma sát. Xe yêu cầu Dexron II thường dùng được dầu đạt Dexron III, còn chiều ngược lại thì không chắc chắn. Hãy theo sổ tay xe.
 

@@ -74,8 +74,10 @@ Thông số theo bảng của ENEOS Việt Nam. Hai cấp có độ nhớt gần
 ### Dầu GL-5 có dùng cho hộp số tay được không?
 Được, với hộp số tay tải nặng không đồng tốc như hộp số xe tải đời cũ, xe ben. Hộp số có bộ đồng tốc bằng đồng mà sổ tay chỉ ghi GL-4 thì nên dùng đúng dầu GL-4, vì phụ gia GL-5 có thể làm đồng mòn nhanh hơn.
 
-### Bao lâu thì thay dầu cầu?
-Theo mốc ghi trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó và kiểm tra mức dầu cầu định kỳ, nhất là sau khi phớt bị rò.
+### Bao lâu thì thay dầu ENEOS Gear Oil GL-5?
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
+
+Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (80W-90: dầu mới 145,2 mm²/s → ngưỡng 130,7–159,7 mm²/s; 90: dầu mới 195,3 mm²/s → ngưỡng 175,8–214,8 mm²/s) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Có xuất hóa đơn và CO/CQ không?
 Có. Mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu. Gửi yêu cầu ở trang [báo giá](/bao-gia).

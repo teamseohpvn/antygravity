@@ -1,0 +1,89 @@
+---
+import PolicyPage from '../components/PolicyPage.astro';
+import { GA4_ID } from '../lib/site';
+const gaSuffix = GA4_ID.replace(/^G-/, '');
+---
+
+<PolicyPage
+  path="/tuy-chon-cookie"
+  title="Tùy chọn cookie"
+  seoTitle="Tùy Chọn Cookie – Dầu Công Nghiệp HP"
+  description="Xem website dùng những cookie nào và bật, tắt cookie thống kê Google Analytics. Website không dùng cookie quảng cáo."
+  updated="2026-10-06"
+>
+  <p>
+    Cookie là tệp nhỏ trình duyệt lưu lại khi bạn xem website. Chúng tôi chỉ dùng cookie cần thiết và cookie thống kê.
+    <strong>Website không dùng cookie quảng cáo.</strong>
+  </p>
+
+  <section class="cookie-settings" aria-labelledby="cs-title">
+    <h2 id="cs-title">Lựa chọn của bạn</h2>
+    <div class="cs-row">
+      <div>
+        <h3>Cần thiết</h3>
+        <p>Ghi nhớ lựa chọn cookie của bạn và giúp website hoạt động. Luôn bật.</p>
+      </div>
+      <span class="cs-badge">Luôn bật</span>
+    </div>
+    <div class="cs-row">
+      <div>
+        <h3><label for="cs-analytics">Thống kê (Google Analytics)</label></h3>
+        <p>Đếm lượt truy cập, trang được xem nhiều và nguồn truy cập để cải thiện nội dung. Không dùng để quảng cáo.</p>
+      </div>
+      <input type="checkbox" id="cs-analytics" class="cs-switch" />
+    </div>
+    <div class="cs-actions">
+      <button type="button" class="btn-primary" id="cs-save">Lưu lựa chọn</button>
+      <p class="cs-status" id="cs-status" role="status"></p>
+    </div>
+  </section>
+
+  <h2>Danh sách cookie</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tên</th><th>Loại</th><th>Mục đích</th><th>Thời hạn</th></tr></thead>
+      <tbody>
+        <tr><td><code>hp-cookie-consent-v1</code></td><td>Cần thiết (lưu trong trình duyệt)</td><td>Ghi nhớ lựa chọn cookie của bạn</td><td>Đến khi bạn xóa dữ liệu trình duyệt</td></tr>
+        <tr><td><code>_ga</code></td><td>Thống kê</td><td>Phân biệt các lượt truy cập ẩn danh của Google Analytics</td><td>2 năm</td></tr>
+        <tr><td><code>_ga_{gaSuffix}</code></td><td>Thống kê</td><td>Lưu trạng thái phiên truy cập</td><td>2 năm</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    Khi bạn từ chối hoặc chưa chọn, Google Analytics không ghi cookie <code>_ga</code>. Website vẫn hoạt động đầy đủ.
+    Cách Google xử lý dữ liệu: <a href="https://policies.google.com/technologies/partner-sites?hl=vi" target="_blank" rel="noopener">Cách Google sử dụng thông tin từ các trang web dùng dịch vụ của Google</a>.
+  </p>
+  <p>
+    Bạn cũng có thể xóa cookie trong phần cài đặt của trình duyệt. Xem thêm <a href="/chinh-sach-bao-mat">Chính sách bảo mật</a>.
+  </p>
+</PolicyPage>
+
+<style>
+  .cookie-settings { border: 1px solid var(--border-color); border-radius: 8px; padding: 4px 20px 20px; margin-bottom: 24px; }
+  .cs-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--border-color); }
+  .cs-row p { margin: 0; font-size: 0.95rem; }
+  .cs-badge { font-size: 0.85rem; font-weight: 600; color: var(--color-text-light); white-space: nowrap; }
+  .cs-switch { width: 22px; height: 22px; flex-shrink: 0; accent-color: var(--color-accent); cursor: pointer; }
+  .cs-actions { display: flex; align-items: center; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
+  .cs-actions button { border: none; font: inherit; cursor: pointer; }
+  .cs-status { margin: 0; color: var(--color-text-light); }
+</style>
+
+<script>
+  const box = document.getElementById('cs-analytics') as HTMLInputElement;
+  const status = document.getElementById('cs-status') as HTMLElement;
+  const api = () => (window as any).hpCookie as { read(): string | null; set(v: 'granted' | 'denied'): void } | undefined;
+
+  const show = () => {
+    const v = api()?.read() ?? null;
+    box.checked = v === 'granted';
+    status.textContent = v ? `Đang chọn: ${v === 'granted' ? 'cho phép' : 'từ chối'} cookie thống kê.` : 'Bạn chưa chọn. Cookie thống kê đang tắt.';
+  };
+  // window.hpCookie do CookieBanner (cuối trang) tạo ra; chờ load để chắc chắn script đó đã chạy.
+  window.addEventListener('load', show);
+  document.getElementById('cs-save')!.addEventListener('click', () => {
+    api()?.set(box.checked ? 'granted' : 'denied');
+    show();
+    status.textContent = 'Đã lưu. ' + status.textContent;
+  });
+</script>

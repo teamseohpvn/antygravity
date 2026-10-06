@@ -75,5 +75,7 @@ Daphne Super Screw được Idemitsu thiết kế riêng cho máy nén khí tr�
 ### Khi thay sang Daphne Super Screw có cần súc rửa không?
 Nên xả hết dầu cũ, thay lọc dầu và kiểm tra bộ tách dầu. Nếu dầu cũ đã đen hoặc có cặn, nên súc rửa trước để dầu mới không bị nhiễm bẩn ngay từ đầu.
 
-### Bao lâu thì thay dầu máy nén khí?
-Tùy nhiệt độ xả, độ sạch của không khí hút vào và khuyến cáo của hãng máy. Nên theo dõi màu dầu và trị số axit. Thay dầu cùng lúc với lọc dầu và lọc gió.
+### Bao lâu thì thay dầu máy nén khí Idemitsu Daphne Super Screw?
+Theo mốc giờ chạy của hãng máy nén, nhưng nên điều chỉnh theo kết quả test. Dầu máy nén khí trục vít làm việc ở nhiệt độ xả cao nên bị oxy hóa nhanh, và **trị số axit** là chỉ tiêu báo sớm nhất: tăng thêm 0,2 mg KOH/g so với dầu mới là mức cảnh báo theo ASTM D6224. Đo tại chỗ bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+
+Kiểm tra kèm **độ nhớt ở 40 °C** (VG 32: dầu mới 32,5 mm²/s → ngưỡng 29,2–35,8 mm²/s; VG 46: dầu mới 45,3 mm²/s → ngưỡng 40,8–49,8 mm²/s) và nước ngưng ở đáy bình tách. Khi thay Idemitsu Daphne Super Screw, thay luôn lọc dầu và lọc tách. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).

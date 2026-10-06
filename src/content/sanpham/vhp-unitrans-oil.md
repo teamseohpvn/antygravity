@@ -88,6 +88,11 @@ Khi nhận dầu mới, bên điện lực hoặc đơn vị thí nghiệm thư�
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì phải thay dầu biến thế VHP Unitrans Oil?
+Dầu máy biến áp không thay theo thời gian mà theo kết quả thử nghiệm định kỳ: **điện áp đánh thủng**, **hàm lượng nước**, **trị số axit** và hệ số tổn hao điện môi, đối chiếu với hướng dẫn giám sát dầu cách điện IEC 60422. Kết quả kém thì lọc, sấy dầu; chỉ thay khi xử lý không đạt.
+
+Trị số axit và nước có thể kiểm tra nhanh tại trạm bằng kit (xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau)). Điện áp đánh thủng cần máy thử chuyên dụng hoặc phòng thí nghiệm.
+
 ### Unitrans Oil có châm lẫn với dầu biến thế đang có trong máy được không?
 VHP công bố dầu dùng chung hoặc pha trộn được với các dầu khoáng cách điện tiêu chuẩn tương đương. Trước khi châm, nên lấy mẫu dầu cũ đo điện áp đánh thủng và trị số axit. Dầu cũ đã xuống cấp nhiều thì nên lọc hoặc thay toàn bộ.
 

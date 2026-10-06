@@ -74,6 +74,11 @@ Cấp 68 phổ biến cho băng trượt ngang của máy tiện, máy phay cỡ
 
 ## Câu hỏi thường gặp
 
+### Dầu rãnh trượt SHL Synthway 68M có phải thay định kỳ không?
+Không theo kiểu xả cả bồn như dầu thủy lực. Dầu rãnh trượt bôi trơn kiểu mất dầu: dầu bơm lên băng trượt rồi trôi theo phoi, nên chỉ cần châm bổ sung. Việc cần kiểm tra là **bồn chứa SHL Synthway 68M** có bị nước làm mát hoặc dầu cắt gọt lọt vào không. Quét kem thử nước xuống đáy bồn là biết, xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong).
+
+Nếu dầu trong bồn đục hoặc loãng bất thường (lệch quá ±10% so với dầu mới: dầu mới 68 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 61,2–74,8 mm²/s là vượt ngưỡng), xả bồn, vệ sinh và nạp dầu mới. Cách đo độ nhớt xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Dùng dầu thủy lực 68 thay dầu rãnh trượt được không?
 Không nên. Dầu rãnh trượt được pha chế riêng cho bề mặt trượt chịu tải và chuyển động chậm. Dầu thủy lực không thiết kế cho mục đích này, dễ gây trượt giật và mòn băng trượt.
 

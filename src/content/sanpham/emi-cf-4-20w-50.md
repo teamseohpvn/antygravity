@@ -59,8 +59,10 @@ Thông số (TBN, độ nhớt, điểm chớp cháy) sẽ được cập nhật
 
 ## Câu hỏi thường gặp
 
-### Bao lâu thay dầu một lần?
-Theo mốc của nhà sản xuất xe hoặc máy. Xe chạy bụi, tải nặng, máy công trình chạy nhiều giờ nên thay sớm hơn mốc tiêu chuẩn.
+### Bao lâu thì thay dầu EMI CF-4 20W-50?
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn.
+
+Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của EMI CF-4 20W-50: **độ nhớt** lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Có xuất hóa đơn VAT không?
 Có. Gửi số xe, loại máy và lượng dầu dùng mỗi tháng qua trang [báo giá](/bao-gia).

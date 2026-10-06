@@ -75,6 +75,11 @@ Thông số theo bảng dữ liệu sản phẩm của Castrol Việt Nam (01/20
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu Castrol Vecton 15W-40 CI-4/E7?
+Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó.
+
+Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của Castrol Vecton 15W-40 CI-4/E7: **độ nhớt** lệch quá ±10% so với dầu mới (dầu mới 110 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 99–121 mm²/s là vượt ngưỡng), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Dùng Vecton thì thay dầu sau bao nhiêu km?
 Castrol không ghi số km cố định. Hãy theo mốc của nhà sản xuất xe cho dầu ACEA E7 hoặc Cummins CES 20078. Muốn kéo dài hơn mốc đó, nên theo dõi bằng phân tích dầu.
 

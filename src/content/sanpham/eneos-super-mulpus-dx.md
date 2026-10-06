@@ -84,6 +84,15 @@ Thông số theo bảng của ENEOS (05/2024). Luôn theo cấp độ nhớt ghi
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu thủy lực ENEOS Super Mulpus DX?
+Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết ENEOS Super Mulpus DX trong máy của bạn còn dùng được không, kiểm tra ba chỉ tiêu sau:
+
+- **Độ nhớt ở 40 °C** lệch quá ±10%: 46: dầu mới 46,5 mm²/s → ngưỡng 41,9–51,2 mm²/s; 68: dầu mới 68,2 mm²/s → ngưỡng 61,4–75 mm²/s. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
+- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
+
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Super Mulpus DX có thay được dầu rãnh trượt không?
 ENEOS ghi Super Mulpus DX đáp ứng yêu cầu của dầu rãnh trượt trên máy công cụ thông dụng. Với máy có rãnh trượt dài, tải nặng hoặc nhà sản xuất chỉ định dầu rãnh trượt riêng, hãy xem thêm nhóm [dầu rãnh trượt](/dau-ranh-truot).
 

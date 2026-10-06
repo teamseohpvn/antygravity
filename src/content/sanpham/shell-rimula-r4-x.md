@@ -77,6 +77,11 @@ Thông số theo bảng dữ liệu kỹ thuật của Shell. Thông số lô h�
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu Shell Rimula R4 X 15W-40?
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn.
+
+Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của Shell Rimula R4 X 15W-40: **độ nhớt** lệch quá ±10% so với dầu mới (dầu mới 109 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 98,1–119,9 mm²/s là vượt ngưỡng), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Shell R4 X khác Shell R4 L thế nào?
 R4 X là dầu tro thông thường (1,45 %), hợp với động cơ chưa có bộ lọc hạt. R4 L là dòng ít tro dành cho động cơ có DPF. Hai loại không thay thế nhau tùy tiện.
 

@@ -83,6 +83,11 @@ Thông số theo bảng của từng hãng. Cả hai là dầu máy nén khí tr
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu máy nén khí ENEOS Faircol RA 32?
+Theo mốc giờ chạy của hãng máy nén, nhưng nên điều chỉnh theo kết quả test. Dầu máy nén khí trục vít làm việc ở nhiệt độ xả cao nên bị oxy hóa nhanh, và **trị số axit** là chỉ tiêu báo sớm nhất: tăng thêm 0,2 mg KOH/g so với dầu mới là mức cảnh báo theo ASTM D6224. Đo tại chỗ bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+
+Kiểm tra kèm **độ nhớt ở 40 °C** (dầu mới 32,8 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 29,5–36 mm²/s là vượt ngưỡng) và nước ngưng ở đáy bình tách. Khi thay ENEOS Faircol RA 32, thay luôn lọc dầu và lọc tách. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Máy nén khí của tôi ghi dầu VG 46, dùng Faircol RA 32 được không?
 Không nên. Hãy dùng đúng cấp độ nhớt nhà sản xuất máy quy định. ENEOS có Faircol RA 46 và 68, nhưng hiện kho chúng tôi chỉ có sẵn cấp 32. Cần cấp khác, vui lòng [liên hệ](/lien-he) để đặt hàng.
 

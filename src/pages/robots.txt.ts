@@ -28,6 +28,7 @@ export const GET: APIRoute = () =>
       'Allow: /',
       'Disallow: /api/',
       'Disallow: /bao-gia-thanh-cong',
+      'Disallow: /quan-tri',
       '',
       ...TRAINING_BOTS.map((bot) => `User-agent: ${bot}`),
       'Disallow: /',

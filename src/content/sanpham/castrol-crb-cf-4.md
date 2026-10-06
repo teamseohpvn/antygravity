@@ -75,6 +75,11 @@ Thông số theo bảng dữ liệu sản phẩm của Castrol Việt Nam (06/20
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu Castrol CRB CF-4?
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn.
+
+Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của Castrol CRB CF-4: **độ nhớt** lệch quá ±10% so với dầu mới (20W-50: dầu mới 164 mm²/s → ngưỡng 147,6–180,4 mm²/s; 15W-40: dầu mới 105 mm²/s → ngưỡng 94,5–115,5 mm²/s), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Castrol CRB CF-4 khác CRB Turbomax ở đâu?
 CRB là cấp API CF-4, trị số kiềm 6,6 mg KOH/g. Turbomax là cấp CI-4, trị số kiềm 8,1–10 mg KOH/g, dùng được cho động cơ có EGR. Máy cũ không có EGR dùng CRB là đủ.
 

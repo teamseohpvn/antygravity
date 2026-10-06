@@ -76,6 +76,11 @@ Thông số theo bảng chỉ tiêu của VHP. Luôn chọn theo cấp ghi trong
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu VHP Spadila GL-5?
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
+
+Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (80W-90: dầu mới 146 mm²/s → ngưỡng 131,4–160,6 mm²/s; 85W-140: dầu mới 358 mm²/s → ngưỡng 322,2–393,8 mm²/s) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Spadila GL-5 có dùng cho xe máy được không?
 Có, cho hộp số xe máy nằm tách riêng khỏi động cơ (như bộ truyền cuối của xe tay ga) khi nhà sản xuất ghi dầu GL-5. Xe số có hộp số chung nhớt máy thì không dùng dầu cầu.
 

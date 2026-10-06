@@ -3,7 +3,7 @@ ma: "SP-BR-001"
 active: true   # Bật: có trong kho tháng 10/2026
 title: "ENEOS Bonnoc TS 220, 320"
 seo_title: "ENEOS Bonnoc TS 220, 320 – Dầu Bánh Răng Công Nghiệp"
-description: "Dầu bánh răng công nghiệp ENEOS Bonnoc TS 220 và 320, chịu cực áp, đạt DIN 51517-3 cho hộp giảm tốc kín. TS 220 xô 18 L có sẵn, CO/CQ, VAT."
+description: "Dầu bánh răng công nghiệp ENEOS Bonnoc TS 220 và 320, chịu cực áp, đạt DIN 51517-3 (CLP) cho hộp giảm tốc kín. TS 220 xô 18 L có sẵn, CO/CQ, VAT, giao từ Hải Phòng."
 keywords: ["eneos bonnoc ts 220", "eneos bonnoc ts 320", "bonnoc ts 220", "dầu bánh răng eneos", "dầu bánh răng 220", "dầu bánh răng 320"]
 category: "dau-banh-rang"
 categoryName: "Dầu Bánh Răng"
@@ -84,5 +84,11 @@ Cả hai đều là dầu bánh răng gốc khoáng chịu cực áp, đáp ứn
 ### Có dùng cho hộp số xe tải được không?
 Không. Hộp số và cầu xe dùng dầu theo cấp API GL-4/GL-5 và độ nhớt SAE (80W-90, 85W-140). Bonnoc TS là dầu cho hộp giảm tốc công nghiệp.
 
-### Bao lâu thì thay dầu bánh răng?
-Tùy nhiệt độ dầu và điều kiện làm việc. Nên theo khuyến cáo của nhà sản xuất hộp số, kết hợp lấy mẫu kiểm tra độ nhớt, hàm lượng nước và mạt kim loại.
+### Bao lâu thì thay dầu bánh răng ENEOS Bonnoc TS?
+Tùy nhiệt độ dầu, tải và mức nhiễm bẩn của hộp số, nên thay theo kết quả test thay vì theo lịch cố định. Với ENEOS Bonnoc TS, theo dõi:
+
+- **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (TS 220: dầu mới 220 mm²/s → ngưỡng 198–242 mm²/s; TS 320: dầu mới 315 mm²/s → ngưỡng 283,5–346,5 mm²/s). Dầu bánh răng đặc nên đo bằng [nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5) cỡ ống lớn.
+- **Trị số axit** tăng thêm 0,5 mg KOH/g so với dầu mới, mức cảnh báo cho dầu bánh răng theo ASTM D6224.
+- **Nước** trên 0,1%, nhất là hộp số đặt ngoài trời hoặc gần nguồn nước làm mát.
+
+Kiểm tra thêm mạt kim loại bám ở nút xả từ tính. Cách test chi tiết xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).

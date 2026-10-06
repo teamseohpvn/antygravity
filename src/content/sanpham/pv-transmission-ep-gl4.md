@@ -68,6 +68,11 @@ Thông số theo bảng của PVOIL Lube. Cầu xe tải nặng có bánh răng 
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu PVOIL PV Transmission?
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
+
+Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### GL-4 khác GL-5 thế nào?
 GL-5 có lượng phụ gia cực áp cao hơn, dành cho cầu hypoid tải nặng. GL-4 dùng cho hộp số tay và cầu tải vừa, ít gây mòn chi tiết đồng hơn. Dùng đúng cấp ghi trong sổ tay xe.
 

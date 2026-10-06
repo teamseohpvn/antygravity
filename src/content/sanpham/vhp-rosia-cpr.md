@@ -65,6 +65,11 @@ Luôn chọn theo cấp ghi trong sổ tay máy nén khí. Cần dầu Nhật c�
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu máy nén khí VHP Rosia CPR?
+Theo mốc giờ chạy của hãng máy nén, nhưng nên điều chỉnh theo kết quả test. Dầu máy nén khí trục vít làm việc ở nhiệt độ xả cao nên bị oxy hóa nhanh, và **trị số axit** là chỉ tiêu báo sớm nhất: tăng thêm 0,2 mg KOH/g so với dầu mới là mức cảnh báo theo ASTM D6224. Đo tại chỗ bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+
+Kiểm tra kèm **độ nhớt ở 40 °C** (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) và nước ngưng ở đáy bình tách. Khi thay VHP Rosia CPR, thay luôn lọc dầu và lọc tách. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Có trộn Rosia CPR với dầu máy nén đang dùng được không?
 Không nên trộn dầu máy nén khí khác hãng hoặc khác gốc dầu. Khi đổi sang Rosia CPR, nên xả hết dầu cũ, thay lọc dầu và lọc tách để tránh tạo bọt, tạo cặn.
 

@@ -57,6 +57,11 @@ Cấp API và thông số chi tiết sẽ được cập nhật theo TDS của V
 
 ## Câu hỏi thường gặp
 
+### Bao lâu thì thay dầu VHP P140?
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
+
+Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
 ### Dầu cầu 140 và 85W-140 khác nhau thế nào?
 Ở nhiệt độ làm việc, hai loại có độ nhớt gần nhau. Khác biệt ở lúc khởi động lạnh: 85W-140 chảy tốt hơn nên bánh răng được bôi trơn sớm hơn. Ở miền Bắc mùa hè, dầu 140 vẫn dùng tốt cho xe tải nặng.
 
