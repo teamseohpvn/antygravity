@@ -7,7 +7,7 @@ import {
   BUSINESS, ADDRESS_FULL, AREA_TEXT, SITE_NAME, LEGAL_NAME, LEGAL_SHORT, TAX_ID,
   BRANDS, KCN_NEAR, KCN_FAR, ORG_ID, absUrl, breadcrumbSchema,
 } from '../lib/site';
-import { NHAN_SU, personSchema, yearsOf } from '../lib/nhan-su';
+import { NHAN_SU, personSchema, yearsOf, hasProfile, personUrl } from '../lib/nhan-su';
 
 const categories = (await getActiveCategories()).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 
@@ -30,7 +30,7 @@ const schemaData = [
     mainEntity: { '@id': ORG_ID },
     isPartOf: { '@id': absUrl('/') + '#website' },
   },
-  ...NHAN_SU.map(personSchema),
+  ...NHAN_SU.filter((p) => !hasProfile(p)).map(personSchema),
   breadcrumbSchema(crumbs),
 ];
 const initials = (name: string) => name.split(' ').slice(-2).map((w) => w[0]).join('');
@@ -150,8 +150,8 @@ const initials = (name: string) => name.split(' ').slice(-2).map((w) => w[0]).jo
                 {p.since && <li><strong>Kinh nghiệm:</strong> làm chuyên môn từ năm {p.since} ({yearsOf(p)} năm)</li>}
                 {p.email && <li><strong>Email:</strong> <a href={`mailto:${p.email}`}>{p.email}</a></li>}
               </ul>
-              {p.bio ? p.bio.map((t) => <p>{t}</p>) : <p>{p.desc}</p>}
-              {p.sameAs?.map((u) => <p><a href={u} target="_blank" rel="noopener me">Hồ sơ LinkedIn</a></p>)}
+              <p>{p.desc}</p>
+              {hasProfile(p) && <p><a href={personUrl(p)} rel="author">Xem hồ sơ tác giả {p.name}</a></p>}
             </div>
           </section>
         ))}

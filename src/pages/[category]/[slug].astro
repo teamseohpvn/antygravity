@@ -6,7 +6,7 @@ import QuoteCta from '../../components/QuoteCta.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
-import { timNhanSu, DEFAULT_REVIEWER_ID, personRef, personUrl, personSchema } from '../../lib/nhan-su';
+import { timNhanSu, DEFAULT_REVIEWER_ID, personRef, personUrl, personSchema, credentialLine } from '../../lib/nhan-su';
 import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -121,7 +121,7 @@ const schemaData = [
         <p class="byline">
           {updatedText && <>Cập nhật: <time datetime={updatedIso}>{updatedText}</time> · </>}
           {reviewer
-            ? <>Tác giả: <a href={personUrl(reviewer)} rel="author">{reviewer.name}</a>, {reviewer.role}</>
+            ? <>Tác giả: <a href={personUrl(reviewer)} rel="author">{reviewer.name}</a>, {credentialLine(reviewer) ? `${credentialLine(reviewer)}, ` : ''}{reviewer.role}</>
             : <>Biên soạn: <a href="/gioi-thieu" rel="author">{authorName}</a></>}
         </p>
         <div class="tags">
