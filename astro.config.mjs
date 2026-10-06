@@ -61,11 +61,17 @@ export default defineConfig({
   trailingSlash: 'never',
   // Xuất /dau-thuy-luc.html thay vì /dau-thuy-luc/index.html để Cloudflare phục vụ
   // URL không có "/" cuối trực tiếp (trước đây bị redirect 307 sang URL có "/").
-  build: { format: 'file' },
+  // inlineStylesheets: CSS chỉ ~6 KB, nhúng thẳng vào HTML để bỏ file CSS chặn hiển thị (render-blocking).
+  build: { format: 'file', inlineStylesheets: 'always' },
   // Site không dùng Astro sessions. Tắt để adapter không yêu cầu KV binding "SESSION"
   // (deploy từng lỗi khi wrangler cố tạo lại namespace "antygravity-session" đã tồn tại).
   session: false,
-  vite: { define: { __PUBLIC_IMAGES__: JSON.stringify(PUBLIC_IMAGES) } },
+  vite: {
+    define: { __PUBLIC_IMAGES__: JSON.stringify(PUBLIC_IMAGES) },
+    // Giữ cú pháp @media (max-width: …) cũ: cú pháp mới (width<=…) không chạy trên iPhone iOS < 16.4
+    // và công cụ kiểm tra SEO báo "không dùng media query".
+    build: { cssTarget: ['chrome87', 'safari14', 'firefox78', 'edge88'] },
+  },
   adapter: cloudflare(),
   integrations: [
     sitemap({

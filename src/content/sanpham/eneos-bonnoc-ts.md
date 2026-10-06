@@ -3,7 +3,7 @@ ma: "SP-BR-001"
 active: true   # Bật: có trong kho tháng 10/2026
 title: "ENEOS Bonnoc TS 220, 320"
 seo_title: "ENEOS Bonnoc TS 220, 320 – Dầu Bánh Răng Công Nghiệp"
-description: "Dầu bánh răng công nghiệp ENEOS Bonnoc TS 220 và 320, chịu cực áp, đạt DIN 51517-3 cho hộp giảm tốc kín. TS 220 xô 18 L có sẵn, CO/CQ, VAT."
+description: "Dầu bánh răng công nghiệp ENEOS Bonnoc TS 220 và 320, chịu cực áp, đạt DIN 51517-3 (CLP) cho hộp giảm tốc kín. TS 220 xô 18 L có sẵn, CO/CQ, VAT, giao từ Hải Phòng."
 keywords: ["eneos bonnoc ts 220", "eneos bonnoc ts 320", "bonnoc ts 220", "dầu bánh răng eneos", "dầu bánh răng 220", "dầu bánh răng 320"]
 category: "dau-banh-rang"
 categoryName: "Dầu Bánh Răng"

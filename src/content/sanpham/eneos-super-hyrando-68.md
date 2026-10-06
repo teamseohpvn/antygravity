@@ -3,7 +3,7 @@ ma: "SP-THL-002"
 active: true   # Bật: có trong kho tháng 10/2026
 title: "ENEOS Super Hyrando 68"
 seo_title: "ENEOS Super Hyrando 68, 46 – Dầu Thủy Lực Nhật Bản"
-description: "Dầu thủy lực ENEOS Super Hyrando 68 và 46 chống mài mòn, chỉ số độ nhớt 105. Phuy 200 L có sẵn, CO/CQ, VAT, giao Hải Phòng và miền Bắc."
+description: "Dầu thủy lực ENEOS Super Hyrando 68 và 46 chống mài mòn, chỉ số độ nhớt 105, thay thế Castrol Hyspin AWS 68. Phuy 200 L có sẵn, CO/CQ, VAT, giao Hải Phòng, miền Bắc."
 keywords: ["eneos super hyrando 68", "super hyrando 68", "dầu thủy lực eneos", "eneos super hyrando 46", "dầu thủy lực eneos 68"]
 category: "dau-thuy-luc"
 categoryName: "Dầu Thủy Lực"

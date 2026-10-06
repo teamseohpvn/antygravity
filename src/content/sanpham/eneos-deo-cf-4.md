@@ -3,7 +3,7 @@ ma: "SP-DC-002"
 active: true   # Bật: có trong kho tháng 10/2026
 title: "ENEOS DEO CF-4 15W-40, 20W-50"
 seo_title: "ENEOS DEO CF-4 15W-40, 20W-50 – Dầu Động Cơ Diesel"
-description: "Dầu động cơ diesel ENEOS CF-4 15W-40 và 20W-50 cho động cơ turbo và hút khí tự nhiên. Can 18 L có sẵn, CO/CQ, VAT, giao từ Hải Phòng."
+description: "Dầu động cơ diesel ENEOS DEO CF-4 15W-40 và 20W-50 cho xe tải, máy công trình, máy phát điện, động cơ turbo. Can 18 L có sẵn, CO/CQ, VAT, giao từ Hải Phòng."
 keywords: ["eneos deo cf-4", "eneos cf4 20w50", "eneos cf-4 15w40", "dầu động cơ eneos cf4", "nhớt eneos cf4"]
 category: "dau-dong-co-diesel"
 categoryName: "Dầu Động Cơ Diesel"
