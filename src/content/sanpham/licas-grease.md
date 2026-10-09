@@ -48,7 +48,8 @@ images:
   - { src: "/images/san-pham/licas-grease-no3-ong-400g.webp", alt: "Thùng 30 ống mỡ Licas Grease No3 loại 400 g" }
 
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "vhp"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **VHP Licas Grease** là mỡ bò đa dụng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Mỡ pha từ dầu gốc khoáng tinh chế, chất làm đặc lithium và canxi, cùng phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Mỡ có hai cấp: **No2** mềm hơn và **No3** đặc hơn.

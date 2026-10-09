@@ -38,6 +38,7 @@ image_alt: "[Mô tả thật của ảnh]"
 tags: ["[the-1]", "[the-2]"]
 ---
 
+<!-- Mục lục tự sinh từ các H2/H3 và chèn ngay sau đoạn đầu này (bài từ 4 mục H2). Không tự gõ mục lục. Xem docs mục 6.6. -->
 [Đoạn đầu trả lời thẳng câu hỏi trong 2–3 câu. Có link về danh mục, ví dụ [dầu thủy lực](/dau-thuy-luc).]
 
 ## [H2: ý chính 1]

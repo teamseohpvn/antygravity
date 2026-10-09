@@ -11,7 +11,8 @@ keywords: ["dầu máy may", "dầu máy khâu", "dầu máy may công nghiệp"
 tags: ["dau-may-may", "iso-vg-10", "det-may"]
 image: "/images/danh-muc/dau-may-may.webp"
 image_alt: "Tra dầu máy may vào cơ cấu kim của máy may công nghiệp trong xưởng may"
-updated: 2026-10-03
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Dầu máy may** (dầu máy khâu) là dầu bôi trơn rất loãng, thường cấp **ISO VG 10**, dùng cho kim, trụ kim, ổ chao và các bánh răng nhỏ trong máy may công nghiệp. Dầu tốt phải **trong, nhạt màu**, ít bay hơi và ít để lại vết bẩn khi lỡ dính lên vải. Dầu cũng phải bám đủ tốt để không văng ra khi máy chạy hàng nghìn mũi mỗi phút.

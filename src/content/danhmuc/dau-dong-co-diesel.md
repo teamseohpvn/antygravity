@@ -11,7 +11,8 @@ keywords: ["dầu động cơ diesel", "nhớt xe tải", "nhớt 15w40", "nhớ
 tags: ["dau-dong-co-diesel", "15w-40", "20w-50", "ci-4", "cf-4"]
 image: "/images/danh-muc/dau-dong-co-diesel.webp"
 image_alt: "Kỹ thuật viên kiểm tra que thăm dầu động cơ diesel của máy phát điện"
-updated: 2026-10-03
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Dầu động cơ diesel** (còn gọi là **nhớt xe tải**, **nhớt máy dầu**) bôi trơn, làm mát và giữ sạch động cơ của xe tải, xe đầu kéo, máy công trình và máy phát điện. Chọn dầu theo hai thông số trong sổ tay máy: **cấp chất lượng API** (CI-4, CF-4, CD…) và **cấp độ nhớt SAE** (15W-40, 20W-50). Với đội xe tải và máy công trình ở miền Bắc, **15W-40 CI-4** và **20W-50 CF-4** là hai lựa chọn phổ biến nhất.

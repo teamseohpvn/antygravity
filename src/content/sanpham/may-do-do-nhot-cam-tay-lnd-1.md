@@ -36,7 +36,8 @@ storage: "Lau sạch, khô sau mỗi lần đo; đậy lỗ chảy, tránh va đ
 
 related_posts: ["huong-dan-test-chat-luong-dau"]
 tags: ["thiet-bi-do", "do-nhot", "test-nhanh"]
-updated: 2026-10-06
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Máy đo độ nhớt cầm tay LND-1** là một cốc chảy bằng inox có lỗ đáy đường kính 4 mm. Đổ đầy cốc, mở lỗ cho dầu chảy và bấm giờ đến khi dòng chảy đứt. Thời gian chảy (giây) càng dài thì dầu càng đặc. Thiết bị không cần điện, nặng khoảng 2,5 kg, mang ra đặt cạnh máy được.

@@ -10,6 +10,8 @@ keywords: ["dầu bánh răng", "dầu bánh răng công nghiệp", "dầu bánh
 tags: ["dau-banh-rang", "dau-hop-giam-toc", "shell-omala", "castrol-alpha", "iso-vg-220", "iso-vg-320"]
 image: "/images/danh-muc/dau-banh-rang.webp"
 image_alt: "Hộp giảm tốc công nghiệp mở nắp, bánh răng nghiêng phủ dầu bánh răng"
+date: "2026-09-21"
+updated: "2026-10-06"
 ---
 
 **Dầu bánh răng công nghiệp** dùng cho hộp số kín và **hộp giảm tốc** của băng tải, máy khuấy, máy đùn, máy nghiền, cẩu trục. Phần lớn là **dầu chịu cực áp (EP)** loại **CLP** theo DIN 51517-3. Cấp phổ biến nhất là **ISO VG 220**, tiếp theo là **320**. Cấp độ nhớt đúng luôn là cấp ghi trên nhãn hộp số, vì nhà sản xuất tính theo tốc độ, tải và nhiệt độ làm việc.

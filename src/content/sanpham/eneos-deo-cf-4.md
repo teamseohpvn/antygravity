@@ -47,7 +47,8 @@ images:
   - { src: "/images/san-pham/eneos-deo-cf-4-nhan.webp", alt: "Nhãn can ENEOS CF-4 ghi cấp API và cấp độ nhớt SAE" }
 
 tags: ["api-cf-4", "sae-15w-40", "sae-20w-50", "eneos", "dong-co-diesel"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **ENEOS DEO CF-4** là dầu động cơ diesel đa cấp của ENEOS, đạt cấp **API CF-4**. Dầu dùng cho động cơ diesel có turbo tăng áp và động cơ hút khí tự nhiên, ở xe tải, xe khách, máy công trình, máy nông nghiệp và tàu thuyền. Hãng làm hai cấp nhớt **15W-40** và **20W-50**.

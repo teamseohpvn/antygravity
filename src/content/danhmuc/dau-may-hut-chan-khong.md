@@ -11,7 +11,8 @@ keywords: ["dầu máy hút chân không", "dầu bơm chân không", "dầu má
 tags: ["dau-bom-chan-khong", "iso-vg-100"]
 image: "/images/danh-muc/dau-may-hut-chan-khong.webp"
 image_alt: "Bơm chân không nối với dây chuyền đóng gói hút chân không thực phẩm"
-updated: 2026-10-03
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Dầu máy hút chân không** (dầu bơm chân không) là dầu gốc khoáng tinh chế sâu, có **áp suất hơi rất thấp**, dùng cho bơm chân không cánh gạt ngâm dầu và bơm piston xoay. Dầu vừa bôi trơn, vừa làm kín khe hở giữa cánh gạt và thân bơm, vừa giải nhiệt. Dầu không đạt yêu cầu sẽ bay hơi trong buồng bơm, làm bơm **không xuống được độ chân không** cần thiết và gây khói ở cửa xả.

@@ -45,7 +45,8 @@ images:
   - { src: "/images/san-pham/pv-transmission-ep-gl4-nhan.webp", alt: "Nhãn phuy PV Transmission EP_GL4 ghi cấp API GL-4 và cấp nhớt SAE" }
 
 tags: ["api-gl-4", "sae-90", "sae-140", "dau-hop-so", "pvoil"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **PV Transmission 90 EP_GL4** và **PV Transmission 140 EP_GL4** là dầu truyền động chịu cực áp của PVOIL Lube, thương hiệu dầu nhờn thuộc Tổng công ty Dầu Việt Nam. Dầu đạt cấp **API GL-4**, dùng cho hộp số tay, cầu xe tải vừa và các bộ bánh răng cần dầu SAE 90 hoặc SAE 140. Hàng có sẵn tại kho: cấp **90, phuy 200 L**; cấp 140 nhận đặt theo yêu cầu. Kèm CO/CQ, hóa đơn VAT, giao từ kho TP Hải Phòng (Hải Dương cũ).

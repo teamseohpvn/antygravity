@@ -53,7 +53,8 @@ images:
   - { src: "/images/san-pham/eneos-faircol-ra-32-nhan.webp", alt: "Nhãn can ENEOS Faircol RA 32 ghi cấp độ nhớt ISO VG 32" }
 
 tags: ["iso-vg-32", "may-nen-khi-truc-vit", "eneos"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **ENEOS Faircol RA 32** là dầu cho máy nén khí kiểu quay: trục vít, cánh gạt và xoắn ốc. Dầu pha từ dầu gốc hydrocracked tinh chế cao cùng phụ gia chọn lọc, giữ dầu bền oxy hóa và ít tạo cặn khi máy chạy tải cao, nhiệt độ cao. Faircol RA dùng được cho máy đặt trong xưởng lẫn ngoài trời.

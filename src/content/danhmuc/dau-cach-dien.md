@@ -11,7 +11,8 @@ keywords: ["dầu máy biến áp", "dầu cách điện", "dầu biến áp", "
 tags: ["dau-cach-dien", "dau-bien-the", "may-bien-ap"]
 image: "/images/danh-muc/dau-cach-dien.webp"
 image_alt: "Kỹ thuật viên lấy mẫu dầu cách điện từ van xả máy biến áp"
-updated: 2026-10-03
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Dầu cách điện** (còn gọi là **dầu máy biến áp**, **dầu biến thế**) là dầu gốc khoáng tinh chế đặc biệt, dùng để **cách điện** và **làm mát** cuộn dây trong máy biến áp, máy cắt và tụ điện ngâm dầu. Hai yêu cầu quan trọng nhất là **điện áp đánh thủng cao** và **hàm lượng nước rất thấp**. Một lượng nước nhỏ cũng đủ làm giảm mạnh khả năng cách điện.

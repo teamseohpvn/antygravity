@@ -10,6 +10,8 @@ keywords: ["mỡ bôi trơn", "mỡ bò", "mỡ bò bôi trơn", "mỡ bôi trơ
 tags: ["mo-boi-tron", "mo-bo", "shell-gadus", "castrol-spheerol", "nlgi-2", "nlgi-3"]
 image: "/images/danh-muc/mo-boi-tron-cong-nghiep.webp"
 image_alt: "Bơm mỡ bò vào gối đỡ vòng bi bằng súng bơm mỡ"
+date: "2026-09-21"
+updated: "2026-10-06"
 ---
 
 **Mỡ bôi trơn công nghiệp**, thường gọi là **mỡ bò**, là chất bôi trơn dạng sệt gồm ba phần: dầu gốc (khoảng 70–95%), chất làm đặc (xà phòng lithium, canxi, polyurea…) và phụ gia. Mỡ bò bôi trơn dùng ở những chỗ dầu lỏng không giữ lại được: vòng bi, gối đỡ, khớp nối, chốt, bạc trượt. Loại dùng nhiều nhất là **mỡ lithium chịu cực áp (EP) cấp NLGI 2**, thường gọi là mỡ đa dụng EP2. Nếu vị trí làm việc nóng trên khoảng 120 °C, hãy xem [mỡ chịu nhiệt](/mo-chiu-nhiet).

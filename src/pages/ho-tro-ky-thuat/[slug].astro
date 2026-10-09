@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ContentBody from '../../components/ContentBody.astro';
+import MucLuc from '../../components/MucLuc.astro';
+import { mucLuc } from '../../lib/muc-luc';
 import { render } from 'astro:content';
 import { getActivePosts } from '../../lib/content';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
@@ -17,7 +19,9 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
+// Mục lục H2 + H3, chèn ngay sau đoạn mở đầu (đoạn trả lời nhanh vẫn ở trên cùng).
+const tocItems = mucLuc(headings, { voiH3: true, tat: post.data.muc_luc === false });
 
 const pagePath = `/ho-tro-ky-thuat/${post.id}`;
 // Tác giả có hồ sơ trong nhan-su.ts (author = id hoặc họ tên) thì link tới trang hồ sơ và gắn schema Person đầy đủ.
@@ -93,7 +97,7 @@ const schemaData = [
       )}
 
       <div class="markdown-body">
-        <ContentBody><Content /></ContentBody>
+        <ContentBody><Content /><MucLuc slot="sau-doan-dau" items={tocItems} /></ContentBody>
       </div>
     </article>
   </div>

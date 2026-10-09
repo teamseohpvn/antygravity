@@ -10,6 +10,8 @@ image: "/images/danh-muc/dau-truyen-nhiet.webp"
 image_alt: "Lò dầu tải nhiệt với đường ống bọc bảo ôn và bơm tuần hoàn"
 keywords: ["dầu truyền nhiệt", "dầu tải nhiệt", "dầu truyền nhiệt shell", "shell heat transfer oil s2", "dầu lò dầu tải nhiệt", "dầu truyền nhiệt tổng hợp", "castrol perfecto ht 5", "mobiltherm 605"]
 tags: ["dau-truyen-nhiet", "dau-tai-nhiet", "shell-heat-transfer", "castrol-perfecto"]
+date: "2026-09-28"
+updated: "2026-10-06"
 ---
 
 **Dầu truyền nhiệt** (còn gọi là **dầu tải nhiệt**) là chất lỏng mang nhiệt từ lò đốt tới thiết bị sử dụng nhiệt trong một vòng tuần hoàn kín: máy ép gỗ, máy sấy, trục cán nóng, bồn nấu nhựa đường, máy nhuộm, lô sấy. Hệ thống dầu tải nhiệt làm việc ở **áp suất thấp** mà vẫn đạt nhiệt độ cao, thường **200–300 °C**, cao hơn nhiều so với lò hơi nước ở cùng áp suất. Chọn dầu theo **nhiệt độ dầu tối đa (bulk temperature)** của hệ thống. **Dầu gốc khoáng** dùng cho phần lớn hệ thống tới khoảng 300 °C. **Dầu tổng hợp** dùng cho mức nhiệt cao hơn.

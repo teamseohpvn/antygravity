@@ -1,0 +1,34 @@
+---
+// Mục lục tự động cho bài dài: sinh từ tiêu đề H2 (và H3 nếu truyền vào), bấm để nhảy tới mục.
+// Quy tắc hiển thị: docs/CAU-TRUC-NOI-DUNG.md mục "Mục lục". Người viết không cần tự gõ mục lục.
+import type { MucLucItem } from '../lib/muc-luc';
+
+interface Props {
+  items: MucLucItem[];
+}
+
+const { items } = Astro.props;
+---
+
+{items.length > 0 && (
+  <nav class="muc-luc" aria-label="Mục lục">
+    <details open>
+      <summary>Nội dung chính</summary>
+      <ol>
+        {items.map((h) => (
+          <li class={h.depth === 3 ? 'cap-3' : undefined}><a href={`#${h.slug}`}>{h.text}</a></li>
+        ))}
+      </ol>
+    </details>
+  </nav>
+)}
+
+<style>
+  .muc-luc { border: 1px solid var(--border-color); border-left: 4px solid var(--color-primary); border-radius: 6px; background: #f8fafc; padding: 12px 18px; margin: 20px 0 28px; font-size: 0.98rem; }
+  .muc-luc summary { cursor: pointer; font-weight: 700; color: var(--color-primary); }
+  .muc-luc ol { margin: 10px 0 0 20px; padding: 0; }
+  .muc-luc li { margin: 6px 0; line-height: 1.45; }
+  .muc-luc li.cap-3 { margin-left: 18px; list-style: circle; font-size: 0.94rem; }
+  .muc-luc a { color: var(--color-text); text-decoration: none; }
+  .muc-luc a:hover { color: var(--color-primary); text-decoration: underline; }
+</style>

@@ -89,6 +89,8 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
       img { max-width: 100%; height: auto; }
 
       .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+      /* Bấm mục lục: tiêu đề không bị thanh header dính (sticky) che mất */
+      h2[id], h3[id] { scroll-margin-top: 90px; }
 
       /* Header */
       .site-header {

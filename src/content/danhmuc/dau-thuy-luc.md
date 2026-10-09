@@ -10,6 +10,8 @@ keywords: ["dầu thủy lực", "dầu nhớt thủy lực", "nhớt thủy l�
 tags: ["dau-thuy-luc", "shell-tellus", "castrol-hyspin", "iso-vg-68", "iso-vg-46", "iso-vg-32"]
 image: "/images/danh-muc/dau-thuy-luc.webp"
 image_alt: "Hệ thống thủy lực máy công nghiệp sử dụng dầu thủy lực"
+date: "2026-09-21"
+updated: "2026-10-06"
 ---
 
 **Dầu thủy lực** (còn gọi là **dầu nhớt thủy lực** hay **nhớt thủy lực**) là chất lỏng truyền áp lực trong bơm, van và xi-lanh, đồng thời bôi trơn, làm mát và chống gỉ cho hệ thống. Ba cấp phổ biến nhất là **ISO VG 32, 46 và 68**. Chọn cấp nào phụ thuộc vào nhiệt độ dầu khi máy chạy và khuyến cáo của nhà sản xuất bơm. Với máy ép nhựa và máy ép thủy lực chạy liên tục trong nhà xưởng ở miền Bắc, **dầu thủy lực 68** là lựa chọn thường gặp nhất. Máy công trình và hệ thống làm việc ngoài trời hay dùng **dầu thủy lực 46**.

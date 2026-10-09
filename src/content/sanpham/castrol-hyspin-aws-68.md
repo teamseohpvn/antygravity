@@ -51,7 +51,8 @@ images:
 
 related_posts: ["huong-dan-chon-do-nhot"]
 tags: ["iso-vg-68", "chong-mai-mon", "goc-kem"]
-updated: 2026-10-06
+date: "2026-09-21"
+updated: "2026-10-06"
 ---
 
 **Castrol Hyspin AWS 68** là dầu nhớt thủy lực chống mài mòn cấp [độ nhớt](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99_nh%E1%BB%9Bt) ISO VG 68 của Castrol. Dầu được pha chế từ dầu gốc khoáng tinh chế cao với phụ gia chống mài mòn gốc kẽm ([ZDDP](https://en.wikipedia.org/wiki/Zinc_dithiophosphate)) đã ổn định hóa. Dầu đạt loại **HM** theo [ISO 11158](https://www.iso.org/standard/84812.html) (tương đương [TCVN 12416:2019](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+12416%3A2019)) và **HLP** theo DIN 51524-2, dùng để bôi trơn và bảo vệ hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và piston.

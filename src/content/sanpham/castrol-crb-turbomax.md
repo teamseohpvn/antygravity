@@ -47,7 +47,8 @@ images:
   - { src: "/images/san-pham/castrol-crb-turbomax-nhan.webp", alt: "Nhãn xô Castrol CRB Turbomax ghi cấp API CI-4 và cấp độ nhớt" }
 
 tags: ["api-ci-4", "sae-15w-40", "sae-20w-50", "castrol", "dong-co-diesel"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Castrol CRB Turbomax CI-4** là dầu động cơ diesel tải nặng của Castrol, đạt cấp **API CI-4**. Dầu dùng cho động cơ diesel 4 kỳ cao tốc, chịu được nhiều loại nhiên liệu diesel có chất lượng khác nhau và tương thích với động cơ có hệ tuần hoàn khí xả (EGR). Dòng này có hai cấp **15W-40** và **20W-50**.

@@ -11,7 +11,8 @@ keywords: ["dầu cầu", "dầu hộp số", "nhớt hộp số", "nhớt cầu
 tags: ["dau-cau", "dau-hop-so", "gl-4", "gl-5", "atf"]
 image: "/images/danh-muc/dau-cau-hop-so.webp"
 image_alt: "Thợ bảo dưỡng châm dầu hộp số vào xe nâng trong kho"
-updated: 2026-10-03
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Dầu cầu** và **dầu hộp số** (còn gọi là **nhớt cầu**, **nhớt hộp số**) bôi trơn bánh răng trong cầu xe, hộp số tay, hộp số phụ và bộ truyền động cuối. Chọn dầu theo hai thông số ghi trong sổ tay xe: **cấp chất lượng API** (GL-4 hay GL-5) và **cấp độ nhớt SAE** (80W-90, 85W-140, 90, 140). Xe tải, máy công trình ở miền Bắc dùng nhiều nhất là **85W-140 GL-5 cho cầu** và **80W-90 cho hộp số**. Hộp số tự động và hộp số xe nâng thường dùng **ATF** hoặc dầu truyền động riêng.

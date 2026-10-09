@@ -45,7 +45,8 @@ const danhmucCollection = defineCollection({
     image: z.string().optional(),
     image_alt: z.string().optional(),
     tags: z.array(z.string()).optional(),
-    canonical_url: z.string().optional(), // Chỉ dùng khi cần canonical khác URL của trang
+    canonical_url: z.string().optional(),
+    muc_luc: z.boolean().optional(), // false = tắt mục lục tự động (mặc định: bật khi bài có từ 4 mục H2) // Chỉ dùng khi cần canonical khác URL của trang
     reviewed_by: z.string().optional(), // Người duyệt kỹ thuật (E-E-A-T)
     date: ngay.optional(), // Ngày đăng
     updated: ngay.optional(), // Ngày cập nhật
@@ -103,6 +104,7 @@ const sanphamCollection = defineCollection({
     related_posts: z.array(z.string()).optional(), // Slug bài trong blog/
     tags: z.array(z.string()).optional(),
     canonical_url: z.string().optional(),
+    muc_luc: z.boolean().optional(), // false = tắt mục lục tự động (mặc định: bật khi bài có từ 4 mục H2)
     reviewed_by: z.string().optional(),
     date: ngay.optional(), // Ngày đăng
     updated: ngay.optional(), // Ngày cập nhật
@@ -130,6 +132,7 @@ const blogCollection = defineCollection({
     image_alt: z.string().optional(),
     tags: z.array(z.string()).optional(),
     canonical_url: z.string().optional(),
+    muc_luc: z.boolean().optional(), // false = tắt mục lục tự động (mặc định: bật khi bài có từ 4 mục H2)
   }).superRefine(kiemTraNgay),
 });
 

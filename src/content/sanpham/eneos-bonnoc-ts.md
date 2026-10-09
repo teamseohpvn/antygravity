@@ -51,7 +51,8 @@ images:
   - { src: "/images/san-pham/eneos-bonnoc-ts-nhan.webp", alt: "Nhãn xô ENEOS Bonnoc TS ghi cấp độ nhớt ISO VG" }
 
 tags: ["iso-vg-220", "iso-vg-320", "chiu-cuc-ap", "eneos"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **ENEOS Bonnoc TS** là dầu bánh răng công nghiệp gốc khoáng của ENEOS. Dầu chịu cực áp (EP), đáp ứng tính năng theo **DIN 51517-3 (CLP)**. ENEOS thiết kế dòng này cho điều kiện khắc nghiệt nhất là thiết bị luyện thép cỡ lớn. Dầu dùng được cho mọi loại bánh răng trong hộp số kín.
