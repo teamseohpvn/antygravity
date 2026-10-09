@@ -29,7 +29,7 @@ const grade = (p: (typeof products)[number]) =>
       src="/images/hero-trang-chu.webp"
       srcset={webpSrcset('/images/hero-trang-chu.webp')}
       sizes="100vw"
-      alt=""
+      alt="Kỹ thuật viên rót dầu thủy lực vào bồn chứa của cụm bơm thủy lực trong nhà xưởng"
       width="1200"
       height="1200"
       fetchpriority="high"
@@ -58,7 +58,7 @@ const grade = (p: (typeof products)[number]) =>
               src={c.data.image}
               srcset={webpSrcset(c.data.image)}
               sizes="(max-width: 600px) 100vw, 380px"
-              alt=""
+              alt={c.data.image_alt ?? c.data.title}
               width="600"
               height="400"
               loading="lazy"

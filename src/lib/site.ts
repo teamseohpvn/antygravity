@@ -197,7 +197,9 @@ export function productImages(d: {
     .filter((img) => publicImageExists(img.src));
   if (found.length || !d.category) return found;
   const fallback = `/images/danh-muc/${d.category}.webp`;
-  return publicImageExists(fallback) ? [{ src: fallback, alt: d.categoryName ?? d.title }] : [];
+  // Ảnh danh mục dùng tạm: alt nói rõ là ảnh minh họa, kèm tên sản phẩm để không trùng alt giữa các trang.
+  const alt = d.categoryName ? `Ảnh minh họa ${d.categoryName.toLowerCase()} – ${d.title}` : d.title;
+  return publicImageExists(fallback) ? [{ src: fallback, alt }] : [];
 }
 
 /** Tên quy cách để hiển thị, chấp nhận cả dạng chuỗi và dạng {name, weight, sku}. */
