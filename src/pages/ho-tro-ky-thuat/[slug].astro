@@ -5,6 +5,7 @@ import { render } from 'astro:content';
 import { getActivePosts } from '../../lib/content';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { absUrl, breadcrumbSchema, ORG_ID, SITE_NAME } from '../../lib/site';
+import { displayName, personRef, personSchema, personUrl, timNhanSu } from '../../lib/nhan-su';
 
 export async function getStaticPaths() {
   const posts = await getActivePosts();
@@ -18,6 +19,8 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 
 const pagePath = `/ho-tro-ky-thuat/${post.id}`;
+// Tác giả có hồ sơ trong nhan-su.ts (author = id hoặc họ tên) thì link tới trang hồ sơ và gắn schema Person đầy đủ.
+const authorP = timNhanSu(post.data.author);
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
   { name: 'Hỗ trợ kỹ thuật', href: '/ho-tro-ky-thuat' },
@@ -34,13 +37,16 @@ const schemaData = [
     ...(post.data.image ? { image: absUrl(post.data.image) } : {}),
     mainEntityOfPage: absUrl(pagePath),
     // Chưa có tác giả thật thì ghi doanh nghiệp, không dùng tên giả định.
-    author: post.data.author
+    author: authorP
+      ? personRef(authorP)
+      : post.data.author
       ? { '@type': 'Person', name: post.data.author, ...(post.data.author_title ? { jobTitle: post.data.author_title } : {}) }
       : { '@id': ORG_ID },
     ...(post.data.date ? { datePublished: String(post.data.date) } : {}),
     ...(post.data.updated || post.data.date ? { dateModified: String(post.data.updated ?? post.data.date) } : {}),
     publisher: { '@id': ORG_ID },
   },
+  ...(authorP ? [personSchema(authorP)] : []),
   breadcrumbSchema(crumbs),
 ];
 ---
@@ -62,7 +68,9 @@ const schemaData = [
         <div class="meta">
           Đăng ngày: <span>{post.data.date}</span>
           {post.data.updated && <> | Cập nhật: <span>{post.data.updated}</span></>}
-          | Tác giả: <span>{post.data.author ?? SITE_NAME}{post.data.author_title && `, ${post.data.author_title}`}</span>
+          | Tác giả: {authorP
+            ? <span><a href={personUrl(authorP)} rel="author">{displayName(authorP)}</a>, {authorP.degree}, {authorP.affiliation}</span>
+            : <span>{post.data.author ?? SITE_NAME}{post.data.author_title && `, ${post.data.author_title}`}</span>}
         </div>
         {post.data.tags && (
           <div class="tags">
