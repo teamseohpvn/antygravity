@@ -50,7 +50,8 @@ images:
   - { src: "/images/san-pham/vhp-lithium-grease-nhan.webp", alt: "Nhãn xô mỡ VHP Lithium Grease ghi cấp NLGI" }
 
 tags: ["nlgi-3", "nlgi-4", "nlgi-00", "mo-lithium", "mo-da-dung", "vhp"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **VHP Lithium Grease** là mỡ bôi trơn đa dụng gốc lithium do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Mỡ dùng dầu gốc khoáng có độ nhớt 220 cSt ở 40 °C, kèm phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Với cấp L3 và L4, nhiệt độ nhỏ giọt tối thiểu là 190 °C.

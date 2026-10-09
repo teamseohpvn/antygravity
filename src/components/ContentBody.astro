@@ -1,14 +1,21 @@
 ---
 // Bọc thân bài markdown (<Content />): bỏ thẻ <a> trỏ tới bài đang tắt (active: false), giữ nguyên chữ.
 // Nhờ vậy tắt một bài không để lại link 404 trong các bài khác.
+// Slot "sau-doan-dau": nội dung chèn sau đoạn đầu tiên (mục lục của bài blog).
 import { getHiddenPaths } from '../lib/content';
 
 const hidden = await getHiddenPaths();
 const html = await Astro.slots.render('default');
 const clean = (href: string) => href.split(/[?#]/)[0].replace(/\.html$/, '').replace(/\/+$/, '') || '/';
-const output = html.replace(/<a\s[^>]*href="(\/[^"]*)"[^>]*>([\s\S]*?)<\/a>/g, (tag, href, text) =>
+// Slot "sau-doan-dau" (ví dụ mục lục) chèn ngay sau đoạn văn đầu tiên của thân bài.
+const sauDoanDau = Astro.slots.has('sau-doan-dau') ? await Astro.slots.render('sau-doan-dau') : '';
+let output = html.replace(/<a\s[^>]*href="(\/[^"]*)"[^>]*>([\s\S]*?)<\/a>/g, (tag, href, text) =>
   hidden.has(clean(href)) ? text : tag,
 );
+if (sauDoanDau) {
+  const i = output.indexOf('</p>');
+  output = i >= 0 ? output.slice(0, i + 4) + sauDoanDau + output.slice(i + 4) : sauDoanDau + output;
+}
 ---
 
 <Fragment set:html={output} />

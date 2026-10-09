@@ -45,7 +45,8 @@ images:
   - { src: "/images/san-pham/shl-synthway-68m-nhan.webp", alt: "Nhãn can SHL Synthway 68M ghi cấp độ nhớt ISO VG 68" }
 
 tags: ["iso-vg-68", "ranh-truot", "may-cong-cu", "shl"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **SHL Synthway 68M** là dầu bôi trơn rãnh trượt (băng trượt) cho máy công cụ, thuộc dòng dầu rãnh trượt thông thường của SHL, thương hiệu dầu nhờn Hàn Quốc. Dòng sản phẩm được SHL ASEAN sản xuất tại KCN Mỹ Xuân, Việt Nam. Dầu có cấp **ISO VG 68**, chỉ số độ nhớt 105, được hãng đánh giá tốt ở khả năng chống gỉ và chống ăn mòn.

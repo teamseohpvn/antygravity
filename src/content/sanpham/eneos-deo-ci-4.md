@@ -50,7 +50,8 @@ images:
   - { src: "/images/san-pham/eneos-deo-ci-4-nhan.webp", alt: "Nhãn can ENEOS CI-4/SL ghi cấp API và cấp độ nhớt SAE" }
 
 tags: ["api-ci-4", "sae-15w-40", "sae-20w-50", "eneos", "dong-co-diesel"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **ENEOS DEO CI-4** là dầu động cơ diesel gốc khoáng của ENEOS, đạt cấp **API CI-4/SL**. Dầu dùng cho động cơ diesel đời mới có hệ tuần hoàn khí xả (EGR), vẫn hợp với động cơ đời cũ, và dùng chung được cho động cơ xăng trong đội xe hỗn hợp. Hãng làm hai cấp nhớt là **15W-40** và **20W-50**.

@@ -36,7 +36,8 @@ storage: "Để nơi khô mát, tránh nắng trực tiếp. Dùng trước hạ
 
 related_posts: ["huong-dan-test-chat-luong-dau"]
 tags: ["thiet-bi-do", "tri-so-axit", "test-nhanh"]
-updated: 2026-10-06
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Bộ kit test trị số axit TLB TAN** của Biolab (Thổ Nhĩ Kỳ) đo **trị số axit tổng (TAN)** của dầu công nghiệp ngay tại hiện trường, dưới 5 phút. Người không chuyên về hóa cũng làm được. Theo nhà sản xuất, kết quả bám sát phép chuẩn độ điện thế ASTM D664 trong phòng thí nghiệm, vốn tốn kém và mất nhiều thời gian hơn.

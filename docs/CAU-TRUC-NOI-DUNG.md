@@ -220,8 +220,24 @@ Google so ngày hiện trên trang, `datePublished` / `dateModified` trong schem
 - Dạng ngày: `YYYY-MM-DD`, ví dụ `date: "2026-10-09"`. Không ghi giờ.
 - Bài mới: `date` và `updated` cùng một ngày. Trên trang chỉ hiện "Đăng ngày"; khi `updated` khác `date` mới hiện thêm "Cập nhật".
 - Thiếu `updated` thì coi như chưa sửa (dùng `date`). Trang không có cả hai thì không hiện ngày và không có `<lastmod>`; **không** dùng ngày build.
-- Trang cũ chưa biết ngày đăng thật: chỉ ghi `updated`, **không** đoán `date`.
+- Trang cũ chưa biết ngày đăng thật: lấy ngày commit đầu tiên của file trong git (ngày trang lên web). Không có căn cứ thì chỉ ghi `updated`, **không** đoán `date`. (09/10/2026: đã điền `date` cho 32 trang đang bật theo cách này.)
 - Kiểm tra tự động: `npm run check:content` và lúc build (`src/content.config.ts`) báo lỗi khi ngày sai dạng, ở tương lai, hoặc `updated` trước `date`; bài viết thiếu `date` cũng báo lỗi.
+
+### 6.6. Mục lục
+
+Bài dài **bắt buộc có mục lục** để người đọc bấm nhảy tới đoạn cần đọc. Mục lục **tự sinh** từ tiêu đề trong bài (`src/components/MucLuc.astro`, `src/lib/muc-luc.ts`); người viết **không** gõ mục lục bằng tay.
+
+| Loại trang | Khi nào hiện | Gồm | Vị trí |
+|---|---|---|---|
+| Bài viết (`blog/`) | Từ 4 mục H2 trở lên | H2 và H3 (trừ các câu hỏi con trong mục "Câu hỏi thường gặp") | Ngay sau đoạn mở đầu |
+| Sản phẩm (`sanpham/`) | Từ 4 mục H2 trở lên (tính cả các mục cố định của template) | H2 | Ngay dưới khối ảnh và nút báo giá |
+| Danh mục (`danhmuc/`) | Chưa áp dụng | | |
+
+Để mục lục dùng được, người viết cần:
+- Đặt H2 ngắn, nói rõ nội dung đoạn (vd "Nên dùng dầu thủy lực 68 hay 46?"), không đặt "Phần 1", "Thông tin chi tiết".
+- Không bỏ cấp: H2 → H3, không nhảy từ H2 xuống H4.
+- Giữ đoạn đầu tiên của bài blog là đoạn trả lời nhanh, vì mục lục chèn ngay sau đoạn này.
+- Tắt mục lục cho một bài (hiếm khi cần): thêm `muc_luc: false` vào frontmatter.
 
 ---
 

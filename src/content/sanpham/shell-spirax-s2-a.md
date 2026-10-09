@@ -47,7 +47,8 @@ images:
   - { src: "/images/san-pham/shell-spirax-s2-a-85w-140-nhan.webp", alt: "Nhãn xô Shell Spirax S2 A 85W-140 ghi cấp API GL-5" }
 
 tags: ["api-gl-5", "sae-85w-140", "dau-cau", "shell"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Shell Spirax S2 A 85W-140** là dầu cầu gốc khoáng của Shell, đạt cấp **API GL-5**, trước đây mang tên Shell Spirax A 85W-140. Dầu dùng cho cầu xe bánh răng hypoid và các bộ truyền động ô tô làm việc nặng. Chúng tôi có hàng **xô 20 L**, kèm CO/CQ, hóa đơn VAT, giao từ kho TP Hải Phòng (Hải Dương cũ).

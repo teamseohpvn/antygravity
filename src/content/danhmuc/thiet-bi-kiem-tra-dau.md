@@ -9,7 +9,8 @@ seo_title: "Thiết Bị Kiểm Tra Dầu Nhớt: Đo Độ Nhớt, Axit, Nướ
 description: "Nhớt kế, cốc đo độ nhớt, bộ kit test trị số axit TAN dùng tại xưởng để biết khi nào cần thay dầu thủy lực, dầu bánh răng, dầu máy nén khí. Tư vấn chọn thiết bị."
 keywords: ["thiết bị kiểm tra dầu nhớt", "dụng cụ đo độ nhớt dầu", "test dầu thủy lực tại chỗ", "kit test trị số axit", "kiểm tra chất lượng dầu"]
 tags: ["thiet-bi-do", "phan-tich-dau", "bao-tri-du-doan"]
-updated: 2026-10-06
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Thiết bị kiểm tra dầu nhớt** giúp xưởng tự trả lời câu hỏi "đã đến lúc thay dầu chưa" bằng số đo, thay vì thay theo cảm tính hoặc theo lịch cố định. Ba chỉ tiêu nói lên gần hết tình trạng của dầu công nghiệp đang chạy là **độ nhớt**, **trị số axit (TAN)** và **hàm lượng nước**. Các dụng cụ trong danh mục này đo được ba chỉ tiêu đó ngay tại xưởng, không cần gửi mẫu đi phòng thí nghiệm.

@@ -51,7 +51,8 @@ images:
   - { src: "/images/san-pham/calix-ceno-grease-nhan.webp", alt: "Nhãn phuy mỡ nhờn công nghiệp Calix Ceno No3" }
 
 tags: ["nlgi-3", "mo-canxi", "mo-da-dung", "calix"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Calix Ceno No3** là mỡ nhờn công nghiệp đa dụng mang thương hiệu Calix, do Công ty TNHH SXTM La Thu So nhập khẩu và phân phối. Mỡ pha từ dầu khoáng tinh luyện, chất làm đặc canxi tổng hợp, phụ gia chống oxy hóa và chống gỉ. Bảng chỉ tiêu của hãng theo các phương pháp thử GOST.

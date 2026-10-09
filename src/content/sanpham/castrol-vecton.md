@@ -48,7 +48,8 @@ images:
   - { src: "/images/san-pham/castrol-vecton-nhan.webp", alt: "Nhãn phuy Castrol Vecton 15W-40 ghi cấp API CI-4 và ACEA E7" }
 
 tags: ["api-ci-4", "acea-e7", "sae-15w-40", "castrol", "dong-co-diesel"]
-updated: 2026-10-05
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Castrol Vecton 15W-40 CI-4/E7** là dầu động cơ diesel tải nặng cao cấp của Castrol, pha bằng công nghệ tổng hợp để dầu bền lâu hơn trong máy. Dầu đạt **API CI-4/SL, ACEA E7, JASO DH-1** và nhiều chuẩn của nhà sản xuất động cơ như Cummins, Volvo, Mack, Renault Trucks. Dầu dùng cho động cơ diesel 4 kỳ cao tốc, kể cả động cơ có EGR.

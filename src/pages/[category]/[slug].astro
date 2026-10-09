@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ContentBody from '../../components/ContentBody.astro';
+import MucLuc from '../../components/MucLuc.astro';
+import { mucLuc } from '../../lib/muc-luc';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import { getEntry, render } from 'astro:content';
@@ -19,7 +21,7 @@ export async function getStaticPaths() {
 }
 
 const { product } = Astro.props;
-const { Content } = await render(product);
+const { Content, headings } = await render(product);
 const d = product.data;
 const categoryEntry = await getEntry('danhmuc', d.category);
 const categoryLabel = categoryEntry?.data.nav_label ?? d.categoryName;
@@ -40,6 +42,18 @@ const equivalents = (d.equivalents ?? []).map((name) => {
   const match = activeProducts.find((p) => p.id !== product.id && norm(p.data.title) === norm(name));
   return { name, href: match ? `/${match.data.category}/${match.id}` : undefined };
 });
+// Mục lục: các mục cố định của template + tiêu đề H2 trong thân bài, đúng thứ tự trên trang.
+const coSpecs = !!d.specs?.length;
+const coUngDung = !!(d.applications?.length || d.not_for?.length);
+const coBaoQuan = !!(d.warnings?.length || d.storage || d.shelf_life);
+const tocItems = mucLuc([
+  ...(coSpecs ? [{ depth: 2, slug: 'thong-so-ky-thuat', text: 'Thông số kỹ thuật điển hình' }] : []),
+  ...(coUngDung ? [{ depth: 2, slug: 'ung-dung', text: 'Ứng dụng và khuyến cáo sử dụng' }] : []),
+  { depth: 2, slug: 'gioi-thieu', text: `Giới thiệu ${d.title}` },
+  ...headings,
+  ...(equivalents.length ? [{ depth: 2, slug: 'san-pham-tuong-duong', text: 'Sản phẩm tương đương' }] : []),
+  ...(coBaoQuan ? [{ depth: 2, slug: 'bao-quan-an-toan', text: 'Bảo quản và an toàn' }] : []),
+], { tat: d.muc_luc === false });
 const stockText = d.stock_status ? STOCK_TEXT[d.stock_status] : 'Liên hệ để nhận báo giá và kiểm tra tồn kho.';
 
 const crumbs = [
@@ -160,9 +174,11 @@ const schemaData = [
       </div>
     </div>
 
+    <MucLuc items={tocItems} />
+
     {d.specs && d.specs.length > 0 && (
       <section class="product-content">
-        <h2>Thông số kỹ thuật điển hình</h2>
+        <h2 id="thong-so-ky-thuat">Thông số kỹ thuật điển hình</h2>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Chỉ tiêu</th><th>Giá trị</th><th>Phương pháp thử</th><th>TCVN tương đương</th></tr></thead>
@@ -188,7 +204,7 @@ const schemaData = [
 
     {(d.applications?.length || d.not_for?.length) && (
       <section class="product-content">
-        <h2>Ứng dụng và khuyến cáo sử dụng</h2>
+        <h2 id="ung-dung">Ứng dụng và khuyến cáo sử dụng</h2>
         {d.applications?.length && <ul>{d.applications.map((a) => <li>{a}</li>)}</ul>}
         {d.not_for?.length && (
           <p><strong>Không nên dùng cho:</strong> {d.not_for.join('; ')}.</p>
@@ -197,19 +213,19 @@ const schemaData = [
     )}
 
     <section class="product-content">
-      <h2>Giới thiệu {d.title}</h2>
+      <h2 id="gioi-thieu">Giới thiệu {d.title}</h2>
       <div class="markdown-body">
         <ContentBody><Content /></ContentBody>
       </div>
       {equivalents.length > 0 && (
         <>
-          <h2>Sản phẩm tương đương</h2>
+          <h2 id="san-pham-tuong-duong">Sản phẩm tương đương</h2>
           <p>{equivalents.map((e, i) => <>{i > 0 && ' · '}{e.href ? <a href={e.href}>{e.name}</a> : e.name}</>)}</p>
         </>
       )}
       {(d.warnings?.length || d.storage || d.shelf_life) && (
         <>
-          <h2>Bảo quản và an toàn</h2>
+          <h2 id="bao-quan-an-toan">Bảo quản và an toàn</h2>
           <ul>
             {d.storage && <li><strong>Bảo quản:</strong> {d.storage}</li>}
             {d.shelf_life && <li><strong>Hạn sử dụng:</strong> {d.shelf_life}</li>}

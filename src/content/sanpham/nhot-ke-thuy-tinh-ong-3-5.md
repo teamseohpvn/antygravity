@@ -34,7 +34,8 @@ storage: "Cất trong hộp đệm, nơi khô, để ống thẳng đứng hoặ
 
 related_posts: ["huong-dan-test-chat-luong-dau"]
 tags: ["thiet-bi-do", "do-nhot"]
-updated: 2026-10-06
+date: "2026-10-06"
+updated: "2026-10-06"
 ---
 
 **Nhớt kế thủy tinh mao quản ống 3,5 mm** là dụng cụ đo **độ nhớt động học** theo nguyên lý của phép thử ASTM D445 (tương đương TCVN 3171). Mẫu dầu chảy qua một ống mao quản dưới tác dụng của trọng lực. Người đo bấm giờ thời gian dầu chảy giữa hai vạch, rồi nhân với hằng số của ống để ra độ nhớt tính bằng mm²/s (cSt).
