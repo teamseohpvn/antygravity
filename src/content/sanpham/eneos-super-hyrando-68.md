@@ -34,6 +34,7 @@ applications:
   - "Máy ép nhựa, máy ép đùn, máy dập, máy chấn và máy cắt tôn thủy lực"
   - "Máy công cụ NC, hệ thủy lực có van tùy động (servo) khe hở nhỏ, bơm bánh răng, cánh gạt, piston áp cao"
   - "Máy công trình, thiết bị nâng hạ, máy boong tàu; hệ có bánh răng, ổ đỡ dùng chung dầu thủy lực"
+  - Sản phẩm này của Nhật Bản vì thế rất tương thích với các máy móc có nguồn gốc Nhật Bản, như Hitachi, Mikasa, Izumi...
 not_for:
   - "Hệ thống yêu cầu dầu chống cháy hoặc dầu gốc nước"
   - "Bơm hoặc van yêu cầu dầu không kẽm: chọn bản Super Hyrando SE (nhận đặt theo yêu cầu)"
@@ -134,7 +135,7 @@ Những lỗi dưới đây xảy ra với mọi loại dầu thủy lực 68, k
 
 ### 1. Để nước lọt vào dầu
 
-Dầu trắng đục như sữa là dấu hiệu đã lẫn nước. Trên diễn đàn [Practical Machinist](https://www.practicalmachinist.com/forum/threads/hydraulic-press-low-pressure.433412/), một chủ xưởng mua máy ép thủy lực cũ khoảng 100 tấn đã để ngoài trời 6 tháng. Khi xả bồn, khoảng 30% là nước, và máy chỉ ép được khoảng 14 tấn. Trên trang hỏi đáp [Yahoo!知恵袋](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14195739674) của Nhật, những người trả lời một câu hỏi về dầu trắng đục sau bão cảnh báo: nước làm gỉ con trượt trong van và có thể làm xước, bó bơm cánh gạt.
+Dầu trắng đục như sữa là dấu hiệu đã lẫn nước. Trên diễn đàn [Practical Machinist](https://www.practicalmachinist.com/forum/threads/hydraulic-press-low-pressure.433412/), một chủ xưởng mua máy ép thủy lực cũ khoảng 100 tấn đã để ngoài trời 6 tháng. Khi xả bồn, khoảng 30% là nước, và máy chỉ ép được khoảng 14 tấn. Trên trang hỏi đáp [Yahoo!Nhật Bản](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14195739674) của Nhật, những người trả lời một câu hỏi về dầu trắng đục sau bão cảnh báo: nước làm gỉ con trượt trong van và có thể làm xước, bó bơm cánh gạt.
 
 Nước thường vào qua nắp lỗ thở, nắp que thăm bị nứt, két làm mát bằng nước, hoặc từ chính dụng cụ rót dầu. Người hỏi trên Yahoo!知恵袋 đã châm dầu bằng một cái bơm tay từng dùng cho dầu hộp số, trong bơm có thể còn nước mưa.
 
@@ -162,7 +163,7 @@ Trên diễn đàn kỹ thuật [Eng-Tips](https://www.eng-tips.com/threads/hydr
 
 ## Khi nào cần thay dầu?
 
-Thay khi kết quả đo vượt ngưỡng, không thay theo lịch cố định. Một câu hỏi trên [Yahoo!知恵袋](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14308858199) về bộ nguồn thủy lực máy tiện NC cho thấy ba cách làm rất khác nhau ở các nhà máy Nhật:
+Thay khi kết quả đo vượt ngưỡng, không thay theo lịch cố định. Một câu hỏi trên [Yahoo!Nhật Bản](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14308858199) về bộ nguồn thủy lực máy tiện NC cho thấy ba cách làm rất khác nhau ở các nhà máy Nhật:
 
 - một người thay dầu mỗi năm vì bộ nguồn có bo mạch hay lỗi sau khoảng 5 năm nếu không thay, dù không chắc việc này kéo dài tuổi thọ máy;
 - một người đo độ nhiễm bẩn và màu dầu, chỉ thay khi van điện từ bắt đầu kẹt do cặn;
@@ -193,13 +194,18 @@ TAN của dầu mới theo TDS Nhật là 0,46 mg KOH/g, còn TCCS cho phép 0,3
 Không có một mốc giờ chạy đúng cho mọi máy. Máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả đo so với dầu mới: độ nhớt ở 40 °C ra ngoài khoảng 62,6–76,5 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng ngưỡng và dụng cụ đo ở mục "Khi nào cần thay dầu?" phía trên; cách lấy mẫu xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Super Hyrando 68 có kẽm không?
-TDS Việt Nam, TDS Nhật và TCCS 14:2014 của Super Hyrando đều không công bố thành phần phụ gia, nên chúng tôi không khẳng định có hay không. ENEOS chỉ ghi rõ bản **Super Hyrando SE** là không kẽm. Nếu bơm yêu cầu dầu không kẽm, hãy chọn SE.
+TDS Việt Nam, TDS Nhật và TCCS 14:2014 của Super Hyrando đều không công bố thành phần phụ gia chi tiết như một phần của việc bảo vệ công thức bí mật thương mại của ENEOS. Tuy nhiên ENEOS đã ghi rõ bản **Super Hyrando SE** là không kẽm. Nếu bơm yêu cầu dầu không kẽm, hãy chọn ENEOS SUPER HYRANDO SE.
 
-### Super Hyrando 68 tương đương mã nào?
-Cùng cấp độ nhớt và cùng loại HM có [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68), Shell Tellus S2 MX 68 và Caltex Hydraulic Oil AW 68. "Tương đương" ở đây là cùng cấp nhớt và tiêu chuẩn. Nếu máy yêu cầu phê duyệt của nhà sản xuất bơm (Parker Denison, Eaton, Bosch Rexroth), phải chọn đúng mã có phê duyệt đó. Xem thêm các mã khác trong danh mục [dầu thủy lực](/dau-thuy-luc).
+### Sản phẩm có thể thay thế cho Super Hyrando 68, tương đương mã nào?
+ Đối với vận hành máy thủy lực thi công công trình. Xuất phát từ đặc thù công việc nơi làm việc không cố định. Nhu cầu hậu cần đôi khi sẽ xảy ra vấn đề chậm trễ. Chúng tôi khuyên khách hàng đối tác của mình luôn có sẵn một phương án dự phòng thay thế sản phẩm có phẩm chất tương đương. Nhằm đảm bảo công việc không bị gián đoạn.
+Cùng cấp độ nhớt và cùng loại HM có [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68), Shell Tellus S2 MX 68 và Caltex Hydraulic Oil AW 68. "Tương đương" ở đây là cùng cấp nhớt và tiêu chuẩn.
+Nhưng cũng cần hết sức chú ý máy móc có yêu cầu riêng:
+  Nếu như máy móc thiết bị thủy lực của các bạn sử dụng bơm của các hãng (Parker Denison, Eaton, Bosch Rexroth), tuyệt đối tuân thủ các loại dầu đề nghị hoặc khuyên dùng theo hãng bơm đề xuất. Xem thêm các mã khác trong danh mục [dầu thủy lực](/dau-thuy-luc).
 
-### Có châm Super Hyrando 68 vào bồn đang dùng dầu hãng khác được không?
-Không nên. Hệ phụ gia mỗi hãng khác nhau, trộn lẫn có thể làm dầu đục, tạo cặn hoặc giảm khả năng tách nước. Khi đổi mã, xả hết dầu cũ, súc rửa và thay lõi lọc.
+### Có đổ (châm) thêm dầu Super Hyrando 68 vào máy đang dùng dầu hãng khác được không?
+ Với ý kiến cá nhân chúng tôi trong khi vận hành cẩu, xe nâng khi nhập xuất phuy dầu 209L tại kho hàng HT VINA tại [108 Đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng (TP Hải Dương cũ)](/about) trong hơn 10 năm vận hành. Lời khuyên là "KHÔNG". Nếu tình huống không bất khả kháng ảnh hưởng tới thiệt hại kinh tế hay an toàn thì bạn hãy đảm bảo chỉ sử dụng một loại dầu nhất định tại một thời điểm. Nếu muốn thay dầu hãng khác hãy tuân thủ nguyên tắc thay dầu tại [Hướng Dẫn Thay Dầu](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc).
+Ý kiến chung của các khách hàng sử dụng dầu thủy lực do HT VINA cung cấp. Phần lớn các khách hàng đều không dùng (pha) chung 2 loại dầu khác nhau. Lý do đưa ra: hệ phụ gia mỗi hãng khác nhau, trộn lẫn có thể làm dầu đục, tạo cặn hoặc giảm khả năng tách nước. Khi đổi mã, xả hết dầu cũ, súc rửa và thay lõi lọc.
 
 ### Can 18 L hay phuy 200 L thì kinh tế hơn?
-Tính theo lít thì phuy thường rẻ hơn. Nếu bồn máy nhỏ hoặc mỗi lần chỉ châm thêm, can tiện hơn và dầu không bị để lâu sau khi mở. Hiện kho có sẵn phuy 200 L; can nhận đặt theo yêu cầu.
+Đây là bài toán kinh tế trong thực tế sản xuất, nếu bạn có nhu cầu tiêu hao lớn hãy chọn phi vì giá phi thường rẻ hơn. Thực tế [báo giá](/bao-gia?sp=ENEOS%20Super%20Hyrando%2068) của công ty chúng tôi cho sản phẩm ENEOS Super Hyrando 68 trong tháng 10/2026. Với thùng (xô) 18 lít có đơn giá dao động từ 1tr1 đến 1tr2. Với phuy 200 lít đơn giá 11tr–12tr5, như vậy sự chênh lệch giá của thùng luôn cao hơn phuy dao động từ 7–11% (tính theo lít).
+ Việc cân nhắc thùng hay phuy còn phụ thuộc vào thời gian sử dụng của bạn, nếu bạn đặt hàng một phuy tuy nhiên mỗi tháng tiêu hao dùng vài chục lít dầu. Chưa chắc đã tiết kiệm, với giá dầu lên xuống mạnh như thời gian gần đây. Có thể vài tháng sau các bạn đã có một mức giá dễ thở hơn rất nhiều.

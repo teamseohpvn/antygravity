@@ -8,6 +8,7 @@ import StockTable from '../../components/StockTable.astro';
 import stockRows from '../../data/san-pham-kho.json';
 import { render } from 'astro:content';
 import { getActiveProducts, getActiveCategories } from '../../lib/content';
+import { ngayBai } from '../../lib/ngay';
 import { absUrl, breadcrumbSchema, ORG_ID, publicImageExists, webpSrcset, productImages } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -27,6 +28,7 @@ const { category } = Astro.params;
 const { products, categoryInfo } = Astro.props;
 const { Content } = await render(categoryInfo);
 const { title, nav_label, description, seo_title, reviewed_by, updated } = categoryInfo.data;
+const ngay = ngayBai(categoryInfo.data);
 // Bỏ ảnh khi file chưa được tạo (tránh og:image và schema trỏ tới ảnh 404).
 const image = publicImageExists(categoryInfo.data.image) ? categoryInfo.data.image : undefined;
 const pagePath = `/${category}`;
@@ -53,6 +55,8 @@ const schemaData = [
     description,
     url: absUrl(pagePath),
     ...(image ? { image: absUrl(image) } : {}),
+    ...(ngay.published ? { datePublished: ngay.published } : {}),
+    ...(ngay.modified ? { dateModified: ngay.modified } : {}),
     isPartOf: { '@id': absUrl('/') + '#website' },
     publisher: { '@id': ORG_ID },
   },
@@ -77,6 +81,8 @@ const schemaData = [
   seoTitle={seo_title}
   {description}
   {image}
+  published={ngay.published}
+  modified={ngay.modified}
   {schemaData}
 >
   <div class="container">
@@ -150,7 +156,7 @@ const schemaData = [
           {(reviewed_by || updated) && (
             <p class="review-meta">
               {reviewed_by && <>Nội dung được duyệt kỹ thuật bởi {reviewed_by}. </>}
-              {updated && <>Cập nhật: {updated.toLocaleDateString('vi-VN')}.</>}
+              {ngay.modified && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time>.</>}
             </p>
           )}
         </div>

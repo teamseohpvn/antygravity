@@ -5,6 +5,8 @@
 // - trường active: bài nào thiếu, link nào trỏ tới bài đang tắt (khi build link đó tự bỏ, chỉ còn chữ)
 // - tên file (slug) đúng chuẩn, mã bài viết (ma) không trùng
 // - ảnh khai báo trong frontmatter có file trong public/ và có alt
+// - ngày đăng (date) / ngày cập nhật (updated): đúng dạng YYYY-MM-DD, không ở tương lai, updated >= date;
+//   bài viết (blog) bắt buộc có date
 // Chạy: npm run check:content
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -43,6 +45,22 @@ for (const e of Object.values(entries).flat()) {
     else if (!routes.has(path)) problems.push(`${e.file}: link nội bộ hỏng ${href}`);
   }
 }
+
+// Ngày đăng / ngày cập nhật (xem docs/CAU-TRUC-NOI-DUNG.md mục "Ngày đăng và ngày cập nhật").
+const today = new Date().toISOString().slice(0, 10);
+const noDate = [];
+for (const p of pages) {
+  for (const key of ['date', 'updated']) {
+    const v = p[key];
+    if (v === undefined) continue;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(v) || Number.isNaN(Date.parse(v))) problems.push(`${p.file}: ${key} "${v}" phải dạng YYYY-MM-DD`);
+    else if (v > today) problems.push(`${p.file}: ${key} ${v} ở tương lai`);
+  }
+  if (p.date && p.updated && p.updated < p.date) problems.push(`${p.file}: updated ${p.updated} trước ngày đăng ${p.date}`);
+  if (p.kind === 'blog' && !p.date) problems.push(`${p.file}: bài viết thiếu ngày đăng (date)`);
+  if (p.active && !p.date && !p.updated) noDate.push(p.file);
+}
+if (noDate.length) console.log(`Lưu ý: ${noDate.length} trang đang bật chưa có date/updated (không hiện ngày, sitemap không có lastmod):\n  ${noDate.join('\n  ')}`);
 
 // Slug, mã bài viết, ảnh.
 const codes = new Map();

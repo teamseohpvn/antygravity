@@ -5,11 +5,18 @@ import react from '@astrojs/react';
 import cloudflare from '@astrojs/cloudflare';
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { contentPages } from './src/lib/active-pages.mjs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 // Domain chính thức: đặt PUBLIC_SITE_URL khi build production (https://daucongnghiephp.com.vn).
 const SITE = (process.env.PUBLIC_SITE_URL || 'https://daucongnghiephp.com.vn').replace(/\/+$/, '');
+
+// <lastmod> trong sitemap = ngày cập nhật (hoặc ngày đăng) ghi trong frontmatter, trùng với ngày hiện trên trang
+// và dateModified trong schema. Trang không có ngày thì bỏ <lastmod>, không dùng ngày build.
+const LASTMOD = new Map(
+  contentPages().filter((p) => p.updated || p.date).map((p) => [SITE + p.path, p.updated || p.date]),
+);
 
 // Danh sách ảnh trong public/images, đọc lúc build (prerender chạy trong workerd, không dùng được node:fs).
 // Dùng để bỏ qua ảnh danh mục chưa tạo và sinh srcset (xem src/lib/site.ts).
@@ -79,6 +86,10 @@ export default defineConfig({
       // Trang render phía server (giá đọc từ D1) không tự vào sitemap, phải khai báo tay.
       customPages: [`${SITE}/bang-gia-dau-thuy-luc`],
       filter: (page) => !page.includes('/bao-gia-thanh-cong') && !page.includes('/api/') && !page.includes('/quan-tri'),
+      serialize(item) {
+        const lastmod = LASTMOD.get(item.url.replace(/\/+$/, ''));
+        return lastmod ? { ...item, lastmod } : item;
+      },
     }),
     react(),
     imageCacheBust(),

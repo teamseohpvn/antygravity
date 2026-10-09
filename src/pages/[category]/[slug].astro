@@ -6,6 +6,7 @@ import QuoteCta from '../../components/QuoteCta.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
+import { ngayBai } from '../../lib/ngay';
 import { timNhanSu, DEFAULT_REVIEWER_ID, personRef, personUrl, personSchema, credentialLine } from '../../lib/nhan-su';
 import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
@@ -48,8 +49,7 @@ const crumbs = [
 ];
 
 // Ngày cập nhật và người biên soạn: hiển thị trên trang, thẻ meta và schema (E-E-A-T).
-const updatedIso = d.updated ? d.updated.toISOString().slice(0, 10) : undefined;
-const updatedText = updatedIso ? updatedIso.split('-').reverse().join('/') : undefined;
+const ngay = ngayBai(d);
 const reviewer = timNhanSu(d.reviewed_by) ?? timNhanSu(DEFAULT_REVIEWER_ID);
 const authorName = reviewer ? reviewer.name : d.reviewed_by ?? `${SITE_NAME} (${LEGAL_SHORT})`;
 
@@ -81,7 +81,8 @@ const schemaData = [
     name: d.seo_title ?? d.title,
     url: absUrl(pagePath),
     inLanguage: 'vi-VN',
-    ...(updatedIso ? { dateModified: updatedIso } : {}),
+    ...(ngay.published ? { datePublished: ngay.published } : {}),
+    ...(ngay.modified ? { dateModified: ngay.modified } : {}),
     author: reviewer ? personRef(reviewer) : { '@id': ORG_ID },
     ...(reviewer ? { reviewedBy: personRef(reviewer) } : {}),
     publisher: { '@id': ORG_ID },
@@ -100,7 +101,8 @@ const schemaData = [
   description={d.description}
   image={mainImage?.src}
   type="product"
-  modified={updatedIso}
+  published={ngay.published}
+  modified={ngay.modified}
   author={authorName}
   {schemaData}
 >
@@ -119,7 +121,8 @@ const schemaData = [
       <div class="product-summary">
         <h1>{d.title}</h1>
         <p class="byline">
-          {updatedText && <>Cập nhật: <time datetime={updatedIso}>{updatedText}</time> · </>}
+          {ngay.published && <>Đăng ngày: <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
+          {ngay.modified && ngay.modified !== ngay.published && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time> · </>}
           {reviewer
             ? <>Tác giả: <a href={personUrl(reviewer)} rel="author">{reviewer.name}</a>, {credentialLine(reviewer) ? `${credentialLine(reviewer)}, ` : ''}{reviewer.role}</>
             : <>Biên soạn: <a href="/about" rel="author">{authorName}</a></>}

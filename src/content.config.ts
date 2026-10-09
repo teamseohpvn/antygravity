@@ -19,6 +19,17 @@ const contentCode = z.string().regex(/^(DM|SP|BV)-[A-Z0-9-]+$/, 'Mã bài viết
 // Lọc ở src/lib/content.ts (getActive...), bỏ link tới bài tắt ở src/lib/active-pages.mjs.
 const active = z.boolean().default(false);
 
+// Ngày đăng / ngày cập nhật (YYYY-MM-DD). Xem docs/CAU-TRUC-NOI-DUNG.md mục "Ngày đăng và ngày cập nhật".
+//   date: ngày bài lên web lần đầu, không bao giờ đổi.
+//   updated: ngày sửa nội dung thật (thông số, đoạn văn, bảng). Sửa lỗi chính tả, đổi ảnh thì không đổi ngày.
+const ngay = z.coerce.date();
+const kiemTraNgay = (d: { date?: Date; updated?: Date }, ctx: z.RefinementCtx) => {
+  const today = new Date(new Date().toISOString().slice(0, 10));
+  if (d.date && d.date > today) ctx.addIssue({ code: 'custom', path: ['date'], message: 'Ngày đăng không được ở tương lai' });
+  if (d.updated && d.updated > today) ctx.addIssue({ code: 'custom', path: ['updated'], message: 'Ngày cập nhật không được ở tương lai' });
+  if (d.date && d.updated && d.updated < d.date) ctx.addIssue({ code: 'custom', path: ['updated'], message: 'Ngày cập nhật phải bằng hoặc sau ngày đăng' });
+};
+
 const danhmucCollection = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/danhmuc" }),
   schema: z.object({
@@ -36,8 +47,9 @@ const danhmucCollection = defineCollection({
     tags: z.array(z.string()).optional(),
     canonical_url: z.string().optional(), // Chỉ dùng khi cần canonical khác URL của trang
     reviewed_by: z.string().optional(), // Người duyệt kỹ thuật (E-E-A-T)
-    updated: z.coerce.date().optional(),
-  }),
+    date: ngay.optional(), // Ngày đăng
+    updated: ngay.optional(), // Ngày cập nhật
+  }).superRefine(kiemTraNgay),
 });
 
 const sanphamCollection = defineCollection({
@@ -92,8 +104,9 @@ const sanphamCollection = defineCollection({
     tags: z.array(z.string()).optional(),
     canonical_url: z.string().optional(),
     reviewed_by: z.string().optional(),
-    updated: z.coerce.date().optional(),
-  }),
+    date: ngay.optional(), // Ngày đăng
+    updated: ngay.optional(), // Ngày cập nhật
+  }).superRefine(kiemTraNgay),
 });
 
 const blogCollection = defineCollection({
@@ -111,13 +124,13 @@ const blogCollection = defineCollection({
     related_products: z.array(z.string()).optional(), // Slug sản phẩm trong sanpham/
     author: z.string().optional(),
     author_title: z.string().optional(), // Chức vụ, kinh nghiệm của tác giả (E-E-A-T)
-    date: z.string().or(z.date()).optional(),
-    updated: z.string().or(z.date()).optional(),
+    date: ngay, // Ngày đăng: bắt buộc với bài viết
+    updated: ngay.optional(), // Ngày cập nhật
     image: z.string().optional(),
     image_alt: z.string().optional(),
     tags: z.array(z.string()).optional(),
     canonical_url: z.string().optional(),
-  }),
+  }).superRefine(kiemTraNgay),
 });
 
 export const collections = {

@@ -24,7 +24,10 @@ export function contentPages() {
       const category = field(fm, 'category');
       const path = kind === 'danhmuc' ? `/${id}` : kind === 'sanpham' ? `/${category}/${id}` : `/ho-tro-ky-thuat/${id}`;
       const activeRaw = field(fm, 'active');
-      list.push({ kind, id, file: `${dir}/${f}`, path, category, hasActive: activeRaw !== undefined, selfActive: activeRaw === 'true' });
+      // date / updated (YYYY-MM-DD): cho <lastmod> trong sitemap và check-content.
+      const date = field(fm, 'date')?.trim() || undefined;
+      const updated = field(fm, 'updated')?.trim() || undefined;
+      list.push({ kind, id, file: `${dir}/${f}`, path, category, date, updated, hasActive: activeRaw !== undefined, selfActive: activeRaw === 'true' });
     }
   }
   const activeCats = new Set(list.filter((p) => p.kind === 'danhmuc' && p.selfActive).map((p) => p.id));

@@ -30,7 +30,11 @@ image: "/images/danh-muc/[slug].webp"
 image_alt: "[Mô tả thật của ảnh – vd: Phuy dầu thủy lực xếp trên pallet trong kho]"
 
 reviewed_by: "[Họ tên – chức vụ người duyệt kỹ thuật]"
-updated: 2026-10-03
+# Ngày (YYYY-MM-DD) – xem docs/CAU-TRUC-NOI-DUNG.md mục 6.5:
+#   date: ngày trang lên web lần đầu, không đổi khi sửa. Trang cũ chưa rõ ngày đăng thì xóa dòng date, không đoán.
+#   updated: ngày sửa nội dung thật (thông số, đoạn văn, bảng). Sửa chính tả, đổi ảnh/link thì giữ nguyên.
+date: "2026-10-03"
+updated: "2026-10-03"
 ---
 
 [Khối trả lời nhanh 40–60 từ: X là gì, dùng ở đâu, chọn theo tiêu chí gì.]
