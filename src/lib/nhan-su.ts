@@ -152,6 +152,7 @@ export function personSchema(p: NhanSu) {
         ? { hasCredential: { '@type': 'EducationalOccupationalCredential', credentialCategory: 'degree', name: p.degree } }
         : {}),
     ...(p.knowsAbout ? { knowsAbout: p.knowsAbout } : {}),
+    hasOccupation: { '@type': 'Occupation', name: p.role, ...(p.knowsAbout ? { skills: p.knowsAbout.join(', ') } : {}) },
     ...(p.sameAs ? { sameAs: p.sameAs } : {}),
     ...(p.email ? { email: p.email } : {}),
     description: p.bio ? p.bio.join(' ') : p.desc,

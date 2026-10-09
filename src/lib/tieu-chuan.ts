@@ -49,6 +49,7 @@ const LIST: TieuChuan[] = [
   { code: 'ASTM D4048', name: 'Ăn mòn tấm đồng (mỡ bôi trơn)', url: astm('4048'), tcvn: 'TCVN 6326:2008', tcvnNote: 'IDT ASTM D4048-02' },
   { code: 'ASTM D943', name: 'Độ bền oxy hóa TOST', url: astm('943'), tcvn: 'TCVN 12922:2020', tcvnNote: 'IDT ASTM D943-19' },
   { code: 'ASTM D2272', name: 'Độ bền oxy hóa RPVOT', url: astm('2272') },
+  { code: 'ASTM D2070', name: 'Độ bền nhiệt của dầu thủy lực (135 °C, đồng và thép)', url: astm('2070') },
   { code: 'ASTM D217', name: 'Độ xuyên kim của mỡ', url: astm('217') },
   { code: 'ASTM D566', name: 'Nhiệt độ nhỏ giọt của mỡ', url: astm('566') },
   { code: 'ASTM D2265', name: 'Nhiệt độ nhỏ giọt của mỡ (dải rộng)', url: astm('2265') },

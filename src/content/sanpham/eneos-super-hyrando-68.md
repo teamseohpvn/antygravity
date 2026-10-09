@@ -179,7 +179,9 @@ Chúng tôi chưa tìm thấy chia sẻ công khai nào nói riêng về Super H
 - Trên Eng-Tips, một thành viên lưu ý dầu thường xuyên nóng trên khoảng 65 °C (150 °F) làm phụ gia suy giảm nhanh. Nước hút vào qua lỗ thở của bồn cũng làm dầu xuống cấp.
 - Trên [Heavy Equipment Forums](https://www.heavyequipmentforums.com/threads/iso-46-or-iso-68-hydraulic-fluid.107106/), một người dùng máy xúc cho biết nhiệt độ dầu do két làm mát quyết định, dùng cấp độ nhớt nào cũng vậy. Cần giữ két sạch và các tấm xốp chắn gió còn đủ.
 
-**Lời khuyên của chúng tôi:** khi bồn dầu nóng bất thường, kiểm tra két làm mát, quạt, mức dầu và nắp lỗ thở trước. Đừng vội đổi sang dầu đặc hơn.
+**Dầu có chịu được khi bồn quá nóng?** Theo TDS của ENEOS Nhật Bản (IND-4001), Super Hyrando 68 không tạo cặn kết tủa sau thử ổn định nhiệt ở 120 °C trong 70 giờ, gấp đôi mức 50–60 °C thường gặp ở xưởng. ENEOS cũng công bố dầu có độ ổn định oxy hóa tốt, giúp hệ thống sạch và giảm cặn bám. ENEOS không công bố kết quả thử độ bền nhiệt theo [ASTM D2070](https://www.astm.org/Standards/D2070.htm) (135 °C, 168 giờ) cho mã này, nên chúng tôi không đưa ra con số cặn bùn cụ thể.
+
+**Lời khuyên của chúng tôi:** độ bền nhiệt của dầu chỉ là lớp bảo vệ dự phòng. Khi bồn dầu thường xuyên trên 65 °C, hãy kiểm tra két làm mát, quạt, mức dầu và nắp lỗ thở trước, đừng vội đổi sang dầu đặc hơn. Nhiệt độ cao kéo dài làm gioăng phớt cao su lão hóa sớm, dầu tốt đến đâu cũng vậy. Muốn biết dầu đã xuống cấp vì nhiệt hay chưa, hãy đo độ nhớt và trị số axit theo bảng ngưỡng bên dưới.
 
 ### 6. Chọn 68 cho khí hậu nóng
 
@@ -195,7 +197,7 @@ Lấy mẫu trong bồn khi máy vừa chạy, để cạnh một mẫu Super Hy
 
 | Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
-| Độ nhớt ở 40 °C | Ngoài khoảng 62,6–76,5 mm²/s (lệch quá ±10% so với 69,5 mm²/s) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Độ nhớt ở 40 °C ([ASTM D445](https://www.astm.org/Standards/D445.htm), tương đương [TCVN 3171:2011](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+3171%3A2011)) | Ngoài khoảng 62,6–76,5 mm²/s (lệch quá ±10% so với 69,5 mm²/s) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
 | Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 

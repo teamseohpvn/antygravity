@@ -38,6 +38,7 @@ Bảng tra dùng khi viết trang sản phẩm: mỗi phương pháp thử trong
 | [ASTM D4048](https://www.astm.org/Standards/D4048.htm) | Ăn mòn tấm đồng (mỡ bôi trơn) | [TCVN 6326:2008](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+6326%3A2008) | IDT ASTM D4048-02 |
 | [ASTM D943](https://www.astm.org/Standards/D943.htm) | Độ bền oxy hóa TOST | [TCVN 12922:2020](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+12922%3A2020) | IDT ASTM D943-19 |
 | [ASTM D2272](https://www.astm.org/Standards/D2272.htm) | Độ bền oxy hóa RPVOT | – | Chưa có TCVN tương đương |
+| [ASTM D2070](https://www.astm.org/Standards/D2070.htm) | Độ bền nhiệt của dầu thủy lực (135 °C, đồng và thép) | – | Chưa có TCVN tương đương |
 | [ASTM D217](https://www.astm.org/Standards/D217.htm) | Độ xuyên kim của mỡ | – | Chưa có TCVN tương đương |
 | [ASTM D566](https://www.astm.org/Standards/D566.htm) | Nhiệt độ nhỏ giọt của mỡ | – | Chưa có TCVN tương đương |
 | [ASTM D2265](https://www.astm.org/Standards/D2265.htm) | Nhiệt độ nhỏ giọt của mỡ (dải rộng) | – | Chưa có TCVN tương đương |
