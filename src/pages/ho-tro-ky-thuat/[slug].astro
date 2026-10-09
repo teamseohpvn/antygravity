@@ -6,6 +6,7 @@ import { getActivePosts } from '../../lib/content';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { absUrl, breadcrumbSchema, ORG_ID, SITE_NAME } from '../../lib/site';
 import { displayName, personRef, personSchema, personUrl, timNhanSu } from '../../lib/nhan-su';
+import { ngayBai } from '../../lib/ngay';
 
 export async function getStaticPaths() {
   const posts = await getActivePosts();
@@ -21,6 +22,8 @@ const { Content } = await render(post);
 const pagePath = `/ho-tro-ky-thuat/${post.id}`;
 // Tác giả có hồ sơ trong nhan-su.ts (author = id hoặc họ tên) thì link tới trang hồ sơ và gắn schema Person đầy đủ.
 const authorP = timNhanSu(post.data.author);
+// Ngày đăng / cập nhật: cùng một giá trị cho chữ trên trang, schema và thẻ meta.
+const ngay = ngayBai(post.data);
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
   { name: 'Hỗ trợ kỹ thuật', href: '/ho-tro-ky-thuat' },
@@ -42,8 +45,8 @@ const schemaData = [
       : post.data.author
       ? { '@type': 'Person', name: post.data.author, ...(post.data.author_title ? { jobTitle: post.data.author_title } : {}) }
       : { '@id': ORG_ID },
-    ...(post.data.date ? { datePublished: String(post.data.date) } : {}),
-    ...(post.data.updated || post.data.date ? { dateModified: String(post.data.updated ?? post.data.date) } : {}),
+    datePublished: ngay.published,
+    dateModified: ngay.modified,
     publisher: { '@id': ORG_ID },
   },
   ...(authorP ? [personSchema(authorP)] : []),
@@ -57,6 +60,8 @@ const schemaData = [
   description={post.data.description}
   image={post.data.image}
   type="article"
+  published={ngay.published}
+  modified={ngay.modified}
   schemaData={schemaData}
 >
   <div class="container blog-container">
@@ -66,8 +71,8 @@ const schemaData = [
       <header class="post-header">
         <h1>{post.data.title}</h1>
         <div class="meta">
-          Đăng ngày: <span>{post.data.date}</span>
-          {post.data.updated && <> | Cập nhật: <span>{post.data.updated}</span></>}
+          Đăng ngày: <time datetime={ngay.published}>{ngay.publishedText}</time>
+          {ngay.modified !== ngay.published && <> | Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time></>}
           | Tác giả: {authorP
             ? <span><a href={personUrl(authorP)} rel="author">{displayName(authorP)}</a>, {authorP.degree}, {authorP.affiliation}</span>
             : <span>{post.data.author ?? SITE_NAME}{post.data.author_title && `, ${post.data.author_title}`}</span>}

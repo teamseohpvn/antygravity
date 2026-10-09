@@ -172,7 +172,8 @@ Danh sách đầy đủ và giá trị mẫu: xem 3 file trong `src/content/_tem
 | `keywords` | Nên có | Từ khóa nhắm tới (để quản lý, không ảnh hưởng xếp hạng) |
 | `tags` | Tùy | Nhãn nội bộ |
 | `reviewed_by` / `author` | Nên có | Người duyệt / tác giả thật (E-E-A-T). Chưa có thì bỏ trống, **không** điền tên giả |
-| `updated` | Nên có | Ngày cập nhật gần nhất |
+| `date` | Có với bài viết, nên có với trang khác | Ngày đăng lần đầu, dạng `YYYY-MM-DD`. Xem mục 6.5 |
+| `updated` | Nên có | Ngày sửa nội dung gần nhất, dạng `YYYY-MM-DD`. Xem mục 6.5 |
 
 ### 6.2. Sản phẩm (`sanpham/`)
 
@@ -203,9 +204,24 @@ Thêm:
 - `loai`: `kien-thuc` | `huong-dan-su-dung` | `so-sanh` | `tin-tuc`.
 - `category`: hub mà bài hỗ trợ (để gắn link ngược).
 - `related_products`: các sản phẩm nhắc tới.
-- `date`, `image` + `image_alt`.
+- `date` (bắt buộc), `updated`, `image` + `image_alt`.
 
 Vì sao không chia thư mục con `blog/huong-dan/...`: thư mục con sẽ chen vào URL (`/ho-tro-ky-thuat/huong-dan/...`), làm URL dài và phải đổi URL nếu sau này đổi loại bài. Dùng trường `loai` thì lọc được mà URL vẫn gọn.
+
+### 6.5. Ngày đăng và ngày cập nhật
+
+Google so ngày hiện trên trang, `datePublished` / `dateModified` trong schema, thẻ `article:published_time` / `article:modified_time` và `<lastmod>` trong sitemap. Các ngày này lệch nhau, hoặc ngày cập nhật đổi mà nội dung không đổi, đều làm giảm độ tin cậy của trang. Vì vậy cả bốn chỗ đều lấy từ **hai trường duy nhất** trong frontmatter (xử lý ở `src/lib/ngay.ts`):
+
+| Trường | Khi nào ghi / đổi | Không được |
+|---|---|---|
+| `date` | Ghi một lần, là ngày bài **lên web lần đầu** (bật `active: true`) | Đổi `date` khi sửa bài; đặt ngày ở tương lai |
+| `updated` | Khi sửa **nội dung thật**: thông số, đoạn văn, bảng, câu hỏi thường gặp, nguồn | Đổi khi chỉ sửa chính tả, đổi ảnh, đổi link, sửa template; đặt trước `date` |
+
+- Dạng ngày: `YYYY-MM-DD`, ví dụ `date: "2026-10-09"`. Không ghi giờ.
+- Bài mới: `date` và `updated` cùng một ngày. Trên trang chỉ hiện "Đăng ngày"; khi `updated` khác `date` mới hiện thêm "Cập nhật".
+- Thiếu `updated` thì coi như chưa sửa (dùng `date`). Trang không có cả hai thì không hiện ngày và không có `<lastmod>`; **không** dùng ngày build.
+- Trang cũ chưa biết ngày đăng thật: chỉ ghi `updated`, **không** đoán `date`.
+- Kiểm tra tự động: `npm run check:content` và lúc build (`src/content.config.ts`) báo lỗi khi ngày sai dạng, ở tương lai, hoặc `updated` trước `date`; bài viết thiếu `date` cũng báo lỗi.
 
 ---
 

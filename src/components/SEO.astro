@@ -10,13 +10,15 @@ interface Props {
   type?: 'website' | 'article' | 'product';
   noindex?: boolean;
   schemaData?: object | object[];
+  /** Ngày đăng (YYYY-MM-DD), xuất thẻ article:published_time. */
+  published?: string;
   /** Ngày cập nhật nội dung (YYYY-MM-DD), xuất thẻ article:modified_time. */
   modified?: string;
   /** Người/đơn vị biên soạn, xuất thẻ meta author. */
   author?: string;
 }
 
-const { title, seoTitle, description, canonical, image, type = 'website', noindex = false, schemaData, modified, author } = Astro.props;
+const { title, seoTitle, description, canonical, image, type = 'website', noindex = false, schemaData, published, modified, author } = Astro.props;
 
 const fullTitle = seoTitle ?? `${title} | ${SITE_NAME}`;
 // Canonical luôn sinh từ domain chính thức + đường dẫn hiện tại (không "/" cuối),
@@ -34,6 +36,7 @@ const schemas = schemaData ? (Array.isArray(schemaData) ? schemaData : [schemaDa
 <link rel="privacy-policy" href="/privacy-policy" />
 <link rel="terms-of-service" href="/terms-of-service" />
 {author && <meta name="author" content={author} />}
+{published && <meta property="article:published_time" content={published} />}
 {modified && <meta property="article:modified_time" content={modified} />}
 {modified && <meta property="og:updated_time" content={modified} />}
 

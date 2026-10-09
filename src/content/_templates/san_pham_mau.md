@@ -84,7 +84,11 @@ images:
 related_posts: ["[slug bài blog liên quan]"]
 tags: ["[iso-vg-68]", "[chong-mai-mon]"]
 reviewed_by: "[Họ tên – chức vụ người duyệt kỹ thuật]"
-updated: 2026-10-03
+# Ngày (YYYY-MM-DD) – xem docs/CAU-TRUC-NOI-DUNG.md mục 6.5:
+#   date: ngày trang lên web lần đầu, không đổi khi sửa. Trang cũ chưa rõ ngày đăng thì xóa dòng date, không đoán.
+#   updated: ngày sửa nội dung thật (thông số, đoạn văn, bảng). Sửa chính tả, đổi ảnh/link thì giữ nguyên.
+date: "2026-10-03"
+updated: "2026-10-03"
 ---
 
 [Đoạn mở đầu 40–60 từ: sản phẩm là gì, đạt tiêu chuẩn gì, dùng cho máy nào. Viết bằng lời của mình, không chép mô tả của hãng.]

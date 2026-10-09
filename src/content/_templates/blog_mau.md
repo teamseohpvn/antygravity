@@ -21,6 +21,10 @@ related_products: ["[slug sản phẩm 1]", "[slug sản phẩm 2]"]
 # Tác giả thật (E-E-A-T). Chưa có thì xóa 2 dòng – bài sẽ đứng tên doanh nghiệp.
 author: "[Họ tên kỹ sư]"
 author_title: "[Chức vụ, số năm kinh nghiệm]"
+# Ngày (YYYY-MM-DD) – xem docs/CAU-TRUC-NOI-DUNG.md mục 6.5:
+#   date: ngày bài lên web lần đầu, KHÔNG đổi khi sửa bài. Bắt buộc.
+#   updated: ngày sửa nội dung thật (số liệu, đoạn văn, bảng, FAQ). Sửa chính tả, đổi ảnh/link thì giữ nguyên.
+#   Bài mới: hai ngày bằng nhau. Không đặt ngày tương lai, updated không trước date.
 date: "2026-10-03"
 updated: "2026-10-03"
 
