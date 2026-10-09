@@ -32,6 +32,7 @@ const LIST: TieuChuan[] = [
   { code: 'ASTM D4052', name: 'Khối lượng riêng (máy đo hiện số)', url: astm('4052'), tcvn: 'TCVN 8314:2010', tcvnNote: 'IDT ASTM D4052-02' },
   { code: 'ASTM D1298', name: 'Khối lượng riêng (tỷ trọng kế)', url: astm('1298'), tcvn: 'TCVN 6594:2007', tcvnNote: 'IDT ASTM D1298-05' },
   { code: 'ASTM D97', name: 'Điểm đông đặc', url: astm('97'), tcvn: 'TCVN 3753:2011', tcvnNote: 'IDT ASTM D97-11' },
+  { code: 'ASTM D6749', name: 'Điểm đông đặc (tự động, áp suất khí)', url: astm('6749') },
   { code: 'ASTM D2270', name: 'Chỉ số độ nhớt', url: astm('2270'), tcvn: 'TCVN 6019:2010', tcvnNote: 'IDT ASTM D2270-04' },
   { code: 'ASTM D92', name: 'Điểm chớp cháy cốc hở Cleveland', url: astm('92'), tcvn: 'TCVN 7498:2005', tcvnNote: 'IDT ASTM D92-02b (tên TCVN ghi cho bitum, cùng phương pháp)' },
   { code: 'ASTM D93', name: 'Điểm chớp cháy cốc kín Pensky-Martens', url: astm('93'), tcvn: 'TCVN 2693:2007', tcvnNote: 'IDT ASTM D93-06' },

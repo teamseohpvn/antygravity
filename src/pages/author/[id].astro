@@ -3,8 +3,8 @@
 // Trang sản phẩm link về đây từ dòng "Tác giả"; schema ProfilePage + Person.
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import { getActiveProducts } from '../../lib/content';
-import { NHAN_SU, DEFAULT_REVIEWER_ID, hasProfile, personSchema, personUrl, timNhanSu, yearsOf, type NhanSu } from '../../lib/nhan-su';
+import { getActivePosts, getActiveProducts } from '../../lib/content';
+import { NHAN_SU, DEFAULT_REVIEWER_ID, displayName, hasProfile, personSchema, personUrl, profileLabel, timNhanSu, yearsOf, type NhanSu } from '../../lib/nhan-su';
 import { LEGAL_SHORT, SITE_NAME, absUrl, breadcrumbSchema } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -24,11 +24,25 @@ const products = (await getActiveProducts())
   .filter((x) => (timNhanSu(x.data.reviewed_by) ?? timNhanSu(DEFAULT_REVIEWER_ID))?.id === p.id)
   .sort((a, b) => a.data.title.localeCompare(b.data.title, 'vi'));
 
+// Bài hỗ trợ kỹ thuật do người này viết (trường author trùng id hoặc họ tên).
+const posts = (await getActivePosts())
+  .filter((x) => timNhanSu(x.data.author)?.id === p.id)
+  .sort((a, b) => String(b.data.date).localeCompare(String(a.data.date)));
+
+const DEFAULT_METHOD = [
+  'Đối chiếu từng thông số trên trang với bảng thông số kỹ thuật (TDS) bản mới nhất của hãng.',
+  'Kiểm tra phương pháp thử theo công bố của ASTM, ISO và TCVN tương đương.',
+  'Rà soát khuyến cáo sử dụng, trường hợp không nên dùng, ngưỡng thay dầu và hướng dẫn kiểm tra dầu tại xưởng.',
+  'Ghi ngày cập nhật khi nội dung thay đổi thực chất.',
+];
+const method = p.method ?? DEFAULT_METHOD;
+const name = displayName(p);
+
 const schemaData = [
   {
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
-    name: `${p.name} – ${p.role} ${LEGAL_SHORT}`,
+    name: `${displayName(p)} – ${p.role} ${LEGAL_SHORT}`,
     url: absUrl(path),
     inLanguage: 'vi-VN',
     mainEntity: { '@id': personSchema(p)['@id'] },
@@ -40,9 +54,11 @@ const schemaData = [
 ---
 
 <Layout
-  title={`${p.name}, ${p.role}`}
-  seoTitle={`${p.name} – ${p.role} | ${SITE_NAME}`}
-  description={`${p.name}, ${p.degree ?? ''} ${p.role} tại ${LEGAL_SHORT}. ${p.since ? `Làm chuyên môn từ năm ${p.since}. ` : ''}Kiểm duyệt thông số kỹ thuật và khuyến cáo sử dụng dầu nhớt công nghiệp trên website.`.replace(/\s+/g, ' ')}
+  title={`${name}, ${p.role}`}
+  seoTitle={`${name} – ${p.role} | ${SITE_NAME}`}
+  description={(p.external
+    ? `${name}, ${p.degree}, ${p.affiliation}. ${p.role} của ${LEGAL_SHORT}.`
+    : `${p.name}, ${p.degree ?? ''} ${p.role} tại ${LEGAL_SHORT}. ${p.since ? `Làm chuyên môn từ năm ${p.since}. ` : ''}Kiểm duyệt thông số kỹ thuật và khuyến cáo sử dụng dầu nhớt công nghiệp trên website.`).replace(/\s+/g, ' ')}
   image={p.photo}
   {schemaData}
 >
@@ -52,14 +68,14 @@ const schemaData = [
       <header class="author-head">
         {p.photo && <img src={p.photo} alt={`${p.name}, ${p.role} ${LEGAL_SHORT}`} width="160" height="160" loading="eager" />}
         <div>
-          <h1>{p.name}</h1>
+          <h1>{name}</h1>
           <p class="role">{p.role}, {LEGAL_SHORT}</p>
           <ul class="facts">
             {p.degree && <li><strong>Học vị, trình độ:</strong> {p.degree}</li>}
             {p.affiliation && <li><strong>Nơi công tác chuyên môn:</strong> {p.affiliation}</li>}
             {p.since && <li><strong>Kinh nghiệm:</strong> làm chuyên môn từ năm {p.since} ({yearsOf(p)} năm)</li>}
             {p.email && <li><strong>Email:</strong> <a href={`mailto:${p.email}`}>{p.email}</a></li>}
-            {p.sameAs?.map((u) => <li><strong>Hồ sơ:</strong> <a href={u} target="_blank" rel="noopener me">LinkedIn</a></li>)}
+            {p.sameAs?.map((u) => <li><strong>Hồ sơ:</strong> <a href={u} target="_blank" rel="noopener me">{profileLabel(u)}</a></li>)}
           </ul>
         </div>
       </header>
@@ -74,17 +90,34 @@ const schemaData = [
         </>
       )}
 
-      <h2>Cách kiểm duyệt nội dung</h2>
-      <ol>
-        <li>Đối chiếu từng thông số trên trang với bảng thông số kỹ thuật (TDS) bản mới nhất của hãng.</li>
-        <li>Kiểm tra phương pháp thử theo công bố của ASTM, ISO và TCVN tương đương.</li>
-        <li>Rà soát khuyến cáo sử dụng, trường hợp không nên dùng, ngưỡng thay dầu và hướng dẫn kiểm tra dầu tại xưởng.</li>
-        <li>Ghi ngày cập nhật khi nội dung thay đổi thực chất.</li>
-      </ol>
+      {p.alumniOf && (
+        <>
+          <h2>Quá trình đào tạo</h2>
+          <ul>{p.alumniOf.map((a) => <li><strong>{a.year}:</strong> {a.degree} {a.field}, {a.school}</li>)}</ul>
+        </>
+      )}
+
+      {p.publications && (
+        <>
+          <h2>Công bố khoa học tiêu biểu</h2>
+          <ul>{p.publications.map((x) => <li>{x.title}. <em>{x.venue}</em> ({x.year}).</li>)}</ul>
+          {p.sameAs?.[0] && <p>Danh sách đầy đủ xem tại <a href={p.sameAs[0]} target="_blank" rel="noopener">{profileLabel(p.sameAs[0])}</a>.</p>}
+        </>
+      )}
+
+      <h2>{p.external ? 'Cách biên soạn nội dung' : 'Cách kiểm duyệt nội dung'}</h2>
+      <ol>{method.map((m) => <li>{m}</li>)}</ol>
+
+      {posts.length > 0 && (
+        <>
+          <h2>Bài viết của {name}</h2>
+          <ul>{posts.map((x) => <li><a href={`/ho-tro-ky-thuat/${x.id}`}>{x.data.title}</a></li>)}</ul>
+        </>
+      )}
 
       {products.length > 0 && (
         <>
-          <h2>Trang sản phẩm do {p.name} đứng tên</h2>
+          <h2>Trang sản phẩm do {name} đứng tên</h2>
           <ul class="products">
             {products.map((x) => <li><a href={`/${x.data.category}/${x.id}`}>{x.data.title}</a></li>)}
           </ul>
