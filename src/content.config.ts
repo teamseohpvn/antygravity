@@ -126,6 +126,8 @@ const blogCollection = defineCollection({
     related_products: z.array(z.string()).optional(), // Slug sản phẩm trong sanpham/
     author: z.string().optional(),
     author_title: z.string().optional(), // Chức vụ, kinh nghiệm của tác giả (E-E-A-T)
+    reviewed_by: z.string().optional(), // Người kiểm duyệt kỹ thuật (id trong nhan-su.ts), hiện dưới tên tác giả + schema reviewedBy
+    citations: z.array(z.string()).optional(), // URL nguồn chính của bài (TDS, báo cáo), đưa vào schema Article.citation
     date: ngay, // Ngày đăng: bắt buộc với bài viết
     updated: ngay.optional(), // Ngày cập nhật
     image: z.string().optional(),

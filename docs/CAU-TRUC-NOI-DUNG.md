@@ -205,6 +205,8 @@ Thêm:
 - `category`: hub mà bài hỗ trợ (để gắn link ngược).
 - `related_products`: các sản phẩm nhắc tới.
 - `date` (bắt buộc), `updated`, `image` + `image_alt`.
+- `reviewed_by` (10/10/2026): id người kiểm duyệt kỹ thuật trong `src/lib/nhan-su.ts`, khác tác giả. Hiện dòng "Kiểm duyệt kỹ thuật" dưới tên tác giả và gắn `reviewedBy` vào khối WebPage trong schema.
+- `citations` (10/10/2026): danh sách URL nguồn chính (TDS, báo cáo, bài báo), đưa vào `Article.citation`.
 
 Vì sao không chia thư mục con `blog/huong-dan/...`: thư mục con sẽ chen vào URL (`/ho-tro-ky-thuat/huong-dan/...`), làm URL dài và phải đổi URL nếu sau này đổi loại bài. Dùng trường `loai` thì lọc được mà URL vẫn gọn.
 
