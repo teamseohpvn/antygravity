@@ -207,6 +207,7 @@ Thêm:
 - `date` (bắt buộc), `updated`, `image` + `image_alt`.
 - `reviewed_by` (10/10/2026): id người kiểm duyệt kỹ thuật trong `src/lib/nhan-su.ts`, khác tác giả. Hiện dòng "Kiểm duyệt kỹ thuật" dưới tên tác giả và gắn `reviewedBy` vào khối WebPage trong schema.
 - `citations` (10/10/2026): danh sách URL nguồn chính (TDS, báo cáo, bài báo), đưa vào `Article.citation`.
+- `duong_dan` (10/10/2026): URL riêng ở gốc site cho bài blog, ví dụ `duong_dan: "/top-6-dau-thuy-luc-2026"` (chữ thường, gạch nối). Không ghi thì bài ở `/ho-tro-ky-thuat/<tên file>`. Đổi `duong_dan` của bài đã đăng thì thêm dòng 301 vào `public/_redirects`. Code: `postPath()` trong `src/lib/content.ts`, route `src/pages/[...duong_dan].astro`.
 
 Vì sao không chia thư mục con `blog/huong-dan/...`: thư mục con sẽ chen vào URL (`/ho-tro-ky-thuat/huong-dan/...`), làm URL dài và phải đổi URL nếu sau này đổi loại bài. Dùng trường `loai` thì lọc được mà URL vẫn gọn.
 

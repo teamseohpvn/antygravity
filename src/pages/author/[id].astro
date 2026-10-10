@@ -3,7 +3,7 @@
 // Trang sản phẩm link về đây từ dòng "Tác giả"; schema ProfilePage + Person.
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import { getActivePosts, getActiveProducts } from '../../lib/content';
+import { getActivePosts, getActiveProducts, postPath } from '../../lib/content';
 import { NHAN_SU, DEFAULT_REVIEWER_ID, displayName, hasProfile, personSchema, personUrl, profileLabel, timNhanSu, yearsOf, type NhanSu } from '../../lib/nhan-su';
 import { LEGAL_SHORT, SITE_NAME, absUrl, breadcrumbSchema } from '../../lib/site';
 
@@ -111,7 +111,7 @@ const schemaData = [
       {posts.length > 0 && (
         <>
           <h2>Bài viết của {name}</h2>
-          <ul>{posts.map((x) => <li><a href={`/ho-tro-ky-thuat/${x.id}`}>{x.data.title}</a></li>)}</ul>
+          <ul>{posts.map((x) => <li><a href={postPath(x)}>{x.data.title}</a></li>)}</ul>
         </>
       )}
 
