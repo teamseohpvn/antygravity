@@ -149,7 +149,7 @@ Sau khi đã dùng, cách kiểm tra dầu còn tốt hay không ngay tại xư�
 
 Để bạn tự đánh giá mức khách quan của bài: HT VINA là đơn vị bán dầu công nghiệp. Trong 6 hãng ở trên, kho của chúng tôi hiện chỉ có **Castrol Hyspin AWS 68** (phuy 209 L). Chúng tôi **không** bán Shell Tellus, Mobil DTE, Total Azolla, Caltex Rando hay PLC, nên thứ hạng trong bài không gắn với hàng chúng tôi bán.
 
-Ngoài ra kho có sẵn [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68), dòng HM đạt DIN 51524-2 của ENEOS (Nhật Bản), không nằm trong top 6. Đây là lựa chọn thay thế cho Shell Tellus S2 MX 68 hoặc Castrol Hyspin AWS 68 ở máy ép, máy dập không đòi phê duyệt riêng. Khoảng giá các mã xem tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc-68). Cần báo giá theo số phuy và nơi giao, gửi qua [form báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c).
+Ngoài ra kho có sẵn [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68), dòng HM đạt DIN 51524-2 của ENEOS (Nhật Bản), không nằm trong top 6. Đây là lựa chọn thay thế cho Shell Tellus S2 MX 68 hoặc Castrol Hyspin AWS 68 ở máy ép, máy dập không đòi phê duyệt riêng. Khoảng giá các mã xem tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc). Cần báo giá theo số phuy và nơi giao, gửi qua [form báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c).
 
 ## Câu hỏi thường gặp
 
@@ -176,7 +176,7 @@ Không nên thay theo một mốc giờ cố định cho mọi máy. Nên quyế
 ## Xem thêm
 
 - [Dầu thủy lực 68, 46, 32 có sẵn tại kho](/dau-thuy-luc)
-- [Bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc-68)
+- [Bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc)
 - [Chọn độ nhớt dầu thủy lực](/ho-tro-ky-thuat/huong-dan-chon-do-nhot)
 - [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68)
 - [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68)

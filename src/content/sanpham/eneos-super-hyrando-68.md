@@ -187,7 +187,7 @@ TAN của dầu mới theo TDS Nhật là 0,46 mg KOH/g, còn TCCS cho phép 0,3
 - **Quy cách có sẵn:** phuy 200 L cấp 68 (mã kho AW2). Cấp 46 và bản SE 68 nhận đặt theo yêu cầu.
 - **Giấy tờ:** mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** xem khoảng giá tham khảo tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc-68), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Super%20Hyrando%2068) theo số lượng của bạn.
+- **Giá:** xem khoảng giá tham khảo tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Super%20Hyrando%2068) theo số lượng của bạn.
 
 ## Câu hỏi thường gặp
 
