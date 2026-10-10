@@ -21,6 +21,8 @@ related_products: ["[slug sản phẩm 1]", "[slug sản phẩm 2]"]
 # Tác giả thật (E-E-A-T). Chưa có thì xóa 2 dòng – bài sẽ đứng tên doanh nghiệp.
 author: "[Họ tên kỹ sư]"
 author_title: "[Chức vụ, số năm kinh nghiệm]"
+reviewed_by: "[id người kiểm duyệt trong src/lib/nhan-su.ts, vd: tran-tuan-huynh]"   # Tùy chọn
+citations: ["[URL nguồn chính 1]", "[URL nguồn chính 2]"]   # Tùy chọn: đưa vào schema Article.citation
 # Ngày (YYYY-MM-DD) – xem docs/CAU-TRUC-NOI-DUNG.md mục 6.5:
 #   date: ngày bài lên web lần đầu, KHÔNG đổi khi sửa bài. Bắt buộc.
 #   updated: ngày sửa nội dung thật (số liệu, đoạn văn, bảng, FAQ). Sửa chính tả, đổi ảnh/link thì giữ nguyên.
