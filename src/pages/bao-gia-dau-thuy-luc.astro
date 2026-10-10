@@ -10,7 +10,7 @@ import { getActiveProducts } from '../lib/content';
 import { fmtNgay, fmtVnd } from '../lib/gia-tinh';
 import type { DongGiaCongKhai, CauHinh } from '../lib/gia';
 import { bangGiaTuJson } from '../lib/gia-json';
-import { timNhanSu, personUrl, personRef, displayName } from '../lib/nhan-su';
+import { timNhanSu, personUrl, personRef, personSchema, displayName, credentialLine } from '../lib/nhan-su';
 import { traTieuChuan } from '../lib/tieu-chuan';
 import { PROMO, PROMO_ACTIVE } from '../lib/promo';
 import { absUrl, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR } from '../lib/site';
@@ -64,10 +64,18 @@ const vat = cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT';
 
 const iso11158 = traTieuChuan('ISO 11158');
 
+// Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
+// Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
+const NGAY_DANG = '2026-10-06';
+const NGAY_SUA_NOI_DUNG = '2026-10-10';
+const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
+// Tác giả nội dung tư vấn: KS. Trần Tuấn Huỳnh; giá do người phụ trách bán hàng rà soát.
+const tacGia = nguoiKyThuat;
+
 const title = `Báo Giá Dầu Thủy Lực 68${thang ? ` Tháng ${thang}` : ''}`;
 const seoTitle = `${title} – Phuy 200 L, Xô 18 L`;
 const description = coGia && phuyThap
-  ? `Báo giá dầu thủy lực 68${thang ? ` tháng ${thang}` : ''}: phuy từ ${fmtVnd(phuyThap)} đ (${vat}), ${soMa} mã ${hangs.slice(0, 3).join(', ')}… có sẵn kho ${AREA_TEXT}. Cách chọn mã đúng sổ tay máy.`
+  ? `Báo giá dầu thủy lực 68${thang ? ` tháng ${thang}` : ''}: phuy từ ${fmtVnd(phuyThap)} đ (${vat}), ${soMa} mã ${hangs.slice(0, 3).join(', ')}… sẵn kho ${AREA_TEXT}. Giữ giá đầu tháng.`
   : `Báo giá dầu thủy lực 68 (ISO VG 68) phuy 200–209 L và xô 18 L, quy đổi theo lít. Hàng có sẵn tại kho ${AREA_TEXT}, có CO/CQ, VAT.`;
 
 const crumbs = [
@@ -84,27 +92,45 @@ const schemaData = [
     description,
     url: absUrl(pagePath),
     inLanguage: 'vi-VN',
-    ...(cauHinh.ngay_ra_soat ? { dateModified: cauHinh.ngay_ra_soat, lastReviewed: cauHinh.ngay_ra_soat } : {}),
+    datePublished: NGAY_DANG,
+    dateModified: ngaySua,
+    ...(cauHinh.ngay_ra_soat ? { lastReviewed: cauHinh.ngay_ra_soat } : {}),
+    author: personRef(tacGia),
     reviewedBy: [personRef(nguoiGia), personRef(nguoiKyThuat)],
     about: { '@type': 'Thing', name: 'Dầu thủy lực ISO VG 68' },
     primaryImageOfPage: { '@type': 'ImageObject', url: absUrl(IMAGE), caption: IMAGE_ALT },
     isPartOf: { '@id': absUrl('/') + '#website' },
     publisher: { '@id': ORG_ID },
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    url: absUrl(pagePath),
+    mainEntityOfPage: absUrl(pagePath),
+    image: absUrl(IMAGE),
+    inLanguage: 'vi-VN',
+    author: personRef(tacGia),
+    datePublished: NGAY_DANG,
+    dateModified: ngaySua,
+    publisher: { '@id': ORG_ID },
+  },
+  personSchema(tacGia),
   breadcrumbSchema(crumbs),
 ];
 ---
 
-<Layout {title} {seoTitle} {description} type="website" image={IMAGE} modified={cauHinh.ngay_ra_soat || undefined} {schemaData}>
+<Layout {title} {seoTitle} {description} type="article" image={IMAGE} published={NGAY_DANG} modified={ngaySua} author={tacGia.name} {schemaData}>
   <div class="container price-page">
     <Breadcrumbs items={crumbs} />
 
     <header class="price-hero">
       <h1>{title}</h1>
       <p class="byline">
+        Tác giả: <a href={personUrl(tacGia)} rel="author">{tacGia.degree ? `KS. ${tacGia.name}` : tacGia.name}</a>{credentialLine(tacGia) && `, ${credentialLine(tacGia)}`}, {tacGia.role.toLowerCase()}. Phần chọn mã và tiêu chuẩn được đối chiếu với TDS của hãng.
         Giá rà soát bởi <a href={personUrl(nguoiGia)}>{displayName(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}.
-        Phần chọn mã và tiêu chuẩn do <a href={personUrl(nguoiKyThuat)}>{nguoiKyThuat.degree ? `KS. ${nguoiKyThuat.name}` : nguoiKyThuat.name}</a>, {nguoiKyThuat.role.toLowerCase()}, đối chiếu với TDS của hãng.
-        {coGia && ngay && <> Rà soát ngày <strong>{ngay}</strong>, áp dụng đến khi trang này ghi ngày mới.</>}
+        <br />Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time>{ngaySua !== NGAY_DANG && <> · Cập nhật <time datetime={ngaySua}>{fmtNgay(ngaySua)}</time></>}{coGia && ngay && <> · Giá rà soát ngày <strong>{ngay}</strong>, áp dụng đến khi trang này ghi ngày mới.</>}
       </p>
 
       {coGia && (
@@ -189,7 +215,7 @@ const schemaData = [
         </table>
       </div>
       {iso11158 && (
-        <p class="small">Loại HM theo <a href={iso11158.url} rel="noopener">ISO 11158</a> (tương đương {iso11158.tcvn}) và HLP theo DIN 51524-2 là hai cách gọi cùng một nhóm dầu thủy lực khoáng có phụ gia chống mài mòn. Nhiều sổ tay máy châu Á ghi gọn là "AW 68".</p>
+        <p class="small">Loại HM theo <a href={iso11158.url} rel="noopener">ISO 11158</a> (tương đương {iso11158.tcvnUrl ? <a href={iso11158.tcvnUrl} rel="noopener">{iso11158.tcvn}</a> : iso11158.tcvn}, tra trên cổng tiêu chuẩn quốc gia VSQI) và HLP theo DIN 51524-2 là hai cách gọi cùng một nhóm dầu thủy lực khoáng có phụ gia chống mài mòn. Nhiều sổ tay máy châu Á ghi gọn là "AW 68".</p>
       )}
     </section>
 
