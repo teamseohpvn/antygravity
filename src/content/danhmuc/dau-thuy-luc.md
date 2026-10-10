@@ -39,6 +39,8 @@ Chữ **"AW"** (anti-wear) nghĩa là dầu có phụ gia chống mài mòn. The
 
 Các sản phẩm cùng hàng trong bảng có cùng cấp độ nhớt và cùng loại tiêu chuẩn, nên thường thay thế được cho nhau. Trước khi chuyển hãng, nên đối chiếu phê duyệt của nhà sản xuất bơm (ví dụ Bosch Rexroth, Parker, Eaton) ghi trên bảng thông số kỹ thuật (TDS). Khi đổi sang dầu khác hãng, nên xả sạch dầu cũ thay vì châm lẫn.
 
+Thị phần từng hãng tại Việt Nam (có nguồn) và cách chọn giữa các dòng trên có trong bài [top 6 hãng dầu thủy lực phổ biến nhất Việt Nam](/ho-tro-ky-thuat/top-6-dau-thuy-luc-pho-bien-nhat).
+
 <!-- TODO: xác minh với nhà cung cấp các mã đang có hàng; bỏ cột hãng không phân phối. -->
 
 ### Shell Tellus
@@ -100,4 +102,4 @@ Châm bổ sung một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng c�
 
 ---
 
-**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot)
+**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot) · [Top 6 hãng dầu thủy lực](/ho-tro-ky-thuat/top-6-dau-thuy-luc-pho-bien-nhat) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot)
