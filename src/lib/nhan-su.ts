@@ -71,6 +71,7 @@ export const NHAN_SU: NhanSu[] = [
     ],
   },
   {
+    // Từ 12/10/2026 không đứng tên bài viết, trang sản phẩm (không có bio nên không có trang /author riêng).
     id: 'tran-tuan-huynh',
     name: 'Trần Tuấn Huỳnh',
     role: 'Chuyên viên tư vấn chất lượng',
@@ -80,11 +81,7 @@ export const NHAN_SU: NhanSu[] = [
     email: 'tvcl@daucongnghiephp.com.vn',
     photo: '/images/nhan-su/tran-tuan-huynh.webp',
     sameAs: ['https://vn.linkedin.com/in/thanhtuan1386'],
-    desc: 'Phụ trách tư vấn chất lượng: kiểm duyệt thông số kỹ thuật trên website theo TDS của hãng, tư vấn chọn dầu theo yêu cầu thiết bị và đánh giá chất lượng dầu đang sử dụng.',
-    bio: [
-      'Kỹ sư Trần Tuấn Huỳnh làm chuyên môn trong ngành dầu khí từ năm 2009 và hiện công tác tại Petrovietnam Engineering Company (PV Engineering).',
-      'Tại HT VINA, anh Huỳnh kiểm duyệt nội dung kỹ thuật trước khi đăng lên website: đối chiếu thông số với bảng TDS của hãng và tiêu chuẩn thử nghiệm ASTM, ISO, TCVN; rà soát khuyến cáo sử dụng, ngưỡng thay dầu và hướng dẫn kiểm tra dầu tại xưởng.',
-    ],
+    desc: 'Phụ trách tư vấn chất lượng: tư vấn chọn dầu theo yêu cầu thiết bị và đánh giá chất lượng dầu đang sử dụng.',
     knowsAbout: ['Kỹ thuật dầu khí', 'Dầu nhớt công nghiệp', 'Dầu thủy lực', 'Kiểm tra chất lượng dầu bôi trơn'],
   },
   {
