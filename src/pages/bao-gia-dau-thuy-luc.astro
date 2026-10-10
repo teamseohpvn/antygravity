@@ -203,10 +203,90 @@ const schemaData = [
       </ul>
     </section>
 
-    <section class="price-body">
-      <h2>Dự trù chi phí cho một lần thay dầu</h2>
-      <p>Lấy dung tích bồn dầu của máy, cộng thêm lượng dầu súc rửa nếu thay vì dầu nhiễm bẩn, rồi nhân với giá quy đổi theo lít ở bảng trên. Bồn từ vài trăm lít trở lên thì mua theo phuy thường kinh tế hơn mua xô.</p>
-      <p>Các bước xả, súc rửa và nạp dầu mới có trong <a href="/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc">hướng dẫn thay dầu thủy lực</a>. Chưa chắc dầu trong máy đã cần thay, xem <a href="/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau">hướng dẫn test chất lượng dầu tại xưởng</a> trước khi mua.</p>
+    <section class="price-body" id="dat-bao-nhieu">
+      <h2>Nên đặt bao nhiêu dầu? Tính theo máy của bạn</h2>
+      <p>Mua ít quá thì máy dừng chờ dầu, lại phải mua lẻ từng xô với giá tính theo lít cao hơn phuy (xem cột "Quy đổi" ở bảng trên). Mua nhiều quá thì tiền nằm trong kho, chiếm chỗ, và phuy đã mở để lâu dễ hút ẩm. Số lượng hợp lý tính từ hai nhu cầu khác nhau của máy:</p>
+      <div class="table-wrap">
+        <table class="match">
+          <thead>
+            <tr><th scope="col">Nhu cầu</th><th scope="col">Cách tính</th><th scope="col">Lấy số ở đâu</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Châm bù hằng tháng</strong> (rò rỉ, hao hụt khi bảo trì)</td>
+              <td>Tổng số lít châm vào tất cả máy trong một tháng</td>
+              <td>Ghi sổ mỗi lần châm dầu trong 1–2 tháng, lấy số trung bình. Đừng ước lượng bằng mắt.</td>
+            </tr>
+            <tr>
+              <td><strong>Thay dầu định kỳ</strong></td>
+              <td>Tổng lượng dầu của máy (bồn + ống, xi lanh) × số máy thay trong kỳ, cộng một lượt súc rửa nếu dầu cũ nhiễm nước hoặc đổi hãng</td>
+              <td>Sổ tay máy. Dầu ngoài bồn có thể chiếm phần lớn: theo <a href="https://www.yanmar.com/jp/construction/service_support/oil/cycle.html" rel="noopener">bảng bảo dưỡng của Yanmar</a>, máy xúc ViO80-1B có 60 L trong bồn và 56 L ngoài bồn.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Ví dụ minh họa: xưởng 3 máy ép, bồn 200 L mỗi máy</h3>
+      <p>Giả sử sổ ghi châm bù trung bình 36 L/tháng cho cả 3 máy, và tháng này đến lịch thay dầu một máy (200 L bồn, sổ tay ghi thêm khoảng 40 L nằm trong ống và xi lanh).</p>
+      <ul>
+        <li>Thay dầu một máy: 200 + 40 = 240 L.</li>
+        <li>Châm bù tháng này: 36 L.</li>
+        <li>Tổng cần khoảng 276 L. <strong>Đặt 2 phuy 200 L</strong>: một phuy cho lần thay dầu, phuy thứ hai dùng để thay nốt phần còn thiếu rồi châm bù trong khoảng ba tháng tiếp theo. Mua lẻ 4–5 xô thay cho phuy thứ hai sẽ tốn hơn khi tính theo lít.</li>
+        <li>Không mở phuy thứ hai cho tới khi cần. Phuy còn nguyên niêm giữ chất lượng lâu hơn nhiều so với phuy đã mở.</li>
+      </ul>
+
+      <h3>Mức tồn kho gợi ý theo quy mô</h3>
+      <div class="table-wrap">
+        <table class="match">
+          <thead>
+            <tr><th scope="col">Xưởng của bạn</th><th scope="col">Nên mua</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1–2 máy, châm bù dưới một xô mỗi tháng</td>
+              <td>Xô 18 L cho châm bù. Đến lịch thay dầu thì đặt đúng số phuy cho lần thay đó, không trữ sẵn.</td>
+            </tr>
+            <tr>
+              <td>Nhiều máy dùng chung một loại dầu, châm bù đều đặn</td>
+              <td>Giữ một phuy đang dùng và một phuy dự phòng còn niêm. Mở phuy dự phòng thì đặt phuy mới.</td>
+            </tr>
+            <tr>
+              <td>Nhà máy dùng nhiều phuy mỗi tháng</td>
+              <td>Hợp đồng giao định kỳ theo lịch. Tồn kho chỉ cần đủ dùng giữa hai lần giao, cộng vài ngày dự phòng.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Kho HT VINA ở {AREA_TEXT}, giao trong ngày tới các KCN {KCN_NEAR.slice(0, 3).join(', ')}. Vì vậy xưởng gần kho không cần trữ nhiều dầu. Gửi số máy, dung tích bồn và lượng châm bù hằng tháng qua <a href="/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c%2068">form báo giá</a>, chúng tôi tính giúp số phuy, số xô và lịch giao hợp lý.</p>
+      <p>Các bước xả, súc rửa và nạp dầu mới có trong <a href="/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc">hướng dẫn thay dầu thủy lực</a>. Chưa chắc dầu trong máy đã cần thay thì xem <a href="/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau">hướng dẫn test chất lượng dầu tại xưởng</a> trước khi mua: không thay sớm cũng là một cách tiết kiệm.</p>
+    </section>
+
+    <section class="price-body" id="bao-quan">
+      <h2>Bảo quản dầu đã mua để không mất tiền oan</h2>
+      <ul>
+        <li><strong>Hạn dùng:</strong> theo <a href="https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/shelf-life-recommendations.pdf" rel="noopener">khuyến cáo của ExxonMobil</a>, dầu nhờn thường dùng tốt trong khoảng 5 năm nếu còn nguyên thùng niêm và bảo quản đúng cách. Hạn ghi trên nhãn của từng phuy là con số chính thức.</li>
+        <li><strong>Để phuy trong nhà,</strong> khô, tránh nắng mưa. Buộc phải để ngoài trời thì đặt phuy nằm ngang, hai lỗ nắp ở vị trí 3 giờ và 9 giờ để nước mưa không đọng trên nắp rồi bị hút vào (theo <a href="https://petrocanadalubricants.com/lube-source-handbook/introduction/lubricants-handling-and-storage" rel="noopener">sổ tay bảo quản của Petro-Canada</a>).</li>
+        <li><strong>Nhập trước dùng trước.</strong> Ghi ngày nhận lên phuy, lấy phuy cũ trước.</li>
+        <li><strong>Phuy đã mở:</strong> đậy kín sau mỗi lần lấy, dùng bơm, can, phễu riêng cho dầu thủy lực. Dầu bẩn từ dụng cụ dùng chung làm hỏng cả phuy.</li>
+      </ul>
+    </section>
+
+    <section class="price-body" id="giu-gia">
+      <h2>Giá dầu biến động: cách giữ giá cho đơn hàng của bạn</h2>
+      <p>Giá dầu thủy lực chịu ảnh hưởng của giá dầu gốc thế giới và tỷ giá. Dầu gốc và phụ gia để pha dầu nhờn tại Việt Nam phần lớn phải nhập khẩu: <a href="https://plc.petrolimex.com.vn/nd/tt-co-dong/bao-cao-thuong-nien-2025.html" rel="noopener">báo cáo thường niên 2025 của Petrolimex (PLC)</a> ghi dầu gốc và phụ gia của họ "đều phải nhập khẩu", và tỷ giá tăng từ đầu năm 2025 làm giá nguyên liệu tăng theo. Nhà máy dùng dầu đều đặn có thể giảm rủi ro này bằng ba cách:</p>
+      <ol>
+        <li><strong>Đặt cọc chốt giá đầu tháng, lấy hàng chia đợt.</strong> Bạn báo trước lượng dầu dự kiến dùng trong tháng hoặc quý, đặt cọc để chốt giá tại thời điểm ký, rồi lấy hàng từng đợt theo nhu cầu với giá đã chốt. Cách này giống một hợp đồng kỳ hạn: giá cố định, không phải trữ toàn bộ hàng trong kho của bạn. <strong>HT VINA nhận hợp đồng đặt cọc giữ giá kiểu này.</strong></li>
+        <li><strong>Hợp đồng cung cấp định kỳ cả năm.</strong> Số lượng và lịch giao cố định, giá chỉ điều chỉnh khi hãng ra thông báo giá mới, kèm văn bản của hãng.</li>
+        <li><strong>Mua trước khi lên lịch thay dầu lớn.</strong> Biết trước tháng nào thay dầu nhiều máy thì chốt giá sớm. Đừng đợi tới tuần thay dầu mới hỏi giá.</li>
+      </ol>
+      <h3>Hợp đồng giữ giá nên ghi rõ những gì</h3>
+      <ul>
+        <li>Mã dầu, quy cách, tổng số lượng và giá chốt (trước thuế, tiền thuế).</li>
+        <li>Mức đặt cọc và thời hạn lấy hết hàng.</li>
+        <li>Lịch giao từng đợt và cách báo lấy hàng.</li>
+        <li>Cách xử lý khi lấy không hết số lượng trong thời hạn, và khi giá thị trường giảm mạnh trong kỳ.</li>
+      </ul>
+      <p>Mức cọc, thời hạn và các điều khoản trên được thỏa thuận theo số lượng của từng khách. Mục tiêu là bạn có giá ổn định để lập ngân sách, mà không phải trữ dầu quá nhu cầu. Gọi <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a> hoặc gửi <a href="/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c%2068">form báo giá</a> với ghi chú "giữ giá" để nhận phương án cụ thể.</p>
     </section>
 
     <section class="price-body">
@@ -237,7 +317,11 @@ const schemaData = [
       <h3>Vì sao chỉ ghi khoảng giá, không ghi giá chính xác?</h3>
       <p>Giá thực tế phụ thuộc số lượng, quy cách và điểm giao. Khoảng giá giúp bạn dự trù ngân sách; giá chính xác được gửi trong ngày khi bạn cho biết số lượng.</p>
       <h3>Mua bao nhiêu thì được giá tốt?</h3>
-      <p>Mua theo phuy tiết kiệm hơn mua xô. Đơn từ vài phuy trở lên hoặc hợp đồng định kỳ được báo giá riêng.</p>
+      <p>Mua theo phuy tiết kiệm hơn mua xô. Đơn từ vài phuy trở lên hoặc hợp đồng định kỳ được báo giá riêng. Đừng mua vượt nhu cầu chỉ để được giá: cách tính lượng cần mua có ở mục <a href="#dat-bao-nhieu">nên đặt bao nhiêu dầu</a>.</p>
+      <h3>Có giữ giá cho đơn đặt trước không?</h3>
+      <p>Có. HT VINA nhận đặt cọc để chốt giá đầu tháng, sau đó bạn lấy hàng chia đợt với giá đã chốt. Mức cọc và thời hạn thỏa thuận theo số lượng, xem mục <a href="#giu-gia">cách giữ giá</a>.</p>
+      <h3>Dầu thủy lực để trong kho được bao lâu?</h3>
+      <p>Phuy còn nguyên niêm, để trong nhà khô ráo thường dùng tốt khoảng 5 năm theo khuyến cáo của ExxonMobil. Hạn trên nhãn phuy là con số chính thức. Phuy đã mở nên dùng hết sớm và luôn đậy kín.</p>
       <h3>Máy đang dùng dầu 46, có dùng dầu 68 cho rẻ được không?</h3>
       <p>Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Dầu 32 và 46 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/huong-dan-chon-do-nhot">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.</p>
       <h3>Bảng giá cập nhật khi nào?</h3>
