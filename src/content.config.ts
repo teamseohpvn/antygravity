@@ -128,6 +128,8 @@ const blogCollection = defineCollection({
     author_title: z.string().optional(), // Chức vụ, kinh nghiệm của tác giả (E-E-A-T)
     reviewed_by: z.string().optional(), // Người kiểm duyệt kỹ thuật (id trong nhan-su.ts), hiện dưới tên tác giả + schema reviewedBy
     citations: z.array(z.string()).optional(), // URL nguồn chính của bài (TDS, báo cáo), đưa vào schema Article.citation
+    // URL riêng ở gốc site, ví dụ "/top-6-dau-thuy-luc-2026". Không ghi: /ho-tro-ky-thuat/<tên file>.
+    duong_dan: z.string().regex(/^\/[a-z0-9]+(-[a-z0-9]+)*$/, 'duong_dan dạng "/chu-thuong-gach-noi"').optional(),
     date: ngay, // Ngày đăng: bắt buộc với bài viết
     updated: ngay.optional(), // Ngày cập nhật
     image: z.string().optional(),
