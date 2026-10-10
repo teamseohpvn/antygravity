@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import PromoBanner from '../components/PromoBanner.astro';
-import { getActiveProducts, getActiveCategories, getActivePosts } from '../lib/content';
+import { getActiveProducts, getActiveCategories, getActivePosts, postPath } from '../lib/content';
 import { AREA_TEXT, BRANDS, KCN_NEAR, KCN_FAR, publicImageExists, webpSrcset, productImages } from '../lib/site';
 
 const products = await getActiveProducts();
@@ -108,7 +108,7 @@ const grade = (p: (typeof products)[number]) =>
       <h2 class="section-title" id="post-title">Kiến thức kỹ thuật</h2>
       <ul class="post-list">
         {posts.map((post) => (
-          <li><a href={`/ho-tro-ky-thuat/${post.id}`}>{post.data.title}</a><span>{post.data.description}</span></li>
+          <li><a href={postPath(post)}>{post.data.title}</a><span>{post.data.description}</span></li>
         ))}
       </ul>
     </section>

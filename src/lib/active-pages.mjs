@@ -22,7 +22,7 @@ export function contentPages() {
       const fm = frontmatter(readFileSync(join(ROOT, dir, f), 'utf8'));
       const id = f.replace(/\.md$/, '');
       const category = field(fm, 'category');
-      const path = kind === 'danhmuc' ? `/${id}` : kind === 'sanpham' ? `/${category}/${id}` : `/ho-tro-ky-thuat/${id}`;
+      const path = kind === 'danhmuc' ? `/${id}` : kind === 'sanpham' ? `/${category}/${id}` : field(fm, 'duong_dan')?.trim() || `/ho-tro-ky-thuat/${id}`;
       const activeRaw = field(fm, 'active');
       // date / updated (YYYY-MM-DD): cho <lastmod> trong sitemap và check-content.
       const date = field(fm, 'date')?.trim() || undefined;

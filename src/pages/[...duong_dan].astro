@@ -1,0 +1,18 @@
+---
+// Bài viết blog có URL riêng ở gốc site, khai báo bằng trường `duong_dan` trong frontmatter
+// (ví dụ duong_dan: "/top-6-dau-thuy-luc-2026"). Route rest có ưu tiên thấp nhất, không đè danh mục hay trang tĩnh.
+import BaiViet from '../components/BaiViet.astro';
+import { getActivePosts } from '../lib/content';
+
+export async function getStaticPaths() {
+  const posts = (await getActivePosts()).filter((post) => post.data.duong_dan);
+  return posts.map((post) => ({
+    params: { duong_dan: post.data.duong_dan!.slice(1) },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+---
+
+<BaiViet {post} />

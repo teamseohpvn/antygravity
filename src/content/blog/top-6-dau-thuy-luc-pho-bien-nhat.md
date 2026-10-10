@@ -7,6 +7,7 @@ seo_title: "Top 6 Hãng Dầu Thủy Lực Phổ Biến Nhất Việt Nam Hiện
 description: "Top 6 hãng dầu thủy lực phổ biến tại Việt Nam: Castrol, Petrolimex, Shell, Total, Caltex, Mobil. Thị phần có nguồn, tiêu chuẩn từng dòng, cách chọn."
 keywords: ["top dầu thủy lực", "dầu thủy lực tốt nhất", "dầu thủy lực bán chạy", "dầu thủy lực phổ biến", "thương hiệu dầu thủy lực", "so sánh dầu thủy lực", "thị phần dầu nhớt việt nam"]
 category: "dau-thuy-luc"
+duong_dan: "/top-6-dau-thuy-luc-2026"
 related_products: ["castrol-hyspin-aws-68", "eneos-super-hyrando-68"]
 author: "bui-huy-tien"
 reviewed_by: "tran-tuan-huynh"

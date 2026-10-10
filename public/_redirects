@@ -5,6 +5,9 @@
 # Đổi hub hộp số tự động thành hub dầu cầu, dầu hộp số (02/10/2026).
 /dau-hop-so-tu-dong /dau-cau-hop-so 301
 /dau-hop-so-tu-dong.html /dau-cau-hop-so 301
+# Bài Top 6 hãng dầu thủy lực dùng URL riêng ở gốc site (10/10/2026).
+/ho-tro-ky-thuat/top-6-dau-thuy-luc-pho-bien-nhat /top-6-dau-thuy-luc-2026 301
+/ho-tro-ky-thuat/top-6-dau-thuy-luc-pho-bien-nhat.html /top-6-dau-thuy-luc-2026 301
 # Gõ nhầm gạch dưới vẫn vào được trang quản trị giá (06/10/2026).
 /quan_tri /quan-tri 301
 /quan_tri/* /quan-tri/:splat 301

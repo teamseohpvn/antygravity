@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getActivePosts } from '../../lib/content';
+import { getActivePosts, postPath } from '../../lib/content';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { absUrl, breadcrumbSchema, ORG_ID } from '../../lib/site';
 
@@ -40,7 +40,7 @@ const schemaData = [
       {posts.map(post => (
         <article class="blog-card">
           {post.data.image && (
-            <a href={`/ho-tro-ky-thuat/${post.id}`}>
+            <a href={postPath(post)}>
               <img src={post.data.image} alt={post.data.image_alt ?? post.data.title} loading="lazy" decoding="async" />
             </a>
           )}
@@ -48,9 +48,9 @@ const schemaData = [
             <div class="meta">
               <span>{post.data.date}</span> • <span>{post.data.author}</span>
             </div>
-            <h2><a href={`/ho-tro-ky-thuat/${post.id}`}>{post.data.title}</a></h2>
+            <h2><a href={postPath(post)}>{post.data.title}</a></h2>
             <p>{post.data.description}</p>
-            <a href={`/ho-tro-ky-thuat/${post.id}`} class="read-more">Đọc tiếp →</a>
+            <a href={postPath(post)} class="read-more">Đọc tiếp →</a>
           </div>
         </article>
       ))}
