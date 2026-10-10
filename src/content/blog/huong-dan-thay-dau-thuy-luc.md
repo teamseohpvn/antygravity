@@ -49,7 +49,7 @@ Số dầu cần mua không bằng dung tích bồn. Cần cộng thêm ba phầ
 
 Ví dụ thực tế từ [bảng bảo dưỡng của Yanmar](https://www.yanmar.com/jp/construction/service_support/oil/cycle.html): máy xúc mini ViO17-1 có 16,5 L dầu trong bồn và 9,5 L ngoài bồn; mỗi lần thay định kỳ chỉ xả 16,5 L. Máy ViO80-1B có 60 L trong bồn và 56 L ngoài bồn. Tức là lần thay định kỳ chỉ thay được khoảng 52–63% lượng dầu của máy.
 
-Bồn từ vài trăm lít trở lên thì mua theo **phuy 200 L** thường kinh tế hơn mua xô. Khoảng giá tham khảo theo từng mã xem tại [bảng giá dầu thủy lực](/bang-gia-dau-thuy-luc); cần **báo giá dầu thủy lực** theo đúng số phuy và nơi giao, gửi yêu cầu qua [form báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c).
+Bồn từ vài trăm lít trở lên thì mua theo **phuy 200 L** thường kinh tế hơn mua xô. Khoảng giá tham khảo theo từng mã xem tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc-68); cần **báo giá dầu thủy lực** theo đúng số phuy và nơi giao, gửi yêu cầu qua [form báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c).
 
 ### Dụng cụ và vật tư
 
@@ -186,4 +186,4 @@ Có. Thay dầu mà giữ lõi lọc cũ thì cặn và nước trong lọc đi 
 
 ### Mua dầu thủy lực ở đâu, giá bao nhiêu?
 
-HT VINA có sẵn [dầu thủy lực 68](/dau-thuy-luc) và 46 của ENEOS, Castrol và các hãng khác, phuy 200 L, kèm CO/CQ và hóa đơn VAT, giao từ kho tại TP Hải Phòng (Hải Dương cũ). Khoảng giá xem tại [bảng giá dầu thủy lực](/bang-gia-dau-thuy-luc). Để nhận **báo giá dầu thủy lực** theo số phuy, gửi tên mã dầu đang dùng (hoặc loại máy) qua [form báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c). Chưa rõ máy cần dầu gì, gửi kèm ảnh trang thông số dầu trong sổ tay máy để chúng tôi đối chiếu giúp.
+HT VINA có sẵn [dầu thủy lực 68](/dau-thuy-luc) và 46 của ENEOS, Castrol và các hãng khác, phuy 200 L, kèm CO/CQ và hóa đơn VAT, giao từ kho tại TP Hải Phòng (Hải Dương cũ). Khoảng giá xem tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc-68). Để nhận **báo giá dầu thủy lực** theo số phuy, gửi tên mã dầu đang dùng (hoặc loại máy) qua [form báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c). Chưa rõ máy cần dầu gì, gửi kèm ảnh trang thông số dầu trong sổ tay máy để chúng tôi đối chiếu giúp.

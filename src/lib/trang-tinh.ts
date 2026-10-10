@@ -10,7 +10,7 @@ declare const __BUILD_ID__: string;
 export const BUILD_ID = typeof __BUILD_ID__ === 'undefined' ? 'dev' : __BUILD_ID__;
 
 /** Các trang bảng giá được xuất bản tĩnh. Thêm trang mới: thêm đường dẫn vào đây. */
-export const TRANG_GIA = ['/bang-gia-dau-thuy-luc'] as const;
+export const TRANG_GIA = ['/bao-gia-dau-thuy-luc-68'] as const;
 export const laTrangGia = (path: string) => (TRANG_GIA as readonly string[]).includes(path);
 
 export interface TrangMeta {
