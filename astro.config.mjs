@@ -84,7 +84,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Trang render phía server (giá đọc từ D1) không tự vào sitemap, phải khai báo tay.
-      customPages: [`${SITE}/bang-gia-dau-thuy-luc`],
+      customPages: [`${SITE}/bao-gia-dau-thuy-luc-68`],
       filter: (page) => !page.includes('/bao-gia-thanh-cong') && !page.includes('/api/') && !page.includes('/quan-tri'),
       serialize(item) {
         const lastmod = LASTMOD.get(item.url.replace(/\/+$/, ''));

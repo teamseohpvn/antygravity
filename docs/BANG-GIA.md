@@ -9,7 +9,7 @@ Nhân viên ─► /quan-tri ─► API ─► ghi D1 "gia-dau"
                              └─► render trang bảng giá MỘT lần từ D1
                                  └─► lưu file HTML vào KV "TRANG_TINH"
 
-Khách, Google ─► /bang-gia-dau-thuy-luc ─► middleware trả nguyên HTML trong KV (không đọc D1)
+Khách, Google ─► /bao-gia-dau-thuy-luc-68 ─► middleware trả nguyên HTML trong KV (không đọc D1)
 ```
 
 - **Nguồn giá duy nhất là D1**, nhập qua `/quan-tri`. Không đọc giá từ file Excel, CSV hay JSON nào.
@@ -26,7 +26,7 @@ Khách, Google ─► /bang-gia-dau-thuy-luc ─► middleware trả nguyên HTM
 | `migrations/0001_bang_gia.sql` | Tạo bảng `gia_san_pham`, `lich_su_gia`, `cau_hinh` |
 | `src/lib/gia.ts`, `src/lib/gia-tinh.ts` | Đọc D1, tính khoảng giá |
 | `src/components/PriceTable.astro` | Bảng giá (điện thoại hiện dạng thẻ) |
-| `src/pages/bang-gia-dau-thuy-luc.astro` | Trang bảng giá dầu thủy lực |
+| `src/pages/bao-gia-dau-thuy-luc-68.astro` | Trang bảng giá dầu thủy lực |
 | `src/pages/quan-tri/*`, `src/pages/api/quan-tri/*` | Trang quản trị + API |
 | `src/lib/trang-tinh.ts` | Đọc/ghi trang HTML tĩnh trong KV, danh sách trang bảng giá (`TRANG_GIA`) |
 | `src/middleware.ts`, `src/lib/admin-auth.ts` | Trả trang tĩnh từ KV; đăng nhập, chống CSRF, noindex |
@@ -60,7 +60,7 @@ Chạy tay (không bắt buộc): `npx wrangler d1 migrations apply gia-dau --re
 
 ## 4. Thêm trang bảng giá cho danh mục khác
 
-1. Copy `src/pages/bang-gia-dau-thuy-luc.astro` thành `bang-gia-<slug-danh-muc>.astro`.
+1. Copy `src/pages/bao-gia-dau-thuy-luc-68.astro` thành `bang-gia-<slug-danh-muc>.astro`.
 2. Đổi `CATEGORY`, tiêu đề, nội dung riêng của nhóm dầu.
 3. Thêm URL vào `TRANG_GIA` trong `src/lib/trang-tinh.ts`, vào `customPages` của sitemap trong `astro.config.mjs`, và vào `PUBLIC_PAGES` trong `src/pages/quan-tri/index.astro`.
 4. Đặt link từ trang danh mục (hub) tới trang bảng giá.

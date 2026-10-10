@@ -10,14 +10,14 @@ const categories = (await getActiveCategories())
   .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99))
   .map((c) => ({ id: c.id, name: c.data.nav_label ?? c.data.title }));
 // Trang bảng giá công khai đã có (thêm vào khi tạo trang mới).
-const PUBLIC_PAGES: Record<string, string> = { 'dau-thuy-luc': '/bang-gia-dau-thuy-luc' };
+const PUBLIC_PAGES: Record<string, string> = { 'dau-thuy-luc': '/bao-gia-dau-thuy-luc-68' };
 ---
 
 <AdminShell title="Quản trị bảng giá">
   <header class="top">
     <strong>Quản trị bảng giá</strong>
     <span class="who">Đang đăng nhập: {user}</span>
-    <a href="/bang-gia-dau-thuy-luc" target="_blank" rel="noopener">Xem trang bảng giá ↗</a>
+    <a href="/bao-gia-dau-thuy-luc-68" target="_blank" rel="noopener">Xem trang bảng giá ↗</a>
     <form method="post" action="/api/quan-tri/dang-nhap"><input type="hidden" name="dang_xuat" value="1" /><button class="link">Đăng xuất</button></form>
   </header>
 

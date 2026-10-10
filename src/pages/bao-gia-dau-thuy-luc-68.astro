@@ -1,0 +1,274 @@
+---
+// Báo giá dầu thủy lực 68. Trang chỉ render (đọc D1) khi quản trị lưu giá; HTML kết quả được lưu vào KV
+// và trả nguyên cho khách (xem src/middleware.ts, src/lib/trang-tinh.ts). Giá nằm sẵn trong HTML cho Google.
+// URL cũ /bang-gia-dau-thuy-luc chuyển 301 về đây (public/_redirects, 10/10/2026).
+import Layout from '../layouts/Layout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import PriceTable from '../components/PriceTable.astro';
+import { getActiveProducts } from '../lib/content';
+import { bangGiaCongKhai, fmtNgay, fmtVnd, type DongGiaCongKhai, type CauHinh } from '../lib/gia';
+import { timNhanSu, personUrl, personRef, displayName } from '../lib/nhan-su';
+import { traTieuChuan } from '../lib/tieu-chuan';
+import { PROMO, PROMO_ACTIVE } from '../lib/promo';
+import { absUrl, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR } from '../lib/site';
+
+export const prerender = false;
+
+const CATEGORY = 'dau-thuy-luc';
+const pagePath = '/bao-gia-dau-thuy-luc-68';
+const IMAGE = '/images/san-pham/castrol-hyspin-aws-68-kho.webp';
+const IMAGE_ALT = 'Phuy Castrol Hyspin AWS 68 xếp trên pallet trong kho HT VINA';
+
+// Người chịu trách nhiệm (quyết định 10/10/2026): giá do quản lý bán hàng rà soát,
+// phần chọn mã và tiêu chuẩn do chuyên viên tư vấn chất lượng đối chiếu TDS.
+const nguoiGia = timNhanSu('nguyen-thi-hong')!;
+const nguoiKyThuat = timNhanSu('tran-tuan-huynh')!;
+
+let all: DongGiaCongKhai[] = [];
+let cauHinh: CauHinh = { he_so_tren: 1.15, gom_vat: false, ngay_ra_soat: '', nhan_dinh: '' };
+let loiDb = false;
+try {
+  ({ rows: all, cauHinh } = await bangGiaCongKhai(CATEGORY));
+} catch (e) {
+  // Không để trang lỗi 500 khi D1 có sự cố: vẫn hiện nội dung và nút báo giá.
+  console.error('bao-gia-68: không đọc được D1', e);
+  loiDb = true;
+}
+
+// Trang chỉ nói về cấp ISO VG 68; mã 32, 46 nhận đặt theo yêu cầu (xem FAQ).
+const rows = all.filter((r) => /VG\s*68\b/i.test(r.cap ?? ''));
+const coGia = !loiDb && rows.some((r) => r.thap);
+
+const activePages = new Set((await getActiveProducts()).filter((p) => p.data.category === CATEGORY).map((p) => p.id));
+const thang = fmtNgay(cauHinh.ngay_ra_soat, 'thang');
+const ngay = fmtNgay(cauHinh.ngay_ra_soat);
+
+// Số tóm tắt tính từ chính bảng giá, không gõ tay.
+const coSo = rows.filter((r) => r.thap && r.cao);
+const phuy = coSo.filter((r) => /phuy/i.test(r.quy_cach));
+const minOf = (xs: (number | null)[]) => Math.min(...(xs.filter(Boolean) as number[]));
+const maxOf = (xs: (number | null)[]) => Math.max(...(xs.filter(Boolean) as number[]));
+const phuyThap = phuy.length ? minOf(phuy.map((r) => r.thap)) : null;
+const phuyCao = phuy.length ? maxOf(phuy.map((r) => r.cao)) : null;
+const litThap = coSo.some((r) => r.thap_don_vi) ? minOf(coSo.map((r) => r.thap_don_vi)) : null;
+const litCao = coSo.some((r) => r.cao_don_vi) ? maxOf(coSo.map((r) => r.cao_don_vi)) : null;
+const soMa = new Set(coSo.map((r) => r.ten)).size;
+// Hãng quốc tế (ENEOS, Castrol) lên trước: đó là tên khách hay tìm.
+const hangs = [...new Set([...coSo].sort((a, b) => Number(a.nguon !== 'nhap-khau') - Number(b.nguon !== 'nhap-khau')).map((r) => r.hang))];
+const vat = cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT';
+
+const iso11158 = traTieuChuan('ISO 11158');
+
+const title = `Báo Giá Dầu Thủy Lực 68${thang ? ` Tháng ${thang}` : ''}`;
+const seoTitle = `${title} – Phuy 200 L, Xô 18 L`;
+const description = coGia && phuyThap
+  ? `Báo giá dầu thủy lực 68${thang ? ` tháng ${thang}` : ''}: phuy từ ${fmtVnd(phuyThap)} đ (${vat}), ${soMa} mã ${hangs.slice(0, 3).join(', ')}… có sẵn kho ${AREA_TEXT}. Cách chọn mã đúng sổ tay máy.`
+  : `Báo giá dầu thủy lực 68 (ISO VG 68) phuy 200–209 L và xô 18 L, quy đổi theo lít. Hàng có sẵn tại kho ${AREA_TEXT}, có CO/CQ, VAT.`;
+
+const crumbs = [
+  { name: 'Trang chủ', href: '/' },
+  { name: 'Dầu thủy lực', href: `/${CATEGORY}` },
+  { name: 'Báo giá dầu thủy lực 68', href: pagePath },
+];
+
+const schemaData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: title,
+    description,
+    url: absUrl(pagePath),
+    inLanguage: 'vi-VN',
+    ...(cauHinh.ngay_ra_soat ? { dateModified: cauHinh.ngay_ra_soat, lastReviewed: cauHinh.ngay_ra_soat } : {}),
+    reviewedBy: [personRef(nguoiGia), personRef(nguoiKyThuat)],
+    about: { '@type': 'Thing', name: 'Dầu thủy lực ISO VG 68' },
+    primaryImageOfPage: { '@type': 'ImageObject', url: absUrl(IMAGE), caption: IMAGE_ALT },
+    isPartOf: { '@id': absUrl('/') + '#website' },
+    publisher: { '@id': ORG_ID },
+  },
+  breadcrumbSchema(crumbs),
+];
+---
+
+<Layout {title} {seoTitle} {description} type="website" image={IMAGE} modified={cauHinh.ngay_ra_soat || undefined} {schemaData}>
+  <div class="container price-page">
+    <Breadcrumbs items={crumbs} />
+
+    <header class="price-hero">
+      <h1>{title}</h1>
+      <p class="byline">
+        Giá rà soát bởi <a href={personUrl(nguoiGia)}>{displayName(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}.
+        Phần chọn mã và tiêu chuẩn do <a href={personUrl(nguoiKyThuat)}>{nguoiKyThuat.degree ? `KS. ${nguoiKyThuat.name}` : nguoiKyThuat.name}</a>, {nguoiKyThuat.role.toLowerCase()}, đối chiếu với TDS của hãng.
+        {coGia && ngay && <> Rà soát ngày <strong>{ngay}</strong>, áp dụng đến khi trang này ghi ngày mới.</>}
+      </p>
+
+      {coGia && (
+        <div class="summary">
+          <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}</p>
+          <ul>
+            {phuyThap && <li>Phuy 200–209 L dầu thủy lực 68: <strong>{fmtVnd(phuyThap)} – {fmtVnd(phuyCao)} đ/phuy</strong> ({vat}), tùy mã.</li>}
+            {litThap && <li>Quy đổi theo lít: <strong>{fmtVnd(litThap)} – {fmtVnd(litCao)} đ/lít</strong>, xô 18 L đắt hơn phuy khi tính theo lít.</li>}
+            <li>{soMa} mã ISO VG 68 có sẵn tại kho {AREA_TEXT}: {hangs.join(', ')}.</li>
+            <li>Giá chính xác theo số phuy và nơi giao được gửi trong ngày làm việc.</li>
+          </ul>
+        </div>
+      )}
+
+      <ul class="trust">
+        <li>Giao các KCN {KCN_NEAR.slice(0, 3).join(', ')} trong ngày</li>
+        <li>Có CO/CQ, TDS và hóa đơn VAT cho từng lô</li>
+      </ul>
+      <QuoteCta item="Dầu thủy lực 68" compact />
+    </header>
+
+    {cauHinh.nhan_dinh && (
+      <section class="price-body">
+        <h2>Nhận định giá{thang ? ` tháng ${thang}` : ''}</h2>
+        <blockquote class="market-note">
+          <p>{cauHinh.nhan_dinh}</p>
+          <footer>{displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}</footer>
+        </blockquote>
+      </section>
+    )}
+
+    <section class="price-body" id="bang-gia">
+      <h2>Bảng giá dầu thủy lực 68 tại kho</h2>
+
+      {coGia ? (
+        <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} />
+      ) : (
+        <div class="empty">
+          <p><strong>Bảng giá đang được cập nhật.</strong> Gửi tên dầu và số lượng cần mua để nhận báo giá trong ngày.</p>
+          <QuoteCta item="Dầu thủy lực 68" compact />
+        </div>
+      )}
+
+      <ul class="notes">
+        <li>Giá là <strong>khoảng tham khảo</strong> cho một đơn vị đóng gói, {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT. Giá chính xác phụ thuộc số lượng, quy cách và điểm giao.</li>
+        <li>Cột "Quy đổi" chia khoảng giá cho số lít trong phuy hoặc xô, để so sánh hai quy cách với nhau.</li>
+        <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
+      </ul>
+
+      <figure class="photo">
+        <img src={IMAGE} alt={IMAGE_ALT} width="1200" height="1200" loading="lazy" decoding="async" />
+        <figcaption>Phuy dầu thủy lực 68 tại kho HT VINA, {AREA_TEXT}.</figcaption>
+      </figure>
+    </section>
+
+    <section class="price-body">
+      <h2>Trước khi so giá: đối chiếu sổ tay máy</h2>
+      <p>Mã rẻ nhất trong bảng chỉ có lợi khi nó đúng loại máy cần. Mở sổ tay máy (hoặc nhãn trên bồn dầu) và xem ba thông tin: <strong>cấp độ nhớt</strong>, <strong>loại dầu</strong> và <strong>phê duyệt của hãng bơm</strong>.</p>
+      <div class="table-wrap">
+        <table class="match">
+          <thead>
+            <tr><th scope="col">Sổ tay máy ghi</th><th scope="col">Mã nên xem trong bảng</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ISO VG 68, HM, HLP 68, AW 68, DIN 51524-2</td>
+              <td>Các mã trong bảng đều là dầu thủy lực chống mài mòn cấp 68. <a href="/dau-thuy-luc/eneos-super-hyrando-68">ENEOS Super Hyrando 68</a> và <a href="/dau-thuy-luc/castrol-hyspin-aws-68">Castrol Hyspin AWS 68</a> có TDS công bố đạt DIN 51524-2; mã khác chúng tôi gửi TDS kèm báo giá để bạn đối chiếu.</td>
+            </tr>
+            <tr>
+              <td>Bắt buộc phê duyệt Parker Denison HF-0/HF-1/HF-2 hoặc Eaton</td>
+              <td><a href="/dau-thuy-luc/castrol-hyspin-aws-68">Castrol Hyspin AWS 68</a> (TDS công bố các phê duyệt này). ENEOS Super Hyrando 68 không công bố phê duyệt Denison hay Eaton.</td>
+            </tr>
+            <tr>
+              <td>ISO VG 46 hoặc VG 32</td>
+              <td>Không thay bằng 68. Xem <a href="/ho-tro-ky-thuat/huong-dan-chon-do-nhot">hướng dẫn chọn độ nhớt 32, 46 hay 68</a>; mã 32, 46 nhận đặt theo yêu cầu.</td>
+            </tr>
+            <tr>
+              <td>Không còn sổ tay máy</td>
+              <td>Chụp nhãn phuy dầu đang dùng hoặc tên, đời máy, gửi qua <a href="/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c%2068">form báo giá</a> hoặc Zalo để chúng tôi đối chiếu.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {iso11158 && (
+        <p class="small">Loại HM theo <a href={iso11158.url} rel="noopener">ISO 11158</a> (tương đương {iso11158.tcvn}) và HLP theo DIN 51524-2 là hai cách gọi cùng một nhóm dầu thủy lực khoáng có phụ gia chống mài mòn. Nhiều sổ tay máy châu Á ghi gọn là "AW 68".</p>
+      )}
+    </section>
+
+    <section class="price-body">
+      <h2>Vì sao cùng dầu thủy lực 68 mà giá chênh nhau</h2>
+      <ul>
+        <li><strong>Thương hiệu và phê duyệt.</strong> Các mã thương hiệu quốc tế (ENEOS, Castrol) thường cao hơn mã thương hiệu trong nước (EMER, X-One, EMI, APEX), như bạn thấy ở bảng trên. Phần chênh đáng trả khi sổ tay máy bắt buộc phê duyệt hãng bơm; máy ép, máy dập chỉ ghi HM hoặc HLP thì không cần trả thêm cho phê duyệt mình không dùng tới.</li>
+        <li><strong>Quy cách.</strong> Tính theo lít, phuy 200–209 L rẻ hơn xô 18 L. So ở cột "Quy đổi".</li>
+        <li><strong>Số lượng và hợp đồng.</strong> Đơn nhiều phuy hoặc hợp đồng cung cấp định kỳ được báo giá riêng.</li>
+        <li><strong>Giá dầu gốc.</strong> Khi giá dầu gốc thế giới thay đổi, các hãng điều chỉnh giá bán và bảng này được rà lại.</li>
+      </ul>
+    </section>
+
+    <section class="price-body">
+      <h2>Dự trù chi phí cho một lần thay dầu</h2>
+      <p>Lấy dung tích bồn dầu của máy, cộng thêm lượng dầu súc rửa nếu thay vì dầu nhiễm bẩn, rồi nhân với giá quy đổi theo lít ở bảng trên. Bồn từ vài trăm lít trở lên thì mua theo phuy thường kinh tế hơn mua xô.</p>
+      <p>Các bước xả, súc rửa và nạp dầu mới có trong <a href="/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc">hướng dẫn thay dầu thủy lực</a>. Chưa chắc dầu trong máy đã cần thay, xem <a href="/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau">hướng dẫn test chất lượng dầu tại xưởng</a> trước khi mua.</p>
+    </section>
+
+    <section class="price-body">
+      <h2>Khoảng giá trên được lập thế nào</h2>
+      <ul>
+        <li>Khoảng giá lập từ giá bán tại kho HT VINA vào ngày rà soát ghi ở đầu trang. Biên độ của khoảng phản ánh số lượng, quy cách và điểm giao.</li>
+        <li>{displayName(nguoiGia)} ({nguoiGia.role.toLowerCase()}) rà soát lại bảng mỗi khi hãng đổi giá và ít nhất mỗi tháng.</li>
+        <li>Điều kiện giao hàng và thanh toán xem tại <a href="/chinh-sach-giao-hang">chính sách giao hàng</a> và <a href="/chinh-sach-thanh-toan">chính sách thanh toán</a>. Thông tin công ty, kho và đội ngũ ở trang <a href="/about">giới thiệu</a>.</li>
+        {PROMO_ACTIVE && <li>Ưu đãi theo số lượng {PROMO.label} xem tại trang <a href={PROMO.path}>khuyến mại dầu thủy lực AW 68</a>.</li>}
+      </ul>
+    </section>
+
+    <section class="price-body">
+      <h2>Quy trình nhận báo giá</h2>
+      <ol>
+        <li><strong>Gửi nhu cầu:</strong> tên dầu đang dùng (hoặc loại máy), quy cách, số lượng, nơi giao. Gửi qua <a href="/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c%2068">form báo giá</a>, gọi <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a> hoặc Zalo.</li>
+        <li><strong>Tư vấn mã phù hợp:</strong> nếu mã đang dùng hết hàng hoặc giá cao, chúng tôi đề xuất mã tương đương cùng cấp ISO VG và tiêu chuẩn.</li>
+        <li><strong>Gửi báo giá chính thức</strong> có đóng dấu, kèm thời gian giao và điều kiện thanh toán.</li>
+        <li><strong>Giao hàng</strong> kèm CO/CQ, hóa đơn VAT.</li>
+      </ol>
+      <QuoteCta heading="Cần giá chính xác cho đơn hàng của bạn?" item="Dầu thủy lực 68" />
+    </section>
+
+    <section class="price-body">
+      <h2>Câu hỏi thường gặp</h2>
+      <h3>Giá trên bảng đã gồm VAT chưa?</h3>
+      <p>Giá trên bảng {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} thuế VAT. Báo giá chính thức ghi rõ giá trước thuế, tiền thuế và tổng tiền.</p>
+      <h3>Vì sao chỉ ghi khoảng giá, không ghi giá chính xác?</h3>
+      <p>Giá thực tế phụ thuộc số lượng, quy cách và điểm giao. Khoảng giá giúp bạn dự trù ngân sách; giá chính xác được gửi trong ngày khi bạn cho biết số lượng.</p>
+      <h3>Mua bao nhiêu thì được giá tốt?</h3>
+      <p>Mua theo phuy tiết kiệm hơn mua xô. Đơn từ vài phuy trở lên hoặc hợp đồng định kỳ được báo giá riêng.</p>
+      <h3>Máy đang dùng dầu 46, có dùng dầu 68 cho rẻ được không?</h3>
+      <p>Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Dầu 32 và 46 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/huong-dan-chon-do-nhot">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.</p>
+      <h3>Bảng giá cập nhật khi nào?</h3>
+      <p>Mỗi khi hãng thay đổi giá và được rà lại ít nhất mỗi tháng. Ngày rà soát gần nhất ghi ở đầu trang.</p>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .price-page { margin-bottom: 60px; }
+  .price-hero, .price-body { background: white; border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; padding: clamp(20px, 4vw, 32px); margin-bottom: 24px; }
+  .price-hero h1 { color: var(--color-primary); font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.25; margin-bottom: 10px; }
+  .byline { color: var(--color-text-light); margin-bottom: 14px; font-size: 0.95rem; }
+  .byline a { color: var(--color-primary); text-decoration: underline; }
+  .summary { background: #f1f5f9; border-left: 4px solid var(--color-primary); border-radius: 4px; padding: 14px 18px; margin-bottom: 14px; }
+  .summary__label { font-weight: 700; color: var(--color-primary); margin-bottom: 6px; }
+  .summary ul { margin: 0 0 0 20px; }
+  .summary li { margin-bottom: 4px; }
+  .trust { margin: 0 0 4px 20px; }
+  .trust li { margin-bottom: 4px; }
+  .price-body h2 { color: var(--color-primary); margin-bottom: 16px; }
+  .price-body h3 { color: var(--color-primary); margin: 18px 0 6px; font-size: 1.05rem; }
+  .price-body p, .price-body li { margin-bottom: 8px; }
+  .price-body ul, .price-body ol { margin-left: 20px; }
+  .price-body a { color: var(--color-primary); text-decoration: underline; }
+  .market-note { background: #f1f5f9; border-left: 4px solid var(--color-primary); padding: 12px 16px; border-radius: 4px; margin: 0; }
+  .market-note footer { margin-top: 6px; font-size: 0.9rem; color: var(--color-text-light); }
+  .notes { font-size: 0.93rem; color: var(--color-text-light); margin-top: 8px; }
+  .small { font-size: 0.93rem; color: var(--color-text-light); margin-top: 12px; }
+  .empty { background: #f8fafc; border: 1px dashed var(--border-color, #e2e8f0); padding: 20px; border-radius: 8px; margin-bottom: 16px; }
+  .photo { margin: 20px 0 0; }
+  .photo img { width: 100%; max-width: 720px; height: auto; border-radius: 8px; display: block; }
+  .photo figcaption { font-size: 0.88rem; color: var(--color-text-light); margin-top: 6px; }
+  .table-wrap { overflow-x: auto; }
+  .match { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  .match th, .match td { border: 1px solid var(--border-color, #e2e8f0); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .match th { background: #f1f5f9; font-weight: 600; }
+</style>
