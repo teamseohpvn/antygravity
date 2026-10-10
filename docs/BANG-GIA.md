@@ -2,6 +2,11 @@
 
 Lập 06/10/2026.
 
+> **Tạm thời từ 10/10/2026: trang báo giá lấy giá từ JSON, chưa dùng D1.**
+> Giá lấy từ file kho nội bộ (ngoài repo) qua `scripts/build-gia-json.py`, sinh ra `src/data/gia-cong-khai.json`. File này chỉ có khoảng giá đã làm tròn, vì repo để công khai. Đổi giá: chạy lại script rồi deploy.
+> `python3 scripts/build-gia-json.py ../du-lieu-noi-bo/kho-2026-09.json --ngay 2026-10-02`
+> D1 và `/quan-tri` giữ nguyên để làm app quản lý giá sau. Khi chuyển lại sang D1, đổi `bangGiaTuJson` thành `bangGiaCongKhai` trong `src/pages/bao-gia-dau-thuy-luc.astro`.
+
 ## 1. Cách hoạt động
 
 ```

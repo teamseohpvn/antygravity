@@ -7,7 +7,9 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import PriceTable from '../components/PriceTable.astro';
 import { getActiveProducts } from '../lib/content';
-import { bangGiaCongKhai, fmtNgay, fmtVnd, type DongGiaCongKhai, type CauHinh } from '../lib/gia';
+import { fmtNgay, fmtVnd } from '../lib/gia-tinh';
+import type { DongGiaCongKhai, CauHinh } from '../lib/gia';
+import { bangGiaTuJson } from '../lib/gia-json';
 import { timNhanSu, personUrl, personRef, displayName } from '../lib/nhan-su';
 import { traTieuChuan } from '../lib/tieu-chuan';
 import { PROMO, PROMO_ACTIVE } from '../lib/promo';
@@ -29,10 +31,12 @@ let all: DongGiaCongKhai[] = [];
 let cauHinh: CauHinh = { he_so_tren: 1.15, gom_vat: false, ngay_ra_soat: '', nhan_dinh: '' };
 let loiDb = false;
 try {
-  ({ rows: all, cauHinh } = await bangGiaCongKhai(CATEGORY));
+  // 10/10/2026: giá lấy từ src/data/gia-cong-khai.json (scripts/build-gia-json.py), chưa dùng D1.
+  // Khi app quản lý giá trên D1 xong, đổi lại thành: ({ rows: all, cauHinh } = await bangGiaCongKhai(CATEGORY));
+  ({ rows: all, cauHinh } = bangGiaTuJson(CATEGORY));
 } catch (e) {
-  // Không để trang lỗi 500 khi D1 có sự cố: vẫn hiện nội dung và nút báo giá.
-  console.error('bao-gia-68: không đọc được D1', e);
+  // Không để trang lỗi 500 khi dữ liệu giá có sự cố: vẫn hiện nội dung và nút báo giá.
+  console.error('bao-gia-dau-thuy-luc: không đọc được dữ liệu giá', e);
   loiDb = true;
 }
 
