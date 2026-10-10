@@ -32,10 +32,10 @@
       "trang": "castrol-hyspin-aws-68",
       "don_vi_do": "L",
       "thu_tu": 0,
-      "thap": null,
-      "cao": null,
-      "thap_don_vi": null,
-      "cao_don_vi": null
+      "thap": 9000000,
+      "cao": 10350000,
+      "thap_don_vi": 43000,
+      "cao_don_vi": 49600
     },
     {
       "danh_muc": "dau-thuy-luc",

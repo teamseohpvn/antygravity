@@ -7,8 +7,8 @@ D1 để dành cho app quản lý giá làm sau).
 - Repo để công khai trên GitHub, nên file sinh ra CHỈ có khoảng giá đã làm tròn (đúng con số
   web hiện), không chép giá gốc trong file kho. File kho nằm ngoài repo.
 - Khoảng giá = giá hiện tại → giá × HE_SO, làm tròn giống src/lib/gia-tinh.ts (khoangGia).
-- Danh sách mã và cách khớp với file kho nằm ở DONG bên dưới. Mã có giá nghi sai thì ghi
-  gia_kho=None để web hiện "Liên hệ".
+- Danh sách mã và cách khớp với file kho nằm ở DONG bên dưới. Giá sai trong file kho sửa ở
+  SUA_GIA (kèm lý do); muốn web hiện "Liên hệ" thì để phần khớp là None.
 
 Chạy:
   python3 scripts/build-gia-json.py ../du-lieu-noi-bo/kho-2026-09.json --ngay 2026-10-02
@@ -25,8 +25,7 @@ OUT = Path(__file__).resolve().parent.parent / "src" / "data" / "gia-cong-khai.j
 # (danh_muc, ten, hang, cap, nguon, quy_cach, dung_tich, trang, thu_tu, (tên trong file kho, quy cách trong file kho))
 DONG = [
     ("dau-thuy-luc", "ENEOS Super Hyrando 68", "ENEOS", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "eneos-super-hyrando-68", 0, ("ENEOS Super Hyrando 68", "Phuy 200L")),
-    # File kho ghi 900.000 đ cho phuy 209 L: sai rõ ràng, để "Liên hệ" tới khi có giá đúng.
-    ("dau-thuy-luc", "Castrol Hyspin AWS 68", "Castrol", "ISO VG 68", "nhap-khau", "Phuy 209 L", 209, "castrol-hyspin-aws-68", 0, None),
+    ("dau-thuy-luc", "Castrol Hyspin AWS 68", "Castrol", "ISO VG 68", "nhap-khau", "Phuy 209 L", 209, "castrol-hyspin-aws-68", 0, ("Dầu Hyspin AWS 68/209L (Castrol)", "Phuy 209 L")),
     ("dau-thuy-luc", "Maxima 68", "Maxima", "ISO VG 68", "nhap-khau", "Xô 18 L", 18, "maxima-68", 1, ("Dầu MAXIMA 68", "Xô 18L")),
     ("dau-thuy-luc", "EMER LAW 68", "EMER", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "emer-law-68", 0, ("Dầu thủy lực LAW68 (200L)", "Phuy")),
     ("dau-thuy-luc", "EMER LAW 68", "EMER", "ISO VG 68", "trong-nuoc", "Xô 18 L", 18, "emer-law-68", 1, ("Dầu thủy lực LAW68 (18L)", "Xô")),
@@ -36,6 +35,15 @@ DONG = [
     ("dau-thuy-luc", "EMI AW 68", "EMI", "ISO VG 68", "trong-nuoc", "Xô 18 L", 18, "emi-aw-68", 1, ("Dầu Emi AW68", "Xô")),
     ("dau-thuy-luc", "APEX TL 68", "Quốc Trung", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "apex-tl-68", 0, ("Dầu thủy lực APEX TL 68 ( Quốc Trung)", "Phuy 200L")),
 ]
+
+
+# Sửa giá sai trong file kho, theo (tên, quy cách) trong file kho. Ghi rõ lý do; bỏ dòng khi file kho đã đúng.
+SUA_GIA = {
+    # 10/10/2026: file kho ghi 900.000 đ/phuy 209 L, thiếu một số 0. Đối chiếu: Castrol CI4 20W-50 cùng file
+    # có giá 10.000.000 = ~70% giá bán gần nhất 14.300.000; Hyspin bán gần nhất 13.568.600 → ~9,5 triệu.
+    # Dùng 9.000.000 (giả định gõ thiếu số 0) cho tới khi kho xác nhận giá đúng.
+    ("Dầu Hyspin AWS 68/209L (Castrol)", "Phuy 209 L"): 9_000_000,
+}
 
 
 def floor_to(v, step):
@@ -77,7 +85,7 @@ def main():
         if khop:
             if khop not in gia_theo:
                 loi.append(f"Không thấy trong file kho: {khop}")
-            gia = gia_theo.get(khop)
+            gia = SUA_GIA.get(khop, gia_theo.get(khop))
         rows.append({
             "danh_muc": dm, "ten": ten, "hang": hang, "cap": cap, "nguon": nguon,
             "quy_cach": qc, "trang": trang, "don_vi_do": "L", "thu_tu": thu_tu,
