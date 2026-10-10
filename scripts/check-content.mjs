@@ -14,7 +14,7 @@ import { contentPages } from '../src/lib/active-pages.mjs';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const DIRS = { danhmuc: 'src/content/danhmuc', sanpham: 'src/content/sanpham', blog: 'src/content/blog' };
-const STATIC_ROUTES = ['/', '/bao-gia', '/bao-gia-thanh-cong', '/contact', '/about', '/privacy-policy', '/terms-of-service', '/ho-tro-ky-thuat', '/bao-gia-dau-thuy-luc-68', '/khuyen-mai-dau-thuy-luc-aw-68', '/chinh-sach-giao-hang', '/chinh-sach-thanh-toan'];
+const STATIC_ROUTES = ['/', '/bao-gia', '/bao-gia-thanh-cong', '/contact', '/about', '/privacy-policy', '/terms-of-service', '/ho-tro-ky-thuat', '/bao-gia-dau-thuy-luc', '/khuyen-mai-dau-thuy-luc-aw-68', '/chinh-sach-giao-hang', '/chinh-sach-thanh-toan'];
 
 const read = (dir) =>
   existsSync(join(ROOT, dir))

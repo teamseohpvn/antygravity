@@ -1,7 +1,7 @@
 ---
 // Báo giá dầu thủy lực 68. Trang chỉ render (đọc D1) khi quản trị lưu giá; HTML kết quả được lưu vào KV
 // và trả nguyên cho khách (xem src/middleware.ts, src/lib/trang-tinh.ts). Giá nằm sẵn trong HTML cho Google.
-// URL cũ /bang-gia-dau-thuy-luc chuyển 301 về đây (public/_redirects, 10/10/2026).
+// URL cũ /bang-gia-dau-thuy-luc và /bao-gia-dau-thuy-luc-68 chuyển 301 về đây (public/_redirects, 10/10/2026).
 import Layout from '../layouts/Layout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
@@ -16,7 +16,7 @@ import { absUrl, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR } from 
 export const prerender = false;
 
 const CATEGORY = 'dau-thuy-luc';
-const pagePath = '/bao-gia-dau-thuy-luc-68';
+const pagePath = '/bao-gia-dau-thuy-luc';
 const IMAGE = '/images/san-pham/castrol-hyspin-aws-68-kho.webp';
 const IMAGE_ALT = 'Phuy Castrol Hyspin AWS 68 xếp trên pallet trong kho HT VINA';
 
