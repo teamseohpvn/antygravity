@@ -63,11 +63,11 @@ export const NHAN_SU: NhanSu[] = [
       { title: 'Xe bán tải được "cởi trói", người dùng mong gỡ tiếp những nút thắt còn lại', publisher: 'VietNamNet', date: '2026-07-07', url: 'https://vietnamnet.vn/xe-ban-tai-duoc-coi-troi-nguoi-dung-mong-go-tiep-nhung-nut-that-con-lai-2533313.html' },
       { title: 'Phát triển xe buýt xanh để cải thiện chất lượng môi trường', publisher: 'Báo Lao Động', date: '2025-01-17', url: 'https://laodong.vn/xa-hoi/phat-trien-xe-buyt-xanh-de-cai-thien-chat-luong-moi-truong-1451490.ldo' },
     ],
-    desc: 'Giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Trường Đại học Giao thông vận tải. Cộng tác viên của HT VINA, duyệt nội dung kỹ thuật các trang sản phẩm dầu nhớt trên website.',
+    desc: 'Giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Trường Đại học Giao thông vận tải. Cộng tác viên của HT VINA, biên soạn và duyệt nội dung kỹ thuật các trang sản phẩm dầu nhớt trên website.',
     bio: [
       'TS. Nguyễn Thiết Lập là giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Khoa Cơ khí, Trường Đại học Giao thông vận tải (Hà Nội).',
       'Các công bố của TS. Lập tập trung vào động cơ đốt trong, kết cấu và rung động ô tô, an toàn vận hành phương tiện. TS. Lập là đồng tác giả sách "Kỹ thuật động cơ đốt trong và xu hướng phát triển của động cơ" (NXB Xây dựng, 2020), "An toàn vận hành ô tô" (NXB Giao thông Vận tải, 2017), và có báo cáo về phân bố áp suất trong bơm và động cơ thủy lực bánh răng ăn khớp trong tại Hội nghị khoa học và công nghệ cơ khí động lực lần thứ XII (2019).',
-      'Tại HT VINA, TS. Lập là cộng tác viên cố vấn kỹ thuật, duyệt nội dung các trang sản phẩm dầu nhớt: đối chiếu thông số với bảng TDS của hãng, rà soát khuyến cáo sử dụng theo loại động cơ, hộp số và hệ thủy lực. Thông tin học vị và nơi công tác ở trên được đối chiếu với hồ sơ giảng viên công khai trên website Trường Đại học Giao thông vận tải.',
+      'Tại HT VINA, TS. Lập là cộng tác viên cố vấn kỹ thuật, biên soạn và duyệt nội dung các trang sản phẩm dầu nhớt: đối chiếu thông số với bảng TDS của hãng, rà soát khuyến cáo sử dụng theo loại động cơ, hộp số và hệ thủy lực. Thông tin học vị và nơi công tác ở trên được đối chiếu với hồ sơ giảng viên công khai trên website Trường Đại học Giao thông vận tải.',
     ],
     publications: [
       { title: 'Kỹ thuật động cơ đốt trong và xu hướng phát triển của động cơ (sách, đồng tác giả với Đỗ Tiến Dũng)', venue: 'NXB Xây dựng', year: 2020 },
@@ -160,8 +160,8 @@ export const NHAN_SU: NhanSu[] = [
   },
 ];
 
-/** Tác giả mặc định của trang sản phẩm khi file không ghi tac_gia (12/10/2026). */
-export const DEFAULT_PRODUCT_AUTHOR_ID = 'nguyen-thi-hong';
+/** Tác giả mặc định của trang sản phẩm, danh mục khi file không ghi tac_gia (12/10/2026: TS. Lập vừa biên soạn vừa duyệt). */
+export const DEFAULT_PRODUCT_AUTHOR_ID = 'nguyen-thiet-lap';
 
 /** Người kiểm duyệt mặc định cho trang sản phẩm khi file không ghi reviewed_by. */
 export const DEFAULT_REVIEWER_ID = 'nguyen-thiet-lap';
