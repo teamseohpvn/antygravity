@@ -1,6 +1,6 @@
 ---
 ma: "SP-TN-001"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "VHP Heatrans Oil 32, 46"
 seo_title: "VHP Heatrans Oil 32, 46 – Dầu Truyền Nhiệt Gốc Khoáng"
 description: "Dầu truyền nhiệt VHP Heatrans Oil 32 và 46 cho hệ gia nhiệt kín, bồn dầu tối đa 300 °C, đạt DIN 51522. Xô 18 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -53,7 +53,8 @@ images:
   - { src: "/images/san-pham/vhp-heatrans-nhan.webp", alt: "Nhãn xô VHP Heatrans Oil ghi cấp độ nhớt" }
 
 tags: ["iso-vg-32", "iso-vg-46", "truyen-nhiet", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Heatrans Oil** là dầu truyền nhiệt gốc khoáng tinh chế do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hệ gia nhiệt gián tiếp tuần hoàn kín, chạy liên tục với bồn dầu tối đa 300 °C và màng dầu tối đa 320 °C. Theo VHP, dầu đáp ứng DIN 51522 và ISO 6743-12 nhóm Q.

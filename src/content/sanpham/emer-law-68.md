@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-012"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/emer-law-68/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Thủy Lực EMER LAW 68"
 seo_title: "Dầu Thủy Lực EMER LAW 68 – Phuy 200 L, Xô 18 L"
 description: "Dầu thủy lực chống mài mòn EMER LAW 68 (ISO VG 68) cho hệ thủy lực nâng hạ, máy ép, máy cơ giới. Phuy 200 L, xô 18 L có sẵn, giao từ Hải Phòng."
@@ -36,7 +36,8 @@ images:
   - { src: "/images/san-pham/emer-law-68-nhan.webp", alt: "Nhãn dầu thủy lực EMER LAW 68" }
 
 tags: ["iso-vg-68", "chong-mai-mon", "emer"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **EMER LAW 68** là dầu thủy lực chống mài mòn cấp **ISO VG 68** dùng cho hệ thủy lực nâng hạ, máy ép và máy cơ giới. Cấp 68 là cấp phổ biến nhất cho máy chạy trong xưởng nóng và hệ thống áp cao ở miền Bắc.

@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-004"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "ENEOS Super Mulpus DX 68, 46"
 seo_title: "ENEOS Super Mulpus DX 68, 46 – Dầu Đa Dụng Công Nghiệp"
 description: "Dầu đa dụng ENEOS Super Mulpus DX 68, 46 dùng chung cho thủy lực, hộp số, ổ đỡ, rãnh trượt máy công cụ. Phuy 200 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -54,7 +54,8 @@ images:
   - { src: "/images/san-pham/eneos-super-mulpus-dx-nhan.webp", alt: "Nhãn phuy ENEOS Super Mulpus DX ghi cấp độ nhớt ISO VG" }
 
 tags: ["iso-vg-68", "iso-vg-46", "dau-da-dung", "may-cong-cu", "eneos"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **ENEOS Super Mulpus DX** là dầu đa dụng cho máy công nghiệp của ENEOS. Một loại dầu dùng được cho hệ thủy lực, hộp số, ổ đỡ và rãnh trượt. Xưởng có nhiều loại máy có thể dùng chung một mã dầu, giảm nhầm lẫn khi châm dầu. Dầu pha từ dầu gốc paraffin tinh chế cao, phụ gia chống mài mòn và cực áp gốc lưu huỳnh – phốt pho.

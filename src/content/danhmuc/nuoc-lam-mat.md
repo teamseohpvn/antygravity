@@ -1,6 +1,6 @@
 ---
 ma: "DM-17"
-active: false   # Tắt: ngoài nhóm dầu công nghiệp. Bật khi chủ site quyết định bán nước làm mát trên web
+active: true   # Bật 12/10/2026: để trang sản phẩm thuộc danh mục này hiện
 title: "Nước Làm Mát Động Cơ (Dung Dịch Làm Mát)"
 nav_label: "Nước làm mát"
 order: 17

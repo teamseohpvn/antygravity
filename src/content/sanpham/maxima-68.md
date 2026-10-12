@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-014"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/maxima-68/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Thủy Lực Maxima 68"
 seo_title: "Dầu Thủy Lực Maxima 68 – Hệ Thủy Lực Công Nghiệp | Xô 18 L"
 description: "Dầu thủy lực Maxima 68 (ISO VG 68) cho hệ thủy lực và hệ tuần hoàn công nghiệp chịu tải trung bình đến nặng. Xô 18 L có sẵn, giao từ Hải Phòng."
@@ -34,7 +34,8 @@ images:
   - { src: "/images/san-pham/maxima-68-nhan.webp", alt: "Nhãn xô dầu thủy lực Maxima 68" }
 
 tags: ["iso-vg-68", "maxima"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Maxima 68** là dầu bôi trơn cấp **ISO VG 68** cho hệ thủy lực và hệ tuần hoàn dầu công nghiệp chịu tải trung bình đến nặng. Dầu đóng **xô 18 L**, tiện cho tổ bảo trì châm bổ sung hoặc cho máy có bồn thủy lực nhỏ.

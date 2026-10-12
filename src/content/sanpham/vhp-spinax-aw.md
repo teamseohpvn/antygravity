@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-006"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "VHP Spinax AW 68 và Spinax AW Super 68"
 seo_title: "VHP Spinax AW 68, AW Super 68 – Dầu Thủy Lực Phuy 200L"
 description: "Dầu thủy lực VHP Spinax AW 68 và Spinax AW Super 68 đạt ISO 11158 HM, sản xuất tại Việt Nam. Phuy 200 L, có CO/CQ, VAT, giao từ kho Hải Phòng."
@@ -49,7 +49,8 @@ images:
   - { src: "/images/san-pham/vhp-spinax-aw-nhan.webp", alt: "Nhãn phuy dầu thủy lực VHP Spinax AW ghi cấp độ nhớt 68" }
 
 tags: ["iso-vg-68", "chong-mai-mon", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Spinax AW** là dầu thủy lực chống mài mòn do nhà máy VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu đạt phân loại HM theo ISO 11158 và ISO 6743/4, dùng cho hệ thủy lực trong xưởng lẫn máy xúc, xe cẩu. Dòng có hai phiên bản: **Spinax AW** pha từ dầu gốc khoáng và **Spinax AW Super** pha từ dầu gốc nhóm II.

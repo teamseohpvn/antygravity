@@ -1,6 +1,6 @@
 ---
 ma: "SP-CG-001"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Dầu Cắt Gọt Pha Nước VHP Lotus Oil LS"
 seo_title: "VHP Lotus Oil LS – Dầu Cắt Gọt Pha Nước Tạo Nhũ"
 description: "Dầu cắt gọt pha nước VHP Lotus Oil LS tạo nhũ, chống gỉ, chống thối, pha 5–8 % cho phay, tiện, mài thép và nhôm. Phuy 200 L, CO/CQ, giao Hải Phòng."
@@ -46,7 +46,8 @@ images:
   - { src: "/images/san-pham/vhp-lotus-oil-ls-dung-dich.webp", alt: "Dung dịch VHP Lotus Oil LS pha nước có màu trắng sữa ánh xanh" }
 
 tags: ["dau-cat-got-pha-nuoc", "dau-tuoi-nguoi", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Lotus Oil LS** là dầu cắt gọt pha nước dạng tạo nhũ (dầu sữa) do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu pha từ dầu gốc khoáng với phụ gia chống gỉ và chống thối. Khi pha vào nước, dầu cho dung dịch màu trắng sữa ánh xanh, dùng tưới nguội cho phay, tiện, doa, mài.

@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-007"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Shell Rimula R4 X 15W-40"
 seo_title: "Shell Rimula R4 X 15W-40 CI-4 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel Shell Rimula R4 X 15W-40 đạt API CI-4, ACEA E7, bảo vệ ba tác động cho xe tải, máy công trình. Phuy 200 L, có CO/CQ, giao từ Hải Phòng."
@@ -47,7 +47,8 @@ images:
   - { src: "/images/san-pham/shell-rimula-r4-x-nhan.webp", alt: "Nhãn phuy Shell Rimula R4 X 15W-40 ghi cấp API CI-4" }
 
 tags: ["api-ci-4", "acea-e7", "sae-15w-40", "shell", "dong-co-diesel"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Shell Rimula R4 X 15W-40** là dầu động cơ diesel tải nặng của Shell, đạt **API CI-4, ACEA E7, JASO DH-1** và chuẩn của nhiều hãng động cơ như Caterpillar, Cummins, Mack, Volvo. Dầu dùng cho phần lớn động cơ diesel tải nặng chạy đường bộ và địa hình: xe tải, xe khách, máy xúc.

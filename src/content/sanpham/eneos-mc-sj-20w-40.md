@@ -1,6 +1,6 @@
 ---
 ma: "SP-XM-001"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/eneos-mc-sj-20w-40/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Nhớt Xe Máy ENEOS MC SJ 20W-40 (MA, MB)"
 seo_title: "ENEOS MC SJ 20W-40 MA, MB – Dầu Nhớt Xe Số, Xe Tay Ga"
 description: "Dầu nhớt xe máy 4 thì ENEOS MC SJ 20W-40: loại MA cho xe số, loại MB cho xe tay ga. Bán theo chai, thùng cho cửa hàng, gara, đội xe. Giao từ Hải Phòng."
@@ -40,7 +40,8 @@ images:
   - { src: "/images/san-pham/eneos-mc-sj-20w-40-nhan.webp", alt: "Nhãn chai ENEOS MC ghi cấp API SJ, JASO và SAE 20W-40" }
 
 tags: ["sae-20w-40", "api-sj", "xe-may", "eneos"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **ENEOS MC SJ 20W-40** là dầu nhớt xe máy 4 thì của ENEOS, độ nhớt **SAE 20W-40**, cấp **API SJ**. Dòng này có hai loại cần chọn đúng theo xe:

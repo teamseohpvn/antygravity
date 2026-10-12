@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-007"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "ENEOS Epnoc Grease AP(N)"
 seo_title: "ENEOS Epnoc Grease AP(N) – Mỡ Lithium Chịu Cực Áp"
 description: "Mỡ ENEOS Epnoc Grease AP(N) gốc lithium chịu cực áp, nhỏ giọt 195–203 °C, làm việc -20 đến 125 °C, hợp hệ bơm mỡ tập trung. CO/CQ, giao Hải Phòng."
@@ -52,7 +52,8 @@ images:
   - { src: "/images/san-pham/eneos-epnoc-ap-nhan.webp", alt: "Nhãn can mỡ ENEOS Epnoc Grease AP(N) ghi cấp NLGI" }
 
 tags: ["nlgi-0", "nlgi-1", "nlgi-2", "mo-lithium", "chiu-cuc-ap", "eneos"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **ENEOS Epnoc Grease AP(N)** là mỡ đa dụng chịu cực áp (EP) gốc lithium của ENEOS Nhật Bản. Mỡ màu nâu nhạt, ít mùi, không chứa chì. Mỡ dùng dầu gốc khoáng tinh chế cao và phụ gia chống oxy hóa, chống gỉ. Dòng này có bốn cấp NLGI 0, 1, 2, 3. Cấp 0 và 1 đặc biệt hợp với hệ thống bơm mỡ tập trung.

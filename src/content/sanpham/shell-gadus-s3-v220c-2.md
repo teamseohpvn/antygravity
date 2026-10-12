@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-003"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Shell Gadus S3 V220C 2"
 seo_title: "Shell Gadus S3 V220C 2 – Mỡ Chịu Nhiệt Lithium Complex"
 description: "Mỡ chịu nhiệt Shell Gadus S3 V220C 2 gốc lithium complex, nhỏ giọt 240 °C, làm việc tới 140 °C cho ổ bi nóng, tải nặng. Xô 18 kg, CO/CQ, VAT."
@@ -48,7 +48,8 @@ images:
   - { src: "/images/san-pham/shell-gadus-s3-v220c-2-mau-mo.webp", alt: "Mỡ Shell Gadus S3 V220C 2 màu đỏ khi mở nắp xô" }
 
 tags: ["nlgi-2", "lithium-complex", "mo-chiu-nhiet", "shell-gadus"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Shell Gadus S3 V220C 2** là mỡ chịu nhiệt, chịu cực áp cao cấp của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng **lithium complex**, có **màu đỏ**. Nhiệt độ nhỏ giọt là **240 °C**. Mỡ làm việc liên tục tới **140 °C**, đỉnh tới 150 °C, nên dùng cho các ổ bi chạy nóng, tải nặng và rung mạnh. Tên cũ của dòng này là Shell Albida EP 2 và Shell Retinax LX 2.

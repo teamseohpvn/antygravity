@@ -1,6 +1,6 @@
 ---
 ma: "SP-TN-002"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "SHL Syn Therm 32L"
 seo_title: "SHL Syn Therm 32L – Dầu Truyền Nhiệt Tổng Hợp | Xô 20 L"
 description: "Dầu truyền nhiệt tổng hợp SHL Syn Therm 32L gốc alkyl benzene, điểm đông đặc dưới -35 °C, ít bay hơi. Xô 20 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -44,7 +44,8 @@ images:
   - { src: "/images/san-pham/shl-syn-therm-32l-nhan.webp", alt: "Nhãn xô SHL Syn Therm 32L ghi tên sản phẩm và cấp độ nhớt" }
 
 tags: ["iso-vg-32", "truyen-nhiet", "tong-hop", "shl"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **SHL Syn Therm 32L** là dầu truyền nhiệt **tổng hợp gốc alkyl benzene** của SHL, thương hiệu dầu nhờn Hàn Quốc kế thừa Samhwa Lube Oil. Dòng sản phẩm được SHL ASEAN sản xuất tại KCN Mỹ Xuân, Việt Nam. Khác với dầu truyền nhiệt gốc khoáng, Syn Therm 32L có điểm đông đặc rất thấp, dưới −35 °C, và được hãng xếp vào nhóm ít bay hơi, hiệu suất truyền nhiệt cao.

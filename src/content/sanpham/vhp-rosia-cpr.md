@@ -1,6 +1,6 @@
 ---
 ma: "SP-MNK-003"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/vhp-rosia-cpr/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Máy Nén Khí VHP Rosia CPR 32, 46"
 seo_title: "VHP Rosia CPR 32, 46 – Dầu Máy Nén Khí Trục Vít | Xô 18 L"
 description: "Dầu máy nén khí VHP Rosia CPR 32 và 46 cho máy nén trục vít, piston; chống oxy hóa, tản nhiệt nhanh, hạn chế cặn. Xô 18 L có sẵn, giao từ Hải Phòng."
@@ -39,7 +39,8 @@ images:
   - { src: "/images/san-pham/vhp-rosia-cpr-nhan.webp", alt: "Nhãn xô VHP Rosia CPR ghi cấp độ nhớt ISO VG" }
 
 tags: ["iso-vg-32", "iso-vg-46", "may-nen-khi", "vhp"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Rosia CPR** là dầu bôi trơn chuyên dụng cho **máy nén khí trục vít và piston**, do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Kho chúng tôi có hai cấp: **CPR 32** (ISO VG 32) và **CPR 46** (ISO VG 46). Dầu chống oxy hóa, giảm ăn mòn, tản nhiệt nhanh và hạn chế tạo cặn trong máy.

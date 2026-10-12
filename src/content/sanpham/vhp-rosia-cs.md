@@ -1,6 +1,6 @@
 ---
 ma: "SP-RT-002"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "VHP Rosia CS 46"
 seo_title: "VHP Rosia CS 46 – Dầu Tuần Hoàn Chống Gỉ Phuy 200L"
 description: "Dầu VHP Rosia CS 46 chống oxy hóa, chống gỉ, đạt DIN 51517-2 CL, cho hệ tuần hoàn, ổ đỡ, hộp số tải nhẹ. Phuy 200 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -48,7 +48,8 @@ images:
   - { src: "/images/san-pham/vhp-rosia-cs-nhan.webp", alt: "Nhãn phuy dầu VHP Rosia CS 46 ghi cấp độ nhớt" }
 
 tags: ["iso-vg-46", "dau-tuan-hoan", "chong-gi", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Rosia CS 46** là dầu bôi trơn tuần hoàn chống oxy hóa, chống gỉ do nhà máy VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu đạt DIN 51517-1 loại C và DIN 51517-2 loại CL. Đây là loại dầu không có phụ gia cực áp (EP), dùng cho hệ tuần hoàn, ổ đỡ và hộp số tải nhẹ.

@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-013"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/emi-ci-4-20w-50/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Động Cơ EMI CI-4 20W-50"
 seo_title: "Dầu Động Cơ Diesel EMI CI-4 20W-50 – Xô | Có Sẵn"
 description: "Dầu động cơ diesel EMI API CI-4 SAE 20W-50 cho xe tải, máy công trình đời mới có EGR và máy cũ chạy nặng. Xô có sẵn, có VAT, giao từ Hải Phòng."
@@ -37,7 +37,8 @@ images:
   - { src: "/images/san-pham/emi-ci-4-20w-50-nhan.webp", alt: "Nhãn xô EMI CI-4 20W-50 ghi cấp API và SAE" }
 
 tags: ["api-ci-4", "sae-20w-50", "emi", "dong-co-diesel"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **EMI CI-4 20W-50** là dầu động cơ diesel đạt cấp **API CI-4**, độ nhớt **SAE 20W-50**. CI-4 là cấp cho động cơ diesel 4 kỳ cao tốc đời mới, kể cả động cơ có hệ tuần hoàn khí xả (EGR), và tương thích ngược với máy yêu cầu CF-4, CH-4.

@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-003"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Caltex Hydraulic Oil AW 68"
 seo_title: "Caltex Hydraulic AW 68 – Dầu Thủy Lực Caltex Phuy 208L"
 description: "Dầu thủy lực Caltex Hydraulic Oil AW 68 chống mài mòn, tách nước tốt, cho máy ép nhựa và máy công trình. Phuy 208 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -47,7 +47,8 @@ images:
 
 related_posts: ["huong-dan-chon-do-nhot"]
 tags: ["iso-vg-68", "chong-mai-mon", "caltex"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Caltex Hydraulic Oil AW 68** là dầu thủy lực chống mài mòn của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho hệ thủy lực cố định và hệ thủy lực trên máy di động. Mục tiêu của dòng này là bảo vệ tốt với chi phí hợp lý.
