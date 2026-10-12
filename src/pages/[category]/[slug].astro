@@ -5,6 +5,7 @@ import ThongSoUngDung from '../../components/ThongSoUngDung.astro';
 import MucLuc from '../../components/MucLuc.astro';
 import { mucLuc } from '../../lib/muc-luc';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import NoiDungBai from '../../components/NoiDungBai.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
@@ -92,6 +93,9 @@ const citation = [
   ].filter((u): u is string => Boolean(u))),
 ];
 
+const PAGE_ID = absUrl(pagePath) + '#webpage';
+const PAGE_TYPE = ['ItemPage', 'WebPage'];
+
 const schemaData = [
   {
     '@context': 'https://schema.org',
@@ -110,8 +114,12 @@ const schemaData = [
   },
   {
     '@context': 'https://schema.org',
-    '@type': 'ItemPage',
+    // Thêm WebPage cạnh ItemPage (ItemPage vốn là WebPage): một số công cụ kiểm tra E-E-A-T chỉ nhận WebPage/Article.
+    '@type': PAGE_TYPE,
+    '@id': PAGE_ID,
     name: d.seo_title ?? d.title,
+    description: d.description,
+    about: { '@type': 'Thing', name: categoryLabel },
     url: absUrl(pagePath),
     inLanguage: 'vi-VN',
     ...(ngay.published ? { datePublished: ngay.published } : {}),
@@ -143,6 +151,7 @@ const schemaData = [
   <div class="container product-page">
     <Breadcrumbs items={crumbs} />
 
+    <NoiDungBai articleId={PAGE_ID} type={PAGE_TYPE} field="text">
     <div class="product-top">
       <div class="product-image">
         {mainImage && <img src={mainImage.src} srcset={webpSrcset(mainImage.src)} sizes="(max-width: 700px) 100vw, 600px" alt={mainImage.alt} width="600" height="600" loading="eager" fetchpriority="high" decoding="async" />}
@@ -233,6 +242,7 @@ const schemaData = [
       <QuoteCta item={d.title} />
       <p class="back-link">Xem thêm các sản phẩm khác trong danh mục <a href={`/${d.category}`}>{categoryLabel}</a>.</p>
     </section>
+    </NoiDungBai>
   </div>
 </Layout>
 
