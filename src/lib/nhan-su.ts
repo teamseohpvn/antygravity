@@ -162,6 +162,11 @@ export const personId = (p: NhanSu) => (hasProfile(p) ? `${SITE_URL}/author/${p.
 export const credentialLine = (p: NhanSu) =>
   // "TS." trước tên đã nói học vị, không lặp lại "Tiến sĩ" ở đây
   [p.honorificPrefix && p.degree === 'Tiến sĩ' ? undefined : p.degree, p.since ? `${new Date().getFullYear() - p.since} năm kinh nghiệm` : undefined].filter(Boolean).join(', ');
+/** Phần sau tên trong dòng tác giả: "giảng viên chính, Khoa Cơ khí, ..., cố vấn kỹ thuật ..." hoặc "Kỹ sư, 17 năm kinh nghiệm, ..." */
+export const bylineTitle = (p: NhanSu) =>
+  [p.position ? p.position.charAt(0).toLowerCase() + p.position.slice(1) : credentialLine(p), p.position ? p.role.toLowerCase() : p.role]
+    .filter(Boolean)
+    .join(', ');
 export const yearsOf = (p: NhanSu) => (p.since ? new Date().getFullYear() - p.since : undefined);
 
 /** Tra theo id hoặc họ tên (giá trị trường reviewed_by). */

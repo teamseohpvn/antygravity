@@ -9,7 +9,7 @@ import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
 import { ngayBai } from '../../lib/ngay';
-import { timNhanSu, DEFAULT_REVIEWER_ID, displayName, personRef, personUrl, personSchema, credentialLine } from '../../lib/nhan-su';
+import { timNhanSu, DEFAULT_REVIEWER_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
 import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -74,10 +74,19 @@ const additionalProperty = [
   ...(d.specs ?? []).map((s) => ({ '@type': 'PropertyValue', name: s.name, value: s.value, ...(s.method ? { description: s.method } : {}) })),
 ];
 
+// Nguồn dẫn trên trang: TDS của hãng + công bố gốc ASTM/ISO và TCVN của các phương pháp thử trong bảng thông số.
+const citation = [
+  ...new Set([
+    ...(d.tds_url ? [d.tds_url] : []),
+    ...(d.specs ?? []).flatMap((s) => (s.method ? tachPhuongPhap(s.method) : []).flatMap((x) => [x.tc?.url, x.tc?.tcvnUrl])),
+  ].filter((u): u is string => Boolean(u))),
+];
+
 const schemaData = [
   {
     '@context': 'https://schema.org',
     '@type': 'Product',
+    '@id': absUrl(pagePath) + '#product',
     name: d.title,
     description: d.description,
     url: absUrl(pagePath),
@@ -101,7 +110,8 @@ const schemaData = [
     ...(reviewer ? { reviewedBy: personRef(reviewer) } : {}),
     publisher: { '@id': ORG_ID },
     isPartOf: { '@id': absUrl('/') + '#website' },
-    ...(d.tds_url ? { citation: d.tds_url } : {}),
+    mainEntity: { '@id': absUrl(pagePath) + '#product' },
+    ...(citation.length ? { citation } : {}),
   },
   // Khối Person đầy đủ của người kiểm duyệt, để công cụ và AI đọc được tác giả ngay trên trang.
   ...(reviewer ? [personSchema(reviewer)] : []),
@@ -138,7 +148,7 @@ const schemaData = [
           {ngay.published && <>Đăng ngày: <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
           {ngay.modified && ngay.modified !== ngay.published && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time> · </>}
           {reviewer
-            ? <>Tác giả: <a href={personUrl(reviewer)} rel="author">{displayName(reviewer)}</a>, {credentialLine(reviewer) ? `${credentialLine(reviewer)}, ` : ''}{reviewer.role}</>
+            ? <>Tác giả: <a href={personUrl(reviewer)} rel="author">{displayName(reviewer)}</a>, {bylineTitle(reviewer)}. Thông số đối chiếu với TDS của hãng (<a href="/quy-trinh-bien-tap">quy trình biên soạn</a>).</>
             : <>Biên soạn: <a href="/about" rel="author">{authorName}</a></>}
         </p>
         <div class="tags">

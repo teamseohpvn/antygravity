@@ -9,6 +9,7 @@ import stockRows from '../../data/san-pham-kho.json';
 import { render } from 'astro:content';
 import { getActiveProducts, getActiveCategories } from '../../lib/content';
 import { ngayBai } from '../../lib/ngay';
+import { timNhanSu, DEFAULT_REVIEWER_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
 import { absUrl, breadcrumbSchema, ORG_ID, publicImageExists, webpSrcset, productImages } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -47,6 +48,14 @@ const showFilter = products.length >= 4 && (brands.length > 1 || grades.length >
 const productGrade = (p: (typeof products)[number]) =>
   p.data.vg ? `VG ${p.data.vg}` : p.data.nlgi ? `NLGI ${p.data.nlgi}` : null;
 
+// Người đứng tên trang danh mục: reviewed_by (id hoặc họ tên trong nhan-su.ts), mặc định cố vấn kỹ thuật sản phẩm.
+const tacGia = timNhanSu(reviewed_by) ?? timNhanSu(DEFAULT_REVIEWER_ID);
+// Nguồn dẫn: TDS của các sản phẩm trong danh mục + liên kết ra ngoài site trong nội dung bài danh mục.
+const citation = [...new Set([
+  ...products.map((p) => p.data.tds_url),
+  ...((categoryInfo.body ?? '').match(/https?:\/\/[^\s)"'<>]+/g) ?? []),
+].filter((u): u is string => Boolean(u) && !u!.includes('daucongnghiephp.com.vn')))];
+
 const schemaData = [
   {
     '@context': 'https://schema.org',
@@ -57,9 +66,13 @@ const schemaData = [
     ...(image ? { image: absUrl(image) } : {}),
     ...(ngay.published ? { datePublished: ngay.published } : {}),
     ...(ngay.modified ? { dateModified: ngay.modified } : {}),
+    ...(tacGia ? { author: personRef(tacGia), reviewedBy: personRef(tacGia) } : {}),
+    ...(citation.length ? { citation } : {}),
+    inLanguage: 'vi-VN',
     isPartOf: { '@id': absUrl('/') + '#website' },
     publisher: { '@id': ORG_ID },
   },
+  ...(tacGia ? [personSchema(tacGia)] : []),
   breadcrumbSchema(crumbs),
   ...(products.length
     ? [{
@@ -83,6 +96,7 @@ const schemaData = [
   {image}
   published={ngay.published}
   modified={ngay.modified}
+  author={tacGia?.name}
   {schemaData}
 >
   <div class="container">
@@ -90,6 +104,13 @@ const schemaData = [
 
     <header class="category-header">
       <h1>{title}</h1>
+      {tacGia && (
+        <p class="byline">
+          {ngay.published && <>Đăng ngày: <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
+          {ngay.modified && ngay.modified !== ngay.published && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time> · </>}
+          Tác giả: <a href={personUrl(tacGia)} rel="author">{displayName(tacGia)}</a>, {bylineTitle(tacGia)}. <a href="/quy-trinh-bien-tap">Quy trình biên soạn</a>.
+        </p>
+      )}
       <p>{description}</p>
       <QuoteCta item={nav_label ?? title} compact />
     </header>
@@ -153,7 +174,7 @@ const schemaData = [
         <div class="seo-content markdown-body">
           <ContentBody><Content /></ContentBody>
           <QuoteCta item={nav_label ?? title} />
-          {(reviewed_by || updated) && (
+          {!tacGia && (reviewed_by || updated) && (
             <p class="review-meta">
               {reviewed_by && <>Nội dung được duyệt kỹ thuật bởi {reviewed_by}. </>}
               {ngay.modified && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time>.</>}
@@ -186,6 +207,8 @@ const schemaData = [
   .category-header { background: white; padding: 32px; border-radius: 8px; margin: 0 0 30px; border: 1px solid var(--border-color); }
   .category-header h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); color: var(--color-primary); margin-bottom: 10px; line-height: 1.25; text-wrap: balance; }
   .category-header p { max-width: 75ch; color: var(--color-text-light); }
+  .category-header .byline { font-size: 0.85rem; margin: -4px 0 10px; }
+  .category-header .byline a { color: inherit; text-decoration: underline; }
 
   .layout-grid { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 40px; margin-bottom: 60px; }
   .layout-grid.no-filter { grid-template-columns: minmax(0, 1fr); }
