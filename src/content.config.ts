@@ -97,6 +97,9 @@ const sanphamCollection = defineCollection({
     storage: z.string().optional(), // Điều kiện bảo quản
     shelf_life: z.string().optional(), // Hạn sử dụng
     equivalents: z.array(z.string()).optional(), // Tên sản phẩm tương đương các hãng
+    doc_gia: z.string().optional(), // Câu "Trang này dành cho ai", hiện ngay dưới tiêu đề
+    thong_so_cuoi: z.boolean().optional(), // true: bảng thông số TDS + Ứng dụng đặt sau phần phân tích (cuối thân bài)
+    tom_tat: z.array(z.string()).optional(), // Tóm tắt cho người cần quyết định, hiện dưới tiêu đề; **đậm** được hỗ trợ
     tds_url: z.string().optional(),
     sds_url: z.string().optional(),
     image: z.string().optional(), // Dạng cũ, dùng khi chưa có images

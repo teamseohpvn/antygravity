@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ContentBody from '../../components/ContentBody.astro';
+import ThongSoUngDung from '../../components/ThongSoUngDung.astro';
 import MucLuc from '../../components/MucLuc.astro';
 import { mucLuc } from '../../lib/muc-luc';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
@@ -10,7 +11,7 @@ import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
 import { ngayBai } from '../../lib/ngay';
 import { timNhanSu, DEFAULT_REVIEWER_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
-import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
+import { BUSINESS, absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
   const products = await getActiveProducts();
@@ -46,14 +47,23 @@ const equivalents = (d.equivalents ?? []).map((name) => {
 const coSpecs = !!d.specs?.length;
 const coUngDung = !!(d.applications?.length || d.not_for?.length);
 const coBaoQuan = !!(d.warnings?.length || d.storage || d.shelf_life);
-const tocItems = mucLuc([
+const mucThongSo = [
   ...(coSpecs ? [{ depth: 2, slug: 'thong-so-ky-thuat', text: 'Thông số kỹ thuật điển hình' }] : []),
   ...(coUngDung ? [{ depth: 2, slug: 'ung-dung', text: 'Ứng dụng và khuyến cáo sử dụng' }] : []),
+];
+// Thân bài có đoạn "Nhận định của HT VINA" thì ghi chú dưới bảng thông số phân biệt số liệu hãng / ý kiến tư vấn.
+const coNhanDinh = (product.body ?? '').includes('Nhận định của HT VINA');
+const tocItems = mucLuc([
+  ...(d.thong_so_cuoi ? [] : mucThongSo),
   { depth: 2, slug: 'gioi-thieu', text: `Giới thiệu ${d.title}` },
   ...headings,
+  ...(d.thong_so_cuoi ? mucThongSo : []),
   ...(equivalents.length ? [{ depth: 2, slug: 'san-pham-tuong-duong', text: 'Sản phẩm tương đương' }] : []),
   ...(coBaoQuan ? [{ depth: 2, slug: 'bao-quan-an-toan', text: 'Bảo quản và an toàn' }] : []),
 ], { tat: d.muc_luc === false });
+// **đậm** trong tom_tat → <strong>, phần còn lại được escape.
+const dam = (t: string) =>
+  t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 const stockText = d.stock_status ? STOCK_TEXT[d.stock_status] : 'Liên hệ để nhận báo giá và kiểm tra tồn kho.';
 
 const crumbs = [
@@ -159,6 +169,13 @@ const schemaData = [
           {d.standards?.map((s) => <span class="badge badge-outline">{s}</span>)}
         </div>
         <p class="description">{d.description}</p>
+        {d.doc_gia && <p class="doc-gia">{d.doc_gia}</p>}
+        {d.tom_tat && d.tom_tat.length > 0 && (
+          <div class="tom-tat">
+            <p class="tom-tat__label">Tóm tắt cho người đang cần quyết định</p>
+            <ul>{d.tom_tat.map((t) => <li set:html={dam(t)} />)}</ul>
+          </div>
+        )}
 
         {d.packaging && d.packaging.length > 0 && (
           <p class="packaging"><strong>Quy cách:</strong> {d.packaging.map(packagingLabel).join(' · ')}</p>
@@ -173,7 +190,10 @@ const schemaData = [
 
         <div class="cta-box">
           <p class="status">{stockText}</p>
-          <QuoteCta item={d.title} compact />
+          <p class="cta-row">
+            <a href={`/bao-gia?sp=${encodeURIComponent(d.title)}`} class="btn-primary" data-track="add_to_quote">Nhận báo giá</a>
+            <span>hoặc gọi <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></span>
+          </p>
           {(d.tds_url || d.sds_url) && (
             <div class="docs">
               {d.tds_url && <a href={d.tds_url} class="btn-outline" target="_blank" rel="noopener" data-track="download_tds">Tải thông số kỹ thuật (TDS)</a>}
@@ -186,47 +206,14 @@ const schemaData = [
 
     <MucLuc items={tocItems} />
 
-    {d.specs && d.specs.length > 0 && (
-      <section class="product-content">
-        <h2 id="thong-so-ky-thuat">Thông số kỹ thuật điển hình</h2>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Chỉ tiêu</th><th>Giá trị</th><th>Phương pháp thử</th><th>TCVN tương đương</th></tr></thead>
-            <tbody>
-              {d.specs.map((s) => {
-                const parts = s.method ? tachPhuongPhap(s.method) : [];
-                const tcvn = parts.find((p) => p.tc?.tcvn)?.tc;
-                return (
-                  <tr>
-                    <td>{s.name}</td>
-                    <td>{s.value}</td>
-                    <td>{parts.length ? parts.map((p, i) => <>{i > 0 && ' / '}{p.tc ? <a href={p.tc.url} target="_blank" rel="noopener">{p.text}</a> : p.text}</>) : '–'}</td>
-                    <td>{tcvn ? <a href={tcvn.tcvnUrl} target="_blank" rel="noopener" title={tcvn.tcvnNote}>{tcvn.tcvn}</a> : '–'}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-        <p class="note">Giá trị điển hình theo bảng thông số của nhà sản xuất{d.tds_date ? ` (TDS ${d.tds_date})` : ''}, có thể thay đổi theo lô. Phương pháp thử dẫn tới công bố của ASTM, ISO; TCVN tương đương tra tại Viện Tiêu chuẩn Chất lượng Việt Nam.</p>
-      </section>
-    )}
-
-    {(d.applications?.length || d.not_for?.length) && (
-      <section class="product-content">
-        <h2 id="ung-dung">Ứng dụng và khuyến cáo sử dụng</h2>
-        {d.applications?.length && <ul>{d.applications.map((a) => <li>{a}</li>)}</ul>}
-        {d.not_for?.length && (
-          <p><strong>Không nên dùng cho:</strong> {d.not_for.join('; ')}.</p>
-        )}
-      </section>
-    )}
+    {!d.thong_so_cuoi && <ThongSoUngDung {d} {coNhanDinh} />}
 
     <section class="product-content">
       <h2 id="gioi-thieu">Giới thiệu {d.title}</h2>
       <div class="markdown-body">
         <ContentBody><Content /></ContentBody>
       </div>
+      {d.thong_so_cuoi && <ThongSoUngDung {d} {coNhanDinh} nested />}
       {equivalents.length > 0 && (
         <>
           <h2 id="san-pham-tuong-duong">Sản phẩm tương đương</h2>
@@ -243,6 +230,7 @@ const schemaData = [
           </ul>
         </>
       )}
+      <QuoteCta item={d.title} />
       <p class="back-link">Xem thêm các sản phẩm khác trong danh mục <a href={`/${d.category}`}>{categoryLabel}</a>.</p>
     </section>
   </div>
@@ -277,6 +265,12 @@ const schemaData = [
   .product-content table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
   .product-content th, .product-content td { border: 1px solid var(--border-color); padding: 8px 12px; text-align: left; }
   .product-content th { background: #f1f5f9; }
+  .doc-gia { font-size: 0.95rem; font-style: italic; color: var(--color-text-light); margin: -6px 0 12px; }
+  .tom-tat { background: var(--color-bg); border-left: 4px solid var(--color-primary); border-radius: 4px; padding: 12px 16px; margin: 0 0 16px; }
+  .tom-tat__label { font-weight: 700; color: var(--color-primary); margin-bottom: 6px; }
+  .tom-tat ul { margin: 0 0 0 18px; }
+  .tom-tat li { margin-bottom: 4px; }
+  .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 12px 0 0; }
   .byline { font-size: 0.85rem; color: var(--color-text-light); margin: -4px 0 12px; }
   .byline a { color: inherit; }
   .note { margin-top: 10px; font-size: 0.9rem; color: var(--color-text-light); }
@@ -289,4 +283,9 @@ const schemaData = [
   :global(.markdown-body p) { margin-bottom: 12px; }
   :global(.markdown-body ul) { margin-left: 20px; margin-bottom: 20px; }
   :global(.markdown-body li) { margin-bottom: 8px; }
+  :global(.markdown-body blockquote) { margin: 16px 0 20px; padding: 12px 16px; background: #fff7ed; border-left: 4px solid var(--color-accent); border-radius: 4px; }
+  :global(.markdown-body blockquote p:last-child) { margin-bottom: 0; }
+  :global(.markdown-body table) { border-collapse: collapse; width: 100%; font-size: 0.95rem; margin: 8px 0 16px; display: block; overflow-x: auto; }
+  :global(.markdown-body th), :global(.markdown-body td) { border: 1px solid var(--border-color); padding: 8px 12px; text-align: left; vertical-align: top; }
+  :global(.markdown-body th) { background: #f1f5f9; }
 </style>
