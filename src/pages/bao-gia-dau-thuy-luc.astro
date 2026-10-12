@@ -22,8 +22,8 @@ const pagePath = '/bao-gia-dau-thuy-luc';
 const IMAGE = '/images/san-pham/castrol-hyspin-aws-68-kho.webp';
 const IMAGE_ALT = 'Phuy Castrol Hyspin AWS 68 xếp trên pallet trong kho HT VINA';
 
-// Người chịu trách nhiệm (quyết định 12/10/2026): TS. Nguyễn Thiết Lập đứng tên trang (tác giả, đối chiếu chọn mã
-// và tiêu chuẩn theo TDS); chị Hồng (quản lý bán hàng) cập nhật giá trong bảng, ghi là contributor.
+// Người chịu trách nhiệm (quyết định 12/10/2026): chị Hồng (quản lý bán hàng) đứng tên trang và rà soát giá,
+// TS. Nguyễn Thiết Lập kiểm duyệt phần chọn mã và tiêu chuẩn theo TDS.
 const nguoiGia = timNhanSu('nguyen-thi-hong')!;
 const nguoiKyThuat = timNhanSu(DEFAULT_REVIEWER_ID)!;
 
@@ -69,7 +69,7 @@ const iso11158 = traTieuChuan('ISO 11158');
 const NGAY_DANG = '2026-10-06';
 const NGAY_SUA_NOI_DUNG = '2026-10-10';
 const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
-const tacGia = nguoiKyThuat;
+const tacGia = nguoiGia;
 
 const title = `Báo Giá Dầu Thủy Lực 68${thang ? ` Tháng ${thang}` : ''}`;
 const seoTitle = `${title} – Phuy 200 L, Xô 18 L`;
@@ -95,7 +95,7 @@ const schemaData = [
     dateModified: ngaySua,
     ...(cauHinh.ngay_ra_soat ? { lastReviewed: cauHinh.ngay_ra_soat } : {}),
     author: personRef(tacGia),
-    contributor: personRef(nguoiGia),
+    reviewedBy: personRef(nguoiKyThuat),
     about: { '@type': 'Thing', name: 'Dầu thủy lực ISO VG 68' },
     primaryImageOfPage: { '@type': 'ImageObject', url: absUrl(IMAGE), caption: IMAGE_ALT },
     isPartOf: { '@id': absUrl('/') + '#website' },
@@ -111,21 +111,13 @@ const schemaData = [
     image: absUrl(IMAGE),
     inLanguage: 'vi-VN',
     author: personRef(tacGia),
-    contributor: personRef(nguoiGia),
-    citation: [
-      ...(iso11158.url ? [iso11158.url] : []),
-      ...(iso11158.tcvnUrl ? [iso11158.tcvnUrl] : []),
-      'https://www.yanmar.com/jp/construction/service_support/oil/cycle.html',
-      'https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/shelf-life-recommendations.pdf',
-      'https://petrocanadalubricants.com/lube-source-handbook/introduction/lubricants-handling-and-storage',
-      'https://plc.petrolimex.com.vn/nd/tt-co-dong/bao-cao-thuong-nien-2025.html',
-    ],
+    reviewedBy: personRef(nguoiKyThuat),
     datePublished: NGAY_DANG,
     dateModified: ngaySua,
     publisher: { '@id': ORG_ID },
   },
   personSchema(tacGia),
-  personSchema(nguoiGia),
+  personSchema(nguoiKyThuat),
   breadcrumbSchema(crumbs),
 ];
 ---
@@ -137,8 +129,8 @@ const schemaData = [
     <header class="price-hero">
       <h1>{title}</h1>
       <p class="byline">
-        Tác giả: <a href={personUrl(tacGia)} rel="author">{displayName(tacGia)}</a>, {tacGia.position ? `${tacGia.position.charAt(0).toLowerCase()}${tacGia.position.slice(1)}, ` : ''}{tacGia.role.toLowerCase()}. Phần chọn mã và tiêu chuẩn đối chiếu với TDS của hãng.
-        Giá trong bảng do phòng bán hàng cập nhật (<a href={personUrl(nguoiGia)}>{displayName(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}). <a href="/quy-trinh-bien-tap">Quy trình biên soạn và rà soát</a>.
+        Tác giả: <a href={personUrl(tacGia)} rel="author">{displayName(tacGia)}</a>, {tacGia.role.toLowerCase()} {LEGAL_SHORT}, rà soát giá trong bảng.
+        Kiểm duyệt kỹ thuật: <a href={personUrl(nguoiKyThuat)}>{displayName(nguoiKyThuat)}</a>{credentialLine(nguoiKyThuat) && `, ${credentialLine(nguoiKyThuat)}`}, đối chiếu phần chọn mã và tiêu chuẩn với TDS của hãng.
         <br />Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time>{ngaySua !== NGAY_DANG && <> · Cập nhật <time datetime={ngaySua}>{fmtNgay(ngaySua)}</time></>}{coGia && ngay && <> · Giá rà soát ngày <strong>{ngay}</strong>, áp dụng đến khi trang này ghi ngày mới.</>}
       </p>
 

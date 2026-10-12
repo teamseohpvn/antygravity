@@ -33,10 +33,6 @@ export interface NhanSu {
   publications?: { title: string; venue: string; year: number }[];
   /** Các bước làm việc riêng hiển thị trên trang hồ sơ (mặc định: quy trình kiểm duyệt thông số) */
   method?: string[];
-  /** Chức danh ở nơi công tác chính, dùng trong dòng tác giả, ví dụ "Giảng viên chính, Khoa Cơ khí, ..." */
-  position?: string;
-  /** Bài báo trích lời người này (đã mở bài kiểm tra), schema subjectOf */
-  press?: { title: string; publisher: string; date: string; url: string }[];
   /** Nguồn xác nhận thông tin hồ sơ (ghi chú nội bộ, không hiển thị) */
   verifiedFrom?: string;
 }
@@ -52,12 +48,7 @@ export const NHAN_SU: NhanSu[] = [
     affiliationUrl: 'https://www.utc.edu.vn/',
     external: true,
     sameAs: ['https://www.utc.edu.vn/doi-ngu-giang-vien/0652'],
-    position: 'Giảng viên chính, Khoa Cơ khí, Trường Đại học Giao thông vận tải',
-    verifiedFrom: 'Trang giảng viên UTC https://www.utc.edu.vn/doi-ngu-giang-vien/0652 (truy cập 12/10/2026); 2 bài báo trong press đã mở kiểm tra 12/10/2026',
-    press: [
-      { title: 'Xe bán tải được "cởi trói", người dùng mong gỡ tiếp những nút thắt còn lại', publisher: 'VietNamNet', date: '2026-07-07', url: 'https://vietnamnet.vn/xe-ban-tai-duoc-coi-troi-nguoi-dung-mong-go-tiep-nhung-nut-that-con-lai-2533313.html' },
-      { title: 'Phát triển xe buýt xanh để cải thiện chất lượng môi trường', publisher: 'Báo Lao Động', date: '2025-01-17', url: 'https://laodong.vn/xa-hoi/phat-trien-xe-buyt-xanh-de-cai-thien-chat-luong-moi-truong-1451490.ldo' },
-    ],
+    verifiedFrom: 'Trang giảng viên UTC https://www.utc.edu.vn/doi-ngu-giang-vien/0652 (truy cập 12/10/2026)',
     desc: 'Giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Trường Đại học Giao thông vận tải. Cộng tác viên của HT VINA, đứng tên các trang sản phẩm dầu nhớt trên website.',
     bio: [
       'TS. Nguyễn Thiết Lập là giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Khoa Cơ khí, Trường Đại học Giao thông vận tải (Hà Nội).',
@@ -193,9 +184,6 @@ export function personSchema(p: NhanSu) {
     ...(p.knowsAbout ? { knowsAbout: p.knowsAbout } : {}),
     ...(p.sameAs ? { sameAs: p.sameAs } : {}),
     ...(p.email ? { email: p.email } : {}),
-    ...(p.press
-      ? { subjectOf: p.press.map((a) => ({ '@type': 'NewsArticle', headline: a.title, url: a.url, datePublished: a.date, publisher: { '@type': 'Organization', name: a.publisher } })) }
-      : {}),
     description: p.bio ? p.bio.join(' ') : p.desc,
   };
 }
