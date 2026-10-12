@@ -20,7 +20,7 @@ const crumbs = [
   { name: p.name, href: path },
 ];
 
-// Trang sản phẩm do người này đứng tên (reviewed_by trùng, hoặc người mặc định khi không ghi).
+// Trang sản phẩm do người này duyệt nội dung (reviewed_by trùng, hoặc người mặc định khi không ghi).
 const products = (await getActiveProducts())
   .filter((x) => (timNhanSu(x.data.reviewed_by) ?? timNhanSu(DEFAULT_REVIEWER_ID))?.id === p.id)
   .sort((a, b) => a.data.title.localeCompare(b.data.title, 'vi'));
@@ -127,7 +127,7 @@ const schemaData = [
 
       {products.length > 0 && (
         <>
-          <h2>Trang sản phẩm do {name} đứng tên</h2>
+          <h2>Trang sản phẩm do {name} duyệt nội dung</h2>
           <ul class="products">
             {products.map((x) => <li><a href={`/${x.data.category}/${x.id}`}>{x.data.title}</a></li>)}
           </ul>

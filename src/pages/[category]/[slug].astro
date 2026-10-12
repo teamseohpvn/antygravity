@@ -10,7 +10,7 @@ import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
 import { ngayBai } from '../../lib/ngay';
-import { timNhanSu, DEFAULT_REVIEWER_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
+import { timNhanSu, DEFAULT_REVIEWER_ID, DEFAULT_PRODUCT_AUTHOR_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
 import { BUSINESS, absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -74,8 +74,11 @@ const crumbs = [
 
 // Ngày cập nhật và người biên soạn: hiển thị trên trang, thẻ meta và schema (E-E-A-T).
 const ngay = ngayBai(d);
+// Tác giả: nhân viên HT VINA (mặc định Ms. Hồng); người duyệt nội dung: TS. Lập. Hiển thị và schema khớp nhau.
+const tacGia = timNhanSu(d.tac_gia) ?? timNhanSu(DEFAULT_PRODUCT_AUTHOR_ID);
 const reviewer = timNhanSu(d.reviewed_by) ?? timNhanSu(DEFAULT_REVIEWER_ID);
-const authorName = reviewer ? reviewer.name : d.reviewed_by ?? `${SITE_NAME} (${LEGAL_SHORT})`;
+const authorName = tacGia ? tacGia.name : `${SITE_NAME} (${LEGAL_SHORT})`;
+const tenNgan = (p: NonNullable<typeof tacGia>) => p.bylineName ?? displayName(p);
 
 const additionalProperty = [
   ...(grade ? [{ '@type': 'PropertyValue', name: d.vg ? 'Cấp độ nhớt' : 'Cấp NLGI', value: grade }] : []),
@@ -116,7 +119,7 @@ const schemaData = [
     inLanguage: 'vi-VN',
     ...(ngay.published ? { datePublished: ngay.published } : {}),
     ...(ngay.modified ? { dateModified: ngay.modified } : {}),
-    author: reviewer ? personRef(reviewer) : { '@id': ORG_ID },
+    author: tacGia ? personRef(tacGia) : { '@id': ORG_ID },
     ...(reviewer ? { reviewedBy: personRef(reviewer) } : {}),
     publisher: { '@id': ORG_ID },
     isPartOf: { '@id': absUrl('/') + '#website' },
@@ -124,7 +127,8 @@ const schemaData = [
     ...(citation.length ? { citation } : {}),
   },
   // Khối Person đầy đủ của người kiểm duyệt, để công cụ và AI đọc được tác giả ngay trên trang.
-  ...(reviewer ? [personSchema(reviewer)] : []),
+  ...(tacGia ? [personSchema(tacGia)] : []),
+  ...(reviewer && reviewer.id !== tacGia?.id ? [personSchema(reviewer)] : []),
   breadcrumbSchema(crumbs),
 ];
 ---
@@ -155,11 +159,12 @@ const schemaData = [
       <div class="product-summary">
         <h1>{d.title}</h1>
         <p class="byline">
-          {ngay.published && <>Đăng ngày: <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
+          {ngay.published && <>Đăng: <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
           {ngay.modified && ngay.modified !== ngay.published && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time> · </>}
-          {reviewer
-            ? <>Tác giả: <a href={personUrl(reviewer)} rel="author">{displayName(reviewer)}</a>, {bylineTitle(reviewer)}. Thông số đối chiếu với TDS của hãng (<a href="/quy-trinh-bien-tap">quy trình biên soạn</a>).</>
-            : <>Biên soạn: <a href="/about" rel="author">{authorName}</a></>}
+          {tacGia
+            ? <>Tác giả: <a href={personUrl(tacGia)} rel="author">{tenNgan(tacGia)}</a>, {tacGia.role.toLowerCase()}</>
+            : <>Tác giả: <a href="/about" rel="author">{authorName}</a></>}
+          {reviewer && reviewer.id !== tacGia?.id && <> · Duyệt nội dung: <a href={personUrl(reviewer)}>{displayName(reviewer)}</a></>}
         </p>
         <div class="tags">
           <span class="badge">{d.brand}</span>
