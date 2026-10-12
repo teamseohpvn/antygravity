@@ -22,6 +22,8 @@ specs:
 tds_date: "10/2026"
 tds_url: "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=338972&docFormat=PDF"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Phuy 208 L", sku: "TLCALTEX" }
 stock_status: "dat-hang"
@@ -45,6 +47,12 @@ images:
   - { src: "/images/san-pham/caltex-hydraulic-aw-68-phuy-208l.webp", alt: "Phuy 208 lít dầu thủy lực Caltex Hydraulic Oil AW 68 tại kho Hải Phòng" }
   - { src: "/images/san-pham/caltex-hydraulic-aw-68-nhan.webp", alt: "Nhãn phuy Caltex Hydraulic Oil AW 68" }
 
+doc_gia: "Trang này dành cho người phụ trách bảo trì đang dùng Caltex Hydraulic Oil AW 68, hoặc cần dầu thủy lực 68 cho máy tiêu hao dầu nhiều."
+tom_tat:
+  - "**Dùng được** cho hệ thủy lực công nghiệp và máy di động yêu cầu dầu chống mài mòn cấp 68."
+  - "**Hợp nhất** với máy hay rò rỉ, phải châm dầu thường xuyên, không cần kéo dài chu kỳ thay dầu."
+  - "**Không dùng** khi hãng bơm yêu cầu phê duyệt riêng (Denison, Eaton): chọn Castrol Hyspin AWS 68."
+  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mã có sẵn cùng loại: ENEOS Super Hyrando 68, Castrol Hyspin AWS 68."
 related_posts: ["huong-dan-chon-do-nhot"]
 tags: ["iso-vg-68", "chong-mai-mon", "caltex"]
 date: "2026-10-12"
@@ -53,31 +61,60 @@ updated: "2026-10-12"
 
 **Caltex Hydraulic Oil AW 68** là dầu thủy lực chống mài mòn của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho hệ thủy lực cố định và hệ thủy lực trên máy di động. Mục tiêu của dòng này là bảo vệ tốt với chi phí hợp lý.
 
-Chúng tôi bán Caltex Hydraulic Oil AW 68 theo **phuy 208 lít**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **nhận đặt theo yêu cầu** theo phuy 208 lít, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Caltex AW 68 có hợp với máy của bạn không?
+
+Chevron định vị Hydraulic Oil AW là dầu cho hệ thống **tiêu hao dầu nhiều** và **không cần kéo dài chu kỳ thay dầu**.
+
+| Tình huống | Dùng Caltex AW 68 được không? |
+| :--- | :--- |
+| Sổ tay ghi dầu thủy lực chống mài mòn cấp 68 | **Được.** |
+| Máy ép nhựa đời cũ, máy công trình hay rò rỉ, xưởng phải châm dầu hằng tuần | **Được.** Đây là trường hợp hãng nhắm tới. |
+| Hãng bơm yêu cầu phê duyệt Denison, Eaton | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
+| Máy chạy nóng liên tục, muốn kéo dài thời gian thay dầu | Nên chọn mã có số liệu bền oxy hóa cao hơn. |
+| Máy xúc, máy đào | Được nếu sổ tay ghi cấp 68. Nhiều máy đào dùng cấp 46, hãy kiểm tra trước. |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS Chevron.
 
 - **Chống mài mòn.** Phụ gia chống mài mòn bảo vệ bề mặt khi tải lớn làm mỏng màng dầu.
-- **Chống gỉ và chống oxy hóa.** Hạn chế gỉ sinh ra hạt mài, hạn chế cặn và vecni do dầu xuống cấp. Nhờ vậy lọc và phớt được bảo vệ.
+- **Chống gỉ và chống oxy hóa.** Đạt thử gỉ nước biển. Hạn chế gỉ sinh ra hạt mài, hạn chế cặn và vecni do dầu xuống cấp.
 - **Tách nước, chống bọt, thoát khí tốt.** Lọc vẫn thông khi dầu lẫn ít nước. Hệ thống chạy êm, ít rung giật.
-- **Phương án kinh tế** cho máy hay rò rỉ, hay hỏng phớt, vỡ ống, phải châm dầu thường xuyên.
+- **Độ nhớt 65 mm²/s ở 40 °C.** Thấp hơn một chút so với giữa cấp, vẫn nằm trong khoảng 61,2–74,8 mm²/s của ISO VG 68.
 
-## Khi nào nên chọn Caltex AW 68
+## Caltex AW 68 hay ENEOS Super Hyrando 68?
 
-Chevron định vị Hydraulic Oil AW là dầu cho hệ thống **tiêu hao dầu nhiều** và **không cần kéo dài chu kỳ thay dầu**. Ví dụ là máy ép nhựa đời cũ, máy công trình hay rò rỉ, xưởng phải châm dầu hằng tuần. Trường hợp này, dùng dầu giá hợp lý giúp giảm chi phí mà vẫn đủ bảo vệ.
+ENEOS Super Hyrando 68 cùng cấp, cùng loại chống mài mòn và có sẵn tại kho. Số liệu theo TDS của từng hãng:
 
-Nếu máy chạy nóng liên tục, muốn kéo dài thời gian thay dầu, hoặc nhà sản xuất bơm yêu cầu phê duyệt, hãy chọn mã cao hơn: [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68) hoặc [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). So sánh các cấp 32, 46, 68 xem ở trang [dầu thủy lực](/dau-thuy-luc).
+| Chỉ tiêu | Caltex Hydraulic Oil AW 68 | [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68) |
+| :--- | :--- | :--- |
+| Độ nhớt ở 40 °C | 65 mm²/s | 69,5 mm²/s |
+| Độ nhớt ở 100 °C | 8,7 mm²/s | 9,03 mm²/s |
+| Chỉ số độ nhớt | 95 (tối thiểu) | 104 |
+| Điểm chớp cháy | 240 °C | 258 °C |
+| Điểm đông đặc | −21 °C | −25 °C |
+| Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn phuy 200 L |
+
+> **Nhận định của HT VINA:** Máy đang dùng Caltex AW 68 và chạy ổn thì đặt tiếp đúng mã để khỏi súc rửa. Cần dầu ngay, hoặc máy chạy nóng liên tục, thì ENEOS Super Hyrando 68 có sẵn và có chỉ số độ nhớt, điểm chớp cháy cao hơn. Khi đổi mã, xả hết dầu cũ và thay lọc.
+
+## Khi nào cần thay dầu?
+
+Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết Caltex Hydraulic Oil AW 68 trong máy của bạn còn dùng được không, kiểm tra ba chỉ tiêu sau:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| :--- | :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 58,5–71,5 mm²/s (lệch quá ±10% so với 65 mm²/s theo TDS) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu thủy lực Caltex Hydraulic Oil AW 68?
-Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết Caltex Hydraulic Oil AW 68 trong máy của bạn còn dùng được không, kiểm tra ba chỉ tiêu sau:
-
-- **Độ nhớt ở 40 °C** lệch quá ±10%: dầu mới 65 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 58,5–71,5 mm²/s là vượt ngưỡng. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
-- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
-- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
-
-Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 58,5–71,5 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Caltex và Chevron có phải cùng một hãng?
 Có. Caltex là thương hiệu của Chevron, dùng tại châu Á – Thái Bình Dương. Bảng thông số kỹ thuật do Chevron phát hành.
@@ -85,5 +122,9 @@ Có. Caltex là thương hiệu của Chevron, dùng tại châu Á – Thái B�
 ### Vì sao độ nhớt ở 40 °C là 65 mà vẫn gọi là cấp 68?
 Cấp ISO VG 68 cho phép độ nhớt ở 40 °C nằm trong khoảng 61,2–74,8 mm²/s. Con số 65 là giá trị điển hình của lô sản xuất, vẫn đúng cấp 68.
 
-### Có dùng cho máy xúc, máy đào được không?
-Được, nếu sổ tay máy yêu cầu dầu thủy lực chống mài mòn cấp 68. Nhiều máy đào dùng cấp 46, nên hãy kiểm tra sổ tay trước khi đặt hàng.
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** phuy 208 L, nhận đặt theo yêu cầu. Thời gian có hàng báo khi nhận yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Caltex%20Hydraulic%20Oil%20AW%2068) kèm số lượng.

@@ -28,6 +28,8 @@ specs:
 tds_date: "06/2025"
 tds_url: "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/7F11F8ABD67B12B8802584BB0056F949/$File/bpxe-bjaedc.pdf"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Xô 20 L", sku: "HLPZ 68" }
 stock_status: "dat-hang"
@@ -50,6 +52,12 @@ images:
   - { src: "/images/san-pham/castrol-hyspin-hlpz-68-xo-20l.webp", alt: "Xô 20 lít dầu thủy lực Castrol Hyspin HLP-Z 68 tại kho Hải Phòng" }
   - { src: "/images/san-pham/castrol-hyspin-hlpz-68-nhan.webp", alt: "Nhãn xô Castrol Hyspin HLP-Z 68 ghi cấp độ nhớt và tiêu chuẩn" }
 
+doc_gia: "Trang này dành cho kỹ thuật viên cần dầu thủy lực HLP 68 theo DIN, đóng xô nhỏ, hoặc đang dùng Castrol Hyspin HLP-Z."
+tom_tat:
+  - "**Dùng được** cho hệ thủy lực yêu cầu DIN 51524-2 HLP, ISO 11158 HM cấp 68, bánh răng tải nhẹ và hệ dầu tuần hoàn."
+  - "**Có phụ gia kẽm** (chữ \"Z\"): bơm yêu cầu dầu không kẽm thì dùng dòng HLP-AF."
+  - "**Không phải dầu rãnh trượt**: băng trượt máy công cụ dùng dầu rãnh trượt chuyên dụng."
+  - "**Nhận đặt theo yêu cầu** (xô 20 L), không có sẵn tại kho tháng 10/2026."
 tags: ["iso-vg-68", "chong-mai-mon", "castrol"]
 date: "2026-10-12"
 updated: "2026-10-12"
@@ -57,28 +65,59 @@ updated: "2026-10-12"
 
 **Castrol Hyspin HLP-Z 68** là dầu thủy lực chống mài mòn gốc khoáng tinh chế, dùng hệ phụ gia chống mài mòn **gốc kẽm** ổn định. Theo Castrol, dầu được phân loại DIN 51502 HLP và ISO 6743-4 HM, đáp ứng DIN 51524 phần 2, ISO 11158 HM và ASTM D6158 HM. Ngoài hệ thủy lực, dầu dùng được cho bánh răng tải nhẹ và hệ dầu tuần hoàn.
 
-Chúng tôi có sẵn **xô 20 L**. Hàng có CO/CQ và hóa đơn VAT, giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **nhận đặt theo yêu cầu** theo **xô 20 L**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Hyspin HLP-Z 68 có hợp với máy của bạn không?
+
+| Sổ tay máy ghi | Dùng HLP-Z 68 được không? |
+| :--- | :--- |
+| HLP 68 (DIN 51524-2), HM 68 (ISO 11158), L-HM 68 (GB 11118.1) | **Được.** |
+| Bánh răng tải nhẹ, hệ dầu tuần hoàn dùng chung dầu thủy lực | **Được.** |
+| Dầu không kẽm | Không. Dùng Castrol Hyspin HLP-AF. |
+| Dầu rãnh trượt (băng trượt máy công cụ) | Không. Dùng [SHL Synthway 68M](/dau-ranh-truot/shl-synthway-68m). |
+| Bắt buộc phê duyệt Parker Denison, Eaton | Castrol không ghi phê duyệt này cho HLP-Z. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS Castrol.
 
 - **Chống mài mòn và chống ăn mòn.** Bảo vệ bơm và van thủy lực. Ăn mòn đồng cấp 1, đạt thử gỉ với nước cất 24 giờ.
-- **Bền nhiệt và bền oxy hóa.** Dầu giữ tính năng khi bồn dầu chạy nóng liên tục.
-- **Tính lọc tốt.** Dầu đi qua bộ lọc của hệ thủy lực dễ dàng, giúp giữ dầu sạch.
-- **Tách nước, tách khí, ít bọt.** Tách khí trong 8 phút, bọt Seq I 30/0 ml, giúp bơm chạy êm, ít xâm thực.
+- **Tách nước, tách khí, ít bọt.** Tách nước 25 phút ở 54 °C, tách khí trong 8 phút, bọt Seq I 30/0 ml, giúp bơm chạy êm, ít xâm thực.
+- **Chỉ số độ nhớt 93.** Thấp hơn một chút so với các dầu HM khác cùng cấp: dầu loãng đi nhanh hơn khi bồn nóng, nên giữ nhiệt độ bồn ổn định.
 - **Tương thích gioăng phớt.** Dùng được với gioăng nitrile, silicone và fluor (Viton).
 
-## So với các dầu thủy lực 68 khác
+## HLP-Z 68 hay Hyspin AWS 68?
 
-| Thông số | Hyspin HLP-Z 68 | Castrol Hyspin AWS 68 | ENEOS Super Hyrando 68 |
+Hai mã cùng hãng, cùng cấp 68 và cùng dùng phụ gia kẽm. Hyspin AWS 68 có sẵn tại kho. Số liệu theo TDS của từng mã:
+
+| Thông số | Hyspin HLP-Z 68 | [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68) | [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68) |
 | :--- | :--- | :--- | :--- |
-| Độ nhớt ở 100 °C | 8,5 mm²/s | 8,6 mm²/s | 8,73 mm²/s |
-| Chỉ số độ nhớt | 93 | > 95 | 105 |
+| Độ nhớt ở 100 °C | 8,5 mm²/s | 8,6 mm²/s | 9,03 mm²/s |
+| Chỉ số độ nhớt | 93 | > 95 | 104 |
 | Điểm chớp cháy cốc hở | 245 °C | 225 °C | 258 °C |
 | Điểm đông đặc | −27 °C | −21 °C | −25 °C |
+| Tách nước ở 54 °C | 25 phút | 15 phút | Không công bố |
+| Phê duyệt hãng bơm | Không công bố | Parker Denison, Eaton | Không công bố |
+| Quy cách | Xô 20 L (nhận đặt) | Phuy 209 L (có sẵn) | Phuy 200 L (có sẵn) |
 
-Thông số theo tài liệu của từng hãng. Ba mã cùng cấp 68 và cùng loại chống mài mòn HM. Xem thêm [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68), [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68) và cách chọn dầu ở trang [dầu thủy lực](/dau-thuy-luc).
+> **Nhận định của HT VINA:** HLP-Z hợp khi bạn cần xô nhỏ đúng tiêu chuẩn DIN HLP. Thay cả bồn lớn thì phuy Hyspin AWS 68 có sẵn, tách nước nhanh hơn và có phê duyệt hãng bơm.
+
+## Khi nào cần thay dầu?
+
+Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết Castrol Hyspin HLP-Z 68 trong máy của bạn còn dùng được không, kiểm tra ba chỉ tiêu sau:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| :--- | :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (cấp ISO VG 68 danh định 68 mm²/s, lệch quá ±10%) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+
+Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
+
+### Bao lâu thì thay dầu thủy lực Castrol Hyspin HLP-Z 68?
+Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s (dầu mới 68 mm²/s theo TDS), TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Hyspin HLP-Z 68 có phải dầu rãnh trượt không?
 Không. Castrol xếp HLP-Z vào dầu thủy lực chống mài mòn, tài liệu của hãng không ghi công dụng bôi trơn băng trượt máy công cụ. Băng trượt nên dùng dầu rãnh trượt chuyên dụng như [SHL Synthway 68M](/dau-ranh-truot/shl-synthway-68m).
@@ -86,11 +125,9 @@ Không. Castrol xếp HLP-Z vào dầu thủy lực chống mài mòn, tài li�
 ### Chữ "Z" trong tên nghĩa là gì?
 Dòng HLP-Z dùng phụ gia chống mài mòn gốc kẽm. Castrol có dòng HLP-AF pha chế không chứa phụ gia kẽm, dành cho thiết bị yêu cầu dầu không kẽm.
 
-### Bao lâu thì thay dầu thủy lực Castrol Hyspin HLP-Z 68?
-Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết Castrol Hyspin HLP-Z 68 trong máy của bạn còn dùng được không, kiểm tra ba chỉ tiêu sau:
+## Quy cách và giấy tờ khi mua
 
-- **Độ nhớt ở 40 °C** lệch quá ±10%: dầu mới 68 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 61,2–74,8 mm²/s là vượt ngưỡng. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
-- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
-- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
-
-Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+- **Quy cách:** xô 20 L, nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Castrol%20Hyspin%20HLP-Z%2068) kèm số lượng.

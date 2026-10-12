@@ -28,6 +28,8 @@ specs:
 tds_date: "06/2023"
 tds_url: "https://hoadauvhp.com/isonasaw-nid13.html"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Isonas AW 68 – Phuy 200 L", sku: "ISONAS 68" }
   - { name: "Isonas AW 68 – Can 18 L", sku: "ISONAS 68CAN" }
@@ -54,6 +56,12 @@ images:
   - { src: "/images/san-pham/vhp-isonas-aw-32-xo-18l.webp", alt: "Xô 18 lít dầu thủy lực VHP Isonas AW 32" }
   - { src: "/images/san-pham/vhp-isonas-aw-32-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực VHP Isonas AW 32" }
 
+doc_gia: "Trang này dành cho kỹ thuật viên cần dầu thủy lực HLP sản xuất trong nước, có số liệu thử FZG và bơm cánh gạt, cho máy áp cao."
+tom_tat:
+  - "**Dùng được** cho hệ thủy lực yêu cầu DIN 51524-2 HLP, ISO 11158 HM, cấp 68 hoặc 32."
+  - "**Dầu gốc nhóm II**, công bố FZG cấp 11 và đạt thử bơm cánh gạt Vickers V-140-C."
+  - "**Chọn Isonas thay vì Spinax** khi sổ tay ghi HLP theo DIN hoặc máy áp cao chạy liên tục."
+  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-68", "iso-vg-32", "chong-mai-mon", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-12"
@@ -61,39 +69,65 @@ updated: "2026-10-12"
 
 **VHP Isonas AW** là dầu thủy lực chống mài mòn pha từ dầu gốc nhóm II, do nhà máy VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu đạt DIN 51524-2 HLP và ISO 11158 HM, cùng một số tiêu chuẩn châu Âu khác. Dầu dùng cho hệ thủy lực trong nhà máy và máy xúc, xe cẩu.
 
-Chúng tôi có cấp **68** (phuy 200 L, can 18 L) và cấp **32** (phuy 200 L, xô 18 L). HT VINA là đại lý dầu mỡ VHP. Hàng có CO/CQ, hóa đơn VAT và giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Cấp **68** (phuy 200 L, can 18 L) và cấp **32** (phuy 200 L, xô 18 L) **nhận đặt theo yêu cầu**. HT VINA là đại lý dầu mỡ VHP. Hàng có CO/CQ, hóa đơn VAT và giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
-## Tính năng chính
+## Isonas AW có hợp với máy của bạn không?
 
-- **Dầu gốc nhóm II, bền oxy hóa.** Dầu ít bị phân hủy do nhiệt và hóa chất trong dải nhiệt độ rộng, kể cả khi độ ẩm cao. Dầu bền thì ít phải thay, giảm chi phí.
-- **Chống mài mòn mạnh.** Theo VHP, dầu đạt cấp tải 11 trong thử nghiệm FZG và đạt thử nghiệm bơm cánh gạt Vickers V-140-C. Bơm cánh gạt và bơm piston áp cao được bảo vệ tốt.
+| Sổ tay máy ghi | Dùng Isonas AW được không? |
+| :--- | :--- |
+| HLP 68 hoặc HLP 32 (DIN 51524-2), HM (ISO 11158) | **Được.** |
+| Máy ép nhựa, máy ép thủy lực, máy chấn, máy cắt tôn | **Được** (cấp 68). |
+| Máy công cụ, hệ thủy lực chính xác, xưởng mát | **Được** (cấp 32). |
+| Hệ thủy lực tàu thủy loại HM | **Được.** |
+| Bắt buộc phê duyệt riêng của hãng bơm | Kiểm tra trước: VHP không công bố phê duyệt hãng bơm. |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo trang sản phẩm của VHP (06/2023).
+
+- **Dầu gốc nhóm II, bền oxy hóa.** Dầu ít bị phân hủy do nhiệt và hóa chất trong dải nhiệt độ rộng, kể cả khi độ ẩm cao.
+- **Chống mài mòn có số liệu.** Theo VHP, dầu đạt cấp tải 11 trong thử nghiệm FZG và đạt thử nghiệm bơm cánh gạt Vickers V-140-C. Bơm cánh gạt và bơm piston áp cao được bảo vệ tốt.
 - **Tách nước nhanh.** Thời gian tách nước 20 phút theo ASTM D1401. Nước lọt vào bồn dầu dễ lắng xuống để xả bỏ.
 - **Thoát khí, chống bọt tốt.** Giúp hệ thủy lực giữ áp ổn định, giảm giật xi lanh.
-- **Giảm cặn bẩn.** Dầu hạn chế tạo cặn, giúp giữ hiệu suất của hệ thủy lực.
 
-## Chọn cấp 68 hay 32
+## Nên chọn cấp 68 hay 32?
 
 | Cấp | Độ nhớt ở 40 °C | Chỉ số độ nhớt | Điểm chớp cháy | Thường dùng cho |
 | :--- | :--- | :--- | :--- | :--- |
 | Isonas AW 32 | 32 cSt | 105 | 220 °C | Máy công cụ, hệ thủy lực chính xác, máy chạy trong xưởng mát |
 | Isonas AW 68 | 68 cSt | 105 | 230 °C | Máy ép nhựa, máy ép thủy lực, máy xúc, bồn dầu nóng |
 
-Thông số theo trang sản phẩm của VHP (06/2023). VHP cũng sản xuất cấp 46 và 100. Luôn theo cấp độ nhớt ghi trong sổ tay máy. Cách chọn chi tiết xem ở trang [dầu thủy lực](/dau-thuy-luc).
+VHP cũng sản xuất cấp 46 và 100. Luôn theo cấp độ nhớt ghi trong sổ tay máy. Cách chọn chi tiết xem bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
 
-## So với Spinax AW của VHP
+## Isonas AW hay Spinax AW của VHP?
 
-[VHP Spinax AW](/dau-thuy-luc/vhp-spinax-aw) là dầu thủy lực phổ thông của VHP, chỉ công bố đạt ISO 11158 HM. Isonas AW đạt thêm DIN 51524-2 HLP và công bố kết quả thử FZG, Vickers. Isonas AW hợp hơn với bơm áp cao và máy chạy liên tục. Nếu sổ tay máy ghi dầu HLP theo DIN, nên chọn Isonas AW.
+| Chỉ tiêu (VHP, cấp 68) | Isonas AW 68 | [Spinax AW Super 68](/dau-thuy-luc/vhp-spinax-aw) |
+| :--- | :--- | :--- |
+| Tiêu chuẩn | DIN 51524-2 HLP, ISO 11158 HM | ISO 11158 HM |
+| Dầu gốc | Nhóm II | Nhóm II |
+| Chỉ số độ nhớt | 105 | 105 |
+| Điểm chớp cháy cốc hở | 230 °C | 200 °C |
+| Điểm đông đặc | < −20 °C | < −15 °C |
+| Thử FZG | Cấp 11 | Không công bố |
+
+> **Nhận định của HT VINA:** Sổ tay máy ghi HLP theo DIN, hoặc máy ép nhựa áp cao chạy liên tục, thì chọn Isonas AW. Máy ép, máy dập tải thường chỉ ghi HM thì Spinax AW đủ dùng.
+
+## Khi nào cần thay dầu?
+
+Thay VHP Isonas AW theo tình trạng dầu sẽ chính xác hơn thay theo lịch. Lấy mẫu ở đường hồi khi máy đang chạy và so với dầu mới:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| :--- | :--- | :--- |
+| Độ nhớt ở 40 °C | Lệch quá ±10%: cấp 32 ngoài 28,8–35,2 mm²/s; cấp 68 ngoài 61,2–74,8 mm²/s | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu thủy lực VHP Isonas AW?
-Thay VHP Isonas AW theo tình trạng dầu sẽ chính xác hơn thay theo lịch. Lấy mẫu ở đường hồi khi máy đang chạy và so với dầu mới theo ba chỉ tiêu:
-
-- **Độ nhớt ở 40 °C** lệch quá ±10%: 32: dầu mới 32 mm²/s → ngưỡng 28,8–35,2 mm²/s; 68: dầu mới 68 mm²/s → ngưỡng 61,2–74,8 mm²/s. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
-- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
-- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
-
-Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo kết quả đo, không theo lịch cố định. Bảng ngưỡng theo từng cấp ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Isonas AW 68 có thay được dầu thủy lực ngoại cùng cấp không?
 Isonas AW 68 cùng loại HM/HLP với nhiều dầu thủy lực chống mài mòn cấp 68 trên thị trường. Khi đổi, xả hết dầu cũ và thay lọc, không châm lẫn. Nếu bơm có yêu cầu phê duyệt riêng của hãng bơm, hãy kiểm tra trước.
@@ -101,5 +135,9 @@ Isonas AW 68 cùng loại HM/HLP với nhiều dầu thủy lực chống mài m
 ### Nên mua can 18 L hay phuy 200 L?
 Bồn máy nhỏ hoặc chỉ châm bù thì can, xô 18 L tiện hơn và dầu không để lâu sau khi mở. Thay dầu cả bồn lớn thì phuy 200 L kinh tế hơn.
 
-### Có xuất hóa đơn và CO/CQ không?
-Có. Mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu. Gửi yêu cầu ở trang [báo giá](/bao-gia).
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** cấp 68 phuy 200 L, can 18 L; cấp 32 phuy 200 L, xô 18 L. Nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Isonas%20AW) kèm cấp độ nhớt và số lượng.

@@ -25,6 +25,8 @@ specs:
 tds_date: "10/2026"
 tds_url: "https://total-cdn-lmdb.afineo.io/tdsV2/TDS_TOTAL_RUBIA-XT-20W-50_755_VN_VNM.pdf"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Phuy 200 L", sku: "TOTAL" }
 stock_status: "dat-hang"
@@ -45,6 +47,12 @@ images:
   - { src: "/images/san-pham/total-rubia-xt-20w50-phuy-200l.webp", alt: "Phuy 200 lít dầu động cơ TotalEnergies Rubia XT 20W-50 tại kho Hải Phòng" }
   - { src: "/images/san-pham/total-rubia-xt-nhan.webp", alt: "Nhãn phuy Rubia XT 20W-50 ghi cấp API CF-4/SJ" }
 
+doc_gia: "Trang này dành cho chủ xe tải, máy công trình đời cũ chạy nơi nóng, đang dùng hoặc cần đặt TotalEnergies Rubia XT 20W-50."
+tom_tat:
+  - "**Dùng được** cho động cơ diesel yêu cầu API CF-4 (và động cơ xăng yêu cầu SJ), có hoặc không có turbo."
+  - "**Đáp ứng yêu cầu của Hino**, theo TotalEnergies."
+  - "**Không dùng** cho động cơ có EGR hoặc sổ tay ghi CH-4, CI-4: chọn Rubia TIR 7400 hoặc mã CI-4 có sẵn."
+  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mã CF-4 20W-50 có sẵn: EMI CF-4 (phuy), ENEOS DEO CF-4 (can)."
 tags: ["api-cf-4", "sae-20w-50", "totalenergies", "dong-co-diesel"]
 date: "2026-10-12"
 updated: "2026-10-12"
@@ -52,16 +60,27 @@ updated: "2026-10-12"
 
 **TotalEnergies Rubia XT 20W-50** là dầu động cơ diesel gốc khoáng đa cấp cho xe chạy đường bộ, đạt **API CF-4/SJ** và đáp ứng yêu cầu của Hino. Hãng phát triển dòng này cho mọi động cơ diesel có hoặc không có turbo, làm việc nặng quanh năm và ở nơi nhiệt độ môi trường cao.
 
-Chúng tôi có **phuy 200 L**, kèm CO/CQ và hóa đơn VAT, giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, kèm CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Rubia XT có hợp với xe, máy của bạn không?
 
-- **Độ nhớt ổn định khi làm việc.** Dầu giữ màng bôi trơn tốt cả khi máy chạy tải nặng trong mùa hè nóng.
+| Sổ tay xe, máy ghi | Dùng Rubia XT 20W-50 được không? |
+| :--- | :--- |
+| API CF-4, CF; SAE 20W-50 | **Được.** |
+| Xe Hino đời cũ dùng dầu CF-4 | **Được.** |
+| Động cơ xăng yêu cầu API SJ trở xuống trong đội xe hỗn hợp | **Được.** |
+| Động cơ có EGR, API CH-4, CI-4 | Không. Chọn [Rubia TIR 7400](/dau-dong-co-diesel/total-rubia-tir-7400) hoặc [ENEOS DEO CI-4](/dau-dong-co-diesel/eneos-deo-ci-4). |
+| Xe có bộ lọc hạt DPF | Không. |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo bảng dữ liệu kỹ thuật của TotalEnergies Việt Nam.
+
+- **Đặc vừa phải cho máy đã chạy lâu.** Độ nhớt 19 mm²/s ở 100 °C giúp giảm hao dầu ở máy đã mòn: máy chạy lâu có khe hở lớn hơn, dầu loãng dễ lọt lên buồng đốt và bị đốt cháy.
 - **Tẩy rửa, phân tán và chống mòn tốt.** Giữ động cơ sạch, kiểm soát muội than, cặn bùn và cặn piston.
-- **Đặc vừa phải cho máy đã chạy lâu.** Độ nhớt 19 mm²/s ở 100 °C giúp giảm hao dầu ở máy đã mòn.
-- **Dùng được cho cả động cơ xăng.** Cấp API SJ cho phép dùng chung trong đội xe có xe xăng đời cũ.
+- **Trị số kiềm 6,8 mg KOH/g.** Mức thông thường của dầu CF-4.
 
-## Chọn Rubia XT hay Rubia TIR 7400
+## Rubia XT hay Rubia TIR 7400?
 
 | | Rubia XT 20W-50 | [Rubia TIR 7400 15W-40](/dau-dong-co-diesel/total-rubia-tir-7400) |
 | :--- | :--- | :--- |
@@ -70,20 +89,31 @@ Chúng tôi có **phuy 200 L**, kèm CO/CQ và hóa đơn VAT, giao từ kho t�
 | Trị số kiềm tổng | 6,8 mg KOH/g | 11 mg KOH/g |
 | Hợp với | Máy đời cũ, tải nặng, nơi nóng | Xe tải yêu cầu API CI-4 hoặc ACEA E7, đội xe Âu – Mỹ |
 
-Thông số theo bảng dữ liệu kỹ thuật của TotalEnergies Việt Nam. Không dùng dầu CF-4 cho xe mà sổ tay yêu cầu CI-4. Các dòng khác xem ở trang [dầu động cơ diesel](/dau-dong-co-diesel).
+> **Nhận định của HT VINA:** Không dùng dầu CF-4 cho xe mà sổ tay yêu cầu CI-4. Đội xe đời cũ đang dùng Rubia XT thì đặt tiếp đúng mã; cần dầu ngay thì dùng mã CF-4 20W-50 có sẵn như [EMI CF-4 20W-50](/dau-dong-co-diesel/emi-cf-4-20w-50) hoặc [ENEOS DEO CF-4](/dau-dong-co-diesel/eneos-deo-cf-4).
+
+## Khi nào cần thay dầu?
+
+Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó. Với đội xe lớn, có thể dựa vào test dầu:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 157,5–192,5 mm²/s (lệch quá ±10% so với 175 mm²/s theo TDS). Đo bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Nước | Trên 0,2% (ASTM D6224) |
+| Trị số kiềm (TBN) | Còn khoảng một nửa so với dầu mới (khoảng 3,4 mg KOH/g) |
+
+Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách lấy mẫu và test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu TotalEnergies Rubia XT 20W-50?
-Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó.
-
-Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của TotalEnergies Rubia XT 20W-50: **độ nhớt** lệch quá ±10% so với dầu mới (dầu mới 175 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 157,5–192,5 mm²/s là vượt ngưỡng), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe lớn có thể dựa vào bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Rubia XT 20W-50 dùng cho máy phát điện được không?
 Được, nếu máy phát là động cơ diesel và nhà sản xuất chỉ yêu cầu cấp CF-4 hoặc thấp hơn với cấp nhớt 20W-50. Kiểm tra sổ tay máy trước khi dùng.
 
-### Vì sao dầu 20W-50 hay được chọn cho máy cũ?
-Máy chạy lâu có khe hở lớn hơn, dầu loãng dễ lọt lên buồng đốt và bị đốt cháy. Dầu 20W-50 đặc hơn nên giữ màng dầu tốt hơn và giảm hao dầu.
+## Quy cách và giấy tờ khi mua
 
-### Có xuất hóa đơn và CO/CQ không?
-Có. Mỗi lô giao kèm hóa đơn VAT, CO/CQ theo lô khi khách yêu cầu. Gửi nhu cầu qua trang [báo giá](/bao-gia).
+- **Quy cách:** phuy 200 L, nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Rubia%20XT%2020W-50) kèm số lượng.

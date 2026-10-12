@@ -33,6 +33,12 @@ images:
   - { src: "/images/san-pham/maxima-68-xo-18l.webp", alt: "Xô 18 lít dầu thủy lực Maxima 68 tại kho Hải Phòng" }
   - { src: "/images/san-pham/maxima-68-nhan.webp", alt: "Nhãn xô dầu thủy lực Maxima 68" }
 
+doc_gia: "Trang này dành cho tổ bảo trì cần dầu cấp 68 đóng xô nhỏ để châm bổ sung hoặc thay cho máy có bồn dầu nhỏ."
+tom_tat:
+  - "**Dùng được** cho hệ thủy lực và hệ tuần hoàn dầu công nghiệp ghi cấp ISO VG 68."
+  - "**Chỉ có xô 18 L**: hợp với máy có bồn nhỏ hoặc châm bù, không phải mở phuy."
+  - "**Cần phuy 200 L** thì xem X-One AW 68, EMI AW 68 hoặc ENEOS Super Hyrando 68."
+  - "**Chưa có TDS** của hãng: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "maxima"]
 date: "2026-10-12"
 updated: "2026-10-12"
@@ -42,29 +48,56 @@ updated: "2026-10-12"
 
 Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ), có hóa đơn VAT.
 
-## Khi nào chọn Maxima 68
+## Maxima 68 có hợp với máy của bạn không?
 
-- **Máy có bồn dầu nhỏ.** Một xô 18 L đủ thay cho nhiều máy công cụ, máy ép nhỏ mà không phải mở phuy.
-- **Châm bổ sung.** Xô dễ mang tới máy, ít rơi vãi hơn so với rót từ phuy.
-- **Hệ tuần hoàn cấp 68.** Dùng cho hệ bôi trơn tuần hoàn ghi cấp 68 trong sổ tay.
+| Tình huống | Dùng Maxima 68 được không? |
+| :--- | :--- |
+| Máy công cụ, máy ép nhỏ có bồn dầu dưới 50 L, sổ tay ghi cấp 68 | **Được.** Một xô đủ thay cho nhiều máy mà không phải mở phuy. |
+| Châm bù cho máy đang dùng dầu thủy lực 68 | **Được**, với lượng nhỏ. Thay hẳn thì xả dầu cũ trước. |
+| Hệ bôi trơn tuần hoàn ghi cấp 68 | **Được.** |
+| Bắt buộc phê duyệt Parker Denison, Eaton | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
+| Thay cả bồn từ 100 L trở lên | Nên mua phuy 200 L để giảm giá theo lít. |
 
-Nếu cần quy cách phuy 200 L cấp 68, xem [X-One AW 68](/dau-thuy-luc/x-one-aw-68), [EMI AW 68](/dau-thuy-luc/emi-aw-68) hoặc [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68).
+Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của hãng cho mã này, nên trang chưa có bảng chỉ tiêu.
 
-Thông số kỹ thuật sẽ được cập nhật theo TDS của hãng. Xem tất cả các mã ở trang [dầu thủy lực](/dau-thuy-luc).
+## Maxima 68 xô hay dầu 68 dạng phuy?
+
+Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (rà soát 02/10/2026, chưa VAT):
+
+| Mã | Quy cách | Quy ra mỗi lít |
+| :--- | :--- | :--- |
+| Maxima 68 | Xô 18 L: 710.000–817.000 đ | 39.400–45.400 đ |
+| [EMI AW 68](/dau-thuy-luc/emi-aw-68) | Phuy 200 L: 7,10–8,17 triệu đ | 35.500–40.900 đ |
+| [X-One AW 68](/dau-thuy-luc/x-one-aw-68) | Phuy 200 L: 7,95–9,15 triệu đ | 39.700–45.800 đ |
+| [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68) | Phuy 200 L: 8,99–10,35 triệu đ | 44.900–51.800 đ |
+
+Giá theo lít của xô Maxima 68 nằm trong cùng khoảng với phuy X-One, cao hơn phuy EMI khoảng 11%.
+
+> **Nhận định của HT VINA:** Mỗi năm dùng dưới một phuy dầu 68, hoặc dầu phải để lâu sau khi mở, thì xô 18 L kinh tế hơn tính trên tổng chi phí: không tồn dầu mở nắp, không cần bơm rót phuy. Dùng nhiều hơn thì chuyển sang phuy.
+
+## Khi nào cần thay dầu?
+
+Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết Maxima 68 trong máy của bạn còn dùng được không, so mẫu dầu đang dùng với dầu mới cùng lô:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| :--- | :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (cấp ISO VG 68 danh định 68 mm²/s, lệch quá ±10%) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+
+Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu thủy lực Maxima 68?
-Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết Maxima 68 trong máy của bạn còn dùng được không, kiểm tra ba chỉ tiêu sau:
-
-- **Độ nhớt ở 40 °C** lệch quá ±10%: cấp ISO VG 68 có độ nhớt danh định 68 mm²/s, tức ngưỡng 61,2–74,8 mm²/s. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
-- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
-- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
-
-Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng ngưỡng và dụng cụ đo ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Châm Maxima 68 vào máy đang dùng dầu thủy lực 68 khác được không?
 Châm bổ sung một lượng nhỏ dầu cùng cấp, cùng loại gốc khoáng thường không gây vấn đề. Khi đổi hẳn sang mã khác, nên xả dầu cũ và thay lọc.
 
-### Có xuất hóa đơn VAT không?
-Có. Gửi nhu cầu qua trang [báo giá](/bao-gia).
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách có sẵn:** xô 18 L.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** xem khoảng giá tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Maxima%2068) theo số lượng của bạn.
