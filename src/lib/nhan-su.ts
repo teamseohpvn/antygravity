@@ -76,7 +76,7 @@ export const NHAN_SU: NhanSu[] = [
       { title: 'Công nghệ ô tô điện, Quyển 3: Khung gầm; Nguồn năng lượng; Hệ thống quản lý năng lượng và giao tiếp ô tô điện (sách, đồng tác giả)', venue: 'NXB Xây dựng', year: 2026 },
       { title: 'Tối ưu hóa kết cấu khung vỏ ô tô con theo rung ồn (đồng tác giả với Nguyễn Quang Cường)', venue: 'Tạp chí Cơ khí Việt Nam, số 328', year: 2025 },
     ],
-    knowsAbout: ['Động cơ đốt trong', 'Kỹ thuật ô tô', 'Bơm và động cơ thủy lực bánh răng', 'Rung động và kết cấu ô tô', 'An toàn vận hành phương tiện'],
+    knowsAbout: ['Động cơ đốt trong', 'Động cơ diesel', 'Kỹ thuật ô tô', 'Thủy lực', 'Bơm và động cơ thủy lực bánh răng', 'Rung động và kết cấu ô tô', 'An toàn vận hành phương tiện'],
     method: [
       'Đối chiếu từng thông số trên trang với bảng thông số kỹ thuật (TDS) bản mới nhất của hãng.',
       'Kiểm tra phương pháp thử theo công bố của ASTM, ISO và TCVN tương đương.',

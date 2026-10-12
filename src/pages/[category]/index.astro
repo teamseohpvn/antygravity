@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import ContentBody from '../../components/ContentBody.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import NoiDungBai from '../../components/NoiDungBai.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import PromoBanner from '../../components/PromoBanner.astro';
 import StockTable from '../../components/StockTable.astro';
@@ -57,12 +58,18 @@ const citation = [...new Set([
   ...((categoryInfo.body ?? '').match(/https?:\/\/[^\s)"'<>]+/g) ?? []),
 ].filter((u): u is string => Boolean(u) && !u!.includes('daucongnghiephp.com.vn')))];
 
+const PAGE_ID = absUrl(pagePath) + '#webpage';
+const PAGE_TYPE = ['CollectionPage', 'WebPage'];
+
 const schemaData = [
   {
     '@context': 'https://schema.org',
-    '@type': 'CollectionPage',
+    // Thêm WebPage cạnh CollectionPage: một số công cụ kiểm tra E-E-A-T chỉ nhận WebPage/Article.
+    '@type': PAGE_TYPE,
+    '@id': PAGE_ID,
     name: title,
     description,
+    about: { '@type': 'Thing', name: nav_label ?? title },
     url: absUrl(pagePath),
     ...(image ? { image: absUrl(image) } : {}),
     ...(ngay.published ? { datePublished: ngay.published } : {}),
@@ -105,6 +112,7 @@ const schemaData = [
   <div class="container">
     <Breadcrumbs items={crumbs} />
 
+    <NoiDungBai articleId={PAGE_ID} type={PAGE_TYPE} field="text">
     <header class="category-header">
       <h1>{title}</h1>
       {tacGia && (
@@ -187,6 +195,7 @@ const schemaData = [
         </div>
       </div>
     </div>
+    </NoiDungBai>
   </div>
 </Layout>
 

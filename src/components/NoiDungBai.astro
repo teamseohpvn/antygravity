@@ -1,14 +1,18 @@
 ---
-// Bọc phần nội dung chính của một trang bài: hiển thị nguyên HTML, đồng thời thêm khối JSON-LD bổ sung
-// articleBody (văn bản thuần của chính phần này) cho Article có cùng @id. Không viết thêm chữ nào ngoài nội dung trang.
+// Bọc phần nội dung chính của một trang: hiển thị nguyên HTML, đồng thời thêm khối JSON-LD bổ sung văn bản thuần
+// của chính phần này (articleBody cho Article, text cho WebPage) vào thực thể có cùng @id. Không viết thêm chữ nào.
 interface Props {
-  /** @id của Article trong schema của trang, ví dụ https://.../bao-gia-dau-thuy-luc#article */
+  /** @id của thực thể trong schema của trang, ví dụ https://.../bao-gia-dau-thuy-luc#article */
   articleId: string;
+  /** @type trùng với thực thể gốc (mặc định Article) */
+  type?: string | string[];
+  /** articleBody cho Article, text cho WebPage/ItemPage/CollectionPage */
+  field?: 'articleBody' | 'text';
 }
-const { articleId } = Astro.props;
+const { articleId, type = 'Article', field = 'articleBody' } = Astro.props;
 const html = await Astro.slots.render('default');
 const text = html
-  .replace(/<(script|style|noscript|svg|form)[\s\S]*?<\/\1>/gi, ' ')
+  .replace(/<(script|style|noscript|svg|form|aside)[\s\S]*?<\/\1>/gi, ' ')
   .replace(/<\/(p|li|h[1-6]|tr|div|section|blockquote|figcaption)>/gi, '$&\n')
   .replace(/<[^>]+>/g, ' ')
   .replace(/&nbsp;/g, ' ')
@@ -22,9 +26,9 @@ const text = html
   .trim();
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': type,
   '@id': articleId,
-  articleBody: text,
+  [field]: text,
   wordCount: text.split(/\s+/).filter(Boolean).length,
 };
 ---
