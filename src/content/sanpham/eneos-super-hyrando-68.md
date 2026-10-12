@@ -50,7 +50,7 @@ images:
 
 related_posts: ["huong-dan-chon-do-nhot"]
 tags: ["iso-vg-68", "iso-vg-46", "chong-mai-mon", "eneos"]
-reviewed_by: "tran-tuan-huynh"
+reviewed_by: "nguyen-thiet-lap"
 date: "2026-10-06"
 updated: "2026-10-09"
 ---

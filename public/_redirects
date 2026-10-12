@@ -8,6 +8,9 @@
 # Bài Top 6 hãng dầu thủy lực dùng URL riêng ở gốc site (10/10/2026).
 /ho-tro-ky-thuat/top-6-dau-thuy-luc-pho-bien-nhat /top-6-dau-thuy-luc-2026 301
 /ho-tro-ky-thuat/top-6-dau-thuy-luc-pho-bien-nhat.html /top-6-dau-thuy-luc-2026 301
+# KS. Trần Tuấn Huỳnh không còn đứng tên bài viết (12/10/2026): hồ sơ tác giả chuyển về mục Đội ngũ.
+/author/tran-tuan-huynh /about 301
+/author/tran-tuan-huynh.html /about 301
 # Gõ nhầm gạch dưới vẫn vào được trang quản trị giá (06/10/2026).
 /quan_tri /quan-tri 301
 /quan_tri/* /quan-tri/:splat 301
