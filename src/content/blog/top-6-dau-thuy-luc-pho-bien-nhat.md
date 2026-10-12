@@ -10,7 +10,7 @@ category: "dau-thuy-luc"
 duong_dan: "/top-6-dau-thuy-luc-2026"
 related_products: ["castrol-hyspin-aws-68", "eneos-super-hyrando-68"]
 author: "bui-huy-tien"
-reviewed_by: "tran-tuan-huynh"
+reviewed_by: "nguyen-thiet-lap"
 citations:
   - "https://www.lubesngreases.com/magazine/19_2/vrooming-in-vietnam/"
   - "https://hiephoixangdau.org/nd/o-to-xe-may/thi-truong-dau-nhot-vao-duong-dua-moi.html"
@@ -70,7 +70,7 @@ Ba điều nên biết trước khi trích dẫn các con số trên:
 
 ### Cách chúng tôi làm bài này
 
-Số liệu thị phần được tra và đối chiếu ngày 10/10/2026 từ bản gốc của từng nguồn: báo chí, báo cáo thường niên, dữ liệu hải quan và báo cáo nghiên cứu thị trường. Chúng tôi không dùng số liệu từ trang bán hàng hay trang tổng hợp không ghi nguồn. Tiêu chuẩn của từng dòng dầu chép từ TDS hoặc catalog chính hãng. Bài do TS. Bùi Huy Tiến viết, KS. Trần Tuấn Huỳnh kiểm duyệt phần thông số kỹ thuật. Khi có số liệu thị phần mới được công bố, bài sẽ được cập nhật và ghi ngày sửa.
+Số liệu thị phần được tra và đối chiếu ngày 10/10/2026 từ bản gốc của từng nguồn: báo chí, báo cáo thường niên, dữ liệu hải quan và báo cáo nghiên cứu thị trường. Chúng tôi không dùng số liệu từ trang bán hàng hay trang tổng hợp không ghi nguồn. Tiêu chuẩn của từng dòng dầu chép từ TDS hoặc catalog chính hãng. Bài do TS. Bùi Huy Tiến viết, TS. Nguyễn Thiết Lập kiểm duyệt phần thông số kỹ thuật. Khi có số liệu thị phần mới được công bố, bài sẽ được cập nhật và ghi ngày sửa.
 
 ## Chi tiết từng dòng: tiêu chuẩn và nên dùng cho máy nào
 

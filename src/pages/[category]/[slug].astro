@@ -9,7 +9,7 @@ import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
 import { ngayBai } from '../../lib/ngay';
-import { timNhanSu, DEFAULT_REVIEWER_ID, personRef, personUrl, personSchema, credentialLine } from '../../lib/nhan-su';
+import { timNhanSu, DEFAULT_REVIEWER_ID, displayName, personRef, personUrl, personSchema, credentialLine } from '../../lib/nhan-su';
 import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -138,7 +138,7 @@ const schemaData = [
           {ngay.published && <>Đăng ngày: <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
           {ngay.modified && ngay.modified !== ngay.published && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time> · </>}
           {reviewer
-            ? <>Tác giả: <a href={personUrl(reviewer)} rel="author">{reviewer.name}</a>, {credentialLine(reviewer) ? `${credentialLine(reviewer)}, ` : ''}{reviewer.role}</>
+            ? <>Tác giả: <a href={personUrl(reviewer)} rel="author">{displayName(reviewer)}</a>, {credentialLine(reviewer) ? `${credentialLine(reviewer)}, ` : ''}{reviewer.role}</>
             : <>Biên soạn: <a href="/about" rel="author">{authorName}</a></>}
         </p>
         <div class="tags">

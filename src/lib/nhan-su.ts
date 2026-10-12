@@ -39,6 +39,38 @@ export interface NhanSu {
 
 export const NHAN_SU: NhanSu[] = [
   {
+    id: 'nguyen-thiet-lap',
+    name: 'Nguyễn Thiết Lập',
+    honorificPrefix: 'TS.',
+    role: 'Cố vấn kỹ thuật sản phẩm dầu nhớt (cộng tác viên)',
+    degree: 'Tiến sĩ',
+    affiliation: 'Trường Đại học Giao thông vận tải, Bộ môn Kỹ thuật ô tô và An toàn giao thông, Khoa Cơ khí',
+    affiliationUrl: 'https://www.utc.edu.vn/',
+    external: true,
+    sameAs: ['https://www.utc.edu.vn/doi-ngu-giang-vien/0652'],
+    verifiedFrom: 'Trang giảng viên UTC https://www.utc.edu.vn/doi-ngu-giang-vien/0652 (truy cập 12/10/2026)',
+    desc: 'Giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Trường Đại học Giao thông vận tải. Cộng tác viên của HT VINA, đứng tên các trang sản phẩm dầu nhớt trên website.',
+    bio: [
+      'TS. Nguyễn Thiết Lập là giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Khoa Cơ khí, Trường Đại học Giao thông vận tải (Hà Nội).',
+      'Các công bố của TS. Lập tập trung vào động cơ đốt trong, kết cấu và rung động ô tô, an toàn vận hành phương tiện. TS. Lập là đồng tác giả sách "Kỹ thuật động cơ đốt trong và xu hướng phát triển của động cơ" (NXB Xây dựng, 2020), "An toàn vận hành ô tô" (NXB Giao thông Vận tải, 2017), và có báo cáo về phân bố áp suất trong bơm và động cơ thủy lực bánh răng ăn khớp trong tại Hội nghị khoa học và công nghệ cơ khí động lực lần thứ XII (2019).',
+      'Tại HT VINA, TS. Lập là cộng tác viên cố vấn kỹ thuật, đứng tên các trang sản phẩm dầu nhớt: đối chiếu thông số với bảng TDS của hãng, rà soát khuyến cáo sử dụng theo loại động cơ, hộp số và hệ thủy lực. Thông tin học vị và nơi công tác ở trên được đối chiếu với hồ sơ giảng viên công khai trên website Trường Đại học Giao thông vận tải.',
+    ],
+    publications: [
+      { title: 'Kỹ thuật động cơ đốt trong và xu hướng phát triển của động cơ (sách, đồng tác giả với Đỗ Tiến Dũng)', venue: 'NXB Xây dựng', year: 2020 },
+      { title: 'Numerical analysis of effect of geometric parameters on hybrid pressure distribution in internal gear motor and pump (đồng tác giả)', venue: 'Hội nghị khoa học và công nghệ cơ khí động lực lần thứ XII', year: 2019 },
+      { title: 'An toàn vận hành ô tô (sách, đồng tác giả với Nguyễn Văn Bang, Trần Văn Như)', venue: 'NXB Giao thông Vận tải', year: 2017 },
+      { title: 'Công nghệ ô tô điện, Quyển 3: Khung gầm; Nguồn năng lượng; Hệ thống quản lý năng lượng và giao tiếp ô tô điện (sách, đồng tác giả)', venue: 'NXB Xây dựng', year: 2026 },
+      { title: 'Tối ưu hóa kết cấu khung vỏ ô tô con theo rung ồn (đồng tác giả với Nguyễn Quang Cường)', venue: 'Tạp chí Cơ khí Việt Nam, số 328', year: 2025 },
+    ],
+    knowsAbout: ['Động cơ đốt trong', 'Kỹ thuật ô tô', 'Bơm và động cơ thủy lực bánh răng', 'Rung động và kết cấu ô tô', 'An toàn vận hành phương tiện'],
+    method: [
+      'Đối chiếu từng thông số trên trang với bảng thông số kỹ thuật (TDS) bản mới nhất của hãng.',
+      'Kiểm tra phương pháp thử theo công bố của ASTM, ISO và TCVN tương đương.',
+      'Rà soát khuyến cáo sử dụng theo loại thiết bị (động cơ, hộp số, hệ thủy lực), trường hợp không nên dùng và ngưỡng thay dầu.',
+      'Ghi ngày cập nhật khi nội dung thay đổi thực chất.',
+    ],
+  },
+  {
     id: 'tran-tuan-huynh',
     name: 'Trần Tuấn Huỳnh',
     role: 'Chuyên viên tư vấn chất lượng',
@@ -113,7 +145,7 @@ export const NHAN_SU: NhanSu[] = [
 ];
 
 /** Người kiểm duyệt mặc định cho trang sản phẩm khi file không ghi reviewed_by. */
-export const DEFAULT_REVIEWER_ID = 'tran-tuan-huynh';
+export const DEFAULT_REVIEWER_ID = 'nguyen-thiet-lap';
 
 /** Người có đoạn giới thiệu (bio) có trang hồ sơ tác giả riêng /author/<id>; người khác dùng anchor ở trang Giới thiệu. */
 export const hasProfile = (p: NhanSu) => Boolean(p.bio);
@@ -121,7 +153,8 @@ export const personUrl = (p: NhanSu) => (hasProfile(p) ? `/author/${p.id}` : `/a
 export const personId = (p: NhanSu) => (hasProfile(p) ? `${SITE_URL}/author/${p.id}#person` : `${SITE_URL}/about#${p.id}`);
 /** Dòng chứng chỉ ngắn cạnh tên tác giả, ví dụ "Kỹ sư, 17 năm kinh nghiệm" */
 export const credentialLine = (p: NhanSu) =>
-  [p.degree, p.since ? `${new Date().getFullYear() - p.since} năm kinh nghiệm` : undefined].filter(Boolean).join(', ');
+  // "TS." trước tên đã nói học vị, không lặp lại "Tiến sĩ" ở đây
+  [p.honorificPrefix && p.degree === 'Tiến sĩ' ? undefined : p.degree, p.since ? `${new Date().getFullYear() - p.since} năm kinh nghiệm` : undefined].filter(Boolean).join(', ');
 export const yearsOf = (p: NhanSu) => (p.since ? new Date().getFullYear() - p.since : undefined);
 
 /** Tra theo id hoặc họ tên (giá trị trường reviewed_by). */

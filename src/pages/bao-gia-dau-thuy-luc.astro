@@ -10,7 +10,7 @@ import { getActiveProducts } from '../lib/content';
 import { fmtNgay, fmtVnd } from '../lib/gia-tinh';
 import type { DongGiaCongKhai, CauHinh } from '../lib/gia';
 import { bangGiaTuJson } from '../lib/gia-json';
-import { timNhanSu, personUrl, personRef, displayName } from '../lib/nhan-su';
+import { timNhanSu, DEFAULT_REVIEWER_ID, personUrl, personRef, displayName } from '../lib/nhan-su';
 import { traTieuChuan } from '../lib/tieu-chuan';
 import { PROMO, PROMO_ACTIVE } from '../lib/promo';
 import { absUrl, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR } from '../lib/site';
@@ -103,7 +103,7 @@ const schemaData = [
       <h1>{title}</h1>
       <p class="byline">
         Giá rà soát bởi <a href={personUrl(nguoiGia)}>{displayName(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}.
-        Phần chọn mã và tiêu chuẩn do <a href={personUrl(nguoiKyThuat)}>{nguoiKyThuat.degree ? `KS. ${nguoiKyThuat.name}` : nguoiKyThuat.name}</a>, {nguoiKyThuat.role.toLowerCase()}, đối chiếu với TDS của hãng.
+        Phần chọn mã và tiêu chuẩn do <a href={personUrl(nguoiKyThuat)}>{displayName(nguoiKyThuat)}</a>, {nguoiKyThuat.role.toLowerCase()}, đối chiếu với TDS của hãng.
         {coGia && ngay && <> Rà soát ngày <strong>{ngay}</strong>, áp dụng đến khi trang này ghi ngày mới.</>}
       </p>
 
