@@ -15,6 +15,8 @@ export interface NhanSu {
   knowsAbout?: string[];
   /** Ảnh chân dung trong public/, ví dụ /images/nhan-su/tran-tuan-huynh.webp */
   photo?: string;
+  /** Số điện thoại công việc, cho schema telephone (chỉ ghi khi người đó đồng ý công khai) */
+  telephone?: string;
   /** Email công việc (hộp thư chung của vị trí) */
   email?: string;
   /** Hồ sơ công khai bên ngoài (LinkedIn...) cho schema sameAs */
@@ -23,6 +25,8 @@ export interface NhanSu {
   bio?: string[];
   /** Danh xưng học vị đặt trước tên, ví dụ "TS." */
   honorificPrefix?: string;
+  /** Tên gọi ngắn trên dòng tác giả, ví dụ "Ms. Hồng" (schema vẫn dùng họ tên đầy đủ) */
+  bylineName?: string;
   /** Trang của nơi công tác chính (để schema affiliation có url) */
   affiliationUrl?: string;
   /** Cộng tác viên bên ngoài: nơi công tác chính là affiliation, HT VINA chỉ là đơn vị cộng tác (không ghi worksFor HT VINA). */
@@ -46,6 +50,7 @@ export const NHAN_SU: NhanSu[] = [
     id: 'nguyen-thiet-lap',
     name: 'Nguyễn Thiết Lập',
     honorificPrefix: 'TS.',
+    bylineName: 'TS. Lập', // dòng "Duyệt nội dung" trên trang sản phẩm; schema vẫn ghi họ tên đầy đủ
     role: 'Cố vấn kỹ thuật sản phẩm dầu nhớt (cộng tác viên)',
     degree: 'Tiến sĩ',
     affiliation: 'Trường Đại học Giao thông vận tải, Bộ môn Kỹ thuật ô tô và An toàn giao thông, Khoa Cơ khí',
@@ -58,11 +63,11 @@ export const NHAN_SU: NhanSu[] = [
       { title: 'Xe bán tải được "cởi trói", người dùng mong gỡ tiếp những nút thắt còn lại', publisher: 'VietNamNet', date: '2026-07-07', url: 'https://vietnamnet.vn/xe-ban-tai-duoc-coi-troi-nguoi-dung-mong-go-tiep-nhung-nut-that-con-lai-2533313.html' },
       { title: 'Phát triển xe buýt xanh để cải thiện chất lượng môi trường', publisher: 'Báo Lao Động', date: '2025-01-17', url: 'https://laodong.vn/xa-hoi/phat-trien-xe-buyt-xanh-de-cai-thien-chat-luong-moi-truong-1451490.ldo' },
     ],
-    desc: 'Giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Trường Đại học Giao thông vận tải. Cộng tác viên của HT VINA, đứng tên các trang sản phẩm dầu nhớt trên website.',
+    desc: 'Giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Trường Đại học Giao thông vận tải. Cộng tác viên của HT VINA, duyệt nội dung kỹ thuật các trang sản phẩm dầu nhớt trên website.',
     bio: [
       'TS. Nguyễn Thiết Lập là giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Khoa Cơ khí, Trường Đại học Giao thông vận tải (Hà Nội).',
       'Các công bố của TS. Lập tập trung vào động cơ đốt trong, kết cấu và rung động ô tô, an toàn vận hành phương tiện. TS. Lập là đồng tác giả sách "Kỹ thuật động cơ đốt trong và xu hướng phát triển của động cơ" (NXB Xây dựng, 2020), "An toàn vận hành ô tô" (NXB Giao thông Vận tải, 2017), và có báo cáo về phân bố áp suất trong bơm và động cơ thủy lực bánh răng ăn khớp trong tại Hội nghị khoa học và công nghệ cơ khí động lực lần thứ XII (2019).',
-      'Tại HT VINA, TS. Lập là cộng tác viên cố vấn kỹ thuật, đứng tên các trang sản phẩm dầu nhớt: đối chiếu thông số với bảng TDS của hãng, rà soát khuyến cáo sử dụng theo loại động cơ, hộp số và hệ thủy lực. Thông tin học vị và nơi công tác ở trên được đối chiếu với hồ sơ giảng viên công khai trên website Trường Đại học Giao thông vận tải.',
+      'Tại HT VINA, TS. Lập là cộng tác viên cố vấn kỹ thuật, duyệt nội dung các trang sản phẩm dầu nhớt: đối chiếu thông số với bảng TDS của hãng, rà soát khuyến cáo sử dụng theo loại động cơ, hộp số và hệ thủy lực. Thông tin học vị và nơi công tác ở trên được đối chiếu với hồ sơ giảng viên công khai trên website Trường Đại học Giao thông vận tải.',
     ],
     publications: [
       { title: 'Kỹ thuật động cơ đốt trong và xu hướng phát triển của động cơ (sách, đồng tác giả với Đỗ Tiến Dũng)', venue: 'NXB Xây dựng', year: 2020 },
@@ -139,6 +144,11 @@ export const NHAN_SU: NhanSu[] = [
   {
     id: 'nguyen-thi-hong',
     name: 'Nguyễn Thị Hồng',
+    bylineName: 'Ms. Hồng',
+    // Chờ chị Hồng gửi (12/10/2026): ảnh chân dung, trang cá nhân, số điện thoại. Có rồi thì bỏ // và điền:
+    // photo: '/images/nhan-su/nguyen-thi-hong.webp',
+    // sameAs: ['<link trang cá nhân>'],
+    // telephone: '<số điện thoại>',
     role: 'Quản lý bán hàng',
     desc: 'Phụ trách quản lý bán hàng, hóa đơn và các thủ tục liên quan.',
     knowsAbout: ['Giá bán dầu nhớt công nghiệp', 'Báo giá và hợp đồng mua bán', 'Hóa đơn, chứng từ bán hàng'],
@@ -150,6 +160,9 @@ export const NHAN_SU: NhanSu[] = [
     desc: 'Xuất hàng hóa tại kho và vận chuyển hàng hóa tới khách hàng.',
   },
 ];
+
+/** Tác giả mặc định của trang sản phẩm khi file không ghi tac_gia (12/10/2026). */
+export const DEFAULT_PRODUCT_AUTHOR_ID = 'nguyen-thi-hong';
 
 /** Người kiểm duyệt mặc định cho trang sản phẩm khi file không ghi reviewed_by. */
 export const DEFAULT_REVIEWER_ID = 'nguyen-thiet-lap';
@@ -199,6 +212,7 @@ export function personSchema(p: NhanSu) {
     ...(p.knowsAbout ? { knowsAbout: p.knowsAbout } : {}),
     ...(p.sameAs ? { sameAs: p.sameAs } : {}),
     ...(p.email ? { email: p.email } : {}),
+    ...(p.telephone ? { telephone: p.telephone } : {}),
     ...(p.publications
       ? { workExample: p.publications.map((x) => ({ '@type': 'CreativeWork', name: x.title, datePublished: String(x.year), description: x.venue })) }
       : {}),
@@ -216,6 +230,8 @@ function affiliationOrg(p: NhanSu) {
 
 /** Tên kèm danh xưng, ví dụ "TS. Bùi Huy Tiến" */
 export const displayName = (p: NhanSu) => (p.honorificPrefix ? `${p.honorificPrefix} ${p.name}` : p.name);
+/** Tên gọi ngắn trên dòng tác giả / duyệt nội dung: "Ms. Hồng", "TS. Lập" */
+export const bylineLabel = (p: NhanSu) => p.bylineName ?? displayName(p);
 
 /** Nhãn cho link hồ sơ ngoài */
 export const profileLabel = (u: string) =>

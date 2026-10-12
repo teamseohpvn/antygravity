@@ -46,7 +46,9 @@ storage: "Để trong nhà, tránh nắng mưa. Phuy để ngoài trời phải 
 images:
   - { src: "/images/san-pham/eneos-deo-cf-4-20w50-can-18l.webp", alt: "Can 18 lít dầu động cơ ENEOS CF-4 20W-50" }
   - { src: "/images/san-pham/eneos-deo-cf-4-15w40-can-18l.webp", alt: "Can 18 lít dầu động cơ diesel ENEOS CF-4 15W-40" }
-  - { src: "/images/san-pham/eneos-deo-cf-4-nhan.webp", alt: "Nhãn can ENEOS CF-4 ghi cấp API và cấp độ nhớt SAE" }
+  - { src: "/images/san-pham/eneos-deo-cf-4-20w50-xo-18l.webp", alt: "Xô 18 lít dầu động cơ diesel ENEOS CF-4 20W-50" }
+  - { src: "/images/san-pham/eneos-deo-cf-4-20w50-nhan.webp", alt: "Nhãn xô ENEOS Long-life Diesel Engine Oil 20W-50 CF-4" }
+  - { src: "/images/san-pham/eneos-deo-cf-4-nhan.webp", alt: "Nhãn xô ENEOS Long-life Diesel Engine Oil 15W-40 CF-4" }
 
 doc_gia: "Trang này dành cho chủ xe tải, máy công trình, máy phát đời cũ cần dầu động cơ diesel đúng cấp API CF-4."
 tom_tat:

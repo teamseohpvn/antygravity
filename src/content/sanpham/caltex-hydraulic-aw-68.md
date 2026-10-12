@@ -45,7 +45,7 @@ storage: "Để phuy trong nhà, nơi khô ráo, tránh nắng mưa."
 
 images:
   - { src: "/images/san-pham/caltex-hydraulic-aw-68-phuy-208l.webp", alt: "Phuy 208 lít dầu thủy lực Caltex Hydraulic Oil AW 68 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/caltex-hydraulic-aw-68-nhan.webp", alt: "Nhãn phuy Caltex Hydraulic Oil AW 68" }
+  # Bỏ ảnh caltex-hydraulic-aw-68-nhan.webp (12/10/2026): ảnh là nhãn Tvcom HYDRA AW68, không phải Caltex
 
 doc_gia: "Trang này dành cho người phụ trách bảo trì đang dùng Caltex Hydraulic Oil AW 68, hoặc cần dầu thủy lực 68 cho máy tiêu hao dầu nhiều."
 tom_tat:
