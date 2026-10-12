@@ -188,6 +188,7 @@ Danh sách đầy đủ và giá trị mẫu: xem 3 file trong `src/content/_tem
 | An toàn | `warnings` (cảnh báo từ SDS), `storage` (bảo quản), `shelf_life` (hạn dùng) | Mục "Bảo quản và an toàn" |
 | Tài liệu | `tds_url`, `sds_url` | Nút tải TDS / SDS |
 | Liên quan | `equivalents` (mã tương đương), `related_posts` | Mục "Sản phẩm tương đương" |
+| Đầu trang | `doc_gia` (một câu: trang dành cho ai), `tom_tat` (3–5 ý, `**đậm**` được) | Hiện ngay dưới tiêu đề, trước nút báo giá. Tín hiệu "viết cho người đọc" (Helpful Content) |
 | Ảnh | `images`: danh sách {src, alt}, ảnh đầu là ảnh chính | Ảnh chính + ảnh nhỏ |
 
 Hai điều cố ý **không** đưa vào file sản phẩm:

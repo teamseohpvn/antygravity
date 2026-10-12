@@ -10,7 +10,7 @@ import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
 import { ngayBai } from '../../lib/ngay';
 import { timNhanSu, DEFAULT_REVIEWER_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
-import { absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
+import { BUSINESS, absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
   const products = await getActiveProducts();
@@ -54,6 +54,9 @@ const tocItems = mucLuc([
   ...(equivalents.length ? [{ depth: 2, slug: 'san-pham-tuong-duong', text: 'Sản phẩm tương đương' }] : []),
   ...(coBaoQuan ? [{ depth: 2, slug: 'bao-quan-an-toan', text: 'Bảo quản và an toàn' }] : []),
 ], { tat: d.muc_luc === false });
+// **đậm** trong tom_tat → <strong>, phần còn lại được escape.
+const dam = (t: string) =>
+  t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 const stockText = d.stock_status ? STOCK_TEXT[d.stock_status] : 'Liên hệ để nhận báo giá và kiểm tra tồn kho.';
 
 const crumbs = [
@@ -159,6 +162,13 @@ const schemaData = [
           {d.standards?.map((s) => <span class="badge badge-outline">{s}</span>)}
         </div>
         <p class="description">{d.description}</p>
+        {d.doc_gia && <p class="doc-gia">{d.doc_gia}</p>}
+        {d.tom_tat && d.tom_tat.length > 0 && (
+          <div class="tom-tat">
+            <p class="tom-tat__label">Tóm tắt cho người đang cần quyết định</p>
+            <ul>{d.tom_tat.map((t) => <li set:html={dam(t)} />)}</ul>
+          </div>
+        )}
 
         {d.packaging && d.packaging.length > 0 && (
           <p class="packaging"><strong>Quy cách:</strong> {d.packaging.map(packagingLabel).join(' · ')}</p>
@@ -173,7 +183,10 @@ const schemaData = [
 
         <div class="cta-box">
           <p class="status">{stockText}</p>
-          <QuoteCta item={d.title} compact />
+          <p class="cta-row">
+            <a href={`/bao-gia?sp=${encodeURIComponent(d.title)}`} class="btn-primary" data-track="add_to_quote">Nhận báo giá</a>
+            <span>hoặc gọi <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></span>
+          </p>
           {(d.tds_url || d.sds_url) && (
             <div class="docs">
               {d.tds_url && <a href={d.tds_url} class="btn-outline" target="_blank" rel="noopener" data-track="download_tds">Tải thông số kỹ thuật (TDS)</a>}
@@ -243,6 +256,7 @@ const schemaData = [
           </ul>
         </>
       )}
+      <QuoteCta item={d.title} />
       <p class="back-link">Xem thêm các sản phẩm khác trong danh mục <a href={`/${d.category}`}>{categoryLabel}</a>.</p>
     </section>
   </div>
@@ -277,6 +291,12 @@ const schemaData = [
   .product-content table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
   .product-content th, .product-content td { border: 1px solid var(--border-color); padding: 8px 12px; text-align: left; }
   .product-content th { background: #f1f5f9; }
+  .doc-gia { font-size: 0.95rem; font-style: italic; color: var(--color-text-light); margin: -6px 0 12px; }
+  .tom-tat { background: var(--color-bg); border-left: 4px solid var(--color-primary); border-radius: 4px; padding: 12px 16px; margin: 0 0 16px; }
+  .tom-tat__label { font-weight: 700; color: var(--color-primary); margin-bottom: 6px; }
+  .tom-tat ul { margin: 0 0 0 18px; }
+  .tom-tat li { margin-bottom: 4px; }
+  .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 12px 0 0; }
   .byline { font-size: 0.85rem; color: var(--color-text-light); margin: -4px 0 12px; }
   .byline a { color: inherit; }
   .note { margin-top: 10px; font-size: 0.9rem; color: var(--color-text-light); }
