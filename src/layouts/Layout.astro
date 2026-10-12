@@ -107,6 +107,9 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
       .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
       .nav-links a { font-weight: 500; transition: color 0.2s; }
       .nav-links a:hover { color: var(--color-accent); }
+      .nav-links a, .nav-links summary, .header-cta { white-space: nowrap; }
+      @media (max-width: 1200px) { .nav-links { gap: 18px; } }
+      .nav-bao-gia { font-weight: 700 !important; color: var(--color-accent); letter-spacing: 0.03em; }
 
       .btn-primary {
         display: inline-block;
@@ -162,7 +165,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
       /* Mobile */
       .mobile-menu { display: none; }
       .mobile-cta { display: none; }
-      @media (max-width: 860px) {
+      @media (max-width: 1000px) {
         .nav-links, .header-cta { display: none; }
         .mobile-menu { display: block; position: relative; }
         .mobile-menu > summary { list-style: none; cursor: pointer; font-weight: 600; padding: 8px 12px; border: 1px solid var(--border-color); border-radius: 6px; }
@@ -210,6 +213,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
               </div>
             </details>
           </li>
+          <li><a href="/bao-gia-dau-thuy-luc" class="nav-bao-gia">BÁO GIÁ</a></li>
           <li><a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a></li>
           <li><a href="/about">Giới thiệu</a></li>
           <li><a href="/contact">Liên hệ</a></li>
@@ -221,6 +225,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
           <nav aria-label="Menu chính">
             <a href="/">Trang chủ</a>
             {categories.map((c) => <a href={`/${c.id}`}>{c.data.nav_label ?? c.data.title}</a>)}
+            <a href="/bao-gia-dau-thuy-luc" class="nav-bao-gia">BÁO GIÁ</a>
             <a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a>
             <a href="/about">Giới thiệu</a>
             <a href="/contact">Liên hệ</a>
