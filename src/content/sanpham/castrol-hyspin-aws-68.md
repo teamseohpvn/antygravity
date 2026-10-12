@@ -65,7 +65,7 @@ updated: "2026-10-12"
 
 **Castrol Hyspin AWS 68** là dầu nhớt thủy lực chống mài mòn cấp [độ nhớt](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99_nh%E1%BB%9Bt) ISO VG 68 của Castrol. Dầu được pha chế từ dầu gốc khoáng tinh chế cao với phụ gia chống mài mòn gốc kẽm ([ZDDP](https://en.wikipedia.org/wiki/Zinc_dithiophosphate)) đã ổn định hóa. Dầu đạt loại **HM** theo [ISO 11158](https://www.iso.org/standard/84812.html) (tương đương [TCVN 12416:2019](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+12416%3A2019)) và **HLP** theo DIN 51524-2, dùng để bôi trơn và bảo vệ hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và piston.
 
-Hàng có sẵn tại kho: Castrol Hyspin AWS 68 **phuy 209 lít**, có CO/CQ và hóa đơn VAT. Cấp **AWS 46** nhận đặt theo yêu cầu. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Sản phẩm này chúng tôi luôn có sẵn tại kho: Castrol Hyspin AWS 68 **phuy 209 lít**, có CO/CQ và hóa đơn VAT. Cấp **AWS 46** nhận đặt theo yêu cầu số lượng tùy chọn, ship hàng tùy chọn lịch đặt trước hẹn giao. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ). Miễn phí vận chuyển trong 80 km kể từ kho của chúng tôi.
 
 ## Hyspin AWS 68 có hợp với máy của bạn không?
 
@@ -85,8 +85,8 @@ Không chắc sổ tay máy ghi gì? Gửi ảnh trang thông số dầu qua [fo
 
 [Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS Castrol (01/2023). Với người vận hành, các điểm sau đáng quan tâm nhất.
 
-- **Chống mài mòn cho bơm áp cao.** Hệ phụ gia kẽm tạo màng bảo vệ trên bề mặt kim loại. Dầu đạt cấp 12 trong thử tải bánh răng FZG, nên dùng được cả cho bánh răng tải nhẹ trong hệ thủy lực.
-- **Bền oxy hóa, ít cặn.** Thử TOST trên 2.500 giờ. Dầu lâu xuống cấp, ít tạo bùn trong bồn và ít bám van. Theo TDS Castrol, hệ thống sạch hơn giúp kéo dài tuổi thọ dầu và có thể kéo dài tuổi thọ máy.
+- **Chống mài mòn cho bơm áp cao.** Hệ phụ gia kẽm tạo màng bảo vệ trên bề mặt kim loại. Trong thử nghiệm của Castrol công bố, dầu đạt cấp 12 trong thử tải bánh răng FZG. Vì vậy sẽ dùng được cả cho bánh răng tải nhẹ trong hệ thủy lực. Điều này sẽ có ích rất lớn trong việc tăng độ bền và tuổi thọ cho bơm cao áp. Một thiết bị có giá thành lớn trong một hệ thống thủy lực của bạn. Do vậy việc sử dụng dầu "Castrol Hyspin AWS 68", ở một khía cạnh nào đó sẽ đem lại lợi ích kinh tế thiết thực cho các bạn.
+- **Bền oxy hóa, ít cặn.** Cũng trong thử TOST với thời gian test trên 2.500 giờ. Dầu đã chứng minh được thời gian xuống cấp lớn, ít tạo bùn lắng đọng trong bồn và ít bám các van của hệ thống thủy lực. Theo TDS Castrol, hệ thống sạch hơn giúp kéo dài tuổi thọ dầu điều ấy cũng kéo theo tăng tuổi thọ máy và hiệu suất kinh tế của chính người sử dụng.
 - **Tách nước nhanh, lọc tốt khi lẫn nước.** Nước tách khỏi dầu trong khoảng 15 phút ở 54 °C. Lọc ít bị nghẹt khi hệ thống bị lẫn nước, nên kéo dài tuổi thọ lõi lọc, phù hợp xưởng ẩm.
 - **Chống gỉ và ăn mòn cho kim loại đen và kim loại màu** (thép, đồng, đồng thau trong hệ thủy lực). Đạt thử gỉ [ASTM D665](https://www.astm.org/Standards/D665.htm) cả với nước cất và nước biển tổng hợp.
 - **Tương thích phớt thông dụng:** nitrile, silicone, fluoropolymer.
@@ -101,7 +101,7 @@ Không chắc sổ tay máy ghi gì? Gửi ảnh trang thông số dầu qua [fo
 | Điểm đông đặc | -24 °C | -21 °C |
 | Thoát khí ở 50 °C | 8 phút | 8 phút |
 
-Chọn cấp 68 khi sổ tay máy yêu cầu ISO VG 68, hoặc khi dầu trong bồn thường xuyên nóng trên 55–60 °C. Máy công trình, máy chạy ngoài trời hoặc khởi động lạnh thường dùng cấp 46.
+Chọn cấp 68 khi sổ tay máy yêu cầu ISO VG 68, hoặc khi dầu trong bồn thường xuyên nóng trên 55–60 °C. Nói chung với máy móc làm việc ngoài trời trong điều kiện khí hậu nhiệt đới của Việt Nam, hoặc trong các nhà xưởng có nhiệt độ đặc thù cao (như nhà máy gạch, xưởng đúc, rèn, gia công cơ khí, ép đùn nhựa định hình...). Máy công trình, máy chạy ngoài trời hoặc khởi động lạnh thường dùng cấp 46.
 
 > **Nhận định của HT VINA:** Trường hợp hay gặp nhất ở miền Bắc là máy ép nhựa và máy ép thủy lực chạy hai, ba ca trong nhà xưởng: cấp 68 hợp hơn. Cách chọn chi tiết xem bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
 
@@ -129,14 +129,18 @@ Hai mã cùng loại HM, cùng cấp 68 và cùng có sẵn tại kho HT VINA. S
 
 ## Khi nào cần thay dầu?
 
-Lấy mẫu dầu trong bồn khi máy vừa chạy, để cạnh một chai Hyspin AWS 68 mới làm mốc so sánh.
+Chúng tôi sẽ hướng dẫn các bạn cách phân biệt nhanh bằng trực quan 2 mẫu dầu mới và cũ.
+
+1. Lấy mẫu dầu trong bồn khi máy vừa chạy, để cạnh một chai Hyspin AWS 68 mới làm mốc so sánh.
+2. Chuẩn bị một ống hút nhỏ có thể là nhựa đường kính tầm 3-5mm hở 2 đầu, thủy tinh trong để có thể dễ dàng nhìn và quan sát.
 
 **Quan sát không cần dụng cụ:**
 
 - **Màu và độ trong:** dầu đục hoặc màu sữa là đã lẫn nước. Dầu sẫm màu nhanh là dấu hiệu oxy hóa hoặc quá nhiệt.
-- **Mùi:** mùi khét, chua là dầu đã oxy hóa nặng.
+- **Mùi:** mùi khét, chua là dầu đã oxy hóa nặng. Cần sớm xử lý để đảm bảo tuổi thọ bơm cao áp cũng như xilanh thủy lực.
 - **Nhỏ dầu lên tấm kim loại nóng:** nghe tiếng lách tách là có nước.
-- **Nhỏ một giọt lên giấy lọc:** vết loang có quầng đen đậm ở giữa là nhiều cặn.
+- **Nhỏ một giọt lên giấy lọc:** vết loang có quầng đen đậm ở giữa là nhiều cặn. Khi cặn đã được quan sát được bằng mắt thường điều đó có nghĩa dầu của bạn đã "bẩn rất nặng".
+- **Test độ nhớt dầu cũ và mẫu dầu mới:** nhúng ống nhựa trong suốt vào 2 mẫu dầu cùng độ sâu. Đảm bảo dầu vào trong ống sau đó bịt chặt 1 đầu đưa ống ra khỏi mẫu dầu. Mở đầu ống đã bịt quan sát tốc độ dầu thoát ra (nhỏ giọt) ra khỏi ống. Nếu dầu rơi quá nhanh so với mẫu dầu mới chưa sử dụng. Điều đó chứng tỏ độ nhớt đã không còn đảm bảo. (nếu chính xác hơn bạn có thể dùng nhớt kế để đo, giá thiết bị khá rẻ [chúng tôi đã đăng](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).)
 
 **Ba phép đo nhanh và ngưỡng nên thay dầu:**
 
@@ -153,12 +157,12 @@ Cách lấy mẫu, đọc kết quả và các dấu hiệu dầu kém chất l�
 ### Castrol Hyspin AWS 68 có trộn với dầu thủy lực hãng khác được không?
 Về nguyên tắc nên thay toàn bộ, không châm lẫn.
 
-**Thực tế từ khách hàng của chúng tôi:** HT VINA có hơn 10 năm cung cấp và tư vấn dầu thủy lực cho các doanh nghiệp ở Hải Dương (cũ) và Hải Phòng. Chúng tôi nhận thấy gần như không khách hàng nào đang dùng dầu AW 68 châm lẫn dầu khác cấp độ nhớt như 32 hay 46. Phần lớn khách hàng cũng không châm dầu AW 68 của hãng khác vào bồn đang dùng. Trong thực tế, các nhà máy ưu tiên sự ổn định: đã chọn một sản phẩm thì dùng liên tục sản phẩm đó.
+**Thực tế từ khách hàng của chúng tôi:** HT VINA có hơn 10 năm cung cấp và tư vấn dầu thủy lực cho các doanh nghiệp ở Hải Dương (cũ) và Hải Phòng. Chúng tôi nhận thấy gần như không khách hàng nào đang dùng dầu AW 68 châm lẫn dầu khác cấp độ nhớt như 32 hay 46. Phần lớn khách hàng cũng không châm dầu AW 68 của hãng khác vào máy đang dùng cho dù cùng độ nhớt. Trong thực tế, các nhà máy ưu tiên sự ổn định: đã chọn một sản phẩm thì dùng liên tục sản phẩm đó.
 
 Nếu bắt buộc phải châm bổ sung, chỉ trộn với dầu cùng loại HM/HLP cùng cấp 68, và theo dõi bọt và độ trong của dầu sau vài ngày chạy. Không trộn dầu có kẽm như Hyspin AWS với dầu thủy lực không kẽm, vì hai hệ phụ gia khác nhau có thể tạo cặn và bọt.
 
 ### Bao lâu thì thay dầu thủy lực Castrol Hyspin AWS?
-Không có một mốc giờ chạy đúng cho mọi máy. Cùng là Castrol Hyspin AWS, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả test dầu đang dùng so với dầu mới, với các ngưỡng ở mục "Khi nào cần thay dầu?" phía trên. Chu kỳ test và bảng quyết định thay dầu xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Tuy rằng nhà sản xuất có đưa ra một thời gian khuyến nghị thời gian thay dầu, tuy nhiên chúng tôi cho rằng việc thay dầu phải dựa trên công việc mà máy móc và thiết bị của các bạn hoạt động. Trong môi trường tải nặng, nhẹ, nhiệt độ ra sao? Lấy một ví dụ dễ hiểu, cùng là Castrol Hyspin AWS, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả test dầu đang dùng so với dầu mới, với các ngưỡng ở mục "Khi nào cần thay dầu?" phía trên. Chu kỳ test và bảng quyết định thay dầu xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Dầu có dùng cho bơm Denison không?
 Có. Dòng Hyspin AWS được Parker Denison phê duyệt HF-0, HF-1 và HF-2 cho cấp độ nhớt phù hợp.
