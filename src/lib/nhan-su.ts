@@ -230,6 +230,8 @@ function affiliationOrg(p: NhanSu) {
 
 /** Tên kèm danh xưng, ví dụ "TS. Bùi Huy Tiến" */
 export const displayName = (p: NhanSu) => (p.honorificPrefix ? `${p.honorificPrefix} ${p.name}` : p.name);
+/** Tên gọi ngắn trên dòng tác giả / duyệt nội dung: "Ms. Hồng", "TS. Lập" */
+export const bylineLabel = (p: NhanSu) => p.bylineName ?? displayName(p);
 
 /** Nhãn cho link hồ sơ ngoài */
 export const profileLabel = (u: string) =>

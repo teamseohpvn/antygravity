@@ -47,7 +47,7 @@ storage: "Để dưới mái che. Phuy để ngoài trời phải đặt nằm n
 
 images:
   - { src: "/images/san-pham/castrol-vecton-phuy-209l.webp", alt: "Phuy 209 lít dầu động cơ Castrol Vecton 15W-40 CI-4/E7 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/castrol-vecton-nhan.webp", alt: "Nhãn phuy Castrol Vecton 15W-40 ghi cấp API CI-4 và ACEA E7" }
+  # Tạm bỏ castrol-vecton-nhan.webp (12/10/2026): nhãn trong ảnh là VECTON 15W-40 CK-4/E9, trang đang viết bản CI-4/E7. Chờ xác nhận hàng trong kho
 
 doc_gia: "Trang này dành cho người quản lý đội xe tải nặng, đầu kéo cần dầu đạt chuẩn hãng xe hoặc muốn kéo dài chu kỳ thay dầu."
 tom_tat:

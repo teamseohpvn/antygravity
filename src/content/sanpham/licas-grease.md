@@ -46,8 +46,8 @@ warnings:
   - "Mỡ thải phải giao cho đơn vị xử lý môi trường, không xả ra đất, nước hay cống rãnh."
 storage: "Để nơi khô ráo, đậy kín nắp xô, tránh bụi và nước lọt vào."
 
-images:
-  - { src: "/images/san-pham/licas-grease-no3-ong-400g.webp", alt: "Thùng 30 ống mỡ Licas Grease No3 loại 400 g" }
+# images:   # chưa có ảnh đúng mã, trang dùng ảnh danh mục
+  # Bỏ ảnh licas-grease-no3-ong-400g.webp (12/10/2026): ảnh là thùng DH Grease Calcium No3, không phải VHP Licas. Chờ ảnh thật
 
 doc_gia: "Trang này dành cho xưởng, gara cần mỡ bò đa dụng chống rửa trôi cho đầu trục, sát xi, bản lề, vú mỡ."
 tom_tat:

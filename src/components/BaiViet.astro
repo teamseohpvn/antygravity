@@ -9,7 +9,7 @@ import { postPath } from '../lib/content';
 import type { CollectionEntry } from 'astro:content';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { absUrl, breadcrumbSchema, ORG_ID, SITE_NAME } from '../lib/site';
-import { credentialLine, displayName, personRef, personSchema, personUrl, timNhanSu } from '../lib/nhan-su';
+import { DEFAULT_REVIEWER_ID, bylineLabel, personRef, personSchema, personUrl, timNhanSu } from '../lib/nhan-su';
 import { ngayBai } from '../lib/ngay';
 
 interface Props { post: CollectionEntry<'blog'> }
@@ -22,8 +22,9 @@ const tocItems = mucLuc(headings, { voiH3: true, tat: post.data.muc_luc === fals
 const pagePath = postPath(post);
 // Tác giả có hồ sơ trong nhan-su.ts (author = id hoặc họ tên) thì link tới trang hồ sơ và gắn schema Person đầy đủ.
 const authorP = timNhanSu(post.data.author);
-// Người kiểm duyệt kỹ thuật (tùy chọn, khác tác giả).
-const reviewerP = timNhanSu(post.data.reviewed_by);
+// Người duyệt nội dung: reviewed_by, mặc định TS. Lập (bỏ qua nếu trùng tác giả).
+const reviewerRaw = timNhanSu(post.data.reviewed_by) ?? timNhanSu(DEFAULT_REVIEWER_ID);
+const reviewerP = reviewerRaw && reviewerRaw.id !== authorP?.id ? reviewerRaw : undefined;
 // Ngày đăng / cập nhật: cùng một giá trị cho chữ trên trang, schema và thẻ meta.
 const ngay = ngayBai(post.data);
 const crumbs = [
@@ -88,12 +89,12 @@ const schemaData = [
       <header class="post-header">
         <h1>{post.data.title}</h1>
         <div class="meta">
-          Đăng ngày: <time datetime={ngay.published}>{ngay.publishedText}</time>
-          {ngay.modified !== ngay.published && <> | Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time></>}
-          | Tác giả: {authorP
-            ? <span><a href={personUrl(authorP)} rel="author">{displayName(authorP)}</a>, {authorP.degree}, {authorP.affiliation}</span>
+          Đăng: <time datetime={ngay.published}>{ngay.publishedText}</time>
+          {ngay.modified !== ngay.published && <> · Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time></>}
+          {" · "}Tác giả: {authorP
+            ? <span><a href={personUrl(authorP)} rel="author">{bylineLabel(authorP)}</a>, {authorP.role.charAt(0).toLowerCase() + authorP.role.slice(1)}</span>
             : <span>{post.data.author ?? SITE_NAME}{post.data.author_title && `, ${post.data.author_title}`}</span>}
-          {reviewerP && <> | Kiểm duyệt kỹ thuật: <a href={personUrl(reviewerP)}>{displayName(reviewerP)}</a>{credentialLine(reviewerP) && `, ${credentialLine(reviewerP)}`}</>}
+          {reviewerP && <> · Duyệt nội dung: <a href={personUrl(reviewerP)}>{bylineLabel(reviewerP)}</a></>}
         </div>
         {post.data.tags && (
           <div class="tags">

@@ -53,6 +53,8 @@ storage: "Để nơi thoáng mát, thông gió tốt, tránh nắng trực tiế
 images:
   - { src: "/images/san-pham/eneos-faircol-ra-32-can-18l.webp", alt: "Can 18 lít dầu máy nén khí ENEOS Faircol RA 32 tại kho Hải Phòng" }
   - { src: "/images/san-pham/eneos-faircol-ra-32-nhan.webp", alt: "Nhãn can ENEOS Faircol RA 32 ghi cấp độ nhớt ISO VG 32" }
+  - { src: "/images/san-pham/eneos-faircol-ra-32-xo-18l.webp", alt: "Xô 18 lít màu đen dầu máy nén khí ENEOS Faircol RA 32 tại kho HT VINA" }
+  - { src: "/images/san-pham/eneos-faircol-ra-32-xo-18l-nhan.webp", alt: "Nhãn xô ENEOS Faircol RA 32, dầu máy nén công nghệ cao 18 lít" }
 
 doc_gia: "Trang này dành cho xưởng có máy nén khí trục vít, cánh gạt, xoắn ốc yêu cầu dầu ISO VG 32, đặt trong xưởng hoặc ngoài trời."
 tom_tat:

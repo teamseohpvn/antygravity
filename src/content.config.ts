@@ -47,7 +47,8 @@ const danhmucCollection = defineCollection({
     tags: z.array(z.string()).optional(),
     canonical_url: z.string().optional(),
     muc_luc: z.boolean().optional(), // false = tắt mục lục tự động (mặc định: bật khi bài có từ 4 mục H2) // Chỉ dùng khi cần canonical khác URL của trang
-    reviewed_by: z.string().optional(), // Người duyệt kỹ thuật (E-E-A-T)
+    tac_gia: z.string().optional(), // Tác giả (id trong nhan-su.ts); mặc định Ms. Hồng
+    reviewed_by: z.string().optional(), // Người duyệt nội dung; mặc định TS. Nguyễn Thiết Lập
     date: ngay.optional(), // Ngày đăng
     updated: ngay.optional(), // Ngày cập nhật
   }).superRefine(kiemTraNgay),
