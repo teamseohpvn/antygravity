@@ -30,6 +30,8 @@ specs:
 tds_date: "06/2023"
 tds_url: "https://hoadauvhp.com/caxiliumgreasenovhp-nid4.html"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "No2 – Phuy 180 kg", sku: "CAXILIUM NO2" }
   - { name: "No3 – Phuy 180 kg", sku: "CAXILIUM NO3" }
@@ -53,6 +55,12 @@ images:
   - { src: "/images/san-pham/vhp-caxilium-grease-no3-phuy-180kg.webp", alt: "Phuy 180 kg mỡ VHP Caxilium Grease No3" }
   - { src: "/images/san-pham/vhp-caxilium-grease-nhan.webp", alt: "Nhãn phuy mỡ VHP Caxilium Grease ghi cấp No2" }
 
+doc_gia: "Trang này dành cho tổ bảo trì thiết bị ngoài trời, ven biển, trên tàu cần mỡ kháng nước, nước muối cho điểm bôi trơn hở."
+tom_tat:
+  - "**Dùng được** cho đầu trục, sát xi, bánh răng hở, chốt, bạc gặp mưa, nước rửa, nước muối; làm việc từ −10 °C đến 110 °C."
+  - "**Mỡ lithium-canxi**, công thức phụ gia Lubrizol; cấp No2 sản xuất theo TCCS 52:2023/VHP."
+  - "**Không phải mỡ chịu nhiệt**: ổ bi động cơ, quạt chạy nóng dùng VHP Lithium Grease."
+  - "**Nhận đặt theo yêu cầu** (phuy 180 kg), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "khang-nuoc", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-12"
@@ -60,16 +68,28 @@ updated: "2026-10-12"
 
 **VHP Caxilium Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. Mỡ được làm cho những chỗ bôi trơn hở, hay gặp nước và nước muối. Cấp No2 sản xuất theo tiêu chuẩn cơ sở TCCS 52:2023/VHP.
 
-HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dương cũ) có cả **No2** và **No3**, đóng **phuy 180 kg**. Hàng có CO/CQ và hóa đơn VAT.
+HT VINA là **đại lý dầu mỡ VHP**. **No2** và **No3**, đóng **phuy 180 kg**, **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Caxilium có hợp với điểm bôi trơn của bạn không?
 
-- **Kháng nước, chống rửa trôi.** Mỡ bám được trên đầu trục, sát xi và bánh răng hở khi gặp mưa hay nước rửa. Thiết bị ven biển và trên tàu cũng dùng được.
-- **Chống gỉ và oxy hóa.** Mỡ hạn chế gỉ ở chốt, bạc và ổ bi đặt ngoài trời.
-- **Bền cơ học.** Cấu trúc mỡ ít bị phá vỡ khi chi tiết quay lâu, nên mỡ ít văng và ít hao.
-- **Rất ít nước và tạp chất.** Mẫu giám định cấp No2 có 0,06 % nước và không có tạp chất cơ học.
+| Điểm bôi trơn | Dùng Caxilium Grease được không? |
+| :--- | :--- |
+| Đầu trục, sát xi, bánh răng hở gặp mưa, nước rửa | **Được.** |
+| Thiết bị ven biển, trên tàu, gặp nước muối | **Được.** |
+| Chốt, bản lề, ổ bi tải vừa của máy công trình, máy nông nghiệp | **Được.** |
+| Chốt gầu chịu va đập rất nặng | Nên dùng mỡ chịu cực áp theo khuyến cáo của hãng máy. |
+| Ổ bi động cơ điện, quạt chạy nóng | Không. Dùng [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease). |
 
-## Chọn No2 hay No3
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là kết quả giám định cấp No2 (chứng thư số 14/VHP/2024), kèm mức cam kết của VHP.
+
+- **Rất ít nước và tạp chất.** Mẫu No2 có 0,06% nước (cam kết dưới 0,5%) và không có tạp chất cơ học.
+- **Nhiệt độ nhỏ giọt 141 °C** (cam kết trên 135 °C), làm việc từ −10 °C đến 110 °C: mức của mỡ đa dụng.
+- **Giới hạn bền ở 50 °C là 420** (cam kết trên 200): mỡ bám được, ít văng khỏi chi tiết quay.
+- **Kháng nước, chống rửa trôi.** Mỡ bám trên đầu trục, sát xi và bánh răng hở khi gặp mưa hay nước rửa.
+
+## Nên chọn No2 hay No3?
 
 | | Caxilium No2 | Caxilium No3 |
 | :--- | :--- | :--- |
@@ -77,14 +97,43 @@ HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dư�
 | Bơm bằng súng mỡ | Dễ bơm, hợp vú mỡ và ổ bi | Cần lực bơm lớn hơn |
 | Thường dùng cho | Vòng bi, ổ trục, máy nông nghiệp | Sát xi, bản lề, bánh răng hở, chỗ dễ chảy mỡ |
 
-VHP công bố bảng chỉ tiêu cho cấp No2 (theo chứng thư giám định số 14/VHP/2024). Nếu cần phiếu kiểm nghiệm riêng của cấp No3, hãy [liên hệ](/contact) chúng tôi để nhận theo lô.
+VHP công bố bảng chỉ tiêu cho cấp No2. Nếu cần phiếu kiểm nghiệm riêng của cấp No3, hãy [liên hệ](/contact) để nhận theo lô.
 
-Caxilium có nhiệt độ nhỏ giọt 141 °C và làm việc từ −10 °C đến 110 °C. Đây là mức của mỡ đa dụng, không phải mỡ chịu nhiệt. Ổ bi động cơ điện, quạt chạy nóng hơn nên dùng [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease). Ổ bi nóng trên 120 °C cần [mỡ chịu nhiệt](/mo-chiu-nhiet). Xem thêm các dòng khác ở trang [mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep).
+## Caxilium hay Licas Grease?
+
+| | VHP Caxilium | [VHP Licas Grease](/mo-boi-tron-cong-nghiep/licas-grease) |
+| :--- | :--- | :--- |
+| Chất làm đặc | Lithium và canxi | Lithium và canxi |
+| Nhiệt độ làm việc | −10 đến 110 °C | −10 đến 110 °C (ngắn hạn 120 °C) |
+| Định hướng của VHP | Chỗ hở, nhiều nước, nước muối | Mỡ bò đa dụng, chống rửa trôi |
+| Tình trạng kho tháng 10/2026 | Nhận đặt, phuy 180 kg | Có sẵn No3 ống 400 g |
+
+> **Nhận định của HT VINA:** Thiết bị ven biển, trên tàu, hay ngập nước muối thì đặt Caxilium. Điểm bôi trơn ngoài trời thông thường cần mỡ ngay thì Licas có sẵn và có thêm xô, ống 400 g tiện cho xưởng dùng ít.
+
+## Khi nào cần bơm bù hoặc thay mỡ?
+
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+
+| Dấu hiệu | Nên làm |
+| :--- | :--- |
+| Ổ bi nóng hơn bình thường, kêu rít hoặc lạo xạo | Bơm bù mỡ; không đỡ thì tháo kiểm tra vòng bi |
+| Mỡ cũ đen sẫm, có hạt kim loại, mùi khét | Đẩy hết mỡ cũ ra, rửa sạch, bơm mỡ mới |
+| Mỡ chảy lỏng, tách dầu loang quanh ổ | Ổ đang quá nóng so với mỡ, hoặc trộn lẫn mỡ khác gốc |
+| Mỡ trắng đục, nhũ hóa | Nước lọt vào; kiểm tra phớt chắn, đổi sang mỡ kháng nước tốt hơn nếu cần |
+
+Không bơm quá nhiều: ổ bi đầy mỡ chạy nóng hơn. Ổ bi động cơ điện thường chỉ cần mỡ chiếm khoảng 1/3 đến 1/2 khoảng trống trong ổ.
 
 ## Câu hỏi thường gặp
 
-### Caxilium khác Licas Grease thế nào?
-Cả hai cùng là mỡ lithium-canxi của VHP và cùng làm việc tới 110 °C. Caxilium được VHP định hướng cho chỗ bôi trơn hở, nhiều nước và nước muối. [Licas Grease](/mo-boi-tron-cong-nghiep/licas-grease) có thêm xô 15 kg, 17 kg và ống 400 g, tiện cho xưởng dùng ít.
-
 ### Caxilium có dùng cho máy công trình được không?
 Được, với chốt, bản lề, sát xi và ổ bi tải vừa. Các chốt gầu chịu va đập rất nặng nên dùng mỡ có phụ gia chịu cực áp theo khuyến cáo của hãng máy.
+
+### Caxilium có phải mỡ chịu nhiệt không?
+Không. Nhiệt độ nhỏ giọt 141 °C và làm việc tới 110 °C là mức của mỡ đa dụng. Ổ bi nóng trên 120 °C cần [mỡ chịu nhiệt](/mo-chiu-nhiet).
+
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** No2, No3 phuy 180 kg, nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Caxilium%20Grease) kèm cấp và số lượng.

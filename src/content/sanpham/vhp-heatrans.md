@@ -29,6 +29,8 @@ specs:
 tds_date: "06/2023"
 tds_url: "https://hoadauvhp.com/heatransoil-nid20.html"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Heatrans 32 – Xô 18 L", sku: "HEATRANS 32" }
   - { name: "Heatrans 46 – Xô 18 L", sku: "HEATRANS 46" }
@@ -52,6 +54,12 @@ images:
   - { src: "/images/san-pham/vhp-heatrans-46-xo-18l.webp", alt: "Xô 18 lít dầu truyền nhiệt VHP Heatrans Oil 46" }
   - { src: "/images/san-pham/vhp-heatrans-nhan.webp", alt: "Nhãn xô VHP Heatrans Oil ghi cấp độ nhớt" }
 
+doc_gia: "Trang này dành cho kỹ thuật viên lò dầu, hệ gia nhiệt gián tiếp tuần hoàn kín chạy tới 300 °C."
+tom_tat:
+  - "**Dùng được** cho hệ gia nhiệt gián tiếp tuần hoàn kín: bồn dầu tối đa 300 °C, màng dầu tối đa 320 °C."
+  - "**Đáp ứng DIN 51522, ISO 6743-12 nhóm Q** theo VHP; dầu gốc khoáng tinh chế."
+  - "**Cấp 32** bơm dễ khi khởi động nguội; **cấp 46** có điểm chớp cháy, điểm sôi cao hơn."
+  - "**Nhận đặt theo yêu cầu** (xô 18 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-32", "iso-vg-46", "truyen-nhiet", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-12"
@@ -59,16 +67,27 @@ updated: "2026-10-12"
 
 **VHP Heatrans Oil** là dầu truyền nhiệt gốc khoáng tinh chế do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hệ gia nhiệt gián tiếp tuần hoàn kín, chạy liên tục với bồn dầu tối đa 300 °C và màng dầu tối đa 320 °C. Theo VHP, dầu đáp ứng DIN 51522 và ISO 6743-12 nhóm Q.
 
-HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dương cũ) có hai cấp **Heatrans 32** và **Heatrans 46**, đóng **xô 18 L**. Hàng có CO/CQ và hóa đơn VAT.
+HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **Heatrans 32** và **Heatrans 46**, đóng **xô 18 L**, **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Heatrans có hợp với lò dầu của bạn không?
 
-- **Bền nhiệt, chậm phân hủy.** Dầu chống oxy hóa và chống phân hủy khi chạy nóng liên tục, nên dùng được lâu trước khi phải thay.
+| Tình huống | Dùng Heatrans được không? |
+| :--- | :--- |
+| Hệ tuần hoàn kín, bồn dầu không quá 300 °C, màng dầu không quá 320 °C | **Được.** |
+| Lò dầu gia nhiệt cho máy ép, máy sấy, nồi nấu, bồn chứa nhựa đường | **Được**, trong giới hạn nhiệt độ trên. |
+| Hệ hở (dầu tiếp xúc không khí ở nhiệt độ cao) | Không. Dầu chỉ dùng cho hệ tuần hoàn kín. |
+| Bồn dầu trên 300 °C | Không. Cần dầu truyền nhiệt tổng hợp chịu nhiệt cao hơn. |
+
+## Thông số này có ý nghĩa gì khi vận hành?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài lấy từ bảng chỉ tiêu của VHP.
+
+- **Bền nhiệt, chậm phân hủy.** Dầu chống oxy hóa và chống phân hủy khi chạy nóng liên tục.
 - **Áp suất hơi thấp.** Hạn chế dầu bị bẻ gãy mạch (cracking) và giảm sản phẩm phân hủy dễ bay hơi trong hệ.
-- **Giữ bề mặt trao đổi nhiệt sạch.** Dầu không ăn mòn, hòa tan tốt các sản phẩm oxy hóa nên hạn chế bám cặn trên ống gia nhiệt.
-- **Độ nhớt phù hợp cho bơm tuần hoàn.** Ở 200 °C, độ nhớt tuyệt đối chỉ khoảng 1,04 mPa·s (cấp 32) và 1,26 mPa·s (cấp 46), dầu lưu thông dễ.
+- **Giữ bề mặt trao đổi nhiệt sạch.** Dầu hòa tan tốt các sản phẩm oxy hóa nên hạn chế bám cặn trên ống gia nhiệt.
+- **Độ nhớt phù hợp cho bơm tuần hoàn.** Ở 200 °C, độ nhớt tuyệt đối chỉ khoảng 1,04 mPa·s (cấp 32) và 1,26 mPa·s (cấp 46).
 
-## Chọn cấp 32 hay 46
+## Nên chọn cấp 32 hay 46?
 
 | Thông số (theo VHP) | Heatrans 32 | Heatrans 46 |
 | :--- | :--- | :--- |
@@ -77,23 +96,42 @@ HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dư�
 | Điểm sôi ban đầu | 350 °C | 360 °C |
 | Nhiệt độ tự bốc cháy | 353 °C | 364 °C |
 | Nhiệt dung riêng ở 200 °C | 2,74 kJ/kg·°C | 2,74 kJ/kg·°C |
-| Độ dẫn nhiệt ở 200 °C | 0,103 W/m·°C | 0,103 W/m·°C |
 | Áp suất hơi ở 300 °C | 17,4 mmHg | 19 mmHg |
 
-Cấp 32 loãng hơn, bơm tuần hoàn dễ hơn khi khởi động nguội. Cấp 46 có điểm chớp cháy và điểm sôi cao hơn. Luôn dùng cấp mà nhà sản xuất lò dầu quy định. So sánh với các loại dầu truyền nhiệt khác ở trang [dầu truyền nhiệt](/dau-truyen-nhiet).
+> **Nhận định của HT VINA:** Luôn dùng cấp mà nhà sản xuất lò dầu quy định. Lưu ý điểm chớp cháy (229–246 °C) thấp hơn nhiệt độ bồn dầu tối đa 300 °C: đây là bình thường với dầu truyền nhiệt trong hệ kín, nhưng phải giữ hệ kín, có bình giãn nở và không để rò rỉ dầu nóng ra ngoài.
+
+## Heatrans hay SHL Syn Therm 32L?
+
+[SHL Syn Therm 32L](/dau-truyen-nhiet/shl-syn-therm) là dầu truyền nhiệt tổng hợp gốc alkyl benzene, điểm đông đặc dưới −35 °C, nhiệt độ tự bốc cháy 462 °C. Heatrans là dầu gốc khoáng, có công bố rõ nhiệt độ bồn và màng dầu tối đa.
+
+> **Nhận định của HT VINA:** Lò dầu thông dụng ở miền Bắc dùng dầu gốc khoáng như Heatrans là đủ. Chọn dầu tổng hợp khi nhà sản xuất thiết bị yêu cầu.
+
+## Khi nào cần thay dầu?
+
+Không thay theo lịch cố định mà theo kết quả kiểm tra, ít nhất mỗi năm một lần. Dầu truyền nhiệt xuống cấp theo hai hướng: **nứt gãy nhiệt** làm dầu loãng ra, điểm chớp cháy giảm; **oxy hóa** làm dầu đặc lên, trị số axit tăng, đóng cặn trong ống.
+
+| Chỉ tiêu | Ngưỡng cần xử lý |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Lệch quá ±10%. Heatrans 32: ngoài 28,8–35,2 mm²/s. Heatrans 46: ngoài 41,4–50,6 mm²/s |
+| Trị số axit | Tăng rõ so với dầu mới (dầu mới dưới 0,1 mg KOH/g); đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
+| Điểm chớp cháy, cặn cacbon | Gửi phòng thí nghiệm |
+
+Dầu có mùi khét, lò khó đạt nhiệt hoặc bơm ồn là lúc phải test ngay. Khi thay, nên súc rửa hệ để loại cặn cũ. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu truyền nhiệt VHP Heatrans Oil?
-Không thay theo lịch cố định mà theo kết quả kiểm tra, ít nhất mỗi năm một lần. Dầu truyền nhiệt xuống cấp theo hai hướng: **nứt gãy nhiệt** làm dầu loãng ra, điểm chớp cháy giảm; **oxy hóa** làm dầu đặc lên, trị số axit tăng, đóng cặn trong ống.
-
-Tại chỗ có thể đo **độ nhớt ở 40 °C** (Heatrans 32: dầu mới 32 mm²/s → ngưỡng 28,8–35,2 mm²/s; Heatrans 46: dầu mới 46 mm²/s → ngưỡng 41,4–50,6 mm²/s) và **trị số axit** bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb). Điểm chớp cháy và cặn cacbon cần gửi phòng thí nghiệm. Dầu có mùi khét, lò khó đạt nhiệt hoặc bơm ồn là lúc phải test ngay. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo kết quả kiểm tra, ít nhất mỗi năm một lần. Chi tiết ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Lò dầu chạy 300 °C có dùng Heatrans được không?
 Được, nếu nhiệt độ bồn dầu không vượt 300 °C và nhiệt độ màng dầu tại ống gia nhiệt không vượt 320 °C. Dầu chỉ dùng cho hệ tuần hoàn kín.
 
-### Khi nào cần thay dầu truyền nhiệt?
-Nên lấy mẫu dầu kiểm tra định kỳ. Dầu sẫm màu nhanh, có cặn, độ nhớt hoặc trị số axit tăng rõ là dấu hiệu cần thay. Khi thay, nên súc rửa hệ để loại cặn cũ.
-
 ### Có trộn Heatrans với dầu truyền nhiệt hãng khác được không?
 Không nên. Pha lẫn hai loại dầu khác nhau làm khó kiểm soát chất lượng và tuổi thọ dầu. Hãy [liên hệ](/contact) để được tư vấn trước khi đổi dầu.
+
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** Heatrans 32 và 46, xô 18 L. Nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Heatrans%20Oil) kèm cấp và số lượng.

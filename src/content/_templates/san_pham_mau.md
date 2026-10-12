@@ -46,6 +46,7 @@ specs:
 tds_date: "[09/2026]"             # Tháng tải TDS
 tds_url: "[/tai-lieu/tds/eneos-super-hyrando-68.pdf hoặc link PDF chính hãng]"
 sds_url: "[/tai-lieu/sds/eneos-super-hyrando-68.pdf]"
+thong_so_cuoi: true               # Bảng thông số TDS + Ứng dụng đặt sau phần phân tích (mẫu ENEOS 68). Bỏ dòng này nếu chưa có specs
 
 # --- Thương mại ---
 packaging:                        # Quy cách đang bán. sku = Mã HH trong phần mềm kho
@@ -80,6 +81,14 @@ images:
   - { src: "/images/san-pham/[slug]-xo-18l.webp", alt: "[Xô 18 lít ENEOS Super Hyrando 68]" }
   - { src: "/images/san-pham/[slug]-nhan.webp", alt: "[Nhãn sau xô ENEOS Super Hyrando 68 ghi tiêu chuẩn và cấp độ nhớt]" }
 
+# --- Đầu trang (hiện ngay dưới tiêu đề) ---
+doc_gia: "[Trang này dành cho ai: một câu, vd kỹ thuật viên và người mua hàng cần đối chiếu sổ tay máy trước khi chọn mã]"
+tom_tat:                          # 3–5 ý, **đậm** được. Thứ tự: dùng được cho / không dùng khi / quy cách có sẵn / thay dầu theo
+  - "**Dùng được** cho [máy, loại dầu sổ tay ghi]."
+  - "**Không dùng** khi [trường hợp], chọn [mã khác]."
+  - "**Có sẵn** [quy cách] tại kho Hải Phòng; [quy cách khác] nhận đặt."
+  - "**Thay dầu theo kết quả đo**. Ngưỡng ở mục \"Khi nào cần thay dầu?\"."
+
 # --- Liên kết & quản lý ---
 related_posts: ["[slug bài blog liên quan]"]
 tags: ["[iso-vg-68]", "[chong-mai-mon]"]
@@ -93,19 +102,54 @@ updated: "2026-10-03"
 
 [Đoạn mở đầu 40–60 từ: sản phẩm là gì, đạt tiêu chuẩn gì, dùng cho máy nào. Viết bằng lời của mình, không chép mô tả của hãng.]
 
-## Tính năng chính
+[Một câu tình trạng kho: quy cách có sẵn / nhận đặt theo yêu cầu, giấy tờ.]
 
-- **[Tính năng 1]:** [lợi ích cụ thể cho máy của khách]
-- **[Tính năng 2]:** ...
+<!-- Bố cục theo mẫu ENEOS Super Hyrando 68 (PR #40, #41). H2 viết dạng câu hỏi của người mua. -->
 
-## Khi nào nên chọn [tên mã]
+## [Tên mã] có hợp với máy của bạn không?
 
-[So với cấp nhớt khác hoặc mã tương đương: chọn khi nào, không chọn khi nào. Link về hub, ví dụ [dầu thủy lực](/dau-thuy-luc).]
+| Sổ tay máy ghi | Dùng [tên mã] được không? |
+| :--- | :--- |
+| [ISO VG 68, HM, HLP 68…] | **Được.** |
+| [Trường hợp không dùng] | Không. Chọn [mã khác](/[danh-muc]/[slug]). |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS [nguồn, ngày].
+
+- **[Chỉ tiêu]:** [ý nghĩa khi vận hành, gắn với số liệu TDS]
+
+## Nên chọn [cấp A] hay [cấp B]?
+
+[Bảng so các cấp trong dòng, số liệu TDS.]
+
+> **Nhận định của HT VINA:** [Lời khuyên của mình, có căn cứ. Mọi đoạn tư vấn riêng đều gắn nhãn này để tách khỏi số liệu hãng.]
+
+## [Tên mã] hay [mã cùng loại có sẵn tại kho]?
+
+[Bảng so số liệu TDS hai bên; giá chỉ lấy từ bảng giá công khai (/bao-gia-dau-thuy-luc), quy ra đ/L. Chỉ tiêu hãng không công bố ghi "Không công bố".]
+
+> **Nhận định của HT VINA:** [Khi nào chọn mã nào.]
+
+## Khi nào cần thay dầu?
+
+| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| :--- | :--- | :--- |
+| Độ nhớt ở 40 °C | [Ngoài khoảng ±10% so với TDS] | [Máy đo độ nhớt LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (ASTM D6224) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
+| Nước | [Trên 0,05%] | [Test nước tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
 ## Câu hỏi thường gặp
 
-### [Câu hỏi 1 – vd: Thay dầu sau bao nhiêu giờ?]
-[Trả lời 2–3 câu.]
+### Bao lâu thì thay dầu [tên mã]?
+[Trả lời ngắn, trỏ về mục "Khi nào cần thay dầu?".]
 
 ### [Câu hỏi 2 – vd: Có trộn với dầu hãng khác được không?]
 [Trả lời 2–3 câu.]
+
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách có sẵn:** [quy cách]. [Quy cách khác] nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** [khoảng giá từ bảng giá công khai, hoặc "báo theo số lượng"], [gửi yêu cầu báo giá](/bao-gia?sp=[Tên%20mã]).
