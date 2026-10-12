@@ -164,7 +164,7 @@ const schemaData = [
           {tacGia
             ? <>Tác giả: <a href={personUrl(tacGia)} rel="author">{tenNgan(tacGia)}</a>, {tacGia.role.toLowerCase()}</>
             : <>Tác giả: <a href="/about" rel="author">{authorName}</a></>}
-          {reviewer && reviewer.id !== tacGia?.id && <> · Duyệt nội dung: <a href={personUrl(reviewer)}>{displayName(reviewer)}</a></>}
+          {reviewer && reviewer.id !== tacGia?.id && <> · Duyệt nội dung: <a href={personUrl(reviewer)}>{tenNgan(reviewer)}</a></>}
         </p>
         <div class="tags">
           <span class="badge">{d.brand}</span>

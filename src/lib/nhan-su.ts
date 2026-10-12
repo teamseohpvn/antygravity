@@ -15,6 +15,8 @@ export interface NhanSu {
   knowsAbout?: string[];
   /** Ảnh chân dung trong public/, ví dụ /images/nhan-su/tran-tuan-huynh.webp */
   photo?: string;
+  /** Số điện thoại công việc, cho schema telephone (chỉ ghi khi người đó đồng ý công khai) */
+  telephone?: string;
   /** Email công việc (hộp thư chung của vị trí) */
   email?: string;
   /** Hồ sơ công khai bên ngoài (LinkedIn...) cho schema sameAs */
@@ -48,6 +50,7 @@ export const NHAN_SU: NhanSu[] = [
     id: 'nguyen-thiet-lap',
     name: 'Nguyễn Thiết Lập',
     honorificPrefix: 'TS.',
+    bylineName: 'TS. Lập', // dòng "Duyệt nội dung" trên trang sản phẩm; schema vẫn ghi họ tên đầy đủ
     role: 'Cố vấn kỹ thuật sản phẩm dầu nhớt (cộng tác viên)',
     degree: 'Tiến sĩ',
     affiliation: 'Trường Đại học Giao thông vận tải, Bộ môn Kỹ thuật ô tô và An toàn giao thông, Khoa Cơ khí',
@@ -142,6 +145,10 @@ export const NHAN_SU: NhanSu[] = [
     id: 'nguyen-thi-hong',
     name: 'Nguyễn Thị Hồng',
     bylineName: 'Ms. Hồng',
+    // Chờ chị Hồng gửi (12/10/2026): ảnh chân dung, trang cá nhân, số điện thoại. Có rồi thì bỏ // và điền:
+    // photo: '/images/nhan-su/nguyen-thi-hong.webp',
+    // sameAs: ['<link trang cá nhân>'],
+    // telephone: '<số điện thoại>',
     role: 'Quản lý bán hàng',
     desc: 'Phụ trách quản lý bán hàng, hóa đơn và các thủ tục liên quan.',
     knowsAbout: ['Giá bán dầu nhớt công nghiệp', 'Báo giá và hợp đồng mua bán', 'Hóa đơn, chứng từ bán hàng'],
@@ -205,6 +212,7 @@ export function personSchema(p: NhanSu) {
     ...(p.knowsAbout ? { knowsAbout: p.knowsAbout } : {}),
     ...(p.sameAs ? { sameAs: p.sameAs } : {}),
     ...(p.email ? { email: p.email } : {}),
+    ...(p.telephone ? { telephone: p.telephone } : {}),
     ...(p.publications
       ? { workExample: p.publications.map((x) => ({ '@type': 'CreativeWork', name: x.title, datePublished: String(x.year), description: x.venue })) }
       : {}),
