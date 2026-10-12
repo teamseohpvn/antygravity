@@ -24,6 +24,8 @@ export const BUSINESS = {
   country: 'VN',
   logo: '/favicon.svg',
   image: '/images/hero-trang-chu.webp',
+  // Hồ sơ Google Business Profile chính (đã xác minh, kiểm tra 03/10/2026).
+  gbpUrl: 'https://www.google.com/maps?cid=7563996296023599602',
 };
 
 export const ADDRESS_TEXT = `${BUSINESS.streetAddress}, ${BUSINESS.locality}, ${BUSINESS.region}`;
@@ -44,6 +46,7 @@ export const POLICY_LINKS = [
   { href: '/privacy-policy', label: 'Chính sách bảo mật', rel: 'privacy-policy' },
   { href: '/terms-of-service', label: 'Điều khoản sử dụng', rel: 'terms-of-service' },
   { href: '/tuy-chon-cookie', label: 'Tùy chọn cookie' },
+  { href: '/quy-trinh-bien-tap', label: 'Quy trình biên soạn nội dung' },
 ];
 export const BRANDS = ['Shell', 'Castrol', 'Mobil', 'TotalEnergies', 'ENEOS', 'EMI', 'VHP', 'XONE'];
 
@@ -127,6 +130,8 @@ export function organizationSchema() {
         availableLanguage: 'vi',
         url: absUrl('/contact'),
       },
+      sameAs: [BUSINESS.gbpUrl],
+      publishingPrinciples: absUrl('/quy-trinh-bien-tap'),
       knowsAbout: ['Dầu thủy lực', 'Dầu bánh răng', 'Mỡ bôi trơn công nghiệp', 'Dầu máy nén khí', 'Dầu truyền nhiệt'],
     },
     {
@@ -140,8 +145,14 @@ export function organizationSchema() {
       telephone,
       address,
       areaServed: ['Hải Phòng', 'Bắc Ninh', 'Hưng Yên', 'Quảng Ninh', 'Hà Nội'].map((name) => ({ '@type': 'AdministrativeArea', name })),
-      // TODO: thêm geo (tọa độ ghim Google Maps), openingHoursSpecification (giờ làm việc thật),
-      // sameAs (Google Business Profile, Facebook, Zalo OA) khi có. Không điền giá trị đoán.
+      // Giờ mở cửa theo hồ sơ Google Business Profile (03/10/2026).
+      openingHoursSpecification: [
+        { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '17:00' },
+        { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' },
+      ],
+      hasMap: BUSINESS.gbpUrl,
+      sameAs: [BUSINESS.gbpUrl],
+      // TODO: thêm geo (tọa độ ghim Google Maps), Facebook, Zalo OA vào sameAs khi có. Không điền giá trị đoán.
     },
   ];
 }

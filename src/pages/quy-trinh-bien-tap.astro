@@ -1,0 +1,72 @@
+---
+// Trang mô tả cách biên soạn, kiểm duyệt và cập nhật nội dung (schema Organization.publishingPrinciples trỏ về đây).
+// Chỉ ghi quy trình đang làm thật; đổi quy trình thì sửa trang này và ngày updated.
+import PolicyPage from '../components/PolicyPage.astro';
+import { BUSINESS, LEGAL_NAME } from '../lib/site';
+import { DEFAULT_REVIEWER_ID, displayName, personUrl, timNhanSu } from '../lib/nhan-su';
+
+const kyThuat = timNhanSu(DEFAULT_REVIEWER_ID)!;
+const blog = timNhanSu('bui-huy-tien');
+const banHang = timNhanSu('nguyen-thi-hong')!;
+---
+
+<PolicyPage
+  path="/quy-trinh-bien-tap"
+  title="Quy trình biên soạn và rà soát nội dung"
+  seoTitle="Quy Trình Biên Soạn, Kiểm Duyệt và Cập Nhật Nội Dung – Dầu Công Nghiệp HP"
+  description="Ai viết, ai kiểm duyệt nội dung trên website Dầu Công Nghiệp HP: đối chiếu TDS của hãng, tiêu chuẩn ASTM/ISO/TCVN, cách lập khoảng giá, ghi ngày cập nhật và sửa lỗi."
+  updated="2026-10-12"
+>
+  <p>
+    Trang này mô tả cách {LEGAL_NAME} viết, kiểm duyệt và cập nhật nội dung trên website: trang sản phẩm, bảng giá và bài hướng dẫn kỹ thuật.
+  </p>
+
+  <h2>1. Ai chịu trách nhiệm nội dung</h2>
+  <ul>
+    <li>
+      <strong>Trang sản phẩm và phần kỹ thuật của bảng giá:</strong> <a href={personUrl(kyThuat)}>{displayName(kyThuat)}</a>, {kyThuat.position ? kyThuat.position.charAt(0).toLowerCase() + kyThuat.position.slice(1) : kyThuat.affiliation}, cộng tác viên cố vấn kỹ thuật của HT VINA.
+    </li>
+    {blog && (
+      <li>
+        <strong>Bài hướng dẫn về máy ép nhựa và hệ thủy lực:</strong> <a href={personUrl(blog)}>{displayName(blog)}</a>, giảng viên Trường Đại học Giao thông vận tải, cộng tác viên của HT VINA.
+      </li>
+    )}
+    <li><strong>Giá trong bảng giá:</strong> phòng bán hàng cập nhật, người phụ trách là <a href={personUrl(banHang)}>{displayName(banHang)}</a>, {banHang.role.toLowerCase()}.</li>
+  </ul>
+  <p>Mỗi trang ghi tên người đứng tên ở đầu trang, kèm liên kết tới hồ sơ có học vị và nơi công tác.</p>
+
+  <h2>2. Kiểm tra thông số kỹ thuật</h2>
+  <ul>
+    <li>Thông số sản phẩm chép từ bảng thông số kỹ thuật (TDS) hoặc catalog bản mới nhất của hãng. Trang sản phẩm ghi rõ phương pháp thử của từng chỉ tiêu.</li>
+    <li>Phương pháp thử được đối chiếu với công bố gốc của ASTM, ISO và tiêu chuẩn TCVN tương đương (tra trên cổng tiêu chuẩn quốc gia VSQI).</li>
+    <li>Mã nào chưa có TDS công khai thì trang ghi rõ và gửi TDS kèm báo giá, không tự điền thông số.</li>
+    <li>Khuyến cáo trong sổ tay thiết bị và của nhà sản xuất dầu được ưu tiên hơn nội dung trên website.</li>
+  </ul>
+
+  <h2>3. Cách lập bảng giá</h2>
+  <ul>
+    <li>Website chỉ đăng <strong>khoảng giá tham khảo</strong>, ghi rõ đã hay chưa gồm VAT. Giá chính thức nằm trong báo giá gửi riêng cho từng khách.</li>
+    <li>Phòng bán hàng rà soát bảng mỗi khi hãng đổi giá và ít nhất mỗi tháng. Ngày rà soát ghi ngay đầu bảng giá.</li>
+  </ul>
+
+  <h2>4. Nguồn số liệu và ý kiến người dùng</h2>
+  <ul>
+    <li>Số liệu thị trường, tiêu chuẩn và khuyến cáo của hãng đều ghi nguồn và liên kết tới bản gốc ngay trong bài.</li>
+    <li>Ý kiến người dùng lấy từ diễn đàn hoặc từ khách hàng được ghi rõ nguồn. Chúng tôi không dựng khảo sát hay lời chứng thực.</li>
+  </ul>
+
+  <h2>5. Ngày đăng, ngày cập nhật và sửa lỗi</h2>
+  <ul>
+    <li>Ngày đăng là ngày trang lên web lần đầu và không đổi. Ngày cập nhật chỉ đổi khi nội dung thay đổi thực chất.</li>
+    <li>
+      Nếu thấy thông tin sai, vui lòng báo qua hotline / Zalo <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a> hoặc trang <a href="/contact">Liên hệ</a>.
+      Chúng tôi kiểm tra lại với TDS hoặc nguồn gốc, sửa trang và ghi ngày cập nhật mới.
+    </li>
+  </ul>
+
+  <h2>6. Quan hệ với các hãng dầu</h2>
+  <p>
+    HT VINA là đơn vị kinh doanh dầu nhớt và mỡ bôi trơn công nghiệp, bán nhiều thương hiệu, và là đại lý của VHP. Các thương hiệu không trả tiền để được
+    nhắc tới hay xếp hạng trên website. Khi so sánh các hãng, chúng tôi dựa trên TDS và nguồn công khai đã dẫn.
+  </p>
+</PolicyPage>
