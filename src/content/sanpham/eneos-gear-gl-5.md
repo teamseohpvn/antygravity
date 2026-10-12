@@ -44,10 +44,7 @@ warnings:
 storage: "Để nơi khô ráo, có mái che, tránh nắng trực tiếp. Phuy để ngoài trời nên đặt nằm ngang."
 
 images:
-  - { src: "/images/san-pham/eneos-gear-gl-5-90-phuy-200l.webp", alt: "Phuy 200 lít dầu cầu ENEOS Gear Oil GL-5 SAE 90 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/eneos-gear-gl-5-90-can-18l.webp", alt: "Can 18 lít dầu cầu ENEOS Gear Oil GL-5 90" }
-  - { src: "/images/san-pham/eneos-gear-gl-5-80w-90-thung.webp", alt: "Thùng dầu hộp số ENEOS Gear Oil GL-5 80W-90" }
-  - { src: "/images/san-pham/eneos-gear-gl-5-nhan.webp", alt: "Nhãn ENEOS Gear Oil GL-5 ghi cấp API GL-5 và cấp độ nhớt SAE" }
+  - { src: "/images/san-pham/eneos-gear-gl-5-80w-90-can-phuy.webp", alt: "Can dầu bánh răng ENEOS Gear Oil API GL-5 SAE 80W-90 và phuy ENEOS" }
 
 doc_gia: "Trang này dành cho đội xe, máy công trình có sổ tay ghi dầu cầu GL-5 cấp 80W-90 hoặc SAE 90."
 tom_tat:

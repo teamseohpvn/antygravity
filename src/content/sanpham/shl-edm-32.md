@@ -39,8 +39,9 @@ warnings:
 storage: "Để phuy trong nhà, xa nguồn lửa và nguồn nhiệt, đậy kín nắp."
 
 images:
-  - { src: "/images/san-pham/shl-edm-32-phuy-200l.webp", alt: "Phuy 200 lít dầu xung điện SHL EDM 32 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/shl-edm-32-nhan.webp", alt: "Nhãn phuy dầu máy xung điện SHL EDM 32" }
+  - { src: "/images/san-pham/shl-edm-32-phuy-kho.webp", alt: "Phuy dầu SHL Lubricants xếp trên pallet, phuy dầu EDM ghi tay trên nắp" }
+  - { src: "/images/san-pham/shl-edm-32-phuy.webp", alt: "Phuy dầu SHL Lubricants" }
+  - { src: "/images/san-pham/shl-edm-32-xo.webp", alt: "Xô dầu SHL Lubricants" }
 
 doc_gia: "Trang này dành cho xưởng khuôn mẫu, gia công chính xác có máy xung điện (EDM) cần dầu điện môi không clo."
 tom_tat:

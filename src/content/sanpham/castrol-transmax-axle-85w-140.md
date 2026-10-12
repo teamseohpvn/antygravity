@@ -43,8 +43,7 @@ warnings:
 storage: "Để dưới mái che. Phuy để ngoài trời phải đặt nằm ngang để nước mưa không thấm vào. Không để nơi trên 60 °C hoặc phơi nắng gắt."
 
 images:
-  - { src: "/images/san-pham/castrol-transmax-axle-85w-140-phuy-209l.webp", alt: "Phuy 209 lít dầu cầu Castrol Transmax Axle 85W-140 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/castrol-transmax-axle-85w-140-nhan.webp", alt: "Nhãn phuy Castrol Transmax Axle 85W-140 ghi cấp API GL-5" }
+  - { src: "/images/san-pham/castrol-transmax-axle-85w-140-phuy-xo.webp", alt: "Phuy và xô dầu nhớt Castrol (ảnh minh họa bao bì)" }
 
 doc_gia: "Trang này dành cho đội xe tải nặng, xe ben, máy công trình đang dùng hoặc cần đặt dầu cầu Castrol GL-5 85W-140 theo phuy."
 tom_tat:
