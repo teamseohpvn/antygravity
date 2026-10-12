@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-002"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Castrol Transmax Axle 85W-140"
 seo_title: "Castrol Transmax Axle 85W-140 – Dầu Cầu GL-5 Phuy 209 L"
 description: "Dầu cầu Castrol Transmax Axle 85W-140 đạt API GL-5 cho cầu xe tải, xe ben, vi sai hypoid tải nặng. Phuy 209 L, có CO/CQ, VAT, giao từ kho Hải Phòng."
@@ -45,7 +45,8 @@ images:
   - { src: "/images/san-pham/castrol-transmax-axle-85w-140-nhan.webp", alt: "Nhãn phuy Castrol Transmax Axle 85W-140 ghi cấp API GL-5" }
 
 tags: ["api-gl-5", "sae-85w-140", "dau-cau", "castrol"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Castrol Transmax Axle 85W-140** là dầu cầu đa cấp của Castrol, đạt cấp **API GL-5**. Dầu dùng cho cầu xe, vi sai và hộp số yêu cầu dầu GL-5 cấp nhớt 85W-140, chủ yếu là xe tải nặng, xe ben và máy công trình. Chúng tôi có hàng **phuy 209 L**, kèm CO/CQ, hóa đơn VAT, giao từ kho TP Hải Phòng (Hải Dương cũ).

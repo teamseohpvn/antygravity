@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-005"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Mỡ VHP Caxilium Grease No2, No3"
 seo_title: "Mỡ VHP Caxilium Grease No2, No3 – Mỡ Kháng Nước"
 description: "Mỡ VHP Caxilium Grease No2, No3 gốc lithium-canxi, kháng nước và muối, làm việc -10 đến 110 °C, cho đầu trục, sát xi, máy nông nghiệp. Phuy 180 kg."
@@ -54,7 +54,8 @@ images:
   - { src: "/images/san-pham/vhp-caxilium-grease-nhan.webp", alt: "Nhãn phuy mỡ VHP Caxilium Grease ghi cấp No2" }
 
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "khang-nuoc", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Caxilium Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. Mỡ được làm cho những chỗ bôi trơn hở, hay gặp nước và nước muối. Cấp No2 sản xuất theo tiêu chuẩn cơ sở TCCS 52:2023/VHP.

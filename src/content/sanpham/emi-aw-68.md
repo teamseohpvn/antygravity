@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-011"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/emi-aw-68/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Thủy Lực EMI AW 68"
 seo_title: "Dầu Thủy Lực EMI AW 68 – Chống Mài Mòn | Phuy 200 L, Xô"
 description: "Dầu thủy lực EMI AW 68 gốc khoáng, phụ gia chống mài mòn, ISO VG 68 cho máy ép, hệ thủy lực áp cao. Phuy 200 L và xô có sẵn, giao từ Hải Phòng."
@@ -40,7 +40,8 @@ images:
   - { src: "/images/san-pham/emi-aw-68-nhan.webp", alt: "Nhãn dầu thủy lực EMI AW 68 ghi cấp độ nhớt ISO VG 68" }
 
 tags: ["iso-vg-68", "chong-mai-mon", "emi"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **EMI AW 68** là dầu thủy lực chống mài mòn cấp **ISO VG 68**, pha từ dầu gốc khoáng chất lượng cao với hệ phụ gia chống mài mòn. Theo nhà cung cấp, phụ gia thuộc nhóm gốc kẽm (ZDDP), loại phổ biến nhất cho dầu thủy lực HM. Dầu hợp với hệ thống chạy áp cao, nhiệt độ làm việc ổn định.

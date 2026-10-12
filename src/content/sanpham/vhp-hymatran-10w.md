@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-006"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "VHP Hymatran Oil 10W"
 seo_title: "VHP Hymatran 10W – Dầu Truyền Động, Thủy Lực Máy Công Trình"
 description: "Dầu VHP Hymatran 10W cho hộp số, bộ biến mô, thủy lực xe nâng, máy xúc, máy nông nghiệp. Đáp ứng Caterpillar TO-2. Phuy 200 L, xô 18 L, giao Hải Phòng."
@@ -51,7 +51,8 @@ images:
   - { src: "/images/san-pham/vhp-hymatran-10w-nhan.webp", alt: "Nhãn VHP Hymatran Oil 10W ghi cấp SAE 10W" }
 
 tags: ["sae-10w", "caterpillar-to-2", "dau-truyen-dong", "xe-nang", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Hymatran Oil 10W** là dầu đơn cấp SAE 10W do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hộp số, bộ biến mô và hệ thủy lực của máy công trình khi nhà sản xuất máy yêu cầu dầu cấp nhớt 10W. Theo VHP, dầu đáp ứng **API CF/SF, ACEA E2, Caterpillar TO-2, ZF TE-ML 03B** và thử bơm **Vickers 35VQ25**. HT VINA là **đại lý dầu mỡ VHP**, có hàng **phuy 200 L** và **xô 18 L** tại kho TP Hải Phòng (Hải Dương cũ).

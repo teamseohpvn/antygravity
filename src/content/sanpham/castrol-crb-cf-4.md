@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-005"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Castrol CRB CF-4 20W-50, 15W-40"
 seo_title: "Castrol CRB CF-4 20W-50, 15W-40 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel Castrol CRB API CF-4 20W-50 và 15W-40 cho xe tải, máy công trình turbo hoặc hút khí tự nhiên. Xô 18 L, phuy 209 L, có CO/CQ, VAT."
@@ -50,7 +50,8 @@ images:
   - { src: "/images/san-pham/castrol-crb-cf-4-nhan.webp", alt: "Nhãn phuy Castrol CRB ghi cấp API CF-4 và cấp độ nhớt" }
 
 tags: ["api-cf-4", "sae-20w-50", "sae-15w-40", "castrol", "dong-co-diesel"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Castrol CRB CF-4** là dầu động cơ diesel đa dụng cho xe và máy tải nặng, đạt cấp **API CF-4**. Dầu dùng được cho động cơ diesel hút khí tự nhiên và động cơ có turbo tăng áp, kể cả khi chạy bằng nhiên liệu diesel chất lượng không đều. Dòng này có hai cấp **20W-50** và **15W-40**. Ngoài thị trường, nhiều người vẫn gọi dòng này là "CRB Turbo".

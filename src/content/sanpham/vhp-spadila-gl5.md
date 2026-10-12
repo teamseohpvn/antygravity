@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-005"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "VHP Spadila GL-5 80W-90, 85W-140"
 seo_title: "VHP Spadila GL-5 80W-90, 85W-140 – Dầu Cầu Xe Tải"
 description: "Dầu cầu VHP Spadila GL-5 80W-90 và 85W-140 cho cầu hypoid, vi sai xe tải, xe ben. Xô 18 L, phuy 200 L, có CO/CQ, VAT, giao từ kho Hải Phòng."
@@ -51,7 +51,8 @@ images:
   - { src: "/images/san-pham/vhp-spadila-gl5-phuy-200l.webp", alt: "Phuy 200 lít dầu cầu VHP Spadila GL-5" }
 
 tags: ["api-gl-5", "sae-80w-90", "sae-85w-140", "dau-cau", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Spadila GL-5** là dầu cầu, dầu hộp số ô tô do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu pha từ dầu gốc khoáng tinh chế với phụ gia cực áp, đạt cấp **API GL-5**, dùng cho cầu xe bánh răng hypoid chịu tải nặng. HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dương cũ) có hai cấp **80W-90** và **85W-140**, dạng **xô 18 L** và **phuy 200 L**.

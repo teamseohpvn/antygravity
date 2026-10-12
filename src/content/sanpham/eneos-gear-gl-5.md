@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-001"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "ENEOS Gear Oil GL-5 80W-90, 90"
 seo_title: "ENEOS Gear GL-5 80W-90, 90 – Dầu Cầu, Hộp Số Xe Tải"
 description: "Dầu cầu ENEOS Gear Oil GL-5 80W-90 và SAE 90 cho cầu hypoid, hộp số tay xe tải, máy công trình. Can 18 L, phuy 200 L, có CO/CQ, giao từ kho Hải Phòng."
@@ -48,7 +48,8 @@ images:
   - { src: "/images/san-pham/eneos-gear-gl-5-nhan.webp", alt: "Nhãn ENEOS Gear Oil GL-5 ghi cấp API GL-5 và cấp độ nhớt SAE" }
 
 tags: ["api-gl-5", "sae-90", "sae-80w-90", "dau-cau", "eneos"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **ENEOS Gear Oil GL-5** là dầu cầu, dầu hộp số chịu cực áp của ENEOS, đạt cấp **API GL-5**. Dầu dùng cho cầu sau bánh răng hypoid và hộp số tay tải nặng của xe tải, xe khách và máy công trình. Chúng tôi có hai cấp: **SAE 90** (can 18 L, phuy 200 L) và **80W-90** (đóng thùng). Hàng có CO/CQ, hóa đơn VAT và giao từ kho TP Hải Phòng (Hải Dương cũ).

@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-009"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "TotalEnergies Rubia XT 20W-50"
 seo_title: "Total Rubia XT 20W-50 CF-4 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel TotalEnergies Rubia XT 20W-50 đạt API CF-4/SJ cho xe tải, máy công trình chạy nơi nóng. Phuy 200 L, có CO/CQ, VAT, giao từ Hải Phòng."
@@ -46,7 +46,8 @@ images:
   - { src: "/images/san-pham/total-rubia-xt-nhan.webp", alt: "Nhãn phuy Rubia XT 20W-50 ghi cấp API CF-4/SJ" }
 
 tags: ["api-cf-4", "sae-20w-50", "totalenergies", "dong-co-diesel"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **TotalEnergies Rubia XT 20W-50** là dầu động cơ diesel gốc khoáng đa cấp cho xe chạy đường bộ, đạt **API CF-4/SJ** và đáp ứng yêu cầu của Hino. Hãng phát triển dòng này cho mọi động cơ diesel có hoặc không có turbo, làm việc nặng quanh năm và ở nơi nhiệt độ môi trường cao.

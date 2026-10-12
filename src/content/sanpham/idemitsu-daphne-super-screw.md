@@ -1,6 +1,6 @@
 ---
 ma: "SP-MNK-001"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Idemitsu Daphne Super Screw 32, 46"
 seo_title: "Idemitsu Daphne Super Screw 32, 46 – Dầu Máy Nén Khí Trục Vít"
 description: "Dầu máy nén khí trục vít Idemitsu Daphne Super Screw 32 và 46, dầu gốc hydro hóa, bền oxy hóa cao, ít cặn. Thùng 20 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -49,7 +49,8 @@ images:
   - { src: "/images/san-pham/idemitsu-daphne-super-screw-nhan.webp", alt: "Nhãn thùng Idemitsu Daphne Super Screw ghi cấp độ nhớt" }
 
 tags: ["iso-vg-32", "iso-vg-46", "may-nen-khi-truc-vit", "idemitsu"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Idemitsu Daphne Super Screw** là dầu chuyên dùng cho **máy nén khí trục vít ngâm dầu**. Dầu dùng **dầu gốc paraffin hydro hóa, biến tính**, kết hợp phụ gia chống oxy hóa nhiệt độ cao, chất khử hoạt tính đồng, chống gỉ và chống bọt. Dầu chịu được các tác nhân hay làm hỏng dầu máy nén khí trong nhà xưởng: sương dầu cắt gọt, dầu cũ còn sót lại và bụi bẩn lọt vào từ bên ngoài.

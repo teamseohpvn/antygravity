@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-007"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/emi-gear-ep-gl-5/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Cầu EMI Gear EP GL-5 85W-140, 80W-90"
 seo_title: "Dầu Cầu EMI Gear EP 85W-140, 80W-90 API GL-5 – Xô"
 description: "Dầu cầu, dầu bánh răng EMI Gear EP API GL-5 cấp 85W-140 và 80W-90 cho cầu xe tải, xe cơ giới chịu tải lớn. Xô có sẵn, có VAT, giao từ Hải Phòng."
@@ -40,7 +40,8 @@ images:
   - { src: "/images/san-pham/emi-gear-ep-gl-5-nhan.webp", alt: "Nhãn xô dầu cầu EMI Gear EP ghi cấp API GL-5 và SAE" }
 
 tags: ["api-gl-5", "sae-85w-140", "sae-80w-90", "emi", "dau-cau"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **EMI Gear EP** là dầu cầu, dầu bánh răng truyền động chịu cực áp đạt cấp **API GL-5**. Kho chúng tôi có hai cấp nhớt: **SAE 85W-140** cho cầu xe tải nặng và **SAE 80W-90** cho cầu, hộp số xe tải vừa và xe cơ giới. Dầu dùng cho ô tô, xe cơ giới chịu áp lực cao và tải lớn.

@@ -1,6 +1,6 @@
 ---
 ma: "SP-CD-001"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Dầu Cách Điện VHP Unitrans Oil (Hi-Volt)"
 seo_title: "VHP Unitrans Oil Hi-Volt – Dầu Biến Thế IEC 60296"
 description: "Dầu cách điện VHP Unitrans Oil (Hi-Volt) đạt IEC 60296:2020, có ức chế oxy hóa, cho máy biến áp, máy cắt. Phuy 210 L, xô 18 L, CO/CQ, giao Hải Phòng."
@@ -58,7 +58,8 @@ images:
   - { src: "/images/san-pham/vhp-unitrans-oil-nhan.webp", alt: "Nhãn dầu cách điện VHP Unitrans Oil ghi tiêu chuẩn IEC 60296" }
 
 tags: ["dau-bien-the", "iec-60296", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Unitrans Oil (Hi-Volt)** là dầu cách điện gốc khoáng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu đạt **IEC 60296:2020, loại A mã I**, tức là dầu có pha phụ gia ức chế oxy hóa. Dầu dùng cho máy biến áp, máy cắt và các thiết bị điện ngâm dầu, loại kín hay loại hở đều được.

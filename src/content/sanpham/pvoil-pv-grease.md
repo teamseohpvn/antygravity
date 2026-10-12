@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-008"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Mỡ PVOIL PV Grease No2, No3"
 seo_title: "Mỡ PV Grease No2, No3 PVOIL – Mỡ Bò Đa Dụng Phuy"
 description: "Mỡ đa dụng PV Grease No2, No3 của PVOIL Lube, dầu gốc khoáng, điểm nhỏ giọt tối thiểu 140 °C, cho vòng bi, khớp, xe và máy công nghiệp. Hàng phuy."
@@ -46,7 +46,8 @@ images:
   - { src: "/images/san-pham/pvoil-pv-grease-nhan.webp", alt: "Nhãn phuy mỡ PV Grease của PVOIL Lube ghi cấp NLGI" }
 
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "pvoil"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **PV Grease** là mỡ bôi trơn đa dụng của Công ty CP Dầu nhờn PVOIL (PVOIL Lube), thuộc Tổng công ty Dầu Việt Nam. Trên web hãng, dòng này có tên **PV Grease Lithium**, gồm ba cấp NLGI 1, 2 và 3. Mỡ màu vàng, pha từ dầu gốc khoáng và có điểm nhỏ giọt tối thiểu 140 °C.

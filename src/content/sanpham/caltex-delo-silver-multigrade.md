@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-010"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Caltex Delo Silver Multigrade 20W-50"
 seo_title: "Caltex Delo Silver Multigrade 20W-50 CF-4 – Dầu Diesel"
 description: "Dầu động cơ diesel Caltex Delo Silver Multigrade SAE 20W-50 đạt API CF-4, CF/SG cho xe tải, máy công trình, máy phát. Phuy 208 L, CO/CQ, giao từ Hải Phòng."
@@ -46,7 +46,8 @@ images:
   - { src: "/images/san-pham/caltex-delo-silver-multigrade-nhan.webp", alt: "Nhãn phuy Caltex Delo Silver Multigrade SAE 20W-50 ghi cấp API CF-4" }
 
 tags: ["api-cf-4", "sae-20w-50", "caltex", "dong-co-diesel"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Caltex Delo Silver Multigrade SAE 20W-50** là dầu động cơ diesel tải nặng đa cấp của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho động cơ yêu cầu cấp **API CF-4, CF hoặc SG**: xe tải, máy công trình, máy kéo, máy phát điện và động cơ diesel trên tàu thuyền. Dầu dùng chung được cho động cơ xăng 4 kỳ trong đội xe hỗn hợp.

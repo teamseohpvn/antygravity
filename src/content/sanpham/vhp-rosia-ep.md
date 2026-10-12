@@ -1,6 +1,6 @@
 ---
 ma: "SP-BR-002"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "VHP Rosia EP 100, 150, 220, 320"
 seo_title: "VHP Rosia EP 100, 150, 220, 320 – Dầu Bánh Răng Cực Áp"
 description: "Dầu bánh răng công nghiệp VHP Rosia EP 100, 150, 220, 320 chịu cực áp, đạt DIN 51517-3 CLP. Xô 18 L, phuy 200 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -53,7 +53,8 @@ images:
   - { src: "/images/san-pham/vhp-rosia-ep-nhan.webp", alt: "Nhãn xô VHP Rosia EP ghi cấp độ nhớt và tiêu chuẩn" }
 
 tags: ["iso-vg-100", "iso-vg-150", "iso-vg-220", "iso-vg-320", "cuc-ap", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Rosia EP** là dầu bánh răng công nghiệp chịu cực áp (EP) do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hộp giảm tốc kín tải nặng. Theo VHP, dầu đáp ứng ISO 12925-1 loại CKC và CKD, DIN 51517-3 CLP, AGMA 9005-F16 EP và AIST 224.

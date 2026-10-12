@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-009"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/vhp-p140/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Cầu VHP P140"
 seo_title: "Dầu Cầu VHP P140 – Dầu Bánh Răng SAE 140 | Xô 18 L"
 description: "Dầu cầu VHP P140 (SAE 140) bôi trơn hộp số sàn, vi sai, cầu xe chịu tải nặng, giảm ma sát và mài mòn bánh răng. Xô 18 L có sẵn, giao từ Hải Phòng."
@@ -38,7 +38,8 @@ images:
   - { src: "/images/san-pham/vhp-p140-nhan.webp", alt: "Nhãn xô dầu cầu VHP P140 ghi cấp SAE 140" }
 
 tags: ["sae-140", "dau-cau", "vhp"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP P140** là dầu cầu, dầu bánh răng ô tô cấp độ nhớt **SAE 140** do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu bôi trơn hộp số sàn, vi sai và cầu xe chịu tải nặng, giảm ma sát và chống mài mòn bánh răng.

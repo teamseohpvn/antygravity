@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-011"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "VHP Diamond Turbo 20W-50"
 seo_title: "VHP Diamond Turbo 20W-50 CF-4 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel VHP Diamond Turbo 20W-50 đạt API CF-4/SJ cho xe tải, máy công trình có turbo, máy phát. Phuy 200 L, sản xuất tại Hải Dương cũ."
@@ -48,7 +48,8 @@ images:
   - { src: "/images/san-pham/vhp-diamond-turbo-nhan.webp", alt: "Nhãn phuy VHP Diamond Turbo ghi cấp API CF-4/SJ và SAE 20W-50" }
 
 tags: ["api-cf-4", "sae-20w-50", "vhp", "dong-co-diesel"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Diamond Turbo** là dầu động cơ diesel tải nặng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu đạt cấp **API CF-4/SJ**, dùng cho động cơ diesel 4 thì có turbo tăng áp trên xe vận tải, xe thi công, máy nông nghiệp, tàu thuyền và máy phát điện. VHP làm hai cấp 15W-40 và 20W-50.

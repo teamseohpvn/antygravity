@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-005"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Cosmo Hydro AW 68"
 seo_title: "Cosmo Hydro AW 68 – Dầu Thủy Lực Nhật Bản Phuy 200L"
 description: "Dầu thủy lực Cosmo Hydro AW 68 chống mài mòn, tuổi thọ dài, tương đương ISO 11158 HM, DIN 51524-2 HLP. Phuy 200 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -50,7 +50,8 @@ images:
   - { src: "/images/san-pham/cosmo-hydro-aw-68-nhan.webp", alt: "Nhãn phuy Cosmo Hydro AW 68 ghi cấp độ nhớt và loại dầu" }
 
 tags: ["iso-vg-68", "chong-mai-mon", "cosmo"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Cosmo Hydro AW 68** là dầu thủy lực chống mài mòn loại tuổi thọ dài của Cosmo Oil Lubricants (Nhật Bản). Theo hãng, dầu tương đương các tiêu chuẩn ISO 11158 HM, ASTM D6158 HM và DIN 51524-2 HLP. Dầu cũng tương đương tiêu chuẩn dầu thủy lực của hai hãng bơm Denison và Eaton. Điểm mạnh của dầu là ít tạo cặn khi dùng lâu và chịu được nhiệt độ, áp suất cao.
