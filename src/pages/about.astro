@@ -132,10 +132,11 @@ const initials = (name: string) => name.split(' ').slice(-2).map((w) => w[0]).jo
 
       <h2 id="doi-ngu">Đội ngũ</h2>
       <p>
-        Nội dung kỹ thuật trên website, gồm thông số, khuyến cáo sử dụng và hướng dẫn kiểm tra dầu, do chuyên viên tư vấn chất
-        lượng kiểm duyệt trước khi đăng.
+        Nội dung kỹ thuật trên website, gồm thông số, khuyến cáo sử dụng và hướng dẫn kiểm tra dầu, do cố vấn kỹ thuật sản phẩm
+        kiểm duyệt trước khi đăng (xem <a href="/quy-trinh-bien-tap">quy trình biên soạn</a>).
       </p>
-      <div class="team">
+      {/* data-nosnippet: không lấy thông tin nhân sự làm đoạn trích trên kết quả tìm kiếm; trang vẫn index bình thường. */}
+      <div class="team" data-nosnippet>
         {NHAN_SU.map((p) => (
           <section class="member" id={p.id}>
             {p.photo
