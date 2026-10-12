@@ -8,7 +8,7 @@ description: "Thay dầu thủy lực đúng cách trong 8 bước: xả dầu, 
 keywords: ["hướng dẫn thay dầu thủy lực", "thay dầu thủy lực", "cách thay dầu thủy lực", "thay nhớt thủy lực", "súc rửa hệ thống thủy lực", "dầu thủy lực 68", "báo giá dầu thủy lực"]
 category: "dau-thuy-luc"
 related_products: ["eneos-super-hyrando-68", "castrol-hyspin-aws-68", "may-do-do-nhot-cam-tay-lnd-1", "bo-kit-test-tan-biolab-tlb"]
-author: "bui-huy-tien"
+author: "nguyen-thiet-lap"
 date: "2026-10-09"
 updated: "2026-10-09"
 tags: ["thay dầu", "dầu thủy lực", "bảo trì"]

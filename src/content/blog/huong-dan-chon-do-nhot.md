@@ -1,5 +1,6 @@
 ---
 active: true
+author: "nguyen-thiet-lap"
 title: "Hướng Dẫn Chọn Độ Nhớt Dầu Thủy Lực Cho Máy Ép Nhựa"
 seo_title: "Chọn Độ Nhớt Dầu Thủy Lực Máy Ép Nhựa: 32, 46 Hay 68?"
 description: "Chọn độ nhớt dầu thủy lực VG 32, 46 hay 68 cho máy ép nhựa: vì sao độ nhớt quyết định hiệu suất bơm, và nên dùng cấp nào theo nhiệt độ môi trường, cường độ làm việc của máy."

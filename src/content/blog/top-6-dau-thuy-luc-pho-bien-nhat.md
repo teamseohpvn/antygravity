@@ -9,7 +9,7 @@ keywords: ["top dầu thủy lực", "dầu thủy lực tốt nhất", "dầu t
 category: "dau-thuy-luc"
 duong_dan: "/top-6-dau-thuy-luc-2026"
 related_products: ["castrol-hyspin-aws-68", "eneos-super-hyrando-68"]
-author: "bui-huy-tien"
+author: "nguyen-thiet-lap"
 reviewed_by: "nguyen-thiet-lap"
 citations:
   - "https://www.lubesngreases.com/magazine/19_2/vrooming-in-vietnam/"
