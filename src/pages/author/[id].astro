@@ -1,6 +1,7 @@
 ---
 // Trang hồ sơ tác giả: người kiểm duyệt nội dung kỹ thuật (có bio trong src/lib/nhan-su.ts).
 // Trang sản phẩm link về đây từ dòng "Tác giả"; schema ProfilePage + Person.
+// noindex, follow (12/10/2026): không để hồ sơ cá nhân hiện riêng trên Google; Google vẫn đọc được trang qua link tác giả.
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getActivePosts, getActiveProducts, postPath } from '../../lib/content';
@@ -60,6 +61,7 @@ const schemaData = [
     ? `${name}, ${p.degree}, ${p.affiliation}. ${p.role} của ${LEGAL_SHORT}.`
     : `${p.name}, ${p.degree ?? ''} ${p.role} tại ${LEGAL_SHORT}. ${p.since ? `Làm chuyên môn từ năm ${p.since}. ` : ''}Kiểm duyệt thông số kỹ thuật và khuyến cáo sử dụng dầu nhớt công nghiệp trên website.`).replace(/\s+/g, ' ')}
   image={p.photo}
+  noindex
   {schemaData}
 >
   <div class="container author-page">
