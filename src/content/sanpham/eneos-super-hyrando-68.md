@@ -22,7 +22,8 @@ specs:
   - { name: "Điểm đông đặc", value: "-25 °C", method: "ASTM D6749" }
   - { name: "Chống gỉ (60 °C, 24 giờ, nước biển nhân tạo)", value: "Đạt", method: "ASTM D665" }
   - { name: "Ăn mòn tấm đồng (100 °C, 3 giờ)", value: "1", method: "ASTM D130" }
-tds_date: "ENEOS Việt Nam"
+tds_date: "bản tiếng Việt, JX Nippon Oil & Energy, 10/2015"
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 tds_url: "https://www.eneos.com.vn/en/product/super-hyrando/"
 
 packaging:
@@ -97,7 +98,7 @@ Dùng đúng cấp sổ tay máy ghi. Khi sổ tay cho phép cả hai, nhiệt �
 
 Người dùng máy công trình cũng chọn theo cách này. Trên [Heavy Equipment Forums](https://www.heavyequipmentforums.com/threads/iso-46-or-iso-68-hydraulic-fluid.107106/), sổ tay một máy xúc mini ghi ISO 46 cho thời tiết mát và ISO 68 cho thời tiết nóng. Một thành viên lâu năm nhận xét dầu 68 thường dùng ở vùng khí hậu cận nhiệt đới. Mùa hè miền Bắc nóng ẩm gần với điều kiện đó.
 
-Ở xưởng miền Bắc, nếu dầu trong bồn thường xuyên trên 55 °C, chúng tôi khuyên dùng 68, trừ khi sổ tay máy ghi khác. Cách chọn chi tiết theo loại bơm và nhiệt độ xem bài [hướng dẫn chọn cấp độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
+> **Nhận định của HT VINA:** Ở xưởng miền Bắc, nếu dầu trong bồn thường xuyên trên 55 °C, chúng tôi khuyên dùng 68, trừ khi sổ tay máy ghi khác. Cách chọn chi tiết theo loại bơm và nhiệt độ xem bài [hướng dẫn chọn cấp độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
 
 ## Bản thường hay bản SE?
 
@@ -118,7 +119,7 @@ Chọn **SE 68** khi:
 - hệ thống hay đóng cặn, ví dụ máy CNC có van tùy động;
 - máy khởi động lạnh rồi chạy nóng (SE có chỉ số độ nhớt 109 và điểm đông đặc −39 °C).
 
-Các trường hợp còn lại, bản thường đáp ứng đủ. Không châm lẫn hai bản trong cùng một bồn.
+> **Nhận định của HT VINA:** Các trường hợp còn lại, bản thường đáp ứng đủ. Không châm lẫn hai bản trong cùng một bồn.
 
 ## Super Hyrando 68 hay Castrol Hyspin AWS 68?
 
@@ -143,18 +144,18 @@ Hai mã cùng loại HM, cùng cấp 68 và cùng có sẵn tại kho HT VINA. N
 - **"Không công bố" không có nghĩa là kém.** ENEOS không đưa kết quả TOST, FZG hay phê duyệt bơm vào TDS, nên không có số để so. Castrol công bố đủ các phép thử về tuổi thọ oxy hóa và chống mài mòn bánh răng.
 - **ENEOS có biên nhiệt độ cao hơn ở hai chỉ tiêu được công bố:** điểm chớp cháy cao hơn 33 °C, điểm đông đặc thấp hơn 4 °C, chỉ số độ nhớt cao hơn một chút.
 
-Vì vậy: **chọn Castrol Hyspin AWS 68** khi sổ tay máy hoặc nhà sản xuất bơm yêu cầu phê duyệt Parker Denison, Eaton, hoặc khi bạn cần số liệu tuổi thọ dầu để lập kế hoạch bảo trì. **Chọn ENEOS Super Hyrando 68** khi sổ tay chỉ ghi HM, ISO VG 68 hay HLP 68, nhất là với máy Nhật đang dùng sẵn dầu ENEOS, để khỏi phải súc rửa khi đổi mã.
+> **Nhận định của HT VINA:** **Chọn Castrol Hyspin AWS 68** khi sổ tay máy hoặc nhà sản xuất bơm yêu cầu phê duyệt Parker Denison, Eaton, hoặc khi bạn cần số liệu tuổi thọ dầu để lập kế hoạch bảo trì. **Chọn ENEOS Super Hyrando 68** khi sổ tay chỉ ghi HM, ISO VG 68 hay HLP 68, nhất là với máy Nhật đang dùng sẵn dầu ENEOS, để khỏi phải súc rửa khi đổi mã.
 
 ## Thông số này có ý nghĩa gì khi máy chạy?
 
-Bảng thông số ở đầu trang là giá trị điển hình theo TDS. Với người vận hành, bốn điểm sau đáng quan tâm nhất.
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS. Với người vận hành, bốn điểm sau đáng quan tâm nhất.
 
 - **Độ nhớt khi nóng lên.** Chỉ số độ nhớt 104 là mức thông thường của dầu khoáng HM: dầu vẫn loãng đi khi bồn nóng, nên giữ nhiệt độ bồn ổn định là cách giữ áp suất và tốc độ xi lanh đều suốt ca. Máy cần độ nhớt ổn định hơn thì xem bản SE (chỉ số 109).
 - **Tách nước nhanh.** TCCS 14:2014 yêu cầu nước tách khỏi dầu trong không quá 30 phút ở 54 °C ([ASTM D1401](https://www.astm.org/Standards/D1401.htm)). Nhờ vậy, nước lẫn ít thường lắng xuống đáy bồn và xả ra được, thay vì quyện vào dầu.
 - **Chịu nhiệt.** Theo TDS ENEOS Nhật (IND-4001), dầu không tạo cặn kết tủa sau thử ổn định nhiệt ở 120 °C trong 70 giờ, gấp đôi mức 50–60 °C thường gặp ở xưởng. ENEOS không công bố kết quả thử [ASTM D2070](https://www.astm.org/Standards/D2070.htm) (135 °C, 168 giờ) cho mã này.
 - **Chống gỉ, không ăn mòn đồng.** Đạt thử gỉ với nước biển nhân tạo ở 60 °C trong 24 giờ, ăn mòn tấm đồng cấp 1.
 
-Hàng bán tại Việt Nam do ENEOS Việt Nam (trước đây là JX Nippon Oil & Energy Việt Nam) sản xuất tại KCN Đình Vũ, Hải Phòng, theo tiêu chuẩn cơ sở **TCCS 14:2014/NOEV-ENE**. Vì vậy trang này dùng TDS của ENEOS Việt Nam. TDS Nhật ghi độ nhớt 68,0 mm²/s và chỉ số độ nhớt 105, lệch nhẹ so với TDS Việt Nam (69,5 mm²/s và 104). Cả hai đều nằm trong khoảng TCCS cho phép: độ nhớt ở 40 °C từ 61,20 đến 74,80 mm²/s, chỉ số độ nhớt không nhỏ hơn 100.
+Hàng bán tại Việt Nam do ENEOS Việt Nam (trước đây là JX Nippon Oil & Energy Việt Nam) sản xuất tại KCN Đình Vũ, Hải Phòng, theo tiêu chuẩn cơ sở **TCCS 14:2014/NOEV-ENE**. Vì vậy trang này dùng TDS của ENEOS Việt Nam. TDS Nhật ghi độ nhớt 68,0 mm²/s và chỉ số độ nhớt 105, lệch nhẹ so với TDS Việt Nam (69,5 mm²/s và 104). Cả hai đều nằm trong khoảng TCCS cho phép: độ nhớt ở 40 °C từ 61,20 đến 74,80 mm²/s, chỉ số độ nhớt không nhỏ hơn 100. Ngay cả các tài liệu của ENEOS Việt Nam cũng lệch nhau ở vài chỉ tiêu nhỏ: [trang sản phẩm tiếng Anh](https://www.eneos.com.vn/en/product/super-hyrando/) ghi độ nhớt ở 100 °C là 9,34 mm²/s và ăn mòn đồng cấp 1a, còn Product Bulletin tiếng Việt ghi 9,03 mm²/s và cấp 1. Trang này dùng số của Product Bulletin tiếng Việt.
 
 ## Bốn lỗi khiến dầu thủy lực 68 hỏng sớm
 
@@ -198,7 +199,7 @@ Thay khi kết quả đo vượt ngưỡng, không thay theo lịch cố định
 
 Không đo thì không biết dầu còn bảo vệ bơm hay không. Thay đều mỗi năm thì có thể bỏ đi dầu còn tốt. Một kỹ sư trên Eng-Tips tính theo chi phí: với hệ từ khoảng 190 L trở lên, phân tích mẫu rẻ hơn thay dầu định kỳ.
 
-**Cách làm chúng tôi khuyên:** máy dùng phuy 200 L thì đo mỗi quý ba chỉ tiêu dưới đây, so với một mẫu Super Hyrando 68 mới của chính lô đang dùng. Bồn nhỏ thì thay theo chu kỳ trong sổ tay máy. Máy NC, CNC có van servo nên kiểm tra thêm độ sạch của dầu.
+> **Nhận định của HT VINA:** Máy dùng phuy 200 L thì đo mỗi quý ba chỉ tiêu dưới đây, so với một mẫu Super Hyrando 68 mới của chính lô đang dùng. Bồn nhỏ thì thay theo chu kỳ trong sổ tay máy. Máy NC, CNC có van servo nên kiểm tra thêm độ sạch của dầu.
 
 | Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
