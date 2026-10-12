@@ -34,38 +34,76 @@ images:
   - { src: "/images/san-pham/apex-tl-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực APEX TL 68 Quốc Trung tại kho Hải Phòng" }
   - { src: "/images/san-pham/apex-tl-68-nhan.webp", alt: "Nhãn phuy dầu thủy lực APEX TL 68" }
 
+doc_gia: "Trang này dành cho tổ bảo trì và người mua hàng đang tìm dầu thủy lực 68 chi phí thấp cho máy không yêu cầu phê duyệt hãng bơm."
+tom_tat:
+  - "**Dùng được** cho máy mà sổ tay chỉ ghi \"dầu thủy lực 68\", không ghi phê duyệt của hãng bơm."
+  - "**Hợp nhất** với máy cũ, máy hay rò rỉ phải châm dầu thường xuyên."
+  - "**Chọn mã có phê duyệt** như Castrol Hyspin AWS 68 cho bơm đời mới, áp rất cao hoặc đang bảo hành."
+  - "**Chưa có TDS** của Quốc Trung: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "gia-kinh-te", "quoc-trung"]
 date: "2026-10-12"
 updated: "2026-10-12"
 ---
 
-**APEX TL 68** là dầu thủy lực cấp **ISO VG 68** do Quốc Trung sản xuất trong nước. Dầu truyền năng lượng và bôi trơn cho hệ thủy lực công nghiệp, máy ép, máy đùn và máy công trình chịu áp lực cao. Đây là phương án **giá kinh tế** trong nhóm dầu thủy lực 68 chúng tôi có sẵn.
+**APEX TL 68** là dầu thủy lực cấp **ISO VG 68** do Quốc Trung sản xuất trong nước. Dầu truyền năng lượng và bôi trơn cho hệ thủy lực công nghiệp, máy ép, máy đùn và máy công trình chịu áp lực cao. Trong nhóm dầu thủy lực 68 có sẵn tại kho HT VINA, đây là mã có giá theo lít thấp nhất.
 
 Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L**, có hóa đơn VAT.
 
-## Khi nào nên chọn APEX TL 68
+## APEX TL 68 có hợp với máy của bạn không?
 
-- **Máy cũ hoặc hay rò rỉ.** Máy phải châm dầu thường xuyên thì dầu giá kinh tế giúp giảm chi phí đáng kể.
-- **Máy không yêu cầu phê duyệt của hãng.** Máy ép, máy đùn thông dụng chỉ ghi "dầu thủy lực 68" trong sổ tay.
-- **Đội máy công trình chạy nhiều ca.** Tiêu hao lớn, cần một mã ổn định, dễ đặt lại.
+| Sổ tay máy ghi | Dùng APEX TL 68 được không? |
+| :--- | :--- |
+| "Dầu thủy lực 68", ISO VG 68, không ghi phê duyệt | **Được.** |
+| Máy cũ, hay rò rỉ, phải châm dầu hằng tuần | **Được.** Đây là trường hợp mã này tiết kiệm nhiều nhất. |
+| Bắt buộc phê duyệt Parker Denison, Eaton, Bosch Rexroth | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
+| Bơm đời mới, áp rất cao, máy đang trong thời gian bảo hành | Nên chọn mã có TDS và phê duyệt đầy đủ. |
+| ISO VG 46 hoặc 32 | Không. Dùng đúng cấp ghi trong sổ tay. |
 
-Với bơm thủy lực đời mới, áp rất cao hoặc đang trong thời gian bảo hành, nên chọn dầu có phê duyệt như [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68) hoặc [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68).
+Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của Quốc Trung cho mã này, nên trang chưa có bảng chỉ tiêu và chưa ghi tiêu chuẩn mà dầu đạt.
 
-Thông số kỹ thuật của APEX TL 68 sẽ được cập nhật theo TDS của Quốc Trung. Xem các mã khác ở trang [dầu thủy lực](/dau-thuy-luc).
+## APEX TL 68 hay EMI AW 68?
+
+Cả hai là dầu thủy lực 68 sản xuất trong nước, có sẵn phuy 200 L tại kho. Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (rà soát 02/10/2026, chưa VAT):
+
+| | APEX TL 68 | [EMI AW 68](/dau-thuy-luc/emi-aw-68) |
+| :--- | :--- | :--- |
+| Phuy 200 L | 4,70–5,41 triệu đ | 7,10–8,17 triệu đ |
+| Quy ra mỗi lít | 23.500–27.100 đ | 35.500–40.900 đ |
+| Phụ gia công bố | Chưa có TDS | Chống mài mòn gốc kẽm (theo nhà cung cấp) |
+| Xô nhỏ | Không | Có |
+
+Với bồn 200 L, chênh lệch giữa hai mã khoảng 2,4–2,8 triệu đồng mỗi lần thay. Máy rò rỉ phải châm thêm vài chục lít mỗi tháng thì khoản chênh này cộng dồn đáng kể.
+
+> **Nhận định của HT VINA:** Khi chưa có TDS, chúng tôi chỉ khuyên dùng APEX TL 68 cho máy mà sổ tay chỉ ghi cấp 68, không ghi loại HM/HLP hay phê duyệt hãng bơm. Máy ép nhựa chạy ba ca, áp cao, nên dùng mã công bố rõ phụ gia chống mài mòn như EMI AW 68 hoặc mã có TDS đầy đủ.
+
+## Khi nào cần thay dầu?
+
+Thay APEX TL 68 theo tình trạng dầu sẽ chính xác hơn thay theo lịch. Lấy mẫu ở đường hồi khi máy đang chạy và so với dầu mới cùng lô.
+
+| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| :--- | :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (cấp ISO VG 68 danh định 68 mm²/s, lệch quá ±10%) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+
+Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+
+> **Nhận định của HT VINA:** Vì chưa có TDS, hãy đo độ nhớt mẫu dầu mới của lô đầu tiên bằng máy LND-1 và ghi lại làm mốc. Các lần đo sau so với mốc này, không so với con số 68 trên nhãn.
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu thủy lực APEX TL 68?
-Thay APEX TL 68 theo tình trạng dầu sẽ chính xác hơn thay theo lịch. Lấy mẫu ở đường hồi khi máy đang chạy và so với dầu mới theo ba chỉ tiêu:
-
-- **Độ nhớt ở 40 °C** lệch quá ±10%: cấp ISO VG 68 có độ nhớt danh định 68 mm²/s, tức ngưỡng 61,2–74,8 mm²/s. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
-- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
-- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
-
-Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Không có mốc giờ chạy đúng cho mọi máy. Thay khi kết quả đo vượt ngưỡng ở mục "Khi nào cần thay dầu?" phía trên: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Cách đo xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Dầu giá rẻ có làm hỏng bơm không?
 Dầu đúng cấp độ nhớt và có phụ gia chống mài mòn thì dùng được cho máy thông dụng. Quan trọng là thay lọc đúng hạn, giữ bồn sạch và thay dầu khi dầu đổi màu hoặc lẫn nước. Hãy so thông số trên TDS với yêu cầu của máy trước khi đổi.
 
-### Có xuất hóa đơn VAT không?
-Có. Gửi nhu cầu qua trang [báo giá](/bao-gia).
+### Đổi từ dầu đang dùng sang APEX TL 68 có cần súc rửa không?
+Nên xả hết dầu cũ và thay lõi lọc, không châm lẫn hai mã trong cùng một bồn. Cách làm từng bước xem [hướng dẫn thay dầu thủy lực](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc).
+
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách có sẵn:** phuy 200 L.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** xem khoảng giá tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=APEX%20TL%2068) theo số lượng của bạn.

@@ -26,6 +26,8 @@ specs:
 tds_date: "08/2024"
 tds_url: "https://total-cdn-lmdb.afineo.io/tdsV2/TDS_TotalEnergies_Rubia-TIR-7400-15W-40_13T_EN.pdf"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Phuy 200 L", sku: "TOTAL 15W40" }
 stock_status: "dat-hang"
@@ -46,6 +48,12 @@ images:
   - { src: "/images/san-pham/total-rubia-tir-7400-phuy-200l.webp", alt: "Phuy 200 lít dầu động cơ TotalEnergies Rubia TIR 7400 15W-40 tại kho Hải Phòng" }
   - { src: "/images/san-pham/total-rubia-tir-7400-nhan.webp", alt: "Nhãn phuy Rubia TIR 7400 15W-40 ghi cấp API CI-4 và ACEA E7" }
 
+doc_gia: "Trang này dành cho đội xe tải, xe khách nhiều hiệu Âu – Mỹ cần dầu diesel 15W-40 được Cummins, Volvo, Mack, Renault chấp thuận."
+tom_tat:
+  - "**Dùng được** cho động cơ yêu cầu ACEA E7, API CI-4, Cummins CES 20078, Mack EO-N, Volvo VDS-3, Renault RLD-2, DTFR 15B110."
+  - "**Hợp nhất** với động cơ Euro 3 trở về trước của hầu hết hãng châu Âu và Mỹ."
+  - "**Không dùng** cho xe có DPF hoặc yêu cầu dầu ít tro."
+  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mã có sẵn cùng nhóm: Castrol Vecton 15W-40."
 tags: ["api-ci-4", "acea-e7", "sae-15w-40", "totalenergies", "dong-co-diesel"]
 date: "2026-10-12"
 updated: "2026-10-12"
@@ -53,37 +61,59 @@ updated: "2026-10-12"
 
 **TotalEnergies Rubia TIR 7400 15W-40** là dầu động cơ diesel gốc khoáng cho xe chạy đường bộ, đạt **ACEA E7 và API CI-4**. Dầu được Cummins, Mack, Renault Trucks, Volvo và Daimler Truck (DTFR 15B110) chấp thuận. Hãng khuyên dùng cho động cơ Euro 3 trở về trước của hầu hết nhà sản xuất châu Âu và Mỹ.
 
-Chúng tôi có **phuy 200 L**, kèm CO/CQ và hóa đơn VAT, giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, kèm CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Rubia TIR 7400 có hợp với xe của bạn không?
+
+| Tình huống | Dùng Rubia TIR 7400 được không? |
+| :--- | :--- |
+| Xe tải, xe khách, đầu kéo yêu cầu ACEA E7 hoặc API CI-4 | **Được.** |
+| Đội xe nhiều hiệu Âu – Mỹ cần ít mã dầu | **Được.** |
+| Động cơ Euro 4, Euro 5 | Kiểm tra sổ tay: chỉ dùng khi nhà sản xuất chấp nhận ACEA E7 và chu kỳ thay phù hợp. |
+| Xe có bộ lọc hạt DPF, yêu cầu dầu ít tro | Không. |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo bảng dữ liệu kỹ thuật của TotalEnergies.
 
 - **Tẩy rửa, phân tán, chống mòn tốt.** Giữ động cơ sạch, kiểm soát muội than, cặn bùn và cặn piston.
 - **Chống bóng xi lanh.** Piston sạch giúp tránh hiện tượng thành xi lanh bị mài bóng, nguyên nhân gây hao dầu và yếu máy.
-- **Độ nhớt ổn định khi làm việc.** Dầu giữ được độ nhớt trong điều kiện vận hành nặng.
-- **Một loại dầu cho đội xe nhiều hiệu.** Đạt chuẩn của nhiều hãng Âu – Mỹ nên đội xe hỗn hợp có thể dùng chung, giảm số mã phải trữ.
+- **Trị số kiềm 11 mg KOH/g.** Trung hòa axit từ nhiên liệu lâu trước khi phải thay.
+- **Độ nhớt 13,4 mm²/s ở 100 °C.** Thấp hơn một chút so với Shell R4 X và Castrol Vecton, vẫn trong cấp 15W-40.
 
-## So với các dầu CI-4 15W-40 khác
+## Rubia TIR 7400 hay các dầu CI-4 15W-40 khác?
 
-| Dòng | Chỉ số độ nhớt | Trị số kiềm tổng | Chuẩn chính |
-| :--- | :--- | :--- | :--- |
-| Rubia TIR 7400 15W-40 | 136 | 11 mg KOH/g | ACEA E7, API CI-4 |
-| [Shell Rimula R4 X 15W-40](/dau-dong-co-diesel/shell-rimula-r4-x) | 139 | 10,5 mg KOH/g | API CI-4, ACEA E7, JASO DH-1 |
-| [Castrol Vecton 15W-40](/dau-dong-co-diesel/castrol-vecton) | 139 | 12,3 mg KOH/g | API CI-4/SL, ACEA E7, JASO DH-1 |
+| Dòng | Chỉ số độ nhớt | Trị số kiềm tổng | Chuẩn chính | Kho tháng 10/2026 |
+| :--- | :--- | :--- | :--- | :--- |
+| Rubia TIR 7400 15W-40 | 136 | 11 mg KOH/g | ACEA E7, API CI-4 | Nhận đặt |
+| [Shell Rimula R4 X 15W-40](/dau-dong-co-diesel/shell-rimula-r4-x) | 139 | 10,5 mg KOH/g | API CI-4, ACEA E7, JASO DH-1 | Nhận đặt |
+| [Castrol Vecton 15W-40](/dau-dong-co-diesel/castrol-vecton) | 139 | 12,3 mg KOH/g | API CI-4/SL, ACEA E7, JASO DH-1 | Có sẵn phuy 209 L |
 
-Thông số theo bảng dữ liệu kỹ thuật của từng hãng. Ba dòng cùng nhóm chất lượng; chọn theo chuẩn mà sổ tay xe yêu cầu và theo hãng xe trong đội. Các dòng khác xem ở trang [dầu động cơ diesel](/dau-dong-co-diesel).
+> **Nhận định của HT VINA:** Ba dòng cùng nhóm chất lượng; chọn theo chuẩn mà sổ tay xe yêu cầu và theo hãng xe trong đội. Đội xe có Renault Trucks hoặc Daimler cần đúng chấp thuận DTFR thì đặt Rubia TIR 7400. Cần dầu ngay thì Vecton có sẵn.
+
+## Khi nào cần thay dầu?
+
+Theo khuyến nghị của nhà sản xuất xe; TotalEnergies cũng khuyên đọc sổ tay bảo dưỡng trước khi dùng. Với đội xe lớn, có thể dựa vào test dầu:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 88,8–108,6 mm²/s (lệch quá ±10% so với 98,7 mm²/s theo TDS). Đo bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Nước | Trên 0,2% (ASTM D6224) |
+| Trị số kiềm (TBN) | Còn khoảng một nửa so với dầu mới (khoảng 5,5 mg KOH/g) |
+
+Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách lấy mẫu và test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu TotalEnergies Rubia TIR 7400 15W-40?
-Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó.
-
-Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của TotalEnergies Rubia TIR 7400 15W-40: **độ nhớt** lệch quá ±10% so với dầu mới (dầu mới 98,7 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 88,8–108,6 mm²/s là vượt ngưỡng), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo mốc km hoặc giờ máy trong sổ tay xe. Đội xe lớn có thể dựa vào bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Rubia TIR 7400 dùng cho xe Euro 4, Euro 5 được không?
 TotalEnergies cho biết dầu cũng dùng được cho động cơ Euro 5 trở về trước của một số hãng, với chu kỳ thay dầu phù hợp. Hãy kiểm tra sổ tay xe xem có chấp nhận dầu ACEA E7 không.
 
-### Thay dầu sau bao lâu?
-Theo khuyến nghị của nhà sản xuất xe. TotalEnergies cũng khuyên đọc sổ tay bảo dưỡng trước khi dùng và thay đúng chu kỳ ghi trong đó.
+## Quy cách và giấy tờ khi mua
 
-### Có xuất hóa đơn và CO/CQ không?
-Có. Mỗi lô giao kèm hóa đơn VAT, CO/CQ theo lô khi khách yêu cầu. Gửi nhu cầu qua trang [báo giá](/bao-gia).
+- **Quy cách:** phuy 200 L, nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Rubia%20TIR%207400%2015W-40) kèm số lượng.

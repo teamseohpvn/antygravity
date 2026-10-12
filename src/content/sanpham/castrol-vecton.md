@@ -27,6 +27,8 @@ specs:
 tds_date: "01/2026"
 tds_url: "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/2FA6F2218A3AADE380258D7E002334B9/$File/wepp-cjvmts.pdf"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Phuy 209 L", sku: "Vecton 15W40 CI4" }
 stock_status: "co-san"
@@ -45,41 +47,69 @@ storage: "Để dưới mái che. Phuy để ngoài trời phải đặt nằm n
 
 images:
   - { src: "/images/san-pham/castrol-vecton-phuy-209l.webp", alt: "Phuy 209 lít dầu động cơ Castrol Vecton 15W-40 CI-4/E7 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/castrol-vecton-nhan.webp", alt: "Nhãn phuy Castrol Vecton 15W-40 ghi cấp API CI-4 và ACEA E7" }
+  - { src: "/images/san-pham/castrol-vecton-nhan.webp", alt: "Nhãn phuy 209 lít Castrol Vecton 15W-40 CI-4/E7 ghi API CI-4, JASO DH-1, ACEA E7" }
 
+doc_gia: "Trang này dành cho người quản lý đội xe tải nặng, đầu kéo cần dầu đạt chuẩn hãng xe hoặc muốn kéo dài chu kỳ thay dầu."
+tom_tat:
+  - "**Dùng được** cho động cơ diesel yêu cầu API CI-4, ACEA E7, JASO DH-1, Cummins CES 20078, Volvo VDS-3, Mack EO-M Plus."
+  - "**Chọn Vecton thay vì CRB Turbomax** khi sổ tay ghi chuẩn hãng xe, hoặc đội xe muốn thay dầu thưa hơn."
+  - "**Không dùng** cho xe có bộ lọc hạt DPF (tro sunphat 1,5%)."
+  - "**Có sẵn phuy 209 L** cấp 15W-40 tại kho Hải Phòng."
 tags: ["api-ci-4", "acea-e7", "sae-15w-40", "castrol", "dong-co-diesel"]
 date: "2026-10-06"
-updated: "2026-10-06"
+updated: "2026-10-12"
 ---
 
-**Castrol Vecton 15W-40 CI-4/E7** là dầu động cơ diesel tải nặng cao cấp của Castrol, pha bằng công nghệ tổng hợp để dầu bền lâu hơn trong máy. Dầu đạt **API CI-4/SL, ACEA E7, JASO DH-1** và nhiều chuẩn của nhà sản xuất động cơ như Cummins, Volvo, Mack, Renault Trucks. Dầu dùng cho động cơ diesel 4 kỳ cao tốc, kể cả động cơ có EGR.
+**Castrol Vecton 15W-40 CI-4/E7** là dầu động cơ diesel tải nặng của Castrol, pha bằng công nghệ tổng hợp để dầu bền lâu hơn trong máy. Dầu đạt **API CI-4/SL, ACEA E7, JASO DH-1** và nhiều chuẩn của nhà sản xuất động cơ như Cummins, Volvo, Mack, Renault Trucks. Dầu dùng cho động cơ diesel 4 kỳ cao tốc, kể cả động cơ có EGR.
 
-Chúng tôi có **phuy 209 L**, kèm CO/CQ và hóa đơn VAT, giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Hàng có sẵn **phuy 209 L**, kèm CO/CQ và hóa đơn VAT, giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
-## Tính năng chính
+## Vecton có hợp với xe của bạn không?
 
-- **Kéo dài chu kỳ thay dầu.** Công nghệ System Pro của Castrol tạo thêm phần dự trữ hiệu năng (theo hãng, tới 45 % so với mức yêu cầu của API và ACEA) để chống dầu xuống cấp.
-- **Chịu nhiệt cao.** Xe tải đời mới cho mô-men xoắn lớn hơn nên máy nóng và áp suất cao hơn. Vecton được pha để chống mất độ nhớt do nhiệt và do cắt cơ học.
+| Sổ tay xe ghi | Dùng Vecton 15W-40 được không? |
+| :--- | :--- |
+| API CI-4, CH-4, ACEA E7, JASO DH-1 | **Được.** |
+| Cummins CES 20078, Volvo VDS-3, Mack EO-M Plus, Renault RLD-2, MTU Category 2, CAT ECF-2 | **Được.** Castrol công bố đạt các chuẩn này. |
+| Xe có bộ lọc hạt DPF, API CK-4, ACEA E6, E9 | Không. Cần dầu ít tro. |
+| Cấp nhớt 20W-50 | Vecton chỉ có 15W-40. Xem [Castrol CRB Turbomax 20W-50](/dau-dong-co-diesel/castrol-crb-turbomax). |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo bảng dữ liệu sản phẩm của Castrol Việt Nam (01/2026).
+
+- **Phần dự trữ hiệu năng.** Công nghệ System Pro của Castrol tạo thêm phần dự trữ (theo hãng, tới 45% so với mức yêu cầu của API và ACEA) để chống dầu xuống cấp.
 - **Trị số kiềm cao (12,3 mg KOH/g).** Trung hòa axit tốt và lâu, phù hợp khi kéo dài chu kỳ thay.
-- **Đạt nhiều chuẩn của hãng xe.** Tiện cho đội xe nhiều hiệu: một loại dầu dùng chung cho Cummins, Volvo, Mack, Renault Trucks.
+- **Chịu nhiệt cao.** Xe tải đời mới cho mô-men xoắn lớn hơn nên máy nóng và áp suất cao hơn. Vecton được pha để chống mất độ nhớt do nhiệt và do cắt cơ học.
+- **Tro sunphat 1,5%.** Mức này hợp với động cơ không có DPF; xe có DPF cần dầu ít tro.
 
-## So với Castrol CRB Turbomax CI-4
+## Vecton hay CRB Turbomax CI-4?
 
 | | Vecton 15W-40 CI-4/E7 | [CRB Turbomax 15W-40 CI-4](/dau-dong-co-diesel/castrol-crb-turbomax) |
 | :--- | :--- | :--- |
 | Cấp chất lượng | API CI-4/SL, ACEA E7, JASO DH-1 + chuẩn hãng xe | API CI-4 |
 | Trị số kiềm tổng | 12,3 mg KOH/g | 8,1 mg KOH/g |
 | Chỉ số độ nhớt | 139 | 134 |
-| Hợp với | Xe tải nặng, đầu kéo, đội xe muốn thay dầu thưa hơn | Xe tải, máy công trình thay dầu theo chu kỳ thông thường |
+| Điểm rót chảy | −42 °C | −39 °C |
+| Quy cách có sẵn | 15W-40 phuy 209 L | 20W-50 phuy 209 L |
 
-Thông số theo bảng dữ liệu sản phẩm của Castrol Việt Nam (01/2026). Nếu xe yêu cầu chuẩn của hãng (Cummins CES 20078, Volvo VDS-3…), Vecton là lựa chọn đúng hơn. Xem các dòng khác ở trang [dầu động cơ diesel](/dau-dong-co-diesel).
+> **Nhận định của HT VINA:** Xe yêu cầu chuẩn của hãng (Cummins CES 20078, Volvo VDS-3…), hoặc đội xe đường dài muốn thay dầu thưa hơn có theo dõi bằng phân tích dầu, thì Vecton là lựa chọn đúng. Xe tải, máy công trình thay dầu theo chu kỳ thông thường thì CRB Turbomax đủ dùng.
+
+## Khi nào cần thay dầu?
+
+Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Castrol không ghi số km cố định cho Vecton. Muốn kéo dài hơn mốc đó, hãy theo dõi bằng test dầu:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 99–121 mm²/s (lệch quá ±10% so với 110 mm²/s theo TDS). Đo bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Nước | Trên 0,2% (ASTM D6224) |
+| Trị số kiềm (TBN) | Còn khoảng một nửa so với dầu mới (khoảng 6 mg KOH/g) |
+
+Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu Castrol Vecton 15W-40 CI-4/E7?
-Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó.
-
-Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của Castrol Vecton 15W-40 CI-4/E7: **độ nhớt** lệch quá ±10% so với dầu mới (dầu mới 110 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 99–121 mm²/s là vượt ngưỡng), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó. Đội xe lớn có thể theo bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Dùng Vecton thì thay dầu sau bao nhiêu km?
 Castrol không ghi số km cố định. Hãy theo mốc của nhà sản xuất xe cho dầu ACEA E7 hoặc Cummins CES 20078. Muốn kéo dài hơn mốc đó, nên theo dõi bằng phân tích dầu.
@@ -87,5 +117,9 @@ Castrol không ghi số km cố định. Hãy theo mốc của nhà sản xuất
 ### Vecton 15W-40 dùng cho xe có DPF được không?
 Không nên. Dầu có tro sunphat 1,5 %, cao hơn mức dầu ít tro mà bộ lọc hạt DPF cần. Xe có DPF cần dầu đạt API CK-4 hoặc ACEA E6, E9 theo sổ tay.
 
-### Có xuất hóa đơn và CO/CQ không?
-Có. Mỗi lô giao kèm hóa đơn VAT, CO/CQ theo lô khi khách yêu cầu. Gửi nhu cầu qua trang [báo giá](/bao-gia).
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách có sẵn:** 15W-40 phuy 209 L.
+- **Giấy tờ:** mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=Castrol%20Vecton%2015W-40) kèm số xe và lượng dầu dùng mỗi tháng.

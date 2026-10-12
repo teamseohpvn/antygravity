@@ -34,29 +34,46 @@ warnings:
   - "Thu gom mẫu dầu và dung dịch sau thử như chất thải nguy hại, không đổ ra cống."
 storage: "Để nơi khô mát, tránh nắng trực tiếp. Dùng trước hạn in trên hộp."
 
+doc_gia: "Trang này dành cho tổ bảo trì muốn tự theo dõi độ oxy hóa của dầu thủy lực, dầu máy nén khí, dầu tuabin ngay tại xưởng."
+tom_tat:
+  - "**Đo trị số axit tổng (TAN)** 0–2 mg KOH/g trong dưới 5 phút, không cần phòng thí nghiệm."
+  - "**Đọc được với dầu sẫm màu**: điểm cuối đổi màu nằm trong pha nước."
+  - "**Không dùng cho dầu động cơ**: dầu động cơ theo dõi trị số kiềm (TBN)."
+  - "**Mỗi bộ = một lần thử.** Nhận đặt theo yêu cầu."
 related_posts: ["huong-dan-test-chat-luong-dau"]
 tags: ["thiet-bi-do", "tri-so-axit", "test-nhanh"]
 date: "2026-10-06"
-updated: "2026-10-06"
+updated: "2026-10-12"
 ---
 
 **Bộ kit test trị số axit TLB TAN** của Biolab (Thổ Nhĩ Kỳ) đo **trị số axit tổng (TAN)** của dầu công nghiệp ngay tại hiện trường, dưới 5 phút. Người không chuyên về hóa cũng làm được. Theo nhà sản xuất, kết quả bám sát phép chuẩn độ điện thế ASTM D664 trong phòng thí nghiệm, vốn tốn kém và mất nhiều thời gian hơn.
 
 Mỗi bộ đủ cho **một lần thử**, thuốc thử đã định lượng sẵn và hàn kín trong ống thủy tinh nên kết quả ổn định giữa các lần đo. Điểm cuối đổi màu xảy ra trong pha nước, nên dầu sẫm màu vẫn đọc được.
 
-## Vì sao phải đo trị số axit
+## Kit TAN có hợp với dầu của bạn không?
+
+| Loại dầu | Dùng kit TAN được không? |
+| :--- | :--- |
+| Dầu thủy lực, dầu máy nén khí, dầu tuabin | **Được.** Đây là nhóm dầu TAN báo sớm nhất. |
+| Dầu bánh răng công nghiệp, dầu tuần hoàn | **Được.** |
+| Dầu truyền nhiệt, dầu cách điện | **Được**, trong dải 0–2 mg KOH/g. |
+| Dầu động cơ diesel | Không. Theo dõi trị số kiềm (TBN); TAN của dầu động cơ cũng thường vượt dải đo. |
+
+## Vì sao phải đo trị số axit?
 
 Dầu làm việc lâu ở nhiệt độ cao sẽ bị **oxy hóa** và sinh ra axit hữu cơ. Axit ăn mòn bề mặt kim loại, tạo cặn và bùn bám van, lọc, bộ làm mát. Trị số axit tăng dần theo thời gian chạy, nên đây là chỉ tiêu tốt để biết **dầu còn dùng được bao lâu nữa**.
 
 TAN đo bằng số miligam KOH cần để trung hòa axit trong 1 gam dầu (mg KOH/g). Dầu mới đã có TAN riêng do phụ gia, nên kết quả luôn phải so với **TAN của dầu mới cùng mã**, không so với số 0.
 
-## Ngưỡng tham khảo
+## Ngưỡng nào thì cần lo?
 
 ASTM D6224 (bản 2002, bảng mức cảnh báo cho dầu đang sử dụng) xem TAN **tăng thêm 0,2 mg KOH/g** so với dầu mới là mức cảnh báo đối với dầu thủy lực, dầu tuabin và dầu máy nén khí; với dầu bánh răng và dầu tuần hoàn là **tăng 0,5**. Ngưỡng của nhà sản xuất máy, nếu có, được ưu tiên hơn.
 
 Ví dụ: dầu thủy lực mới có TAN 0,5 mg KOH/g. Khi mẫu đang dùng lên 0,7 thì nên lấy mẫu dày hơn, kiểm tra độ nhớt và nước, rồi lên kế hoạch thay dầu.
 
-## Cách dùng bộ kit TAN
+> **Nhận định của HT VINA:** Bước hay bị bỏ qua nhất là đo mẫu dầu mới khi vừa nạp vào máy. Không có mốc này thì các lần đo sau khó đọc. Ghi mốc vào sổ theo dõi dầu cùng ngày nạp và giờ chạy máy.
+
+## Cách dùng bộ kit TAN thế nào?
 
 Các bước chi tiết theo hướng dẫn in trong hộp. Trình tự chung:
 
@@ -70,11 +87,15 @@ Cách kết hợp TAN với độ nhớt và nước để quyết định thay 
 
 ## Câu hỏi thường gặp
 
-### Kit TAN có dùng cho dầu động cơ không?
-Không nên. Dầu động cơ diesel chứa phụ gia kiềm, chỉ tiêu theo dõi chính là trị số kiềm (TBN). TAN của dầu động cơ cũng thường vượt dải 0–2 mg KOH/g của bộ kit.
-
 ### Bao lâu nên test TAN một lần?
 Với dầu thủy lực và dầu máy nén khí chạy liên tục, đo khi dầu mới đưa vào máy để lấy mốc, sau đó đo định kỳ (ví dụ hàng quý). Khi TAN bắt đầu tăng nhanh, rút ngắn chu kỳ đo.
 
 ### Kết quả kit có thay được phiếu phòng thí nghiệm không?
 Không trong trường hợp cần giám định, bảo hành hoặc khiếu nại. Kit dùng để theo dõi xu hướng và phát hiện sớm. Khi kit báo TAN vượt ngưỡng, nên gửi mẫu phòng thí nghiệm để đo theo ASTM D664.
+
+## Quy cách và cách đặt mua
+
+- **Quy cách:** mỗi bộ cho một lần thử, đủ dụng cụ đi kèm. Nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo số bộ, [gửi yêu cầu báo giá](/bao-gia?sp=Kit%20test%20TAN%20Biolab%20TLB).

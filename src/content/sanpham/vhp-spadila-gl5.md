@@ -26,6 +26,8 @@ specs:
 tds_date: "06/2023"
 tds_url: "https://hoadauvhp.com/spadilagl-nid18.html"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "80W-90 – Xô 18 L", sku: "Spadila 80W90 GL5 X" }
   - { name: "85W-140 – Xô 18 L", sku: "Spadila 85W140 GL5 X" }
@@ -50,21 +52,40 @@ images:
   - { src: "/images/san-pham/vhp-spadila-gl5-80w-90-xo-18l.webp", alt: "Xô 18 lít dầu cầu VHP Spadila GL-5 80W-90" }
   - { src: "/images/san-pham/vhp-spadila-gl5-phuy-200l.webp", alt: "Phuy 200 lít dầu cầu VHP Spadila GL-5" }
 
+doc_gia: "Trang này dành cho đội xe, gara ở các KCN miền Bắc cần dầu cầu GL-5 sản xuất trong nước, cấp 80W-90 hoặc 85W-140."
+tom_tat:
+  - "**Dùng được** cho cầu sau hypoid, bộ truyền động ô tô, bánh răng thiết bị tĩnh yêu cầu API GL-5."
+  - "**Thông số 85W-140 trùng với Shell Spirax S2 A** ở độ nhớt 40 °C, 100 °C và chỉ số độ nhớt."
+  - "**Không dùng** cho hộp số tay có đồng tốc mà hãng chỉ cho phép GL-4, hoặc hộp số tự động."
+  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["api-gl-5", "sae-80w-90", "sae-85w-140", "dau-cau", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-12"
 ---
 
-**VHP Spadila GL-5** là dầu cầu, dầu hộp số ô tô do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu pha từ dầu gốc khoáng tinh chế với phụ gia cực áp, đạt cấp **API GL-5**, dùng cho cầu xe bánh răng hypoid chịu tải nặng. HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dương cũ) có hai cấp **80W-90** và **85W-140**, dạng **xô 18 L** và **phuy 200 L**.
+**VHP Spadila GL-5** là dầu cầu, dầu hộp số ô tô do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu pha từ dầu gốc khoáng tinh chế với phụ gia cực áp, đạt cấp **API GL-5**, dùng cho cầu xe bánh răng hypoid chịu tải nặng.
 
-## Tính năng chính
+HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **80W-90** và **85W-140**, dạng **xô 18 L** và **phuy 200 L**, **nhận đặt theo yêu cầu**. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+
+## Spadila GL-5 có hợp với xe của bạn không?
+
+| Sổ tay xe ghi | Dùng Spadila GL-5 được không? |
+| :--- | :--- |
+| Cầu hypoid, API GL-5, 80W-90 hoặc 85W-140 | **Được.** |
+| Bộ truyền động tốc độ cao có va đập, hoặc tốc độ thấp mô-men lớn | **Được.** |
+| Hộp số xe máy tách riêng khỏi động cơ, hãng ghi GL-5 | **Được.** |
+| Hộp số tay có đồng tốc, hãng chỉ ghi GL-4 | Không. Dùng [PV Transmission EP_GL4](/dau-cau-hop-so/pv-transmission-ep-gl4). |
+| Hộp số tự động | Không. Dùng [VHP Spadila ATF](/dau-cau-hop-so/vhp-spadila-atf). |
+
+## Thông số này có ý nghĩa gì khi xe chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài lấy từ bảng chỉ tiêu của VHP.
 
 - **Chịu cực áp cấp GL-5.** Bảo vệ bánh răng hypoid trong cầu khi xe chở nặng, đề pa, leo dốc.
 - **Chống mài mòn, chống gỉ, bền oxy hóa.** Giảm cặn và ăn mòn trong cầu xe chạy đường dài hoặc đỗ lâu nơi ẩm.
-- **Giữ màng dầu trong dải nhiệt làm việc.** Dầu gốc tinh chế giúp dầu vẫn chảy khi lạnh và không quá loãng khi cầu nóng.
-- **Nguồn hàng gần.** Nhà máy VHP và kho của chúng tôi cùng địa bàn Hải Dương cũ, phù hợp đội xe, gara ở các KCN miền Bắc cần lấy hàng đều đặn.
+- **Điểm chớp cháy 200 °C.** Thấp hơn các mã nhập khẩu (215–226 °C), vẫn trên xa nhiệt độ làm việc của cầu xe.
 
-## Chọn 80W-90 hay 85W-140
+## Nên chọn 80W-90 hay 85W-140?
 
 | | Spadila GL-5 80W-90 | Spadila GL-5 85W-140 |
 | :--- | :--- | :--- |
@@ -73,14 +94,36 @@ updated: "2026-10-12"
 | Điểm đông đặc | < −20 °C | < −12 °C |
 | Thường dùng cho | Cầu và hộp số tay tải nặng không đồng tốc của xe tải, xe khách | Cầu xe ben, xe đầu kéo, xe tải nặng chạy nóng; máy công trình |
 
-Thông số theo bảng chỉ tiêu của VHP. Luôn chọn theo cấp ghi trong sổ tay xe. Nếu hộp số tay có đồng tốc và hãng ghi GL-4, dùng dầu GL-4 như [PV Transmission EP_GL4](/dau-cau-hop-so/pv-transmission-ep-gl4). Các mã 85W-140 nhập khẩu: [Shell Spirax S2 A](/dau-cau-hop-so/shell-spirax-s2-a), [Castrol Transmax Axle](/dau-cau-hop-so/castrol-transmax-axle-85w-140). Xem toàn bộ nhóm ở trang [dầu cầu, dầu hộp số](/dau-cau-hop-so).
+> **Nhận định của HT VINA:** Luôn chọn theo cấp ghi trong sổ tay xe. Nhà máy VHP và kho của chúng tôi cùng địa bàn Hải Dương cũ, nên mã này hợp với đội xe, gara cần lấy hàng đều đặn theo đơn đặt trước.
+
+## Spadila GL-5 hay dầu cầu nhập khẩu?
+
+| Chỉ tiêu (85W-140) | VHP Spadila GL-5 | [Shell Spirax S2 A](/dau-cau-hop-so/shell-spirax-s2-a) | [Castrol Transmax Axle](/dau-cau-hop-so/castrol-transmax-axle-85w-140) |
+| :--- | :--- | :--- | :--- |
+| Độ nhớt ở 40 °C | 358 cSt | 358 mm²/s | 365 mm²/s |
+| Độ nhớt ở 100 °C | 25,6 cSt | 25,6 mm²/s | 26,4 mm²/s |
+| Chỉ số độ nhớt | 94 | 94 | 96 |
+| Điểm chớp cháy | 200 °C | 215 °C | 226 °C |
+| Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn xô 20 L | Nhận đặt |
+
+> **Nhận định của HT VINA:** Độ nhớt và chỉ số độ nhớt của ba mã gần như trùng nhau, nên dùng thay thế được trong đa số cầu xe. Cần hàng ngay thì xô Shell Spirax S2 A có sẵn.
+
+## Khi nào cần thay dầu?
+
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Lệch quá ±10%. 80W-90: ngoài 131,4–160,6 mm²/s. 85W-140: ngoài 322,2–393,8 mm²/s |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
+
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu VHP Spadila GL-5?
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
-
-Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (80W-90: dầu mới 146 mm²/s → ngưỡng 131,4–160,6 mm²/s; 85W-140: dầu mới 358 mm²/s → ngưỡng 322,2–393,8 mm²/s) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo mốc km hoặc giờ máy trong sổ tay xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Spadila GL-5 có dùng cho xe máy được không?
 Có, cho hộp số xe máy nằm tách riêng khỏi động cơ (như bộ truyền cuối của xe tay ga) khi nhà sản xuất ghi dầu GL-5. Xe số có hộp số chung nhớt máy thì không dùng dầu cầu.
@@ -88,5 +131,9 @@ Có, cho hộp số xe máy nằm tách riêng khỏi động cơ (như bộ tru
 ### Có trộn Spadila GL-5 với dầu cầu hãng khác được không?
 Chỉ nên châm bù khi cùng cấp API và cùng cấp nhớt. Khi thay hẳn, xả hết dầu cũ rồi đổ dầu mới để giữ đúng tính năng.
 
-### Có CO/CQ và hóa đơn VAT không?
-Có. Mỗi lô giao kèm hóa đơn VAT, CO/CQ cung cấp theo lô khi khách yêu cầu.
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** 80W-90 và 85W-140, xô 18 L và phuy 200 L. Nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Spadila%20GL-5) kèm cấp nhớt và số lượng.

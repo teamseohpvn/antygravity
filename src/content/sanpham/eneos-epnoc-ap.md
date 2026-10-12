@@ -30,6 +30,8 @@ specs:
 tds_date: "02/2023"
 tds_url: "https://www.eneos.co.jp/english/products/lubricants/pdf/grs-7037-2507e.pdf"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Can", sku: "MƠ00" }
 stock_status: "dat-hang"
@@ -51,6 +53,12 @@ images:
   - { src: "/images/san-pham/eneos-epnoc-ap-can.webp", alt: "Can mỡ ENEOS Epnoc Grease AP(N) tại kho Hải Phòng" }
   - { src: "/images/san-pham/eneos-epnoc-ap-nhan.webp", alt: "Nhãn can mỡ ENEOS Epnoc Grease AP(N) ghi cấp NLGI" }
 
+doc_gia: "Trang này dành cho nhà máy có hệ bơm mỡ tập trung hoặc ổ bi tải nặng, va đập cần mỡ lithium chịu cực áp."
+tom_tat:
+  - "**Dùng được** cho ổ bi, ổ trượt, chốt chịu tải và va đập, làm việc từ −20 °C đến 125 °C."
+  - "**Cấp 0 và 1** đặc biệt hợp hệ bơm mỡ tập trung; **cấp 2** cho súng mỡ tay; **cấp 3** cho ổ bi lớn, chỗ rung."
+  - "**Chịu cực áp**: thử 4 bi tải hàn dính 3.090 N; không chứa chì."
+  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026."
 tags: ["nlgi-0", "nlgi-1", "nlgi-2", "mo-lithium", "chiu-cuc-ap", "eneos"]
 date: "2026-10-12"
 updated: "2026-10-12"
@@ -58,17 +66,28 @@ updated: "2026-10-12"
 
 **ENEOS Epnoc Grease AP(N)** là mỡ đa dụng chịu cực áp (EP) gốc lithium của ENEOS Nhật Bản. Mỡ màu nâu nhạt, ít mùi, không chứa chì. Mỡ dùng dầu gốc khoáng tinh chế cao và phụ gia chống oxy hóa, chống gỉ. Dòng này có bốn cấp NLGI 0, 1, 2, 3. Cấp 0 và 1 đặc biệt hợp với hệ thống bơm mỡ tập trung.
 
-Kho tại TP Hải Phòng (Hải Dương cũ) đang có Epnoc Grease AP(N) đóng **can**. Hãy [liên hệ](/contact) để xác nhận cấp NLGI đang có sẵn trước khi đặt. Hàng có CO/CQ và hóa đơn VAT.
+Mã này **nhận đặt theo yêu cầu**, đóng can, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Epnoc Grease AP(N) có hợp với điểm bôi trơn của bạn không?
 
-- **Chịu tải và va đập tốt.** Thử 4 bi đạt tải hàn dính 3.090 N. Mỡ vẫn giữ màng bôi trơn ở máy tải nặng, tốc độ chậm như máy cán, máy rèn.
-- **Dễ bơm khi trời lạnh.** Độ nhớt biểu kiến ở −10 °C thấp, nên mỡ chảy đều trong đường ống của hệ bơm mỡ tập trung.
-- **Chịu nhiệt tốt.** Nhờ chất làm đặc lithium, điểm nhỏ giọt từ 195 °C đến 203 °C. Nhiệt độ làm việc từ −20 °C đến 125 °C.
+| Điểm bôi trơn | Dùng Epnoc AP(N) được không? |
+| :--- | :--- |
+| Hệ bơm mỡ tập trung đường ống dài, nơi lạnh | **Được** (cấp 0, 1). |
+| Ổ bi, ổ trượt, chốt bơm bằng súng mỡ | **Được** (cấp 2). |
+| Máy cán, máy rèn tải nặng tốc độ chậm | **Được.** Mỡ chịu cực áp. |
+| Ổ bi nóng trên 125 °C | Không. Dùng [mỡ chịu nhiệt](/mo-chiu-nhiet). |
+| Chỉ cần mỡ lithium đa dụng không chịu cực áp | Dùng được, nhưng [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) có sẵn và kinh tế hơn. |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo bảng của ENEOS (02/2023).
+
+- **Chịu tải và va đập tốt.** Thử 4 bi đạt tải hàn dính 3.090 N. Mỡ vẫn giữ màng bôi trơn ở máy tải nặng, tốc độ chậm.
+- **Dễ bơm khi trời lạnh.** Độ nhớt biểu kiến ở −10 °C thấp (cấp 0: 61 Pa·s), nên mỡ chảy đều trong đường ống của hệ bơm mỡ tập trung.
 - **Bền cơ học.** Sau 100.000 lần giã, mỡ mềm đi ít. Mỡ không bị nhão, tách dầu hay tắc ống khi bơm qua ống nhỏ.
-- **Kháng nước, không ăn mòn.** Mỡ ít bị rửa trôi và không ăn mòn đồng, thép, kẽm.
+- **Kháng nước tăng theo cấp.** Rửa trôi ở 38 °C: cấp 0 mất 23%, cấp 2 và 3 chỉ mất 1% khối lượng.
 
-## Chọn cấp nào
+## Nên chọn cấp nào?
 
 | Cấp NLGI | Độ xuyên kim (60 lần giã) | Điểm nhỏ giọt | Thường dùng cho |
 | :--- | :--- | :--- | :--- |
@@ -77,9 +96,31 @@ Kho tại TP Hải Phòng (Hải Dương cũ) đang có Epnoc Grease AP(N) đón
 | 2 | 276 | 200 °C | Ổ bi, ổ trượt, chốt; bơm bằng súng mỡ |
 | 3 | 232 | 203 °C | Ổ bi lớn, chỗ rung hoặc dễ chảy mỡ |
 
-Thông số theo bảng của ENEOS (tháng 02/2023). Luôn ưu tiên cấp NLGI ghi trong sổ tay máy hoặc sổ tay hệ bơm mỡ.
+> **Nhận định của HT VINA:** Luôn ưu tiên cấp NLGI ghi trong sổ tay hệ bơm mỡ. Cấp 0 khá mềm và mất nhiều khi gặp nước (23% rửa trôi), nên chỉ dùng trong hệ kín; điểm bôi trơn hở, hay dính nước thì dùng cấp 2.
 
-Nếu chỉ cần mỡ lithium đa dụng không chịu cực áp, [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) là lựa chọn kinh tế hơn. Ổ bi chạy nóng trên 125 °C cần [mỡ chịu nhiệt](/mo-chiu-nhiet). Xem các dòng khác ở trang [mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep).
+## Epnoc AP(N) hay mỡ lithium có sẵn tại kho?
+
+| Chỉ tiêu | ENEOS Epnoc AP(N) cấp 2 | [VHP Lithium Grease L3](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) | [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) |
+| :--- | :--- | :--- | :--- |
+| Chịu cực áp | Có (4 bi 3.090 N) | Tải 4 bi 200 kg | Có (4 bi 315 kg) |
+| Điểm nhỏ giọt | 200 °C | Tối thiểu 190 °C | 180 °C |
+| Nhiệt độ làm việc | −20 đến 125 °C | −10 đến 120 °C | −20 đến 130 °C |
+| Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn L4 | Nhận đặt |
+
+> **Nhận định của HT VINA:** Nhà máy đang dùng Epnoc trong hệ bơm mỡ tập trung thì đặt tiếp đúng mã và đúng cấp. Không trộn mỡ khác hãng trong hệ tập trung khi chưa xả sạch đường ống.
+
+## Khi nào cần bơm bù hoặc thay mỡ?
+
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+
+| Dấu hiệu | Nên làm |
+| :--- | :--- |
+| Ổ bi nóng hơn bình thường, kêu rít hoặc lạo xạo | Bơm bù mỡ; không đỡ thì tháo kiểm tra vòng bi |
+| Mỡ cũ đen sẫm, có hạt kim loại, mùi khét | Đẩy hết mỡ cũ ra, rửa sạch, bơm mỡ mới |
+| Mỡ chảy lỏng, tách dầu loang quanh ổ | Ổ đang quá nóng so với mỡ, hoặc trộn lẫn mỡ khác gốc |
+| Mỡ trắng đục, nhũ hóa | Nước lọt vào; kiểm tra phớt chắn, đổi sang mỡ kháng nước tốt hơn nếu cần |
+
+Không bơm quá nhiều: ổ bi đầy mỡ chạy nóng hơn. Ổ bi động cơ điện thường chỉ cần mỡ chiếm khoảng 1/3 đến 1/2 khoảng trống trong ổ.
 
 ## Câu hỏi thường gặp
 
@@ -88,3 +129,10 @@ Không hẳn. Điểm nhỏ giọt khoảng 200 °C và nhiệt độ làm việ
 
 ### Cấp 0 có dùng cho súng bơm mỡ tay được không?
 Được, nhưng cấp 0 khá mềm và dễ chảy khỏi ổ bi hở. Cấp 0 hợp nhất với hệ bơm mỡ tập trung. Ổ bi tra mỡ bằng súng tay thường dùng cấp 2.
+
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** can, cấp 0, 1, 2, 3. Nhận đặt theo yêu cầu; báo rõ cấp NLGI khi đặt.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Epnoc%20Grease%20AP(N)) kèm cấp và số lượng.

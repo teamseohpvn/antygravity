@@ -24,7 +24,10 @@ const banHang = timNhanSu('nguyen-thi-hong')!;
   <h2>1. Ai chịu trách nhiệm nội dung</h2>
   <ul>
     <li>
-      <strong>Trang sản phẩm, trang danh mục và phần kỹ thuật của bảng giá:</strong> <a href={personUrl(kyThuat)}>{displayName(kyThuat)}</a>, {kyThuat.position ? kyThuat.position.charAt(0).toLowerCase() + kyThuat.position.slice(1) : kyThuat.affiliation}, cộng tác viên cố vấn kỹ thuật của HT VINA.
+      <strong>Trang sản phẩm:</strong> <a href={personUrl(banHang)}>{displayName(banHang)}</a>, {banHang.role.toLowerCase()}, biên soạn (quy cách, tình trạng kho, giấy tờ, so sánh mã có sẵn); <a href={personUrl(kyThuat)}>{displayName(kyThuat)}</a> duyệt nội dung kỹ thuật (thông số TDS, tiêu chuẩn, khuyến cáo sử dụng).
+    </li>
+    <li>
+      <strong>Trang danh mục và phần kỹ thuật của bảng giá:</strong> <a href={personUrl(kyThuat)}>{displayName(kyThuat)}</a>, {kyThuat.position ? kyThuat.position.charAt(0).toLowerCase() + kyThuat.position.slice(1) : kyThuat.affiliation}, cộng tác viên cố vấn kỹ thuật của HT VINA.
     </li>
     {blog && (
       <li>
@@ -33,7 +36,7 @@ const banHang = timNhanSu('nguyen-thi-hong')!;
     )}
     <li><strong>Bảng giá:</strong> <a href={personUrl(banHang)}>{displayName(banHang)}</a>, {banHang.role.toLowerCase()}, đứng tên và rà soát giá; phần chọn mã và tiêu chuẩn do {displayName(kyThuat)} kiểm duyệt.</li>
   </ul>
-  <p>Mỗi trang ghi tên người đứng tên ở đầu trang, kèm liên kết tới hồ sơ có học vị và nơi công tác.</p>
+  <p>Mỗi trang ghi tên tác giả và người duyệt nội dung ở đầu trang, kèm liên kết tới hồ sơ.</p>
 
   <h2>2. Kiểm tra thông số kỹ thuật</h2>
   <ul>

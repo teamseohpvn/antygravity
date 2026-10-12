@@ -11,7 +11,7 @@ import { getActiveProducts } from '../lib/content';
 import { fmtNgay, fmtVnd } from '../lib/gia-tinh';
 import type { DongGiaCongKhai, CauHinh } from '../lib/gia';
 import { bangGiaTuJson } from '../lib/gia-json';
-import { timNhanSu, DEFAULT_REVIEWER_ID, personUrl, personRef, personSchema, displayName, credentialLine } from '../lib/nhan-su';
+import { timNhanSu, DEFAULT_REVIEWER_ID, bylineLabel, personUrl, personRef, personSchema, displayName, credentialLine } from '../lib/nhan-su';
 import { traTieuChuan } from '../lib/tieu-chuan';
 import { PROMO, PROMO_ACTIVE } from '../lib/promo';
 import { absUrl, LEGAL_SHORT, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR } from '../lib/site';
@@ -141,9 +141,9 @@ const schemaData = [
     <header class="price-hero">
       <h1>{title}</h1>
       <p class="byline">
-        Tác giả: <a href={personUrl(tacGia)} rel="author">{displayName(tacGia)}</a>, {tacGia.role.toLowerCase()} {LEGAL_SHORT}, rà soát giá trong bảng.
-        Kiểm duyệt kỹ thuật: <a href={personUrl(nguoiKyThuat)}>{displayName(nguoiKyThuat)}</a>, {nguoiKyThuat.position ? `${nguoiKyThuat.position.charAt(0).toLowerCase()}${nguoiKyThuat.position.slice(1)}` : nguoiKyThuat.role.toLowerCase()}, đối chiếu phần chọn mã và tiêu chuẩn với TDS của hãng. <a href="/quy-trinh-bien-tap">Quy trình biên soạn và rà soát</a>.
-        <br />Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time>{ngaySua !== NGAY_DANG && <> · Cập nhật <time datetime={ngaySua}>{fmtNgay(ngaySua)}</time></>}{coGia && ngay && <> · Giá rà soát ngày <strong>{ngay}</strong>, áp dụng đến khi trang này ghi ngày mới.</>}
+        Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time>{ngaySua !== NGAY_DANG && <> · Cập nhật ngày <time datetime={ngaySua}>{fmtNgay(ngaySua)}</time></>}
+        {' · '}<a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(nguoiKyThuat)}>{bylineLabel(nguoiKyThuat)}</a>
+        {coGia && ngay && <><br />Giá rà soát ngày <strong>{ngay}</strong>, áp dụng đến khi trang này ghi ngày mới.</>}
       </p>
 
       {coGia && (

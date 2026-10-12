@@ -10,7 +10,7 @@ import stockRows from '../../data/san-pham-kho.json';
 import { render } from 'astro:content';
 import { getActiveProducts, getActiveCategories } from '../../lib/content';
 import { ngayBai } from '../../lib/ngay';
-import { timNhanSu, DEFAULT_REVIEWER_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
+import { timNhanSu, DEFAULT_REVIEWER_ID, DEFAULT_PRODUCT_AUTHOR_ID, bylineLabel, personRef, personUrl, personSchema } from '../../lib/nhan-su';
 import { absUrl, breadcrumbSchema, ORG_ID, publicImageExists, webpSrcset, productImages } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 const { category } = Astro.params;
 const { products, categoryInfo } = Astro.props;
 const { Content } = await render(categoryInfo);
-const { title, nav_label, description, seo_title, reviewed_by, updated } = categoryInfo.data;
+const { title, nav_label, description, seo_title, reviewed_by, tac_gia, updated } = categoryInfo.data;
 const ngay = ngayBai(categoryInfo.data);
 // Bỏ ảnh khi file chưa được tạo (tránh og:image và schema trỏ tới ảnh 404).
 const image = publicImageExists(categoryInfo.data.image) ? categoryInfo.data.image : undefined;
@@ -49,8 +49,9 @@ const showFilter = products.length >= 4 && (brands.length > 1 || grades.length >
 const productGrade = (p: (typeof products)[number]) =>
   p.data.vg ? `VG ${p.data.vg}` : p.data.nlgi ? `NLGI ${p.data.nlgi}` : null;
 
-// Người đứng tên trang danh mục: reviewed_by (id hoặc họ tên trong nhan-su.ts), mặc định cố vấn kỹ thuật sản phẩm.
-const tacGia = timNhanSu(reviewed_by) ?? timNhanSu(DEFAULT_REVIEWER_ID);
+// Tác giả: Ms. Hồng (tac_gia); duyệt nội dung: TS. Lập (reviewed_by). Giống trang sản phẩm.
+const tacGia = timNhanSu(tac_gia) ?? timNhanSu(DEFAULT_PRODUCT_AUTHOR_ID);
+const reviewer = timNhanSu(reviewed_by) ?? timNhanSu(DEFAULT_REVIEWER_ID);
 // Nguồn dẫn: TDS của các sản phẩm trong danh mục + liên kết ra ngoài site trong nội dung bài danh mục.
 const citation = [...new Set([
   ...products.map((p) => p.data.tds_url),
@@ -73,13 +74,15 @@ const schemaData = [
     ...(image ? { image: absUrl(image) } : {}),
     ...(ngay.published ? { datePublished: ngay.published } : {}),
     ...(ngay.modified ? { dateModified: ngay.modified } : {}),
-    ...(tacGia ? { author: personRef(tacGia), reviewedBy: personRef(tacGia) } : {}),
+    ...(tacGia ? { author: personRef(tacGia) } : {}),
+    ...(reviewer ? { reviewedBy: personRef(reviewer) } : {}),
     ...(citation.length ? { citation } : {}),
     inLanguage: 'vi-VN',
     isPartOf: { '@id': absUrl('/') + '#website' },
     publisher: { '@id': ORG_ID },
   },
   ...(tacGia ? [personSchema(tacGia)] : []),
+  ...(reviewer && reviewer.id !== tacGia?.id ? [personSchema(reviewer)] : []),
   breadcrumbSchema(crumbs),
   ...(products.length
     ? [{
@@ -114,9 +117,10 @@ const schemaData = [
       <h1>{title}</h1>
       {tacGia && (
         <p class="byline">
-          {ngay.published && <>Đăng ngày: <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
-          {ngay.modified && ngay.modified !== ngay.published && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time> · </>}
-          Tác giả: <a href={personUrl(tacGia)} rel="author">{displayName(tacGia)}</a>, {bylineTitle(tacGia)}. <a href="/quy-trinh-bien-tap">Quy trình biên soạn</a>.
+          {ngay.published && <>Đăng ngày <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
+          {ngay.modified && ngay.modified !== ngay.published && <>Cập nhật ngày <time datetime={ngay.modified}>{ngay.modifiedText}</time> · </>}
+          <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a>
+          {reviewer && reviewer.id !== tacGia.id && <> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a></>}
         </p>
       )}
       <p>{description}</p>
