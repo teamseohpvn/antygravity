@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-008"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/vhp-spadila-atf/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Hộp Số Tự Động VHP Spadila ATF (II, III)"
 seo_title: "VHP Spadila ATF II, III – Dầu Hộp Số Tự Động, Trợ Lực Lái"
 description: "Dầu VHP Spadila ATF (Dexron II, III) cho hộp số tự động, hệ trợ lực tay lái, hệ thủy lực truyền động ô tô, xe cơ giới. Xô 18 L có sẵn, giao Hải Phòng."
@@ -37,33 +37,63 @@ images:
   - { src: "/images/san-pham/vhp-spadila-atf-xo-18l.webp", alt: "Xô 18 lít dầu hộp số tự động VHP Spadila ATF tại kho Hải Phòng" }
   - { src: "/images/san-pham/vhp-spadila-atf-nhan.webp", alt: "Nhãn xô VHP Spadila ATF ghi tiêu chuẩn Dexron" }
 
+doc_gia: "Trang này dành cho gara, đội xe cần dầu ATF Dexron II, III cho hộp số tự động đời cũ và trợ lực lái."
+tom_tat:
+  - "**Dùng được** cho hộp số tự động, trợ lực lái thủy lực, hệ thủy lực truyền động có sổ tay ghi ATF Dexron II hoặc III."
+  - "**Không dùng** cho hộp số yêu cầu Dexron VI, ATF riêng của hãng, hộp số CVT hoặc cầu xe."
+  - "**Có sẵn xô 18 L**. HT VINA là đại lý dầu mỡ VHP."
+  - "**Chưa có TDS** của VHP: trang chưa có bảng thông số."
 tags: ["atf", "dexron-ii", "dexron-iii", "tro-luc-lai", "vhp"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Spadila ATF** là dầu truyền động cho **hộp số tự động** và **hệ trợ lực tay lái**, theo loại **ATF Dexron II, III**. Dầu do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Cẩm Giàng (Hải Dương cũ). Ngoài hộp số tự động, dầu còn dùng cho các hệ thủy lực truyền động trên ô tô và xe cơ giới.
 
 HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn **xô 18 L** tại kho TP Hải Phòng (Hải Dương cũ), có hóa đơn VAT.
 
-## Dùng cho đâu
+## Spadila ATF có hợp với xe của bạn không?
 
-- **Hộp số tự động** đời cũ và đời phổ thông có sổ tay ghi Dexron II hoặc Dexron III.
-- **Trợ lực tay lái thủy lực** của xe tải, xe khách, xe con ghi dùng dầu ATF.
-- **Hệ thủy lực truyền động** trên xe nâng, máy cơ giới có sổ tay cho phép dầu ATF.
+| Sổ tay xe ghi | Dùng Spadila ATF được không? |
+| :--- | :--- |
+| ATF Dexron II hoặc Dexron III | **Được.** |
+| Trợ lực tay lái thủy lực dùng dầu ATF | **Được.** |
+| Hệ thủy lực xe nâng, máy cơ giới cho phép dầu ATF | **Được.** |
+| Dexron VI, ATF riêng của hãng (ví dụ ATF Type T-IV, SP-III) | Không. |
+| Hộp số CVT | Không. Cần dầu CVT. |
+| Cầu sau, vi sai | Không. Dùng dầu cầu GL-5 như [VHP Spadila GL-5](/dau-cau-hop-so/vhp-spadila-gl5). |
 
-Không dùng cho hộp số yêu cầu Dexron VI, dầu ATF riêng của hãng hoặc hộp số CVT. Khi không chắc, hãy gửi sổ tay hoặc ảnh nhãn que thăm dầu để chúng tôi tư vấn.
+Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của VHP cho mã này, nên trang chưa có bảng chỉ tiêu.
 
-Thông số kỹ thuật của Spadila ATF sẽ được cập nhật theo TDS của VHP. Các dòng dầu cầu VHP khác: [VHP Spadila GL-5](/dau-cau-hop-so/vhp-spadila-gl5), [VHP Hymatran 10W](/dau-cau-hop-so/vhp-hymatran-10w). Xem tất cả ở trang [dầu cầu, hộp số](/dau-cau-hop-so).
+## Dexron II hay Dexron III?
+
+Dexron III là tiêu chuẩn mới hơn của GM, yêu cầu cao hơn về độ bền oxy hóa và đặc tính ma sát. Xe yêu cầu Dexron II thường dùng được dầu đạt Dexron III, còn chiều ngược lại thì không chắc chắn.
+
+> **Nhận định của HT VINA:** Khi không chắc xe dùng loại ATF nào, hãy gửi sổ tay hoặc ảnh nhãn que thăm dầu qua [form báo giá](/bao-gia?sp=VHP%20Spadila%20ATF) để chúng tôi đối chiếu trước. Hộp số tự động đời mới đổi sai loại ATF có thể trượt số, đắt hơn nhiều so với tiền dầu.
+
+## Khi nào cần thay dầu?
+
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
+
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu VHP Spadila ATF?
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
-
-Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
-
-### Dexron II và Dexron III khác nhau thế nào?
-Dexron III là tiêu chuẩn mới hơn của GM, yêu cầu cao hơn về độ bền oxy hóa và đặc tính ma sát. Xe yêu cầu Dexron II thường dùng được dầu đạt Dexron III, còn chiều ngược lại thì không chắc chắn. Hãy theo sổ tay xe.
+Theo mốc km trong sổ tay xe. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Châm dầu ATF vào trợ lực lái đang dùng dầu khác được không?
 Chỉ châm khi sổ tay cho phép dầu ATF. Một số xe dùng dầu trợ lực riêng (ví dụ dầu gốc tổng hợp màu xanh), trộn lẫn có thể làm hỏng phớt.
+
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách có sẵn:** xô 18 L.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Spadila%20ATF).

@@ -1,6 +1,6 @@
 ---
 ma: "DM-16"
-active: false   # Tắt: danh mục bán lẻ, ngoài nhóm dầu công nghiệp. Bật khi chủ site quyết định bán dầu xe máy trên web
+active: true   # Bật 12/10/2026: để trang sản phẩm thuộc danh mục này hiện
 title: "Dầu Nhớt Xe Máy 4 Thì (Xe Số, Xe Tay Ga)"
 nav_label: "Dầu nhớt xe máy"
 order: 16

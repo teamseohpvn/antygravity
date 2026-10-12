@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-012"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/emi-cf-4-20w-50/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Động Cơ EMI CF-4 20W-50"
 seo_title: "Dầu Động Cơ Diesel EMI CF-4 20W-50 – Phuy 200 L"
 description: "Dầu động cơ diesel EMI API CF-4 SAE 20W-50 cho xe tải, máy công trình, máy phát chạy tải nặng. Phuy 200 L có sẵn, có VAT, giao từ Hải Phòng."
@@ -37,32 +37,74 @@ images:
   - { src: "/images/san-pham/emi-cf-4-20w-50-phuy-200l.webp", alt: "Phuy 200 lít dầu động cơ diesel EMI CF-4 20W-50 tại kho Hải Phòng" }
   - { src: "/images/san-pham/emi-cf-4-20w-50-nhan.webp", alt: "Nhãn phuy EMI CF-4 20W-50 ghi cấp API và SAE" }
 
+doc_gia: "Trang này dành cho chủ xe tải, máy công trình, máy phát đời cũ cần dầu diesel CF-4 20W-50 theo phuy cho đội xe."
+tom_tat:
+  - "**Dùng được** cho động cơ diesel 4 kỳ đời cũ yêu cầu API CF-4, có hoặc không có turbo."
+  - "**Không dùng** cho động cơ có EGR hoặc sổ tay ghi CH-4, CI-4: chọn EMI CI-4 hoặc ENEOS DEO CI-4."
+  - "**20W-50** hợp với máy đã chạy lâu, khe hở lớn, làm việc mùa nóng."
+  - "**Chưa có TDS** của EMI: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["api-cf-4", "sae-20w-50", "emi", "dong-co-diesel"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **EMI CF-4 20W-50** là dầu động cơ diesel đạt cấp **API CF-4**, độ nhớt **SAE 20W-50**. CF-4 là cấp dành cho động cơ diesel 4 kỳ cao tốc, có hoặc không có tăng áp. Độ nhớt 20W-50 đặc hơn 15W-40, hợp với động cơ đã chạy lâu và khí hậu nóng.
 
 Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L**, có hóa đơn VAT.
 
-## Tính năng chính
+## EMI CF-4 20W-50 có hợp với xe, máy của bạn không?
 
-- **Cấp CF-4 cho động cơ diesel phổ thông.** Phù hợp đa số xe tải, máy công trình, máy phát đời trước 2004 tại Việt Nam.
-- **20W-50 giữ áp dầu cho máy cũ.** Động cơ đã mòn, khe hở lớn thường giữ áp dầu tốt hơn với dầu đặc.
-- **Phuy 200 L cho đội xe.** Tiết kiệm hơn khi thay dầu cho nhiều xe, nhiều máy.
+| Sổ tay xe, máy ghi | Dùng EMI CF-4 20W-50 được không? |
+| :--- | :--- |
+| API CF-4, CF, CD; SAE 20W-50 | **Được.** |
+| Xe tải, xe khách, máy xúc, máy ủi, máy phát đời cũ | **Được.** |
+| Động cơ có EGR, API CH-4, CI-4 | Không. Chọn [EMI CI-4 20W-50](/dau-dong-co-diesel/emi-ci-4-20w-50) hoặc [ENEOS DEO CI-4](/dau-dong-co-diesel/eneos-deo-ci-4). |
+| Sổ tay ghi 15W-40, xe chạy mùa đông vùng núi | Nên dùng đúng 15W-40, ví dụ [ENEOS DEO CF-4 15W-40](/dau-dong-co-diesel/eneos-deo-cf-4). |
+| Xe có bộ lọc hạt DPF | Không. |
 
-Thông số (TBN, độ nhớt, điểm chớp cháy) sẽ được cập nhật theo TDS của EMI.
+Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của EMI cho mã này, nên trang chưa có bảng chỉ tiêu (TBN, độ nhớt, điểm chớp cháy).
 
-## CF-4 hay CI-4?
+## Vì sao chọn 20W-50 cho máy cũ?
 
-Động cơ đời mới có hệ tuần hoàn khí xả (EGR) hoặc sổ tay ghi CH-4, CI-4 thì phải dùng dầu **CI-4**, ví dụ [EMI CI-4 20W-50](/dau-dong-co-diesel/emi-ci-4-20w-50) hoặc [ENEOS DEO CI-4](/dau-dong-co-diesel/eneos-deo-ci-4). CI-4 dùng thay được cho CF-4, nhưng không làm ngược lại. Xem thêm ở trang [dầu động cơ diesel](/dau-dong-co-diesel).
+Động cơ đã mòn, khe hở lớn thường giữ áp dầu tốt hơn với dầu đặc. Ở nhiệt độ làm việc, 20W-50 đặc hơn 15W-40 khoảng 25–30% (ví dụ ENEOS DEO CF-4: 18,44 so với 14,31 mm²/s ở 100 °C). Đổi lại, dầu đặc hơn khi khởi động lạnh.
+
+> **Nhận định của HT VINA:** Đội xe tải, máy công trình đời trước 2004 chạy quanh năm ở đồng bằng Bắc Bộ, không có EGR, thì CF-4 20W-50 theo phuy là lựa chọn kinh tế. Xe nào trong đội đã có EGR thì tách riêng, dùng dầu CI-4.
+
+## EMI CF-4 hay ENEOS DEO CF-4?
+
+Cả hai cùng cấp API CF-4 và có sẵn tại kho. Khác nhau ở quy cách và mức công bố số liệu:
+
+| | EMI CF-4 20W-50 | [ENEOS DEO CF-4](/dau-dong-co-diesel/eneos-deo-cf-4) |
+| :--- | :--- | :--- |
+| Cấp nhớt | 20W-50 | 15W-40 và 20W-50 |
+| Quy cách có sẵn | Phuy 200 L | Can 18 L |
+| Số liệu TDS | Chưa có | Có: độ nhớt, VI, điểm chớp cháy, TBN |
+
+> **Nhận định của HT VINA:** Thay dầu cho nhiều xe, nhiều máy cùng lúc thì phuy EMI tiện hơn. Thay lẻ từng xe, hoặc cần số liệu TBN để theo dõi dầu, thì can ENEOS DEO CF-4.
+
+## Khi nào cần thay dầu?
+
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào test dầu:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Lệch quá ±10% so với dầu mới. Lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Nước | Trên 0,2% (ASTM D6224) |
+| Trị số kiềm (TBN) | Còn khoảng một nửa so với dầu mới |
+
+Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu EMI CF-4 20W-50?
-Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn.
+Theo mốc km hoặc giờ máy của nhà sản xuất động cơ, rút ngắn khi máy chạy bụi, quá tải. Đội xe lớn có thể dựa vào bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
 
-Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của EMI CF-4 20W-50: **độ nhớt** lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+### CF-4 dùng thay cho CI-4 được không?
+Không. CI-4 dùng thay được cho CF-4, nhưng không làm ngược lại. Máy có EGR mà dùng CF-4 sẽ nhanh đặc dầu do muội than.
 
-### Có xuất hóa đơn VAT không?
-Có. Gửi số xe, loại máy và lượng dầu dùng mỗi tháng qua trang [báo giá](/bao-gia).
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách có sẵn:** phuy 200 L.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=EMI%20CF-4%2020W-50) kèm số xe và lượng dầu dùng mỗi tháng.

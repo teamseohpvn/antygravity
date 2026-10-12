@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-006"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "VHP Hymatran Oil 10W"
 seo_title: "VHP Hymatran 10W – Dầu Truyền Động, Thủy Lực Máy Công Trình"
 description: "Dầu VHP Hymatran 10W cho hộp số, bộ biến mô, thủy lực xe nâng, máy xúc, máy nông nghiệp. Đáp ứng Caterpillar TO-2. Phuy 200 L, xô 18 L, giao Hải Phòng."
@@ -27,6 +27,8 @@ specs:
 tds_date: "06/2023"
 tds_url: "https://hoadauvhp.com/hymatranw-nid16.html"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Phuy 200 L", sku: "Hymatran 10W" }
   - { name: "Xô 18 L" }
@@ -50,37 +52,58 @@ images:
   - { src: "/images/san-pham/vhp-hymatran-10w-xo-18l.webp", alt: "Xô 18 lít dầu VHP Hymatran Oil 10W" }
   - { src: "/images/san-pham/vhp-hymatran-10w-nhan.webp", alt: "Nhãn VHP Hymatran Oil 10W ghi cấp SAE 10W" }
 
+doc_gia: "Trang này dành cho đội xe nâng, máy xúc lật, máy ủi có sổ tay ghi dầu SAE 10W cho hộp số powershift, biến mô và thủy lực."
+tom_tat:
+  - "**Dùng được** cho hộp số powershift, bộ biến mô, hệ thủy lực máy công trình khi hãng yêu cầu dầu SAE 10W hoặc Caterpillar TO-2."
+  - "**Một mã cho nhiều cụm**: đội xe nâng, xe công trình chỉ cần dự trữ một loại."
+  - "**Không dùng** cho cầu xe, động cơ xe đời mới, hộp số tự động ô tô con; không thay dầu thủy lực VG 68 khi chưa hỏi hãng."
+  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["sae-10w", "caterpillar-to-2", "dau-truyen-dong", "xe-nang", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
-**VHP Hymatran Oil 10W** là dầu đơn cấp SAE 10W do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hộp số, bộ biến mô và hệ thủy lực của máy công trình khi nhà sản xuất máy yêu cầu dầu cấp nhớt 10W. Theo VHP, dầu đáp ứng **API CF/SF, ACEA E2, Caterpillar TO-2, ZF TE-ML 03B** và thử bơm **Vickers 35VQ25**. HT VINA là **đại lý dầu mỡ VHP**, có hàng **phuy 200 L** và **xô 18 L** tại kho TP Hải Phòng (Hải Dương cũ).
+**VHP Hymatran Oil 10W** là dầu đơn cấp SAE 10W do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hộp số, bộ biến mô và hệ thủy lực của máy công trình khi nhà sản xuất máy yêu cầu dầu cấp nhớt 10W. Theo VHP, dầu đáp ứng **API CF/SF, ACEA E2, Caterpillar TO-2, ZF TE-ML 03B** và thử bơm **Vickers 35VQ25**.
 
-## Tính năng chính
+HT VINA là **đại lý dầu mỡ VHP**. Phuy 200 L và xô 18 L **nhận đặt theo yêu cầu**. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-- **Một mã dầu cho nhiều cụm.** Nhiều xe nâng, máy xúc lật dùng chung dầu SAE 10W cho hộp số powershift, bộ biến mô và thủy lực. Đội xe chỉ cần dự trữ một loại.
-- **Giảm mòn ở bơm và ly hợp.** Đáp ứng Caterpillar TO-2 và thử bơm cánh gạt Vickers 35VQ25, phù hợp hộp số có ly hợp ướt và bơm thủy lực áp cao.
-- **Tẩy rửa và phân tán tốt.** Độ kiềm tổng 10 mgKOH/g giữ hệ thống sạch, hạn chế cặn ở van và đường dầu.
-- **Chảy tốt khi lạnh.** Điểm rót chảy −30 °C, máy khởi động sáng mùa đông vẫn bơm dầu nhanh.
-- **Chống oxy hóa, chống gỉ.** Kéo dài thời gian giữa hai lần thay dầu và giảm chi phí bảo dưỡng.
-
-## Khi nào chọn Hymatran 10W
+## Hymatran 10W có hợp với máy của bạn không?
 
 | Cụm máy | Hymatran 10W | Nên dùng loại khác |
 | :--- | :--- | :--- |
-| Hộp số powershift, biến mô xe nâng, máy xúc | Có, khi sổ tay ghi SAE 10W hoặc Caterpillar TO-2 | Khi hãng ghi SAE 30 hoặc dầu chuyên dụng riêng |
-| Thủy lực máy công trình | Có, khi hãng cho phép dầu động cơ SAE 10W | Khi hãng ghi dầu thủy lực ISO VG 46/68: xem [dầu thủy lực](/dau-thuy-luc) |
-| Cầu xe, vi sai | Không | Dầu cầu GL-5 như [VHP Spadila GL-5](/dau-cau-hop-so/vhp-spadila-gl5) |
+| Hộp số powershift, biến mô xe nâng, máy xúc | **Được**, khi sổ tay ghi SAE 10W hoặc Caterpillar TO-2 | Khi hãng ghi SAE 30 hoặc dầu chuyên dụng riêng |
+| Thủy lực máy công trình | **Được**, khi hãng cho phép dầu động cơ SAE 10W | Khi hãng ghi dầu thủy lực ISO VG 46/68: xem [dầu thủy lực](/dau-thuy-luc) |
+| Cầu xe, vi sai | Không | Dầu cầu GL-5 như [EMI Gear EP GL-5](/dau-cau-hop-so/emi-gear-ep-gl-5) |
 | Động cơ diesel | Không | Xem [dầu động cơ diesel](/dau-dong-co-diesel) |
+| Sổ tay bắt buộc Caterpillar TO-4 | Không xác nhận | VHP chỉ công bố TO-2 |
 
-Độ nhớt ở 40 °C của Hymatran 10W là 34,5 cSt, gần với dầu thủy lực VG 32. Vì vậy không thay cho hệ thủy lực đang dùng VG 68 mà chưa hỏi hãng máy. Xem các mã khác ở trang [dầu cầu, dầu hộp số](/dau-cau-hop-so).
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài lấy từ bảng chỉ tiêu của VHP.
+
+- **Giảm mòn ở bơm và ly hợp.** Đáp ứng Caterpillar TO-2 và thử bơm cánh gạt Vickers 35VQ25, phù hợp hộp số có ly hợp ướt và bơm thủy lực áp cao.
+- **Độ kiềm tổng 10 mg KOH/g.** Giữ hệ thống sạch, hạn chế cặn ở van và đường dầu.
+- **Chảy tốt khi lạnh.** Điểm rót chảy −30 °C, máy khởi động sáng mùa đông vẫn bơm dầu nhanh.
+- **Độ nhớt 34,5 cSt ở 40 °C.** Gần với dầu thủy lực VG 32, loãng hơn nhiều so với VG 68.
+
+> **Nhận định của HT VINA:** Vì độ nhớt gần VG 32, không đổ Hymatran 10W vào hệ thủy lực đang dùng VG 68 khi chưa hỏi hãng máy. Đội xe nâng có sổ tay ghi chung SAE 10W cho hộp số và thủy lực thì dùng một mã này cho cả hai, đỡ nhầm khi châm.
+
+## Khi nào cần thay dầu?
+
+Theo mốc giờ máy trong sổ tay xe. Xe chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn. Khi nghi dầu có vấn đề (dầu đục, hộp số trượt, bơm kêu), lấy mẫu kiểm tra:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 31,1–38 mm²/s (lệch quá ±10% so với 34,5 mm²/s theo TDS). Đo bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
+
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu VHP Hymatran Oil 10W?
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
-
-Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (dầu mới 34,5 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 31,1–38 mm²/s là vượt ngưỡng) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo mốc giờ máy trong sổ tay xe. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Hymatran 10W có phải dầu động cơ không?
 VHP xếp đây là dầu động cơ đơn cấp, nhưng mục đích chính là dùng cho hộp số, biến mô và thủy lực của máy công trình. Động cơ xe đời mới nên dùng dầu động cơ diesel đa cấp đúng chuẩn.
@@ -88,5 +111,9 @@ VHP xếp đây là dầu động cơ đơn cấp, nhưng mục đích chính l�
 ### Xe nâng của tôi ghi dầu TO-4, dùng Hymatran 10W được không?
 Theo công bố của VHP, Hymatran 10W đáp ứng Caterpillar TO-2, không ghi TO-4. Nếu sổ tay bắt buộc TO-4, hãy gửi model xe qua trang [liên hệ](/contact) để chúng tôi kiểm tra trước khi giao.
 
-### Có CO/CQ và hóa đơn VAT không?
-Có. Mỗi lô giao kèm hóa đơn VAT, CO/CQ cung cấp theo lô khi khách yêu cầu.
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** phuy 200 L và xô 18 L, nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Hymatran%20Oil%2010W) kèm số lượng.

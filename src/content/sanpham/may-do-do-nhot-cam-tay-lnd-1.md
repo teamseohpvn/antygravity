@@ -34,17 +34,32 @@ warnings:
   - "Lau cốc bằng dung môi trong khu vực thông gió, xa nguồn lửa; thu gom giẻ dính dầu riêng."
 storage: "Lau sạch, khô sau mỗi lần đo; đậy lỗ chảy, tránh va đập làm méo miệng lỗ."
 
+doc_gia: "Trang này dành cho tổ bảo trì muốn so nhanh độ nhớt dầu đang dùng với dầu mới ngay cạnh máy, không cần điện, không cần phòng thí nghiệm."
+tom_tat:
+  - "**Cốc chảy inox lỗ 4 mm**: đo thời gian chảy (20–200 giây), không cần điện, nặng khoảng 2,5 kg."
+  - "**Dùng để so sánh** dầu đang dùng với dầu mới cùng mã, cùng nhiệt độ; kết quả là giây, không phải mm²/s."
+  - "**Hợp dầu loãng và trung bình** (dầu thủy lực, dầu tuần hoàn); dầu bánh răng VG 320 trở lên nên dùng nhớt kế mao quản."
+  - "**Nhận đặt theo yêu cầu.**"
 related_posts: ["huong-dan-test-chat-luong-dau"]
 tags: ["thiet-bi-do", "do-nhot", "test-nhanh"]
 date: "2026-10-06"
-updated: "2026-10-06"
+updated: "2026-10-12"
 ---
 
 **Máy đo độ nhớt cầm tay LND-1** là một cốc chảy bằng inox có lỗ đáy đường kính 4 mm. Đổ đầy cốc, mở lỗ cho dầu chảy và bấm giờ đến khi dòng chảy đứt. Thời gian chảy (giây) càng dài thì dầu càng đặc. Thiết bị không cần điện, nặng khoảng 2,5 kg, mang ra đặt cạnh máy được.
 
 LND-1 vốn được thiết kế cho ngành sơn, mực in, keo. Với dầu nhớt, cốc chảy là công cụ **so sánh nhanh** rất tiện: đo dầu đang chạy và dầu mới cùng mã, cùng nhiệt độ, rồi so hai thời gian chảy. Kết quả là giây, **không phải mm²/s**, nên không đối chiếu trực tiếp với con số trên TDS.
 
-## Cách đo độ nhớt dầu bằng LND-1
+## LND-1 có hợp với dầu của bạn không?
+
+| Loại dầu | Dùng LND-1 được không? |
+| :--- | :--- |
+| Dầu thủy lực VG 32–68, dầu tuần hoàn cấp thấp | **Được.** Nằm trong dải 20–200 giây ở nhiệt độ phòng. |
+| Dầu máy nén khí, dầu động cơ | **Được**, để so sánh với dầu mới cùng mã. |
+| Dầu bánh răng đặc VG 320 trở lên ở 25 °C | Thường chảy quá chậm, vượt dải đo. Dùng [nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5). |
+| Cần số mm²/s chính xác để so với TDS | Không. Dùng nhớt kế mao quản ở 40 °C hoặc phòng thí nghiệm. |
+
+## Cách đo độ nhớt dầu bằng LND-1 thế nào?
 
 1. **Đặt cốc trên giá**, chỉnh thăng bằng. Lau sạch cốc và lỗ chảy.
 2. **Ổn định nhiệt độ mẫu.** Đo dầu mới và dầu đang dùng ở cùng một nhiệt độ, tốt nhất trong khoảng 23 ± 5 °C. Dầu vừa xả từ máy còn nóng phải để nguội.
@@ -53,7 +68,7 @@ LND-1 vốn được thiết kế cho ngành sơn, mực in, keo. Với dầu nh
 5. **Dừng giờ** khi dòng chảy liên tục bị đứt lần đầu.
 6. **Đo dầu mới** cùng mã theo đúng các bước trên, rồi so hai kết quả.
 
-## Đọc kết quả khi kiểm tra dầu
+## Đọc kết quả thế nào?
 
 Tính độ lệch: (thời gian dầu đang dùng − thời gian dầu mới) ÷ thời gian dầu mới.
 
@@ -61,11 +76,9 @@ Tính độ lệch: (thời gian dầu đang dùng − thời gian dầu mới) 
 - **Thời gian dài hơn rõ rệt:** dầu đặc lên, thường do oxy hóa hoặc bị châm dầu cấp cao hơn. Nên đo thêm [trị số axit bằng bộ kit TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
 - **Thời gian ngắn hơn rõ rệt:** dầu loãng ra, có thể lẫn dầu cấp thấp hơn, lẫn dung môi hoặc nhiên liệu.
 
-Thời gian chảy không tỉ lệ tuyến tính với độ nhớt, nên phần trăm lệch thời gian chỉ là chỉ báo. Khi cốc cho thấy độ lệch đáng kể, hãy đo lại bằng [nhớt kế thủy tinh mao quản](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5) ở 40 °C hoặc gửi mẫu phòng thí nghiệm. Cách đặt ngưỡng cảnh báo cho từng loại dầu có trong bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Thời gian chảy không tỉ lệ tuyến tính với độ nhớt, nên phần trăm lệch thời gian chỉ là chỉ báo. Cách đặt ngưỡng cảnh báo cho từng loại dầu có trong bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
-## Dầu nào đo được bằng cốc lỗ 4 mm
-
-Dải đo 20–200 giây hợp với dầu loãng và trung bình ở nhiệt độ phòng, như dầu thủy lực và dầu tuần hoàn cấp thấp. Dầu bánh răng đặc (VG 320 trở lên) ở 25 °C thường chảy quá chậm, vượt dải đo. Với loại dầu này nên dùng nhớt kế mao quản.
+> **Nhận định của HT VINA:** Giữ sẵn một chai dầu mới của lô đang dùng làm mẫu đối chứng, đo cùng lúc với mẫu dầu cũ. Khi cốc cho thấy độ lệch đáng kể, hãy đo lại bằng nhớt kế mao quản ở 40 °C hoặc gửi mẫu phòng thí nghiệm trước khi quyết định thay cả bồn.
 
 ## Câu hỏi thường gặp
 
@@ -77,3 +90,10 @@ Nên kiểm tra định kỳ bằng chất lỏng chuẩn đã biết thời gia
 
 ### Đo ngoài trời nắng được không?
 Được nhưng phải che nắng cho cốc và mẫu. Nhiệt độ thay đổi vài độ đã làm thời gian chảy của dầu thay đổi đáng kể.
+
+## Quy cách và cách đặt mua
+
+- **Quy cách:** cốc chảy inox lỗ 4 mm, kích thước 150 × 76 × 220 mm. Nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** [gửi yêu cầu báo giá](/bao-gia?sp=M%C3%A1y%20%C4%91o%20%C4%91%E1%BB%99%20nh%E1%BB%9Bt%20LND-1).

@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-002"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Castrol Transmax Axle 85W-140"
 seo_title: "Castrol Transmax Axle 85W-140 – Dầu Cầu GL-5 Phuy 209 L"
 description: "Dầu cầu Castrol Transmax Axle 85W-140 đạt API GL-5 cho cầu xe tải, xe ben, vi sai hypoid tải nặng. Phuy 209 L, có CO/CQ, VAT, giao từ kho Hải Phòng."
@@ -24,6 +24,8 @@ specs:
 tds_date: "12/2018"
 tds_url: "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/54F170AF7C9E7BC2802583660008D73D/$File/Transmax%20Axle%2085W-140%5Fvn.pdf"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Phuy 209 L", sku: "Dầu cầu Castrol" }
 stock_status: "dat-hang"
@@ -44,42 +46,76 @@ images:
   - { src: "/images/san-pham/castrol-transmax-axle-85w-140-phuy-209l.webp", alt: "Phuy 209 lít dầu cầu Castrol Transmax Axle 85W-140 tại kho Hải Phòng" }
   - { src: "/images/san-pham/castrol-transmax-axle-85w-140-nhan.webp", alt: "Nhãn phuy Castrol Transmax Axle 85W-140 ghi cấp API GL-5" }
 
+doc_gia: "Trang này dành cho đội xe tải nặng, xe ben, máy công trình đang dùng hoặc cần đặt dầu cầu Castrol GL-5 85W-140 theo phuy."
+tom_tat:
+  - "**Dùng được** cho cầu sau, vi sai hypoid, truyền động cuối yêu cầu API GL-5 cấp 85W-140."
+  - "**Không dùng** cho hộp số tay có đồng tốc mà hãng chỉ cho phép GL-4 hoặc dầu loãng hơn (75W-90, 80W-90)."
+  - "**Thông số gần như Shell Spirax S2 A 85W-140** (có sẵn xô 20 L tại kho)."
+  - "**Nhận đặt theo yêu cầu** (phuy 209 L), không có sẵn tại kho tháng 10/2026."
 tags: ["api-gl-5", "sae-85w-140", "dau-cau", "castrol"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
-**Castrol Transmax Axle 85W-140** là dầu cầu đa cấp của Castrol, đạt cấp **API GL-5**. Dầu dùng cho cầu xe, vi sai và hộp số yêu cầu dầu GL-5 cấp nhớt 85W-140, chủ yếu là xe tải nặng, xe ben và máy công trình. Chúng tôi có hàng **phuy 209 L**, kèm CO/CQ, hóa đơn VAT, giao từ kho TP Hải Phòng (Hải Dương cũ).
+**Castrol Transmax Axle 85W-140** là dầu cầu đa cấp của Castrol, đạt cấp **API GL-5**. Dầu dùng cho cầu xe, vi sai và hộp số yêu cầu dầu GL-5 cấp nhớt 85W-140, chủ yếu là xe tải nặng, xe ben và máy công trình.
 
-## Tính năng chính
+Mã này **nhận đặt theo yêu cầu** theo phuy 209 L, kèm CO/CQ, hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-- **Chịu tải nặng.** Phụ gia cực áp GL-5 bảo vệ mặt răng hypoid khi xe chở quá tải, leo dốc, đề pa liên tục ở công trường.
+## Transmax Axle 85W-140 có hợp với xe của bạn không?
+
+| Sổ tay xe ghi | Dùng Transmax Axle 85W-140 được không? |
+| :--- | :--- |
+| Cầu hypoid, API GL-5, 85W-140 | **Được.** |
+| Truyền động cuối, cầu máy công trình và xe chuyên dùng tải nặng | **Được.** |
+| Hộp số tay, hộp số phụ yêu cầu GL-5 cấp 85W-140 | **Được.** |
+| Hộp số tay có đồng tốc, hãng chỉ cho phép GL-4 hoặc 75W-90, 80W-90 | Không. |
+| Hộp số tự động, dầu ATF | Không. |
+
+## Thông số này có ý nghĩa gì khi xe chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS của Castrol.
+
 - **Màng dầu dày ở nhiệt độ cao.** Độ nhớt 26,4 mm²/s ở 100 °C, thuộc dải SAE 140. Cầu xe ben chạy nóng vẫn giữ được màng dầu giữa các răng.
 - **Vẫn bơm được khi trời lạnh.** Cấp 85W đo độ nhớt Brookfield ở −12 °C, đủ cho mùa đông miền Bắc. Đây là điểm khác dầu đơn cấp SAE 140.
+- **Chịu tải nặng.** Phụ gia cực áp GL-5 bảo vệ mặt răng hypoid khi xe chở quá tải, leo dốc, đề pa liên tục ở công trường.
 - **Điểm chớp cháy 226 °C.** Dầu ít bay hơi, ít hao khi cầu nóng lâu.
 
-## Khi nào nên chọn 85W-140
+## Transmax Axle hay Shell Spirax S2 A 85W-140?
 
-| Cấp | Độ nhớt ở 100 °C | Thường dùng cho |
+| | Castrol Transmax Axle 85W-140 | [Shell Spirax S2 A 85W-140](/dau-cau-hop-so/shell-spirax-s2-a) |
 | :--- | :--- | :--- |
-| 80W-90 | Thấp hơn, thuộc dải SAE 90 | Cầu và hộp số tay xe tải nhẹ, xe khách, xe chạy đường bằng |
-| 85W-140 | 26,4 mm²/s (Transmax Axle) | Cầu xe ben, xe đầu kéo, xe tải nặng, máy công trình chạy nóng |
+| Cấp API | GL-5 | GL-5 |
+| Độ nhớt ở 40 °C | 365 mm²/s | 358 mm²/s |
+| Độ nhớt ở 100 °C | 26,4 mm²/s | 25,6 mm²/s |
+| Chỉ số độ nhớt | 96 | 94 |
+| Điểm chớp cháy | 226 °C | 215 °C |
+| Tình trạng kho tháng 10/2026 | Nhận đặt, phuy 209 L | Có sẵn xô 20 L |
 
-Luôn chọn theo cấp ghi trong sổ tay xe. Cầu đã mòn, kêu hú hoặc rò dầu nhẹ thường được thợ chuyển sang 85W-140 để màng dầu dày hơn. Cách này chỉ là giải pháp tạm, cần kiểm tra bánh răng và phớt. Cầu mới, hộp số có đồng tốc nên giữ đúng cấp nhớt hãng xe quy định.
+> **Nhận định của HT VINA:** Hai mã cùng cấp, thông số gần nhau, thay thế được cho nhau trong đa số cầu xe. Đội xe lớn đang dùng Castrol thì đặt phuy. Cần dầu ngay hoặc lượng nhỏ thì dùng xô Shell có sẵn. Cầu đã mòn, kêu hú mà đổi lên 85W-140 chỉ là giải pháp tạm, cần kiểm tra bánh răng và phớt.
 
-Các mã 85W-140 khác trong kho: [Shell Spirax S2 A 85W-140](/dau-cau-hop-so/shell-spirax-s2-a) và [VHP Spadila GL-5](/dau-cau-hop-so/vhp-spadila-gl5). Xem toàn bộ nhóm ở trang [dầu cầu, dầu hộp số](/dau-cau-hop-so).
+## Khi nào cần thay dầu?
+
+Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 328,5–401,5 mm²/s (lệch quá ±10% so với 365 mm²/s theo TDS) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
+
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu Castrol Transmax Axle 85W-140?
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó.
-
-Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra: **nước** trên 0,1% thì nên thay dầu và tìm chỗ nước lọt vào, cách đo nhanh xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong). **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (dầu mới 365 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 328,5–401,5 mm²/s là vượt ngưỡng) cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo mốc km hoặc giờ máy trong sổ tay xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Castrol Transmax Axle 85W-140 có thay được dầu cầu 140 đơn cấp không?
 Ở nhiệt độ làm việc, hai loại có độ nhớt gần nhau nên thường thay được nếu cùng cấp API. Bản 85W-140 chảy tốt hơn khi lạnh. Nếu xe đang dùng dầu GL-4, hãy hỏi thợ hoặc hãng xe trước khi đổi sang GL-5.
 
-### Phuy 209 L có chia lẻ không?
-Mã này chúng tôi đang có phuy 209 L. Nếu cần lượng nhỏ, hãy [liên hệ](/contact) để được tư vấn mã dầu cầu 85W-140 khác có xô 18–20 L.
+## Quy cách và giấy tờ khi mua
 
-### Có CO/CQ và hóa đơn VAT không?
-Có. Mỗi lô giao kèm hóa đơn VAT, CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Quy cách:** phuy 209 L, nhận đặt theo yêu cầu. Cần lượng nhỏ thì xem mã 85W-140 có xô.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Castrol%20Transmax%20Axle%2085W-140) kèm số lượng.

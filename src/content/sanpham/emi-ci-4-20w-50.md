@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-013"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/emi-ci-4-20w-50/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Động Cơ EMI CI-4 20W-50"
 seo_title: "Dầu Động Cơ Diesel EMI CI-4 20W-50 – Xô | Có Sẵn"
 description: "Dầu động cơ diesel EMI API CI-4 SAE 20W-50 cho xe tải, máy công trình đời mới có EGR và máy cũ chạy nặng. Xô có sẵn, có VAT, giao từ Hải Phòng."
@@ -36,35 +36,73 @@ images:
   - { src: "/images/san-pham/emi-ci-4-20w-50-xo.webp", alt: "Xô dầu động cơ diesel EMI CI-4 20W-50 tại kho Hải Phòng" }
   - { src: "/images/san-pham/emi-ci-4-20w-50-nhan.webp", alt: "Nhãn xô EMI CI-4 20W-50 ghi cấp API và SAE" }
 
+doc_gia: "Trang này dành cho chủ xe, đội máy công trình nhiều đời máy cần một mã dầu diesel CI-4 20W-50 đóng xô."
+tom_tat:
+  - "**Dùng được** cho động cơ diesel có EGR và cả máy cũ yêu cầu CF-4, CH-4 (CI-4 tương thích ngược)."
+  - "**Không dùng** cho xe có bộ lọc hạt DPF hoặc sổ tay ghi API CK-4."
+  - "**Đóng xô**, hợp thay lẻ từng xe; đội xe lớn cần phuy thì xem ENEOS DEO CI-4 hoặc Castrol CRB Turbomax."
+  - "**Chưa có TDS** của EMI: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["api-ci-4", "sae-20w-50", "emi", "dong-co-diesel"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **EMI CI-4 20W-50** là dầu động cơ diesel đạt cấp **API CI-4**, độ nhớt **SAE 20W-50**. CI-4 là cấp cho động cơ diesel 4 kỳ cao tốc đời mới, kể cả động cơ có hệ tuần hoàn khí xả (EGR), và tương thích ngược với máy yêu cầu CF-4, CH-4.
 
 Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **xô**, có hóa đơn VAT.
 
-## Tính năng chính
+## EMI CI-4 20W-50 có hợp với xe, máy của bạn không?
 
-- **Cấp CI-4 dùng được cho cả máy mới lẫn máy cũ.** Một mã cho đội xe nhiều đời, giảm nhầm lẫn khi thay dầu.
-- **Kiểm soát muội than tốt hơn CF-4.** Động cơ có EGR đưa khí xả trở lại buồng đốt, sinh nhiều muội; dầu CI-4 được thiết kế để giữ muội lơ lửng, hạn chế đặc dầu và mòn.
-- **20W-50 cho khí hậu nóng, tải nặng.** Hợp với máy công trình, xe tải chạy đèo dốc mùa hè.
+| Sổ tay xe, máy ghi | Dùng EMI CI-4 20W-50 được không? |
+| :--- | :--- |
+| API CI-4, CH-4, CF-4; SAE 20W-50 | **Được.** |
+| Động cơ có EGR | **Được.** |
+| Máy phát, máy thủy diesel chạy tải nặng | **Được.** |
+| Xe có bộ lọc hạt DPF, API CK-4, ACEA E6, E9 | Không. |
+| Sổ tay ghi 15W-40, chạy mùa đông vùng núi | Dùng đúng 15W-40, ví dụ [ENEOS DEO CI-4 15W-40](/dau-dong-co-diesel/eneos-deo-ci-4). |
 
-Thông số chi tiết sẽ được cập nhật theo TDS của EMI.
+Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của EMI cho mã này, nên trang chưa có bảng chỉ tiêu.
 
-## Chọn EMI CI-4 hay mã khác
+## CI-4 khác CF-4 thế nào khi máy chạy?
 
-Cần phuy cho đội xe lớn, xem [ENEOS DEO CI-4](/dau-dong-co-diesel/eneos-deo-ci-4) (có phuy 200 L cấp 20W-50) hoặc [Castrol CRB Turbomax CI-4](/dau-dong-co-diesel/castrol-crb-turbomax). Máy đời cũ chỉ cần CF-4, xem [EMI CF-4 20W-50](/dau-dong-co-diesel/emi-cf-4-20w-50). Xem tất cả ở trang [dầu động cơ diesel](/dau-dong-co-diesel).
+Động cơ có EGR đưa khí xả trở lại buồng đốt, sinh nhiều muội than. Dầu CI-4 được thiết kế để giữ muội lơ lửng, hạn chế đặc dầu và mòn. Vì vậy một mã CI-4 dùng được cho cả máy mới lẫn máy cũ, giảm nhầm lẫn khi thay dầu cho đội xe nhiều đời.
+
+> **Nhận định của HT VINA:** Đội xe có cả máy có EGR và máy cũ thì gom về một mã CI-4. Đội xe chỉ toàn máy cũ thì [EMI CF-4 20W-50](/dau-dong-co-diesel/emi-cf-4-20w-50) theo phuy là đủ.
+
+## EMI CI-4 hay ENEOS DEO CI-4?
+
+| | EMI CI-4 20W-50 | [ENEOS DEO CI-4](/dau-dong-co-diesel/eneos-deo-ci-4) |
+| :--- | :--- | :--- |
+| Cấp API | CI-4 | CI-4/SL |
+| Cấp nhớt | 20W-50 | 15W-40 và 20W-50 |
+| Quy cách có sẵn | Xô | Can 18 L; phuy 200 L (20W-50) |
+| Số liệu TDS | Chưa có | Có: độ nhớt, VI, điểm chớp cháy, TBN |
+
+> **Nhận định của HT VINA:** Cần phuy cho đội xe lớn thì xem ENEOS DEO CI-4 (phuy 200 L cấp 20W-50) hoặc [Castrol CRB Turbomax CI-4](/dau-dong-co-diesel/castrol-crb-turbomax). Cần số liệu TBN để theo dõi dầu thì chọn mã có TDS.
+
+## Khi nào cần thay dầu?
+
+Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó. Với đội xe lớn, có thể dựa vào test dầu:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Lệch quá ±10% so với dầu mới. Lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Nước | Trên 0,2% (ASTM D6224) |
+| Trị số kiềm (TBN) | Còn khoảng một nửa so với dầu mới |
+
+Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu EMI CI-4 20W-50?
-Theo mốc km hoặc giờ máy trong sổ tay của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó.
-
-Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào test dầu để kéo dài hay rút ngắn chu kỳ của EMI CI-4 20W-50: **độ nhớt** lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc), **nước** trên 0,2% (ASTM D6224), và **trị số kiềm TBN** giảm còn khoảng một nửa so với dầu mới. Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe lớn có thể dựa vào bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Xe có bộ lọc DPF dùng dầu này được không?
 Không nên. Xe có DPF thường cần dầu ít tro theo API CK-4 hoặc ACEA E6, E9. Hãy xem sổ tay xe.
 
-### Có xuất hóa đơn VAT không?
-Có. Gửi nhu cầu qua trang [báo giá](/bao-gia).
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách có sẵn:** xô. Dung tích xô xác nhận khi báo giá.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=EMI%20CI-4%2020W-50).

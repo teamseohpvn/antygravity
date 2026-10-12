@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-006"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "VHP Spinax AW 68 và Spinax AW Super 68"
 seo_title: "VHP Spinax AW 68, AW Super 68 – Dầu Thủy Lực Phuy 200L"
 description: "Dầu thủy lực VHP Spinax AW 68 và Spinax AW Super 68 đạt ISO 11158 HM, sản xuất tại Việt Nam. Phuy 200 L, có CO/CQ, VAT, giao từ kho Hải Phòng."
@@ -26,6 +26,8 @@ specs:
 tds_date: "06/2023"
 tds_url: "https://hoadauvhp.com/spinaxawsuper-nid14.html"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Spinax AW 68 – Phuy 200 L", sku: "spinax AW68" }
   - { name: "Spinax AW Super 68 – Phuy 200 L", sku: "spinax super" }
@@ -48,23 +50,41 @@ images:
   - { src: "/images/san-pham/vhp-spinax-aw-super-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực VHP Spinax AW Super 68" }
   - { src: "/images/san-pham/vhp-spinax-aw-nhan.webp", alt: "Nhãn phuy dầu thủy lực VHP Spinax AW ghi cấp độ nhớt 68" }
 
+doc_gia: "Trang này dành cho người mua hàng cần dầu thủy lực HM phổ thông sản xuất trong nước cho máy ép, máy dập chạy tải thường."
+tom_tat:
+  - "**Dùng được** cho hệ thủy lực yêu cầu ISO 11158 HM cấp 68: máy ép, máy dập, máy chấn, máy xúc, xe cẩu."
+  - "**Spinax AW** gốc khoáng cho tải thường; **Spinax AW Super** gốc nhóm II cho máy chạy nhiều ca."
+  - "**Sổ tay ghi HLP theo DIN** thì chọn VHP Isonas AW."
+  - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-68", "chong-mai-mon", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Spinax AW** là dầu thủy lực chống mài mòn do nhà máy VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu đạt phân loại HM theo ISO 11158 và ISO 6743/4, dùng cho hệ thủy lực trong xưởng lẫn máy xúc, xe cẩu. Dòng có hai phiên bản: **Spinax AW** pha từ dầu gốc khoáng và **Spinax AW Super** pha từ dầu gốc nhóm II.
 
-Chúng tôi có **Spinax AW 68** và **Spinax AW Super 68**, đều là phuy 200 L. HT VINA là đại lý dầu mỡ VHP. Hàng có CO/CQ, hóa đơn VAT và giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+**Spinax AW 68** và **Spinax AW Super 68** **nhận đặt theo yêu cầu**, đều là phuy 200 L. HT VINA là đại lý dầu mỡ VHP. Hàng có CO/CQ, hóa đơn VAT và giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
-## Tính năng chính
+## Spinax AW có hợp với máy của bạn không?
 
-- **Dầu bền, ít phải thay.** Dầu chống oxy hóa tốt, giữ ổn định cả khi xưởng nóng ẩm. Nhờ đó giảm chi phí thay dầu.
+| Sổ tay máy ghi | Dùng Spinax AW được không? |
+| :--- | :--- |
+| HM 68 (ISO 11158), AW 68 | **Được.** |
+| Máy ép, máy dập, máy chấn tôn, máy cắt thủy lực | **Được.** |
+| Máy xúc, xe cẩu, hệ thủy lực tàu thủy | **Được.** |
+| HLP theo DIN 51524-2 | Chọn [VHP Isonas AW](/dau-thuy-luc/vhp-isonas-aw). |
+| HV (máy ngoài trời lạnh sâu, dải nhiệt rộng), dầu chống cháy | Không. |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo trang sản phẩm của VHP (06/2023). VHP không công bố điểm chớp cháy và điểm đông đặc của Spinax AW thường.
+
+- **Chỉ số độ nhớt 105.** Mức thông thường của dầu HM: dầu loãng đi khi bồn nóng, giữ nhiệt độ bồn ổn định để áp suất đều.
 - **Chống mài mòn cho bơm.** Phụ gia chống mài mòn bảo vệ bơm bánh răng, bơm cánh gạt và xi lanh trong điều kiện làm việc thông thường.
 - **Tách nước, thoát khí, chống bọt.** Hệ thủy lực chạy êm, ít bị giật hay kêu do bọt khí.
-- **Chống phân hủy do nhiệt và cơ học.** Dầu giảm hư hại do cặn bẩn trong hệ thống thủy lực.
 - **Sản xuất trong nước.** Nhà máy VHP đặt tại Cẩm Giàng (Hải Dương cũ), gần kho của chúng tôi.
 
-## Chọn Spinax AW hay Spinax AW Super
+## Nên chọn Spinax AW hay Spinax AW Super?
 
 | Chỉ tiêu (cấp 68) | Spinax AW 68 | Spinax AW Super 68 |
 | :--- | :--- | :--- |
@@ -72,30 +92,40 @@ Chúng tôi có **Spinax AW 68** và **Spinax AW Super 68**, đều là phuy 200
 | Độ nhớt ở 40 °C | 68 cSt | 68 cSt |
 | Độ nhớt ở 100 °C | 8,9 cSt | 8,9 cSt |
 | Chỉ số độ nhớt | 105 | 105 |
-| Tỷ trọng ở 15 °C | 0,865 kg/l | 0,865 kg/l |
-| Điểm chớp cháy cốc hở | – | 200 °C |
-| Điểm đông đặc | – | < -15 °C |
+| Điểm chớp cháy cốc hở | Không công bố | 200 °C |
+| Điểm đông đặc | Không công bố | < -15 °C |
 
-Thông số theo trang sản phẩm của VHP (06/2023). VHP không công bố điểm chớp cháy và điểm đông đặc của Spinax AW thường nên bảng để trống.
+> **Nhận định của HT VINA:** Spinax AW 68 hợp với máy ép, máy dập chạy tải thường. Spinax AW Super 68 dùng dầu gốc nhóm II, hợp hơn khi máy chạy nhiều ca và muốn dầu bền lâu. Máy ép nhựa áp cao chạy liên tục thì xem [VHP Isonas AW](/dau-thuy-luc/vhp-isonas-aw), đạt thêm DIN 51524-2 HLP.
 
-Spinax AW 68 hợp với máy ép, máy dập chạy tải thường, cần một loại dầu thủy lực phổ thông. Spinax AW Super 68 dùng dầu gốc nhóm II, hợp hơn khi máy chạy nhiều ca và muốn dầu bền lâu. Với máy ép nhựa áp cao chạy liên tục, xem thêm [VHP Isonas AW](/dau-thuy-luc/vhp-isonas-aw). Dòng này dùng dầu gốc nhóm II và đạt thêm DIN 51524-2 HLP. Cách chọn cấp độ nhớt xem ở trang [dầu thủy lực](/dau-thuy-luc).
+## Spinax AW 68 hay một mã có sẵn tại kho?
+
+Spinax AW không có sẵn tại kho tháng 10/2026. Cần dầu thủy lực HM 68 ngay thì các mã có sẵn gồm [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68), [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68), [EMI AW 68](/dau-thuy-luc/emi-aw-68) và [X-One AW 68](/dau-thuy-luc/x-one-aw-68). Khoảng giá theo lít của từng mã ở [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc).
+
+> **Nhận định của HT VINA:** Máy đang dùng Spinax AW và chạy ổn thì đặt tiếp đúng mã. Đổi sang mã khác thì xả hết dầu cũ và thay lọc, không trộn dầu khác hãng.
+
+## Khi nào cần thay dầu?
+
+Thay dầu Spinax AW theo tình trạng dầu sẽ chính xác hơn thay theo lịch. Lấy mẫu ở đường hồi khi máy đang chạy và so với dầu mới:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| :--- | :--- | :--- |
+| Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (cấp ISO VG 68 danh định 68 mm²/s, lệch quá ±10%) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+
+Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu thủy lực VHP Spinax AW 68?
-Thay dầu Spinax AW theo tình trạng dầu sẽ chính xác hơn thay theo lịch. Lấy mẫu ở đường hồi khi máy đang chạy và so với dầu mới theo ba chỉ tiêu:
-
-- **Độ nhớt ở 40 °C** lệch quá ±10%: dầu mới 68 mm²/s theo TDS, nên mẫu đang dùng nằm ngoài khoảng 61,2–74,8 mm²/s là vượt ngưỡng. Đo nhanh bằng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
-- **Trị số axit** tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo cho dầu thủy lực theo ASTM D6224), đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
-- **Nước** trên 0,05% (500 ppm). Dầu đục màu sữa là dấu hiệu đã nhiễm nước.
-
-Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Spinax AW có cấp 32, 46 không?
-VHP sản xuất Spinax AW các cấp 32, 46, 68 và 100. Hiện kho chúng tôi có sẵn cấp 68. Cấp khác vui lòng [liên hệ](/contact) để đặt hàng.
+VHP sản xuất Spinax AW các cấp 32, 46, 68 và 100. Cấp khác vui lòng [liên hệ](/contact) để đặt hàng.
 
-### Có trộn Spinax AW với dầu thủy lực hãng khác được không?
-Không nên trộn dầu khác hãng vì phụ gia có thể không tương thích. Khi đổi dầu, xả hết dầu cũ và thay lọc.
+## Quy cách và giấy tờ khi mua
 
-### Có xuất hóa đơn và CO/CQ không?
-Có. Mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu. Gửi yêu cầu ở trang [báo giá](/bao-gia).
+- **Quy cách:** Spinax AW 68 và Spinax AW Super 68, phuy 200 L, nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Spinax%20AW) kèm số lượng.

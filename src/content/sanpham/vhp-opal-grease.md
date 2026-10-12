@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-006"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Mỡ VHP Opal Grease NLGI 3, NLGI 4"
 seo_title: "Mỡ VHP Opal Grease NLGI 3, 4 – Mỡ Đa Dụng Tải Nặng"
 description: "Mỡ VHP Opal Grease NLGI 3 (VHP GRE MIL 3) gốc lithium-canxi, làm việc -10 đến 120 °C, cho đầu trục, ổ bi tải nặng. Phuy 180 kg, xô 15 kg NLGI 4."
@@ -29,6 +29,8 @@ specs:
 tds_date: "06/2023"
 tds_url: "https://hoadauvhp.com/opalgreaselvhpgremil-nid3.html"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "NLGI 3 – Phuy 180 kg", sku: "MỠ OPAL L3" }
   - { name: "NLGI 4 – Xô 15 kg", sku: "Mỡ OPAL4(15KG)" }
@@ -52,37 +54,84 @@ images:
   - { src: "/images/san-pham/vhp-opal-grease-nlgi4-xo-15kg.webp", alt: "Xô 15 kg mỡ VHP Opal Grease NLGI 4" }
   - { src: "/images/san-pham/vhp-opal-grease-nhan.webp", alt: "Nhãn mỡ VHP Opal Grease ghi cấp NLGI" }
 
+doc_gia: "Trang này dành cho tổ bảo trì cần mỡ đặc ít tách dầu cho ổ bi tải nặng, đầu trục và cơ cấu chuyển động kín."
+tom_tat:
+  - "**Dùng được** cho ổ bi tải nặng, đầu trục, máy công cụ, máy nông nghiệp làm việc từ −10 °C đến 120 °C."
+  - "**Ít tách dầu**: mẫu NLGI 3 chỉ tách 8% (cam kết dưới 18%), hàm lượng nước bằng 0."
+  - "**NLGI 3** cho ổ bi, đầu trục; **NLGI 4** rất đặc cho ổ bi lớn tốc độ chậm, chỗ rung mạnh."
+  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-3", "nlgi-4", "mo-da-dung", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Opal Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Cấp NLGI 3 còn mang tên **VHP GRE MIL 3**. Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. VHP định hướng mỡ cho đầu trục, ổ bi tải nặng và các cơ cấu chuyển động kín.
 
-HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dương cũ) có **NLGI 3 phuy 180 kg** và **NLGI 4 xô 15 kg**. Hàng có CO/CQ và hóa đơn VAT.
+HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 xô 15 kg** **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Opal Grease có hợp với điểm bôi trơn của bạn không?
 
-- **Chịu tải nặng hơn mỡ đa dụng thông thường.** VHP khuyến cáo dùng cho vòng bi tải nặng và đầu trục làm việc khắc nghiệt, từ −10 °C đến 120 °C.
-- **Bền cơ học, ít tách dầu.** Mẫu NLGI 3 chỉ tách 8 % dầu, thấp hơn nhiều mức cam kết dưới 18 %. Mỡ ít chảy, ít văng nên đỡ phải bơm bù.
-- **Kháng nước, chống gỉ.** Mỡ đạt thử ăn mòn kim loại và chống rửa trôi tốt. Thiết bị hàng hải dùng được.
+| Điểm bôi trơn | Dùng Opal Grease được không? |
+| :--- | :--- |
+| Ổ bi tải nặng, đầu trục làm việc khắc nghiệt dưới 120 °C | **Được.** |
+| Cơ cấu chuyển động kín, máy công cụ, máy nông nghiệp | **Được.** |
+| Thiết bị hàng hải | **Được**, theo VHP. |
+| Ổ bi chạy nhanh và nóng liên tục | Nên dùng [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) (nhỏ giọt tối thiểu 190 °C). |
+| Ổ bi nóng trên 120 °C | Không. Dùng [mỡ chịu nhiệt](/mo-chiu-nhiet). |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là bảng VHP công bố cho cấp NLGI 3 (VHP GRE MIL 3), kèm mức cam kết.
+
+- **Bền cơ học, ít tách dầu.** Mẫu NLGI 3 chỉ tách 8% dầu, thấp hơn nhiều mức cam kết dưới 18%. Mỡ ít chảy, ít văng nên đỡ phải bơm bù.
 - **Khô và sạch.** Mẫu NLGI 3 có hàm lượng nước bằng 0 và không có tạp chất cơ học.
+- **Nhiệt độ nhỏ giọt 140 °C** (cam kết trên 125 °C): vẫn là mỡ đa dụng.
+- **Kháng nước, chống gỉ.** Mỡ đạt thử ăn mòn kim loại theo GOST 9080-77.
 
-## Chọn NLGI 3 hay NLGI 4
+## Nên chọn NLGI 3 hay NLGI 4?
 
 | | Opal Grease NLGI 3 | Opal Grease NLGI 4 |
 | :--- | :--- | :--- |
 | Độ đặc | Đặc, độ xuyên kim 235 (cam kết 210–250) | Rất đặc, cứng hơn NLGI 3 |
-| Quy cách trong kho | Phuy 180 kg | Xô 15 kg |
+| Quy cách | Phuy 180 kg | Xô 15 kg |
 | Thường dùng cho | Ổ bi, đầu trục, máy công cụ, máy nông nghiệp | Ổ bi lớn tốc độ chậm, chỗ rung mạnh hoặc dễ chảy mỡ |
 
-Bảng thông số ở trên là bảng VHP công bố cho cấp NLGI 3 (VHP GRE MIL 3). Nếu cần phiếu chỉ tiêu riêng của cấp NLGI 4, hãy [liên hệ](/contact) để nhận theo lô.
+> **Nhận định của HT VINA:** NLGI 4 bơm được bằng súng mỡ nhưng cần lực lớn và khó bơm khi trời lạnh. Vú mỡ nhỏ và đường ống dài nên dùng NLGI 3 hoặc mềm hơn.
 
-Opal có nhiệt độ nhỏ giọt 140 °C, nên vẫn là mỡ đa dụng. Nếu ổ bi chạy nhanh và nóng liên tục, [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) có nhiệt độ nhỏ giọt cao hơn (tối thiểu 190 °C). Ổ bi nóng trên 120 °C cần [mỡ chịu nhiệt](/mo-chiu-nhiet). Xem các dòng khác ở trang [mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep).
+## Opal hay Caxilium?
+
+| | VHP Opal Grease | [VHP Caxilium Grease](/mo-boi-tron-cong-nghiep/vhp-caxilium-grease) |
+| :--- | :--- | :--- |
+| Chất làm đặc | Lithium và canxi | Lithium và canxi |
+| Nhiệt độ làm việc | −10 đến 120 °C | −10 đến 110 °C |
+| Định hướng của VHP | Ổ bi tải nặng trong cơ cấu kín | Chỗ hở, nhiều nước, nước muối |
+
+> **Nhận định của HT VINA:** Ổ bi kín, tải nặng thì Opal; điểm bôi trơn hở ngoài trời, ven biển thì Caxilium. Cần mỡ đặc ngay thì [VHP Lithium Grease L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) có sẵn xô 17 kg.
+
+## Khi nào cần bơm bù hoặc thay mỡ?
+
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+
+| Dấu hiệu | Nên làm |
+| :--- | :--- |
+| Ổ bi nóng hơn bình thường, kêu rít hoặc lạo xạo | Bơm bù mỡ; không đỡ thì tháo kiểm tra vòng bi |
+| Mỡ cũ đen sẫm, có hạt kim loại, mùi khét | Đẩy hết mỡ cũ ra, rửa sạch, bơm mỡ mới |
+| Mỡ chảy lỏng, tách dầu loang quanh ổ | Ổ đang quá nóng so với mỡ, hoặc trộn lẫn mỡ khác gốc |
+| Mỡ trắng đục, nhũ hóa | Nước lọt vào; kiểm tra phớt chắn, đổi sang mỡ kháng nước tốt hơn nếu cần |
+
+Không bơm quá nhiều: ổ bi đầy mỡ chạy nóng hơn. Ổ bi động cơ điện thường chỉ cần mỡ chiếm khoảng 1/3 đến 1/2 khoảng trống trong ổ.
 
 ## Câu hỏi thường gặp
 
-### Opal Grease và Caxilium Grease khác nhau thế nào?
-Cả hai cùng gốc lithium-canxi của VHP. [Caxilium](/mo-boi-tron-cong-nghiep/vhp-caxilium-grease) làm việc tới 110 °C và được làm cho chỗ hở, nhiều nước. Opal làm việc tới 120 °C và được làm cho ổ bi tải nặng trong cơ cấu kín.
+### Opal Grease có phải mỡ chịu nhiệt không?
+Không. Nhiệt độ nhỏ giọt 140 °C và làm việc tới 120 °C là mức của mỡ đa dụng. Ổ bi nóng hơn cần mỡ lithium complex hoặc mỡ chịu nhiệt chuyên dụng.
 
-### NLGI 4 có bơm bằng súng mỡ được không?
-Được, nhưng cần lực bơm lớn và khó bơm khi trời lạnh. Cấp này hợp với chỗ tra mỡ bằng tay hoặc ổ bi lớn ít phải bơm bù. Vú mỡ nhỏ và đường ống dài nên dùng cấp mềm hơn.
+### Có phiếu chỉ tiêu riêng cho NLGI 4 không?
+Bảng thông số trên trang là của cấp NLGI 3. Nếu cần phiếu chỉ tiêu riêng của cấp NLGI 4, hãy [liên hệ](/contact) để nhận theo lô.
+
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** NLGI 3 phuy 180 kg, NLGI 4 xô 15 kg. Nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Opal%20Grease) kèm cấp và số lượng.

@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-003"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Shell Gadus S3 V220C 2"
 seo_title: "Shell Gadus S3 V220C 2 – Mỡ Chịu Nhiệt Lithium Complex"
 description: "Mỡ chịu nhiệt Shell Gadus S3 V220C 2 gốc lithium complex, nhỏ giọt 240 °C, làm việc tới 140 °C cho ổ bi nóng, tải nặng. Xô 18 kg, CO/CQ, VAT."
@@ -25,6 +25,8 @@ specs:
   - { name: "Nhiệt độ làm việc", value: "-20 °C đến 140 °C (đỉnh 150 °C)" }
 tds_date: "10/2026"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Xô 18 kg", sku: "Gadus S3V220" }
 stock_status: "dat-hang"
@@ -47,39 +49,82 @@ images:
   - { src: "/images/san-pham/shell-gadus-s3-v220c-2-nhan.webp", alt: "Nhãn xô Shell Gadus S3 V220C 2 ghi lithium complex NLGI 2" }
   - { src: "/images/san-pham/shell-gadus-s3-v220c-2-mau-mo.webp", alt: "Mỡ Shell Gadus S3 V220C 2 màu đỏ khi mở nắp xô" }
 
+doc_gia: "Trang này dành cho nhà máy xi măng, gạch, thép, đúc cần mỡ cho ổ bi nóng, tải nặng, rung mạnh."
+tom_tat:
+  - "**Dùng được** cho ổ bi làm việc liên tục tới 140 °C (đỉnh 150 °C), tải nặng, rung mạnh, nhiều nước."
+  - "**Lithium complex**, nhiệt độ nhỏ giọt 240 °C; đạt ASTM D4950 GC-LB cho moay ơ bánh xe."
+  - "**Không phải \"mỡ chịu nhiệt 300 °C\"**: con số cần dùng khi chọn là nhiệt độ làm việc liên tục, 140 °C."
+  - "**Nhận đặt theo yêu cầu** (xô 18 kg), không có sẵn tại kho tháng 10/2026."
 tags: ["nlgi-2", "lithium-complex", "mo-chiu-nhiet", "shell-gadus"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Shell Gadus S3 V220C 2** là mỡ chịu nhiệt, chịu cực áp cao cấp của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng **lithium complex**, có **màu đỏ**. Nhiệt độ nhỏ giọt là **240 °C**. Mỡ làm việc liên tục tới **140 °C**, đỉnh tới 150 °C, nên dùng cho các ổ bi chạy nóng, tải nặng và rung mạnh. Tên cũ của dòng này là Shell Albida EP 2 và Shell Retinax LX 2.
 
-Chúng tôi bán Shell Gadus S3 V220C 2 theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **nhận đặt theo yêu cầu** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Gadus S3 V220C 2 có hợp với điểm bôi trơn của bạn không?
 
-- **Chịu nhiệt tốt hơn mỡ lithium thường.** Nhiệt độ nhỏ giọt 240 °C so với khoảng 180 °C của mỡ lithium đa dụng. Mỡ dùng được lâu ở nhiệt độ cao.
+Theo Shell, mỡ dùng cho ổ bi tải nặng trong máy đúc liên tục, sàng rung, mỏ đá, máy đập, con lăn băng tải và moay ơ bánh xe.
+
+| Điểm bôi trơn | Dùng Gadus S3 V220C 2 được không? |
+| :--- | :--- |
+| Ổ bi quạt lò, con lăn lò sấy, máy nghiền xi măng, gạch, thép | **Được.** |
+| Moay ơ bánh xe tải (ASTM D4950 GC-LB) | **Được.** |
+| Ổ bi rung mạnh, nhiều nước (mỏ đá, máy đúc có nước làm mát) | **Được.** |
+| Ổ bi chạy dưới 120 °C | Dùng được, nhưng [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) đủ và tiết kiệm hơn. |
+| Hệ bơm mỡ tập trung đường ống dài | Hỏi trước: Shell đánh giá khả năng bơm xa ở mức "trung bình". |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS của Shell.
+
+- **Chịu nhiệt tốt hơn mỡ lithium thường.** Nhiệt độ nhỏ giọt 240 °C so với khoảng 180 °C của mỡ lithium đa dụng.
 - **Bền cơ học khi rung mạnh.** Mỡ giữ độ đặc lâu dài trên sàng rung, máy đập, máy nghiền.
 - **Chịu cực áp.** Tải hàn dính 4 bi tối thiểu 315 kg, bảo vệ ổ bi khi chịu tải nặng.
-- **Chống nước, chống ăn mòn.** Vẫn bảo vệ ổ bi khi có nhiều nước, phù hợp mỏ đá, máy đúc có nước làm mát.
-- **Đạt ASTM D4950 GC-LB.** Dùng được cho moay-ơ bánh xe tải.
-
-## Ứng dụng tiêu biểu
-
-Theo Shell, Gadus S3 V220C 2 dùng cho ổ bi tải nặng trong: máy đúc liên tục, sàng rung, mỏ đá, máy đập, con lăn băng tải và moay-ơ bánh xe. Ở các nhà máy, những điểm phù hợp với mỡ này gồm ổ bi quạt lò, con lăn lò sấy, ổ bi máy nghiền và băng tải xi măng, gạch, thép.
+- **Chống nước, chống ăn mòn.** Vẫn bảo vệ ổ bi khi có nhiều nước.
 
 ## Có phải "mỡ chịu nhiệt 300 °C" không?
 
-Không. Nhiều nơi quảng cáo mỡ "chịu nhiệt 300 °C" hay "500 °C" dựa trên nhiệt độ nhỏ giọt hoặc nhiệt độ chịu đựng tức thời. Nhiệt độ **làm việc liên tục** của Gadus S3 V220C 2 là tối đa 140 °C. Đây là con số cần dùng khi chọn mỡ cho ổ bi. Cách đọc các mức nhiệt này xem ở trang [mỡ chịu nhiệt](/mo-chiu-nhiet).
+Không. Nhiều nơi quảng cáo mỡ "chịu nhiệt 300 °C" hay "500 °C" dựa trên nhiệt độ nhỏ giọt hoặc nhiệt độ chịu đựng tức thời. Nhiệt độ **làm việc liên tục** của Gadus S3 V220C 2 là tối đa 140 °C. Cách đọc các mức nhiệt này xem ở trang [mỡ chịu nhiệt](/mo-chiu-nhiet).
 
-Nếu ổ bi chỉ chạy dưới 120 °C, mỡ lithium đa dụng [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) là đủ và tiết kiệm hơn.
+> **Nhận định của HT VINA:** Khi chọn mỡ cho ổ bi nóng, hãy đo nhiệt độ vỏ ổ bi khi máy chạy ổn định (súng đo nhiệt hồng ngoại là đủ), rồi so với nhiệt độ làm việc liên tục trên TDS, không so với nhiệt độ nhỏ giọt.
+
+## Gadus S3 hay Gadus S2?
+
+| | [Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) | Gadus S3 V220C 2 |
+| :--- | :--- | :--- |
+| Chất làm đặc | Lithium | Lithium complex |
+| Nhiệt độ nhỏ giọt | 180 °C | 240 °C |
+| Nhiệt độ làm việc | −20 đến 130 °C | −20 đến 140 °C (đỉnh 150 °C) |
+
+> **Nhận định của HT VINA:** Lithium complex và lithium thường tương thích khá tốt. Dù vậy, khi chuyển hẳn sang Gadus S3 cho ổ bi nóng, nên đẩy hết mỡ cũ ra để có đủ khả năng chịu nhiệt.
+
+## Khi nào cần bơm bù hoặc thay mỡ?
+
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+
+| Dấu hiệu | Nên làm |
+| :--- | :--- |
+| Ổ bi nóng hơn bình thường, kêu rít hoặc lạo xạo | Bơm bù mỡ; không đỡ thì tháo kiểm tra vòng bi |
+| Mỡ cũ đen sẫm, có hạt kim loại, mùi khét | Đẩy hết mỡ cũ ra, rửa sạch, bơm mỡ mới |
+| Mỡ chảy lỏng, tách dầu loang quanh ổ | Ổ đang quá nóng so với mỡ, hoặc trộn lẫn mỡ khác gốc |
+| Mỡ trắng đục, nhũ hóa | Nước lọt vào; kiểm tra phớt chắn, đổi sang mỡ kháng nước tốt hơn nếu cần |
+
+Không bơm quá nhiều: ổ bi đầy mỡ chạy nóng hơn. Ổ bi động cơ điện thường chỉ cần mỡ chiếm khoảng 1/3 đến 1/2 khoảng trống trong ổ.
 
 ## Câu hỏi thường gặp
 
 ### Mỡ màu đỏ có tốt hơn mỡ màu vàng không?
 Màu chỉ là chất tạo màu để nhận biết sản phẩm, không quyết định chất lượng. Hãy chọn mỡ theo chất làm đặc, nhiệt độ nhỏ giọt và nhiệt độ làm việc ghi trên TDS.
 
-### Có trộn Gadus S3 với Gadus S2 được không?
-Lithium complex và lithium thường tương thích khá tốt. Dù vậy, khi chuyển hẳn sang Gadus S3 cho ổ bi nóng, nên đẩy hết mỡ cũ ra để có đủ khả năng chịu nhiệt.
-
 ### Có dùng cho hệ bơm mỡ tự động không?
 Dùng được cho hệ thống ngắn. Shell đánh giá khả năng bơm xa của mỡ này ở mức "trung bình". Với hệ thống bơm mỡ tập trung đường ống dài, hãy hỏi chúng tôi trước khi dùng.
+
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** xô 18 kg, nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Shell%20Gadus%20S3%20V220C%202) kèm số lượng.

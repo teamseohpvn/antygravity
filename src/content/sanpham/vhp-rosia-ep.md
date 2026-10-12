@@ -1,6 +1,6 @@
 ---
 ma: "SP-BR-002"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "VHP Rosia EP 100, 150, 220, 320"
 seo_title: "VHP Rosia EP 100, 150, 220, 320 – Dầu Bánh Răng Cực Áp"
 description: "Dầu bánh răng công nghiệp VHP Rosia EP 100, 150, 220, 320 chịu cực áp, đạt DIN 51517-3 CLP. Xô 18 L, phuy 200 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -23,6 +23,8 @@ specs:
   - { name: "Điểm đông đặc", value: "< -15 °C", method: "ASTM D97" }
 tds_date: "06/2023"
 tds_url: "https://hoadauvhp.com/rosia-ep-nid6.html"
+
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "EP 100 – Xô 18 L", sku: "Rosia EP100 18L" }
@@ -52,23 +54,41 @@ images:
   - { src: "/images/san-pham/vhp-rosia-ep-320-xo-18l.webp", alt: "Xô 18 lít dầu bánh răng VHP Rosia EP 320" }
   - { src: "/images/san-pham/vhp-rosia-ep-nhan.webp", alt: "Nhãn xô VHP Rosia EP ghi cấp độ nhớt và tiêu chuẩn" }
 
+doc_gia: "Trang này dành cho nhà máy cần dầu bánh răng công nghiệp CLP sản xuất trong nước, nhiều cấp độ nhớt, cho hộp giảm tốc kín."
+tom_tat:
+  - "**Dùng được** cho hộp giảm tốc kín tải nặng yêu cầu ISO 12925-1 CKC/CKD, DIN 51517-3 CLP, AGMA 9005-F16 EP."
+  - "**Bốn cấp**: EP 100, 150, 220, 320; cấp 220 phổ biến nhất cho băng tải, máy trộn, máy nghiền."
+  - "**Không dùng** cho hộp số, cầu xe tải (cần dầu API GL-4/GL-5)."
+  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Có sẵn cùng nhóm: ENEOS Bonnoc TS 220. HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-100", "iso-vg-150", "iso-vg-220", "iso-vg-320", "cuc-ap", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Rosia EP** là dầu bánh răng công nghiệp chịu cực áp (EP) do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hộp giảm tốc kín tải nặng. Theo VHP, dầu đáp ứng ISO 12925-1 loại CKC và CKD, DIN 51517-3 CLP, AGMA 9005-F16 EP và AIST 224.
 
-HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dương cũ) có bốn cấp: **EP 100** (xô 18 L, phuy 200 L), **EP 150** (xô 18 L), **EP 220** (xô 18 L, phuy 200 L) và **EP 320** (xô 18 L). Hàng có CO/CQ và hóa đơn VAT.
+HT VINA là **đại lý dầu mỡ VHP**. Bốn cấp **nhận đặt theo yêu cầu**: **EP 100** (xô 18 L, phuy 200 L), **EP 150** (xô 18 L), **EP 220** (xô 18 L, phuy 200 L) và **EP 320** (xô 18 L). Hàng có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Rosia EP có hợp với hộp số của bạn không?
 
-- **Chịu tải nặng, chống tróc rỗ mặt răng.** Phụ gia cực áp giữ màng dầu khi bánh răng ăn khớp dưới tải lớn hoặc tải va đập, hạn chế mòn và rỗ bề mặt.
-- **Bền oxy hóa trong dải nhiệt rộng.** Dầu chậm biến chất khi hộp số nóng lên, nên kéo dài được chu kỳ thay dầu.
+| Nhãn hộp giảm tốc ghi | Dùng Rosia EP được không? |
+| :--- | :--- |
+| CLP, CKC, CKD cấp 100, 150, 220, 320 | **Được.** |
+| Hộp giảm tốc kín bánh răng thẳng, nghiêng, hành tinh bằng thép | **Được.** |
+| Hộp số bôi trơn vung tóe hoặc bơm tuần hoàn, ổ đỡ chung bể dầu | **Được.** |
+| Hộp số, cầu xe tải và xe con | Không. Xem [dầu cầu hộp số](/dau-cau-hop-so). |
+| Bánh răng hở bôi trơn bằng mỡ hoặc dầu bám dính | Không. |
+
+## Thông số này có ý nghĩa gì khi máy chạy?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài lấy từ bảng chỉ tiêu của VHP.
+
+- **Chịu tải nặng, chống tróc rỗ mặt răng.** Phụ gia cực áp giữ màng dầu khi bánh răng ăn khớp dưới tải lớn hoặc tải va đập.
+- **Chỉ số độ nhớt 98–99.** Mức thông thường của dầu bánh răng gốc khoáng.
 - **Tách nước, chống gỉ, chống bọt.** Hộp số ở xưởng ẩm hoặc gần khu rửa vẫn giữ được màng dầu ổn định.
 - **Tương thích gioăng phớt.** Hạn chế rò rỉ ở phớt trục vào, trục ra.
-- **Dùng chung cho ổ đỡ.** Ổ đỡ và chi tiết thép nằm chung bể dầu với bánh răng cũng được bôi trơn tốt.
 
-## Chọn cấp độ nhớt
+## Nên chọn cấp độ nhớt nào?
 
 | Cấp | Độ nhớt ở 40 °C | Độ nhớt ở 100 °C | Thường dùng cho |
 | :--- | :--- | :--- | :--- |
@@ -77,28 +97,37 @@ HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dư�
 | Rosia EP 220 | 220 cSt | 19 cSt | Hộp giảm tốc băng tải, máy trộn, máy nghiền phổ biến trong nhà máy |
 | Rosia EP 320 | 320 cSt | 24,4 cSt | Hộp số tốc độ chậm, tải nặng, làm việc nóng |
 
-Thông số theo bảng chỉ tiêu của VHP. Luôn ưu tiên cấp độ nhớt ghi trên nhãn hộp số hoặc trong sổ tay máy. Cách đọc nhãn và so sánh với các mã khác xem ở trang [dầu bánh răng](/dau-banh-rang).
+> **Nhận định của HT VINA:** Luôn ưu tiên cấp độ nhớt ghi trên nhãn hộp số. Không tự tăng cấp để "dầu dày hơn": dầu quá đặc làm hộp số nóng hơn và tốn điện hơn.
 
-## So với ENEOS Bonnoc TS
+## Rosia EP hay ENEOS Bonnoc TS?
 
-Hai dòng cùng là dầu bánh răng cực áp gốc khoáng và cùng đạt DIN 51517-3 CLP. [ENEOS Bonnoc TS](/dau-banh-rang/eneos-bonnoc-ts) là hàng thương hiệu Nhật, phù hợp khi nhà sản xuất máy chỉ định dầu ngoại hoặc yêu cầu hồ sơ hãng quốc tế. Rosia EP sản xuất trong nước, nguồn hàng gần kho, phù hợp cho hộp giảm tốc thông dụng tiêu hao nhiều dầu.
+Hai dòng cùng là dầu bánh răng cực áp gốc khoáng và cùng đạt DIN 51517-3 CLP. [ENEOS Bonnoc TS](/dau-banh-rang/eneos-bonnoc-ts) là hàng thương hiệu Nhật, có sẵn TS 220 xô 18 L tại kho. Rosia EP sản xuất trong nước, có nhiều cấp hơn (100 tới 320) và có phuy.
+
+> **Nhận định của HT VINA:** Hộp giảm tốc thông dụng tiêu hao nhiều dầu, cần phuy hoặc cấp 100, 150 thì đặt Rosia EP. Cần dầu cấp 220 ngay, hoặc nhà sản xuất máy chỉ định dầu ngoại, thì dùng Bonnoc TS 220.
+
+## Khi nào cần thay dầu?
+
+Tùy nhiệt độ dầu, tải và mức nhiễm bẩn của hộp số, nên thay theo kết quả test thay vì theo lịch cố định:
+
+| Chỉ tiêu | Ngưỡng nên thay dầu |
+| :--- | :--- |
+| Độ nhớt ở 40 °C | Lệch quá ±10%. EP 100: ngoài 90–110; EP 150: ngoài 135–165; EP 220: ngoài 198–242; EP 320: ngoài 288–352 mm²/s. Đo bằng [nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5) cỡ ống lớn |
+| Nước | Trên 0,1%, nhất là hộp số đặt ngoài trời hoặc gần nguồn nước làm mát |
+| Mạt kim loại | Bám nhiều ở nút xả từ tính: kiểm tra bánh răng, ổ bi |
+
+Cách test chi tiết xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu bánh răng VHP Rosia EP?
-Tùy nhiệt độ dầu, tải và mức nhiễm bẩn của hộp số, nên thay theo kết quả test thay vì theo lịch cố định. Với VHP Rosia EP, theo dõi:
-
-- **Độ nhớt ở 40 °C** lệch quá ±10% so với dầu mới (EP 100: dầu mới 100 mm²/s → ngưỡng 90–110 mm²/s; EP 150: dầu mới 150 mm²/s → ngưỡng 135–165 mm²/s; EP 220: dầu mới 220 mm²/s → ngưỡng 198–242 mm²/s; EP 320: dầu mới 320 mm²/s → ngưỡng 288–352 mm²/s). Dầu bánh răng đặc nên đo bằng [nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5) cỡ ống lớn.
-- **Trị số axit** tăng thêm 0,5 mg KOH/g so với dầu mới, mức cảnh báo cho dầu bánh răng theo ASTM D6224.
-- **Nước** trên 0,1%, nhất là hộp số đặt ngoài trời hoặc gần nguồn nước làm mát.
-
-Kiểm tra thêm mạt kim loại bám ở nút xả từ tính. Cách test chi tiết xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
-
-### Rosia EP có dùng cho hộp số xe tải được không?
-Không nên. Rosia EP là dầu bánh răng công nghiệp. Hộp số và cầu xe tải cần dầu cầu hộp số theo cấp API GL-4 hoặc GL-5, xem trang [dầu cầu hộp số](/dau-cau-hop-so).
+Theo kết quả test, không theo lịch cố định. Bảng ngưỡng theo từng cấp ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Đổi từ dầu bánh răng hãng khác sang Rosia EP cần lưu ý gì?
 Chọn đúng cấp độ nhớt đang dùng. Nên xả hết dầu cũ, vệ sinh bể dầu rồi mới nạp dầu mới, tránh pha lẫn hai loại dầu khác nhau.
 
-### Có xuất hóa đơn và CO/CQ không?
-Có. Mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu. Gửi yêu cầu ở trang [báo giá](/bao-gia).
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** EP 100 xô 18 L, phuy 200 L; EP 150 xô 18 L; EP 220 xô 18 L, phuy 200 L; EP 320 xô 18 L. Nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Rosia%20EP) kèm cấp độ nhớt và số lượng.

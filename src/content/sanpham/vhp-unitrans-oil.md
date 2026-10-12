@@ -1,6 +1,6 @@
 ---
 ma: "SP-CD-001"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Dầu Cách Điện VHP Unitrans Oil (Hi-Volt)"
 seo_title: "VHP Unitrans Oil Hi-Volt – Dầu Biến Thế IEC 60296"
 description: "Dầu cách điện VHP Unitrans Oil (Hi-Volt) đạt IEC 60296:2020, có ức chế oxy hóa, cho máy biến áp, máy cắt. Phuy 210 L, xô 18 L, CO/CQ, giao Hải Phòng."
@@ -34,6 +34,8 @@ specs:
 tds_date: "10/2026"
 tds_url: "https://hoadauvhp.com/unitrans-oil-hi-volt--tvai-nid7.html"
 
+thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
+
 packaging:
   - { name: "Phuy 210 L", sku: "Unitrans 210" }
   - { name: "Xô 18 L", sku: "Unitrans 18" }
@@ -57,24 +59,40 @@ images:
   - { src: "/images/san-pham/vhp-unitrans-oil-xo-18l.webp", alt: "Xô 18 lít dầu biến thế VHP Unitrans Oil Hi-Volt" }
   - { src: "/images/san-pham/vhp-unitrans-oil-nhan.webp", alt: "Nhãn dầu cách điện VHP Unitrans Oil ghi tiêu chuẩn IEC 60296" }
 
+doc_gia: "Trang này dành cho đơn vị quản lý trạm biến áp, thí nghiệm điện cần dầu cách điện đạt IEC 60296:2020 cho máy biến áp, máy cắt."
+tom_tat:
+  - "**Dùng được** cho máy biến áp, máy cắt và thiết bị điện ngâm dầu, loại kín hay hở."
+  - "**Đạt IEC 60296:2020 loại A, mã I** (có phụ gia ức chế oxy hóa); không chứa PCB."
+  - "**Điện áp đánh thủng 80 kV sau sấy**; nên lọc sấy trước khi nạp vào máy."
+  - "**Nhận đặt theo yêu cầu** (phuy 210 L, xô 18 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["dau-bien-the", "iec-60296", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Unitrans Oil (Hi-Volt)** là dầu cách điện gốc khoáng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu đạt **IEC 60296:2020, loại A mã I**, tức là dầu có pha phụ gia ức chế oxy hóa. Dầu dùng cho máy biến áp, máy cắt và các thiết bị điện ngâm dầu, loại kín hay loại hở đều được.
 
-HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dương cũ) có **phuy 210 L** cho trạm biến áp cần thay dầu cả máy, và **xô 18 L** để châm bổ sung. Hàng có CO/CQ và hóa đơn VAT.
+HT VINA là **đại lý dầu mỡ VHP**. **Phuy 210 L** (thay dầu cả máy) và **xô 18 L** (châm bổ sung) **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
-## Tính năng chính
+## Unitrans Oil có hợp với thiết bị của bạn không?
 
-- **Cách điện tốt.** Điện áp đánh thủng đạt 80 kV sau khi sấy, hệ số tổn hao điện môi ở 90 °C chỉ 0,05 %.
-- **Chậm lão hóa.** Phụ gia chống oxy hóa 0,22 % giúp dầu ít tạo cặn và axit, nên kéo dài thời gian giữa hai lần lọc hay thay dầu.
-- **Chạy tốt khi trời lạnh.** Độ nhớt thấp (8,3 cSt ở 40 °C) và điểm đông −40 °C giúp dầu lưu thông, tản nhiệt đều trong cuộn dây ngay cả lúc máy mới đóng điện.
-- **Không ăn mòn đồng.** Thử lưu huỳnh ăn mòn cho kết quả không ăn mòn, bảo vệ dây quấn và tiếp điểm.
-- **Không chứa PCB.** Kết quả phân tích PCB là không phát hiện.
-- **Pha trộn được** với các dầu khoáng cách điện tương đương của châu Âu, Nga, Hàn Quốc, Ấn Độ (theo công bố của VHP).
+| Thiết bị | Dùng Unitrans Oil được không? |
+| :--- | :--- |
+| Máy biến áp phân phối, máy biến áp lực ngâm dầu khoáng | **Được.** |
+| Máy cắt, cầu dao ngâm dầu | **Được.** |
+| Châm bù vào máy đang dùng dầu khoáng cách điện tương đương | **Được**, theo VHP; lấy mẫu dầu cũ đo trước. |
+| Thiết bị yêu cầu dầu este, dầu silicone | Không. |
 
-## Chỉ tiêu đáng chú ý khi nghiệm thu
+## Thông số này có ý nghĩa gì khi vận hành?
+
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài lấy từ bảng chỉ tiêu của VHP.
+
+- **Cách điện tốt.** Điện áp đánh thủng đạt 80 kV sau khi sấy, hệ số tổn hao điện môi ở 90 °C chỉ 0,05%.
+- **Chậm lão hóa.** Phụ gia chống oxy hóa 0,22% giúp dầu ít tạo cặn và axit, nên kéo dài thời gian giữa hai lần lọc hay thay dầu.
+- **Chạy tốt khi trời lạnh.** Độ nhớt thấp (8,3 cSt ở 40 °C) và điểm đông −40 °C giúp dầu lưu thông, tản nhiệt đều trong cuộn dây.
+- **Không ăn mòn đồng, không chứa PCB.** Thử lưu huỳnh ăn mòn cho kết quả không ăn mòn; PCB không phát hiện.
+
+## Chỉ tiêu nào cần kiểm khi nghiệm thu?
 
 | Chỉ tiêu | Mức tiêu chuẩn VHP công bố | Giá trị điển hình |
 | :--- | :--- | :--- |
@@ -84,20 +102,28 @@ HT VINA là **đại lý dầu mỡ VHP**. Kho tại TP Hải Phòng (Hải Dư�
 | Tổn hao điện môi ở 90 °C | Dưới 0,5 % | 0,05 % |
 | Điểm chớp cháy cốc kín | Tối thiểu 144 °C | 164 °C |
 
-Khi nhận dầu mới, bên điện lực hoặc đơn vị thí nghiệm thường đo điện áp đánh thủng và hàm lượng nước trước tiên. Dầu trong phuy đã mở dễ hút ẩm, nên nên **lọc sấy trước khi nạp** vào máy. Xem thêm các loại dầu cùng nhóm ở trang [dầu cách điện](/dau-cach-dien).
+> **Nhận định của HT VINA:** Khi nhận dầu mới, bên điện lực hoặc đơn vị thí nghiệm thường đo điện áp đánh thủng và hàm lượng nước trước tiên. Dầu trong phuy đã mở dễ hút ẩm (điện áp đánh thủng trước sấy chỉ 50 kV), nên **lọc sấy trước khi nạp** vào máy.
 
-## Câu hỏi thường gặp
+## Khi nào cần lọc hoặc thay dầu?
 
-### Bao lâu thì phải thay dầu biến thế VHP Unitrans Oil?
 Dầu máy biến áp không thay theo thời gian mà theo kết quả thử nghiệm định kỳ: **điện áp đánh thủng**, **hàm lượng nước**, **trị số axit** và hệ số tổn hao điện môi, đối chiếu với hướng dẫn giám sát dầu cách điện IEC 60422. Kết quả kém thì lọc, sấy dầu; chỉ thay khi xử lý không đạt.
 
 Trị số axit và nước có thể kiểm tra nhanh tại trạm bằng kit (xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau)). Điện áp đánh thủng cần máy thử chuyên dụng hoặc phòng thí nghiệm.
 
+## Câu hỏi thường gặp
+
+### Bao lâu thì phải thay dầu biến thế VHP Unitrans Oil?
+Theo kết quả thử nghiệm định kỳ, không theo thời gian. Xem mục "Khi nào cần lọc hoặc thay dầu?" phía trên.
+
 ### Unitrans Oil có châm lẫn với dầu biến thế đang có trong máy được không?
-VHP công bố dầu dùng chung hoặc pha trộn được với các dầu khoáng cách điện tiêu chuẩn tương đương. Trước khi châm, nên lấy mẫu dầu cũ đo điện áp đánh thủng và trị số axit. Dầu cũ đã xuống cấp nhiều thì nên lọc hoặc thay toàn bộ.
+VHP công bố dầu dùng chung hoặc pha trộn được với các dầu khoáng cách điện tiêu chuẩn tương đương của châu Âu, Nga, Hàn Quốc, Ấn Độ. Trước khi châm, nên lấy mẫu dầu cũ đo điện áp đánh thủng và trị số axit. Dầu cũ đã xuống cấp nhiều thì nên lọc hoặc thay toàn bộ.
 
 ### Chọn phuy 210 L hay xô 18 L?
 Thay dầu cả máy biến áp thì dùng phuy. Châm bù sau khi lấy mẫu, sửa chữa máy cắt hay cầu dao ngâm dầu thì xô 18 L tiện hơn, dầu không phải để lâu sau khi mở nắp.
 
-### Có giấy tờ cho nghiệm thu không?
-Có. Mỗi lô giao kèm hóa đơn VAT, CO/CQ cung cấp theo lô khi khách yêu cầu. Liên hệ [báo giá](/bao-gia) để nhận bảng chỉ tiêu kỹ thuật kèm hàng.
+## Quy cách và giấy tờ khi mua
+
+- **Quy cách:** phuy 210 L và xô 18 L, nhận đặt theo yêu cầu.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ và bảng chỉ tiêu kỹ thuật kèm hàng khi khách yêu cầu, dùng cho hồ sơ nghiệm thu.
+- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Unitrans%20Oil) kèm số lượng.
