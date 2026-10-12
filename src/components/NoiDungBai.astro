@@ -1,0 +1,33 @@
+---
+// Bọc phần nội dung chính của một trang bài: hiển thị nguyên HTML, đồng thời thêm khối JSON-LD bổ sung
+// articleBody (văn bản thuần của chính phần này) cho Article có cùng @id. Không viết thêm chữ nào ngoài nội dung trang.
+interface Props {
+  /** @id của Article trong schema của trang, ví dụ https://.../bao-gia-dau-thuy-luc#article */
+  articleId: string;
+}
+const { articleId } = Astro.props;
+const html = await Astro.slots.render('default');
+const text = html
+  .replace(/<(script|style|noscript|svg|form)[\s\S]*?<\/\1>/gi, ' ')
+  .replace(/<\/(p|li|h[1-6]|tr|div|section|blockquote|figcaption)>/gi, '$&\n')
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/&nbsp;/g, ' ')
+  .replace(/&amp;/g, '&')
+  .replace(/&quot;/g, '"')
+  .replace(/&#39;/g, "'")
+  .replace(/&lt;/g, '<')
+  .replace(/&gt;/g, '>')
+  .replace(/[ \t]+/g, ' ')
+  .replace(/\s*\n\s*/g, '\n')
+  .trim();
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': articleId,
+  articleBody: text,
+  wordCount: text.split(/\s+/).filter(Boolean).length,
+};
+---
+
+<Fragment set:html={html} />
+<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />
