@@ -22,7 +22,7 @@ export const BUSINESS = {
   region: 'TP Hải Phòng',
   // postalCode: bỏ mã 6 số cũ (180000). Tra mã 5 số mới trên VNPost rồi thêm lại.
   country: 'VN',
-  logo: '/favicon.svg',
+  logo: '/images/logo-ht-vina-512.png',
   image: '/images/hero-trang-chu.webp',
   // Hồ sơ Google Business Profile chính (đã xác minh, kiểm tra 03/10/2026).
   gbpUrl: 'https://www.google.com/maps?cid=7563996296023599602',

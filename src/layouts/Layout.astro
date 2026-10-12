@@ -103,7 +103,9 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       }
       .nav-container { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
-      .logo { font-size: 1.4rem; font-weight: 700; color: var(--color-primary); white-space: nowrap; }
+      .logo { display: flex; align-items: center; flex-shrink: 0; }
+      .logo img { height: 48px; width: auto; display: block; }
+      @media (max-width: 600px) { .logo img { height: 40px; } }
       .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
       .nav-links a { font-weight: 500; transition: color 0.2s; }
       .nav-links a:hover { color: var(--color-accent); }
@@ -201,7 +203,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
   <body>
     <header class="site-header">
       <div class="container nav-container">
-        <a href="/" class="logo">DầuCôngNghiệp<span style="color:var(--color-accent)">HP</span></a>
+        <a href="/" class="logo" aria-label="HT VINA – Dầu công nghiệp, về trang chủ"><img src="/images/logo-ht-vina.webp" alt="HT VINA – Dầu công nghiệp" width="612" height="160" /></a>
 
         <ul class="nav-links">
           <li><a href="/">Trang chủ</a></li>
