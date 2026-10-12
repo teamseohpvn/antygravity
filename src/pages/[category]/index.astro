@@ -109,9 +109,9 @@ const schemaData = [
       <h1>{title}</h1>
       {tacGia && (
         <p class="byline">
-          {ngay.published && <>Đăng: <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
-          {ngay.modified && ngay.modified !== ngay.published && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time> · </>}
-          Tác giả: <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a>, {tacGia.role.toLowerCase()}
+          {ngay.published && <>Đăng ngày <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
+          {ngay.modified && ngay.modified !== ngay.published && <>Cập nhật ngày <time datetime={ngay.modified}>{ngay.modifiedText}</time> · </>}
+          <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a>
           {reviewer && reviewer.id !== tacGia.id && <> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a></>}
         </p>
       )}

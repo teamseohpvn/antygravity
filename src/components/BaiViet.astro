@@ -89,11 +89,11 @@ const schemaData = [
       <header class="post-header">
         <h1>{post.data.title}</h1>
         <div class="meta">
-          Đăng: <time datetime={ngay.published}>{ngay.publishedText}</time>
-          {ngay.modified !== ngay.published && <> · Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time></>}
-          {" · "}Tác giả: {authorP
-            ? <span><a href={personUrl(authorP)} rel="author">{bylineLabel(authorP)}</a>, {authorP.role.charAt(0).toLowerCase() + authorP.role.slice(1)}</span>
-            : <span>{post.data.author ?? SITE_NAME}{post.data.author_title && `, ${post.data.author_title}`}</span>}
+          Đăng ngày <time datetime={ngay.published}>{ngay.publishedText}</time>
+          {ngay.modified !== ngay.published && <> · Cập nhật ngày <time datetime={ngay.modified}>{ngay.modifiedText}</time></>}
+          {' · '}{authorP
+            ? <a href={personUrl(authorP)} rel="author">{bylineLabel(authorP)}</a>
+            : <span>{post.data.author ?? SITE_NAME}</span>}
           {reviewerP && <> · Duyệt nội dung: <a href={personUrl(reviewerP)}>{bylineLabel(reviewerP)}</a></>}
         </div>
         {post.data.tags && (

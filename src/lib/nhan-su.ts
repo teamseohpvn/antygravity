@@ -25,7 +25,7 @@ export interface NhanSu {
   bio?: string[];
   /** Danh xưng học vị đặt trước tên, ví dụ "TS." */
   honorificPrefix?: string;
-  /** Tên gọi ngắn trên dòng tác giả, ví dụ "Ms. Hồng" (schema vẫn dùng họ tên đầy đủ) */
+  /** Tên gọi ngắn trên dòng tác giả, ví dụ "TS. Lập" (schema vẫn dùng họ tên đầy đủ) */
   bylineName?: string;
   /** Trang của nơi công tác chính (để schema affiliation có url) */
   affiliationUrl?: string;
@@ -144,7 +144,6 @@ export const NHAN_SU: NhanSu[] = [
   {
     id: 'nguyen-thi-hong',
     name: 'Nguyễn Thị Hồng',
-    bylineName: 'Ms. Hồng',
     // Chờ chị Hồng gửi (12/10/2026): ảnh chân dung, trang cá nhân, số điện thoại. Có rồi thì bỏ // và điền:
     // photo: '/images/nhan-su/nguyen-thi-hong.webp',
     // sameAs: ['<link trang cá nhân>'],
@@ -230,7 +229,7 @@ function affiliationOrg(p: NhanSu) {
 
 /** Tên kèm danh xưng, ví dụ "TS. Bùi Huy Tiến" */
 export const displayName = (p: NhanSu) => (p.honorificPrefix ? `${p.honorificPrefix} ${p.name}` : p.name);
-/** Tên gọi ngắn trên dòng tác giả / duyệt nội dung: "Ms. Hồng", "TS. Lập" */
+/** Tên trên dòng tác giả / duyệt nội dung: bylineName nếu có ("TS. Lập"), không thì họ tên */
 export const bylineLabel = (p: NhanSu) => p.bylineName ?? displayName(p);
 
 /** Nhãn cho link hồ sơ ngoài */

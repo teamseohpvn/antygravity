@@ -159,11 +159,9 @@ const schemaData = [
       <div class="product-summary">
         <h1>{d.title}</h1>
         <p class="byline">
-          {ngay.published && <>Đăng: <time datetime={ngay.published}>{ngay.publishedText}</time> · </>}
-          {ngay.modified && ngay.modified !== ngay.published && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time> · </>}
-          {tacGia
-            ? <>Tác giả: <a href={personUrl(tacGia)} rel="author">{tenNgan(tacGia)}</a>, {tacGia.role.toLowerCase()}</>
-            : <>Tác giả: <a href="/about" rel="author">{authorName}</a></>}
+          {ngay.published && <>Đăng ngày <time datetime={ngay.published}>{ngay.publishedText}</time></>}
+          {ngay.modified && ngay.modified !== ngay.published && <> · Cập nhật ngày <time datetime={ngay.modified}>{ngay.modifiedText}</time></>}
+          {' · '}<a href={personUrl(tacGia!)} rel="author">{tenNgan(tacGia!)}</a>
           {reviewer && reviewer.id !== tacGia?.id && <> · Duyệt nội dung: <a href={personUrl(reviewer)}>{tenNgan(reviewer)}</a></>}
         </p>
         <div class="tags">
