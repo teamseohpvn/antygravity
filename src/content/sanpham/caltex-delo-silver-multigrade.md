@@ -44,8 +44,8 @@ warnings:
 storage: "Để trong nhà, tránh nắng mưa. Phuy để ngoài trời phải đặt nằm ngang; phuy đã mở phải đậy kín nắp."
 
 images:
-  - { src: "/images/san-pham/caltex-delo-silver-multigrade-phuy-208l.webp", alt: "Phuy 208 lít dầu động cơ Caltex Delo Silver Multigrade 20W-50 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/caltex-delo-silver-multigrade-nhan.webp", alt: "Nhãn phuy Caltex Delo Silver Multigrade SAE 20W-50 ghi cấp API CF-4" }
+  - { src: "/images/san-pham/caltex-delo-silver-multigrade-phuy-208l.webp", alt: "Phuy dầu động cơ Caltex Delo Silver Multigrade SAE 20W-50" }
+  - { src: "/images/san-pham/caltex-delo-silver-multigrade-20w50-xo-18l.webp", alt: "Xô 18 lít Caltex Delo Silver SAE 20W-50 Multigrade API CF-4" }
 
 doc_gia: "Trang này dành cho đội xe đang dùng Caltex Delo Silver, hoặc đội xe hỗn hợp máy xăng và máy dầu đời cũ cần một mã dầu chung."
 tom_tat:

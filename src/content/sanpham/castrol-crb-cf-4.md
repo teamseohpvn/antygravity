@@ -47,9 +47,8 @@ warnings:
 storage: "Để dưới mái che. Phuy để ngoài trời phải đặt nằm ngang để nước mưa không lọt vào. Không để nơi trên 60 °C hoặc phơi nắng gắt."
 
 images:
-  - { src: "/images/san-pham/castrol-crb-cf-4-20w50-phuy-209l.webp", alt: "Phuy 209 lít dầu động cơ diesel Castrol CRB 20W-50 CF-4 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/castrol-crb-cf-4-20w50-xo-18l.webp", alt: "Xô 18 lít dầu động cơ Castrol CRB 20W-50 CF-4" }
-  - { src: "/images/san-pham/castrol-crb-cf-4-nhan.webp", alt: "Nhãn phuy Castrol CRB ghi cấp API CF-4 và cấp độ nhớt" }
+  - { src: "/images/san-pham/castrol-crb-cf-4-20w50-phuy-xo.webp", alt: "Phuy và xô dầu động cơ diesel Castrol CRB 20W-50 CF-4" }
+  - { src: "/images/san-pham/castrol-crb-cf-4-15w40-xo-18l.webp", alt: "Xô 18 lít dầu động cơ diesel Castrol CRB 15W-40 CF-4" }
 
 doc_gia: "Trang này dành cho đội xe, máy công trình đời chưa có EGR đang dùng hoặc cần đặt Castrol CRB CF-4."
 tom_tat:

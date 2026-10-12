@@ -35,9 +35,7 @@ warnings:   # TODO TDS: thay bằng cảnh báo trong SDS mục 2 và 7
 storage: "Để trong nhà hoặc dưới mái che, tránh nắng mưa. Phuy để ngoài trời phải đặt nằm ngang. Đậy kín nắp sau khi dùng."
 
 images:
-  - { src: "/images/san-pham/emi-gear-ep-gl-5-85w-140-xo.webp", alt: "Xô dầu cầu EMI Gear EP 85W-140 API GL-5 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/emi-gear-ep-gl-5-80w-90-xo-18l.webp", alt: "Xô 18 lít dầu cầu EMI 80W-90 API GL-5" }
-  - { src: "/images/san-pham/emi-gear-ep-gl-5-nhan.webp", alt: "Nhãn xô dầu cầu EMI Gear EP ghi cấp API GL-5 và SAE" }
+  - { src: "/images/san-pham/emi-gear-ep-gl-5-phuy.webp", alt: "Phuy dầu nhớt EMI Oil (Sunglanz)" }
 
 doc_gia: "Trang này dành cho chủ xe tải, xe ben, gara cần dầu cầu GL-5 cấp 85W-140 hoặc 80W-90 đóng xô."
 tom_tat:

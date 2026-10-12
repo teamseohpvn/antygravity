@@ -50,8 +50,9 @@ warnings:
 storage: "Để nơi khô ráo, thoáng mát, tránh nắng; đậy kín nắp can sau khi dùng."
 
 images:
-  - { src: "/images/san-pham/eneos-epnoc-ap-can.webp", alt: "Can mỡ ENEOS Epnoc Grease AP(N) tại kho Hải Phòng" }
-  - { src: "/images/san-pham/eneos-epnoc-ap-nhan.webp", alt: "Nhãn can mỡ ENEOS Epnoc Grease AP(N) ghi cấp NLGI" }
+  - { src: "/images/san-pham/eneos-epnoc-ap-2-tuyp-400g.webp", alt: "Tuýp 400 g mỡ ENEOS Epnoc Grease AP(N) 2 và thùng 20 tuýp" }
+  - { src: "/images/san-pham/eneos-epnoc-ap-2-thung-400g.webp", alt: "Thùng 20 tuýp 400 g mỡ Epnoc Grease AP(N) 2" }
+  - { src: "/images/san-pham/eneos-epnoc-ap-0-thung-400g.webp", alt: "Thùng 20 tuýp 400 g mỡ Epnoc Grease AP(N) 0 của JXTG Nippon Oil & Energy" }
 
 doc_gia: "Trang này dành cho nhà máy có hệ bơm mỡ tập trung hoặc ổ bi tải nặng, va đập cần mỡ lithium chịu cực áp."
 tom_tat:
