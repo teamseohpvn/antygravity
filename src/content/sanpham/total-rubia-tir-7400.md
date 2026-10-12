@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-008"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "TotalEnergies Rubia TIR 7400 15W-40"
 seo_title: "Total Rubia TIR 7400 15W-40 CI-4 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel TotalEnergies Rubia TIR 7400 15W-40 đạt API CI-4, ACEA E7 cho xe tải, xe khách đường bộ. Phuy 200 L, có CO/CQ, VAT, giao từ Hải Phòng."
@@ -47,7 +47,8 @@ images:
   - { src: "/images/san-pham/total-rubia-tir-7400-nhan.webp", alt: "Nhãn phuy Rubia TIR 7400 15W-40 ghi cấp API CI-4 và ACEA E7" }
 
 tags: ["api-ci-4", "acea-e7", "sae-15w-40", "totalenergies", "dong-co-diesel"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **TotalEnergies Rubia TIR 7400 15W-40** là dầu động cơ diesel gốc khoáng cho xe chạy đường bộ, đạt **ACEA E7 và API CI-4**. Dầu được Cummins, Mack, Renault Trucks, Volvo và Daimler Truck (DTFR 15B110) chấp thuận. Hãng khuyên dùng cho động cơ Euro 3 trở về trước của hầu hết nhà sản xuất châu Âu và Mỹ.

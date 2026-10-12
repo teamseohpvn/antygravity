@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-010"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/x-one-aw-68/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Thủy Lực X-One AW 68"
 seo_title: "Dầu Thủy Lực X-One AW 68 – Phuy 200 L, Xô 18 L"
 description: "Dầu thủy lực chống mài mòn X-One AW 68 (ISO VG 68) cho máy ép, máy công trình, hệ thủy lực công nghiệp. Phuy 200 L, xô 18 L có sẵn, giao từ Hải Phòng."
@@ -40,7 +40,8 @@ images:
   - { src: "/images/san-pham/x-one-aw-68-nhan.webp", alt: "Nhãn dầu thủy lực X-One AW 68 ghi cấp độ nhớt ISO VG 68" }
 
 tags: ["iso-vg-68", "chong-mai-mon", "x-one"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **X-One AW 68** là dầu thủy lực chống mài mòn cấp độ nhớt **ISO VG 68**. Chữ "AW" (anti-wear) nghĩa là dầu có phụ gia chống mài mòn để bảo vệ bơm và van khi hệ thống chạy áp cao. Dầu dùng cho máy ép, máy công trình và hầu hết hệ thủy lực công nghiệp yêu cầu dầu cấp 68.

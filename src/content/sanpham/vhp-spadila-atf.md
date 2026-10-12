@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-008"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/vhp-spadila-atf/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Hộp Số Tự Động VHP Spadila ATF (II, III)"
 seo_title: "VHP Spadila ATF II, III – Dầu Hộp Số Tự Động, Trợ Lực Lái"
 description: "Dầu VHP Spadila ATF (Dexron II, III) cho hộp số tự động, hệ trợ lực tay lái, hệ thủy lực truyền động ô tô, xe cơ giới. Xô 18 L có sẵn, giao Hải Phòng."
@@ -38,7 +38,8 @@ images:
   - { src: "/images/san-pham/vhp-spadila-atf-nhan.webp", alt: "Nhãn xô VHP Spadila ATF ghi tiêu chuẩn Dexron" }
 
 tags: ["atf", "dexron-ii", "dexron-iii", "tro-luc-lai", "vhp"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Spadila ATF** là dầu truyền động cho **hộp số tự động** và **hệ trợ lực tay lái**, theo loại **ATF Dexron II, III**. Dầu do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Cẩm Giàng (Hải Dương cũ). Ngoài hộp số tự động, dầu còn dùng cho các hệ thủy lực truyền động trên ô tô và xe cơ giới.

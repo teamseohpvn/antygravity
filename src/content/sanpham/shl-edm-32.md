@@ -1,6 +1,6 @@
 ---
 ma: "SP-EDM-001"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "SHL EDM 32"
 seo_title: "SHL EDM 32 – Dầu Máy Xung Điện EDM | Phuy 200 L"
 description: "Dầu xung điện SHL EDM 32 cho máy gia công tia lửa điện, độ nhớt thấp 2,0 cSt, không chứa clo, điểm chớp cháy từ 80 °C. Phuy 200 L, có CO/CQ, VAT."
@@ -41,7 +41,8 @@ images:
   - { src: "/images/san-pham/shl-edm-32-nhan.webp", alt: "Nhãn phuy dầu máy xung điện SHL EDM 32" }
 
 tags: ["edm", "xung-dien", "gia-cong-khuon", "shl"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **SHL EDM 32** là dầu điện môi cho **máy xung điện (EDM)**, của SHL, thương hiệu dầu nhờn Hàn Quốc. Dòng sản phẩm được SHL ASEAN sản xuất tại KCN Mỹ Xuân, Việt Nam. Dầu rất loãng, độ nhớt 2,0 cSt ở 40 °C, **không chứa clo**, điểm chớp cháy từ 80 °C.

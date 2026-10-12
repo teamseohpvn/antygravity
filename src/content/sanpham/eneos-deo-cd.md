@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-003"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "ENEOS DEO CD 15W-40, 20W-50"
 seo_title: "ENEOS DEO CD 20W-50, 15W-40 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel phổ thông ENEOS CD 20W-50 và 15W-40 cho máy cũ, máy phát, máy nông nghiệp. Can 18 L, phuy 200 L, có CO/CQ, giao từ Hải Phòng."
@@ -48,7 +48,8 @@ images:
   - { src: "/images/san-pham/eneos-deo-cd-15w40-phuy-200l.webp", alt: "Phuy 200 lít dầu động cơ diesel ENEOS CD 15W-40" }
 
 tags: ["api-cd", "sae-15w-40", "sae-20w-50", "eneos", "dong-co-diesel"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **ENEOS DEO CD** là dầu động cơ diesel phổ thông của ENEOS, đạt cấp **API CD**. Dầu hợp với động cơ diesel đời cũ, máy phát điện, máy nông nghiệp và tàu thuyền nhỏ, nơi nhà sản xuất chỉ yêu cầu cấp CD. Dòng này có hai cấp nhớt **20W-50** và **15W-40**.

@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-009"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Castrol Hyspin HLP-Z 68"
 seo_title: "Castrol Hyspin HLP-Z 68 – Dầu Thủy Lực Chống Mài Mòn"
 description: "Dầu thủy lực Castrol Hyspin HLP-Z 68 gốc khoáng, phụ gia kẽm chống mài mòn, đạt DIN 51524-2 HLP, ISO 11158 HM. Xô 20 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -51,7 +51,8 @@ images:
   - { src: "/images/san-pham/castrol-hyspin-hlpz-68-nhan.webp", alt: "Nhãn xô Castrol Hyspin HLP-Z 68 ghi cấp độ nhớt và tiêu chuẩn" }
 
 tags: ["iso-vg-68", "chong-mai-mon", "castrol"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Castrol Hyspin HLP-Z 68** là dầu thủy lực chống mài mòn gốc khoáng tinh chế, dùng hệ phụ gia chống mài mòn **gốc kẽm** ổn định. Theo Castrol, dầu được phân loại DIN 51502 HLP và ISO 6743-4 HM, đáp ứng DIN 51524 phần 2, ISO 11158 HM và ASTM D6158 HM. Ngoài hệ thủy lực, dầu dùng được cho bánh răng tải nhẹ và hệ dầu tuần hoàn.

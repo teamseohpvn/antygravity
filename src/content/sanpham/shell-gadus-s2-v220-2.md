@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-001"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Shell Gadus S2 V220 2"
 seo_title: "Shell Gadus S2 V220 2 – Mỡ Bò Chịu Cực Áp Xô 18kg"
 description: "Mỡ Shell Gadus S2 V220 2 gốc lithium, chịu cực áp, chống nước, làm việc -20 đến 130 °C cho vòng bi, ổ trượt. Xô 18 kg, có CO/CQ, VAT, giao Hải Phòng."
@@ -47,7 +47,8 @@ images:
   - { src: "/images/san-pham/shell-gadus-s2-v220-2-mau-mo.webp", alt: "Màu và độ đặc của mỡ Shell Gadus S2 V220 2 khi mở nắp xô" }
 
 tags: ["nlgi-2", "mo-lithium", "chiu-cuc-ap", "shell-gadus"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Shell Gadus S2 V220 2** là mỡ bôi trơn đa dụng chịu cực áp (EP) của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng lithium hydroxystearate. Mỡ dùng cho vòng bi, ổ trượt, bản lề và bề mặt trượt trong hầu hết các ngành công nghiệp và vận tải. Tên cũ của dòng này là Shell Alvania EP(LF) 2 và Shell Retinax EP 2.

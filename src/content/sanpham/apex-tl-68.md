@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-013"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/apex-tl-68/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Thủy Lực APEX TL 68 (Quốc Trung)"
 seo_title: "Dầu Thủy Lực APEX TL 68 Quốc Trung – Giá Kinh Tế | Phuy 200 L"
 description: "Dầu thủy lực APEX TL 68 của Quốc Trung, ISO VG 68, giá kinh tế cho máy ép, máy đùn, máy công trình. Phuy 200 L có sẵn, có VAT, giao từ Hải Phòng."
@@ -35,7 +35,8 @@ images:
   - { src: "/images/san-pham/apex-tl-68-nhan.webp", alt: "Nhãn phuy dầu thủy lực APEX TL 68" }
 
 tags: ["iso-vg-68", "gia-kinh-te", "quoc-trung"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **APEX TL 68** là dầu thủy lực cấp **ISO VG 68** do Quốc Trung sản xuất trong nước. Dầu truyền năng lượng và bôi trơn cho hệ thủy lực công nghiệp, máy ép, máy đùn và máy công trình chịu áp lực cao. Đây là phương án **giá kinh tế** trong nhóm dầu thủy lực 68 chúng tôi có sẵn.

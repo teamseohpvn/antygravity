@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-006"
-active: false   # Tắt: không có trong file kho tháng 10/2026
+active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
 title: "Mỡ VHP Opal Grease NLGI 3, NLGI 4"
 seo_title: "Mỡ VHP Opal Grease NLGI 3, 4 – Mỡ Đa Dụng Tải Nặng"
 description: "Mỡ VHP Opal Grease NLGI 3 (VHP GRE MIL 3) gốc lithium-canxi, làm việc -10 đến 120 °C, cho đầu trục, ổ bi tải nặng. Phuy 180 kg, xô 15 kg NLGI 4."
@@ -53,7 +53,8 @@ images:
   - { src: "/images/san-pham/vhp-opal-grease-nhan.webp", alt: "Nhãn mỡ VHP Opal Grease ghi cấp NLGI" }
 
 tags: ["nlgi-3", "nlgi-4", "mo-da-dung", "vhp"]
-updated: 2026-10-03
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **VHP Opal Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Cấp NLGI 3 còn mang tên **VHP GRE MIL 3**. Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. VHP định hướng mỡ cho đầu trục, ổ bi tải nặng và các cơ cấu chuyển động kín.

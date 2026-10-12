@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-012"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/emi-cf-4-20w-50/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Dầu Động Cơ EMI CF-4 20W-50"
 seo_title: "Dầu Động Cơ Diesel EMI CF-4 20W-50 – Phuy 200 L"
 description: "Dầu động cơ diesel EMI API CF-4 SAE 20W-50 cho xe tải, máy công trình, máy phát chạy tải nặng. Phuy 200 L có sẵn, có VAT, giao từ Hải Phòng."
@@ -38,7 +38,8 @@ images:
   - { src: "/images/san-pham/emi-cf-4-20w-50-nhan.webp", alt: "Nhãn phuy EMI CF-4 20W-50 ghi cấp API và SAE" }
 
 tags: ["api-cf-4", "sae-20w-50", "emi", "dong-co-diesel"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **EMI CF-4 20W-50** là dầu động cơ diesel đạt cấp **API CF-4**, độ nhớt **SAE 20W-50**. CF-4 là cấp dành cho động cơ diesel 4 kỳ cao tốc, có hoặc không có tăng áp. Độ nhớt 20W-50 đặc hơn 15W-40, hợp với động cơ đã chạy lâu và khí hậu nóng.

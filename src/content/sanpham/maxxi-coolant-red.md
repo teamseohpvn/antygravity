@@ -1,6 +1,6 @@
 ---
 ma: "SP-NLM-001"
-active: false   # Tắt: có trong kho tháng 10/2026, chờ TDS (thư mục TDS/maxxi-coolant-red/). Có TDS thì điền specs rồi bật true
+active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
 title: "Nước Làm Mát Maxxi Coolant Red 5 L"
 seo_title: "Nước Làm Mát Maxxi Coolant Red – Can 5 L | Chống Sôi, Chống Gỉ"
 description: "Nước làm mát động cơ Maxxi Coolant Red can 5 L: giải nhiệt, chống sôi, chống gỉ và ăn mòn két nước cho ô tô, xe tải, máy phát. Có sẵn, giao Hải Phòng."
@@ -36,7 +36,8 @@ images:
   - { src: "/images/san-pham/maxxi-coolant-red-nhan.webp", alt: "Nhãn can nước làm mát Maxxi Coolant Red" }
 
 tags: ["nuoc-lam-mat", "maxxi"]
-updated: 2026-10-05
+date: "2026-10-12"
+updated: "2026-10-12"
 ---
 
 **Maxxi Coolant Red** là nước làm mát (dung dịch làm mát) động cơ màu đỏ, đóng **can 5 L**. Sản phẩm giúp giải nhiệt động cơ, chống sôi nước làm mát, chống gỉ và chống ăn mòn két nước.
