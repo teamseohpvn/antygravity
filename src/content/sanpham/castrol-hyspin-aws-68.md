@@ -101,7 +101,7 @@ Không chắc sổ tay máy ghi gì? Gửi ảnh trang thông số dầu qua [fo
 | Điểm đông đặc | -24 °C | -21 °C |
 | Thoát khí ở 50 °C | 8 phút | 8 phút |
 
-Chọn cấp 68 khi sổ tay máy yêu cầu ISO VG 68, hoặc khi dầu trong bồn thường xuyên nóng trên 55–60 °C. Nói chung với máy móc làm việc ngoài trời trong điều kiện khí hậu nhiệt đới của Việt Nam, hoặc trong các nhà xưởng có nhiệt độ đặc thù cao (như nhà máy gạch, xưởng đúc, rèn, gia công cơ khí, ép đùn nhựa định hình...). Máy công trình, máy chạy ngoài trời hoặc khởi động lạnh thường dùng cấp 46.
+Chọn cấp 68 khi sổ tay máy yêu cầu ISO VG 68, hoặc khi dầu trong bồn thường xuyên nóng trên 55–60 °C. Nói chung với máy móc làm việc ngoài trời trong điều kiện khí hậu nhiệt đới của Việt Nam, hoặc trong các nhà xưởng có nhiệt độ đặc thù cao (như nhà máy gạch, xưởng đúc, rèn, gia công cơ khí, ép đùn nhựa định hình...). Ngược lại với các máy móc chạy ở các nước xứ lạnh thường dùng cấp 46 đảm bảo độ nhớt khi nhiệt độ xuống thấp.
 
 > **Nhận định của HT VINA:** Trường hợp hay gặp nhất ở miền Bắc là máy ép nhựa và máy ép thủy lực chạy hai, ba ca trong nhà xưởng: cấp 68 hợp hơn. Cách chọn chi tiết xem bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
 
