@@ -105,8 +105,16 @@ const schemaData = [
         </>
       )}
 
+      {p.press && (
+        <>
+          <h2>Báo chí trích dẫn</h2>
+          <ul>{p.press.map((a) => <li><a href={a.url} target="_blank" rel="noopener">{a.title}</a>. <em>{a.publisher}</em>, {a.date.split('-').reverse().join('/')}.</li>)}</ul>
+        </>
+      )}
+
       <h2>{p.external ? 'Cách biên soạn nội dung' : 'Cách kiểm duyệt nội dung'}</h2>
       <ol>{method.map((m) => <li>{m}</li>)}</ol>
+      <p>Xem thêm <a href="/quy-trinh-bien-tap">quy trình biên soạn và rà soát nội dung</a> của {LEGAL_SHORT}.</p>
 
       {posts.length > 0 && (
         <>
