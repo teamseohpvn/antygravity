@@ -45,9 +45,9 @@ warnings:
 storage: "Để xô trong nhà, đậy kín nắp, tránh bụi và nước lọt vào."
 
 images:
-  - { src: "/images/san-pham/shell-gadus-s3-v220c-2-xo-18kg.webp", alt: "Xô 18 kg mỡ chịu nhiệt Shell Gadus S3 V220C 2 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/shell-gadus-s3-v220c-2-nhan.webp", alt: "Nhãn xô Shell Gadus S3 V220C 2 ghi lithium complex NLGI 2" }
-  - { src: "/images/san-pham/shell-gadus-s3-v220c-2-mau-mo.webp", alt: "Mỡ Shell Gadus S3 V220C 2 màu đỏ khi mở nắp xô" }
+  - { src: "/images/san-pham/shell-gadus-s3-v220c-2-xo.webp", alt: "Xô nhựa vàng mỡ Shell Gadus S3 V220C 2, nhãn ghi Premium Multipurpose Extreme-Pressure Grease, tên cũ Shell Retinax LX" }
+  - { src: "/images/san-pham/shell-gadus-s3-v220c-2-xo-nhan.webp", alt: "Xô mỡ Shell Gadus S3 V220C 2 quai kim loại, nhãn logo Shell và chữ GADUS" }
+  - { src: "/images/san-pham/shell-gadus-s3-v220c-2-xo-quai-trang.webp", alt: "Xô mỡ Shell Gadus S3 V220C 2 mẫu nhãn khác, quai nhựa trắng" }
 
 doc_gia: "Trang này dành cho nhà máy xi măng, gạch, thép, đúc cần mỡ cho ổ bi nóng, tải nặng, rung mạnh."
 tom_tat:

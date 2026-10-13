@@ -11,7 +11,7 @@ Cách dùng: đặt ảnh gốc vào đúng **thư mục**, đặt **đúng tên
 | Danh mục (`anh-goc/danh-muc/`) | 3:2 ngang | 1536 × 1024 px | Được dùng ảnh AI, không logo, không chữ (xem `docs/prompt-anh-danh-muc.md`) |
 | Bài viết (`anh-goc/blog/`) | 16:9 | 1200 × 675 px (khuyến nghị 1600 × 900) | Ảnh minh họa được dùng AI; ảnh "thực tế tại kho/xưởng" phải là ảnh thật |
 
-Chỉ tính bài đang bật (`active: true`). Tổng: 163 ảnh, đã có 86, **còn thiếu 77**.
+Chỉ tính bài đang bật (`active: true`). Tổng: 159 ảnh, đã có 89, **còn thiếu 70**.
 
 ## Ảnh còn thiếu
 
@@ -43,9 +43,6 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 163 ảnh, đã có 86, *
 | `anh-goc/san-pham/` | `shell-gadus-s2-v220-2-xo-18kg.jpg` | Xô 18 kg mỡ bò Shell Gadus S2 V220 2 tại kho Hải Phòng | /mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2 |
 | `anh-goc/san-pham/` | `shell-gadus-s2-v220-2-nhan.jpg` | Nhãn xô Shell Gadus S2 V220 2 ghi cấp NLGI 2 | /mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2 |
 | `anh-goc/san-pham/` | `shell-gadus-s2-v220-2-mau-mo.jpg` | Màu và độ đặc của mỡ Shell Gadus S2 V220 2 khi mở nắp xô | /mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2 |
-| `anh-goc/san-pham/` | `shell-gadus-s3-v220c-2-xo-18kg.jpg` | Xô 18 kg mỡ chịu nhiệt Shell Gadus S3 V220C 2 tại kho Hải Phòng | /mo-chiu-nhiet/shell-gadus-s3-v220c-2 |
-| `anh-goc/san-pham/` | `shell-gadus-s3-v220c-2-nhan.jpg` | Nhãn xô Shell Gadus S3 V220C 2 ghi lithium complex NLGI 2 | /mo-chiu-nhiet/shell-gadus-s3-v220c-2 |
-| `anh-goc/san-pham/` | `shell-gadus-s3-v220c-2-mau-mo.jpg` | Mỡ Shell Gadus S3 V220C 2 màu đỏ khi mở nắp xô | /mo-chiu-nhiet/shell-gadus-s3-v220c-2 |
 | `anh-goc/san-pham/` | `shell-rimula-r4-x-phuy-200l.jpg` | Phuy 200 lít dầu động cơ diesel Shell Rimula R4 X 15W-40 tại kho Hải Phòng | /dau-dong-co-diesel/shell-rimula-r4-x |
 | `anh-goc/san-pham/` | `shell-rimula-r4-x-nhan.jpg` | Nhãn phuy Shell Rimula R4 X 15W-40 ghi cấp API CI-4 | /dau-dong-co-diesel/shell-rimula-r4-x |
 | `anh-goc/san-pham/` | `shl-syn-therm-32l-xo-20l.jpg` | Xô 20 lít dầu truyền nhiệt tổng hợp SHL Syn Therm 32L tại kho Hải Phòng | /dau-truyen-nhiet/shl-syn-therm |
@@ -65,10 +62,6 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 163 ảnh, đã có 86, *
 | `anh-goc/san-pham/` | `vhp-hymatran-10w-phuy-200l.jpg` | Phuy 200 lít dầu truyền động VHP Hymatran Oil 10W tại kho Hải Phòng | /dau-cau-hop-so/vhp-hymatran-10w |
 | `anh-goc/san-pham/` | `vhp-hymatran-10w-xo-18l.jpg` | Xô 18 lít dầu VHP Hymatran Oil 10W | /dau-cau-hop-so/vhp-hymatran-10w |
 | `anh-goc/san-pham/` | `vhp-hymatran-10w-nhan.jpg` | Nhãn VHP Hymatran Oil 10W ghi cấp SAE 10W | /dau-cau-hop-so/vhp-hymatran-10w |
-| `anh-goc/san-pham/` | `vhp-isonas-aw-68-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực VHP Isonas AW 68 tại kho Hải Phòng | /dau-thuy-luc/vhp-isonas-aw |
-| `anh-goc/san-pham/` | `vhp-isonas-aw-68-can-18l.jpg` | Can 18 lít dầu thủy lực VHP Isonas AW 68 | /dau-thuy-luc/vhp-isonas-aw |
-| `anh-goc/san-pham/` | `vhp-isonas-aw-32-xo-18l.jpg` | Xô 18 lít dầu thủy lực VHP Isonas AW 32 | /dau-thuy-luc/vhp-isonas-aw |
-| `anh-goc/san-pham/` | `vhp-isonas-aw-32-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực VHP Isonas AW 32 | /dau-thuy-luc/vhp-isonas-aw |
 | `anh-goc/san-pham/` | `vhp-lotus-oil-ls-phuy-200l.jpg` | Phuy 200 lít dầu cắt gọt pha nước VHP Lotus Oil LS tại kho Hải Phòng | /dau-cat-got/vhp-lotus-oil-ls |
 | `anh-goc/san-pham/` | `vhp-lotus-oil-ls-nhan.jpg` | Nhãn phuy dầu cắt gọt VHP Lotus Oil LS | /dau-cat-got/vhp-lotus-oil-ls |
 | `anh-goc/san-pham/` | `vhp-lotus-oil-ls-dung-dich.jpg` | Dung dịch VHP Lotus Oil LS pha nước có màu trắng sữa ánh xanh | /dau-cat-got/vhp-lotus-oil-ls |
@@ -169,6 +162,9 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 163 ảnh, đã có 86, *
 | `anh-goc/san-pham/` | `maxxi-coolant-red-nhan.jpg` | Nhãn can nước làm mát Maxxi Coolant Red | /nuoc-lam-mat/maxxi-coolant-red |
 | `anh-goc/san-pham/` | `pv-transmission-ep-gl4-90-phuy.jpg` | Phuy dầu hộp số PVOIL PV Transmission 90 EP_GL4 tại kho Hải Phòng | /dau-cau-hop-so/pv-transmission-ep-gl4 |
 | `anh-goc/san-pham/` | `pvoil-pv-grease-phuy.jpg` | Phuy mỡ PVOIL | /mo-boi-tron-cong-nghiep/pvoil-pv-grease |
+| `anh-goc/san-pham/` | `shell-gadus-s3-v220c-2-xo.jpg` | Xô nhựa vàng mỡ Shell Gadus S3 V220C 2, nhãn ghi Premium Multipurpose Extreme-Pressure Grease, tên cũ Shell Retinax LX | /mo-chiu-nhiet/shell-gadus-s3-v220c-2 |
+| `anh-goc/san-pham/` | `shell-gadus-s3-v220c-2-xo-nhan.jpg` | Xô mỡ Shell Gadus S3 V220C 2 quai kim loại, nhãn logo Shell và chữ GADUS | /mo-chiu-nhiet/shell-gadus-s3-v220c-2 |
+| `anh-goc/san-pham/` | `shell-gadus-s3-v220c-2-xo-quai-trang.jpg` | Xô mỡ Shell Gadus S3 V220C 2 mẫu nhãn khác, quai nhựa trắng | /mo-chiu-nhiet/shell-gadus-s3-v220c-2 |
 | `anh-goc/san-pham/` | `shell-spirax-s2-a-85w-140-xo-20l.jpg` | Xô 20 lít dầu cầu Shell Spirax S2 A 85W-140 tại kho Hải Phòng | /dau-cau-hop-so/shell-spirax-s2-a |
 | `anh-goc/san-pham/` | `shell-spirax-s2-a-85w-140-nhan.jpg` | Nhãn xô Shell Spirax S2 A 85W-140 ghi cấp API GL-5 | /dau-cau-hop-so/shell-spirax-s2-a |
 | `anh-goc/san-pham/` | `shl-edm-32-phuy-kho.jpg` | Phuy dầu SHL Lubricants xếp trên pallet, phuy dầu EDM ghi tay trên nắp | /dau-xung-dien-edm/shl-edm-32 |
@@ -194,5 +190,5 @@ Không còn ảnh nào thiếu.
 
 ## Ảnh của bài đang tắt khác (chưa cần up)
 
-0 ảnh thuộc các bài `active: false` không có trong kho hiện tại. Khi bật bài nào, chạy lại `npm run anh` để ảnh của bài đó vào danh sách cần up.
+4 ảnh thuộc các bài `active: false` không có trong kho hiện tại. Khi bật bài nào, chạy lại `npm run anh` để ảnh của bài đó vào danh sách cần up.
 Danh sách đầy đủ trong `docs/danh-sach-anh.csv` (cột "Trạng thái" = Bài đang tắt).
