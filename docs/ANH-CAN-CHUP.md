@@ -11,7 +11,7 @@ Cách dùng: đặt ảnh gốc vào đúng **thư mục**, đặt **đúng tên
 | Danh mục (`anh-goc/danh-muc/`) | 3:2 ngang | 1536 × 1024 px | Được dùng ảnh AI, không logo, không chữ (xem `docs/prompt-anh-danh-muc.md`) |
 | Bài viết (`anh-goc/blog/`) | 16:9 | 1200 × 675 px (khuyến nghị 1600 × 900) | Ảnh minh họa được dùng AI; ảnh "thực tế tại kho/xưởng" phải là ảnh thật |
 
-Chỉ tính bài đang bật (`active: true`). Tổng: 159 ảnh, đã có 89, **còn thiếu 70**.
+Chỉ tính bài đang bật (`active: true`). Tổng: 158 ảnh, đã có 90, **còn thiếu 68**.
 
 ## Ảnh còn thiếu
 
@@ -45,8 +45,6 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 159 ảnh, đã có 89, *
 | `anh-goc/san-pham/` | `shell-gadus-s2-v220-2-mau-mo.jpg` | Màu và độ đặc của mỡ Shell Gadus S2 V220 2 khi mở nắp xô | /mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2 |
 | `anh-goc/san-pham/` | `shell-rimula-r4-x-phuy-200l.jpg` | Phuy 200 lít dầu động cơ diesel Shell Rimula R4 X 15W-40 tại kho Hải Phòng | /dau-dong-co-diesel/shell-rimula-r4-x |
 | `anh-goc/san-pham/` | `shell-rimula-r4-x-nhan.jpg` | Nhãn phuy Shell Rimula R4 X 15W-40 ghi cấp API CI-4 | /dau-dong-co-diesel/shell-rimula-r4-x |
-| `anh-goc/san-pham/` | `shl-syn-therm-32l-xo-20l.jpg` | Xô 20 lít dầu truyền nhiệt tổng hợp SHL Syn Therm 32L tại kho Hải Phòng | /dau-truyen-nhiet/shl-syn-therm |
-| `anh-goc/san-pham/` | `shl-syn-therm-32l-nhan.jpg` | Nhãn xô SHL Syn Therm 32L ghi tên sản phẩm và cấp độ nhớt | /dau-truyen-nhiet/shl-syn-therm |
 | `anh-goc/san-pham/` | `total-rubia-tir-7400-phuy-200l.jpg` | Phuy 200 lít dầu động cơ TotalEnergies Rubia TIR 7400 15W-40 tại kho Hải Phòng | /dau-dong-co-diesel/total-rubia-tir-7400 |
 | `anh-goc/san-pham/` | `total-rubia-tir-7400-nhan.jpg` | Nhãn phuy Rubia TIR 7400 15W-40 ghi cấp API CI-4 và ACEA E7 | /dau-dong-co-diesel/total-rubia-tir-7400 |
 | `anh-goc/san-pham/` | `total-rubia-xt-20w50-phuy-200l.jpg` | Phuy 200 lít dầu động cơ TotalEnergies Rubia XT 20W-50 tại kho Hải Phòng | /dau-dong-co-diesel/total-rubia-xt |
@@ -170,6 +168,7 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 159 ảnh, đã có 89, *
 | `anh-goc/san-pham/` | `shl-edm-32-phuy-kho.jpg` | Phuy dầu SHL Lubricants xếp trên pallet, phuy dầu EDM ghi tay trên nắp | /dau-xung-dien-edm/shl-edm-32 |
 | `anh-goc/san-pham/` | `shl-edm-32-phuy.jpg` | Phuy dầu SHL Lubricants | /dau-xung-dien-edm/shl-edm-32 |
 | `anh-goc/san-pham/` | `shl-edm-32-xo.jpg` | Xô dầu SHL Lubricants | /dau-xung-dien-edm/shl-edm-32 |
+| `anh-goc/san-pham/` | `shl-syn-therm-32l-xo-20l.jpg` | Xô thép 20 lít dầu truyền nhiệt SHL Syn Therm 32L, thân xanh lá in logo SHL Lubricants và dòng chữ Trust in SHL | /dau-truyen-nhiet/shl-syn-therm |
 | `anh-goc/san-pham/` | `shl-synthway-68m-can-20l.jpg` | Can 20 lít dầu rãnh trượt SHL Synthway 68M tại kho Hải Phòng | /dau-ranh-truot/shl-synthway-68m |
 | `anh-goc/san-pham/` | `shl-synthway-68m-nhan.jpg` | Nhãn can SHL Synthway 68M ghi cấp độ nhớt ISO VG 68 | /dau-ranh-truot/shl-synthway-68m |
 | `anh-goc/san-pham/` | `vhp-lithium-grease-l4-xo-17kg.jpg` | Xô 17 kg mỡ VHP Lithium Grease L4 tại kho Hải Phòng | /mo-boi-tron-cong-nghiep/vhp-lithium-grease |
