@@ -10,6 +10,8 @@ import QuoteCta from '../../components/QuoteCta.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
+import { giaSanPham } from '../../lib/gia-json';
+import { fmtVnd, fmtNgay } from '../../lib/gia-tinh';
 import { ngayBai } from '../../lib/ngay';
 import { timNhanSu, DEFAULT_REVIEWER_ID, DEFAULT_PRODUCT_AUTHOR_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
 import { BUSINESS, absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
@@ -65,6 +67,22 @@ const tocItems = mucLuc([
 // **đậm** trong tom_tat → <strong>, phần còn lại được escape.
 const dam = (t: string) =>
   t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+// Khoảng giá công khai (src/data/gia-cong-khai.json, cùng số với trang bảng giá). Có giá thì hiện trên trang
+// và đưa vào schema AggregateOffer; chưa có giá thì không thêm offers (không bịa giá).
+const gia = giaSanPham(d.category, product.id);
+const AVAILABILITY = { 'co-san': 'InStock', 'dat-hang': 'BackOrder', 'ngung-ban': 'Discontinued' } as const;
+const offers = gia.rows.length
+  ? {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'VND',
+      lowPrice: Math.min(...gia.rows.map((r) => r.thap!)),
+      highPrice: Math.max(...gia.rows.map((r) => r.cao!)),
+      offerCount: gia.rows.length,
+      availability: `https://schema.org/${AVAILABILITY[d.stock_status ?? 'co-san']}`,
+      url: absUrl(pagePath),
+      seller: { '@id': ORG_ID },
+    }
+  : undefined;
 const stockText = d.stock_status ? STOCK_TEXT[d.stock_status] : 'Liên hệ để nhận báo giá và kiểm tra tồn kho.';
 
 const crumbs = [
@@ -113,7 +131,8 @@ const schemaData = [
     ...(d.origin ? { countryOfOrigin: d.origin } : {}),
     ...(gallery.length ? { image: gallery.map((img) => absUrl(img.src)) } : {}),
     ...(additionalProperty.length ? { additionalProperty } : {}),
-    // Không thêm offers / aggregateRating khi chưa công bố giá và đánh giá thật.
+    // offers chỉ khi có khoảng giá công khai; không thêm aggregateRating khi chưa có đánh giá thật.
+    ...(offers ? { offers } : {}),
   },
   {
     '@context': 'https://schema.org',
@@ -202,6 +221,15 @@ const schemaData = [
 
         <div class="cta-box">
           <p class="status">{stockText}</p>
+          {gia.rows.length > 0 && (
+            <div class="gia">
+              <p><strong>Giá tham khảo tháng {fmtNgay(gia.cauHinh.ngay_ra_soat, 'thang')} ({gia.cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT'}):</strong></p>
+              <ul>
+                {gia.rows.map((r) => <li>{r.quy_cach}: {fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</li>)}
+              </ul>
+              <p class="gia-note">Giá thay đổi theo số lượng và nơi giao.{d.category === 'dau-thuy-luc' && <> Xem <a href="/bao-gia-dau-thuy-luc">bảng giá dầu thủy lực</a>.</>}</p>
+            </div>
+          )}
           <p class="cta-row">
             <a href={`/bao-gia?sp=${encodeURIComponent(d.title)}`} class="btn-primary" data-track="add_to_quote">Nhận báo giá</a>
             <span>hoặc gọi <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></span>
@@ -267,6 +295,9 @@ const schemaData = [
 
   .cta-box { background: #f8fafc; padding: 22px; border-radius: 8px; border: 1px dashed var(--border-color); }
   .status { font-weight: 600; color: var(--color-primary); }
+  .gia ul { margin: 4px 0 4px 20px; }
+  .gia p { margin: 4px 0; }
+  .gia-note { font-size: 0.9rem; }
   .docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 16px; }
   .btn-outline { display: block; text-align: center; padding: 10px; border: 1px solid var(--border-color); border-radius: 6px; background: white; font-size: 0.9rem; }
   .btn-outline:hover { background: #f1f5f9; }

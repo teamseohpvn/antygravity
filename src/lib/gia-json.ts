@@ -17,3 +17,11 @@ export function bangGiaTuJson(danhMuc: string): { rows: DongGiaCongKhai[]; cauHi
     .map(({ danh_muc: _dm, thu_tu: _tt, ...r }) => r);
   return { rows, cauHinh: data.cau_hinh as CauHinh };
 }
+
+/** Khoảng giá công khai của một trang sản phẩm (mọi quy cách), cho khối giá và AggregateOffer trong schema. */
+export function giaSanPham(danhMuc: string, trang: string): { rows: DongGiaCongKhai[]; cauHinh: CauHinh } {
+  const rows = (data.rows as DongJson[])
+    .filter((r) => r.danh_muc === danhMuc && r.trang === trang && r.thap != null && r.cao != null)
+    .map(({ danh_muc: _dm, thu_tu: _tt, ...r }) => r);
+  return { rows, cauHinh: data.cau_hinh as CauHinh };
+}
