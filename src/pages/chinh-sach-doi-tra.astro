@@ -1,0 +1,75 @@
+---
+import PolicyPage from '../components/PolicyPage.astro';
+import { BUSINESS, ADDRESS_FULL, LEGAL_NAME } from '../lib/site';
+---
+
+<PolicyPage
+  path="/chinh-sach-doi-tra"
+  title="Chính sách đổi trả và hoàn tiền"
+  seoTitle="Chính Sách Đổi Trả, Hoàn Tiền Dầu Nhớt Công Nghiệp – Dầu Công Nghiệp HP"
+  description="Đổi trả trong 7 ngày khi giao sai hàng, hư hỏng do vận chuyển hoặc lỗi chất lượng của nhà sản xuất. Điều kiện với hàng còn niêm phong, cách hoàn tiền và điều chỉnh hóa đơn VAT."
+  updated="2026-10-13"
+>
+  <p>
+    Chính sách này áp dụng cho dầu nhớt và mỡ bôi trơn công nghiệp mua của {LEGAL_NAME} qua website, điện thoại hoặc Zalo.
+    Thời hạn <strong>7 ngày</strong> tính từ ngày bạn nhận hàng, ghi trên phiếu giao hàng hoặc hóa đơn.
+  </p>
+
+  <h2>1. Trường hợp đổi trả miễn phí</h2>
+  <p>Chúng tôi chịu toàn bộ chi phí đổi hàng, vận chuyển hai chiều hoặc hoàn tiền khi:</p>
+  <ul>
+    <li><strong>Giao sai hàng:</strong> sai tên sản phẩm, cấp độ nhớt, quy cách hoặc thiếu số lượng so với đơn đã xác nhận.</li>
+    <li><strong>Hư hỏng do vận chuyển:</strong> phuy, xô, can bị thủng, móp gây rò rỉ, mất niêm phong khi giao. Vui lòng ghi chú ngay trên phiếu giao hàng
+      và báo trong ngày nhận, như hướng dẫn tại <a href="/chinh-sach-giao-hang">Chính sách giao hàng</a>.</li>
+    <li><strong>Lỗi chất lượng do nhà sản xuất:</strong> dầu có dấu hiệu bất thường (lẫn nước, cặn, màu hoặc mùi khác lạ) ngay khi mở nắp.
+      Áp dụng cả với hàng đã mở nắp, nếu kết quả kiểm tra mẫu xác định lỗi thuộc về sản phẩm.</li>
+  </ul>
+
+  <h2>2. Đổi trả theo nhu cầu của bạn</h2>
+  <p>
+    Nếu bạn đặt nhầm hoặc không còn nhu cầu, chúng tôi nhận lại hàng trong 7 ngày khi hàng còn <strong>nguyên nắp, nguyên niêm phong,
+    vỏ không móp, nhãn không rách</strong>. Bạn chịu phí vận chuyển trả hàng về kho. Bạn có thể đổi sang sản phẩm khác (thanh toán phần chênh lệch nếu có)
+    hoặc nhận lại tiền.
+  </p>
+
+  <h2>3. Trường hợp không nhận đổi trả</h2>
+  <ul>
+    <li>Hàng đã mở nắp, đã rót ra hoặc đã đưa vào máy, trừ trường hợp lỗi chất lượng ở mục 1.</li>
+    <li>Hàng bị nhiễm bẩn, hư hỏng do bảo quản sai cách sau khi nhận (để ngoài nắng mưa, phuy đứng ngoài trời đọng nước trên nắp).</li>
+    <li>Quá 7 ngày kể từ ngày nhận hàng.</li>
+  </ul>
+  <p>
+    Dầu nhớt đã mở niêm phong có thể bị lẫn nước, bụi mà mắt thường không thấy, nên không thể bán lại cho khách khác.
+    Đây là lý do chúng tôi không nhận lại hàng đã mở nắp khi không có lỗi chất lượng.
+  </p>
+
+  <h2>4. Kiểm tra lỗi chất lượng</h2>
+  <p>
+    Khi nghi dầu có lỗi, vui lòng ngừng sử dụng, giữ nguyên phuy, xô, can và chụp ảnh nhãn, số lô (batch) in trên vỏ.
+    Chúng tôi lấy mẫu để kiểm tra, có thể gửi phòng thử nghiệm hoặc hãng sản xuất. Nếu kết quả cho thấy lỗi do sản phẩm,
+    chúng tôi đổi hàng mới hoặc hoàn tiền theo mục 1. Nếu sản phẩm đạt chỉ tiêu, chúng tôi gửi bạn kết quả kiểm tra và tư vấn nguyên nhân khác.
+  </p>
+
+  <h2>5. Cách yêu cầu đổi trả</h2>
+  <ol>
+    <li>Liên hệ hotline / Zalo <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> hoặc email
+      <a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a>.</li>
+    <li>Cho biết tên công ty hoặc số điện thoại đặt hàng, ngày nhận hàng, số hóa đơn (nếu có), lý do đổi trả và ảnh chụp hàng.</li>
+    <li>Chúng tôi xác nhận trong 1 ngày làm việc và hẹn lịch thu hồi hàng, hoặc bạn mang hàng về kho tại {ADDRESS_FULL}.</li>
+  </ol>
+
+  <h2>6. Hoàn tiền và hóa đơn</h2>
+  <ul>
+    <li>Hoàn tiền bằng <strong>chuyển khoản</strong> vào tài khoản bạn đã thanh toán, trong <strong>7 ngày làm việc</strong> kể từ khi chúng tôi nhận lại hàng
+      (hoặc có kết quả kiểm tra với trường hợp lỗi chất lượng).</li>
+    <li>Đơn đã xuất hóa đơn VAT: hai bên lập hóa đơn điều chỉnh hoặc thay thế theo quy định về hóa đơn điện tử.</li>
+    <li>Đơn mua theo hợp đồng: thực hiện theo điều khoản đổi trả trong hợp đồng nếu khác với chính sách này.</li>
+  </ul>
+
+  <h2>7. Liên hệ</h2>
+  <p>
+    Hotline / Zalo: <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a>.
+    Email: <a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a>.
+    Xem thêm <a href="/chinh-sach-giao-hang">Chính sách giao hàng</a> và <a href="/chinh-sach-thanh-toan">Chính sách thanh toán</a>.
+  </p>
+</PolicyPage>

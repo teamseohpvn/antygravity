@@ -17,6 +17,8 @@ export const BUSINESS = {
   phone: '0901511313',
   phoneDisplay: '0901 511 313',
   zaloUrl: 'https://zalo.me/0901511313',
+  // Hộp thư chung (13/10/2026), nhận qua Cloudflare Email Routing.
+  email: 'lienhe@daucongnghiephp.com.vn',
   streetAddress: '108 Đường Thanh Bình',
   locality: 'P. Lê Thanh Nghị',
   region: 'TP Hải Phòng',
@@ -37,12 +39,15 @@ export const KCN_NEAR = ['Đại An', 'Nam Sách', 'Phúc Điền', 'Tân Trư�
 export const KCN_FAR = ['Tràng Duệ', 'Nomura', 'Đình Vũ', 'VSIP', 'Quế Võ', 'Phố Nối'];
 /** Google Analytics 4 (du-lieu-noi-bo/script_anylytics_google.md). Đổi bằng biến PUBLIC_GA4_ID khi build. */
 export const GA4_ID: string = import.meta.env.PUBLIC_GA4_ID || 'G-DSZVP9WS37';
-/** Khóa localStorage lưu lựa chọn cookie: "granted" | "denied". Đổi tên khóa nếu muốn hỏi lại mọi người. */
-export const CONSENT_KEY = 'hp-cookie-consent-v1';
+/** Google Ads (dạng AW-123456789). Để trống thì không tải thẻ Ads; chuyển đổi vẫn nhập được từ GA4. */
+export const GADS_ID: string = import.meta.env.PUBLIC_GADS_ID || '';
+/** Khóa localStorage lưu lựa chọn cookie: "granted" | "denied". Đổi tên khóa nếu muốn hỏi lại mọi người (v2 từ 13/10/2026: thêm cookie Google Ads). */
+export const CONSENT_KEY = 'hp-cookie-consent-v2';
 /** Các trang chính sách, hiện ở chân trang. */
 export const POLICY_LINKS = [
   { href: '/chinh-sach-giao-hang', label: 'Chính sách giao hàng' },
   { href: '/chinh-sach-thanh-toan', label: 'Chính sách thanh toán' },
+  { href: '/chinh-sach-doi-tra', label: 'Chính sách đổi trả' },
   { href: '/privacy-policy', label: 'Chính sách bảo mật', rel: 'privacy-policy' },
   { href: '/terms-of-service', label: 'Điều khoản sử dụng', rel: 'terms-of-service' },
   { href: '/tuy-chon-cookie', label: 'Tùy chọn cookie' },
@@ -121,11 +126,13 @@ export function organizationSchema() {
       logo: absUrl(BUSINESS.logo),
       image: absUrl(BUSINESS.image),
       telephone,
+      email: BUSINESS.email,
       address,
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'sales',
         telephone,
+        email: BUSINESS.email,
         areaServed: 'VN',
         availableLanguage: 'vi',
         url: absUrl('/contact'),
@@ -150,6 +157,7 @@ export function organizationSchema() {
         { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '17:00' },
         { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' },
       ],
+      email: BUSINESS.email,
       hasMap: BUSINESS.gbpUrl,
       sameAs: [BUSINESS.gbpUrl],
       // TODO: thêm geo (tọa độ ghim Google Maps), Facebook, Zalo OA vào sameAs khi có. Không điền giá trị đoán.

@@ -9,7 +9,7 @@ const domain = SITE_URL.replace(/^https?:\/\//, '');
   title="Chính sách bảo mật"
   seoTitle="Chính Sách Bảo Mật Thông Tin Cá Nhân – Dầu Công Nghiệp HP"
   description="Dữ liệu cá nhân chúng tôi thu thập khi bạn gửi yêu cầu báo giá hoặc truy cập website, mục đích sử dụng, thời gian lưu, bên xử lý và quyền của bạn."
-  updated="2026-10-06"
+  updated="2026-10-13"
 >
   <p>
     {LEGAL_NAME} (MST {TAX_ID}, địa chỉ {ADDRESS_FULL}) là đơn vị quản lý website {domain} và chịu trách nhiệm xử lý dữ liệu cá nhân
@@ -30,6 +30,7 @@ const domain = SITE_URL.replace(/^https?:\/\//, '');
   <ul>
     <li>Dữ liệu kỹ thuật do máy chủ ghi nhận: địa chỉ IP, loại trình duyệt, thời điểm truy cập. Dữ liệu này dùng để vận hành và chống tấn công.</li>
     <li>Dữ liệu thống kê qua Google Analytics: trang đã xem, nguồn truy cập, loại thiết bị, khu vực ở mức tỉnh/thành. Google Analytics chỉ ghi cookie khi bạn đồng ý, xem <a href="/tuy-chon-cookie">Tùy chọn cookie</a>.</li>
+    <li>Dữ liệu quảng cáo qua Google Ads: bạn đến website từ quảng cáo nào và có gọi điện, nhắn Zalo hoặc gửi yêu cầu báo giá hay không. Google Ads chỉ ghi cookie khi bạn đồng ý.</li>
   </ul>
   <p>Chúng tôi không thu thập thông tin thẻ thanh toán và không cố ý thu thập dữ liệu cá nhân nhạy cảm.</p>
 
@@ -38,9 +39,10 @@ const domain = SITE_URL.replace(/^https?:\/\//, '');
     <li>Liên hệ, tư vấn kỹ thuật và gửi báo giá theo yêu cầu của bạn.</li>
     <li>Xác nhận đơn hàng, giao hàng, xuất hóa đơn VAT và chăm sóc sau bán hàng.</li>
     <li>Thống kê lượt truy cập để cải thiện nội dung website.</li>
+    <li>Đo hiệu quả quảng cáo Google Ads và hiện quảng cáo của chúng tôi cho người đã xem website (khi bạn đồng ý cookie).</li>
     <li>Thực hiện nghĩa vụ theo quy định pháp luật về kế toán, thuế.</li>
   </ul>
-  <p>Chúng tôi không bán, cho thuê dữ liệu cá nhân và không dùng dữ liệu của bạn cho quảng cáo nhắm mục tiêu.</p>
+  <p>Chúng tôi không bán, cho thuê dữ liệu cá nhân. Số điện thoại, tên và nội dung bạn gửi trong form báo giá không được chuyển cho Google Ads.</p>
 
   <h2>3. Bên tham gia xử lý dữ liệu</h2>
   <p>Để vận hành website, một số nhà cung cấp dịch vụ xử lý dữ liệu thay mặt chúng tôi, chỉ trong phạm vi cần thiết:</p>
@@ -51,6 +53,7 @@ const domain = SITE_URL.replace(/^https?:\/\//, '');
         <tr><td>Cloudflare</td><td>Lưu trữ website, chuyển tiếp form báo giá, chống tấn công</td><td>Dữ liệu kỹ thuật, nội dung form khi gửi</td></tr>
         <tr><td>Telegram, Google (Google Sheets)</td><td>Nhận thông báo yêu cầu báo giá cho nhân viên kinh doanh</td><td>Nội dung form báo giá</td></tr>
         <tr><td>Google (Google Analytics)</td><td>Thống kê truy cập</td><td>Dữ liệu thống kê nêu ở mục 1</td></tr>
+        <tr><td>Google (Google Ads)</td><td>Đo hiệu quả quảng cáo, quảng cáo tiếp cận lại</td><td>Dữ liệu quảng cáo nêu ở mục 1, khi bạn đồng ý cookie</td></tr>
         <tr><td>Đơn vị vận chuyển, nhà xe</td><td>Giao hàng ngoài khu vực xe của công ty</td><td>Tên người nhận, số điện thoại, địa chỉ giao</td></tr>
       </tbody>
     </table>
@@ -83,7 +86,7 @@ const domain = SITE_URL.replace(/^https?:\/\//, '');
     <li>Khiếu nại hoặc yêu cầu bồi thường theo quy định pháp luật.</li>
   </ul>
   <p>
-    Để thực hiện các quyền này, liên hệ hotline / Zalo <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a> hoặc gửi văn bản tới địa chỉ
+    Để thực hiện các quyền này, liên hệ hotline / Zalo <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a>, email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a> hoặc gửi văn bản tới địa chỉ
     {ADDRESS_FULL}. Chúng tôi phản hồi trong thời hạn pháp luật quy định.
   </p>
 

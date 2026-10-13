@@ -1,6 +1,6 @@
 ---
 import PolicyPage from '../components/PolicyPage.astro';
-import { GA4_ID } from '../lib/site';
+import { GA4_ID, CONSENT_KEY } from '../lib/site';
 const gaSuffix = GA4_ID.replace(/^G-/, '');
 ---
 
@@ -8,12 +8,12 @@ const gaSuffix = GA4_ID.replace(/^G-/, '');
   path="/tuy-chon-cookie"
   title="Tùy chọn cookie"
   seoTitle="Tùy Chọn Cookie – Dầu Công Nghiệp HP"
-  description="Xem website dùng những cookie nào và bật, tắt cookie thống kê Google Analytics. Website không dùng cookie quảng cáo."
-  updated="2026-10-06"
+  description="Xem website dùng những cookie nào và bật, tắt cookie thống kê Google Analytics và cookie quảng cáo Google Ads."
+  updated="2026-10-13"
 >
   <p>
-    Cookie là tệp nhỏ trình duyệt lưu lại khi bạn xem website. Chúng tôi chỉ dùng cookie cần thiết và cookie thống kê.
-    <strong>Website không dùng cookie quảng cáo.</strong>
+    Cookie là tệp nhỏ trình duyệt lưu lại khi bạn xem website. Chúng tôi dùng cookie cần thiết, cookie thống kê (Google Analytics)
+    và cookie quảng cáo (Google Ads). <strong>Cookie thống kê và quảng cáo chỉ bật khi bạn đồng ý.</strong>
   </p>
 
   <section class="cookie-settings" aria-labelledby="cs-title">
@@ -27,8 +27,8 @@ const gaSuffix = GA4_ID.replace(/^G-/, '');
     </div>
     <div class="cs-row">
       <div>
-        <h3><label for="cs-analytics">Thống kê (Google Analytics)</label></h3>
-        <p>Đếm lượt truy cập, trang được xem nhiều và nguồn truy cập để cải thiện nội dung. Không dùng để quảng cáo.</p>
+        <h3><label for="cs-analytics">Thống kê và quảng cáo (Google Analytics, Google Ads)</label></h3>
+        <p>Đếm lượt truy cập, trang được xem nhiều và nguồn truy cập để cải thiện nội dung. Đo xem quảng cáo Google có mang lại cuộc gọi, tin nhắn Zalo, yêu cầu báo giá hay không, và hiện quảng cáo của chúng tôi cho người đã xem website.</p>
       </div>
       <input type="checkbox" id="cs-analytics" class="cs-switch" />
     </div>
@@ -43,14 +43,15 @@ const gaSuffix = GA4_ID.replace(/^G-/, '');
     <table>
       <thead><tr><th>Tên</th><th>Loại</th><th>Mục đích</th><th>Thời hạn</th></tr></thead>
       <tbody>
-        <tr><td><code>hp-cookie-consent-v1</code></td><td>Cần thiết (lưu trong trình duyệt)</td><td>Ghi nhớ lựa chọn cookie của bạn</td><td>Đến khi bạn xóa dữ liệu trình duyệt</td></tr>
+        <tr><td><code>{CONSENT_KEY}</code></td><td>Cần thiết (lưu trong trình duyệt)</td><td>Ghi nhớ lựa chọn cookie của bạn</td><td>Đến khi bạn xóa dữ liệu trình duyệt</td></tr>
         <tr><td><code>_ga</code></td><td>Thống kê</td><td>Phân biệt các lượt truy cập ẩn danh của Google Analytics</td><td>2 năm</td></tr>
         <tr><td><code>_ga_{gaSuffix}</code></td><td>Thống kê</td><td>Lưu trạng thái phiên truy cập</td><td>2 năm</td></tr>
+        <tr><td><code>_gcl_au</code>, <code>_gcl_aw</code></td><td>Quảng cáo</td><td>Ghi nhận lượt nhấp quảng cáo Google Ads dẫn tới liên hệ, báo giá</td><td>90 ngày</td></tr>
       </tbody>
     </table>
   </div>
   <p>
-    Khi bạn từ chối hoặc chưa chọn, Google Analytics không ghi cookie <code>_ga</code>. Website vẫn hoạt động đầy đủ.
+    Khi bạn từ chối hoặc chưa chọn, Google không ghi cookie <code>_ga</code> và <code>_gcl_*</code>. Website vẫn hoạt động đầy đủ.
     Cách Google xử lý dữ liệu: <a href="https://policies.google.com/technologies/partner-sites?hl=vi" target="_blank" rel="noopener">Cách Google sử dụng thông tin từ các trang web dùng dịch vụ của Google</a>.
   </p>
   <p>
@@ -77,7 +78,7 @@ const gaSuffix = GA4_ID.replace(/^G-/, '');
   const show = () => {
     const v = api()?.read() ?? null;
     box.checked = v === 'granted';
-    status.textContent = v ? `Đang chọn: ${v === 'granted' ? 'cho phép' : 'từ chối'} cookie thống kê.` : 'Bạn chưa chọn. Cookie thống kê đang tắt.';
+    status.textContent = v ? `Đang chọn: ${v === 'granted' ? 'cho phép' : 'từ chối'} cookie thống kê và quảng cáo.` : 'Bạn chưa chọn. Cookie thống kê và quảng cáo đang tắt.';
   };
   // window.hpCookie do CookieBanner (cuối trang) tạo ra; chờ load để chắc chắn script đó đã chạy.
   window.addEventListener('load', show);
