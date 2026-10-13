@@ -99,39 +99,6 @@ export const NHAN_SU: NhanSu[] = [
     knowsAbout: ['Kỹ thuật dầu khí', 'Dầu nhớt công nghiệp', 'Dầu thủy lực', 'Kiểm tra chất lượng dầu bôi trơn'],
   },
   {
-    id: 'bui-huy-tien',
-    name: 'Bùi Huy Tiến',
-    honorificPrefix: 'TS.',
-    role: 'Cố vấn kỹ thuật (cộng tác viên)',
-    degree: 'Tiến sĩ Kỹ thuật Cơ khí',
-    affiliation: 'Trường Đại học Giao thông vận tải, Bộ môn Cơ khí – Cơ điện tử, Khoa Cơ khí',
-    affiliationUrl: 'https://www.utc.edu.vn/',
-    external: true,
-    sameAs: ['https://www.utc.edu.vn/doi-ngu-giang-vien/1695'],
-    verifiedFrom: 'Trang giảng viên UTC https://www.utc.edu.vn/doi-ngu-giang-vien/1695 (truy cập 08/10/2026)',
-    desc: 'Giảng viên Bộ môn Cơ khí – Cơ điện tử, University of Transport and Communications. Cộng tác viên cố vấn kỹ thuật của HT VINA, biên soạn bài hướng dẫn kỹ thuật về máy ép nhựa và hệ thủy lực.',
-    bio: [
-      'TS. Tiến là giảng viên Bộ môn Cơ khí – Cơ điện tử, Khoa Cơ khí, University of Transport and Communications. TS. Tiến tốt nghiệp kỹ sư Cơ khí tại Trường Đại học Bách khoa Hà Nội (2007), thạc sĩ Kỹ thuật Cơ khí/Cơ điện tử tại Trường Đại học Kỹ thuật Nam Đài Loan (2009) và tiến sĩ Kỹ thuật Cơ khí tại Trường Đại học Quốc lập Thành Công, Đài Loan (2014).',
-    ],
-    alumniOf: [
-      { degree: 'Tiến sĩ', field: 'Kỹ thuật Cơ khí', school: 'Trường Đại học Quốc lập Thành Công (Đài Loan)', year: 2014 },
-      { degree: 'Thạc sĩ', field: 'Kỹ thuật Cơ khí/Cơ điện tử', school: 'Trường Đại học Kỹ thuật Nam Đài Loan', year: 2009 },
-      { degree: 'Kỹ sư', field: 'Cơ khí', school: 'Trường Đại học Bách khoa Hà Nội', year: 2007 },
-    ],
-    publications: [
-      { title: 'Modeling a working coil coupled with magnetic flux concentrators for barrel induction heating in an injection molding machine', venue: 'International Journal of Heat and Mass Transfer, 86, 16–30', year: 2015 },
-      { title: 'Development of barrel heating system in injection molding machine via induction heating', venue: 'Rapid Prototyping Journal, 21(3), 244–249', year: 2015 },
-      { title: 'Design of an induction heating coil coupled with magnetic flux concentrators for barrel heating of an injection molding machine', venue: 'Proceedings of the IMechE, Part C: Journal of Mechanical Engineering Science, 229(3), 518–527', year: 2015 },
-      { title: 'Vật liệu chất dẻo và composite: công nghệ và cơ học (sách, đồng tác giả với GS.TS Trần Ích Thịnh)', venue: 'NXB Xây dựng', year: 2020 },
-    ],
-    knowsAbout: ['Máy ép phun nhựa', 'Gia nhiệt cảm ứng', 'Hệ thủy lực máy ép', 'Cơ khí – cơ điện tử', 'In 3D', 'Vật liệu chất dẻo và composite'],
-    method: [
-      'Bài viết dựa trên nguyên lý kỹ thuật, tài liệu của nhà sản xuất thiết bị và bảng thông số (TDS) của hãng dầu.',
-      'Số liệu và tiêu chuẩn thử nghiệm được dẫn nguồn (ASTM, ISO, TCVN) ngay trong bài.',
-      'Bài viết ghi ngày cập nhật khi nội dung thay đổi thực chất.',
-    ],
-  },
-  {
     id: 'vu-minh-toan',
     name: 'Vũ Minh Toàn',
     // TODO: bổ sung chức danh và công việc phụ trách.
@@ -225,7 +192,7 @@ function affiliationOrg(p: NhanSu) {
   return { '@type': p.external ? 'CollegeOrUniversity' : 'Organization', name: p.affiliation, ...(p.affiliationUrl ? { url: p.affiliationUrl } : {}) };
 }
 
-/** Tên kèm danh xưng, ví dụ "TS. Bùi Huy Tiến" */
+/** Tên kèm danh xưng, ví dụ "TS. Nguyễn Thiết Lập" */
 export const displayName = (p: NhanSu) => (p.honorificPrefix ? `${p.honorificPrefix} ${p.name}` : p.name);
 /** Tên trên dòng tác giả / duyệt nội dung: bylineName nếu có ("TS. Lập"), không thì họ tên */
 export const bylineLabel = (p: NhanSu) => p.bylineName ?? displayName(p);
