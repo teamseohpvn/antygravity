@@ -41,11 +41,15 @@ try {
   loiDb = true;
 }
 
+const sanPham = (await getActiveProducts()).filter((p) => p.data.category === CATEGORY);
+const activePages = new Set(sanPham.map((p) => p.id));
+// Mã đang có sẵn tại kho (trang ghi "N mã có sẵn tại kho"). Mã đặt hàng chỉ hiện giá trên trang sản phẩm của nó.
+const coSan = new Set(sanPham.filter((p) => p.data.stock_status === 'co-san').map((p) => p.id));
+
 // Trang chỉ nói về cấp ISO VG 68; mã 32, 46 nhận đặt theo yêu cầu (xem FAQ).
-const rows = all.filter((r) => /VG\s*68\b/i.test(r.cap ?? ''));
+const rows = all.filter((r) => /VG\s*68\b/i.test(r.cap ?? '') && (!r.trang || coSan.has(r.trang)));
 const coGia = !loiDb && rows.some((r) => r.thap);
 
-const activePages = new Set((await getActiveProducts()).filter((p) => p.data.category === CATEGORY).map((p) => p.id));
 const thang = fmtNgay(cauHinh.ngay_ra_soat, 'thang');
 const ngay = fmtNgay(cauHinh.ngay_ra_soat);
 

@@ -70,6 +70,8 @@ const dam = (t: string) =>
 // Khoảng giá công khai (src/data/gia-cong-khai.json, cùng số với trang bảng giá). Có giá thì hiện trên trang
 // và đưa vào schema AggregateOffer; chưa có giá thì không thêm offers (không bịa giá).
 const gia = giaSanPham(d.category, product.id);
+// Trang gộp nhiều mã (Rosia EP 100/150/220…): ghi tên mã trước quy cách.
+const nhieuMa = new Set(gia.rows.map((r) => r.ten)).size > 1;
 const AVAILABILITY = { 'co-san': 'InStock', 'dat-hang': 'BackOrder', 'ngung-ban': 'Discontinued' } as const;
 const offers = gia.rows.length
   ? {
@@ -225,7 +227,7 @@ const schemaData = [
             <div class="gia">
               <p><strong>Giá tham khảo tháng {fmtNgay(gia.cauHinh.ngay_ra_soat, 'thang')} ({gia.cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT'}):</strong></p>
               <ul>
-                {gia.rows.map((r) => <li>{r.quy_cach}: {fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</li>)}
+                {gia.rows.map((r) => <li>{nhieuMa ? `${r.ten} – ${r.quy_cach}` : r.quy_cach}: {fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</li>)}
               </ul>
               <p class="gia-note">Giá thay đổi theo số lượng và nơi giao.{d.category === 'dau-thuy-luc' && <> Xem <a href="/bao-gia-dau-thuy-luc">bảng giá dầu thủy lực</a>.</>}</p>
             </div>
