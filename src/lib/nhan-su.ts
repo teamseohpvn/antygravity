@@ -53,7 +53,7 @@ export const NHAN_SU: NhanSu[] = [
     bylineName: 'TS. Lập', // dòng "Duyệt nội dung" trên trang sản phẩm; schema vẫn ghi họ tên đầy đủ
     role: 'Cố vấn kỹ thuật sản phẩm dầu nhớt (cộng tác viên)',
     degree: 'Tiến sĩ',
-    affiliation: 'Trường Đại học Giao thông vận tải, Bộ môn Kỹ thuật ô tô và An toàn giao thông, Khoa Cơ khí',
+    affiliation: 'University of Transport and Communications',
     affiliationUrl: 'https://www.utc.edu.vn/',
     external: true,
     sameAs: ['https://www.utc.edu.vn/doi-ngu-giang-vien/0652'],
@@ -63,9 +63,9 @@ export const NHAN_SU: NhanSu[] = [
       { title: 'Xe bán tải được "cởi trói", người dùng mong gỡ tiếp những nút thắt còn lại', publisher: 'VietNamNet', date: '2026-07-07', url: 'https://vietnamnet.vn/xe-ban-tai-duoc-coi-troi-nguoi-dung-mong-go-tiep-nhung-nut-that-con-lai-2533313.html' },
       { title: 'Phát triển xe buýt xanh để cải thiện chất lượng môi trường', publisher: 'Báo Lao Động', date: '2025-01-17', url: 'https://laodong.vn/xa-hoi/phat-trien-xe-buyt-xanh-de-cai-thien-chat-luong-moi-truong-1451490.ldo' },
     ],
-    desc: 'Giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Trường Đại học Giao thông vận tải. Cộng tác viên của HT VINA, biên soạn và duyệt nội dung kỹ thuật các trang sản phẩm dầu nhớt trên website.',
+    desc: 'Giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, University of Transport and Communications. Cộng tác viên của HT VINA, biên soạn và duyệt nội dung kỹ thuật các trang sản phẩm dầu nhớt trên website.',
     bio: [
-      'TS. Lập là người có chuyên môn giảng dạy về bộ môn cơ khí tại University of Transport and Communications (Hà Nội).',
+      'TS. Lập là người có chuyên môn giảng dạy về bộ môn cơ khí tại University of Transport and Communications.',
       'Các công bố của TS. Lập tập trung vào động cơ đốt trong, kết cấu và rung động ô tô, an toàn vận hành phương tiện. TS. Lập là đồng tác giả sách "Kỹ thuật động cơ đốt trong và xu hướng phát triển của động cơ" (NXB Xây dựng, 2020), "An toàn vận hành ô tô" (NXB Giao thông Vận tải, 2017), và có báo cáo về phân bố áp suất trong bơm và động cơ thủy lực bánh răng ăn khớp trong tại Hội nghị khoa học và công nghệ cơ khí động lực lần thứ XII (2019).',
       'Tại HT VINA, TS. Lập là cộng tác viên cố vấn kỹ thuật, biên soạn và duyệt nội dung các trang sản phẩm dầu nhớt: đối chiếu thông số với bảng TDS của hãng, rà soát khuyến cáo sử dụng theo loại động cơ, hộp số và hệ thủy lực. Thông tin học vị và nơi công tác ở trên được đối chiếu với hồ sơ giảng viên công khai trên website Trường Đại học Giao thông vận tải.',
     ],
@@ -111,9 +111,7 @@ export const NHAN_SU: NhanSu[] = [
     verifiedFrom: 'Trang giảng viên UTC https://www.utc.edu.vn/doi-ngu-giang-vien/1695 (truy cập 08/10/2026)',
     desc: 'Giảng viên Bộ môn Cơ khí – Cơ điện tử, University of Transport and Communications. Cộng tác viên cố vấn kỹ thuật của HT VINA, biên soạn bài hướng dẫn kỹ thuật về máy ép nhựa và hệ thủy lực.',
     bio: [
-      'TS. Tiến là giảng viên Bộ môn Cơ khí – Cơ điện tử, Khoa Cơ khí, Trường Đại học Giao thông vận tải (Hà Nội). TS. Tiến tốt nghiệp kỹ sư Cơ khí tại Trường Đại học Bách khoa Hà Nội (2007), thạc sĩ Kỹ thuật Cơ khí/Cơ điện tử tại Trường Đại học Kỹ thuật Nam Đài Loan (2009) và tiến sĩ Kỹ thuật Cơ khí tại Trường Đại học Quốc lập Thành Công, Đài Loan (2014).',
-      'Hướng nghiên cứu chính của TS. Tiến gồm máy ép phun nhựa, gia nhiệt cảm ứng, in 3D, UAV và UGV. TS. Tiến có nhiều bài báo quốc tế về hệ gia nhiệt cảm ứng cho xi lanh máy ép phun nhựa, và là đồng tác giả sách "Vật liệu chất dẻo và composite: công nghệ và cơ học" (NXB Xây dựng, 2020).',
-      'Tại HT VINA, TS. Tiến là cộng tác viên cố vấn kỹ thuật, biên soạn các bài hướng dẫn trong mục Hỗ trợ kỹ thuật, tập trung vào máy ép nhựa, hệ thủy lực và vận hành thiết bị cơ khí. Thông tin học vị và nơi công tác ở trên được đối chiếu với hồ sơ giảng viên công khai trên website Trường Đại học Giao thông vận tải.',
+      'TS. Tiến là giảng viên Bộ môn Cơ khí – Cơ điện tử, Khoa Cơ khí, University of Transport and Communications. TS. Tiến tốt nghiệp kỹ sư Cơ khí tại Trường Đại học Bách khoa Hà Nội (2007), thạc sĩ Kỹ thuật Cơ khí/Cơ điện tử tại Trường Đại học Kỹ thuật Nam Đài Loan (2009) và tiến sĩ Kỹ thuật Cơ khí tại Trường Đại học Quốc lập Thành Công, Đài Loan (2014).',
     ],
     alumniOf: [
       { degree: 'Tiến sĩ', field: 'Kỹ thuật Cơ khí', school: 'Trường Đại học Quốc lập Thành Công (Đài Loan)', year: 2014 },
