@@ -31,9 +31,10 @@ warnings:   # TODO TDS: thay bằng cảnh báo trong SDS mục 2 và 7
 storage: "Để trong nhà hoặc dưới mái che, tránh nắng mưa. Phuy để ngoài trời phải đặt nằm ngang. Đậy kín nắp sau khi dùng."
 
 images:
-  - { src: "/images/san-pham/emer-law-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực EMER LAW 68 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/emer-law-68-xo-18l.webp", alt: "Xô 18 lít dầu thủy lực EMER LAW 68" }
-  - { src: "/images/san-pham/emer-law-68-nhan.webp", alt: "Nhãn dầu thủy lực EMER LAW 68" }
+  - { src: "/images/san-pham/emer-law-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực Amer LAW68 (EMER LAW 68)" }
+  - { src: "/images/san-pham/emer-law-68-nhan.webp", alt: "Nhãn phuy dầu thủy lực LAW68 của Amer ghi dung tích 200 L" }
+  - { src: "/images/san-pham/emer-law-68-phuy-kho.webp", alt: "Nắp phuy Amer LAW68 cạnh danh thiếp Dầu Công Nghiệp HP" }
+  - { src: "/images/san-pham/emer-law-68-xo.webp", alt: "Xô dầu nhớt Amer Lubricant" }
 
 doc_gia: "Trang này dành cho người phụ trách bảo trì xe nâng, bàn nâng, máy ép cần một mã dầu thủy lực 68 dùng chung cho nhiều máy."
 tom_tat:

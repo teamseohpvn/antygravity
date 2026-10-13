@@ -50,9 +50,7 @@ warnings:
 storage: "Để nơi khô ráo, có mái che, đậy kín nắp phuy và xô sau khi lấy mỡ."
 
 images:
-  - { src: "/images/san-pham/vhp-opal-grease-nlgi3-phuy-180kg.webp", alt: "Phuy 180 kg mỡ VHP Opal Grease NLGI 3 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/vhp-opal-grease-nlgi4-xo-15kg.webp", alt: "Xô 15 kg mỡ VHP Opal Grease NLGI 4" }
-  - { src: "/images/san-pham/vhp-opal-grease-nhan.webp", alt: "Nhãn mỡ VHP Opal Grease ghi cấp NLGI" }
+  - { src: "/images/san-pham/vhp-opal-grease-nlgi3-phuy-180kg.webp", alt: "Nắp phuy 180 kg mỡ VHP Premium Opal Grease NLGI-3 có nhãn sản phẩm" }
 
 doc_gia: "Trang này dành cho tổ bảo trì cần mỡ đặc ít tách dầu cho ổ bi tải nặng, đầu trục và cơ cấu chuyển động kín."
 tom_tat:

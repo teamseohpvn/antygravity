@@ -49,8 +49,8 @@ warnings:
 storage: "Để xô dưới mái che. Không để nơi trên 60 °C, nắng nóng trực tiếp hoặc nơi lạnh giá."
 
 images:
-  - { src: "/images/san-pham/castrol-hyspin-hlpz-68-xo-20l.webp", alt: "Xô 20 lít dầu thủy lực Castrol Hyspin HLP-Z 68 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/castrol-hyspin-hlpz-68-nhan.webp", alt: "Nhãn xô Castrol Hyspin HLP-Z 68 ghi cấp độ nhớt và tiêu chuẩn" }
+  - { src: "/images/san-pham/castrol-hyspin-hlpz-68-xo-18l.webp", alt: "Xô 18 lít Castrol Hyspin HLP-Z 68, nhãn tiếng Việt dầu thủy lực chống mài mòn ISO VG 68" }
+  - { src: "/images/san-pham/castrol-hyspin-hlpz-68-can-20l.webp", alt: "Can 20 lít Castrol Hyspin HLP-Z 68" }
 
 doc_gia: "Trang này dành cho kỹ thuật viên cần dầu thủy lực HLP 68 theo DIN, đóng xô nhỏ, hoặc đang dùng Castrol Hyspin HLP-Z."
 tom_tat:

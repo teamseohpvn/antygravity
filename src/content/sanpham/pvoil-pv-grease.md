@@ -43,9 +43,7 @@ warnings:
 storage: "Tồn trữ nơi khô ráo, thoáng mát, có mái che, dưới 60 °C, xa nguồn lửa."
 
 images:
-  - { src: "/images/san-pham/pvoil-pv-grease-no2-phuy.webp", alt: "Phuy mỡ PVOIL PV Grease No2 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/pvoil-pv-grease-no3-phuy.webp", alt: "Phuy mỡ PVOIL PV Grease No3" }
-  - { src: "/images/san-pham/pvoil-pv-grease-nhan.webp", alt: "Nhãn phuy mỡ PV Grease của PVOIL Lube ghi cấp NLGI" }
+  - { src: "/images/san-pham/pvoil-pv-grease-phuy.webp", alt: "Phuy mỡ PVOIL" }
 
 doc_gia: "Trang này dành cho xưởng, đội xe đang dùng hoặc cần đặt mỡ đa dụng PVOIL PV Grease No2, No3 theo phuy."
 tom_tat:

@@ -34,6 +34,10 @@ packaging:
   - { name: "No3 – Thùng 30 ống 400 g", sku: "Licas Tuýp" }
 stock_status: "co-san"
 
+images:
+  - { src: "/images/san-pham/licas-grease-no3-ong-400g.webp", alt: "Ống 400 g mỡ VHP Licas Grease No3" }
+  - { src: "/images/san-pham/licas-grease-no2-phuy-180kg.webp", alt: "Nắp phuy 180 kg mỡ VHP Licas Grease No2 có nhãn sản phẩm" }
+
 applications:
   - "Vòng bi, ổ đỡ, bản lề, góc trượt của máy móc nhà xưởng"
   - "Đầu trục, sát xi xe tải, xe công trình, rơ moóc"

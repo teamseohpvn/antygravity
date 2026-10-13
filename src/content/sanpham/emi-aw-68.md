@@ -20,7 +20,7 @@ base_oil: "Dầu gốc khoáng"
 
 packaging:
   - { name: "Phuy 200 L", sku: "EMI AW68 P" }
-  - { name: "Xô", sku: "EMI AW68 X" }   # TODO: dung tích xô
+  - { name: "Xô 18 L", sku: "EMI AW68 X" }
 stock_status: "co-san"
 
 applications:
@@ -35,9 +35,10 @@ warnings:   # TODO TDS: thay bằng cảnh báo trong SDS mục 2 và 7
 storage: "Để trong nhà hoặc dưới mái che, tránh nắng mưa. Phuy để ngoài trời phải đặt nằm ngang. Đậy kín nắp sau khi dùng."
 
 images:
-  - { src: "/images/san-pham/emi-aw-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực EMI AW 68 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/emi-aw-68-xo.webp", alt: "Xô dầu thủy lực EMI AW 68" }
-  - { src: "/images/san-pham/emi-aw-68-nhan.webp", alt: "Nhãn dầu thủy lực EMI AW 68 ghi cấp độ nhớt ISO VG 68" }
+  - { src: "/images/san-pham/emi-aw-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực Emi Oil Hydra AW 68 (EMI AW 68)" }
+  - { src: "/images/san-pham/emi-aw-68-nhan-phuy.webp", alt: "Nhãn phuy Emi Oil Hydra AW 68 ghi thông số điển hình, dung tích 200 L, cạnh danh thiếp Dầu Công Nghiệp HP" }
+  - { src: "/images/san-pham/emi-aw-68-xo-18l.webp", alt: "Xô 18 lít dầu thủy lực Emi Oil Hydra AW 68 xếp chồng" }
+  - { src: "/images/san-pham/emi-aw-68-nhan-xo.webp", alt: "Nhãn xô Emi Oil Hydra AW 68 ghi thông số điển hình" }
 
 doc_gia: "Trang này dành cho người mua hàng và tổ bảo trì cần một mã dầu thủy lực 68 giá vừa phải cho nhiều máy không yêu cầu phê duyệt hãng bơm."
 tom_tat:

@@ -35,9 +35,9 @@ warnings:   # TODO TDS: thay bằng cảnh báo trong SDS mục 2 và 7
 storage: "Để trong nhà hoặc dưới mái che, tránh nắng mưa. Phuy để ngoài trời phải đặt nằm ngang. Đậy kín nắp sau khi dùng."
 
 images:
-  - { src: "/images/san-pham/x-one-aw-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực X-One AW 68 tại kho Hải Phòng" }
   - { src: "/images/san-pham/x-one-aw-68-xo-18l.webp", alt: "Xô 18 lít dầu thủy lực X-One AW 68" }
-  - { src: "/images/san-pham/x-one-aw-68-nhan.webp", alt: "Nhãn dầu thủy lực X-One AW 68 ghi cấp độ nhớt ISO VG 68" }
+  - { src: "/images/san-pham/x-one-aw-68-nhan.webp", alt: "Mặt sau xô X-One AW 68 ghi công dụng và lợi ích" }
+  - { src: "/images/san-pham/x-one-aw-68-xo-18l-kho.webp", alt: "Xô X-One AW 68 cạnh danh thiếp Dầu Công Nghiệp HP" }
 
 doc_gia: "Trang này dành cho người mua hàng cần dầu thủy lực chống mài mòn 68 cho máy chạy nhiều ca, không yêu cầu phê duyệt hãng bơm."
 tom_tat:

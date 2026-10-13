@@ -49,7 +49,9 @@ storage: "Để nơi khô ráo, đậy kín nắp xô, tránh bụi và nước 
 
 images:
   - { src: "/images/san-pham/vhp-lithium-grease-l4-xo-17kg.webp", alt: "Xô 17 kg mỡ VHP Lithium Grease L4 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/vhp-lithium-grease-nhan.webp", alt: "Nhãn xô mỡ VHP Lithium Grease ghi cấp NLGI" }
+  - { src: "/images/san-pham/vhp-lithium-grease-l4-xo-kho.webp", alt: "Xô mỡ VHP Lithium Grease L4 cạnh danh thiếp Dầu Công Nghiệp HP" }
+  - { src: "/images/san-pham/vhp-lithium-grease-l3-phuy-180kg.webp", alt: "Phuy 180 kg mỡ VHP Lithium Grease L3" }
+  - { src: "/images/san-pham/vhp-lithium-grease-l3-nhan-phuy.webp", alt: "Nắp phuy mỡ VHP Lithium Grease L3 ghi khối lượng tịnh 180 kg" }
 
 doc_gia: "Trang này dành cho tổ bảo trì cần mỡ lithium đa dụng cho vòng bi động cơ, quạt, bơm, moay ơ và hệ bơm mỡ tập trung."
 tom_tat:
