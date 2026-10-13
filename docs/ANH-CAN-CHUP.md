@@ -11,7 +11,7 @@ Cách dùng: đặt ảnh gốc vào đúng **thư mục**, đặt **đúng tên
 | Danh mục (`anh-goc/danh-muc/`) | 3:2 ngang | 1536 × 1024 px | Được dùng ảnh AI, không logo, không chữ (xem `docs/prompt-anh-danh-muc.md`) |
 | Bài viết (`anh-goc/blog/`) | 16:9 | 1200 × 675 px (khuyến nghị 1600 × 900) | Ảnh minh họa được dùng AI; ảnh "thực tế tại kho/xưởng" phải là ảnh thật |
 
-Chỉ tính bài đang bật (`active: true`). Tổng: 163 ảnh, đã có 88, **còn thiếu 75**.
+Chỉ tính bài đang bật (`active: true`). Tổng: 159 ảnh, đã có 89, **còn thiếu 70**.
 
 ## Ảnh còn thiếu
 
@@ -19,7 +19,6 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 163 ảnh, đã có 88, *
 |---|---|---|---|
 | `anh-goc/danh-muc/` | `dau-nhot-xe-may.jpg` | Chai dầu nhớt xe máy xếp trên kệ cạnh xe số và xe tay ga | /dau-nhot-xe-may |
 | `anh-goc/danh-muc/` | `nuoc-lam-mat.jpg` | Can nước làm mát cạnh két nước động cơ xe tải | /nuoc-lam-mat |
-| `anh-goc/san-pham/` | `apex-tl-68-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực APEX TL 68 Quốc Trung tại kho Hải Phòng | /dau-thuy-luc/apex-tl-68 |
 | `anh-goc/san-pham/` | `calix-ceno-grease-no3-phuy-180kg.jpg` | Phuy 180 kg mỡ Calix Ceno No3 tại kho Hải Phòng | /mo-boi-tron-cong-nghiep/calix-ceno-grease |
 | `anh-goc/san-pham/` | `castrol-vecton-phuy-209l.jpg` | Phuy 209 lít dầu động cơ Castrol Vecton 15W-40 CI-4/E7 tại kho Hải Phòng | /dau-dong-co-diesel/castrol-vecton |
 | `anh-goc/san-pham/` | `cosmo-hydro-aw-68-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực Cosmo Hydro AW 68 tại kho Hải Phòng | /dau-thuy-luc/cosmo-hydro-aw-68 |
@@ -63,10 +62,6 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 163 ảnh, đã có 88, *
 | `anh-goc/san-pham/` | `vhp-hymatran-10w-phuy-200l.jpg` | Phuy 200 lít dầu truyền động VHP Hymatran Oil 10W tại kho Hải Phòng | /dau-cau-hop-so/vhp-hymatran-10w |
 | `anh-goc/san-pham/` | `vhp-hymatran-10w-xo-18l.jpg` | Xô 18 lít dầu VHP Hymatran Oil 10W | /dau-cau-hop-so/vhp-hymatran-10w |
 | `anh-goc/san-pham/` | `vhp-hymatran-10w-nhan.jpg` | Nhãn VHP Hymatran Oil 10W ghi cấp SAE 10W | /dau-cau-hop-so/vhp-hymatran-10w |
-| `anh-goc/san-pham/` | `vhp-isonas-aw-68-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực VHP Isonas AW 68 tại kho Hải Phòng | /dau-thuy-luc/vhp-isonas-aw |
-| `anh-goc/san-pham/` | `vhp-isonas-aw-68-can-18l.jpg` | Can 18 lít dầu thủy lực VHP Isonas AW 68 | /dau-thuy-luc/vhp-isonas-aw |
-| `anh-goc/san-pham/` | `vhp-isonas-aw-32-xo-18l.jpg` | Xô 18 lít dầu thủy lực VHP Isonas AW 32 | /dau-thuy-luc/vhp-isonas-aw |
-| `anh-goc/san-pham/` | `vhp-isonas-aw-32-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực VHP Isonas AW 32 | /dau-thuy-luc/vhp-isonas-aw |
 | `anh-goc/san-pham/` | `vhp-lotus-oil-ls-phuy-200l.jpg` | Phuy 200 lít dầu cắt gọt pha nước VHP Lotus Oil LS tại kho Hải Phòng | /dau-cat-got/vhp-lotus-oil-ls |
 | `anh-goc/san-pham/` | `vhp-lotus-oil-ls-nhan.jpg` | Nhãn phuy dầu cắt gọt VHP Lotus Oil LS | /dau-cat-got/vhp-lotus-oil-ls |
 | `anh-goc/san-pham/` | `vhp-lotus-oil-ls-dung-dich.jpg` | Dung dịch VHP Lotus Oil LS pha nước có màu trắng sữa ánh xanh | /dau-cat-got/vhp-lotus-oil-ls |
@@ -112,7 +107,8 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 163 ảnh, đã có 88, *
 | `anh-goc/danh-muc/` | `dau-xung-dien-edm.jpg` | Điện cực đồng máy xung điện EDM ngâm trong bể dầu điện môi | /dau-xung-dien-edm |
 | `anh-goc/danh-muc/` | `mo-boi-tron-cong-nghiep.jpg` | Bơm mỡ bò vào gối đỡ vòng bi bằng súng bơm mỡ | /mo-boi-tron-cong-nghiep |
 | `anh-goc/danh-muc/` | `mo-chiu-nhiet.jpg` | Kỹ thuật viên tra mỡ chịu nhiệt cho vòng bi quạt lò | /mo-chiu-nhiet |
-| `anh-goc/san-pham/` | `apex-tl-68-nhan.jpg` | Nhãn phuy dầu thủy lực APEX TL 68 | /dau-thuy-luc/apex-tl-68 |
+| `anh-goc/san-pham/` | `apex-tl-68-can-18l.jpg` | Can 18 lít dầu thủy lực APEX TL 68 của Quốc Trung, vỏ nhựa xanh lá, nhãn xanh dương | /dau-thuy-luc/apex-tl-68 |
+| `anh-goc/san-pham/` | `apex-tl-68-nhan.jpg` | Nhãn can APEX TL 68 Hydraulic oil ghi Công ty TNHH TM Quốc Trung, tiêu chuẩn TCCS 08 và dung tích 18 lít | /dau-thuy-luc/apex-tl-68 |
 | `anh-goc/san-pham/` | `calix-ceno-grease-nhan.jpg` | Nhãn phuy mỡ nhờn công nghiệp Calix Ceno No3 | /mo-boi-tron-cong-nghiep/calix-ceno-grease |
 | `anh-goc/san-pham/` | `caltex-delo-silver-multigrade-phuy-208l.jpg` | Phuy dầu động cơ Caltex Delo Silver Multigrade SAE 20W-50 | /dau-dong-co-diesel/caltex-delo-silver-multigrade |
 | `anh-goc/san-pham/` | `caltex-delo-silver-multigrade-20w50-xo-18l.jpg` | Xô 18 lít Caltex Delo Silver SAE 20W-50 Multigrade API CF-4 | /dau-dong-co-diesel/caltex-delo-silver-multigrade |
@@ -194,5 +190,5 @@ Không còn ảnh nào thiếu.
 
 ## Ảnh của bài đang tắt khác (chưa cần up)
 
-0 ảnh thuộc các bài `active: false` không có trong kho hiện tại. Khi bật bài nào, chạy lại `npm run anh` để ảnh của bài đó vào danh sách cần up.
+4 ảnh thuộc các bài `active: false` không có trong kho hiện tại. Khi bật bài nào, chạy lại `npm run anh` để ảnh của bài đó vào danh sách cần up.
 Danh sách đầy đủ trong `docs/danh-sach-anh.csv` (cột "Trạng thái" = Bài đang tắt).

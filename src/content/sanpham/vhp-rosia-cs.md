@@ -71,7 +71,7 @@ Cấp **46** dạng phuy 200 L **nhận đặt theo yêu cầu**. HT VINA là đ
 | Dầu loại C, CL (DIN 51517) cấp 46; dầu tuần hoàn không EP | **Được.** |
 | Hệ bôi trơn tuần hoàn, ổ đỡ, hộp số tải nhẹ | **Được.** |
 | Danieli Standard Oil 6.14 (thiết bị cán thép) | **Được**, theo VHP. |
-| Bơm thủy lực áp trung bình và cao (HM, HLP) | Không. Dùng [VHP Isonas AW](/dau-thuy-luc/vhp-isonas-aw). |
+| Bơm thủy lực áp trung bình và cao (HM, HLP) | Không. Dùng VHP Isonas AW. |
 | Hộp số tải nặng | Không. Dùng [dầu bánh răng](/dau-banh-rang) có phụ gia cực áp. |
 
 ## Thông số này có ý nghĩa gì khi máy chạy?

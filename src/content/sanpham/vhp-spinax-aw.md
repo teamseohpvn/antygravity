@@ -72,7 +72,7 @@ updated: "2026-10-12"
 | HM 68 (ISO 11158), AW 68 | **Được.** |
 | Máy ép, máy dập, máy chấn tôn, máy cắt thủy lực | **Được.** |
 | Máy xúc, xe cẩu, hệ thủy lực tàu thủy | **Được.** |
-| HLP theo DIN 51524-2 | Chọn [VHP Isonas AW](/dau-thuy-luc/vhp-isonas-aw). |
+| HLP theo DIN 51524-2 | Chọn VHP Isonas AW. |
 | HV (máy ngoài trời lạnh sâu, dải nhiệt rộng), dầu chống cháy | Không. |
 
 ## Thông số này có ý nghĩa gì khi máy chạy?
@@ -95,7 +95,7 @@ updated: "2026-10-12"
 | Điểm chớp cháy cốc hở | Không công bố | 200 °C |
 | Điểm đông đặc | Không công bố | < -15 °C |
 
-> **Nhận định của HT VINA:** Spinax AW 68 hợp với máy ép, máy dập chạy tải thường. Spinax AW Super 68 dùng dầu gốc nhóm II, hợp hơn khi máy chạy nhiều ca và muốn dầu bền lâu. Máy ép nhựa áp cao chạy liên tục thì xem [VHP Isonas AW](/dau-thuy-luc/vhp-isonas-aw), đạt thêm DIN 51524-2 HLP.
+> **Nhận định của HT VINA:** Spinax AW 68 hợp với máy ép, máy dập chạy tải thường. Spinax AW Super 68 dùng dầu gốc nhóm II, hợp hơn khi máy chạy nhiều ca và muốn dầu bền lâu. Máy ép nhựa áp cao chạy liên tục thì xem VHP Isonas AW, đạt thêm DIN 51524-2 HLP.
 
 ## Spinax AW 68 hay một mã có sẵn tại kho?
 

@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-007"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: false   # Tắt 13/10/2026 theo yêu cầu: không bán VHP Isonas AW trên web
 title: "VHP Isonas AW 68, 32"
 seo_title: "VHP Isonas AW 68, 32 – Dầu Thủy Lực Gốc Nhóm II"
 description: "Dầu thủy lực VHP Isonas AW 68, 32 gốc nhóm II, đạt DIN 51524-2 HLP, ISO 11158 HM. Phuy 200 L, can và xô 18 L, có CO/CQ, VAT, giao Hải Phòng."
