@@ -42,8 +42,7 @@ warnings:
 storage: "Để nơi khô ráo, có mái che, đậy kín nắp xô. Không để nước lọt vào dầu."
 
 images:
-  - { src: "/images/san-pham/shl-syn-therm-32l-xo-20l.webp", alt: "Xô 20 lít dầu truyền nhiệt tổng hợp SHL Syn Therm 32L tại kho Hải Phòng" }
-  - { src: "/images/san-pham/shl-syn-therm-32l-nhan.webp", alt: "Nhãn xô SHL Syn Therm 32L ghi tên sản phẩm và cấp độ nhớt" }
+  - { src: "/images/san-pham/shl-syn-therm-32l-xo-20l.webp", alt: "Xô thép 20 lít dầu truyền nhiệt SHL Syn Therm 32L, thân xanh lá in logo SHL Lubricants và dòng chữ Trust in SHL" }
 
 doc_gia: "Trang này dành cho kỹ thuật viên lò dầu, hệ gia nhiệt cần dầu truyền nhiệt tổng hợp khởi động được ở nhiệt độ thấp."
 tom_tat:
