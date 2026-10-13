@@ -31,8 +31,8 @@ warnings:   # TODO TDS: thay bằng cảnh báo trong SDS mục 2 và 7
 storage: "Để trong nhà hoặc dưới mái che, tránh nắng mưa. Phuy để ngoài trời phải đặt nằm ngang. Đậy kín nắp sau khi dùng."
 
 images:
-  - { src: "/images/san-pham/apex-tl-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực APEX TL 68 Quốc Trung tại kho Hải Phòng" }
-  - { src: "/images/san-pham/apex-tl-68-nhan.webp", alt: "Nhãn phuy dầu thủy lực APEX TL 68" }
+  - { src: "/images/san-pham/apex-tl-68-can-18l.webp", alt: "Can 18 lít dầu thủy lực APEX TL 68 của Quốc Trung, vỏ nhựa xanh lá, nhãn xanh dương" }
+  - { src: "/images/san-pham/apex-tl-68-nhan.webp", alt: "Nhãn can APEX TL 68 Hydraulic oil ghi Công ty TNHH TM Quốc Trung, tiêu chuẩn TCCS 08 và dung tích 18 lít" }
 
 doc_gia: "Trang này dành cho tổ bảo trì và người mua hàng đang tìm dầu thủy lực 68 chi phí thấp cho máy không yêu cầu phê duyệt hãng bơm."
 tom_tat:
