@@ -11,6 +11,9 @@
 # KS. Trần Tuấn Huỳnh không còn đứng tên bài viết (12/10/2026): hồ sơ tác giả chuyển về mục Đội ngũ.
 /author/tran-tuan-huynh /about 301
 /author/tran-tuan-huynh.html /about 301
+# TS. Bùi Huy Tiến thôi là cộng tác viên (13/10/2026): hồ sơ chuyển về TS. Nguyễn Thiết Lập.
+/author/bui-huy-tien /author/nguyen-thiet-lap 301
+/author/bui-huy-tien.html /author/nguyen-thiet-lap 301
 # Gõ nhầm gạch dưới vẫn vào được trang quản trị giá (06/10/2026).
 /quan_tri /quan-tri 301
 /quan_tri/* /quan-tri/:splat 301

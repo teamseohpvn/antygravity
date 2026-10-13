@@ -70,7 +70,7 @@ Ba điều nên biết trước khi trích dẫn các con số trên:
 
 ### Cách chúng tôi làm bài này
 
-Số liệu thị phần được tra và đối chiếu ngày 10/10/2026 từ bản gốc của từng nguồn: báo chí, báo cáo thường niên, dữ liệu hải quan và báo cáo nghiên cứu thị trường. Chúng tôi không dùng số liệu từ trang bán hàng hay trang tổng hợp không ghi nguồn. Tiêu chuẩn của từng dòng dầu chép từ TDS hoặc catalog chính hãng. Bài do TS. Bùi Huy Tiến viết, TS. Nguyễn Thiết Lập kiểm duyệt phần thông số kỹ thuật. Khi có số liệu thị phần mới được công bố, bài sẽ được cập nhật và ghi ngày sửa.
+Số liệu thị phần được tra và đối chiếu ngày 10/10/2026 từ bản gốc của từng nguồn: báo chí, báo cáo thường niên, dữ liệu hải quan và báo cáo nghiên cứu thị trường. Chúng tôi không dùng số liệu từ trang bán hàng hay trang tổng hợp không ghi nguồn. Tiêu chuẩn của từng dòng dầu chép từ TDS hoặc catalog chính hãng. Bài do TS. Nguyễn Thiết Lập viết và kiểm duyệt phần thông số kỹ thuật. Khi có số liệu thị phần mới được công bố, bài sẽ được cập nhật và ghi ngày sửa.
 
 ## Chi tiết từng dòng: tiêu chuẩn và nên dùng cho máy nào
 
