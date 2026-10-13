@@ -14,15 +14,34 @@ const SITE = (process.env.PUBLIC_SITE_URL || 'https://daucongnghiephp.com.vn').r
 
 // <lastmod> trong sitemap = ngày cập nhật (hoặc ngày đăng) ghi trong frontmatter, trùng với ngày hiện trên trang
 // và dateModified trong schema. Trang không có ngày thì bỏ <lastmod>, không dùng ngày build.
-const LASTMOD = new Map(
-  contentPages().filter((p) => p.updated || p.date).map((p) => [SITE + p.path, p.updated || p.date]),
-);
+// Trang tĩnh trong src/pages (chính sách...) lấy ngày từ prop updated="YYYY-MM-DD".
+const STATIC_LASTMOD = readdirSync('src/pages')
+  .filter((f) => f.endsWith('.astro'))
+  .map((f) => [f, readFileSync(path.join('src/pages', f), 'utf8').match(/\bupdated="(\d{4}-\d{2}-\d{2})"/)?.[1]])
+  .filter(([, d]) => d)
+  .map(([f, d]) => [`${SITE}/${f.replace(/\.astro$/, '')}`, d]);
+const LASTMOD = new Map([
+  ...STATIC_LASTMOD,
+  ...contentPages().filter((p) => p.updated || p.date).map((p) => [SITE + p.path, p.updated || p.date]),
+]);
 
 // Danh sách ảnh trong public/images, đọc lúc build (prerender chạy trong workerd, không dùng được node:fs).
 // Dùng để bỏ qua ảnh danh mục chưa tạo và sinh srcset (xem src/lib/site.ts).
 const PUBLIC_IMAGES = readdirSync('public/images', { recursive: true })
   .map((f) => '/images/' + String(f).replaceAll('\\', '/'))
   .filter((f) => /\.(webp|avif|jpe?g|png|svg)$/.test(f));
+
+// <image:image> trong sitemap: ảnh khai báo trong frontmatter và có file thật. Không thêm bản -600, không lặp ảnh.
+const PUBLIC_IMAGE_SET = new Set(PUBLIC_IMAGES);
+const SITEMAP_IMAGES = new Map(
+  contentPages().map((p) => {
+    const seen = new Set();
+    const imgs = p.images
+      .filter((i) => PUBLIC_IMAGE_SET.has(i.src) && !seen.has(i.src) && seen.add(i.src))
+      .map((i) => ({ url: SITE + i.src, ...(i.alt ? { caption: i.alt } : {}) }));
+    return [SITE + p.path, imgs];
+  }),
+);
 
 // Ảnh giữ nguyên tên khi thay ảnh mới, trình duyệt lại cache /images/* 7 ngày (public/_headers),
 // nên khách cũ vẫn thấy ảnh cũ. Sau khi build, gắn ?v=<mã nội dung> vào mọi đường dẫn /images/...
@@ -87,8 +106,10 @@ export default defineConfig({
       customPages: [`${SITE}/bao-gia-dau-thuy-luc`],
       filter: (page) => !page.includes('/bao-gia-thanh-cong') && !page.includes('/api/') && !page.includes('/quan-tri') && !page.includes('/author/'),
       serialize(item) {
-        const lastmod = LASTMOD.get(item.url.replace(/\/+$/, ''));
-        return lastmod ? { ...item, lastmod } : item;
+        const url = item.url.replace(/\/+$/, '');
+        const lastmod = LASTMOD.get(url);
+        const img = SITEMAP_IMAGES.get(url);
+        return { ...item, ...(lastmod ? { lastmod } : {}), ...(img?.length ? { img } : {}) };
       },
     }),
     react(),

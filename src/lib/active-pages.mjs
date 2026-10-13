@@ -27,7 +27,12 @@ export function contentPages() {
       // date / updated (YYYY-MM-DD): cho <lastmod> trong sitemap và check-content.
       const date = field(fm, 'date')?.trim() || undefined;
       const updated = field(fm, 'updated')?.trim() || undefined;
-      list.push({ kind, id, file: `${dir}/${f}`, path, category, date, updated, hasActive: activeRaw !== undefined, selfActive: activeRaw === 'true' });
+      // Ảnh của trang (image + images[].src, kèm alt) cho <image:image> trong sitemap.
+      const images = [];
+      const cover = field(fm, 'image')?.trim();
+      if (cover) images.push({ src: cover, alt: field(fm, 'image_alt')?.trim() });
+      for (const m of fm.matchAll(/\{\s*src:\s*"([^"]+)"(?:\s*,\s*alt:\s*"([^"]*)")?/g)) images.push({ src: m[1], alt: m[2] });
+      list.push({ kind, id, file: `${dir}/${f}`, path, category, date, updated, images, hasActive: activeRaw !== undefined, selfActive: activeRaw === 'true' });
     }
   }
   const activeCats = new Set(list.filter((p) => p.kind === 'danhmuc' && p.selfActive).map((p) => p.id));
