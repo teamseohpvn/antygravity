@@ -65,7 +65,7 @@ export const NHAN_SU: NhanSu[] = [
     ],
     desc: 'Giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Trường Đại học Giao thông vận tải. Cộng tác viên của HT VINA, biên soạn và duyệt nội dung kỹ thuật các trang sản phẩm dầu nhớt trên website.',
     bio: [
-      'TS. Nguyễn Thiết Lập là giảng viên chính Bộ môn Kỹ thuật ô tô và An toàn giao thông, Khoa Cơ khí, Trường Đại học Giao thông vận tải (Hà Nội).',
+      'TS. Lập là người có chuyên môn giảng dạy về bộ môn cơ khí tại University of Transport and Communications (Hà Nội).',
       'Các công bố của TS. Lập tập trung vào động cơ đốt trong, kết cấu và rung động ô tô, an toàn vận hành phương tiện. TS. Lập là đồng tác giả sách "Kỹ thuật động cơ đốt trong và xu hướng phát triển của động cơ" (NXB Xây dựng, 2020), "An toàn vận hành ô tô" (NXB Giao thông Vận tải, 2017), và có báo cáo về phân bố áp suất trong bơm và động cơ thủy lực bánh răng ăn khớp trong tại Hội nghị khoa học và công nghệ cơ khí động lực lần thứ XII (2019).',
       'Tại HT VINA, TS. Lập là cộng tác viên cố vấn kỹ thuật, biên soạn và duyệt nội dung các trang sản phẩm dầu nhớt: đối chiếu thông số với bảng TDS của hãng, rà soát khuyến cáo sử dụng theo loại động cơ, hộp số và hệ thủy lực. Thông tin học vị và nơi công tác ở trên được đối chiếu với hồ sơ giảng viên công khai trên website Trường Đại học Giao thông vận tải.',
     ],
@@ -109,9 +109,9 @@ export const NHAN_SU: NhanSu[] = [
     external: true,
     sameAs: ['https://www.utc.edu.vn/doi-ngu-giang-vien/1695'],
     verifiedFrom: 'Trang giảng viên UTC https://www.utc.edu.vn/doi-ngu-giang-vien/1695 (truy cập 08/10/2026)',
-    desc: 'Giảng viên Bộ môn Cơ khí – Cơ điện tử, Trường Đại học Giao thông vận tải. Cộng tác viên cố vấn kỹ thuật của HT VINA, biên soạn bài hướng dẫn kỹ thuật về máy ép nhựa và hệ thủy lực.',
+    desc: 'Giảng viên Bộ môn Cơ khí – Cơ điện tử, University of Transport and Communications. Cộng tác viên cố vấn kỹ thuật của HT VINA, biên soạn bài hướng dẫn kỹ thuật về máy ép nhựa và hệ thủy lực.',
     bio: [
-      'TS. Bùi Huy Tiến là giảng viên Bộ môn Cơ khí – Cơ điện tử, Khoa Cơ khí, Trường Đại học Giao thông vận tải (Hà Nội). TS. Tiến tốt nghiệp kỹ sư Cơ khí tại Trường Đại học Bách khoa Hà Nội (2007), thạc sĩ Kỹ thuật Cơ khí/Cơ điện tử tại Trường Đại học Kỹ thuật Nam Đài Loan (2009) và tiến sĩ Kỹ thuật Cơ khí tại Trường Đại học Quốc lập Thành Công, Đài Loan (2014).',
+      'TS. Tiến là giảng viên Bộ môn Cơ khí – Cơ điện tử, Khoa Cơ khí, Trường Đại học Giao thông vận tải (Hà Nội). TS. Tiến tốt nghiệp kỹ sư Cơ khí tại Trường Đại học Bách khoa Hà Nội (2007), thạc sĩ Kỹ thuật Cơ khí/Cơ điện tử tại Trường Đại học Kỹ thuật Nam Đài Loan (2009) và tiến sĩ Kỹ thuật Cơ khí tại Trường Đại học Quốc lập Thành Công, Đài Loan (2014).',
       'Hướng nghiên cứu chính của TS. Tiến gồm máy ép phun nhựa, gia nhiệt cảm ứng, in 3D, UAV và UGV. TS. Tiến có nhiều bài báo quốc tế về hệ gia nhiệt cảm ứng cho xi lanh máy ép phun nhựa, và là đồng tác giả sách "Vật liệu chất dẻo và composite: công nghệ và cơ học" (NXB Xây dựng, 2020).',
       'Tại HT VINA, TS. Tiến là cộng tác viên cố vấn kỹ thuật, biên soạn các bài hướng dẫn trong mục Hỗ trợ kỹ thuật, tập trung vào máy ép nhựa, hệ thủy lực và vận hành thiết bị cơ khí. Thông tin học vị và nơi công tác ở trên được đối chiếu với hồ sơ giảng viên công khai trên website Trường Đại học Giao thông vận tải.',
     ],
