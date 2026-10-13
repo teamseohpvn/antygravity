@@ -256,7 +256,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
             <p>Kho: {ADDRESS_FULL}</p>
             <p>Hotline / Zalo: <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></p>
             <p>Email: <a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></p>
-            <p><a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a> · <a href="/bao-gia">Gửi yêu cầu báo giá</a></p>
+            <p><a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a> · <a href={BUSINESS.facebookUrl} target="_blank" rel="noopener me" data-track="click_facebook">Facebook</a> · <a href="/bao-gia">Gửi yêu cầu báo giá</a></p>
           </div>
           <div>
             <h2>Sản phẩm</h2>

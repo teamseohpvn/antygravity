@@ -19,6 +19,8 @@ export const BUSINESS = {
   zaloUrl: 'https://zalo.me/0901511313',
   // Hộp thư chung (13/10/2026), nhận qua Cloudflare Email Routing.
   email: 'lienhe@daucongnghiephp.com.vn',
+  // Fanpage "Dầu Nhớt Công Nghiệp | Hai Duong" (13/10/2026).
+  facebookUrl: 'https://www.facebook.com/Minh7OAN',
   streetAddress: '108 Đường Thanh Bình',
   locality: 'P. Lê Thanh Nghị',
   region: 'TP Hải Phòng',
@@ -137,7 +139,7 @@ export function organizationSchema() {
         availableLanguage: 'vi',
         url: absUrl('/contact'),
       },
-      sameAs: [BUSINESS.gbpUrl],
+      sameAs: [BUSINESS.gbpUrl, BUSINESS.facebookUrl],
       publishingPrinciples: absUrl('/quy-trinh-bien-tap'),
       knowsAbout: ['Dầu thủy lực', 'Dầu bánh răng', 'Mỡ bôi trơn công nghiệp', 'Dầu máy nén khí', 'Dầu truyền nhiệt'],
     },
@@ -159,8 +161,8 @@ export function organizationSchema() {
       ],
       email: BUSINESS.email,
       hasMap: BUSINESS.gbpUrl,
-      sameAs: [BUSINESS.gbpUrl],
-      // TODO: thêm geo (tọa độ ghim Google Maps), Facebook, Zalo OA vào sameAs khi có. Không điền giá trị đoán.
+      sameAs: [BUSINESS.gbpUrl, BUSINESS.facebookUrl],
+      // TODO: thêm geo (tọa độ ghim Google Maps), Zalo OA vào sameAs khi có. Không điền giá trị đoán.
     },
   ];
 }
