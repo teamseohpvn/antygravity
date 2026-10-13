@@ -1,5 +1,5 @@
 ---
-// Banner hỏi đồng ý cookie phân tích (Google Analytics). Lựa chọn lưu trong localStorage (CONSENT_KEY),
+// Banner hỏi đồng ý cookie thống kê (Google Analytics) và quảng cáo (Google Ads). Lựa chọn lưu trong localStorage (CONSENT_KEY),
 // đọc lại ở <head> của Layout để đặt Consent Mode trước khi gtag chạy.
 // Trang /tuy-chon-cookie dùng window.hpCookie để xem và đổi lựa chọn.
 import { CONSENT_KEY } from '../lib/site';
@@ -7,7 +7,7 @@ import { CONSENT_KEY } from '../lib/site';
 
 <div class="cookie-banner" id="cookie-banner" data-key={CONSENT_KEY} role="dialog" aria-live="polite" aria-label="Thông báo cookie" hidden>
   <p>
-    Chúng tôi dùng cookie Google Analytics để đếm lượt truy cập và cải thiện website. Không dùng cookie quảng cáo.
+    Chúng tôi dùng cookie Google Analytics để đếm lượt truy cập, và cookie Google Ads để đo hiệu quả quảng cáo và hiện quảng cáo của chúng tôi cho người đã xem website.
     Xem <a href="/privacy-policy">Chính sách bảo mật</a> hoặc <a href="/tuy-chon-cookie">Tùy chọn cookie</a>.
   </p>
   <div class="cookie-actions">
@@ -68,7 +68,13 @@ import { CONSENT_KEY } from '../lib/site';
       // Trình duyệt chặn lưu trữ: vẫn áp dụng cho lần xem này.
     }
     const gtag = (window as any).gtag;
-    if (typeof gtag === 'function') gtag('consent', 'update', { analytics_storage: choice });
+    if (typeof gtag === 'function')
+      gtag('consent', 'update', {
+        analytics_storage: choice,
+        ad_storage: choice,
+        ad_user_data: choice,
+        ad_personalization: choice,
+      });
     banner.hidden = true;
     document.dispatchEvent(new CustomEvent('hp-cookie-change', { detail: choice }));
   }
