@@ -119,8 +119,10 @@ const citation = [
 const PAGE_ID = absUrl(pagePath) + '#webpage';
 const PAGE_TYPE = ['ItemPage', 'WebPage'];
 
-const schemaData = [
-  {
+// Google bắt buộc Product phải có offers/review/aggregateRating, nếu không sẽ báo lỗi đoạn trích sản phẩm.
+// Sản phẩm chưa có khoảng giá công khai thì không khai báo Product (không bịa giá, không bịa đánh giá).
+const productSchema = offers
+  ? {
     '@context': 'https://schema.org',
     '@type': 'Product',
     '@id': absUrl(pagePath) + '#product',
@@ -133,9 +135,13 @@ const schemaData = [
     ...(d.origin ? { countryOfOrigin: d.origin } : {}),
     ...(gallery.length ? { image: gallery.map((img) => absUrl(img.src)) } : {}),
     ...(additionalProperty.length ? { additionalProperty } : {}),
-    // offers chỉ khi có khoảng giá công khai; không thêm aggregateRating khi chưa có đánh giá thật.
-    ...(offers ? { offers } : {}),
-  },
+    // Không thêm aggregateRating khi chưa có đánh giá thật.
+    offers,
+  }
+  : undefined;
+
+const schemaData = [
+  ...(productSchema ? [productSchema] : []),
   {
     '@context': 'https://schema.org',
     // Thêm WebPage cạnh ItemPage (ItemPage vốn là WebPage): một số công cụ kiểm tra E-E-A-T chỉ nhận WebPage/Article.
@@ -152,7 +158,7 @@ const schemaData = [
     ...(reviewer ? { reviewedBy: personRef(reviewer) } : {}),
     publisher: { '@id': ORG_ID },
     isPartOf: { '@id': absUrl('/') + '#website' },
-    mainEntity: { '@id': absUrl(pagePath) + '#product' },
+    ...(productSchema ? { mainEntity: { '@id': absUrl(pagePath) + '#product' } } : {}),
     ...(citation.length ? { citation } : {}),
   },
   // Khối Person đầy đủ của người kiểm duyệt, để công cụ và AI đọc được tác giả ngay trên trang.
