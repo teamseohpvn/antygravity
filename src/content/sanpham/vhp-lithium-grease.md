@@ -61,7 +61,7 @@ tom_tat:
   - "**Có sẵn L4 xô 17 kg**; các cấp khác nhận đặt. HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-3", "nlgi-4", "nlgi-00", "mo-lithium", "mo-da-dung", "vhp"]
 date: "2026-10-06"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP Lithium Grease** là mỡ bôi trơn đa dụng gốc lithium do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Mỡ dùng dầu gốc khoáng có độ nhớt 220 cSt ở 40 °C, kèm phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Với cấp L3 và L4, nhiệt độ nhỏ giọt tối thiểu là 190 °C.
@@ -114,7 +114,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Ph
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
-Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
 
 | Dấu hiệu | Nên làm |
 | :--- | :--- |
@@ -131,12 +131,12 @@ Không bơm quá nhiều: ổ bi đầy mỡ chạy nóng hơn. Ổ bi động c
 Không hẳn. Nhiệt độ nhỏ giọt tối thiểu 190 °C và nhiệt độ làm việc tới 120 °C là mức của mỡ lithium đa dụng. Mỡ chịu nhiệt thật sự thường có nhiệt độ nhỏ giọt trên 240 °C.
 
 ### L00 khác L0 thế nào?
-L00 lỏng hơn L0 và chảy gần giống dầu bánh răng đặc. L00 hợp với đường ống bơm mỡ dài hoặc hộp số kín. L0 giữ lại ở điểm bôi trơn tốt hơn một chút. Hãy chọn theo cấp NLGI ghi trong sổ tay của hệ bơm mỡ.
+L00 lỏng hơn L0 và chảy gần giống dầu bánh răng đặc. L00 hợp với đường ống bơm mỡ dài hoặc hộp số kín. L0 giữ lại ở điểm bôi trơn tốt hơn một chút. Hãy chọn theo cấp NLGI ghi trong hướng dẫn sử dụng của hệ bơm mỡ.
 
 ### Có trộn mỡ lithium với mỡ đang dùng được không?
 Mỡ lithium thường trộn được với mỡ lithium hoặc lithium-canxi khác. Tuy vậy, khi đổi loại mỡ, nên bơm đẩy hết mỡ cũ ra khỏi ổ bi. Không trộn với mỡ gốc sét hoặc polyurea khi chưa kiểm tra.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** L4 xô 17 kg. L3, L00, L0 và phuy 180 kg nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

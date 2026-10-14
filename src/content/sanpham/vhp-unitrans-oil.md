@@ -44,7 +44,7 @@ stock_status: "dat-hang"
 applications:
   - "Máy biến áp phân phối và máy biến áp lực ngâm dầu, loại kín và loại hở"
   - "Máy cắt, cầu dao ngâm dầu, sứ xuyên chứa dầu"
-  - "Châm bổ sung hoặc thay dầu khi bảo dưỡng định kỳ trạm biến áp nhà máy"
+  - "Thêm dầu bổ sung hoặc thay dầu khi bảo dưỡng định kỳ trạm biến áp nhà máy"
 not_for:
   - "Thiết bị yêu cầu dầu cách điện gốc este hoặc dầu silicone"
   - "Bôi trơn máy móc: đây không phải dầu bôi trơn"
@@ -67,12 +67,12 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu** (phuy 210 L, xô 18 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["dau-bien-the", "iec-60296", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP Unitrans Oil (Hi-Volt)** là dầu cách điện gốc khoáng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu đạt **IEC 60296:2020, loại A mã I**, tức là dầu có pha phụ gia ức chế oxy hóa. Dầu dùng cho máy biến áp, máy cắt và các thiết bị điện ngâm dầu, loại kín hay loại hở đều được.
 
-HT VINA là **đại lý dầu mỡ VHP**. **Phuy 210 L** (thay dầu cả máy) và **xô 18 L** (châm bổ sung) **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+HT VINA là **đại lý dầu mỡ VHP**. **Phuy 210 L** (thay dầu cả máy) và **xô 18 L** (thêm dầu bổ sung) **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
 ## Unitrans Oil có hợp với thiết bị của bạn không?
 
@@ -80,7 +80,7 @@ HT VINA là **đại lý dầu mỡ VHP**. **Phuy 210 L** (thay dầu cả máy)
 | :--- | :--- |
 | Máy biến áp phân phối, máy biến áp lực ngâm dầu khoáng | **Được.** |
 | Máy cắt, cầu dao ngâm dầu | **Được.** |
-| Châm bù vào máy đang dùng dầu khoáng cách điện tương đương | **Được**, theo VHP; lấy mẫu dầu cũ đo trước. |
+| Thêm bù vào máy đang dùng dầu khoáng cách điện tương đương | **Được**, theo VHP; lấy mẫu dầu cũ đo trước. |
 | Thiết bị yêu cầu dầu este, dầu silicone | Không. |
 
 ## Thông số này có ý nghĩa gì khi vận hành?
@@ -108,20 +108,20 @@ HT VINA là **đại lý dầu mỡ VHP**. **Phuy 210 L** (thay dầu cả máy)
 
 Dầu máy biến áp không thay theo thời gian mà theo kết quả thử nghiệm định kỳ: **điện áp đánh thủng**, **hàm lượng nước**, **trị số axit** và hệ số tổn hao điện môi, đối chiếu với hướng dẫn giám sát dầu cách điện IEC 60422. Kết quả kém thì lọc, sấy dầu; chỉ thay khi xử lý không đạt.
 
-Trị số axit và nước có thể kiểm tra nhanh tại trạm bằng kit (xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau)). Điện áp đánh thủng cần máy thử chuyên dụng hoặc phòng thí nghiệm.
+Trị số axit và nước có thể kiểm tra nhanh tại trạm bằng kit (xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau)). Điện áp đánh thủng cần máy thử chuyên dụng hoặc phòng thí nghiệm.
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì phải thay dầu biến thế VHP Unitrans Oil?
 Theo kết quả thử nghiệm định kỳ, không theo thời gian. Xem mục "Khi nào cần lọc hoặc thay dầu?" phía trên.
 
-### Unitrans Oil có châm lẫn với dầu biến thế đang có trong máy được không?
-VHP công bố dầu dùng chung hoặc pha trộn được với các dầu khoáng cách điện tiêu chuẩn tương đương của châu Âu, Nga, Hàn Quốc, Ấn Độ. Trước khi châm, nên lấy mẫu dầu cũ đo điện áp đánh thủng và trị số axit. Dầu cũ đã xuống cấp nhiều thì nên lọc hoặc thay toàn bộ.
+### Unitrans Oil có đổ lẫn với dầu biến thế đang có trong máy được không?
+VHP công bố dầu dùng chung hoặc pha trộn được với các dầu khoáng cách điện tiêu chuẩn tương đương của châu Âu, Nga, Hàn Quốc, Ấn Độ. Trước khi thêm dầu, nên lấy mẫu dầu cũ đo điện áp đánh thủng và trị số axit. Dầu cũ đã xuống cấp nhiều thì nên lọc hoặc thay toàn bộ.
 
 ### Chọn phuy 210 L hay xô 18 L?
-Thay dầu cả máy biến áp thì dùng phuy. Châm bù sau khi lấy mẫu, sửa chữa máy cắt hay cầu dao ngâm dầu thì xô 18 L tiện hơn, dầu không phải để lâu sau khi mở nắp.
+Thay dầu cả máy biến áp thì dùng phuy. Thêm bù sau khi lấy mẫu, sửa chữa máy cắt hay cầu dao ngâm dầu thì xô 18 L tiện hơn, dầu không phải để lâu sau khi mở nắp.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** phuy 210 L và xô 18 L, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ và bảng chỉ tiêu kỹ thuật kèm hàng khi khách yêu cầu, dùng cho hồ sơ nghiệm thu.

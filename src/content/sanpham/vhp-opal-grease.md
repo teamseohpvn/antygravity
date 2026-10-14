@@ -37,7 +37,7 @@ packaging:
 stock_status: "dat-hang"
 
 applications:
-  - "Đầu trục làm việc trong điều kiện khắc nghiệt"
+  - "Đầu trục chịu tải nặng, nóng, nhiều bụi"
   - "Vòng bi tải nặng, ổ bi và ổ đũa tốc độ cao trong cơ cấu kín"
   - "Máy công cụ, máy nông nghiệp, lâm nghiệp"
   - "Thiết bị hàng hải cần mỡ kháng nước"
@@ -60,7 +60,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-3", "nlgi-4", "mo-da-dung", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP Opal Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Cấp NLGI 3 còn mang tên **VHP GRE MIL 3**. Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. VHP định hướng mỡ cho đầu trục, ổ bi tải nặng và các cơ cấu chuyển động kín.
@@ -71,7 +71,7 @@ HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 x
 
 | Điểm bôi trơn | Dùng Opal Grease được không? |
 | :--- | :--- |
-| Ổ bi tải nặng, đầu trục làm việc khắc nghiệt dưới 120 °C | **Được.** |
+| Ổ bi tải nặng, đầu trục chịu tải nặng, nóng dưới 120 °C | **Được.** |
 | Cơ cấu chuyển động kín, máy công cụ, máy nông nghiệp | **Được.** |
 | Thiết bị hàng hải | **Được**, theo VHP. |
 | Ổ bi chạy nhanh và nóng liên tục | Nên dùng [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) (nhỏ giọt tối thiểu 190 °C). |
@@ -108,7 +108,7 @@ HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 x
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
-Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
 
 | Dấu hiệu | Nên làm |
 | :--- | :--- |
@@ -127,7 +127,7 @@ Không. Nhiệt độ nhỏ giọt 140 °C và làm việc tới 120 °C là m�
 ### Có phiếu chỉ tiêu riêng cho NLGI 4 không?
 Bảng thông số trên trang là của cấp NLGI 3. Nếu cần phiếu chỉ tiêu riêng của cấp NLGI 4, hãy [liên hệ](/contact) để nhận theo lô.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** NLGI 3 phuy 180 kg, NLGI 4 xô 15 kg. Nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

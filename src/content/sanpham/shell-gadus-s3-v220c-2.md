@@ -57,7 +57,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu** (xô 18 kg), không có sẵn tại kho tháng 10/2026."
 tags: ["nlgi-2", "lithium-complex", "mo-chiu-nhiet", "shell-gadus"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Shell Gadus S3 V220C 2** là mỡ chịu nhiệt, chịu cực áp cao cấp của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng **lithium complex**, có **màu đỏ**. Nhiệt độ nhỏ giọt là **240 °C**. Mỡ làm việc liên tục tới **140 °C**, đỉnh tới 150 °C, nên dùng cho các ổ bi chạy nóng, tải nặng và rung mạnh. Tên cũ của dòng này là Shell Albida EP 2 và Shell Retinax LX 2.
@@ -99,11 +99,11 @@ Không. Nhiều nơi quảng cáo mỡ "chịu nhiệt 300 °C" hay "500 °C" d�
 | Nhiệt độ nhỏ giọt | 180 °C | 240 °C |
 | Nhiệt độ làm việc | −20 đến 130 °C | −20 đến 140 °C (đỉnh 150 °C) |
 
-> **Nhận định của HT VINA:** Lithium complex và lithium thường tương thích khá tốt. Dù vậy, khi chuyển hẳn sang Gadus S3 cho ổ bi nóng, nên đẩy hết mỡ cũ ra để có đủ khả năng chịu nhiệt.
+> **Nhận định của HT VINA:** Mỡ lithium complex và mỡ lithium thường trộn lẫn với nhau khá ổn. Dù vậy, khi chuyển hẳn sang Gadus S3 cho ổ bi nóng, nên đẩy hết mỡ cũ ra để có đủ khả năng chịu nhiệt.
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
-Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
 
 | Dấu hiệu | Nên làm |
 | :--- | :--- |
@@ -122,7 +122,7 @@ Màu chỉ là chất tạo màu để nhận biết sản phẩm, không quyế
 ### Có dùng cho hệ bơm mỡ tự động không?
 Dùng được cho hệ thống ngắn. Shell đánh giá khả năng bơm xa của mỡ này ở mức "trung bình". Với hệ thống bơm mỡ tập trung đường ống dài, hãy hỏi chúng tôi trước khi dùng.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** xô 18 kg, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

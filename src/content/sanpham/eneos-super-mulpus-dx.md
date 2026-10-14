@@ -42,7 +42,7 @@ applications:
   - "Rãnh trượt, ụ trục chính máy tiện, máy phay, trung tâm gia công"
   - "Hệ bôi trơn tuần hoàn dễ bị lẫn nước hoặc dung dịch cắt gọt"
 not_for:
-  - "Bơm thủy lực yêu cầu dầu không kẽm hoặc phê duyệt riêng của hãng bơm (kiểm tra sổ tay máy)"
+  - "Bơm thủy lực yêu cầu dầu không kẽm hoặc dầu phải được hãng bơm chấp thuận (xem hướng dẫn sử dụng của máy)"
   - "Hộp số tải nặng cần cấp độ nhớt 150–460 (chọn cấp Mulpus DX cao hơn hoặc dầu bánh răng chuyên dụng)"
 warnings:
   - "Đeo găng tay, kính bảo hộ khi thao tác. Dính da thì rửa bằng nhiều nước và xà phòng."
@@ -58,15 +58,15 @@ images:
 doc_gia: "Trang này dành cho xưởng cơ khí muốn gom dầu thủy lực, hộp số, ổ đỡ và rãnh trượt của máy công cụ về một mã dầu."
 tom_tat:
   - "**Một mã dầu cho bốn chỗ**: hệ thủy lực, hộp giảm tốc tải vừa, ổ đỡ và rãnh trượt máy công cụ thông dụng."
-  - "**Cấp 46** cho máy công cụ, ụ trục chính; **cấp 68** cho máy ép, hộp giảm tốc, bồn dầu nóng."
+  - "**Cấp 46** cho máy công cụ, ụ trục chính; **cấp 68** cho máy ép, hộp giảm tốc, thùng dầu nóng."
   - "**Máy chỉ có hệ thủy lực** thì ENEOS Super Hyrando 68 (có sẵn) là lựa chọn đơn giản hơn."
   - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026."
 tags: ["iso-vg-68", "iso-vg-46", "dau-da-dung", "may-cong-cu", "eneos"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
-**ENEOS Super Mulpus DX** là dầu đa dụng cho máy công nghiệp của ENEOS. Một loại dầu dùng được cho hệ thủy lực, hộp số, ổ đỡ và rãnh trượt. Xưởng có nhiều loại máy có thể dùng chung một mã dầu, giảm nhầm lẫn khi châm dầu. Dầu pha từ dầu gốc paraffin tinh chế cao, phụ gia chống mài mòn và cực áp gốc lưu huỳnh – phốt pho.
+**ENEOS Super Mulpus DX** là dầu đa dụng cho máy công nghiệp của ENEOS. Một loại dầu dùng được cho hệ thủy lực, hộp số, ổ đỡ và rãnh trượt. Xưởng có nhiều loại máy có thể dùng chung một mã dầu, giảm nhầm lẫn khi thêm dầu. Dầu pha từ dầu gốc paraffin tinh chế cao, phụ gia chống mài mòn và cực áp gốc lưu huỳnh – phốt pho.
 
 Cấp **68** và cấp **46** **nhận đặt theo yêu cầu**, đều là phuy 200 L, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
 
@@ -94,9 +94,9 @@ Cấp **68** và cấp **46** **nhận đặt theo yêu cầu**, đều là phuy
 | Cấp | Độ nhớt ở 40 °C | Chỉ số độ nhớt | Điểm đông đặc | Thường dùng cho |
 | :--- | :--- | :--- | :--- | :--- |
 | Super Mulpus DX 46 | 46,5 mm²/s | 104 | -32,5 °C | Hệ thủy lực máy công cụ, ụ trục chính, ổ đỡ tốc độ vừa |
-| Super Mulpus DX 68 | 68,2 mm²/s | 103 | -27,5 °C | Máy ép, hộp giảm tốc tải vừa, rãnh trượt, bồn dầu nóng |
+| Super Mulpus DX 68 | 68,2 mm²/s | 103 | -27,5 °C | Máy ép, hộp giảm tốc tải vừa, rãnh trượt, thùng dầu nóng |
 
-Luôn theo cấp độ nhớt ghi trong sổ tay máy. Cách chọn chi tiết xem bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
+Luôn theo cấp độ nhớt ghi trong tài liệu hướng dẫn sử dụng kèm theo máy. Cách chọn chi tiết xem bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
 
 ## Super Mulpus DX hay Super Hyrando 68?
 
@@ -115,26 +115,26 @@ Luôn theo cấp độ nhớt ghi trong sổ tay máy. Cách chọn chi tiết x
 
 Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. So mẫu dầu đang dùng với dầu mới theo ba chỉ tiêu:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| Chỉ tiêu | Mức nên thay dầu | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10%: cấp 46 ngoài 41,9–51,2 mm²/s; cấp 68 ngoài 61,4–75 mm²/s | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
-| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
-Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu ENEOS Super Mulpus DX?
-Theo kết quả đo, không theo lịch cố định. Bảng ngưỡng theo từng cấp ở mục "Khi nào cần thay dầu?" phía trên.
+Theo kết quả đo, không theo lịch cố định. Bảng mức cho phép theo từng cấp ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Super Mulpus DX có thay được dầu rãnh trượt không?
 ENEOS ghi Super Mulpus DX đáp ứng yêu cầu của dầu rãnh trượt trên máy công cụ thông dụng. Với máy có rãnh trượt dài, tải nặng hoặc nhà sản xuất chỉ định dầu rãnh trượt riêng, hãy xem thêm nhóm [dầu rãnh trượt](/dau-ranh-truot).
 
 ### Có trộn với dầu thủy lực đang dùng được không?
-Không nên trộn hai loại phụ gia khác nhau. Khi đổi sang Super Mulpus DX, nên xả hết dầu cũ, súc rửa nếu dầu cũ đã bẩn, rồi châm dầu mới.
+Không nên trộn hai loại phụ gia khác nhau. Khi đổi sang Super Mulpus DX, nên xả hết dầu cũ, súc rửa nếu dầu cũ đã bẩn, rồi thêm dầu mới.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** phuy 200 L cấp 68 và cấp 46, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

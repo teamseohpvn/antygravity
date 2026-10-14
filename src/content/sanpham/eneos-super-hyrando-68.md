@@ -3,7 +3,7 @@ ma: "SP-THL-002"
 active: true   # Bật: có trong kho tháng 10/2026
 title: "ENEOS Super Hyrando 68"
 seo_title: "ENEOS Super Hyrando 68: Dầu Thủy Lực 68 Chống Mài Mòn"
-description: "ENEOS Super Hyrando 68 (HM, DIN 51524-2): đối chiếu sổ tay máy, so với Castrol AWS 68, chọn 46 hay 68, bản SE và ngưỡng thay dầu đo được tại xưởng."
+description: "ENEOS Super Hyrando 68 (HM, DIN 51524-2): đối chiếu hướng dẫn sử dụng của máy, so với Castrol AWS 68, chọn 46 hay 68, bản SE và mức phải thay dầu đo được tại xưởng."
 keywords: ["eneos super hyrando 68", "dầu thủy lực 68", "super hyrando 68", "dầu thủy lực eneos 68", "super hyrando se 68", "eneos super hyrando 46"]
 category: "dau-thuy-luc"
 categoryName: "Dầu Thủy Lực"
@@ -33,9 +33,9 @@ equivalents: ["Castrol Hyspin AWS 68", "Shell Tellus S2 MX 68", "Caltex Hydrauli
 
 applications:
   - "Máy ép nhựa, máy ép đùn, máy dập, máy chấn và máy cắt tôn thủy lực"
-  - "Máy công cụ NC, hệ thủy lực có van tùy động (servo) khe hở nhỏ, bơm bánh răng, cánh gạt, piston áp cao"
+  - "Máy công cụ NC, hệ thủy lực có van tùy động (servo) khe hở nhỏ, bơm bánh răng, cánh gạt, pít-tông áp cao"
   - "Máy công trình, thiết bị nâng hạ, máy boong tàu; hệ có bánh răng, ổ đỡ dùng chung dầu thủy lực"
-  - "Thương hiệu Nhật Bản (sản xuất tại Việt Nam theo tiêu chuẩn của ENEOS), dùng cho máy móc có nguồn gốc Nhật Bản như Hitachi, Mikasa, Izumi khi sổ tay máy yêu cầu dầu HM ISO VG 68"
+  - "Thương hiệu Nhật Bản (sản xuất tại Việt Nam theo tiêu chuẩn của ENEOS), dùng cho máy móc có nguồn gốc Nhật Bản như Hitachi, Mikasa, Izumi khi hướng dẫn sử dụng của máy yêu cầu dầu HM ISO VG 68"
 not_for:
   - "Hệ thống yêu cầu dầu chống cháy hoặc dầu gốc nước"
   - "Bơm hoặc van yêu cầu dầu không kẽm: chọn bản Super Hyrando SE (nhận đặt theo yêu cầu)"
@@ -53,8 +53,8 @@ doc_gia: "Trang này dành cho kỹ thuật viên và người mua hàng cần k
 tom_tat:
   - "**Dùng được** cho hầu hết hệ thủy lực công nghiệp yêu cầu dầu thủy lực 68 loại HM, kể cả hệ có van servo khe hở nhỏ."
   - "**Chọn bản SE 68** nếu nhà sản xuất bơm hoặc van yêu cầu dầu không kẽm."
-  - "**Chọn mã có phê duyệt riêng** nếu sổ tay máy bắt buộc phê duyệt Parker Denison hay Eaton (Super Hyrando không công bố các phê duyệt này)."
-  - "**Thay dầu theo kết quả đo** (độ nhớt, trị số axit, nước), không theo lịch cố định. Ngưỡng cụ thể ở mục \"Khi nào cần thay dầu\"."
+  - "**Chọn mã được hãng bơm chấp thuận** nếu tài liệu hướng dẫn sử dụng kèm theo máy bắt buộc dầu được Parker Denison hay Eaton chấp thuận (Super Hyrando không công bố điều này)."
+  - "**Thay dầu theo kết quả đo** (độ nhớt, trị số axit, nước), không theo lịch cố định. Mức cụ thể ở mục \"Khi nào cần thay dầu\"."
 related_posts: ["huong-dan-chon-do-nhot"]
 tags: ["iso-vg-68", "iso-vg-46", "chong-mai-mon", "eneos"]
 reviewed_by: "nguyen-thiet-lap"
@@ -62,31 +62,31 @@ date: "2026-10-06"
 updated: "2026-10-14"
 ---
 
-**ENEOS Super Hyrando 68** là dầu thủy lực 68 chống mài mòn (loại HM, đạt DIN 51524-2), dùng cho máy ép nhựa, máy dập, máy chấn, máy công cụ NC và máy công trình. Sổ tay máy của bạn ghi "ISO VG 68", "HM", "HLP 68" hay "AW 68" thì đây là loại dầu đúng cấp.
+**ENEOS Super Hyrando 68** là dầu thủy lực 68 chống mài mòn (loại HM, đạt DIN 51524-2), dùng cho máy ép nhựa, máy dập, máy chấn, máy công cụ NC và máy công trình. Hướng dẫn sử dụng máy của bạn ghi "ISO VG 68", "HM", "HLP 68" hay "AW 68" thì đây là loại dầu đúng cấp.
 
 Kho HT VINA tại TP Hải Phòng (Hải Dương cũ) có sẵn **phuy 200 L**, giao kèm CO/CQ và hóa đơn VAT; cấp 46 và bản SE 68 thì nhận đặt theo yêu cầu.
 
 
 ## Super Hyrando 68 có hợp với máy của bạn không?
 
-Cách chắc nhất là mở sổ tay máy ra và đối chiếu ba thông tin: cấp độ nhớt, loại dầu và phê duyệt của nhà sản xuất bơm.
+Cách chắc nhất là mở hướng dẫn sử dụng của máy ra và đối chiếu ba thông tin: cấp độ nhớt, loại dầu và hãng bơm có yêu cầu dầu đã được họ chấp thuận hay không.
 
-| Sổ tay máy ghi | Dùng Super Hyrando 68 được không? |
+| Hướng dẫn sử dụng của máy ghi | Dùng Super Hyrando 68 được không? |
 | :--- | :--- |
 | ISO VG 68, HM, HLP 68, AW 68, DIN 51524-2 | **Được**, đây đúng là loại dầu này. |
-| ISO VG 46 hoặc 32 | Không, nên dùng đúng cấp sổ tay ghi (Super Hyrando 46 nhận đặt). |
+| ISO VG 46 hoặc 32 | Không, nên dùng đúng cấp hướng dẫn sử dụng ghi (Super Hyrando 46 nhận đặt). |
 | Dầu không kẽm (zinc-free, ashless) | Dùng bản **Super Hyrando SE 68**. |
-| Bắt buộc phê duyệt Parker Denison HF-0/1/2 hoặc Eaton | Chọn mã có phê duyệt đó, ví dụ [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
+| Bắt buộc dầu được Parker Denison HF-0/1/2 hoặc Eaton chấp thuận | Chọn mã đã được các hãng này chấp thuận, ví dụ [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
 | HV, HVLP (dầu chỉ số độ nhớt cao cho máy ngoài trời lạnh) | Không, vì Super Hyrando 68 là loại HM. |
 | Dầu chống cháy, dầu gốc nước | Không. |
 
 Theo TDS của ENEOS Nhật Bản, Super Hyrando dùng được cho máy rèn dập, máy gia công kim loại, máy ép phun, máy ép đùn, máy công cụ, máy công trình, máy boong tàu, máy nâng hạ và máy mỏ. Bản TDS tiếng Việt nói thêm rằng dầu đáp ứng được cả hệ có van tùy động chính xác và máy công cụ điều khiển số, kể cả khi bánh răng và ổ đỡ dùng chung dầu với hệ thủy lực.
 
-Nếu chưa chắc sổ tay máy ghi gì, bạn cứ chụp trang thông số dầu gửi qua [form báo giá](/bao-gia?sp=ENEOS%20Super%20Hyrando%2068), chúng tôi sẽ đối chiếu giúp trước khi bạn mua.
+Nếu chưa chắc hướng dẫn sử dụng của máy ghi gì, bạn cứ chụp trang thông số dầu gửi qua [mẫu yêu cầu báo giá](/bao-gia?sp=ENEOS%20Super%20Hyrando%2068), chúng tôi sẽ đối chiếu giúp trước khi bạn mua.
 
 ## Nên dùng dầu thủy lực 68 hay 46?
 
-Cứ dùng đúng cấp sổ tay máy ghi. Trường hợp sổ tay cho phép cả hai thì nhiệt độ dầu trong bồn sẽ quyết định: bồn hay nóng thì dùng 68, còn máy khởi động lạnh hoặc chạy ngoài trời mùa đông thì dùng 46.
+Cứ dùng đúng cấp hướng dẫn sử dụng của máy ghi. Trường hợp hướng dẫn sử dụng cho phép cả hai thì nhiệt độ dầu trong thùng sẽ quyết định: thùng hay nóng thì dùng 68, còn máy khởi động lạnh hoặc chạy ngoài trời mùa đông thì dùng 46.
 
 | Chỉ tiêu (TDS ENEOS Việt Nam) | Super Hyrando 46 | Super Hyrando 68 |
 | :--- | :--- | :--- |
@@ -96,9 +96,9 @@ Cứ dùng đúng cấp sổ tay máy ghi. Trường hợp sổ tay cho phép c�
 | Điểm chớp cháy cốc hở | 242 °C | 258 °C |
 | Điểm đông đặc | −27,5 °C | −25 °C |
 
-Người dùng máy công trình cũng chọn theo cách này. Trên [Heavy Equipment Forums](https://www.heavyequipmentforums.com/threads/iso-46-or-iso-68-hydraulic-fluid.107106/), sổ tay của một máy xúc mini ghi ISO 46 cho thời tiết mát và ISO 68 cho thời tiết nóng; một thành viên lâu năm nhận xét dầu 68 thường được dùng ở vùng khí hậu cận nhiệt đới, mà mùa hè nóng ẩm ở miền Bắc cũng gần với điều kiện đó.
+Người dùng máy công trình cũng chọn theo cách này. Trên [Heavy Equipment Forums](https://www.heavyequipmentforums.com/threads/iso-46-or-iso-68-hydraulic-fluid.107106/), hướng dẫn sử dụng của một máy xúc mini ghi ISO 46 cho thời tiết mát và ISO 68 cho thời tiết nóng; một thành viên lâu năm nhận xét dầu 68 thường được dùng ở vùng khí hậu cận nhiệt đới, mà mùa hè nóng ẩm ở miền Bắc cũng gần với điều kiện đó.
 
-> **Nhận định của HT VINA:** Ở xưởng miền Bắc, nếu dầu trong bồn thường xuyên trên 55 °C thì chúng tôi khuyên dùng 68, trừ khi sổ tay máy ghi khác. Cách chọn chi tiết theo loại bơm và nhiệt độ có trong bài [hướng dẫn chọn cấp độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
+> **Nhận định của HT VINA:** Ở xưởng miền Bắc, nếu dầu trong thùng thường xuyên trên 55 °C thì chúng tôi khuyên dùng 68, trừ khi hướng dẫn sử dụng của máy ghi khác. Cách chọn chi tiết theo loại bơm và nhiệt độ có trong bài [hướng dẫn chọn cấp độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
 
 ## Bản thường hay bản SE?
 
@@ -119,7 +119,7 @@ Nên chọn **SE 68** khi:
 - hệ thống hay đóng cặn, ví dụ máy CNC có van tùy động;
 - máy khởi động lạnh rồi chạy nóng (SE có chỉ số độ nhớt 109 và điểm đông đặc −39 °C).
 
-> **Nhận định của HT VINA:** Ngoài các trường hợp trên, bản thường là đủ dùng. Chỉ lưu ý đừng châm lẫn hai bản trong cùng một bồn.
+> **Nhận định của HT VINA:** Ngoài các trường hợp trên, bản thường là đủ dùng. Chỉ lưu ý đừng đổ lẫn hai bản trong cùng một thùng.
 
 ## Super Hyrando 68 hay Castrol Hyspin AWS 68?
 
@@ -134,24 +134,24 @@ Hai mã cùng loại HM, cùng cấp 68 và đều có sẵn tại kho HT VINA, 
 | Tách nước ở 54 °C (ASTM D1401) | Không công bố số đo (TCCS 14:2014 yêu cầu không quá 30 phút) | 15 phút |
 | Độ bền oxy hóa TOST (ASTM D943) | Không công bố (TDS Nhật: không tạo cặn sau 120 °C, 70 giờ) | > 2.500 giờ |
 | Thử tải bánh răng FZG | Không công bố | Cấp 12 |
-| Phê duyệt nhà sản xuất bơm | Không công bố | Parker Denison HF-0/HF-1/HF-2, Eaton |
+| Được hãng bơm chấp thuận | Không công bố | Parker Denison HF-0/HF-1/HF-2, Eaton |
 | Quy cách | Phuy 200 L | Phuy 209 L |
 | Giá tham khảo tháng 10/2026 (chưa VAT) | 8,99–10,35 triệu đ/phuy, tức 44.900–51.800 đ/L | 9,00–10,35 triệu đ/phuy, tức 43.000–49.600 đ/L |
 
 Đọc bảng này thế nào?
 
-- **So giá theo lít, đừng so theo phuy.** Giá mỗi phuy của hai mã gần như ngang nhau, nhưng phuy Castrol chứa nhiều hơn 9 L, nên tính theo lít thì Castrol thấp hơn khoảng 4%. Với bồn 200 L, mỗi lần thay dầu chênh khoảng 380.000–440.000 đ.
-- **"Không công bố" không có nghĩa là kém.** ENEOS không đưa kết quả TOST, FZG hay phê duyệt bơm vào TDS nên không có số để so, còn Castrol thì công bố đủ các phép thử về tuổi thọ oxy hóa và chống mài mòn bánh răng.
+- **So giá theo lít, đừng so theo phuy.** Giá mỗi phuy của hai mã gần như ngang nhau, nhưng phuy Castrol chứa nhiều hơn 9 L, nên tính theo lít thì Castrol thấp hơn khoảng 4%. Với thùng 200 L, mỗi lần thay dầu chênh khoảng 380.000–440.000 đ.
+- **"Không công bố" không có nghĩa là kém.** ENEOS không đưa kết quả TOST, FZG hay danh sách hãng bơm chấp thuận vào TDS nên không có số để so, còn Castrol thì công bố đủ các phép thử về tuổi thọ oxy hóa và chống mài mòn bánh răng.
 - **ENEOS có biên nhiệt độ cao hơn ở hai chỉ tiêu được công bố:** điểm chớp cháy cao hơn 33 °C, điểm đông đặc thấp hơn 4 °C, chỉ số độ nhớt cao hơn một chút.
 
-> **Nhận định của HT VINA:** **Chọn Castrol Hyspin AWS 68** khi sổ tay máy hoặc nhà sản xuất bơm yêu cầu phê duyệt Parker Denison, Eaton, hoặc khi bạn cần số liệu tuổi thọ dầu để lập kế hoạch bảo trì. **Chọn ENEOS Super Hyrando 68** khi sổ tay chỉ ghi HM, ISO VG 68 hay HLP 68, nhất là với máy Nhật đang dùng sẵn dầu ENEOS, để khỏi phải súc rửa khi đổi mã.
+> **Nhận định của HT VINA:** **Chọn Castrol Hyspin AWS 68** khi hướng dẫn sử dụng của máy hoặc nhà sản xuất bơm yêu cầu dầu được Parker Denison, Eaton chấp thuận, hoặc khi bạn cần số liệu tuổi thọ dầu để lập kế hoạch bảo trì. **Chọn ENEOS Super Hyrando 68** khi hướng dẫn sử dụng chỉ ghi HM, ISO VG 68 hay HLP 68, nhất là với máy Nhật đang dùng sẵn dầu ENEOS, để không phải súc rửa khi đổi mã.
 
 ## Thông số này có ý nghĩa gì khi máy chạy?
 
 [Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS. Với người đứng máy, có bốn điểm đáng quan tâm nhất.
 
-- **Độ nhớt khi dầu nóng lên.** Chỉ số độ nhớt 104 là mức thông thường của dầu khoáng HM, nghĩa là dầu vẫn loãng đi khi bồn nóng. Vì vậy, giữ nhiệt độ bồn ổn định là cách để áp suất và tốc độ xi lanh đều suốt ca; máy cần độ nhớt ổn định hơn thì xem bản SE (chỉ số 109).
-- **Tách nước nhanh.** TCCS 14:2014 yêu cầu nước tách khỏi dầu trong không quá 30 phút ở 54 °C ([ASTM D1401](https://www.astm.org/Standards/D1401.htm)). Nhờ vậy, nước lẫn vào ít thường lắng xuống đáy bồn để xả ra, chứ không quyện vào dầu.
+- **Độ nhớt khi dầu nóng lên.** Chỉ số độ nhớt 104 là mức thông thường của dầu khoáng HM, nghĩa là dầu vẫn loãng đi khi thùng nóng. Vì vậy, giữ nhiệt độ thùng ổn định là cách để áp suất và tốc độ xi lanh đều suốt ca; máy cần độ nhớt ổn định hơn thì xem bản SE (chỉ số 109).
+- **Tách nước nhanh.** TCCS 14:2014 yêu cầu nước tách khỏi dầu trong không quá 30 phút ở 54 °C ([ASTM D1401](https://www.astm.org/Standards/D1401.htm)). Nhờ vậy, nước lẫn vào ít thường lắng xuống đáy thùng để xả ra, chứ không quyện vào dầu.
 - **Chịu nhiệt.** Theo TDS ENEOS Nhật (IND-4001), dầu không tạo cặn kết tủa sau phép thử ổn định nhiệt ở 120 °C trong 70 giờ, tức gấp đôi mức 50–60 °C thường gặp ở xưởng. ENEOS không công bố kết quả thử [ASTM D2070](https://www.astm.org/Standards/D2070.htm) (135 °C, 168 giờ) cho mã này.
 - **Chống gỉ, không ăn mòn đồng.** Dầu đạt phép thử gỉ với nước biển nhân tạo ở 60 °C trong 24 giờ, ăn mòn tấm đồng cấp 1.
 
@@ -159,60 +159,60 @@ Hàng bán tại Việt Nam do ENEOS Việt Nam (trước đây là JX Nippon Oi
 
 ## Bốn lỗi khiến dầu thủy lực 68 hỏng sớm
 
-Những lỗi dưới đây xảy ra với mọi loại dầu thủy lực 68 chứ không riêng ENEOS, và đều là chuyện người vận hành kể lại trên các diễn đàn kỹ thuật.
+Những lỗi dưới đây xảy ra với mọi loại dầu thủy lực 68 chứ không riêng ENEOS, và đều là chuyện thợ đứng máy kể lại trên các diễn đàn kỹ thuật.
 
 ### 1. Để nước lọt vào dầu
 
-Dầu trắng đục như sữa là dấu hiệu đã lẫn nước. Trên diễn đàn [Practical Machinist](https://www.practicalmachinist.com/forum/threads/hydraulic-press-low-pressure.433412/), một chủ xưởng mua lại máy ép thủy lực cũ khoảng 100 tấn từng để ngoài trời 6 tháng; khi xả bồn ra thì khoảng 30% là nước, và máy chỉ còn ép được khoảng 14 tấn. Trên trang hỏi đáp [Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14195739674) của Nhật, những người trả lời một câu hỏi về dầu trắng đục sau bão cảnh báo rằng nước làm gỉ con trượt trong van, có thể làm xước và bó bơm cánh gạt.
+Dầu trắng đục như sữa là dấu hiệu đã lẫn nước. Trên diễn đàn [Practical Machinist](https://www.practicalmachinist.com/forum/threads/hydraulic-press-low-pressure.433412/), một chủ xưởng mua lại máy ép thủy lực cũ khoảng 100 tấn từng để ngoài trời 6 tháng; khi xả thùng ra thì khoảng 30% là nước, và máy chỉ còn ép được khoảng 14 tấn. Trên trang hỏi đáp [Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14195739674) của Nhật, những người trả lời một câu hỏi về dầu trắng đục sau bão cảnh báo rằng nước làm gỉ con trượt trong van, có thể làm xước và bó bơm cánh gạt.
 
-Nước thường lọt vào qua nắp lỗ thở, nắp que thăm bị nứt, két làm mát bằng nước, hoặc từ chính dụng cụ rót dầu. Người hỏi trên Yahoo! Chiebukuro đã châm dầu bằng một cái bơm tay từng dùng cho dầu hộp số, trong bơm có thể còn đọng nước mưa.
+Nước thường lọt vào qua nắp lỗ thở, nắp que thăm bị nứt, két làm mát bằng nước, hoặc từ chính dụng cụ rót dầu. Người hỏi trên Yahoo! Chiebukuro đã thêm dầu bằng một cái bơm tay từng dùng cho dầu hộp số, trong bơm có thể còn đọng nước mưa.
 
-**Nên làm:** thấy dầu đục thì dừng máy, [test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) rồi hãy quyết định. Can, phễu, bơm tay nên dùng riêng cho dầu thủy lực và luôn giữ khô.
+**Nên làm:** thấy dầu đục thì dừng máy, [kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) rồi hãy quyết định. Can, phễu, bơm tay nên dùng riêng cho dầu thủy lực và luôn giữ khô.
 
 ### 2. Thay dầu mà chưa tìm ra chỗ nước vào
 
-Trên diễn đàn [ForkliftAction](https://www.forkliftaction.com/forum/thread.aspx?qid=131864), một người vận hành xe nâng kể đã thay toàn bộ dầu thủy lực hơn 5 lần mà dầu vẫn trắng sữa. Thợ trả lời rằng dầu cứ đục lại như vậy thì nước vẫn đang vào từ đâu đó, và nghi nắp que thăm hoặc lỗ thở bị nứt.
+Trên diễn đàn [ForkliftAction](https://www.forkliftaction.com/forum/thread.aspx?qid=131864), một người chạy xe nâng kể đã thay toàn bộ dầu thủy lực hơn 5 lần mà dầu vẫn trắng sữa. Thợ trả lời rằng dầu cứ đục lại như vậy thì nước vẫn đang vào từ đâu đó, và nghi nắp que thăm hoặc lỗ thở bị nứt.
 
 **Nên làm:** trước khi mở phuy dầu mới, kiểm tra nắp lỗ thở, nắp que thăm, két làm mát, phớt cần xi lanh và cả chỗ đặt máy. Phuy để ngoài trời thì đặt nằm ngang, hai lỗ nắp ở vị trí 3 giờ và 9 giờ.
 
-### 3. Đổi dầu mà không súc rửa, hoặc châm lẫn dầu khác loại
+### 3. Đổi dầu mà không súc rửa, hoặc đổ lẫn dầu khác loại
 
 Trên [Yesterday's Tractors](https://forums.yesterdaystractors.com/threads/milky-hydraulic-fluid.1172093/), một người dùng xả hết dầu đục rồi nạp dầu mới, nhưng dầu lại đục ngay dù máy chưa chạy, vì hơi ẩm và dầu cũ vẫn còn đọng trong ống, xi lanh và vỏ máy. Cách được khuyên trên Practical Machinist là đổ một ít dầu mới, chạy xi lanh vài lượt rồi xả ra, lặp lại tới khi dầu giữ được màu trong.
 
-Về chuyện châm lẫn, một người dùng trên [TractorByNet](https://www.tractorbynet.com/forums/threads/mixing-hydraulic-oils.444569/) cho biết trộn dầu 68 với dầu 46 **cùng hãng** chỉ làm dầu loãng đi một chút, nhưng xi lanh đã rỉ dầu ở phớt thì có thể rỉ nhiều hơn. Trộn **khác hãng** thì rủi ro hơn, vì hệ phụ gia mỗi hãng một khác.
+Về chuyện đổ lẫn, một người dùng trên [TractorByNet](https://www.tractorbynet.com/forums/threads/mixing-hydraulic-oils.444569/) cho biết trộn dầu 68 với dầu 46 **cùng hãng** chỉ làm dầu loãng đi một chút, nhưng xi lanh đã rỉ dầu ở phớt thì có thể rỉ nhiều hơn. Trộn **khác hãng** thì rủi ro hơn, vì hệ phụ gia mỗi hãng một khác.
 
-**Nên làm:** khi chuyển sang Super Hyrando 68 từ dầu khác, súc rửa ít nhất một lượt và thay lõi lọc; đừng châm lẫn với bản SE hay dầu hãng khác trong cùng một bồn.
+**Nên làm:** khi chuyển sang Super Hyrando 68 từ dầu khác, súc rửa ít nhất một lượt và thay lõi lọc; đừng đổ lẫn với bản SE hay dầu hãng khác trong cùng một thùng.
 
-### 4. Đổ lỗi cho dầu khi bồn quá nóng
+### 4. Đổ lỗi cho dầu khi thùng quá nóng
 
 Trên diễn đàn kỹ thuật [Eng-Tips](https://www.eng-tips.com/threads/hydraulic-fluid-replacement-frequency.204111/), một kỹ sư lưu ý dầu thường xuyên nóng trên khoảng 65 °C sẽ làm phụ gia suy giảm nhanh. Còn trên Heavy Equipment Forums, người dùng máy xúc cho biết nhiệt độ dầu do két làm mát quyết định, dùng cấp độ nhớt nào cũng vậy.
 
-**Nên làm:** khi bồn dầu nóng bất thường, hãy kiểm tra két làm mát, quạt, mức dầu và nắp lỗ thở trước, đừng vội đổi sang dầu đặc hơn. Nhiệt độ cao kéo dài còn làm gioăng phớt cao su lão hóa sớm, dầu tốt đến đâu cũng vậy.
+**Nên làm:** khi thùng dầu nóng bất thường, hãy kiểm tra két làm mát, quạt, mức dầu và nắp lỗ thở trước, đừng vội đổi sang dầu đặc hơn. Nhiệt độ cao kéo dài còn làm gioăng phớt cao su lão hóa sớm, dầu tốt đến đâu cũng vậy.
 
 ## Khi nào cần thay dầu?
 
-Nên thay khi kết quả đo vượt ngưỡng, thay vì theo một lịch cố định. Một câu hỏi trên trang hỏi đáp [Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14308858199) về bộ nguồn thủy lực máy tiện NC cho thấy ở các nhà máy Nhật có ba cách làm rất khác nhau:
+Nên thay khi kết quả đo vượt mức cho phép, thay vì theo một lịch cố định. Một câu hỏi trên trang hỏi đáp [Yahoo! Chiebukuro](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14308858199) về bộ nguồn thủy lực máy tiện NC cho thấy ở các nhà máy Nhật có ba cách làm rất khác nhau:
 
 - một người thay dầu mỗi năm vì bộ nguồn có bo mạch hay lỗi sau khoảng 5 năm nếu không thay, dù không chắc việc này kéo dài tuổi thọ máy;
 - một người đo độ nhiễm bẩn và màu dầu, chỉ thay khi van điện từ bắt đầu kẹt do cặn;
-- một công ty mấy chục năm không thay, chỉ châm thêm.
+- một công ty mấy chục năm không thay, chỉ thêm.
 
 Không đo thì không biết dầu còn bảo vệ được bơm hay không, còn thay đều mỗi năm thì có khi bỏ đi cả dầu còn tốt. Một kỹ sư trên Eng-Tips tính theo chi phí và cho rằng với hệ từ khoảng 190 L trở lên, phân tích mẫu rẻ hơn thay dầu định kỳ.
 
-> **Nhận định của HT VINA:** Máy dùng phuy 200 L thì mỗi quý nên đo ba chỉ tiêu dưới đây, so với một mẫu Super Hyrando 68 mới của chính lô đang dùng. Bồn nhỏ thì cứ thay theo chu kỳ trong sổ tay máy. Riêng máy NC, CNC có van servo nên kiểm tra thêm độ sạch của dầu.
+> **Nhận định của HT VINA:** Máy dùng phuy 200 L thì mỗi quý nên đo ba chỉ tiêu dưới đây, so với một mẫu Super Hyrando 68 mới của chính lô đang dùng. Thùng nhỏ thì cứ thay theo chu kỳ trong hướng dẫn sử dụng của máy. Riêng máy NC, CNC có van servo nên kiểm tra thêm độ sạch của dầu.
 
-| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| Chỉ tiêu | Mức nên thay dầu | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
 | Độ nhớt ở 40 °C ([ASTM D445](https://www.astm.org/Standards/D445.htm), tương đương [TCVN 3171:2011](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+3171%3A2011)) | Ngoài khoảng 62,6–76,5 mm²/s (lệch quá ±10% so với 69,5 mm²/s) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
-| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
-TAN của dầu mới theo TDS Nhật là 0,46 mg KOH/g, còn TCCS cho phép 0,30–0,60, nên tốt nhất là đo mẫu dầu mới của chính lô đang dùng để lấy mốc, thay vì dùng một con số cố định. Cách lấy mẫu và đọc kết quả có trong bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+TAN của dầu mới theo TDS Nhật là 0,46 mg KOH/g, còn TCCS cho phép 0,30–0,60, nên tốt nhất là đo mẫu dầu mới của chính lô đang dùng để lấy mốc, thay vì dùng một con số cố định. Cách lấy mẫu và đọc kết quả có trong bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu ENEOS Super Hyrando 68?
-Không có mốc giờ chạy nào đúng cho mọi máy, vì máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả đo so với dầu mới, cụ thể là khi độ nhớt ở 40 °C ra ngoài khoảng 62,6–76,5 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng ngưỡng và dụng cụ đo nằm ở mục "Khi nào cần thay dầu?" phía trên; cách lấy mẫu xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Không có mốc giờ chạy nào đúng cho mọi máy, vì máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả đo so với dầu mới, cụ thể là khi độ nhớt ở 40 °C ra ngoài khoảng 62,6–76,5 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng mức cho phép và dụng cụ đo nằm ở mục "Khi nào cần thay dầu?" phía trên; cách lấy mẫu xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Super Hyrando 68 có kẽm không?
 TDS Việt Nam, TDS Nhật và TCCS 14:2014 của Super Hyrando đều không công bố thành phần phụ gia chi tiết như một phần của việc bảo vệ công thức bí mật thương mại của ENEOS. Tuy nhiên ENEOS đã ghi rõ bản **Super Hyrando SE** là không kẽm. Nếu bơm yêu cầu dầu không kẽm, hãy chọn ENEOS SUPER HYRANDO SE.
@@ -223,7 +223,7 @@ Cùng cấp độ nhớt và cùng loại HM có [Castrol Hyspin AWS 68](/dau-th
 Nhưng cũng cần hết sức chú ý máy móc có yêu cầu riêng:
 Nếu như máy móc thiết bị thủy lực của các bạn sử dụng bơm của các hãng (Parker Denison, Eaton, Bosch Rexroth), tuyệt đối tuân thủ các loại dầu đề nghị hoặc khuyên dùng theo hãng bơm đề xuất. Xem thêm các mã khác trong danh mục [dầu thủy lực](/dau-thuy-luc).
 
-### Có đổ (châm) thêm dầu Super Hyrando 68 vào máy đang dùng dầu hãng khác được không?
+### Có đổ thêm dầu Super Hyrando 68 vào máy đang dùng dầu hãng khác được không?
 **Không nên.** Theo ý kiến của chúng tôi qua hơn 10 năm vận hành cẩu, xe nâng khi nhập xuất phuy dầu 209 L tại kho hàng HT VINA ở [108 Đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng (TP Hải Dương cũ)](/about), lời khuyên là "KHÔNG". Nếu tình huống không bất khả kháng ảnh hưởng tới thiệt hại kinh tế hay an toàn thì bạn hãy đảm bảo chỉ sử dụng một loại dầu nhất định tại một thời điểm. Nếu muốn thay dầu hãng khác hãy tuân thủ nguyên tắc thay dầu tại [Hướng Dẫn Thay Dầu](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc).
 Ý kiến chung của các khách hàng sử dụng dầu thủy lực do HT VINA cung cấp. Phần lớn các khách hàng đều không dùng (pha) chung 2 loại dầu khác nhau. Lý do đưa ra: hệ phụ gia mỗi hãng khác nhau, trộn lẫn có thể làm dầu đục, tạo cặn hoặc giảm khả năng tách nước. Khi đổi mã, xả hết dầu cũ, súc rửa và thay lõi lọc.
 
@@ -238,7 +238,7 @@ Thùng (xô) 18 lít hiện nhận đặt theo yêu cầu, và tính theo lít t
 
 Việc cân nhắc thùng hay phuy còn phụ thuộc vào thời gian sử dụng của bạn, nếu bạn đặt hàng một phuy tuy nhiên mỗi tháng tiêu hao dùng vài chục lít dầu. Chưa chắc đã tiết kiệm, với giá dầu lên xuống mạnh như thời gian gần đây. Có thể vài tháng sau các bạn đã có một mức giá dễ thở hơn rất nhiều.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** phuy 200 L cấp 68 (mã kho AW2). Cấp 46 và bản SE 68 nhận đặt theo yêu cầu.
 - **Giấy tờ:** mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu.

@@ -55,11 +55,11 @@ doc_gia: "Trang này dành cho xưởng đang dùng Cosmo Hydro AW 68, hoặc c�
 tom_tat:
   - "**Dùng được** cho hệ thủy lực yêu cầu ISO 11158 HM, DIN 51524-2 HLP cấp 68, kể cả máy xúc làm việc nóng."
   - "**Tương đương tiêu chuẩn** dầu thủy lực của Denison (HF-0, HF-1, HF-2) và Eaton theo công bố của Cosmo."
-  - "**Đang dùng Cosmo** thì châm tiếp đúng mã; đổi sang mã khác thì xả hết dầu cũ."
+  - "**Đang dùng Cosmo** thì thêm tiếp đúng mã; đổi sang mã khác thì xả hết dầu cũ."
   - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026."
 tags: ["iso-vg-68", "chong-mai-mon", "cosmo"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Cosmo Hydro AW 68** là dầu thủy lực chống mài mòn loại tuổi thọ dài của Cosmo Oil Lubricants (Nhật Bản). Theo hãng, dầu tương đương các tiêu chuẩn ISO 11158 HM, ASTM D6158 HM và DIN 51524-2 HLP. Dầu cũng tương đương tiêu chuẩn dầu thủy lực của hai hãng bơm Denison và Eaton. Điểm mạnh của dầu là ít tạo cặn khi dùng lâu và chịu được nhiệt độ, áp suất cao.
@@ -68,7 +68,7 @@ Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, có CO/CQ và hóa �
 
 ## Cosmo Hydro AW 68 có hợp với máy của bạn không?
 
-| Sổ tay máy ghi | Dùng Cosmo Hydro AW 68 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo máy ghi | Dùng Cosmo Hydro AW 68 được không? |
 | :--- | :--- |
 | HM 68, HLP 68, AW 68 | **Được.** |
 | Máy ép nhựa, máy ép thủy lực, thang máy thủy lực | **Được.** |
@@ -99,29 +99,29 @@ Hai mã đều của hãng Nhật, cùng cấp 68, cùng loại HM. ENEOS Super 
 | Tiêu chuẩn hãng bơm | Tương đương Denison, Eaton | Không công bố |
 | Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn phuy 200 L |
 
-> **Nhận định của HT VINA:** Thông số chính của hai mã rất gần nhau. Xưởng đang dùng Cosmo thì đặt tiếp đúng mã. Cần hàng ngay cho máy chỉ ghi HM 68 thì ENEOS có sẵn; khi đổi mã, xả hết dầu cũ thay vì châm lẫn, nhất là với máy áp cao.
+> **Nhận định của HT VINA:** Thông số chính của hai mã rất gần nhau. Xưởng đang dùng Cosmo thì đặt tiếp đúng mã. Cần hàng ngay cho máy chỉ ghi HM 68 thì ENEOS có sẵn; khi đổi mã, xả hết dầu cũ thay vì đổ lẫn, nhất là với máy áp cao.
 
 ## Khi nào cần thay dầu?
 
-Không có một mốc giờ chạy đúng cho mọi máy. Nên thay theo kết quả test dầu đang dùng, so với dầu mới:
+Không có một mốc giờ chạy đúng cho mọi máy. Nên thay theo kết quả kiểm tra dầu đang dùng, so với dầu mới:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| Chỉ tiêu | Mức nên thay dầu | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 61,8–75,5 mm²/s (lệch quá ±10% so với 68,7 mm²/s theo TDS) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
-| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
-Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu thủy lực Cosmo Hydro AW 68?
-Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,8–75,5 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
+Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,8–75,5 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng mức cho phép ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Có loại can nhỏ không?
 Hiện chúng tôi nhận đặt loại phuy 200 L. Nếu cần quy cách khác, hãy [liên hệ](/contact) để kiểm tra hàng.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** phuy 200 L cấp 68, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

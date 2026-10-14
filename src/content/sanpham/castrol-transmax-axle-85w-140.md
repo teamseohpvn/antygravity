@@ -53,7 +53,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu** (phuy 209 L), không có sẵn tại kho tháng 10/2026."
 tags: ["api-gl-5", "sae-85w-140", "dau-cau", "castrol"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Castrol Transmax Axle 85W-140** là dầu cầu đa cấp của Castrol, đạt cấp **API GL-5**. Dầu dùng cho cầu xe, vi sai và hộp số yêu cầu dầu GL-5 cấp nhớt 85W-140, chủ yếu là xe tải nặng, xe ben và máy công trình.
@@ -62,7 +62,7 @@ Mã này **nhận đặt theo yêu cầu** theo phuy 209 L, kèm CO/CQ, hóa đ�
 
 ## Transmax Axle 85W-140 có hợp với xe của bạn không?
 
-| Sổ tay xe ghi | Dùng Transmax Axle 85W-140 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo xe ghi | Dùng Transmax Axle 85W-140 được không? |
 | :--- | :--- |
 | Cầu hypoid, API GL-5, 85W-140 | **Được.** |
 | Truyền động cuối, cầu máy công trình và xe chuyên dùng tải nặng | **Được.** |
@@ -94,25 +94,25 @@ Mã này **nhận đặt theo yêu cầu** theo phuy 209 L, kèm CO/CQ, hóa đ�
 
 ## Khi nào cần thay dầu?
 
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 328,5–401,5 mm²/s (lệch quá ±10% so với 365 mm²/s theo TDS) |
-| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 | Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
 
-Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị đổ lẫn. Xem thêm [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu Castrol Transmax Axle 85W-140?
-Theo mốc km hoặc giờ máy trong sổ tay xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Castrol Transmax Axle 85W-140 có thay được dầu cầu 140 đơn cấp không?
 Ở nhiệt độ làm việc, hai loại có độ nhớt gần nhau nên thường thay được nếu cùng cấp API. Bản 85W-140 chảy tốt hơn khi lạnh. Nếu xe đang dùng dầu GL-4, hãy hỏi thợ hoặc hãng xe trước khi đổi sang GL-5.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** phuy 209 L, nhận đặt theo yêu cầu. Cần lượng nhỏ thì xem mã 85W-140 có xô.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

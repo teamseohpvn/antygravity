@@ -60,10 +60,10 @@ tom_tat:
   - "**Có sẵn TS 220 xô 18 L**; TS 320 và phuy 200 L nhận đặt."
 tags: ["iso-vg-220", "iso-vg-320", "chiu-cuc-ap", "eneos"]
 date: "2026-10-06"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
-**ENEOS Bonnoc TS** là dầu bánh răng công nghiệp gốc khoáng của ENEOS. Dầu chịu cực áp (EP), đáp ứng tính năng theo **DIN 51517-3 (CLP)**. ENEOS thiết kế dòng này cho điều kiện khắc nghiệt nhất là thiết bị luyện thép cỡ lớn. Dầu dùng được cho mọi loại bánh răng trong hộp số kín.
+**ENEOS Bonnoc TS** là dầu bánh răng công nghiệp gốc khoáng của ENEOS. Dầu chịu cực áp (EP), đáp ứng tính năng theo **DIN 51517-3 (CLP)**. ENEOS thiết kế dòng này cho máy chạy nặng nhất như thiết bị luyện thép cỡ lớn. Dầu dùng được cho mọi loại bánh răng trong hộp số kín.
 
 Hàng có sẵn tại kho: **Bonnoc TS 220, xô 18 L**, có CO/CQ và hóa đơn VAT, giao từ kho tại TP Hải Phòng (Hải Dương cũ). Cấp **TS 320** và phuy 200 L nhận đặt theo yêu cầu.
 
@@ -112,20 +112,20 @@ Hộp giảm tốc của các hãng phổ biến (SEW, Nord, Sumitomo, Bonfiglio
 
 ## Khi nào cần thay dầu?
 
-Tùy nhiệt độ dầu, tải và mức nhiễm bẩn của hộp số, nên thay theo kết quả test thay vì theo lịch cố định:
+Tùy nhiệt độ dầu, tải và mức nhiễm bẩn của hộp số, nên thay theo kết quả kiểm tra thay vì theo lịch cố định:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10%. TS 220: ngoài 198–242 mm²/s. TS 320: ngoài 283,5–346,5 mm²/s. Đo bằng [nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5) cỡ ống lớn |
 | Nước | Trên 0,1%, nhất là hộp số đặt ngoài trời hoặc gần nguồn nước làm mát |
 | Mạt kim loại | Bám nhiều ở nút xả từ tính: kiểm tra bánh răng, ổ bi |
 
-Cách test chi tiết xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách kiểm tra chi tiết xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu bánh răng ENEOS Bonnoc TS?
-Theo kết quả test, không theo lịch cố định. Bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
+Theo kết quả kiểm tra, không theo lịch cố định. Bảng mức cho phép ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Bonnoc TS có thay được Shell Omala S2 GX 220 không?
 Cả hai đều là dầu bánh răng gốc khoáng chịu cực áp, đáp ứng DIN 51517-3 CLP, cùng cấp độ nhớt. Vì vậy Bonnoc TS 220 thường thay được Omala S2 GX 220 trong hộp giảm tốc kín. Nên xả sạch dầu cũ khi đổi hãng.
@@ -133,7 +133,7 @@ Cả hai đều là dầu bánh răng gốc khoáng chịu cực áp, đáp ứn
 ### Có dùng cho hộp số xe tải được không?
 Không. Hộp số và cầu xe dùng dầu theo cấp API GL-4/GL-5 và độ nhớt SAE (80W-90, 85W-140). Bonnoc TS là dầu cho hộp giảm tốc công nghiệp.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** TS 220 xô 18 L. TS 320 và phuy 200 L nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

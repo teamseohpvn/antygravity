@@ -40,12 +40,12 @@ images:
 doc_gia: "Trang này dành cho chủ xe tải, máy công trình, máy phát đời cũ cần dầu diesel CF-4 20W-50 theo phuy cho đội xe."
 tom_tat:
   - "**Dùng được** cho động cơ diesel 4 kỳ đời cũ yêu cầu API CF-4, có hoặc không có turbo."
-  - "**Không dùng** cho động cơ có EGR hoặc sổ tay ghi CH-4, CI-4: chọn EMI CI-4 hoặc ENEOS DEO CI-4."
+  - "**Không dùng** cho động cơ có EGR hoặc hướng dẫn sử dụng ghi CH-4, CI-4: chọn EMI CI-4 hoặc ENEOS DEO CI-4."
   - "**20W-50** hợp với máy đã chạy lâu, khe hở lớn, làm việc mùa nóng."
   - "**Chưa có TDS** của EMI: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["api-cf-4", "sae-20w-50", "emi", "dong-co-diesel"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **EMI CF-4 20W-50** là dầu động cơ diesel đạt cấp **API CF-4**, độ nhớt **SAE 20W-50**. CF-4 là cấp dành cho động cơ diesel 4 kỳ cao tốc, có hoặc không có tăng áp. Độ nhớt 20W-50 đặc hơn 15W-40, hợp với động cơ đã chạy lâu và khí hậu nóng.
@@ -54,12 +54,12 @@ Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L**, c
 
 ## EMI CF-4 20W-50 có hợp với xe, máy của bạn không?
 
-| Sổ tay xe, máy ghi | Dùng EMI CF-4 20W-50 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo xe, máy ghi | Dùng EMI CF-4 20W-50 được không? |
 | :--- | :--- |
 | API CF-4, CF, CD; SAE 20W-50 | **Được.** |
 | Xe tải, xe khách, máy xúc, máy ủi, máy phát đời cũ | **Được.** |
 | Động cơ có EGR, API CH-4, CI-4 | Không. Chọn [EMI CI-4 20W-50](/dau-dong-co-diesel/emi-ci-4-20w-50) hoặc [ENEOS DEO CI-4](/dau-dong-co-diesel/eneos-deo-ci-4). |
-| Sổ tay ghi 15W-40, xe chạy mùa đông vùng núi | Nên dùng đúng 15W-40, ví dụ [ENEOS DEO CF-4 15W-40](/dau-dong-co-diesel/eneos-deo-cf-4). |
+| Hướng dẫn sử dụng ghi 15W-40, xe chạy mùa đông vùng núi | Nên dùng đúng 15W-40, ví dụ [ENEOS DEO CF-4 15W-40](/dau-dong-co-diesel/eneos-deo-cf-4). |
 | Xe có bộ lọc hạt DPF | Không. |
 
 Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của EMI cho mã này, nên trang chưa có bảng chỉ tiêu (TBN, độ nhớt, điểm chớp cháy).
@@ -84,25 +84,25 @@ Cả hai cùng cấp API CF-4 và có sẵn tại kho. Khác nhau ở quy cách 
 
 ## Khi nào cần thay dầu?
 
-Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào test dầu:
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào kết quả kiểm tra dầu:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10% so với dầu mới. Lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Nước | Trên 0,2% (ASTM D6224) |
 | Trị số kiềm (TBN) | Còn khoảng một nửa so với dầu mới |
 
-Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách kiểm tra xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu EMI CF-4 20W-50?
-Theo mốc km hoặc giờ máy của nhà sản xuất động cơ, rút ngắn khi máy chạy bụi, quá tải. Đội xe lớn có thể dựa vào bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy của nhà sản xuất động cơ, rút ngắn khi máy chạy bụi, quá tải. Đội xe lớn có thể dựa vào bảng mức cho phép ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### CF-4 dùng thay cho CI-4 được không?
 Không. CI-4 dùng thay được cho CF-4, nhưng không làm ngược lại. Máy có EGR mà dùng CF-4 sẽ nhanh đặc dầu do muội than.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** phuy 200 L.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.

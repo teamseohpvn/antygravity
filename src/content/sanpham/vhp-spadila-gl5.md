@@ -60,7 +60,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["api-gl-5", "sae-80w-90", "sae-85w-140", "dau-cau", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP Spadila GL-5** là dầu cầu, dầu hộp số ô tô do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu pha từ dầu gốc khoáng tinh chế với phụ gia cực áp, đạt cấp **API GL-5**, dùng cho cầu xe bánh răng hypoid chịu tải nặng.
@@ -69,7 +69,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **80W-90** và **85W-140**,
 
 ## Spadila GL-5 có hợp với xe của bạn không?
 
-| Sổ tay xe ghi | Dùng Spadila GL-5 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo xe ghi | Dùng Spadila GL-5 được không? |
 | :--- | :--- |
 | Cầu hypoid, API GL-5, 80W-90 hoặc 85W-140 | **Được.** |
 | Bộ truyền động tốc độ cao có va đập, hoặc tốc độ thấp mô-men lớn | **Được.** |
@@ -94,7 +94,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **80W-90** và **85W-140**,
 | Điểm đông đặc | < −20 °C | < −12 °C |
 | Thường dùng cho | Cầu và hộp số tay tải nặng không đồng tốc của xe tải, xe khách | Cầu xe ben, xe đầu kéo, xe tải nặng chạy nóng; máy công trình |
 
-> **Nhận định của HT VINA:** Luôn chọn theo cấp ghi trong sổ tay xe. Nhà máy VHP và kho của chúng tôi cùng địa bàn Hải Dương cũ, nên mã này hợp với đội xe, gara cần lấy hàng đều đặn theo đơn đặt trước.
+> **Nhận định của HT VINA:** Luôn chọn theo cấp ghi trong hướng dẫn sử dụng của xe. Nhà máy VHP và kho của chúng tôi cùng địa bàn Hải Dương cũ, nên mã này hợp với đội xe, gara cần lấy hàng đều đặn theo đơn đặt trước.
 
 ## Spadila GL-5 hay dầu cầu nhập khẩu?
 
@@ -110,28 +110,28 @@ HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **80W-90** và **85W-140**,
 
 ## Khi nào cần thay dầu?
 
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10%. 80W-90: ngoài 131,4–160,6 mm²/s. 85W-140: ngoài 322,2–393,8 mm²/s |
-| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 | Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
 
-Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị đổ lẫn. Xem thêm [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu VHP Spadila GL-5?
-Theo mốc km hoặc giờ máy trong sổ tay xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Spadila GL-5 có dùng cho xe máy được không?
-Có, cho hộp số xe máy nằm tách riêng khỏi động cơ (như bộ truyền cuối của xe tay ga) khi nhà sản xuất ghi dầu GL-5. Xe số có hộp số chung nhớt máy thì không dùng dầu cầu.
+Có, cho hộp số xe máy nằm tách riêng khỏi động cơ (như bộ truyền cuối của xe tay ga) khi nhà sản xuất ghi dầu GL-5. Xe số có hộp số dùng chung dầu với động cơ thì không dùng dầu cầu.
 
 ### Có trộn Spadila GL-5 với dầu cầu hãng khác được không?
-Chỉ nên châm bù khi cùng cấp API và cùng cấp nhớt. Khi thay hẳn, xả hết dầu cũ rồi đổ dầu mới để giữ đúng tính năng.
+Chỉ nên thêm bù khi cùng cấp API và cùng cấp nhớt. Khi thay hẳn, xả hết dầu cũ rồi đổ dầu mới để giữ đúng tính năng.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** 80W-90 và 85W-140, xô 18 L và phuy 200 L. Nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

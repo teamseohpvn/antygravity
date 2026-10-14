@@ -24,7 +24,7 @@ specs:
 stock_status: "dat-hang"
 applications:
   - "Kiểm tra nhanh độ nhớt dầu thủy lực, dầu tuần hoàn ngay cạnh máy"
-  - "Phát hiện dầu bị châm nhầm cấp độ nhớt hoặc lẫn dầu loãng"
+  - "Phát hiện dầu bị đổ nhầm cấp độ nhớt hoặc lẫn dầu loãng"
   - "Kiểm tra độ nhớt sơn, mực in, keo, dung môi trong sản xuất"
 not_for:
   - "Thay cho phép đo độ nhớt động học (mm²/s) theo ASTM D445"
@@ -43,7 +43,7 @@ tom_tat:
 related_posts: ["huong-dan-test-chat-luong-dau"]
 tags: ["thiet-bi-do", "do-nhot", "test-nhanh"]
 date: "2026-10-06"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Máy đo độ nhớt cầm tay LND-1** là một cốc chảy bằng inox có lỗ đáy đường kính 4 mm. Đổ đầy cốc, mở lỗ cho dầu chảy và bấm giờ đến khi dòng chảy đứt. Thời gian chảy (giây) càng dài thì dầu càng đặc. Thiết bị không cần điện, nặng khoảng 2,5 kg, mang ra đặt cạnh máy được.
@@ -73,12 +73,12 @@ LND-1 vốn được thiết kế cho ngành sơn, mực in, keo. Với dầu nh
 Tính độ lệch: (thời gian dầu đang dùng − thời gian dầu mới) ÷ thời gian dầu mới.
 
 - **Lệch ít** (vài phần trăm): độ nhớt dầu còn ổn.
-- **Thời gian dài hơn rõ rệt:** dầu đặc lên, thường do oxy hóa hoặc bị châm dầu cấp cao hơn. Nên đo thêm [trị số axit bằng bộ kit TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
+- **Thời gian dài hơn rõ rệt:** dầu đặc lên, thường do oxy hóa hoặc bị đổ nhầm dầu cấp cao hơn. Nên đo thêm [trị số axit bằng bộ kit TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
 - **Thời gian ngắn hơn rõ rệt:** dầu loãng ra, có thể lẫn dầu cấp thấp hơn, lẫn dung môi hoặc nhiên liệu.
 
-Thời gian chảy không tỉ lệ tuyến tính với độ nhớt, nên phần trăm lệch thời gian chỉ là chỉ báo. Cách đặt ngưỡng cảnh báo cho từng loại dầu có trong bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Thời gian chảy không tỉ lệ tuyến tính với độ nhớt, nên phần trăm lệch thời gian chỉ là chỉ báo. Cách đặt mức cảnh báo cho từng loại dầu có trong bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
-> **Nhận định của HT VINA:** Giữ sẵn một chai dầu mới của lô đang dùng làm mẫu đối chứng, đo cùng lúc với mẫu dầu cũ. Khi cốc cho thấy độ lệch đáng kể, hãy đo lại bằng nhớt kế mao quản ở 40 °C hoặc gửi mẫu phòng thí nghiệm trước khi quyết định thay cả bồn.
+> **Nhận định của HT VINA:** Giữ sẵn một chai dầu mới của lô đang dùng làm mẫu đối chứng, đo cùng lúc với mẫu dầu cũ. Khi cốc cho thấy độ lệch đáng kể, hãy đo lại bằng nhớt kế mao quản ở 40 °C hoặc gửi mẫu phòng thí nghiệm trước khi quyết định thay cả thùng.
 
 ## Câu hỏi thường gặp
 

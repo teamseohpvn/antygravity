@@ -62,7 +62,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Có sẵn cùng nhóm: ENEOS Bonnoc TS 220. HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-100", "iso-vg-150", "iso-vg-220", "iso-vg-320", "cuc-ap", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP Rosia EP** là dầu bánh răng công nghiệp chịu cực áp (EP) do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hộp giảm tốc kín tải nặng. Theo VHP, dầu đáp ứng ISO 12925-1 loại CKC và CKD, DIN 51517-3 CLP, AGMA 9005-F16 EP và AIST 224.
@@ -86,7 +86,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Bốn cấp **nhận đặt theo yêu
 - **Chịu tải nặng, chống tróc rỗ mặt răng.** Phụ gia cực áp giữ màng dầu khi bánh răng ăn khớp dưới tải lớn hoặc tải va đập.
 - **Chỉ số độ nhớt 98–99.** Mức thông thường của dầu bánh răng gốc khoáng.
 - **Tách nước, chống gỉ, chống bọt.** Hộp số ở xưởng ẩm hoặc gần khu rửa vẫn giữ được màng dầu ổn định.
-- **Tương thích gioăng phớt.** Hạn chế rò rỉ ở phớt trục vào, trục ra.
+- **Không làm hỏng gioăng phớt.** Hạn chế rò rỉ ở phớt trục vào, trục ra.
 
 ## Nên chọn cấp độ nhớt nào?
 
@@ -107,25 +107,25 @@ Hai dòng cùng là dầu bánh răng cực áp gốc khoáng và cùng đạt D
 
 ## Khi nào cần thay dầu?
 
-Tùy nhiệt độ dầu, tải và mức nhiễm bẩn của hộp số, nên thay theo kết quả test thay vì theo lịch cố định:
+Tùy nhiệt độ dầu, tải và mức nhiễm bẩn của hộp số, nên thay theo kết quả kiểm tra thay vì theo lịch cố định:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10%. EP 100: ngoài 90–110; EP 150: ngoài 135–165; EP 220: ngoài 198–242; EP 320: ngoài 288–352 mm²/s. Đo bằng [nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5) cỡ ống lớn |
 | Nước | Trên 0,1%, nhất là hộp số đặt ngoài trời hoặc gần nguồn nước làm mát |
 | Mạt kim loại | Bám nhiều ở nút xả từ tính: kiểm tra bánh răng, ổ bi |
 
-Cách test chi tiết xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách kiểm tra chi tiết xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu bánh răng VHP Rosia EP?
-Theo kết quả test, không theo lịch cố định. Bảng ngưỡng theo từng cấp ở mục "Khi nào cần thay dầu?" phía trên.
+Theo kết quả kiểm tra, không theo lịch cố định. Bảng mức cho phép theo từng cấp ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Đổi từ dầu bánh răng hãng khác sang Rosia EP cần lưu ý gì?
 Chọn đúng cấp độ nhớt đang dùng. Nên xả hết dầu cũ, vệ sinh bể dầu rồi mới nạp dầu mới, tránh pha lẫn hai loại dầu khác nhau.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** EP 100 xô 18 L, phuy 200 L; EP 150 xô 18 L; EP 220 xô 18 L, phuy 200 L; EP 320 xô 18 L. Nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

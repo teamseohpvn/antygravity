@@ -27,7 +27,7 @@ applications:
   - "Hộp số, cầu xe cơ giới, máy công trình chịu tải lớn, áp lực cao"
   - "Bộ truyền động bánh răng yêu cầu dầu cực áp API GL-5"
 not_for:
-  - "Hộp số tay có bộ đồng tốc bằng đồng mà sổ tay chỉ cho phép GL-4"
+  - "Hộp số tay có bộ đồng tốc bằng đồng mà hướng dẫn sử dụng chỉ cho phép GL-4"
   - "Hộp số tự động (dùng dầu ATF)"
 warnings:   # TODO TDS: thay bằng cảnh báo trong SDS mục 2 và 7
   - "Tránh để dầu tiếp xúc lâu với da và mắt; dính da thì rửa bằng xà phòng và nước."
@@ -45,7 +45,7 @@ tom_tat:
   - "**Chưa có TDS** của EMI: trang chưa có bảng thông số."
 tags: ["api-gl-5", "sae-85w-140", "sae-80w-90", "emi", "dau-cau"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **EMI Gear EP** là dầu cầu, dầu bánh răng truyền động chịu cực áp đạt cấp **API GL-5**. Kho chúng tôi có hai cấp nhớt: **SAE 85W-140** cho cầu xe tải nặng và **SAE 80W-90** cho cầu, hộp số xe tải vừa và xe cơ giới.
@@ -54,7 +54,7 @@ Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **xô** cho cả 
 
 ## EMI Gear EP GL-5 có hợp với xe của bạn không?
 
-| Sổ tay xe ghi | Dùng EMI Gear EP GL-5 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo xe ghi | Dùng EMI Gear EP GL-5 được không? |
 | :--- | :--- |
 | Cầu hypoid, API GL-5, 85W-140 hoặc 80W-90 | **Được.** |
 | Hộp số, cầu xe cơ giới, máy công trình chịu tải lớn | **Được.** |
@@ -71,7 +71,7 @@ Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của EMI cho mã n�
 | Hợp với | Cầu xe tải nặng, xe ben, máy công trình | Cầu, hộp số xe tải vừa, xe khách, xe cơ giới |
 | Khi lạnh | Chảy chậm hơn | Chảy tốt hơn |
 
-> **Nhận định của HT VINA:** Theo đúng cấp ghi trong sổ tay xe. Cầu đã mòn, kêu hú, thợ hay đổi lên 85W-140 để màng dầu dày hơn; đây chỉ là giải pháp tạm, cần kiểm tra bánh răng và phớt.
+> **Nhận định của HT VINA:** Theo đúng cấp ghi trong hướng dẫn sử dụng của xe. Cầu đã mòn, kêu hú, thợ hay đổi lên 85W-140 để màng dầu dày hơn; đây chỉ là giải pháp tạm, cần kiểm tra bánh răng và phớt.
 
 ## EMI Gear EP hay Shell Spirax S2 A?
 
@@ -86,25 +86,25 @@ Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của EMI cho mã n�
 
 ## Khi nào cần thay dầu?
 
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) |
-| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 | Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
 
-Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị đổ lẫn. Xem thêm [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu EMI Gear EP GL-5?
-Theo mốc km hoặc giờ máy trong sổ tay xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Dùng dầu GL-5 cho hộp số yêu cầu GL-4 được không?
-Không nên nếu sổ tay chỉ cho phép GL-4. Một số dầu GL-5 có lượng phụ gia EP cao, có thể ảnh hưởng tới bộ đồng tốc bằng đồng. Dùng đúng cấp sổ tay ghi.
+Không nên nếu hướng dẫn sử dụng chỉ cho phép GL-4. Một số dầu GL-5 có lượng phụ gia EP cao, có thể ảnh hưởng tới bộ đồng tốc bằng đồng. Dùng đúng cấp hướng dẫn sử dụng ghi.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** 85W-140 xô; 80W-90 xô 18 L.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.

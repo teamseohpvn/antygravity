@@ -148,9 +148,9 @@ Chúng tôi sẽ hướng dẫn các bạn cách phân biệt nhanh bằng trự
 | :--- | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (lệch quá ±10% so với 68 mm²/s) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
-| Nước | Trên 0,05% (500 ppm) | Xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,05% (500 ppm) | Xem [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
-Cách lấy mẫu, đọc kết quả và các dấu hiệu dầu kém chất lượng được trình bày đầy đủ trong bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách lấy mẫu, đọc kết quả và các dấu hiệu dầu kém chất lượng được trình bày đầy đủ trong bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
@@ -162,7 +162,7 @@ Về nguyên tắc, nên thay toàn bộ chứ không thêm lẫn dầu khác.
 Nếu bắt buộc phải thêm dầu thì chỉ trộn với dầu cùng loại HM/HLP cấp 68, rồi theo dõi bọt và độ trong của dầu sau vài ngày chạy. Đừng trộn dầu có kẽm như Hyspin AWS với dầu thủy lực không kẽm, vì hai hệ phụ gia khác nhau có thể tạo cặn và bọt.
 
 ### Bao lâu thì thay dầu thủy lực Castrol Hyspin AWS?
-Tuy rằng nhà sản xuất có đưa ra một thời gian khuyến nghị thời gian thay dầu, tuy nhiên chúng tôi cho rằng việc thay dầu phải dựa trên công việc mà máy móc và thiết bị của các bạn hoạt động. Trong môi trường tải nặng, nhẹ, nhiệt độ ra sao? Lấy một ví dụ dễ hiểu, cùng là Castrol Hyspin AWS, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả kiểm tra dầu đang dùng so với dầu mới, với các mức ở mục "Khi nào cần thay dầu?" phía trên. Chu kỳ kiểm tra và bảng quyết định thay dầu xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Tuy rằng nhà sản xuất có đưa ra một thời gian khuyến nghị thời gian thay dầu, tuy nhiên chúng tôi cho rằng việc thay dầu phải dựa trên công việc mà máy móc và thiết bị của các bạn hoạt động. Trong môi trường tải nặng, nhẹ, nhiệt độ ra sao? Lấy một ví dụ dễ hiểu, cùng là Castrol Hyspin AWS, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả kiểm tra dầu đang dùng so với dầu mới, với các mức ở mục "Khi nào cần thay dầu?" phía trên. Chu kỳ kiểm tra và bảng quyết định thay dầu xem bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ### Dầu có dùng cho bơm Denison không?
 Có, dòng Hyspin AWS được Parker Denison chấp thuận cho dùng theo các cấp HF-0, HF-1 và HF-2, nên bơm Denison dùng được dầu này ở cấp độ nhớt phù hợp.

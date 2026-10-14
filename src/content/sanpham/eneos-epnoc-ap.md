@@ -62,7 +62,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026."
 tags: ["nlgi-0", "nlgi-1", "nlgi-2", "mo-lithium", "chiu-cuc-ap", "eneos"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **ENEOS Epnoc Grease AP(N)** là mỡ đa dụng chịu cực áp (EP) gốc lithium của ENEOS Nhật Bản. Mỡ màu nâu nhạt, ít mùi, không chứa chì. Mỡ dùng dầu gốc khoáng tinh chế cao và phụ gia chống oxy hóa, chống gỉ. Dòng này có bốn cấp NLGI 0, 1, 2, 3. Cấp 0 và 1 đặc biệt hợp với hệ thống bơm mỡ tập trung.
@@ -97,7 +97,7 @@ Mã này **nhận đặt theo yêu cầu**, đóng can, có CO/CQ và hóa đơn
 | 2 | 276 | 200 °C | Ổ bi, ổ trượt, chốt; bơm bằng súng mỡ |
 | 3 | 232 | 203 °C | Ổ bi lớn, chỗ rung hoặc dễ chảy mỡ |
 
-> **Nhận định của HT VINA:** Luôn ưu tiên cấp NLGI ghi trong sổ tay hệ bơm mỡ. Cấp 0 khá mềm và mất nhiều khi gặp nước (23% rửa trôi), nên chỉ dùng trong hệ kín; điểm bôi trơn hở, hay dính nước thì dùng cấp 2.
+> **Nhận định của HT VINA:** Luôn ưu tiên cấp NLGI ghi trong hướng dẫn sử dụng hệ bơm mỡ. Cấp 0 khá mềm và mất nhiều khi gặp nước (23% rửa trôi), nên chỉ dùng trong hệ kín; điểm bôi trơn hở, hay dính nước thì dùng cấp 2.
 
 ## Epnoc AP(N) hay mỡ lithium có sẵn tại kho?
 
@@ -112,7 +112,7 @@ Mã này **nhận đặt theo yêu cầu**, đóng can, có CO/CQ và hóa đơn
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
-Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
 
 | Dấu hiệu | Nên làm |
 | :--- | :--- |
@@ -131,7 +131,7 @@ Không hẳn. Điểm nhỏ giọt khoảng 200 °C và nhiệt độ làm việ
 ### Cấp 0 có dùng cho súng bơm mỡ tay được không?
 Được, nhưng cấp 0 khá mềm và dễ chảy khỏi ổ bi hở. Cấp 0 hợp nhất với hệ bơm mỡ tập trung. Ổ bi tra mỡ bằng súng tay thường dùng cấp 2.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** can, cấp 0, 1, 2, 3. Nhận đặt theo yêu cầu; báo rõ cấp NLGI khi đặt.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

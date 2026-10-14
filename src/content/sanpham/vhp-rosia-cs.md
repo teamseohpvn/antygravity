@@ -57,7 +57,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-46", "dau-tuan-hoan", "chong-gi", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP Rosia CS 46** là dầu bôi trơn tuần hoàn chống oxy hóa, chống gỉ do nhà máy VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu đạt DIN 51517-1 loại C và DIN 51517-2 loại CL. Đây là loại dầu không có phụ gia cực áp (EP), dùng cho hệ tuần hoàn, ổ đỡ và hộp số tải nhẹ.
@@ -66,7 +66,7 @@ Cấp **46** dạng phuy 200 L **nhận đặt theo yêu cầu**. HT VINA là đ
 
 ## Rosia CS 46 có hợp với máy của bạn không?
 
-| Sổ tay máy ghi | Dùng Rosia CS 46 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo máy ghi | Dùng Rosia CS 46 được không? |
 | :--- | :--- |
 | Dầu loại C, CL (DIN 51517) cấp 46; dầu tuần hoàn không EP | **Được.** |
 | Hệ bôi trơn tuần hoàn, ổ đỡ, hộp số tải nhẹ | **Được.** |
@@ -91,32 +91,32 @@ Cấp **46** dạng phuy 200 L **nhận đặt theo yêu cầu**. HT VINA là đ
 | Thử oxy hóa TOST | 1.500+ giờ | Theo từng mã |
 | Hợp nhất với | Hệ tuần hoàn, ổ đỡ, hộp số tải nhẹ | Bơm thủy lực áp trung bình và cao |
 
-> **Nhận định của HT VINA:** Chọn Rosia CS 46 khi sổ tay máy ghi dầu loại C/CL hoặc dầu tuần hoàn không EP cấp 46. Không thấy chữ C, CL trong sổ tay mà chỉ ghi "dầu 46" thì hỏi lại: máy có bơm thủy lực áp cao phải dùng dầu AW.
+> **Nhận định của HT VINA:** Chọn Rosia CS 46 khi hướng dẫn sử dụng của máy ghi dầu loại C/CL hoặc dầu tuần hoàn không EP cấp 46. Không thấy chữ C, CL trong hướng dẫn sử dụng mà chỉ ghi "dầu 46" thì hỏi lại: máy có bơm thủy lực áp cao phải dùng dầu AW.
 
 ## Khi nào cần thay dầu?
 
-Trong hệ tuần hoàn, nên thay theo kết quả test:
+Trong hệ tuần hoàn, nên thay theo kết quả kiểm tra:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 41,4–50,6 mm²/s (lệch quá ±10% so với 46 mm²/s). Đo bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo ASTM D6224). Đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
-| Nước | Trên 0,05%, hoặc dầu đục. Xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,05%, hoặc dầu đục. Xem [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
-Cách đo xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách đo xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu VHP Rosia CS 46?
-Theo kết quả test trong hệ tuần hoàn, không theo lịch cố định. Khi dùng cho băng trượt kiểu mất dầu thì chỉ châm bổ sung và kiểm tra nước ở đáy bồn. Bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
+Theo kết quả kiểm tra trong hệ tuần hoàn, không theo lịch cố định. Khi dùng cho băng trượt kiểu mất dầu thì chỉ thêm dầu bổ sung và kiểm tra nước ở đáy thùng. Bảng mức cho phép ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Rosia CS 46 có dùng làm dầu thủy lực được không?
-VHP xếp Rosia CS vào nhóm dầu tuần hoàn, không phải dầu thủy lực chống mài mòn. Với bơm áp cao, hãy chọn dầu thủy lực AW. Nếu không chắc máy cần loại nào, hãy [liên hệ](/contact) để được tư vấn theo sổ tay máy.
+VHP xếp Rosia CS vào nhóm dầu tuần hoàn, không phải dầu thủy lực chống mài mòn. Với bơm áp cao, hãy chọn dầu thủy lực AW. Nếu không chắc máy cần loại nào, hãy [liên hệ](/contact) để được tư vấn theo hướng dẫn sử dụng của máy.
 
 ### Rosia CS có những cấp nào?
 VHP sản xuất Rosia CS từ cấp 10 đến 220. Cấp khác vui lòng liên hệ để đặt hàng.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** cấp 46 phuy 200 L, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

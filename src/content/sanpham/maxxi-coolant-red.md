@@ -43,7 +43,7 @@ tom_tat:
   - "**Có sẵn can 5 L**. Chưa có TDS của Maxxi: trang chưa có bảng thông số."
 tags: ["nuoc-lam-mat", "maxxi"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Maxxi Coolant Red** là nước làm mát (dung dịch làm mát) động cơ màu đỏ, đóng **can 5 L**. Sản phẩm giúp giải nhiệt động cơ, chống sôi nước làm mát, chống gỉ và chống ăn mòn két nước.
@@ -56,8 +56,8 @@ Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ), có hóa đơn VA
 | :--- | :--- |
 | Hệ làm mát động cơ ô tô, xe tải, xe khách | **Được.** |
 | Máy phát điện, máy công trình làm mát bằng nước | **Được.** |
-| Xe đang dùng nước làm mát màu khác (xanh, hồng, vàng) | Xả sạch hệ thống trước khi đổ, không châm lẫn. |
-| Sổ tay xe yêu cầu nước làm mát riêng của hãng | Theo đúng sổ tay xe. |
+| Xe đang dùng nước làm mát màu khác (xanh, hồng, vàng) | Xả sạch hệ thống trước khi đổ, không đổ lẫn. |
+| Tài liệu hướng dẫn sử dụng kèm theo xe yêu cầu nước làm mát riêng của hãng | Theo đúng hướng dẫn sử dụng của xe. |
 
 Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của Maxxi cho mã này, nên trang chưa ghi gốc hóa chất (glycol, OAT…) và tỷ lệ pha.
 
@@ -87,7 +87,7 @@ Theo khuyến cáo của nhà sản xuất xe, thường 2 năm hoặc 40.000 km
 ### Mua số lượng lớn có giá sỉ không?
 Có. Gửi số lượng qua trang [báo giá](/bao-gia?sp=Maxxi%20Coolant%20Red).
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** can 5 L.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.
