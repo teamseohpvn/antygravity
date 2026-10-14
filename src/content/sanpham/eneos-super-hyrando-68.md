@@ -238,6 +238,8 @@ Thùng (xô) 18 lít hiện nhận đặt theo yêu cầu, và tính theo lít t
 
 Việc cân nhắc thùng hay phuy còn phụ thuộc vào thời gian sử dụng của bạn, nếu bạn đặt hàng một phuy tuy nhiên mỗi tháng tiêu hao dùng vài chục lít dầu. Chưa chắc đã tiết kiệm, với giá dầu lên xuống mạnh như thời gian gần đây. Có thể vài tháng sau các bạn đã có một mức giá dễ thở hơn rất nhiều.
 
+Dầu gốc chiếm phần lớn thành phần của dầu thủy lực, nên giá dầu gốc thế giới kéo theo giá dầu thành phẩm. Theo số liệu của ICIS mà [Lyden Oil tổng hợp trong bản tin thị trường tháng 5/2026](https://lydenoil.com/may-update), tính từ đầu năm 2026, giá niêm yết dầu gốc nhóm I tại vùng Vịnh Mỹ (FOB) đã tăng 50,6–73,3% và nhóm II tăng 38,7–47,0% (số liệu đến 20/05/2026). Riêng giá giao ngay dầu gốc nhóm III tăng 222,6–251,0% (số liệu đến 09/06/2026). Đây là giá dầu gốc ở thị trường Mỹ, không phải giá bán dầu thủy lực tại Việt Nam, nhưng đủ cho thấy giá nguyên liệu đầu vào đã biến động mạnh đến mức nào.
+
 ## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** phuy 200 L cấp 68 (mã kho AW2). Cấp 46 và bản SE 68 nhận đặt theo yêu cầu.
