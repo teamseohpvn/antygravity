@@ -60,7 +60,7 @@ tom_tat:
   - "**Có sẵn phuy 180 kg** tại kho Hải Phòng."
 tags: ["nlgi-3", "mo-canxi", "mo-da-dung", "calix"]
 date: "2026-10-06"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Calix Ceno No3** là mỡ nhờn công nghiệp đa dụng mang thương hiệu Calix, do Công ty TNHH SXTM La Thu So nhập khẩu và phân phối. Mỡ pha từ dầu khoáng tinh luyện, chất làm đặc canxi tổng hợp, phụ gia chống oxy hóa và chống gỉ. Bảng chỉ tiêu của hãng theo các phương pháp thử GOST.
@@ -102,7 +102,7 @@ Hai mã cùng có sẵn tại kho, cùng cấp đặc No3:
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
-Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
 
 | Dấu hiệu | Nên làm |
 | :--- | :--- |
@@ -121,7 +121,7 @@ Không. Dù nằm trong nhóm "mỡ chịu nhiệt vừa" trên web hãng, nhi�
 ### Có dùng Ceno No3 cho vòng bi động cơ điện được không?
 Không nên. Vòng bi động cơ điện quay nhanh và nóng hơn mức làm việc của mỡ canxi. Nên dùng mỡ lithium NLGI 2 hoặc 3.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** phuy 180 kg.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.

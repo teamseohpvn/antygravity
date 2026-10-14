@@ -39,20 +39,20 @@ images:
   - { src: "/images/san-pham/eneos-mc-sj-20w-40-mb-chai.webp", alt: "Chai dầu nhớt xe tay ga ENEOS MC SJ MB 20W-40" }
   - { src: "/images/san-pham/eneos-mc-sj-20w-40-nhan.webp", alt: "Nhãn chai ENEOS MC ghi cấp API SJ, JASO và SAE 20W-40" }
 
-doc_gia: "Trang này dành cho cửa hàng, gara và đội xe máy của nhà máy cần nhớt xe máy 4 thì 20W-40, chọn đúng loại MA hay MB."
+doc_gia: "Trang này dành cho cửa hàng, gara và đội xe máy của nhà máy cần dầu xe máy 4 thì 20W-40, chọn đúng loại MA hay MB."
 tom_tat:
   - "**MA** cho xe số, xe côn tay (ly hợp ướt); **MB** cho xe tay ga (ly hợp khô)."
   - "**Đổ MB vào xe số dễ trượt côn**: xe yếu, mòn bố ly hợp nhanh."
-  - "**20W-40** hợp xe đã chạy nhiều, khí hậu nóng, chở nặng; xe đời mới ghi 10W-30 hoặc API SL, SN thì theo sổ tay."
+  - "**20W-40** hợp xe đã chạy nhiều, khí hậu nóng, chở nặng; xe đời mới ghi 10W-30 hoặc API SL, SN thì theo hướng dẫn sử dụng."
   - "**Có sẵn theo chai**. Chưa có TDS của ENEOS: trang chưa có bảng thông số."
 tags: ["sae-20w-40", "api-sj", "xe-may", "eneos"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **ENEOS MC SJ 20W-40** là dầu nhớt xe máy 4 thì của ENEOS, độ nhớt **SAE 20W-40**, cấp **API SJ**. Dòng này có hai loại cần chọn đúng theo xe:
 
-- **MA**: cho **xe số, xe côn tay** (ly hợp ướt ngâm trong nhớt).
+- **MA**: cho **xe số, xe côn tay** (ly hợp ướt ngâm trong dầu).
 - **MB**: cho **xe tay ga** (ly hợp khô, truyền động vô cấp).
 
 Hàng có sẵn theo **chai** tại kho TP Hải Phòng (Hải Dương cũ), có hóa đơn VAT.
@@ -64,34 +64,34 @@ Hàng có sẵn theo **chai** tại kho TP Hải Phòng (Hải Dương cũ), có
 | Xe số, xe côn tay 4 thì | **MA** |
 | Xe tay ga 4 thì | **MB** |
 | Xe đã chạy nhiều, chở nặng, khí hậu nóng | **Được**, cấp 20W-40 hợp. |
-| Xe đời mới, sổ tay ghi 10W-30 hoặc API SL, SN trở lên | Theo đúng sổ tay xe. |
+| Xe đời mới, hướng dẫn sử dụng ghi 10W-30 hoặc API SL, SN trở lên | Theo đúng tài liệu hướng dẫn sử dụng kèm theo xe. |
 | Xe 2 thì | Không. |
 
 Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của ENEOS cho mã này, nên trang chưa có bảng chỉ tiêu.
 
 ## Vì sao phải chọn đúng MA hay MB?
 
-Xe số có ly hợp ngâm trong nhớt. Nhớt MA giữ đủ ma sát để ly hợp không trượt. Nhớt MB có đặc tính ma sát thấp hơn, hợp xe tay ga vì ly hợp không ngâm trong nhớt. **Đổ MB vào xe số dễ làm trượt côn**, xe yếu và mòn bố ly hợp nhanh.
+Xe số có ly hợp ngâm trong dầu. Dầu MA giữ đủ ma sát để ly hợp không trượt. Nhớt MB có đặc tính ma sát thấp hơn, hợp xe tay ga vì ly hợp không ngâm trong dầu. **Đổ MB vào xe số dễ làm trượt côn**, xe yếu và mòn bố ly hợp nhanh.
 
 > **Nhận định của HT VINA:** Cửa hàng, gara nên xếp chai MA và MB ở hai kệ riêng, dán nhãn "xe số" và "xe ga" to, để thợ không lấy nhầm khi khách đông.
 
 ## SAE 20W-40 hay 10W-30, 10W-40?
 
-Cấp 20W-40 đặc hơn 10W-30, 10W-40, hợp với xe đã chạy nhiều, khí hậu nóng và xe chở nặng. Xe đời mới có sổ tay ghi 10W-30 hoặc cấp API cao hơn (SL, SN) thì nên theo sổ tay.
+Cấp 20W-40 đặc hơn 10W-30, 10W-40, hợp với xe đã chạy nhiều, khí hậu nóng và xe chở nặng. Xe đời mới có hướng dẫn sử dụng ghi 10W-30 hoặc cấp API cao hơn (SL, SN) thì nên theo hướng dẫn sử dụng.
 
-## Khi nào cần thay nhớt?
+## Khi nào cần thay dầu?
 
 Thường 1.000–2.000 km tùy xe và điều kiện đi. Xe chạy đường bụi, chở nặng, đi ngắn liên tục nên thay sớm hơn. Nhớt đen nhanh, máy nóng, tiếng máy to hơn là dấu hiệu nên thay sớm.
 
 ## Câu hỏi thường gặp
 
-### Bao lâu thay nhớt xe máy?
-Thường 1.000–2.000 km tùy xe và điều kiện đi. Chi tiết ở mục "Khi nào cần thay nhớt?" phía trên.
+### Bao lâu thay dầu xe máy?
+Thường 1.000–2.000 km tùy xe và điều kiện đi. Chi tiết ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Mua số lượng lớn cho cửa hàng có giá sỉ không?
 Có. Gửi số lượng và loại (MA, MB) qua trang [báo giá](/bao-gia?sp=ENEOS%20MC%20SJ%2020W-40).
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** chai, loại MA và MB. Dung tích chai xác nhận khi báo giá.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.

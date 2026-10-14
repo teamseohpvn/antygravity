@@ -58,7 +58,7 @@ equivalents: ["[Shell Tellus S2 MX 68]", "[Castrol Hyspin AWS 68]"]
 # --- Sử dụng & an toàn ---
 applications:
   - "[Máy ép nhựa, máy ép thủy lực chạy liên tục]"
-  - "[Bơm bánh răng, bơm cánh gạt, bơm piston]"
+  - "[Bơm bánh răng, bơm cánh gạt, bơm pít-tông]"
 not_for:
   - "[Bơm có chi tiết mạ bạc (cần dầu không kẽm)]"
 warnings:                         # Lấy từ SDS mục 2 và 7
@@ -82,9 +82,9 @@ images:
   - { src: "/images/san-pham/[slug]-nhan.webp", alt: "[Nhãn sau xô ENEOS Super Hyrando 68 ghi tiêu chuẩn và cấp độ nhớt]" }
 
 # --- Đầu trang (hiện ngay dưới tiêu đề) ---
-doc_gia: "[Trang này dành cho ai: một câu, vd kỹ thuật viên và người mua hàng cần đối chiếu sổ tay máy trước khi chọn mã]"
+doc_gia: "[Trang này dành cho ai: một câu, vd kỹ thuật viên và người mua hàng cần đối chiếu tài liệu hướng dẫn sử dụng kèm theo máy trước khi chọn mã]"
 tom_tat:                          # 3–5 ý, **đậm** được. Thứ tự: dùng được cho / không dùng khi / quy cách có sẵn / thay dầu theo
-  - "**Dùng được** cho [máy, loại dầu sổ tay ghi]."
+  - "**Dùng được** cho [máy, loại dầu hướng dẫn sử dụng ghi]."
   - "**Không dùng** khi [trường hợp], chọn [mã khác]."
   - "**Có sẵn** [quy cách] tại kho Hải Phòng; [quy cách khác] nhận đặt."
   - "**Thay dầu theo kết quả đo**. Ngưỡng ở mục \"Khi nào cần thay dầu?\"."
@@ -108,7 +108,7 @@ updated: "2026-10-03"
 
 ## [Tên mã] có hợp với máy của bạn không?
 
-| Sổ tay máy ghi | Dùng [tên mã] được không? |
+| Hướng dẫn sử dụng của máy ghi | Dùng [tên mã] được không? |
 | :--- | :--- |
 | [ISO VG 68, HM, HLP 68…] | **Được.** |
 | [Trường hợp không dùng] | Không. Chọn [mã khác](/[danh-muc]/[slug]). |
@@ -133,11 +133,11 @@ updated: "2026-10-03"
 
 ## Khi nào cần thay dầu?
 
-| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| Chỉ tiêu | Mức nên thay dầu | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
 | Độ nhớt ở 40 °C | [Ngoài khoảng ±10% so với TDS] | [Máy đo độ nhớt LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (ASTM D6224) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
-| Nước | [Trên 0,05%] | [Test nước tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | [Trên 0,05%] | [Kiểm tra nước tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
 ## Câu hỏi thường gặp
 
@@ -147,7 +147,7 @@ updated: "2026-10-03"
 ### [Câu hỏi 2 – vd: Có trộn với dầu hãng khác được không?]
 [Trả lời 2–3 câu.]
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** [quy cách]. [Quy cách khác] nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

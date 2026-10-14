@@ -64,7 +64,7 @@ tom_tat:
   - "**Có sẵn can 18 L** cấp 32; cấp 46, 68 nhận đặt."
 tags: ["iso-vg-32", "may-nen-khi-truc-vit", "eneos"]
 date: "2026-10-06"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **ENEOS Faircol RA 32** là dầu cho máy nén khí kiểu quay: trục vít, cánh gạt và xoắn ốc. Dầu pha từ dầu gốc hydrocracked tinh chế cao cùng phụ gia chọn lọc, giữ dầu bền oxy hóa và ít tạo cặn khi máy chạy tải cao, nhiệt độ cao. Faircol RA dùng được cho máy đặt trong xưởng lẫn ngoài trời.
@@ -73,7 +73,7 @@ Hàng có sẵn cấp **ISO VG 32**, đóng **can 18 L**, kèm CO/CQ và hóa đ
 
 ## Faircol RA 32 có hợp với máy nén khí của bạn không?
 
-| Sổ tay máy ghi | Dùng Faircol RA 32 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo máy ghi | Dùng Faircol RA 32 được không? |
 | :--- | :--- |
 | Máy nén trục vít, cánh gạt, xoắn ốc; dầu ISO VG 32 | **Được.** |
 | Máy đặt ngoài trời, khởi động sáng sớm mùa đông | **Được.** Chỉ số độ nhớt 131. |
@@ -84,7 +84,7 @@ Hàng có sẵn cấp **ISO VG 32**, đóng **can 18 L**, kèm CO/CQ và hóa đ
 
 [Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS của ENEOS.
 
-- **Ít cặn bùn.** Theo ENEOS, dầu có tuổi thọ oxy hóa dài hơn dầu thông thường trong nhiều phép thử nhiệt độ cao. Khi đại tu, két làm mát ít cặn, van và bộ tách dầu ít bị nghẹt.
+- **Ít cặn bùn.** Theo ENEOS, dầu có tuổi thọ oxy hóa dài hơn dầu thông thường trong nhiều phép thử nhiệt độ cao. Khi đại tu, két làm mát ít cặn, van và bộ tách dầu ít bị tắc.
 - **Khởi động nhẹ khi trời lạnh.** Chỉ số độ nhớt 131, độ nhớt thay đổi ít theo nhiệt độ.
 - **Xả nước ngưng dễ.** Tách nước trong 5 phút ở 54 °C, hạn chế dầu bị nhũ hóa và dầu chảy theo đường xả nước.
 - **Trị số axit dầu mới 0,04 mg KOH/g.** Mốc thấp giúp nhận ra sớm khi dầu bắt đầu oxy hóa.
@@ -104,20 +104,20 @@ Hàng có sẵn cấp **ISO VG 32**, đóng **can 18 L**, kèm CO/CQ và hóa đ
 
 ## Khi nào cần thay dầu?
 
-Theo mốc giờ chạy của hãng máy nén, nhưng nên điều chỉnh theo kết quả test. Dầu máy nén khí trục vít làm việc ở nhiệt độ xả cao nên bị oxy hóa nhanh, và **trị số axit** là chỉ tiêu báo sớm nhất.
+Theo mốc giờ chạy của hãng máy nén, nhưng nên điều chỉnh theo kết quả kiểm tra. Dầu máy nén khí trục vít làm việc ở nhiệt độ xả cao nên bị oxy hóa nhanh, và **trị số axit** là chỉ tiêu báo sớm nhất.
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo ASTM D6224). Đo tại chỗ bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
 | Độ nhớt ở 40 °C | Ngoài khoảng 29,5–36 mm²/s (lệch quá ±10% so với 32,8 mm²/s theo TDS) |
 | Nước ngưng | Nhiều nước ở đáy bình tách: kiểm tra nhiệt độ làm việc, van xả |
 
-Khi thay dầu, thay luôn lọc dầu và lọc tách. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Khi thay dầu, thay luôn lọc dầu và lọc tách. Cách kiểm tra xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu máy nén khí ENEOS Faircol RA 32?
-Theo mốc giờ chạy của hãng máy nén, điều chỉnh theo trị số axit. Bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc giờ chạy của hãng máy nén, điều chỉnh theo trị số axit. Bảng mức cho phép ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Máy nén khí của tôi ghi dầu VG 46, dùng Faircol RA 32 được không?
 Không nên. Hãy dùng đúng cấp độ nhớt nhà sản xuất máy quy định. ENEOS có Faircol RA 46 và 68, nhưng hiện kho chúng tôi chỉ có sẵn cấp 32. Cần cấp khác, vui lòng [liên hệ](/contact) để đặt hàng.
@@ -128,7 +128,7 @@ Không. Đây là hiện tượng ENEOS đã ghi trong tài liệu kỹ thuật,
 ### Có trộn với dầu đang dùng trong máy được không?
 Không nên trộn với dầu hãng khác. Khi đổi dầu, nên xả hết dầu cũ, thay lọc dầu và lõi tách dầu theo hướng dẫn của nhà sản xuất máy.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** cấp 32 can 18 L. Cấp 46, 68 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

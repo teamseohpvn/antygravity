@@ -38,7 +38,7 @@ not_for:
   - "Hộp số, hộp giảm tốc tải nặng (dùng dầu bánh răng cực áp)"
 warnings:
   - "Tránh để dầu tiếp xúc lâu với da và mắt; dính mắt thì rửa bằng nhiều nước sạch."
-  - "Đeo găng tay khi châm dầu. Không ăn uống, hút thuốc khi thao tác."
+  - "Đeo găng tay khi thêm dầu. Không ăn uống, hút thuốc khi thao tác."
   - "Thu gom dầu thải và giẻ thấm dầu theo quy định, không đổ ra cống rãnh."
 storage: "Để nơi khô ráo, thoáng mát, tránh nắng trực tiếp. Can đã mở phải đậy kín nắp."
 
@@ -54,7 +54,7 @@ tom_tat:
   - "**Có sẵn can 20 L**; cấp 32M, 46M, 100M, 220M nhận đặt."
 tags: ["iso-vg-68", "ranh-truot", "may-cong-cu", "shl"]
 date: "2026-10-06"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **SHL Synthway 68M** là dầu bôi trơn rãnh trượt (băng trượt) cho máy công cụ, thuộc dòng dầu rãnh trượt thông thường của SHL, thương hiệu dầu nhờn Hàn Quốc. Dòng sản phẩm được SHL ASEAN sản xuất tại KCN Mỹ Xuân, Việt Nam. Dầu có cấp **ISO VG 68**, chỉ số độ nhớt 105, được hãng đánh giá tốt ở khả năng chống gỉ và chống ăn mòn.
@@ -63,7 +63,7 @@ Hàng có sẵn **can 20 L**, kèm CO/CQ và hóa đơn VAT, giao từ kho tại
 
 ## Synthway 68M có hợp với máy của bạn không?
 
-| Sổ tay máy ghi | Dùng Synthway 68M được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo máy ghi | Dùng Synthway 68M được không? |
 | :--- | :--- |
 | Dầu rãnh trượt ISO VG 68 (G 68, CGLP 68) | **Được.** |
 | Băng trượt ngang máy tiện, máy phay cỡ vừa | **Được.** |
@@ -90,34 +90,34 @@ Hàng có sẵn **can 20 L**, kèm CO/CQ và hóa đơn VAT, giao từ kho tại
 | Synthway 100M | 100 cSt | 100 | > 240 °C |
 | Synthway 220M | 220 cSt | 101 | > 260 °C |
 
-> **Nhận định của HT VINA:** Cấp 68 phổ biến cho băng trượt ngang của máy tiện, máy phay cỡ vừa. Luôn ưu tiên cấp ghi trong sổ tay máy; dầu rãnh trượt quá loãng làm bàn máy trượt giật ở tốc độ chậm.
+> **Nhận định của HT VINA:** Cấp 68 phổ biến cho băng trượt ngang của máy tiện, máy phay cỡ vừa. Luôn ưu tiên cấp ghi trong hướng dẫn sử dụng của máy; dầu rãnh trượt quá loãng làm bàn máy trượt giật ở tốc độ chậm.
 
 ## Dầu rãnh trượt hay dầu thủy lực 68?
 
 Dầu rãnh trượt được pha chế riêng cho bề mặt trượt chịu tải và chuyển động chậm, có phụ gia bám dính và chống trượt giật. Dầu thủy lực không thiết kế cho mục đích này.
 
-> **Nhận định của HT VINA:** Máy có hệ thủy lực và băng trượt dùng chung một bồn dầu thì theo đúng loại dầu sổ tay ghi (thường là dầu đa dụng như [ENEOS Super Mulpus DX](/dau-thuy-luc/eneos-super-mulpus-dx)). Máy có bồn riêng thì dùng dầu rãnh trượt cho băng trượt, dầu thủy lực cho hệ thủy lực.
+> **Nhận định của HT VINA:** Máy có hệ thủy lực và băng trượt dùng chung một thùng dầu thì theo đúng loại dầu hướng dẫn sử dụng ghi (thường là dầu đa dụng như [ENEOS Super Mulpus DX](/dau-thuy-luc/eneos-super-mulpus-dx)). Máy có thùng riêng thì dùng dầu rãnh trượt cho băng trượt, dầu thủy lực cho hệ thủy lực.
 
 ## Khi nào cần thay dầu?
 
-Dầu rãnh trượt bôi trơn kiểu mất dầu: dầu bơm lên băng trượt rồi trôi theo phoi, nên chỉ cần châm bổ sung, không xả cả bồn định kỳ. Việc cần kiểm tra là bồn chứa có bị nước làm mát hoặc dầu cắt gọt lọt vào không:
+Dầu rãnh trượt bôi trơn kiểu mất dầu: dầu bơm lên băng trượt rồi trôi theo phoi, nên chỉ cần thêm dầu bổ sung, không xả cả thùng định kỳ. Việc cần kiểm tra là thùng chứa có bị nước làm mát hoặc dầu cắt gọt lọt vào không:
 
 | Dấu hiệu | Nên làm |
 | :--- | :--- |
-| Nước ở đáy bồn | Quét kem thử nước xuống đáy bồn, xem [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
-| Dầu đục, loãng bất thường | Độ nhớt ngoài 61,2–74,8 mm²/s (lệch quá ±10% so với 68 mm²/s): xả bồn, vệ sinh, nạp dầu mới |
+| Nước ở đáy thùng | Quét kem thử nước xuống đáy thùng, xem [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Dầu đục, loãng bất thường | Độ nhớt ngoài 61,2–74,8 mm²/s (lệch quá ±10% so với 68 mm²/s): xả thùng, vệ sinh, nạp dầu mới |
 
-Cách đo độ nhớt xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách đo độ nhớt xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Dầu rãnh trượt SHL Synthway 68M có phải thay định kỳ không?
-Không theo kiểu xả cả bồn như dầu thủy lực, chỉ châm bổ sung và kiểm tra bồn chứa. Chi tiết ở mục "Khi nào cần thay dầu?" phía trên.
+Không theo kiểu xả cả thùng như dầu thủy lực, chỉ thêm dầu bổ sung và kiểm tra thùng chứa. Chi tiết ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Synthway 68M khác Synthway 68HM thế nào?
 Theo SHL, 68HM thuộc nhóm dầu rãnh trượt bám dính cao, chỉ số độ nhớt trên 120. Bản 68M là dòng thông thường. Kho chúng tôi hiện có bản 68M.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** can 20 L cấp 68M. Cấp khác vui lòng [liên hệ](/contact).
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

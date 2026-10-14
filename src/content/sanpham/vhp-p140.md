@@ -37,15 +37,15 @@ images:
   - { src: "/images/san-pham/vhp-p140-xo-18l.webp", alt: "Xô 18 lít dầu cầu VHP P140 tại kho Hải Phòng" }
   - { src: "/images/san-pham/vhp-p140-nhan.webp", alt: "Nhãn xô dầu cầu VHP P140 ghi cấp SAE 140" }
 
-doc_gia: "Trang này dành cho chủ xe tải nặng, máy kéo, máy nông nghiệp có sổ tay ghi dầu cầu SAE 140 đơn cấp."
+doc_gia: "Trang này dành cho chủ xe tải nặng, máy kéo, máy nông nghiệp có hướng dẫn sử dụng ghi dầu cầu SAE 140 đơn cấp."
 tom_tat:
   - "**Dùng được** cho hộp số sàn, vi sai, cầu xe tải chịu tải nặng, máy kéo ghi SAE 140."
-  - "**Đơn cấp 140 đặc khi lạnh**: xe chạy mùa đông vùng núi, hoặc sổ tay ghi đa cấp, thì chọn 85W-140."
+  - "**Đơn cấp 140 đặc khi lạnh**: xe chạy mùa đông vùng núi, hoặc hướng dẫn sử dụng ghi đa cấp, thì chọn 85W-140."
   - "**Có sẵn xô 18 L**. HT VINA là đại lý dầu mỡ VHP."
   - "**Chưa có TDS** của VHP: trang chưa ghi cấp API (GL-4 hay GL-5); hỏi trước khi dùng cho hộp số có đồng tốc."
 tags: ["sae-140", "dau-cau", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP P140** là dầu cầu, dầu bánh răng ô tô cấp độ nhớt **SAE 140** do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu bôi trơn hộp số sàn, vi sai và cầu xe chịu tải nặng, giảm ma sát và chống mài mòn bánh răng.
@@ -56,10 +56,10 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn **xô 18 L** tại kh
 
 | Tình huống | Dùng VHP P140 được không? |
 | :--- | :--- |
-| Cầu xe tải nặng, xe ben đời cũ có sổ tay ghi dầu SAE 140 | **Được.** |
+| Cầu xe tải nặng, xe ben đời cũ có hướng dẫn sử dụng ghi dầu SAE 140 | **Được.** |
 | Máy kéo, máy nông nghiệp có hộp số và cầu dùng chung dầu 140 | **Được.** |
 | Bánh răng hở, hộp giảm tốc cũ dùng dầu cầu 140 theo thói quen bảo trì | **Được.** |
-| Sổ tay ghi 85W-140, xe chạy mùa đông vùng núi | Chọn đa cấp: [Shell Spirax S2 A 85W-140](/dau-cau-hop-so/shell-spirax-s2-a) hoặc [EMI Gear EP GL-5](/dau-cau-hop-so/emi-gear-ep-gl-5). |
+| Hướng dẫn sử dụng ghi 85W-140, xe chạy mùa đông vùng núi | Chọn đa cấp: [Shell Spirax S2 A 85W-140](/dau-cau-hop-so/shell-spirax-s2-a) hoặc [EMI Gear EP GL-5](/dau-cau-hop-so/emi-gear-ep-gl-5). |
 | Hộp số tự động, trợ lực lái | Không. Dùng dầu ATF. |
 
 Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của VHP cho mã này, nên trang chưa có bảng chỉ tiêu và chưa ghi cấp API.
@@ -68,29 +68,29 @@ Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của VHP cho mã n�
 
 Ở nhiệt độ làm việc, hai loại có độ nhớt gần nhau. Khác biệt ở lúc khởi động lạnh: 85W-140 chảy tốt hơn nên bánh răng được bôi trơn sớm hơn. Dầu đơn cấp 140 giữ màng dầu dày ở nhiệt độ cao, hợp khí hậu nóng, tải lớn.
 
-> **Nhận định của HT VINA:** Ở miền Bắc mùa hè, dầu 140 vẫn dùng tốt cho xe tải nặng. Xe chạy mùa đông miền núi, hoặc sổ tay ghi dầu đa cấp, thì chọn 85W-140. Vì chưa có TDS ghi cấp API, không dùng P140 cho hộp số tay có đồng tốc mà hãng chỉ cho phép GL-4 cho tới khi xác nhận được cấp.
+> **Nhận định của HT VINA:** Ở miền Bắc mùa hè, dầu 140 vẫn dùng tốt cho xe tải nặng. Xe chạy mùa đông miền núi, hoặc hướng dẫn sử dụng ghi dầu đa cấp, thì chọn 85W-140. Vì chưa có TDS ghi cấp API, không dùng P140 cho hộp số tay có đồng tốc mà hãng chỉ cho phép GL-4 cho tới khi xác nhận được cấp.
 
 ## Khi nào cần thay dầu?
 
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+Theo mốc km hoặc giờ máy trong tài liệu hướng dẫn sử dụng kèm theo xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) |
-| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 | Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
 
-Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị đổ lẫn. Xem thêm [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu VHP P140?
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Dầu cầu 140 và 85W-140 khác nhau thế nào?
 Ở nhiệt độ làm việc, hai loại có độ nhớt gần nhau. Khác biệt ở lúc khởi động lạnh: 85W-140 chảy tốt hơn nên bánh răng được bôi trơn sớm hơn. Ở miền Bắc mùa hè, dầu 140 vẫn dùng tốt cho xe tải nặng.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** xô 18 L.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.

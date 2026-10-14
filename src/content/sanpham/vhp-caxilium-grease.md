@@ -63,7 +63,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu** (phuy 180 kg), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "khang-nuoc", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP Caxilium Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. Mỡ được làm cho những chỗ bôi trơn hở, hay gặp nước và nước muối. Cấp No2 sản xuất theo tiêu chuẩn cơ sở TCCS 52:2023/VHP.
@@ -105,14 +105,14 @@ VHP công bố bảng chỉ tiêu cho cấp No2. Nếu cần phiếu kiểm nghi
 | :--- | :--- | :--- |
 | Chất làm đặc | Lithium và canxi | Lithium và canxi |
 | Nhiệt độ làm việc | −10 đến 110 °C | −10 đến 110 °C (ngắn hạn 120 °C) |
-| Định hướng của VHP | Chỗ hở, nhiều nước, nước muối | Mỡ bò đa dụng, chống rửa trôi |
+| Định hướng của VHP | Chỗ hở, nhiều nước, nước muối | Mỡ bôi trơn đa dụng, chống rửa trôi |
 | Tình trạng kho tháng 10/2026 | Nhận đặt, phuy 180 kg | Có sẵn No3 ống 400 g |
 
 > **Nhận định của HT VINA:** Thiết bị ven biển, trên tàu, hay ngập nước muối thì đặt Caxilium. Điểm bôi trơn ngoài trời thông thường cần mỡ ngay thì Licas có sẵn và có thêm xô, ống 400 g tiện cho xưởng dùng ít.
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
-Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
 
 | Dấu hiệu | Nên làm |
 | :--- | :--- |
@@ -131,7 +131,7 @@ Không bơm quá nhiều: ổ bi đầy mỡ chạy nóng hơn. Ổ bi động c
 ### Caxilium có phải mỡ chịu nhiệt không?
 Không. Nhiệt độ nhỏ giọt 141 °C và làm việc tới 110 °C là mức của mỡ đa dụng. Ổ bi nóng trên 120 °C cần [mỡ chịu nhiệt](/mo-chiu-nhiet).
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** No2, No3 phuy 180 kg, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

@@ -38,7 +38,7 @@ applications:
   - "Động cơ diesel cao tốc trên tàu thuyền, máy phát điện"
   - "Động cơ xăng 4 thì trong đội xe hỗn hợp"
 not_for:
-  - "Động cơ có EGR hoặc sổ tay yêu cầu API CH-4, CI-4 trở lên"
+  - "Động cơ có EGR hoặc hướng dẫn sử dụng yêu cầu API CH-4, CI-4 trở lên"
   - "Động cơ có bộ lọc hạt DPF"
 warnings:
   - "Tránh để dầu tiếp xúc trực tiếp với da. Dùng găng tay chuyên dụng khi xử lý dầu thải; dính da thì rửa ngay bằng nước và xà phòng."
@@ -53,11 +53,11 @@ doc_gia: "Trang này dành cho đội xe, máy công trình cần dầu diesel C
 tom_tat:
   - "**Dùng được** cho động cơ diesel 4 thì có turbo yêu cầu API CF-4, và động cơ xăng 4 thì yêu cầu SJ trong đội xe hỗn hợp."
   - "**VHP công bố giá trị tối thiểu** (TBN ≥ 8,5 mg KOH/g), không phải giá trị điển hình như các hãng nhập khẩu."
-  - "**Không dùng** cho động cơ có EGR hoặc sổ tay ghi CH-4, CI-4."
+  - "**Không dùng** cho động cơ có EGR hoặc hướng dẫn sử dụng ghi CH-4, CI-4."
   - "**Nhận đặt theo yêu cầu** (20W-50 phuy 200 L). HT VINA là đại lý dầu mỡ VHP."
 tags: ["api-cf-4", "sae-20w-50", "vhp", "dong-co-diesel"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP Diamond Turbo** là dầu động cơ diesel tải nặng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu đạt cấp **API CF-4/SJ**, dùng cho động cơ diesel 4 thì có turbo tăng áp trên xe vận tải, xe thi công, máy nông nghiệp, tàu thuyền và máy phát điện. VHP làm hai cấp 15W-40 và 20W-50.
@@ -66,7 +66,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Cấp **20W-50 phuy 200 L** **nhận 
 
 ## Diamond Turbo có hợp với xe, máy của bạn không?
 
-| Sổ tay xe, máy ghi | Dùng Diamond Turbo được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo xe, máy ghi | Dùng Diamond Turbo được không? |
 | :--- | :--- |
 | API CF-4, CF; động cơ diesel 4 thì có turbo | **Được.** |
 | Xe vận tải, xe thi công, xe khai thác mỏ, máy nông nghiệp | **Được.** |
@@ -96,25 +96,25 @@ VHP ghi giá trị tối thiểu, các hãng khác ghi giá trị điển hình,
 
 ## Khi nào cần thay dầu?
 
-Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào test dầu:
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào kết quả kiểm tra dầu:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt | Lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc, bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1)) |
 | Nước | Trên 0,2% (ASTM D6224) |
 | Trị số kiềm (TBN) | Còn khoảng một nửa so với dầu mới |
 
-Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách lấy mẫu và test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách lấy mẫu và kiểm tra xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu VHP Diamond Turbo 20W-50?
-Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe lớn có thể dựa vào bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe lớn có thể dựa vào bảng mức cho phép ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Diamond Turbo có cấp 15W-40 không?
 VHP có công bố cấp 15W-40 cho dòng này. Cần 15W-40, vui lòng [liên hệ](/contact) để kiểm tra trước.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** 20W-50 phuy 200 L, nhận đặt theo yêu cầu. Cấp 15W-40 hỏi trước.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

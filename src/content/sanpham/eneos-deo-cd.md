@@ -38,7 +38,7 @@ applications:
   - "Động cơ diesel tàu thuyền cỡ nhỏ mà nhà sản xuất chỉ yêu cầu cấp CD"
 not_for:
   - "Động cơ có turbo đời mới, động cơ có EGR (dùng ENEOS DEO CF-4 hoặc CI-4)"
-  - "Xe, máy mà sổ tay yêu cầu API CF-4, CH-4, CI-4 trở lên"
+  - "Xe, máy mà hướng dẫn sử dụng yêu cầu API CF-4, CH-4, CI-4 trở lên"
 warnings:
   - "Tránh để dầu, nhất là dầu đã qua sử dụng, tiếp xúc lâu với da; dính da thì rửa ngay bằng xà phòng và nước."
   - "Thu gom dầu thải theo quy định địa phương, không đổ ra cống rãnh."
@@ -52,12 +52,12 @@ images:
 doc_gia: "Trang này dành cho chủ máy phát, máy nông nghiệp, xe đời cũ mà nhà sản xuất chỉ yêu cầu dầu diesel cấp API CD."
 tom_tat:
   - "**Dùng được** cho động cơ diesel đời cũ hút khí tự nhiên, máy phát, máy bơm nước, máy nông nghiệp yêu cầu cấp CD."
-  - "**Không dùng** cho động cơ có turbo đời mới, có EGR, hoặc sổ tay ghi CF-4 trở lên."
-  - "**Không hạ cấp API** thấp hơn mức sổ tay yêu cầu để tiết kiệm."
+  - "**Không dùng** cho động cơ có turbo đời mới, có EGR, hoặc hướng dẫn sử dụng ghi CF-4 trở lên."
+  - "**Không hạ cấp API** thấp hơn mức hướng dẫn sử dụng yêu cầu để tiết kiệm."
   - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mã có sẵn gần nhất: ENEOS DEO CF-4 can 18 L."
 tags: ["api-cd", "sae-15w-40", "sae-20w-50", "eneos", "dong-co-diesel"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **ENEOS DEO CD** là dầu động cơ diesel phổ thông của ENEOS, đạt cấp **API CD**. Dầu hợp với động cơ diesel đời cũ, máy phát điện, máy nông nghiệp và tàu thuyền nhỏ, nơi nhà sản xuất chỉ yêu cầu cấp CD. Dòng này có hai cấp nhớt **20W-50** và **15W-40**.
@@ -66,7 +66,7 @@ Mã này **nhận đặt theo yêu cầu**: cấp 20W-50 (can 18 L, phuy 200 L) 
 
 ## DEO CD có hợp với máy của bạn không?
 
-| Sổ tay máy ghi | Dùng ENEOS DEO CD được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo máy ghi | Dùng ENEOS DEO CD được không? |
 | :--- | :--- |
 | API CD, CC; máy hút khí tự nhiên | **Được.** |
 | Máy phát điện, máy bơm nước, máy kéo, xe công nông | **Được**, nếu nhà sản xuất chỉ yêu cầu CD. |
@@ -96,25 +96,25 @@ Trị số kiềm càng cao thì dầu càng chịu được axit từ nhiên li
 
 ## Khi nào cần thay dầu?
 
-Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy phát chạy liên tục nên kiểm tra mức dầu thường xuyên. Với máy lớn, có thể dựa vào test dầu:
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy phát chạy liên tục nên kiểm tra mức dầu thường xuyên. Với máy lớn, có thể dựa vào kết quả kiểm tra dầu:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10%. 15W-40: ngoài 94,9–115,9 mm²/s. 20W-50: ngoài 146,5–179,1 mm²/s. Đo bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Nước | Trên 0,2% (ASTM D6224) |
 | Trị số kiềm (TBN) | Còn khoảng một nửa so với dầu mới (khoảng 3 mg KOH/g) |
 
-Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách lấy mẫu và test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách lấy mẫu và kiểm tra xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu ENEOS DEO CD?
-Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Máy lớn có thể dựa vào bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Máy lớn có thể dựa vào bảng mức cho phép ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Máy phát điện nên dùng 15W-40 hay 20W-50?
-Theo sổ tay máy phát. Máy đặt ngoài trời, khởi động lúc lạnh thì 15W-40 dễ khởi động hơn. Máy đã chạy nhiều giờ, có dấu hiệu hao dầu thì 20W-50 thường phù hợp hơn.
+Theo hướng dẫn sử dụng của máy phát. Máy đặt ngoài trời, khởi động lúc lạnh thì 15W-40 dễ khởi động hơn. Máy đã chạy nhiều giờ, có dấu hiệu hao dầu thì 20W-50 thường phù hợp hơn.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** 20W-50 can 18 L, phuy 200 L; 15W-40 phuy 200 L. Nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

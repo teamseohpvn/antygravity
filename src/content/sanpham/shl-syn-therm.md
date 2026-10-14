@@ -36,7 +36,7 @@ not_for:
   - "Hệ thống hở, dầu tiếp xúc trực tiếp với không khí khi nóng"
   - "Pha trộn với dầu truyền nhiệt gốc khoáng đang có trong hệ"
 warnings:
-  - "Dầu nóng gây bỏng. Chỉ thay dầu, châm dầu khi hệ đã nguội."
+  - "Dầu nóng gây bỏng. Chỉ thay dầu, thêm dầu khi hệ đã nguội."
   - "Tránh để dầu tiếp xúc lâu với da và mắt; dính mắt thì rửa bằng nhiều nước sạch."
   - "Thu gom dầu thải theo quy định, không đổ ra cống rãnh."
 storage: "Để nơi khô ráo, có mái che, đậy kín nắp xô. Không để nước lọt vào dầu."
@@ -52,7 +52,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu** (xô 20 L), không có sẵn tại kho tháng 10/2026."
 tags: ["iso-vg-32", "truyen-nhiet", "tong-hop", "shl"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **SHL Syn Therm 32L** là dầu truyền nhiệt **tổng hợp gốc alkyl benzene** của SHL, thương hiệu dầu nhờn Hàn Quốc kế thừa Samhwa Lube Oil. Dòng sản phẩm được SHL ASEAN sản xuất tại KCN Mỹ Xuân, Việt Nam. Khác với dầu truyền nhiệt gốc khoáng, Syn Therm 32L có điểm đông đặc rất thấp, dưới −35 °C, và được hãng xếp vào nhóm ít bay hơi, hiệu suất truyền nhiệt cao.
@@ -66,7 +66,7 @@ Mã này **nhận đặt theo yêu cầu** theo **xô 20 L**, có CO/CQ và hóa
 | Nhà sản xuất lò dầu yêu cầu dầu truyền nhiệt tổng hợp | **Được.** |
 | Hệ cần khởi động ở nhiệt độ thấp | **Được.** Điểm đông đặc dưới −35 °C. |
 | Lò dầu thông dụng dùng dầu truyền nhiệt gốc khoáng | Dùng được, nhưng dầu gốc khoáng như [VHP Heatrans](/dau-truyen-nhiet/vhp-heatrans) thường đủ. |
-| Biết rõ nhiệt độ bồn dầu tối đa của hệ | Gửi con số cho chúng tôi để hỏi hãng trước, vì SHL chưa công bố giới hạn này. |
+| Biết rõ nhiệt độ dầu trong hệ tối đa của hệ | Gửi con số cho chúng tôi để hỏi hãng trước, vì SHL chưa công bố giới hạn này. |
 
 ## Thông số này có ý nghĩa gì khi vận hành?
 
@@ -85,7 +85,7 @@ Mã này **nhận đặt theo yêu cầu** theo **xô 20 L**, có CO/CQ và hóa
 | Điểm chớp cháy | > 200 °C | > 230 °C | 229 °C |
 | Nhiệt độ tự bốc cháy | 462 °C | Không công bố | 353 °C |
 | Điểm đông đặc | < −35 °C | < −15 °C | < −15 °C |
-| Nhiệt độ bồn dầu tối đa | Không công bố | Không công bố | 300 °C |
+| Nhiệt độ dầu trong hệ tối đa | Không công bố | Không công bố | 300 °C |
 
 > **Nhận định của HT VINA:** Dầu gốc khoáng phù hợp phần lớn lò dầu thông dụng ở miền Bắc, nơi nhiệt độ không xuống thấp. Syn Therm 32L đáng cân nhắc khi nhà sản xuất thiết bị yêu cầu dầu tổng hợp hoặc hệ cần khởi động ở nhiệt độ thấp. Đổi từ gốc khoáng sang tổng hợp phải xả, súc rửa hệ và hỏi hãng lò về gioăng phớt.
 
@@ -93,23 +93,23 @@ Mã này **nhận đặt theo yêu cầu** theo **xô 20 L**, có CO/CQ và hóa
 
 Không thay theo lịch cố định mà theo kết quả kiểm tra, ít nhất mỗi năm một lần. Dầu truyền nhiệt xuống cấp theo hai hướng: **nứt gãy nhiệt** làm dầu loãng ra, điểm chớp cháy giảm; **oxy hóa** làm dầu đặc lên, trị số axit tăng, đóng cặn trong ống.
 
-| Chỉ tiêu | Ngưỡng cần xử lý |
+| Chỉ tiêu | Mức cần xử lý |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 28,8–35,2 mm²/s (lệch quá ±10% so với 32 mm²/s) |
 | Trị số axit | Tăng rõ so với dầu mới; đo bằng [bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
 | Điểm chớp cháy, cặn cacbon | Gửi phòng thí nghiệm |
 
-Dầu có mùi khét, lò khó đạt nhiệt hoặc bơm ồn là lúc phải test ngay. Cách test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Dầu có mùi khét, lò khó đạt nhiệt hoặc bơm ồn là lúc phải kiểm tra ngay. Cách kiểm tra xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu truyền nhiệt SHL Syn Therm 32L?
 Theo kết quả kiểm tra, ít nhất mỗi năm một lần. Chi tiết ở mục "Khi nào cần thay dầu?" phía trên.
 
-### Syn Therm 32L chịu được nhiệt độ bồn dầu tối đa bao nhiêu?
+### Syn Therm 32L chịu được nhiệt độ dầu trong hệ tối đa bao nhiêu?
 Bảng thông số công khai của SHL không ghi nhiệt độ làm việc tối đa. Vui lòng [liên hệ](/contact) để chúng tôi hỏi hãng và gửi tài liệu kỹ thuật đầy đủ trước khi dùng cho hệ của bạn.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** xô 20 L, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

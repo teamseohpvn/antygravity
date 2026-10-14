@@ -55,7 +55,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
 tags: ["dau-cat-got-pha-nuoc", "dau-tuoi-nguoi", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP Lotus Oil LS** là dầu cắt gọt pha nước dạng tạo nhũ (dầu sữa) do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu pha từ dầu gốc khoáng với phụ gia chống gỉ và chống thối. Khi pha vào nước, dầu cho dung dịch màu trắng sữa ánh xanh, dùng tưới nguội cho phay, tiện, doa, mài.
@@ -68,7 +68,7 @@ HT VINA là **đại lý dầu mỡ VHP**. **Phuy 200 L** **nhận đặt theo y
 | :--- | :--- |
 | Phay, tiện, doa, mài thép, gang | **Được.** |
 | Gia công nhôm, đồng thau | **Được.** Dung dịch có thể ngả hơi xanh khi gia công đồng. |
-| Từng bể máy CNC hoặc bồn tưới nguội chung của xưởng | **Được.** |
+| Từng bể máy CNC hoặc bể tưới nguội chung của xưởng | **Được.** |
 | Nước giếng, nước máy ở các KCN miền Bắc | **Được**, với độ cứng tới 600 ppm. |
 | Nguyên công cần dầu cắt gọt nguyên chất (không pha nước) | Không. |
 
@@ -111,7 +111,7 @@ Kiểm tra lại nồng độ, vì pha quá loãng làm dầu kém chống thố
 ### Phuy đã mở để được bao lâu?
 VHP khuyến cáo bảo quản trong nhà ở 10–35 °C và đậy, khóa nắp sau mỗi lần chiết. Để phuy ngoài trời nắng nóng hoặc mở nắp lâu sẽ làm dầu kém chống gỉ, nhũ kém ổn định.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** phuy 200 L, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

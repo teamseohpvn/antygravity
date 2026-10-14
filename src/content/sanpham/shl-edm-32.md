@@ -51,7 +51,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026."
 tags: ["edm", "xung-dien", "gia-cong-khuon", "shl"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **SHL EDM 32** là dầu điện môi cho **máy xung điện (EDM)**, của SHL, thương hiệu dầu nhờn Hàn Quốc. Dòng sản phẩm được SHL ASEAN sản xuất tại KCN Mỹ Xuân, Việt Nam. Dầu rất loãng, độ nhớt 2,0 cSt ở 40 °C, **không chứa clo**, điểm chớp cháy từ 80 °C.
@@ -96,7 +96,7 @@ Tùy khối lượng gia công và chất lượng hệ lọc:
 | Gia công kém ổn định, tia lửa chập chờn | Kiểm tra lọc, mức dầu, độ sạch dầu |
 | Dầu loãng hoặc đặc bất thường | Đo so với dầu mới bằng [nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5) cỡ nhỏ: có thể đã lẫn dầu khác |
 
-Cách đo xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách đo xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
@@ -104,9 +104,9 @@ Cách đo xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro
 Tùy khối lượng gia công và chất lượng hệ lọc. Dấu hiệu cần thay ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Có dùng dầu hỏa hoặc dầu DO thay dầu EDM được không?
-Không nên. Dầu hỏa, dầu DO không được pha chế cho gia công xung điện, thường có điểm chớp cháy thấp hơn và nhiều mùi. Dầu EDM chuyên dụng an toàn hơn cho người vận hành.
+Không nên. Dầu hỏa, dầu DO không được pha chế cho gia công xung điện, thường có điểm chớp cháy thấp hơn và nhiều mùi. Dầu EDM chuyên dụng an toàn hơn cho thợ đứng máy.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** phuy 200 L, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

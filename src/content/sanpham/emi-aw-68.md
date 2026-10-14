@@ -40,7 +40,7 @@ images:
   - { src: "/images/san-pham/emi-aw-68-xo-18l.webp", alt: "Xô 18 lít dầu thủy lực Emi Oil Hydra AW 68 xếp chồng" }
   - { src: "/images/san-pham/emi-aw-68-nhan-xo.webp", alt: "Nhãn xô Emi Oil Hydra AW 68 ghi thông số điển hình" }
 
-doc_gia: "Trang này dành cho người mua hàng và tổ bảo trì cần một mã dầu thủy lực 68 giá vừa phải cho nhiều máy không yêu cầu phê duyệt hãng bơm."
+doc_gia: "Trang này dành cho người mua hàng và tổ bảo trì cần một mã dầu thủy lực 68 giá vừa phải cho nhiều máy không yêu cầu dầu được hãng bơm chấp thuận."
 tom_tat:
   - "**Dùng được** cho máy yêu cầu dầu thủy lực AW/HM cấp 68: máy ép, máy dập, máy công trình, xe nâng."
   - "**Phụ gia chống mài mòn gốc kẽm** (theo nhà cung cấp), nên **không dùng** cho bơm yêu cầu dầu không kẽm."
@@ -48,7 +48,7 @@ tom_tat:
   - "**Chưa có TDS** của EMI: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "emi"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **EMI AW 68** là dầu thủy lực chống mài mòn cấp **ISO VG 68**, pha từ dầu gốc khoáng với hệ phụ gia chống mài mòn. Theo nhà cung cấp, phụ gia thuộc nhóm gốc kẽm (ZDDP), loại phổ biến nhất cho dầu thủy lực HM. Dầu hợp với hệ thống chạy áp cao, nhiệt độ làm việc ổn định.
@@ -57,12 +57,12 @@ Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** v�
 
 ## EMI AW 68 có hợp với máy của bạn không?
 
-| Sổ tay máy ghi | Dùng EMI AW 68 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo máy ghi | Dùng EMI AW 68 được không? |
 | :--- | :--- |
-| ISO VG 68, AW 68, HM 68, không ghi phê duyệt hãng bơm | **Được.** |
-| Máy ép nhựa, máy ép thủy lực, máy dập chạy nóng | **Được.** Màng dầu cấp 68 đủ dày khi dầu trong bồn lên 50–60 °C. |
+| ISO VG 68, AW 68, HM 68, không ghi yêu cầu hãng bơm chấp thuận | **Được.** |
+| Máy ép nhựa, máy ép thủy lực, máy dập chạy nóng | **Được.** Màng dầu cấp 68 đủ dày khi dầu trong thùng lên 50–60 °C. |
 | Dầu không kẽm, bơm có chi tiết mạ bạc | Không. EMI AW 68 dùng phụ gia gốc kẽm. |
-| Bắt buộc phê duyệt Parker Denison, Eaton | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
+| Bắt buộc dầu được Parker Denison, Eaton chấp thuận | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
 | ISO VG 46 | Dùng EMI AW 46 (nhận đặt). |
 
 Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của EMI cho mã này, nên trang chưa có bảng chỉ tiêu.
@@ -76,34 +76,34 @@ Hai mã cùng cấp 68, cùng dùng phụ gia chống mài mòn gốc kẽm. Gi�
 | Phuy | 200 L: 7,10–8,17 triệu đ | 209 L: 9,00–10,35 triệu đ |
 | Quy ra mỗi lít (phuy) | 35.500–40.900 đ | 43.000–49.600 đ |
 | Xô 18 L | 710.000–817.000 đ (39.400–45.400 đ/L) | Không có sẵn |
-| Phê duyệt hãng bơm | Chưa công bố | Parker Denison HF-0/HF-1/HF-2, Eaton |
+| Được hãng bơm chấp thuận | Chưa công bố | Parker Denison HF-0/HF-1/HF-2, Eaton |
 | Số liệu TDS | Chưa có | Đủ: độ nhớt, TOST, FZG, tách nước |
 
-Tính theo lít, phuy EMI thấp hơn Castrol khoảng 17–18%. Với bồn 200 L, chênh lệch khoảng 1,5–1,7 triệu đồng mỗi lần thay dầu.
+Tính theo lít, phuy EMI thấp hơn Castrol khoảng 17–18%. Với thùng 200 L, chênh lệch khoảng 1,5–1,7 triệu đồng mỗi lần thay dầu.
 
-> **Nhận định của HT VINA:** Máy chỉ ghi "dầu thủy lực 68" hoặc AW 68, không ghi phê duyệt, thì EMI AW 68 là lựa chọn hợp lý về chi phí. Máy có bơm Parker Denison, Eaton hoặc đang bảo hành thì dùng Castrol Hyspin AWS 68.
+> **Nhận định của HT VINA:** Máy chỉ ghi "dầu thủy lực 68" hoặc AW 68, không ghi yêu cầu hãng bơm chấp thuận, thì EMI AW 68 là lựa chọn hợp lý về chi phí. Máy có bơm Parker Denison, Eaton hoặc đang bảo hành thì dùng Castrol Hyspin AWS 68.
 
 ## Khi nào cần thay dầu?
 
-Không có một mốc giờ chạy đúng cho mọi máy. Cùng là EMI AW 68, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả test dầu đang dùng, so với dầu mới:
+Không có một mốc giờ chạy đúng cho mọi máy. Cùng là EMI AW 68, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả kiểm tra dầu đang dùng, so với dầu mới:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| Chỉ tiêu | Mức nên thay dầu | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (cấp ISO VG 68 danh định 68 mm²/s, lệch quá ±10%) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
-| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
-Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu thủy lực EMI AW 68?
-Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng ngưỡng và dụng cụ đo ở mục "Khi nào cần thay dầu?" phía trên.
+Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng mức cho phép và dụng cụ đo ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### EMI AW 68 và AW 46 khác nhau thế nào?
-Hai cấp chỉ khác độ nhớt. Cấp 68 đặc hơn, hợp xưởng nóng và máy áp cao; cấp 46 hợp máy chạy nhiệt độ vừa phải hoặc khởi động lạnh. Luôn theo cấp ghi trong sổ tay máy. Kho hiện có sẵn cấp 68.
+Hai cấp chỉ khác độ nhớt. Cấp 68 đặc hơn, hợp xưởng nóng và máy áp cao; cấp 46 hợp máy chạy nhiệt độ vừa phải hoặc khởi động lạnh. Luôn theo cấp ghi trong hướng dẫn sử dụng của máy. Kho hiện có sẵn cấp 68.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** phuy 200 L và xô 18 L cấp 68. Cấp 46 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.

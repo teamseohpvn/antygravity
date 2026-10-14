@@ -39,13 +39,13 @@ images:
 
 doc_gia: "Trang này dành cho gara, đội xe cần dầu ATF Dexron II, III cho hộp số tự động đời cũ và trợ lực lái."
 tom_tat:
-  - "**Dùng được** cho hộp số tự động, trợ lực lái thủy lực, hệ thủy lực truyền động có sổ tay ghi ATF Dexron II hoặc III."
+  - "**Dùng được** cho hộp số tự động, trợ lực lái thủy lực, hệ thủy lực truyền động có hướng dẫn sử dụng ghi ATF Dexron II hoặc III."
   - "**Không dùng** cho hộp số yêu cầu Dexron VI, ATF riêng của hãng, hộp số CVT hoặc cầu xe."
   - "**Có sẵn xô 18 L**. HT VINA là đại lý dầu mỡ VHP."
   - "**Chưa có TDS** của VHP: trang chưa có bảng thông số."
 tags: ["atf", "dexron-ii", "dexron-iii", "tro-luc-lai", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **VHP Spadila ATF** là dầu truyền động cho **hộp số tự động** và **hệ trợ lực tay lái**, theo loại **ATF Dexron II, III**. Dầu do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Cẩm Giàng (Hải Dương cũ). Ngoài hộp số tự động, dầu còn dùng cho các hệ thủy lực truyền động trên ô tô và xe cơ giới.
@@ -54,7 +54,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn **xô 18 L** tại kh
 
 ## Spadila ATF có hợp với xe của bạn không?
 
-| Sổ tay xe ghi | Dùng Spadila ATF được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo xe ghi | Dùng Spadila ATF được không? |
 | :--- | :--- |
 | ATF Dexron II hoặc Dexron III | **Được.** |
 | Trợ lực tay lái thủy lực dùng dầu ATF | **Được.** |
@@ -69,29 +69,29 @@ Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của VHP cho mã n�
 
 Dexron III là tiêu chuẩn mới hơn của GM, yêu cầu cao hơn về độ bền oxy hóa và đặc tính ma sát. Xe yêu cầu Dexron II thường dùng được dầu đạt Dexron III, còn chiều ngược lại thì không chắc chắn.
 
-> **Nhận định của HT VINA:** Khi không chắc xe dùng loại ATF nào, hãy gửi sổ tay hoặc ảnh nhãn que thăm dầu qua [form báo giá](/bao-gia?sp=VHP%20Spadila%20ATF) để chúng tôi đối chiếu trước. Hộp số tự động đời mới đổi sai loại ATF có thể trượt số, đắt hơn nhiều so với tiền dầu.
+> **Nhận định của HT VINA:** Khi không chắc xe dùng loại ATF nào, hãy gửi hướng dẫn sử dụng hoặc ảnh nhãn que thăm dầu qua [mẫu yêu cầu báo giá](/bao-gia?sp=VHP%20Spadila%20ATF) để chúng tôi đối chiếu trước. Hộp số tự động đời mới đổi sai loại ATF có thể trượt số, đắt hơn nhiều so với tiền dầu.
 
 ## Khi nào cần thay dầu?
 
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) |
-| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 | Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
 
-Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị đổ lẫn. Xem thêm [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu VHP Spadila ATF?
-Theo mốc km trong sổ tay xe. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km trong hướng dẫn sử dụng của xe. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
-### Châm dầu ATF vào trợ lực lái đang dùng dầu khác được không?
-Chỉ châm khi sổ tay cho phép dầu ATF. Một số xe dùng dầu trợ lực riêng (ví dụ dầu gốc tổng hợp màu xanh), trộn lẫn có thể làm hỏng phớt.
+### Thêm dầu ATF vào trợ lực lái đang dùng dầu khác được không?
+Chỉ thêm dầu khi hướng dẫn sử dụng cho phép dầu ATF. Một số xe dùng dầu trợ lực riêng (ví dụ dầu gốc tổng hợp màu xanh), trộn lẫn có thể làm hỏng phớt.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** xô 18 L.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.

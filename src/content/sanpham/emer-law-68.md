@@ -39,12 +39,12 @@ images:
 doc_gia: "Trang này dành cho người phụ trách bảo trì xe nâng, bàn nâng, máy ép cần một mã dầu thủy lực 68 dùng chung cho nhiều máy."
 tom_tat:
   - "**Dùng được** cho hệ thủy lực nâng hạ, máy ép và máy cơ giới yêu cầu dầu chống mài mòn cấp 68."
-  - "**Có cả phuy 200 L và xô 18 L**: phuy để thay cả bồn, xô để châm bổ sung tại máy."
-  - "**Chọn mã có phê duyệt** như Castrol Hyspin AWS 68 nếu hãng bơm yêu cầu."
+  - "**Có cả phuy 200 L và xô 18 L**: phuy để thay cả thùng, xô để thêm dầu bổ sung tại máy."
+  - "**Chọn mã được hãng bơm chấp thuận** như Castrol Hyspin AWS 68 nếu hãng bơm yêu cầu."
   - "**Chưa có TDS** của hãng: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "emer"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **EMER LAW 68** là dầu thủy lực chống mài mòn cấp **ISO VG 68** dùng cho hệ thủy lực nâng hạ, máy ép và máy cơ giới. Cấp 68 là cấp phổ biến nhất cho máy chạy trong xưởng nóng và hệ thống áp cao ở miền Bắc.
@@ -53,12 +53,12 @@ Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** v�
 
 ## EMER LAW 68 có hợp với máy của bạn không?
 
-| Sổ tay máy ghi | Dùng EMER LAW 68 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo máy ghi | Dùng EMER LAW 68 được không? |
 | :--- | :--- |
 | Dầu thủy lực chống mài mòn (AW) cấp 68 | **Được.** |
 | Xe nâng, bàn nâng, cầu nâng dùng dầu thủy lực 68 | **Được.** |
-| Bắt buộc phê duyệt Parker Denison, Eaton | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
-| Xe nâng làm việc trong kho lạnh, sổ tay ghi 32 hoặc 46 | Không. Dùng đúng cấp ghi trong sổ tay. |
+| Bắt buộc dầu được Parker Denison, Eaton chấp thuận | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
+| Xe nâng làm việc trong kho lạnh, hướng dẫn sử dụng ghi 32 hoặc 46 | Không. Dùng đúng cấp ghi trong hướng dẫn sử dụng. |
 
 Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của hãng cho mã này, nên trang chưa có bảng chỉ tiêu và chưa ghi tiêu chuẩn mà dầu đạt.
 
@@ -73,35 +73,35 @@ EMER LAW 68 là một trong số ít mã dầu thủy lực 68 tại kho có c�
 
 Tính theo lít, xô cao hơn phuy khoảng 24–25%. Xô bù lại ở chỗ dễ mang tới máy, ít rơi vãi và dầu không phải để lâu sau khi mở.
 
-> **Nhận định của HT VINA:** Kho có một đến hai xe nâng hoặc bàn nâng, mỗi lần chỉ châm vài lít thì mua xô. Thay cả bồn máy ép từ 100 L trở lên thì mua phuy.
+> **Nhận định của HT VINA:** Kho có một đến hai xe nâng hoặc bàn nâng, mỗi lần chỉ thêm vài lít thì mua xô. Thay cả thùng máy ép từ 100 L trở lên thì mua phuy.
 
 ## EMER LAW 68 hay EMI AW 68?
 
 Hai mã cùng cấp 68, cùng sản xuất trong nước và cùng có phuy, xô tại kho. Theo bảng giá tháng 10/2026, phuy EMI AW 68 có giá theo lít 35.500–40.900 đ, thấp hơn phuy EMER LAW 68 (46.000–53.000 đ/L). Cả hai hãng đều chưa gửi TDS, nên chưa có số liệu để so chất lượng.
 
-> **Nhận định của HT VINA:** Nếu đội máy đang dùng sẵn EMER LAW 68 và chạy ổn, giữ nguyên mã để khỏi phải súc rửa khi đổi. Mua mới cho máy không yêu cầu phê duyệt thì có thể so thêm [EMI AW 68](/dau-thuy-luc/emi-aw-68) hoặc [X-One AW 68](/dau-thuy-luc/x-one-aw-68).
+> **Nhận định của HT VINA:** Nếu đội máy đang dùng sẵn EMER LAW 68 và chạy ổn, giữ nguyên mã để không phải súc rửa khi đổi. Mua mới cho máy không yêu cầu dầu được hãng bơm chấp thuận thì có thể so thêm [EMI AW 68](/dau-thuy-luc/emi-aw-68) hoặc [X-One AW 68](/dau-thuy-luc/x-one-aw-68).
 
 ## Khi nào cần thay dầu?
 
 Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết EMER LAW 68 trong máy của bạn còn dùng được không, so mẫu dầu đang dùng với dầu mới cùng lô theo ba chỉ tiêu:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| Chỉ tiêu | Mức nên thay dầu | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (cấp ISO VG 68 danh định 68 mm²/s, lệch quá ±10%) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
-| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
-Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu thủy lực EMER LAW 68?
-Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng ngưỡng và dụng cụ đo ở mục "Khi nào cần thay dầu?" phía trên.
+Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng mức cho phép và dụng cụ đo ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Xe nâng dùng dầu thủy lực 68 hay 46?
-Tùy hãng xe và nhiệt độ nơi làm việc. Nhiều xe nâng chạy trong kho nóng dùng cấp 68; xe làm việc trong kho lạnh thường dùng cấp 32 hoặc 46. Hãy xem sổ tay xe.
+Tùy hãng xe và nhiệt độ nơi làm việc. Nhiều xe nâng chạy trong kho nóng dùng cấp 68; xe làm việc trong kho lạnh thường dùng cấp 32 hoặc 46. Hãy xem hướng dẫn sử dụng của xe.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** phuy 200 L và xô 18 L.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.

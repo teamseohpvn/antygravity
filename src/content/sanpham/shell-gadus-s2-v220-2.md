@@ -56,7 +56,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu** (xô 18 kg), không có sẵn tại kho tháng 10/2026."
 tags: ["nlgi-2", "mo-lithium", "chiu-cuc-ap", "shell-gadus"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Shell Gadus S2 V220 2** là mỡ bôi trơn đa dụng chịu cực áp (EP) của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng lithium hydroxystearate. Mỡ dùng cho vòng bi, ổ trượt, bản lề và bề mặt trượt trong hầu hết các ngành công nghiệp và vận tải. Tên cũ của dòng này là Shell Alvania EP(LF) 2 và Shell Retinax EP 2.
@@ -101,7 +101,7 @@ Mã này **nhận đặt theo yêu cầu** theo **xô 18 kg**, có CO/CQ và hó
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
-Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
 
 | Dấu hiệu | Nên làm |
 | :--- | :--- |
@@ -122,7 +122,7 @@ NLGI là thang độ đặc của mỡ, từ 000 (rất lỏng) đến 6 (rất 
 ### Gadus S2 V220 2 có trộn với mỡ khác được không?
 Chỉ nên trộn với mỡ cùng gốc lithium. Trộn với mỡ gốc khác như canxi, polyurea hay bentonite có thể làm mỡ chảy lỏng hoặc vón cục. Khi đổi loại mỡ, nên làm sạch mỡ cũ trong ổ bi.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** xô 18 kg, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

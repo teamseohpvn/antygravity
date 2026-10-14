@@ -53,7 +53,7 @@ storage: "Để nơi khô ráo, đậy kín nắp xô, tránh bụi và nước 
 # images:   # chưa có ảnh đúng mã, trang dùng ảnh danh mục
   # Bỏ ảnh licas-grease-no3-ong-400g.webp (12/10/2026): ảnh là thùng DH Grease Calcium No3, không phải VHP Licas. Chờ ảnh thật
 
-doc_gia: "Trang này dành cho xưởng, gara cần mỡ bò đa dụng chống rửa trôi cho đầu trục, sát xi, bản lề, vú mỡ."
+doc_gia: "Trang này dành cho xưởng, gara cần mỡ bôi trơn đa dụng chống rửa trôi cho đầu trục, sát xi, bản lề, vú mỡ."
 tom_tat:
   - "**Dùng được** cho đầu trục, sát xi, bản lề, ổ bi tải vừa làm việc từ −10 °C đến 110 °C (ngắn hạn 120 °C)."
   - "**No2** mềm, dễ bơm cho vòng bi, vú mỡ; **No3** đặc cho sát xi, bản lề, điểm hở."
@@ -61,10 +61,10 @@ tom_tat:
   - "**Có sẵn No3 thùng 30 ống 400 g**; xô, phuy nhận đặt. HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "vhp"]
 date: "2026-10-06"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
-**VHP Licas Grease** là mỡ bò đa dụng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Mỡ pha từ dầu gốc khoáng tinh chế, chất làm đặc lithium và canxi, cùng phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Mỡ có hai cấp: **No2** mềm hơn và **No3** đặc hơn.
+**VHP Licas Grease** là mỡ bôi trơn (mỡ bò) đa dụng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Mỡ pha từ dầu gốc khoáng tinh chế, chất làm đặc lithium và canxi, cùng phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Mỡ có hai cấp: **No2** mềm hơn và **No3** đặc hơn.
 
 HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): cấp **No3, thùng 30 ống 400 g**. Xô 15 kg, xô 17 kg, phuy 180 kg (No2, No3) nhận đặt theo yêu cầu.
 
@@ -114,7 +114,7 @@ Cả hai cấp làm việc liên tục từ −10 °C đến 110 °C, ở mức 
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
-Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo sổ tay máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
+Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
 
 | Dấu hiệu | Nên làm |
 | :--- | :--- |
@@ -133,7 +133,7 @@ Không. Nhiệt độ nhỏ giọt tối thiểu 130 °C và nhiệt độ làm 
 ### Ống 400 g dùng cho súng mỡ nào?
 Ống 400 g lắp vừa các loại súng bơm mỡ cầm tay dùng ống tiêu chuẩn. Ống tiện hơn xô vì mỡ sạch, không lẫn bụi khi nạp.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** No3 thùng 30 ống 400 g. Xô 15 kg, 17 kg, phuy 180 kg (No2, No3) nhận đặt; nhà máy VHP ở gần nên hàng về nhanh.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

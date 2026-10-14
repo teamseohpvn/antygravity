@@ -56,7 +56,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mã có sẵn cùng nhóm: Castrol Vecton 15W-40."
 tags: ["api-ci-4", "acea-e7", "sae-15w-40", "shell", "dong-co-diesel"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Shell Rimula R4 X 15W-40** là dầu động cơ diesel tải nặng của Shell, đạt **API CI-4, ACEA E7, JASO DH-1** và chuẩn của nhiều hãng động cơ như Caterpillar, Cummins, Mack, Volvo. Dầu dùng cho phần lớn động cơ diesel tải nặng chạy đường bộ và địa hình: xe tải, xe khách, máy xúc.
@@ -69,17 +69,17 @@ Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, kèm CO/CQ và hóa 
 | :--- | :--- |
 | Xe tải, máy công trình yêu cầu API CI-4 hoặc ACEA E7 | **Được.** |
 | Đội xe nhiều hiệu, cần một loại dầu đạt chuẩn Cummins, Volvo, Mack, Caterpillar | **Được.** |
-| Động cơ đời mới châu Âu, Mỹ, Nhật đạt khí thải tới Euro 5 | **Được**, theo Shell, nếu sổ tay chấp nhận ACEA E7. |
-| Xe có bộ lọc hạt DPF | Không. Cần dầu ít tro theo sổ tay xe. |
+| Động cơ đời mới châu Âu, Mỹ, Nhật đạt khí thải tới Euro 5 | **Được**, theo Shell, nếu hướng dẫn sử dụng chấp nhận ACEA E7. |
+| Xe có bộ lọc hạt DPF | Không. Cần dầu ít tro theo tài liệu hướng dẫn sử dụng kèm theo xe. |
 | Máy cũ chỉ yêu cầu CF-4 | Dùng được, nhưng dầu CF-4 như [ENEOS DEO CF-4](/dau-dong-co-diesel/eneos-deo-cf-4) đủ đáp ứng. |
 
 ## Thông số này có ý nghĩa gì khi máy chạy?
 
-[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo bảng dữ liệu kỹ thuật của Shell. Shell gọi công nghệ của dòng này là **"bảo vệ ba tác động"** (Triple Protection):
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo bảng thông số kỹ thuật (TDS) của Shell. Shell gọi công nghệ của dòng này là **"bảo vệ ba tác động"** (Triple Protection):
 
 - **Kiểm soát axit và ăn mòn.** Phụ gia tẩy rửa trung hòa axit sinh ra khi đốt nhiên liệu, bảo vệ bạc trục. Trị số kiềm tổng 10,5 mg KOH/g.
 - **Giảm mài mòn.** Phụ gia chống mòn tạo màng bảo vệ ở cơ cấu xu páp, xéc măng và xi lanh. Phụ gia phân tán giữ muội than ở dạng hạt mịn.
-- **Kiểm soát cặn.** Hạn chế dầu bị đặc lại và hạn chế cặn bùn, cặn piston. Theo Shell, động cơ sạch hơn so với dòng Rimula R3 thế hệ trước.
+- **Kiểm soát cặn.** Hạn chế dầu bị đặc lại và hạn chế cặn bùn, cặn pít-tông. Theo Shell, động cơ sạch hơn so với dòng Rimula R3 thế hệ trước.
 - **Tro sunphat 1,45%.** Mức tro thông thường, không hợp với xe có DPF.
 
 ## Rimula R4 X hay Castrol Vecton 15W-40?
@@ -93,32 +93,32 @@ Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, kèm CO/CQ và hóa 
 | Tro sunphat | 1,45% | 1,5% | 1,45% |
 | Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn phuy 209 L | Nhận đặt |
 
-> **Nhận định của HT VINA:** Ba mã cùng nhóm chất lượng, chọn theo chuẩn mà sổ tay xe yêu cầu. Đội xe đang dùng Shell thì đặt tiếp R4 X. Cần dầu ngay thì Vecton 15W-40 có sẵn và có TBN cao hơn; đổi mã ở lần thay dầu toàn bộ, không châm lẫn thường xuyên.
+> **Nhận định của HT VINA:** Ba mã cùng nhóm chất lượng, chọn theo chuẩn mà hướng dẫn sử dụng của xe yêu cầu. Đội xe đang dùng Shell thì đặt tiếp R4 X. Cần dầu ngay thì Vecton 15W-40 có sẵn và có TBN cao hơn; đổi mã ở lần thay dầu toàn bộ, không đổ lẫn thường xuyên.
 
 ## Khi nào cần thay dầu?
 
-Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào test dầu:
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào kết quả kiểm tra dầu:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 98,1–119,9 mm²/s (lệch quá ±10% so với 109 mm²/s theo TDS). Đo bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Nước | Trên 0,2% (ASTM D6224) |
 | Trị số kiềm (TBN) | Còn khoảng một nửa so với dầu mới (khoảng 5 mg KOH/g) |
 
-Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách lấy mẫu và test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách lấy mẫu và kiểm tra xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu Shell Rimula R4 X 15W-40?
-Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe lớn có thể dựa vào bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe lớn có thể dựa vào bảng mức cho phép ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Shell R4 X khác Shell R4 L thế nào?
 R4 X là dầu tro thông thường (1,45 %), hợp với động cơ chưa có bộ lọc hạt. R4 L là dòng ít tro dành cho động cơ có DPF. Hai loại không thay thế nhau tùy tiện.
 
-### Có châm lẫn R4 X với dầu hãng khác được không?
-Không nên trộn thường xuyên vì hệ phụ gia mỗi hãng khác nhau. Nếu buộc phải châm thêm giữa hai lần thay, hãy dùng dầu cùng cấp API và cùng cấp nhớt, rồi thay toàn bộ ở lần bảo dưỡng tiếp theo.
+### Có đổ lẫn R4 X với dầu hãng khác được không?
+Không nên trộn thường xuyên vì hệ phụ gia mỗi hãng khác nhau. Nếu buộc phải thêm giữa hai lần thay, hãy dùng dầu cùng cấp API và cùng cấp nhớt, rồi thay toàn bộ ở lần bảo dưỡng tiếp theo.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** phuy 200 L, nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

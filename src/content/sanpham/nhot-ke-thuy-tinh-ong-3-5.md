@@ -23,7 +23,7 @@ stock_status: "dat-hang"
 applications:
   - "Đo độ nhớt dầu bánh răng, dầu tuần hoàn, dầu thủy lực đã qua sử dụng tại phòng thí nghiệm của nhà máy"
   - "Kiểm tra đầu vào lô dầu mới, so với độ nhớt ghi trên TDS"
-  - "Phát hiện châm nhầm dầu khác cấp độ nhớt"
+  - "Phát hiện đổ nhầm dầu khác cấp độ nhớt"
 not_for:
   - "Đo ngay cạnh máy ngoài hiện trường (cần bể ổn nhiệt)"
   - "Mẫu dầu lẫn nhiều cặn, mạt kim loại (làm tắc mao quản)"
@@ -41,7 +41,7 @@ tom_tat:
 related_posts: ["huong-dan-test-chat-luong-dau"]
 tags: ["thiet-bi-do", "do-nhot"]
 date: "2026-10-06"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Nhớt kế thủy tinh mao quản ống 3,5 mm** là dụng cụ đo **độ nhớt động học** theo nguyên lý của phép thử ASTM D445 (tương đương TCVN 3171). Mẫu dầu chảy qua một ống mao quản dưới tác dụng của trọng lực. Người đo bấm giờ thời gian dầu chảy giữa hai vạch, rồi nhân với hằng số của ống để ra độ nhớt tính bằng mm²/s (cSt).
@@ -72,7 +72,7 @@ updated: "2026-10-12"
 
 ## Đọc kết quả thế nào?
 
-So độ nhớt đo được với độ nhớt của **dầu mới cùng mã**. Với dầu công nghiệp, mức lệch **trên ±10%** so với dầu mới là dấu hiệu cần kiểm tra kỹ hơn hoặc lên kế hoạch thay dầu. Ví dụ dầu VG 220 mới đo 220 mm²/s, khi mẫu đang dùng ra dưới 198 hoặc trên 242 mm²/s thì cần xem lại. Ý nghĩa của độ nhớt tăng và độ nhớt giảm được giải thích trong bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+So độ nhớt đo được với độ nhớt của **dầu mới cùng mã**. Với dầu công nghiệp, mức lệch **trên ±10%** so với dầu mới là dấu hiệu cần kiểm tra kỹ hơn hoặc lên kế hoạch thay dầu. Ví dụ dầu VG 220 mới đo 220 mm²/s, khi mẫu đang dùng ra dưới 198 hoặc trên 242 mm²/s thì cần xem lại. Ý nghĩa của độ nhớt tăng và độ nhớt giảm được giải thích trong bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 Không có bể ổn nhiệt, hoặc cần đo ngay cạnh máy, có thể dùng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1). Cốc chảy cầm tay nhanh hơn nhưng chỉ cho kết quả so sánh, không ra mm²/s.
 

@@ -39,7 +39,7 @@ applications:
   - "Máy xúc, máy ủi, máy lu, máy nông nghiệp đời chưa có EGR"
   - "Máy phát điện diesel và động cơ diesel tàu thuyền dùng nhiều loại nhiên liệu"
 not_for:
-  - "Động cơ có EGR hoặc sổ tay yêu cầu API CH-4, CI-4 trở lên (dùng Castrol CRB Turbomax CI-4)"
+  - "Động cơ có EGR hoặc hướng dẫn sử dụng yêu cầu API CH-4, CI-4 trở lên (dùng Castrol CRB Turbomax CI-4)"
   - "Động cơ có bộ lọc hạt DPF"
 warnings:
   - "Tránh để dầu, nhất là dầu đã qua sử dụng, tiếp xúc lâu với da; dính da thì rửa ngay bằng xà phòng và nước."
@@ -53,12 +53,12 @@ images:
 doc_gia: "Trang này dành cho đội xe, máy công trình đời chưa có EGR đang dùng hoặc cần đặt Castrol CRB CF-4."
 tom_tat:
   - "**Dùng được** cho động cơ diesel hút khí tự nhiên và có turbo yêu cầu API CF-4, kể cả nhiên liệu chất lượng không đều."
-  - "**Không dùng** cho động cơ có EGR hoặc sổ tay ghi CH-4, CI-4: chọn Castrol CRB Turbomax CI-4 (có sẵn)."
+  - "**Không dùng** cho động cơ có EGR hoặc hướng dẫn sử dụng ghi CH-4, CI-4: chọn Castrol CRB Turbomax CI-4 (có sẵn)."
   - "**Điểm rót chảy rất thấp** (−42 °C với 20W-50, −45 °C với 15W-40)."
   - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026."
 tags: ["api-cf-4", "sae-20w-50", "sae-15w-40", "castrol", "dong-co-diesel"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Castrol CRB CF-4** là dầu động cơ diesel đa dụng cho xe và máy tải nặng, đạt cấp **API CF-4**. Dầu dùng được cho động cơ diesel hút khí tự nhiên và động cơ có turbo tăng áp, kể cả khi chạy bằng nhiên liệu diesel chất lượng không đều. Dòng này có hai cấp **20W-50** và **15W-40**. Ngoài thị trường, nhiều người vẫn gọi dòng này là "CRB Turbo".
@@ -67,7 +67,7 @@ Mã này **nhận đặt theo yêu cầu**: phuy 209 L (20W-50 hoặc 15W-40) v�
 
 ## CRB CF-4 có hợp với xe, máy của bạn không?
 
-| Sổ tay xe, máy ghi | Dùng CRB CF-4 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo xe, máy ghi | Dùng CRB CF-4 được không? |
 | :--- | :--- |
 | API CF-4, CF, CD | **Được.** |
 | Xe tải, xe ben, máy xúc, máy ủi, máy nông nghiệp đời chưa có EGR | **Được.** |
@@ -77,7 +77,7 @@ Mã này **nhận đặt theo yêu cầu**: phuy 209 L (20W-50 hoặc 15W-40) v�
 
 ## Thông số này có ý nghĩa gì khi máy chạy?
 
-[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo bảng dữ liệu sản phẩm của Castrol Việt Nam (06/2025).
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo bảng thông số kỹ thuật (TDS) của Castrol Việt Nam (06/2025).
 
 - **Giữ động cơ sạch.** Phụ gia tẩy rửa phân tán muội than và bụi bẩn sinh ra khi đốt nhiên liệu, hạn chế cặn bám trong động cơ.
 - **Chống oxy hóa.** Dầu chậm bị đặc lại khi máy chạy nóng, nên giữ được độ nhớt lâu hơn.
@@ -89,9 +89,9 @@ Mã này **nhận đặt theo yêu cầu**: phuy 209 L (20W-50 hoặc 15W-40) v�
 | Cấp | Độ nhớt ở 40 °C | Độ nhớt ở 100 °C | Chỉ số độ nhớt | Nên dùng khi |
 | :--- | :--- | :--- | :--- | :--- |
 | CRB 20W-50 CF-4 | 164 mm²/s | 18,7 mm²/s | 128 | Máy đã chạy lâu, tải nặng, trời nóng |
-| CRB 15W-40 CF-4 | 105 mm²/s | 14,3 mm²/s | 137 | Sổ tay ghi 15W-40, máy còn tốt |
+| CRB 15W-40 CF-4 | 105 mm²/s | 14,3 mm²/s | 137 | Hướng dẫn sử dụng ghi 15W-40, máy còn tốt |
 
-> **Nhận định của HT VINA:** Ở miền Bắc, nhiệt độ hiếm khi xuống dưới 0 °C nên 20W-50 vẫn khởi động bình thường. Máy đặt ở vùng núi lạnh, hoặc sổ tay ghi 15W-40, thì dùng 15W-40.
+> **Nhận định của HT VINA:** Ở miền Bắc, nhiệt độ hiếm khi xuống dưới 0 °C nên 20W-50 vẫn khởi động bình thường. Máy đặt ở vùng núi lạnh, hoặc hướng dẫn sử dụng ghi 15W-40, thì dùng 15W-40.
 
 ## CRB CF-4 hay CRB Turbomax CI-4?
 
@@ -107,25 +107,25 @@ Mã này **nhận đặt theo yêu cầu**: phuy 209 L (20W-50 hoặc 15W-40) v�
 
 ## Khi nào cần thay dầu?
 
-Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào test dầu:
+Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào kết quả kiểm tra dầu:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10%. 20W-50: ngoài 147,6–180,4 mm²/s. 15W-40: ngoài 94,5–115,5 mm²/s. Đo bằng [máy LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Nước | Trên 0,2% (ASTM D6224) |
 | Trị số kiềm (TBN) | Còn khoảng một nửa so với dầu mới (khoảng 3,3 mg KOH/g) |
 
-Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách lấy mẫu và test xem [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Dầu động cơ theo dõi TBN, không dùng kit TAN. Cách lấy mẫu và kiểm tra xem [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu Castrol CRB CF-4?
-Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe lớn có thể dựa vào bảng ngưỡng ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe lớn có thể dựa vào bảng mức cho phép ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Mua phuy cho đội xe thì đặt thế nào?
 Gửi số phuy, cấp nhớt và địa chỉ giao qua trang [báo giá](/bao-gia?sp=Castrol%20CRB%20CF-4) hoặc gọi theo trang [liên hệ](/contact).
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** phuy 209 L (20W-50, 15W-40), xô 18 L (20W-50). Nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

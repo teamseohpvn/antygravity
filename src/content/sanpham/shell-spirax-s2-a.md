@@ -53,10 +53,10 @@ tom_tat:
   - "**Dùng được** cho cầu sau, vi sai bánh răng hypoid của xe tải, xe ben, xe khách yêu cầu API GL-5 cấp 85W-140."
   - "**Không dùng** cho hộp số tay có đồng tốc mà hãng chỉ cho phép GL-4, hoặc hộp số tự động."
   - "**Có sẵn xô 20 L**, tiện cho gara và đội xe ít đầu xe."
-  - "**Thay dầu** theo mốc km trong sổ tay; dầu đục sữa hoặc nước trên 0,1% thì thay ngay."
+  - "**Thay dầu** theo mốc km trong hướng dẫn sử dụng; dầu đục sữa hoặc nước trên 0,1% thì thay ngay."
 tags: ["api-gl-5", "sae-85w-140", "dau-cau", "shell"]
 date: "2026-10-06"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **Shell Spirax S2 A 85W-140** là dầu cầu gốc khoáng của Shell, đạt cấp **API GL-5**, trước đây mang tên Shell Spirax A 85W-140. Dầu dùng cho cầu xe bánh răng hypoid và các bộ truyền động ô tô làm việc nặng.
@@ -65,7 +65,7 @@ Hàng có sẵn **xô 20 L**, kèm CO/CQ, hóa đơn VAT, giao từ kho TP Hải
 
 ## Spirax S2 A có hợp với xe của bạn không?
 
-| Sổ tay xe ghi | Dùng Spirax S2 A 85W-140 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo xe ghi | Dùng Spirax S2 A 85W-140 được không? |
 | :--- | :--- |
 | Cầu hypoid, API GL-5, SAE 85W-140 | **Được.** |
 | Hộp số, truyền động cuối tốc độ cao có va đập, hoặc tốc độ thấp mô-men lớn | **Được.** |
@@ -95,32 +95,32 @@ Hàng có sẵn **xô 20 L**, kèm CO/CQ, hóa đơn VAT, giao từ kho TP Hải
 
 Hai mã cùng cấp, thông số gần nhau, thay thế được cho nhau trong đa số cầu xe.
 
-> **Nhận định của HT VINA:** Chọn theo lượng dùng: xô 20 L tiện cho gara và đội xe ít đầu xe, không để dầu mở nắp lâu. Đội xe lớn dùng nhiều thì đặt phuy. Cầu dùng 80W-90 theo sổ tay thì không tự ý đổi lên 85W-140.
+> **Nhận định của HT VINA:** Chọn theo lượng dùng: xô 20 L tiện cho gara và đội xe ít đầu xe, không để dầu mở nắp lâu. Đội xe lớn dùng nhiều thì đặt phuy. Cầu dùng 80W-90 theo hướng dẫn sử dụng thì không tự ý đổi lên 85W-140.
 
 ## Khi nào cần thay dầu?
 
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 322,2–393,8 mm²/s (lệch quá ±10% so với 358 mm²/s theo TDS) |
-| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 | Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
 
-Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị đổ lẫn. Xem thêm [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu Shell Spirax S2 A 85W-140?
-Theo mốc km hoặc giờ máy trong sổ tay xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Spirax S2 A khác Spirax S2 G thế nào?
 Chữ **A** (axle) là dòng dầu cầu GL-5 cho bánh răng hypoid. Chữ **G** (gear) là dòng dầu hộp số tay GL-4. Cầu xe tải nên dùng dòng A; hộp số có đồng tốc mà hãng ghi GL-4 thì không nên dùng dòng A.
 
 ### Xô 20 L đủ thay cho mấy cầu xe?
-Tùy dung tích cầu trong sổ tay xe. Hãy đối chiếu dung tích từng cầu, cộng thêm phần châm bù khi kiểm tra định kỳ, rồi [liên hệ](/contact) để chúng tôi tính số xô cần đặt.
+Tùy dung tích cầu trong hướng dẫn sử dụng của xe. Hãy đối chiếu dung tích từng cầu, cộng thêm phần thêm bù khi kiểm tra định kỳ, rồi [liên hệ](/contact) để chúng tôi tính số xô cần đặt.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** xô 20 L.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

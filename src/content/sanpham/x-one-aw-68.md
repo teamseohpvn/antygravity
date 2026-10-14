@@ -25,9 +25,9 @@ stock_status: "co-san"
 applications:
   - "Máy ép nhựa, máy ép thủy lực, máy dập chạy liên tục trong xưởng"
   - "Hệ thủy lực máy công trình, xe nâng, bàn nâng"
-  - "Bơm bánh răng, bơm cánh gạt, bơm piston yêu cầu dầu chống mài mòn VG 68"
+  - "Bơm bánh răng, bơm cánh gạt, bơm pít-tông yêu cầu dầu chống mài mòn VG 68"
 not_for:
-  - "Hệ thống sổ tay yêu cầu dầu không kẽm (bơm có chi tiết mạ bạc)"
+  - "Hệ thống mà hướng dẫn sử dụng yêu cầu dầu không kẽm (bơm có chi tiết mạ bạc)"
   - "Hệ thủy lực ngoài trời lạnh sâu cần dầu chỉ số độ nhớt cao (HV)"
 warnings:   # TODO TDS: thay bằng cảnh báo trong SDS mục 2 và 7
   - "Tránh để dầu tiếp xúc lâu với da và mắt; dính da thì rửa bằng xà phòng và nước."
@@ -39,7 +39,7 @@ images:
   - { src: "/images/san-pham/x-one-aw-68-nhan.webp", alt: "Mặt sau xô X-One AW 68 ghi công dụng và lợi ích" }
   - { src: "/images/san-pham/x-one-aw-68-xo-18l-kho.webp", alt: "Xô X-One AW 68 cạnh danh thiếp Dầu Công Nghiệp HP" }
 
-doc_gia: "Trang này dành cho người mua hàng cần dầu thủy lực chống mài mòn 68 cho máy chạy nhiều ca, không yêu cầu phê duyệt hãng bơm."
+doc_gia: "Trang này dành cho người mua hàng cần dầu thủy lực chống mài mòn 68 cho máy chạy nhiều ca, không yêu cầu dầu được hãng bơm chấp thuận."
 tom_tat:
   - "**Dùng được** cho máy ép, máy công trình, xe nâng yêu cầu dầu thủy lực ISO VG 68 loại HM/AW."
   - "**Không dùng** cho bơm yêu cầu dầu không kẽm, hoặc máy ngoài trời lạnh sâu cần dầu HV."
@@ -47,7 +47,7 @@ tom_tat:
   - "**Chưa có TDS** của hãng: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "x-one"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **X-One AW 68** là dầu thủy lực chống mài mòn cấp độ nhớt **ISO VG 68**. Chữ "AW" (anti-wear) nghĩa là dầu có phụ gia chống mài mòn để bảo vệ bơm và van khi hệ thống chạy áp cao. Dầu dùng cho máy ép, máy công trình và hầu hết hệ thủy lực công nghiệp yêu cầu dầu cấp 68.
@@ -56,12 +56,12 @@ Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** v�
 
 ## X-One AW 68 có hợp với máy của bạn không?
 
-| Sổ tay máy ghi | Dùng X-One AW 68 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo máy ghi | Dùng X-One AW 68 được không? |
 | :--- | :--- |
-| ISO VG 68, HM, AW 68, không ghi phê duyệt hãng bơm | **Được.** |
-| Bơm bánh răng, cánh gạt, piston cần dầu chống mài mòn | **Được.** |
+| ISO VG 68, HM, AW 68, không ghi yêu cầu hãng bơm chấp thuận | **Được.** |
+| Bơm bánh răng, cánh gạt, pít-tông cần dầu chống mài mòn | **Được.** |
 | Dầu không kẽm, bơm có chi tiết mạ bạc | Không. |
-| Bắt buộc phê duyệt Parker Denison, Eaton | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
+| Bắt buộc dầu được Parker Denison, Eaton chấp thuận | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
 | HV, HVLP (máy ngoài trời lạnh sâu, dải nhiệt rộng) | Không. |
 
 Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của hãng cho mã này, nên trang chưa có bảng chỉ tiêu (độ nhớt, chỉ số độ nhớt, điểm chớp cháy).
@@ -76,33 +76,33 @@ Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (r
 | Xô 18 L | 580.000–667.000 đ | Nhận đặt |
 | Tiêu chuẩn công bố | Chưa có TDS | DIN 51524-2, TCCS 14:2014 |
 
-Tính theo lít, phuy X-One thấp hơn ENEOS khoảng 12%. ENEOS có TDS bản tiếng Việt và tiêu chuẩn cơ sở công bố, nên dễ đối chiếu với sổ tay máy hơn.
+Tính theo lít, phuy X-One thấp hơn ENEOS khoảng 12%. ENEOS có TDS bản tiếng Việt và tiêu chuẩn cơ sở công bố, nên dễ đối chiếu với hướng dẫn sử dụng của máy hơn.
 
-> **Nhận định của HT VINA:** Chọn X-One AW 68 khi sổ tay chỉ ghi ISO VG 68 loại HM/AW và bạn cần một mã có giá hợp lý cho máy chạy nhiều ca. Máy Nhật đang dùng sẵn ENEOS, hoặc cần giấy tờ tiêu chuẩn để nộp kiểm tra, thì giữ ENEOS.
+> **Nhận định của HT VINA:** Chọn X-One AW 68 khi hướng dẫn sử dụng chỉ ghi ISO VG 68 loại HM/AW và bạn cần một mã có giá hợp lý cho máy chạy nhiều ca. Máy Nhật đang dùng sẵn ENEOS, hoặc cần giấy tờ tiêu chuẩn để nộp kiểm tra, thì giữ ENEOS.
 
 ## Khi nào cần thay dầu?
 
-Không có một mốc giờ chạy đúng cho mọi máy. Cùng là X-One AW 68, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả test dầu đang dùng, so với dầu mới:
+Không có một mốc giờ chạy đúng cho mọi máy. Cùng là X-One AW 68, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả kiểm tra dầu đang dùng, so với dầu mới:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu | Dụng cụ đo tại xưởng |
+| Chỉ tiêu | Mức nên thay dầu | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
 | Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (cấp ISO VG 68 danh định 68 mm²/s, lệch quá ±10%) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
-| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
-Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu thủy lực X-One AW 68?
-Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng ngưỡng và dụng cụ đo ở mục "Khi nào cần thay dầu?" phía trên.
+Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng mức cho phép và dụng cụ đo ở mục "Khi nào cần thay dầu?" phía trên.
 
-### Châm X-One AW 68 vào máy đang dùng dầu hãng khác được không?
-Hai dầu cùng cấp VG 68 loại AW gốc khoáng thường trộn được khi châm bổ sung một lượng nhỏ. Khi đổi hẳn sang mã mới, nên xả hết dầu cũ và thay lọc để dễ theo dõi chất lượng dầu. Cách làm xem [hướng dẫn thay dầu thủy lực](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc).
+### Thêm X-One AW 68 vào máy đang dùng dầu hãng khác được không?
+Hai dầu cùng cấp VG 68 loại AW gốc khoáng thường trộn được khi thêm dầu bổ sung một lượng nhỏ. Khi đổi hẳn sang mã mới, nên xả hết dầu cũ và thay lọc để dễ theo dõi chất lượng dầu. Cách làm xem [hướng dẫn thay dầu thủy lực](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc).
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
-- **Quy cách có sẵn:** phuy 200 L cho nhà máy thay dầu cả bồn, xô 18 L cho tổ bảo trì châm thêm.
+- **Quy cách có sẵn:** phuy 200 L cho nhà máy thay dầu cả thùng, xô 18 L cho tổ bảo trì thêm.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** xem khoảng giá tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=X-One%20AW%2068) theo số lượng của bạn.

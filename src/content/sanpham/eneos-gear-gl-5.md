@@ -46,7 +46,7 @@ storage: "Để nơi khô ráo, có mái che, tránh nắng trực tiếp. Phuy 
 images:
   - { src: "/images/san-pham/eneos-gear-gl-5-80w-90-can-phuy.webp", alt: "Can dầu bánh răng ENEOS Gear Oil API GL-5 SAE 80W-90 và phuy ENEOS" }
 
-doc_gia: "Trang này dành cho đội xe, máy công trình có sổ tay ghi dầu cầu GL-5 cấp 80W-90 hoặc SAE 90."
+doc_gia: "Trang này dành cho đội xe, máy công trình có hướng dẫn sử dụng ghi dầu cầu GL-5 cấp 80W-90 hoặc SAE 90."
 tom_tat:
   - "**Dùng được** cho cầu sau hypoid, hộp số tay không đồng tốc tải nặng, truyền động cuối, hộp số quay toa."
   - "**80W-90** chảy tốt khi lạnh (VI 117); **SAE 90** cho cầu chạy nóng, máy công trình."
@@ -54,7 +54,7 @@ tom_tat:
   - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. GL-5 80W-90 có sẵn: EMI Gear EP."
 tags: ["api-gl-5", "sae-90", "sae-80w-90", "dau-cau", "eneos"]
 date: "2026-10-12"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **ENEOS Gear Oil GL-5** là dầu cầu, dầu hộp số chịu cực áp của ENEOS, đạt cấp **API GL-5**. Dầu dùng cho cầu sau bánh răng hypoid và hộp số tay tải nặng của xe tải, xe khách và máy công trình.
@@ -63,7 +63,7 @@ Hai cấp **SAE 90** (can 18 L, phuy 200 L) và **80W-90** (đóng thùng) **nh�
 
 ## ENEOS Gear GL-5 có hợp với xe của bạn không?
 
-| Sổ tay xe ghi | Dùng ENEOS Gear GL-5 được không? |
+| Tài liệu hướng dẫn sử dụng kèm theo xe ghi | Dùng ENEOS Gear GL-5 được không? |
 | :--- | :--- |
 | Cầu hypoid, API GL-5, 80W-90 hoặc SAE 90 | **Được.** |
 | Hộp số tay không đồng tốc tải nặng (xe tải đời cũ, xe ben) | **Được.** |
@@ -92,29 +92,29 @@ Hai cấp **SAE 90** (can 18 L, phuy 200 L) và **80W-90** (đóng thùng) **nh�
 
 [EMI Gear EP GL-5](/dau-cau-hop-so/emi-gear-ep-gl-5) cùng cấp API GL-5, có sẵn cấp 80W-90 xô 18 L và 85W-140 tại kho. ENEOS có TDS công bố đủ độ nhớt, chỉ số độ nhớt, điểm chớp cháy; EMI chưa gửi TDS.
 
-> **Nhận định của HT VINA:** Đội xe đang dùng ENEOS thì đặt tiếp đúng mã. Cần dầu cầu GL-5 ngay thì dùng EMI có sẵn, thay toàn bộ dầu cầu thay vì châm lẫn.
+> **Nhận định của HT VINA:** Đội xe đang dùng ENEOS thì đặt tiếp đúng mã. Cần dầu cầu GL-5 ngay thì dùng EMI có sẵn, thay toàn bộ dầu cầu thay vì đổ lẫn.
 
 ## Khi nào cần thay dầu?
 
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10%. 80W-90: ngoài 130,7–159,7 mm²/s. SAE 90: ngoài 175,8–214,8 mm²/s |
-| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 | Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
 
-Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị đổ lẫn. Xem thêm [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu ENEOS Gear Oil GL-5?
-Theo mốc km hoặc giờ máy trong sổ tay xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Dầu GL-5 có dùng cho hộp số tay được không?
-Được, với hộp số tay tải nặng không đồng tốc như hộp số xe tải đời cũ, xe ben. Hộp số có bộ đồng tốc bằng đồng mà sổ tay chỉ ghi GL-4 thì nên dùng đúng dầu GL-4, vì phụ gia GL-5 có thể làm đồng mòn nhanh hơn.
+Được, với hộp số tay tải nặng không đồng tốc như hộp số xe tải đời cũ, xe ben. Hộp số có bộ đồng tốc bằng đồng mà hướng dẫn sử dụng chỉ ghi GL-4 thì nên dùng đúng dầu GL-4, vì phụ gia GL-5 có thể làm đồng mòn nhanh hơn.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** SAE 90 can 18 L, phuy 200 L; 80W-90 đóng thùng. Nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.

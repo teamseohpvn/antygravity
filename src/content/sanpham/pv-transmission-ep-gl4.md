@@ -54,7 +54,7 @@ tom_tat:
   - "**Không tự đổi 90 sang 140** cho hộp số: dầu đặc hơn làm vào số nặng."
 tags: ["api-gl-4", "sae-90", "sae-140", "dau-hop-so", "pvoil"]
 date: "2026-10-06"
-updated: "2026-10-12"
+updated: "2026-10-14"
 ---
 
 **PV Transmission 90 EP_GL4** và **PV Transmission 140 EP_GL4** là dầu truyền động chịu cực áp của PVOIL Lube, thương hiệu dầu nhờn thuộc Tổng công ty Dầu Việt Nam. Dầu đạt cấp **API GL-4**, dùng cho hộp số tay, cầu xe tải vừa và các bộ bánh răng cần dầu SAE 90 hoặc SAE 140.
@@ -63,7 +63,7 @@ Hàng có sẵn tại kho: cấp **90, phuy 200 L**; cấp 140 nhận đặt the
 
 ## PV Transmission GL-4 có hợp với xe, máy của bạn không?
 
-| Sổ tay ghi | Dùng PV Transmission EP_GL4 được không? |
+| Hướng dẫn sử dụng ghi | Dùng PV Transmission EP_GL4 được không? |
 | :--- | :--- |
 | Hộp số tay API GL-4, SAE 90 | **Được.** Kể cả hộp số có đồng tốc. |
 | Cầu xe tải vừa, bánh răng côn xoắn, GL-4 | **Được.** |
@@ -86,7 +86,7 @@ Hàng có sẵn tại kho: cấp **90, phuy 200 L**; cấp 140 nhận đặt the
 | PV Transmission 90 EP_GL4 | 17–18,5 cSt | Hộp số tay xe tải, xe khách, máy kéo; hộp giảm tốc tải vừa |
 | PV Transmission 140 EP_GL4 | 27–32 cSt | Cầu xe tải đời cũ, hộp số đã mòn, bánh răng tải nặng tốc độ chậm |
 
-> **Nhận định của HT VINA:** Dùng đúng cấp sổ tay ghi. Dầu 140 đặc hơn nên vào số nặng hơn, nhất là khi trời lạnh. Chỉ dùng 140 cho hộp số khi sổ tay cho phép hoặc thợ đã kiểm tra hộp số.
+> **Nhận định của HT VINA:** Dùng đúng cấp hướng dẫn sử dụng ghi. Dầu 140 đặc hơn nên vào số nặng hơn, nhất là khi trời lạnh. Chỉ dùng 140 cho hộp số khi hướng dẫn sử dụng cho phép hoặc thợ đã kiểm tra hộp số.
 
 ## GL-4 hay GL-5?
 
@@ -99,29 +99,29 @@ GL-5 có lượng phụ gia cực áp cao hơn, dành cho cầu hypoid tải n�
 | Cầu hypoid tải nặng | Không | Dùng được |
 | Quy cách có sẵn | Phuy 200 L | Xô 18 L |
 
-> **Nhận định của HT VINA:** Đội xe có cả hộp số tay đồng tốc và cầu hypoid thì cần hai loại dầu, không gom về một mã. Dán nhãn rõ ở can rót để thợ không châm nhầm.
+> **Nhận định của HT VINA:** Đội xe có cả hộp số tay đồng tốc và cầu hypoid thì cần hai loại dầu, không gom về một mã. Dán nhãn rõ ở can rót để thợ không đổ nhầm.
 
 ## Khi nào cần thay dầu?
 
-Theo mốc km hoặc giờ máy trong sổ tay xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
+Theo mốc km hoặc giờ máy trong tài liệu hướng dẫn sử dụng kèm theo xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
 
-| Chỉ tiêu | Ngưỡng nên thay dầu |
+| Chỉ tiêu | Mức nên thay dầu |
 | :--- | :--- |
 | Độ nhớt ở 40 °C | Lệch quá ±10% so với dầu mới (lấy mẫu dầu mới cùng lô đo ở cùng nhiệt độ làm mốc) |
-| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Nước | Trên 0,1%: thay dầu và tìm chỗ nước lọt vào. Đo nhanh theo [cách kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 | Màu, mùi | Dầu đục màu sữa, có mạt kim loại lấp lánh, mùi khét: dừng xe kiểm tra |
 
-Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị châm lẫn. Xem thêm [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+Độ nhớt lệch nhiều cho thấy dầu đã xuống cấp hoặc bị đổ lẫn. Xem thêm [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu PVOIL PV Transmission?
-Theo mốc km hoặc giờ máy trong sổ tay xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
+Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe, rút ngắn khi xe chạy tải nặng, lội nước, nhiều bụi. Dấu hiệu cần thay sớm xem ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Dùng dầu 140 thay dầu 90 cho hộp số được không?
-Không nên tự ý đổi. Dầu 140 đặc hơn nên vào số nặng hơn, nhất là khi trời lạnh. Chỉ dùng 140 khi sổ tay xe cho phép hoặc thợ đã kiểm tra hộp số.
+Không nên tự ý đổi. Dầu 140 đặc hơn nên vào số nặng hơn, nhất là khi trời lạnh. Chỉ dùng 140 khi hướng dẫn sử dụng của xe cho phép hoặc thợ đã kiểm tra hộp số.
 
-## Quy cách và giấy tờ khi mua
+## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** cấp 90 phuy 200 L. Cấp 140 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
