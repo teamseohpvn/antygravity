@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
+import BanDoKho from '../components/BanDoKho.astro';
 import { getActiveCategories } from '../lib/content';
 import {
   BUSINESS, ADDRESS_FULL, AREA_TEXT, SITE_NAME, LEGAL_NAME, LEGAL_SHORT, TAX_ID,
@@ -178,6 +179,7 @@ const initials = (name: string) => name.split(' ').slice(-2).map((w) => w[0]).jo
         KCN {KCN_FAR.join(', ')} và các tỉnh Bắc Ninh, Hưng Yên, Quảng Ninh, Hà Nội. Thời gian giao cụ thể được xác nhận
         khi báo giá, tùy số lượng và địa điểm.
       </p>
+      <BanDoKho />
 
       <h2>Chúng tôi phục vụ ai</h2>
       <ul>
