@@ -109,6 +109,9 @@ DONG = [
     ("mo-boi-tron-cong-nghiep", "VHP Lithium Grease L4", "VHP", "NLGI 4", "trong-nuoc", "Xô 17 kg", 17, "vhp-lithium-grease", 1, ("Mỡ Lithium Grease L4", "Xô 17Kg")),
     ("mo-boi-tron-cong-nghiep", "VHP Opal Grease NLGI 3", "VHP", "NLGI 3", "trong-nuoc", "Phuy 180 kg", 180, "vhp-opal-grease", 0, ("Mỡ Opal Grease NLGI3", "Phuy 180Kg")),
     ("mo-boi-tron-cong-nghiep", "VHP Opal Grease NLGI 4", "VHP", "NLGI 4", "trong-nuoc", "Xô 15 kg", 15, "vhp-opal-grease", 1, ("Mỡ Opal Grease NLGI 4/ 15Kg", "Xô 15Kg")),
+    # 14/10/2026: thiết bị kiểm tra dầu không có trong file kho, giá lấy ở GIA_NGOAI_KHO.
+    ("thiet-bi-kiem-tra-dau", "Máy đo độ nhớt cầm tay LND-1", "OEM", "", "nhap-khau", "Bộ", None, "may-do-do-nhot-cam-tay-lnd-1", 0, ("LND-1", "Bộ")),
+    ("thiet-bi-kiem-tra-dau", "Nhớt kế thủy tinh ống 3,5 mm", "OEM", "", "nhap-khau", "Cái", None, "nhot-ke-thuy-tinh-ong-3-5", 0, ("Nhớt kế ống 3,5", "Cái")),
 ]
 
 # Giá trong file kho tính theo đơn vị nhỏ hơn quy cách bán trên web: nhân lên cho đúng quy cách.
@@ -123,6 +126,15 @@ SUA_GIA = {
     # có giá 10.000.000 = ~70% giá bán gần nhất 14.300.000; Hyspin bán gần nhất 13.568.600 → ~9,5 triệu.
     # Dùng 9.000.000 (giả định gõ thiếu số 0) cho tới khi kho xác nhận giá đúng.
     ("Dầu Hyspin AWS 68/209L (Castrol)", "Phuy 209 L"): 9_000_000,
+}
+
+
+# Mã không có trong file kho: giá bán thị trường công khai làm mốc thấp (vẫn → × HE_SO). Ghi nguồn và ngày xem.
+GIA_NGOAI_KHO = {
+    # 14/10/2026: anphatkd.com/san-pham/may-do-do-nhot-cam-tay-lnd-1 bán 1.600.000 đ.
+    ("LND-1", "Bộ"): 1_600_000,
+    # 14/10/2026: vietvalue.edu.vn (nhớt kế thủy tinh ống phễu 3.5) bán 495.000 đ, giá niêm yết 550.000 đ.
+    ("Nhớt kế ống 3,5", "Cái"): 495_000,
 }
 
 
@@ -162,7 +174,9 @@ def main():
     rows, loi = [], []
     for dm, ten, hang, cap, nguon, qc, dt, trang, thu_tu, khop in DONG:
         gia = None
-        if khop:
+        if khop in GIA_NGOAI_KHO:
+            gia = GIA_NGOAI_KHO[khop]
+        elif khop:
             if khop not in gia_theo:
                 loi.append(f"Không thấy trong file kho: {khop}")
             gia = SUA_GIA.get(khop, gia_theo.get(khop))

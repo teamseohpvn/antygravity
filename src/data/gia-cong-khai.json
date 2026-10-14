@@ -1251,6 +1251,36 @@
       "cao": 932000,
       "thap_don_vi": 54000,
       "cao_don_vi": 62200
+    },
+    {
+      "danh_muc": "thiet-bi-kiem-tra-dau",
+      "ten": "Máy đo độ nhớt cầm tay LND-1",
+      "hang": "OEM",
+      "cap": "",
+      "nguon": "nhap-khau",
+      "quy_cach": "Bộ",
+      "trang": "may-do-do-nhot-cam-tay-lnd-1",
+      "don_vi_do": "L",
+      "thu_tu": 0,
+      "thap": 1600000,
+      "cao": 1840000,
+      "thap_don_vi": null,
+      "cao_don_vi": null
+    },
+    {
+      "danh_muc": "thiet-bi-kiem-tra-dau",
+      "ten": "Nhớt kế thủy tinh ống 3,5 mm",
+      "hang": "OEM",
+      "cap": "",
+      "nguon": "nhap-khau",
+      "quy_cach": "Cái",
+      "trang": "nhot-ke-thuy-tinh-ong-3-5",
+      "don_vi_do": "L",
+      "thu_tu": 0,
+      "thap": 495000,
+      "cao": 570000,
+      "thap_don_vi": null,
+      "cao_don_vi": null
     }
   ]
 }
