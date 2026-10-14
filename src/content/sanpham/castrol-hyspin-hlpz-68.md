@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-009"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Castrol Hyspin HLP-Z 68"
 seo_title: "Castrol Hyspin HLP-Z 68 – Dầu Thủy Lực Chống Mài Mòn"
 description: "Dầu thủy lực Castrol Hyspin HLP-Z 68 gốc khoáng, phụ gia kẽm chống mài mòn, đạt DIN 51524-2 HLP, ISO 11158 HM. Xô 20 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -32,7 +32,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Xô 20 L", sku: "HLPZ 68" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 equivalents: ["Castrol Hyspin AWS 68", "ENEOS Super Hyrando 68"]
 
 applications:
@@ -57,7 +57,7 @@ tom_tat:
   - "**Dùng được** cho hệ thủy lực yêu cầu DIN 51524-2 HLP, ISO 11158 HM cấp 68, bánh răng tải nhẹ và hệ dầu tuần hoàn."
   - "**Có phụ gia kẽm** (chữ \"Z\"): bơm yêu cầu dầu không kẽm thì dùng dòng HLP-AF."
   - "**Không phải dầu rãnh trượt**: băng trượt máy công cụ dùng dầu rãnh trượt chuyên dụng."
-  - "**Nhận đặt theo yêu cầu** (xô 20 L), không có sẵn tại kho tháng 10/2026."
+  - "**Có sẵn tại kho** (xô 20 L)."
 tags: ["iso-vg-68", "chong-mai-mon", "castrol"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -65,7 +65,7 @@ updated: "2026-10-14"
 
 **Castrol Hyspin HLP-Z 68** là dầu thủy lực chống mài mòn gốc khoáng tinh chế, dùng hệ phụ gia chống mài mòn **gốc kẽm** ổn định. Theo Castrol, dầu được phân loại DIN 51502 HLP và ISO 6743-4 HM, đáp ứng DIN 51524 phần 2, ISO 11158 HM và ASTM D6158 HM. Ngoài hệ thủy lực, dầu dùng được cho bánh răng tải nhẹ và hệ dầu tuần hoàn.
 
-Mã này **nhận đặt theo yêu cầu** theo **xô 20 L**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo **xô 20 L**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Hyspin HLP-Z 68 có hợp với máy của bạn không?
 
@@ -98,7 +98,7 @@ Hai mã cùng hãng, cùng cấp 68 và cùng dùng phụ gia kẽm. Hyspin AWS 
 | Điểm đông đặc | −27 °C | −21 °C | −25 °C |
 | Tách nước ở 54 °C | 25 phút | 15 phút | Không công bố |
 | Được hãng bơm chấp thuận | Không công bố | Parker Denison, Eaton | Không công bố |
-| Quy cách | Xô 20 L (nhận đặt) | Phuy 209 L (có sẵn) | Phuy 200 L (có sẵn) |
+| Quy cách | Xô 20 L (có sẵn) | Phuy 209 L (có sẵn) | Phuy 200 L (có sẵn) |
 
 > **Nhận định của HT VINA:** HLP-Z hợp khi bạn cần xô nhỏ đúng tiêu chuẩn DIN HLP. Thay cả thùng lớn thì phuy Hyspin AWS 68 có sẵn, tách nước nhanh hơn và được hãng bơm chấp thuận.
 
@@ -127,7 +127,8 @@ Dòng HLP-Z dùng phụ gia chống mài mòn gốc kẽm. Castrol có dòng HLP
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** xô 20 L, nhận đặt theo yêu cầu.
+- **Quy cách:** xô 20 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Castrol%20Hyspin%20HLP-Z%2068) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

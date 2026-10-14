@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-005"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Mỡ VHP Caxilium Grease No2, No3"
 seo_title: "Mỡ VHP Caxilium Grease No2, No3 – Mỡ Kháng Nước"
 description: "Mỡ VHP Caxilium Grease No2, No3 gốc lithium-canxi, kháng nước và muối, làm việc -10 đến 110 °C, cho đầu trục, sát xi, máy nông nghiệp. Phuy 180 kg."
@@ -35,7 +35,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "No2 – Phuy 180 kg", sku: "CAXILIUM NO2" }
   - { name: "No3 – Phuy 180 kg", sku: "CAXILIUM NO3" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Đầu trục, ổ bi, bạc, sát xi làm việc ngoài trời, hay dính nước"
@@ -60,7 +60,7 @@ tom_tat:
   - "**Dùng được** cho đầu trục, sát xi, bánh răng hở, chốt, bạc gặp mưa, nước rửa, nước muối; làm việc từ −10 °C đến 110 °C."
   - "**Mỡ lithium-canxi**, công thức phụ gia Lubrizol; cấp No2 sản xuất theo TCCS 52:2023/VHP."
   - "**Không phải mỡ chịu nhiệt**: ổ bi động cơ, quạt chạy nóng dùng VHP Lithium Grease."
-  - "**Nhận đặt theo yêu cầu** (phuy 180 kg), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho** (phuy 180 kg). HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "khang-nuoc", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -68,7 +68,7 @@ updated: "2026-10-14"
 
 **VHP Caxilium Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. Mỡ được làm cho những chỗ bôi trơn hở, hay gặp nước và nước muối. Cấp No2 sản xuất theo tiêu chuẩn cơ sở TCCS 52:2023/VHP.
 
-HT VINA là **đại lý dầu mỡ VHP**. **No2** và **No3**, đóng **phuy 180 kg**, **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+HT VINA là **đại lý dầu mỡ VHP**. **No2** và **No3**, đóng **phuy 180 kg**, **có sẵn tại kho**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Caxilium có hợp với điểm bôi trơn của bạn không?
 
@@ -106,7 +106,7 @@ VHP công bố bảng chỉ tiêu cho cấp No2. Nếu cần phiếu kiểm nghi
 | Chất làm đặc | Lithium và canxi | Lithium và canxi |
 | Nhiệt độ làm việc | −10 đến 110 °C | −10 đến 110 °C (ngắn hạn 120 °C) |
 | Định hướng của VHP | Chỗ hở, nhiều nước, nước muối | Mỡ bôi trơn đa dụng, chống rửa trôi |
-| Tình trạng kho tháng 10/2026 | Nhận đặt, phuy 180 kg | Có sẵn No3 ống 400 g |
+| Tình trạng kho tháng 10/2026 | Có sẵn phuy 180 kg | Có sẵn No3 ống 400 g |
 
 > **Nhận định của HT VINA:** Thiết bị ven biển, trên tàu, hay ngập nước muối thì đặt Caxilium. Điểm bôi trơn ngoài trời thông thường cần mỡ ngay thì Licas có sẵn và có thêm xô, ống 400 g tiện cho xưởng dùng ít.
 
@@ -133,7 +133,8 @@ Không. Nhiệt độ nhỏ giọt 141 °C và làm việc tới 110 °C là m�
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** No2, No3 phuy 180 kg, nhận đặt theo yêu cầu.
+- **Quy cách:** No2, No3 phuy 180 kg, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Caxilium%20Grease) kèm cấp và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

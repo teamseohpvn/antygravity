@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-006"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "VHP Hymatran Oil 10W"
 seo_title: "VHP Hymatran 10W – Dầu Truyền Động, Thủy Lực Máy Công Trình"
 description: "Dầu VHP Hymatran 10W cho hộp số, bộ biến mô, thủy lực xe nâng, máy xúc, máy nông nghiệp. Đáp ứng Caterpillar TO-2. Phuy 200 L, xô 18 L, giao Hải Phòng."
@@ -32,7 +32,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 200 L", sku: "Hymatran 10W" }
   - { name: "Xô 18 L" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Hộp số powershift, bộ biến mô của xe nâng, máy xúc lật, máy ủi khi hãng yêu cầu dầu SAE 10W"
@@ -57,7 +57,7 @@ tom_tat:
   - "**Dùng được** cho hộp số powershift, bộ biến mô, hệ thủy lực máy công trình khi hãng yêu cầu dầu SAE 10W hoặc Caterpillar TO-2."
   - "**Một mã cho nhiều cụm**: đội xe nâng, xe công trình chỉ cần dự trữ một loại."
   - "**Không dùng** cho cầu xe, động cơ xe đời mới, hộp số tự động ô tô con; không thay dầu thủy lực VG 68 khi chưa hỏi hãng."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho**. HT VINA là đại lý dầu mỡ VHP."
 tags: ["sae-10w", "caterpillar-to-2", "dau-truyen-dong", "xe-nang", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -65,7 +65,7 @@ updated: "2026-10-14"
 
 **VHP Hymatran Oil 10W** là dầu đơn cấp SAE 10W do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hộp số, bộ biến mô và hệ thủy lực của máy công trình khi nhà sản xuất máy yêu cầu dầu cấp nhớt 10W. Theo VHP, dầu đáp ứng **API CF/SF, ACEA E2, Caterpillar TO-2, ZF TE-ML 03B** và thử bơm **Vickers 35VQ25**.
 
-HT VINA là **đại lý dầu mỡ VHP**. Phuy 200 L và xô 18 L **nhận đặt theo yêu cầu**. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+HT VINA là **đại lý dầu mỡ VHP**. Phuy 200 L và xô 18 L **có sẵn tại kho**. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Hymatran 10W có hợp với máy của bạn không?
 
@@ -113,7 +113,8 @@ Theo công bố của VHP, Hymatran 10W đáp ứng Caterpillar TO-2, không ghi
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 200 L và xô 18 L, nhận đặt theo yêu cầu.
+- **Quy cách:** phuy 200 L và xô 18 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Hymatran%20Oil%2010W) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

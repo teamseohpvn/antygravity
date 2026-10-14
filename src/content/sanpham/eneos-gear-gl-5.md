@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-001"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "ENEOS Gear Oil GL-5 80W-90, 90"
 seo_title: "ENEOS Gear GL-5 80W-90, 90 – Dầu Cầu, Hộp Số Xe Tải"
 description: "Dầu cầu ENEOS Gear Oil GL-5 80W-90 và SAE 90 cho cầu hypoid, hộp số tay xe tải, máy công trình. Can 18 L, phuy 200 L, có CO/CQ, giao từ kho Hải Phòng."
@@ -29,7 +29,7 @@ packaging:
   - { name: "Can 18 L (SAE 90)", sku: "GL5.1" }
   - { name: "Phuy 200 L (SAE 90)", sku: "GL5.2" }
   - { name: "Thùng (80W-90)", sku: "GL 80W90" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Cầu sau, vi sai bánh răng hypoid của xe tải, xe khách, xe ben"
@@ -51,7 +51,7 @@ tom_tat:
   - "**Dùng được** cho cầu sau hypoid, hộp số tay không đồng tốc tải nặng, truyền động cuối, hộp số quay toa."
   - "**80W-90** chảy tốt khi lạnh (VI 117); **SAE 90** cho cầu chạy nóng, máy công trình."
   - "**Không dùng** cho hộp số tay có đồng tốc mà hãng chỉ cho phép GL-4."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. GL-5 80W-90 có sẵn: EMI Gear EP."
+  - "**Có sẵn tại kho**."
 tags: ["api-gl-5", "sae-90", "sae-80w-90", "dau-cau", "eneos"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -59,7 +59,7 @@ updated: "2026-10-14"
 
 **ENEOS Gear Oil GL-5** là dầu cầu, dầu hộp số chịu cực áp của ENEOS, đạt cấp **API GL-5**. Dầu dùng cho cầu sau bánh răng hypoid và hộp số tay tải nặng của xe tải, xe khách và máy công trình.
 
-Hai cấp **SAE 90** (can 18 L, phuy 200 L) và **80W-90** (đóng thùng) **nhận đặt theo yêu cầu**, có CO/CQ, hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Hai cấp **SAE 90** (can 18 L, phuy 200 L) và **80W-90** (đóng thùng) **có sẵn tại kho**, có CO/CQ, hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## ENEOS Gear GL-5 có hợp với xe của bạn không?
 
@@ -88,7 +88,7 @@ Hai cấp **SAE 90** (can 18 L, phuy 200 L) và **80W-90** (đóng thùng) **nh�
 
 > **Nhận định của HT VINA:** Hai cấp có độ nhớt gần nhau khi máy đã nóng (16,17 so với 17,52 mm²/s ở 100 °C). Khác biệt chính là 80W-90 dễ chảy hơn khi trời lạnh. Xe chạy đường dài quanh năm chọn 80W-90; máy công trình làm việc nóng tại chỗ dùng SAE 90 là đủ.
 
-## ENEOS Gear GL-5 hay EMI Gear EP GL-5 có sẵn?
+## ENEOS Gear GL-5 hay EMI Gear EP GL-5?
 
 [EMI Gear EP GL-5](/dau-cau-hop-so/emi-gear-ep-gl-5) cùng cấp API GL-5, có sẵn cấp 80W-90 xô 18 L và 85W-140 tại kho. ENEOS có TDS công bố đủ độ nhớt, chỉ số độ nhớt, điểm chớp cháy; EMI chưa gửi TDS.
 
@@ -116,7 +116,8 @@ Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe, rút 
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** SAE 90 can 18 L, phuy 200 L; 80W-90 đóng thùng. Nhận đặt theo yêu cầu.
+- **Quy cách:** SAE 90 can 18 L, phuy 200 L; 80W-90 đóng thùng. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Gear%20Oil%20GL-5) kèm cấp nhớt và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

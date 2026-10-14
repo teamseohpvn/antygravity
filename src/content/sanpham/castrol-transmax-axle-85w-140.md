@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-002"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Castrol Transmax Axle 85W-140"
 seo_title: "Castrol Transmax Axle 85W-140 – Dầu Cầu GL-5 Phuy 209 L"
 description: "Dầu cầu Castrol Transmax Axle 85W-140 đạt API GL-5 cho cầu xe tải, xe ben, vi sai hypoid tải nặng. Phuy 209 L, có CO/CQ, VAT, giao từ kho Hải Phòng."
@@ -28,7 +28,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 209 L", sku: "Dầu cầu Castrol" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Cầu sau, vi sai bánh răng hypoid của xe tải nặng, xe ben, xe đầu kéo"
@@ -50,7 +50,7 @@ tom_tat:
   - "**Dùng được** cho cầu sau, vi sai hypoid, truyền động cuối yêu cầu API GL-5 cấp 85W-140."
   - "**Không dùng** cho hộp số tay có đồng tốc mà hãng chỉ cho phép GL-4 hoặc dầu loãng hơn (75W-90, 80W-90)."
   - "**Thông số gần như Shell Spirax S2 A 85W-140** (có sẵn xô 20 L tại kho)."
-  - "**Nhận đặt theo yêu cầu** (phuy 209 L), không có sẵn tại kho tháng 10/2026."
+  - "**Có sẵn tại kho** (phuy 209 L)."
 tags: ["api-gl-5", "sae-85w-140", "dau-cau", "castrol"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -58,7 +58,7 @@ updated: "2026-10-14"
 
 **Castrol Transmax Axle 85W-140** là dầu cầu đa cấp của Castrol, đạt cấp **API GL-5**. Dầu dùng cho cầu xe, vi sai và hộp số yêu cầu dầu GL-5 cấp nhớt 85W-140, chủ yếu là xe tải nặng, xe ben và máy công trình.
 
-Mã này **nhận đặt theo yêu cầu** theo phuy 209 L, kèm CO/CQ, hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo phuy 209 L, kèm CO/CQ, hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Transmax Axle 85W-140 có hợp với xe của bạn không?
 
@@ -88,7 +88,7 @@ Mã này **nhận đặt theo yêu cầu** theo phuy 209 L, kèm CO/CQ, hóa đ�
 | Độ nhớt ở 100 °C | 26,4 mm²/s | 25,6 mm²/s |
 | Chỉ số độ nhớt | 96 | 94 |
 | Điểm chớp cháy | 226 °C | 215 °C |
-| Tình trạng kho tháng 10/2026 | Nhận đặt, phuy 209 L | Có sẵn xô 20 L |
+| Tình trạng kho tháng 10/2026 | Có sẵn phuy 209 L | Có sẵn xô 20 L |
 
 > **Nhận định của HT VINA:** Hai mã cùng cấp, thông số gần nhau, thay thế được cho nhau trong đa số cầu xe. Đội xe lớn đang dùng Castrol thì đặt phuy. Cần dầu ngay hoặc lượng nhỏ thì dùng xô Shell có sẵn. Cầu đã mòn, kêu hú mà đổi lên 85W-140 chỉ là giải pháp tạm, cần kiểm tra bánh răng và phớt.
 
@@ -114,7 +114,8 @@ Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe, rút 
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 209 L, nhận đặt theo yêu cầu. Cần lượng nhỏ thì xem mã 85W-140 có xô.
+- **Quy cách:** phuy 209 L, có sẵn tại kho. Cần lượng nhỏ thì xem mã 85W-140 có xô.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Castrol%20Transmax%20Axle%2085W-140) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

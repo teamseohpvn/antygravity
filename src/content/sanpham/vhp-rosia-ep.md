@@ -1,6 +1,6 @@
 ---
 ma: "SP-BR-002"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "VHP Rosia EP 100, 150, 220, 320"
 seo_title: "VHP Rosia EP 100, 150, 220, 320 – Dầu Bánh Răng Cực Áp"
 description: "Dầu bánh răng công nghiệp VHP Rosia EP 100, 150, 220, 320 chịu cực áp, đạt DIN 51517-3 CLP. Xô 18 L, phuy 200 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -33,7 +33,7 @@ packaging:
   - { name: "EP 220 – Xô 18 L", sku: "Rosia EP 220 18L" }
   - { name: "EP 220 – Phuy 200 L", sku: "ROSIA EP 220" }
   - { name: "EP 320 – Xô 18 L", sku: "ROSIA EP 320" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Hộp giảm tốc kín dùng bánh răng thẳng, nghiêng, hành tinh bằng thép"
@@ -59,7 +59,7 @@ tom_tat:
   - "**Dùng được** cho hộp giảm tốc kín tải nặng yêu cầu ISO 12925-1 CKC/CKD, DIN 51517-3 CLP, AGMA 9005-F16 EP."
   - "**Bốn cấp**: EP 100, 150, 220, 320; cấp 220 phổ biến nhất cho băng tải, máy trộn, máy nghiền."
   - "**Không dùng** cho hộp số, cầu xe tải (cần dầu API GL-4/GL-5)."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Có sẵn cùng nhóm: ENEOS Bonnoc TS 220. HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho**. HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-100", "iso-vg-150", "iso-vg-220", "iso-vg-320", "cuc-ap", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -67,7 +67,7 @@ updated: "2026-10-14"
 
 **VHP Rosia EP** là dầu bánh răng công nghiệp chịu cực áp (EP) do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hộp giảm tốc kín tải nặng. Theo VHP, dầu đáp ứng ISO 12925-1 loại CKC và CKD, DIN 51517-3 CLP, AGMA 9005-F16 EP và AIST 224.
 
-HT VINA là **đại lý dầu mỡ VHP**. Bốn cấp **nhận đặt theo yêu cầu**: **EP 100** (xô 18 L, phuy 200 L), **EP 150** (xô 18 L), **EP 220** (xô 18 L, phuy 200 L) và **EP 320** (xô 18 L). Hàng có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+HT VINA là **đại lý dầu mỡ VHP**. Bốn cấp **có sẵn tại kho**: **EP 100** (xô 18 L, phuy 200 L), **EP 150** (xô 18 L), **EP 220** (xô 18 L, phuy 200 L) và **EP 320** (xô 18 L). Hàng có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Rosia EP có hợp với hộp số của bạn không?
 
@@ -127,7 +127,8 @@ Chọn đúng cấp độ nhớt đang dùng. Nên xả hết dầu cũ, vệ si
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** EP 100 xô 18 L, phuy 200 L; EP 150 xô 18 L; EP 220 xô 18 L, phuy 200 L; EP 320 xô 18 L. Nhận đặt theo yêu cầu.
+- **Quy cách:** EP 100 xô 18 L, phuy 200 L; EP 150 xô 18 L; EP 220 xô 18 L, phuy 200 L; EP 320 xô 18 L. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Rosia%20EP) kèm cấp độ nhớt và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

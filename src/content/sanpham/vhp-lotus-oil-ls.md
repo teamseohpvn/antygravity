@@ -1,6 +1,6 @@
 ---
 ma: "SP-CG-001"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Dầu Cắt Gọt Pha Nước VHP Lotus Oil LS"
 seo_title: "VHP Lotus Oil LS – Dầu Cắt Gọt Pha Nước Tạo Nhũ"
 description: "Dầu cắt gọt pha nước VHP Lotus Oil LS tạo nhũ, chống gỉ, chống thối, pha 5–8 % cho phay, tiện, mài thép và nhôm. Phuy 200 L, CO/CQ, giao Hải Phòng."
@@ -28,7 +28,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 200 L", sku: "LOTUS" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Phay, tiện, khoan, doa, mài trên máy CNC và máy cơ"
@@ -52,7 +52,7 @@ tom_tat:
   - "**Dùng được** cho phay, tiện, doa, mài thép, gang và kim loại màu như nhôm, đồng thau."
   - "**Pha 5–8%** cho đa số nguyên công; dùng được với nước cứng tới 600 ppm."
   - "**Đổ dầu vào nước**, không làm ngược lại."
-  - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho** (phuy 200 L). HT VINA là đại lý dầu mỡ VHP."
 tags: ["dau-cat-got-pha-nuoc", "dau-tuoi-nguoi", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -60,7 +60,7 @@ updated: "2026-10-14"
 
 **VHP Lotus Oil LS** là dầu cắt gọt pha nước dạng tạo nhũ (dầu sữa) do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu pha từ dầu gốc khoáng với phụ gia chống gỉ và chống thối. Khi pha vào nước, dầu cho dung dịch màu trắng sữa ánh xanh, dùng tưới nguội cho phay, tiện, doa, mài.
 
-HT VINA là **đại lý dầu mỡ VHP**. **Phuy 200 L** **nhận đặt theo yêu cầu**, kèm CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+HT VINA là **đại lý dầu mỡ VHP**. **Phuy 200 L** **có sẵn tại kho**, kèm CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Lotus Oil LS có hợp với xưởng của bạn không?
 
@@ -113,7 +113,8 @@ VHP khuyến cáo bảo quản trong nhà ở 10–35 °C và đậy, khóa nắ
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 200 L, nhận đặt theo yêu cầu.
+- **Quy cách:** phuy 200 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Lotus%20Oil%20LS) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-010"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Caltex Delo Silver Multigrade 20W-50"
 seo_title: "Caltex Delo Silver Multigrade 20W-50 CF-4 – Dầu Diesel"
 description: "Dầu động cơ diesel Caltex Delo Silver Multigrade SAE 20W-50 đạt API CF-4, CF/SG cho xe tải, máy công trình, máy phát. Phuy 208 L, CO/CQ, giao từ Hải Phòng."
@@ -27,7 +27,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 208 L", sku: "Caltex CF 20W50 208L" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Đội xe diesel hỗn hợp: động cơ 4 kỳ cao tốc, có turbo hoặc hút khí tự nhiên"
@@ -52,7 +52,7 @@ tom_tat:
   - "**Dùng được** cho động cơ yêu cầu API CF-4, CF (diesel) hoặc SG (xăng 4 kỳ), cấp nhớt 20W-50."
   - "**Trị số kiềm 10,3 mg KOH/g**, cao trong nhóm dầu CF-4 20W-50."
   - "**Không dùng** cho động cơ có EGR, hướng dẫn sử dụng ghi CH-4, CI-4, hoặc xe có DPF."
-  - "**Nhận đặt theo yêu cầu** (phuy 208 L). Mã CF-4 20W-50 có sẵn tại kho: EMI CF-4, ENEOS DEO CF-4 (can 18 L)."
+  - "**Có sẵn tại kho** (phuy 208 L)."
 tags: ["api-cf-4", "sae-20w-50", "caltex", "dong-co-diesel"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -60,7 +60,7 @@ updated: "2026-10-14"
 
 **Caltex Delo Silver Multigrade SAE 20W-50** là dầu động cơ diesel tải nặng đa cấp của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho động cơ yêu cầu cấp **API CF-4, CF hoặc SG**: xe tải, máy công trình, máy kéo, máy phát điện và động cơ diesel trên tàu thuyền. Dầu dùng chung được cho động cơ xăng 4 kỳ trong đội xe hỗn hợp.
 
-Mã này **nhận đặt theo yêu cầu** theo phuy 208 L, kèm CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo phuy 208 L, kèm CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Delo Silver 20W-50 có hợp với xe, máy của bạn không?
 
@@ -81,14 +81,14 @@ Mã này **nhận đặt theo yêu cầu** theo phuy 208 L, kèm CO/CQ và hóa 
 - **Giữ công suất máy.** Kiểm soát cặn ở vùng rãnh xéc măng trên cùng, nhất là ở động cơ turbo làm việc nóng.
 - **Chỉ số độ nhớt 125, độ nhớt 19,1 mm²/s ở 100 °C.** Đặc vừa phải cho máy đã mòn, giảm hao dầu.
 
-## Delo Silver hay mã CF-4 20W-50 có sẵn tại kho?
+## Delo Silver hay mã CF-4 20W-50 khác?
 
 | Chỉ tiêu (20W-50) | Caltex Delo Silver | [ENEOS DEO CF-4](/dau-dong-co-diesel/eneos-deo-cf-4) | [EMI CF-4](/dau-dong-co-diesel/emi-cf-4-20w-50) |
 | :--- | :--- | :--- | :--- |
 | Cấp API | CF-4, CF / SG | CF-4 | CF-4 |
 | Độ nhớt ở 100 °C | 19,1 mm²/s | 18,44 mm²/s | Chưa có TDS |
 | Trị số kiềm tổng | 10,3 mg KOH/g | 8,01 mg KOH/g | Chưa có TDS |
-| Tình trạng kho tháng 10/2026 | Nhận đặt, phuy 208 L | Có sẵn can 18 L | Có sẵn phuy 200 L |
+| Tình trạng kho tháng 10/2026 | Có sẵn phuy 208 L | Có sẵn can 18 L | Có sẵn phuy 200 L |
 
 > **Nhận định của HT VINA:** Đội xe đang dùng Delo Silver, nhất là đội có cả máy xăng, thì đặt tiếp đúng mã. Cần dầu ngay cho máy diesel CF-4 thì dùng mã có sẵn; khi đổi mã nên thay toàn bộ ở lần bảo dưỡng, không đổ lẫn thường xuyên.
 
@@ -114,7 +114,8 @@ Chevron cho phép dùng cho hệ thủy lực di động khi loại dầu và đ
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 208 L, nhận đặt theo yêu cầu.
+- **Quy cách:** phuy 208 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Caltex%20Delo%20Silver%2020W-50) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

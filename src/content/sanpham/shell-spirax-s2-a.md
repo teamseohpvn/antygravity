@@ -91,7 +91,7 @@ Hàng có sẵn **xô 20 L**, kèm CO/CQ, hóa đơn VAT, giao từ kho TP Hải
 | Độ nhớt ở 100 °C | 25,6 mm²/s | 26,4 mm²/s |
 | Chỉ số độ nhớt | 94 | 96 |
 | Điểm chớp cháy | 215 °C | 226 °C |
-| Quy cách | Xô 20 L (có sẵn) | Phuy 209 L (nhận đặt) |
+| Quy cách | Xô 20 L (có sẵn) | Phuy 209 L (có sẵn) |
 
 Hai mã cùng cấp, thông số gần nhau, thay thế được cho nhau trong đa số cầu xe.
 
@@ -126,3 +126,4 @@ Tùy dung tích cầu trong hướng dẫn sử dụng của xe. Hãy đối chi
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=Shell%20Spirax%20S2%20A%2085W-140).
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

@@ -1,6 +1,6 @@
 ---
 ma: "SP-TN-002"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "SHL Syn Therm 32L"
 seo_title: "SHL Syn Therm 32L – Dầu Truyền Nhiệt Tổng Hợp | Xô 20 L"
 description: "Dầu truyền nhiệt tổng hợp SHL Syn Therm 32L gốc alkyl benzene, điểm đông đặc dưới -35 °C, ít bay hơi. Xô 20 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -27,7 +27,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Xô 20 L", sku: "SHL SNY 32l" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Hệ gia nhiệt gián tiếp tuần hoàn kín dùng dầu tải nhiệt"
@@ -49,7 +49,7 @@ tom_tat:
   - "**Dùng được** cho hệ truyền nhiệt khi nhà sản xuất yêu cầu dầu tổng hợp, hoặc hệ cần khởi động nguội."
   - "**Gốc alkyl benzene**, điểm đông đặc dưới −35 °C, nhiệt độ tự bốc cháy 462 °C."
   - "**SHL không công bố nhiệt độ làm việc tối đa** trong bảng công khai: hỏi trước khi dùng."
-  - "**Nhận đặt theo yêu cầu** (xô 20 L), không có sẵn tại kho tháng 10/2026."
+  - "**Có sẵn tại kho** (xô 20 L)."
 tags: ["iso-vg-32", "truyen-nhiet", "tong-hop", "shl"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -57,7 +57,7 @@ updated: "2026-10-14"
 
 **SHL Syn Therm 32L** là dầu truyền nhiệt **tổng hợp gốc alkyl benzene** của SHL, thương hiệu dầu nhờn Hàn Quốc kế thừa Samhwa Lube Oil. Dòng sản phẩm được SHL ASEAN sản xuất tại KCN Mỹ Xuân, Việt Nam. Khác với dầu truyền nhiệt gốc khoáng, Syn Therm 32L có điểm đông đặc rất thấp, dưới −35 °C, và được hãng xếp vào nhóm ít bay hơi, hiệu suất truyền nhiệt cao.
 
-Mã này **nhận đặt theo yêu cầu** theo **xô 20 L**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo **xô 20 L**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Syn Therm 32L có hợp với hệ của bạn không?
 
@@ -65,8 +65,8 @@ Mã này **nhận đặt theo yêu cầu** theo **xô 20 L**, có CO/CQ và hóa
 | :--- | :--- |
 | Nhà sản xuất lò dầu yêu cầu dầu truyền nhiệt tổng hợp | **Được.** |
 | Hệ cần khởi động ở nhiệt độ thấp | **Được.** Điểm đông đặc dưới −35 °C. |
-| Lò dầu thông dụng dùng dầu truyền nhiệt gốc khoáng | Dùng được, nhưng dầu gốc khoáng như [VHP Heatrans](/dau-truyen-nhiet/vhp-heatrans) thường đủ. |
-| Biết rõ nhiệt độ dầu trong hệ tối đa của hệ | Gửi con số cho chúng tôi để hỏi hãng trước, vì SHL chưa công bố giới hạn này. |
+| Lò dầu thông dụng dùng dầu truyền nhiệt gốc khoáng | Dùng được, nhưng dầu gốc khoáng như [VHP Heatrans](/dau-truyen-nhiet/vhp-heatrans) thường ổn hơn trong trường hợp này. |
+| Nếu biết trước nhiệt độ tối đa | Hãy call or zalo, mess cho chúng tôi ngay! Chúng tôi sẽ rất vui vẻ giúp đỡ bạn kiểm tra đưa ra kết quả sớm cho bạn miễn phí. |
 
 ## Thông số này có ý nghĩa gì khi vận hành?
 
@@ -74,7 +74,7 @@ Mã này **nhận đặt theo yêu cầu** theo **xô 20 L**, có CO/CQ và hóa
 
 - **Lưu thông tốt ở nhiệt độ thấp.** Điểm đông đặc dưới −35 °C. Dầu vẫn bơm được khi hệ khởi động nguội.
 - **Ít bay hơi.** Hãng xếp Syn Therm 32L vào nhóm bốc hơi thấp. Dầu ít hao hụt và ít tạo hơi dầu trong hệ.
-- **Nhiệt độ tự bốc cháy cao (462 °C).** Đây là thông số hãng công bố riêng cho dòng tổng hợp.
+- **Nhiệt độ tự bốc cháy cao (462 °C).** Đây là thông số hãng công bố riêng cho dòng tổng hợp. Phù hợp cho an toàn phòng chống cháy nổ tại các nhà xưởng chế tạo có nhiệt độ cao.
 - **Không ăn mòn đồng.** Ăn mòn tấm đồng cấp 1.
 
 ## Gốc tổng hợp hay gốc khoáng?
@@ -104,14 +104,15 @@ Dầu có mùi khét, lò khó đạt nhiệt hoặc bơm ồn là lúc phải k
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu truyền nhiệt SHL Syn Therm 32L?
-Theo kết quả kiểm tra, ít nhất mỗi năm một lần. Chi tiết ở mục "Khi nào cần thay dầu?" phía trên.
+Trước tiên thay dầu hay không thì bạn cần quyết định "Theo Kết Quả Kiểm Tra" thực tế test dầu. Dù hoạt động ít hay nhiều cũng cần kiểm tra ít nhất mỗi năm một lần chất lượng dầu. Chi tiết ở mục "Khi nào cần thay dầu?" phía trên. Ngoài ra, HT VINA cũng khuyên các bạn cần phải tự đánh giá về công việc vận hành của công việc (cường độ cao, nhiệt độ, tần suất...). Rất nhiều yếu tố thực tế sản xuất mới phát sinh. Ở đây chúng tôi không thể đưa ra lời khuyên cho tất cả trường hợp. Tuy nhiên nếu bạn không chắc chắn có thể [Liên hệ](/contact). Chúng tôi sẽ nhiệt tình tư vấn cho bạn.
 
 ### Syn Therm 32L chịu được nhiệt độ dầu trong hệ tối đa bao nhiêu?
 Bảng thông số công khai của SHL không ghi nhiệt độ làm việc tối đa. Vui lòng [liên hệ](/contact) để chúng tôi hỏi hãng và gửi tài liệu kỹ thuật đầy đủ trước khi dùng cho hệ của bạn.
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** xô 20 L, nhận đặt theo yêu cầu.
+- **Quy cách:** xô 20 L có sẵn tại kho; phuy 200 L nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=SHL%20Syn%20Therm%2032L) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

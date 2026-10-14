@@ -1,6 +1,6 @@
 ---
 ma: "SP-TN-001"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "VHP Heatrans Oil 32, 46"
 seo_title: "VHP Heatrans Oil 32, 46 – Dầu Truyền Nhiệt Gốc Khoáng"
 description: "Dầu truyền nhiệt VHP Heatrans Oil 32 và 46 cho hệ gia nhiệt kín, dầu trong hệ tối đa 300 °C, đạt DIN 51522. Xô 18 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -34,7 +34,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Heatrans 32 – Xô 18 L", sku: "HEATRANS 32" }
   - { name: "Heatrans 46 – Xô 18 L", sku: "HEATRANS 46" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Lò dầu tải nhiệt, hệ gia nhiệt gián tiếp tuần hoàn kín"
@@ -59,7 +59,7 @@ tom_tat:
   - "**Dùng được** cho hệ gia nhiệt gián tiếp tuần hoàn kín: dầu trong hệ tối đa 300 °C, màng dầu tối đa 320 °C."
   - "**Đáp ứng DIN 51522, ISO 6743-12 nhóm Q** theo VHP; dầu gốc khoáng tinh chế."
   - "**Cấp 32** bơm dễ khi khởi động nguội; **cấp 46** có điểm chớp cháy, điểm sôi cao hơn."
-  - "**Nhận đặt theo yêu cầu** (xô 18 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho** (xô 18 L). HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-32", "iso-vg-46", "truyen-nhiet", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -67,7 +67,7 @@ updated: "2026-10-14"
 
 **VHP Heatrans Oil** là dầu truyền nhiệt gốc khoáng tinh chế do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hệ gia nhiệt gián tiếp tuần hoàn kín, chạy liên tục với nhiệt độ dầu trong hệ tối đa 300 °C và màng dầu tối đa 320 °C. Theo VHP, dầu đáp ứng DIN 51522 và ISO 6743-12 nhóm Q.
 
-HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **Heatrans 32** và **Heatrans 46**, đóng **xô 18 L**, **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **Heatrans 32** và **Heatrans 46**, đóng **xô 18 L**, **có sẵn tại kho**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Heatrans có hợp với lò dầu của bạn không?
 
@@ -131,7 +131,8 @@ Không nên. Pha lẫn hai loại dầu khác nhau làm khó kiểm soát chất
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** Heatrans 32 và 46, xô 18 L. Nhận đặt theo yêu cầu.
+- **Quy cách:** Heatrans 32 và 46, xô 18 L. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Heatrans%20Oil) kèm cấp và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

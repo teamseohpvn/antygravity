@@ -96,3 +96,4 @@ Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe be
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20P140).
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

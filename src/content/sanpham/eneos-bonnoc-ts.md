@@ -106,7 +106,7 @@ Hộp giảm tốc của các hãng phổ biến (SEW, Nord, Sumitomo, Bonfiglio
 | Độ nhớt ở 100 °C | 19,3 mm²/s | 19 cSt |
 | Chỉ số độ nhớt | 99 | 98 |
 | Điểm chớp cháy | 280 °C | > 220 °C |
-| Tình trạng kho tháng 10/2026 | Có sẵn xô 18 L | Nhận đặt (xô, phuy) |
+| Tình trạng kho tháng 10/2026 | Có sẵn xô 18 L | Có sẵn (xô, phuy) |
 
 > **Nhận định của HT VINA:** Nhà sản xuất máy chỉ định dầu ngoại hoặc cần hồ sơ hãng quốc tế thì dùng Bonnoc TS. Hộp giảm tốc thông dụng tiêu hao nhiều dầu, cần phuy thì Rosia EP sản xuất trong nước là phương án đặt trước.
 
@@ -139,3 +139,4 @@ Không. Hộp số và cầu xe dùng dầu theo cấp API GL-4/GL-5 và độ n
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Bonnoc%20TS) kèm cấp độ nhớt.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

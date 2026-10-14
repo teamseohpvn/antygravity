@@ -1,6 +1,6 @@
 ---
 ma: "SP-CD-001"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Dầu Cách Điện VHP Unitrans Oil (Hi-Volt)"
 seo_title: "VHP Unitrans Oil Hi-Volt – Dầu Biến Thế IEC 60296"
 description: "Dầu cách điện VHP Unitrans Oil (Hi-Volt) đạt IEC 60296:2020, có ức chế oxy hóa, cho máy biến áp, máy cắt. Phuy 210 L, xô 18 L, CO/CQ, giao Hải Phòng."
@@ -39,7 +39,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 210 L", sku: "Unitrans 210" }
   - { name: "Xô 18 L", sku: "Unitrans 18" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Máy biến áp phân phối và máy biến áp lực ngâm dầu, loại kín và loại hở"
@@ -64,7 +64,7 @@ tom_tat:
   - "**Dùng được** cho máy biến áp, máy cắt và thiết bị điện ngâm dầu, loại kín hay hở."
   - "**Đạt IEC 60296:2020 loại A, mã I** (có phụ gia ức chế oxy hóa); không chứa PCB."
   - "**Điện áp đánh thủng 80 kV sau sấy**; nên lọc sấy trước khi nạp vào máy."
-  - "**Nhận đặt theo yêu cầu** (phuy 210 L, xô 18 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho** (phuy 210 L, xô 18 L). HT VINA là đại lý dầu mỡ VHP."
 tags: ["dau-bien-the", "iec-60296", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -72,7 +72,7 @@ updated: "2026-10-14"
 
 **VHP Unitrans Oil (Hi-Volt)** là dầu cách điện gốc khoáng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu đạt **IEC 60296:2020, loại A mã I**, tức là dầu có pha phụ gia ức chế oxy hóa. Dầu dùng cho máy biến áp, máy cắt và các thiết bị điện ngâm dầu, loại kín hay loại hở đều được.
 
-HT VINA là **đại lý dầu mỡ VHP**. **Phuy 210 L** (thay dầu cả máy) và **xô 18 L** (thêm dầu bổ sung) **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+HT VINA là **đại lý dầu mỡ VHP**. **Phuy 210 L** (thay dầu cả máy) và **xô 18 L** (thêm dầu bổ sung) **có sẵn tại kho**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Unitrans Oil có hợp với thiết bị của bạn không?
 
@@ -123,7 +123,8 @@ Thay dầu cả máy biến áp thì dùng phuy. Thêm bù sau khi lấy mẫu, 
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 210 L và xô 18 L, nhận đặt theo yêu cầu.
+- **Quy cách:** phuy 210 L và xô 18 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ và bảng chỉ tiêu kỹ thuật kèm hàng khi khách yêu cầu, dùng cho hồ sơ nghiệm thu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Unitrans%20Oil) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

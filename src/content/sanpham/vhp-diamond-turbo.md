@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-011"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "VHP Diamond Turbo 20W-50"
 seo_title: "VHP Diamond Turbo 20W-50 CF-4 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel VHP Diamond Turbo 20W-50 đạt API CF-4/SJ cho xe tải, máy công trình có turbo, máy phát. Phuy 200 L, sản xuất tại Hải Dương cũ."
@@ -30,7 +30,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 200 L", sku: "DIAMOND" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Động cơ diesel 4 thì có turbo tăng áp"
@@ -54,7 +54,7 @@ tom_tat:
   - "**Dùng được** cho động cơ diesel 4 thì có turbo yêu cầu API CF-4, và động cơ xăng 4 thì yêu cầu SJ trong đội xe hỗn hợp."
   - "**VHP công bố giá trị tối thiểu** (TBN ≥ 8,5 mg KOH/g), không phải giá trị điển hình như các hãng nhập khẩu."
   - "**Không dùng** cho động cơ có EGR hoặc hướng dẫn sử dụng ghi CH-4, CI-4."
-  - "**Nhận đặt theo yêu cầu** (20W-50 phuy 200 L). HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho** (20W-50 phuy 200 L). HT VINA là đại lý dầu mỡ VHP."
 tags: ["api-cf-4", "sae-20w-50", "vhp", "dong-co-diesel"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -62,7 +62,7 @@ updated: "2026-10-14"
 
 **VHP Diamond Turbo** là dầu động cơ diesel tải nặng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu đạt cấp **API CF-4/SJ**, dùng cho động cơ diesel 4 thì có turbo tăng áp trên xe vận tải, xe thi công, máy nông nghiệp, tàu thuyền và máy phát điện. VHP làm hai cấp 15W-40 và 20W-50.
 
-HT VINA là **đại lý dầu mỡ VHP**. Cấp **20W-50 phuy 200 L** **nhận đặt theo yêu cầu**, kèm CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+HT VINA là **đại lý dầu mỡ VHP**. Cấp **20W-50 phuy 200 L** **có sẵn tại kho**, kèm CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Diamond Turbo có hợp với xe, máy của bạn không?
 
@@ -86,9 +86,9 @@ HT VINA là **đại lý dầu mỡ VHP**. Cấp **20W-50 phuy 200 L** **nhận 
 
 | Dòng | Cấp API | Độ nhớt ở 100 °C | Trị số kiềm tổng | Kho tháng 10/2026 |
 | :--- | :--- | :--- | :--- | :--- |
-| VHP Diamond Turbo 20W-50 | CF-4/SJ | 18,5 cSt | Tối thiểu 8,5 mg KOH/g | Nhận đặt |
+| VHP Diamond Turbo 20W-50 | CF-4/SJ | 18,5 cSt | Tối thiểu 8,5 mg KOH/g | Có sẵn |
 | [ENEOS DEO CF-4 20W-50](/dau-dong-co-diesel/eneos-deo-cf-4) | CF-4 | 18,44 mm²/s | 8,01 mg KOH/g | Có sẵn can 18 L |
-| [Castrol CRB 20W-50 CF-4](/dau-dong-co-diesel/castrol-crb-cf-4) | CF-4 | 18,7 mm²/s | 6,6 mg KOH/g | Nhận đặt |
+| [Castrol CRB 20W-50 CF-4](/dau-dong-co-diesel/castrol-crb-cf-4) | CF-4 | 18,7 mm²/s | 6,6 mg KOH/g | Có sẵn |
 
 VHP ghi giá trị tối thiểu, các hãng khác ghi giá trị điển hình, nên so trực tiếp chỉ mang tính tham khảo.
 
@@ -116,7 +116,8 @@ VHP có công bố cấp 15W-40 cho dòng này. Cần 15W-40, vui lòng [liên h
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** 20W-50 phuy 200 L, nhận đặt theo yêu cầu. Cấp 15W-40 hỏi trước.
+- **Quy cách:** 20W-50 phuy 200 L, có sẵn tại kho. Cấp 15W-40 hỏi trước.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Diamond%20Turbo%2020W-50) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

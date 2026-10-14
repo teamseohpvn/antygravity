@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-007"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Shell Rimula R4 X 15W-40"
 seo_title: "Shell Rimula R4 X 15W-40 CI-4 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel Shell Rimula R4 X 15W-40 đạt API CI-4, ACEA E7, bảo vệ ba tác động cho xe tải, máy công trình. Phuy 200 L, có CO/CQ, giao từ Hải Phòng."
@@ -30,7 +30,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 200 L", sku: "SHELL15W40" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Xe tải, xe ben, xe khách, xe giao hàng động cơ diesel tải nặng"
@@ -53,7 +53,7 @@ tom_tat:
   - "**Dùng được** cho động cơ yêu cầu API CI-4, ACEA E7, JASO DH-1, Caterpillar ECF-2, Cummins CES 20078, Volvo VDS-3."
   - "**Dùng được với biodiesel** theo chu kỳ thay dầu mà nhà sản xuất xe khuyến nghị."
   - "**Không dùng** cho xe có DPF: Shell khuyên dòng ít tro Rimula R4 L hoặc R5 LE."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mã có sẵn cùng nhóm: Castrol Vecton 15W-40."
+  - "**Có sẵn tại kho**."
 tags: ["api-ci-4", "acea-e7", "sae-15w-40", "shell", "dong-co-diesel"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -61,7 +61,7 @@ updated: "2026-10-14"
 
 **Shell Rimula R4 X 15W-40** là dầu động cơ diesel tải nặng của Shell, đạt **API CI-4, ACEA E7, JASO DH-1** và chuẩn của nhiều hãng động cơ như Caterpillar, Cummins, Mack, Volvo. Dầu dùng cho phần lớn động cơ diesel tải nặng chạy đường bộ và địa hình: xe tải, xe khách, máy xúc.
 
-Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, kèm CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo phuy 200 L, kèm CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Rimula R4 X có hợp với xe của bạn không?
 
@@ -91,7 +91,7 @@ Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, kèm CO/CQ và hóa 
 | Chỉ số độ nhớt | 139 | 139 | 136 |
 | Trị số kiềm tổng | 10,5 mg KOH/g | 12,3 mg KOH/g | 11 mg KOH/g |
 | Tro sunphat | 1,45% | 1,5% | 1,45% |
-| Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn phuy 209 L | Nhận đặt |
+| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn phuy 209 L | Có sẵn |
 
 > **Nhận định của HT VINA:** Ba mã cùng nhóm chất lượng, chọn theo chuẩn mà hướng dẫn sử dụng của xe yêu cầu. Đội xe đang dùng Shell thì đặt tiếp R4 X. Cần dầu ngay thì Vecton 15W-40 có sẵn và có TBN cao hơn; đổi mã ở lần thay dầu toàn bộ, không đổ lẫn thường xuyên.
 
@@ -120,7 +120,8 @@ Không nên trộn thường xuyên vì hệ phụ gia mỗi hãng khác nhau. N
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 200 L, nhận đặt theo yêu cầu.
+- **Quy cách:** phuy 200 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Shell%20Rimula%20R4%20X%2015W-40) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

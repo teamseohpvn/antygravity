@@ -1,6 +1,6 @@
 ---
 ma: "SP-EDM-001"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "SHL EDM 32"
 seo_title: "SHL EDM 32 – Dầu Máy Xung Điện EDM | Phuy 200 L"
 description: "Dầu xung điện SHL EDM 32 cho máy gia công tia lửa điện, độ nhớt thấp 2,0 cSt, không chứa clo, điểm chớp cháy từ 80 °C. Phuy 200 L, có CO/CQ, VAT."
@@ -24,7 +24,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 200 L", sku: "EDM 32" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Máy xung điện (EDM) dùng điện cực đồng, graphite để gia công khuôn"
@@ -48,7 +48,7 @@ tom_tat:
   - "**Dùng được** cho máy xung điện EDM khi hãng máy yêu cầu dầu điện môi độ nhớt khoảng 2 cSt."
   - "**Không chứa clo**, không ăn mòn đồng (cấp 1): an toàn cho điện cực đồng."
   - "**Không thay bằng dầu hỏa, dầu DO**: điểm chớp cháy thấp hơn, nhiều mùi."
-  - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026."
+  - "**Có sẵn tại kho** (phuy 200 L)."
 tags: ["edm", "xung-dien", "gia-cong-khuon", "shl"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -56,7 +56,7 @@ updated: "2026-10-14"
 
 **SHL EDM 32** là dầu điện môi cho **máy xung điện (EDM)**, của SHL, thương hiệu dầu nhờn Hàn Quốc. Dòng sản phẩm được SHL ASEAN sản xuất tại KCN Mỹ Xuân, Việt Nam. Dầu rất loãng, độ nhớt 2,0 cSt ở 40 °C, **không chứa clo**, điểm chớp cháy từ 80 °C.
 
-Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo phuy 200 L, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## SHL EDM 32 có hợp với máy của bạn không?
 
@@ -108,7 +108,8 @@ Không nên. Dầu hỏa, dầu DO không được pha chế cho gia công xung 
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 200 L, nhận đặt theo yêu cầu.
+- **Quy cách:** phuy 200 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=SHL%20EDM%2032) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

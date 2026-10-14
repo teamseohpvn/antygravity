@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-009"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "TotalEnergies Rubia XT 20W-50"
 seo_title: "Total Rubia XT 20W-50 CF-4 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel TotalEnergies Rubia XT 20W-50 đạt API CF-4/SJ cho xe tải, máy công trình chạy nơi nóng. Phuy 200 L, có CO/CQ, VAT, giao từ Hải Phòng."
@@ -29,7 +29,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 200 L", sku: "TOTAL" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Xe tải, xe ben, xe khách động cơ diesel có hoặc không có turbo"
@@ -52,7 +52,7 @@ tom_tat:
   - "**Dùng được** cho động cơ diesel yêu cầu API CF-4 (và động cơ xăng yêu cầu SJ), có hoặc không có turbo."
   - "**Đáp ứng yêu cầu của Hino**, theo TotalEnergies."
   - "**Không dùng** cho động cơ có EGR hoặc hướng dẫn sử dụng ghi CH-4, CI-4: chọn Rubia TIR 7400 hoặc mã CI-4 có sẵn."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mã CF-4 20W-50 có sẵn: EMI CF-4 (phuy), ENEOS DEO CF-4 (can)."
+  - "**Có sẵn tại kho**."
 tags: ["api-cf-4", "sae-20w-50", "totalenergies", "dong-co-diesel"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -60,7 +60,7 @@ updated: "2026-10-14"
 
 **TotalEnergies Rubia XT 20W-50** là dầu động cơ diesel gốc khoáng đa cấp cho xe chạy đường bộ, đạt **API CF-4/SJ** và đáp ứng yêu cầu của Hino. Hãng phát triển dòng này cho mọi động cơ diesel có hoặc không có turbo, làm việc nặng quanh năm và ở nơi nhiệt độ môi trường cao.
 
-Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, kèm CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo phuy 200 L, kèm CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Rubia XT có hợp với xe, máy của bạn không?
 
@@ -113,7 +113,8 @@ Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe l
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 200 L, nhận đặt theo yêu cầu.
+- **Quy cách:** phuy 200 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Rubia%20XT%2020W-50) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

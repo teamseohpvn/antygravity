@@ -93,3 +93,4 @@ Có. Gửi số lượng qua trang [báo giá](/bao-gia?sp=Maxxi%20Coolant%20Red
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=Maxxi%20Coolant%20Red). Dầu động cơ cho xe tải, máy phát: xem [dầu động cơ diesel](/dau-dong-co-diesel).
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

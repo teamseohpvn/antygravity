@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-008"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "TotalEnergies Rubia TIR 7400 15W-40"
 seo_title: "Total Rubia TIR 7400 15W-40 CI-4 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel TotalEnergies Rubia TIR 7400 15W-40 đạt API CI-4, ACEA E7 cho xe tải, xe khách đường bộ. Phuy 200 L, có CO/CQ, VAT, giao từ Hải Phòng."
@@ -30,7 +30,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 200 L", sku: "TOTAL 15W40" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Xe tải, xe khách, đầu kéo động cơ diesel chạy đường bộ"
@@ -53,7 +53,7 @@ tom_tat:
   - "**Dùng được** cho động cơ yêu cầu ACEA E7, API CI-4, Cummins CES 20078, Mack EO-N, Volvo VDS-3, Renault RLD-2, DTFR 15B110."
   - "**Hợp nhất** với động cơ Euro 3 trở về trước của hầu hết hãng châu Âu và Mỹ."
   - "**Không dùng** cho xe có DPF hoặc yêu cầu dầu ít tro."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mã có sẵn cùng nhóm: Castrol Vecton 15W-40."
+  - "**Có sẵn tại kho**."
 tags: ["api-ci-4", "acea-e7", "sae-15w-40", "totalenergies", "dong-co-diesel"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -61,7 +61,7 @@ updated: "2026-10-14"
 
 **TotalEnergies Rubia TIR 7400 15W-40** là dầu động cơ diesel gốc khoáng cho xe chạy đường bộ, đạt **ACEA E7 và API CI-4**. Dầu được Cummins, Mack, Renault Trucks, Volvo và Daimler Truck (DTFR 15B110) chấp thuận. Hãng khuyên dùng cho động cơ Euro 3 trở về trước của hầu hết nhà sản xuất châu Âu và Mỹ.
 
-Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, kèm CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo phuy 200 L, kèm CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Rubia TIR 7400 có hợp với xe của bạn không?
 
@@ -85,8 +85,8 @@ Mã này **nhận đặt theo yêu cầu** theo phuy 200 L, kèm CO/CQ và hóa 
 
 | Dòng | Chỉ số độ nhớt | Trị số kiềm tổng | Chuẩn chính | Kho tháng 10/2026 |
 | :--- | :--- | :--- | :--- | :--- |
-| Rubia TIR 7400 15W-40 | 136 | 11 mg KOH/g | ACEA E7, API CI-4 | Nhận đặt |
-| [Shell Rimula R4 X 15W-40](/dau-dong-co-diesel/shell-rimula-r4-x) | 139 | 10,5 mg KOH/g | API CI-4, ACEA E7, JASO DH-1 | Nhận đặt |
+| Rubia TIR 7400 15W-40 | 136 | 11 mg KOH/g | ACEA E7, API CI-4 | Có sẵn |
+| [Shell Rimula R4 X 15W-40](/dau-dong-co-diesel/shell-rimula-r4-x) | 139 | 10,5 mg KOH/g | API CI-4, ACEA E7, JASO DH-1 | Có sẵn |
 | [Castrol Vecton 15W-40](/dau-dong-co-diesel/castrol-vecton) | 139 | 12,3 mg KOH/g | API CI-4/SL, ACEA E7, JASO DH-1 | Có sẵn phuy 209 L |
 
 > **Nhận định của HT VINA:** Ba dòng cùng nhóm chất lượng; chọn theo chuẩn mà tài liệu hướng dẫn sử dụng kèm theo xe yêu cầu và theo hãng xe trong đội. Đội xe có Renault Trucks hoặc Daimler cần đúng chấp thuận DTFR thì đặt Rubia TIR 7400. Cần dầu ngay thì Vecton có sẵn.
@@ -113,7 +113,8 @@ TotalEnergies cho biết dầu cũng dùng được cho động cơ Euro 5 trở
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 200 L, nhận đặt theo yêu cầu.
+- **Quy cách:** phuy 200 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Rubia%20TIR%207400%2015W-40) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

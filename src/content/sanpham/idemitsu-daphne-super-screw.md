@@ -1,6 +1,6 @@
 ---
 ma: "SP-MNK-001"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Idemitsu Daphne Super Screw 32, 46"
 seo_title: "Idemitsu Daphne Super Screw 32, 46 – Dầu Máy Nén Khí Trục Vít"
 description: "Dầu máy nén khí trục vít Idemitsu Daphne Super Screw 32 và 46, dầu gốc hydro hóa, bền oxy hóa cao, ít cặn. Thùng 20 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -30,7 +30,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "VG 32 – Thùng 20 L", sku: "Daphne 32" }
   - { name: "VG 46 – Thùng 20 L", sku: "Daphne 46" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 equivalents: ["Shell Corena S3 R 46", "ENEOS Faircol RA 32"]
 
 applications:
@@ -55,7 +55,7 @@ tom_tat:
   - "**Dùng được** cho máy nén khí trục vít ngâm dầu yêu cầu VG 32 hoặc VG 46."
   - "**Bền oxy hóa cao**: RBOT trên 1.800 phút với cả hai cấp; chịu được sương dầu cắt gọt và dầu cũ còn sót."
   - "**Không thiết kế** cho máy nén pít-tông."
-  - "**Nhận đặt theo yêu cầu** (thùng 20 L), không có sẵn tại kho tháng 10/2026. Có sẵn cùng nhóm: ENEOS Faircol RA 32."
+  - "**Có sẵn tại kho** (thùng 20 L)."
 tags: ["iso-vg-32", "iso-vg-46", "may-nen-khi-truc-vit", "idemitsu"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -63,7 +63,7 @@ updated: "2026-10-14"
 
 **Idemitsu Daphne Super Screw** là dầu chuyên dùng cho **máy nén khí trục vít ngâm dầu**. Dầu dùng **dầu gốc paraffin hydro hóa, biến tính**, kết hợp phụ gia chống oxy hóa nhiệt độ cao, chất khử hoạt tính đồng, chống gỉ và chống bọt. Dầu chịu được các tác nhân hay làm hỏng dầu máy nén khí trong nhà xưởng: sương dầu cắt gọt, dầu cũ còn sót lại và bụi bẩn lọt vào từ bên ngoài.
 
-Hai cấp **VG 32** và **VG 46**, đóng **thùng 20 lít**, **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Hai cấp **VG 32** và **VG 46**, đóng **thùng 20 lít**, **có sẵn tại kho**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Daphne Super Screw có hợp với máy nén khí của bạn không?
 
@@ -116,7 +116,8 @@ Nên xả hết dầu cũ, thay lọc dầu và kiểm tra bộ tách dầu. N�
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** VG 32 và VG 46, thùng 20 L. Nhận đặt theo yêu cầu.
+- **Quy cách:** VG 32 và VG 46, thùng 20 L. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Idemitsu%20Daphne%20Super%20Screw) kèm cấp và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

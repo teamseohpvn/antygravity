@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-006"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "VHP Spinax AW 68 và Spinax AW Super 68"
 seo_title: "VHP Spinax AW 68, AW Super 68 – Dầu Thủy Lực Phuy 200L"
 description: "Dầu thủy lực VHP Spinax AW 68 và Spinax AW Super 68 đạt ISO 11158 HM, sản xuất tại Việt Nam. Phuy 200 L, có CO/CQ, VAT, giao từ kho Hải Phòng."
@@ -31,7 +31,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Spinax AW 68 – Phuy 200 L", sku: "spinax AW68" }
   - { name: "Spinax AW Super 68 – Phuy 200 L", sku: "spinax super" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Hệ thủy lực máy công nghiệp: máy ép, máy dập, máy chấn tôn, máy cắt thủy lực"
@@ -55,7 +55,7 @@ tom_tat:
   - "**Dùng được** cho hệ thủy lực yêu cầu ISO 11158 HM cấp 68: máy ép, máy dập, máy chấn, máy xúc, xe cẩu."
   - "**Spinax AW** gốc khoáng cho tải thường; **Spinax AW Super** gốc nhóm II cho máy chạy nhiều ca."
   - "**Hướng dẫn sử dụng ghi HLP theo DIN** thì chọn VHP Isonas AW."
-  - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho** (phuy 200 L). HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-68", "chong-mai-mon", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -63,7 +63,7 @@ updated: "2026-10-14"
 
 **VHP Spinax AW** là dầu thủy lực chống mài mòn do nhà máy VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu đạt phân loại HM theo ISO 11158 và ISO 6743/4, dùng cho hệ thủy lực trong xưởng lẫn máy xúc, xe cẩu. Dòng có hai phiên bản: **Spinax AW** pha từ dầu gốc khoáng và **Spinax AW Super** pha từ dầu gốc nhóm II.
 
-**Spinax AW 68** và **Spinax AW Super 68** **nhận đặt theo yêu cầu**, đều là phuy 200 L. HT VINA là đại lý dầu mỡ VHP. Hàng có CO/CQ, hóa đơn VAT và giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+**Spinax AW 68** và **Spinax AW Super 68** **có sẵn tại kho**, đều là phuy 200 L. HT VINA là đại lý dầu mỡ VHP. Hàng có CO/CQ, hóa đơn VAT và giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Spinax AW có hợp với máy của bạn không?
 
@@ -97,9 +97,9 @@ updated: "2026-10-14"
 
 > **Nhận định của HT VINA:** Spinax AW 68 hợp với máy ép, máy dập chạy tải thường. Spinax AW Super 68 dùng dầu gốc nhóm II, hợp hơn khi máy chạy nhiều ca và muốn dầu bền lâu. Máy ép nhựa áp cao chạy liên tục thì xem VHP Isonas AW, đạt thêm DIN 51524-2 HLP.
 
-## Spinax AW 68 hay một mã có sẵn tại kho?
+## Spinax AW 68 hay một mã dầu thủy lực 68 khác?
 
-Spinax AW không có sẵn tại kho tháng 10/2026. Cần dầu thủy lực HM 68 ngay thì các mã có sẵn gồm [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68), [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68), [EMI AW 68](/dau-thuy-luc/emi-aw-68) và [X-One AW 68](/dau-thuy-luc/x-one-aw-68). Khoảng giá theo lít của từng mã ở [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc).
+Ngoài Spinax AW, kho còn có sẵn các mã dầu thủy lực HM 68 khác gồm [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68), [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68), [EMI AW 68](/dau-thuy-luc/emi-aw-68) và [X-One AW 68](/dau-thuy-luc/x-one-aw-68). Khoảng giá theo lít của từng mã ở [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc).
 
 > **Nhận định của HT VINA:** Máy đang dùng Spinax AW và chạy ổn thì đặt tiếp đúng mã. Đổi sang mã khác thì xả hết dầu cũ và thay lọc, không trộn dầu khác hãng.
 
@@ -125,7 +125,8 @@ VHP sản xuất Spinax AW các cấp 32, 46, 68 và 100. Cấp khác vui lòng 
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** Spinax AW 68 và Spinax AW Super 68, phuy 200 L, nhận đặt theo yêu cầu.
+- **Quy cách:** Spinax AW 68 và Spinax AW Super 68, phuy 200 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Spinax%20AW) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

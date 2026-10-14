@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-005"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Castrol CRB CF-4 20W-50, 15W-40"
 seo_title: "Castrol CRB CF-4 20W-50, 15W-40 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel Castrol CRB API CF-4 20W-50 và 15W-40 cho xe tải, máy công trình turbo hoặc hút khí tự nhiên. Xô 18 L, phuy 209 L, có CO/CQ, VAT."
@@ -32,7 +32,7 @@ packaging:
   - { name: "Phuy 209 L (20W-50 / 15W-40)", sku: "CRB" }
   - { name: "20W-50 – Xô 18 L", sku: "CRB.1" }
   - { name: "20W-50 – Phuy 209 L" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Xe tải, xe ben, xe khách động cơ diesel có turbo hoặc hút khí tự nhiên"
@@ -55,7 +55,7 @@ tom_tat:
   - "**Dùng được** cho động cơ diesel hút khí tự nhiên và có turbo yêu cầu API CF-4, kể cả nhiên liệu chất lượng không đều."
   - "**Không dùng** cho động cơ có EGR hoặc hướng dẫn sử dụng ghi CH-4, CI-4: chọn Castrol CRB Turbomax CI-4 (có sẵn)."
   - "**Điểm rót chảy rất thấp** (−42 °C với 20W-50, −45 °C với 15W-40)."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026."
+  - "**Có sẵn tại kho**."
 tags: ["api-cf-4", "sae-20w-50", "sae-15w-40", "castrol", "dong-co-diesel"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -63,7 +63,7 @@ updated: "2026-10-14"
 
 **Castrol CRB CF-4** là dầu động cơ diesel đa dụng cho xe và máy tải nặng, đạt cấp **API CF-4**. Dầu dùng được cho động cơ diesel hút khí tự nhiên và động cơ có turbo tăng áp, kể cả khi chạy bằng nhiên liệu diesel chất lượng không đều. Dòng này có hai cấp **20W-50** và **15W-40**. Ngoài thị trường, nhiều người vẫn gọi dòng này là "CRB Turbo".
 
-Mã này **nhận đặt theo yêu cầu**: phuy 209 L (20W-50 hoặc 15W-40) và xô 18 L (20W-50). Khi đặt phuy, hãy báo rõ cấp nhớt. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho**: phuy 209 L (20W-50 hoặc 15W-40) và xô 18 L (20W-50). Khi đặt phuy, hãy báo rõ cấp nhớt. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## CRB CF-4 có hợp với xe, máy của bạn không?
 
@@ -101,7 +101,7 @@ Mã này **nhận đặt theo yêu cầu**: phuy 209 L (20W-50 hoặc 15W-40) v�
 | Độ nhớt ở 100 °C | 18,7 mm²/s | 20,5 mm²/s |
 | Trị số kiềm tổng | 6,6 mg KOH/g | 10 mg KOH/g |
 | Dùng cho động cơ có EGR | Không | Có |
-| Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn phuy 209 L |
+| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn phuy 209 L |
 
 > **Nhận định của HT VINA:** Máy cũ không có EGR dùng CRB CF-4 là đủ. Cần dầu ngay, hoặc đội xe lẫn cả máy đời mới, thì Turbomax CI-4 có sẵn và dùng thay được cho CF-4.
 
@@ -127,7 +127,8 @@ Gửi số phuy, cấp nhớt và địa chỉ giao qua trang [báo giá](/bao-g
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 209 L (20W-50, 15W-40), xô 18 L (20W-50). Nhận đặt theo yêu cầu.
+- **Quy cách:** phuy 209 L (20W-50, 15W-40), xô 18 L (20W-50). Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Castrol%20CRB%20CF-4) kèm cấp nhớt và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

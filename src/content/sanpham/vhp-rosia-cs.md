@@ -1,6 +1,6 @@
 ---
 ma: "SP-RT-002"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "VHP Rosia CS 46"
 seo_title: "VHP Rosia CS 46 – Dầu Tuần Hoàn Chống Gỉ Phuy 200L"
 description: "Dầu VHP Rosia CS 46 chống oxy hóa, chống gỉ, đạt DIN 51517-2 CL, cho hệ tuần hoàn, ổ đỡ, hộp số tải nhẹ. Phuy 200 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -31,7 +31,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 200 L", sku: "CS46" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Hệ bôi trơn tuần hoàn trên thiết bị công nghiệp"
@@ -54,7 +54,7 @@ tom_tat:
   - "**Dùng được** cho hệ bôi trơn tuần hoàn, ổ đỡ, hộp số tải nhẹ yêu cầu DIN 51517-1 C hoặc 51517-2 CL cấp 46."
   - "**Bền oxy hóa rất lâu**: TOST trên 1.500 giờ; ít tạo bọt (10/0 ml)."
   - "**Không có phụ gia chống mài mòn, cực áp**: bơm thủy lực áp cao dùng dầu AW, hộp số tải nặng dùng dầu bánh răng EP."
-  - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho** (phuy 200 L). HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-46", "dau-tuan-hoan", "chong-gi", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -62,7 +62,7 @@ updated: "2026-10-14"
 
 **VHP Rosia CS 46** là dầu bôi trơn tuần hoàn chống oxy hóa, chống gỉ do nhà máy VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu đạt DIN 51517-1 loại C và DIN 51517-2 loại CL. Đây là loại dầu không có phụ gia cực áp (EP), dùng cho hệ tuần hoàn, ổ đỡ và hộp số tải nhẹ.
 
-Cấp **46** dạng phuy 200 L **nhận đặt theo yêu cầu**. HT VINA là đại lý dầu mỡ VHP. Hàng có CO/CQ, hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Cấp **46** dạng phuy 200 L **có sẵn tại kho**. HT VINA là đại lý dầu mỡ VHP. Hàng có CO/CQ, hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Rosia CS 46 có hợp với máy của bạn không?
 
@@ -118,7 +118,8 @@ VHP sản xuất Rosia CS từ cấp 10 đến 220. Cấp khác vui lòng liên 
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** cấp 46 phuy 200 L, nhận đặt theo yêu cầu.
+- **Quy cách:** cấp 46 phuy 200 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Rosia%20CS%2046) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

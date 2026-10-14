@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-001"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Shell Gadus S2 V220 2"
 seo_title: "Shell Gadus S2 V220 2 – Mỡ Bò Chịu Cực Áp Xô 18kg"
 description: "Mỡ Shell Gadus S2 V220 2 gốc lithium, chịu cực áp, chống nước, làm việc -20 đến 130 °C cho vòng bi, ổ trượt. Xô 18 kg, có CO/CQ, VAT, giao Hải Phòng."
@@ -27,7 +27,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Xô 18 kg", sku: "Mỡ Gadus 18Kg" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 equivalents: ["Mobilux EP 2", "Castrol Spheerol EPL 2"]
 
 applications:
@@ -53,7 +53,7 @@ tom_tat:
   - "**Dùng được** cho vòng bi, ổ trượt, bản lề chịu tải nặng và va đập, làm việc từ −20 °C đến 130 °C."
   - "**Chịu cực áp**: tải hàn dính 4 bi 315 kg; tên cũ Shell Alvania EP(LF) 2, Retinax EP 2."
   - "**Ổ bi nóng gần 130 °C** hoặc gần lò, máy sấy thì chọn Gadus S3 V220C 2 (lithium complex)."
-  - "**Nhận đặt theo yêu cầu** (xô 18 kg), không có sẵn tại kho tháng 10/2026."
+  - "**Có sẵn tại kho** (xô 18 kg)."
 tags: ["nlgi-2", "mo-lithium", "chiu-cuc-ap", "shell-gadus"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -61,7 +61,7 @@ updated: "2026-10-14"
 
 **Shell Gadus S2 V220 2** là mỡ bôi trơn đa dụng chịu cực áp (EP) của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng lithium hydroxystearate. Mỡ dùng cho vòng bi, ổ trượt, bản lề và bề mặt trượt trong hầu hết các ngành công nghiệp và vận tải. Tên cũ của dòng này là Shell Alvania EP(LF) 2 và Shell Retinax EP 2.
 
-Mã này **nhận đặt theo yêu cầu** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Gadus S2 V220 2 có hợp với điểm bôi trơn của bạn không?
 
@@ -93,7 +93,7 @@ Mã này **nhận đặt theo yêu cầu** theo **xô 18 kg**, có CO/CQ và hó
 
 > **Nhận định của HT VINA:** Ổ bi dưới khoảng 120 °C thì Gadus S2 là đủ và tiết kiệm hơn. Ổ bi quạt lò, con lăn lò sấy chạy nóng liên tục thì dùng Gadus S3.
 
-## Gadus S2 hay mỡ lithium có sẵn tại kho?
+## Gadus S2 hay mỡ lithium VHP?
 
 [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) cùng gốc lithium, cùng dầu gốc 220 cSt, có sẵn cấp L4 xô 17 kg. Khác biệt chính: Gadus S2 có phụ gia cực áp (4 bi 315 kg so với 200 kg của VHP).
 
@@ -124,7 +124,8 @@ Chỉ nên trộn với mỡ cùng gốc lithium. Trộn với mỡ gốc khác 
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** xô 18 kg, nhận đặt theo yêu cầu.
+- **Quy cách:** xô 18 kg, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Shell%20Gadus%20S2%20V220%202) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

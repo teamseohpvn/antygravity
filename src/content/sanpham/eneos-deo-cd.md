@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-003"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "ENEOS DEO CD 15W-40, 20W-50"
 seo_title: "ENEOS DEO CD 20W-50, 15W-40 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel phổ thông ENEOS CD 20W-50 và 15W-40 cho máy cũ, máy phát, máy nông nghiệp. Can 18 L, phuy 200 L, có CO/CQ, giao từ Hải Phòng."
@@ -30,7 +30,7 @@ packaging:
   - { name: "20W-50 – Can 18 L", sku: "CD1" }
   - { name: "20W-50 – Phuy 200 L", sku: "CD2" }
   - { name: "15W-40 – Phuy 200 L", sku: "CD15w40" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Động cơ diesel đời cũ hút khí tự nhiên: xe tải nhẹ, xe công nông, máy kéo"
@@ -54,7 +54,7 @@ tom_tat:
   - "**Dùng được** cho động cơ diesel đời cũ hút khí tự nhiên, máy phát, máy bơm nước, máy nông nghiệp yêu cầu cấp CD."
   - "**Không dùng** cho động cơ có turbo đời mới, có EGR, hoặc hướng dẫn sử dụng ghi CF-4 trở lên."
   - "**Không hạ cấp API** thấp hơn mức hướng dẫn sử dụng yêu cầu để tiết kiệm."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mã có sẵn gần nhất: ENEOS DEO CF-4 can 18 L."
+  - "**Có sẵn tại kho**."
 tags: ["api-cd", "sae-15w-40", "sae-20w-50", "eneos", "dong-co-diesel"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -62,7 +62,7 @@ updated: "2026-10-14"
 
 **ENEOS DEO CD** là dầu động cơ diesel phổ thông của ENEOS, đạt cấp **API CD**. Dầu hợp với động cơ diesel đời cũ, máy phát điện, máy nông nghiệp và tàu thuyền nhỏ, nơi nhà sản xuất chỉ yêu cầu cấp CD. Dòng này có hai cấp nhớt **20W-50** và **15W-40**.
 
-Mã này **nhận đặt theo yêu cầu**: cấp 20W-50 (can 18 L, phuy 200 L) và cấp 15W-40 (phuy 200 L). Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho**: cấp 20W-50 (can 18 L, phuy 200 L) và cấp 15W-40 (phuy 200 L). Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## DEO CD có hợp với máy của bạn không?
 
@@ -86,7 +86,7 @@ Mã này **nhận đặt theo yêu cầu**: cấp 20W-50 (can 18 L, phuy 200 L) 
 
 | Dòng ENEOS | Cấp API | Trị số kiềm tổng | Hợp với | Kho tháng 10/2026 |
 | :--- | :--- | :--- | :--- | :--- |
-| DEO CD 20W-50 | CD | 6,3 mg KOH/g | Máy cũ hút khí tự nhiên, máy phát, máy nông nghiệp | Nhận đặt |
+| DEO CD 20W-50 | CD | 6,3 mg KOH/g | Máy cũ hút khí tự nhiên, máy phát, máy nông nghiệp | Có sẵn |
 | [DEO CF-4](/dau-dong-co-diesel/eneos-deo-cf-4) 20W-50 | CF-4 | 8,01 mg KOH/g | Xe tải, máy công trình có turbo, đời chưa có EGR | Có sẵn can 18 L |
 | [DEO CI-4](/dau-dong-co-diesel/eneos-deo-ci-4) 20W-50 | CI-4/SL | 9,13 mg KOH/g | Động cơ đời mới có EGR, đội xe hỗn hợp | Có sẵn can, phuy |
 
@@ -116,7 +116,8 @@ Theo hướng dẫn sử dụng của máy phát. Máy đặt ngoài trời, kh�
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** 20W-50 can 18 L, phuy 200 L; 15W-40 phuy 200 L. Nhận đặt theo yêu cầu.
+- **Quy cách:** 20W-50 can 18 L, phuy 200 L; 15W-40 phuy 200 L. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20DEO%20CD) kèm cấp nhớt và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

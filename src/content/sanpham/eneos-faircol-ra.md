@@ -98,7 +98,7 @@ Hàng có sẵn cấp **ISO VG 32**, đóng **can 18 L**, kèm CO/CQ và hóa đ
 | Độ nhớt ở 100 °C | 6,01 mm²/s | 5,5 mm²/s |
 | Điểm chớp cháy cốc hở | 244 °C | 228 °C |
 | Kiểu máy nén | Trục vít, cánh gạt, xoắn ốc | Trục vít ngâm dầu |
-| Tình trạng kho tháng 10/2026 | Có sẵn can 18 L | Nhận đặt, thùng 20 L |
+| Tình trạng kho tháng 10/2026 | Có sẵn can 18 L | Có sẵn thùng 20 L |
 
 > **Nhận định của HT VINA:** Cả hai là dầu máy nén khí cấp 32 của thương hiệu Nhật, thông số gần nhau. Máy đang dùng Faircol thì giữ nguyên. Máy đặt sát khu gia công nhiều sương dầu cắt gọt thì có thể cân nhắc Daphne Super Screw, dòng Idemitsu nhấn mạnh khả năng chịu tác nhân này.
 
@@ -134,3 +134,4 @@ Không nên trộn với dầu hãng khác. Khi đổi dầu, nên xả hết d�
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Faircol%20RA%2032).
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

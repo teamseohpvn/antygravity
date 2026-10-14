@@ -1,6 +1,6 @@
 ---
 ma: "SP-CHS-005"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "VHP Spadila GL-5 80W-90, 85W-140"
 seo_title: "VHP Spadila GL-5 80W-90, 85W-140 – Dầu Cầu Xe Tải"
 description: "Dầu cầu VHP Spadila GL-5 80W-90 và 85W-140 cho cầu hypoid, vi sai xe tải, xe ben. Xô 18 L, phuy 200 L, có CO/CQ, VAT, giao từ kho Hải Phòng."
@@ -32,7 +32,7 @@ packaging:
   - { name: "80W-90 – Xô 18 L", sku: "Spadila 80W90 GL5 X" }
   - { name: "85W-140 – Xô 18 L", sku: "Spadila 85W140 GL5 X" }
   - { name: "80W-90 / 85W-140 – Phuy 200 L", sku: "SPADILA" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Cầu sau, vi sai bánh răng hypoid của xe tải, xe ben, xe khách"
@@ -57,7 +57,7 @@ tom_tat:
   - "**Dùng được** cho cầu sau hypoid, bộ truyền động ô tô, bánh răng thiết bị tĩnh yêu cầu API GL-5."
   - "**Thông số 85W-140 trùng với Shell Spirax S2 A** ở độ nhớt 40 °C, 100 °C và chỉ số độ nhớt."
   - "**Không dùng** cho hộp số tay có đồng tốc mà hãng chỉ cho phép GL-4, hoặc hộp số tự động."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho**. HT VINA là đại lý dầu mỡ VHP."
 tags: ["api-gl-5", "sae-80w-90", "sae-85w-140", "dau-cau", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -65,7 +65,7 @@ updated: "2026-10-14"
 
 **VHP Spadila GL-5** là dầu cầu, dầu hộp số ô tô do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu pha từ dầu gốc khoáng tinh chế với phụ gia cực áp, đạt cấp **API GL-5**, dùng cho cầu xe bánh răng hypoid chịu tải nặng.
 
-HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **80W-90** và **85W-140**, dạng **xô 18 L** và **phuy 200 L**, **nhận đặt theo yêu cầu**. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **80W-90** và **85W-140**, dạng **xô 18 L** và **phuy 200 L**, **có sẵn tại kho**. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Spadila GL-5 có hợp với xe của bạn không?
 
@@ -104,7 +104,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **80W-90** và **85W-140**,
 | Độ nhớt ở 100 °C | 25,6 cSt | 25,6 mm²/s | 26,4 mm²/s |
 | Chỉ số độ nhớt | 94 | 94 | 96 |
 | Điểm chớp cháy | 200 °C | 215 °C | 226 °C |
-| Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn xô 20 L | Nhận đặt |
+| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn xô 20 L | Có sẵn |
 
 > **Nhận định của HT VINA:** Độ nhớt và chỉ số độ nhớt của ba mã gần như trùng nhau, nên dùng thay thế được trong đa số cầu xe. Cần hàng ngay thì xô Shell Spirax S2 A có sẵn.
 
@@ -133,7 +133,8 @@ Chỉ nên thêm bù khi cùng cấp API và cùng cấp nhớt. Khi thay hẳn,
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** 80W-90 và 85W-140, xô 18 L và phuy 200 L. Nhận đặt theo yêu cầu.
+- **Quy cách:** 80W-90 và 85W-140, xô 18 L và phuy 200 L. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Spadila%20GL-5) kèm cấp nhớt và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

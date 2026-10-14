@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-006"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Mỡ VHP Opal Grease NLGI 3, NLGI 4"
 seo_title: "Mỡ VHP Opal Grease NLGI 3, 4 – Mỡ Đa Dụng Tải Nặng"
 description: "Mỡ VHP Opal Grease NLGI 3 (VHP GRE MIL 3) gốc lithium-canxi, làm việc -10 đến 120 °C, cho đầu trục, ổ bi tải nặng. Phuy 180 kg, xô 15 kg NLGI 4."
@@ -34,7 +34,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "NLGI 3 – Phuy 180 kg", sku: "MỠ OPAL L3" }
   - { name: "NLGI 4 – Xô 15 kg", sku: "Mỡ OPAL4(15KG)" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Đầu trục chịu tải nặng, nóng, nhiều bụi"
@@ -57,7 +57,7 @@ tom_tat:
   - "**Dùng được** cho ổ bi tải nặng, đầu trục, máy công cụ, máy nông nghiệp làm việc từ −10 °C đến 120 °C."
   - "**Ít tách dầu**: mẫu NLGI 3 chỉ tách 8% (cam kết dưới 18%), hàm lượng nước bằng 0."
   - "**NLGI 3** cho ổ bi, đầu trục; **NLGI 4** rất đặc cho ổ bi lớn tốc độ chậm, chỗ rung mạnh."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. HT VINA là đại lý dầu mỡ VHP."
+  - "**Có sẵn tại kho**. HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-3", "nlgi-4", "mo-da-dung", "vhp"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -65,7 +65,7 @@ updated: "2026-10-14"
 
 **VHP Opal Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Cấp NLGI 3 còn mang tên **VHP GRE MIL 3**. Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. VHP định hướng mỡ cho đầu trục, ổ bi tải nặng và các cơ cấu chuyển động kín.
 
-HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 xô 15 kg** **nhận đặt theo yêu cầu**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 xô 15 kg** **có sẵn tại kho**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Opal Grease có hợp với điểm bôi trơn của bạn không?
 
@@ -129,7 +129,8 @@ Bảng thông số trên trang là của cấp NLGI 3. Nếu cần phiếu chỉ
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** NLGI 3 phuy 180 kg, NLGI 4 xô 15 kg. Nhận đặt theo yêu cầu.
+- **Quy cách:** NLGI 3 phuy 180 kg, NLGI 4 xô 15 kg. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Opal%20Grease) kèm cấp và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

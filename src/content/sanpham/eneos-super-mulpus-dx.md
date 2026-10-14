@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-004"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "ENEOS Super Mulpus DX 68, 46"
 seo_title: "ENEOS Super Mulpus DX 68, 46 – Dầu Đa Dụng Công Nghiệp"
 description: "Dầu đa dụng ENEOS Super Mulpus DX 68, 46 dùng chung cho thủy lực, hộp số, ổ đỡ, rãnh trượt máy công cụ. Phuy 200 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -34,7 +34,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 200 L (cấp 68)", sku: "DX68" }
   - { name: "Phuy 200 L (cấp 46)", sku: "DX46" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Hệ thủy lực của máy công cụ, máy ép, máy dập tải vừa"
@@ -60,7 +60,7 @@ tom_tat:
   - "**Một mã dầu cho bốn chỗ**: hệ thủy lực, hộp giảm tốc tải vừa, ổ đỡ và rãnh trượt máy công cụ thông dụng."
   - "**Cấp 46** cho máy công cụ, ụ trục chính; **cấp 68** cho máy ép, hộp giảm tốc, thùng dầu nóng."
   - "**Máy chỉ có hệ thủy lực** thì ENEOS Super Hyrando 68 (có sẵn) là lựa chọn đơn giản hơn."
-  - "**Nhận đặt theo yêu cầu** (phuy 200 L), không có sẵn tại kho tháng 10/2026."
+  - "**Có sẵn tại kho** (phuy 200 L)."
 tags: ["iso-vg-68", "iso-vg-46", "dau-da-dung", "may-cong-cu", "eneos"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -68,7 +68,7 @@ updated: "2026-10-14"
 
 **ENEOS Super Mulpus DX** là dầu đa dụng cho máy công nghiệp của ENEOS. Một loại dầu dùng được cho hệ thủy lực, hộp số, ổ đỡ và rãnh trượt. Xưởng có nhiều loại máy có thể dùng chung một mã dầu, giảm nhầm lẫn khi thêm dầu. Dầu pha từ dầu gốc paraffin tinh chế cao, phụ gia chống mài mòn và cực áp gốc lưu huỳnh – phốt pho.
 
-Cấp **68** và cấp **46** **nhận đặt theo yêu cầu**, đều là phuy 200 L, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Cấp **68** và cấp **46** **có sẵn tại kho**, đều là phuy 200 L, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Super Mulpus DX có hợp với máy của bạn không?
 
@@ -107,7 +107,7 @@ Luôn theo cấp độ nhớt ghi trong tài liệu hướng dẫn sử dụng k
 | Chỉ số độ nhớt | 103 | 104 |
 | Điểm chớp cháy cốc hở | 252 °C | 258 °C |
 | Điểm đông đặc | −27,5 °C | −25 °C |
-| Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn phuy 200 L |
+| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn phuy 200 L |
 
 > **Nhận định của HT VINA:** Chọn Super Mulpus DX khi một máy có cả hệ thủy lực, hộp số và rãnh trượt, hoặc khi xưởng muốn gom nhiều mã dầu về một mã. Nếu máy chỉ có hệ thủy lực, Super Hyrando 68 là lựa chọn đơn giản hơn.
 
@@ -136,7 +136,8 @@ Không nên trộn hai loại phụ gia khác nhau. Khi đổi sang Super Mulpus
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 200 L cấp 68 và cấp 46, nhận đặt theo yêu cầu.
+- **Quy cách:** phuy 200 L cấp 68 và cấp 46, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Super%20Mulpus%20DX) kèm cấp độ nhớt và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

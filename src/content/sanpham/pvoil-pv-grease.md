@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-008"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Mỡ PVOIL PV Grease No2, No3"
 seo_title: "Mỡ PV Grease No2, No3 PVOIL – Mỡ Bò Đa Dụng Phuy"
 description: "Mỡ đa dụng PV Grease No2, No3 của PVOIL Lube, dầu gốc khoáng, điểm nhỏ giọt tối thiểu 140 °C, cho vòng bi, khớp, xe và máy công nghiệp. Hàng phuy."
@@ -28,7 +28,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "No2 – Phuy", sku: "PV No2" }
   - { name: "No3 – Phuy", sku: "PV No3" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Vòng bi, ổ đỡ của máy móc nhà xưởng tải vừa"
@@ -50,7 +50,7 @@ tom_tat:
   - "**Dùng được** cho vòng bi, vú mỡ, khớp, chốt, bản lề tải vừa, nhiệt độ không quá cao."
   - "**Điểm nhỏ giọt tối thiểu 140 °C**: mỡ đa dụng, không phải mỡ chịu nhiệt."
   - "**No2** mềm cho vòng bi, vú mỡ; **No3** đặc cho khớp, chốt, chỗ dễ chảy mỡ."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mỡ đa dụng có sẵn: VHP Licas, Calix Ceno."
+  - "**Có sẵn tại kho**."
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "pvoil"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -58,7 +58,7 @@ updated: "2026-10-14"
 
 **PV Grease** là mỡ bôi trơn đa dụng của Công ty CP Dầu nhờn PVOIL (PVOIL Lube), thuộc Tổng công ty Dầu Việt Nam. Trên web hãng, dòng này có tên **PV Grease Lithium**, gồm ba cấp NLGI 1, 2 và 3. Mỡ màu vàng, pha từ dầu gốc khoáng và có điểm nhỏ giọt tối thiểu 140 °C.
 
-Cấp **No2** và **No3** đóng **phuy** **nhận đặt theo yêu cầu**, có hóa đơn VAT; CO/CQ cung cấp theo lô khi khách yêu cầu. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Cấp **No2** và **No3** đóng **phuy** **có sẵn tại kho**, có hóa đơn VAT; CO/CQ cung cấp theo lô khi khách yêu cầu. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## PV Grease có hợp với điểm bôi trơn của bạn không?
 
@@ -89,13 +89,13 @@ Cấp **No2** và **No3** đóng **phuy** **nhận đặt theo yêu cầu**, có
 
 > **Nhận định của HT VINA:** Với moay ơ bánh xe tải nặng, hãy kiểm tra cấp mỡ và nhiệt độ làm việc theo tài liệu hướng dẫn sử dụng kèm theo xe trước khi dùng PV Grease No3; moay ơ chạy nóng thường cần mỡ có điểm nhỏ giọt cao hơn.
 
-## PV Grease hay mỡ đa dụng có sẵn tại kho?
+## PV Grease hay mỡ đa dụng khác?
 
 | Chỉ tiêu (cấp 3) | PVOIL PV Grease No3 | [VHP Licas Grease No3](/mo-boi-tron-cong-nghiep/licas-grease) | [Calix Ceno No3](/mo-boi-tron-cong-nghiep/calix-ceno-grease) |
 | :--- | :--- | :--- | :--- |
 | Độ xuyên kim (0,1 mm) | 220–250 | 220–250 | 180–250 |
 | Điểm nhỏ giọt | Tối thiểu 140 °C | Tối thiểu 130 °C | ≥ 120 °C |
-| Tình trạng kho tháng 10/2026 | Nhận đặt, phuy | Có sẵn ống 400 g | Có sẵn phuy 180 kg |
+| Tình trạng kho tháng 10/2026 | Có sẵn phuy | Có sẵn ống 400 g | Có sẵn phuy 180 kg |
 
 > **Nhận định của HT VINA:** Ba mã cùng nhóm mỡ đa dụng cấp 3. Xưởng đang dùng PV Grease thì đặt tiếp; cần mỡ ngay thì dùng mã có sẵn, nhưng nên đẩy hết mỡ cũ ra khi đổi loại.
 
@@ -122,7 +122,8 @@ Không. Điểm nhỏ giọt tối thiểu 140 °C là mức của mỡ đa dụ
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** No2, No3 phuy. Nhận đặt theo yêu cầu.
+- **Quy cách:** No2, No3 phuy. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=PVOIL%20PV%20Grease) kèm cấp và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

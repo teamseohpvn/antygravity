@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-007"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "ENEOS Epnoc Grease AP(N)"
 seo_title: "ENEOS Epnoc Grease AP(N) – Mỡ Lithium Chịu Cực Áp"
 description: "Mỡ ENEOS Epnoc Grease AP(N) gốc lithium chịu cực áp, nhỏ giọt 195–203 °C, làm việc -20 đến 125 °C, hợp hệ bơm mỡ tập trung. CO/CQ, giao Hải Phòng."
@@ -34,7 +34,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Can", sku: "MƠ00" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 
 applications:
   - "Máy rèn, máy cán, máy giấy, máy khai thác mỏ chịu tải nặng hoặc va đập"
@@ -59,7 +59,7 @@ tom_tat:
   - "**Dùng được** cho ổ bi, ổ trượt, chốt chịu tải và va đập, làm việc từ −20 °C đến 125 °C."
   - "**Cấp 0 và 1** đặc biệt hợp hệ bơm mỡ tập trung; **cấp 2** cho súng mỡ tay; **cấp 3** cho ổ bi lớn, chỗ rung."
   - "**Chịu cực áp**: thử 4 bi tải hàn dính 3.090 N; không chứa chì."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026."
+  - "**Có sẵn tại kho**."
 tags: ["nlgi-0", "nlgi-1", "nlgi-2", "mo-lithium", "chiu-cuc-ap", "eneos"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -67,7 +67,7 @@ updated: "2026-10-14"
 
 **ENEOS Epnoc Grease AP(N)** là mỡ đa dụng chịu cực áp (EP) gốc lithium của ENEOS Nhật Bản. Mỡ màu nâu nhạt, ít mùi, không chứa chì. Mỡ dùng dầu gốc khoáng tinh chế cao và phụ gia chống oxy hóa, chống gỉ. Dòng này có bốn cấp NLGI 0, 1, 2, 3. Cấp 0 và 1 đặc biệt hợp với hệ thống bơm mỡ tập trung.
 
-Mã này **nhận đặt theo yêu cầu**, đóng can, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Epnoc Grease AP(N) có hợp với điểm bôi trơn của bạn không?
 
@@ -99,14 +99,14 @@ Mã này **nhận đặt theo yêu cầu**, đóng can, có CO/CQ và hóa đơn
 
 > **Nhận định của HT VINA:** Luôn ưu tiên cấp NLGI ghi trong hướng dẫn sử dụng hệ bơm mỡ. Cấp 0 khá mềm và mất nhiều khi gặp nước (23% rửa trôi), nên chỉ dùng trong hệ kín; điểm bôi trơn hở, hay dính nước thì dùng cấp 2.
 
-## Epnoc AP(N) hay mỡ lithium có sẵn tại kho?
+## Epnoc AP(N) hay mỡ lithium khác?
 
 | Chỉ tiêu | ENEOS Epnoc AP(N) cấp 2 | [VHP Lithium Grease L3](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) | [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) |
 | :--- | :--- | :--- | :--- |
 | Chịu cực áp | Có (4 bi 3.090 N) | Tải 4 bi 200 kg | Có (4 bi 315 kg) |
 | Điểm nhỏ giọt | 200 °C | Tối thiểu 190 °C | 180 °C |
 | Nhiệt độ làm việc | −20 đến 125 °C | −10 đến 120 °C | −20 đến 130 °C |
-| Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn L4 | Nhận đặt |
+| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn L4 | Có sẵn |
 
 > **Nhận định của HT VINA:** Nhà máy đang dùng Epnoc trong hệ bơm mỡ tập trung thì đặt tiếp đúng mã và đúng cấp. Không trộn mỡ khác hãng trong hệ tập trung khi chưa xả sạch đường ống.
 
@@ -133,7 +133,8 @@ Không hẳn. Điểm nhỏ giọt khoảng 200 °C và nhiệt độ làm việ
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** can, cấp 0, 1, 2, 3. Nhận đặt theo yêu cầu; báo rõ cấp NLGI khi đặt.
+- **Quy cách:** can, cấp 0, 1, 2, 3. Có sẵn tại kho; báo rõ cấp NLGI khi đặt.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Epnoc%20Grease%20AP(N)) kèm cấp và số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

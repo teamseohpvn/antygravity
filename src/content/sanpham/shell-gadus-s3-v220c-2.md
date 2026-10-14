@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-003"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Shell Gadus S3 V220C 2"
 seo_title: "Shell Gadus S3 V220C 2 – Mỡ Chịu Nhiệt Lithium Complex"
 description: "Mỡ chịu nhiệt Shell Gadus S3 V220C 2 gốc lithium complex, nhỏ giọt 240 °C, làm việc tới 140 °C cho ổ bi nóng, tải nặng. Xô 18 kg, CO/CQ, VAT."
@@ -29,7 +29,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Xô 18 kg", sku: "Gadus S3V220" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 equivalents: ["Mobilgrease XHP 222", "Castrol Spheerol EPLX 200-2"]
 
 applications:
@@ -54,7 +54,7 @@ tom_tat:
   - "**Dùng được** cho ổ bi làm việc liên tục tới 140 °C (đỉnh 150 °C), tải nặng, rung mạnh, nhiều nước."
   - "**Lithium complex**, nhiệt độ nhỏ giọt 240 °C; đạt ASTM D4950 GC-LB cho moay ơ bánh xe."
   - "**Không phải \"mỡ chịu nhiệt 300 °C\"**: con số cần dùng khi chọn là nhiệt độ làm việc liên tục, 140 °C."
-  - "**Nhận đặt theo yêu cầu** (xô 18 kg), không có sẵn tại kho tháng 10/2026."
+  - "**Có sẵn tại kho** (xô 18 kg)."
 tags: ["nlgi-2", "lithium-complex", "mo-chiu-nhiet", "shell-gadus"]
 date: "2026-10-12"
 updated: "2026-10-14"
@@ -62,7 +62,7 @@ updated: "2026-10-14"
 
 **Shell Gadus S3 V220C 2** là mỡ chịu nhiệt, chịu cực áp cao cấp của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng **lithium complex**, có **màu đỏ**. Nhiệt độ nhỏ giọt là **240 °C**. Mỡ làm việc liên tục tới **140 °C**, đỉnh tới 150 °C, nên dùng cho các ổ bi chạy nóng, tải nặng và rung mạnh. Tên cũ của dòng này là Shell Albida EP 2 và Shell Retinax LX 2.
 
-Mã này **nhận đặt theo yêu cầu** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Gadus S3 V220C 2 có hợp với điểm bôi trơn của bạn không?
 
@@ -124,7 +124,8 @@ Dùng được cho hệ thống ngắn. Shell đánh giá khả năng bơm xa c�
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** xô 18 kg, nhận đặt theo yêu cầu.
+- **Quy cách:** xô 18 kg, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Shell%20Gadus%20S3%20V220C%202) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.

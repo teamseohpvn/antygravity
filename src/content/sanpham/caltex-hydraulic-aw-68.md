@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-003"
-active: true   # Bật 12/10/2026: không có trong kho tháng 10, để trạng thái đặt hàng
+active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
 title: "Caltex Hydraulic Oil AW 68"
 seo_title: "Caltex Hydraulic AW 68 – Dầu Thủy Lực Caltex Phuy 208L"
 description: "Dầu thủy lực Caltex Hydraulic Oil AW 68 chống mài mòn, tách nước tốt, cho máy ép nhựa và máy công trình. Phuy 208 L, có CO/CQ, VAT, giao Hải Phòng."
@@ -26,7 +26,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 208 L", sku: "TLCALTEX" }
-stock_status: "dat-hang"
+stock_status: "co-san"
 equivalents: ["ENEOS Super Hyrando 68", "Castrol Hyspin AWS 68"]
 
 applications:
@@ -51,7 +51,7 @@ tom_tat:
   - "**Dùng được** cho hệ thủy lực công nghiệp và máy di động yêu cầu dầu chống mài mòn cấp 68."
   - "**Hợp nhất** với máy hay rò rỉ, phải thêm dầu thường xuyên, không cần thay dầu thưa."
   - "**Không dùng** khi hãng bơm (Denison, Eaton) yêu cầu dầu phải được họ chấp thuận: chọn Castrol Hyspin AWS 68."
-  - "**Nhận đặt theo yêu cầu**, không có sẵn tại kho tháng 10/2026. Mã có sẵn cùng loại: ENEOS Super Hyrando 68, Castrol Hyspin AWS 68."
+  - "**Có sẵn tại kho**."
 related_posts: ["huong-dan-chon-do-nhot"]
 tags: ["iso-vg-68", "chong-mai-mon", "caltex"]
 date: "2026-10-12"
@@ -60,7 +60,7 @@ updated: "2026-10-14"
 
 **Caltex Hydraulic Oil AW 68** là dầu thủy lực chống mài mòn của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho hệ thủy lực cố định và hệ thủy lực trên máy di động. Mục tiêu của dòng này là bảo vệ tốt với chi phí hợp lý.
 
-Mã này **nhận đặt theo yêu cầu** theo phuy 208 lít, có CO/CQ và hóa đơn VAT. Tháng 10/2026 kho HT VINA tại TP Hải Phòng (Hải Dương cũ) không có sẵn mã này.
+Mã này **có sẵn tại kho** theo phuy 208 lít, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Caltex AW 68 có hợp với máy của bạn không?
 
@@ -94,7 +94,7 @@ ENEOS Super Hyrando 68 cùng cấp, cùng loại chống mài mòn và có sẵn
 | Chỉ số độ nhớt | 95 (tối thiểu) | 104 |
 | Điểm chớp cháy | 240 °C | 258 °C |
 | Điểm đông đặc | −21 °C | −25 °C |
-| Tình trạng kho tháng 10/2026 | Nhận đặt | Có sẵn phuy 200 L |
+| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn phuy 200 L |
 
 > **Nhận định của HT VINA:** Máy đang dùng Caltex AW 68 và chạy ổn thì đặt tiếp đúng mã để khỏi súc rửa. Cần dầu ngay, hoặc máy chạy nóng liên tục, thì ENEOS Super Hyrando 68 có sẵn và có chỉ số độ nhớt, điểm chớp cháy cao hơn. Khi đổi mã, xả hết dầu cũ và thay lọc.
 
@@ -123,7 +123,8 @@ Cấp ISO VG 68 cho phép độ nhớt ở 40 °C nằm trong khoảng 61,2–74
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 208 L, nhận đặt theo yêu cầu. Thời gian có hàng báo khi nhận yêu cầu.
+- **Quy cách:** phuy 208 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Caltex%20Hydraulic%20Oil%20AW%2068) kèm số lượng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.
