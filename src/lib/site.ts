@@ -36,6 +36,9 @@ export const ADDRESS_TEXT = `${BUSINESS.streetAddress}, ${BUSINESS.locality}, ${
 // Kho nằm ở TP Hải Dương cũ (sáp nhập vào TP Hải Phòng từ 01/07/2025). Dùng ở lần nhắc địa bàn đầu tiên.
 export const AREA_TEXT = 'TP Hải Phòng (Hải Dương cũ)';
 export const ADDRESS_FULL = `${ADDRESS_TEXT} (TP Hải Dương cũ)`;
+// Bản đồ nhúng Google Maps theo địa chỉ chữ (không cần API key). Kiểm tra 14/10/2026: Google ghim tại 20.9326, 106.3022,
+// đúng khu Thanh Bình, P. Lê Thanh Nghị. Không dùng tọa độ trong du-lieu-noi-bo/map.html (ghim nhầm vào P. Lê Chân, HP cũ).
+export const MAP_EMBED_URL = `https://maps.google.com/maps?q=${encodeURIComponent(ADDRESS_TEXT)}&z=16&output=embed`;
 // KCN gần kho trước, xa kho sau.
 export const KCN_NEAR = ['Đại An', 'Nam Sách', 'Phúc Điền', 'Tân Trường', 'Lai Vu'];
 export const KCN_FAR = ['Tràng Duệ', 'Nomura', 'Đình Vũ', 'VSIP', 'Quế Võ', 'Phố Nối'];

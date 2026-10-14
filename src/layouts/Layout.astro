@@ -253,7 +253,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
           <div>
             <h2>{SITE_NAME}</h2>
             <p>{LEGAL_NAME}<br />MST: {TAX_ID}</p>
-            <p>Kho: {ADDRESS_FULL}</p>
+            <p>Kho: {ADDRESS_FULL}<br /><a href={BUSINESS.gbpUrl} target="_blank" rel="noopener" data-track="click_directions">Chỉ đường đến kho</a></p>
             <p>Hotline / Zalo: <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></p>
             <p>Email: <a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></p>
             <p><a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a> · <a href={BUSINESS.facebookUrl} target="_blank" rel="noopener me" data-track="click_facebook">Facebook</a> · <a href="/bao-gia">Gửi yêu cầu báo giá</a></p>
