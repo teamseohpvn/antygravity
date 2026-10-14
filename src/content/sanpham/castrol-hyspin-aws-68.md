@@ -32,6 +32,7 @@ packaging:
   - { name: "Phuy 209 L (cấp 68)", sku: "CASTR68" }
 stock_status: "co-san"
 equivalents: ["ENEOS Super Hyrando 68", "Shell Tellus S2 MX 68", "Caltex Hydraulic Oil AW 68", "VHP Isonas AW 68", "EMI AW 68", "X-One AW 68", "Cosmo Hydro AW 68", "EMER LAW 68"]
+so_sanh_chon_khi: "Máy hoặc hãng bơm yêu cầu dầu được Parker Denison (HF-0, HF-1, HF-2) hay Eaton chấp thuận."
 
 applications:
   - "Thiết bị: máy ép nhựa, máy ép thủy lực, máy chấn tôn, máy dập chạy liên tục 2–3 ca"

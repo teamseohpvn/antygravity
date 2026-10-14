@@ -33,6 +33,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "L4 – Xô 17 kg", sku: "Lithium L4 17kg" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Vòng bi động cơ điện, quạt tới 120 °C; cấp L00, L0 cho hệ bơm mỡ tập trung."
 
 applications:
   - "Vòng bi, ổ đũa tốc độ trung bình đến cao của động cơ điện, quạt, băng tải, máy công cụ"

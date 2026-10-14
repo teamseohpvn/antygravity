@@ -20,6 +20,7 @@ packaging:
   - { name: "Phuy 200 L", sku: "LAW68" }
   - { name: "Xô 18 L", sku: "LAW68" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Hệ nâng hạ (xe nâng, bàn nâng, cầu nâng), cần cả phuy 200 L lẫn xô 18 L."
 
 applications:
   - "Hệ thủy lực nâng hạ: xe nâng, bàn nâng, cầu nâng"

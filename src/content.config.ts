@@ -98,6 +98,12 @@ const sanphamCollection = defineCollection({
     storage: z.string().optional(), // Điều kiện bảo quản
     shelf_life: z.string().optional(), // Hạn sử dụng
     equivalents: z.array(z.string()).optional(), // Tên sản phẩm tương đương các hãng
+    // Bảng so sánh cùng loại (src/lib/so-sanh.ts). so_sanh_chon_khi: một câu "chọn mã này khi…", hiện trong bảng
+    // của mọi trang cùng nhóm. so_sanh: slug các mã muốn so (bỏ trống = tự chọn mã gần nhất). nhom_so_sanh: ghi đè nhóm
+    // công dụng theo danh mục (vd ATF không so với dầu cầu).
+    so_sanh_chon_khi: z.string().optional(),
+    so_sanh: z.array(z.string()).optional(),
+    nhom_so_sanh: z.string().optional(),
     doc_gia: z.string().optional(), // Câu "Trang này dành cho ai", hiện ngay dưới tiêu đề
     thong_so_cuoi: z.boolean().optional(), // true: bảng thông số TDS + Ứng dụng đặt sau phần phân tích (cuối thân bài)
     tom_tat: z.array(z.string()).optional(), // Tóm tắt cho người cần quyết định, hiện dưới tiêu đề; **đậm** được hỗ trợ

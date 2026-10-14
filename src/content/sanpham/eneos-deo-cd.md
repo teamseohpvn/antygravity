@@ -31,6 +31,7 @@ packaging:
   - { name: "20W-50 – Phuy 200 L", sku: "CD2" }
   - { name: "15W-40 – Phuy 200 L", sku: "CD15w40" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Động cơ đời cũ hút khí tự nhiên, máy phát, máy bơm nước chỉ yêu cầu cấp CD."
 
 applications:
   - "Động cơ diesel đời cũ hút khí tự nhiên: xe tải nhẹ, xe công nông, máy kéo"

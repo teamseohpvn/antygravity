@@ -20,6 +20,7 @@ packaging:
   - { name: "CPR 32 – Xô 18 L", sku: "ROSIA CPR32" }
   - { name: "CPR 46 – Xô 18 L", sku: "ROSIA can" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Muốn một mã dùng chung cho máy trục vít và máy pít-tông, cấp VG 32 hoặc 46."
 
 applications:
   - "Máy nén khí trục vít ngâm dầu"

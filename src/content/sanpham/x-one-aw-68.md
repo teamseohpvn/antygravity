@@ -21,6 +21,7 @@ packaging:
   - { name: "Phuy 200 L", sku: "AW68-Xone ( Phuy)" }
   - { name: "Xô 18 L", sku: "AW68-Xone ( Xô 18L)" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Cần phuy AW 68 giá theo lít thấp hơn Castrol AWS 68 khoảng 8% (bảng giá 10/2026)."
 
 applications:
   - "Máy ép nhựa, máy ép thủy lực, máy dập chạy liên tục trong xưởng"

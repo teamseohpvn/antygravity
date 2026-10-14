@@ -31,6 +31,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 200 L", sku: "DIAMOND" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Động cơ turbo CF-4 trong đội xe có cả máy xăng (SJ); hàng sản xuất tại Hải Dương."
 
 applications:
   - "Động cơ diesel 4 thì có turbo tăng áp"

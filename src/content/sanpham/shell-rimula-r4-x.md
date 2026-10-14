@@ -31,6 +31,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 200 L", sku: "SHELL15W40" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Động cơ Âu, Mỹ, Nhật tới Euro 5 yêu cầu CI-4, ACEA E7; có dùng biodiesel."
 
 applications:
   - "Xe tải, xe ben, xe khách, xe giao hàng động cơ diesel tải nặng"

@@ -30,6 +30,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 200 L", sku: "TOTAL" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Xe Hino và động cơ CF-4 chạy nơi nóng, cấp 20W-50."
 
 applications:
   - "Xe tải, xe ben, xe khách động cơ diesel có hoặc không có turbo"

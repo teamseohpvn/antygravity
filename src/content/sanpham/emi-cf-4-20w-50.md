@@ -20,6 +20,7 @@ api: "CF-4"
 packaging:
   - { name: "Phuy 200 L", sku: "EMI CF4 20W50 P" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Máy CF-4 đời cũ đã chạy lâu, khe hở lớn, làm việc mùa nóng."
 
 applications:
   - "Động cơ diesel 4 kỳ xe tải, xe khách đời cũ yêu cầu API CF-4"

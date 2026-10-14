@@ -29,6 +29,7 @@ packaging:
   - { name: "No2 – Phuy", sku: "PV No2" }
   - { name: "No3 – Phuy", sku: "PV No3" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Vòng bi, vú mỡ, khớp tải vừa, nhiệt độ không cao."
 
 applications:
   - "Vòng bi, ổ đỡ của máy móc nhà xưởng tải vừa"

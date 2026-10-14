@@ -19,6 +19,7 @@ vg: 68
 packaging:
   - { name: "Xô 18 L", sku: "MAXIMA 68" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Chỉ cần xô 18 L để thêm bù cho máy có thùng dầu nhỏ."
 
 applications:
   - "Hệ thủy lực công nghiệp chịu tải trung bình đến nặng"

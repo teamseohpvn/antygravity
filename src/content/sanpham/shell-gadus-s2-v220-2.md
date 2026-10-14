@@ -29,6 +29,7 @@ packaging:
   - { name: "Xô 18 kg", sku: "Mỡ Gadus 18Kg" }
 stock_status: "co-san"
 equivalents: ["Mobilux EP 2", "Castrol Spheerol EPL 2"]
+so_sanh_chon_khi: "Ổ tải nặng, va đập, ẩm ướt, làm việc tới 130 °C."
 
 applications:
   - "Vòng bi, ổ lăn và ổ trượt tải nặng trong nhà máy"

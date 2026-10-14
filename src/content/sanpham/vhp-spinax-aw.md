@@ -32,6 +32,7 @@ packaging:
   - { name: "Spinax AW 68 – Phuy 200 L", sku: "spinax AW68" }
   - { name: "Spinax AW Super 68 – Phuy 200 L", sku: "spinax super" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Cần dầu HM sản xuất tại Hải Dương; bản AW Super gốc nhóm II cho máy chạy nhiều ca."
 
 applications:
   - "Hệ thủy lực máy công nghiệp: máy ép, máy dập, máy chấn tôn, máy cắt thủy lực"

@@ -33,6 +33,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 200 L", sku: "COSMO AW68" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Máy đang dùng Cosmo, hoặc máy xúc, máy ép làm việc nóng, áp cao."
 
 applications:
   - "Máy ép nhựa, máy ép thủy lực, thang máy thủy lực và máy công nghiệp thông dụng"

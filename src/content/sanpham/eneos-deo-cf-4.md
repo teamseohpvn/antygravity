@@ -30,6 +30,7 @@ packaging:
   - { name: "15W-40 – Can 18 L", sku: "15w40cf-4" }
   - { name: "20W-50 – Can 18 L", sku: "CF1" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Động cơ CF-4 không có EGR, cần can 18 L cấp 15W-40 hoặc 20W-50."
 
 applications:
   - "Xe tải, xe khách, xe buýt động cơ diesel có turbo hoặc hút khí tự nhiên"

@@ -20,6 +20,7 @@ standards: ["ATF Dexron II", "ATF Dexron III"]   # TODO TDS: xác nhận đúng 
 packaging:
   - { name: "Xô 18 L", sku: "ATF (VHP)" }
 stock_status: "co-san"
+nhom_so_sanh: "atf"   # chỉ có 1 mã cùng công dụng trên web: không có bảng so sánh
 
 applications:
   - "Hộp số tự động ô tô, xe cơ giới yêu cầu dầu ATF loại Dexron II hoặc III"

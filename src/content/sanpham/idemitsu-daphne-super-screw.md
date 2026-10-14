@@ -32,6 +32,7 @@ packaging:
   - { name: "VG 46 – Thùng 20 L", sku: "Daphne 46" }
 stock_status: "co-san"
 equivalents: ["Shell Corena S3 R 46", "ENEOS Faircol RA 32"]
+so_sanh_chon_khi: "Máy trục vít trong xưởng cơ khí có sương dầu cắt gọt, cần dầu bền oxy hóa."
 
 applications:
   - "Máy nén khí trục vít ngâm dầu (oil-flooded / oil-injected)"

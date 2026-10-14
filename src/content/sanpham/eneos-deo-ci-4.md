@@ -31,6 +31,7 @@ packaging:
   - { name: "20W-50 – Can 18 L", sku: "CI1" }
   - { name: "20W-50 – Phuy 200 L", sku: "CI2" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Động cơ có EGR; đội xe dùng chung cho máy xăng (cấp SL); cần can 18 L hoặc phuy 200 L."
 
 applications:
   - "Xe tải, xe ben, xe khách chạy động cơ diesel có hoặc không có turbo"

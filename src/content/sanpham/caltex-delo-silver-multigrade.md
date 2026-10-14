@@ -28,6 +28,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 208 L", sku: "Caltex CF 20W50 208L" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Đội xe vừa có máy diesel CF-4 vừa có máy xăng SG, cấp 20W-50."
 
 applications:
   - "Đội xe diesel hỗn hợp: động cơ 4 kỳ cao tốc, có turbo hoặc hút khí tự nhiên"

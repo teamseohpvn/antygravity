@@ -29,6 +29,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 200 L (cấp 90)", sku: "PV OIL 90" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Hộp số tay có bộ đồng tốc mà hãng chỉ cho phép dầu GL-4."
 
 applications:
   - "Hộp số tay xe tải, xe khách, máy kéo, kể cả hộp số có bộ đồng tốc"

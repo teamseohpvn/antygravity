@@ -21,6 +21,7 @@ packaging:
   - { name: "85W-140 – Xô", sku: "EMI 85W140 GL5 X" }   # TODO: dung tích xô
   - { name: "80W-90 – Xô 18 L", sku: "EMI 80W90 GL5 X" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Cần cả 85W-140 cho xe nặng và 80W-90 cho xe vừa của cùng một hãng."
 
 applications:
   - "Cầu sau, vi sai bánh răng hypoid của xe tải, xe ben, xe khách"

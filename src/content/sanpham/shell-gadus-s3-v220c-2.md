@@ -31,6 +31,7 @@ packaging:
   - { name: "Xô 18 kg", sku: "Gadus S3V220" }
 stock_status: "co-san"
 equivalents: ["Mobilgrease XHP 222", "Castrol Spheerol EPLX 200-2"]
+so_sanh_chon_khi: "Ổ bi nóng liên tục tới 140 °C, rung mạnh, moay ơ bánh xe."
 
 applications:
   - "Ổ bi máy đúc liên tục, sàng rung, máy nghiền đá, máy đập"

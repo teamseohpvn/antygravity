@@ -35,6 +35,7 @@ packaging:
   - { name: "Phuy 200 L (cấp 68)", sku: "DX68" }
   - { name: "Phuy 200 L (cấp 46)", sku: "DX46" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Muốn một mã dầu chung cho hệ thủy lực, hộp giảm tốc tải vừa, ổ đỡ và rãnh trượt máy công cụ."
 
 applications:
   - "Hệ thủy lực của máy công cụ, máy ép, máy dập tải vừa"
