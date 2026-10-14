@@ -205,7 +205,7 @@ const schemaData = [
         {d.doc_gia && <p class="doc-gia">{d.doc_gia}</p>}
         {d.tom_tat && d.tom_tat.length > 0 && (
           <div class="tom-tat">
-            <p class="tom-tat__label">Tóm tắt cho người đang cần quyết định</p>
+            <p class="tom-tat__label">Hãy chọn ngay nếu bạn thực sự cần những tiêu chí sau</p>
             <ul>{d.tom_tat.map((t) => <li set:html={dam(t)} />)}</ul>
           </div>
         )}
