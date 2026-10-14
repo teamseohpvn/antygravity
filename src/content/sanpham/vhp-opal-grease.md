@@ -35,6 +35,7 @@ packaging:
   - { name: "NLGI 3 – Phuy 180 kg", sku: "MỠ OPAL L3" }
   - { name: "NLGI 4 – Xô 15 kg", sku: "Mỡ OPAL4(15KG)" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Ổ bi tải nặng, nhiều bụi; NLGI 4 cho ổ lớn tốc độ chậm."
 
 applications:
   - "Đầu trục chịu tải nặng, nóng, nhiều bụi"

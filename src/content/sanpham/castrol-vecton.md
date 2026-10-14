@@ -32,6 +32,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 209 L", sku: "Vecton 15W40 CI4" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Hướng dẫn sử dụng ghi chuẩn hãng xe (Cummins, Volvo, Mack, MTU) hoặc đội xe muốn thay dầu thưa hơn."
 
 applications:
   - "Xe tải nặng, đầu kéo, xe khách đường dài động cơ diesel 4 kỳ cao tốc"

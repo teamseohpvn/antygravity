@@ -33,6 +33,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "No3 – Thùng 30 ống 400 g", sku: "Licas Tuýp" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Sát xi, bản lề, đầu trục tải vừa; cần ống 400 g cho súng bơm mỡ."
 
 images:
   - { src: "/images/san-pham/licas-grease-no3-ong-400g.webp", alt: "Ống 400 g mỡ VHP Licas Grease No3" }

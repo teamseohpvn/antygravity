@@ -35,6 +35,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 180 kg", sku: "CALIX NO3" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Chốt, bản lề, ổ trục tốc độ chậm dưới 100 °C, cần mỡ canxi đặc."
 
 applications:
   - "Ổ trục và chi tiết ma sát của máy khai thác mỏ, máy xây dựng"

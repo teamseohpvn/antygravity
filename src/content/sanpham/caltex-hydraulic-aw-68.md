@@ -28,6 +28,7 @@ packaging:
   - { name: "Phuy 208 L", sku: "TLCALTEX" }
 stock_status: "co-san"
 equivalents: ["ENEOS Super Hyrando 68", "Castrol Hyspin AWS 68"]
+so_sanh_chon_khi: "Hệ thủy lực công nghiệp, máy công trình cần dầu AW 68 tách nước tốt, đạt thử gỉ nước biển."
 
 applications:
   - "Hệ thủy lực công nghiệp dùng bơm cánh gạt, bánh răng, pít-tông"

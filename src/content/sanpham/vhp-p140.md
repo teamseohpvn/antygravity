@@ -21,6 +21,7 @@ sae: "140"
 packaging:
   - { name: "Xô 18 L", sku: "P140" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Hộp số sàn, cầu xe tải mà hướng dẫn sử dụng ghi đơn cấp SAE 140."
 
 applications:
   - "Hộp số sàn, vi sai, cầu xe tải chịu tải nặng"

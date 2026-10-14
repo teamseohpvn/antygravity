@@ -20,6 +20,7 @@ api: "CI-4"
 packaging:
   - { name: "Xô", sku: "EMI CI4 20W50 X" }   # TODO: dung tích xô
 stock_status: "co-san"
+so_sanh_chon_khi: "Cần dầu CI-4 đóng xô để thay lẻ từng xe."
 
 applications:
   - "Động cơ diesel xe tải, xe khách, máy công trình có hệ tuần hoàn khí xả (EGR)"

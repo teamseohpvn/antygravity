@@ -34,6 +34,7 @@ packaging:
   - { name: "Xô 20 L", sku: "HLPZ 68" }
 stock_status: "co-san"
 equivalents: ["Castrol Hyspin AWS 68", "ENEOS Super Hyrando 68"]
+so_sanh_chon_khi: "Hướng dẫn sử dụng ghi DIN 51524-2 HLP và cần xô 20 L để thêm bù."
 
 applications:
   - "Hệ thủy lực máy công cụ, máy ép, máy dập, máy ép nhựa"

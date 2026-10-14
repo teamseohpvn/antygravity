@@ -33,6 +33,7 @@ packaging:
   - { name: "20W-50 – Xô 18 L", sku: "CRB.1" }
   - { name: "20W-50 – Phuy 209 L" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Động cơ CF-4 chưa có EGR, chạy nhiều loại nhiên liệu; có cả 15W-40 và 20W-50."
 
 applications:
   - "Xe tải, xe ben, xe khách động cơ diesel có turbo hoặc hút khí tự nhiên"

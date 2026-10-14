@@ -36,6 +36,7 @@ packaging:
   - { name: "No2 – Phuy 180 kg", sku: "CAXILIUM NO2" }
   - { name: "No3 – Phuy 180 kg", sku: "CAXILIUM NO3" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Điểm bôi trơn hay gặp mưa, nước rửa, nước muối (cảng, tàu, bãi ven biển)."
 
 applications:
   - "Đầu trục, ổ bi, bạc, sát xi làm việc ngoài trời, hay dính nước"

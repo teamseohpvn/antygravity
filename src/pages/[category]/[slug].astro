@@ -11,6 +11,7 @@ import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
 import { giaSanPham } from '../../lib/gia-json';
+import { bangSoSanh } from '../../lib/so-sanh';
 import { fmtVnd, fmtNgay } from '../../lib/gia-tinh';
 import { ngayBai } from '../../lib/ngay';
 import { timNhanSu, DEFAULT_REVIEWER_ID, DEFAULT_PRODUCT_AUTHOR_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
@@ -46,6 +47,8 @@ const equivalents = (d.equivalents ?? []).map((name) => {
   const match = activeProducts.find((p) => p.id !== product.id && norm(p.data.title) === norm(name));
   return { name, href: match ? `/${match.data.category}/${match.id}` : undefined };
 });
+// So sánh với 2–4 mã cùng công dụng đang bán trên web (dầu thủy lực với dầu thủy lực, mỡ với mỡ…).
+const soSanh = bangSoSanh(product, activeProducts);
 // Mục lục: các mục cố định của template + tiêu đề H2 trong thân bài, đúng thứ tự trên trang.
 const coSpecs = !!d.specs?.length;
 const coUngDung = !!(d.applications?.length || d.not_for?.length);
@@ -61,6 +64,7 @@ const tocItems = mucLuc([
   { depth: 2, slug: 'gioi-thieu', text: `Giới thiệu ${d.title}` },
   ...headings,
   ...(d.thong_so_cuoi ? mucThongSo : []),
+  ...(soSanh ? [{ depth: 2, slug: 'so-sanh-cung-loai', text: `So sánh với các ${soSanh.tenNhom} khác` }] : []),
   ...(equivalents.length ? [{ depth: 2, slug: 'san-pham-tuong-duong', text: 'Sản phẩm tương đương' }] : []),
   ...(coBaoQuan ? [{ depth: 2, slug: 'bao-quan-an-toan', text: 'Bảo quản và an toàn' }] : []),
 ], { tat: d.muc_luc === false });
@@ -256,6 +260,27 @@ const schemaData = [
         <ContentBody><Content /></ContentBody>
       </div>
       {d.thong_so_cuoi && <ThongSoUngDung {d} {coNhanDinh} nested />}
+      {soSanh && (
+        <>
+          <h2 id="so-sanh-cung-loai">So sánh {d.title} với các {soSanh.tenNhom} khác</h2>
+          <p>Bảng đặt {d.title} cạnh {soSanh.dong.length - 1} mã cùng công dụng đang bán tại HT VINA. Cột "Chọn khi" giúp chọn nhanh; thông số chi tiết xem ở trang từng sản phẩm.</p>
+          <div class="table-wrap">
+            <table class="so-sanh">
+              <thead><tr><th>Sản phẩm</th>{soSanh.cot.map((c) => <th>{c}</th>)}<th>Chọn khi</th></tr></thead>
+              <tbody>
+                {soSanh.dong.map((r) => (
+                  <tr class:list={{ 'trang-nay': r.laTrangNay }}>
+                    <th scope="row">{r.laTrangNay ? <>{r.ten}<br /><small>(trang này)</small></> : <a href={r.href}>{r.ten}</a>}</th>
+                    {r.giaTri.map((v) => <td>{v ? v.split(' · ').map((x, i) => <>{i > 0 && <br />}{x}</>) : '–'}</td>)}
+                    <td>{r.chonKhi ?? '–'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="note">Số liệu lấy từ bảng thông số kỹ thuật (TDS) của từng hãng, giá trị điển hình có thể thay đổi theo lô. Giá trị ghi "tối thiểu", "tối đa" là mức hãng cam kết, không phải giá trị đo điển hình. Dấu "–": hãng không công bố chỉ tiêu này hoặc HT VINA chưa có TDS của mã đó. Luôn chọn theo cấp và tiêu chuẩn ghi trong tài liệu hướng dẫn sử dụng kèm theo máy.</p>
+        </>
+      )}
       {equivalents.length > 0 && (
         <>
           <h2 id="san-pham-tuong-duong">Sản phẩm tương đương</h2>
@@ -295,6 +320,11 @@ const schemaData = [
   .description { font-size: 1.05rem; color: var(--color-text-light); margin-bottom: 20px; }
   .packaging { margin-bottom: 20px; }
 
+  .so-sanh th[scope='row'] { font-weight: 600; min-width: 150px; }
+  .so-sanh td { min-width: 90px; }
+  .so-sanh td:last-child { min-width: 220px; }
+  .so-sanh tr.trang-nay > * { background: #eff6ff; }
+  .so-sanh small { font-weight: 400; color: var(--color-text-light); }
   .cta-box { background: #f8fafc; padding: 22px; border-radius: 8px; border: 1px dashed var(--border-color); }
   .status { font-weight: 600; color: var(--color-primary); }
   .gia ul { margin: 4px 0 4px 20px; }

@@ -22,6 +22,7 @@ packaging:
   - { name: "Phuy 200 L", sku: "EMI AW68 P" }
   - { name: "Xô 18 L", sku: "EMI AW68 X" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Cần dầu AW 68 giá theo lít thấp hơn Castrol AWS 68 khoảng 17–18% (bảng giá 10/2026)."
 
 applications:
   - "Hệ thủy lực công nghiệp chạy áp suất cao, nhiệt độ làm việc ổn định"

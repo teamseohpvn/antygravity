@@ -30,6 +30,7 @@ packaging:
   - { name: "Phuy 200 L (cấp 68)", sku: "AW2" }
 stock_status: "co-san"
 equivalents: ["Castrol Hyspin AWS 68", "Shell Tellus S2 MX 68", "Caltex Hydraulic Oil AW 68"]
+so_sanh_chon_khi: "Máy Nhật, hệ có van servo khe hở nhỏ; cần dầu HM theo DIN 51524-2."
 
 applications:
   - "Máy ép nhựa, máy ép đùn, máy dập, máy chấn và máy cắt tôn thủy lực"

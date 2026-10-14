@@ -35,6 +35,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Can", sku: "MƠ00" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Ổ chịu tải, va đập tới 125 °C; cấp 0, 1 cho hệ bơm mỡ tập trung."
 
 applications:
   - "Máy rèn, máy cán, máy giấy, máy khai thác mỏ chịu tải nặng hoặc va đập"

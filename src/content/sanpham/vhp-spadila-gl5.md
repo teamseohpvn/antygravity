@@ -33,6 +33,7 @@ packaging:
   - { name: "85W-140 – Xô 18 L", sku: "Spadila 85W140 GL5 X" }
   - { name: "80W-90 / 85W-140 – Phuy 200 L", sku: "SPADILA" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Cần GL-5 sản xuất tại Hải Dương, cấp 80W-90 hoặc 85W-140."
 
 applications:
   - "Cầu sau, vi sai bánh răng hypoid của xe tải, xe ben, xe khách"

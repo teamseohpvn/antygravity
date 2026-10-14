@@ -31,6 +31,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "20W-50 – Phuy 209 L", sku: "ĐC castrol CI4 20w50" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Động cơ có EGR yêu cầu CI-4, cần phuy 209 L cấp 20W-50."
 
 applications:
   - "Xe tải, xe ben, xe khách động cơ diesel 4 kỳ cao tốc"

@@ -30,6 +30,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Xô 20 L", sku: "Spirax S2 A85W140" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Gara, đội xe ít đầu xe cần GL-5 85W-140 đóng xô 20 L."
 
 applications:
   - "Cầu sau, vi sai bánh răng hypoid của xe tải, xe ben, xe khách"

@@ -29,6 +29,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 packaging:
   - { name: "Phuy 209 L", sku: "Dầu cầu Castrol" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Cầu hypoid xe tải nặng yêu cầu GL-5 85W-140, cần phuy 209 L."
 
 applications:
   - "Cầu sau, vi sai bánh răng hypoid của xe tải nặng, xe ben, xe đầu kéo"

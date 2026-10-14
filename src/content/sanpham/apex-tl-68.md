@@ -20,6 +20,7 @@ vg: 68
 packaging:
   - { name: "Phuy 200 L", sku: "QT-APEXTL68" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Máy cũ, hay rò rỉ phải thêm dầu thường xuyên, hướng dẫn sử dụng chỉ ghi \"dầu thủy lực 68\"."
 
 applications:
   - "Máy ép, máy đùn chạy áp suất cao"

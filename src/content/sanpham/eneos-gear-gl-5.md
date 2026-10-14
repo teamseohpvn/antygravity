@@ -30,6 +30,7 @@ packaging:
   - { name: "Phuy 200 L (SAE 90)", sku: "GL5.2" }
   - { name: "Thùng (80W-90)", sku: "GL 80W90" }
 stock_status: "co-san"
+so_sanh_chon_khi: "Cần 80W-90 chảy tốt khi lạnh, hoặc SAE 90 cho cầu máy công trình chạy nóng."
 
 applications:
   - "Cầu sau, vi sai bánh răng hypoid của xe tải, xe khách, xe ben"

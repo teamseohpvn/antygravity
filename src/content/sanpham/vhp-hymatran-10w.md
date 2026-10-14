@@ -33,6 +33,7 @@ packaging:
   - { name: "Phuy 200 L", sku: "Hymatran 10W" }
   - { name: "Xô 18 L" }
 stock_status: "co-san"
+nhom_so_sanh: "dau-truyen-dong-to"   # chỉ có 1 mã cùng công dụng trên web: không có bảng so sánh
 
 applications:
   - "Hộp số powershift, bộ biến mô của xe nâng, máy xúc lật, máy ủi khi hãng yêu cầu dầu SAE 10W"

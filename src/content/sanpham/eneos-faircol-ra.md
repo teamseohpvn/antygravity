@@ -34,6 +34,7 @@ packaging:
   - { name: "Can 18 L", sku: "RA32" }
 stock_status: "co-san"
 equivalents: ["Idemitsu Daphne Super Screw 32"]
+so_sanh_chon_khi: "Máy trục vít, cánh gạt, xoắn ốc cấp VG 32 hút không khí ẩm."
 
 applications:
   - "Máy nén khí trục vít ngâm dầu"
