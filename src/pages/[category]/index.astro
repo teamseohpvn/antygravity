@@ -257,7 +257,8 @@ const schemaData = [
   :global(.seo-content ul), :global(.seo-content ol) { margin: 0 0 15px 22px; line-height: 1.7; font-size: 1.05rem; }
   :global(.seo-content li) { margin-bottom: 8px; }
   :global(.seo-content strong) { font-weight: 700; color: #111; }
-  :global(.seo-content a) { color: var(--color-accent); text-decoration: underline; }
+  /* Chỉ link chữ trong bài; nút (btn-primary, btn-secondary) giữ màu riêng, nếu không chữ nút cam bị tô cam trùng nền. */
+  :global(.seo-content a:not(.btn-primary):not(.btn-secondary)) { color: var(--color-accent); text-decoration: underline; }
   :global(.seo-content table) { display: block; overflow-x: auto; border-collapse: collapse; margin: 10px 0 20px; font-size: 0.95rem; }
   :global(.seo-content th), :global(.seo-content td) { border: 1px solid var(--border-color); padding: 8px 12px; text-align: left; vertical-align: top; }
   :global(.seo-content th) { background: #f1f5f9; }

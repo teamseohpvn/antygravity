@@ -41,7 +41,7 @@ const href = (r: Row) => (r.trang && pages.includes(r.trang) ? `/${category}/${r
         <h3>{g.title}</h3>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Sản phẩm</th><th>Hãng</th><th>Cấp</th><th>Quy cách</th><th>Nhận giá sỉ</th></tr></thead>
+            <thead><tr><th>Sản phẩm</th><th>Hãng</th><th>Cấp</th><th>Quy cách</th><th><span class="sr-only">Báo giá</span></th></tr></thead>
             <tbody>
               {g.items.map((r) => (
                 <tr>
