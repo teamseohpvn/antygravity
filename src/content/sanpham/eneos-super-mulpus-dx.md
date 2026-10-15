@@ -11,6 +11,7 @@ categoryName: "Dầu Thủy Lực"
 brand: "ENEOS"
 origin: "Nhật Bản (thương hiệu)"
 vg: 68
+vg_khac: [46]
 base_oil: "Dầu gốc paraffin tinh chế cao"
 
 specs:
