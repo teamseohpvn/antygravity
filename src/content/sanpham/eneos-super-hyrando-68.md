@@ -47,8 +47,8 @@ warnings:
 storage: "Để phuy trong kho có mái che, tránh nước và nắng trực tiếp (theo TCCS 14:2014). Phuy để ngoài trời thì đặt nằm ngang, hai lỗ nắp ở vị trí 3 giờ và 9 giờ. Phuy đã mở phải đậy kín nắp."
 
 images:
-  - { src: "/images/san-pham/eneos-super-hyrando-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực ENEOS Super Hyrando 68 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/eneos-super-hyrando-68-nhan.webp", alt: "Phuy 200 lít ENEOS Super Hyrando 68 xếp đứng trong kho có mái che của HT VINA" }
+  - { src: "/images/san-pham/eneos-super-hyrando-68-phuy-200l.webp", alt: "Các phuy 200 lít dầu thủy lực ENEOS Super Hyrando 68 bọc màng co, xếp trong kho HT VINA" }
+  - { src: "/images/san-pham/eneos-super-hyrando-68-nhan.webp", alt: "Nhãn nắp phuy dầu thủy lực ENEOS Super Hyrando 68 ghi thể tích 200 lít, sản xuất tại Đình Vũ, Hải Phòng" }
 
 doc_gia: "Trang này dành cho kỹ thuật viên và người mua hàng cần kiểm tra kỹ thuật thông số dầu trước khi chọn mã."
 tom_tat:
