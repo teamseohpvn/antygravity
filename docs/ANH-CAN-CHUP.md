@@ -145,8 +145,8 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 155 ảnh, đã có 92, *
 | `anh-goc/san-pham/` | `eneos-faircol-ra-32-xo-18l.jpg` | Xô 18 lít màu đen dầu máy nén khí ENEOS Faircol RA 32 tại kho HT VINA | /dau-may-nen-khi/eneos-faircol-ra |
 | `anh-goc/san-pham/` | `eneos-faircol-ra-32-xo-18l-nhan.jpg` | Nhãn xô ENEOS Faircol RA 32, dầu máy nén công nghệ cao 18 lít | /dau-may-nen-khi/eneos-faircol-ra |
 | `anh-goc/san-pham/` | `eneos-gear-gl-5-80w-90-can-phuy.jpg` | Can dầu bánh răng ENEOS Gear Oil API GL-5 SAE 80W-90 và phuy ENEOS | /dau-cau-hop-so/eneos-gear-gl-5 |
-| `anh-goc/san-pham/` | `eneos-super-hyrando-68-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực ENEOS Super Hyrando 68 tại kho Hải Phòng | /dau-thuy-luc/eneos-super-hyrando-68 |
-| `anh-goc/san-pham/` | `eneos-super-hyrando-68-nhan.jpg` | Phuy 200 lít ENEOS Super Hyrando 68 xếp đứng trong kho có mái che của HT VINA | /dau-thuy-luc/eneos-super-hyrando-68 |
+| `anh-goc/san-pham/` | `eneos-super-hyrando-68-phuy-200l.jpg` | Các phuy 200 lít dầu thủy lực ENEOS Super Hyrando 68 bọc màng co, xếp trong kho HT VINA | /dau-thuy-luc/eneos-super-hyrando-68 |
+| `anh-goc/san-pham/` | `eneos-super-hyrando-68-nhan.jpg` | Nhãn nắp phuy dầu thủy lực ENEOS Super Hyrando 68 ghi thể tích 200 lít, sản xuất tại Đình Vũ, Hải Phòng | /dau-thuy-luc/eneos-super-hyrando-68 |
 | `anh-goc/san-pham/` | `eneos-super-mulpus-dx-68-phuy-200l.jpg` | Phuy 200 lít dầu đa dụng ENEOS Super Mulpus DX 68 tại kho Hải Phòng | /dau-thuy-luc/eneos-super-mulpus-dx |
 | `anh-goc/san-pham/` | `licas-grease-no3-ong-400g.jpg` | Ống 400 g mỡ VHP Licas Grease No3 | /mo-boi-tron-cong-nghiep/licas-grease |
 | `anh-goc/san-pham/` | `licas-grease-no2-phuy-180kg.jpg` | Nắp phuy 180 kg mỡ VHP Licas Grease No2 có nhãn sản phẩm | /mo-boi-tron-cong-nghiep/licas-grease |
