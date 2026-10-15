@@ -1,6 +1,6 @@
 # Danh sách ảnh cần chụp / tạo
 
-Sinh tự động bằng `npm run anh` ngày 13/10/2026 từ các file `.md`. **Không sửa tay**, sửa bài viết rồi chạy lại lệnh.
+Sinh tự động bằng `npm run anh` ngày 15/10/2026 từ các file `.md`. **Không sửa tay**, sửa bài viết rồi chạy lại lệnh.
 Bản Excel: `docs/danh-sach-anh.csv` (lọc cột "Trạng thái" = THIẾU).
 
 Cách dùng: đặt ảnh gốc vào đúng **thư mục**, đặt **đúng tên** trong cột "Tên file cần up" (đuôi .jpg, .png hoặc .webp đều được), rồi chạy `npm run images`.
@@ -11,7 +11,7 @@ Cách dùng: đặt ảnh gốc vào đúng **thư mục**, đặt **đúng tên
 | Danh mục (`anh-goc/danh-muc/`) | 3:2 ngang | 1536 × 1024 px | Được dùng ảnh AI, không logo, không chữ (xem `docs/prompt-anh-danh-muc.md`) |
 | Bài viết (`anh-goc/blog/`) | 16:9 | 1200 × 675 px (khuyến nghị 1600 × 900) | Ảnh minh họa được dùng AI; ảnh "thực tế tại kho/xưởng" phải là ảnh thật |
 
-Chỉ tính bài đang bật (`active: true`). Tổng: 158 ảnh, đã có 90, **còn thiếu 68**.
+Chỉ tính bài đang bật (`active: true`). Tổng: 155 ảnh, đã có 92, **còn thiếu 63**.
 
 ## Ảnh còn thiếu
 
@@ -21,8 +21,6 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 158 ảnh, đã có 90, *
 | `anh-goc/danh-muc/` | `nuoc-lam-mat.jpg` | Can nước làm mát cạnh két nước động cơ xe tải | /nuoc-lam-mat |
 | `anh-goc/san-pham/` | `calix-ceno-grease-no3-phuy-180kg.jpg` | Phuy 180 kg mỡ Calix Ceno No3 tại kho Hải Phòng | /mo-boi-tron-cong-nghiep/calix-ceno-grease |
 | `anh-goc/san-pham/` | `castrol-vecton-phuy-209l.jpg` | Phuy 209 lít dầu động cơ Castrol Vecton 15W-40 CI-4/E7 tại kho Hải Phòng | /dau-dong-co-diesel/castrol-vecton |
-| `anh-goc/san-pham/` | `cosmo-hydro-aw-68-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực Cosmo Hydro AW 68 tại kho Hải Phòng | /dau-thuy-luc/cosmo-hydro-aw-68 |
-| `anh-goc/san-pham/` | `cosmo-hydro-aw-68-nhan.jpg` | Nhãn phuy Cosmo Hydro AW 68 ghi cấp độ nhớt và loại dầu | /dau-thuy-luc/cosmo-hydro-aw-68 |
 | `anh-goc/san-pham/` | `emi-cf-4-20w-50-phuy-200l.jpg` | Phuy 200 lít dầu động cơ diesel EMI CF-4 20W-50 tại kho Hải Phòng | /dau-dong-co-diesel/emi-cf-4-20w-50 |
 | `anh-goc/san-pham/` | `emi-cf-4-20w-50-nhan.jpg` | Nhãn phuy EMI CF-4 20W-50 ghi cấp API và SAE | /dau-dong-co-diesel/emi-cf-4-20w-50 |
 | `anh-goc/san-pham/` | `emi-ci-4-20w-50-xo.jpg` | Xô dầu động cơ diesel EMI CI-4 20W-50 tại kho Hải Phòng | /dau-dong-co-diesel/emi-ci-4-20w-50 |
@@ -79,9 +77,6 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 158 ảnh, đã có 90, *
 | `anh-goc/san-pham/` | `vhp-spadila-gl5-85w-140-xo-18l.jpg` | Xô 18 lít dầu cầu VHP Spadila GL-5 85W-140 tại kho Hải Phòng | /dau-cau-hop-so/vhp-spadila-gl5 |
 | `anh-goc/san-pham/` | `vhp-spadila-gl5-80w-90-xo-18l.jpg` | Xô 18 lít dầu cầu VHP Spadila GL-5 80W-90 | /dau-cau-hop-so/vhp-spadila-gl5 |
 | `anh-goc/san-pham/` | `vhp-spadila-gl5-phuy-200l.jpg` | Phuy 200 lít dầu cầu VHP Spadila GL-5 | /dau-cau-hop-so/vhp-spadila-gl5 |
-| `anh-goc/san-pham/` | `vhp-spinax-aw-68-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực VHP Spinax AW 68 tại kho Hải Phòng | /dau-thuy-luc/vhp-spinax-aw |
-| `anh-goc/san-pham/` | `vhp-spinax-aw-super-68-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực VHP Spinax AW Super 68 | /dau-thuy-luc/vhp-spinax-aw |
-| `anh-goc/san-pham/` | `vhp-spinax-aw-nhan.jpg` | Nhãn phuy dầu thủy lực VHP Spinax AW ghi cấp độ nhớt 68 | /dau-thuy-luc/vhp-spinax-aw |
 | `anh-goc/san-pham/` | `vhp-unitrans-oil-phuy-210l.jpg` | Phuy 210 lít dầu cách điện VHP Unitrans Oil Hi-Volt tại kho Hải Phòng | /dau-cach-dien/vhp-unitrans-oil |
 | `anh-goc/san-pham/` | `vhp-unitrans-oil-xo-18l.jpg` | Xô 18 lít dầu biến thế VHP Unitrans Oil Hi-Volt | /dau-cach-dien/vhp-unitrans-oil |
 | `anh-goc/san-pham/` | `vhp-unitrans-oil-nhan.jpg` | Nhãn dầu cách điện VHP Unitrans Oil ghi tiêu chuẩn IEC 60296 | /dau-cach-dien/vhp-unitrans-oil |
@@ -122,6 +117,7 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 158 ảnh, đã có 90, *
 | `anh-goc/san-pham/` | `castrol-hyspin-hlpz-68-can-20l.jpg` | Can 20 lít Castrol Hyspin HLP-Z 68 | /dau-thuy-luc/castrol-hyspin-hlpz-68 |
 | `anh-goc/san-pham/` | `castrol-transmax-axle-85w-140-phuy-xo.jpg` | Phuy và xô dầu nhớt Castrol (ảnh minh họa bao bì) | /dau-cau-hop-so/castrol-transmax-axle-85w-140 |
 | `anh-goc/san-pham/` | `castrol-vecton-nhan.jpg` | Nhãn phuy 209 lít Castrol Vecton 15W-40 CI-4/E7 ghi API CI-4, JASO DH-1, ACEA E7 | /dau-dong-co-diesel/castrol-vecton |
+| `anh-goc/san-pham/` | `cosmo-hydro-aw-68-xo.jpg` | Xô thép dầu thủy lực Cosmo Hydro AW, thân bạc sọc xanh dương in chữ コスモ ハイドロ AW | /dau-thuy-luc/cosmo-hydro-aw-68 |
 | `anh-goc/san-pham/` | `emer-law-68-phuy-200l.jpg` | Phuy 200 lít dầu thủy lực Amer LAW68 (EMER LAW 68) | /dau-thuy-luc/emer-law-68 |
 | `anh-goc/san-pham/` | `emer-law-68-nhan.jpg` | Nhãn phuy dầu thủy lực LAW68 của Amer ghi dung tích 200 L | /dau-thuy-luc/emer-law-68 |
 | `anh-goc/san-pham/` | `emer-law-68-phuy-kho.jpg` | Nắp phuy Amer LAW68 cạnh danh thiếp Dầu Công Nghiệp HP | /dau-thuy-luc/emer-law-68 |
@@ -176,6 +172,7 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 158 ảnh, đã có 90, *
 | `anh-goc/san-pham/` | `vhp-lithium-grease-l3-phuy-180kg.jpg` | Phuy 180 kg mỡ VHP Lithium Grease L3 | /mo-boi-tron-cong-nghiep/vhp-lithium-grease |
 | `anh-goc/san-pham/` | `vhp-lithium-grease-l3-nhan-phuy.jpg` | Nắp phuy mỡ VHP Lithium Grease L3 ghi khối lượng tịnh 180 kg | /mo-boi-tron-cong-nghiep/vhp-lithium-grease |
 | `anh-goc/san-pham/` | `vhp-opal-grease-nlgi3-phuy-180kg.jpg` | Nắp phuy 180 kg mỡ VHP Premium Opal Grease NLGI-3 có nhãn sản phẩm | /mo-boi-tron-cong-nghiep/vhp-opal-grease |
+| `anh-goc/san-pham/` | `vhp-spinax-aw-super-68-xo-18l.jpg` | Xô nhựa 18 lít dầu thủy lực Spinax Super AW-68, thân xanh lá, nhãn vàng Green Lube ghi dầu thủy lực chất lượng cao ISO 3448 | /dau-thuy-luc/vhp-spinax-aw |
 | `anh-goc/san-pham/` | `x-one-aw-68-xo-18l.jpg` | Xô 18 lít dầu thủy lực X-One AW 68 | /dau-thuy-luc/x-one-aw-68 |
 | `anh-goc/san-pham/` | `x-one-aw-68-nhan.jpg` | Mặt sau xô X-One AW 68 ghi công dụng và lợi ích | /dau-thuy-luc/x-one-aw-68 |
 | `anh-goc/san-pham/` | `x-one-aw-68-xo-18l-kho.jpg` | Xô X-One AW 68 cạnh danh thiếp Dầu Công Nghiệp HP | /dau-thuy-luc/x-one-aw-68 |

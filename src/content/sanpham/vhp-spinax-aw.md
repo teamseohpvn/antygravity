@@ -47,9 +47,7 @@ warnings:
 storage: "Để nơi khô ráo, có mái che, tránh nắng mưa. Phuy đã mở phải đậy kín nắp."
 
 images:
-  - { src: "/images/san-pham/vhp-spinax-aw-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực VHP Spinax AW 68 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/vhp-spinax-aw-super-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực VHP Spinax AW Super 68" }
-  - { src: "/images/san-pham/vhp-spinax-aw-nhan.webp", alt: "Nhãn phuy dầu thủy lực VHP Spinax AW ghi cấp độ nhớt 68" }
+  - { src: "/images/san-pham/vhp-spinax-aw-super-68-xo-18l.webp", alt: "Xô nhựa 18 lít dầu thủy lực Spinax Super AW-68, thân xanh lá, nhãn vàng Green Lube ghi dầu thủy lực chất lượng cao ISO 3448" }
 
 doc_gia: "Trang này dành cho người mua hàng cần dầu thủy lực HM phổ thông sản xuất trong nước cho máy ép, máy dập chạy tải thường."
 tom_tat:
