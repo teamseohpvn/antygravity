@@ -15,7 +15,7 @@ const quoteHref = item ? `/bao-gia?sp=${encodeURIComponent(item)}` : '/bao-gia';
 <div class:list={['quote-cta', { compact }]}>
   {!compact && <p class="quote-cta__heading">{heading}</p>}
   <div class="quote-cta__actions">
-    <a href={quoteHref} class="btn-primary" data-track="add_to_quote">Nhận báo giá</a>
+    <a href={quoteHref} class="btn-primary" data-track="add_to_quote">Nhận giá sỉ</a>
     <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
     <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
   </div>
