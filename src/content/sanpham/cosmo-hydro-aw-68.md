@@ -49,8 +49,7 @@ warnings:
 storage: "Để nơi tối, tránh nắng trực tiếp. Đậy kín nắp phuy sau khi dùng để không lọt nước và bụi."
 
 images:
-  - { src: "/images/san-pham/cosmo-hydro-aw-68-phuy-200l.webp", alt: "Phuy 200 lít dầu thủy lực Cosmo Hydro AW 68 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/cosmo-hydro-aw-68-nhan.webp", alt: "Nhãn phuy Cosmo Hydro AW 68 ghi cấp độ nhớt và loại dầu" }
+  - { src: "/images/san-pham/cosmo-hydro-aw-68-xo.webp", alt: "Xô thép dầu thủy lực Cosmo Hydro AW, thân bạc sọc xanh dương in chữ コスモ ハイドロ AW" }
 
 doc_gia: "Trang này dành cho xưởng đang dùng Cosmo Hydro AW 68, hoặc cần dầu thủy lực 68 tuổi thọ dài cho máy chạy nóng, áp cao."
 tom_tat:
