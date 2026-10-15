@@ -11,7 +11,7 @@ Cách dùng: đặt ảnh gốc vào đúng **thư mục**, đặt **đúng tên
 | Danh mục (`anh-goc/danh-muc/`) | 3:2 ngang | 1536 × 1024 px | Được dùng ảnh AI, không logo, không chữ (xem `docs/prompt-anh-danh-muc.md`) |
 | Bài viết (`anh-goc/blog/`) | 16:9 | 1200 × 675 px (khuyến nghị 1600 × 900) | Ảnh minh họa được dùng AI; ảnh "thực tế tại kho/xưởng" phải là ảnh thật |
 
-Chỉ tính bài đang bật (`active: true`). Tổng: 155 ảnh, đã có 92, **còn thiếu 63**.
+Chỉ tính bài đang bật (`active: true`). Tổng: 156 ảnh, đã có 93, **còn thiếu 63**.
 
 ## Ảnh còn thiếu
 
@@ -95,7 +95,7 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 155 ảnh, đã có 92, *
 | `anh-goc/danh-muc/` | `dau-may-may.jpg` | Tra dầu máy may vào cơ cấu kim của máy may công nghiệp trong xưởng may | /dau-may-may |
 | `anh-goc/danh-muc/` | `dau-may-nen-khi.jpg` | Kỹ thuật viên châm dầu máy nén khí vào máy nén khí trục vít | /dau-may-nen-khi |
 | `anh-goc/danh-muc/` | `dau-ranh-truot.jpg` | Băng trượt máy CNC phủ màng dầu rãnh trượt bóng | /dau-ranh-truot |
-| `anh-goc/danh-muc/` | `dau-thuy-luc.jpg` | **(chưa có alt)** | /ho-tro-ky-thuat/huong-dan-chon-do-nhot |
+| `anh-goc/danh-muc/` | `dau-thuy-luc-kho.jpg` | Phuy 200 lít dầu thủy lực ENEOS Super Hyrando 68 bọc màng co, xếp trong kho HT VINA tại Hải Phòng | /dau-thuy-luc |
 | `anh-goc/danh-muc/` | `dau-truyen-nhiet.jpg` | Lò dầu tải nhiệt với đường ống bọc bảo ôn và bơm tuần hoàn | /dau-truyen-nhiet |
 | `anh-goc/danh-muc/` | `dau-xung-dien-edm.jpg` | Điện cực đồng máy xung điện EDM ngâm trong bể dầu điện môi | /dau-xung-dien-edm |
 | `anh-goc/danh-muc/` | `mo-boi-tron-cong-nghiep.jpg` | Bơm mỡ bò vào gối đỡ vòng bi bằng súng bơm mỡ | /mo-boi-tron-cong-nghiep |
@@ -176,6 +176,7 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 155 ảnh, đã có 92, *
 | `anh-goc/san-pham/` | `x-one-aw-68-xo-18l.jpg` | Xô 18 lít dầu thủy lực X-One AW 68 | /dau-thuy-luc/x-one-aw-68 |
 | `anh-goc/san-pham/` | `x-one-aw-68-nhan.jpg` | Mặt sau xô X-One AW 68 ghi công dụng và lợi ích | /dau-thuy-luc/x-one-aw-68 |
 | `anh-goc/san-pham/` | `x-one-aw-68-xo-18l-kho.jpg` | Xô X-One AW 68 cạnh danh thiếp Dầu Công Nghiệp HP | /dau-thuy-luc/x-one-aw-68 |
+| `anh-goc/danh-muc/` | `dau-thuy-luc.jpg` | **(chưa có alt)** | /ho-tro-ky-thuat/huong-dan-chon-do-nhot |
 | `anh-goc/blog/` | `top-6-dau-thuy-luc-pho-bien-nhat-thi-phan.jpg` | Biểu đồ thị phần dầu nhờn tại Việt Nam của Castrol, Petrolimex, Shell, TotalEnergies, Caltex theo Kline 2014, DNSG 2015, Báo Đầu tư 2021 | /ho-tro-ky-thuat/top-6-dau-thuy-luc-pho-bien-nhat |
 
 ## Ảnh của bài có hàng nhưng đang tắt (chờ TDS) – nên chụp luôn

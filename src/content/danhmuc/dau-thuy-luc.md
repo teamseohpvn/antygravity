@@ -8,8 +8,8 @@ seo_title: "Dầu Thủy Lực 32, 46, 68 Chính Hãng – Báo Giá Sỉ Phuy, 
 description: "Dầu nhớt thủy lực ISO VG 32, 46, 68 Shell Tellus, Castrol Hyspin, có CO/CQ và VAT. Báo giá sỉ phuy 209L, xô 18–20L, giao tại Hải Phòng và miền Bắc."
 keywords: ["dầu thủy lực", "dầu nhớt thủy lực", "nhớt thủy lực", "dầu thủy lực 68", "dầu thủy lực 46", "dầu thủy lực 32", "dầu thủy lực AW 68", "nhớt thủy lực 68", "dầu thủy lực vg 68", "dầu thủy lực shell", "dầu thủy lực castrol", "shell tellus s2 mx 68", "shell tellus s2 mx 46", "castrol hyspin aws 68"]
 tags: ["dau-thuy-luc", "shell-tellus", "castrol-hyspin", "iso-vg-68", "iso-vg-46", "iso-vg-32"]
-image: "/images/danh-muc/dau-thuy-luc.webp"
-image_alt: "Hệ thống thủy lực máy công nghiệp sử dụng dầu thủy lực"
+image: "/images/danh-muc/dau-thuy-luc-kho.webp"
+image_alt: "Phuy 200 lít dầu thủy lực ENEOS Super Hyrando 68 bọc màng co, xếp trong kho HT VINA tại Hải Phòng"
 date: "2026-09-21"
 updated: "2026-10-06"
 ---
