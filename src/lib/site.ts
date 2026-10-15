@@ -44,8 +44,12 @@ export const KCN_NEAR = ['Đại An', 'Nam Sách', 'Phúc Điền', 'Tân Trư�
 export const KCN_FAR = ['Tràng Duệ', 'Nomura', 'Đình Vũ', 'VSIP', 'Quế Võ', 'Phố Nối'];
 /** Google Analytics 4 (du-lieu-noi-bo/script_anylytics_google.md). Đổi bằng biến PUBLIC_GA4_ID khi build. */
 export const GA4_ID: string = import.meta.env.PUBLIC_GA4_ID || 'G-DSZVP9WS37';
-/** Google Ads (dạng AW-123456789). Để trống thì không tải thẻ Ads; chuyển đổi vẫn nhập được từ GA4. */
-export const GADS_ID: string = import.meta.env.PUBLIC_GADS_ID || '';
+/** Google Ads (dạng AW-123456789). Đổi bằng biến PUBLIC_GADS_ID khi build. */
+export const GADS_ID: string = import.meta.env.PUBLIC_GADS_ID || 'AW-18482196096';
+/** Hành động chuyển đổi Google Ads (tạo 15/10/2026), gửi khi bấm Gọi, Zalo hoặc gửi form báo giá thành công. */
+export const GADS_CONVERSION: string = import.meta.env.PUBLIC_GADS_CONVERSION || 'AW-18482196096/npjkCKmF250dEIDd_-xE';
+/** Sự kiện data-track được tính là chuyển đổi Google Ads. */
+export const GADS_CONVERSION_EVENTS = ['click_tel', 'click_zalo', 'generate_lead'];
 /** Khóa localStorage lưu lựa chọn cookie: "granted" | "denied". Đổi tên khóa nếu muốn hỏi lại mọi người (v2 từ 13/10/2026: thêm cookie Google Ads). */
 export const CONSENT_KEY = 'hp-cookie-consent-v2';
 /** Các trang chính sách, hiện ở chân trang. */

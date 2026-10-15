@@ -128,6 +128,7 @@ const crumbs = [
 </Layout>
 
 <script>
+  import { GADS_CONVERSION } from '../lib/site';
   const form = document.getElementById('quote-form') as HTMLFormElement;
   const itemsBox = document.getElementById('items')!;
   const errorBox = document.getElementById('form-error')!;
@@ -230,6 +231,8 @@ const crumbs = [
       const body = await res.json().catch(() => ({}));
       if (res.ok && body.ok) {
         (window as any).gtag?.('event', 'generate_lead', { items: data.items.length });
+        // Chuyển đổi Google Ads: gửi form báo giá thành công.
+        if (GADS_CONVERSION) (window as any).gtag?.('event', 'conversion', { send_to: GADS_CONVERSION, value: 1.0, currency: 'VND', transport_type: 'beacon' });
         location.href = '/bao-gia-thanh-cong';
         return;
       }
