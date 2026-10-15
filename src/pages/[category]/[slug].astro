@@ -34,6 +34,9 @@ const pagePath = `/${d.category}/${product.id}`;
 const gallery = productImages(d);
 const mainImage = gallery[0];
 const grade = d.vg ? `ISO VG ${d.vg}` : d.nlgi ? `NLGI ${d.nlgi}` : null;
+// Tag từ khóa cho dầu thủy lực: "Dầu thủy lực" (link danh mục) và "Dầu thủy lực 68/46..." theo từng cấp VG trên trang.
+const isThuyLuc = d.category === 'dau-thuy-luc';
+const cacCapVg = [d.vg, ...(d.vg_khac ?? [])].filter((v): v is number => !!v);
 const sku = d.sku ?? d.packaging?.map((p) => (typeof p === 'string' ? undefined : p.sku)).find(Boolean);
 const STOCK_TEXT = {
   'co-san': 'Có sẵn tại kho TP Hải Phòng (Hải Dương cũ). Liên hệ để nhận báo giá.',
@@ -205,6 +208,8 @@ const schemaData = [
           {reviewer && reviewer.id !== tacGia?.id && <> · Duyệt nội dung: <a href={personUrl(reviewer)}>{tenNgan(reviewer)}</a></>}
         </p>
         <div class="tags">
+          {isThuyLuc && <a class="badge" href="/dau-thuy-luc">Dầu thủy lực</a>}
+          {isThuyLuc && cacCapVg.map((v) => <span class="badge badge-outline">Dầu thủy lực {v}</span>)}
           <span class="badge">{d.brand}</span>
           {grade && <span class="badge badge-outline">{grade}</span>}
           {d.sae && <span class="badge badge-outline">SAE {d.sae}</span>}
@@ -322,6 +327,7 @@ const schemaData = [
   .product-summary h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); color: var(--color-primary); margin-bottom: 15px; line-height: 1.25; }
   .tags { margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 6px; }
   .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+  a.badge { color: inherit; text-decoration: none; }
   .badge-outline { background: transparent; border: 1px solid #cbd5e1; }
   .description { font-size: 1.05rem; color: var(--color-text-light); margin-bottom: 20px; }
   .packaging { margin-bottom: 20px; }

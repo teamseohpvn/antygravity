@@ -10,6 +10,7 @@ categoryName: "Dầu Thủy Lực"
 
 brand: "Castrol"
 vg: 68
+vg_khac: [46]
 base_oil: "Dầu gốc khoáng tinh chế cao, phụ gia chống mài mòn gốc kẽm"
 standards: ["ISO 11158 HM", "DIN 51524-2 HLP", "ASTM D6158 HM", "Parker Denison HF-0/HF-1/HF-2", "Eaton E-FDGN-TB002-E"]
 
