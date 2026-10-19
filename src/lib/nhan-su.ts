@@ -92,8 +92,16 @@ export const NHAN_SU: NhanSu[] = [
     degree: 'Cao đẳng Hóa chất',
     photo: '/images/nhan-su/vu-minh-toan.webp',
     sameAs: ['https://www.linkedin.com/in/v%C5%A9-minh-to%C3%A0n-htvina'],
-    desc: 'Điều hành Công ty Cổ phần Thương mại Dịch vụ HT VINA. Chuyên môn sửa chữa, bảo dưỡng hệ thống thủy lực, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
-    knowsAbout: ['Sửa chữa, bảo dưỡng hệ thống thủy lực', 'Thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp', 'Hóa chất'],
+    desc: 'Điều hành Công ty Cổ phần Thương mại Dịch vụ HT VINA. Chuyên môn sửa chữa, bảo dưỡng hệ thống thủy lực, động cơ đốt trong, bảo trì thiết bị cơ khí, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
+    knowsAbout: [
+      'Sửa chữa, bảo dưỡng hệ thống thủy lực',
+      'Thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp',
+      'Sửa chữa, bảo dưỡng động cơ đốt trong',
+      'Bảo trì thiết bị cơ khí',
+      'Đàm phán hợp đồng',
+      'Lãnh đạo doanh nghiệp',
+      'Hóa chất',
+    ],
   },
   {
     // Từ 12/10/2026 không đứng tên bài viết, trang sản phẩm (không có bio nên không có trang /author riêng).
