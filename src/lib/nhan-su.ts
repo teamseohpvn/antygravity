@@ -85,6 +85,25 @@ export const NHAN_SU: NhanSu[] = [
     ],
   },
   {
+    id: 'vu-minh-toan',
+    name: 'Vũ Minh Toàn',
+    // Theo hồ sơ LinkedIn công khai (19/10/2026): President, HT VINA từ 10/2026. Ảnh cắt từ du-lieu-noi-bo/bot2.jpg, bỏ logo nền.
+    role: 'Giám đốc',
+    degree: 'Cao đẳng Hóa chất',
+    photo: '/images/nhan-su/vu-minh-toan.webp',
+    sameAs: ['https://www.linkedin.com/in/v%C5%A9-minh-to%C3%A0n-htvina'],
+    desc: 'Điều hành Công ty Cổ phần Thương mại Dịch vụ HT VINA. Chuyên môn sửa chữa, bảo dưỡng hệ thống thủy lực, động cơ đốt trong, bảo trì thiết bị cơ khí, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
+    knowsAbout: [
+      'Sửa chữa, bảo dưỡng hệ thống thủy lực',
+      'Thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp',
+      'Sửa chữa, bảo dưỡng động cơ đốt trong',
+      'Bảo trì thiết bị cơ khí',
+      'Đàm phán hợp đồng',
+      'Lãnh đạo doanh nghiệp',
+      'Hóa chất',
+    ],
+  },
+  {
     // Từ 12/10/2026 không đứng tên bài viết, trang sản phẩm (không có bio nên không có trang /author riêng).
     id: 'tran-tuan-huynh',
     name: 'Trần Tuấn Huỳnh',
@@ -97,14 +116,6 @@ export const NHAN_SU: NhanSu[] = [
     sameAs: ['https://vn.linkedin.com/in/thanhtuan1386'],
     desc: 'Phụ trách tư vấn chất lượng: tư vấn chọn dầu theo yêu cầu thiết bị và đánh giá chất lượng dầu đang sử dụng.',
     knowsAbout: ['Kỹ thuật dầu khí', 'Dầu nhớt công nghiệp', 'Dầu thủy lực', 'Kiểm tra chất lượng dầu bôi trơn'],
-  },
-  {
-    id: 'vu-minh-toan',
-    name: 'Vũ Minh Toàn',
-    // TODO: bổ sung chức danh và công việc phụ trách.
-    role: 'Nhân viên',
-    degree: 'Cao đẳng Hóa chất',
-    desc: 'Chuyên môn hóa chất.',
   },
   {
     id: 'nguyen-thi-hong',
