@@ -32,7 +32,7 @@ export interface NhanSu {
   /** Cộng tác viên bên ngoài: nơi công tác chính là affiliation, HT VINA chỉ là đơn vị cộng tác (không ghi worksFor HT VINA). */
   external?: boolean;
   /** Quá trình đào tạo, theo hồ sơ công khai */
-  alumniOf?: { degree: string; field: string; school: string; year: number }[];
+  alumniOf?: { degree: string; field?: string; school: string; year?: number }[];
   /** Công bố khoa học tiêu biểu, theo hồ sơ công khai */
   publications?: { title: string; venue: string; year: number }[];
   /** Các bước làm việc riêng hiển thị trên trang hồ sơ (mặc định: quy trình kiểm duyệt thông số) */
@@ -87,9 +87,10 @@ export const NHAN_SU: NhanSu[] = [
   {
     id: 'vu-minh-toan',
     name: 'Vũ Minh Toàn',
-    // Theo hồ sơ LinkedIn công khai (19/10/2026): President, HT VINA từ 10/2026. Ảnh cắt từ du-lieu-noi-bo/bot2.jpg, bỏ logo nền.
+    // Theo hồ sơ LinkedIn công khai (19/10/2026): President, HT VINA từ 10/2026; kỹ sư, Trường Đại học Sao Đỏ (Chí Linh). Ảnh cắt từ du-lieu-noi-bo/bot2.jpg, bỏ logo nền.
     role: 'Giám đốc',
-    degree: 'Cao đẳng Hóa chất',
+    degree: 'Kỹ sư, Trường Đại học Sao Đỏ',
+    alumniOf: [{ degree: 'Kỹ sư', school: 'Trường Đại học Sao Đỏ' }],
     photo: '/images/nhan-su/vu-minh-toan.webp',
     sameAs: ['https://www.linkedin.com/in/v%C5%A9-minh-to%C3%A0n-htvina'],
     desc: 'Điều hành Công ty Cổ phần Thương mại Dịch vụ HT VINA. Chuyên môn sửa chữa, bảo dưỡng hệ thống thủy lực, động cơ đốt trong, bảo trì thiết bị cơ khí, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
@@ -100,7 +101,6 @@ export const NHAN_SU: NhanSu[] = [
       'Bảo trì thiết bị cơ khí',
       'Đàm phán hợp đồng',
       'Lãnh đạo doanh nghiệp',
-      'Hóa chất',
     ],
   },
   {
@@ -180,7 +180,7 @@ export function personSchema(p: NhanSu) {
     ...(p.photo ? { image: `${SITE_URL}${p.photo}` } : {}),
     ...(p.alumniOf ? { alumniOf: p.alumniOf.map((a) => ({ '@type': 'CollegeOrUniversity', name: a.school })) } : {}),
     ...(p.alumniOf
-      ? { hasCredential: p.alumniOf.map((a) => ({ '@type': 'EducationalOccupationalCredential', credentialCategory: 'degree', name: `${a.degree} ${a.field} (${a.year})`, recognizedBy: { '@type': 'CollegeOrUniversity', name: a.school } })) }
+      ? { hasCredential: p.alumniOf.map((a) => ({ '@type': 'EducationalOccupationalCredential', credentialCategory: 'degree', name: [a.degree, a.field].filter(Boolean).join(' ') + (a.year ? ` (${a.year})` : ''), recognizedBy: { '@type': 'CollegeOrUniversity', name: a.school } })) }
       : p.degree
         ? { hasCredential: { '@type': 'EducationalOccupationalCredential', credentialCategory: 'degree', name: p.degree } }
         : {}),
