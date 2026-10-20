@@ -95,7 +95,7 @@ const schemaData = [
       {p.alumniOf && (
         <>
           <h2>Quá trình đào tạo</h2>
-          <ul>{p.alumniOf.map((a) => <li><strong>{a.year}:</strong> {a.degree} {a.field}, {a.school}</li>)}</ul>
+          <ul>{p.alumniOf.map((a) => <li>{a.year && <strong>{a.year}: </strong>}{[a.degree, a.field].filter(Boolean).join(' ')}, {a.school}</li>)}</ul>
         </>
       )}
 
