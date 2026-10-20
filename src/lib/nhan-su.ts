@@ -87,10 +87,10 @@ export const NHAN_SU: NhanSu[] = [
   {
     id: 'vu-minh-toan',
     name: 'Vũ Minh Toàn',
-    // Theo hồ sơ LinkedIn công khai (19/10/2026): President, HT VINA từ 10/2026; kỹ sư, Trường Đại học Sao Đỏ (Chí Linh), tốt nghiệp 2011. Ảnh cắt từ du-lieu-noi-bo/bot2.jpg, bỏ logo nền.
+    // Theo hồ sơ LinkedIn công khai (19/10/2026): President, HT VINA từ 10/2026; kỹ sư Công nghệ ô tô, Trường Đại học Công nghiệp Hà Nội, tốt nghiệp 2009 (anh/chị xác nhận 20/10/2026, thay thông tin ĐH Sao Đỏ 2011 trước đó). Ảnh cắt từ du-lieu-noi-bo/bot2.jpg, bỏ logo nền.
     role: 'Giám đốc',
-    degree: 'Kỹ sư, Trường Đại học Sao Đỏ',
-    alumniOf: [{ degree: 'Kỹ sư', school: 'Trường Đại học Sao Đỏ', year: 2011 }],
+    degree: 'Kỹ sư Công nghệ ô tô, Trường Đại học Công nghiệp Hà Nội',
+    alumniOf: [{ degree: 'Kỹ sư', field: 'Công nghệ ô tô', school: 'Trường Đại học Công nghiệp Hà Nội', year: 2009 }],
     photo: '/images/nhan-su/vu-minh-toan.webp',
     sameAs: ['https://www.linkedin.com/in/v%C5%A9-minh-to%C3%A0n-htvina'],
     desc: 'Điều hành Công ty Cổ phần Thương mại Dịch vụ HT VINA. Chuyên môn sửa chữa, bảo dưỡng hệ thống thủy lực, động cơ đốt trong, bảo trì thiết bị cơ khí, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
