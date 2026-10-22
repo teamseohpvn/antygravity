@@ -74,11 +74,11 @@ Như vậy với máy xúc Komatsu cỡ phổ biến (PC130 đến PC400), dầu
 
 Kobelco và Sumitomo cùng Komatsu, Hitachi và Caterpillar là những hãng tham gia soạn JCMAS HK, nên tài liệu của máy thường ghi dầu VG 46 đạt chuẩn này. Với máy Doosan (nay là Develon), SANY, XCMG, LiuGong, chúng tôi chưa có tài liệu gốc của hãng để dẫn ở đây. Bạn hãy chụp trang "dầu bôi trơn" trong hướng dẫn sử dụng của máy gửi cho chúng tôi để đối chiếu cụ thể.
 
-### Bảng đề xuất dầu ENEOS cho vài máy cụ thể {#bang-eneos}
+### Bảng tư vấn dầu cho vài máy cụ thể {#bang-eneos}
 
-Trong bộ tài liệu tư vấn chúng tôi đang lưu có bảng đề xuất dầu nhờn ENEOS và thời gian thay dầu cho một số máy. Phần hệ thủy lực như sau:
+Trong bộ tài liệu tư vấn nội bộ chúng tôi đang lưu có một bảng gợi ý mã dầu ENEOS tương ứng và thời gian thay dầu cho một số máy. Phần hệ thủy lực như sau:
 
-| Máy | Hãng máy ghi | Dầu ENEOS đề xuất | Thời gian thay dầu theo bảng |
+| Máy | Hãng máy ghi | Mã ENEOS gợi ý | Thời gian thay dầu theo bảng |
 | :--- | :--- | :--- | :--- |
 | Máy xúc lật Komatsu WA450 | 10W | Super Hyrando 68 | 1.500–2.000 giờ |
 | Máy xúc đào bánh xích Hitachi 350 | ISO VG 68 | Super Hyrando 68 | 1.500–2.000 giờ |
@@ -94,7 +94,7 @@ Chuyện này gây lẫn lộn ngay cả ở nước ngoài. Brendan Casey, tác
 
 **Lời khuyên của chúng tôi:**
 - **Máy còn bảo hành:** dùng đúng dầu hãng ghi (SAE 10W chính hãng hoặc dầu được hãng máy chấp thuận). Đổi loại dầu có thể làm mất bảo hành phần bơm và van.
-- **Máy hết bảo hành, chạy nặng mùa hè:** có thể chuyển sang dầu thủy lực HM cấp 68, như bảng ENEOS ở trên đề xuất Super Hyrando 68 cho Komatsu WA450. Nếu làm vậy thì **xả và súc kỹ**, không trộn dầu cũ với dầu mới, và theo dõi máy trong 100 giờ đầu: tiếng bơm, nhiệt độ dầu, tốc độ cần, phanh và côn nếu dùng chung dầu.
+- **Máy hết bảo hành, chạy nặng mùa hè:** có thể chuyển sang dầu thủy lực HM cấp 68, như bảng tư vấn ở trên gợi ý Super Hyrando 68 cho Komatsu WA450. Nếu làm vậy thì **xả và súc kỹ**, không trộn dầu cũ với dầu mới, và theo dõi máy trong 100 giờ đầu: tiếng bơm, nhiệt độ dầu, tốc độ cần, phanh và côn nếu dùng chung dầu.
 - Kho chúng tôi **không có sẵn** dầu SAE 10W cho hệ thủy lực. Đừng dùng dầu động cơ diesel 15W-40 hay 20W-50 thay cho dầu 10W, vì những loại này đặc hơn nhiều khi máy còn nguội.
 
 ## Xe bơm bê tông, máy khoan cọc nhồi, cẩu: chọn dầu thế nào? {#bom-be-tong}
@@ -147,7 +147,7 @@ Nói ngắn gọn: dầu HV hợp với máy phải nổ máy lúc trời lạnh
 
 **Lời khuyên của chúng tôi:**
 - Hãng máy **chỉ ghi VG 46** (Komatsu, Hitachi): giữ dầu 46. Nếu mùa hè đồng hồ nhiệt độ dầu thường xuyên lên quá 80 °C, hãy vệ sinh két làm mát, kiểm tra quạt và van an toàn trước. Đổi sang dầu đặc hơn chỉ che đi nguyên nhân.
-- Hãng máy **có cấp VG 68** trong bảng dầu (Hyundai, Putzmeister, hay máy có ghi ISO VG 68 như trong bảng ENEOS): mùa hè miền Bắc và máy chạy nặng nên chọn dầu 68.
+- Hãng máy **có cấp VG 68** trong bảng dầu (Hyundai, Putzmeister, hay máy có ghi ISO VG 68 như trong bảng tư vấn ở trên): mùa hè miền Bắc và máy chạy nặng nên chọn dầu 68.
 - Không trộn 46 với 68 để "lấy cấp ở giữa". Cách chọn độ nhớt cho các loại máy khác có trong bài [chọn độ nhớt dầu thủy lực 32, 46 hay 68](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
 
 ## Các mã dầu thủy lực có sẵn tại kho cho máy công trình {#co-san}
@@ -201,7 +201,7 @@ Hyundai ghi thẳng trong hướng dẫn sử dụng là không trộn dầu c�
 
 ### Bao lâu thì thay dầu thủy lực máy xúc?
 
-Theo tài liệu hãng máy: Hitachi ghi dầu Super EX 46HN dùng được tới 5.000 giờ, Cat HYDO Advanced 10 thay chuẩn 3.000 giờ và kéo dài tới 6.000 giờ khi có phân tích dầu. Bảng đề xuất ENEOS ghi 1.500–2.000 giờ cho Super Hyrando 68. Cách chắc nhất là đo dầu đang dùng rồi so với dầu mới. Nên thay hoặc tìm nguyên nhân khi gặp một trong ba dấu hiệu sau:
+Theo tài liệu hãng máy: Hitachi ghi dầu Super EX 46HN dùng được tới 5.000 giờ, Cat HYDO Advanced 10 thay chuẩn 3.000 giờ và kéo dài tới 6.000 giờ khi có phân tích dầu. Bảng tư vấn nội bộ ở trên ghi 1.500–2.000 giờ cho Super Hyrando 68. Cách chắc nhất là đo dầu đang dùng rồi so với dầu mới. Nên thay hoặc tìm nguyên nhân khi gặp một trong ba dấu hiệu sau:
 - **Độ nhớt lệch quá ±10%** so với dầu mới. Với dầu 68 (69,5 mm²/s theo TDS), mức đó là dưới khoảng 62,6 hoặc trên 76,5 mm²/s. Với dầu 46 là dưới 41,4 hoặc trên 50,6 mm²/s.
 - **Trị số axit (TAN) tăng thêm 0,2 mg KOH/g** so với dầu mới, là mức cảnh báo theo ASTM D6224.
 - **Có nước trong dầu:** dầu trắng đục, hoặc nhỏ lên tấm kim loại nóng nghe lách tách.
