@@ -17,6 +17,7 @@ citations:
   - "https://rallye.putzmeister.com/hydraulics"
   - "https://www.researchgate.net/publication/293069493_A_new_hydraulic_fluid_specification_JCMAS_HK"
   - "https://www.boschrexroth.com/media/57e7b0f4-fd27-41f6-8d13-469a539f590c"
+  - "https://www.mobil.com/en/lubricants/for-businesses/industrial/lubricants/product-series/mobil-dte-20-ultra-series"
 date: "2026-10-22"
 updated: "2026-10-22"
 image: "/images/danh-muc/dau-thuy-luc.webp"
@@ -69,11 +70,11 @@ Như vậy với máy xúc Komatsu cỡ phổ biến (PC130 đến PC400), dầu
 
 [Hướng dẫn sử dụng máy R140LC-9](https://plantforce.com/wp-content/uploads/2022/12/R140LC-9_EN_operator-manual_English.pdf) ghi dầu thủy lực là "ISO VG 46 (SAE 10W), Hyundai genuine long life hydraulic oil". Bảng dầu theo nhiệt độ môi trường của Hyundai có ba cấp VG 15, VG 46 và VG 68, nên máy Hyundai là trường hợp hãng **có cho dùng dầu 68** khi trời nóng. Hyundai còn dặn: "Chỉ dùng dầu trong danh sách dưới đây hoặc dầu tương đương. Không trộn dầu của các hãng khác nhau."
 
-### Kobelco, Sumitomo, Doosan và các hãng khác
+### Kobelco, Sumitomo, Doosan và các hãng khác {#hang-khac}
 
 Kobelco và Sumitomo cùng Komatsu, Hitachi và Caterpillar là những hãng tham gia soạn JCMAS HK, nên tài liệu của máy thường ghi dầu VG 46 đạt chuẩn này. Với máy Doosan (nay là Develon), SANY, XCMG, LiuGong, chúng tôi chưa có tài liệu gốc của hãng để dẫn ở đây. Bạn hãy chụp trang "dầu bôi trơn" trong hướng dẫn sử dụng của máy gửi cho chúng tôi để đối chiếu cụ thể.
 
-### Bảng đề xuất dầu ENEOS cho vài máy cụ thể
+### Bảng đề xuất dầu ENEOS cho vài máy cụ thể {#bang-eneos}
 
 Trong bộ tài liệu tư vấn chúng tôi đang lưu có bảng đề xuất dầu nhờn ENEOS và thời gian thay dầu cho một số máy. Phần hệ thủy lực như sau:
 
@@ -112,7 +113,7 @@ Máy khoan cọc nhồi, máy ép cọc và cẩu dùng nhiều loại bơm khá
 
 Chọn cấp độ nhớt là chọn xem dầu có giữ được độ đặc vừa đủ ở nhiệt độ thùng dầu thật hay không. Lấy ví dụ bơm piston hướng trục A10VSO của Bosch Rexroth, [tài liệu của hãng](https://www.boschrexroth.com/media/57e7b0f4-fd27-41f6-8d13-469a539f590c) ghi độ nhớt làm việc tối ưu là **16–36 mm²/s**. Dầu loãng dưới mức này thì màng dầu mỏng, bơm rò trong nhiều hơn, cần và tay gầu chậm đi khi máy nóng.
 
-Chúng tôi tính độ nhớt của hai mã đang có ở kho theo phương pháp [ASTM D341](https://www.astm.org/Standards/D341.htm), từ độ nhớt ở 40 °C và 100 °C ghi trong TDS của ENEOS:
+Chúng tôi tính độ nhớt của hai mã đang có ở kho theo phương pháp [ASTM D341](https://www.astm.org/Standards/D341.htm), từ độ nhớt ở 40 °C và 100 °C ghi trong TDS của ENEOS (Super Mulpus DX bản 05/2024, Super Hyrando bản tiếng Việt 10/2015):
 
 | Nhiệt độ dầu trong thùng | Super Mulpus DX 46 (mm²/s) | Super Hyrando 68 (mm²/s) |
 | ---: | ---: | ---: |
@@ -126,6 +127,23 @@ Chúng tôi tính độ nhớt của hai mã đang có ở kho theo phương ph�
 Đọc bảng sẽ thấy dầu 46 xuống dưới 16 mm²/s khi thùng dầu nóng khoảng 68 °C, còn dầu 68 phải tới khoảng 78 °C. Hitachi ghi nhiệt độ dầu làm việc phù hợp là 50–80 °C, nên những ngày máy đào đất đá liên tục giữa trưa hè, dầu 46 dễ chạy ở sát mép dưới của dải tối ưu. Ngược lại, máy mới nổ buổi sáng thì dầu 68 đặc hơn dầu 46 khoảng một nửa, bơm phải hút nặng hơn trong vài phút đầu.
 
 Người dùng máy công trình cũng tranh luận đúng chuyện này. Trên [Heavy Equipment Forums](https://www.heavyequipmentforums.com/threads/iso-46-or-iso-68-hydraulic-fluid.107106/), hướng dẫn sử dụng của một máy xúc mini ghi ISO 46 cho thời tiết mát và ISO 68 cho ngày nóng tới khoảng 32 °C. Một thành viên lâu năm nhắc rằng két làm mát mới là thứ giữ cho dầu không quá nóng, dùng cấp độ nhớt nào cũng vậy.
+
+### Dầu chỉ số độ nhớt cao (HV) có thay được dầu 68 không? {#dau-hv}
+
+Nhiều người nghĩ dầu HV cấp 46 vừa dễ khởi động lúc nguội, vừa đủ đặc khi nóng như dầu 68. Để kiểm tra, chúng tôi tính thêm cho ba mã 46 phổ biến trên thị trường mà kho **không bán**, chỉ dùng để so sánh, bằng cùng phương pháp ASTM D341 và số liệu trong TDS của hãng:
+
+| Mã dầu | Loại | Độ nhớt 40 / 100 °C (mm²/s) | Chỉ số độ nhớt | Ở 30 °C | Ở 80 °C | Còn 16 mm²/s tới khoảng | Tại kho |
+| :--- | :--- | :--- | ---: | ---: | ---: | ---: | :--- |
+| [Shell Tellus S2 VX 46](http://parsianlub.com/Technical%20Data%20/Tellus/Tellus%20S2%20VX%2046.pdf) | HV | 46 / 7,9 | 143 | 72 | 12,5 | 71 °C | Không bán |
+| [Shell Tellus S2 MX 46](https://shop.sclubricants.com/pub/media/pds/shell/Shell-Tellus-S2-MX-46-datasheet.pdf) | HM | 46 / 6,9 | 105 | 75 | 11,2 | 68 °C | Không bán |
+| [Mobil DTE 25 Ultra](https://www.mobil.com/en/lubricants/for-businesses/industrial/lubricants/product-series/mobil-dte-20-ultra-series) | HM | 46,2 / 7,1 | 110 | 75 | 11,5 | 69 °C | Không bán |
+| Castrol Hyspin AWS 46 | HM | 46 / 6,7 | – | 75 | 11,0 | 68 °C | Nhận đặt |
+| ENEOS Super Mulpus DX 46 | Đa dụng | 46,5 / 6,90 | 104 | 76 | 11,3 | 68,5 °C | Có sẵn |
+| ENEOS Super Hyrando 68 | HM | 69,5 / 9,03 | 104 | 118 | 15,2 | 78,5 °C | Có sẵn |
+
+Kết quả cho thấy dầu HV 46 chỉ giữ được độ đặc lâu hơn dầu HM 46 khoảng **3 °C**, còn dầu HM 68 lâu hơn khoảng **10 °C**. Thế mạnh thật của dầu HV là lúc máy nguội: ở 30 °C, Tellus S2 VX 46 chỉ đặc 72 mm²/s, gần bằng dầu 46 thường, trong khi dầu 68 đặc tới 118 mm²/s. TDS của Shell còn ghi dầu VX mất khoảng 12% độ nhớt ở 100 °C sau phép thử độ bền cắt CEC L-45-A-99, nghĩa là sau một thời gian chạy, độ nhớt của dầu HV còn thấp hơn số trong bảng.
+
+Nói ngắn gọn: dầu HV hợp với máy phải nổ máy lúc trời lạnh hoặc chạy ở nơi chênh lệch nhiệt độ lớn. Với máy xúc chạy nặng giữa mùa hè miền Bắc, dầu HV 46 không thay được dầu 68, và cũng chỉ nên dùng khi hướng dẫn sử dụng của máy có ghi loại HV.
 
 **Lời khuyên của chúng tôi:**
 - Hãng máy **chỉ ghi VG 46** (Komatsu, Hitachi): giữ dầu 46. Nếu mùa hè đồng hồ nhiệt độ dầu thường xuyên lên quá 80 °C, hãy vệ sinh két làm mát, kiểm tra quạt và van an toàn trước. Đổi sang dầu đặc hơn chỉ che đi nguyên nhân.
@@ -145,11 +163,29 @@ Mọi số liệu dưới đây lấy từ TDS của hãng dầu. **Không mã n
 | [ENEOS Super Mulpus DX 46](/dau-thuy-luc/eneos-super-mulpus-dx) | VG 46 | Dầu đa dụng (thủy lực, bánh răng, rãnh trượt), TDS không ghi DIN 51524-2 | Thêm dầu tạm thời cho máy ghi VG 46 khi chưa có hàng đặt | Có sẵn, phuy 200 L |
 | [Castrol Hyspin HLP-Z 68](/dau-thuy-luc/castrol-hyspin-hlpz-68) | VG 68, HM | DIN 51524-2, ISO 11158 HM | Máy ghi HLP 68, cần xô nhỏ để thêm dầu ở công trường | Có sẵn, xô 20 L |
 
+Ngày của TDS dùng trong bảng: Super Hyrando bản tiếng Việt 10/2015, Hyspin AWS 01/2023, Super Mulpus DX 05/2024, Hyspin HLP-Z 06/2025. Số liệu trong TDS là **giá trị tiêu biểu** của hãng, từng lô hàng có thể chênh lệch nhẹ trong giới hạn tiêu chuẩn của hãng, nên khi cần con số chính xác của lô đang giao, hãy xem phiếu CO/CQ đi kèm.
+
+Mọi lô hàng giao kèm **CO/CQ và hóa đơn VAT**. Giao sai hàng, hàng hỏng do vận chuyển hay lỗi chất lượng của nhà sản xuất được đổi trả trong **7 ngày** theo [chính sách đổi trả](/chinh-sach-doi-tra).
+
 Ngoài ra kho còn có các mã dầu 68 như Caltex AW 68, Cosmo Hydro AW 68, EMI AW 68, EMER LAW 68, X-One AW 68. Danh sách đầy đủ có trong danh mục [dầu thủy lực](/dau-thuy-luc), còn khoảng giá từng mã xem ở trang [báo giá dầu thủy lực](/bao-gia-dau-thuy-luc). Vận chuyển miễn phí trong 80 km từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.
 
 > **Nhận định của HT VINA**
 >
 > Đối với máy thủy lực thi công công trình, nơi làm việc không cố định nên việc cung ứng dầu đôi khi chậm trễ. Chúng tôi khuyên khách hàng, đối tác của mình luôn có sẵn một phương án dự phòng: sản phẩm thay thế có phẩm chất tương đương, để công việc không bị gián đoạn.
+
+## Dấu hiệu dầu đang dùng không hợp với máy {#dau-hieu}
+
+Dầu sai cấp hay dầu đã xuống cấp thường không làm máy hỏng ngay, mà lộ ra qua vài dấu hiệu mà thợ đứng máy nhận thấy trước. Bảng dưới gom các dấu hiệu hay gặp, kèm cách kiểm tra nhanh tại công trường.
+
+| Dấu hiệu | Nguyên nhân hay gặp | Kiểm tra gì |
+| :--- | :--- | :--- |
+| Buổi sáng máy chạy bình thường, giữa trưa cần và tay gầu chậm dần, máy yếu | Dầu quá loãng ở nhiệt độ làm việc: cấp độ nhớt thấp so với tải, két làm mát bẩn, hoặc bơm đã mòn | Đo nhiệt độ thùng dầu lúc máy yếu, đối chiếu [bảng độ nhớt ở trên](#46-hay-68). Thường quá 80 °C là phải xem két làm mát và quạt trước |
+| Bơm hú to khi mới khởi động sau lần thay dầu | Bơm hút lẫn khí do chưa xả khí hết, hoặc đường hút hở, tắc | Xả khí theo các bước trong bài [thay dầu thủy lực](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc). Tiếng hú kéo dài thì kiểm tra lưới lọc hút và các mối nối |
+| Dầu trắng đục như sữa | Có nước, hoặc bọt khí mịn | Để mẫu yên vài phút: đục tan từ dưới lên là bọt khí, vẫn đục là nước. Cách thử nước có trong bài [kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
+| Dầu vẩn đục, có cặn sau khi thêm dầu khác hãng | Hai hệ phụ gia không hợp nhau | Thử trộn dầu cũ với dầu mới trong chai như hướng dẫn ở [mục dưới](#doi-dau) |
+| Dầu sẫm màu nhanh, có mùi khét | Dầu bị ô xy hóa do quá nóng | Đo trị số axit (TAN) và độ nhớt, so với dầu mới |
+
+Các dấu hiệu này chỉ giúp khoanh vùng nguyên nhân. Máy có tiếng kêu lạ kéo dài hoặc yếu hẳn thì nên dừng máy và gọi thợ sửa thủy lực kiểm tra bơm, van, vì thay dầu không chữa được bơm đã mòn.
 
 ## Đổi sang dầu khác, trộn dầu: cần lưu ý gì? {#doi-dau}
 
