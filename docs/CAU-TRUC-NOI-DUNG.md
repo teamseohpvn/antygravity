@@ -243,6 +243,7 @@ Bài dài **bắt buộc có mục lục** để người đọc bấm nhảy t�
 - Không bỏ cấp: H2 → H3, không nhảy từ H2 xuống H4.
 - Giữ đoạn đầu tiên của bài blog là đoạn trả lời nhanh, vì mục lục chèn ngay sau đoạn này.
 - Tắt mục lục cho một bài (hiếm khi cần): thêm `muc_luc: false` vào frontmatter.
+- **Id ngắn cho tiêu đề** (để link `#hoi-dap` và mục "Chuyển đến" của Google gọn): viết `{#id}` ở cuối tiêu đề, ví dụ `## Câu hỏi thường gặp {#hoi-dap}`. Id viết thường, không dấu, nối bằng gạch ngang, 1–3 từ. Không ghi thì id tự sinh từ chữ tiêu đề như cũ. Xử lý ở `src/lib/heading-id-ngan.mjs`.
 
 ---
 

@@ -2,6 +2,7 @@
 // Trang một bài viết blog. Dùng chung cho /ho-tro-ky-thuat/<tên file> và bài có URL riêng (duong_dan).
 import Layout from '../layouts/Layout.astro';
 import ContentBody from '../components/ContentBody.astro';
+import NoiDungBai from '../components/NoiDungBai.astro';
 import MucLuc from '../components/MucLuc.astro';
 import { mucLuc } from '../lib/muc-luc';
 import { render } from 'astro:content';
@@ -33,10 +34,13 @@ const crumbs = [
   { name: post.data.title, href: pagePath },
 ];
 
+// @id để khối articleBody (NoiDungBai) gộp vào đúng thực thể Article.
+const ARTICLE_ID = absUrl(pagePath) + '#article';
 const schemaData = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    '@id': ARTICLE_ID,
     headline: post.data.title,
     description: post.data.description,
     url: absUrl(pagePath),
@@ -112,7 +116,9 @@ const schemaData = [
       )}
 
       <div class="markdown-body">
-        <ContentBody><Content /><MucLuc slot="sau-doan-dau" items={tocItems} /></ContentBody>
+        <NoiDungBai articleId={ARTICLE_ID}>
+          <ContentBody><Content /><MucLuc slot="sau-doan-dau" items={tocItems} /></ContentBody>
+        </NoiDungBai>
       </div>
     </article>
   </div>

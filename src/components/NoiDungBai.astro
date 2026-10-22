@@ -12,7 +12,7 @@ interface Props {
 const { articleId, type = 'Article', field = 'articleBody' } = Astro.props;
 const html = await Astro.slots.render('default');
 const text = html
-  .replace(/<(script|style|noscript|svg|form|aside)[\s\S]*?<\/\1>/gi, ' ')
+  .replace(/<(script|style|noscript|svg|form|aside|nav)[\s\S]*?<\/\1>/gi, ' ')
   .replace(/<\/(p|li|h[1-6]|tr|div|section|blockquote|figcaption)>/gi, '$&\n')
   .replace(/<[^>]+>/g, ' ')
   .replace(/&nbsp;/g, ' ')
