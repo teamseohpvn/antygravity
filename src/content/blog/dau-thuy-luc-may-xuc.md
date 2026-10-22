@@ -20,8 +20,8 @@ citations:
   - "https://www.mobil.com/en/lubricants/for-businesses/industrial/lubricants/product-series/mobil-dte-20-ultra-series"
 date: "2026-10-22"
 updated: "2026-10-22"
-image: "/images/danh-muc/dau-thuy-luc.webp"
-image_alt: "Các loại dầu thủy lực công nghiệp đóng phuy và xô"
+image: "/images/blog/dau-thuy-luc-may-xuc.webp"
+image_alt: "Máy xúc mini AGT Industrial đỗ trong nhà xe, cần gầu hạ xuống sàn, cạnh ống hút của máy hút bụi"
 tags: ["dầu thủy lực", "máy công trình", "máy xúc"]
 ---
 
@@ -194,6 +194,10 @@ Hyundai ghi thẳng trong hướng dẫn sử dụng là không trộn dầu c�
 1. **Xả hết dầu cũ khi còn ấm và thay lõi lọc.** Lần thay định kỳ chỉ xả được dầu trong thùng, phần nằm trong ống và xi lanh vẫn còn lại, có máy tới gần một nửa.
 2. **Súc rửa nếu đổi loại dầu.** Thử nghiệm thực địa trên máy xúc mà Brendan Casey dẫn lại cho thấy cần thay thùng ít nhất 4 lần thì dầu cũ mới còn dưới 5%. Các bước chi tiết có trong bài [hướng dẫn thay dầu thủy lực](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc).
 3. **Thử trộn trước khi nạp.** Lấy một chai dầu cũ trộn với dầu mới theo tỷ lệ 1:1, để qua đêm. Nếu dầu đục, tách lớp hay có cặn thì phải súc kỹ hơn.
+
+<img src="/images/blog/dau-thuy-luc-may-xuc-rot-dau.webp" alt="Rót dầu từ xô vào cửa nạp dầu có lưới lọc trên thân máy xúc" width="500" height="460" loading="lazy" decoding="async" />
+
+*Rót dầu mới vào cửa nạp có lưới lọc. Xô, phễu và miệng thùng phải sạch, khô, vì nước mưa và bụi lọt vào lúc thêm dầu ở công trường là đường nhiễm bẩn hay gặp.*
 
 **Lưu ý an toàn:** Dầu thủy lực vừa dừng máy có thể nóng trên 80 °C, và thùng dầu máy xúc có áp. Phải hạ cần, gầu xuống đất, tắt máy, chờ dầu nguội và xả áp thùng theo hướng dẫn của hãng máy trước khi mở nắp hay tháo ống.
 
