@@ -46,7 +46,7 @@ tom_tat:
   - "**Chưa có TDS** của EMI: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["api-cf-4", "sae-20w-50", "emi", "dong-co-diesel"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **EMI CF-4 20W-50** là dầu động cơ diesel đạt cấp **API CF-4**, độ nhớt **SAE 20W-50**. CF-4 là cấp dành cho động cơ diesel 4 kỳ cao tốc, có hoặc không có tăng áp. Độ nhớt 20W-50 đặc hơn 15W-40, hợp với động cơ đã chạy lâu và khí hậu nóng.
@@ -83,6 +83,23 @@ Cả hai cùng cấp API CF-4 và có sẵn tại kho. Khác nhau ở quy cách 
 
 > **Nhận định của HT VINA:** Thay dầu cho nhiều xe, nhiều máy cùng lúc thì phuy EMI tiện hơn. Thay lẻ từng xe, hoặc cần số liệu TBN để theo dõi dầu, thì can ENEOS DEO CF-4.
 
+## Máy cũ khói xanh, hao dầu: 20W-50 giúp được tới đâu? {#may-cu}
+
+EMI CF-4 20W-50 thường được mua cho máy đã chạy lâu. Câu hỏi hay gặp: máy bắt đầu ra khói xanh và hao dầu, đổi sang dầu đặc hơn có khỏi không.
+
+**Người dùng chia sẻ.** Trên diễn đàn [YBW](https://forums.ybw.com/threads/engine-oil.390866/) (03/2014), chủ một tàu có máy diesel Volvo 5 năm tuổi, khoảng 1.500 giờ, thấy khói xanh nhạt khi máy lên trên 2.100 vòng/phút. Một thành viên kỳ cựu về máy tàu trả lời rằng triệu chứng này điển hình của mòn xéc măng hoặc đóng cặn; đổi sang dầu loãng hơn không giải quyết được gì, còn đổi sang dầu đặc hơn như 20W-50 là "cách thường làm để **hoãn** việc sửa máy thêm một thời gian". Một người khác cho biết dầu 20W-50 thông thường đã có tác dụng với máy Yanmar nhiều giờ chạy của anh. Một ý kiến nữa nhắc tới nguyên nhân thứ ba: thành xi lanh bị "bóng" (glazing) do máy chạy non tải lâu ngày.
+
+**Lời khuyên của chúng tôi:**
+
+| Triệu chứng | Nguyên nhân thường gặp | 20W-50 có giúp không? |
+| :--- | :--- | :--- |
+| Khói xanh khi tăng ga, hao dầu từ từ | Mòn xéc măng, xi lanh | Giảm hao dầu tạm thời; nên đo áp suất nén để biết mức mòn |
+| Khói xanh lúc mới nổ máy rồi hết | Phớt ghít xupap mòn | Ít tác dụng |
+| Khói xanh ở máy chạy non tải nhiều (máy phát, máy bơm) | Thành xi lanh bị bóng | Ít tác dụng; cho máy chạy đủ tải định kỳ |
+| Dầu bị đẩy ra lỗ thông hơi các-te | Lọt khí nhiều, ống thông hơi tắc | Không; kiểm tra hệ thông hơi các-te |
+
+Căn cứ: dầu 20W-50 có độ nhớt ở nhiệt độ làm việc cao hơn dầu 15W-40, nên màng dầu dày hơn ở khe hở đã rộng. Nhưng dầu không phục hồi được chi tiết đã mòn. Hãy dùng EMI CF-4 20W-50 như một giải pháp kinh tế để máy cũ chạy tiếp tới kỳ đại tu, và theo dõi lượng dầu châm thêm mỗi tuần: lượng này tăng nhanh là lúc nên lên lịch sửa máy.
+
 ## Khi nào cần thay dầu?
 
 Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào kết quả kiểm tra dầu:
@@ -102,6 +119,9 @@ Theo mốc km hoặc giờ máy của nhà sản xuất động cơ, rút ngắn
 
 ### CF-4 dùng thay cho CI-4 được không?
 Không. CI-4 dùng thay được cho CF-4, nhưng không làm ngược lại. Máy có EGR mà dùng CF-4 sẽ nhanh đặc dầu do muội than.
+
+### Đổi từ 15W-40 sang EMI 20W-50 cho máy cũ có cần súc rửa không?
+Không bắt buộc nếu cùng cấp API CF-4. Thay dầu và lọc dầu đúng hạn là đủ. Theo dõi áp suất dầu khi máy nguội trong vài ngày đầu; dầu 20W-50 đặc hơn khi nguội nên đồng hồ áp suất có thể chỉ cao hơn lúc khởi động.
 
 ## Quy cách đóng gói, đơn hàng
 

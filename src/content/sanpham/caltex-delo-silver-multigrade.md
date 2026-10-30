@@ -17,10 +17,11 @@ specs:
   - { name: "Trị số kiềm tổng (TBN)", value: "10,3 mg KOH/g", method: "ASTM D2896" }
   - { name: "Trị số kiềm tổng (TBN)", value: "9,3 mg KOH/g", method: "ASTM D4739" }
   - { name: "Tro sunphat", value: "1,2 % khối lượng" }
+  - { name: "Mã sản phẩm Chevron (20W-50)", value: "500551" }
   - { name: "Độ nhớt ở 100 °C", value: "19,1 mm²/s" }
   - { name: "Chỉ số độ nhớt", value: "125" }
   - { name: "Hàm lượng kẽm", value: "0,14 % khối lượng" }
-tds_date: "10/2026"
+tds_date: "PDS Chevron châu Á – Thái Bình Dương 03/2024 (Delo Silver Multigrade/AP/CHV/PDSv1_03/2024)"
 tds_url: "https://cglapps.chevron.com/msdspds/PDSDetailPage.aspx?docDataId=847608&docFormat=PDF"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
@@ -56,7 +57,7 @@ tom_tat:
   - "**Có sẵn tại kho** (phuy 208 L)."
 tags: ["api-cf-4", "sae-20w-50", "caltex", "dong-co-diesel"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Caltex Delo Silver Multigrade SAE 20W-50** là dầu động cơ diesel tải nặng đa cấp của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho động cơ yêu cầu cấp **API CF-4, CF hoặc SG**: xe tải, máy công trình, máy kéo, máy phát điện và động cơ diesel trên tàu thuyền. Dầu dùng chung được cho động cơ xăng 4 kỳ trong đội xe hỗn hợp.
@@ -93,6 +94,30 @@ Mã này **có sẵn tại kho** theo phuy 208 L, kèm CO/CQ và hóa đơn VAT.
 
 > **Nhận định của HT VINA:** Đội xe đang dùng Delo Silver, nhất là đội có cả máy xăng, thì đặt tiếp đúng mã. Cần dầu ngay cho máy diesel CF-4 thì dùng mã có sẵn; khi đổi mã nên thay toàn bộ ở lần bảo dưỡng, không đổ lẫn thường xuyên.
 
+## Một loại dầu cho cả đội xe diesel và xăng {#doi-xe}
+
+Điểm riêng của Delo Silver so với phần lớn dầu CF-4 là cấp kép **API CF-4, CF / SG**: TDS Chevron (PDS 03/2024) ghi rõ dầu dùng được cho động cơ xăng 4 kỳ trong đội xe hỗn hợp diesel và xăng. Danh sách ứng dụng trong TDS gồm:
+
+- đội xe diesel 4 kỳ cao tốc, có turbo hoặc hút khí tự nhiên;
+- động cơ xăng 4 kỳ trong đội xe có cả diesel và xăng;
+- xe vận tải đường bộ, xe công trình, máy kéo nông nghiệp;
+- động cơ diesel cao tốc trên tàu thuyền (tàu cá, tàu sông);
+- tổ máy phát điện;
+- hệ thủy lực di động, khi loại dầu và độ nhớt phù hợp.
+
+**Lời khuyên của chúng tôi:** xưởng hay công trường có cả xe tải diesel, máy phát và vài máy xăng 4 kỳ (máy bơm, máy cắt) có thể dùng chung một phuy Delo Silver 20W-50, đỡ phải tồn nhiều loại dầu và tránh đổ nhầm. Chỉ cần kiểm tra hướng dẫn sử dụng của máy xăng không yêu cầu cấp API cao hơn SG; xe xăng đời mới thường cần SN, SP và độ nhớt thấp hơn, khi đó không dùng Delo Silver.
+
+## Vì sao TDS ghi hai giá trị TBN? {#tbn}
+
+TDS Delo Silver ghi trị số kiềm tổng (TBN) **10,3 mg KOH/g theo ASTM D2896** và **9,3 mg KOH/g theo ASTM D4739**. Đây không phải hai lô dầu khác nhau mà là hai phương pháp đo:
+
+| Phương pháp | Đặc điểm | Dùng khi |
+| :--- | :--- | :--- |
+| [ASTM D2896](https://www.astm.org/Standards/D2896.htm) | Dùng axit pecloric, mạnh hơn, cho số cao hơn | So sánh dầu mới giữa các hãng (TDS thường ghi theo cách này) |
+| [ASTM D4739](https://www.astm.org/Standards/D4739.htm) | Dùng axit clohydric, cho số thấp hơn | Theo dõi TBN của dầu đã qua sử dụng |
+
+**Lời khuyên của chúng tôi:** khi so TBN của hai mã dầu, chỉ so số đo cùng phương pháp. Khi gửi mẫu dầu đang dùng đi phân tích, hãy dặn phòng thí nghiệm đo theo cùng một phương pháp ở mọi lần lấy mẫu, nếu không đường suy giảm TBN sẽ "nhảy" vô lý.
+
 ## Khi nào cần thay dầu?
 
 Theo mốc km hoặc giờ máy trong tài liệu hướng dẫn của nhà sản xuất động cơ. Xe chạy bụi, tải nặng, máy chạy không tải lâu thì rút ngắn mốc đó. Với đội xe lớn, có thể dựa vào kết quả kiểm tra dầu:
@@ -112,6 +137,9 @@ Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe l
 
 ### Dầu này có dùng cho hệ thủy lực được không?
 Chevron cho phép dùng cho hệ thủy lực di động khi loại dầu và độ nhớt phù hợp. Với máy ép, máy công cụ trong nhà xưởng, nên dùng [dầu thủy lực](/dau-thuy-luc) chuyên dụng.
+
+### Delo Silver 20W-50 dùng cho máy phát điện được không?
+Được. TDS Chevron liệt kê tổ máy phát điện trong danh sách ứng dụng. Máy phát dự phòng ít chạy nên thay dầu theo thời gian (ví dụ hằng năm) ngay cả khi chưa đủ giờ chạy, vì dầu vẫn hút ẩm khi máy nằm yên.
 
 ## Quy cách đóng gói, đơn hàng
 

@@ -61,7 +61,7 @@ tom_tat:
   - "**Có sẵn tại kho**. HT VINA là đại lý dầu mỡ VHP."
 tags: ["sae-10w", "caterpillar-to-2", "dau-truyen-dong", "xe-nang", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **VHP Hymatran Oil 10W** là dầu đơn cấp SAE 10W do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hộp số, bộ biến mô và hệ thủy lực của máy công trình khi nhà sản xuất máy yêu cầu dầu cấp nhớt 10W. Theo VHP, dầu đáp ứng **API CF/SF, ACEA E2, Caterpillar TO-2, ZF TE-ML 03B** và thử bơm **Vickers 35VQ25**.
@@ -89,6 +89,26 @@ HT VINA là **đại lý dầu mỡ VHP**. Phuy 200 L và xô 18 L **có sẵn t
 
 > **Nhận định của HT VINA:** Vì độ nhớt gần VG 32, không đổ Hymatran 10W vào hệ thủy lực đang dùng VG 68 khi chưa hỏi hãng máy. Đội xe nâng có hướng dẫn sử dụng ghi chung SAE 10W cho hộp số và thủy lực thì dùng một mã này cho cả hai, đỡ nhầm khi thêm dầu.
 
+## Hộp số xe nâng, máy xúc bị trượt khi nóng: dầu hay ly hợp? {#truot-so}
+
+Hymatran 10W chủ yếu được mua cho hộp số powershift và biến mô của xe nâng, máy xúc lật, máy san. Phàn nàn thường gặp nhất với nhóm máy này là **hộp số trượt khi máy đã nóng**.
+
+**Người dùng chia sẻ.** Trên diễn đàn [Heavy Equipment Forums](https://www.heavyequipmentforums.com/threads/86-champion-8400-transmission-fluid.124639/) (06/2026), chủ một máy san Champion đời 1986 hỏi đổi sang dầu TO-4 cấp 10W-30 có đỡ trượt số hơn dầu 10W không. Anh kể máy này ban đầu được chỉ định dùng ATF, nhưng sau đó người ta nhận ra **ATF làm hộp số trượt khi nóng**, nên tài liệu đổi sang dầu hộp số 10W. Các câu trả lời:
+
+- Một người hoài nghi chuyện dầu đặc hơn sẽ hết trượt; anh nhắc tới đợt triệu hồi thay gioăng chữ O trong ly hợp của hộp số này.
+- Một chủ thầu dầu khí cho biết dầu hộp số **đã quá hạn chắc chắn gây trượt**: khi dầu mất độ bền cắt và phụ gia ma sát (vốn bị phá vỡ theo thời gian và chu kỳ nóng lạnh), nó không còn giữ được ly hợp. Anh cũng nói "nhiệt là kẻ thù của mọi hộp số".
+- Người hỏi tự nghi việc châm bù dầu khác loại có thể góp phần làm trượt.
+
+**Lời khuyên của chúng tôi:**
+
+| Triệu chứng | Kiểm tra trước | Ghi chú |
+| :--- | :--- | :--- |
+| Trượt số khi máy đã nóng, nguội thì bình thường | Hạn thay dầu và lọc, loại dầu đang dùng | Dầu quá hạn hoặc dầu sai loại (ATF, dầu động cơ thường) là nghi phạm đầu tiên |
+| Trượt ngay cả khi nguội | Áp suất ly hợp, gioăng, lá ly hợp | Đổi dầu khó giải quyết |
+| Dầu đen, mùi khét | Nhiệt độ dầu, két làm mát hộp số | Thay dầu, lọc và tìm nguyên nhân nóng |
+
+Căn cứ: VHP công bố Hymatran 10W đáp ứng **Caterpillar TO-2**, tức dầu được thử ma sát cho ly hợp ướt. Máy có hướng dẫn sử dụng ghi TO-4 thì chúng tôi chưa xác nhận được, vì VHP chưa công bố TO-4. Khi thay sang Hymatran 10W, xả hết dầu cũ và thay lọc; đừng châm Hymatran vào hộp số đang dùng ATF.
+
 ## Khi nào cần thay dầu?
 
 Theo mốc giờ máy trong tài liệu hướng dẫn sử dụng kèm theo xe. Xe chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn. Khi nghi dầu có vấn đề (dầu đục, hộp số trượt, bơm kêu), lấy mẫu kiểm tra:
@@ -111,6 +131,9 @@ VHP xếp đây là dầu động cơ đơn cấp, nhưng mục đích chính l�
 
 ### Xe nâng của tôi ghi dầu TO-4, dùng Hymatran 10W được không?
 Theo công bố của VHP, Hymatran 10W đáp ứng Caterpillar TO-2, không ghi TO-4. Nếu hướng dẫn sử dụng bắt buộc TO-4, hãy gửi model xe qua trang [liên hệ](/contact) để chúng tôi kiểm tra trước khi giao.
+
+### Có dùng ATF thay cho Hymatran 10W trong hộp số xe nâng được không?
+Chỉ khi hướng dẫn sử dụng của xe cho phép ATF. Với hộp số yêu cầu dầu SAE 10W loại TO-2 hoặc TO-4, ATF có đặc tính ma sát khác; người dùng trên diễn đàn máy công trình kể ATF làm hộp số trượt khi nóng.
 
 ## Quy cách đóng gói, đơn hàng
 

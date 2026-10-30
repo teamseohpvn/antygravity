@@ -17,7 +17,7 @@ specs:
   - { name: "Độ nhớt động học ở 40 °C", value: "2,0 cSt" }
   - { name: "Điểm chớp cháy", value: "≥ 80 °C" }
   - { name: "Ăn mòn tấm đồng", value: "1" }
-tds_date: "10/2026"
+tds_date: "Bảng sản phẩm dầu EDM trên trang SHL ASEAN (trang không ghi ngày, truy cập 10/2026)"
 tds_url: "https://shlasean.com/products/dau-cat-got-khong-pha-nuoc"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
@@ -51,7 +51,7 @@ tom_tat:
   - "**Có sẵn tại kho** (phuy 200 L)."
 tags: ["edm", "xung-dien", "gia-cong-khuon", "shl"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **SHL EDM 32** là dầu điện môi cho **máy xung điện (EDM)**, của SHL, thương hiệu dầu nhờn Hàn Quốc. Dòng sản phẩm được SHL ASEAN sản xuất tại KCN Mỹ Xuân, Việt Nam. Dầu rất loãng, độ nhớt 2,0 cSt ở 40 °C, **không chứa clo**, điểm chớp cháy từ 80 °C.
@@ -86,6 +86,23 @@ Mã này **có sẵn tại kho** theo phuy 200 L, có CO/CQ và hóa đơn VAT. 
 
 > **Nhận định của HT VINA:** Dầu loãng hơn dễ thoát phoi khi gia công tinh, khe nhỏ. Dầu đặc hơn và có điểm chớp cháy cao hơn hợp với gia công thô, dòng điện lớn. Luôn theo khuyến cáo của nhà sản xuất máy.
 
+## Cháy máy xung điện: điểm chớp cháy của dầu quan trọng thế nào? {#chong-chay}
+
+Với dầu EDM, rủi ro lớn nhất không phải mòn điện cực mà là **cháy**. Tia lửa điện phóng liên tục trong bể dầu; nếu mức dầu thấp hoặc dầu quá dễ bay hơi, hơi dầu phía trên bề mặt có thể bắt lửa.
+
+**Một trường hợp thực tế được báo chí kỹ thuật ghi lại.** Tạp chí Modern Machine Shop ([01/2023](https://www.mmsonline.com/articles/dielectric-oil-dramatically-reduces-edm-maintenance)) kể lại trường hợp xưởng dao cắt PCD của Ceratizit tại Mỹ, có 5 máy cắt dây EDM chạy trong dầu, dự kiến chạy 24 giờ mỗi ngày:
+
+- Với dầu cũ có điểm chớp cháy thấp, mỗi máy bị **ít nhất hai đám cháy mỗi năm**, chưa kể nhiều lần bùng lửa nhỏ tự tắt. Mỗi lần cháy, hệ thống chữa cháy CO2 phun ngập vùng gia công, máy phải dừng nhiều ngày để thay chi tiết hỏng và bình CO2.
+- Dầu bay hơi và bám theo chi tiết khi lấy ra làm xưởng tiêu tốn **4–5 phuy dầu mỗi năm**; lõi lọc phải thay 2–3 lần mỗi năm, mỗi lần mất nửa ngày công.
+- Sau khi đổi sang dầu có điểm chớp cháy 230 °F (khoảng 110 °C), theo bài viết cao gần gấp đôi dầu cũ, xưởng **chưa gặp lại đám cháy nào**, lượng dầu dùng còn khoảng 1 phuy mỗi năm và lõi lọc chỉ phải thay mỗi năm một lần.
+
+**Lời khuyên của chúng tôi:**
+
+1. Điểm chớp cháy là chỉ tiêu đầu tiên khi so dầu EDM. SHL EDM 32 có điểm chớp cháy từ 80 °C; gia công thô, dòng lớn hoặc chạy không người trực thì cân nhắc SHL EDM 34 (từ 100 °C, nhận đặt).
+2. Luôn giữ mức dầu cao hơn phôi theo hướng dẫn của hãng máy, và bật cảm biến mức dầu, cảm biến nhiệt bể. Đây là lớp bảo vệ quan trọng hơn cả loại dầu.
+3. Không pha dầu hỏa hay dầu DO vào bể để "pha loãng" (xem câu hỏi thường gặp bên dưới); điểm chớp cháy của hỗn hợp sẽ giảm.
+4. Bình chữa cháy tự động cho từng máy là trang bị nên có, không phải tùy chọn.
+
 ## Khi nào cần thay dầu?
 
 Tùy khối lượng gia công và chất lượng hệ lọc:
@@ -105,6 +122,9 @@ Tùy khối lượng gia công và chất lượng hệ lọc. Dấu hiệu cầ
 
 ### Có dùng dầu hỏa hoặc dầu DO thay dầu EDM được không?
 Không nên. Dầu hỏa, dầu DO không được pha chế cho gia công xung điện, thường có điểm chớp cháy thấp hơn và nhiều mùi. Dầu EDM chuyên dụng an toàn hơn cho thợ đứng máy.
+
+### Mỗi năm một máy xung điện tiêu tốn bao nhiêu dầu EDM?
+Tùy kích thước bể, số ca chạy và lượng dầu bám theo chi tiết. Trường hợp được tạp chí Modern Machine Shop nêu ở trên dùng 4–5 phuy mỗi năm cho 5 máy với dầu cũ, và khoảng 1 phuy sau khi đổi dầu ít bay hơi hơn. Theo dõi lượng dầu châm thêm mỗi tháng là cách đơn giản để biết dầu đang hao vì bay hơi hay vì bám theo chi tiết.
 
 ## Quy cách đóng gói, đơn hàng
 

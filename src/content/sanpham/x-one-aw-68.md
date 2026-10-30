@@ -48,7 +48,7 @@ tom_tat:
   - "**Chưa có TDS** của hãng: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "x-one"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **X-One AW 68** là dầu thủy lực chống mài mòn cấp độ nhớt **ISO VG 68**. Chữ "AW" (anti-wear) nghĩa là dầu có phụ gia chống mài mòn để bảo vệ bơm và van khi hệ thống chạy áp cao. Dầu dùng cho máy ép, máy công trình và hầu hết hệ thủy lực công nghiệp yêu cầu dầu cấp 68.
@@ -81,6 +81,22 @@ Tính theo lít, phuy X-One thấp hơn ENEOS khoảng 12%. ENEOS có TDS bản 
 
 > **Nhận định của HT VINA:** Chọn X-One AW 68 khi hướng dẫn sử dụng chỉ ghi ISO VG 68 loại HM/AW và bạn cần một mã có giá hợp lý cho máy chạy nhiều ca. Máy Nhật đang dùng sẵn ENEOS, hoặc cần giấy tờ tiêu chuẩn để nộp kiểm tra, thì giữ ENEOS.
 
+## Máy ép chạy ba ca: nhiệt độ thùng dầu quyết định tuổi dầu {#nhiet-do}
+
+X-One AW 68 thường được chọn cho máy ép, máy đùn chạy nhiều ca vì giá theo lít thấp hơn các mã nhập khẩu. Với nhóm máy này, yếu tố làm dầu hỏng nhanh nhất không phải nhãn hiệu mà là **nhiệt độ thùng dầu**.
+
+**Căn cứ kỹ thuật.** Trong [bài viết trên tạp chí TLT](https://stle.org/files/TLTArchives/2009/11_November/Worldwide.aspx) của Hiệp hội Kỹ sư Ma sát và Bôi trơn Hoa Kỳ (STLE, 11/2009), tác giả R. David Whitby giải thích phản ứng oxy hóa dầu nhanh gấp 2–3 lần khi nhiệt độ tăng mỗi 10 °C. Ông đưa ví dụ: một dầu thủy lực dùng được khoảng **4 năm** nếu nhiệt độ thùng trung bình 70 °C, thì chỉ còn khoảng **2 năm** ở 80 °C, **1 năm** ở 90 °C và **6 tháng** ở 100 °C. Đây là quy tắc ước lượng; một bài xã luận của STLE năm 2021 lưu ý hệ số thực tế tùy loại phản ứng và có thể thấp hơn mức gấp đôi.
+
+| Nhiệt độ thùng trung bình | Tuổi dầu ước lượng (theo ví dụ STLE 2009) | Việc nên làm |
+| :--- | :--- | :--- |
+| 50–60 °C | Dài, đây là vùng làm việc bình thường | Kiểm tra dầu định kỳ theo bảng phía dưới |
+| Khoảng 70 °C | Mốc 4 năm của ví dụ | Kiểm tra két làm mát, quạt, mức dầu |
+| 80 °C trở lên | Còn khoảng một nửa | Tìm nguyên nhân nóng trước khi thay dầu mới |
+
+**Lời khuyên của chúng tôi:** dán một nhiệt kế dán (miếng đổi màu theo nhiệt) lên thành thùng dầu, ghi nhiệt độ cuối mỗi ca trong một tuần. Thùng thường xuyên trên 70 °C thì dầu nào cũng xuống cấp nhanh, X-One hay mã nhập khẩu cũng vậy. Khi đó, tiền sửa két làm mát hoặc thêm quạt sẽ tiết kiệm hơn đổi sang dầu đắt hơn.
+
+Khi chưa có TDS của X-One, chúng tôi chưa biết số liệu bền oxy hóa của mã này. Cách chắc chắn nhất là lấy mẫu dầu sau 3 tháng đầu, đo [trị số axit TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) và so với dầu mới cùng lô.
+
 ## Khi nào cần thay dầu?
 
 Không có một mốc giờ chạy đúng cho mọi máy. Cùng là X-One AW 68, máy ép chạy ba ca trong xưởng nóng ẩm làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca. Nên thay theo kết quả kiểm tra dầu đang dùng, so với dầu mới:
@@ -100,6 +116,9 @@ Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C r
 
 ### Thêm X-One AW 68 vào máy đang dùng dầu hãng khác được không?
 Hai dầu cùng cấp VG 68 loại AW gốc khoáng thường trộn được khi thêm dầu bổ sung một lượng nhỏ. Khi đổi hẳn sang mã mới, nên xả hết dầu cũ và thay lọc để dễ theo dõi chất lượng dầu. Cách làm xem [hướng dẫn thay dầu thủy lực](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc).
+
+### Vì sao xô 18 L X-One tính theo lít lại thấp hơn phuy?
+Theo bảng giá rà soát 02/10/2026, xô 18 L có khoảng giá 580.000–667.000 đ (khoảng 32.200–37.100 đ/L), còn phuy là 39.700–45.800 đ/L. Mức giá xô có thể thay đổi theo lô nhập; hãy [gửi yêu cầu báo giá](/bao-gia?sp=X-One%20AW%2068) để có giá đúng tại thời điểm mua.
 
 ## Quy cách đóng gói, đơn hàng
 

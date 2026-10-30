@@ -16,11 +16,11 @@ standards: ["API GL-5"]
 
 specs:
   - { name: "Cấp độ nhớt SAE", value: "80W-90 · 90" }
-  - { name: "Độ nhớt động học ở 40 °C", value: "80W-90: 145,2 mm²/s · 90: 195,3 mm²/s" }
-  - { name: "Độ nhớt động học ở 100 °C", value: "80W-90: 16,17 mm²/s · 90: 17,52 mm²/s" }
-  - { name: "Chỉ số độ nhớt", value: "80W-90: 117 · 90: 97" }
-  - { name: "Điểm chớp cháy cốc hở (COC)", value: "80W-90: 224 °C · 90: 228 °C" }
-tds_date: "10/2026"
+  - { name: "Độ nhớt động học ở 40 °C", value: "80W-90: 145,2 mm²/s · 90: 195,3 mm²/s", method: "ASTM D445" }
+  - { name: "Độ nhớt động học ở 100 °C", value: "80W-90: 16,17 mm²/s · 90: 17,52 mm²/s", method: "ASTM D445" }
+  - { name: "Chỉ số độ nhớt", value: "80W-90: 117 · 90: 97", method: "ASTM D2270" }
+  - { name: "Điểm chớp cháy cốc hở (COC)", value: "80W-90: 224 °C · 90: 228 °C", method: "ASTM D92" }
+tds_date: "Giá trị điển hình: trang sản phẩm ENEOS Việt Nam; phương pháp thử: TCCS 09:2014/NOEV-ENE (SAE 90), hiệu lực 25/02/2014"
 tds_url: "https://eneos.com.vn/en/product/multi-purpose-gear-oil/"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
@@ -55,7 +55,7 @@ tom_tat:
   - "**Có sẵn tại kho**."
 tags: ["api-gl-5", "sae-90", "sae-80w-90", "dau-cau", "eneos"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **ENEOS Gear Oil GL-5** là dầu cầu, dầu hộp số chịu cực áp của ENEOS, đạt cấp **API GL-5**. Dầu dùng cho cầu sau bánh răng hypoid và hộp số tay tải nặng của xe tải, xe khách và máy công trình.
@@ -95,6 +95,42 @@ Hai cấp **SAE 90** (can 18 L, phuy 200 L) và **80W-90** (đóng thùng) **có
 
 > **Nhận định của HT VINA:** Đội xe đang dùng ENEOS thì đặt tiếp đúng mã. Cần dầu cầu GL-5 ngay thì dùng EMI có sẵn, thay toàn bộ dầu cầu thay vì đổ lẫn.
 
+## SAE 90 sản xuất theo TCCS 09:2014 của ENEOS Việt Nam {#tccs}
+
+ENEOS Gear GL-5 90 bán tại Việt Nam được sản xuất tại KCN Đình Vũ, Hải Phòng, theo tiêu chuẩn cơ sở **TCCS 09:2014/NOEV-ENE** (hiệu lực 25/02/2014). Đối chiếu mức giới hạn trong TCCS với giá trị điển hình ENEOS công bố:
+
+| Chỉ tiêu | Mức giới hạn TCCS 09:2014 | Giá trị điển hình SAE 90 | Phương pháp |
+| :--- | :--- | :--- | :--- |
+| Độ nhớt ở 100 °C | 16,00–18,50 mm²/s | 17,52 mm²/s | ASTM D445 |
+| Nhiệt độ chớp cháy cốc hở | Không nhỏ hơn 200 °C | 228 °C | ASTM D92 |
+| Chỉ số độ nhớt | Không nhỏ hơn 95 | 97 | ASTM D2270 |
+| Nhiệt độ đông đặc | Không lớn hơn −15 °C | Không công bố | ASTM D97 |
+| Phốt pho | 0,09–0,12 % khối lượng | Không công bố | ASTM D4951 |
+| Lưu huỳnh | 1,80–2,40 % khối lượng | Không công bố | ASTM D4951 |
+| Màu ASTM | 1,5–3,0 | Không công bố | ASTM D1500 |
+
+Giá trị điển hình nằm trong mức giới hạn TCCS. TCCS trên áp dụng cho cấp SAE 90; cấp 80W-90 chúng tôi chưa có bản TCCS.
+
+## Lưu huỳnh 2% và chuyện "GL-5 ăn đồng" {#dong-thau}
+
+Hàm lượng lưu huỳnh khoảng 2% trong TCCS chính là phụ gia cực áp lưu huỳnh – phốt pho, thứ giúp cầu hypoid chịu tải. Đây cũng là lý do người ta lo dầu GL-5 làm hại chi tiết đồng, đồng thau (bộ đồng tốc hộp số, bạc lót).
+
+**Người dùng chia sẻ.** Trên diễn đàn [BobIsTheOilGuy](https://bobistheoilguy.com/forums/threads/gl5-and-yellow-metals-which-spec-is-safe.38972/), chủ đề "GL-5 và kim loại màu" (2004) có hai luồng ý kiến:
+
+- Một số thành viên cho rằng dầu GL-5 hiện đại đã có phụ gia "đệm" nên không hại đồng thau.
+- Một thành viên khác giải thích cách kiểm tra là thử ăn mòn tấm đồng theo ASTM D130 (3 giờ ở 100 °C), thang từ 1 đến 4; kết quả 1A là không ảnh hưởng. Một người khác dẫn tài liệu của hãng dầu Red Line: phần lớn hộp số tay có đồng tốc chỉ cần GL-4, và dùng GL-5 có thể làm giảm tuổi thọ bộ đồng tốc. Ngoài chuyện ăn mòn, một thành viên lưu ý nhiều dầu GL-5 làm đồng tốc "ăn" kém, vào số khó hơn.
+
+**Lời khuyên của chúng tôi:**
+
+| Bộ phận | Dùng ENEOS Gear GL-5? |
+| :--- | :--- |
+| Cầu sau hypoid xe tải, xe khách | **Có.** Đây là ứng dụng chính của GL-5. |
+| Hộp số tay không đồng tốc (xe tải đời cũ, xe ben) | **Có.** |
+| Hộp số tay có đồng tốc, hướng dẫn sử dụng ghi GL-4 | **Không.** Dùng [PV Transmission EP_GL4](/dau-cau-hop-so/pv-transmission-ep-gl4). |
+| Hướng dẫn sử dụng ghi "GL-4 hoặc GL-5" | Được, nhưng nếu vào số nặng hơn sau khi thay, hãy đổi về GL-4. |
+
+ENEOS chưa công bố kết quả thử ăn mòn tấm đồng (ASTM D130) cho mã này, nên chúng tôi không khẳng định dầu "an toàn cho đồng thau". Khi chưa có số liệu, đi theo đúng cấp API ghi trong hướng dẫn sử dụng là cách chắc chắn nhất.
+
 ## Khi nào cần thay dầu?
 
 Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
@@ -114,6 +150,9 @@ Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe, rút 
 
 ### Dầu GL-5 có dùng cho hộp số tay được không?
 Được, với hộp số tay tải nặng không đồng tốc như hộp số xe tải đời cũ, xe ben. Hộp số có bộ đồng tốc bằng đồng mà hướng dẫn sử dụng chỉ ghi GL-4 thì nên dùng đúng dầu GL-4, vì phụ gia GL-5 có thể làm đồng mòn nhanh hơn.
+
+### Vì sao dầu cầu GL-5 có mùi hắc hơn dầu động cơ?
+Mùi hắc đặc trưng đến từ phụ gia cực áp gốc lưu huỳnh. Theo TCCS 09:2014, ENEOS Gear GL-5 90 có 1,80–2,40% lưu huỳnh theo khối lượng. Đây là đặc điểm bình thường của dầu cầu GL-5, không phải dấu hiệu dầu hỏng.
 
 ## Quy cách đóng gói, đơn hàng
 

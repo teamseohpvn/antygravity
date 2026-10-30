@@ -57,7 +57,7 @@ tom_tat:
   - "**Có sẵn tại kho** (phuy 200 L). HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-46", "dau-tuan-hoan", "chong-gi", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **VHP Rosia CS 46** là dầu bôi trơn tuần hoàn chống oxy hóa, chống gỉ do nhà máy VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu đạt DIN 51517-1 loại C và DIN 51517-2 loại CL. Đây là loại dầu không có phụ gia cực áp (EP), dùng cho hệ tuần hoàn, ổ đỡ và hộp số tải nhẹ.
@@ -71,7 +71,7 @@ Cấp **46** dạng phuy 200 L **có sẵn tại kho**. HT VINA là đại lý d
 | Dầu loại C, CL (DIN 51517) cấp 46; dầu tuần hoàn không EP | **Được.** |
 | Hệ bôi trơn tuần hoàn, ổ đỡ, hộp số tải nhẹ | **Được.** |
 | Danieli Standard Oil 6.14 (thiết bị cán thép) | **Được**, theo VHP. |
-| Bơm thủy lực áp trung bình và cao (HM, HLP) | Không. Dùng VHP Isonas AW. |
+| Bơm thủy lực áp trung bình và cao (HM, HLP) | Không. Dùng dầu thủy lực chống mài mòn như [VHP Spinax AW](/dau-thuy-luc/vhp-spinax-aw). |
 | Hộp số tải nặng | Không. Dùng [dầu bánh răng](/dau-banh-rang) có phụ gia cực áp. |
 
 ## Thông số này có ý nghĩa gì khi máy chạy?
@@ -84,7 +84,7 @@ Cấp **46** dạng phuy 200 L **có sẵn tại kho**. HT VINA là đại lý d
 
 ## Rosia CS 46 khác dầu thủy lực chống mài mòn thế nào?
 
-| Đặc điểm | Rosia CS 46 | Dầu thủy lực AW (vd Isonas AW) |
+| Đặc điểm | Rosia CS 46 | Dầu thủy lực AW (vd [VHP Spinax AW](/dau-thuy-luc/vhp-spinax-aw)) |
 | :--- | :--- | :--- |
 | Loại dầu | Dầu tuần hoàn chống gỉ, chống oxy hóa (CL) | Dầu thủy lực chống mài mòn (HM/HLP) |
 | Phụ gia chống mài mòn | Không | Có |
@@ -92,6 +92,22 @@ Cấp **46** dạng phuy 200 L **có sẵn tại kho**. HT VINA là đại lý d
 | Hợp nhất với | Hệ tuần hoàn, ổ đỡ, hộp số tải nhẹ | Bơm thủy lực áp trung bình và cao |
 
 > **Nhận định của HT VINA:** Chọn Rosia CS 46 khi hướng dẫn sử dụng của máy ghi dầu loại C/CL hoặc dầu tuần hoàn không EP cấp 46. Không thấy chữ C, CL trong hướng dẫn sử dụng mà chỉ ghi "dầu 46" thì hỏi lại: máy có bơm thủy lực áp cao phải dùng dầu AW.
+
+## Rosia CS 46 có dùng cho băng trượt máy công cụ không? {#bang-truot}
+
+Trang này nằm trong nhóm dầu rãnh trượt của website, nên nhiều người tìm đến để hỏi câu này. Câu trả lời ngắn: **không nên**, nếu băng trượt là loại trượt phẳng của máy tiện, máy phay, máy mài.
+
+**Người dùng chia sẻ.** Trên diễn đàn [The Hobby-Machinist](https://hobby-machinist.com/threads/way-oil-and-variations.53335/page-3), một thợ đang tra băng trượt bằng dầu máy nén khí cho biết anh **thấy rõ hiện tượng giật cục (stick-slip)**, đúng như một thành viên khác đã cảnh báo, và lưu ý dầu băng trượt chuyên dụng như Vactra được pha chế để chống hiện tượng này. Một người khác kể trước khi mua dầu băng trượt Chevron, anh từng tự pha thêm phụ gia tăng bám vào dầu ISO 68 và thấy "khá ổn". Một thợ nữa lại cảnh báo dầu quá dính thì giữ phoi, cuốn phoi vào bánh răng.
+
+**Lời khuyên của chúng tôi:**
+
+| Bộ phận trên máy | Dầu nên dùng |
+| :--- | :--- |
+| Băng trượt phẳng, bàn máy, ụ động (cần chống giật cục, bám dính trên mặt đứng) | Dầu rãnh trượt chuyên dụng, ví dụ [SHL Synthway 68M](/dau-ranh-truot/shl-synthway-68m) |
+| Hệ bôi trơn tuần hoàn, ổ đỡ, hộp số tải nhẹ của máy (ghi dầu C/CL) | Rosia CS 46 |
+| Bộ nguồn thủy lực của máy (ghi HM/HLP) | [Dầu thủy lực chống mài mòn](/dau-thuy-luc) |
+
+Căn cứ: Rosia CS 46 đạt DIN 51517-2 loại CL, tức dầu tuần hoàn chống gỉ, chống oxy hóa. Tài liệu của VHP không ghi phụ gia chống giật cục hay tăng bám dính, là hai tính chất chính của dầu rãnh trượt. Đừng tự pha phụ gia vào dầu; hãy dùng đúng loại dầu cho từng bộ phận.
 
 ## Khi nào cần thay dầu?
 
@@ -115,6 +131,9 @@ VHP xếp Rosia CS vào nhóm dầu tuần hoàn, không phải dầu thủy l�
 
 ### Rosia CS có những cấp nào?
 VHP sản xuất Rosia CS từ cấp 10 đến 220. Cấp khác vui lòng liên hệ để đặt hàng.
+
+### Vì sao dầu tuần hoàn Rosia CS lại nằm trong nhóm dầu rãnh trượt?
+Trên website, Rosia CS 46 được xếp chung nhóm với dầu rãnh trượt vì cùng phục vụ máy công cụ. Về loại dầu, đây là dầu tuần hoàn loại CL theo DIN 51517, không phải dầu rãnh trượt. Xem bảng ở mục [Rosia CS 46 có dùng cho băng trượt máy công cụ không?](#bang-truot).
 
 ## Quy cách đóng gói, đơn hàng
 

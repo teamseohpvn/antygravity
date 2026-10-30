@@ -42,7 +42,7 @@ tom_tat:
   - "**Chưa có TDS** của hãng: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "maxima"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Maxima 68** là dầu bôi trơn cấp **ISO VG 68** cho hệ thủy lực và hệ tuần hoàn dầu công nghiệp chịu tải trung bình đến nặng. Dầu đóng **xô 18 L**, tiện cho tổ bảo trì thêm dầu bổ sung hoặc cho máy có thùng thủy lực nhỏ.
@@ -76,6 +76,21 @@ Giá theo lít của xô Maxima 68 nằm trong cùng khoảng với phuy X-One, 
 
 > **Nhận định của HT VINA:** Mỗi năm dùng dưới một phuy dầu 68, hoặc dầu phải để lâu sau khi mở, thì xô 18 L kinh tế hơn tính trên tổng chi phí: không tồn dầu mở nắp, không cần bơm rót phuy. Dùng nhiều hơn thì chuyển sang phuy.
 
+## Xô đã mở: bảo quản thế nào để dầu không hút ẩm? {#bao-quan}
+
+Maxima 68 đóng xô 18 L, nên phần lớn khách mua để thêm dầu dần trong nhiều tuần. Xô đã mở nắp là chỗ nước và bụi dễ lọt vào dầu nhất.
+
+**Căn cứ.** Tài liệu kỹ thuật ["Handling & Storing Lubricants"](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/technical-topic---handling-storing-lubricants.pdf) của ExxonMobil (bản 2024) nêu các nguyên nhân làm dầu hỏng khi lưu kho: ngưng tụ hơi ẩm, dụng cụ rót bẩn, để ngoài trời, trộn lẫn hãng hoặc loại khác nhau, nóng lạnh thất thường và để quá hạn. Tài liệu giải thích thùng chứa "thở" theo nhiệt độ ngày đêm: khi nguội, không khí ẩm bị hút vào qua nắp, kể cả với thùng chưa mở. Hãng khuyên để dầu trong nhà, xa ống hơi và lò sấy, dùng hàng nhập trước trước.
+
+**Lời khuyên của chúng tôi cho xô 18 L:**
+
+1. Mở xô bằng dụng cụ sạch, rót dầu qua phễu có lưới lọc dành riêng cho dầu thủy lực.
+2. Rót xong đậy nắp ngay, kể cả khi 10 phút sau lại dùng tiếp. Ghi ngày mở lên nắp.
+3. Để xô trong nhà, kê cao khỏi nền, không đặt cạnh lò sấy hạt nhựa hay cửa ra vào hay hắt mưa.
+4. Xô mở quá lâu, dầu đục hoặc có nước đọng dưới đáy thì đừng đổ vào máy. Thử nhanh bằng cách [kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong).
+
+Miền Bắc có mùa nồm ẩm kéo dài, hơi nước ngưng tụ trên mọi bề mặt lạnh, kể cả mặt trong nắp xô. Đây là lý do chúng tôi khuyên mua xô thay vì phuy khi xưởng dùng ít dầu: dầu được dùng hết trước khi kịp hút ẩm.
+
 ## Khi nào cần thay dầu?
 
 Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết Maxima 68 trong máy của bạn còn dùng được không, so mẫu dầu đang dùng với dầu mới cùng lô:
@@ -95,6 +110,9 @@ Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C r
 
 ### Thêm Maxima 68 vào máy đang dùng dầu thủy lực 68 khác được không?
 Thêm một lượng nhỏ dầu cùng cấp, cùng loại gốc khoáng thường không gây vấn đề. Khi đổi hẳn sang mã khác, nên xả dầu cũ và thay lọc.
+
+### Maxima 68 có phải dầu Maxima Racing Oils (Mỹ) không?
+File kho của nhà cung cấp ghi tên hãng là Maxima Racing Oils. Chúng tôi chưa tìm thấy TDS dầu thủy lực công nghiệp cấp 68 trên trang của hãng này, nên đang xin xác nhận từ nhà cung cấp và sẽ cập nhật khi có giấy tờ. Hiện trang chỉ ghi "Maxima".
 
 ## Quy cách đóng gói, đơn hàng
 

@@ -45,7 +45,7 @@ tom_tat:
   - "**Chưa có TDS** của hãng: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "emer"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **EMER LAW 68** là dầu thủy lực chống mài mòn cấp **ISO VG 68** dùng cho hệ thủy lực nâng hạ, máy ép và máy cơ giới. Cấp 68 là cấp phổ biến nhất cho máy chạy trong xưởng nóng và hệ thống áp cao ở miền Bắc.
@@ -82,6 +82,25 @@ Hai mã cùng cấp 68, cùng sản xuất trong nước và cùng có phuy, xô
 
 > **Nhận định của HT VINA:** Nếu đội máy đang dùng sẵn EMER LAW 68 và chạy ổn, giữ nguyên mã để không phải súc rửa khi đổi. Mua mới cho máy không yêu cầu dầu được hãng bơm chấp thuận thì có thể so thêm [EMI AW 68](/dau-thuy-luc/emi-aw-68) hoặc [X-One AW 68](/dau-thuy-luc/x-one-aw-68).
 
+## Xe nâng, bàn nâng chạy chậm khi nóng: lỗi dầu hay lỗi bơm? {#xe-nang}
+
+EMER LAW 68 được nhiều kho mua cho xe nâng và bàn nâng. Câu hỏi hay gặp nhất với nhóm máy này là: càng nâng nhanh lúc sáng, chạy vài tiếng thì chậm hẳn, có nên đổi dầu đặc hơn không.
+
+**Người dùng chia sẻ.** Trên diễn đàn [BobIsTheOilGuy](https://bobistheoilguy.com/forums/threads/difference-46-iso-versus-68-iso.238051/) (07/2015), chủ một máy kéo kể cơ cấu nâng thủy lực chạy tốt khi nguội nhưng chậm hẳn khi nóng, và được mách "dùng dầu tốt hơn". Một thành viên lâu năm trả lời rằng hiện tượng này giống rò rỉ bên trong bơm khi dầu nóng; nếu rò ở xi lanh thì càng sẽ tự trôi khi đứng yên. Theo anh, đổi sang dầu 68 "có thể kéo dài thêm ít thời gian", nhưng dầu đặc sẽ chảy qua con trượt van chậm hơn khi trời lạnh.
+
+Trên diễn đàn [ForkliftAction](https://www.forkliftaction.com/forum/thread.aspx?qid=137036) (09/2024), chủ một xe nâng Toyota hỏi có nên thay dầu ISO VG 32 theo hướng dẫn bằng dầu 46 vì khu vực nóng. Một kỹ thuật viên Toyota tại Mỹ khuyên giữ đúng AW 32 để không mất bảo hành. Một người khác cho biết dầu 46 dùng được, chỉ có lúc trời rất lạnh thì càng hạ chậm.
+
+**Lời khuyên của chúng tôi:**
+
+| Triệu chứng | Kiểm tra trước | Đổi dầu có giúp không? |
+| :--- | :--- | :--- |
+| Nâng chậm khi máy nóng, sáng nguội thì bình thường | Áp suất bơm khi nóng, mức dầu, lọc hút | Chỉ tạm thời. Bơm mòn thì dầu đặc hơn chỉ giấu bệnh. |
+| Càng tự trôi xuống khi đứng yên | Phớt xi lanh nâng, van giữ tải | Không. Phải thay phớt hoặc sửa van. |
+| Hạ chậm vào sáng sớm mùa đông | Cấp dầu đang dùng so với hướng dẫn | Có, nếu đang dùng cấp đặc hơn hướng dẫn. |
+| Dầu sủi bọt, kêu rít | Mức dầu thấp, ống hút hở | Không. Bổ sung dầu, sửa chỗ hở. |
+
+Căn cứ: độ nhớt của dầu gốc khoáng giảm mạnh khi nóng, đó là lý do cấp dầu được chọn theo dải nhiệt độ làm việc. Xe nâng có hướng dẫn sử dụng ghi cấp 32 hoặc 46 thì dùng đúng cấp đó. EMER LAW 68 dành cho máy mà nhà sản xuất cho phép cấp 68. Khi máy có biểu hiện như bảng trên, hãy đo độ nhớt mẫu dầu bằng [máy đo cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) để loại trừ nguyên nhân do dầu trước khi tháo bơm.
+
 ## Khi nào cần thay dầu?
 
 Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết EMER LAW 68 trong máy của bạn còn dùng được không, so mẫu dầu đang dùng với dầu mới cùng lô theo ba chỉ tiêu:
@@ -101,6 +120,9 @@ Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C r
 
 ### Xe nâng dùng dầu thủy lực 68 hay 46?
 Tùy hãng xe và nhiệt độ nơi làm việc. Nhiều xe nâng chạy trong kho nóng dùng cấp 68; xe làm việc trong kho lạnh thường dùng cấp 32 hoặc 46. Hãy xem hướng dẫn sử dụng của xe.
+
+### Xe nâng đang bảo hành có dùng EMER LAW 68 được không?
+Chỉ khi hướng dẫn sử dụng của xe ghi cấp 68 và không yêu cầu dầu được hãng xe chấp thuận. Nhiều hãng xe nâng quy định cấp 32 hoặc 46; dùng sai cấp có thể bị từ chối bảo hành.
 
 ## Quy cách đóng gói, đơn hàng
 

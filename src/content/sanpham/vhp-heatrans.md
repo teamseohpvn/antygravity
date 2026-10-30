@@ -62,7 +62,7 @@ tom_tat:
   - "**Có sẵn tại kho** (xô 18 L). HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-32", "iso-vg-46", "truyen-nhiet", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **VHP Heatrans Oil** là dầu truyền nhiệt gốc khoáng tinh chế do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hệ gia nhiệt gián tiếp tuần hoàn kín, chạy liên tục với nhiệt độ dầu trong hệ tối đa 300 °C và màng dầu tối đa 320 °C. Theo VHP, dầu đáp ứng DIN 51522 và ISO 6743-12 nhóm Q.
@@ -106,6 +106,27 @@ HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **Heatrans 32** và **Heatr
 
 > **Nhận định của HT VINA:** Lò dầu thông dụng ở miền Bắc dùng dầu gốc khoáng như Heatrans là đủ. Chọn dầu tổng hợp khi nhà sản xuất thiết bị yêu cầu.
 
+## Hai cách dầu truyền nhiệt hỏng và cách phòng {#hong-dau}
+
+Bài viết "Fluid Degradation: Causes and Cures" trên tạp chí [Chemical Engineering (04/2015)](https://www.chemengonline.com/partner-content/fluid-degradation-causes-and-cures/) chia sự xuống cấp của dầu truyền nhiệt làm hai loại, khớp với hai hướng hỏng ở mục "Khi nào cần thay dầu" bên dưới:
+
+| | Oxy hóa | Quá nhiệt (nứt gãy nhiệt) |
+| :--- | :--- | :--- |
+| Xảy ra ở đâu | Chỉ ở **bình giãn nở**, nơi dầu nóng tiếp xúc không khí | Ở thành ống lò, nơi nhiệt độ màng dầu vượt mức hãng dầu cho phép |
+| Dầu thay đổi thế nào | Đặc lên, sinh axit, đóng bùn, đóng cặn trong lò | Loãng ra, sinh phần nhẹ dễ bay hơi, bơm có thể bị xâm thực, nặng thì sinh hạt cacbon |
+| Nguyên nhân hay gặp | Bình giãn nở quá nóng, đường xả khí mở suốt khi đã chạy ổn định | Ngọn lửa phả thẳng vào ống, lưu lượng thấp do lọc chữ Y tắc hoặc van bypass chỉnh sai |
+| Cách phòng | Giữ bình giãn nở nguội, phủ khí nitơ nếu cần | Chỉnh đầu đốt, vệ sinh lọc, giữ đủ lưu lượng qua lò |
+
+Bài viết đưa ra mấy mốc thực hành dễ nhớ:
+
+- Khi hệ đã đạt nhiệt độ làm việc, bình giãn nở phải **đủ nguội để đặt tay lên được** (ngưỡng đau của phần lớn người vào khoảng 140 °F, tức 60 °C). Khói ở lỗ thông hơi hoặc tiếng lục bục trong bình là dấu hiệu bình quá nóng.
+- Các đường khởi động, xả khí nối vào bình nên khóa lại khi nhiệt độ dầu ra khỏi lò đạt khoảng 250 °F (121 °C); lúc chạy bình thường chỉ để một đường nối bình với mạch chính.
+- Nên phân tích dầu **mỗi năm một lần**, gồm trị số axit (đo oxy hóa) và khoảng chưng cất hoặc điểm sôi (đo phần nhẹ do nứt gãy).
+
+**Một lỗi rất dễ gặp ở xưởng:** cũng theo bài viết, nhiễm bẩn hệ dầu truyền nhiệt "luôn do con người gây ra", thường là đổ nhầm dầu thủy lực hoặc glycol vì các phuy để chung một chỗ. Dấu hiệu có thể là bơm xâm thực, dầu phun lên ở lỗ thông hơi bình giãn nở, hoặc chỉ là cặn cacbon tăng.
+
+**Lời khuyên của chúng tôi:** phuy Heatrans nên để riêng, có biển ghi rõ "DẦU TRUYỀN NHIỆT – CHỈ DÙNG CHO LÒ DẦU". Xưởng dùng cả dầu thủy lực và dầu truyền nhiệt (rất hay gặp ở xưởng ép nhựa, ép gỗ) thì can, phễu, bơm tay cũng phải dùng riêng.
+
 ## Khi nào cần thay dầu?
 
 Không thay theo lịch cố định mà theo kết quả kiểm tra, ít nhất mỗi năm một lần. Dầu truyền nhiệt xuống cấp theo hai hướng: **nứt gãy nhiệt** làm dầu loãng ra, điểm chớp cháy giảm; **oxy hóa** làm dầu đặc lên, trị số axit tăng, đóng cặn trong ống.
@@ -128,6 +149,9 @@ Theo kết quả kiểm tra, ít nhất mỗi năm một lần. Chi tiết ở m
 
 ### Có trộn Heatrans với dầu truyền nhiệt hãng khác được không?
 Không nên. Pha lẫn hai loại dầu khác nhau làm khó kiểm soát chất lượng và tuổi thọ dầu. Hãy [liên hệ](/contact) để được tư vấn trước khi đổi dầu.
+
+### Bình giãn nở lò dầu nóng tới mức nào là bất thường?
+Theo bài viết trên tạp chí Chemical Engineering được dẫn ở trên, khi hệ đã chạy ổn định, bình giãn nở phải đủ nguội để đặt tay lên được (khoảng dưới 60 °C). Bình nóng hơn, có khói ở lỗ thông hơi hoặc có tiếng lục bục là dầu đang bị oxy hóa nhanh.
 
 ## Quy cách đóng gói, đơn hàng
 
