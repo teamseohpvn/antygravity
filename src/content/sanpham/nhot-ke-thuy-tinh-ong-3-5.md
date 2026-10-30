@@ -32,6 +32,9 @@ warnings:
   - "Rửa ống bằng dung môi (xăng thơm, heptan) trong khu vực thông gió, xa nguồn lửa."
 storage: "Cất trong hộp đệm, nơi khô, để ống thẳng đứng hoặc nằm trên giá, tránh va đập."
 
+images:
+  - { src: "/images/san-pham/nhot-ke-thuy-tinh-mao-quan.webp", alt: "Ảnh minh họa ba kiểu nhớt kế mao quản thủy tinh dùng đo độ nhớt động học theo nguyên lý ASTM D445" }
+
 doc_gia: "Trang này dành cho xưởng có bể ổn nhiệt, muốn tự đo độ nhớt động học (mm²/s) của dầu để so với con số trên TDS."
 tom_tat:
   - "**Đo độ nhớt động học** theo nguyên lý ASTM D445 (tương đương TCVN 3171): thời gian chảy × hằng số ống = mm²/s."

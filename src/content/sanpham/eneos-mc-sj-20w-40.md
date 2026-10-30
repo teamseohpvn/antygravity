@@ -19,8 +19,8 @@ standards: ["JASO MA (loại MA)", "JASO MB (loại MB)"]   # TODO TDS: xác nh�
 # tds_url: "/tai-lieu/tds/eneos-mc-sj-20w-40.pdf"
 
 packaging:
-  - { name: "MA 20W-40 (xe số) – Chai", sku: "MA 20W40" }   # TODO: dung tích chai
-  - { name: "MB 20W-40 (xe tay ga) – Chai", sku: "MB 20W40" }
+  - { name: "MA 20W-40 (xe số) – Chai 800 ml", sku: "MA 20W40" }
+  - { name: "MB 20W-40 (xe tay ga) – Chai 800 ml", sku: "MB 20W40" }
 stock_status: "co-san"
 
 applications:
@@ -35,9 +35,9 @@ warnings:   # TODO TDS: thay bằng cảnh báo trong SDS mục 2 và 7
 storage: "Để trong nhà hoặc dưới mái che, tránh nắng mưa. Phuy để ngoài trời phải đặt nằm ngang. Đậy kín nắp sau khi dùng."
 
 images:
-  - { src: "/images/san-pham/eneos-mc-sj-20w-40-ma-chai.webp", alt: "Chai dầu nhớt xe số ENEOS MC SJ MA 20W-40" }
-  - { src: "/images/san-pham/eneos-mc-sj-20w-40-mb-chai.webp", alt: "Chai dầu nhớt xe tay ga ENEOS MC SJ MB 20W-40" }
-  - { src: "/images/san-pham/eneos-mc-sj-20w-40-nhan.webp", alt: "Nhãn chai ENEOS MC ghi cấp API SJ, JASO và SAE 20W-40" }
+  - { src: "/images/san-pham/eneos-mc-sj-20w-40-chai-800ml.webp", alt: "Chai 800 ml dầu nhớt ENEOS Xe Máy SJ 20W-40 đặt trước thùng carton 24 chai tại kho HT VINA" }
+  - { src: "/images/san-pham/eneos-mc-sj-20w-40-chai.webp", alt: "Mặt trước chai ENEOS Xe Máy SJ 20W-40 800 ml, vỏ nhựa màu bạc, nhãn tím" }
+  - { src: "/images/san-pham/eneos-mc-sj-20w-40-nhan-sau.webp", alt: "Nhãn sau chai ENEOS SJ 20W-40: dầu nhớt động cơ xe máy 4 kỳ, sản xuất tại Việt Nam theo TCCS 24:2018/NOEV" }
 
 doc_gia: "Trang này dành cho cửa hàng, gara và đội xe máy của nhà máy cần dầu xe máy 4 thì 20W-40, chọn đúng loại MA hay MB."
 tom_tat:
@@ -112,7 +112,7 @@ Theo chuyên gia Caltex Việt Nam trong bài VnExpress dẫn ở trên, nên x�
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách có sẵn:** chai, loại MA và MB. Dung tích chai xác nhận khi báo giá.
+- **Quy cách có sẵn:** chai 800 ml (thùng 24 chai), loại MA và MB.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20MC%20SJ%2020W-40). Dầu ENEOS cho xe tải và máy công trình: xem [ENEOS DEO CI-4](/dau-dong-co-diesel/eneos-deo-ci-4).
