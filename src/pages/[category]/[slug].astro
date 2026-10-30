@@ -7,6 +7,7 @@ import { mucLuc } from '../../lib/muc-luc';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import NoiDungBai from '../../components/NoiDungBai.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
+import ThuVienAnh from '../../components/ThuVienAnh.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
@@ -15,7 +16,7 @@ import { bangSoSanh } from '../../lib/so-sanh';
 import { fmtVnd, fmtNgay } from '../../lib/gia-tinh';
 import { ngayBai } from '../../lib/ngay';
 import { timNhanSu, DEFAULT_REVIEWER_ID, DEFAULT_PRODUCT_AUTHOR_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
-import { BUSINESS, absUrl, breadcrumbSchema, packagingLabel, productImages, webpSrcset, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
+import { BUSINESS, absUrl, breadcrumbSchema, packagingLabel, productImages, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
   const products = await getActiveProducts();
@@ -192,12 +193,7 @@ const schemaData = [
     <NoiDungBai articleId={PAGE_ID} type={PAGE_TYPE} field="text">
     <div class="product-top">
       <div class="product-image">
-        {mainImage && <img src={mainImage.src} srcset={webpSrcset(mainImage.src)} sizes="(max-width: 700px) 100vw, 600px" alt={mainImage.alt} width="600" height="600" loading="eager" fetchpriority="high" decoding="async" />}
-        {gallery.length > 1 && (
-          <div class="thumbnail-gallery">
-            {gallery.map((img) => <img src={img.src} alt={img.alt} width="80" height="80" loading="lazy" />)}
-          </div>
-        )}
+        <ThuVienAnh images={gallery} />
       </div>
       <div class="product-summary">
         <h1>{d.title}</h1>
@@ -320,9 +316,6 @@ const schemaData = [
 
   .product-top { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-bottom: 30px; background: white; padding: clamp(20px, 4vw, 40px); border-radius: 8px; border: 1px solid var(--border-color); }
   @media (max-width: 860px) { .product-top { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
-  .product-image img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color); }
-  .thumbnail-gallery { display: flex; gap: 10px; margin-top: 15px; overflow-x: auto; }
-  .thumbnail-gallery img { width: 80px; height: 80px; object-fit: cover; }
 
   .product-summary h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); color: var(--color-primary); margin-bottom: 15px; line-height: 1.25; }
   .tags { margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 6px; }

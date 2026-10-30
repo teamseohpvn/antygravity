@@ -1,0 +1,162 @@
+---
+// Thư viện ảnh trang sản phẩm: ảnh chính + ảnh nhỏ bấm để đổi, bấm ảnh chính để phóng to (hộp xem ảnh có nút trước/sau).
+// Không có JavaScript thì ảnh chính và ảnh nhỏ vẫn là link mở ảnh gốc.
+import { webpSrcset, type ImageWithAlt } from '../lib/site';
+
+interface Props {
+  images: ImageWithAlt[];
+}
+const { images } = Astro.props;
+const main = images[0];
+// Ảnh nhỏ dùng bản -600 nếu có để trang nhẹ hơn.
+const items = images.map((img) => {
+  const srcset = webpSrcset(img.src);
+  return { ...img, srcset, thumb: srcset ? img.src.replace(/\.webp$/, '-600.webp') : img.src };
+});
+const nhieuAnh = items.length > 1;
+---
+
+{main && (
+  <div class="thu-vien-anh" data-thu-vien>
+    <a class="anh-chinh" href={main.src} data-mo-anh aria-label={`Phóng to ảnh: ${main.alt}`}>
+      <img src={main.src} srcset={items[0].srcset} sizes="(max-width: 700px) 100vw, 600px" alt={main.alt} width="600" height="600" loading="eager" fetchpriority="high" decoding="async" data-anh-chinh />
+      <span class="goi-y" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3M11 8v6M8 11h6" /></svg>
+        {nhieuAnh ? <span data-dem>1/{items.length}</span> : 'Phóng to'}
+      </span>
+    </a>
+
+    {nhieuAnh && (
+      <ul class="anh-nho" aria-label="Ảnh sản phẩm">
+        {items.map((img, i) => (
+          <li>
+            <a
+              href={img.src}
+              data-chon-anh={i}
+              data-src={img.src}
+              data-srcset={img.srcset ?? ''}
+              data-alt={img.alt}
+              aria-label={`Xem ảnh ${i + 1}: ${img.alt}`}
+              aria-current={i === 0 ? 'true' : undefined}
+            >
+              <img src={img.thumb} alt="" width="80" height="80" loading="lazy" decoding="async" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+
+    <dialog class="hop-xem-anh" aria-label="Xem ảnh sản phẩm" data-hop>
+      <figure>
+        <img src="" alt="" data-hop-anh />
+        <figcaption>
+          <span data-hop-chu></span>
+          {nhieuAnh && <span class="hop-dem" data-hop-dem></span>}
+        </figcaption>
+      </figure>
+      {nhieuAnh && (
+        <>
+          <button type="button" class="hop-nut hop-truoc" data-hop-truoc aria-label="Ảnh trước">‹</button>
+          <button type="button" class="hop-nut hop-sau" data-hop-sau aria-label="Ảnh sau">›</button>
+        </>
+      )}
+      <button type="button" class="hop-nut hop-dong" data-hop-dong aria-label="Đóng">×</button>
+    </dialog>
+  </div>
+)}
+
+<style>
+  .thu-vien-anh { position: relative; }
+  .anh-chinh { display: block; position: relative; cursor: zoom-in; }
+  .anh-chinh img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color); display: block; }
+  .goi-y { position: absolute; right: 10px; bottom: 10px; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 20px; background: rgba(15, 23, 42, 0.7); color: #fff; font-size: 0.8rem; font-weight: 600; }
+
+  .anh-nho { list-style: none; display: flex; gap: 10px; margin: 15px 0 0; padding: 0 0 4px; overflow-x: auto; }
+  .anh-nho li { flex: 0 0 auto; margin: 0; }
+  .anh-nho a { display: block; border: 2px solid transparent; border-radius: 6px; line-height: 0; }
+  .anh-nho a[aria-current='true'] { border-color: var(--color-primary); }
+  .anh-nho a:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 2px; }
+  .anh-nho img { width: 72px; height: 72px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border-color); }
+
+  .hop-xem-anh { border: 0; padding: 0; margin: auto; max-width: 100vw; max-height: 100vh; width: 100vw; height: 100vh; background: rgba(2, 6, 23, 0.94); }
+  .hop-xem-anh::backdrop { background: rgba(2, 6, 23, 0.9); }
+  .hop-xem-anh[open] { display: flex; align-items: center; justify-content: center; }
+  .hop-xem-anh figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 92vw; }
+  .hop-xem-anh img { max-width: 92vw; max-height: 80vh; width: auto; height: auto; border-radius: 6px; background: #fff; touch-action: pan-y; }
+  .hop-xem-anh figcaption { color: #e2e8f0; font-size: 0.9rem; text-align: center; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; padding: 0 16px; }
+  .hop-dem { color: #94a3b8; }
+  .hop-nut { position: fixed; border: 0; background: rgba(255, 255, 255, 0.15); color: #fff; width: 48px; height: 48px; border-radius: 50%; font-size: 2rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .hop-nut:hover, .hop-nut:focus-visible { background: rgba(255, 255, 255, 0.3); }
+  .hop-truoc { left: 12px; top: 50%; transform: translateY(-50%); }
+  .hop-sau { right: 12px; top: 50%; transform: translateY(-50%); }
+  .hop-dong { right: 12px; top: 12px; font-size: 1.8rem; }
+  @media (max-width: 600px) {
+    .hop-truoc, .hop-sau { top: auto; bottom: 16px; transform: none; }
+  }
+</style>
+
+<script>
+  for (const tv of document.querySelectorAll<HTMLElement>('[data-thu-vien]')) {
+    const anhChinh = tv.querySelector<HTMLImageElement>('[data-anh-chinh]')!;
+    const linkChinh = tv.querySelector<HTMLAnchorElement>('[data-mo-anh]')!;
+    const dem = tv.querySelector<HTMLElement>('[data-dem]');
+    const nho = [...tv.querySelectorAll<HTMLAnchorElement>('[data-chon-anh]')];
+    const hop = tv.querySelector<HTMLDialogElement>('[data-hop]')!;
+    const hopAnh = tv.querySelector<HTMLImageElement>('[data-hop-anh]')!;
+    const hopChu = tv.querySelector<HTMLElement>('[data-hop-chu]')!;
+    const hopDem = tv.querySelector<HTMLElement>('[data-hop-dem]');
+
+    // Danh sách ảnh: lấy từ ảnh nhỏ; trang chỉ có một ảnh thì lấy từ ảnh chính.
+    const ds = nho.length
+      ? nho.map((a) => ({ src: a.dataset.src!, srcset: a.dataset.srcset || '', alt: a.dataset.alt || '' }))
+      : [{ src: linkChinh.getAttribute('href')!, srcset: '', alt: anhChinh.alt }];
+    let hienTai = 0;
+
+    const chon = (i: number) => {
+      hienTai = (i + ds.length) % ds.length;
+      const a = ds[hienTai];
+      anhChinh.src = a.src;
+      if (a.srcset) anhChinh.srcset = a.srcset; else anhChinh.removeAttribute('srcset');
+      anhChinh.alt = a.alt;
+      linkChinh.href = a.src;
+      linkChinh.setAttribute('aria-label', `Phóng to ảnh: ${a.alt}`);
+      if (dem) dem.textContent = `${hienTai + 1}/${ds.length}`;
+      nho.forEach((n, k) => (k === hienTai ? n.setAttribute('aria-current', 'true') : n.removeAttribute('aria-current')));
+      if (hop.open) hienHop();
+    };
+    const hienHop = () => {
+      const a = ds[hienTai];
+      hopAnh.src = a.src; // ảnh gốc 1200 px
+      hopAnh.alt = a.alt;
+      hopChu.textContent = a.alt;
+      if (hopDem) hopDem.textContent = `${hienTai + 1}/${ds.length}`;
+    };
+
+    nho.forEach((n, i) => n.addEventListener('click', (e) => { e.preventDefault(); chon(i); }));
+    linkChinh.addEventListener('click', (e) => {
+      if (typeof hop.showModal !== 'function') return; // trình duyệt rất cũ: mở ảnh bằng link
+      e.preventDefault();
+      hienHop();
+      hop.showModal();
+    });
+    tv.querySelector('[data-hop-truoc]')?.addEventListener('click', () => chon(hienTai - 1));
+    tv.querySelector('[data-hop-sau]')?.addEventListener('click', () => chon(hienTai + 1));
+    tv.querySelector('[data-hop-dong]')!.addEventListener('click', () => hop.close());
+    // Bấm vùng tối bên ngoài ảnh thì đóng.
+    hop.addEventListener('click', (e) => { if (e.target === hop) hop.close(); });
+    hop.addEventListener('keydown', (e) => {
+      if (ds.length < 2) return;
+      if (e.key === 'ArrowLeft') chon(hienTai - 1);
+      if (e.key === 'ArrowRight') chon(hienTai + 1);
+    });
+    // Vuốt trái/phải trên điện thoại.
+    let x0: number | null = null;
+    hopAnh.addEventListener('pointerdown', (e) => { x0 = e.clientX; });
+    hopAnh.addEventListener('pointerup', (e) => {
+      if (x0 === null || ds.length < 2) return;
+      const dx = e.clientX - x0;
+      x0 = null;
+      if (Math.abs(dx) > 40) chon(hienTai + (dx < 0 ? 1 : -1));
+    });
+  }
+</script>
