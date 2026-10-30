@@ -119,7 +119,7 @@ const additionalProperty = [
 // Nguồn dẫn trên trang: TDS của hãng + công bố gốc ASTM/ISO và TCVN của các phương pháp thử trong bảng thông số.
 const citation = [
   ...new Set([
-    ...(d.tds_url ? [d.tds_url] : []),
+    ...(d.tds_url ? [d.tds_url.startsWith('/') ? absUrl(d.tds_url) : d.tds_url] : []),
     ...(d.specs ?? []).flatMap((s) => (s.method ? tachPhuongPhap(s.method) : []).flatMap((x) => [x.tc?.url, x.tc?.tcvnUrl])),
   ].filter((u): u is string => Boolean(u))),
 ];

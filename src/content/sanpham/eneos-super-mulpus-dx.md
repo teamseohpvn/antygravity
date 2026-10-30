@@ -98,7 +98,7 @@ Cấp **68** và cấp **46** **có sẵn tại kho**, đều là phuy 200 L, c�
 | Super Mulpus DX 46 | 46,5 mm²/s | 104 | -32,5 °C | Hệ thủy lực máy công cụ, ụ trục chính, ổ đỡ tốc độ vừa |
 | Super Mulpus DX 68 | 68,2 mm²/s | 103 | -27,5 °C | Máy ép, hộp giảm tốc tải vừa, rãnh trượt, thùng dầu nóng |
 
-Luôn theo cấp độ nhớt ghi trong tài liệu hướng dẫn sử dụng kèm theo máy. Cách chọn chi tiết xem bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
+Luôn theo cấp độ nhớt ghi trong tài liệu hướng dẫn sử dụng kèm theo máy. Cách chọn chi tiết xem bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
 
 ## Super Mulpus DX hay Super Hyrando 68?
 

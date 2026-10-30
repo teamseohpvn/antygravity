@@ -19,9 +19,9 @@ specs:
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "19 cSt", method: "ASTM D445" }
   - { name: "Độ xuyên kim sau giã ở 25 °C", value: "265–295 (0,1 mm)", method: "ASTM D217" }
   - { name: "Nhiệt độ nhỏ giọt", value: "180 °C", method: "IP 396" }
-  - { name: "Tải hàn dính 4 bi", value: "315 kg", method: "ASTM D2596" }
   - { name: "Nhiệt độ làm việc khuyến nghị", value: "-20 °C đến 130 °C" }
-tds_date: "10/2026"
+tds_date: "TDS Shell Việt Nam (tờ giới thiệu sản phẩm tiếng Việt) v3.1, 03/07/2016"
+tds_url: "/tai-lieu/tds/shell-gadus-s2-v220-2.pdf"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
@@ -52,12 +52,12 @@ images:
 doc_gia: "Trang này dành cho nhà máy cần mỡ lithium chịu cực áp cho ổ bi băng tải, sàng rung, máy nghiền và xe vận tải."
 tom_tat:
   - "**Dùng được** cho vòng bi, ổ trượt, bản lề chịu tải nặng và va đập, làm việc từ −20 °C đến 130 °C."
-  - "**Chịu cực áp**: tải hàn dính 4 bi 315 kg; tên cũ Shell Alvania EP(LF) 2, Retinax EP 2."
+  - "**Chịu cực áp** (có phụ gia EP theo TDS Shell); tên cũ Shell Alvania EP(LF) 2, Retinax EP 2."
   - "**Ổ bi nóng gần 130 °C** hoặc gần lò, máy sấy thì chọn Gadus S3 V220C 2 (lithium complex)."
   - "**Có sẵn tại kho** (xô 18 kg)."
 tags: ["nlgi-2", "mo-lithium", "chiu-cuc-ap", "shell-gadus"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Shell Gadus S2 V220 2** là mỡ bôi trơn đa dụng chịu cực áp (EP) của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng lithium hydroxystearate. Mỡ dùng cho vòng bi, ổ trượt, bản lề và bề mặt trượt trong hầu hết các ngành công nghiệp và vận tải. Tên cũ của dòng này là Shell Alvania EP(LF) 2 và Shell Retinax EP 2.
@@ -78,7 +78,7 @@ Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VA
 
 [Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS của Shell.
 
-- **Chịu tải nặng và tải va đập.** Phụ gia cực áp giữ màng mỡ khi tải lớn hoặc va đập. Tải hàn dính 4 bi đạt 315 kg.
+- **Chịu tải nặng và tải va đập.** Phụ gia cực áp giữ màng mỡ khi tải lớn hoặc va đập.
 - **Bền cơ học.** Mỡ ít bị chảy mềm khi rung, nên ít rò rỉ khỏi ổ bi trên sàng rung, băng tải, máy nghiền.
 - **Chống rửa trôi bởi nước, chống ăn mòn.** Bảo vệ bề mặt ổ bi ngay cả khi lẫn nhiều nước.
 - **Dầu gốc độ nhớt 220 cSt.** Màng dầu dày, phù hợp ổ bi tốc độ thấp và trung bình, tải nặng.
@@ -96,9 +96,29 @@ Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VA
 
 ## Gadus S2 hay mỡ lithium VHP?
 
-[VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) cùng gốc lithium, cùng dầu gốc 220 cSt, có sẵn cấp L4 xô 17 kg. Khác biệt chính: Gadus S2 có phụ gia cực áp (4 bi 315 kg so với 200 kg của VHP).
+[VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) cùng gốc lithium, cùng dầu gốc 220 cSt, có sẵn cấp L4 xô 17 kg. Khác biệt chính: Gadus S2 có phụ gia cực áp theo TDS Shell; TDS Shell Việt Nam không ghi tải 4 bi nên không so được bằng số với mức 200 kg của VHP.
 
 > **Nhận định của HT VINA:** Ổ bi tải thường cần mỡ ngay thì dùng VHP Lithium Grease có sẵn. Ổ bi chịu va đập (sàng rung, máy nghiền) nên đặt Gadus S2 để có phụ gia cực áp.
+
+## Vòng bi động cơ điện: nhiệt độ ổ quyết định chu kỳ bơm mỡ {#dong-co}
+
+Gadus S2 V220 2 hay được chọn cho vòng bi động cơ điện, quạt, bơm. Với nhóm thiết bị quay nhanh này, hai lỗi đắt nhất là **bơm quá nhiều** và **bơm theo lịch cố định bất kể ổ nóng hay nguội**.
+
+**Căn cứ kỹ thuật.**
+
+- Tài liệu súng bơm mỡ TLGB 20 của [SKF (2018)](https://shop.slsbearings.com/sg/media/akeneo_connector/asset_files/s/k/skf_tlgb_20_tds_3830.pdf) viết: với thiết bị quay nhanh như động cơ điện, quá nhiều mỡ có thể làm nhiệt độ tăng cao, làm hỏng phớt và cho bụi bẩn lọt vào; nhiệt độ cao làm tuổi thọ mỡ giảm mạnh.
+- Theo hướng dẫn của [SKF về tuổi thọ mỡ và chu kỳ bơm lại](https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/grease-life-and-relubrication), khi nhiệt độ ổ vượt 70 °C, **cứ tăng thêm 15 °C thì chu kỳ bơm lại mỡ giảm một nửa**, cho tới giới hạn nhiệt độ cao của mỡ.
+
+**Ví dụ áp dụng cho Gadus S2** (giới hạn nhiệt độ làm việc khuyến nghị 130 °C theo TDS):
+
+| Nhiệt độ vỏ ổ đo được | Chu kỳ bơm lại so với mốc ở 70 °C |
+| :--- | :--- |
+| Dưới 70 °C | Theo mốc của hãng động cơ |
+| Khoảng 85 °C | Còn khoảng một nửa |
+| Khoảng 100 °C | Còn khoảng một phần tư |
+| Trên 120 °C kéo dài | Nên chuyển sang mỡ chịu nhiệt cao hơn như [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2) |
+
+**Lời khuyên của chúng tôi:** mua một súng đo nhiệt hồng ngoại, đo vỏ ổ mỗi tháng và ghi vào sổ. Ổ nóng lên rõ ngay sau khi bơm mỡ là dấu hiệu đã bơm thừa: tháo nút xả, cho động cơ chạy để mỡ thừa thoát ra, đừng bơm thêm.
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
@@ -122,6 +142,9 @@ NLGI là thang độ đặc của mỡ, từ 000 (rất lỏng) đến 6 (rất 
 
 ### Gadus S2 V220 2 có trộn với mỡ khác được không?
 Chỉ nên trộn với mỡ cùng gốc lithium. Trộn với mỡ gốc khác như canxi, polyurea hay bentonite có thể làm mỡ chảy lỏng hoặc vón cục. Khi đổi loại mỡ, nên làm sạch mỡ cũ trong ổ bi.
+
+### Vì sao động cơ nóng hơn ngay sau khi bơm mỡ?
+Thường là do bơm quá nhiều mỡ vào ổ quay nhanh. Mỡ thừa bị nhào trộn liên tục làm sinh nhiệt. Tháo nút xả để mỡ thừa thoát ra; lần sau tính lượng mỡ theo cỡ vòng bi thay vì bơm tới khi thấy đầy.
 
 ## Quy cách đóng gói, đơn hàng
 

@@ -62,7 +62,7 @@ tom_tat:
   - "**Có sẵn No3 thùng 30 ống 400 g**; xô, phuy nhận đặt. HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "vhp"]
 date: "2026-10-06"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **VHP Licas Grease** là mỡ bôi trơn (mỡ bò) đa dụng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Mỡ pha từ dầu gốc khoáng tinh chế, chất làm đặc lithium và canxi, cùng phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Mỡ có hai cấp: **No2** mềm hơn và **No3** đặc hơn.
@@ -113,6 +113,26 @@ Cả hai cấp làm việc liên tục từ −10 °C đến 110 °C, ở mức 
 
 > **Nhận định của HT VINA:** Điểm bôi trơn chỉ nóng tới khoảng 110 °C và hay dính nước thì Licas là lựa chọn kinh tế. Vòng bi động cơ, quạt, bơm chạy nóng liên tục thì dùng Lithium Grease.
 
+## Một lần bơm bao nhiêu mỡ là đủ? {#luong-mo}
+
+Licas No3 có sẵn dạng **ống 400 g** lắp súng bơm tay, nên câu hỏi hay gặp nhất là "bơm mấy nhát". Bơm thiếu thì ổ khô; bơm thừa còn hại hơn.
+
+**Căn cứ kỹ thuật.** Bài "Adding Grease: Know When It's Enough" trên [Machinery Lubrication (Noria)](https://www.machinerylubrication.com/Articles/Print/28493?id=28493) đưa công thức lượng mỡ bơm bổ sung cho vòng bi: **Gq = 0,114 × D × B** (ounce, với D là đường kính ngoài và B là bề rộng ổ tính bằng inch). Quy sang đơn vị mét, công thức tương đương là **Gq ≈ 0,005 × D × B** (gam, D và B tính bằng mm). Bài viết khuyên đo lượng mỡ mỗi nhát của chính súng đang dùng rồi mới tính số nhát.
+
+Tài liệu súng bơm mỡ TLGB 20 của [SKF (2018)](https://shop.slsbearings.com/sg/media/akeneo_connector/asset_files/s/k/skf_tlgb_20_tds_3830.pdf) cảnh báo: bơm thừa mỡ vào thiết bị quay nhanh như **động cơ điện** có thể làm ổ nóng lên, làm hỏng phớt và mở đường cho bụi bẩn lọt vào; nhiệt độ cao còn làm mỡ hỏng nhanh.
+
+**Ví dụ tính theo công thức (gam mỗi lần bơm bổ sung):**
+
+| Vòng bi | D × B (mm) | Lượng mỡ mỗi lần bơm |
+| :--- | :--- | :--- |
+| 6205 | 52 × 15 | khoảng 4 g |
+| 6305 | 62 × 17 | khoảng 5 g |
+| 6308 | 90 × 23 | khoảng 10 g |
+| 6310 | 110 × 27 | khoảng 15 g |
+| 22216 | 140 × 33 | khoảng 23 g |
+
+**Lời khuyên của chúng tôi:** trước khi dùng một khẩu súng mới, bơm 10 nhát vào một túi ni lông đặt trên cân nhà bếp, chia cho 10 để biết mỗi nhát được bao nhiêu gam. Từ đó tính số nhát cho từng ổ và dán ngay cạnh vú mỡ. Khi bơm ổ có nút xả, tháo nút xả ra để mỡ cũ có đường thoát.
+
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
 Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
@@ -133,6 +153,9 @@ Không. Nhiệt độ nhỏ giọt tối thiểu 130 °C và nhiệt độ làm 
 
 ### Ống 400 g dùng cho súng mỡ nào?
 Ống 400 g lắp vừa các loại súng bơm mỡ cầm tay dùng ống tiêu chuẩn. Ống tiện hơn xô vì mỡ sạch, không lẫn bụi khi nạp.
+
+### Súng bơm mỡ tay mỗi nhát được bao nhiêu gam?
+Tùy loại súng, nên tự cân: bơm 10 nhát vào túi ni lông, cân rồi chia 10. Xem cách tính lượng mỡ cho từng cỡ vòng bi ở mục [một lần bơm bao nhiêu mỡ](#luong-mo).
 
 ## Quy cách đóng gói, đơn hàng
 

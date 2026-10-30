@@ -54,7 +54,7 @@ tom_tat:
   - "**Hợp nhất** với máy hay rò rỉ, phải thêm dầu thường xuyên, không cần thay dầu thưa."
   - "**Không dùng** khi hãng bơm (Denison, Eaton) yêu cầu dầu phải được họ chấp thuận: chọn Castrol Hyspin AWS 68."
   - "**Có sẵn tại kho**."
-related_posts: ["huong-dan-chon-do-nhot"]
+related_posts: ["dau-thuy-luc-32-46-68-khac-nhau"]
 tags: ["iso-vg-68", "chong-mai-mon", "caltex"]
 date: "2026-10-12"
 updated: "2026-10-30"
@@ -125,7 +125,7 @@ TDS Chevron công bố bốn cấp. Kho HT VINA hiện chỉ có cấp 68; bản
 | **68** | **520312** | **65 mm²/s** | **8,7 mm²/s** | **240 °C** | **−21 °C** |
 | 100 | 520313 | 99 mm²/s | 11,2 mm²/s | 250 °C | −18 °C |
 
-Cả bốn cấp có chỉ số độ nhớt tối thiểu 95, tức độ nhớt thay đổi theo nhiệt độ ở mức thông thường của dầu gốc khoáng. Ở xưởng miền Bắc, mùa hè thùng dầu dễ lên 50–60 °C; cấp 68 giữ màng dầu dày hơn cấp 46 ở nhiệt độ đó. Chọn cấp theo bảng của nhà sản xuất máy, xem thêm [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
+Cả bốn cấp có chỉ số độ nhớt tối thiểu 95, tức độ nhớt thay đổi theo nhiệt độ ở mức thông thường của dầu gốc khoáng. Ở xưởng miền Bắc, mùa hè thùng dầu dễ lên 50–60 °C; cấp 68 giữ màng dầu dày hơn cấp 46 ở nhiệt độ đó. Chọn cấp theo bảng của nhà sản xuất máy, xem thêm [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
 
 ## Kinh nghiệm từ người sử dụng {#kinh-nghiem}
 

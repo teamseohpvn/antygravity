@@ -61,7 +61,7 @@ tom_tat:
   - "**Có sẵn tại kho**. HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-3", "nlgi-4", "mo-da-dung", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **VHP Opal Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Cấp NLGI 3 còn mang tên **VHP GRE MIL 3**. Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. VHP định hướng mỡ cho đầu trục, ổ bi tải nặng và các cơ cấu chuyển động kín.
@@ -107,6 +107,24 @@ HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 x
 
 > **Nhận định của HT VINA:** Ổ bi kín, tải nặng thì Opal; điểm bôi trơn hở ngoài trời, ven biển thì Caxilium. Cần mỡ đặc ngay thì [VHP Lithium Grease L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) có sẵn xô 17 kg.
 
+## Mở xô thấy dầu nổi trên mặt mỡ: có sao không? {#tach-dau}
+
+Điểm mạnh của Opal là **ít tách dầu** (mẫu NLGI 3 tách 8%, cam kết dưới 18% theo VHP). Dù vậy, khách vẫn hay hỏi khi mở xô thấy một lớp dầu mỏng trên mặt mỡ.
+
+**Ý kiến chuyên gia.** Mục "Sounding Board" trên tạp chí TLT của STLE ([01/2026](https://www.stle.org/files/TLTArchives/2026/01_January/Sounding_Board.aspx)) đăng câu trả lời của nhiều chuyên gia bôi trơn cho đúng câu hỏi này:
+
+- Phần lớn cho rằng **một lượng dầu nhỏ nổi trên mỡ trong ống, xô là bình thường**, nhất là sau thời gian lưu kho dài hoặc khi nhiệt độ thay đổi nhiều. Một số người khó tính hơn coi bất kỳ hiện tượng tách dầu nào cũng là vấn đề chất lượng.
+- Mức chấp nhận được thì mỗi người một khác: có người lấy dưới 1%, nhiều người khoảng 6%, có người dẫn mức 3–5% theo phương pháp ASTM D1742.
+- Đa số khuyên **không chắt bỏ** phần dầu đó mà dùng que sạch trộn lại vào mỡ; nếu dầu tách nhiều đến mức chắt ra được thì nên đánh giá lại lô mỡ và xem lại điều kiện bảo quản.
+
+**Lời khuyên của chúng tôi:**
+
+1. Lớp dầu mỏng trên mặt xô Opal mới mở: dùng que sạch trộn lại, dùng bình thường.
+2. Dầu đọng thành vũng, chắt ra được: báo chúng tôi kèm ảnh và số lô để kiểm tra theo [chính sách đổi trả](/chinh-sach-doi-tra).
+3. Bảo quản xô trong nhà, đậy kín nắp, tránh chỗ nắng chiếu buổi chiều; nóng lạnh thất thường là nguyên nhân chính làm mỡ tách dầu khi lưu kho.
+
+Lưu ý: con số tách dầu 8% của Opal và mức 3–5% các chuyên gia nhắc tới có thể đo theo các phương pháp khác nhau, nên không so trực tiếp được.
+
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
 Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
@@ -127,6 +145,9 @@ Không. Nhiệt độ nhỏ giọt 140 °C và làm việc tới 120 °C là m�
 
 ### Có phiếu chỉ tiêu riêng cho NLGI 4 không?
 Bảng thông số trên trang là của cấp NLGI 3. Nếu cần phiếu chỉ tiêu riêng của cấp NLGI 4, hãy [liên hệ](/contact) để nhận theo lô.
+
+### Mỡ Opal để lâu có bị hỏng không?
+Mỡ lưu kho đúng cách (trong nhà, đậy kín, tránh nắng nóng) giữ chất lượng lâu. Lớp dầu mỏng nổi trên mặt là bình thường, trộn lại trước khi dùng. Xem mục [dầu nổi trên mặt mỡ](#tach-dau).
 
 ## Quy cách đóng gói, đơn hàng
 

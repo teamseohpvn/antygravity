@@ -58,7 +58,7 @@ tom_tat:
   - "**Có sẵn tại kho** (xô 18 kg)."
 tags: ["nlgi-2", "lithium-complex", "mo-chiu-nhiet", "shell-gadus"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Shell Gadus S3 V220C 2** là mỡ chịu nhiệt, chịu cực áp cao cấp của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng **lithium complex**, có **màu đỏ**. Nhiệt độ nhỏ giọt là **240 °C**. Mỡ làm việc liên tục tới **140 °C**, đỉnh tới 150 °C, nên dùng cho các ổ bi chạy nóng, tải nặng và rung mạnh. Tên cũ của dòng này là Shell Albida EP 2 và Shell Retinax LX 2.
@@ -102,6 +102,22 @@ Không. Nhiều nơi quảng cáo mỡ "chịu nhiệt 300 °C" hay "500 °C" d�
 
 > **Nhận định của HT VINA:** Mỡ lithium complex và mỡ lithium thường trộn lẫn với nhau khá ổn. Dù vậy, khi chuyển hẳn sang Gadus S3 cho ổ bi nóng, nên đẩy hết mỡ cũ ra để có đủ khả năng chịu nhiệt.
 
+## Đổi từ Gadus S2 lên S3: có cần rửa sạch mỡ cũ? {#doi-mo}
+
+Khách thường chuyển từ Gadus S2 V220 2 (mỡ **lithium**) sang Gadus S3 V220C 2 (mỡ **lithium complex**) khi ổ bi chạy nóng. Câu hỏi đầu tiên là có phải tháo rửa ổ không.
+
+**Căn cứ kỹ thuật.** Bảng tương thích trong tài liệu ["Grease: its components, consistency and compatibility"](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf) của ExxonMobil (bản 2024) xếp **lithium 12-hydroxy và lithium complex vào nhóm tương thích**. Cũng theo bảng này, lithium complex **không tương thích** với nhôm complex, đất sét và polyurea loại kém bền cắt; Mobil vẫn khuyên thử tương thích trong phòng thí nghiệm trước khi trộn.
+
+**Lời khuyên của chúng tôi:**
+
+1. Từ Gadus S2 sang S3: bơm S3 cho tới khi mỡ mới (màu đỏ) đùn ra ở nút xả là đủ, không bắt buộc tháo rửa.
+2. Từ mỡ chưa rõ loại hoặc mỡ polyurea sang S3: nên tháo rửa ổ.
+3. Sau khi đổi, đo nhiệt độ vỏ ổ trong tuần đầu. Mỡ lithium complex có nhiệt độ nhỏ giọt cao hơn (240 °C theo TDS, so với 180 °C của S2) nhưng không cứu được ổ bị bơm thừa mỡ hoặc lệch tâm.
+
+## Mỡ màu đỏ có phải là mỡ chịu nhiệt? {#mau-mo}
+
+Gadus S3 V220C 2 có màu đỏ, và nhiều người coi "mỡ đỏ" là mỡ chịu nhiệt. Tài liệu của ExxonMobil nói rõ: **thuốc nhuộm, bột màu chỉ tạo màu, không liên quan đến khả năng bôi trơn** của mỡ. Muốn biết mỡ chịu nhiệt tới đâu, hãy đọc nhiệt độ nhỏ giọt và khoảng nhiệt độ làm việc trong TDS, không nhìn màu.
+
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
 Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
@@ -122,6 +138,9 @@ Màu chỉ là chất tạo màu để nhận biết sản phẩm, không quyế
 
 ### Có dùng cho hệ bơm mỡ tự động không?
 Dùng được cho hệ thống ngắn. Shell đánh giá khả năng bơm xa của mỡ này ở mức "trung bình". Với hệ thống bơm mỡ tập trung đường ống dài, hãy hỏi chúng tôi trước khi dùng.
+
+### Gadus S3 và Gadus S2 có trộn với nhau được không?
+Theo bảng tương thích của ExxonMobil, mỡ lithium và lithium complex thuộc nhóm tương thích. Khi đổi từ S2 lên S3, bơm S3 cho tới khi mỡ đỏ đùn ra ở nút xả. Chi tiết ở mục [đổi từ Gadus S2 lên S3](#doi-mo).
 
 ## Quy cách đóng gói, đơn hàng
 

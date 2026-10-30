@@ -35,7 +35,7 @@ Mở sổ tay máy hoặc nhãn trên bồn dầu, ghi lại **cấp độ nhớ
 
 Trên diễn đàn [価格.com](https://bbs.kakaku.com/bbs/-/SortID=25599720/) của Nhật, chủ một máy xúc mini đời cũ kể được thợ quen bảo đổ dầu động cơ vào hệ thủy lực. Người trả lời cho biết chỉ một số máy rất cũ dùng chung dầu động cơ, còn phần lớn máy thì không, và khuyên hỏi hãng máy cho chắc. Trong một thread về máy ép thủy lực mua lại trên [Practical Machinist](https://www.practicalmachinist.com/forum/threads/hydraulic-press-low-pressure.433412/), một thành viên cũng nhấn mạnh phải dùng đúng loại dầu nhà sản xuất máy chỉ định, không đoán.
 
-Phần lớn máy ép nhựa, máy dập ở xưởng miền Bắc dùng **dầu thủy lực 68** loại HM (chống mài mòn) hoặc dầu 46. Nếu sổ tay ghi cả hai cấp, cách chọn theo nhiệt độ dầu trong bồn có trong bài [chọn độ nhớt dầu thủy lực](/ho-tro-ky-thuat/huong-dan-chon-do-nhot). Các mã đang có ở kho xem trong danh mục [dầu thủy lực 68, 46, 32](/dau-thuy-luc).
+Phần lớn máy ép nhựa, máy dập ở xưởng miền Bắc dùng **dầu thủy lực 68** loại HM (chống mài mòn) hoặc dầu 46. Nếu sổ tay ghi cả hai cấp, cách chọn theo nhiệt độ dầu trong bồn có trong bài [chọn độ nhớt dầu thủy lực](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau). Các mã đang có ở kho xem trong danh mục [dầu thủy lực 68, 46, 32](/dau-thuy-luc).
 
 ### Tính số dầu cần mua
 

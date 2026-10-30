@@ -59,7 +59,7 @@ tom_tat:
   - "**Chọn mã này khi** hướng dẫn sử dụng của máy hoặc hãng bơm yêu cầu dầu được Parker Denison (HF-0/HF-1/HF-2) hay Eaton chấp thuận."
   - "**Không dùng** cho bơm yêu cầu dầu không kẽm, hoặc máy ngoài trời lạnh cần dầu HV."
   - "**Thay dầu theo kết quả đo** (độ nhớt, trị số axit, nước). Mức cụ thể ở mục \"Khi nào cần thay dầu?\"."
-related_posts: ["huong-dan-chon-do-nhot"]
+related_posts: ["dau-thuy-luc-32-46-68-khac-nhau"]
 tags: ["iso-vg-68", "chong-mai-mon", "goc-kem"]
 date: "2026-09-21"
 updated: "2026-10-14"
@@ -105,7 +105,7 @@ Nếu chưa chắc hướng dẫn sử dụng của máy ghi gì, bạn cứ ch�
 
 Chọn cấp 68 khi hướng dẫn sử dụng của máy yêu cầu ISO VG 68, hoặc khi dầu trong thùng thường xuyên nóng trên 55–60 °C. Nói chung với máy móc làm việc ngoài trời trong điều kiện khí hậu nhiệt đới của Việt Nam, hoặc trong các nhà xưởng có nhiệt độ đặc thù cao (như nhà máy gạch, xưởng đúc, rèn, gia công cơ khí, ép đùn nhựa định hình...). Ngược lại với các máy móc chạy ở các nước xứ lạnh thường dùng cấp 46 đảm bảo độ nhớt khi nhiệt độ xuống thấp.
 
-> **Nhận định của HT VINA:** Trường hợp hay gặp nhất ở miền Bắc là máy ép nhựa và máy ép thủy lực chạy hai, ba ca trong nhà xưởng, và với những máy này thì cấp 68 hợp hơn. Cách chọn chi tiết có trong bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
+> **Nhận định của HT VINA:** Trường hợp hay gặp nhất ở miền Bắc là máy ép nhựa và máy ép thủy lực chạy hai, ba ca trong nhà xưởng, và với những máy này thì cấp 68 hợp hơn. Cách chọn chi tiết có trong bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
 
 ## Hyspin AWS 68 hay ENEOS Super Hyrando 68?
 

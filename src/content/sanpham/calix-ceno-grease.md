@@ -61,7 +61,7 @@ tom_tat:
   - "**Có sẵn phuy 180 kg** tại kho Hải Phòng."
 tags: ["nlgi-3", "mo-canxi", "mo-da-dung", "calix"]
 date: "2026-10-06"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Calix Ceno No3** là mỡ nhờn công nghiệp đa dụng mang thương hiệu Calix, do Công ty TNHH SXTM La Thu So nhập khẩu và phân phối. Mỡ pha từ dầu khoáng tinh luyện, chất làm đặc canxi tổng hợp, phụ gia chống oxy hóa và chống gỉ. Bảng chỉ tiêu của hãng theo các phương pháp thử GOST.
@@ -101,6 +101,26 @@ Hai mã cùng có sẵn tại kho, cùng cấp đặc No3:
 
 > **Nhận định của HT VINA:** Máy xây dựng, máy mỏ bơm mỡ hằng ngày cho nhiều chốt, bản lề thì phuy Ceno No3 kinh tế. Chỗ hay dính nước, hơi nóng hơn, hoặc tổ bảo trì cần ống 400 g lắp súng mỡ cho sạch thì chọn Licas.
 
+## Đổi từ mỡ khác sang mỡ canxi: trộn lẫn có sao không? {#tron-mo}
+
+Calix Ceno No3 là **mỡ canxi**. Trong khi đó, phần lớn mỡ bò đang dùng ở các xưởng là mỡ lithium hoặc lithium-canxi. Khi đổi sang Ceno, mỡ mới sẽ trộn với phần mỡ cũ còn trong ổ, nên cần biết hai loại có hợp nhau không.
+
+**Căn cứ kỹ thuật.** Tài liệu ["Grease: its components, consistency and compatibility"](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf) của ExxonMobil (bản 2024) giải thích: mỡ không tương thích là do chất làm đặc hoặc hệ phụ gia của hai loại phản ứng với nhau; hỗn hợp sẽ **cứng lại hoặc nhão ra bất thường**, và hiện tượng này càng rõ khi nhiệt độ càng cao, tốc độ càng lớn; mỡ không hợp còn dễ **tách dầu** khi nóng. Theo bảng tương thích trong tài liệu, với mỡ canxi:
+
+| Mỡ đang dùng | Trộn với mỡ canxi (theo bảng Mobil) |
+| :--- | :--- |
+| Canxi 12-hydroxy, lithium complex, canxi sulfonat, polyurea loại bền cắt | Tương thích |
+| Lithium 12-hydroxy (mỡ lithium thông thường), đất sét | Gần tương thích, cần thận trọng |
+| Nhôm complex, bari, canxi complex, polyurea loại kém bền cắt | Không tương thích |
+
+Mobil vẫn ghi chú: **luôn nên thử tương thích trong phòng thí nghiệm** trước khi trộn, vì bảng chỉ là hướng dẫn chung.
+
+**Lời khuyên của chúng tôi:**
+
+1. Điểm bôi trơn hở (chốt, bản lề, ổ trượt chậm), nơi Ceno được dùng nhiều nhất: lau sạch mỡ cũ ở bề mặt rồi bơm mỡ mới cho tới khi mỡ mới đẩy hết mỡ cũ ra ngoài.
+2. Ổ bi kín: nếu mỡ cũ là lithium thông thường, nên tháo rửa ổ khi đổi sang Ceno, hoặc tiếp tục dùng loại mỡ cũ. Đừng chỉ bơm thêm mỡ canxi vào.
+3. Theo dõi điểm bôi trơn vài ngày đầu sau khi đổi: mỡ chảy nhão, loang dầu quanh ổ là dấu hiệu hai loại không hợp.
+
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
 Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
@@ -121,6 +141,9 @@ Không. Dù nằm trong nhóm "mỡ chịu nhiệt vừa" trên web hãng, nhi�
 
 ### Có dùng Ceno No3 cho vòng bi động cơ điện được không?
 Không nên. Vòng bi động cơ điện quay nhanh và nóng hơn mức làm việc của mỡ canxi. Nên dùng mỡ lithium NLGI 2 hoặc 3.
+
+### Mỡ canxi Calix có trộn với mỡ lithium được không?
+Theo bảng tương thích của ExxonMobil, mỡ canxi với mỡ lithium thông thường (lithium 12-hydroxy) chỉ ở mức "gần tương thích". Khi đổi loại, nên đẩy hết mỡ cũ ra hoặc tháo rửa ổ, không chỉ bơm bù lên mỡ cũ. Chi tiết ở mục [trộn lẫn có sao không](#tron-mo).
 
 ## Quy cách đóng gói, đơn hàng
 

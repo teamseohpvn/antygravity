@@ -19,6 +19,7 @@ specs:
   - { name: "Đại lượng đo", value: "Thời gian chảy (giây) × hằng số ống = độ nhớt động học (mm²/s)" }
   - { name: "Phụ kiện cần thêm", value: "Bể ổn nhiệt, nhiệt kế, đồng hồ bấm giây, quả bóp cao su" }
 
+sku: "378-200-C02"
 stock_status: "dat-hang"
 applications:
   - "Đo độ nhớt dầu bánh răng, dầu tuần hoàn, dầu thủy lực đã qua sử dụng tại phòng thí nghiệm của nhà máy"
@@ -44,7 +45,7 @@ tom_tat:
 related_posts: ["huong-dan-test-chat-luong-dau"]
 tags: ["thiet-bi-do", "do-nhot"]
 date: "2026-10-06"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Nhớt kế thủy tinh mao quản ống 3,5 mm** là dụng cụ đo **độ nhớt động học** theo nguyên lý của phép thử ASTM D445 (tương đương TCVN 3171). Mẫu dầu chảy qua một ống mao quản dưới tác dụng của trọng lực. Người đo bấm giờ thời gian dầu chảy giữa hai vạch, rồi nhân với hằng số của ống để ra độ nhớt tính bằng mm²/s (cSt).
@@ -73,6 +74,32 @@ updated: "2026-10-14"
 5. **Bấm giờ** từ lúc mặt dầu qua vạch trên đến lúc qua vạch dưới. Đo hai lần, hai kết quả phải gần nhau.
 6. **Tính độ nhớt:** độ nhớt (mm²/s) = hằng số ống (ghi trên phiếu hiệu chuẩn) × thời gian chảy (giây).
 
+## Chọn cỡ ống theo độ nhớt dầu cần đo {#chon-ong}
+
+Nhớt kế mao quản đo chính xác nhất khi độ nhớt của mẫu nằm **gần giữa dải đo** của ống. Hướng dẫn sử dụng nhớt kế Cannon-Fenske của nhà sản xuất [Ace Glass](https://my.che.utah.edu/~tony/chen4903/equipment/A_Viscometers/SOP3_Cannon-Fenske_Viscometer.pdf) đưa ví dụ: mẫu khoảng 100 mm²/s đo bằng ống cỡ 300 (dải 50–250) sẽ chính xác hơn ống cỡ 200 (dải 20–100) hay cỡ 350 (dải 100–500). Một phần bảng chọn ống trong tài liệu:
+
+| Cỡ ống Cannon-Fenske | Hằng số gần đúng (mm²/s mỗi giây) | Dải đo (mm²/s) | Hợp với dầu (đo ở 40 °C) |
+| :--- | :--- | :--- | :--- |
+| 100 | 0,015 | 3–15 | Dầu máy may, dầu trục chính |
+| 150 | 0,035 | 7–35 | Dầu thủy lực VG 15–32 |
+| 200 | 0,1 | 20–100 | Dầu thủy lực VG 32–68 |
+| 300 | 0,25 | 50–250 | Dầu VG 68–220 |
+| 350 | 0,5 | 100–500 | Dầu bánh răng VG 150–460 |
+| 400 | 1,2 | 240–1.200 | Dầu bánh răng VG 320–1.000 |
+
+Cách gọi "ống 3,5 mm" trên trang này là theo đường kính mao quản, khác cách đánh số cỡ của Cannon-Fenske. Khi đặt hàng, hãy báo dầu cần đo để chúng tôi chọn đúng ống. Hằng số của từng ống là riêng, ghi trên phiếu hiệu chuẩn đi kèm; hằng số trong bảng trên chỉ là giá trị gần đúng.
+
+**Ví dụ:** đo dầu thủy lực 68 bằng ống cỡ 200 (hằng số khoảng 0,1), thời gian chảy sẽ khoảng 680 giây; bằng ống cỡ 300 (hằng số khoảng 0,25), khoảng 270 giây.
+
+## Mẹo khi đo dầu đã qua sử dụng {#dau-cu}
+
+Theo cùng tài liệu của Ace Glass:
+
+- **Chờ ít nhất 10 phút** sau khi đặt ống vào bể ổn nhiệt để mẫu đạt nhiệt độ và bọt khí tách ra.
+- **Không nạp quá nhiều hoặc quá ít** mẫu: lượng mẫu sai làm kết quả sai, vì hằng số ống chỉ đúng với lượng mẫu chuẩn.
+- **Mẫu đục, sẫm màu** (dầu đã dùng lâu thường như vậy): cần đèn chiếu phụ để nhìn rõ mặt dầu đi qua vạch, hoặc dùng loại nhớt kế chảy ngược (reverse flow).
+- Mẫu có xơ, bụi: lọc qua lưới mịn trước khi nạp.
+
 ## Đọc kết quả thế nào?
 
 So độ nhớt đo được với độ nhớt của **dầu mới cùng mã**. Với dầu công nghiệp, mức lệch **trên ±10%** so với dầu mới là dấu hiệu cần kiểm tra kỹ hơn hoặc lên kế hoạch thay dầu. Ví dụ dầu VG 220 mới đo 220 mm²/s, khi mẫu đang dùng ra dưới 198 hoặc trên 242 mm²/s thì cần xem lại. Ý nghĩa của độ nhớt tăng và độ nhớt giảm được giải thích trong bài [hướng dẫn kiểm tra chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
@@ -86,6 +113,9 @@ Có. Mỗi ống có hằng số riêng, ghi trên phiếu hiệu chuẩn đi k�
 
 ### Đo ở nhiệt độ phòng được không?
 Được, nếu chỉ để so sánh mẫu dầu đang dùng với dầu mới đo cùng lúc, cùng nhiệt độ. Muốn so với con số trên TDS thì phải đo ở đúng 40 °C (hoặc 100 °C với dầu động cơ).
+
+### Dầu đen quá, không nhìn thấy vạch trên ống thì làm sao?
+Chiếu đèn phụ từ phía sau ống để thấy rõ mặt dầu, hoặc dùng loại nhớt kế chảy ngược dành cho mẫu đục. Xem mục [mẹo khi đo dầu đã qua sử dụng](#dau-cu).
 
 ## Quy cách và cách đặt mua
 

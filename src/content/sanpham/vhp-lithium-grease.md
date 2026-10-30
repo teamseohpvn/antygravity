@@ -62,7 +62,7 @@ tom_tat:
   - "**Có sẵn L4 xô 17 kg**; các cấp khác nhận đặt. HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-3", "nlgi-4", "nlgi-00", "mo-lithium", "mo-da-dung", "vhp"]
 date: "2026-10-06"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **VHP Lithium Grease** là mỡ bôi trơn đa dụng gốc lithium do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Mỡ dùng dầu gốc khoáng có độ nhớt 220 cSt ở 40 °C, kèm phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Với cấp L3 và L4, nhiệt độ nhỏ giọt tối thiểu là 190 °C.
@@ -108,10 +108,27 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Ph
 | Chất làm đặc | Lithium | Lithium hydroxystearate |
 | Dầu gốc ở 40 °C | 220 cSt | 220 cSt |
 | Nhiệt độ nhỏ giọt | Tối thiểu 190 °C | 180 °C |
-| Tải 4 bi | 200 kg | 315 kg (chịu cực áp) |
+| Tải 4 bi | 200 kg | Có phụ gia cực áp (TDS Shell Việt Nam không ghi số) |
 | Nhiệt độ làm việc | −10 đến 120 °C | −20 đến 130 °C |
 
 > **Nhận định của HT VINA:** Ổ bi tải thường thì Lithium Grease đủ dùng. Ổ bi băng tải, sàng rung, máy nghiền chịu tải va đập thì mỡ chịu cực áp như Gadus S2 bảo vệ tốt hơn.
+
+## L00, L0 cho hệ bơm mỡ tập trung: vì sao phải dùng mỡ loãng? {#tap-trung}
+
+Lithium Grease có bốn cấp, trong đó **L00 và L0 là mỡ bán lỏng**, gần như chỉ dùng cho hệ bơm mỡ tập trung (máy ép, máy công trình, dây chuyền có bơm mỡ tự động qua đường ống nhỏ).
+
+**Căn cứ kỹ thuật.** Theo tài liệu ["Grease: its components, consistency and compatibility"](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf) của ExxonMobil (bản 2024), độ đặc của mỡ được đo bằng độ xuyên kim theo ASTM D217 ở 25 °C và xếp theo thang NLGI **từ 000 (bán lỏng) tới 6 (mỡ khối)**. Độ đặc do **tỷ lệ dầu gốc và chất làm đặc** quyết định, không phải do độ nhớt dầu gốc.
+
+**Lời khuyên của chúng tôi:**
+
+| Hệ thống | Cấp nên dùng | Vì sao |
+| :--- | :--- | :--- |
+| Hệ bơm mỡ tập trung đường ống dài, nhiều điểm chia | L00 hoặc L0 theo hướng dẫn của hãng hệ thống | Mỡ đặc không đi hết đường ống, điểm cuối dễ thiếu mỡ, bộ chia dễ kẹt |
+| Hộp số nhỏ bôi trơn bằng mỡ bán lỏng | L00 | Mỡ chảy về lại bánh răng |
+| Vòng bi động cơ, quạt (bơm bằng súng) | L3 | Đủ đặc để nằm yên trong ổ |
+| Ổ bi lớn tốc độ chậm, chỗ rung mạnh | L4 (có sẵn xô 17 kg) | Rất đặc, khó văng ra |
+
+Không đổ mỡ L3 vào bơm của hệ tập trung chỉ vì "mỡ đặc bền hơn": bơm báo quá áp, đường ống ở xa không có mỡ. Ngược lại, đừng dùng L00 bơm bằng súng vào ổ bi hở, mỡ sẽ chảy ra ngoài.
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
@@ -136,6 +153,9 @@ L00 lỏng hơn L0 và chảy gần giống dầu bánh răng đặc. L00 hợp 
 
 ### Có trộn mỡ lithium với mỡ đang dùng được không?
 Mỡ lithium thường trộn được với mỡ lithium hoặc lithium-canxi khác. Tuy vậy, khi đổi loại mỡ, nên bơm đẩy hết mỡ cũ ra khỏi ổ bi. Không trộn với mỡ gốc sét hoặc polyurea khi chưa kiểm tra.
+
+### Hệ bơm mỡ tự động của máy ép dùng mỡ lithium cấp nào?
+Theo cấp ghi trong tài liệu của hãng hệ thống bơm mỡ, thường là NLGI 00 hoặc 0. VHP Lithium Grease có L00 và L0 (nhận đặt). Xem mục [mỡ cho hệ bơm mỡ tập trung](#tap-trung).
 
 ## Quy cách đóng gói, đơn hàng
 

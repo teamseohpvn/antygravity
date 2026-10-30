@@ -64,7 +64,7 @@ tom_tat:
   - "**Có sẵn tại kho** (phuy 180 kg). HT VINA là đại lý dầu mỡ VHP."
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "khang-nuoc", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **VHP Caxilium Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. Mỡ được làm cho những chỗ bôi trơn hở, hay gặp nước và nước muối. Cấp No2 sản xuất theo tiêu chuẩn cơ sở TCCS 52:2023/VHP.
@@ -111,6 +111,27 @@ VHP công bố bảng chỉ tiêu cho cấp No2. Nếu cần phiếu kiểm nghi
 
 > **Nhận định của HT VINA:** Thiết bị ven biển, trên tàu, hay ngập nước muối thì đặt Caxilium. Điểm bôi trơn ngoài trời thông thường cần mỡ ngay thì Licas có sẵn và có thêm xô, ống 400 g tiện cho xưởng dùng ít.
 
+## Nơi có nước, mưa, nước muối: mỡ nào giữ được? {#chiu-nuoc}
+
+Caxilium là mỡ **lithium-canxi**, được VHP giới thiệu cho nơi gặp mưa, nước rửa, nước muối. Câu hỏi hay gặp: mỡ "chịu nước" khác mỡ thường ở đâu, và có cần mua mỡ "hàng hải" đắt tiền không.
+
+**Người dùng chia sẻ.** Trên diễn đàn [BobIsTheOilGuy](https://bobistheoilguy.com/forums/threads/whats-so-special-about-marine-grease.348283/) (11/2021), chủ một rơ-moóc chạy đường lầy, lội suối hỏi mỡ "hàng hải" có gì đặc biệt. Một số ý trả lời:
+
+- Một thành viên kể: vòng bi ngâm nước mà mỡ thường **đổi màu, hút nước, mất khả năng bôi trơn và chống gỉ**; còn mỡ chịu nước thì nước **tách riêng**, mỡ giữ nguyên màu và tác dụng. Theo anh, khác biệt "như ngày và đêm" với ổ bi thực sự bị nước vào.
+- Một quản trị viên cho rằng mỡ hàng hải thường gốc canxi, chống rửa trôi tốt hơn; mỡ lithium cũng chống rửa trôi khá.
+- Một thành viên khác lưu ý ion natri trong nước biển (và cả nước mưa có muối rắc đường) làm hỏng nhiều loại mỡ, và khuyên xem kết quả thử gỉ ổ bi trong nước biển theo ASTM D6138 nếu dùng ở môi trường nước mặn.
+- Thành viên đó cũng kể loại mỡ chống nước tốt nhất anh từng thấy lại **khó bơm**, nên chỉ được bán cho các điểm bôi trơn tra bằng tay.
+
+**Lời khuyên của chúng tôi:**
+
+| Vị trí | Gợi ý |
+| :--- | :--- |
+| Đầu trục, chốt, bánh răng hở ngoài trời, gặp mưa | Caxilium No3 |
+| Vú mỡ bơm bằng súng, ổ bi gặp nước rửa | Caxilium No2 (mềm hơn, dễ bơm hơn) |
+| Ổ bi ngâm nước biển thường xuyên | Hỏi thêm kết quả thử gỉ trong nước biển trước khi chọn; mỡ gốc lithium-canxi chưa chắc đủ |
+
+Dù mỡ chịu nước đến đâu, sau mỗi đợt ngập hoặc rửa áp lực cao, hãy bơm bù cho tới khi mỡ mới đẩy được mỡ cũ (có lẫn nước) ra ngoài.
+
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
 Chu kỳ bơm mỡ phụ thuộc tốc độ, kích thước, nhiệt độ ổ bi và môi trường bụi, nước. Theo tài liệu hướng dẫn sử dụng kèm theo máy là chính; ngoài ra, các dấu hiệu sau cho thấy cần bơm bù hoặc thay mỡ sớm hơn:
@@ -131,6 +152,9 @@ Không bơm quá nhiều: ổ bi đầy mỡ chạy nóng hơn. Ổ bi động c
 
 ### Caxilium có phải mỡ chịu nhiệt không?
 Không. Nhiệt độ nhỏ giọt 141 °C và làm việc tới 110 °C là mức của mỡ đa dụng. Ổ bi nóng trên 120 °C cần [mỡ chịu nhiệt](/mo-chiu-nhiet).
+
+### Mỡ chịu nước có cần bơm bù sau khi rửa xe, rửa máy không?
+Có. Nước áp lực cao vẫn đẩy một phần mỡ ra và lọt vào ổ. Sau khi rửa, bơm bù tới khi thấy mỡ mới đùn ra để đẩy phần mỡ lẫn nước ra ngoài.
 
 ## Quy cách đóng gói, đơn hàng
 
