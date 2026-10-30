@@ -121,6 +121,6 @@ Châm một lượng nhỏ cùng hãng, cùng loại (cùng HM) thì không gây
 Nên xả hết dầu cũ và thay lõi lọc. Nếu dầu cũ đã bẩn hoặc đổi cả hãng, súc rửa một lượt bằng dầu mới rồi mới nạp đầy.
 
 ### Dầu thủy lực 32 dùng khi nào?
-Khi hướng dẫn sử dụng ghi 32: thường là máy công cụ, máy CNC, xe nâng, hệ thủy lực nhỏ hoặc làm việc ở nơi lạnh. Kho HT VINA hiện chủ yếu có cấp 68 và một số mã cấp 46; cấp 32 nhận đặt theo yêu cầu, [gửi yêu cầu báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c%2032) kèm tên máy.
+Khi hướng dẫn sử dụng ghi 32: thường là máy công cụ, máy CNC, xe nâng, hệ thủy lực nhỏ hoặc làm việc ở nơi lạnh. Kho HT VINA hiện chủ yếu có cấp 68 và một số mã cấp 46; cấp 32 đặt theo yêu cầu riêng, [gửi yêu cầu báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c%2032) kèm tên máy.
 
 Xem khoảng giá các mã dầu thủy lực đang có tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) hoặc toàn bộ danh mục [dầu thủy lực](/dau-thuy-luc).

@@ -58,7 +58,7 @@ Số trong bảng là **giá trị điển hình hoặc giá trị cam kết** g
 
 | Mã mỡ | Chất làm đặc | Cấp NLGI | Dầu gốc ở 40 °C | Nhiệt độ nhỏ giọt | Nhiệt độ làm việc | Tải hàn dính 4 bi | Có sẵn tại kho |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) | Lithium | 2 | 220 cSt | 180 °C | -20 đến 130 °C | 315 kg | Xô 18 kg |
+| [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) | Lithium | 2 | 220 cSt | 180 °C | -20 đến 130 °C | Có phụ gia EP (TDS không ghi số) | Xô 18 kg |
 | [ENEOS Epnoc Grease AP(N)](/mo-boi-tron-cong-nghiep/eneos-epnoc-ap) | Lithium | 0 / 1 / 2 / 3 | – | 195–203 °C | -20 đến 125 °C | 3.090 N (≈ 315 kg) | Can |
 | [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) | Lithium | 00 / 0 / 3 / 4 | 220 cSt | ≥ 190 °C | -10 đến 120 °C | 200 kg | L4 xô 17 kg (cấp khác nhận đặt) |
 | [VHP Licas Grease](/mo-boi-tron-cong-nghiep/licas-grease) | Lithium-canxi | 2 / 3 | 150 cSt | ≥ 130 °C | -10 đến 110 °C | 180 kg | No3 thùng 30 ống 400 g |

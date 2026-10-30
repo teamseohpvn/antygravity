@@ -108,7 +108,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Ph
 | Chất làm đặc | Lithium | Lithium hydroxystearate |
 | Dầu gốc ở 40 °C | 220 cSt | 220 cSt |
 | Nhiệt độ nhỏ giọt | Tối thiểu 190 °C | 180 °C |
-| Tải 4 bi | 200 kg | 315 kg (chịu cực áp) |
+| Tải 4 bi | 200 kg | Có phụ gia cực áp (TDS Shell Việt Nam không ghi số) |
 | Nhiệt độ làm việc | −10 đến 120 °C | −20 đến 130 °C |
 
 > **Nhận định của HT VINA:** Ổ bi tải thường thì Lithium Grease đủ dùng. Ổ bi băng tải, sàng rung, máy nghiền chịu tải va đập thì mỡ chịu cực áp như Gadus S2 bảo vệ tốt hơn.

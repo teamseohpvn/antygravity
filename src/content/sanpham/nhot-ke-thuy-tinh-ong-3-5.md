@@ -19,6 +19,7 @@ specs:
   - { name: "Đại lượng đo", value: "Thời gian chảy (giây) × hằng số ống = độ nhớt động học (mm²/s)" }
   - { name: "Phụ kiện cần thêm", value: "Bể ổn nhiệt, nhiệt kế, đồng hồ bấm giây, quả bóp cao su" }
 
+sku: "378-200-C02"
 stock_status: "dat-hang"
 applications:
   - "Đo độ nhớt dầu bánh răng, dầu tuần hoàn, dầu thủy lực đã qua sử dụng tại phòng thí nghiệm của nhà máy"

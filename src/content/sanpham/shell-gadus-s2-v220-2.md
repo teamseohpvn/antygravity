@@ -19,9 +19,9 @@ specs:
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "19 cSt", method: "ASTM D445" }
   - { name: "Độ xuyên kim sau giã ở 25 °C", value: "265–295 (0,1 mm)", method: "ASTM D217" }
   - { name: "Nhiệt độ nhỏ giọt", value: "180 °C", method: "IP 396" }
-  - { name: "Tải hàn dính 4 bi", value: "315 kg", method: "ASTM D2596" }
   - { name: "Nhiệt độ làm việc khuyến nghị", value: "-20 °C đến 130 °C" }
-tds_date: "10/2026"
+tds_date: "TDS Shell Việt Nam (tờ giới thiệu sản phẩm tiếng Việt) v3.1, 03/07/2016"
+tds_url: "/tai-lieu/tds/shell-gadus-s2-v220-2.pdf"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
@@ -52,7 +52,7 @@ images:
 doc_gia: "Trang này dành cho nhà máy cần mỡ lithium chịu cực áp cho ổ bi băng tải, sàng rung, máy nghiền và xe vận tải."
 tom_tat:
   - "**Dùng được** cho vòng bi, ổ trượt, bản lề chịu tải nặng và va đập, làm việc từ −20 °C đến 130 °C."
-  - "**Chịu cực áp**: tải hàn dính 4 bi 315 kg; tên cũ Shell Alvania EP(LF) 2, Retinax EP 2."
+  - "**Chịu cực áp** (có phụ gia EP theo TDS Shell); tên cũ Shell Alvania EP(LF) 2, Retinax EP 2."
   - "**Ổ bi nóng gần 130 °C** hoặc gần lò, máy sấy thì chọn Gadus S3 V220C 2 (lithium complex)."
   - "**Có sẵn tại kho** (xô 18 kg)."
 tags: ["nlgi-2", "mo-lithium", "chiu-cuc-ap", "shell-gadus"]
@@ -78,7 +78,7 @@ Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VA
 
 [Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS của Shell.
 
-- **Chịu tải nặng và tải va đập.** Phụ gia cực áp giữ màng mỡ khi tải lớn hoặc va đập. Tải hàn dính 4 bi đạt 315 kg.
+- **Chịu tải nặng và tải va đập.** Phụ gia cực áp giữ màng mỡ khi tải lớn hoặc va đập.
 - **Bền cơ học.** Mỡ ít bị chảy mềm khi rung, nên ít rò rỉ khỏi ổ bi trên sàng rung, băng tải, máy nghiền.
 - **Chống rửa trôi bởi nước, chống ăn mòn.** Bảo vệ bề mặt ổ bi ngay cả khi lẫn nhiều nước.
 - **Dầu gốc độ nhớt 220 cSt.** Màng dầu dày, phù hợp ổ bi tốc độ thấp và trung bình, tải nặng.
@@ -96,7 +96,7 @@ Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VA
 
 ## Gadus S2 hay mỡ lithium VHP?
 
-[VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) cùng gốc lithium, cùng dầu gốc 220 cSt, có sẵn cấp L4 xô 17 kg. Khác biệt chính: Gadus S2 có phụ gia cực áp (4 bi 315 kg so với 200 kg của VHP).
+[VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) cùng gốc lithium, cùng dầu gốc 220 cSt, có sẵn cấp L4 xô 17 kg. Khác biệt chính: Gadus S2 có phụ gia cực áp theo TDS Shell; TDS Shell Việt Nam không ghi tải 4 bi nên không so được bằng số với mức 200 kg của VHP.
 
 > **Nhận định của HT VINA:** Ổ bi tải thường cần mỡ ngay thì dùng VHP Lithium Grease có sẵn. Ổ bi chịu va đập (sàng rung, máy nghiền) nên đặt Gadus S2 để có phụ gia cực áp.
 
