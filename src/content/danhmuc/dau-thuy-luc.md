@@ -102,4 +102,4 @@ Châm bổ sung một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng c�
 
 ---
 
-**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot) · [Top 6 hãng dầu thủy lực](/top-6-dau-thuy-luc-2026) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot)
+**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau) · [Top 6 hãng dầu thủy lực](/top-6-dau-thuy-luc-2026) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot)

@@ -56,7 +56,7 @@ tom_tat:
   - "**Chọn bản SE 68** nếu nhà sản xuất bơm hoặc van yêu cầu dầu không kẽm."
   - "**Chọn mã được hãng bơm chấp thuận** nếu tài liệu hướng dẫn sử dụng kèm theo máy bắt buộc dầu được Parker Denison hay Eaton chấp thuận (Super Hyrando không công bố điều này)."
   - "**Thay dầu theo kết quả đo** (độ nhớt, trị số axit, nước), không theo lịch cố định. Mức cụ thể ở mục \"Khi nào cần thay dầu\"."
-related_posts: ["huong-dan-chon-do-nhot"]
+related_posts: ["dau-thuy-luc-32-46-68-khac-nhau"]
 tags: ["iso-vg-68", "iso-vg-46", "chong-mai-mon", "eneos"]
 reviewed_by: "nguyen-thiet-lap"
 date: "2026-10-06"
@@ -99,7 +99,7 @@ Cứ dùng đúng cấp hướng dẫn sử dụng của máy ghi. Trường h�
 
 Người dùng máy công trình cũng chọn theo cách này. Trên [Heavy Equipment Forums](https://www.heavyequipmentforums.com/threads/iso-46-or-iso-68-hydraulic-fluid.107106/), hướng dẫn sử dụng của một máy xúc mini ghi ISO 46 cho thời tiết mát và ISO 68 cho thời tiết nóng; một thành viên lâu năm nhận xét dầu 68 thường được dùng ở vùng khí hậu cận nhiệt đới, mà mùa hè nóng ẩm ở miền Bắc cũng gần với điều kiện đó.
 
-> **Nhận định của HT VINA:** Ở xưởng miền Bắc, nếu dầu trong thùng thường xuyên trên 55 °C thì chúng tôi khuyên dùng 68, trừ khi hướng dẫn sử dụng của máy ghi khác. Cách chọn chi tiết theo loại bơm và nhiệt độ có trong bài [hướng dẫn chọn cấp độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
+> **Nhận định của HT VINA:** Ở xưởng miền Bắc, nếu dầu trong thùng thường xuyên trên 55 °C thì chúng tôi khuyên dùng 68, trừ khi hướng dẫn sử dụng của máy ghi khác. Cách chọn chi tiết theo loại bơm và nhiệt độ có trong bài [hướng dẫn chọn cấp độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
 
 ## Bản thường hay bản SE?
 

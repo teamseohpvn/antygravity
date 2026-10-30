@@ -97,7 +97,7 @@ Cấp **68** (phuy 200 L, can 18 L) và cấp **32** (phuy 200 L, xô 18 L) **nh
 | Isonas AW 32 | 32 cSt | 105 | 220 °C | Máy công cụ, hệ thủy lực chính xác, máy chạy trong xưởng mát |
 | Isonas AW 68 | 68 cSt | 105 | 230 °C | Máy ép nhựa, máy ép thủy lực, máy xúc, thùng dầu nóng |
 
-VHP cũng sản xuất cấp 46 và 100. Luôn theo cấp độ nhớt ghi trong hướng dẫn sử dụng của máy. Cách chọn chi tiết xem bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
+VHP cũng sản xuất cấp 46 và 100. Luôn theo cấp độ nhớt ghi trong hướng dẫn sử dụng của máy. Cách chọn chi tiết xem bài [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
 
 ## Isonas AW hay Spinax AW của VHP?
 

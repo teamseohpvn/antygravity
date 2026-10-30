@@ -148,7 +148,7 @@ Nói ngắn gọn: dầu HV hợp với máy phải nổ máy lúc trời lạnh
 **Lời khuyên của chúng tôi:**
 - Hãng máy **chỉ ghi VG 46** (Komatsu, Hitachi): giữ dầu 46. Nếu mùa hè đồng hồ nhiệt độ dầu thường xuyên lên quá 80 °C, hãy vệ sinh két làm mát, kiểm tra quạt và van an toàn trước. Đổi sang dầu đặc hơn chỉ che đi nguyên nhân.
 - Hãng máy **có cấp VG 68** trong bảng dầu (Hyundai, Putzmeister, hay máy có ghi ISO VG 68 như trong bảng tư vấn ở trên): mùa hè miền Bắc và máy chạy nặng nên chọn dầu 68.
-- Không trộn 46 với 68 để "lấy cấp ở giữa". Cách chọn độ nhớt cho các loại máy khác có trong bài [chọn độ nhớt dầu thủy lực 32, 46 hay 68](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
+- Không trộn 46 với 68 để "lấy cấp ở giữa". Cách chọn độ nhớt cho các loại máy khác có trong bài [chọn độ nhớt dầu thủy lực 32, 46 hay 68](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
 
 ## Các mã dầu thủy lực có sẵn tại kho cho máy công trình {#co-san}
 
@@ -228,7 +228,7 @@ Tùy điều khoản bảo hành của từng hãng và đại lý. Hyundai cho 
 
 - [Dầu thủy lực 68, 46, 32 có sẵn tại kho](/dau-thuy-luc)
 - [Báo giá dầu thủy lực](/bao-gia-dau-thuy-luc)
-- [Chọn độ nhớt dầu thủy lực: 32, 46 hay 68](/ho-tro-ky-thuat/huong-dan-chon-do-nhot)
+- [Chọn độ nhớt dầu thủy lực: 32, 46 hay 68](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau)
 - [Hướng dẫn thay dầu thủy lực đúng cách](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc)
 - [Dầu động cơ diesel cho máy công trình](/dau-dong-co-diesel)
 - [Dầu cầu, dầu hộp số cho xe tải, máy công trình](/dau-cau-hop-so)
