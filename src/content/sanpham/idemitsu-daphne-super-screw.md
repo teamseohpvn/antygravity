@@ -59,7 +59,7 @@ tom_tat:
   - "**Có sẵn tại kho** (thùng 20 L)."
 tags: ["iso-vg-32", "iso-vg-46", "may-nen-khi-truc-vit", "idemitsu"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Idemitsu Daphne Super Screw** là dầu chuyên dùng cho **máy nén khí trục vít ngâm dầu**. Dầu dùng **dầu gốc paraffin hydro hóa, biến tính**, kết hợp phụ gia chống oxy hóa nhiệt độ cao, chất khử hoạt tính đồng, chống gỉ và chống bọt. Dầu chịu được các tác nhân hay làm hỏng dầu máy nén khí trong nhà xưởng: sương dầu cắt gọt, dầu cũ còn sót lại và bụi bẩn lọt vào từ bên ngoài.
@@ -95,6 +95,23 @@ Theo khuyến cáo của nhà sản xuất máy nén khí. Phần lớn máy tr�
 
 > **Nhận định của HT VINA:** Xưởng đang dùng Daphne thì đặt tiếp đúng mã và đúng cấp. Máy yêu cầu VG 32 cần dầu ngay thì dùng Faircol RA 32; khi đổi mã, xả hết dầu cũ, thay lọc dầu và lọc tách.
 
+## Vì sao chỉ số RBOT quan trọng với máy trục vít? {#vecni}
+
+Điểm mạnh được Idemitsu nhấn mạnh của Daphne Super Screw là độ bền oxy hóa: thời gian RBOT theo ASTM D2272 là 1.920 phút (VG 32) và 1.860 phút (VG 46) theo TDS 07/2023. Con số này liên quan trực tiếp tới lỗi tốn kém nhất của máy nén trục vít: **cặn vecni**.
+
+**Tài liệu kỹ thuật.** Trong bài "Những nguy hiểm ẩn của cặn vecni trong máy nén khí trục vít" của Chevron (Texaco Lubricants, [11/2024](https://www.texacolubricants.com/en_uk/home/learning/from-chevron/industrial-machinery/The-hidden-dangers-of-varnish-buildup-in-Rotary-Screw-Air-Compressors.html)), vecni được mô tả là hỗn hợp bùn, cặn và chất dính sinh ra khi dầu phân hủy. Nhiệt độ cao trong máy nén trục vít làm dầu oxy hóa nhanh hơn; bụi bẩn, gỉ là chất xúc tác; kéo dài hoặc bỏ qua kỳ thay dầu, thay lọc làm quá trình này nhanh hơn nữa. Vecni bám trên bộ làm mát làm giảm khả năng tản nhiệt, khiến máy quá nhiệt, và có thể làm kẹt van.
+
+**Lời khuyên của chúng tôi:**
+
+| Việc nên làm | Vì sao |
+| :--- | :--- |
+| Thay dầu kèm lọc dầu và lọc tách, không chỉ thay dầu | Lọc cũ giữ cặn, dầu mới sẽ bị nhiễm ngay |
+| Khi đổi từ dầu khác sang Daphne, súc rửa nếu máy đã có cặn | Dầu mới tốt đến đâu cũng không tự làm sạch cặn vecni dày |
+| Theo dõi nhiệt độ xả và nhiệt độ dầu hằng ngày | Nhiệt độ tăng dần qua nhiều tuần là dấu hiệu bộ làm mát bám bẩn |
+| Đặt máy xa nguồn sương dầu cắt gọt, bụi mài | Chất bẩn hút vào làm dầu oxy hóa nhanh hơn |
+
+RBOT cao giúp dầu chống oxy hóa lâu hơn, nhưng không bù được cho nhiệt độ làm việc quá cao hay lọc gió bẩn. Kiểm tra trị số axit định kỳ theo bảng ở mục dưới là cách sớm nhất để biết dầu bắt đầu oxy hóa.
+
 ## Khi nào cần thay dầu?
 
 Theo mốc giờ chạy của hãng máy nén, nhưng nên điều chỉnh theo kết quả kiểm tra. **Trị số axit** là chỉ tiêu báo sớm nhất.
@@ -114,6 +131,9 @@ Theo mốc giờ chạy của hãng máy nén, điều chỉnh theo trị số a
 
 ### Khi thay sang Daphne Super Screw có cần súc rửa không?
 Nên xả hết dầu cũ, thay lọc dầu và kiểm tra bộ tách dầu. Nếu dầu cũ đã đen hoặc có cặn, nên súc rửa trước để dầu mới không bị nhiễm bẩn ngay từ đầu.
+
+### Máy nén khí bị nóng sau khi thay dầu mới có phải do dầu?
+Hiếm khi. Nếu máy vẫn nóng sau khi thay dầu, hãy kiểm tra bộ làm mát (bám bụi bên ngoài, bám cặn vecni bên trong), van hằng nhiệt và mức dầu. Cặn vecni cũ trong bộ làm mát không tự mất khi thay dầu mới.
 
 ## Quy cách đóng gói, đơn hàng
 

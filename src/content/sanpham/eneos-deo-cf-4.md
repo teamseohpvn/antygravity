@@ -16,12 +16,12 @@ standards: ["API CF-4"]
 
 specs:
   - { name: "Cấp API", value: "CF-4" }
-  - { name: "Độ nhớt ở 40 °C", value: "15W-40: 108,0 mm²/s · 20W-50: 166,1 mm²/s" }
-  - { name: "Độ nhớt ở 100 °C", value: "15W-40: 14,31 mm²/s · 20W-50: 18,44 mm²/s" }
-  - { name: "Chỉ số độ nhớt", value: "15W-40: 135 · 20W-50: 124" }
-  - { name: "Điểm chớp cháy cốc hở (COC)", value: "258 °C (cả hai cấp)" }
-  - { name: "Trị số kiềm tổng (TBN)", value: "15W-40: 8,08 mg KOH/g · 20W-50: 8,01 mg KOH/g" }
-tds_date: "10/2026"
+  - { name: "Độ nhớt ở 40 °C", value: "15W-40: 108,0 mm²/s · 20W-50: 166,1 mm²/s", method: "ASTM D445" }
+  - { name: "Độ nhớt ở 100 °C", value: "15W-40: 14,31 mm²/s · 20W-50: 18,44 mm²/s", method: "ASTM D445" }
+  - { name: "Chỉ số độ nhớt", value: "15W-40: 135 · 20W-50: 124", method: "ASTM D2270" }
+  - { name: "Điểm chớp cháy cốc hở (COC)", value: "258 °C (cả hai cấp)", method: "ASTM D92" }
+  - { name: "Trị số kiềm tổng (TBN)", value: "15W-40: 8,08 mg KOH/g · 20W-50: 8,01 mg KOH/g", method: "ASTM D2896" }
+tds_date: "Giá trị điển hình: trang sản phẩm ENEOS Việt Nam; phương pháp thử: TCCS 13:2015 (15W-40) và TCCS 14:2015 (20W-50) /NOEV-ENE, hiệu lực 17/08/2015"
 tds_url: "https://eneos.com.vn/en/product/diesel-engine-oil-cf4-20w-50/"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
@@ -59,7 +59,7 @@ tom_tat:
   - "**Thay dầu** theo mốc của nhà sản xuất động cơ; đội xe lớn có thể theo dõi bằng cách kiểm tra độ nhớt, nước, TBN."
 tags: ["api-cf-4", "sae-15w-40", "sae-20w-50", "eneos", "dong-co-diesel"]
 date: "2026-10-06"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **ENEOS DEO CF-4** là dầu động cơ diesel đa cấp của ENEOS, đạt cấp **API CF-4**. Dầu dùng cho động cơ diesel có turbo tăng áp và động cơ hút khí tự nhiên, ở xe tải, xe khách, máy công trình, máy nông nghiệp và tàu thuyền. Hãng làm hai cấp nhớt **15W-40** và **20W-50**.
@@ -106,6 +106,25 @@ CF-4 là cấp API cho động cơ diesel tải nặng đời trước năm 2000
 
 > **Nhận định của HT VINA:** Đội xe chỉ có máy đời cũ thì DEO CF-4 là đủ. Đội xe lẫn cả máy đời mới có EGR thì dùng chung DEO CI-4 cho mọi xe, đỡ nhầm khi thêm dầu.
 
+## 15W-40 hay 20W-50 theo tiêu chuẩn cơ sở của ENEOS {#tccs}
+
+Hai cấp DEO CF-4 bán tại Việt Nam được sản xuất tại KCN Đình Vũ, Hải Phòng, theo hai tiêu chuẩn cơ sở riêng: **TCCS 13:2015/NOEV-ENE** cho 15W-40 và **TCCS 14:2015/NOEV-ENE** cho 20W-50 (cùng hiệu lực 17/08/2015; bản 20W-50 đã được Trung tâm Kỹ thuật Tiêu chuẩn Đo lường Chất lượng Hải Phòng soát xét ngày 10/09/2015). Đọc hai bản cạnh nhau sẽ thấy rõ chữ số trước "W" nghĩa là gì:
+
+| Chỉ tiêu (mức giới hạn TCCS) | 15W-40 | 20W-50 | Phương pháp |
+| :--- | :--- | :--- | :--- |
+| Độ nhớt ở 100 °C | 12,5–16,3 mm²/s | 16,3–21,9 mm²/s | ASTM D445 |
+| Độ nhớt khởi động (CCS) | ≤ 7.000 mPa·s ở −20 °C | ≤ 9.500 mPa·s ở −15 °C | ASTM D5293 |
+| Độ nhớt bơm (MRV) | ≤ 60.000 mPa·s ở −25 °C | ≤ 60.000 mPa·s ở −20 °C | ASTM D4684 |
+| Nhiệt độ chớp cháy cốc hở | ≥ 200 °C | ≥ 200 °C | ASTM D92 |
+| Tạo bọt, chu kỳ II | ≤ 50/0 ml | ≤ 20/0 ml | ASTM D892 |
+| Chỉ số độ nhớt | Không quy định | ≥ 120 | ASTM D2270 |
+| Độ bay hơi NOACK | Không quy định | ≤ 15% | ASTM D5800 |
+| Nước | Không quy định | ≤ 0,05% thể tích | ASTM D95 |
+
+Giá trị điển hình ENEOS công bố (độ nhớt 100 °C 14,31 và 18,44 mm²/s; chỉ số độ nhớt 135 và 124; chớp cháy 258 °C) đều nằm trong các mức trên. TCCS còn quy định trị số kiềm tổng (TBN) và hàm lượng phốt pho, kẽm, canxi; chúng tôi đang đối chiếu các chỉ tiêu này với ENEOS Việt Nam trước khi đăng.
+
+**Ý nghĩa với máy của bạn:** 15W-40 được kiểm soát độ nhớt khởi động ở nhiệt độ thấp hơn 20W-50 (−20 °C so với −15 °C). Mùa đông miền Bắc hiếm khi xuống dưới 5 °C, nên cả hai cấp đều khởi động được. Vì vậy, chọn cấp theo **độ nhớt ở nhiệt độ làm việc** (số sau chữ "W"): 20W-50 đặc hơn ở 100 °C, hợp máy cũ khe hở lớn, chạy nặng mùa nóng; 15W-40 hợp máy còn tốt và đúng với cấp mà phần lớn hướng dẫn sử dụng xe đời 2000–2015 ghi.
+
 ## Khi nào cần thay dầu?
 
 Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe, máy phát hoặc máy công trình lớn, có thể dựa vào kết quả kiểm tra dầu:
@@ -128,6 +147,9 @@ Theo mốc km hoặc giờ máy của nhà sản xuất động cơ, rút ngắn
 
 ### Máy cũ chỉ cần cấp CD thì dùng CF-4 được không?
 Được, CF-4 cao hơn CD. ENEOS cũng có bản [DEO CD](/dau-dong-co-diesel/eneos-deo-cd) cho máy cũ chỉ yêu cầu cấp CD.
+
+### TCCS là gì, có giá trị như tiêu chuẩn quốc gia không?
+TCCS là tiêu chuẩn cơ sở do chính nhà sản xuất ban hành và công bố cho sản phẩm của mình. Nó không thay cho cấp API CF-4, mà ghi mức giới hạn cụ thể từng chỉ tiêu cho lô hàng sản xuất tại Việt Nam. Mỗi lô được phòng thí nghiệm của nhà máy kiểm tra trước khi xuất.
 
 ## Quy cách đóng gói, đơn hàng
 

@@ -46,7 +46,7 @@ tom_tat:
   - "**Chưa có TDS** của VHP: trang chưa ghi cấp API (GL-4 hay GL-5); hỏi trước khi dùng cho hộp số có đồng tốc."
 tags: ["sae-140", "dau-cau", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **VHP P140** là dầu cầu, dầu bánh răng ô tô cấp độ nhớt **SAE 140** do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu bôi trơn hộp số sàn, vi sai và cầu xe chịu tải nặng, giảm ma sát và chống mài mòn bánh răng.
@@ -71,6 +71,22 @@ Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của VHP cho mã n�
 
 > **Nhận định của HT VINA:** Ở miền Bắc mùa hè, dầu 140 vẫn dùng tốt cho xe tải nặng. Xe chạy mùa đông miền núi, hoặc hướng dẫn sử dụng ghi dầu đa cấp, thì chọn 85W-140. Vì chưa có TDS ghi cấp API, không dùng P140 cho hộp số tay có đồng tốc mà hãng chỉ cho phép GL-4 cho tới khi xác nhận được cấp.
 
+## Chưa rõ GL-4 hay GL-5: vì sao cần hỏi trước khi đổ? {#cap-api}
+
+VHP chưa gửi TDS cho P140, nên chúng tôi chưa biết dầu đạt cấp API GL-4 hay GL-5. Với dầu cầu, cấp API quan trọng ngang độ nhớt:
+
+| Bộ phận | Cần cấp nào | Dùng P140 khi chưa rõ cấp API? |
+| :--- | :--- | :--- |
+| Cầu sau hypoid xe tải, xe ben | Thường là GL-5 | Chỉ khi xe đời cũ, hướng dẫn sử dụng ghi "dầu cầu 140" không kèm cấp API. Xe ghi GL-5 thì chọn mã có công bố GL-5. |
+| Hộp số tay có bộ đồng tốc bằng đồng | Thường là GL-4 | Chưa nên, vì nếu là GL-5 thì phụ gia cực áp có thể làm đồng tốc ăn kém (xem [phân tích ở trang ENEOS Gear GL-5](/dau-cau-hop-so/eneos-gear-gl-5#dong-thau)). |
+| Bánh răng hở, hộp giảm tốc cũ bảo trì theo thói quen | Theo hướng dẫn sử dụng; nhiều máy công nghiệp cần dầu bánh răng công nghiệp theo ISO VG | Được nếu máy đã quen dùng; máy mới nên dùng [dầu bánh răng công nghiệp](/dau-banh-rang/vhp-rosia-ep) đúng cấp ISO VG. |
+
+**Lời khuyên của chúng tôi:** khi nhận hàng, hãy đọc nhãn xô xem có ghi cấp API hay không. Nếu nhãn ghi GL-5, các khuyến cáo của dầu GL-5 áp dụng cho P140; nếu ghi GL-4 hoặc không ghi, chỉ dùng cho các vị trí mà hướng dẫn sử dụng chấp nhận. Chúng tôi sẽ cập nhật trang ngay khi có TDS.
+
+## Giá P140 thấp hơn nhiều dầu cầu khác, vì sao? {#gia}
+
+Theo bảng giá rà soát 02/10/2026, xô 18 L VHP P140 có khoảng giá 360.000–414.000 đ (khoảng 20.000–23.000 đ/L), thấp hơn nhiều so với các dầu cầu GL-5 khác trong kho như [VHP Spadila GL-5](/dau-cau-hop-so/vhp-spadila-gl5). Chúng tôi đang đối chiếu lại mức giá này với nhà máy; vui lòng [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20P140) để có giá chính xác tại thời điểm mua.
+
 ## Khi nào cần thay dầu?
 
 Theo mốc km hoặc giờ máy trong tài liệu hướng dẫn sử dụng kèm theo xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
@@ -90,6 +106,9 @@ Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe be
 
 ### Dầu cầu 140 và 85W-140 khác nhau thế nào?
 Ở nhiệt độ làm việc, hai loại có độ nhớt gần nhau. Khác biệt ở lúc khởi động lạnh: 85W-140 chảy tốt hơn nên bánh răng được bôi trơn sớm hơn. Ở miền Bắc mùa hè, dầu 140 vẫn dùng tốt cho xe tải nặng.
+
+### Nhãn xô P140 ghi những gì cần xem?
+Xem cấp độ nhớt (SAE 140), cấp API (GL-4 hoặc GL-5), số lô và ngày sản xuất. Cấp API quyết định dầu dùng được cho cầu hypoid hay hộp số có đồng tốc.
 
 ## Quy cách đóng gói, đơn hàng
 

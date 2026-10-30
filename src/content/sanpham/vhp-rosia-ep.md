@@ -62,7 +62,7 @@ tom_tat:
   - "**Có sẵn tại kho**. HT VINA là đại lý dầu mỡ VHP."
 tags: ["iso-vg-100", "iso-vg-150", "iso-vg-220", "iso-vg-320", "cuc-ap", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **VHP Rosia EP** là dầu bánh răng công nghiệp chịu cực áp (EP) do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Dầu dùng cho hộp giảm tốc kín tải nặng. Theo VHP, dầu đáp ứng ISO 12925-1 loại CKC và CKD, DIN 51517-3 CLP, AGMA 9005-F16 EP và AIST 224.
@@ -105,6 +105,22 @@ Hai dòng cùng là dầu bánh răng cực áp gốc khoáng và cùng đạt D
 
 > **Nhận định của HT VINA:** Hộp giảm tốc thông dụng tiêu hao nhiều dầu, cần phuy hoặc cấp 100, 150 thì đặt Rosia EP. Cần dầu cấp 220 ngay, hoặc nhà sản xuất máy chỉ định dầu ngoại, thì dùng Bonnoc TS 220.
 
+## Hộp giảm tốc trục vít bánh vít đồng: dùng dầu EP được không? {#truc-vit}
+
+Rosia EP là dầu bánh răng **cực áp** (EP). Phụ gia cực áp gốc lưu huỳnh – phốt pho rất tốt cho bánh răng thép chịu tải nặng, nhưng có thể là điểm cần cân nhắc với **hộp giảm tốc trục vít có bánh vít bằng đồng**, loại rất phổ biến trên băng tải, máy trộn, cửa cuốn công nghiệp.
+
+**Người dùng chia sẻ.** Trên diễn đàn [TractorByNet](https://www.tractorbynet.com/forums/threads/bcs-grillo-transmission-oil.426725/) (06/2020), chủ một máy xới hai bánh dẫn lại khuyến cáo của nhà phân phối: bánh răng cuối ở trục bánh xe của dòng máy này là **bánh vít bằng đồng**, nên điều quan trọng không phải cấp độ nhớt mà là dầu có an toàn với đồng (kim loại màu) hay không; "phần lớn dầu bánh răng ngày nay an toàn với đồng, nhưng vẫn còn vài loại chứa lưu huỳnh có thể làm hỏng đồng". Anh băn khoăn vì hãng máy lại khuyên dầu GL-5, mà dầu GL-5 nào cũng dùng công nghệ lưu huỳnh – phốt pho.
+
+**Lời khuyên của chúng tôi:**
+
+| Hộp giảm tốc của bạn | Nên dùng |
+| :--- | :--- |
+| Bánh răng thẳng, nghiêng, hành tinh bằng thép; nhãn ghi CLP, CKC, CKD | Rosia EP đúng cấp ISO VG trên nhãn |
+| Trục vít – bánh vít đồng, nhãn ghi CLP hoặc "dầu EP" cấp 220–460 | Dùng được nếu hãng hộp số cho phép dầu EP; theo dõi màu dầu và mạt đồng khi thay |
+| Trục vít – bánh vít đồng, hãng ghi dầu không EP, dầu bánh vít chuyên dụng hoặc dầu tổng hợp PAG | Không dùng Rosia EP; dùng đúng loại hãng ghi |
+
+Căn cứ: hãng hộp số giảm tốc là người biết rõ vật liệu bánh vít và nhiệt độ làm việc. Nhiệt độ càng cao, phản ứng giữa phụ gia lưu huỳnh và đồng càng mạnh, nên hộp trục vít chạy nóng càng phải theo đúng loại dầu ghi trên nhãn. Khi thay dầu hộp trục vít, nếu thấy dầu cũ có ánh vàng đồng hoặc bột mịn màu vàng lắng đáy, hãy báo thợ kiểm tra độ mòn bánh vít.
+
 ## Khi nào cần thay dầu?
 
 Tùy nhiệt độ dầu, tải và mức nhiễm bẩn của hộp số, nên thay theo kết quả kiểm tra thay vì theo lịch cố định:
@@ -124,6 +140,9 @@ Theo kết quả kiểm tra, không theo lịch cố định. Bảng mức cho p
 
 ### Đổi từ dầu bánh răng hãng khác sang Rosia EP cần lưu ý gì?
 Chọn đúng cấp độ nhớt đang dùng. Nên xả hết dầu cũ, vệ sinh bể dầu rồi mới nạp dầu mới, tránh pha lẫn hai loại dầu khác nhau.
+
+### Hộp giảm tốc trục vít nên dùng Rosia EP cấp nào?
+Theo cấp ISO VG ghi trên nhãn hộp số; hộp trục vít thường dùng cấp cao hơn hộp bánh răng thẳng cùng cỡ vì có ma sát trượt lớn. Trước hết hãy xác nhận hãng hộp số cho phép dầu EP (xem mục [hộp giảm tốc trục vít bánh vít đồng](#truc-vit)).
 
 ## Quy cách đóng gói, đơn hàng
 

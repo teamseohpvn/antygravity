@@ -58,7 +58,7 @@ tom_tat:
   - "**Có sẵn phuy 209 L** cấp 15W-40 tại kho Hải Phòng."
 tags: ["api-ci-4", "acea-e7", "sae-15w-40", "castrol", "dong-co-diesel"]
 date: "2026-10-06"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Castrol Vecton 15W-40 CI-4/E7** là dầu động cơ diesel tải nặng của Castrol, pha bằng công nghệ tổng hợp để dầu bền lâu hơn trong máy. Dầu đạt **API CI-4/SL, ACEA E7, JASO DH-1** và nhiều chuẩn của nhà sản xuất động cơ như Cummins, Volvo, Mack, Renault Trucks. Dầu dùng cho động cơ diesel 4 kỳ cao tốc, kể cả động cơ có EGR.
@@ -95,6 +95,32 @@ Hàng có sẵn **phuy 209 L**, kèm CO/CQ và hóa đơn VAT, giao từ kho t�
 
 > **Nhận định của HT VINA:** Xe yêu cầu chuẩn của hãng (Cummins CES 20078, Volvo VDS-3…), hoặc đội xe đường dài muốn thay dầu thưa hơn có theo dõi bằng phân tích dầu, thì Vecton là lựa chọn đúng. Xe tải, máy công trình thay dầu theo chu kỳ thông thường thì CRB Turbomax đủ dùng.
 
+## Kéo dài chu kỳ thay dầu Vecton: làm thế nào cho an toàn? {#keo-dai}
+
+Lý do chính để chọn Vecton thay vì dầu CI-4 phổ thông là đội xe muốn thay dầu thưa hơn. Chính Castrol đặt điều kiện cho việc này. Trang sản phẩm Vecton của Castrol Australia ghi:
+
+- "Chu kỳ thay dầu thực tế phụ thuộc loại động cơ, điều kiện vận hành, lịch sử bảo dưỡng, OBD và chất lượng nhiên liệu."
+- "Có thể kéo dài chu kỳ thay nếu thực hiện cùng chương trình phân tích dầu đã qua sử dụng (UOA) của Castrol", và nên trao đổi với bộ phận kỹ thuật của Castrol trước khi kéo dài.
+- "Luôn tham khảo tài liệu hướng dẫn của nhà sản xuất."
+
+**Lời khuyên của chúng tôi:** đừng kéo dài chu kỳ chỉ vì đã đổi sang dầu tốt hơn. Cách làm an toàn:
+
+| Bước | Việc làm | Mức cần theo dõi |
+| :--- | :--- | :--- |
+| 1 | Giữ mốc thay dầu của hãng xe cho 2–3 lần đầu | Lấy mẫu dầu ngay trước mỗi lần thay |
+| 2 | Đo độ nhớt ở 100 °C | So với dầu mới cùng lô; độ nhớt tăng hoặc giảm nhanh hơn các lần trước là dấu hiệu bất thường |
+| 3 | Đo TBN và TAN, đặc biệt khi nhiên liệu không ổn định | Mức giới hạn theo hãng động cơ hoặc phòng thí nghiệm; TBN giảm nhanh hơn các lần trước thì không kéo dài thêm |
+| 4 | Theo dõi muội than, nhiên liệu lẫn vào dầu, nước | Có nước hoặc nhiên liệu lẫn: tìm nguyên nhân trước, không kéo dài |
+| 5 | Nếu cả 3 mẫu đều tốt, tăng chu kỳ từng bước nhỏ (khoảng 10–20%) | Tiếp tục lấy mẫu mỗi lần thay |
+
+Chevron, trong bài phân tích về TBN và TAN của dầu động cơ đã qua sử dụng ([Caltex Thái Lan, 12/2019](https://www.caltex.com/th/business-solutions/articles/used-engine-oil-analysis-tbn-vs-tan.html)), lưu ý TBN không còn nên được xem là chỉ tiêu duy nhất để đánh giá dầu, mà cần kết hợp nhiều chỉ tiêu. Vì vậy bảng trên theo dõi cả độ nhớt, TAN, muội than và nhiên liệu lẫn vào dầu.
+
+Đo độ nhớt nhanh tại bãi xe được bằng [máy đo cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1); TBN, muội than và kim loại mài mòn cần gửi phòng thí nghiệm.
+
+## Đừng nhầm Vecton CI-4/E7 với Vecton CK-4/E9 {#phien-ban}
+
+Castrol bán nhiều phiên bản Vecton theo thị trường. Ở Mỹ và Australia có Vecton 15W-40 **CK-4/E9** và dòng Long Drain dành cho xe đời mới có bộ lọc hạt. Hàng tại kho HT VINA là bản **CI-4/E7** (tro sunphat 1,5%), dành cho xe không có DPF. Khi đọc thông tin về "Vecton" trên mạng, hãy xem đúng cấp API ghi trên nhãn trước khi áp dụng.
+
 ## Khi nào cần thay dầu?
 
 Theo mốc km hoặc giờ máy trong tài liệu hướng dẫn của nhà sản xuất động cơ. Castrol không ghi số km cố định cho Vecton. Muốn kéo dài hơn mốc đó, hãy theo dõi bằng cách kiểm tra dầu:
@@ -117,6 +143,9 @@ Castrol không ghi số km cố định. Hãy theo mốc của nhà sản xuất
 
 ### Vecton 15W-40 dùng cho xe có DPF được không?
 Không nên. Dầu có tro sunphat 1,5 %, cao hơn mức dầu ít tro mà bộ lọc hạt DPF cần. Xe có DPF cần dầu đạt API CK-4 hoặc ACEA E6, E9 theo hướng dẫn sử dụng.
+
+### Link TDS Castrol trên trang không mở được?
+Cuối tháng 10/2026, chúng tôi thấy link tài liệu trên máy chủ của Castrol có lúc yêu cầu đăng nhập. Nếu bạn cần bản TDS, hãy [liên hệ chúng tôi](/contact) để nhận bản PDF.
 
 ## Quy cách đóng gói, đơn hàng
 

@@ -54,7 +54,7 @@ tom_tat:
   - "**Có sẵn tại kho** (phuy 209 L)."
 tags: ["api-gl-5", "sae-85w-140", "dau-cau", "castrol"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Castrol Transmax Axle 85W-140** là dầu cầu đa cấp của Castrol, đạt cấp **API GL-5**. Dầu dùng cho cầu xe, vi sai và hộp số yêu cầu dầu GL-5 cấp nhớt 85W-140, chủ yếu là xe tải nặng, xe ben và máy công trình.
@@ -93,6 +93,23 @@ Mã này **có sẵn tại kho** theo phuy 209 L, kèm CO/CQ, hóa đơn VAT. H�
 
 > **Nhận định của HT VINA:** Hai mã cùng cấp, thông số gần nhau, thay thế được cho nhau trong đa số cầu xe. Đội xe lớn đang dùng Castrol thì đặt phuy. Cần dầu ngay hoặc lượng nhỏ thì dùng xô Shell có sẵn. Cầu đã mòn, kêu hú mà đổi lên 85W-140 chỉ là giải pháp tạm, cần kiểm tra bánh răng và phớt.
 
+## Xe ben, xe công trình lội nước: bảo vệ dầu cầu thế nào? {#loi-nuoc}
+
+Transmax Axle 85W-140 hay dùng cho cầu xe ben, xe công trình. Đây cũng là nhóm xe hay phải lội nước ở công trường, bãi cát ven sông, đường ngập mùa mưa. Nước vào cầu làm dầu đục sữa, mất màng dầu và gây gỉ ổ bi.
+
+**Người dùng chia sẻ.** Trên diễn đàn ô tô [Team-BHP](https://www.team-bhp.com/forum/4x4-technical/83471-axle-differential-breathers-how-important-they.html) (06/2010), người mở chủ đề giải thích cơ chế: khi xe đang nóng mà xuống nước, vỏ cầu nguội đột ngột, áp suất bên trong giảm và **cầu hút ngược qua lỗ thông hơi**; lúc đó thứ bị hút vào là nước. Các thành viên chia sẻ:
+
+- Một người nối ống cao su dài vào lỗ thông hơi của cầu trước, cầu sau và hộp số, đưa đầu ống lên cao trong khoang máy, cao hơn mực nước thường gặp.
+- Một người khác cho biết nắp thông hơi zin có van một chiều, nhưng nếu xe nóng mà lội sâu thì nước vẫn bị hút vào. Một thành viên lại cho rằng nắp zin chỉ là nắp có lò xo, gần như vô dụng khi lội nước.
+- Nhiều ý kiến đồng ý: sau mỗi lần lội nước sâu, nên **kiểm tra dầu cầu**; dầu thành bọt, đục là phải thay. Một thành viên còn nhắc lỗ thông hơi bị tắc thì khi cầu nóng, áp suất tăng sẽ đẩy dầu ra qua phớt.
+
+**Lời khuyên của chúng tôi:**
+
+1. Kiểm tra lỗ thông hơi cầu mỗi lần bảo dưỡng: không tắc bùn, ống nối (nếu có) không gãy gập. Lỗ thông hơi tắc gây rò dầu ở phớt, lỗ thông hơi hở thấp thì hút nước.
+2. Xe ben chạy công trường hay lội nước nên cho xe nghỉ vài phút trước khi xuống nước sâu nếu điều kiện cho phép, để cầu bớt nóng.
+3. Sau khi lội nước sâu: tháo nút châm dầu, lấy một ít dầu ra xem. Dầu đục màu sữa hoặc có bọt thì thay ngay, đừng đợi tới mốc km. Có thể [kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong).
+4. Đội xe hay lội nước nên đặt dầu theo phuy: một phuy 209 L đủ thay nhiều cầu khi cần thay ngoài lịch.
+
 ## Khi nào cần thay dầu?
 
 Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe. Xe ben, xe công trình chạy tải nặng, lội nước hoặc nhiều bụi nên thay sớm hơn mốc đó. Khi nghi dầu có vấn đề (dầu đục màu sữa sau khi lội nước, cầu hoặc hộp số nóng, kêu), lấy mẫu kiểm tra:
@@ -112,6 +129,9 @@ Theo mốc km hoặc giờ máy trong hướng dẫn sử dụng của xe, rút 
 
 ### Castrol Transmax Axle 85W-140 có thay được dầu cầu 140 đơn cấp không?
 Ở nhiệt độ làm việc, hai loại có độ nhớt gần nhau nên thường thay được nếu cùng cấp API. Bản 85W-140 chảy tốt hơn khi lạnh. Nếu xe đang dùng dầu GL-4, hãy hỏi thợ hoặc hãng xe trước khi đổi sang GL-5.
+
+### Dầu cầu bị đục màu sữa có lọc lại dùng tiếp được không?
+Không nên. Nước đã làm hỏng màng dầu và có thể đã làm phụ gia cực áp biến tính. Hãy xả hết, súc qua bằng một ít dầu mới nếu nước nhiều, rồi đổ dầu mới và kiểm tra lại sau vài ngày chạy.
 
 ## Quy cách đóng gói, đơn hàng
 

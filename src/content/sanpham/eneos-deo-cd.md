@@ -16,12 +16,12 @@ standards: ["API CD"]
 
 specs:
   - { name: "Cấp API", value: "CD" }
-  - { name: "Độ nhớt ở 40 °C", value: "15W-40: 105,4 mm²/s · 20W-50: 162,8 mm²/s" }
-  - { name: "Độ nhớt ở 100 °C", value: "15W-40: 13,88 mm²/s · 20W-50: 17,92 mm²/s" }
-  - { name: "Chỉ số độ nhớt", value: "15W-40: 128 · 20W-50: 122" }
-  - { name: "Điểm chớp cháy cốc hở (COC)", value: "15W-40: 240 °C · 20W-50: 244 °C" }
-  - { name: "Trị số kiềm tổng (TBN)", value: "15W-40: 6,2 mg KOH/g · 20W-50: 6,3 mg KOH/g" }
-tds_date: "10/2026"
+  - { name: "Độ nhớt ở 40 °C", value: "15W-40: 105,4 mm²/s · 20W-50: 162,8 mm²/s", method: "ASTM D445" }
+  - { name: "Độ nhớt ở 100 °C", value: "15W-40: 13,88 mm²/s · 20W-50: 17,92 mm²/s", method: "ASTM D445" }
+  - { name: "Chỉ số độ nhớt", value: "15W-40: 128 · 20W-50: 122", method: "ASTM D2270" }
+  - { name: "Điểm chớp cháy cốc hở (COC)", value: "15W-40: 240 °C · 20W-50: 244 °C", method: "ASTM D92" }
+  - { name: "Trị số kiềm tổng (TBN)", value: "15W-40: 6,2 mg KOH/g · 20W-50: 6,3 mg KOH/g", method: "ASTM D2896" }
+tds_date: "Giá trị điển hình: trang sản phẩm ENEOS Việt Nam (bản lưu 11/05/2026); phương pháp thử và mức giới hạn: TCCS 08:2015/NOEV-ENE ban hành 17/08/2015"
 tds_url: "https://web.archive.org/web/20260511184829/https://eneos.com.vn/product/dau-dong-co-diesel-cd-20w-50/"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
@@ -58,7 +58,7 @@ tom_tat:
   - "**Có sẵn tại kho**."
 tags: ["api-cd", "sae-15w-40", "sae-20w-50", "eneos", "dong-co-diesel"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **ENEOS DEO CD** là dầu động cơ diesel phổ thông của ENEOS, đạt cấp **API CD**. Dầu hợp với động cơ diesel đời cũ, máy phát điện, máy nông nghiệp và tàu thuyền nhỏ, nơi nhà sản xuất chỉ yêu cầu cấp CD. Dòng này có hai cấp nhớt **20W-50** và **15W-40**.
@@ -95,6 +95,34 @@ Trị số kiềm càng cao thì dầu càng chịu được axit từ nhiên li
 
 > **Nhận định của HT VINA:** Máy chỉ cần CD mà cần dầu ngay thì dùng DEO CF-4 có sẵn: cấp cao hơn, dùng thay được. Không làm ngược lại, tức không hạ xuống CD cho máy yêu cầu CF-4.
 
+## DEO CD 20W-50 đạt tiêu chuẩn cơ sở nào? {#tccs}
+
+ENEOS DEO CD 20W-50 bán tại Việt Nam do Công ty TNHH JX Nippon Oil & Energy Việt Nam sản xuất tại KCN Đình Vũ, Hải Phòng, theo tiêu chuẩn cơ sở **TCCS 08:2015/NOEV-ENE** (ban hành 17/08/2015). Bảng dưới đối chiếu mức giới hạn trong TCCS với giá trị điển hình ENEOS công bố:
+
+| Chỉ tiêu | Mức giới hạn TCCS 08:2015 | Giá trị điển hình 20W-50 | Phương pháp |
+| :--- | :--- | :--- | :--- |
+| Độ nhớt ở 100 °C | 16,3–21,9 mm²/s | 17,92 mm²/s | ASTM D445 |
+| Trị số kiềm tổng (TBN) | Không nhỏ hơn 6,0 mg KOH/g | 6,3 mg KOH/g | ASTM D2896 |
+| Nhiệt độ chớp cháy cốc hở | Không nhỏ hơn 200 °C | 244 °C | ASTM D92 |
+| Tạo bọt, chu kỳ II | Không lớn hơn 50/0 ml | Không công bố | ASTM D892 |
+| Độ nhớt ở −15 °C (khởi động) | Không lớn hơn 9.500 mPa·s | Không công bố | ASTM D5293 |
+| Phốt pho / kẽm / canxi | 0,090–0,111 / 0,097–0,122 / 0,170–0,210 % khối lượng | Không công bố | ASTM D4951 |
+
+Các giá trị điển hình đều nằm trong mức giới hạn TCCS. Theo TCCS, mỗi lô hàng có chứng chỉ chất lượng do phòng thí nghiệm của nhà máy cấp; khi cần, hãy yêu cầu CO/CQ kèm lô. TCCS trên chỉ áp dụng cho cấp 20W-50; cấp 15W-40 chúng tôi chưa có bản TCCS.
+
+## Máy phát dự phòng ít chạy: thay dầu theo giờ hay theo thời gian? {#may-phat}
+
+DEO CD hay được mua cho máy phát điện dự phòng của nhà xưởng, máy bơm nước. Nhóm máy này chạy rất ít giờ, nên mốc "thay sau X giờ" có khi vài năm mới tới.
+
+**Người dùng chia sẻ.** Trên diễn đàn [BobIsTheOilGuy](https://bobistheoilguy.com/forums/threads/continue-filter-change-interval-on-6-7l-cummins-genset.403645/) (01/2026), người phụ trách một máy phát dự phòng Cummins 6.7 hỏi có nên để dầu thêm 6 tháng vì máy mới chạy khoảng 136 giờ. Một thành viên cho biết anh thay dầu máy phát dự phòng **mỗi năm một lần** trừ khi mất điện kéo dài nhiều ngày, để loại bỏ hơi ẩm và cặn bùn đi kèm. Một kỹ thuật viên lâu năm giải thích: các-te thông với không khí bên ngoài, nên ở nơi **nóng ẩm**, vào buổi sáng không khí ấm lên nhanh hơn khối máy, hơi nước ngưng tụ bên trong động cơ. Lần chạy thử hằng tháng không tải không đủ làm dầu nóng để bay hết hơi ẩm. Anh cho biết đã thấy gỉ ngay trên trục cam của máy phát để lâu ở vùng ven biển. Người hỏi cũng kể máy trước đó bị bỏ 500–900 giờ, 2–3 năm mới thay dầu, và anh bắt đầu thấy vụn cặn đọng dưới đáy lọc dầu khi dầu chạy khoảng 300 giờ.
+
+**Lời khuyên của chúng tôi:**
+
+1. Máy phát dự phòng ở miền Bắc nên thay dầu **ít nhất mỗi năm một lần**, kể cả khi chưa đủ giờ chạy. Mùa nồm ẩm chính là điều kiện ngưng tụ hơi nước mà kỹ thuật viên trên diễn đàn mô tả.
+2. Lịch chạy thử hằng tháng nên có tải (bật một phần phụ tải nhà xưởng) để máy đủ nóng.
+3. Trước mùa mưa bão, rút que thăm xem dầu có đục, có giọt nước hay không. Nghi ngờ thì [kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong).
+4. Chỉ đổ dầu động cơ vào động cơ. Trên cùng chủ đề, việc một người châm dầu thủy lực vào máy phát để "súc" đã bị phản đối gay gắt.
+
 ## Khi nào cần thay dầu?
 
 Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy phát chạy liên tục nên kiểm tra mức dầu thường xuyên. Với máy lớn, có thể dựa vào kết quả kiểm tra dầu:
@@ -114,6 +142,9 @@ Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Máy lớn 
 
 ### Máy phát điện nên dùng 15W-40 hay 20W-50?
 Theo hướng dẫn sử dụng của máy phát. Máy đặt ngoài trời, khởi động lúc lạnh thì 15W-40 dễ khởi động hơn. Máy đã chạy nhiều giờ, có dấu hiệu hao dầu thì 20W-50 thường phù hợp hơn.
+
+### Máy phát dự phòng chạy ít giờ thì bao lâu thay dầu một lần?
+Ngoài mốc giờ chạy trong hướng dẫn sử dụng, nên thay ít nhất mỗi năm một lần vì dầu vẫn hút ẩm khi máy nằm yên, nhất là ở nơi nóng ẩm. Xem mục [máy phát dự phòng ít chạy](#may-phat).
 
 ## Quy cách đóng gói, đơn hàng
 

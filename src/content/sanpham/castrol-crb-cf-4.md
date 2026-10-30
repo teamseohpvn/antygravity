@@ -59,7 +59,7 @@ tom_tat:
   - "**Có sẵn tại kho**."
 tags: ["api-cf-4", "sae-20w-50", "sae-15w-40", "castrol", "dong-co-diesel"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Castrol CRB CF-4** là dầu động cơ diesel đa dụng cho xe và máy tải nặng, đạt cấp **API CF-4**. Dầu dùng được cho động cơ diesel hút khí tự nhiên và động cơ có turbo tăng áp, kể cả khi chạy bằng nhiên liệu diesel chất lượng không đều. Dòng này có hai cấp **20W-50** và **15W-40**. Ngoài thị trường, nhiều người vẫn gọi dòng này là "CRB Turbo".
@@ -106,6 +106,26 @@ Mã này **có sẵn tại kho**: phuy 209 L (20W-50 hoặc 15W-40) và xô 18 L
 
 > **Nhận định của HT VINA:** Máy cũ không có EGR dùng CRB CF-4 là đủ. Cần dầu ngay, hoặc đội xe lẫn cả máy đời mới, thì Turbomax CI-4 có sẵn và dùng thay được cho CF-4.
 
+## Đội xe có cả máy CF-4 và CI-4: nên trữ mấy loại dầu? {#doi-xe}
+
+Nhiều đội xe tải, xe ben ở miền Bắc có cả xe đời cũ (yêu cầu CF-4) và xe đời mới có EGR (yêu cầu CI-4). Câu hỏi thường gặp là có thể dùng một loại cho tất cả không.
+
+| Đội xe của bạn | Nên trữ | Vì sao |
+| :--- | :--- | :--- |
+| Toàn xe đời cũ, không EGR, hướng dẫn ghi CF-4 | Một loại: CRB CF-4 | Đúng cấp, giá theo lít thấp hơn dầu CI-4 |
+| Có cả xe CF-4 và xe CI-4 có EGR | Một loại: [CRB Turbomax CI-4](/dau-dong-co-diesel/castrol-crb-turbomax) | Dầu CI-4 dùng được cho máy yêu cầu CF-4; ngược lại thì không |
+| Phần lớn xe CF-4, chỉ 1–2 xe CI-4 | Hai loại, dán nhãn rõ thùng dầu | Tiết kiệm hơn, nhưng phải tránh đổ nhầm |
+
+Căn cứ: cấp API mới hơn được thiết kế để dùng thay cho cấp cũ hơn trong cùng nhóm diesel, trong khi dầu CF-4 không được thử với khí xả tuần hoàn (EGR) làm muội than tăng. Đó là lý do trang này không khuyên CRB CF-4 cho máy có EGR.
+
+**Lời khuyên của chúng tôi:** với đội xe trộn lẫn, rủi ro lớn nhất không phải là chất lượng dầu mà là **đổ nhầm**. Nếu trữ hai loại, hãy sơn màu nắp thùng hoặc dán nhãn biển số xe dùng loại nào ngay tại chỗ châm dầu.
+
+## Nhiên liệu không đều: dầu CF-4 giúp được gì? {#nhien-lieu}
+
+Castrol giới thiệu dòng CRB cho động cơ diesel hút khí tự nhiên và có turbo "dùng nhiên liệu có chất lượng khác nhau". Lưu huỳnh trong dầu diesel khi cháy tạo axit; trị số kiềm (TBN) trong dầu động cơ có nhiệm vụ trung hòa lượng axit này.
+
+**Lời khuyên của chúng tôi:** xe chạy tuyến dài, đổ dầu ở nhiều cây xăng khác nhau, nên thay dầu đúng hạn chứ đừng kéo dài. Đội xe muốn biết chắc có thể gửi mẫu dầu đã dùng đi đo TBN qua vài lần thay liên tiếp. Mức giới hạn cụ thể nên theo khuyến cáo của hãng động cơ hoặc phòng thí nghiệm, và chỉ so các số đo cùng một phương pháp.
+
 ## Khi nào cần thay dầu?
 
 Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào kết quả kiểm tra dầu:
@@ -125,6 +145,9 @@ Theo mốc km hoặc giờ máy của nhà sản xuất động cơ. Đội xe l
 
 ### Mua phuy cho đội xe thì đặt thế nào?
 Gửi số phuy, cấp nhớt và địa chỉ giao qua trang [báo giá](/bao-gia?sp=Castrol%20CRB%20CF-4) hoặc gọi theo trang [liên hệ](/contact).
+
+### Link TDS Castrol trên trang không mở được?
+Cuối tháng 10/2026, chúng tôi thấy link tài liệu trên máy chủ của Castrol có lúc yêu cầu đăng nhập. Nếu bạn cần bản TDS, hãy [liên hệ chúng tôi](/contact) để nhận bản PDF.
 
 ## Quy cách đóng gói, đơn hàng
 

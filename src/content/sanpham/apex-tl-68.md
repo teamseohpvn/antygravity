@@ -43,7 +43,7 @@ tom_tat:
   - "**Chưa có TDS** của Quốc Trung: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "gia-kinh-te", "quoc-trung"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **APEX TL 68** là dầu thủy lực cấp **ISO VG 68** do Quốc Trung sản xuất trong nước. Dầu truyền năng lượng và bôi trơn cho hệ thủy lực công nghiệp, máy ép, máy đùn và máy công trình chịu áp lực cao. Trong nhóm dầu thủy lực 68 có sẵn tại kho HT VINA, đây là mã có giá theo lít thấp nhất.
@@ -77,6 +77,29 @@ Với thùng 200 L, chênh lệch giữa hai mã khoảng 2,4–2,8 triệu đ�
 
 > **Nhận định của HT VINA:** Khi chưa có TDS, chúng tôi chỉ khuyên dùng APEX TL 68 cho máy mà hướng dẫn sử dụng chỉ ghi cấp 68, không ghi loại HM/HLP hay yêu cầu hãng bơm chấp thuận. Máy ép nhựa chạy ba ca, áp cao, nên dùng mã công bố rõ phụ gia chống mài mòn như EMI AW 68 hoặc mã có TDS đầy đủ.
 
+## Máy rò rỉ dầu: tính đúng chi phí trước khi chọn dầu rẻ {#chi-phi}
+
+APEX TL 68 hợp nhất với máy rò rỉ phải thêm dầu thường xuyên. Với nhóm máy này, tiền dầu châm thêm mỗi tháng có khi lớn hơn tiền thay cả thùng. Bảng dưới tính theo khoảng giá đã nêu ở mục so sánh (chưa VAT):
+
+| Lượng dầu châm thêm mỗi tháng | APEX TL 68 (23.500–27.100 đ/L) | EMI AW 68 (35.500–40.900 đ/L) | Chênh lệch mỗi năm |
+| :--- | :--- | :--- | :--- |
+| 20 L | 470.000–542.000 đ | 710.000–818.000 đ | khoảng 2,9–3,3 triệu đ |
+| 50 L | 1,18–1,36 triệu đ | 1,78–2,05 triệu đ | khoảng 7,2–8,3 triệu đ |
+| 100 L | 2,35–2,71 triệu đ | 3,55–4,09 triệu đ | khoảng 14,4–16,6 triệu đ |
+
+**Lời khuyên của chúng tôi:** con số ở cột cuối là lý do nhiều xưởng chọn dầu kinh tế cho máy cũ. Tuy vậy, nếu máy rò 50–100 L mỗi tháng, tiền thay phớt và ống thường hoàn vốn trong vài tháng, chưa kể dầu rò làm trơn sàn và bám bụi. Chúng tôi khuyên vừa dùng dầu kinh tế, vừa lên lịch sửa chỗ rò lớn nhất.
+
+## Kiểm tra lô đầu tiên khi chưa có TDS {#lo-dau}
+
+Nhãn can APEX TL 68 ghi sản xuất theo tiêu chuẩn cơ sở TCCS 08 của Công ty TNHH TM Quốc Trung (xem ảnh nhãn ở đầu trang). Khi nhà sản xuất chưa gửi TDS, bạn có thể tự lập "hồ sơ" cho lô dầu đầu tiên:
+
+1. **Chụp nhãn và số lô** trên phuy khi nhận hàng.
+2. **Đo độ nhớt dầu mới** bằng [máy đo cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) hoặc [nhớt kế thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5). Dầu cấp 68 đúng chuẩn phải nằm trong khoảng 61,2–74,8 mm²/s ở 40 °C theo ISO 3448.
+3. **Để một chai mẫu kín** khoảng 0,5 L làm mẫu đối chứng cho các lần kiểm tra sau.
+4. **Nhìn màu và độ trong:** dầu mới phải trong, không cặn, không đục.
+
+Lô nào có độ nhớt dầu mới nằm ngoài khoảng trên, hãy báo chúng tôi để đổi theo [chính sách đổi trả](/chinh-sach-doi-tra).
+
 ## Khi nào cần thay dầu?
 
 Thay APEX TL 68 theo tình trạng dầu sẽ chính xác hơn thay theo lịch. Lấy mẫu ở đường hồi khi máy đang chạy và so với dầu mới cùng lô.
@@ -101,6 +124,9 @@ Dầu đúng cấp độ nhớt và có phụ gia chống mài mòn thì dùng �
 
 ### Đổi từ dầu đang dùng sang APEX TL 68 có cần súc rửa không?
 Nên xả hết dầu cũ và thay lõi lọc, không đổ lẫn hai mã trong cùng một thùng. Cách làm từng bước xem [hướng dẫn thay dầu thủy lực](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc).
+
+### Vì sao APEX TL 68 rẻ hơn nhiều so với dầu nhập khẩu?
+Dầu sản xuất trong nước không mất thuế nhập khẩu và chi phí vận chuyển xa. Chúng tôi chưa có TDS nên chưa so được chất lượng phụ gia với dầu nhập khẩu. Đó là lý do trang này chỉ khuyên dùng cho máy không đòi phê duyệt của hãng bơm.
 
 ## Quy cách đóng gói, đơn hàng
 

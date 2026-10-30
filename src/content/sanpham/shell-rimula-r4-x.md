@@ -23,7 +23,7 @@ specs:
   - { name: "Khối lượng riêng ở 15 °C", value: "0,881 kg/l", method: "ASTM D4052" }
   - { name: "Điểm chớp cháy cốc hở (COC)", value: "230 °C", method: "ASTM D92" }
   - { name: "Điểm rót chảy", value: "-36 °C", method: "ASTM D97" }
-tds_date: "10/2026"
+tds_date: "TDS Shell bản 5.5, 23/09/2026 (bản phát hành tại Thụy Sĩ)"
 tds_url: "https://www.shell-livedocs.com/data/published/en-CH/091ec71e-2c1a-4a84-ba59-c2d97369aa2e.pdf"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
@@ -57,7 +57,7 @@ tom_tat:
   - "**Có sẵn tại kho**."
 tags: ["api-ci-4", "acea-e7", "sae-15w-40", "shell", "dong-co-diesel"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Shell Rimula R4 X 15W-40** là dầu động cơ diesel tải nặng của Shell, đạt **API CI-4, ACEA E7, JASO DH-1** và chuẩn của nhiều hãng động cơ như Caterpillar, Cummins, Mack, Volvo. Dầu dùng cho phần lớn động cơ diesel tải nặng chạy đường bộ và địa hình: xe tải, xe khách, máy xúc.
@@ -96,6 +96,22 @@ Mã này **có sẵn tại kho** theo phuy 200 L, kèm CO/CQ và hóa đơn VAT.
 
 > **Nhận định của HT VINA:** Ba mã cùng nhóm chất lượng, chọn theo chuẩn mà hướng dẫn sử dụng của xe yêu cầu. Đội xe đang dùng Shell thì đặt tiếp R4 X. Cần dầu ngay thì Vecton 15W-40 có sẵn và có TBN cao hơn; đổi mã ở lần thay dầu toàn bộ, không đổ lẫn thường xuyên.
 
+## Kinh nghiệm từ người sử dụng {#kinh-nghiem}
+
+Trên diễn đàn dầu nhớt [BobIsTheOilGuy](https://bobistheoilguy.com/forums/threads/shell-rimula-r4-x.293621/) (07–11/2018), một chủ đề riêng về Rimula R4 X có ba ý đáng chú ý:
+
+**1. Chu kỳ thay theo km thực tế ngắn hơn mốc của hãng xe.** Một người dùng ở Australia chạy Rimula R4 X trên xe Pajero máy dầu, điều kiện mà anh tự mô tả là "luôn khắc nghiệt". Anh nhận xét dầu giữ màu lâu hơn và mức dầu trên que thăm ít thay đổi hơn so với dầu đại lý đổ trước đó trong suốt mốc 15.000 km của nhà sản xuất. Tuy vậy, theo anh, khoảng 7.500–10.000 km mới là hợp lý, và tới 12.500 km thì cả hai loại dầu đều đã "kiệt".
+
+**2. Tên cũ RT4X và R4 X là một.** Một thành viên dẫn lời Shell Anh cho biết sản phẩm không thay đổi, chỉ đổi tên từ Rimula RT4X sang Rimula R4 X.
+
+**3. TBN đo thực tế có thể thấp hơn TDS.** Người mở chủ đề dẫn một kết quả phân tích dầu mới (VOA) lấy từ nhà máy ở Nga cho thấy TBN 7,3, trong khi TDS ghi khoảng 10. Các thành viên cho rằng công thức có thể khác theo nhà máy sản xuất.
+
+**Lời khuyên của chúng tôi:**
+
+- Con số 7.500–10.000 km là kinh nghiệm của một người với xe chạy khắc nghiệt, không phải khuyến cáo chung. Xe tải chở nặng, chạy đèo dốc hoặc nổ máy chờ hàng nhiều giờ nên lấy mốc thay ngắn hơn mốc "điều kiện thường" trong hướng dẫn sử dụng của hãng xe.
+- Về TBN: TDS hiện hành (bản 5.5, 23/09/2026) ghi 10,5 mg KOH/g theo ASTM D2896. Số đo của một mẫu ở nhà máy khác hoặc theo phương pháp khác (ASTM D4739 cho số thấp hơn) không so trực tiếp được. Khi cần, hãy yêu cầu CO/CQ của lô hàng.
+- Muốn biết dầu trong xe mình còn tốt không, đo độ nhớt mẫu dầu bằng [máy đo cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) trước khi quyết định kéo dài hay rút ngắn chu kỳ.
+
 ## Khi nào cần thay dầu?
 
 Mốc chuẩn là số km hoặc giờ máy do nhà sản xuất động cơ quy định. Máy công trình nhiều bụi, xe quá tải hoặc chạy nhiều đoạn ngắn cần thay sớm hơn. Với đội xe lớn, có thể dựa vào kết quả kiểm tra dầu:
@@ -118,6 +134,9 @@ R4 X là dầu tro thông thường (1,45 %), hợp với động cơ chưa có 
 
 ### Có đổ lẫn R4 X với dầu hãng khác được không?
 Không nên trộn thường xuyên vì hệ phụ gia mỗi hãng khác nhau. Nếu buộc phải thêm giữa hai lần thay, hãy dùng dầu cùng cấp API và cùng cấp nhớt, rồi thay toàn bộ ở lần bảo dưỡng tiếp theo.
+
+### Rimula RT4X và Rimula R4 X có khác nhau không?
+Theo thông tin Shell Anh được dẫn trên diễn đàn BobIsTheOilGuy, đây là cùng một sản phẩm, chỉ đổi tên. Khi mua, hãy đối chiếu cấp API CI-4 và ACEA E7 trên nhãn.
 
 ## Quy cách đóng gói, đơn hàng
 

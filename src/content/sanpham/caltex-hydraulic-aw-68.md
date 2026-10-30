@@ -13,13 +13,14 @@ vg: 68
 base_oil: "Dầu gốc khoáng"
 
 specs:
+  - { name: "Mã sản phẩm Chevron", value: "520312" }
   - { name: "Độ nhớt động học ở 40 °C", value: "65 mm²/s" }
   - { name: "Độ nhớt động học ở 100 °C", value: "8,7 mm²/s" }
   - { name: "Chỉ số độ nhớt", value: "95 (tối thiểu)" }
   - { name: "Điểm chớp cháy", value: "240 °C" }
   - { name: "Điểm đông đặc", value: "-21 °C" }
   - { name: "Thử gỉ nước biển", value: "Đạt", method: "ASTM D665B" }
-tds_date: "10/2026"
+tds_date: "PDS Chevron châu Á – Thái Bình Dương, mã tài liệu PDSV1_08/2007 (bản ©2023)"
 tds_url: "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=338972&docFormat=PDF"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
@@ -56,7 +57,7 @@ tom_tat:
 related_posts: ["huong-dan-chon-do-nhot"]
 tags: ["iso-vg-68", "chong-mai-mon", "caltex"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Caltex Hydraulic Oil AW 68** là dầu thủy lực chống mài mòn của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho hệ thủy lực cố định và hệ thủy lực trên máy di động. Mục tiêu của dòng này là bảo vệ tốt với chi phí hợp lý.
@@ -99,6 +100,41 @@ ENEOS Super Hyrando 68 cùng cấp, cùng loại chống mài mòn và có sẵn
 
 > **Nhận định của HT VINA:** Máy đang dùng Caltex AW 68 và chạy ổn thì đặt tiếp đúng mã để khỏi súc rửa. Cần dầu ngay, hoặc máy chạy nóng liên tục, thì ENEOS Super Hyrando 68 có sẵn và có chỉ số độ nhớt, điểm chớp cháy cao hơn. Khi đổi mã, xả hết dầu cũ và thay lọc.
 
+## Hydraulic Oil AW khác Rando HD thế nào? {#rando-hd}
+
+Chevron bán hai dòng dầu thủy lực chống mài mòn ở châu Á. Chính TDS của Hydraulic Oil AW nói rõ khi nào nên chuyển sang dòng cao hơn:
+
+| | Caltex Hydraulic Oil AW 68 | Rando HD 68 (kho không bán, chỉ để tra cứu) |
+| :--- | :--- | :--- |
+| Hãng định vị | Dầu kinh tế cho hệ hao dầu nhiều do rò rỉ, hỏng phớt, vỡ ống | Ứng dụng khắt khe, chạy nóng, muốn kéo dài chu kỳ thay |
+| Phê duyệt của hãng máy | TDS ghi "N/A" (không có) | Có danh sách phê duyệt riêng |
+| Kéo dài chu kỳ thay dầu | Hãng không nhắm tới | Hãng nhắm tới |
+
+Nguyên văn TDS: Hydraulic Oil AW dành cho hệ thống "có mức tiêu hao cao do rò rỉ, hỏng phớt hoặc vỡ ống, nơi dầu không cần chứng minh chu kỳ thay kéo dài". Nếu máy chạy ở nhiệt độ cao, cần thay thưa hoặc cần đầy đủ phê duyệt của hãng máy, Chevron khuyên xem xét Rando HD.
+
+> **Nhận định của HT VINA:** Đây là điểm ít người bán nói ra. Caltex AW 68 không phải dầu kém, nhưng nó được thiết kế cho máy "uống dầu": thùng dầu được châm mới liên tục nên dầu ít khi phải sống lâu. Máy kín, ít rò rỉ, chạy 3 ca và muốn thay dầu thưa thì chúng tôi khuyên chọn mã có số liệu bền oxy hóa và phê duyệt hãng bơm, như [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68).
+
+## Chọn cấp 32, 46, 68 hay 100 trong dòng Caltex AW {#chon-cap}
+
+TDS Chevron công bố bốn cấp. Kho HT VINA hiện chỉ có cấp 68; bảng dưới giúp bạn đối chiếu khi hướng dẫn sử dụng ghi cấp khác:
+
+| Cấp ISO VG | Mã Chevron | Độ nhớt 40 °C | Độ nhớt 100 °C | Chớp cháy | Đông đặc |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 32 | 520310 | 31 mm²/s | 5,4 mm²/s | 200 °C | −21 °C |
+| 46 | 520311 | 44 mm²/s | 6,7 mm²/s | 220 °C | −21 °C |
+| **68** | **520312** | **65 mm²/s** | **8,7 mm²/s** | **240 °C** | **−21 °C** |
+| 100 | 520313 | 99 mm²/s | 11,2 mm²/s | 250 °C | −18 °C |
+
+Cả bốn cấp có chỉ số độ nhớt tối thiểu 95, tức độ nhớt thay đổi theo nhiệt độ ở mức thông thường của dầu gốc khoáng. Ở xưởng miền Bắc, mùa hè thùng dầu dễ lên 50–60 °C; cấp 68 giữ màng dầu dày hơn cấp 46 ở nhiệt độ đó. Chọn cấp theo bảng của nhà sản xuất máy, xem thêm [hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/huong-dan-chon-do-nhot).
+
+## Kinh nghiệm từ người sử dụng {#kinh-nghiem}
+
+**"Dầu nào ghi 68 cũng như nhau?"** Trên diễn đàn kỹ sư [CR4 (GlobalSpec)](https://cr4.globalspec.com/thread/35117/AW-68-Hydraulic-Oil-vs-Rando-HD-68-Hydraulic-Oil), một xưởng có máy ép thủy lực 150 tấn, áp làm việc 210 bar, hỏi AW 68 và Rando HD 68 khác nhau ra sao (03/2009). Một thành viên trả lời rằng anh đã dùng bất kỳ dầu thủy lực nào ghi "68", kể cả Rando HD 68, ở các nước nhiệt đới. Người trả lời còn lại khuyên hỏi thẳng nhà sản xuất máy ép.
+
+**Lời khuyên của chúng tôi:** cùng cấp 68 chỉ có nghĩa là cùng độ nhớt ở 40 °C. Như bảng so sánh ở trên, chính Chevron tách hai dòng theo độ bền và phê duyệt. Với máy ép 210 bar còn bảo hành, hãy xem hướng dẫn sử dụng có đòi phê duyệt hãng bơm hay không trước khi chọn mã kinh tế.
+
+**Máy công trình làm việc ngoài trời ẩm.** TDS ghi Hydraulic Oil AW dùng cho "thủy lực máy di động và máy công trình cần dầu tách nước", và đạt thử gỉ nước biển ASTM D665B. Chúng tôi khuyên với máy hay để ngoài mưa: kiểm tra nắp lỗ thở và xả nước đọng đáy thùng định kỳ, vì dầu tách nước tốt thì nước sẽ lắng xuống đáy chứ không tự biến mất. Cách kiểm tra xem [kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong).
+
 ## Khi nào cần thay dầu?
 
 Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết Caltex Hydraulic Oil AW 68 trong máy của bạn còn dùng được không, kiểm tra ba chỉ tiêu sau:
@@ -121,6 +157,12 @@ Có. Caltex là thương hiệu của Chevron, dùng tại châu Á – Thái B�
 
 ### Vì sao độ nhớt ở 40 °C là 65 mà vẫn gọi là cấp 68?
 Cấp ISO VG 68 cho phép độ nhớt ở 40 °C nằm trong khoảng 61,2–74,8 mm²/s. Con số 65 là giá trị điển hình của lô sản xuất, vẫn đúng cấp 68.
+
+### Caltex AW 68 có dùng cho máy ép nhựa được không?
+Được. TDS Chevron liệt kê máy ép nhựa trong danh sách ứng dụng. Máy ép nhựa đời mới chạy liên tục, thùng dầu nóng, thì nên cân nhắc mã có số liệu bền oxy hóa và phê duyệt hãng bơm như đã nêu ở mục [Hydraulic Oil AW khác Rando HD thế nào?](#rando-hd).
+
+### Caltex AW 68 có phê duyệt của Denison, Eaton hay Bosch Rexroth không?
+Không. Mục phê duyệt trong TDS ghi "N/A". Nếu hướng dẫn sử dụng máy bắt buộc phê duyệt, hãy chọn mã có phê duyệt.
 
 ## Quy cách đóng gói, đơn hàng
 

@@ -61,7 +61,7 @@ tom_tat:
   - "**Có sẵn tại kho** (xô 20 L)."
 tags: ["iso-vg-68", "chong-mai-mon", "castrol"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **Castrol Hyspin HLP-Z 68** là dầu thủy lực chống mài mòn gốc khoáng tinh chế, dùng hệ phụ gia chống mài mòn **gốc kẽm** ổn định. Theo Castrol, dầu được phân loại DIN 51502 HLP và ISO 6743-4 HM, đáp ứng DIN 51524 phần 2, ISO 11158 HM và ASTM D6158 HM. Ngoài hệ thủy lực, dầu dùng được cho bánh răng tải nhẹ và hệ dầu tuần hoàn.
@@ -103,6 +103,35 @@ Hai mã cùng hãng, cùng cấp 68 và cùng dùng phụ gia kẽm. Hyspin AWS 
 
 > **Nhận định của HT VINA:** HLP-Z hợp khi bạn cần xô nhỏ đúng tiêu chuẩn DIN HLP. Thay cả thùng lớn thì phuy Hyspin AWS 68 có sẵn, tách nước nhanh hơn và được hãng bơm chấp thuận.
 
+## Có kẽm hay không kẽm: chọn thế nào? {#kem}
+
+Chữ "Z" là điểm khác biệt chính của mã này, nên đáng nói kỹ hơn một chút.
+
+| Hệ thủy lực của bạn | Nên chọn |
+| :--- | :--- |
+| Bơm bánh răng, bơm cánh gạt thép, hướng dẫn sử dụng ghi HLP/HM | Dầu có kẽm như HLP-Z 68 dùng tốt. Phụ gia kẽm tạo màng chống mài mòn trên bề mặt thép khi tải làm mỏng màng dầu. |
+| Bơm pít-tông có nhiều chi tiết đồng, đồng thau; hãng bơm ghi "zinc-free" hoặc "ashless" | Dầu không kẽm, ví dụ [ENEOS Super Hyrando SE 68](/dau-thuy-luc/eneos-super-hyrando-68) (bản không kẽm theo TDS ENEOS, nhận đặt theo yêu cầu) hoặc dòng Castrol Hyspin HLP-AF. |
+| Máy đang dùng dầu không kẽm | Đừng châm HLP-Z vào. Hai hệ phụ gia khác nhau có thể làm giảm tác dụng của nhau; đổi loại thì xả, súc rửa và thay lọc. |
+
+Căn cứ: Castrol phân loại HLP-Z theo DIN 51524-2 (HLP) và ISO 11158 (HM). Cả hai tiêu chuẩn này cho phép dầu có hoặc không có kẽm, nên tài liệu hướng dẫn của hãng bơm mới là chỗ quyết định.
+
+## Kinh nghiệm từ người sử dụng {#kinh-nghiem}
+
+HLP-Z 68 đóng xô 20 L nên thường được mua để châm bù cho máy công cụ, máy tiện CNC có thùng thủy lực nhỏ (mâm cặp, đài dao, ụ động). Chuyện châm bù được bàn khá kỹ trên diễn đàn [Practical Machinist](https://practicalmachinist.com/forum/threads/mixing-hydraulic-oils.445702/) (01/2026):
+
+- Chủ một máy tiện CNC Okuma hỏi: máy quy định dầu AW 32, có được châm dầu AW 46 không. Đại lý dầu bảo "người ta vẫn làm thế suốt".
+- Một thợ có 30 năm làm việc với 80–100 máy tiện CNC cho biết chưa gặp sự cố khi trộn hai cấp độ nhớt. Anh nói thêm có lúc châm dầu đặc hơn để trì hoãn sửa chỗ rò ở xi lanh hay khớp quay, và tự gọi đó là "chữa cháy".
+- Một thành viên khác ở Anh nhắc rằng dầu cần đủ loãng ở nhiệt độ thấp nhất máy gặp, và **hệ phụ gia** (chống mài mòn, chống bọt) đáng lo hơn chênh lệch nhỏ về cấp độ nhớt.
+- Người hỏi cho biết đài dao trên máy của anh cũng chạy bằng thủy lực, qua lỗ tiết lưu khoảng 1,3–1,5 mm, có vít chỉnh lưu lượng nếu dầu đặc làm đài dao xoay chậm.
+
+**Lời khuyên của chúng tôi:**
+
+1. Châm bù đúng cấp ghi trên máy. HLP-Z 68 chỉ dùng cho máy ghi cấp 68; máy ghi 32 hoặc 46 thì đừng châm 68, vì van tiết lưu và đài dao sẽ chạy chậm hơn, nhất là sáng sớm mùa đông khi xưởng lạnh.
+2. Ý thứ hai của diễn đàn là đúng: hãy để ý hệ phụ gia. Máy đang dùng dầu có kẽm thì châm HLP-Z ổn. Máy đang dùng dầu không kẽm thì không châm (xem mục [có kẽm hay không kẽm](#kem)).
+3. Châm dầu đặc hơn để "bịt" rò rỉ chỉ là giải pháp tạm. Thay phớt sớm thì rẻ hơn tiền dầu châm thêm hằng tháng.
+
+Căn cứ: độ nhớt ở 40 °C của dầu 68 là 68 mm²/s theo TDS, gấp khoảng hai lần dầu cấp 32. Khi trộn, độ nhớt hỗn hợp thay đổi theo tỷ lệ trộn, nên sau vài lần châm bù khác cấp, dầu trong thùng không còn đúng cấp nào. Muốn biết chắc, đo độ nhớt bằng [máy đo cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
+
 ## Khi nào cần thay dầu?
 
 Mốc thay dầu của nhà sản xuất máy chỉ tính cho điều kiện trung bình. Để biết Castrol Hyspin HLP-Z 68 trong máy của bạn còn dùng được không, kiểm tra ba chỉ tiêu sau:
@@ -125,6 +154,12 @@ Không. Castrol xếp HLP-Z vào dầu thủy lực chống mài mòn, tài li�
 
 ### Chữ "Z" trong tên nghĩa là gì?
 Dòng HLP-Z dùng phụ gia chống mài mòn gốc kẽm. Castrol có dòng HLP-AF pha chế không chứa phụ gia kẽm, dành cho thiết bị yêu cầu dầu không kẽm.
+
+### Một thùng thủy lực máy CNC nên dùng mấy xô?
+Thùng thủy lực máy tiện, máy phay CNC cỡ vừa thường chỉ vài chục lít; dung tích chính xác ghi trong hướng dẫn sử dụng. Khi thay toàn bộ, hãy tính thêm khoảng một xô để súc rửa và châm bù trong tháng đầu.
+
+### HLP-Z 68 có dùng chung được với Hyspin AWS 68 không?
+Hai mã cùng hãng, cùng cấp 68, cùng dùng phụ gia kẽm, nên rủi ro khi châm lẫn thấp hơn so với trộn khác hãng. Dù vậy, khi thay cả thùng vẫn nên dùng một mã duy nhất để dễ theo dõi chất lượng dầu.
 
 ## Quy cách đóng gói, đơn hàng
 

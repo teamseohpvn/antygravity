@@ -47,7 +47,7 @@ tom_tat:
   - "**Chưa có TDS** của VHP: trang chưa có bảng thông số; theo dõi dầu bằng trị số axit."
 tags: ["iso-vg-32", "iso-vg-46", "may-nen-khi", "vhp"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-10-30"
 ---
 
 **VHP Rosia CPR** là dầu bôi trơn chuyên dụng cho **máy nén khí trục vít và pít-tông**, do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Kho chúng tôi có hai cấp: **CPR 32** (ISO VG 32) và **CPR 46** (ISO VG 46). Dầu chống oxy hóa, giảm ăn mòn, tản nhiệt nhanh và hạn chế tạo cặn trong máy.
@@ -80,6 +80,22 @@ Cả hai cùng cấp VG 32 và có sẵn tại kho. [ENEOS Faircol RA 32](/dau-m
 
 > **Nhận định của HT VINA:** Máy nén trục vít chạy liên tục nhiều ca, nhiệt độ xả cao, hoặc cần số liệu để lập kế hoạch thay dầu thì chọn Faircol RA. Máy pít-tông, máy nhỏ chạy ít giờ thì Rosia CPR đóng xô 18 L là đủ.
 
+## Châm bù dầu máy nén khí: sai lầm đắt nhất {#cham-bu}
+
+Rosia CPR đóng xô 18 L nên hay được mua để châm bù. Với máy nén khí trục vít, châm nhầm loại dầu có thể làm hỏng cụm đầu nén chỉ sau vài tuần.
+
+**Người dùng chia sẻ.** Trên diễn đàn máy nén khí công nghiệp [Industrial Air Compressor Forum](https://www.tapatalk.com/groups/aircompressors/mixing-compressor-fluids-t4187032.html) (2011–2012), một kỹ thuật viên hỏi cách thuyết phục khách đừng châm dầu khác loại. Các thành viên trả lời:
+
+- "Không bao giờ trộn dầu khác gốc." Hỗn hợp sẽ mang đặc tính của loại dầu kém hơn, có nguy cơ tạo cặn vecni và tạo bọt.
+- Một thợ kể khách muốn tiết kiệm nên trộn dầu ATF với dầu tổng hợp. Dầu sủi bọt, **vòng bi côn của đầu nén hỏng nhanh**, khe hở rotor vượt giới hạn gây ma sát và nóng, máy cứ chạy 5 phút lại tự ngắt. Kết luận của anh: "đồ rẻ có khi lại rất đắt".
+
+**Lời khuyên của chúng tôi:**
+
+1. Ghi tên dầu đang dùng lên thân máy, ngay cạnh cửa châm dầu.
+2. Rosia CPR là dầu gốc khoáng. Máy đang dùng dầu tổng hợp (PAO, PAG, este) thì **không châm** Rosia CPR vào; muốn đổi loại, xả hết, thay lọc dầu và lọc tách, chạy súc rửa theo hướng dẫn của hãng máy.
+3. Không dùng ATF, dầu thủy lực hay dầu động cơ để châm máy nén khí, kể cả "tạm thời".
+4. Châm bù xong, theo dõi kính thăm dầu trong 30 phút đầu: bọt nhiều bất thường là dấu hiệu hai loại dầu không hợp nhau.
+
 ## Khi nào cần thay dầu?
 
 Theo mốc giờ chạy của hãng máy nén, nhưng nên điều chỉnh theo kết quả kiểm tra. Dầu máy nén khí trục vít làm việc ở nhiệt độ xả cao nên bị oxy hóa nhanh, và **trị số axit** là chỉ tiêu báo sớm nhất.
@@ -99,6 +115,9 @@ Theo mốc giờ chạy của hãng máy nén, điều chỉnh theo trị số a
 
 ### Có trộn Rosia CPR với dầu máy nén đang dùng được không?
 Không nên trộn dầu máy nén khí khác hãng hoặc khác gốc dầu. Khi đổi sang Rosia CPR, nên xả hết dầu cũ, thay lọc dầu và lọc tách để tránh tạo bọt, tạo cặn.
+
+### Máy nén khí đang dùng dầu tổng hợp có đổi sang Rosia CPR được không?
+Được nếu hãng máy cho phép dầu khoáng, nhưng phải xả hết dầu cũ, thay lọc dầu và lọc tách, không châm lẫn. Máy còn bảo hành mà hãng bắt buộc dầu riêng thì dùng dầu hãng chỉ định.
 
 ## Quy cách đóng gói, đơn hàng
 
