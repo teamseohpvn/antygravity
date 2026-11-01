@@ -200,6 +200,13 @@ const schemaData = [
         {coGia && ngay && <><br />Giá rà soát ngày <strong>{ngay}</strong>{!HIEU_LUC && ', áp dụng đến khi trang này ghi ngày mới'}.</>}
       </p>
 
+      <nav class="page-menu" aria-label="Lối tắt trong trang">
+        <a href="#nhan-dinh">Tin giá dầu tháng 11</a>
+        <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">BẢNG BÁO GIÁ</a>
+        <a href="#chiet-khau">Chiết khấu doanh nghiệp</a>
+        <a href="#quy-trinh">Quy trình đặt hàng</a>
+      </nav>
+
       <dl class="doc-info">
         <div><dt>Người lập</dt><dd><a href={personUrl(nguoiGia)}>{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
         <div><dt>Người duyệt</dt><dd><a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a>, {nguoiDuyet.role.toLowerCase()}</dd></div>
@@ -234,21 +241,10 @@ const schemaData = [
       </ul>
       <QuoteCta item="Dầu thủy lực 68" compact />
 
-      <nav class="page-menu" aria-label="Nội dung trang">
-        <a href="#nhan-dinh">Nhận định tháng 11</a>
-        <a href="#chiet-khau">Chiết khấu doanh nghiệp</a>
-        <a href="#bang-gia">Bảng giá</a>
-        <a href="#giao-hang">Giao hàng</a>
-        <a href="#quy-trinh">Quy trình đặt hàng</a>
-        <a href="#danh-gia">Đánh giá khách hàng</a>
-        <a href="#doi-chieu">Đối chiếu mã</a>
-        <a href="#giu-gia">Giữ giá</a>
-        <a href="#hoi-dap">Hỏi đáp</a>
-      </nav>
     </header>
 
     <section class="price-body" id="nhan-dinh">
-      <h2>Nhận định giá dầu tháng 11/2026</h2>
+      <h2>Tin giá dầu tháng 11/2026: đã tăng 4 tháng liên tiếp</h2>
       <blockquote class="market-note">
         <p>Giá dầu tháng 11 diễn biến phức tạp và có khả năng tăng cao nếu chiến sự giữa Mỹ và Iran tái bùng phát.</p>
         <footer>Nhận định chủ quan của {displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}, ngày {fmtNgay(NGAY_NHAN_DINH)}. Đây không phải dự báo chắc chắn.</footer>
@@ -256,7 +252,7 @@ const schemaData = [
 
       <h3>Tin tức đáng chú ý</h3>
       <ul>
-        <li><strong>Giá dầu thô ở mức cao nhất 6 tháng.</strong> Phiên 30/10, Brent giao tháng 12 (đáo hạn cùng ngày) chốt 117,64 USD/thùng, hợp đồng tháng 1 chốt 113,43 USD/thùng. Cả tháng 10, Brent tăng 13,6% (<a href={TIN.reuters} rel="noopener">Reuters</a>).</li>
+        <li><strong>Giá dầu thô ở mức cao nhất 6 tháng.</strong> Phiên 30/10, Brent giao tháng 12 (đáo hạn cùng ngày) chốt 117,64 USD/thùng, hợp đồng tháng 1 chốt 113,43 USD/thùng. Cả tháng 10, Brent tăng 13,6% (<a href={TIN.reuters} rel="noopener">Reuters</a>), là tháng tăng thứ tư liên tiếp (<a href={TIN.vietnamPlus} rel="noopener">Vietnam+</a>).</li>
         <li><strong>Nguy cơ leo thang sau bầu cử Mỹ.</strong> Giới giao dịch lo chiến sự leo thang sau bầu cử giữa kỳ ngày 3/11. Cùng ngày 30/10, một tàu chở dầu ở eo biển Hormuz trúng thiết bị nổ (<a href={TIN.reuters} rel="noopener">Reuters</a>). Số vụ tấn công tàu thương mại trong tháng 10 ở Hormuz và vùng biển lân cận cao nhất từ năm 2017 (<a href={TIN.vietnamPlus} rel="noopener">Vietnam+</a>).</li>
         <li><strong>Vẫn có tín hiệu ngược chiều.</strong> Đoàn trung gian Qatar đã trở lại Tehran để thúc đẩy thỏa thuận, và hai trong ba hãng theo dõi tàu ghi nhận xuất khẩu dầu thô của Ả Rập Xê Út tháng 10 tăng so với tháng 9 (<a href={TIN.reuters} rel="noopener">Reuters</a>). Nếu đàm phán có kết quả, giá có thể hạ.</li>
       </ul>
@@ -614,9 +610,12 @@ const schemaData = [
   .doc-info dt { font-size: 0.82rem; color: var(--color-text-light); }
   .doc-info dd { margin: 0; font-weight: 600; }
   .doc-info a { color: var(--color-primary); text-decoration: underline; }
-  .page-menu { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border-color, #e2e8f0); }
-  .page-menu a { padding: 8px 12px; border: 1px solid var(--border-color, #e2e8f0); border-radius: 999px; font-size: 0.9rem; color: var(--color-primary); text-decoration: none; }
+  .page-menu { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 14px; }
+  .page-menu a { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 8px 10px; border: 1px solid var(--color-primary); border-radius: 8px; font-size: 0.92rem; font-weight: 600; line-height: 1.25; text-align: center; color: var(--color-primary); text-decoration: none; }
   .page-menu a:hover { background: #f1f5f9; }
+  .price-hero .page-menu a.page-menu__main { background: var(--color-primary); color: #fff; font-size: 1rem; font-weight: 800; letter-spacing: 0.02em; }
+  .page-menu a.page-menu__main:hover { filter: brightness(1.15); }
+  .price-page section[id] { scroll-margin-top: 90px; }
   .discount { background: #fff7ed; border-color: #fed7aa; }
   .discount__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
   .price-body .discount__actions a { text-decoration: none; }
