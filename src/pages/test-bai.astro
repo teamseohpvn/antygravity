@@ -73,6 +73,15 @@ const vat = cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT';
 
 const iso11158 = traTieuChuan('ISO 11158');
 
+// Nguồn tin cho mục nhận định, đã đọc ngày 01/11/2026. Tin thay đổi nhanh: cập nhật cùng NGAY_NHAN_DINH.
+const NGAY_NHAN_DINH = '2026-11-01';
+const TIN = {
+  reuters: 'https://finance.yahoo.com/news/oil-rises-supply-concerns-houthis-022725347.html',
+  vietnamPlus: 'https://www.vietnamplus.vn/gia-dau-the-gioi-len-muc-cao-nhat-6-thang-do-lo-ngai-tinh-hinh-my-iran-post1145330.vnp',
+  lubes: 'https://www.lubesngreases.com/bor-asia/weekly-asia-base-oil-price-report-125/',
+  tyGia: 'https://vov.vn/thi-truong/ty-gia-usd-hom-nay-3110-ty-gia-trung-tam-o-muc-25637-dongusd-post1346036.vov',
+};
+
 // Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
@@ -149,6 +158,7 @@ const schemaData = [
       'https://www.shell.us/business-customers/lubricants-for-business/products/shellandwhitmore/shell-tellus-s2-mx.html',
       'https://www.mobil.com/en/lubricants/for-businesses/industrial/lubricants/product-series/mobil-dte-20-series',
       'https://lubricants.catalog.totalenergies.com/catalog-vn/vi_VN/164_azolla-zs-68',
+      ...Object.values(TIN),
     ],
     datePublished: NGAY_DANG,
     dateModified: ngaySua,
@@ -225,8 +235,9 @@ const schemaData = [
       <QuoteCta item="Dầu thủy lực 68" compact />
 
       <nav class="page-menu" aria-label="Nội dung trang">
-        <a href="#bang-gia">Bảng giá</a>
+        <a href="#nhan-dinh">Nhận định tháng 11</a>
         <a href="#chiet-khau">Chiết khấu doanh nghiệp</a>
+        <a href="#bang-gia">Bảng giá</a>
         <a href="#giao-hang">Giao hàng</a>
         <a href="#quy-trinh">Quy trình đặt hàng</a>
         <a href="#danh-gia">Đánh giá khách hàng</a>
@@ -236,15 +247,52 @@ const schemaData = [
       </nav>
     </header>
 
-    {cauHinh.nhan_dinh && (
-      <section class="price-body">
-        <h2>Nhận định giá{thang ? ` tháng ${thang}` : ''}</h2>
-        <blockquote class="market-note">
-          <p>{cauHinh.nhan_dinh}</p>
-          <footer>{displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}</footer>
-        </blockquote>
-      </section>
-    )}
+    <section class="price-body" id="nhan-dinh">
+      <h2>Nhận định giá dầu tháng 11/2026</h2>
+      <blockquote class="market-note">
+        <p>Giá dầu tháng 11 diễn biến phức tạp và có khả năng tăng cao nếu chiến sự giữa Mỹ và Iran tái bùng phát.</p>
+        <footer>Nhận định chủ quan của {displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}, ngày {fmtNgay(NGAY_NHAN_DINH)}. Đây không phải dự báo chắc chắn.</footer>
+      </blockquote>
+
+      <h3>Tin tức đáng chú ý</h3>
+      <ul>
+        <li><strong>Giá dầu thô ở mức cao nhất 6 tháng.</strong> Phiên 30/10, Brent giao tháng 12 (đáo hạn cùng ngày) chốt 117,64 USD/thùng, hợp đồng tháng 1 chốt 113,43 USD/thùng. Cả tháng 10, Brent tăng 13,6% (<a href={TIN.reuters} rel="noopener">Reuters</a>).</li>
+        <li><strong>Nguy cơ leo thang sau bầu cử Mỹ.</strong> Giới giao dịch lo chiến sự leo thang sau bầu cử giữa kỳ ngày 3/11. Cùng ngày 30/10, một tàu chở dầu ở eo biển Hormuz trúng thiết bị nổ (<a href={TIN.reuters} rel="noopener">Reuters</a>). Số vụ tấn công tàu thương mại trong tháng 10 ở Hormuz và vùng biển lân cận cao nhất từ năm 2017 (<a href={TIN.vietnamPlus} rel="noopener">Vietnam+</a>).</li>
+        <li><strong>Vẫn có tín hiệu ngược chiều.</strong> Đoàn trung gian Qatar đã trở lại Tehran để thúc đẩy thỏa thuận, và hai trong ba hãng theo dõi tàu ghi nhận xuất khẩu dầu thô của Ả Rập Xê Út tháng 10 tăng so với tháng 9 (<a href={TIN.reuters} rel="noopener">Reuters</a>). Nếu đàm phán có kết quả, giá có thể hạ.</li>
+      </ul>
+
+      <h3>Rủi ro chi phí đầu vào khi mua dầu trong tháng này</h3>
+      <div class="table-wrap">
+        <table class="match risk">
+          <thead>
+            <tr><th scope="col">Yếu tố</th><th scope="col">Đang diễn ra</th><th scope="col">Ảnh hưởng tới doanh nghiệp</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Dầu gốc</strong></td><td>Báo cáo ngày 19/10 cho biết giá dầu gốc châu Á chịu áp lực tăng, nhà máy lọc ưu tiên nhiên liệu và hạn chế chào hàng giao ngay. Với dầu gốc nhóm II, giá tuần đó đi ngang hoặc tăng nhẹ (<a href={TIN.lubes} rel="noopener">Lubes'N'Greases</a>).</td><td>Giá dầu thô tăng không có nghĩa dầu thủy lực tăng cùng tỷ lệ. Rủi ro là hãng điều chỉnh giá, hoặc nguồn hàng một số mã nhập khẩu khan hơn.</td></tr>
+            <tr><td><strong>Cước và bảo hiểm</strong></td><td>Cước vận tải và bảo hiểm qua vùng rủi ro ở mức cao kỷ lục (<a href={TIN.lubes} rel="noopener">Lubes'N'Greases</a>).</td><td>Lô nhập mới có thể tốn chi phí và thời gian hơn.</td></tr>
+            <tr><td><strong>Tỷ giá</strong></td><td>Ngày 31/10, Vietcombank bán USD ở mức 25.990 đồng (<a href={TIN.tyGia} rel="noopener">VOV</a>).</td><td>Dầu gốc và phụ gia phần lớn phải nhập khẩu, nên USD tăng sẽ cộng thêm vào giá vốn.</td></tr>
+            <tr><td><strong>Mua trữ quá nhu cầu</strong></td><td>Giá có thể giảm nếu đàm phán tiến triển. Saxo Bank dự kiến dầu thô giao dịch quanh 70–90 USD/thùng sau khi xung đột kết thúc (<a href={TIN.reuters} rel="noopener">Reuters</a>).</td><td>Tiền nằm trong kho và có thể mua đúng lúc giá đỉnh. Đây là rủi ro ngược chiều cần tính cùng lúc.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Cách ước lượng nhanh: giả sử đơn 10 phuy, mỗi phuy 5.000.000 đ, thì mỗi 5% tăng giá làm đơn hàng tốn thêm 2.500.000 đ. Đây là phép tính minh họa, không phải dự báo mức tăng.</p>
+      <p>Nếu đã rõ lượng dầu cần dùng trong tháng, doanh nghiệp có thể <a href="#giu-gia">chốt giá và lấy hàng chia đợt</a>. Nếu chưa rõ, hãy <a href="#dat-bao-nhieu">tính theo nhu cầu của máy</a> thay vì mua trữ vì lo giá tăng.</p>
+    </section>
+
+    <section class="price-body discount" id="chiet-khau">
+      <h2>Doanh nghiệp cần chiết khấu hoặc giá linh hoạt</h2>
+      <p>Bảng dưới đây là <strong>báo giá sơ bộ</strong>. Nếu muốn chiết khấu hoặc có chính sách giá linh hoạt riêng, bạn có thể liên lạc để đàm phán giá theo mã, sản lượng và thời hạn thanh toán. Để nhận được mức sát nhất ngay lần đầu, hãy gửi kèm:</p>
+      <ul>
+        <li>Mã dầu và sản lượng dự kiến mỗi tháng hoặc mỗi quý.</li>
+        <li>Số điểm giao và lịch giao mong muốn.</li>
+        <li>Thời hạn thanh toán đề nghị, tên công ty và mã số thuế.</li>
+      </ul>
+      <div class="discount__actions">
+        <a href={QUOTE_DN} class="btn-primary" data-track="add_to_quote">Gửi yêu cầu riêng</a>
+        <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
+        <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
+      </div>
+    </section>
 
     <section class="price-body" id="bang-gia">
       <h2>Bảng giá dầu thủy lực 68 tại kho</h2>
@@ -259,7 +307,7 @@ const schemaData = [
       )}
 
       <ul class="notes">
-        <li>Giá là <strong>khoảng tham khảo</strong> cho một đơn vị đóng gói, {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT. Giá chính xác phụ thuộc số lượng, quy cách và điểm giao.</li>
+        <li>Đây là <strong>báo giá sơ bộ</strong>, ghi khoảng tham khảo cho một đơn vị đóng gói, {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT. Giá chính xác phụ thuộc số lượng, quy cách và điểm giao.</li>
         <li>Cột "Quy đổi" chia khoảng giá cho số lít trong phuy hoặc xô, để so sánh hai quy cách với nhau.</li>
         <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
       </ul>
@@ -268,21 +316,6 @@ const schemaData = [
         <img src={IMAGE} alt={IMAGE_ALT} width="1200" height="1200" loading="lazy" decoding="async" />
         <figcaption>Phuy dầu thủy lực 68 tại kho HT VINA, {AREA_TEXT}.</figcaption>
       </figure>
-    </section>
-
-    <section class="price-body discount" id="chiet-khau">
-      <h2>Doanh nghiệp cần mức chiết khấu cao hơn</h2>
-      <p>Bảng trên là khoảng giá tham khảo. Nhà máy mua nhiều phuy hoặc ký hợp đồng định kỳ được báo giá riêng, theo mã, sản lượng và thời hạn thanh toán. Để nhận được mức sát nhất ngay lần đầu, hãy gửi kèm:</p>
-      <ul>
-        <li>Mã dầu và sản lượng dự kiến mỗi tháng hoặc mỗi quý.</li>
-        <li>Số điểm giao và lịch giao mong muốn.</li>
-        <li>Thời hạn thanh toán đề nghị, tên công ty và mã số thuế.</li>
-      </ul>
-      <div class="discount__actions">
-        <a href={QUOTE_DN} class="btn-primary" data-track="add_to_quote">Đề nghị chiết khấu doanh nghiệp</a>
-        <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
-        <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
-      </div>
     </section>
 
     <section class="price-body" id="giao-hang">
@@ -541,6 +574,13 @@ const schemaData = [
 
 <style>
   .price-page { margin-bottom: 60px; }
+  @media (max-width: 640px) {
+    .risk thead { display: none; }
+    .risk, .risk tbody, .risk tr, .risk td { display: block; width: auto; }
+    .risk tr { border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 10px 12px; margin-bottom: 10px; }
+    .risk td { border: 0; padding: 0 0 6px; }
+    .risk td:nth-child(3)::before { content: 'Ảnh hưởng: '; font-weight: 600; }
+  }
   .draft-note { background: #fef3c7; border: 2px solid #b45309; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; color: #78350f; }
   .draft-slot { border: 2px dashed #b45309; background: #fffbeb; color: #78350f; border-radius: 8px; padding: 28px 18px; margin-top: 16px; text-align: center; }
   .price-hero, .price-body { background: white; border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; padding: clamp(20px, 4vw, 32px); margin-bottom: 24px; }
