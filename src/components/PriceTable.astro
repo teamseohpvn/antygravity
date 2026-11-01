@@ -9,9 +9,15 @@ interface Props {
   activePages: Set<string>;
   category: string;
   gomVat: boolean;
+  /** Có truyền thì hiện nút TDS trong cột Sản phẩm. Khóa là slug trang sản phẩm, giá trị là tds_url. */
+  tds?: Record<string, string | undefined>;
+  /** Có truyền thì thêm cột Tình trạng. Trả về tên các kho có dòng hàng này; mảng rỗng là chưa có dữ liệu kho. */
+  khoCuaDong?: (r: DongGiaCongKhai) => string[];
 }
 
-const { rows, activePages, category, gomVat } = Astro.props;
+const { rows, activePages, category, gomVat, tds, khoCuaDong } = Astro.props;
+// Link PDF ghi là tải về; link trang web của hãng ghi là xem, không hứa có file.
+const laPdf = (u: string) => /\.pdf($|\?)|docFormat=PDF/i.test(u);
 const groups = new Map<string, DongGiaCongKhai[]>();
 for (const r of rows) {
   const key = r.cap ?? 'Khác';
@@ -35,6 +41,7 @@ const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r
             <th scope="col">Quy cách</th>
             <th scope="col">Khoảng giá ({gomVat ? 'đã gồm VAT' : 'chưa VAT'})</th>
             <th scope="col">Quy đổi</th>
+            {khoCuaDong && <th scope="col">Tình trạng</th>}
             <th scope="col"><span class="sr-only">Báo giá</span></th>
           </tr>
         </thead>
@@ -46,14 +53,23 @@ const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r
                   ? <a href={`/${category}/${r.trang}`}>{r.ten}</a>
                   : <span>{r.ten}</span>}
                 <small>{r.hang} · {NGUON[r.nguon]}</small>
+                {tds && r.trang && (tds[r.trang]
+                  ? <a href={tds[r.trang]} class="tds-link" target="_blank" rel="noopener" data-track="download_tds">{laPdf(tds[r.trang]!) ? 'Tải TDS' : 'Xem TDS'}</a>
+                  : <small class="muted">Chưa có TDS của hãng</small>)}
               </td>
-              <td data-label="Quy cách">{r.quy_cach}</td>
+              <td data-label="Quy cách" class="nowrap">{r.quy_cach}</td>
               <td data-label="Khoảng giá" class="num">
                 {r.thap ? <>{fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</> : <span class="muted">Liên hệ</span>}
               </td>
               <td data-label="Quy đổi" class="num">
                 {r.thap_don_vi ? <>{fmtVnd(r.thap_don_vi)} – {fmtVnd(r.cao_don_vi)} đ/{r.don_vi_do === 'kg' ? 'kg' : 'lít'}</> : <span class="muted">–</span>}
               </td>
+              {khoCuaDong && (
+                <td data-label="Tình trạng" class="stock">
+                  <span class="stock__on">Có sẵn</span>
+                  <small>{khoCuaDong(r).length ? `Kho ${khoCuaDong(r).join(', ')}` : 'Hỏi kho gần bạn'}</small>
+                </td>
+              )}
               <td class="act">
                 <a href={quoteHref(r)} class="btn-row" data-track="add_to_quote">Báo giá trong ngày</a>
               </td>
@@ -77,6 +93,11 @@ const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r
   .price-table .num { white-space: nowrap; font-variant-numeric: tabular-nums; }
   .price-table .muted { color: var(--color-text-light); }
   .price-table .act { width: 1%; white-space: nowrap; }
+  .price-table td a.tds-link { display: inline-block; margin-top: 6px; padding: 3px 9px; border: 1px solid var(--color-primary); border-radius: 999px; font-size: 0.8rem; text-decoration: none; }
+  .price-table td a.tds-link:hover { background: var(--color-primary); color: white; }
+  .price-table .nowrap { white-space: nowrap; }
+  .stock__on { color: #166534; font-weight: 600; white-space: nowrap; }
+  .stock__on::before { content: ''; display: inline-block; width: 8px; height: 8px; margin-right: 6px; border-radius: 50%; background: #16a34a; vertical-align: 1px; }
   .btn-row { display: inline-block; padding: 7px 12px; border-radius: 6px; background: var(--color-accent); color: white !important; text-decoration: none !important; font-size: 0.88rem; font-weight: 600; }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
@@ -86,6 +107,8 @@ const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r
     .price-table, .price-table tbody, .price-table tr, .price-table td { display: block; width: 100%; }
     .price-table tr { border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; margin-bottom: 12px; padding: 8px 12px; }
     .price-table td { border: 0; padding: 4px 0; }
+    .price-table td.stock small { display: inline; margin-left: 6px; }
+    .price-table td a.tds-link { padding: 8px 12px; }
     .price-table td[data-label]:not([data-label="Sản phẩm"])::before { content: attr(data-label) ": "; color: var(--color-text-light); font-size: 0.85rem; }
     .price-table .act { width: auto; padding-top: 8px; }
     .btn-row { display: block; text-align: center; }

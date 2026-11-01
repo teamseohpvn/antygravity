@@ -1,6 +1,7 @@
 ---
 // BẢN NHÁP báo giá dầu thủy lực 68 tháng 11/2026 (noindex), để người dùng đánh giá trước khi thay /bao-gia-dau-thuy-luc.
 // Khi phát hành: chép nội dung sang trang chính, bỏ noindex, khung NHÁP, ô chờ ảnh; xóa file này và bộ lọc sitemap.
+import { KHO_NGAN, TON_KHO, TON_KHO_CAP_NHAT } from '../data/ton-kho-dau-thuy-luc';
 import Layout from '../layouts/Layout.astro';
 import NoiDungBai from '../components/NoiDungBai.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
@@ -49,6 +50,8 @@ const sanPham = (await getActiveProducts()).filter((p) => p.data.category === CA
 const activePages = new Set(sanPham.map((p) => p.id));
 // Mã đang có sẵn tại kho (trang ghi "N mã có sẵn tại kho"). Mã đặt hàng chỉ hiện giá trên trang sản phẩm của nó.
 const coSan = new Set(sanPham.filter((p) => p.data.stock_status === 'co-san').map((p) => p.id));
+const tdsTheoTrang = Object.fromEntries(sanPham.map((p) => [p.id, p.data.tds_url]));
+const khoCuaDong = (r: DongGiaCongKhai) => (TON_KHO[`${r.trang}|${r.quy_cach}`] ?? []).map((k) => KHO_NGAN[k]);
 
 // Trang chỉ nói về cấp ISO VG 68; mã 32, 46 nhận đặt theo yêu cầu (xem FAQ).
 const rows = all.filter((r) => /VG\s*68\b/i.test(r.cap ?? '') && (!r.trang || coSan.has(r.trang)));
@@ -297,7 +300,14 @@ const schemaData = [
       <h2>Bảng giá dầu thủy lực 68 tại kho</h2>
 
       {coGia ? (
-        <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} />
+        <>
+          <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {khoCuaDong} />
+        {!TON_KHO_CAP_NHAT && (
+          <aside class="draft-slot">
+            <strong>Chờ dữ liệu kho.</strong> Khi có số liệu, cột Tình trạng sẽ ghi tên kho, ví dụ "Kho Kiến An, Như Quỳnh", kèm ngày cập nhật.
+          </aside>
+        )}
+        </>
       ) : (
         <div class="empty">
           <p><strong>Bảng giá đang được cập nhật.</strong> Gửi tên dầu và số lượng cần mua để nhận báo giá trong ngày.</p>
@@ -308,6 +318,7 @@ const schemaData = [
       <ul class="notes">
         <li>Đây là <strong>báo giá sơ bộ</strong>, ghi khoảng tham khảo cho một đơn vị đóng gói, {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT. Giá chính xác phụ thuộc số lượng, quy cách và điểm giao.</li>
         <li>Cột "Quy đổi" chia khoảng giá cho số lít trong phuy hoặc xô, để so sánh hai quy cách với nhau.</li>
+        <li>"Có sẵn" không phải số tồn kho trực tiếp{TON_KHO_CAP_NHAT ? `, cập nhật ngày ${fmtNgay(TON_KHO_CAP_NHAT)}` : ''}. Hãy gọi xác nhận kho và số lượng trước khi chốt đơn.</li>
         <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
       </ul>
 
