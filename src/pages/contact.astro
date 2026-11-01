@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import BanDoKho from '../components/BanDoKho.astro';
-import { BUSINESS, ADDRESS_FULL, AREA_TEXT, LEGAL_NAME, TAX_ID, KCN_NEAR, KCN_FAR, breadcrumbSchema, absUrl, ORG_ID } from '../lib/site';
+import { BUSINESS, ADDRESS_FULL, KHO_GIAO_HANG, AREA_TEXT, LEGAL_NAME, TAX_ID, KCN_NEAR, KCN_FAR, breadcrumbSchema, absUrl, ORG_ID } from '../lib/site';
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
@@ -37,6 +37,13 @@ const crumbs = [
         <dd>{LEGAL_NAME}<br />Mã số thuế: {TAX_ID}</dd>
         <dt>Địa chỉ kho</dt>
         <dd>{ADDRESS_FULL} · <a href={BUSINESS.gbpUrl} target="_blank" rel="noopener" data-track="click_directions">Chỉ đường</a></dd>
+        <dt>Kho giao hàng khác</dt>
+        <dd>
+          <ul class="kho-list">
+            {KHO_GIAO_HANG.map((k) => <li><strong>{k.name}:</strong> {k.addressText}</li>)}
+          </ul>
+          Kho Tiền Phong và Kho Như Quỳnh ở trong thôn, không có số nhà. Gọi hotline để được chỉ đường trước khi đến.
+        </dd>
         <dt>Hotline / Zalo</dt>
         <dd><a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> · <a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a></dd>
         <dt>Email</dt>
@@ -56,6 +63,7 @@ const crumbs = [
 
 <style>
   .contact-page { margin-bottom: 60px; }
+  .kho-list { margin: 0 0 6px; padding-left: 18px; }
   .contact-card { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: clamp(20px, 4vw, 40px); max-width: 800px; }
   .contact-card h1 { color: var(--color-primary); margin-bottom: 20px; }
   dl { display: grid; grid-template-columns: max-content 1fr; gap: 12px 20px; }
