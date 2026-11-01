@@ -12,6 +12,7 @@ import type { DongGiaCongKhai, CauHinh } from '../lib/gia';
 import { bangGiaTuJson } from '../lib/gia-json';
 import { timNhanSu, DEFAULT_REVIEWER_ID, bylineLabel, personUrl, personRef, personSchema, displayName, credentialLine } from '../lib/nhan-su';
 import { traTieuChuan } from '../lib/tieu-chuan';
+import { tinhLuongDau, moTaMua, LIT_PHUY, LIT_XO } from '../lib/tinh-luong-dau';
 import { PROMO, PROMO_ACTIVE } from '../lib/promo';
 import { HIEU_LUC, CHUYEN_GIAO, DANH_GIA_GOOGLE } from '../data/bao-gia-dau-thuy-luc';
 import { absUrl, LEGAL_SHORT, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR } from '../lib/site';
@@ -95,6 +96,12 @@ const homNay = new Date(Date.now() + 7 * 3600 * 1000).toISOString().slice(0, 10)
 const hetHieuLuc = HIEU_LUC ? homNay > HIEU_LUC.den : false;
 const QUOTE_DN = `/bao-gia?sp=${encodeURIComponent('Dầu thủy lực 68 (đề nghị chiết khấu doanh nghiệp)')}`;
 const QUOTE_THUONG = '/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c%2068';
+
+// Giá trị mặc định của công cụ tính trùng ví dụ minh họa trong mục "Nên đặt bao nhiêu dầu".
+const TINH_MAC_DINH = { soMay: 1, litBon: 200, litNgoaiBon: 40, chamBuThang: 36, soThang: 1, sucRua: false };
+const kqMacDinh = tinhLuongDau(TINH_MAC_DINH);
+const fmtLit = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 1 });
+const yeuCauTinh = (mua: string, tong: number) => `/bao-gia?sp=${encodeURIComponent(`Dầu thủy lực 68: ${mua} (tính trên trang báo giá, tổng ${fmtLit(tong)} L)`)}`;
 
 const quyTrinh = [
   { buoc: 'Đặt hàng', viec: 'Gửi mã dầu đang dùng (hoặc loại máy), quy cách, số lượng và nơi giao qua điện thoại, Zalo hay form. Mã hết hàng hoặc giá cao thì được đề xuất mã cùng cấp ISO VG và tiêu chuẩn.', nguoi: nguoiGia },
@@ -203,6 +210,7 @@ const schemaData = [
       <nav class="page-menu" aria-label="Lối tắt trong trang">
         <a href="#nhan-dinh">Tin giá dầu tháng 11</a>
         <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">BẢNG BÁO GIÁ</a>
+        <a href="#dat-bao-nhieu" data-track="click_menu_tinh_dau">Tính lượng dầu cần mua</a>
         <a href="#chiet-khau">Chiết khấu doanh nghiệp</a>
         <a href="#quy-trinh">Quy trình đặt hàng</a>
       </nav>
@@ -450,6 +458,25 @@ const schemaData = [
     <section class="price-body" id="dat-bao-nhieu">
       <h2>Nên đặt bao nhiêu dầu? Tính theo máy của bạn</h2>
       <p>Mua ít quá thì máy dừng chờ dầu, lại phải mua lẻ từng xô với giá tính theo lít cao hơn phuy (xem cột "Quy đổi" ở bảng trên). Mua nhiều quá thì tiền nằm trong kho, chiếm chỗ, và phuy đã mở để lâu dễ hút ẩm. Số lượng hợp lý tính từ hai nhu cầu khác nhau của máy:</p>
+      <form class="calc" id="tinh-dau" autocomplete="off" onsubmit="return false">
+        <h3>Công cụ tính nhanh lượng dầu cần mua</h3>
+        <div class="calc__grid">
+          <label>Số máy thay dầu kỳ này<input type="number" name="soMay" min="0" step="1" inputmode="numeric" value={TINH_MAC_DINH.soMay} /></label>
+          <label>Dung tích bồn mỗi máy (L)<input type="number" name="litBon" min="0" inputmode="decimal" value={TINH_MAC_DINH.litBon} /></label>
+          <label>Dầu ngoài bồn mỗi máy: ống, xi lanh (L)<input type="number" name="litNgoaiBon" min="0" inputmode="decimal" value={TINH_MAC_DINH.litNgoaiBon} /></label>
+          <label>Châm bù cả xưởng mỗi tháng (L)<input type="number" name="chamBuThang" min="0" inputmode="decimal" value={TINH_MAC_DINH.chamBuThang} /></label>
+          <label>Cần đủ dầu châm bù trong (tháng)<input type="number" name="soThang" min="0" step="1" inputmode="numeric" value={TINH_MAC_DINH.soThang} /></label>
+          <label class="calc__check"><input type="checkbox" name="sucRua" /> Có súc rửa (dầu cũ nhiễm nước, đổi hãng hoặc đổi loại)</label>
+        </div>
+        <div class="calc__result" aria-live="polite">
+          <p>Tổng cần: <strong id="tinh-tong">{fmtLit(kqMacDinh.tong)} L</strong></p>
+          <p>Nên mua: <strong id="tinh-mua">{moTaMua(kqMacDinh)}</strong></p>
+          <p class="small" id="tinh-du">Dư {fmtLit(kqMacDinh.du)} L, đủ châm bù khoảng {fmtLit(kqMacDinh.thangDu ?? 0)} tháng.</p>
+        </div>
+        <a id="tinh-gui" href={yeuCauTinh(moTaMua(kqMacDinh), kqMacDinh.tong)} class="btn-primary" data-track="click_tinh_dau_gui_yeu_cau">Gửi yêu cầu giá cho số lượng này</a>
+        <p class="small">Kết quả là ước lượng theo phuy {LIT_PHUY} L và xô {LIT_XO} L. Hãy lấy dung tích từ tài liệu máy và đối chiếu lại trước khi đặt hàng.</p>
+      </form>
+
       <div class="table-wrap">
         <table class="match">
           <thead>
@@ -568,6 +595,46 @@ const schemaData = [
   </div>
 </Layout>
 
+<script>
+  import { tinhLuongDau, moTaMua } from '../lib/tinh-luong-dau';
+
+  const form = document.getElementById('tinh-dau') as HTMLFormElement | null;
+  if (form) {
+    const el = (id: string) => document.getElementById(id) as HTMLElement;
+    const so = (ten: string) => Number((form.elements.namedItem(ten) as HTMLInputElement).value);
+    const fmt = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 1 });
+    let daGhiNhan = false;
+    const capNhat = () => {
+      const k = tinhLuongDau({
+        soMay: so('soMay'),
+        litBon: so('litBon'),
+        litNgoaiBon: so('litNgoaiBon'),
+        chamBuThang: so('chamBuThang'),
+        soThang: so('soThang'),
+        sucRua: (form.elements.namedItem('sucRua') as HTMLInputElement).checked,
+      });
+      const mua = moTaMua(k);
+      const gui = el('tinh-gui') as HTMLAnchorElement;
+      el('tinh-tong').textContent = `${fmt(k.tong)} L`;
+      el('tinh-mua').textContent = mua || 'Hãy nhập số liệu của máy';
+      el('tinh-du').textContent = k.du > 0
+        ? `Dư ${fmt(k.du)} L${k.thangDu ? `, đủ châm bù khoảng ${fmt(k.thangDu)} tháng` : ''}.`
+        : '';
+      gui.hidden = !mua;
+      gui.href = `/bao-gia?sp=${encodeURIComponent(`Dầu thủy lực 68: ${mua} (tính trên trang báo giá, tổng ${fmt(k.tong)} L)`)}`;
+    };
+    form.addEventListener('input', () => {
+      capNhat();
+      // Chỉ đếm lượt dùng, không gửi số liệu khách nhập.
+      const gtag = (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag;
+      if (!daGhiNhan && typeof gtag === 'function') {
+        gtag('event', 'use_oil_calculator', { page_path: location.pathname });
+        daGhiNhan = true;
+      }
+    });
+  }
+</script>
+
 <style>
   .price-page { margin-bottom: 60px; }
   @media (max-width: 640px) {
@@ -577,6 +644,17 @@ const schemaData = [
     .risk td { border: 0; padding: 0 0 6px; }
     .risk td:nth-child(3)::before { content: 'Ảnh hưởng: '; font-weight: 600; }
   }
+  .calc { border: 2px solid var(--color-primary); border-radius: 8px; padding: 16px; margin: 16px 0; background: #f8fafc; }
+  .price-body .calc h3 { margin-top: 0; }
+  .calc__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 12px; }
+  .calc__grid label { display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; font-size: 0.92rem; font-weight: 600; }
+  .calc__grid input[type="number"] { width: 100%; min-height: 44px; padding: 8px 10px; font-size: 16px; border: 1px solid #94a3b8; border-radius: 6px; background: #fff; }
+  .calc__grid .calc__check { flex-direction: row; align-items: center; justify-content: flex-start; gap: 8px; grid-column: 1 / -1; font-weight: 500; }
+  .calc__check input { width: 20px; height: 20px; flex: none; }
+  .calc__result { background: #fff; border-left: 4px solid var(--color-primary); border-radius: 4px; padding: 10px 14px; margin-bottom: 12px; }
+  .price-body .calc__result p { margin-bottom: 4px; }
+  .price-body .calc a.btn-primary { display: inline-block; text-decoration: none; }
+  .calc a[hidden] { display: none !important; }
   .draft-note { background: #fef3c7; border: 2px solid #b45309; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; color: #78350f; }
   .draft-slot { border: 2px dashed #b45309; background: #fffbeb; color: #78350f; border-radius: 8px; padding: 28px 18px; margin-top: 16px; text-align: center; }
   .price-hero, .price-body { background: white; border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; padding: clamp(20px, 4vw, 32px); margin-bottom: 24px; }
@@ -611,6 +689,11 @@ const schemaData = [
   .doc-info dd { margin: 0; font-weight: 600; }
   .doc-info a { color: var(--color-primary); text-decoration: underline; }
   .page-menu { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 14px; }
+  .page-menu a:last-child { grid-column: 1 / -1; }
+  @media (min-width: 768px) {
+    .page-menu { grid-template-columns: repeat(5, 1fr); }
+    .page-menu a:last-child { grid-column: auto; }
+  }
   .page-menu a { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 8px 10px; border: 1px solid var(--color-primary); border-radius: 8px; font-size: 0.92rem; font-weight: 600; line-height: 1.25; text-align: center; color: var(--color-primary); text-decoration: none; }
   .page-menu a:hover { background: #f1f5f9; }
   .price-hero .page-menu a.page-menu__main { background: var(--color-primary); color: #fff; font-size: 1rem; font-weight: 800; letter-spacing: 0.02em; }
