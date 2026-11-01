@@ -24,10 +24,10 @@ const pagePath = '/test-bai';
 const IMAGE = '/images/san-pham/castrol-hyspin-aws-68-kho.webp';
 const IMAGE_ALT = 'Phuy Castrol Hyspin AWS 68 xếp trên pallet trong kho HT VINA';
 
-// Người chịu trách nhiệm (quyết định 12/10/2026, giữ lại sau khi revert PR #34): chị Hồng (quản lý bán hàng) đứng tên
-// trang và rà soát giá; TS. Nguyễn Thiết Lập kiểm duyệt phần chọn mã và tiêu chuẩn theo TDS.
+// 01/11/2026 (quyết định của người dùng): báo giá là tài liệu kinh tế và trách nhiệm kinh doanh.
+// Chị Hồng (quản lý bán hàng) là người viết và rà soát giá.
 const nguoiGia = timNhanSu('nguyen-thi-hong')!;
-// 01/11/2026 (quyết định của người dùng): giám đốc Vũ Minh Toàn là người duyệt duy nhất của trang, cả giá lẫn nội dung kỹ thuật.
+// Giám đốc Vũ Minh Toàn là người chịu trách nhiệm duyệt.
 // Anh Hữu phụ trách kho vận trong quy trình giao hàng.
 const nguoiDuyet = timNhanSu('vu-minh-toan')!;
 const nguoiKho = timNhanSu('pham-van-huu')!;
@@ -209,8 +209,8 @@ const schemaData = [
       </nav>
 
       <dl class="doc-info">
-        <div><dt>Người lập</dt><dd><a href={personUrl(nguoiGia)} rel="author">{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
-        <div><dt>Người duyệt</dt><dd><a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a>, {nguoiDuyet.role.toLowerCase()}, kỹ sư Công nghệ ô tô, chuyên môn thủy lực và bôi trơn</dd></div>
+        <div><dt>Người viết</dt><dd><a href={personUrl(nguoiGia)} rel="author">{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
+        <div><dt>Chịu trách nhiệm duyệt</dt><dd><a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a>, {nguoiDuyet.role.toLowerCase()} HT VINA</dd></div>
         {HIEU_LUC && (
           <div>
             <dt>Hiệu lực</dt>
