@@ -10,7 +10,7 @@ import { getActiveProducts } from '../lib/content';
 import { fmtNgay, fmtVnd } from '../lib/gia-tinh';
 import type { DongGiaCongKhai, CauHinh } from '../lib/gia';
 import { bangGiaTuJson } from '../lib/gia-json';
-import { timNhanSu, DEFAULT_REVIEWER_ID, bylineLabel, personUrl, personRef, personSchema, displayName, credentialLine } from '../lib/nhan-su';
+import { timNhanSu, bylineLabel, personUrl, personRef, personSchema, displayName, credentialLine } from '../lib/nhan-su';
 import { traTieuChuan } from '../lib/tieu-chuan';
 import { tinhLuongDau, moTaMua, LIT_PHUY, LIT_XO } from '../lib/tinh-luong-dau';
 import { PROMO, PROMO_ACTIVE } from '../lib/promo';
@@ -27,8 +27,8 @@ const IMAGE_ALT = 'Phuy Castrol Hyspin AWS 68 xếp trên pallet trong kho HT VI
 // Người chịu trách nhiệm (quyết định 12/10/2026, giữ lại sau khi revert PR #34): chị Hồng (quản lý bán hàng) đứng tên
 // trang và rà soát giá; TS. Nguyễn Thiết Lập kiểm duyệt phần chọn mã và tiêu chuẩn theo TDS.
 const nguoiGia = timNhanSu('nguyen-thi-hong')!;
-const nguoiKyThuat = timNhanSu(DEFAULT_REVIEWER_ID)!;
-// 01/11/2026: giám đốc duyệt bảng giá; TS. Lập vẫn duyệt phần kỹ thuật. Anh Hữu phụ trách kho vận trong quy trình giao hàng.
+// 01/11/2026 (quyết định của người dùng): giám đốc Vũ Minh Toàn là người duyệt duy nhất của trang, cả giá lẫn nội dung kỹ thuật.
+// Anh Hữu phụ trách kho vận trong quy trình giao hàng.
 const nguoiDuyet = timNhanSu('vu-minh-toan')!;
 const nguoiKho = timNhanSu('pham-van-huu')!;
 
@@ -137,7 +137,7 @@ const schemaData = [
     dateModified: ngaySua,
     ...(cauHinh.ngay_ra_soat ? { lastReviewed: cauHinh.ngay_ra_soat } : {}),
     author: personRef(tacGia),
-    reviewedBy: [personRef(nguoiDuyet), personRef(nguoiKyThuat)],
+    reviewedBy: personRef(nguoiDuyet),
     about: { '@type': 'Thing', name: 'Dầu thủy lực ISO VG 68' },
     primaryImageOfPage: { '@type': 'ImageObject', url: absUrl(IMAGE), caption: IMAGE_ALT },
     isPartOf: { '@id': absUrl('/') + '#website' },
@@ -154,7 +154,7 @@ const schemaData = [
     image: absUrl(IMAGE),
     inLanguage: 'vi-VN',
     author: personRef(tacGia),
-    reviewedBy: [personRef(nguoiDuyet), personRef(nguoiKyThuat)],
+    reviewedBy: personRef(nguoiDuyet),
     citation: [
       ...(iso11158.url ? [iso11158.url] : []),
       ...(iso11158.tcvnUrl ? [iso11158.tcvnUrl] : []),
@@ -172,7 +172,6 @@ const schemaData = [
     publisher: { '@id': ORG_ID },
   },
   personSchema(tacGia),
-  personSchema(nguoiKyThuat),
   personSchema(nguoiDuyet),
   breadcrumbSchema(crumbs),
   ...(CHUYEN_GIAO?.video
@@ -201,12 +200,6 @@ const schemaData = [
     <NoiDungBai articleId={ARTICLE_ID}>
     <header class="price-hero">
       <h1>{title}</h1>
-      <p class="byline">
-        Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time>{ngaySua !== NGAY_DANG && <> · Cập nhật ngày <time datetime={ngaySua}>{fmtNgay(ngaySua)}</time></>}
-        {' · '}<a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(nguoiKyThuat)}>{bylineLabel(nguoiKyThuat)}</a>
-        {coGia && ngay && <><br />Giá rà soát ngày <strong>{ngay}</strong>{!HIEU_LUC && ', áp dụng đến khi trang này ghi ngày mới'}.</>}
-      </p>
-
       <nav class="page-menu" aria-label="Lối tắt trong trang">
         <a href="#nhan-dinh">Tin giá dầu tháng 11</a>
         <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">BẢNG BÁO GIÁ</a>
@@ -216,8 +209,8 @@ const schemaData = [
       </nav>
 
       <dl class="doc-info">
-        <div><dt>Người lập</dt><dd><a href={personUrl(nguoiGia)}>{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
-        <div><dt>Người duyệt</dt><dd><a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a>, {nguoiDuyet.role.toLowerCase()}</dd></div>
+        <div><dt>Người lập</dt><dd><a href={personUrl(nguoiGia)} rel="author">{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
+        <div><dt>Người duyệt</dt><dd><a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a>, {nguoiDuyet.role.toLowerCase()}, kỹ sư Công nghệ ô tô, chuyên môn thủy lực và bôi trơn</dd></div>
         {HIEU_LUC && (
           <div>
             <dt>Hiệu lực</dt>
@@ -228,6 +221,8 @@ const schemaData = [
             </dd>
           </div>
         )}
+        {coGia && ngay && <div><dt>Giá rà soát</dt><dd><time datetime={cauHinh.ngay_ra_soat}>{ngay}</time></dd></div>}
+        <div><dt>Đăng / Cập nhật</dt><dd><time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> / <time datetime={ngaySua}>{fmtNgay(ngaySua)}</time></dd></div>
         <div><dt>Đơn vị phát hành</dt><dd>{LEGAL_SHORT}, kho tại {AREA_TEXT}</dd></div>
       </dl>
 
@@ -659,8 +654,6 @@ const schemaData = [
   .draft-slot { border: 2px dashed #b45309; background: #fffbeb; color: #78350f; border-radius: 8px; padding: 28px 18px; margin-top: 16px; text-align: center; }
   .price-hero, .price-body { background: white; border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; padding: clamp(20px, 4vw, 32px); margin-bottom: 24px; }
   .price-hero h1 { color: var(--color-primary); font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.25; margin-bottom: 10px; }
-  .byline { color: var(--color-text-light); margin-bottom: 14px; font-size: 0.95rem; }
-  .byline a { color: var(--color-primary); text-decoration: underline; }
   .summary { background: #f1f5f9; border-left: 4px solid var(--color-primary); border-radius: 4px; padding: 14px 18px; margin-bottom: 14px; }
   .summary__label { font-weight: 700; color: var(--color-primary); margin-bottom: 6px; }
   .summary ul { margin: 0 0 0 20px; }
@@ -684,7 +677,7 @@ const schemaData = [
   .match { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
   .match th, .match td { border: 1px solid var(--border-color, #e2e8f0); padding: 10px 12px; text-align: left; vertical-align: top; }
   .match th { background: #f1f5f9; font-weight: 600; }
-  .doc-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px 20px; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 12px 16px; margin: 0 0 14px; font-size: 0.95rem; }
+  .doc-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 16px; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 12px 16px; margin: 0 0 14px; font-size: 0.95rem; }
   .doc-info dt { font-size: 0.82rem; color: var(--color-text-light); }
   .doc-info dd { margin: 0; font-weight: 600; }
   .doc-info a { color: var(--color-primary); text-decoration: underline; }
