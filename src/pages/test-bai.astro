@@ -234,7 +234,7 @@ const schemaData = [
       </div>
 
       <nav class="page-menu" aria-label="Lối tắt trong trang">
-        <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">BẢNG BÁO GIÁ</a>
+        <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">XEM NHANH BÁO GIÁ</a>
         <a href="#chiet-khau">Chiết khấu doanh nghiệp</a>
         <a href="#nhan-dinh">Tin giá dầu tháng 11</a>
         <a href="#dat-bao-nhieu" data-track="click_menu_tinh_dau">Tính lượng dầu cần mua</a>
@@ -357,16 +357,16 @@ const schemaData = [
         <h3>Công cụ tính nhanh lượng dầu cần mua</h3>
         <div class="calc__grid">
           <label>Số máy thay dầu kỳ này<input type="number" name="soMay" min="0" step="1" inputmode="numeric" value={TINH_MAC_DINH.soMay} /></label>
-          <label>Dung tích bồn mỗi máy (L)<input type="number" name="litBon" min="0" inputmode="decimal" value={TINH_MAC_DINH.litBon} /></label>
-          <label>Dầu ngoài bồn mỗi máy: ống, xi lanh (L)<input type="number" name="litNgoaiBon" min="0" inputmode="decimal" value={TINH_MAC_DINH.litNgoaiBon} /></label>
-          <label>Châm bù cả xưởng mỗi tháng (L)<input type="number" name="chamBuThang" min="0" inputmode="decimal" value={TINH_MAC_DINH.chamBuThang} /></label>
-          <label>Cần đủ dầu châm bù trong (tháng)<input type="number" name="soThang" min="0" step="1" inputmode="numeric" value={TINH_MAC_DINH.soThang} /></label>
+          <label>Dung tích thùng dầu mỗi máy (L)<input type="number" name="litBon" min="0" inputmode="decimal" value={TINH_MAC_DINH.litBon} /></label>
+          <label>Dầu ngoài thùng mỗi máy: ống, xi lanh (L)<input type="number" name="litNgoaiBon" min="0" inputmode="decimal" value={TINH_MAC_DINH.litNgoaiBon} /></label>
+          <label>Thêm dầu cả xưởng mỗi tháng (L)<input type="number" name="chamBuThang" min="0" inputmode="decimal" value={TINH_MAC_DINH.chamBuThang} /></label>
+          <label>Cần đủ dầu để thêm trong (tháng)<input type="number" name="soThang" min="0" step="1" inputmode="numeric" value={TINH_MAC_DINH.soThang} /></label>
           <label class="calc__check"><input type="checkbox" name="sucRua" /> Có súc rửa (dầu cũ nhiễm nước, đổi hãng hoặc đổi loại)</label>
         </div>
         <div class="calc__result" aria-live="polite">
           <p>Tổng cần: <strong id="tinh-tong">{fmtLit(kqMacDinh.tong)} L</strong></p>
           <p>Nên mua: <strong id="tinh-mua">{moTaMua(kqMacDinh)}</strong></p>
-          <p class="small" id="tinh-du">Dư {fmtLit(kqMacDinh.du)} L, đủ châm bù khoảng {fmtLit(kqMacDinh.thangDu ?? 0)} tháng.</p>
+          <p class="small" id="tinh-du">Dư {fmtLit(kqMacDinh.du)} L, đủ thêm dầu khoảng {fmtLit(kqMacDinh.thangDu ?? 0)} tháng.</p>
         </div>
         <a id="tinh-gui" href={yeuCauTinh(moTaMua(kqMacDinh), kqMacDinh.tong)} class="btn-primary" data-track="click_tinh_dau_gui_yeu_cau">Gửi yêu cầu giá cho số lượng này</a>
         <p class="small">Kết quả là ước lượng theo phuy {LIT_PHUY} L và xô {LIT_XO} L. Hãy lấy dung tích từ tài liệu máy và đối chiếu lại trước khi đặt hàng.</p>
@@ -379,25 +379,25 @@ const schemaData = [
           </thead>
           <tbody>
             <tr>
-              <td><strong>Châm bù hằng tháng</strong> (rò rỉ, hao hụt khi bảo trì)</td>
-              <td>Tổng số lít châm vào tất cả máy trong một tháng</td>
-              <td>Ghi sổ mỗi lần châm dầu trong 1–2 tháng, lấy số trung bình. Đừng ước lượng bằng mắt.</td>
+              <td><strong>Thêm dầu hằng tháng</strong> (rò rỉ, hao hụt khi bảo trì)</td>
+              <td>Tổng số lít thêm vào tất cả máy trong một tháng</td>
+              <td>Ghi sổ mỗi lần thêm dầu trong 1–2 tháng, lấy số trung bình. Đừng ước lượng bằng mắt.</td>
             </tr>
             <tr>
               <td><strong>Thay dầu định kỳ</strong></td>
-              <td>Tổng lượng dầu của máy (bồn + ống, xi lanh) × số máy thay trong kỳ, cộng một lượt súc rửa nếu dầu cũ nhiễm nước hoặc đổi hãng</td>
-              <td>Tài liệu máy. Dầu ngoài bồn có thể chiếm phần lớn: theo <a href="https://www.yanmar.com/jp/construction/service_support/oil/cycle.html" rel="noopener">bảng bảo dưỡng của Yanmar</a>, máy xúc ViO80-1B có 60 L trong bồn và 56 L ngoài bồn.</td>
+              <td>Tổng lượng dầu của máy (thùng + ống, xi lanh) × số máy thay trong kỳ, cộng một lượt súc rửa nếu dầu cũ nhiễm nước hoặc đổi hãng</td>
+              <td>Tài liệu máy. Dầu ngoài thùng có thể chiếm phần lớn: theo <a href="https://www.yanmar.com/jp/construction/service_support/oil/cycle.html" rel="noopener">bảng bảo dưỡng của Yanmar</a>, máy xúc ViO80-1B có 60 L trong thùng và 56 L ngoài thùng.</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <h3>Ví dụ minh họa: xưởng 3 máy ép, bồn 200 L mỗi máy</h3>
-      <p>Giả sử sổ ghi châm bù trung bình 36 L/tháng cho cả 3 máy, và tháng này đến lịch thay dầu một máy (200 L bồn, tài liệu máy ghi thêm khoảng 40 L nằm trong ống và xi lanh).</p>
+      <h3>Ví dụ minh họa: xưởng 3 máy ép, thùng dầu 200 L mỗi máy</h3>
+      <p>Giả sử sổ ghi lượng dầu thêm trung bình 36 L/tháng cho cả 3 máy, và tháng này đến lịch thay dầu một máy (thùng 200 L, tài liệu máy ghi thêm khoảng 40 L nằm trong ống và xi lanh).</p>
       <ul>
         <li>Thay dầu một máy: 200 + 40 = 240 L.</li>
-        <li>Châm bù tháng này: 36 L.</li>
-        <li>Tổng cần khoảng 276 L. <strong>Đặt 2 phuy 200 L</strong>: một phuy cho lần thay dầu, phuy thứ hai dùng để thay nốt phần còn thiếu rồi châm bù trong khoảng ba tháng tiếp theo. Mua lẻ 4–5 xô thay cho phuy thứ hai sẽ tốn hơn khi tính theo lít.</li>
+        <li>Thêm dầu tháng này: 36 L.</li>
+        <li>Tổng cần khoảng 276 L. <strong>Đặt 2 phuy 200 L</strong>: một phuy cho lần thay dầu, phuy thứ hai dùng để thay nốt phần còn thiếu rồi thêm dầu trong khoảng ba tháng tiếp theo. Mua lẻ 4–5 xô thay cho phuy thứ hai sẽ tốn hơn khi tính theo lít.</li>
         <li>Không mở phuy thứ hai cho tới khi cần. Phuy còn nguyên niêm giữ chất lượng lâu hơn nhiều so với phuy đã mở.</li>
       </ul>
 
@@ -409,11 +409,11 @@ const schemaData = [
           </thead>
           <tbody>
             <tr>
-              <td>1–2 máy, châm bù dưới một xô mỗi tháng</td>
-              <td>Xô 18 L cho châm bù. Đến lịch thay dầu thì đặt đúng số phuy cho lần thay đó, không trữ sẵn.</td>
+              <td>1–2 máy, thêm dưới một xô dầu mỗi tháng</td>
+              <td>Xô 18 L để thêm dầu. Đến lịch thay dầu thì đặt đúng số phuy cho lần thay đó, không trữ sẵn.</td>
             </tr>
             <tr>
-              <td>Nhiều máy dùng chung một loại dầu, châm bù đều đặn</td>
+              <td>Nhiều máy dùng chung một loại dầu, thêm dầu đều đặn</td>
               <td>Giữ một phuy đang dùng và một phuy dự phòng còn niêm. Mở phuy dự phòng thì đặt phuy mới.</td>
             </tr>
             <tr>
@@ -423,7 +423,7 @@ const schemaData = [
           </tbody>
         </table>
       </div>
-      <p>Kho HT VINA ở {AREA_TEXT}, giao trong ngày tới các KCN {KCN_NEAR.slice(0, 3).join(', ')}. Vì vậy xưởng gần kho không cần trữ nhiều dầu. Gửi số máy, dung tích bồn và lượng châm bù hằng tháng qua <a href={QUOTE_THUONG}>form báo giá</a>, chúng tôi tính giúp số phuy, số xô và lịch giao hợp lý.</p>
+      <p>Kho HT VINA ở {AREA_TEXT}, giao trong ngày tới các KCN {KCN_NEAR.slice(0, 3).join(', ')}. Vì vậy xưởng gần kho không cần trữ nhiều dầu. Gửi số máy, dung tích thùng và lượng dầu thêm hằng tháng qua <a href={QUOTE_THUONG}>form báo giá</a>, chúng tôi tính giúp số phuy, số xô và lịch giao hợp lý.</p>
       <p>Các bước xả, súc rửa và nạp dầu mới có trong <a href="/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc">hướng dẫn thay dầu thủy lực</a>. Chưa chắc dầu trong máy đã cần thay thì xem <a href="/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau">hướng dẫn test chất lượng dầu tại xưởng</a> trước khi mua: không thay sớm cũng là một cách tiết kiệm.</p>
     </section>
 
@@ -514,12 +514,12 @@ const schemaData = [
           </tbody>
         </table>
       </div>
-      <p>Nếu máy bắt buộc phê duyệt riêng của hãng bơm, hãy kiểm tra phê duyệt đó trên TDS của mã mới. Trước khi đổi hãng, hỏi chúng tôi về việc châm lẫn hay súc rửa, vì câu trả lời phụ thuộc tình trạng dầu đang có trong máy. Các bước làm có trong <a href="/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc">hướng dẫn thay dầu thủy lực</a>.</p>
+      <p>Nếu máy bắt buộc phê duyệt riêng của hãng bơm, hãy kiểm tra phê duyệt đó trên TDS của mã mới. Trước khi đổi hãng, hỏi chúng tôi về việc thêm dầu mới vào dầu cũ hay súc rửa, vì câu trả lời phụ thuộc tình trạng dầu đang có trong máy. Các bước làm có trong <a href="/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc">hướng dẫn thay dầu thủy lực</a>.</p>
     </section>
 
     <section class="price-body">
       <h2>Trước khi so giá: đối chiếu tài liệu máy</h2>
-      <p>Mã rẻ nhất trong bảng chỉ có lợi khi nó đúng loại máy cần. Mở tài liệu hướng dẫn sử dụng kèm theo máy (hoặc nhãn trên bồn dầu) và xem ba thông tin: <strong>cấp độ nhớt</strong>, <strong>loại dầu</strong> và <strong>phê duyệt của hãng bơm</strong>.</p>
+      <p>Mã rẻ nhất trong bảng chỉ có lợi khi nó đúng loại máy cần. Mở tài liệu hướng dẫn sử dụng kèm theo máy (hoặc nhãn trên thùng dầu) và xem ba thông tin: <strong>cấp độ nhớt</strong>, <strong>loại dầu</strong> và <strong>phê duyệt của hãng bơm</strong>.</p>
       <div class="table-wrap">
         <table class="match">
           <thead>
@@ -676,7 +676,7 @@ const schemaData = [
       el('tinh-tong').textContent = `${fmt(k.tong)} L`;
       el('tinh-mua').textContent = mua || 'Hãy nhập số liệu của máy';
       el('tinh-du').textContent = k.du > 0
-        ? `Dư ${fmt(k.du)} L${k.thangDu ? `, đủ châm bù khoảng ${fmt(k.thangDu)} tháng` : ''}.`
+        ? `Dư ${fmt(k.du)} L${k.thangDu ? `, đủ thêm dầu khoảng ${fmt(k.thangDu)} tháng` : ''}.`
         : '';
       gui.hidden = !mua;
       gui.href = `/bao-gia?sp=${encodeURIComponent(`Dầu thủy lực 68: ${mua} (tính trên trang báo giá, tổng ${fmt(k.tong)} L)`)}`;
