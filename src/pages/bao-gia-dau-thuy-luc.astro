@@ -53,8 +53,15 @@ const coSan = new Set(sanPham.filter((p) => p.data.stock_status === 'co-san').ma
 const tdsTheoTrang = Object.fromEntries(sanPham.map((p) => [p.id, p.data.tds_url]));
 const khoCuaDong = (r: DongGiaCongKhai) => (TON_KHO[`${r.trang}|${r.quy_cach}`] ?? []).map((k) => KHO_NGAN[k]);
 
-// Trang chỉ nói về cấp ISO VG 68; mã 32, 46 nhận đặt theo yêu cầu (xem FAQ).
+// Trang chỉ nói về cấp ISO VG 68; mã 32 nhận đặt theo yêu cầu (xem FAQ). Cấp 46 ghi kèm ở các dòng phuy dưới đây.
 const rows = all.filter((r) => /VG\s*68\b/i.test(r.cap ?? '') && (!r.trang || coSan.has(r.trang)));
+// 02/11/2026 (yêu cầu của người dùng): các mã phuy có thêm cấp 46 ghi kèm trên bảng. Khoảng giá vẫn là của cấp 68.
+const MA_CO_46 = ['Castrol Hyspin AWS 68', 'X-One AW 68', 'ENEOS Super Hyrando 68', 'ENEOS Super Mulpus DX 68', 'EMI AW 68', 'VHP Spinax AW 68'];
+const rowsBang = rows.map((r) => ({
+  ...r,
+  cap: 'ISO VG 68, ISO VG 46',
+  ten: MA_CO_46.includes(r.ten) && /phuy/i.test(r.quy_cach) ? `${r.ten}, 46` : r.ten,
+}));
 const coGia = !loiDb && rows.some((r) => r.thap);
 
 // Tháng trên tiêu đề theo kỳ hiệu lực; ngày rà soát vẫn hiện riêng ở đầu trang.
@@ -270,7 +277,7 @@ const schemaData = [
 
       {coGia ? (
         <>
-          <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {khoCuaDong} boLoc gon />
+          <PriceTable rows={rowsBang} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {khoCuaDong} boLoc gon />
         </>
       ) : (
         <div class="empty">
@@ -281,6 +288,7 @@ const schemaData = [
 
       <ul class="notes">
         <li>Đây là <strong>báo giá sơ bộ</strong>, ghi khoảng tham khảo cho một đơn vị đóng gói, {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT. Giá chính xác phụ thuộc số lượng, quy cách và điểm giao.</li>
+        <li>Mã ghi "68, 46": khoảng giá trên bảng là của cấp 68. Cấp 46 có giá riêng, có thể thấp hoặc cao hơn, hãy ghi rõ cấp khi hỏi giá.</li>
         <li>Cột "Quy đổi" chia khoảng giá cho số lít trong phuy hoặc xô, để so sánh hai quy cách với nhau.</li>
         <li>"Có sẵn" không phải số tồn kho trực tiếp{TON_KHO_CAP_NHAT ? `, cập nhật ngày ${fmtNgay(TON_KHO_CAP_NHAT)}` : ''}. Hãy gọi xác nhận kho và số lượng trước khi chốt đơn.</li>
         <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
@@ -536,7 +544,7 @@ const schemaData = [
             </tr>
             <tr>
               <td>ISO VG 46 hoặc VG 32</td>
-              <td>Không thay bằng 68. Xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt 32, 46 hay 68</a>; mã 32, 46 nhận đặt theo yêu cầu.</td>
+              <td>Không thay bằng 68. Xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt 32, 46 hay 68</a>; các mã có cấp 46 ghi trong bảng giá, mã 32 nhận đặt theo yêu cầu.</td>
             </tr>
             <tr>
               <td>Không còn tài liệu máy</td>
@@ -615,7 +623,7 @@ const schemaData = [
       <h3>Dầu thủy lực để trong kho được bao lâu?</h3>
       <p>Phuy còn nguyên niêm, để trong nhà khô ráo thường dùng tốt khoảng 5 năm theo khuyến cáo của ExxonMobil. Hạn trên nhãn phuy là con số chính thức. Phuy đã mở nên dùng hết sớm và luôn đậy kín.</p>
       <h3>Máy đang dùng dầu 46, có dùng dầu 68 cho rẻ được không?</h3>
-      <p>Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Dầu 32 và 46 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.</p>
+      <p>Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Các mã có cấp 46 ghi trong bảng giá, dầu 32 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.</p>
       <h3>Bảng giá cập nhật khi nào?</h3>
       <p>Mỗi khi hãng thay đổi giá và được rà lại ít nhất mỗi tháng. Ngày rà soát gần nhất ghi ở đầu trang.</p>
     </section>
