@@ -12,7 +12,7 @@ import { PROMO } from '../lib/promo';
 const { label: PROMO_LABEL, end: PROMO_END, endText: PROMO_END_TEXT, sameDayCutoff: CUTOFF } = PROMO;
 
 // Cập nhật khi nội dung thay đổi thực chất (ưu đãi, mã hàng, điều kiện giao), không đổi ngày chỉ để "làm mới".
-const UPDATED = '2026-10-05';
+const UPDATED = '2026-11-02';
 
 // Mã ISO VG 68 có hàng theo file kho tháng 10 (05/10/2026). Không đưa Petrolimex lên web (quyết định 02/10/2026).
 // href chỉ ghi cho mã có trang sản phẩm đang bật (active: true).
@@ -52,7 +52,7 @@ const schemaData = [
 
 <Layout
   title="Khuyến Mại Dầu Thủy Lực AW 68"
-  seoTitle="Khuyến Mại Dầu Thủy Lực AW 68 Tháng 10 – Kho Hải Dương Cũ"
+  seoTitle="Khuyến Mại Dầu Thủy Lực AW 68 Tháng 11 – Kho Hải Dương Cũ"
   description={`Ưu đãi dầu thủy lực AW 68 ${PROMO_LABEL}: giảm theo số lượng, miễn phí vận chuyển, giao trong ngày nếu đặt trước 16h. Kho Hải Dương cũ. Gọi ${BUSINESS.phoneDisplay}.`}
   image="/images/danh-muc/dau-thuy-luc.webp"
   {schemaData}
@@ -73,7 +73,7 @@ const schemaData = [
         <a href={tel} class="btn-primary btn-call" data-track="click_tel">Gọi ngay {BUSINESS.phoneDisplay} để nhận báo giá ưu đãi</a>
       </div>
 
-      <p class="updated">Cập nhật: <time datetime={UPDATED}>03/10/2026</time></p>
+      <p class="updated">Cập nhật: <time datetime={UPDATED}>02/11/2026</time></p>
 
       <h2>Ưu đãi dầu thủy lực AW 68 {PROMO_LABEL} gồm những gì</h2>
       <div class="offer-grid">
