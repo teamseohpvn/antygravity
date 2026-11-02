@@ -15,9 +15,11 @@ interface Props {
   khoCuaDong?: (r: DongGiaCongKhai) => string[];
   /** Có truyền thì hiện nút lọc nhanh theo quy cách và nguồn hàng trên đầu bảng. */
   boLoc?: boolean;
+  /** Có truyền thì dùng dạng gọn: hãng và TDS chung một dòng, trên điện thoại mỗi thẻ chỉ khoảng 4 dòng. */
+  gon?: boolean;
 }
 
-const { rows, activePages, category, gomVat, tds, khoCuaDong, boLoc } = Astro.props;
+const { rows, activePages, category, gomVat, tds, khoCuaDong, boLoc, gon } = Astro.props;
 // Link PDF ghi là tải về; link trang web của hãng ghi là xem, không hứa có file.
 const laPdf = (u: string) => /\.pdf($|\?)|docFormat=PDF/i.test(u);
 const groups = new Map<string, DongGiaCongKhai[]>();
@@ -58,7 +60,7 @@ const nutLoc = [
   <section class="price-group">
     <h3>{cap}</h3>
     <div class="table-wrap">
-      <table class="price-table">
+      <table class:list={['price-table', { 'price-table--gon': gon }]}>
         <thead>
           <tr>
             <th scope="col">Sản phẩm</th>
@@ -79,7 +81,7 @@ const nutLoc = [
                 <small>{r.hang} · {NGUON[r.nguon]}</small>
                 {tds && r.trang && (tds[r.trang]
                   ? <a href={tds[r.trang]} class="tds-link" target="_blank" rel="noopener" data-track="download_tds">{laPdf(tds[r.trang]!) ? 'Tải TDS' : 'Xem TDS'}</a>
-                  : <small class="muted">Chưa có TDS của hãng</small>)}
+                  : <small class="muted">{gon ? 'Chưa có TDS' : 'Chưa có TDS của hãng'}</small>)}
               </td>
               <td data-label="Quy cách" class="nowrap">{r.quy_cach}</td>
               <td data-label="Khoảng giá" class="num">
@@ -95,7 +97,7 @@ const nutLoc = [
                 </td>
               )}
               <td class="act">
-                <a href={quoteHref(r)} class="btn-row" data-track="add_to_quote">Báo giá trong ngày</a>
+                <a href={quoteHref(r)} class="btn-row" data-track="add_to_quote">Báo giá<span class="btn-row__them"> trong ngày</span></a>
               </td>
             </tr>
           ))}
@@ -161,5 +163,26 @@ const nutLoc = [
     .price-table td[data-label]:not([data-label="Sản phẩm"])::before { content: attr(data-label) ": "; color: var(--color-text-light); font-size: 0.85rem; }
     .price-table .act { width: auto; padding-top: 8px; }
     .btn-row { display: block; text-align: center; }
+  }
+
+  /* Dạng gọn */
+  .price-table--gon td small { display: inline; }
+  .price-table--gon td[data-label="Sản phẩm"] > :first-child { display: block; }
+  .price-table--gon td a.tds-link { margin: 2px 0 0 6px; padding: 1px 8px; }
+  .price-table--gon td small.muted::before { content: ' · '; }
+  @media (max-width: 700px) {
+    .price-table.price-table--gon tr { display: grid; grid-template-columns: auto 1fr auto; column-gap: 10px; align-items: center; margin-bottom: 8px; padding: 10px 12px; }
+    .price-table.price-table--gon tr[hidden] { display: none; }
+    .price-table--gon td { width: auto; padding: 1px 0; }
+    .price-table--gon td[data-label="Sản phẩm"] { grid-column: 1 / -1; }
+    .price-table--gon td[data-label="Quy cách"] { grid-column: 1; grid-row: 2; font-weight: 600; font-size: 0.9rem; }
+    .price-table--gon td[data-label="Tình trạng"] { grid-column: 2 / -1; grid-row: 2; font-size: 0.85rem; }
+    .price-table--gon td[data-label="Khoảng giá"] { grid-column: 1 / -1; grid-row: 3; font-weight: 700; font-size: 1rem; }
+    .price-table--gon td[data-label="Quy đổi"] { grid-column: 1 / 3; grid-row: 4; font-size: 0.82rem; color: var(--color-text-light); white-space: normal; }
+    .price-table--gon .act { grid-column: 3; grid-row: 4; padding: 0; }
+    .price-table.price-table--gon td[data-label]:not([data-label="Sản phẩm"])::before { content: none; }
+    .price-table--gon td a.tds-link { padding: 3px 10px; }
+    .price-table--gon .btn-row { padding: 8px 14px; }
+    .price-table--gon .btn-row__them { display: none; }
   }
 </style>

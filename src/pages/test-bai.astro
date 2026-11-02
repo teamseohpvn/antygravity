@@ -89,7 +89,7 @@ const TIN = {
 // Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
-const NGAY_SUA_NOI_DUNG = '2026-11-01';
+const NGAY_SUA_NOI_DUNG = '2026-11-02';
 const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const tacGia = nguoiGia;
 const ARTICLE_ID = absUrl(pagePath) + '#article';
@@ -207,8 +207,7 @@ const schemaData = [
       {/* Thu gọn còn dòng tóm tắt, vẫn giữ tên người viết, người duyệt và ngày. Toàn bộ khối luôn nằm trong HTML. */}
       <script is:inline>document.currentScript.parentElement.classList.add('co-thu-gon', 'is-thu-gon');</script>
       <p class="doc-tomtat">
-        Viết: <a href={personUrl(nguoiGia)}>{bylineLabel(nguoiGia)}</a> · Duyệt: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a>
-        {HIEU_LUC && (hetHieuLuc ? <> · Kỳ giá đã kết thúc</> : <> · Hiệu lực {fmtNgay(HIEU_LUC.tu)} – {fmtNgay(HIEU_LUC.den)}</>)}{coGia && ngay && <> · Giá rà soát {ngay}</>}
+        Duyệt bởi: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a> (GĐ HT VINA) · Cập nhật: {fmtNgay(ngaySua)}{HIEU_LUC && (hetHieuLuc ? <> · Kỳ giá đã kết thúc</> : <> · Hiệu lực: Tháng {fmtNgay(HIEU_LUC.tu, 'thang')}</>)}
       </p>
       <dl class="doc-info" id="doc-info">
         <div><dt>Người viết</dt><dd><a href={personUrl(nguoiGia)} rel="author">{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
@@ -267,7 +266,7 @@ const schemaData = [
 
       {coGia ? (
         <>
-          <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {khoCuaDong} boLoc />
+          <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {khoCuaDong} boLoc gon />
         {!TON_KHO_CAP_NHAT && (
           <aside class="draft-slot">
             <strong>Chờ dữ liệu kho.</strong> Khi có số liệu, cột Tình trạng sẽ ghi tên kho, ví dụ "Kho Kiến An, Như Quỳnh", kèm ngày cập nhật.
