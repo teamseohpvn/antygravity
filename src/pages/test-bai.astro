@@ -201,24 +201,14 @@ const schemaData = [
     </aside>
 
     <NoiDungBai articleId={ARTICLE_ID}>
-    {/* Thứ tự trong HTML là thứ tự trên điện thoại (bảng giá ngay sau đầu trang). Màn hình rộng giữ tin giá dầu và chiết khấu trước bảng bằng CSS order. */}
-    <div class="thu-tu">
     <header class="price-hero">
       <h1>{title}</h1>
-      <nav class="page-menu" aria-label="Lối tắt trong trang">
-        <a href="#nhan-dinh">Tin giá dầu tháng 11</a>
-        <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">BẢNG BÁO GIÁ</a>
-        <a href="#dat-bao-nhieu" data-track="click_menu_tinh_dau">Tính lượng dầu cần mua</a>
-        <a href="#chiet-khau">Chiết khấu doanh nghiệp</a>
-        <a href="#quy-trinh">Quy trình đặt hàng</a>
-      </nav>
-
       <div class="doc-wrap">
-      {/* Điện thoại: thu gọn còn dòng tóm tắt, vẫn giữ tên người viết, người duyệt và ngày. Toàn bộ khối luôn nằm trong HTML. */}
+      {/* Thu gọn còn dòng tóm tắt, vẫn giữ tên người viết, người duyệt và ngày. Toàn bộ khối luôn nằm trong HTML. */}
       <script is:inline>document.currentScript.parentElement.classList.add('co-thu-gon', 'is-thu-gon');</script>
       <p class="doc-tomtat">
-        Viết: <a href={personUrl(nguoiGia)}>{bylineLabel(nguoiGia)}</a> · Duyệt: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a><br />
-        {HIEU_LUC && (hetHieuLuc ? <>Kỳ giá đã kết thúc · </> : <>Hiệu lực {fmtNgay(HIEU_LUC.tu)} – {fmtNgay(HIEU_LUC.den)} · </>)}{coGia && ngay && <>Giá rà soát {ngay}</>}
+        Viết: <a href={personUrl(nguoiGia)}>{bylineLabel(nguoiGia)}</a> · Duyệt: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a>
+        {HIEU_LUC && (hetHieuLuc ? <> · Kỳ giá đã kết thúc</> : <> · Hiệu lực {fmtNgay(HIEU_LUC.tu)} – {fmtNgay(HIEU_LUC.den)}</>)}{coGia && ngay && <> · Giá rà soát {ngay}</>}
       </p>
       <dl class="doc-info" id="doc-info">
         <div><dt>Người viết</dt><dd><a href={personUrl(nguoiGia)} rel="author">{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
@@ -240,6 +230,15 @@ const schemaData = [
       <button type="button" class="info-them" id="info-them" aria-controls="doc-info" aria-expanded="false" data-track="read_more_doc_info">… Xem thêm</button>
       </div>
 
+      <nav class="page-menu" aria-label="Lối tắt trong trang">
+        <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">BẢNG BÁO GIÁ</a>
+        <a href="#chiet-khau">Chiết khấu doanh nghiệp</a>
+        <a href="#nhan-dinh">Tin giá dầu tháng 11</a>
+        <a href="#dat-bao-nhieu" data-track="click_menu_tinh_dau">Tính lượng dầu cần mua</a>
+        <a href="#quy-trinh">Quy trình đặt hàng</a>
+      </nav>
+
+
       {coGia && (
         <div class="summary">
           <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}</p>
@@ -248,14 +247,17 @@ const schemaData = [
             {litThap && <li>Quy đổi theo lít: <strong>{fmtVnd(litThap)} – {fmtVnd(litCao)} đ/lít</strong>, xô 18 L đắt hơn phuy khi tính theo lít.</li>}
             <li>{soMa} mã ISO VG 68 có sẵn tại kho {AREA_TEXT}: {hangs.join(', ')}.</li>
             <li>Giá chính xác theo số phuy và nơi giao được gửi trong ngày làm việc.</li>
+            <li>Giao các KCN {KCN_NEAR.slice(0, 3).join(', ')} trong ngày. Có CO/CQ, TDS và hóa đơn VAT cho từng lô.</li>
           </ul>
         </div>
       )}
 
-      <ul class="trust">
-        <li>Giao các KCN {KCN_NEAR.slice(0, 3).join(', ')} trong ngày</li>
-        <li>Có CO/CQ, TDS và hóa đơn VAT cho từng lô</li>
-      </ul>
+      {!coGia && (
+        <ul class="trust">
+          <li>Giao các KCN {KCN_NEAR.slice(0, 3).join(', ')} trong ngày</li>
+          <li>Có CO/CQ, TDS và hóa đơn VAT cho từng lô</li>
+        </ul>
+      )}
       <QuoteCta item="Dầu thủy lực 68" compact />
 
     </header>
@@ -290,6 +292,21 @@ const schemaData = [
         <img src={IMAGE} alt={IMAGE_ALT} width="1200" height="1200" loading="lazy" decoding="async" />
         <figcaption>Phuy dầu thủy lực 68 tại kho HT VINA, {AREA_TEXT}.</figcaption>
       </figure>
+    </section>
+
+    <section class="price-body discount" id="chiet-khau">
+      <h2>Doanh nghiệp cần chiết khấu hoặc giá linh hoạt</h2>
+      <p>Bảng giá trên trang này là <strong>báo giá sơ bộ</strong>. Nếu muốn chiết khấu hoặc có chính sách giá linh hoạt riêng, bạn có thể liên lạc để đàm phán giá theo mã, sản lượng và thời hạn thanh toán. Để nhận được mức sát nhất ngay lần đầu, hãy gửi kèm:</p>
+      <ul>
+        <li>Mã dầu và sản lượng dự kiến mỗi tháng hoặc mỗi quý.</li>
+        <li>Số điểm giao và lịch giao mong muốn.</li>
+        <li>Thời hạn thanh toán đề nghị, tên công ty và mã số thuế.</li>
+      </ul>
+      <div class="discount__actions">
+        <a href={QUOTE_DN} class="btn-primary" data-track="add_to_quote">Gửi yêu cầu riêng</a>
+        <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
+        <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
+      </div>
     </section>
 
     <section class="price-body" id="nhan-dinh">
@@ -329,22 +346,82 @@ const schemaData = [
       <button type="button" class="doc-them" id="doc-them-tin" aria-controls="nhan-dinh" aria-expanded="false" data-track="read_more_oil_news">… Đọc chi tiết</button>
     </section>
 
-    <section class="price-body discount" id="chiet-khau">
-      <h2>Doanh nghiệp cần chiết khấu hoặc giá linh hoạt</h2>
-      <p>Bảng giá trên trang này là <strong>báo giá sơ bộ</strong>. Nếu muốn chiết khấu hoặc có chính sách giá linh hoạt riêng, bạn có thể liên lạc để đàm phán giá theo mã, sản lượng và thời hạn thanh toán. Để nhận được mức sát nhất ngay lần đầu, hãy gửi kèm:</p>
-      <ul>
-        <li>Mã dầu và sản lượng dự kiến mỗi tháng hoặc mỗi quý.</li>
-        <li>Số điểm giao và lịch giao mong muốn.</li>
-        <li>Thời hạn thanh toán đề nghị, tên công ty và mã số thuế.</li>
-      </ul>
-      <div class="discount__actions">
-        <a href={QUOTE_DN} class="btn-primary" data-track="add_to_quote">Gửi yêu cầu riêng</a>
-        <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
-        <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
-      </div>
-    </section>
+    <section class="price-body" id="dat-bao-nhieu">
+      <h2>Nên đặt bao nhiêu dầu? Tính theo máy của bạn</h2>
+      <p>Mua ít quá thì máy dừng chờ dầu, lại phải mua lẻ từng xô với giá tính theo lít cao hơn phuy (xem cột "Quy đổi" ở bảng trên). Mua nhiều quá thì tiền nằm trong kho, chiếm chỗ, và phuy đã mở để lâu dễ hút ẩm. Số lượng hợp lý tính từ hai nhu cầu khác nhau của máy:</p>
+      <form class="calc" id="tinh-dau" autocomplete="off" onsubmit="return false">
+        <h3>Công cụ tính nhanh lượng dầu cần mua</h3>
+        <div class="calc__grid">
+          <label>Số máy thay dầu kỳ này<input type="number" name="soMay" min="0" step="1" inputmode="numeric" value={TINH_MAC_DINH.soMay} /></label>
+          <label>Dung tích bồn mỗi máy (L)<input type="number" name="litBon" min="0" inputmode="decimal" value={TINH_MAC_DINH.litBon} /></label>
+          <label>Dầu ngoài bồn mỗi máy: ống, xi lanh (L)<input type="number" name="litNgoaiBon" min="0" inputmode="decimal" value={TINH_MAC_DINH.litNgoaiBon} /></label>
+          <label>Châm bù cả xưởng mỗi tháng (L)<input type="number" name="chamBuThang" min="0" inputmode="decimal" value={TINH_MAC_DINH.chamBuThang} /></label>
+          <label>Cần đủ dầu châm bù trong (tháng)<input type="number" name="soThang" min="0" step="1" inputmode="numeric" value={TINH_MAC_DINH.soThang} /></label>
+          <label class="calc__check"><input type="checkbox" name="sucRua" /> Có súc rửa (dầu cũ nhiễm nước, đổi hãng hoặc đổi loại)</label>
+        </div>
+        <div class="calc__result" aria-live="polite">
+          <p>Tổng cần: <strong id="tinh-tong">{fmtLit(kqMacDinh.tong)} L</strong></p>
+          <p>Nên mua: <strong id="tinh-mua">{moTaMua(kqMacDinh)}</strong></p>
+          <p class="small" id="tinh-du">Dư {fmtLit(kqMacDinh.du)} L, đủ châm bù khoảng {fmtLit(kqMacDinh.thangDu ?? 0)} tháng.</p>
+        </div>
+        <a id="tinh-gui" href={yeuCauTinh(moTaMua(kqMacDinh), kqMacDinh.tong)} class="btn-primary" data-track="click_tinh_dau_gui_yeu_cau">Gửi yêu cầu giá cho số lượng này</a>
+        <p class="small">Kết quả là ước lượng theo phuy {LIT_PHUY} L và xô {LIT_XO} L. Hãy lấy dung tích từ tài liệu máy và đối chiếu lại trước khi đặt hàng.</p>
+      </form>
 
-    </div>
+      <div class="table-wrap">
+        <table class="match">
+          <thead>
+            <tr><th scope="col">Nhu cầu</th><th scope="col">Cách tính</th><th scope="col">Lấy số ở đâu</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Châm bù hằng tháng</strong> (rò rỉ, hao hụt khi bảo trì)</td>
+              <td>Tổng số lít châm vào tất cả máy trong một tháng</td>
+              <td>Ghi sổ mỗi lần châm dầu trong 1–2 tháng, lấy số trung bình. Đừng ước lượng bằng mắt.</td>
+            </tr>
+            <tr>
+              <td><strong>Thay dầu định kỳ</strong></td>
+              <td>Tổng lượng dầu của máy (bồn + ống, xi lanh) × số máy thay trong kỳ, cộng một lượt súc rửa nếu dầu cũ nhiễm nước hoặc đổi hãng</td>
+              <td>Tài liệu máy. Dầu ngoài bồn có thể chiếm phần lớn: theo <a href="https://www.yanmar.com/jp/construction/service_support/oil/cycle.html" rel="noopener">bảng bảo dưỡng của Yanmar</a>, máy xúc ViO80-1B có 60 L trong bồn và 56 L ngoài bồn.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Ví dụ minh họa: xưởng 3 máy ép, bồn 200 L mỗi máy</h3>
+      <p>Giả sử sổ ghi châm bù trung bình 36 L/tháng cho cả 3 máy, và tháng này đến lịch thay dầu một máy (200 L bồn, tài liệu máy ghi thêm khoảng 40 L nằm trong ống và xi lanh).</p>
+      <ul>
+        <li>Thay dầu một máy: 200 + 40 = 240 L.</li>
+        <li>Châm bù tháng này: 36 L.</li>
+        <li>Tổng cần khoảng 276 L. <strong>Đặt 2 phuy 200 L</strong>: một phuy cho lần thay dầu, phuy thứ hai dùng để thay nốt phần còn thiếu rồi châm bù trong khoảng ba tháng tiếp theo. Mua lẻ 4–5 xô thay cho phuy thứ hai sẽ tốn hơn khi tính theo lít.</li>
+        <li>Không mở phuy thứ hai cho tới khi cần. Phuy còn nguyên niêm giữ chất lượng lâu hơn nhiều so với phuy đã mở.</li>
+      </ul>
+
+      <h3>Mức tồn kho gợi ý theo quy mô</h3>
+      <div class="table-wrap">
+        <table class="match">
+          <thead>
+            <tr><th scope="col">Xưởng của bạn</th><th scope="col">Nên mua</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1–2 máy, châm bù dưới một xô mỗi tháng</td>
+              <td>Xô 18 L cho châm bù. Đến lịch thay dầu thì đặt đúng số phuy cho lần thay đó, không trữ sẵn.</td>
+            </tr>
+            <tr>
+              <td>Nhiều máy dùng chung một loại dầu, châm bù đều đặn</td>
+              <td>Giữ một phuy đang dùng và một phuy dự phòng còn niêm. Mở phuy dự phòng thì đặt phuy mới.</td>
+            </tr>
+            <tr>
+              <td>Nhà máy dùng nhiều phuy mỗi tháng</td>
+              <td>Hợp đồng giao định kỳ theo lịch. Tồn kho chỉ cần đủ dùng giữa hai lần giao, cộng vài ngày dự phòng.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Kho HT VINA ở {AREA_TEXT}, giao trong ngày tới các KCN {KCN_NEAR.slice(0, 3).join(', ')}. Vì vậy xưởng gần kho không cần trữ nhiều dầu. Gửi số máy, dung tích bồn và lượng châm bù hằng tháng qua <a href={QUOTE_THUONG}>form báo giá</a>, chúng tôi tính giúp số phuy, số xô và lịch giao hợp lý.</p>
+      <p>Các bước xả, súc rửa và nạp dầu mới có trong <a href="/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc">hướng dẫn thay dầu thủy lực</a>. Chưa chắc dầu trong máy đã cần thay thì xem <a href="/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau">hướng dẫn test chất lượng dầu tại xưởng</a> trước khi mua: không thay sớm cũng là một cách tiết kiệm.</p>
+    </section>
 
     <section class="price-body" id="giao-hang">
       <h2>Giao hàng và chứng từ</h2>
@@ -481,83 +558,6 @@ const schemaData = [
         <li><strong>Số lượng và hợp đồng.</strong> Đơn nhiều phuy hoặc hợp đồng cung cấp định kỳ được báo giá riêng.</li>
         <li><strong>Giá dầu gốc.</strong> Khi giá dầu gốc thế giới thay đổi, các hãng điều chỉnh giá bán và bảng này được rà lại.</li>
       </ul>
-    </section>
-
-    <section class="price-body" id="dat-bao-nhieu">
-      <h2>Nên đặt bao nhiêu dầu? Tính theo máy của bạn</h2>
-      <p>Mua ít quá thì máy dừng chờ dầu, lại phải mua lẻ từng xô với giá tính theo lít cao hơn phuy (xem cột "Quy đổi" ở bảng trên). Mua nhiều quá thì tiền nằm trong kho, chiếm chỗ, và phuy đã mở để lâu dễ hút ẩm. Số lượng hợp lý tính từ hai nhu cầu khác nhau của máy:</p>
-      <form class="calc" id="tinh-dau" autocomplete="off" onsubmit="return false">
-        <h3>Công cụ tính nhanh lượng dầu cần mua</h3>
-        <div class="calc__grid">
-          <label>Số máy thay dầu kỳ này<input type="number" name="soMay" min="0" step="1" inputmode="numeric" value={TINH_MAC_DINH.soMay} /></label>
-          <label>Dung tích bồn mỗi máy (L)<input type="number" name="litBon" min="0" inputmode="decimal" value={TINH_MAC_DINH.litBon} /></label>
-          <label>Dầu ngoài bồn mỗi máy: ống, xi lanh (L)<input type="number" name="litNgoaiBon" min="0" inputmode="decimal" value={TINH_MAC_DINH.litNgoaiBon} /></label>
-          <label>Châm bù cả xưởng mỗi tháng (L)<input type="number" name="chamBuThang" min="0" inputmode="decimal" value={TINH_MAC_DINH.chamBuThang} /></label>
-          <label>Cần đủ dầu châm bù trong (tháng)<input type="number" name="soThang" min="0" step="1" inputmode="numeric" value={TINH_MAC_DINH.soThang} /></label>
-          <label class="calc__check"><input type="checkbox" name="sucRua" /> Có súc rửa (dầu cũ nhiễm nước, đổi hãng hoặc đổi loại)</label>
-        </div>
-        <div class="calc__result" aria-live="polite">
-          <p>Tổng cần: <strong id="tinh-tong">{fmtLit(kqMacDinh.tong)} L</strong></p>
-          <p>Nên mua: <strong id="tinh-mua">{moTaMua(kqMacDinh)}</strong></p>
-          <p class="small" id="tinh-du">Dư {fmtLit(kqMacDinh.du)} L, đủ châm bù khoảng {fmtLit(kqMacDinh.thangDu ?? 0)} tháng.</p>
-        </div>
-        <a id="tinh-gui" href={yeuCauTinh(moTaMua(kqMacDinh), kqMacDinh.tong)} class="btn-primary" data-track="click_tinh_dau_gui_yeu_cau">Gửi yêu cầu giá cho số lượng này</a>
-        <p class="small">Kết quả là ước lượng theo phuy {LIT_PHUY} L và xô {LIT_XO} L. Hãy lấy dung tích từ tài liệu máy và đối chiếu lại trước khi đặt hàng.</p>
-      </form>
-
-      <div class="table-wrap">
-        <table class="match">
-          <thead>
-            <tr><th scope="col">Nhu cầu</th><th scope="col">Cách tính</th><th scope="col">Lấy số ở đâu</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Châm bù hằng tháng</strong> (rò rỉ, hao hụt khi bảo trì)</td>
-              <td>Tổng số lít châm vào tất cả máy trong một tháng</td>
-              <td>Ghi sổ mỗi lần châm dầu trong 1–2 tháng, lấy số trung bình. Đừng ước lượng bằng mắt.</td>
-            </tr>
-            <tr>
-              <td><strong>Thay dầu định kỳ</strong></td>
-              <td>Tổng lượng dầu của máy (bồn + ống, xi lanh) × số máy thay trong kỳ, cộng một lượt súc rửa nếu dầu cũ nhiễm nước hoặc đổi hãng</td>
-              <td>Tài liệu máy. Dầu ngoài bồn có thể chiếm phần lớn: theo <a href="https://www.yanmar.com/jp/construction/service_support/oil/cycle.html" rel="noopener">bảng bảo dưỡng của Yanmar</a>, máy xúc ViO80-1B có 60 L trong bồn và 56 L ngoài bồn.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>Ví dụ minh họa: xưởng 3 máy ép, bồn 200 L mỗi máy</h3>
-      <p>Giả sử sổ ghi châm bù trung bình 36 L/tháng cho cả 3 máy, và tháng này đến lịch thay dầu một máy (200 L bồn, tài liệu máy ghi thêm khoảng 40 L nằm trong ống và xi lanh).</p>
-      <ul>
-        <li>Thay dầu một máy: 200 + 40 = 240 L.</li>
-        <li>Châm bù tháng này: 36 L.</li>
-        <li>Tổng cần khoảng 276 L. <strong>Đặt 2 phuy 200 L</strong>: một phuy cho lần thay dầu, phuy thứ hai dùng để thay nốt phần còn thiếu rồi châm bù trong khoảng ba tháng tiếp theo. Mua lẻ 4–5 xô thay cho phuy thứ hai sẽ tốn hơn khi tính theo lít.</li>
-        <li>Không mở phuy thứ hai cho tới khi cần. Phuy còn nguyên niêm giữ chất lượng lâu hơn nhiều so với phuy đã mở.</li>
-      </ul>
-
-      <h3>Mức tồn kho gợi ý theo quy mô</h3>
-      <div class="table-wrap">
-        <table class="match">
-          <thead>
-            <tr><th scope="col">Xưởng của bạn</th><th scope="col">Nên mua</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1–2 máy, châm bù dưới một xô mỗi tháng</td>
-              <td>Xô 18 L cho châm bù. Đến lịch thay dầu thì đặt đúng số phuy cho lần thay đó, không trữ sẵn.</td>
-            </tr>
-            <tr>
-              <td>Nhiều máy dùng chung một loại dầu, châm bù đều đặn</td>
-              <td>Giữ một phuy đang dùng và một phuy dự phòng còn niêm. Mở phuy dự phòng thì đặt phuy mới.</td>
-            </tr>
-            <tr>
-              <td>Nhà máy dùng nhiều phuy mỗi tháng</td>
-              <td>Hợp đồng giao định kỳ theo lịch. Tồn kho chỉ cần đủ dùng giữa hai lần giao, cộng vài ngày dự phòng.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>Kho HT VINA ở {AREA_TEXT}, giao trong ngày tới các KCN {KCN_NEAR.slice(0, 3).join(', ')}. Vì vậy xưởng gần kho không cần trữ nhiều dầu. Gửi số máy, dung tích bồn và lượng châm bù hằng tháng qua <a href={QUOTE_THUONG}>form báo giá</a>, chúng tôi tính giúp số phuy, số xô và lịch giao hợp lý.</p>
-      <p>Các bước xả, súc rửa và nạp dầu mới có trong <a href="/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc">hướng dẫn thay dầu thủy lực</a>. Chưa chắc dầu trong máy đã cần thay thì xem <a href="/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau">hướng dẫn test chất lượng dầu tại xưởng</a> trước khi mua: không thay sớm cũng là một cách tiết kiệm.</p>
     </section>
 
     <section class="price-body" id="bao-quan">
@@ -745,30 +745,21 @@ const schemaData = [
   .match th, .match td { border: 1px solid var(--border-color, #e2e8f0); padding: 10px 12px; text-align: left; vertical-align: top; }
   .match th { background: #f1f5f9; font-weight: 600; }
   .doc-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 16px; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 12px 16px; margin: 0 0 14px; font-size: 0.95rem; }
-  @media (min-width: 701px) {
-    .thu-tu { display: flex; flex-direction: column; }
-    .thu-tu > .price-hero { order: 1; }
-    .thu-tu > #nhan-dinh { order: 2; }
-    .thu-tu > #chiet-khau { order: 3; }
-    .thu-tu > #bang-gia { order: 4; }
-  }
   .doc-tomtat, .info-them { display: none; }
-  @media (max-width: 700px) {
-    .doc-wrap { margin: 0 0 14px; }
-    .doc-wrap .doc-info { margin-bottom: 0; }
-    .doc-wrap.is-thu-gon .doc-info { display: none; }
-    .price-hero .doc-wrap.is-thu-gon .doc-tomtat { display: block; margin: 0; font-size: 0.9rem; line-height: 1.5; color: var(--color-text-light); }
-    .doc-tomtat a { color: var(--color-primary); font-weight: 600; text-decoration: underline; }
-    .doc-wrap.co-thu-gon .info-them { display: block; min-height: 40px; padding: 4px 0; background: none; border: 0; color: var(--color-primary); font: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer; }
-  }
+  .doc-wrap { margin: 0 0 14px; }
+  .doc-wrap .doc-info { margin-bottom: 0; }
+  .doc-wrap.is-thu-gon .doc-info { display: none; }
+  .price-hero .doc-wrap.is-thu-gon .doc-tomtat { display: inline; margin: 0; font-size: 0.9rem; line-height: 1.5; color: var(--color-text-light); }
+  .doc-tomtat a { color: var(--color-primary); font-weight: 600; text-decoration: underline; }
+  .doc-wrap.co-thu-gon .info-them { display: inline-block; min-height: 40px; padding: 4px 0 4px 6px; background: none; border: 0; color: var(--color-primary); font: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer; }
   .doc-info dt { font-size: 0.82rem; color: var(--color-text-light); }
   .doc-info dd { margin: 0; font-weight: 600; }
   .doc-info a { color: var(--color-primary); text-decoration: underline; }
   .page-menu { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 14px; }
-  .page-menu a:last-child { grid-column: 1 / -1; }
+  .page-menu a.page-menu__main { grid-column: 1 / -1; }
   @media (min-width: 768px) {
     .page-menu { grid-template-columns: repeat(5, 1fr); }
-    .page-menu a:last-child { grid-column: auto; }
+    .page-menu a.page-menu__main { grid-column: auto; }
   }
   .page-menu a { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 8px 10px; border: 1px solid var(--color-primary); border-radius: 8px; font-size: 0.92rem; font-weight: 600; line-height: 1.25; text-align: center; color: var(--color-primary); text-decoration: none; }
   .page-menu a:hover { background: #f1f5f9; }
