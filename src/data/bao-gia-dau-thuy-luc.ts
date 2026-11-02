@@ -21,7 +21,14 @@ export const CHUYEN_GIAO: {
   tieuDe: 'Thực tế giao 25 phuy dầu thủy lực X-One cho Nhôm Đông Á',
   ngay: '2026-10-31',
   moTa: 'HT VINA giao 25 phuy dầu thủy lực X-One cho nhà máy Nhôm Đông Á ngày 31/10/2026. Video dài 5 phút, đăng trên kênh YouTube của công ty.',
-  anh: [],
+  anh: [
+    { src: '/images/blog/giao-dau-nhom-dong-a-1.webp', alt: 'Xe tải thùng màu xanh lá đỗ cạnh tường nhà xưởng', width: 1200, height: 900, chuThich: 'Xe tải đỗ tại khu nhà xưởng.' },
+    { src: '/images/blog/giao-dau-nhom-dong-a-6.webp', alt: 'Bảng chỉ dẫn trạm đóng gói sơn 2 có logo Nhôm Đông Á trong nhà máy', width: 1200, height: 900, chuThich: 'Bảng chỉ dẫn trong nhà máy Nhôm Đông Á.' },
+    { src: '/images/blog/giao-dau-nhom-dong-a-3.webp', alt: 'Hai người hạ phuy dầu màu đỏ từ thùng xe tải trong nhà xưởng', width: 1200, height: 900, chuThich: 'Hạ phuy dầu từ thùng xe xuống nhà xưởng.' },
+    { src: '/images/blog/giao-dau-nhom-dong-a-2.webp', alt: 'Thẻ thông tin HT VINA đặt trên phuy, phía sau là người đang hạ phuy trong xưởng nhôm', width: 1200, height: 900, chuThich: 'Thẻ thông tin HT VINA trên phuy trong lúc bốc dỡ.' },
+    { src: '/images/blog/giao-dau-nhom-dong-a-4.webp', alt: 'Các phuy dầu màu đỏ xếp trong xưởng nhôm, phía trước có thẻ thông tin HT VINA', width: 1200, height: 1600, chuThich: 'Phuy dầu xếp trong xưởng, kèm thẻ thông tin HT VINA.' },
+    { src: '/images/blog/giao-dau-nhom-dong-a-5.webp', alt: 'Nhiều phuy dầu màu đỏ xếp sát nhau cạnh dây chuyền trong nhà máy', width: 1200, height: 900, chuThich: 'Phuy dầu xếp cạnh dây chuyền trong nhà máy.' },
+  ],
   video: {
     youtubeId: 'viOPDZPIcBQ',
     moTa: 'Video thực tế HT VINA giao 25 phuy dầu thủy lực X-One cho nhà máy Nhôm Đông Á.',

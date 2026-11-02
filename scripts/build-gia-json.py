@@ -129,6 +129,14 @@ SUA_GIA = {
 }
 
 
+# Khoảng giá công khai do người dùng chốt riêng, thay cho công thức giá hiện tại → × HE_SO. Ghi ngày và lý do.
+# Khóa là (tên, quy cách) của dòng trong DONG.
+GHI_DE_KHOANG = {
+    # 02/11/2026: người dùng chốt APEX TL 68 phuy 200 L là 5.410.000 – 7.500.000 đ (rộng hơn mức 15% thông thường).
+    ("APEX TL 68", "Phuy 200 L"): (5_410_000, 7_500_000),
+}
+
+
 # Mã không có trong file kho: giá bán thị trường công khai làm mốc thấp (vẫn → × HE_SO). Ghi nguồn và ngày xem.
 GIA_NGOAI_KHO = {
     # 14/10/2026: anphatkd.com/san-pham/may-do-do-nhot-cam-tay-lnd-1 bán 1.600.000 đ.
@@ -161,6 +169,16 @@ def khoang_gia(gia, dung_tich):
     }
 
 
+def khoang_chot(khoa, dung_tich):
+    thap, cao = GHI_DE_KHOANG[khoa]
+    return {
+        "thap": thap,
+        "cao": cao,
+        "thap_don_vi": floor_to(thap / dung_tich, 100) if dung_tich else None,
+        "cao_don_vi": ceil_to(cao / dung_tich, 100) if dung_tich else None,
+    }
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("kho", help="File giá kho nội bộ (JSON: name, pack, price)")
@@ -185,7 +203,7 @@ def main():
         rows.append({
             "danh_muc": dm, "ten": ten, "hang": hang, "cap": cap, "nguon": nguon,
             "quy_cach": qc, "trang": trang, "don_vi_do": "kg" if "kg" in qc else "L", "thu_tu": thu_tu,
-            **khoang_gia(gia, dt),
+            **(khoang_chot((ten, qc), dt) if (ten, qc) in GHI_DE_KHOANG else khoang_gia(gia, dt)),
         })
     if loi:
         sys.exit("\n".join(loi))

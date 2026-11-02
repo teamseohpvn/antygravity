@@ -456,7 +456,9 @@ const schemaData = [
           {CHUYEN_GIAO.anh.length > 0 && <div class="delivery-grid">
             {CHUYEN_GIAO.anh.map((a) => (
               <figure>
-                <img src={a.src} alt={a.alt} width={a.width} height={a.height} loading="lazy" decoding="async" />
+                <a href={a.src} target="_blank" rel="noopener">
+                  <img src={a.src} srcset={`${a.src.replace('.webp', '-600.webp')} 600w, ${a.src} ${a.width}w`} sizes="(max-width: 700px) 50vw, 360px" alt={a.alt} width={a.width} height={a.height} loading="lazy" decoding="async" />
+                </a>
                 <figcaption>{a.chuThich}</figcaption>
               </figure>
             ))}
@@ -769,9 +771,10 @@ const schemaData = [
   .discount__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
   .price-body .discount__actions a { text-decoration: none; }
   .delivery-video { width: 100%; max-width: 720px; aspect-ratio: 16 / 9; height: auto; border: 0; display: block; border-radius: 8px; margin: 12px 0; background: #000; }
-  .delivery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+  .delivery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 12px; }
+  @media (min-width: 701px) { .delivery-grid { grid-template-columns: repeat(3, 1fr); } }
   .delivery-grid figure { margin: 0; }
-  .delivery-grid img { width: 100%; height: auto; border-radius: 6px; display: block; }
+  .delivery-grid img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; display: block; }
   .delivery-grid figcaption { font-size: 0.85rem; color: var(--color-text-light); margin-top: 4px; }
   .price-body ol.steps { list-style: none; margin: 16px 0 0; padding: 0; counter-reset: b; }
   .steps li { counter-increment: b; position: relative; padding: 0 0 14px 44px; margin: 0; }

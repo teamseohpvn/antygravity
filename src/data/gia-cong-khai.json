@@ -152,10 +152,10 @@
       "trang": "apex-tl-68",
       "don_vi_do": "L",
       "thu_tu": 0,
-      "thap": 4700000,
-      "cao": 5410000,
-      "thap_don_vi": 23500,
-      "cao_don_vi": 27100
+      "thap": 5410000,
+      "cao": 7500000,
+      "thap_don_vi": 27000,
+      "cao_don_vi": 37500
     },
     {
       "danh_muc": "dau-thuy-luc",
