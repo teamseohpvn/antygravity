@@ -16,7 +16,7 @@ import { traTieuChuan } from '../lib/tieu-chuan';
 import { tinhLuongDau, moTaMua, LIT_PHUY, LIT_XO } from '../lib/tinh-luong-dau';
 import { PROMO, PROMO_ACTIVE } from '../lib/promo';
 import { HIEU_LUC, CHUYEN_GIAO, DANH_GIA_GOOGLE } from '../data/bao-gia-dau-thuy-luc';
-import { absUrl, LEGAL_SHORT, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR } from '../lib/site';
+import { absUrl, LEGAL_SHORT, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR, ADDRESS_TEXT, KHO_GIAO_HANG } from '../lib/site';
 
 export const prerender = false;
 
@@ -440,7 +440,8 @@ const schemaData = [
       <div class="table-wrap">
         <table class="match">
           <tbody>
-            <tr><th scope="row">Phí vận chuyển</th><td>Miễn phí trong bán kính 80 km tính từ kho. Ngoài 80 km, phí được ghi rõ trong báo giá trước khi bạn xác nhận đơn.</td></tr>
+            <tr><th scope="row">Kho xuất hàng</th><td>Kho chính {ADDRESS_TEXT}. {KHO_GIAO_HANG.map((k) => `${k.name}: ${k.addressText}.`).join(' ')}</td></tr>
+            <tr><th scope="row">Phí vận chuyển</th><td>Miễn phí trong bán kính 80 km tính từ kho chính. Ngoài 80 km, phí được ghi rõ trong báo giá trước khi bạn xác nhận đơn.</td></tr>
             <tr><th scope="row">Thời gian</th><td>Giao trong ngày tới các KCN {KCN_NEAR.join(', ')} khi chốt đơn trước {PROMO.sameDayCutoff}, thứ Hai đến thứ Sáu, với hàng có sẵn. KCN xa hơn và các tỉnh khác theo lịch hẹn.</td></tr>
             <tr><th scope="row">Chứng từ</th><td>Phiếu giao hàng, hóa đơn VAT điện tử, CO/CQ theo lô với các hãng có cấp chứng từ này. TDS và SDS gửi kèm khi bạn yêu cầu.</td></tr>
             <tr><th scope="row">Khi nhận hàng</th><td>Kiểm tra tên hàng, cấp độ nhớt, số lượng, nắp và niêm phong. Đổi trả trong 7 ngày theo <a href="/chinh-sach-doi-tra">chính sách đổi trả</a>.</td></tr>

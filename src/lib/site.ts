@@ -32,6 +32,13 @@ export const BUSINESS = {
   gbpUrl: 'https://www.google.com/maps?cid=7563996296023599602',
 };
 
+// Các kho có sẵn hàng để giao, ngoài kho 108 Thanh Bình (chủ doanh nghiệp cung cấp 01/11/2026, chốt danh sách 02/11/2026). Tên xã, phường theo địa giới từ 01/07/2025.
+// Kho Như Quỳnh ở trong thôn, không có số nhà và tên đường nên không điền streetAddress.
+export const KHO_GIAO_HANG: { id: string; name: string; addressText: string; streetAddress?: string; locality: string; region: string }[] = [
+  { id: 'kho-kien-an', name: 'Kho Kiến An', addressText: '145 Quán Trữ, P. Kiến An, TP Hải Phòng', streetAddress: '145 Quán Trữ', locality: 'P. Kiến An', region: 'TP Hải Phòng' },
+  { id: 'kho-nhu-quynh', name: 'Kho Như Quỳnh', addressText: 'Xã Như Quỳnh, tỉnh Hưng Yên (TT Như Quỳnh cũ)', locality: 'Xã Như Quỳnh', region: 'Hưng Yên' },
+];
+
 export const ADDRESS_TEXT = `${BUSINESS.streetAddress}, ${BUSINESS.locality}, ${BUSINESS.region}`;
 // Kho nằm ở TP Hải Dương cũ (sáp nhập vào TP Hải Phòng từ 01/07/2025). Dùng ở lần nhắc địa bàn đầu tiên.
 export const AREA_TEXT = 'TP Hải Phòng (Hải Dương cũ)';
@@ -137,6 +144,22 @@ export function organizationSchema() {
       telephone,
       email: BUSINESS.email,
       address,
+      // Kho giao hàng là Place, không phải cửa hàng riêng: chưa có hồ sơ Google Business và giờ đón khách riêng.
+      location: [
+        { '@id': `${SITE_URL}/#store` },
+        ...KHO_GIAO_HANG.map((k) => ({
+          '@type': 'Place',
+          '@id': `${SITE_URL}/#${k.id}`,
+          name: `${BUSINESS.name} – ${k.name}`,
+          address: {
+            '@type': 'PostalAddress',
+            ...(k.streetAddress ? { streetAddress: k.streetAddress } : {}),
+            addressLocality: k.locality,
+            addressRegion: k.region,
+            addressCountry: BUSINESS.country,
+          },
+        })),
+      ],
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'sales',
