@@ -211,7 +211,14 @@ const schemaData = [
         <a href="#quy-trinh">Quy trình đặt hàng</a>
       </nav>
 
-      <dl class="doc-info">
+      <div class="doc-wrap">
+      {/* Điện thoại: thu gọn còn dòng tóm tắt, vẫn giữ tên người viết, người duyệt và ngày. Toàn bộ khối luôn nằm trong HTML. */}
+      <script is:inline>document.currentScript.parentElement.classList.add('co-thu-gon', 'is-thu-gon');</script>
+      <p class="doc-tomtat">
+        Viết: <a href={personUrl(nguoiGia)}>{bylineLabel(nguoiGia)}</a> · Duyệt: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a><br />
+        {HIEU_LUC && (hetHieuLuc ? <>Kỳ giá đã kết thúc · </> : <>Hiệu lực {fmtNgay(HIEU_LUC.tu)} – {fmtNgay(HIEU_LUC.den)} · </>)}{coGia && ngay && <>Giá rà soát {ngay}</>}
+      </p>
+      <dl class="doc-info" id="doc-info">
         <div><dt>Người viết</dt><dd><a href={personUrl(nguoiGia)} rel="author">{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
         <div><dt>Chịu trách nhiệm duyệt</dt><dd><a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a>, {nguoiDuyet.role.toLowerCase()} HT VINA</dd></div>
         {HIEU_LUC && (
@@ -228,6 +235,8 @@ const schemaData = [
         <div><dt>Đăng / Cập nhật</dt><dd><time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> / <time datetime={ngaySua}>{fmtNgay(ngaySua)}</time></dd></div>
         <div><dt>Đơn vị phát hành</dt><dd>{LEGAL_SHORT}, kho tại {AREA_TEXT}</dd></div>
       </dl>
+      <button type="button" class="info-them" id="info-them" aria-controls="doc-info" aria-expanded="false" data-track="read_more_doc_info">… Xem thêm</button>
+      </div>
 
       {coGia && (
         <div class="summary">
@@ -611,6 +620,14 @@ const schemaData = [
 </Layout>
 
 <script>
+  // Khối thông tin đầu trang trên điện thoại: bấm để mở hoặc thu gọn.
+  const nutInfo = document.getElementById('info-them');
+  nutInfo?.addEventListener('click', () => {
+    const thuGon = nutInfo.parentElement!.classList.toggle('is-thu-gon');
+    nutInfo.setAttribute('aria-expanded', String(!thuGon));
+    nutInfo.textContent = thuGon ? '… Xem thêm' : 'Thu gọn';
+  });
+
   // Mục tin giá dầu: vuốt qua thì thu gọn; bấm "Đọc chi tiết" hoặc lối tắt trên menu thì mở hết.
   const tinGia = document.getElementById('nhan-dinh');
   const nutTin = document.getElementById('doc-them-tin');
@@ -724,6 +741,15 @@ const schemaData = [
   .match th, .match td { border: 1px solid var(--border-color, #e2e8f0); padding: 10px 12px; text-align: left; vertical-align: top; }
   .match th { background: #f1f5f9; font-weight: 600; }
   .doc-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 16px; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 12px 16px; margin: 0 0 14px; font-size: 0.95rem; }
+  .doc-tomtat, .info-them { display: none; }
+  @media (max-width: 700px) {
+    .doc-wrap { margin: 0 0 14px; }
+    .doc-wrap .doc-info { margin-bottom: 0; }
+    .doc-wrap.is-thu-gon .doc-info { display: none; }
+    .price-hero .doc-wrap.is-thu-gon .doc-tomtat { display: block; margin: 0; font-size: 0.9rem; line-height: 1.5; color: var(--color-text-light); }
+    .doc-tomtat a { color: var(--color-primary); font-weight: 600; text-decoration: underline; }
+    .doc-wrap.co-thu-gon .info-them { display: block; min-height: 40px; padding: 4px 0; background: none; border: 0; color: var(--color-primary); font: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer; }
+  }
   .doc-info dt { font-size: 0.82rem; color: var(--color-text-light); }
   .doc-info dd { margin: 0; font-weight: 600; }
   .doc-info a { color: var(--color-primary); text-decoration: underline; }
