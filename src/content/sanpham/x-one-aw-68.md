@@ -1,6 +1,6 @@
 ---
 ma: "SP-THL-010"
-active: true   # Bật 12/10/2026: đăng cả khi chưa có TDS, có TDS thì điền specs
+active: true   # Bật 12/10/2026. 02/11/2026: điền thông số theo TDS-XONE-AW68 (12/10/2026)
 title: "Dầu Thủy Lực X-One AW 68"
 seo_title: "Dầu Thủy Lực X-One AW 68 – Phuy 200 L, Xô 18 L"
 description: "Dầu thủy lực chống mài mòn X-One AW 68 (ISO VG 68) cho máy ép, máy công trình, hệ thủy lực công nghiệp. Phuy 200 L, xô 18 L có sẵn, giao từ Hải Phòng."
@@ -10,12 +10,22 @@ categoryName: "Dầu Thủy Lực"
 
 brand: "X-One"
 vg: 68
-base_oil: "Dầu gốc khoáng"   # TODO TDS: xác nhận
-# TODO TDS: chép thông số điển hình từ TDS (màu, tỷ trọng, độ nhớt 40/100 °C, VI, chớp cháy, đông đặc...)
-# specs:
-#   - { name: "Độ nhớt động học ở 40 °C", value: "", method: "ASTM D445" }
-# tds_date: ""
-# tds_url: "/tai-lieu/tds/x-one-aw-68.pdf"
+base_oil: "Dầu gốc khoáng tinh chế"
+standards: ["ISO 6743-4 HM"]
+specs:
+  - { name: "Khối lượng riêng ở 15 °C", value: "0,8550 kg/lít", method: "ASTM D1298" }
+  - { name: "Độ nhớt động học ở 40 °C", value: "75,10 cSt", method: "ASTM D445" }
+  - { name: "Độ nhớt động học ở 100 °C", value: "11,57 cSt", method: "ASTM D445" }
+  - { name: "Chỉ số độ nhớt", value: "147", method: "ASTM D2270" }
+  - { name: "Chỉ số axit tổng (TAN)", value: "0,23 mg KOH/g", method: "ASTM D974" }
+  - { name: "Độ tạo bọt / ổn định bọt, chu kỳ I, II, III", value: "10/0, 40/0, 10/0 ml/ml", method: "ASTM D892" }
+  - { name: "Nhiệt độ đông đặc", value: "-24 °C", method: "ASTM D97" }
+  - { name: "Nhiệt độ chớp cháy cốc hở", value: "242 °C", method: "ASTM D92" }
+  - { name: "Hàm lượng nước", value: "< 0,03 %wt", method: "ASTM D95" }
+  - { name: "Hàm lượng kẽm (Zn)", value: "148 ppm", method: "ASTM D4628" }
+tds_date: "12/10/2026"
+tds_url: "/tai-lieu/tds/x-one-aw-68.pdf"
+sds_url: "/tai-lieu/tds/x-one-aw-68-msds.pdf"
 
 packaging:
   - { name: "Phuy 200 L", sku: "AW68-Xone ( Phuy)" }
@@ -30,10 +40,11 @@ applications:
 not_for:
   - "Hệ thống mà hướng dẫn sử dụng yêu cầu dầu không kẽm (bơm có chi tiết mạ bạc)"
   - "Hệ thủy lực ngoài trời lạnh sâu cần dầu chỉ số độ nhớt cao (HV)"
-warnings:   # TODO TDS: thay bằng cảnh báo trong SDS mục 2 và 7
-  - "Tránh để dầu tiếp xúc lâu với da và mắt; dính da thì rửa bằng xà phòng và nước."
-  - "Thu gom dầu thải theo quy định, không đổ ra cống rãnh."
-storage: "Để trong nhà hoặc dưới mái che, tránh nắng mưa. Phuy để ngoài trời phải đặt nằm ngang. Đậy kín nắp sau khi dùng."
+warnings:   # Theo MSDS-XONE-AW68 mục 2, 4, 7, 13
+  - "Tránh tiếp xúc kéo dài với da và mắt; rửa da bằng xà phòng và nước. Tránh hít sương dầu."
+  - "Dầu phun ở áp suất cao có thể xuyên qua da: đưa ngay đến bệnh viện kể cả khi không thấy vết thương rõ."
+  - "Bề mặt dính dầu gây trơn trượt. Dầu thải là chất thải nguy hại, chuyển cho đơn vị có giấy phép xử lý."
+storage: "Bảo quản trong bao bì gốc đậy kín, nơi khô ráo, thoáng mát, có mái che, tránh nắng trực tiếp và nguồn nhiệt. Nhiệt độ khuyến nghị 0–40 °C. Phuy nên đặt nằm ngang để tránh đọng nước trên nắp."
 
 images:
   - { src: "/images/san-pham/x-one-aw-68-xo-18l.webp", alt: "Xô 18 lít dầu thủy lực X-One AW 68" }
@@ -45,10 +56,10 @@ tom_tat:
   - "**Dùng được** cho máy ép, máy công trình, xe nâng yêu cầu dầu thủy lực ISO VG 68 loại HM/AW."
   - "**Không dùng** cho bơm yêu cầu dầu không kẽm, hoặc máy ngoài trời lạnh sâu cần dầu HV."
   - "**Giá theo lít** của phuy thấp hơn khoảng 8% so với Castrol Hyspin AWS 68 (bảng giá tháng 10/2026)."
-  - "**Chưa có TDS** của hãng: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
+  - "**Theo TDS 12/10/2026:** độ nhớt 75,10 cSt ở 40 °C, chỉ số độ nhớt 147, chớp cháy cốc hở 242 °C. Độ nhớt này cao hơn nhẹ cận trên 74,8 cSt của cấp ISO VG 68, nên đo lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "x-one"]
 date: "2026-10-12"
-updated: "2026-10-30"
+updated: "2026-11-02"
 ---
 
 **X-One AW 68** là dầu thủy lực chống mài mòn cấp độ nhớt **ISO VG 68**. Chữ "AW" (anti-wear) nghĩa là dầu có phụ gia chống mài mòn để bảo vệ bơm và van khi hệ thống chạy áp cao. Dầu dùng cho máy ép, máy công trình và hầu hết hệ thủy lực công nghiệp yêu cầu dầu cấp 68.
@@ -65,7 +76,7 @@ Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** v�
 | Bắt buộc dầu được Parker Denison, Eaton chấp thuận | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
 | HV, HVLP (máy ngoài trời lạnh sâu, dải nhiệt rộng) | Không. |
 
-Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của hãng cho mã này, nên trang chưa có bảng chỉ tiêu (độ nhớt, chỉ số độ nhớt, điểm chớp cháy).
+Bảng thông số kỹ thuật (TDS) số TDS-XONE-AW68 do HT VINA phát hành ngày 12/10/2026 ghi dầu thuộc loại HM theo ISO 6743-4, độ nhớt 75,10 cSt ở 40 °C và chỉ số độ nhớt 147. TDS cho biết đây là giá trị tiêu biểu, thử tại phòng thử nghiệm được công nhận VILAS. Độ nhớt này cao hơn nhẹ cận trên 74,8 cSt của cấp ISO VG 68, nên máy cần bám sát cấp 68 hãy đo lô đầu tiên trước khi nạp. TDS không ghi đạt DIN 51524-2 hay phê duyệt của hãng bơm.
 
 ## X-One AW 68 hay ENEOS Super Hyrando 68?
 
@@ -75,9 +86,9 @@ Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (r
 | :--- | :--- | :--- |
 | Phuy 200 L | 7,95–9,15 triệu đ (39.700–45.800 đ/L) | 8,99–10,35 triệu đ (44.900–51.800 đ/L) |
 | Xô 18 L | 580.000–667.000 đ | Nhận đặt |
-| Tiêu chuẩn công bố | Chưa có TDS | DIN 51524-2, TCCS 14:2014 |
+| Tiêu chuẩn công bố | ISO 6743-4 HM | DIN 51524-2, TCCS 14:2014 |
 
-Tính theo lít, phuy X-One thấp hơn ENEOS khoảng 12%. ENEOS có TDS bản tiếng Việt và tiêu chuẩn cơ sở công bố, nên dễ đối chiếu với hướng dẫn sử dụng của máy hơn.
+Tính theo lít, phuy X-One thấp hơn ENEOS khoảng 12%. ENEOS công bố thêm DIN 51524-2 và tiêu chuẩn cơ sở, nên dễ đối chiếu với hướng dẫn sử dụng của máy hơn.
 
 > **Nhận định của HT VINA:** Chọn X-One AW 68 khi hướng dẫn sử dụng chỉ ghi ISO VG 68 loại HM/AW và bạn cần một mã có giá hợp lý cho máy chạy nhiều ca. Máy Nhật đang dùng sẵn ENEOS, hoặc cần giấy tờ tiêu chuẩn để nộp kiểm tra, thì giữ ENEOS.
 
@@ -95,7 +106,7 @@ X-One AW 68 thường được chọn cho máy ép, máy đùn chạy nhiều ca
 
 **Lời khuyên của chúng tôi:** dán một nhiệt kế dán (miếng đổi màu theo nhiệt) lên thành thùng dầu, ghi nhiệt độ cuối mỗi ca trong một tuần. Thùng thường xuyên trên 70 °C thì dầu nào cũng xuống cấp nhanh, X-One hay mã nhập khẩu cũng vậy. Khi đó, tiền sửa két làm mát hoặc thêm quạt sẽ tiết kiệm hơn đổi sang dầu đắt hơn.
 
-Khi chưa có TDS của X-One, chúng tôi chưa biết số liệu bền oxy hóa của mã này. Cách chắc chắn nhất là lấy mẫu dầu sau 3 tháng đầu, đo [trị số axit TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) và so với dầu mới cùng lô.
+TDS của X-One không ghi số liệu bền oxy hóa. Cách chắc chắn nhất là lấy mẫu dầu sau 3 tháng đầu, đo [trị số axit TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) và so với dầu mới cùng lô (TDS ghi TAN tiêu biểu 0,23 mg KOH/g).
 
 ## Khi nào cần thay dầu?
 
@@ -103,7 +114,7 @@ Không có một mốc giờ chạy đúng cho mọi máy. Cùng là X-One AW 68
 
 | Chỉ tiêu | Mức nên thay dầu | Dụng cụ đo tại xưởng |
 | :--- | :--- | :--- |
-| Độ nhớt ở 40 °C | Ngoài khoảng 61,2–74,8 mm²/s (cấp ISO VG 68 danh định 68 mm²/s, lệch quá ±10%) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
+| Độ nhớt ở 40 °C | Lệch quá ±10% so với dầu mới cùng lô (TDS ghi 75,10 mm²/s, nên đo mẫu dầu mới làm mốc) | [Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) |
 | Trị số axit (TAN) | Tăng thêm 0,2 mg KOH/g so với dầu mới (mức cảnh báo theo [ASTM D6224](https://www.astm.org/Standards/D6224.htm)) | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) |
 | Nước | Trên 0,05% (500 ppm), hoặc dầu đục màu sữa | [Kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) |
 
@@ -112,7 +123,7 @@ Cách lấy mẫu và đọc kết quả xem bài [hướng dẫn kiểm tra ch�
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu thủy lực X-One AW 68?
-Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,2–74,8 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng mức cho phép và dụng cụ đo ở mục "Khi nào cần thay dầu?" phía trên.
+Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C lệch quá ±10% so với dầu mới cùng lô, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng mức cho phép và dụng cụ đo ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Thêm X-One AW 68 vào máy đang dùng dầu hãng khác được không?
 Hai dầu cùng cấp VG 68 loại AW gốc khoáng thường trộn được khi thêm dầu bổ sung một lượng nhỏ. Khi đổi hẳn sang mã mới, nên xả hết dầu cũ và thay lọc để dễ theo dõi chất lượng dầu. Cách làm xem [hướng dẫn thay dầu thủy lực](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc).
@@ -123,7 +134,7 @@ Theo bảng giá rà soát 02/10/2026, xô 18 L có khoảng giá 580.000–667.
 ## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** phuy 200 L cho nhà máy thay dầu cả thùng, xô 18 L cho tổ bảo trì thêm.
-- **Giấy tờ:** hóa đơn VAT cho mỗi lô.
+- **Giấy tờ:** hóa đơn VAT cho mỗi lô, kèm TDS và MSDS.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** xem khoảng giá tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=X-One%20AW%2068) theo số lượng của bạn.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.
