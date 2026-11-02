@@ -6,14 +6,29 @@ export const HIEU_LUC: { tu: string; den: string } | null = { tu: '2026-11-01', 
 
 export interface AnhGiaoHang { src: string; alt: string; width: number; height: number; chuThich: string }
 
-/** Chuyến giao thực tế. Chỉ điền khi đã có ảnh, video thật và khách đồng ý bằng văn bản cho công khai tên nhà máy. */
+/**
+ * Chuyến giao thực tế. Chỉ điền khi đã có ảnh, video thật và khách đồng ý bằng văn bản cho công khai tên nhà máy.
+ * 02/11/2026: video do người dùng đưa, đăng công khai trên kênh của công ty. Văn bản đồng ý của Nhôm Đông Á chưa xác nhận.
+ * uploadDate, duration lấy từ trang YouTube, không gõ theo ước lượng.
+ */
 export const CHUYEN_GIAO: {
   tieuDe: string;
   ngay: string;
   moTa: string;
   anh: AnhGiaoHang[];
-  video?: { src: string; poster: string; moTa: string; thoiLuong: string };
-} | null = null;
+  video?: { youtubeId: string; moTa: string; thoiLuong: string; ngayDang: string };
+} | null = {
+  tieuDe: 'Thực tế giao 25 phuy dầu thủy lực X-One cho Nhôm Đông Á',
+  ngay: '2026-10-31',
+  moTa: 'HT VINA giao 25 phuy dầu thủy lực X-One cho nhà máy Nhôm Đông Á ngày 31/10/2026. Video dài 5 phút, đăng trên kênh YouTube của công ty.',
+  anh: [],
+  video: {
+    youtubeId: 'viOPDZPIcBQ',
+    moTa: 'Video thực tế HT VINA giao 25 phuy dầu thủy lực X-One cho nhà máy Nhôm Đông Á.',
+    thoiLuong: 'PT5M1S',
+    ngayDang: '2026-11-01T23:54:19-08:00',
+  },
+};
 
 /** Ảnh chụp số liệu hồ sơ Google, đọc thủ công; đổi cùng lúc với danh sách khi có đánh giá mới. */
 export const DANH_GIA_GOOGLE = {

@@ -183,10 +183,10 @@ const schemaData = [
         '@type': 'VideoObject',
         name: CHUYEN_GIAO.tieuDe,
         description: CHUYEN_GIAO.video.moTa,
-        thumbnailUrl: absUrl(CHUYEN_GIAO.video.poster),
-        uploadDate: CHUYEN_GIAO.ngay,
+        thumbnailUrl: `https://i.ytimg.com/vi/${CHUYEN_GIAO.video.youtubeId}/maxresdefault.jpg`,
+        uploadDate: CHUYEN_GIAO.video.ngayDang,
         duration: CHUYEN_GIAO.video.thoiLuong,
-        contentUrl: absUrl(CHUYEN_GIAO.video.src),
+        embedUrl: `https://www.youtube.com/embed/${CHUYEN_GIAO.video.youtubeId}`,
       }]
     : []),
 ];
@@ -358,16 +358,20 @@ const schemaData = [
           <h3>{CHUYEN_GIAO.tieuDe}</h3>
           <p>{CHUYEN_GIAO.moTa}</p>
           {CHUYEN_GIAO.video && (
-            <video class="delivery-video" controls preload="none" playsinline poster={CHUYEN_GIAO.video.poster} src={CHUYEN_GIAO.video.src} aria-label={CHUYEN_GIAO.video.moTa}></video>
+            <>
+              {/* Tải lười khi gần tới màn hình, không cần bấm, để Google vẫn nhận ra video. Tên miền nocookie: không đặt cookie trước khi khách đồng ý. */}
+              <iframe class="delivery-video" src={`https://www.youtube-nocookie.com/embed/${CHUYEN_GIAO.video.youtubeId}`} title={CHUYEN_GIAO.tieuDe} loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <p class="small"><a href={`https://www.youtube.com/watch?v=${CHUYEN_GIAO.video.youtubeId}`} target="_blank" rel="noopener">Xem video trên YouTube</a></p>
+            </>
           )}
-          <div class="delivery-grid">
+          {CHUYEN_GIAO.anh.length > 0 && <div class="delivery-grid">
             {CHUYEN_GIAO.anh.map((a) => (
               <figure>
                 <img src={a.src} alt={a.alt} width={a.width} height={a.height} loading="lazy" decoding="async" />
                 <figcaption>{a.chuThich}</figcaption>
               </figure>
             ))}
-          </div>
+          </div>}
         </>
       )}
     </section>
@@ -737,7 +741,7 @@ const schemaData = [
   .discount { background: #fff7ed; border-color: #fed7aa; }
   .discount__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
   .price-body .discount__actions a { text-decoration: none; }
-  .delivery-video { width: 100%; max-width: 720px; display: block; border-radius: 8px; margin: 12px 0; background: #000; }
+  .delivery-video { width: 100%; max-width: 720px; aspect-ratio: 16 / 9; height: auto; border: 0; display: block; border-radius: 8px; margin: 12px 0; background: #000; }
   .delivery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
   .delivery-grid figure { margin: 0; }
   .delivery-grid img { width: 100%; height: auto; border-radius: 6px; display: block; }
