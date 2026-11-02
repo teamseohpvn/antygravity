@@ -22,8 +22,8 @@ export const prerender = false;
 
 const CATEGORY = 'dau-thuy-luc';
 const pagePath = '/test-bai';
-const IMAGE = '/images/san-pham/castrol-hyspin-aws-68-kho.webp';
-const IMAGE_ALT = 'Phuy Castrol Hyspin AWS 68 xếp trên pallet trong kho HT VINA';
+const IMAGE = '/images/blog/kho-ht-vina-thanh-binh-1.webp';
+const IMAGE_ALT = 'Lối đi trong kho HT VINA với xe nâng tay, hai bên là phuy và xô dầu các hãng';
 
 // 01/11/2026 (quyết định của người dùng): báo giá là tài liệu kinh tế và trách nhiệm kinh doanh.
 // Chị Hồng (quản lý bán hàng) là người viết và rà soát giá.
@@ -293,11 +293,6 @@ const schemaData = [
         <li>"Có sẵn" không phải số tồn kho trực tiếp{TON_KHO_CAP_NHAT ? `, cập nhật ngày ${fmtNgay(TON_KHO_CAP_NHAT)}` : ''}. Hãy gọi xác nhận kho và số lượng trước khi chốt đơn.</li>
         <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
       </ul>
-
-      <figure class="photo">
-        <img src={IMAGE} alt={IMAGE_ALT} width="1200" height="1200" loading="lazy" decoding="async" />
-        <figcaption>Phuy dầu thủy lực 68 tại kho HT VINA, {AREA_TEXT}.</figcaption>
-      </figure>
 
       <figure class="photo">
         <div class="delivery-grid">
