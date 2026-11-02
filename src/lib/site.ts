@@ -32,11 +32,10 @@ export const BUSINESS = {
   gbpUrl: 'https://www.google.com/maps?cid=7563996296023599602',
 };
 
-// Các kho có sẵn hàng để giao, ngoài kho 108 Thanh Bình (01/11/2026, chủ doanh nghiệp cung cấp). Tên xã, phường theo địa giới từ 01/07/2025.
-// Kho Tiền Phong và Như Quỳnh ở trong thôn, không có số nhà và tên đường nên không điền streetAddress.
+// Các kho có sẵn hàng để giao, ngoài kho 108 Thanh Bình (chủ doanh nghiệp cung cấp 01/11/2026, chốt danh sách 02/11/2026). Tên xã, phường theo địa giới từ 01/07/2025.
+// Kho Như Quỳnh ở trong thôn, không có số nhà và tên đường nên không điền streetAddress.
 export const KHO_GIAO_HANG: { id: string; name: string; addressText: string; streetAddress?: string; locality: string; region: string }[] = [
   { id: 'kho-kien-an', name: 'Kho Kiến An', addressText: '145 Quán Trữ, P. Kiến An, TP Hải Phòng', streetAddress: '145 Quán Trữ', locality: 'P. Kiến An', region: 'TP Hải Phòng' },
-  { id: 'kho-tien-phong', name: 'Kho Tiền Phong', addressText: 'P. Tiền Phong, tỉnh Bắc Ninh', locality: 'P. Tiền Phong', region: 'Bắc Ninh' },
   { id: 'kho-nhu-quynh', name: 'Kho Như Quỳnh', addressText: 'Xã Như Quỳnh, tỉnh Hưng Yên (TT Như Quỳnh cũ)', locality: 'Xã Như Quỳnh', region: 'Hưng Yên' },
 ];
 

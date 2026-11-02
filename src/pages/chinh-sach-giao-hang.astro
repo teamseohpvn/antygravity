@@ -1,6 +1,6 @@
 ---
 import PolicyPage from '../components/PolicyPage.astro';
-import { BUSINESS, ADDRESS_FULL, AREA_TEXT, LEGAL_NAME, KCN_NEAR, KCN_FAR } from '../lib/site';
+import { BUSINESS, ADDRESS_FULL, KHO_GIAO_HANG, AREA_TEXT, LEGAL_NAME, KCN_NEAR, KCN_FAR } from '../lib/site';
 import { PROMO } from '../lib/promo';
 
 const CUTOFF = PROMO.sameDayCutoff;
@@ -11,12 +11,15 @@ const CUTOFF = PROMO.sameDayCutoff;
   title="Chính sách giao hàng"
   seoTitle="Chính Sách Giao Hàng Dầu Công Nghiệp – Hải Phòng và Miền Bắc"
   description={`Phạm vi, thời gian, phí giao hàng và cách kiểm tra khi nhận dầu nhớt, mỡ công nghiệp. Kho tại ${AREA_TEXT}, miễn phí vận chuyển trong 80 km.`}
-  updated="2026-10-12"
+  updated="2026-11-02"
 >
   <p>
     Chính sách này áp dụng cho mọi đơn hàng dầu nhớt và mỡ bôi trơn công nghiệp đặt với {LEGAL_NAME} qua website, điện thoại hoặc Zalo.
-    Hàng xuất từ kho tại {ADDRESS_FULL}.
+    Hàng xuất từ kho chính tại {ADDRESS_FULL}, hoặc từ các kho giao hàng dưới đây tùy mã còn hàng và điểm giao:
   </p>
+  <ul>
+    {KHO_GIAO_HANG.map((k) => <li><strong>{k.name}:</strong> {k.addressText}</li>)}
+  </ul>
 
   <h2>1. Phạm vi giao hàng</h2>
   <ul>
@@ -43,7 +46,7 @@ const CUTOFF = PROMO.sameDayCutoff;
 
   <h2>3. Phí giao hàng</h2>
   <p>
-    <strong>Miễn phí vận chuyển trong bán kính 80 km tính từ kho</strong> tại {AREA_TEXT}.
+    <strong>Miễn phí vận chuyển trong bán kính 80 km tính từ kho chính</strong> {BUSINESS.streetAddress}, {BUSINESS.locality}, {BUSINESS.region}.
     Ngoài 80 km, phí giao hàng phụ thuộc quãng đường, số lượng và quy cách (phuy 200–209 L, xô, can). Phí được ghi rõ trong báo giá trước khi bạn xác nhận đơn,
     không phát sinh thêm khi giao.
   </p>
