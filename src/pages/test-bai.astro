@@ -106,6 +106,13 @@ const kqMacDinh = tinhLuongDau(TINH_MAC_DINH);
 const fmtLit = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 1 });
 const yeuCauTinh = (mua: string, tong: number) => `/bao-gia?sp=${encodeURIComponent(`Dầu thủy lực 68: ${mua} (tính trên trang báo giá, tổng ${fmtLit(tong)} L)`)}`;
 
+// Ảnh kho do người dùng cung cấp, chụp cập nhật ngày 01/11/2026.
+const ANH_KHO = [
+  { src: '/images/blog/kho-ht-vina-thanh-binh-1.webp', alt: 'Lối đi trong kho với xe nâng tay, hai bên là phuy và xô dầu các hãng, kệ hàng ở cuối kho' },
+  { src: '/images/blog/kho-ht-vina-thanh-binh-2.webp', alt: 'Phuy dầu ENEOS màu đỏ và phuy dầu Castrol màu xanh xếp trong kho, phía sau là kệ hàng' },
+  { src: '/images/blog/kho-ht-vina-thanh-binh-3.webp', alt: 'Các xô dầu ENEOS màu xanh dương xếp chồng trong kho' },
+];
+
 const quyTrinh = [
   { buoc: 'Đặt hàng', viec: 'Gửi mã dầu đang dùng (hoặc loại máy), quy cách, số lượng và nơi giao qua điện thoại, Zalo hay form. Mã hết hàng hoặc giá cao thì được đề xuất mã cùng cấp ISO VG và tiêu chuẩn.', nguoi: nguoiGia },
   { buoc: 'Chốt giá', viec: 'Nhận báo giá ghi rõ giá trước thuế, tiền thuế, phí giao và thời hạn hiệu lực. Đơn được xác nhận khi bạn đồng ý qua tin nhắn, email hoặc đơn đặt hàng (PO).', nguoi: nguoiGia },
@@ -290,6 +297,17 @@ const schemaData = [
       <figure class="photo">
         <img src={IMAGE} alt={IMAGE_ALT} width="1200" height="1200" loading="lazy" decoding="async" />
         <figcaption>Phuy dầu thủy lực 68 tại kho HT VINA, {AREA_TEXT}.</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <div class="delivery-grid">
+          {ANH_KHO.map((a) => (
+            <a href={a.src} target="_blank" rel="noopener">
+              <img src={a.src} srcset={`${a.src.replace('.webp', '-600.webp')} 600w, ${a.src} 1200w`} sizes="(max-width: 700px) 50vw, 360px" alt={a.alt} width="1200" height="900" loading="lazy" decoding="async" />
+            </a>
+          ))}
+        </div>
+        <figcaption>Ảnh kho 108 Đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng. Cập nhật ngày 01/11/2026.</figcaption>
       </figure>
     </section>
 
