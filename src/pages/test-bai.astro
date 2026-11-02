@@ -201,6 +201,8 @@ const schemaData = [
     </aside>
 
     <NoiDungBai articleId={ARTICLE_ID}>
+    {/* Thứ tự trong HTML là thứ tự trên điện thoại (bảng giá ngay sau đầu trang). Màn hình rộng giữ tin giá dầu và chiết khấu trước bảng bằng CSS order. */}
+    <div class="thu-tu">
     <header class="price-hero">
       <h1>{title}</h1>
       <nav class="page-menu" aria-label="Lối tắt trong trang">
@@ -258,6 +260,38 @@ const schemaData = [
 
     </header>
 
+    <section class="price-body" id="bang-gia">
+      <h2>Bảng giá dầu thủy lực 68 tại kho</h2>
+
+      {coGia ? (
+        <>
+          <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {khoCuaDong} boLoc />
+        {!TON_KHO_CAP_NHAT && (
+          <aside class="draft-slot">
+            <strong>Chờ dữ liệu kho.</strong> Khi có số liệu, cột Tình trạng sẽ ghi tên kho, ví dụ "Kho Kiến An, Như Quỳnh", kèm ngày cập nhật.
+          </aside>
+        )}
+        </>
+      ) : (
+        <div class="empty">
+          <p><strong>Bảng giá đang được cập nhật.</strong> Gửi tên dầu và số lượng cần mua để nhận báo giá trong ngày.</p>
+          <QuoteCta item="Dầu thủy lực 68" compact />
+        </div>
+      )}
+
+      <ul class="notes">
+        <li>Đây là <strong>báo giá sơ bộ</strong>, ghi khoảng tham khảo cho một đơn vị đóng gói, {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT. Giá chính xác phụ thuộc số lượng, quy cách và điểm giao.</li>
+        <li>Cột "Quy đổi" chia khoảng giá cho số lít trong phuy hoặc xô, để so sánh hai quy cách với nhau.</li>
+        <li>"Có sẵn" không phải số tồn kho trực tiếp{TON_KHO_CAP_NHAT ? `, cập nhật ngày ${fmtNgay(TON_KHO_CAP_NHAT)}` : ''}. Hãy gọi xác nhận kho và số lượng trước khi chốt đơn.</li>
+        <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
+      </ul>
+
+      <figure class="photo">
+        <img src={IMAGE} alt={IMAGE_ALT} width="1200" height="1200" loading="lazy" decoding="async" />
+        <figcaption>Phuy dầu thủy lực 68 tại kho HT VINA, {AREA_TEXT}.</figcaption>
+      </figure>
+    </section>
+
     <section class="price-body" id="nhan-dinh">
       {/* Toàn bộ chữ luôn nằm trong HTML. Script này chạy trước khi vẽ nên không giật trang; tắt JS thì vẫn đọc được hết. */}
       <script is:inline>
@@ -297,7 +331,7 @@ const schemaData = [
 
     <section class="price-body discount" id="chiet-khau">
       <h2>Doanh nghiệp cần chiết khấu hoặc giá linh hoạt</h2>
-      <p>Bảng dưới đây là <strong>báo giá sơ bộ</strong>. Nếu muốn chiết khấu hoặc có chính sách giá linh hoạt riêng, bạn có thể liên lạc để đàm phán giá theo mã, sản lượng và thời hạn thanh toán. Để nhận được mức sát nhất ngay lần đầu, hãy gửi kèm:</p>
+      <p>Bảng giá trên trang này là <strong>báo giá sơ bộ</strong>. Nếu muốn chiết khấu hoặc có chính sách giá linh hoạt riêng, bạn có thể liên lạc để đàm phán giá theo mã, sản lượng và thời hạn thanh toán. Để nhận được mức sát nhất ngay lần đầu, hãy gửi kèm:</p>
       <ul>
         <li>Mã dầu và sản lượng dự kiến mỗi tháng hoặc mỗi quý.</li>
         <li>Số điểm giao và lịch giao mong muốn.</li>
@@ -310,37 +344,7 @@ const schemaData = [
       </div>
     </section>
 
-    <section class="price-body" id="bang-gia">
-      <h2>Bảng giá dầu thủy lực 68 tại kho</h2>
-
-      {coGia ? (
-        <>
-          <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {khoCuaDong} boLoc />
-        {!TON_KHO_CAP_NHAT && (
-          <aside class="draft-slot">
-            <strong>Chờ dữ liệu kho.</strong> Khi có số liệu, cột Tình trạng sẽ ghi tên kho, ví dụ "Kho Kiến An, Như Quỳnh", kèm ngày cập nhật.
-          </aside>
-        )}
-        </>
-      ) : (
-        <div class="empty">
-          <p><strong>Bảng giá đang được cập nhật.</strong> Gửi tên dầu và số lượng cần mua để nhận báo giá trong ngày.</p>
-          <QuoteCta item="Dầu thủy lực 68" compact />
-        </div>
-      )}
-
-      <ul class="notes">
-        <li>Đây là <strong>báo giá sơ bộ</strong>, ghi khoảng tham khảo cho một đơn vị đóng gói, {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT. Giá chính xác phụ thuộc số lượng, quy cách và điểm giao.</li>
-        <li>Cột "Quy đổi" chia khoảng giá cho số lít trong phuy hoặc xô, để so sánh hai quy cách với nhau.</li>
-        <li>"Có sẵn" không phải số tồn kho trực tiếp{TON_KHO_CAP_NHAT ? `, cập nhật ngày ${fmtNgay(TON_KHO_CAP_NHAT)}` : ''}. Hãy gọi xác nhận kho và số lượng trước khi chốt đơn.</li>
-        <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
-      </ul>
-
-      <figure class="photo">
-        <img src={IMAGE} alt={IMAGE_ALT} width="1200" height="1200" loading="lazy" decoding="async" />
-        <figcaption>Phuy dầu thủy lực 68 tại kho HT VINA, {AREA_TEXT}.</figcaption>
-      </figure>
-    </section>
+    </div>
 
     <section class="price-body" id="giao-hang">
       <h2>Giao hàng và chứng từ</h2>
@@ -741,6 +745,13 @@ const schemaData = [
   .match th, .match td { border: 1px solid var(--border-color, #e2e8f0); padding: 10px 12px; text-align: left; vertical-align: top; }
   .match th { background: #f1f5f9; font-weight: 600; }
   .doc-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 16px; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 12px 16px; margin: 0 0 14px; font-size: 0.95rem; }
+  @media (min-width: 701px) {
+    .thu-tu { display: flex; flex-direction: column; }
+    .thu-tu > .price-hero { order: 1; }
+    .thu-tu > #nhan-dinh { order: 2; }
+    .thu-tu > #chiet-khau { order: 3; }
+    .thu-tu > #bang-gia { order: 4; }
+  }
   .doc-tomtat, .info-them { display: none; }
   @media (max-width: 700px) {
     .doc-wrap { margin: 0 0 14px; }
