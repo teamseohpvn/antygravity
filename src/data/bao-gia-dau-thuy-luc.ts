@@ -1,7 +1,7 @@
 // Dữ liệu riêng của trang /bao-gia-dau-thuy-luc. Khối nào chưa có dữ liệu thật thì để null / mảng rỗng: trang tự ẩn khối đó.
 
 /** Thời hạn hiệu lực của bảng giá (YYYY-MM-DD). Chỉ điền sau khi giám đốc duyệt giá của kỳ đó; quá ngày `den` trang tự báo đang rà lại. */
-// 01/11/2026: ngày dưới đây là giả định cho bản nháp /test-bai, chưa được giám đốc duyệt.
+// Kỳ hiệu lực đang hiện trên trang. Đổi khi có kỳ giá mới.
 export const HIEU_LUC: { tu: string; den: string } | null = { tu: '2026-11-01', den: '2026-11-30' };
 
 export interface AnhGiaoHang { src: string; alt: string; width: number; height: number; chuThich: string }
