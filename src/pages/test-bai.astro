@@ -210,7 +210,8 @@ const schemaData = [
       {/* Thu gọn còn dòng tóm tắt, vẫn giữ tên người viết, người duyệt và ngày. Toàn bộ khối luôn nằm trong HTML. */}
       <script is:inline>document.currentScript.parentElement.classList.add('co-thu-gon', 'is-thu-gon');</script>
       <p class="doc-tomtat">
-        Duyệt bởi: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a> (GĐ HT VINA) · Cập nhật: {fmtNgay(ngaySua)}{HIEU_LUC && (hetHieuLuc ? <> · Kỳ giá đã kết thúc</> : <> · Hiệu lực: Tháng {fmtNgay(HIEU_LUC.tu, 'thang')}</>)}
+        <span class="doc-tomtat__dong">Người viết: <a href={personUrl(nguoiGia)}>{bylineLabel(nguoiGia)}</a> ({nguoiGia.role.toLowerCase()})</span>
+        <span>Duyệt bởi: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a> (GĐ HT VINA) · Cập nhật: {fmtNgay(ngaySua)}{HIEU_LUC && (hetHieuLuc ? <> · Kỳ giá đã kết thúc</> : <> · Hiệu lực: Tháng {fmtNgay(HIEU_LUC.tu, 'thang')}</>)}</span>
       </p>
       <dl class="doc-info" id="doc-info">
         <div><dt>Người viết</dt><dd><a href={personUrl(nguoiGia)} rel="author">{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
@@ -747,8 +748,13 @@ const schemaData = [
   .doc-wrap .doc-info { margin-bottom: 0; }
   .doc-wrap.is-thu-gon .doc-info { display: none; }
   .price-hero .doc-wrap.is-thu-gon .doc-tomtat { display: inline; margin: 0; font-size: 0.9rem; line-height: 1.5; color: var(--color-text-light); }
-  .doc-tomtat a { color: var(--color-primary); font-weight: 600; text-decoration: underline; }
   .doc-wrap.co-thu-gon .info-them { display: inline-block; min-height: 40px; padding: 4px 0 4px 6px; background: none; border: 0; color: var(--color-primary); font: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer; }
+  .doc-tomtat__dong { display: block; }
+  @media (max-width: 700px) {
+    .price-hero .doc-wrap.is-thu-gon .doc-tomtat { font-size: 0.8rem; line-height: 1.45; }
+    .doc-wrap.co-thu-gon .info-them { font-size: 0.8rem; min-height: 32px; padding: 2px 0 2px 4px; }
+  }
+  .doc-tomtat a { color: var(--color-primary); font-weight: 600; text-decoration: underline; }
   .doc-info dt { font-size: 0.82rem; color: var(--color-text-light); }
   .doc-info dd { margin: 0; font-weight: 600; }
   .doc-info a { color: var(--color-primary); text-decoration: underline; }
