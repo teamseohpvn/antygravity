@@ -13,9 +13,11 @@ interface Props {
   tds?: Record<string, string | undefined>;
   /** Có truyền thì thêm cột Tình trạng. Trả về tên các kho có dòng hàng này; mảng rỗng là chưa có dữ liệu kho. */
   khoCuaDong?: (r: DongGiaCongKhai) => string[];
+  /** Có truyền thì hiện nút lọc nhanh theo quy cách và nguồn hàng trên đầu bảng. */
+  boLoc?: boolean;
 }
 
-const { rows, activePages, category, gomVat, tds, khoCuaDong } = Astro.props;
+const { rows, activePages, category, gomVat, tds, khoCuaDong, boLoc } = Astro.props;
 // Link PDF ghi là tải về; link trang web của hãng ghi là xem, không hứa có file.
 const laPdf = (u: string) => /\.pdf($|\?)|docFormat=PDF/i.test(u);
 const groups = new Map<string, DongGiaCongKhai[]>();
@@ -28,7 +30,29 @@ const capNum = (c: string) => Number(/\d+/.exec(c)?.[0] ?? 1e9);
 const sortedGroups = [...groups].sort(([a], [b]) => capNum(a) - capNum(b) || a.localeCompare(b));
 const NGUON = { 'nhap-khau': 'Nhập khẩu', 'trong-nuoc': 'Sản xuất trong nước' } as const;
 const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r.ten} – ${r.quy_cach}`)}`;
+// Nhãn lọc của một dòng, số trên nút đếm từ chính bảng giá, không gõ tay.
+const nhanLoc = (r: DongGiaCongKhai) => [/phuy/i.test(r.quy_cach) ? 'phuy' : /xô/i.test(r.quy_cach) ? 'xo' : '', r.nguon].filter(Boolean);
+const nutLoc = [
+  { id: 'tat-ca', ten: 'Tất cả', so: rows.length },
+  { id: 'phuy', ten: 'Phuy 200–209 L', so: rows.filter((r) => nhanLoc(r).includes('phuy')).length },
+  { id: 'xo', ten: 'Xô 18–20 L', so: rows.filter((r) => nhanLoc(r).includes('xo')).length },
+  { id: 'nhap-khau', ten: 'Hàng nhập khẩu', so: rows.filter((r) => r.nguon === 'nhap-khau').length },
+  { id: 'trong-nuoc', ten: 'Hàng trong nước', so: rows.filter((r) => r.nguon === 'trong-nuoc').length },
+].filter((n) => n.so > 0);
 ---
+
+{boLoc && (
+  <>
+    <div class="bo-loc" role="group" aria-label="Lọc bảng giá" hidden>
+      {nutLoc.map((n, i) => (
+        <button type="button" data-loc={n.id} aria-pressed={i === 0 ? 'true' : 'false'} data-track="filter_price_table">{n.ten} ({n.so})</button>
+      ))}
+    </div>
+    {/* Không có JS thì nút lọc không dùng được nên không hiện; chạy trước khi vẽ để bảng không bị đẩy xuống. */}
+    <script is:inline>document.currentScript.previousElementSibling.hidden = false;</script>
+    <p class="sr-only" role="status" id="bo-loc-kq"></p>
+  </>
+)}
 
 {sortedGroups.map(([cap, list]) => (
   <section class="price-group">
@@ -47,7 +71,7 @@ const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r
         </thead>
         <tbody>
           {list.map((r) => (
-            <tr>
+            <tr data-nhan={boLoc ? nhanLoc(r).join(' ') : undefined}>
               <td data-label="Sản phẩm">
                 {r.trang && activePages.has(r.trang)
                   ? <a href={`/${category}/${r.trang}`}>{r.ten}</a>
@@ -81,7 +105,32 @@ const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r
   </section>
 ))}
 
+<script>
+  const nutLoc = document.querySelectorAll<HTMLButtonElement>('.bo-loc button');
+  nutLoc.forEach((nut) => nut.addEventListener('click', () => {
+    const loc = nut.dataset.loc!;
+    nutLoc.forEach((n) => n.setAttribute('aria-pressed', String(n === nut)));
+    let con = 0;
+    document.querySelectorAll<HTMLElement>('.price-group').forEach((nhom) => {
+      let conTrongNhom = 0;
+      nhom.querySelectorAll<HTMLElement>('tbody tr').forEach((tr) => {
+        tr.hidden = loc !== 'tat-ca' && !(tr.dataset.nhan ?? '').split(' ').includes(loc);
+        if (!tr.hidden) conTrongNhom++;
+      });
+      nhom.hidden = conTrongNhom === 0;
+      con += conTrongNhom;
+    });
+    document.getElementById('bo-loc-kq')!.textContent = `Đang hiện ${con} dòng`;
+  }));
+</script>
+
 <style>
+  .bo-loc { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+  .bo-loc[hidden] { display: none; }
+  .bo-loc button { min-height: 40px; padding: 6px 14px; border: 1px solid var(--color-primary); border-radius: 999px; background: #fff; color: var(--color-primary); font: inherit; font-size: 0.9rem; font-weight: 600; cursor: pointer; }
+  .bo-loc button:hover { background: #f1f5f9; }
+  .bo-loc button[aria-pressed="true"] { background: var(--color-primary); color: #fff; }
+  .price-table tr[hidden] { display: none; }
   .price-group { margin: 0 0 28px; }
   .price-group h3 { color: var(--color-primary); margin: 0 0 10px; font-size: 1.15rem; }
   .table-wrap { overflow-x: auto; }

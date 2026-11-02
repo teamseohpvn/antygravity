@@ -250,14 +250,18 @@ const schemaData = [
     </header>
 
     <section class="price-body" id="nhan-dinh">
+      {/* Toàn bộ chữ luôn nằm trong HTML. Script này chạy trước khi vẽ nên không giật trang; tắt JS thì vẫn đọc được hết. */}
+      <script is:inline>
+        (function (s) { s.classList.add('co-thu-gon'); if (location.hash !== '#nhan-dinh') s.classList.add('is-thu-gon'); })(document.currentScript.parentElement);
+      </script>
       <h2>Tin giá dầu tháng 11/2026: đã tăng 4 tháng liên tiếp</h2>
       <blockquote class="market-note">
         <p>Giá dầu tháng 11 diễn biến phức tạp và có khả năng tăng cao nếu chiến sự giữa Mỹ và Iran tái bùng phát.</p>
         <footer>Nhận định chủ quan của {displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}, ngày {fmtNgay(NGAY_NHAN_DINH)}. Đây không phải dự báo chắc chắn.</footer>
       </blockquote>
 
-      <h3>Tin tức đáng chú ý</h3>
-      <ul>
+      <h3 class="thu-gon-an">Tin tức đáng chú ý</h3>
+      <ul class="thu-gon-an">
         <li><strong>Giá dầu thô ở mức cao nhất 6 tháng.</strong> Phiên 30/10, Brent giao tháng 12 (đáo hạn cùng ngày) chốt 117,64 USD/thùng, hợp đồng tháng 1 chốt 113,43 USD/thùng. Cả tháng 10, Brent tăng 13,6% (<a href={TIN.reuters} rel="noopener">Reuters</a>), là tháng tăng thứ tư liên tiếp (<a href={TIN.vietnamPlus} rel="noopener">Vietnam+</a>).</li>
         <li><strong>Nguy cơ leo thang sau bầu cử Mỹ.</strong> Giới giao dịch lo chiến sự leo thang sau bầu cử giữa kỳ ngày 3/11. Cùng ngày 30/10, một tàu chở dầu ở eo biển Hormuz trúng thiết bị nổ (<a href={TIN.reuters} rel="noopener">Reuters</a>). Số vụ tấn công tàu thương mại trong tháng 10 ở Hormuz và vùng biển lân cận cao nhất từ năm 2017 (<a href={TIN.vietnamPlus} rel="noopener">Vietnam+</a>).</li>
         <li><strong>Vẫn có tín hiệu ngược chiều.</strong> Đoàn trung gian Qatar đã trở lại Tehran để thúc đẩy thỏa thuận, và hai trong ba hãng theo dõi tàu ghi nhận xuất khẩu dầu thô của Ả Rập Xê Út tháng 10 tăng so với tháng 9 (<a href={TIN.reuters} rel="noopener">Reuters</a>). Nếu đàm phán có kết quả, giá có thể hạ.</li>
@@ -271,14 +275,15 @@ const schemaData = [
           </thead>
           <tbody>
             <tr><td><strong>Dầu gốc</strong></td><td>Báo cáo ngày 19/10 cho biết giá dầu gốc châu Á chịu áp lực tăng, nhà máy lọc ưu tiên nhiên liệu và hạn chế chào hàng giao ngay. Với dầu gốc nhóm II, giá tuần đó đi ngang hoặc tăng nhẹ (<a href={TIN.lubes} rel="noopener">Lubes'N'Greases</a>).</td><td>Giá dầu thô tăng không có nghĩa dầu thủy lực tăng cùng tỷ lệ. Rủi ro là hãng điều chỉnh giá, hoặc nguồn hàng một số mã nhập khẩu khan hơn.</td></tr>
-            <tr><td><strong>Cước và bảo hiểm</strong></td><td>Cước vận tải và bảo hiểm qua vùng rủi ro ở mức cao kỷ lục (<a href={TIN.lubes} rel="noopener">Lubes'N'Greases</a>).</td><td>Lô nhập mới có thể tốn chi phí và thời gian hơn.</td></tr>
-            <tr><td><strong>Tỷ giá</strong></td><td>Ngày 31/10, Vietcombank bán USD ở mức 25.990 đồng (<a href={TIN.tyGia} rel="noopener">VOV</a>).</td><td>Dầu gốc và phụ gia phần lớn phải nhập khẩu, nên USD tăng sẽ cộng thêm vào giá vốn.</td></tr>
-            <tr><td><strong>Mua trữ quá nhu cầu</strong></td><td>Giá có thể giảm nếu đàm phán tiến triển. Saxo Bank dự kiến dầu thô giao dịch quanh 70–90 USD/thùng sau khi xung đột kết thúc (<a href={TIN.reuters} rel="noopener">Reuters</a>).</td><td>Tiền nằm trong kho và có thể mua đúng lúc giá đỉnh. Đây là rủi ro ngược chiều cần tính cùng lúc.</td></tr>
+            <tr class="thu-gon-an"><td><strong>Cước và bảo hiểm</strong></td><td>Cước vận tải và bảo hiểm qua vùng rủi ro ở mức cao kỷ lục (<a href={TIN.lubes} rel="noopener">Lubes'N'Greases</a>).</td><td>Lô nhập mới có thể tốn chi phí và thời gian hơn.</td></tr>
+            <tr class="thu-gon-an"><td><strong>Tỷ giá</strong></td><td>Ngày 31/10, Vietcombank bán USD ở mức 25.990 đồng (<a href={TIN.tyGia} rel="noopener">VOV</a>).</td><td>Dầu gốc và phụ gia phần lớn phải nhập khẩu, nên USD tăng sẽ cộng thêm vào giá vốn.</td></tr>
+            <tr class="thu-gon-an"><td><strong>Mua trữ quá nhu cầu</strong></td><td>Giá có thể giảm nếu đàm phán tiến triển. Saxo Bank dự kiến dầu thô giao dịch quanh 70–90 USD/thùng sau khi xung đột kết thúc (<a href={TIN.reuters} rel="noopener">Reuters</a>).</td><td>Tiền nằm trong kho và có thể mua đúng lúc giá đỉnh. Đây là rủi ro ngược chiều cần tính cùng lúc.</td></tr>
           </tbody>
         </table>
       </div>
-      <p>Cách ước lượng nhanh: giả sử đơn 10 phuy, mỗi phuy 5.000.000 đ, thì mỗi 5% tăng giá làm đơn hàng tốn thêm 2.500.000 đ. Đây là phép tính minh họa, không phải dự báo mức tăng.</p>
-      <p>Nếu đã rõ lượng dầu cần dùng trong tháng, doanh nghiệp có thể <a href="#giu-gia">chốt giá và lấy hàng chia đợt</a>. Nếu chưa rõ, hãy <a href="#dat-bao-nhieu">tính theo nhu cầu của máy</a> thay vì mua trữ vì lo giá tăng.</p>
+      <p class="thu-gon-an">Cách ước lượng nhanh: giả sử đơn 10 phuy, mỗi phuy 5.000.000 đ, thì mỗi 5% tăng giá làm đơn hàng tốn thêm 2.500.000 đ. Đây là phép tính minh họa, không phải dự báo mức tăng.</p>
+      <p class="thu-gon-an">Nếu đã rõ lượng dầu cần dùng trong tháng, doanh nghiệp có thể <a href="#giu-gia">chốt giá và lấy hàng chia đợt</a>. Nếu chưa rõ, hãy <a href="#dat-bao-nhieu">tính theo nhu cầu của máy</a> thay vì mua trữ vì lo giá tăng.</p>
+      <button type="button" class="doc-them" id="doc-them-tin" aria-controls="nhan-dinh" aria-expanded="false" data-track="read_more_oil_news">… Đọc chi tiết</button>
     </section>
 
     <section class="price-body discount" id="chiet-khau">
@@ -301,7 +306,7 @@ const schemaData = [
 
       {coGia ? (
         <>
-          <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {khoCuaDong} />
+          <PriceTable {rows} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {khoCuaDong} boLoc />
         {!TON_KHO_CAP_NHAT && (
           <aside class="draft-slot">
             <strong>Chờ dữ liệu kho.</strong> Khi có số liệu, cột Tình trạng sẽ ghi tên kho, ví dụ "Kho Kiến An, Như Quỳnh", kèm ngày cập nhật.
@@ -402,16 +407,16 @@ const schemaData = [
 
     <section class="price-body" id="doi-chieu">
       <h2>Đang dùng Shell, Mobil hay Total: đối chiếu mã tại kho</h2>
-      <p>Ba mã dưới đây kho không bán, chỉ nêu để tra cứu. Chúng cùng cấp ISO VG 68 và cùng nhóm dầu với các mã bên cột phải theo tài liệu của hãng. Cùng nhóm không có nghĩa là thay thế được trong mọi trường hợp, nên hãy đối chiếu với yêu cầu trong tài liệu máy.</p>
+      <p>Ba mã dưới đây kho không bán, chỉ nêu để tra cứu. Chúng cùng cấp ISO VG 68 và cùng nhóm dầu với các mã bên cột phải theo tài liệu của hãng, và hai mã tại kho đều công bố đạt DIN 51524-2. Cùng nhóm không có nghĩa là thay thế được trong mọi trường hợp, nên hãy đối chiếu với yêu cầu trong tài liệu máy.</p>
       <div class="table-wrap">
         <table class="match">
           <thead>
             <tr><th scope="col">Mã đang dùng</th><th scope="col">Hãng công bố</th><th scope="col">Mã cùng nhóm tại kho</th></tr>
           </thead>
           <tbody>
-            <tr><td>Shell Tellus S2 MX 68</td><td><a href="https://www.shell.us/business-customers/lubricants-for-business/products/shellandwhitmore/shell-tellus-s2-mx.html" rel="noopener">ISO 11158 HM, DIN 51524-2 HLP</a></td><td rowspan="3"><a href="/dau-thuy-luc/eneos-super-hyrando-68">ENEOS Super Hyrando 68</a>, <a href="/dau-thuy-luc/castrol-hyspin-aws-68">Castrol Hyspin AWS 68</a> (đều công bố đạt DIN 51524-2)</td></tr>
-            <tr><td>Mobil DTE 26</td><td><a href="https://www.mobil.com/en/lubricants/for-businesses/industrial/lubricants/product-series/mobil-dte-20-series" rel="noopener">DIN 51524-2</a></td></tr>
-            <tr><td>TotalEnergies Azolla ZS 68</td><td><a href="https://lubricants.catalog.totalenergies.com/catalog-vn/vi_VN/164_azolla-zs-68" rel="noopener">ISO 6743-4 HM</a></td></tr>
+            <tr><td>Shell Tellus S2 MX 68</td><td><a href="https://www.shell.us/business-customers/lubricants-for-business/products/shellandwhitmore/shell-tellus-s2-mx.html" rel="noopener">ISO 11158 HM, DIN 51524-2 HLP</a></td><td><a href="/dau-thuy-luc/eneos-super-hyrando-68">ENEOS Super Hyrando 68</a>, <a href="/dau-thuy-luc/castrol-hyspin-aws-68">Castrol Hyspin AWS 68</a></td></tr>
+            <tr><td>Mobil DTE 26</td><td><a href="https://www.mobil.com/en/lubricants/for-businesses/industrial/lubricants/product-series/mobil-dte-20-series" rel="noopener">DIN 51524-2</a></td><td><a href="/dau-thuy-luc/eneos-super-hyrando-68">ENEOS Super Hyrando 68</a>, <a href="/dau-thuy-luc/castrol-hyspin-aws-68">Castrol Hyspin AWS 68</a></td></tr>
+            <tr><td>TotalEnergies Azolla ZS 68</td><td><a href="https://lubricants.catalog.totalenergies.com/catalog-vn/vi_VN/164_azolla-zs-68" rel="noopener">ISO 6743-4 HM</a></td><td><a href="/dau-thuy-luc/eneos-super-hyrando-68">ENEOS Super Hyrando 68</a>, <a href="/dau-thuy-luc/castrol-hyspin-aws-68">Castrol Hyspin AWS 68</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -602,6 +607,28 @@ const schemaData = [
 </Layout>
 
 <script>
+  // Mục tin giá dầu: vuốt qua thì thu gọn; bấm "Đọc chi tiết" hoặc lối tắt trên menu thì mở hết.
+  const tinGia = document.getElementById('nhan-dinh');
+  const nutTin = document.getElementById('doc-them-tin');
+  if (tinGia && nutTin) {
+    const dat = (thuGon: boolean) => {
+      tinGia.classList.toggle('is-thu-gon', thuGon);
+      nutTin.setAttribute('aria-expanded', String(!thuGon));
+      nutTin.textContent = thuGon ? '… Đọc chi tiết' : 'Thu gọn';
+    };
+    dat(tinGia.classList.contains('is-thu-gon'));
+    nutTin.addEventListener('click', () => {
+      const thuGon = !tinGia.classList.contains('is-thu-gon');
+      dat(thuGon);
+      if (thuGon && tinGia.getBoundingClientRect().top < 0) tinGia.scrollIntoView();
+    });
+    // Mở trước khi trình duyệt nhảy tới neo, để vị trí cuộn đúng.
+    document.querySelectorAll('a[href="#nhan-dinh"]').forEach((a) => a.addEventListener('click', () => dat(false)));
+    window.addEventListener('hashchange', () => { if (location.hash === '#nhan-dinh') dat(false); });
+  }
+</script>
+
+<script>
   import { tinhLuongDau, moTaMua } from '../lib/tinh-luong-dau';
 
   const form = document.getElementById('tinh-dau') as HTMLFormElement | null;
@@ -676,6 +703,10 @@ const schemaData = [
   .price-body p, .price-body li { margin-bottom: 8px; }
   .price-body ul, .price-body ol { margin-left: 20px; }
   .price-body a { color: var(--color-primary); text-decoration: underline; }
+  .price-body.is-thu-gon .thu-gon-an { display: none; }
+  .doc-them { display: none; }
+  .co-thu-gon > .doc-them { display: block; margin-top: 14px; min-height: 44px; padding: 8px 18px; background: #fff; color: var(--color-primary); border: 1px solid var(--color-primary); border-radius: 6px; font: inherit; font-weight: 700; cursor: pointer; }
+  .doc-them:hover { background: #f1f5f9; }
   .market-note { background: #f1f5f9; border-left: 4px solid var(--color-primary); padding: 12px 16px; border-radius: 4px; margin: 0; }
   .market-note footer { margin-top: 6px; font-size: 0.9rem; color: var(--color-text-light); }
   .notes { font-size: 0.93rem; color: var(--color-text-light); margin-top: 8px; }
