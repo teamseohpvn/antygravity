@@ -9,9 +9,19 @@ interface Props {
   activePages: Set<string>;
   category: string;
   gomVat: boolean;
+  /** Có truyền thì hiện nút TDS trong cột Sản phẩm. Khóa là slug trang sản phẩm, giá trị là tds_url. */
+  tds?: Record<string, string | undefined>;
+  /** Có truyền thì thêm cột Tình trạng. Trả về tên các kho có dòng hàng này; mảng rỗng là chưa có dữ liệu kho. */
+  khoCuaDong?: (r: DongGiaCongKhai) => string[];
+  /** Có truyền thì hiện nút lọc nhanh theo quy cách và nguồn hàng trên đầu bảng. */
+  boLoc?: boolean;
+  /** Có truyền thì dùng dạng gọn: hãng và TDS chung một dòng, trên điện thoại mỗi thẻ chỉ khoảng 4 dòng. */
+  gon?: boolean;
 }
 
-const { rows, activePages, category, gomVat } = Astro.props;
+const { rows, activePages, category, gomVat, tds, khoCuaDong, boLoc, gon } = Astro.props;
+// Link PDF ghi là tải về; link trang web của hãng ghi là xem, không hứa có file.
+const laPdf = (u: string) => /\.pdf($|\?)|docFormat=PDF/i.test(u);
 const groups = new Map<string, DongGiaCongKhai[]>();
 for (const r of rows) {
   const key = r.cap ?? 'Khác';
@@ -22,40 +32,72 @@ const capNum = (c: string) => Number(/\d+/.exec(c)?.[0] ?? 1e9);
 const sortedGroups = [...groups].sort(([a], [b]) => capNum(a) - capNum(b) || a.localeCompare(b));
 const NGUON = { 'nhap-khau': 'Nhập khẩu', 'trong-nuoc': 'Sản xuất trong nước' } as const;
 const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r.ten} – ${r.quy_cach}`)}`;
+// Nhãn lọc của một dòng, số trên nút đếm từ chính bảng giá, không gõ tay.
+const nhanLoc = (r: DongGiaCongKhai) => [/phuy/i.test(r.quy_cach) ? 'phuy' : /xô/i.test(r.quy_cach) ? 'xo' : '', r.nguon].filter(Boolean);
+const nutLoc = [
+  { id: 'tat-ca', ten: 'Tất cả', so: rows.length },
+  { id: 'phuy', ten: 'Phuy 200–209 L', so: rows.filter((r) => nhanLoc(r).includes('phuy')).length },
+  { id: 'xo', ten: 'Xô 18–20 L', so: rows.filter((r) => nhanLoc(r).includes('xo')).length },
+  { id: 'nhap-khau', ten: 'Hàng nhập khẩu', so: rows.filter((r) => r.nguon === 'nhap-khau').length },
+  { id: 'trong-nuoc', ten: 'Hàng trong nước', so: rows.filter((r) => r.nguon === 'trong-nuoc').length },
+].filter((n) => n.so > 0);
 ---
+
+{boLoc && (
+  <>
+    <div class="bo-loc" role="group" aria-label="Lọc bảng giá" hidden>
+      {nutLoc.map((n, i) => (
+        <button type="button" data-loc={n.id} aria-pressed={i === 0 ? 'true' : 'false'} data-track="filter_price_table">{n.ten} ({n.so})</button>
+      ))}
+    </div>
+    {/* Không có JS thì nút lọc không dùng được nên không hiện; chạy trước khi vẽ để bảng không bị đẩy xuống. */}
+    <script is:inline>document.currentScript.previousElementSibling.hidden = false;</script>
+    <p class="sr-only" role="status" id="bo-loc-kq"></p>
+  </>
+)}
 
 {sortedGroups.map(([cap, list]) => (
   <section class="price-group">
     <h3>{cap}</h3>
     <div class="table-wrap">
-      <table class="price-table">
+      <table class:list={['price-table', { 'price-table--gon': gon }]}>
         <thead>
           <tr>
             <th scope="col">Sản phẩm</th>
             <th scope="col">Quy cách</th>
             <th scope="col">Khoảng giá ({gomVat ? 'đã gồm VAT' : 'chưa VAT'})</th>
             <th scope="col">Quy đổi</th>
+            {khoCuaDong && <th scope="col">Tình trạng</th>}
             <th scope="col"><span class="sr-only">Báo giá</span></th>
           </tr>
         </thead>
         <tbody>
           {list.map((r) => (
-            <tr>
+            <tr data-nhan={boLoc ? nhanLoc(r).join(' ') : undefined}>
               <td data-label="Sản phẩm">
                 {r.trang && activePages.has(r.trang)
                   ? <a href={`/${category}/${r.trang}`}>{r.ten}</a>
                   : <span>{r.ten}</span>}
                 <small>{r.hang} · {NGUON[r.nguon]}</small>
+                {tds && r.trang && (tds[r.trang]
+                  ? <a href={tds[r.trang]} class="tds-link" target="_blank" rel="noopener" data-track="download_tds">{laPdf(tds[r.trang]!) ? 'Tải TDS' : 'Xem TDS'}</a>
+                  : <small class="muted">{gon ? 'Chưa có TDS' : 'Chưa có TDS của hãng'}</small>)}
               </td>
-              <td data-label="Quy cách">{r.quy_cach}</td>
+              <td data-label="Quy cách" class="nowrap">{r.quy_cach}</td>
               <td data-label="Khoảng giá" class="num">
                 {r.thap ? <>{fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</> : <span class="muted">Liên hệ</span>}
               </td>
               <td data-label="Quy đổi" class="num">
                 {r.thap_don_vi ? <>{fmtVnd(r.thap_don_vi)} – {fmtVnd(r.cao_don_vi)} đ/{r.don_vi_do === 'kg' ? 'kg' : 'lít'}</> : <span class="muted">–</span>}
               </td>
+              {khoCuaDong && (
+                <td data-label="Tình trạng" class="stock">
+                  <span class="stock__on">Có sẵn</span>
+                  <small>{khoCuaDong(r).length ? `Kho ${khoCuaDong(r).join(', ')}` : 'Hỏi kho gần bạn'}</small>
+                </td>
+              )}
               <td class="act">
-                <a href={quoteHref(r)} class="btn-row" data-track="add_to_quote">Báo giá trong ngày</a>
+                <a href={quoteHref(r)} class="btn-row" data-track="add_to_quote">Báo giá<span class="btn-row__them"> trong ngày</span></a>
               </td>
             </tr>
           ))}
@@ -65,7 +107,32 @@ const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r
   </section>
 ))}
 
+<script>
+  const nutLoc = document.querySelectorAll<HTMLButtonElement>('.bo-loc button');
+  nutLoc.forEach((nut) => nut.addEventListener('click', () => {
+    const loc = nut.dataset.loc!;
+    nutLoc.forEach((n) => n.setAttribute('aria-pressed', String(n === nut)));
+    let con = 0;
+    document.querySelectorAll<HTMLElement>('.price-group').forEach((nhom) => {
+      let conTrongNhom = 0;
+      nhom.querySelectorAll<HTMLElement>('tbody tr').forEach((tr) => {
+        tr.hidden = loc !== 'tat-ca' && !(tr.dataset.nhan ?? '').split(' ').includes(loc);
+        if (!tr.hidden) conTrongNhom++;
+      });
+      nhom.hidden = conTrongNhom === 0;
+      con += conTrongNhom;
+    });
+    document.getElementById('bo-loc-kq')!.textContent = `Đang hiện ${con} dòng`;
+  }));
+</script>
+
 <style>
+  .bo-loc { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+  .bo-loc[hidden] { display: none; }
+  .bo-loc button { min-height: 40px; padding: 6px 14px; border: 1px solid var(--color-primary); border-radius: 999px; background: #fff; color: var(--color-primary); font: inherit; font-size: 0.9rem; font-weight: 600; cursor: pointer; }
+  .bo-loc button:hover { background: #f1f5f9; }
+  .bo-loc button[aria-pressed="true"] { background: var(--color-primary); color: #fff; }
+  .price-table tr[hidden] { display: none; }
   .price-group { margin: 0 0 28px; }
   .price-group h3 { color: var(--color-primary); margin: 0 0 10px; font-size: 1.15rem; }
   .table-wrap { overflow-x: auto; }
@@ -77,6 +144,11 @@ const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r
   .price-table .num { white-space: nowrap; font-variant-numeric: tabular-nums; }
   .price-table .muted { color: var(--color-text-light); }
   .price-table .act { width: 1%; white-space: nowrap; }
+  .price-table td a.tds-link { display: inline-block; margin-top: 6px; padding: 3px 9px; border: 1px solid var(--color-primary); border-radius: 999px; font-size: 0.8rem; text-decoration: none; }
+  .price-table td a.tds-link:hover { background: var(--color-primary); color: white; }
+  .price-table .nowrap { white-space: nowrap; }
+  .stock__on { color: #166534; font-weight: 600; white-space: nowrap; }
+  .stock__on::before { content: ''; display: inline-block; width: 8px; height: 8px; margin-right: 6px; border-radius: 50%; background: #16a34a; vertical-align: 1px; }
   .btn-row { display: inline-block; padding: 7px 12px; border-radius: 6px; background: var(--color-accent); color: white !important; text-decoration: none !important; font-size: 0.88rem; font-weight: 600; }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
@@ -86,8 +158,31 @@ const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r
     .price-table, .price-table tbody, .price-table tr, .price-table td { display: block; width: 100%; }
     .price-table tr { border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; margin-bottom: 12px; padding: 8px 12px; }
     .price-table td { border: 0; padding: 4px 0; }
+    .price-table td.stock small { display: inline; margin-left: 6px; }
+    .price-table td a.tds-link { padding: 8px 12px; }
     .price-table td[data-label]:not([data-label="Sản phẩm"])::before { content: attr(data-label) ": "; color: var(--color-text-light); font-size: 0.85rem; }
     .price-table .act { width: auto; padding-top: 8px; }
     .btn-row { display: block; text-align: center; }
+  }
+
+  /* Dạng gọn */
+  .price-table--gon td[data-label="Sản phẩm"] small { display: inline; }
+  .price-table--gon td[data-label="Sản phẩm"] > :first-child { display: block; }
+  .price-table--gon td a.tds-link { margin: 2px 0 0 6px; padding: 1px 8px; }
+  .price-table--gon td small.muted::before { content: ' · '; }
+  @media (max-width: 700px) {
+    .price-table.price-table--gon tr { display: grid; grid-template-columns: auto 1fr auto; column-gap: 10px; align-items: center; margin-bottom: 8px; padding: 10px 12px; }
+    .price-table.price-table--gon tr[hidden] { display: none; }
+    .price-table--gon td { width: auto; padding: 1px 0; }
+    .price-table--gon td[data-label="Sản phẩm"] { grid-column: 1 / -1; }
+    .price-table--gon td[data-label="Quy cách"] { grid-column: 1; grid-row: 2; font-weight: 600; font-size: 0.9rem; }
+    .price-table--gon td[data-label="Tình trạng"] { grid-column: 2 / -1; grid-row: 2; font-size: 0.85rem; }
+    .price-table--gon td[data-label="Khoảng giá"] { grid-column: 1 / -1; grid-row: 3; font-weight: 700; font-size: 1rem; }
+    .price-table--gon td[data-label="Quy đổi"] { grid-column: 1 / 3; grid-row: 4; font-size: 0.82rem; color: var(--color-text-light); white-space: normal; }
+    .price-table--gon .act { grid-column: 3; grid-row: 4; padding: 0; }
+    .price-table.price-table--gon td[data-label]:not([data-label="Sản phẩm"])::before { content: none; }
+    .price-table--gon td a.tds-link { padding: 3px 10px; }
+    .price-table--gon .btn-row { padding: 8px 14px; }
+    .price-table--gon .btn-row__them { display: none; }
   }
 </style>
