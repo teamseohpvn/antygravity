@@ -46,8 +46,7 @@ warnings:
 storage: "Để nơi khô mát, đậy kín nắp, tránh nắng trực tiếp và nhiệt độ quá cao."
 
 images:
-  - { src: "/images/san-pham/shell-rimula-r4-x-phuy-200l.webp", alt: "Phuy 200 lít dầu động cơ diesel Shell Rimula R4 X 15W-40 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/shell-rimula-r4-x-nhan.webp", alt: "Nhãn phuy Shell Rimula R4 X 15W-40 ghi cấp API CI-4" }
+  - { src: "/images/san-pham/shell-rimula-r4x-15w40-ci4-20l.webp", alt: "Xô 20 lít dầu động cơ diesel Shell Rimula R4 X 15W-40, nhãn vàng xám" }
 
 doc_gia: "Trang này dành cho người quản lý đội xe tải, máy công trình cần dầu diesel 15W-40 đạt chuẩn của nhiều hãng động cơ."
 tom_tat:
