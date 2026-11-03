@@ -46,8 +46,7 @@ warnings:
 storage: "Không để nơi trên 60 °C, tránh nắng trực tiếp, lạnh sâu và nhiệt độ thay đổi đột ngột. Phuy để ngoài trời phải đặt nằm ngang."
 
 images:
-  - { src: "/images/san-pham/total-rubia-tir-7400-phuy-200l.webp", alt: "Phuy 200 lít dầu động cơ TotalEnergies Rubia TIR 7400 15W-40 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/total-rubia-tir-7400-nhan.webp", alt: "Nhãn phuy Rubia TIR 7400 15W-40 ghi cấp API CI-4 và ACEA E7" }
+  - { src: "/images/san-pham/total-rubia-tir-7400-15w-40-xo-18l.webp", alt: "Các xô 18 lít dầu động cơ diesel TotalEnergies Rubia TIR 7400 15W-40 xếp chồng trên pallet" }
 
 doc_gia: "Trang này dành cho đội xe tải, xe khách nhiều hiệu Âu – Mỹ cần dầu diesel 15W-40 được Cummins, Volvo, Mack, Renault chấp thuận."
 tom_tat:
