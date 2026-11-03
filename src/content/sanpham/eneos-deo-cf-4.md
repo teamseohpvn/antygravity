@@ -146,7 +146,7 @@ Theo mốc km hoặc giờ máy của nhà sản xuất động cơ, rút ngắn
 Được, nếu nhà sản xuất máy phát yêu cầu cấp CF-4 hoặc thấp hơn. Máy phát chạy liên tục nên kiểm tra mức dầu thường xuyên và thay đúng số giờ ghi trong hướng dẫn sử dụng.
 
 ### Máy cũ chỉ cần cấp CD thì dùng CF-4 được không?
-Được, CF-4 cao hơn CD. ENEOS cũng có bản [DEO CD](/dau-dong-co-diesel/eneos-deo-cd) cho máy cũ chỉ yêu cầu cấp CD.
+Được, CF-4 cao hơn CD.
 
 ### TCCS là gì, có giá trị như tiêu chuẩn quốc gia không?
 TCCS là tiêu chuẩn cơ sở do chính nhà sản xuất ban hành và công bố cho sản phẩm của mình. Nó không thay cho cấp API CF-4, mà ghi mức giới hạn cụ thể từng chỉ tiêu cho lô hàng sản xuất tại Việt Nam. Mỗi lô được phòng thí nghiệm của nhà máy kiểm tra trước khi xuất.
