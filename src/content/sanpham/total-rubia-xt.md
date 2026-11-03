@@ -45,8 +45,8 @@ warnings:
 storage: "Bảo quản dưới 60 °C, tránh nắng và thay đổi nhiệt độ đột ngột. Phuy để ngoài trời phải đặt nằm ngang để tránh nhiễm nước."
 
 images:
-  - { src: "/images/san-pham/total-rubia-xt-20w50-phuy-200l.webp", alt: "Phuy 200 lít dầu động cơ TotalEnergies Rubia XT 20W-50 tại kho Hải Phòng" }
-  - { src: "/images/san-pham/total-rubia-xt-nhan.webp", alt: "Nhãn phuy Rubia XT 20W-50 ghi cấp API CF-4/SJ" }
+  - { src: "/images/san-pham/total-rubia-fleet-hd-300-20w-50-xo-18l.webp", alt: "Xô 18 lít dầu động cơ diesel TotalEnergies Rubia Fleet HD 300 20W-50, nắp đỏ" }
+  - { src: "/images/san-pham/total-rubia-fleet-hd-300-20w-50-nhan.webp", alt: "Nhãn xô Rubia Fleet HD 300 ghi API CF-4/SJ, đáp ứng MAN 271, MB 228.1, Volvo VDS" }
 
 doc_gia: "Trang này dành cho chủ xe tải, máy công trình đời cũ chạy nơi nóng, đang dùng hoặc cần đặt TotalEnergies Rubia XT 20W-50."
 tom_tat:
