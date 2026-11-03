@@ -1,0 +1,189 @@
+---
+// BẢN NHÁP thay cho thân bài /mo-boi-tron-cong-nghiep, viết 03/11/2026 theo audit check_EEAT và điều tra trải nghiệm.
+// noindex, không vào sitemap. Khi phát hành: chép nội dung sang src/content/danhmuc/mo-boi-tron-cong-nghiep.md (hoặc đổi template),
+// bỏ khung nháp và ô chờ ca thật; xóa file này, src/nhap/mo-boi-tron/ và bộ lọc sitemap trong astro.config.mjs.
+import Layout from '../layouts/Layout.astro';
+import NoiDungBai from '../components/NoiDungBai.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import ContentBody from '../components/ContentBody.astro';
+import { Content as ChonMo } from '../nhap/mo-boi-tron/1-chon-mo.md';
+import { Content as DocBang } from '../nhap/mo-boi-tron/2-doc-bang.md';
+import { Content as DoiChieu } from '../nhap/mo-boi-tron/3-doi-chieu.md';
+import { Content as VanHanh } from '../nhap/mo-boi-tron/4-van-hanh.md';
+import { Content as SuCo } from '../nhap/mo-boi-tron/5-su-co.md';
+import { Content as Cuoi } from '../nhap/mo-boi-tron/6-cuoi.md';
+import giaJson from '../data/gia-cong-khai.json';
+import { timNhanSu, bylineLabel, personUrl, personRef, personSchema, bylineTitle } from '../lib/nhan-su';
+import { absUrl, breadcrumbSchema, ORG_ID } from '../lib/site';
+
+const pagePath = '/test-moboitron';
+const CAT = '/mo-boi-tron-cong-nghiep';
+const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) NLGI 00 – 4';
+const description = 'Chọn mỡ bôi trơn, mỡ bò công nghiệp theo vị trí, nhiệt độ và tải: so sánh theo TDS, chi phí mỗi điểm tra, quy trình bơm mỡ an toàn, trạng thái kho từng mã.';
+const reviewer = timNhanSu('nguyen-thiet-lap')!;
+const NGAY = '2026-11-03';
+const NGAY_GIA = (giaJson as any).cau_hinh.ngay_ra_soat as string;
+const fmtNgay = (s: string) => s.split('-').reverse().join('/');
+
+// NGUỒN KHO DUY NHẤT của trang: stock_status + packaging trong src/content/sanpham/*.md (đọc tay 03/11/2026).
+// Không dùng san-pham-kho.json (chỉ có 3 dòng mỡ, sinh từ file kho tháng 10).
+type Dong = {
+  ten: string; link: string; lam_dac: string; cap: string; dau40: string; nho_giot: string; lam_viec: string; hbi: string;
+  co_san: string; nhan_dat?: string; ghi_chu?: string;
+};
+const BANG: Dong[] = [
+  { ten: 'Shell Gadus S2 V220 2', link: `${CAT}/shell-gadus-s2-v220-2`, lam_dac: 'Lithium', cap: '2', dau40: '220 cSt', nho_giot: '180 °C', lam_viec: '-20 đến 130 °C', hbi: 'Có phụ gia EP, TDS không ghi số', co_san: 'NLGI 2: xô 18 kg' },
+  { ten: 'ENEOS Epnoc Grease AP(N)', link: `${CAT}/eneos-epnoc-ap`, lam_dac: 'Lithium', cap: '0 / 1 / 2 / 3', dau40: '– (TDS ghi ở 100 °C: 13,3–16,4 mm²/s)', nho_giot: '195–203 °C', lam_viec: '-20 đến 125 °C', hbi: '3.090 N (khoảng 315 kg)', co_san: 'Chờ xác nhận cấp và quy cách', ghi_chu: 'cho' },
+  { ten: 'VHP Lithium Grease', link: `${CAT}/vhp-lithium-grease`, lam_dac: 'Lithium', cap: '00 / 0 / 3 / 4', dau40: '220 cSt', nho_giot: '≥ 190 °C', lam_viec: '-10 đến 120 °C', hbi: '200 kg', co_san: 'L4: xô 17 kg', nhan_dat: 'L00, L0, L3' },
+  { ten: 'VHP Licas Grease', link: `${CAT}/licas-grease`, lam_dac: 'Lithium-canxi', cap: '2 / 3', dau40: '150 cSt', nho_giot: '≥ 130 °C', lam_viec: '-10 đến 110 °C', hbi: '180 kg', co_san: 'No3: thùng 30 ống 400 g', nhan_dat: 'No2' },
+  { ten: 'VHP Caxilium Grease', link: `${CAT}/vhp-caxilium-grease`, lam_dac: 'Lithium-canxi', cap: '2 / 3', dau40: '–', nho_giot: '141 °C (No2)', lam_viec: '-10 đến 110 °C', hbi: '–', co_san: 'No2, No3: phuy 180 kg' },
+  { ten: 'VHP Opal Grease', link: `${CAT}/vhp-opal-grease`, lam_dac: 'Lithium-canxi', cap: '3 / 4', dau40: '–', nho_giot: '140 °C (NLGI 3)', lam_viec: '-10 đến 120 °C', hbi: '–', co_san: 'NLGI 3: phuy 180 kg · NLGI 4: xô 15 kg' },
+  { ten: 'PVOIL PV Grease', link: `${CAT}/pvoil-pv-grease`, lam_dac: 'Hãng chưa công bố trong bảng thông số', cap: '2 / 3', dau40: '–', nho_giot: '≥ 140 °C', lam_viec: 'Xem ghi chú dưới bảng', hbi: '–', co_san: 'No2, No3: phuy 180 kg' },
+  { ten: 'Calix Ceno No3', link: `${CAT}/calix-ceno-grease`, lam_dac: 'Canxi tổng hợp', cap: '3', dau40: '–', nho_giot: '≥ 120 °C', lam_viec: '-10 đến 100 °C', hbi: '–', co_san: 'No3: phuy 180 kg' },
+  { ten: 'Shell Gadus S3 V220C 2 (nhóm mỡ chịu nhiệt)', link: '/mo-chiu-nhiet/shell-gadus-s3-v220c-2', lam_dac: 'Lithium complex', cap: '2', dau40: '220 cSt', nho_giot: '240 °C', lam_viec: '-20 đến 140 °C (đỉnh 150 °C)', hbi: '315 kg (tối thiểu)', co_san: 'NLGI 2: xô 18 kg' },
+];
+
+// Chi phí: chỉ lấy khoảng giá từ gia-cong-khai.json, không ghi tay.
+const G_DIEM_NAM = 60; // 6310: Gp ≈ 15 g × 4 lần/năm, chỉ để minh họa
+const hang = (giaJson as any).rows as any[];
+const dong = (ten: string, kg?: number) => {
+  const r = hang.find((x) => x.ten === ten);
+  if (!r?.thap) return null;
+  const thap = r.thap_don_vi ?? (kg ? r.thap / kg : null);
+  const cao = r.cao_don_vi ?? (kg ? r.cao / kg : null);
+  return thap && cao ? { ten: r.ten, qc: r.quy_cach, thap, cao } : null;
+};
+const CHI_PHI = [
+  dong('PVOIL PV Grease No2'), dong('PVOIL PV Grease No3'), dong('VHP Caxilium Grease No2'), dong('Calix Ceno Grease No3'),
+  dong('VHP Opal Grease NLGI 3'), dong('VHP Licas Grease No3', 12), dong('VHP Opal Grease NLGI 4'), dong('VHP Lithium Grease L4'),
+  dong('Shell Gadus S3 V220C 2'), dong('Shell Gadus S2 V220 2'),
+].filter(Boolean) as { ten: string; qc: string; thap: number; cao: number }[];
+const vnd = (n: number) => n.toLocaleString('vi-VN');
+const lam100 = (n: number) => Math.round(n / 100) * 100;
+
+// Danh sách TDS hiển thị (audit #6). "Ngày tra cứu" là ngày đã mở lại nguồn.
+const TDS = [
+  { ten: 'Shell Gadus S2 V220 2, tờ giới thiệu tiếng Việt', ban: 'v3.1, 03/07/2016', tra: '03/11/2026', url: '/tai-lieu/tds/shell-gadus-s2-v220-2.pdf' },
+  { ten: 'ENEOS Epnoc Grease AP(N)', ban: '02/2023', tra: '03/11/2026', url: 'https://www.eneos.co.jp/english/products/lubricants/pdf/grs-7037-2507e.pdf' },
+  { ten: 'VHP Lithium Grease', ban: 'Trang hãng, 29/06/2023', tra: '03/11/2026', url: 'https://hoadauvhp.com/lithiumgrease-nid24.html' },
+  { ten: 'VHP Licas Grease', ban: 'Trang hãng, 29/06/2023', tra: '03/11/2026', url: 'https://hoadauvhp.com/licasgreaseno-nid23.html' },
+  { ten: 'VHP Caxilium Grease', ban: 'Trang hãng, 27/06/2023', tra: '03/11/2026', url: 'https://hoadauvhp.com/caxiliumgreasenovhp-nid4.html' },
+  { ten: 'VHP Opal Grease', ban: 'Trang hãng, 27/06/2023', tra: '03/11/2026', url: 'https://hoadauvhp.com/opalgreaselvhpgremil-nid3.html' },
+  { ten: 'PVOIL PV Grease', ban: 'Trang hãng, sửa lần cuối 20/05/2026', tra: '03/11/2026', url: 'http://pvoillube.vn/san-pham/san-pham-dan-dung/mo-da-dung/pv-grease-lithium-l1-l2-l3-mo-da-dung/' },
+  { ten: 'Calix Ceno No3', ban: 'Trang hãng, không ghi ngày', tra: '10/2026 (03/11/2026 chưa mở lại được)', url: 'http://calixlube.com/mo-chiu-nhiet-calix-no3' },
+  { ten: 'Shell Gadus S3 V220C 2', ban: 'Chưa có tệp TDS công khai trên trang', tra: '10/2026', url: '' },
+];
+
+const MUC_LUC = [
+  ['chon-nhanh', 'Chọn nhanh theo vị trí'], ['nlgi', 'Chọn theo cấp NLGI'], ['chat-lam-dac', 'Chọn theo chất làm đặc'], ['so-sanh', 'So sánh và trạng thái kho'],
+  ['dong-co', 'Vòng bi động cơ điện'], ['chi-phi', 'Chi phí mỗi kg và mỗi điểm tra'], ['mo-kho', 'Vì sao mỡ khô cứng'], ['tra-mo', 'Tra bao nhiêu, bao lâu'],
+  ['quy-trinh', 'Quy trình bơm mỡ an toàn'], ['kinh-nghiem', 'Kinh nghiệm người sử dụng'], ['su-co', 'Dấu hiệu mỡ hỏng'], ['nguon', 'Nguồn và người duyệt'], ['hoi-dap', 'Câu hỏi thường gặp'],
+];
+
+const crumbs = [{ name: 'Trang chủ', href: '/' }, { name: 'Mỡ bôi trơn (mỡ bò)', href: CAT }, { name: 'Bản nháp', href: pagePath }];
+const PAGE_ID = absUrl(pagePath) + '#webpage';
+const citation = [
+  ...TDS.map((t) => t.url).filter((u) => u.startsWith('http')),
+  'https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/selecting-a-suitable-grease',
+  'https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/grease-life-and-relubrication',
+  'https://cdn.skfmediahub.skf.com/api/public/0901d1968024f02a/pdf_preview_medium/0901d1968024f02a_pdf_preview_medium.pdf',
+  'https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf',
+  'https://doi.org/10.1080/10402004.2021.1943088', 'https://doi.org/10.1016/j.triboint.2023.108785',
+  'https://www.stle.org/files/TLTArchives/2010/10_October/Technical_Analysis.aspx', 'https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147',
+];
+const schemaData = [
+  { '@context': 'https://schema.org', '@type': ['CollectionPage', 'WebPage'], '@id': PAGE_ID, name: title, description, url: absUrl(pagePath), dateModified: NGAY, author: personRef(reviewer), citation, inLanguage: 'vi-VN', publisher: { '@id': ORG_ID } },
+  personSchema(reviewer), breadcrumbSchema(crumbs),
+];
+---
+<Layout {title} seoTitle="Bản nháp: Mỡ Bôi Trơn, Mỡ Bò Công Nghiệp NLGI 2, 3" {description} noindex modified={NGAY} author={reviewer.name} {schemaData}>
+  <div class="container trang">
+    <aside class="khung-nhap" aria-label="Ghi chú bản nháp">
+      <strong>BẢN NHÁP, chưa phát hành, không lập chỉ mục.</strong> Trang chính <a href={CAT}>/mo-boi-tron-cong-nghiep</a> chưa đổi. Còn chờ: ca thật của HT VINA; cấp và quy cách ENEOS đang có; TS. Lập duyệt nội dung; xác nhận tồn kho từng mã; rà lại giá (rà soát {fmtNgay(NGAY_GIA)}).
+    </aside>
+    <Breadcrumbs items={crumbs} />
+    <NoiDungBai articleId={PAGE_ID} type={['CollectionPage', 'WebPage']} field="text">
+      <header class="dau">
+        <h1>{title}</h1>
+        <p class="byline">Bản nháp ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> (chờ duyệt)</p>
+      </header>
+      <div class="seo-content markdown-body">
+        <p><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vị trí tra nóng liên tục trên 120–130 °C, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
+        <blockquote class="tom-tat">
+          <p><strong>Tóm tắt</strong></p>
+          <ul>
+            <li>Gối đỡ tải thường, vỏ ổ dưới 90 °C: mỡ lithium-canxi là đủ.</li>
+            <li>Tải nặng, va đập: mỡ công bố phụ gia cực áp (EP).</li>
+            <li><strong>Vòng bi động cơ điện: kho chưa có mã chuyên</strong>, hãy gửi mã vòng bi và tốc độ để chúng tôi tính.</li>
+            <li>Bơm theo công thức, không bơm theo cảm giác. Không trộn mỡ khi chưa kiểm tra tương thích.</li>
+          </ul>
+        </blockquote>
+        <nav class="muc-luc" aria-label="Mục lục"><strong>Mục lục</strong><ol>{MUC_LUC.map(([id, ten]) => <li><a href={`#${id}`}>{ten}</a></li>)}</ol></nav>
+        <ContentBody><ChonMo /></ContentBody>
+
+        <h2 id="so-sanh">So sánh các mã mỡ theo TDS và trạng thái kho</h2>
+        <p>Số trong bảng là giá trị điển hình hoặc cam kết ghi trên TDS, có thể dao động nhẹ giữa các lô. Ô "–" là TDS không ghi chỉ tiêu đó. Cột cuối là trạng thái theo từng cấp và quy cách. Bạn vẫn nên hỏi lại số lượng trước khi đặt.</p>
+        <div class="bang"><table>
+          <thead><tr><th>Mã mỡ</th><th>Chất làm đặc</th><th>Cấp NLGI</th><th>Dầu gốc ở 40 °C</th><th>Nhỏ giọt</th><th>Nhiệt độ làm việc</th><th>Tải hàn dính 4 bi</th><th>Trạng thái kho</th></tr></thead>
+          <tbody>{BANG.map((d) => <tr>
+            <td><a href={d.link}>{d.ten}</a></td><td>{d.lam_dac}</td><td>{d.cap}</td><td>{d.dau40}</td><td>{d.nho_giot}</td><td>{d.lam_viec}</td><td>{d.hbi}</td>
+            <td>{d.ghi_chu === 'cho' ? <span class="cho">{d.co_san}</span> : <><strong>Có sẵn:</strong> {d.co_san}</>}{d.nhan_dat && <><br /><strong>Nhận đặt:</strong> {d.nhan_dat}</>}</td>
+          </tr>)}</tbody>
+        </table></div>
+        <ContentBody><DocBang /></ContentBody>
+
+        <h2 id="chi-phi">Chi phí mỡ tính theo kg và theo điểm tra mỗi năm</h2>
+        <p>Bảng dưới quy khoảng giá ra mỗi kg, rồi tính tiền mỡ cho <strong>một điểm tra dùng {G_DIEM_NAM} g mỗi năm</strong>. Đây là ví dụ vòng bi 6310 (Gp khoảng 15 g), tra bốn lần một năm, chỉ để so sánh. Giá chưa gồm VAT, là khoảng giá từ giá kho tới +15%, rà soát ngày {fmtNgay(NGAY_GIA)}. Mức thực tế tùy số lượng và lô hàng.</p>
+        <div class="bang"><table>
+          <thead><tr><th>Mã và quy cách</th><th>Giá mỗi kg (đồng)</th><th>Tiền mỡ mỗi điểm mỗi năm (đồng)</th></tr></thead>
+          <tbody>{CHI_PHI.map((c) => <tr><td>{c.ten} · {c.qc}</td><td>{vnd(lam100(c.thap))} – {vnd(lam100(c.cao))}</td><td>{vnd(lam100(c.thap * G_DIEM_NAM / 1000))} – {vnd(lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
+        </table></div>
+        <p class="nho">ENEOS Epnoc AP(N) chưa đưa vào bảng vì đang chờ xác nhận cấp và quy cách. VHP Licas tính từ giá thùng 30 ống 400 g (12 kg).</p>
+        <ContentBody><DoiChieu /></ContentBody>
+        <ContentBody><VanHanh /></ContentBody>
+
+        <aside class="o-cho" aria-label="Chờ ca thật">
+          <strong>Ca vận hành thật của HT VINA (CHƯA CÓ, chờ bổ sung).</strong> Chúng tôi không tự viết phần này. Cần 2–3 ca có khách đồng ý công khai, ẩn tên công ty cũng được nhưng giữ đúng số liệu:
+          <em>loại máy · mã vòng bi · tốc độ · nhiệt độ vỏ ổ trước và sau · loại mỡ · lượng tra · chu kỳ · kết quả · ảnh tự chụp · người ghi nhận · ngày ghi nhận.</em>
+        </aside>
+        <ContentBody><SuCo /></ContentBody>
+
+        <h2 id="nguon">Nguồn số liệu và người duyệt nội dung</h2>
+        <p><strong>Duyệt kỹ thuật (đang chờ):</strong> <a href={personUrl(reviewer)}>{reviewer.name}</a>, {bylineTitle(reviewer)}. Khi duyệt, TS. Lập đối chiếu thông số với TDS và rà soát khuyến cáo sử dụng. Trang này chưa liệt kê phê duyệt của hãng sản xuất máy, vì chúng tôi chưa đối chiếu đủ tài liệu của từng mã.</p>
+        <div class="bang"><table>
+          <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
+          <tbody>{TDS.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="nofollow noopener">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
+        </table></div>
+        <ContentBody><Cuoi /></ContentBody>
+        <QuoteCta item="Mỡ bôi trơn (mỡ bò)" />
+      </div>
+    </NoiDungBai>
+  </div>
+</Layout>
+
+<style>
+  .trang { padding-block: 16px 48px; }
+  .khung-nhap { background: #fff3cd; border: 2px dashed #b58900; padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; font-size: .95rem; line-height: 1.5; }
+  .dau h1 { margin: 10px 0 6px; line-height: 1.25; }
+  .byline { color: #555; font-size: .92rem; margin-bottom: 14px; }
+  .seo-content { background: white; padding: clamp(16px, 4vw, 40px); border-radius: 8px; border: 1px solid var(--border-color); overflow-wrap: anywhere; }
+  .seo-content :global(h2) { color: var(--color-primary); margin: 32px 0 14px; font-size: 1.6rem; line-height: 1.3; }
+  .seo-content :global(h3) { color: var(--color-primary); margin: 22px 0 10px; font-size: 1.25rem; }
+  .seo-content :global(p) { margin-bottom: 15px; line-height: 1.7; font-size: 1.05rem; }
+  .seo-content :global(ul), .seo-content :global(ol) { margin: 0 0 15px 22px; line-height: 1.7; }
+  .seo-content :global(li) { margin-bottom: 8px; }
+  .seo-content :global(a) { color: var(--color-accent); text-decoration: underline; }
+  .seo-content :global(table) { display: block; overflow-x: auto; border-collapse: collapse; margin: 10px 0 20px; font-size: .95rem; }
+  .seo-content :global(th), .seo-content :global(td) { border: 1px solid var(--border-color); padding: 8px 10px; text-align: left; vertical-align: top; min-width: 90px; }
+  .seo-content :global(th) { background: #f3f5f7; }
+  .seo-content :global(blockquote) { border-left: 4px solid var(--color-accent); background: #f7f9fb; padding: 12px 16px; margin: 0 0 18px; border-radius: 0 6px 6px 0; }
+  .muc-luc { background: #f7f9fb; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 16px; margin-bottom: 18px; }
+  .muc-luc ol { margin: 8px 0 0 20px; columns: 2; }
+  .muc-luc li { margin-bottom: 4px; }
+  .cho { background: #fff3cd; padding: 2px 4px; }
+  .o-cho { background: #fff3cd; border: 2px dashed #b58900; border-radius: 8px; padding: 14px 16px; margin: 18px 0; line-height: 1.6; }
+  .o-cho em { display: block; margin-top: 6px; }
+  .nho { font-size: .92rem; color: #555; }
+  @media (max-width: 640px) { .muc-luc ol { columns: 1; } }
+</style>
