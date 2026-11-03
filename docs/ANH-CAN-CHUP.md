@@ -1,6 +1,6 @@
 # Danh sách ảnh cần chụp / tạo
 
-Sinh tự động bằng `npm run anh` ngày 15/10/2026 từ các file `.md`. **Không sửa tay**, sửa bài viết rồi chạy lại lệnh.
+Sinh tự động bằng `npm run anh` ngày 03/11/2026 từ các file `.md`. **Không sửa tay**, sửa bài viết rồi chạy lại lệnh.
 Bản Excel: `docs/danh-sach-anh.csv` (lọc cột "Trạng thái" = THIẾU).
 
 Cách dùng: đặt ảnh gốc vào đúng **thư mục**, đặt **đúng tên** trong cột "Tên file cần up" (đuôi .jpg, .png hoặc .webp đều được), rồi chạy `npm run images`.
@@ -11,7 +11,7 @@ Cách dùng: đặt ảnh gốc vào đúng **thư mục**, đặt **đúng tên
 | Danh mục (`anh-goc/danh-muc/`) | 3:2 ngang | 1536 × 1024 px | Được dùng ảnh AI, không logo, không chữ (xem `docs/prompt-anh-danh-muc.md`) |
 | Bài viết (`anh-goc/blog/`) | 16:9 | 1200 × 675 px (khuyến nghị 1600 × 900) | Ảnh minh họa được dùng AI; ảnh "thực tế tại kho/xưởng" phải là ảnh thật |
 
-Chỉ tính bài đang bật (`active: true`). Tổng: 156 ảnh, đã có 93, **còn thiếu 63**.
+Chỉ tính bài đang bật (`active: true`). Tổng: 154 ảnh, đã có 97, **còn thiếu 57**.
 
 ## Ảnh còn thiếu
 
@@ -26,12 +26,6 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 156 ảnh, đã có 93, *
 | `anh-goc/san-pham/` | `emi-ci-4-20w-50-xo.jpg` | Xô dầu động cơ diesel EMI CI-4 20W-50 tại kho Hải Phòng | /dau-dong-co-diesel/emi-ci-4-20w-50 |
 | `anh-goc/san-pham/` | `emi-ci-4-20w-50-nhan.jpg` | Nhãn xô EMI CI-4 20W-50 ghi cấp API và SAE | /dau-dong-co-diesel/emi-ci-4-20w-50 |
 | `anh-goc/san-pham/` | `eneos-bonnoc-ts-nhan.jpg` | Nhãn xô ENEOS Bonnoc TS ghi cấp độ nhớt ISO VG | /dau-banh-rang/eneos-bonnoc-ts |
-| `anh-goc/san-pham/` | `eneos-deo-cd-20w50-phuy-200l.jpg` | Phuy 200 lít dầu động cơ diesel ENEOS CD 20W-50 tại kho Hải Phòng | /dau-dong-co-diesel/eneos-deo-cd |
-| `anh-goc/san-pham/` | `eneos-deo-cd-20w50-can-18l.jpg` | Can 18 lít dầu động cơ ENEOS CD 20W-50 | /dau-dong-co-diesel/eneos-deo-cd |
-| `anh-goc/san-pham/` | `eneos-deo-cd-15w40-phuy-200l.jpg` | Phuy 200 lít dầu động cơ diesel ENEOS CD 15W-40 | /dau-dong-co-diesel/eneos-deo-cd |
-| `anh-goc/san-pham/` | `eneos-mc-sj-20w-40-ma-chai.jpg` | Chai dầu nhớt xe số ENEOS MC SJ MA 20W-40 | /dau-nhot-xe-may/eneos-mc-sj-20w-40 |
-| `anh-goc/san-pham/` | `eneos-mc-sj-20w-40-mb-chai.jpg` | Chai dầu nhớt xe tay ga ENEOS MC SJ MB 20W-40 | /dau-nhot-xe-may/eneos-mc-sj-20w-40 |
-| `anh-goc/san-pham/` | `eneos-mc-sj-20w-40-nhan.jpg` | Nhãn chai ENEOS MC ghi cấp API SJ, JASO và SAE 20W-40 | /dau-nhot-xe-may/eneos-mc-sj-20w-40 |
 | `anh-goc/san-pham/` | `eneos-super-mulpus-dx-46-phuy-200l.jpg` | Phuy 200 lít ENEOS Super Mulpus DX 46 | /dau-thuy-luc/eneos-super-mulpus-dx |
 | `anh-goc/san-pham/` | `eneos-super-mulpus-dx-nhan.jpg` | Nhãn phuy ENEOS Super Mulpus DX ghi cấp độ nhớt ISO VG | /dau-thuy-luc/eneos-super-mulpus-dx |
 | `anh-goc/san-pham/` | `idemitsu-daphne-super-screw-46-thung-20l.jpg` | Thùng 20 lít dầu máy nén khí Idemitsu Daphne Super Screw 46 tại kho Hải Phòng | /dau-may-nen-khi/idemitsu-daphne-super-screw |
@@ -95,7 +89,7 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 156 ảnh, đã có 93, *
 | `anh-goc/danh-muc/` | `dau-may-may.jpg` | Tra dầu máy may vào cơ cấu kim của máy may công nghiệp trong xưởng may | /dau-may-may |
 | `anh-goc/danh-muc/` | `dau-may-nen-khi.jpg` | Kỹ thuật viên châm dầu máy nén khí vào máy nén khí trục vít | /dau-may-nen-khi |
 | `anh-goc/danh-muc/` | `dau-ranh-truot.jpg` | Băng trượt máy CNC phủ màng dầu rãnh trượt bóng | /dau-ranh-truot |
-| `anh-goc/danh-muc/` | `dau-thuy-luc-kho.jpg` | Phuy 200 lít dầu thủy lực ENEOS Super Hyrando 68 bọc màng co, xếp trong kho HT VINA tại Hải Phòng | /dau-thuy-luc |
+| `anh-goc/danh-muc/` | `dau-thuy-luc-kho.jpg` | Phuy dầu thủy lực xếp trong kho HT VINA | /ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau |
 | `anh-goc/danh-muc/` | `dau-truyen-nhiet.jpg` | Lò dầu tải nhiệt với đường ống bọc bảo ôn và bơm tuần hoàn | /dau-truyen-nhiet |
 | `anh-goc/danh-muc/` | `dau-xung-dien-edm.jpg` | Điện cực đồng máy xung điện EDM ngâm trong bể dầu điện môi | /dau-xung-dien-edm |
 | `anh-goc/danh-muc/` | `mo-boi-tron-cong-nghiep.jpg` | Bơm mỡ bò vào gối đỡ vòng bi bằng súng bơm mỡ | /mo-boi-tron-cong-nghiep |
@@ -145,6 +139,9 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 156 ảnh, đã có 93, *
 | `anh-goc/san-pham/` | `eneos-faircol-ra-32-xo-18l.jpg` | Xô 18 lít màu đen dầu máy nén khí ENEOS Faircol RA 32 tại kho HT VINA | /dau-may-nen-khi/eneos-faircol-ra |
 | `anh-goc/san-pham/` | `eneos-faircol-ra-32-xo-18l-nhan.jpg` | Nhãn xô ENEOS Faircol RA 32, dầu máy nén công nghệ cao 18 lít | /dau-may-nen-khi/eneos-faircol-ra |
 | `anh-goc/san-pham/` | `eneos-gear-gl-5-80w-90-can-phuy.jpg` | Can dầu bánh răng ENEOS Gear Oil API GL-5 SAE 80W-90 và phuy ENEOS | /dau-cau-hop-so/eneos-gear-gl-5 |
+| `anh-goc/san-pham/` | `eneos-mc-sj-20w-40-chai-800ml.jpg` | Chai 800 ml dầu nhớt ENEOS Xe Máy SJ 20W-40 đặt trước thùng carton 24 chai tại kho HT VINA | /dau-nhot-xe-may/eneos-mc-sj-20w-40 |
+| `anh-goc/san-pham/` | `eneos-mc-sj-20w-40-chai.jpg` | Mặt trước chai ENEOS Xe Máy SJ 20W-40 800 ml, vỏ nhựa màu bạc, nhãn tím | /dau-nhot-xe-may/eneos-mc-sj-20w-40 |
+| `anh-goc/san-pham/` | `eneos-mc-sj-20w-40-nhan-sau.jpg` | Nhãn sau chai ENEOS SJ 20W-40: dầu nhớt động cơ xe máy 4 kỳ, sản xuất tại Việt Nam theo TCCS 24:2018/NOEV | /dau-nhot-xe-may/eneos-mc-sj-20w-40 |
 | `anh-goc/san-pham/` | `eneos-super-hyrando-68-phuy-200l.jpg` | Các phuy 200 lít dầu thủy lực ENEOS Super Hyrando 68 bọc màng co, xếp trong kho HT VINA | /dau-thuy-luc/eneos-super-hyrando-68 |
 | `anh-goc/san-pham/` | `eneos-super-hyrando-68-nhan.jpg` | Nhãn nắp phuy dầu thủy lực ENEOS Super Hyrando 68 ghi thể tích 200 lít, sản xuất tại Đình Vũ, Hải Phòng | /dau-thuy-luc/eneos-super-hyrando-68 |
 | `anh-goc/san-pham/` | `eneos-super-mulpus-dx-68-phuy-200l.jpg` | Phuy 200 lít dầu đa dụng ENEOS Super Mulpus DX 68 tại kho Hải Phòng | /dau-thuy-luc/eneos-super-mulpus-dx |
@@ -154,6 +151,7 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 156 ảnh, đã có 93, *
 | `anh-goc/san-pham/` | `maxima-68-nhan.jpg` | Nhãn xô dầu thủy lực Maxima 68 | /dau-thuy-luc/maxima-68 |
 | `anh-goc/san-pham/` | `maxxi-coolant-red-can-5l.jpg` | Can 5 lít nước làm mát Maxxi Coolant Red tại kho Hải Phòng | /nuoc-lam-mat/maxxi-coolant-red |
 | `anh-goc/san-pham/` | `maxxi-coolant-red-nhan.jpg` | Nhãn can nước làm mát Maxxi Coolant Red | /nuoc-lam-mat/maxxi-coolant-red |
+| `anh-goc/san-pham/` | `nhot-ke-thuy-tinh-mao-quan.jpg` | Ảnh minh họa ba kiểu nhớt kế mao quản thủy tinh dùng đo độ nhớt động học theo nguyên lý ASTM D445 | /thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5 |
 | `anh-goc/san-pham/` | `pv-transmission-ep-gl4-90-phuy.jpg` | Phuy dầu hộp số PVOIL PV Transmission 90 EP_GL4 tại kho Hải Phòng | /dau-cau-hop-so/pv-transmission-ep-gl4 |
 | `anh-goc/san-pham/` | `pvoil-pv-grease-phuy.jpg` | Phuy mỡ PVOIL | /mo-boi-tron-cong-nghiep/pvoil-pv-grease |
 | `anh-goc/san-pham/` | `shell-gadus-s3-v220c-2-xo.jpg` | Xô nhựa vàng mỡ Shell Gadus S3 V220C 2, nhãn ghi Premium Multipurpose Extreme-Pressure Grease, tên cũ Shell Retinax LX | /mo-chiu-nhiet/shell-gadus-s3-v220c-2 |
@@ -176,7 +174,7 @@ Chỉ tính bài đang bật (`active: true`). Tổng: 156 ảnh, đã có 93, *
 | `anh-goc/san-pham/` | `x-one-aw-68-xo-18l.jpg` | Xô 18 lít dầu thủy lực X-One AW 68 | /dau-thuy-luc/x-one-aw-68 |
 | `anh-goc/san-pham/` | `x-one-aw-68-nhan.jpg` | Mặt sau xô X-One AW 68 ghi công dụng và lợi ích | /dau-thuy-luc/x-one-aw-68 |
 | `anh-goc/san-pham/` | `x-one-aw-68-xo-18l-kho.jpg` | Xô X-One AW 68 cạnh danh thiếp Dầu Công Nghiệp HP | /dau-thuy-luc/x-one-aw-68 |
-| `anh-goc/danh-muc/` | `dau-thuy-luc.jpg` | **(chưa có alt)** | /ho-tro-ky-thuat/huong-dan-chon-do-nhot |
+| `anh-goc/blog/` | `dau-thuy-luc-may-xuc.jpg` | Máy xúc mini AGT Industrial đỗ trong nhà xe, cần gầu hạ xuống sàn, cạnh ống hút của máy hút bụi | /ho-tro-ky-thuat/dau-thuy-luc-may-xuc |
 | `anh-goc/blog/` | `top-6-dau-thuy-luc-pho-bien-nhat-thi-phan.jpg` | Biểu đồ thị phần dầu nhờn tại Việt Nam của Castrol, Petrolimex, Shell, TotalEnergies, Caltex theo Kline 2014, DNSG 2015, Báo Đầu tư 2021 | /ho-tro-ky-thuat/top-6-dau-thuy-luc-pho-bien-nhat |
 
 ## Ảnh của bài có hàng nhưng đang tắt (chờ TDS) – nên chụp luôn
@@ -187,5 +185,5 @@ Không còn ảnh nào thiếu.
 
 ## Ảnh của bài đang tắt khác (chưa cần up)
 
-4 ảnh thuộc các bài `active: false` không có trong kho hiện tại. Khi bật bài nào, chạy lại `npm run anh` để ảnh của bài đó vào danh sách cần up.
+7 ảnh thuộc các bài `active: false` không có trong kho hiện tại. Khi bật bài nào, chạy lại `npm run anh` để ảnh của bài đó vào danh sách cần up.
 Danh sách đầy đủ trong `docs/danh-sach-anh.csv` (cột "Trạng thái" = Bài đang tắt).

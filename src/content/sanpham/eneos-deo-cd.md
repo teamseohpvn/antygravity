@@ -1,6 +1,6 @@
 ---
 ma: "SP-DC-003"
-active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
+active: false   # Tắt 03/11/2026 theo yêu cầu: dừng kinh doanh ENEOS DEO CD; 301 về /dau-dong-co-diesel
 title: "ENEOS DEO CD 15W-40, 20W-50"
 seo_title: "ENEOS DEO CD 20W-50, 15W-40 – Dầu Động Cơ Diesel"
 description: "Dầu động cơ diesel phổ thông ENEOS CD 20W-50 và 15W-40 cho máy cũ, máy phát, máy nông nghiệp. Can 18 L, phuy 200 L, có CO/CQ, giao từ Hải Phòng."
@@ -30,7 +30,7 @@ packaging:
   - { name: "20W-50 – Can 18 L", sku: "CD1" }
   - { name: "20W-50 – Phuy 200 L", sku: "CD2" }
   - { name: "15W-40 – Phuy 200 L", sku: "CD15w40" }
-stock_status: "co-san"
+stock_status: "ngung-ban"
 so_sanh_chon_khi: "Động cơ đời cũ hút khí tự nhiên, máy phát, máy bơm nước chỉ yêu cầu cấp CD."
 
 applications:
