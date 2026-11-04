@@ -21,8 +21,14 @@ const STATIC_LASTMOD = readdirSync('src/pages')
   .map((f) => [f, readFileSync(path.join('src/pages', f), 'utf8').match(/\bupdated="(\d{4}-\d{2}-\d{2})"/)?.[1]])
   .filter(([, d]) => d)
   .map(([f, d]) => [`${SITE}/${f.replace(/\.astro$/, '')}`, d]);
+// Trang báo giá render phía server: ngày mới nhất trong ngày sửa nội dung, ngày đợt tin và ngày rà giá, trùng dateModified trên trang.
+const BAO_GIA_LASTMOD = [
+  ...[...readFileSync('src/pages/bao-gia-dau-thuy-luc.astro', 'utf8').matchAll(/(?:NGAY_SUA_NOI_DUNG = |capNhatLuc: )'(\d{4}-\d{2}-\d{2})/g)].map((m) => m[1]),
+  JSON.parse(readFileSync('src/data/gia-cong-khai.json', 'utf8')).cau_hinh?.ngay_ra_soat,
+].filter(Boolean).sort().at(-1);
 const LASTMOD = new Map([
   ...STATIC_LASTMOD,
+  [`${SITE}/bao-gia-dau-thuy-luc`, BAO_GIA_LASTMOD],
   ...contentPages().filter((p) => p.updated || p.date).map((p) => [SITE + p.path, p.updated || p.date]),
 ]);
 
