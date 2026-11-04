@@ -1,15 +1,15 @@
-## Chọn mỡ nhanh theo vị trí tra {#chon-nhanh}
+## Chọn mỡ bò, mỡ bôi trơn nhanh theo vị trí tra {#chon-nhanh}
 
-Bạn tìm đúng vị trí trong bảng, rồi xem mã cụ thể ở [bảng so sánh](#so-sanh). Nhiệt độ trong bảng là nhiệt độ **đo trên vỏ ổ khi máy chạy ổn định**.
+Bạn tìm đúng vị trí trong bảng, bấm vào mã để xem chi tiết, rồi đối chiếu thông số ở [bảng so sánh](#so-sanh). Nhiệt độ trong bảng là nhiệt độ **đo trên vỏ ổ khi máy chạy ổn định**.
 
 | Vị trí | Nên chọn | Vì sao | Đừng làm |
 | :--- | :--- | :--- | :--- |
-| Gối đỡ, khớp nối tải thường, vỏ ổ dưới 90 °C | Mỡ lithium-canxi NLGI 2 hoặc 3 | TDS ghi làm việc tới 110–120 °C, giá mỗi kg thấp | Dùng tiếp khi vỏ ổ thường xuyên từ 90 °C |
-| Máy nghiền, sàng rung, băng tải đá: tải nặng, va đập | Mỡ lithium chịu cực áp (EP) NLGI 2 | TDS công bố phụ gia EP; SKF khuyên dùng khi màng dầu không đủ dày | Dùng mỡ không công bố EP cho tải va đập rất nặng |
-| Chốt gầu, chốt và khớp chạy rất chậm | Mỡ lithium EP NLGI 2; dùng mỡ có MoS2 nếu tài liệu máy yêu cầu | SKF gợi ý cân nhắc MoS2 khi n·dm dưới 20.000 mm/phút | Mặc định dùng mỡ MoS2 cho vòng bi quay nhanh |
-| Hệ bơm mỡ tập trung | Mỡ mềm NLGI 0 hoặc 1 (theo hệ) | Dễ chảy trong đường ống | Đổi loại mỡ khi chưa kiểm tra tương thích |
+| Gối đỡ, khớp nối tải thường, vỏ ổ dưới 90 °C | Mỡ lithium-canxi NLGI 2 hoặc 3: [VHP Caxilium](/mo-boi-tron-cong-nghiep/vhp-caxilium-grease), [VHP Licas](/mo-boi-tron-cong-nghiep/licas-grease), [VHP Opal](/mo-boi-tron-cong-nghiep/vhp-opal-grease) NLGI 3 | TDS ghi làm việc tới 110–120 °C, giá mỗi kg thấp | Dùng tiếp khi vỏ ổ thường xuyên từ 90 °C |
+| Máy nghiền, sàng rung, băng tải đá: tải nặng, va đập | Mỡ lithium chịu cực áp (EP) NLGI 2: [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2), [ENEOS Epnoc AP(N)](/mo-boi-tron-cong-nghiep/eneos-epnoc-ap) cấp 2 | TDS công bố phụ gia EP; SKF khuyên dùng khi màng dầu không đủ dày | Dùng mỡ không công bố EP cho tải va đập rất nặng |
+| Chốt gầu, chốt và khớp chạy rất chậm | Mỡ lithium EP NLGI 2 như [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2); dùng mỡ có MoS2 nếu tài liệu máy yêu cầu | SKF gợi ý cân nhắc MoS2 khi n·dm dưới 20.000 mm/phút | Mặc định dùng mỡ MoS2 cho vòng bi quay nhanh |
+| Hệ bơm mỡ tập trung | Mỡ mềm NLGI 0 hoặc 1 (theo hệ): [VHP Lithium](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) L00, L0 (nhận đặt), [ENEOS Epnoc AP(N)](/mo-boi-tron-cong-nghiep/eneos-epnoc-ap) cấp 0, 1 (chờ xác nhận) | Dễ chảy trong đường ống | Đổi loại mỡ khi chưa kiểm tra tương thích |
 | Vòng bi động cơ điện, quạt | **Tính theo mã vòng bi, tốc độ, nhiệt độ** ([xem mục riêng](#dong-co)) | Kho chưa có mã chuyên cho nhóm này | Mua mỡ NLGI 4 vì thấy "có sẵn" |
-| Ổ nóng liên tục trên 120–130 °C | Mỡ lithium complex, xem [mỡ chịu nhiệt](/mo-chiu-nhiet) | Nhiệt độ làm việc cao hơn | So với nhiệt độ nhỏ giọt thay vì nhiệt độ làm việc |
+| Ổ nóng liên tục trên 120–130 °C | Mỡ lithium complex: [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2), xem thêm [mỡ chịu nhiệt](/mo-chiu-nhiet) | Nhiệt độ làm việc cao hơn | So với nhiệt độ nhỏ giọt thay vì nhiệt độ làm việc |
 
 ## Chọn độ cứng mỡ theo cấp NLGI {#nlgi}
 

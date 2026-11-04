@@ -7,13 +7,21 @@
 - **Giao hàng:** Hải Phòng (gồm khu vực Hải Dương cũ), Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
 
-**Nhận báo giá mỡ bôi trơn:** bạn gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**, hoặc gửi [yêu cầu báo giá](/bao-gia) kèm tên mỡ đang dùng hoặc vị trí cần tra mỡ, cấp NLGI, số xô/phuy và địa chỉ giao.
+**Xem giá và nhận báo giá:** khoảng giá từng mã, từng quy cách có ở [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron). Để nhận giá theo số lượng, bạn gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**, hoặc gửi [yêu cầu báo giá](/bao-gia) kèm tên mỡ đang dùng hoặc vị trí cần tra mỡ, cấp NLGI, số xô/phuy và địa chỉ giao.
 
 ## Câu hỏi thường gặp {#hoi-dap}
 
 ### Mỡ bò và mỡ bôi trơn có khác nhau không?
 
 Hai tên gọi này là một. "Mỡ bò" là cách gọi dân dã có từ ngày trước, khi mỡ bôi trơn có màu và độ sệt trông giống mỡ động vật. Mỡ bôi trơn công nghiệp bây giờ pha từ dầu gốc khoáng hoặc tổng hợp với chất làm đặc, hoàn toàn không có mỡ động vật.
+
+### Mua mỡ bò bôi trơn ở đâu?
+
+Với máy trong xưởng, bạn nên mua ở nơi đưa được TDS và CO/CQ theo lô, để đối chiếu đúng cấp NLGI và nhiệt độ làm việc. HT VINA có kho tại TP Hải Phòng (Hải Dương cũ), giao Hải Phòng, Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc. Quy cách đang có là thùng 30 ống 400 g, xô 15–18 kg và phuy 180 kg, tùy mã. Nếu bạn chỉ cần một tuýp nhỏ cho xe hoặc đồ gia dụng, cửa hàng phụ tùng hay sàn thương mại điện tử sẽ tiện hơn.
+
+### Mỡ bò xanh, trắng, vàng khác nhau thế nào?
+
+Màu sắc không cho biết mỡ chịu nhiệt hay chịu tải đến đâu. [Tài liệu của ExxonMobil](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf) nêu thuốc nhuộm chỉ tạo màu, nên hai xô cùng màu xanh vẫn có thể khác hẳn nhau về chất làm đặc và nhiệt độ làm việc. Bạn hãy chọn theo cấp NLGI, chất làm đặc và nhiệt độ làm việc trên TDS, như ở [bảng so sánh](#so-sanh).
 
 ### Lần đầu lắp vòng bi thì nhồi bao nhiêu mỡ?
 

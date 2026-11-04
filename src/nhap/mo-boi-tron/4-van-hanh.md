@@ -1,4 +1,4 @@
-## Vì sao mỡ bị khô và cứng lại trong ổ bi {#mo-kho}
+## Vì sao mỡ bò bị khô và cứng lại trong ổ bi {#mo-kho}
 
 Mỡ trong vòng bi hỏng chủ yếu vì **mất dầu gốc**, chứ ít khi vì chất làm đặc. Dầu gốc mất dần theo ba đường: bay hơi, bị ô xy hóa và rò ra khỏi ổ. Khi lượng dầu còn lại không đủ tiết ra để tạo màng bôi trơn, phần còn lại trong ổ là chất làm đặc khô, sẫm màu và cứng dần, đến lúc đó vòng bi bắt đầu nóng và kêu.
 
@@ -16,7 +16,7 @@ Từ các kết quả trên, nếu ổ bi của bạn chạy nóng thường xuy
 
 **Chu kỳ tra mỡ** tính theo tốc độ và cỡ vòng bi, nhưng nhiệt độ ảnh hưởng mạnh. Theo [hướng dẫn tra mỡ lại của SKF](https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/grease-life-and-relubrication), cứ mỗi 15 °C trên mức 70 °C thì chu kỳ tra mỡ giảm một nửa. Ổ đang tra mỗi 3 tháng khi chạy ở 70 °C sẽ cần tra khoảng mỗi 6 tuần nếu chạy ở 85 °C. Trục đứng cũng giảm một nửa; môi trường bụi và rung mạnh cần rút ngắn thêm.
 
-## Quy trình bơm mỡ an toàn theo từng loại gối đỡ {#quy-trinh}
+## Quy trình bơm mỡ bò an toàn theo từng loại gối đỡ {#quy-trinh}
 
 > **An toàn trước khi bơm.** Tài liệu [OSHA 1910.147 của Mỹ](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147) xếp bôi trơn vào công việc phải kiểm soát nguy cơ máy khởi động bất ngờ, và bạn cần làm theo nội quy an toàn của nhà máy.
 > - **Dừng máy, ngắt và khóa nguồn, treo biển** khi phải với tay vào gần bộ phận quay hoặc tháo che chắn.

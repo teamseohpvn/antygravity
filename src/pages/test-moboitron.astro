@@ -1,7 +1,7 @@
 ---
 // BẢN NHÁP thay cho thân bài /mo-boi-tron-cong-nghiep, viết 03/11/2026 theo audit check_EEAT và điều tra trải nghiệm.
 // noindex, không vào sitemap. Khi phát hành: chép nội dung sang src/content/danhmuc/mo-boi-tron-cong-nghiep.md (hoặc đổi template),
-// bỏ khung nháp và ô chờ ca thật; xóa file này, src/nhap/mo-boi-tron/ và bộ lọc sitemap trong astro.config.mjs.
+// bỏ khung nháp và ô chờ ca thật; trang chính dùng lưới sản phẩm riêng ở đây thay cho lưới và StockTable của mẫu danh mục; xóa file này, src/nhap/mo-boi-tron/ và bộ lọc sitemap trong astro.config.mjs.
 import Layout from '../layouts/Layout.astro';
 import NoiDungBai from '../components/NoiDungBai.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
@@ -15,10 +15,12 @@ import { Content as SuCo } from '../nhap/mo-boi-tron/5-su-co.md';
 import { Content as Cuoi } from '../nhap/mo-boi-tron/6-cuoi.md';
 import giaJson from '../data/gia-cong-khai.json';
 import { timNhanSu, bylineLabel, personUrl, personRef, personSchema, bylineTitle } from '../lib/nhan-su';
-import { absUrl, breadcrumbSchema, ORG_ID } from '../lib/site';
+import { absUrl, breadcrumbSchema, ORG_ID, webpSrcset, productImages } from '../lib/site';
+import { getActiveProducts } from '../lib/content';
 
 const pagePath = '/test-moboitron';
 const CAT = '/mo-boi-tron-cong-nghiep';
+const GIA = '/bao-gia-mo-boi-tron'; // Trang giá sắp viết; trước khi có trang, link này báo 404 trên bản xem trước.
 const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) NLGI 00 – 4';
 const description = 'Chọn mỡ bôi trơn, mỡ bò công nghiệp theo vị trí, nhiệt độ và tải: so sánh theo TDS, chi phí mỗi điểm tra, quy trình bơm mỡ an toàn, trạng thái kho từng mã.';
 const reviewer = timNhanSu('nguyen-thiet-lap')!;
@@ -42,6 +44,29 @@ const BANG: Dong[] = [
   { ten: 'PVOIL PV Grease', link: `${CAT}/pvoil-pv-grease`, lam_dac: 'Hãng chưa công bố trong bảng thông số', cap: '2 / 3', dau40: '–', nho_giot: '≥ 140 °C', lam_viec: 'Xem ghi chú dưới bảng', hbi: '–', co_san: 'No2, No3: phuy 180 kg' },
   { ten: 'Calix Ceno No3', link: `${CAT}/calix-ceno-grease`, lam_dac: 'Canxi tổng hợp', cap: '3', dau40: '–', nho_giot: '≥ 120 °C', lam_viec: '-10 đến 100 °C', hbi: '–', co_san: 'No3: phuy 180 kg' },
   { ten: 'Shell Gadus S3 V220C 2 (nhóm mỡ chịu nhiệt)', link: '/mo-chiu-nhiet/shell-gadus-s3-v220c-2', lam_dac: 'Lithium complex', cap: '2', dau40: '220 cSt', nho_giot: '240 °C', lam_viec: '-20 đến 140 °C (đỉnh 150 °C)', hbi: '315 kg (tối thiểu)', co_san: 'NLGI 2: xô 18 kg' },
+];
+
+// Lưới sản phẩm: thứ tự và thông số lấy từ BANG, tên và ảnh lấy từ trang sản phẩm. Gadus S3 thuộc /mo-chiu-nhiet nên ghi rõ nhóm trên thẻ.
+const VI_TRI = [
+  { ma: 'goi-do', ten: 'Gối đỡ, khớp nối tải thường', ids: ['vhp-caxilium-grease', 'licas-grease', 'vhp-opal-grease'] },
+  { ma: 'tai-nang', ten: 'Tải nặng, va đập', ids: ['shell-gadus-s2-v220-2', 'eneos-epnoc-ap'] },
+  { ma: 'bom-tap-trung', ten: 'Hệ bơm mỡ tập trung', ids: ['vhp-lithium-grease', 'eneos-epnoc-ap'] },
+  { ma: 'o-nong', ten: 'Ổ nóng trên 120–130 °C', ids: ['shell-gadus-s3-v220c-2'] },
+];
+const sanPham = await getActiveProducts();
+const THE = BANG.map((d) => {
+  const id = d.link.split('/').pop()!;
+  const p = sanPham.find((x) => x.id === id);
+  if (!p) return null;
+  const caps = d.cap.split('/').map((c) => c.trim());
+  return { d, id, ten: p.data.title, hang: p.data.brand, anh: productImages(p.data)[0], caps, viTri: VI_TRI.filter((v) => v.ids.includes(id)).map((v) => v.ma), chiuNhiet: !d.link.startsWith(CAT) };
+}).filter(Boolean) as { d: Dong; id: string; ten: string; hang: string; anh?: { src: string; alt: string }; caps: string[]; viTri: string[]; chiuNhiet: boolean }[];
+const CAC_HANG = [...new Set(THE.map((t) => t.hang))].sort();
+const CAC_CAP = ['00', '0', '1', '2', '3', '4'].filter((c) => THE.some((t) => t.caps.includes(c)));
+const NHOM_LOC = [
+  { nhom: 'vi-tri', ten: 'Theo vị trí', muc: VI_TRI.map((v) => [v.ma, v.ten]) },
+  { nhom: 'hang', ten: 'Theo hãng', muc: CAC_HANG.map((h) => [h, h]) },
+  { nhom: 'cap', ten: 'Theo cấp NLGI', muc: CAC_CAP.map((c) => [c, `NLGI ${c}`]) },
 ];
 
 // Chi phí: chỉ lấy khoảng giá từ gia-cong-khai.json, không ghi tay.
@@ -77,8 +102,8 @@ const TDS = [
 
 const MUC_LUC = [
   ['chon-nhanh', 'Chọn nhanh theo vị trí'], ['nlgi', 'Chọn theo cấp NLGI'], ['chat-lam-dac', 'Chọn theo chất làm đặc'], ['so-sanh', 'So sánh và trạng thái kho'],
-  ['dong-co', 'Vòng bi động cơ điện'], ['chi-phi', 'Chi phí mỗi kg và mỗi điểm tra'], ['mo-kho', 'Vì sao mỡ khô cứng'], ['tra-mo', 'Tra bao nhiêu, bao lâu'],
-  ['quy-trinh', 'Quy trình bơm mỡ an toàn'], ['kinh-nghiem', 'Kinh nghiệm người sử dụng'], ['su-co', 'Dấu hiệu mỡ hỏng'], ['nguon', 'Nguồn và người duyệt'], ['hoi-dap', 'Câu hỏi thường gặp'],
+  ['dong-co', 'Vòng bi động cơ điện'], ['chi-phi', 'Chi phí mỗi kg và mỗi điểm tra'], ['mo-kho', 'Vì sao mỡ bò khô cứng'], ['tra-mo', 'Tra bao nhiêu, bao lâu'],
+  ['quy-trinh', 'Quy trình bơm mỡ bò an toàn'], ['kinh-nghiem', 'Kinh nghiệm người sử dụng'], ['su-co', 'Dấu hiệu mỡ hỏng'], ['nguon', 'Nguồn và người duyệt'], ['hoi-dap', 'Câu hỏi thường gặp'],
 ];
 
 const crumbs = [{ name: 'Trang chủ', href: '/' }, { name: 'Mỡ bôi trơn (mỡ bò)', href: CAT }, { name: 'Bản nháp', href: pagePath }];
@@ -95,21 +120,61 @@ const citation = [
 const schemaData = [
   { '@context': 'https://schema.org', '@type': ['CollectionPage', 'WebPage'], '@id': PAGE_ID, name: title, description, url: absUrl(pagePath), dateModified: NGAY, author: personRef(reviewer), citation, inLanguage: 'vi-VN', publisher: { '@id': ORG_ID } },
   personSchema(reviewer), breadcrumbSchema(crumbs),
+  { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: THE.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: absUrl(t.d.link), name: t.ten })) },
 ];
 ---
 <Layout {title} seoTitle="Bản nháp: Mỡ Bôi Trơn, Mỡ Bò Công Nghiệp NLGI 2, 3" {description} noindex modified={NGAY} author={reviewer.name} {schemaData}>
   <div class="container trang">
     <aside class="khung-nhap" aria-label="Ghi chú bản nháp">
-      <strong>BẢN NHÁP, chưa phát hành, không lập chỉ mục.</strong> Trang chính <a href={CAT}>/mo-boi-tron-cong-nghiep</a> chưa đổi. Còn chờ: ca thật của HT VINA; cấp và quy cách ENEOS đang có; TS. Lập duyệt nội dung; xác nhận tồn kho từng mã; rà lại giá (rà soát {fmtNgay(NGAY_GIA)}).
+      <strong>BẢN NHÁP, chưa phát hành, không lập chỉ mục.</strong> Trang chính <a href={CAT}>/mo-boi-tron-cong-nghiep</a> chưa đổi. Link <code>{GIA}</code> sẽ báo 404 cho tới khi trang giá được viết. Còn chờ: ca thật của HT VINA; cấp và quy cách ENEOS đang có; TS. Lập duyệt nội dung; xác nhận tồn kho từng mã; rà lại giá (rà soát {fmtNgay(NGAY_GIA)}).
     </aside>
     <Breadcrumbs items={crumbs} />
     <NoiDungBai articleId={PAGE_ID} type={['CollectionPage', 'WebPage']} field="text">
       <header class="dau">
         <h1>{title}</h1>
         <p class="byline">Bản nháp ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> (chờ duyệt)</p>
+        <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vị trí tra nóng liên tục trên 120–130 °C, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
+        <QuoteCta item="Mỡ bôi trơn (mỡ bò)" compact />
+        <p class="link-gia">Cần xem khoảng giá trước? Mở <a href={GIA}>bảng giá mỡ bôi trơn</a> theo từng mã và quy cách.</p>
       </header>
+
+      <section class="sp" id="san-pham" aria-labelledby="tieu-de-sp">
+        <h2 id="tieu-de-sp">Các mã mỡ bôi trơn, mỡ bò HT VINA đang cung cấp</h2>
+        <div class="loc" id="loc-mo">
+          {NHOM_LOC.map((n) => (
+            <div class="loc-nhom" data-nhom={n.nhom} role="group" aria-label={n.ten}>
+              <span class="loc-ten">{n.ten}</span>
+              <div class="loc-nut">
+                <button type="button" data-gt="" aria-pressed="true">Tất cả</button>
+                {n.muc.map(([gt, nhan]) => <button type="button" data-gt={gt} aria-pressed="false">{nhan}</button>)}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="luoi" id="luoi-mo">
+          {THE.map((t) => (
+            <article class="the" data-vi-tri={t.viTri.join(' ')} data-hang={t.hang} data-cap={t.caps.join(' ')}>
+              {t.anh && <img src={t.anh.src} srcset={webpSrcset(t.anh.src)} sizes="(max-width: 640px) 96px, 300px" alt={t.anh.alt} width="300" height="180" loading="lazy" decoding="async" />}
+              <div class="the-noi-dung">
+                <p class="the-nhan"><span>{t.hang}</span><span>NLGI {t.d.cap}</span>{t.chiuNhiet && <span class="nhan-nong">Mỡ chịu nhiệt</span>}</p>
+                <h3><a href={t.d.link}>{t.ten}</a></h3>
+                <dl>
+                  <div><dt>Chất làm đặc</dt><dd>{t.d.lam_dac}</dd></div>
+                  <div><dt>Nhiệt độ làm việc</dt><dd>{t.d.lam_viec}</dd></div>
+                  <div><dt>Kho</dt><dd>{t.d.ghi_chu === 'cho' ? <span class="cho">{t.d.co_san}</span> : <><strong>Có sẵn:</strong> {t.d.co_san}</>}{t.d.nhan_dat && <><br /><strong>Nhận đặt:</strong> {t.d.nhan_dat}</>}</dd></div>
+                </dl>
+                <div class="the-nut">
+                  <a href={t.d.link}>Xem chi tiết →</a>
+                  <a class="nut-gia" href={`/bao-gia?sp=${encodeURIComponent(t.ten)}`} data-track="add_to_quote">Báo giá</a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+        <p class="loc-trong" id="loc-trong" hidden>Chưa có mã khớp với lựa chọn này. Bạn hãy bỏ bớt bộ lọc hoặc gọi <a href="tel:0901511313">0901 511 313</a> để chúng tôi kiểm tra.</p>
+      </section>
+
       <div class="seo-content markdown-body">
-        <p><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vị trí tra nóng liên tục trên 120–130 °C, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <blockquote class="tom-tat">
           <p><strong>Tóm tắt</strong></p>
           <ul>
@@ -134,7 +199,7 @@ const schemaData = [
         <ContentBody><DocBang /></ContentBody>
 
         <h2 id="chi-phi">Chi phí mỡ tính theo kg và theo điểm tra mỗi năm</h2>
-        <p>Bảng dưới quy khoảng giá ra mỗi kg, rồi tính tiền mỡ cho <strong>một điểm tra dùng {G_DIEM_NAM} g mỗi năm</strong>. Đây là ví dụ vòng bi 6310 (Gp khoảng 15 g), tra bốn lần một năm, chỉ để so sánh. Giá chưa gồm VAT, là khoảng giá từ giá kho tới +15%, rà soát ngày {fmtNgay(NGAY_GIA)}. Mức thực tế tùy số lượng và lô hàng.</p>
+        <p>Bảng dưới quy khoảng giá ra mỗi kg, rồi tính tiền mỡ cho <strong>một điểm tra dùng {G_DIEM_NAM} g mỗi năm</strong>. Đây là ví dụ vòng bi 6310 (Gp khoảng 15 g), tra bốn lần một năm, chỉ để so sánh. Giá chưa gồm VAT, là khoảng giá từ giá kho tới +15%, rà soát ngày {fmtNgay(NGAY_GIA)}. Mức thực tế tùy số lượng và lô hàng. Bảng này dùng để so chi phí; muốn xem khoảng giá theo từng xô, phuy, hãy mở <a href={GIA}>bảng giá mỡ bôi trơn</a>.</p>
         <div class="bang"><table>
           <thead><tr><th>Mã và quy cách</th><th>Giá mỗi kg (đồng)</th><th>Tiền mỡ mỗi điểm mỗi năm (đồng)</th></tr></thead>
           <tbody>{CHI_PHI.map((c) => <tr><td>{c.ten} · {c.qc}</td><td>{vnd(lam100(c.thap))} – {vnd(lam100(c.cao))}</td><td>{vnd(lam100(c.thap * G_DIEM_NAM / 1000))} – {vnd(lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
@@ -162,8 +227,61 @@ const schemaData = [
   </div>
 </Layout>
 
+<script>
+  // Lọc lưới sản phẩm theo vị trí, hãng, cấp NLGI. Không có JavaScript thì vẫn thấy đủ các thẻ.
+  const loc = document.getElementById('loc-mo');
+  const cacThe = document.querySelectorAll<HTMLElement>('#luoi-mo .the');
+  const trong = document.getElementById('loc-trong');
+  const khop = (the: HTMLElement, gt: string, thuocTinh: string) => !gt || (thuocTinh === 'data-hang' ? [the.getAttribute(thuocTinh)] : (the.getAttribute(thuocTinh) ?? '').split(' ')).includes(gt);
+  loc?.addEventListener('click', (e) => {
+    const nut = (e.target as HTMLElement).closest('button');
+    if (!nut) return;
+    nut.parentElement?.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === nut)));
+    const chon = (nhom: string) => loc.querySelector(`[data-nhom="${nhom}"] button[aria-pressed="true"]`)?.getAttribute('data-gt') ?? '';
+    const viTri = chon('vi-tri'), hang = chon('hang'), cap = chon('cap');
+    let con = 0;
+    cacThe.forEach((the) => {
+      const hien = khop(the, viTri, 'data-vi-tri') && khop(the, hang, 'data-hang') && khop(the, cap, 'data-cap');
+      the.hidden = !hien;
+      if (hien) con++;
+    });
+    if (trong) trong.hidden = con > 0;
+  });
+</script>
+
 <style>
   .trang { padding-block: 16px 48px; }
+  .dau { background: white; padding: clamp(16px, 4vw, 32px); border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 24px; }
+  .mo-dau { line-height: 1.7; font-size: 1.05rem; max-width: 80ch; }
+  .dau a:not(.btn-primary):not(.btn-secondary), .sp a:not(.nut-gia), .loc-trong a { color: var(--color-accent); text-decoration: underline; }
+  .link-gia { margin-top: 12px; font-size: .98rem; }
+  .sp { margin-bottom: 28px; }
+  .sp > h2 { color: var(--color-primary); font-size: 1.5rem; line-height: 1.3; margin-bottom: 14px; }
+  .loc { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; display: grid; gap: 10px; }
+  .loc-nhom { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 8px; align-items: start; }
+  .loc-ten { font-weight: 600; font-size: .92rem; padding-top: 9px; }
+  .loc-nut { display: flex; flex-wrap: wrap; gap: 8px; }
+  .loc-nut button { min-height: 40px; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 20px; background: white; color: inherit; font: inherit; font-size: .92rem; cursor: pointer; }
+  .loc-nut button[aria-pressed="true"] { background: var(--color-primary); border-color: var(--color-primary); color: white; }
+  .luoi { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 16px; }
+  .the { background: white; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+  .the[hidden] { display: none; }
+  .the img { width: 100%; height: 180px; object-fit: contain; background: #f7f9fb; }
+  .the-noi-dung { padding: 14px 16px; display: flex; flex-direction: column; flex-grow: 1; }
+  .the-nhan { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
+  .the-nhan span { background: #e2e8f0; padding: 2px 9px; border-radius: 20px; font-size: .8rem; font-weight: 600; }
+  .the-nhan .nhan-nong { background: #fff7ed; color: #9a3412; }
+  .the h3 { font-size: 1.08rem; line-height: 1.35; margin: 0 0 10px; }
+  .sp .the h3 a { color: var(--color-primary); text-decoration: none; }
+  .the dl { margin: 0 0 12px; font-size: .92rem; line-height: 1.45; flex-grow: 1; }
+  .the dl > div { display: grid; grid-template-columns: 40% 1fr; gap: 8px; padding: 5px 0; border-top: 1px solid #eef1f4; }
+  .the dt { color: #555; }
+  .the dd { margin: 0; }
+  .the-nut { display: flex; justify-content: space-between; align-items: center; gap: 10px; font-weight: 600; }
+  .the-nut a { min-height: 40px; display: inline-flex; align-items: center; }
+  .sp .the-nut a:first-child { color: var(--color-primary); text-decoration: none; }
+  .nut-gia { color: var(--color-accent); }
+  .loc-trong { background: white; border: 1px dashed #cbd5e1; border-radius: 8px; padding: 14px 16px; margin-top: 12px; }
   .khung-nhap { background: #fff3cd; border: 2px dashed #b58900; padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; font-size: .95rem; line-height: 1.5; }
   .dau h1 { margin: 10px 0 6px; line-height: 1.25; }
   .byline { color: #555; font-size: .92rem; margin-bottom: 14px; }
@@ -187,6 +305,14 @@ const schemaData = [
   .nho { font-size: .92rem; color: #555; }
   @media (max-width: 640px) {
     .muc-luc ol { columns: 1; }
+    /* Bộ lọc gọn thành một hàng cuộn ngang, thẻ sản phẩm nằm ngang để không đẩy bài viết xuống quá xa. */
+    .loc-nhom { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+    .loc-ten { padding-top: 0; }
+    .loc-nut { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
+    .loc-nut button { flex: none; }
+    .the { display: grid; grid-template-columns: 96px minmax(0, 1fr); }
+    .the img { height: 100%; min-height: 120px; }
+    .the-noi-dung { padding: 12px; }
     /* Điện thoại: bảng 8 cột thành thẻ, mỗi mã một thẻ, tên cột đứng đầu từng dòng. */
     .seo-content .the-dt { display: block; overflow: visible; font-size: .95rem; }
     .the-dt thead { display: none; }
