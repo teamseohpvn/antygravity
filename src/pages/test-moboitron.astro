@@ -21,7 +21,7 @@ import { getActiveProducts } from '../lib/content';
 const pagePath = '/test-moboitron';
 const CAT = '/mo-boi-tron-cong-nghiep';
 const GIA = '/bao-gia-mo-boi-tron'; // Trang giá sắp viết; trước khi có trang, link này báo 404 trên bản xem trước.
-const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) NLGI 00 – 4';
+const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) Cấp NLGI Từ 0 Đến 4';
 const description = 'Cách chọn mỡ bôi trơn công nghiệp (mỡ bò) theo cấp NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, VHP.';
 const reviewer = timNhanSu('nguyen-thiet-lap')!;
 const NGAY = '2026-11-04';
@@ -135,7 +135,7 @@ const schemaData = [
         <h1>{title}</h1>
         <p class="byline">Bản nháp ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> (chờ duyệt)</p>
         <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vị trí tra nóng liên tục trên 120–130 °C, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
-        <QuoteCta item="Mỡ bôi trơn (mỡ bò)" compact />
+        <p class="goi-y-menu">Chọn xem nhanh theo menu dưới:</p>
         <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
           <a href="#san-pham">Danh sách các loại mỡ bôi trơn đang có</a>
           <a href="#huong-dan">Hướng dẫn chọn và cách sử dụng mỡ bôi trơn</a>
@@ -280,7 +280,8 @@ const schemaData = [
   .dau { background: white; padding: clamp(16px, 4vw, 32px); border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 24px; }
   .mo-dau { line-height: 1.7; font-size: 1.05rem; max-width: 80ch; }
   .dau a:not(.btn-primary):not(.btn-secondary), .sp a:not(.nut-gia), .loc-trong a { color: var(--color-accent); text-decoration: underline; }
-  .menu-nhanh { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+  .goi-y-menu { margin: 16px 0 0; font-weight: 600; }
+  .menu-nhanh { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 8px; }
   .dau .menu-nhanh a { display: flex; align-items: center; min-height: 48px; padding: 10px 14px; background: #f3f5f7; border: 1px solid var(--border-color); border-radius: 8px; color: var(--color-primary); font-weight: 600; line-height: 1.35; text-decoration: none; }
   .dau .menu-nhanh a:hover, .dau .menu-nhanh a:focus-visible { border-color: var(--color-accent); color: var(--color-accent); }
   #san-pham, #huong-dan { scroll-margin-top: 90px; }
