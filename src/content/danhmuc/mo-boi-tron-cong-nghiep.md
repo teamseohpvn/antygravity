@@ -151,7 +151,7 @@ Muốn kiểm tra nhanh tại chỗ, bạn lấy một ít mỡ cũ miết mỏn
 - **Đổi trả:** trong 7 ngày theo [chính sách đổi trả](/chinh-sach-doi-tra), với hàng còn nguyên nắp, nguyên niêm phong.
 - **Bảo quản:** để xô, phuy trong nhà, đậy kín nắp, tránh bụi và nước. Lấy mỡ bằng dụng cụ sạch, không để mỡ đã dính bụi quay lại xô.
 - **Giao hàng:** Hải Phòng (gồm khu vực Hải Dương cũ), Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc.
-- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
 
 **Nhận báo giá mỡ bò công nghiệp:** bạn gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**, hoặc gửi [yêu cầu báo giá](/bao-gia) kèm tên mỡ đang dùng hoặc vị trí cần tra mỡ, cấp NLGI, số xô/phuy và địa chỉ giao để chúng tôi báo giá nhanh.
 
