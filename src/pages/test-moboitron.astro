@@ -128,7 +128,7 @@ const schemaData = [
           <thead><tr><th>Mã mỡ</th><th>Chất làm đặc</th><th>Cấp NLGI</th><th>Dầu gốc ở 40 °C</th><th>Nhỏ giọt</th><th>Nhiệt độ làm việc</th><th>Tải hàn dính 4 bi</th><th>Trạng thái kho</th></tr></thead>
           <tbody>{BANG.map((d) => <tr>
             <td class="the-ten"><a href={d.link}>{d.ten}</a></td><td data-nhan="Chất làm đặc">{d.lam_dac}</td><td data-nhan="Cấp NLGI">{d.cap}</td><td data-nhan="Dầu gốc ở 40 °C">{d.dau40}</td><td data-nhan="Nhỏ giọt">{d.nho_giot}</td><td data-nhan="Nhiệt độ làm việc">{d.lam_viec}</td><td data-nhan="Tải hàn dính 4 bi">{d.hbi}</td>
-            <td data-nhan="Trạng thái kho">{d.ghi_chu === 'cho' ? <span class="cho">{d.co_san}</span> : <><strong>Có sẵn:</strong> {d.co_san}</>}{d.nhan_dat && <><br /><strong>Nhận đặt:</strong> {d.nhan_dat}</>}</td>
+            <td class="the-kho" data-nhan="Trạng thái kho"><div>{d.ghi_chu === 'cho' ? <span class="cho">{d.co_san}</span> : <><strong>Có sẵn:</strong> {d.co_san}</>}{d.nhan_dat && <><br /><strong>Nhận đặt:</strong> {d.nhan_dat}</>}</div></td>
           </tr>)}</tbody>
         </table></div>
         <ContentBody><DocBang /></ContentBody>
@@ -190,9 +190,12 @@ const schemaData = [
     /* Điện thoại: bảng 8 cột thành thẻ, mỗi mã một thẻ, tên cột đứng đầu từng dòng. */
     .seo-content .the-dt { display: block; overflow: visible; font-size: .95rem; }
     .the-dt thead { display: none; }
-    .the-dt tbody, .the-dt tr { display: block; }
-    .the-dt tr { border: 1px solid var(--border-color); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; }
+    .the-dt tbody { display: block; }
+    /* Trên thẻ, trạng thái kho đứng ngay sau tên mã vì khách cần biết trước. */
+    .the-dt tr { display: flex; flex-direction: column; border: 1px solid var(--border-color); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; }
     .seo-content .the-dt td { display: grid; grid-template-columns: 42% 1fr; gap: 8px; border: 0; border-top: 1px solid #eef1f4; padding: 6px 0; min-width: 0; }
+    .the-dt .the-ten { order: -2; }
+    .the-dt .the-kho { order: -1; }
     .seo-content .the-dt td.the-ten { display: block; border-top: 0; padding-top: 0; font-weight: 700; }
     .the-dt td[data-nhan]::before { content: attr(data-nhan); color: #555; font-size: .88rem; }
   }
