@@ -105,9 +105,9 @@ const TIN = {
 const CAP_NHAT_TIN = [
   {
     id: 'tin-2026-11-04',
-    capNhatLuc: '2026-11-04T09:23:00+07:00',
-    tieuDe: 'Cập nhật ngày 04/11/2026: Brent quanh 103 USD, giảm khoảng 9% so với phiên 30/10',
-    moTa: 'Brent giảm 7,63% phiên 2/11, chốt 103,60 USD/thùng phiên 3/11 và giao dịch quanh 103,12 USD/thùng ngày 4/11, trong khi đàm phán Mỹ và Iran chưa có kết quả.',
+    capNhatLuc: '2026-11-04T09:59:00+07:00',
+    tieuDe: 'Cập nhật ngày 04/11/2026: Brent quanh 102,6 USD, thấp nhất 4 tuần, giảm khoảng 9,5% so với phiên 30/10',
+    moTa: 'Brent giảm 7,63% phiên 2/11, chốt 103,60 USD/thùng phiên 3/11 và giao dịch quanh 102,61 USD/thùng ngày 4/11 theo Trading Economics. Phiên 3/11 giá dao động từ gần 106 xuống dưới 102 USD/thùng. Các mốc đang được theo dõi: 100 và 113 USD/thùng theo FinanceFeeds, 116,80 USD/thùng cuối quý 4 theo mô hình của Trading Economics.',
     nguon: [TIN.reuters0211, TIN.reuters0311, TIN.cnbc0211, TIN.cnbc0311, TIN.tradingEconomics, TIN.financeFeeds],
   },
   {
@@ -125,7 +125,7 @@ const BRENT_PHIEN = [
   { ngay: '2026-10-30', gia: 113.43, loai: 'chot', nguon: 'Reuters', url: TIN.reuters },
   { ngay: '2026-11-02', gia: 104.77, loai: 'chot', nguon: 'Reuters', url: TIN.reuters0211 },
   { ngay: '2026-11-03', gia: 103.6, loai: 'chot', nguon: 'Reuters', url: TIN.reuters0311 },
-  { ngay: '2026-11-04', gia: 103.12, loai: 'tham-khao', nguon: 'Trading Economics', url: TIN.tradingEconomics },
+  { ngay: '2026-11-04', gia: 102.61, loai: 'tham-khao', nguon: 'Trading Economics', url: TIN.tradingEconomics },
 ];
 const fmtUsd = (n: number) => n.toFixed(2).replace('.', ',');
 const ngayNgan = (iso: string) => fmtNgay(iso).slice(0, 5);
@@ -402,11 +402,11 @@ const schemaData = [
       <h3 id={TIN_MOI.id}>{TIN_MOI.tieuDe}</h3>
       <p class="tin-gio">Cập nhật lúc <time datetime={TIN_MOI.capNhatLuc}>{TIN_MOI.capNhatLuc.slice(11, 16)}, {fmtNgay(TIN_MOI.capNhatLuc)}</time> (giờ Việt Nam)</p>
       <ul>
-        <li><strong>Brent về mức thấp nhất gần 4 tuần.</strong> Phiên 2/11, Brent giảm 7,63% xuống 104,77 USD/thùng (<a href={TIN.reuters0211} rel="noopener">Reuters</a>). Phiên 3/11 giảm tiếp 1%, còn 103,60 USD/thùng, mức chốt thấp nhất từ ngày 7/10 (<a href={TIN.reuters0311} rel="noopener">Reuters</a>). Ngày 4/11, Brent giao dịch quanh 103,12 USD/thùng, thấp hơn khoảng 9,1% so với 113,43 USD/thùng phiên 30/10 (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>). Đây là giá CFD tham khảo, không phải giá chốt chính thức.</li>
+        <li><strong>Brent về mức thấp nhất gần 4 tuần.</strong> Phiên 2/11, Brent giảm 7,63% xuống 104,77 USD/thùng (<a href={TIN.reuters0211} rel="noopener">Reuters</a>). Phiên 3/11 giảm tiếp 1%, còn 103,60 USD/thùng, mức chốt thấp nhất từ ngày 7/10 (<a href={TIN.reuters0311} rel="noopener">Reuters</a>). Ngày 4/11, Brent giao dịch quanh 102,61 USD/thùng, mức thấp nhất 4 tuần, thấp hơn khoảng 9,5% so với 113,43 USD/thùng phiên 30/10 (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>). Đây là giá CFD tham khảo, không phải giá chốt chính thức.</li>
         <li class="thu-gon-an"><strong>Lý do giảm.</strong> Tổng thống Mỹ nói Iran muốn đạt thỏa thuận, còn Tổng thống Iran nói muốn giải quyết vấn đề qua đối thoại (<a href={TIN.cnbc0211} rel="noopener">CNBC</a>). Qatar cho biết hai bên vẫn cam kết với nỗ lực trung gian và đang xem xét các đề xuất (<a href={TIN.reuters0311} rel="noopener">Reuters</a>).</li>
-        <li class="thu-gon-an"><strong>Giá dao động mạnh ngay trong một phiên.</strong> Ngày 3/11, Brent có lúc lên gần 106 USD/thùng sau tin Mỹ tấn công đảo Qeshm của Iran (<a href={TIN.financeFeeds} rel="noopener">FinanceFeeds</a>), có lúc xuống dưới 102 USD/thùng (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>), rồi chốt 103,60 USD/thùng. Bộ trưởng Năng lượng Mỹ nói các đòn tấn công này không ảnh hưởng đến dòng dầu (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>).</li>
+        <li><strong>Giá dao động mạnh ngay trong một phiên.</strong> Ngày 3/11, Brent có lúc lên gần 106 USD/thùng sau tin Mỹ tấn công đảo Qeshm của Iran (<a href={TIN.financeFeeds} rel="noopener">FinanceFeeds</a>), có lúc xuống dưới 102 USD/thùng (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>), rồi chốt 103,60 USD/thùng. Bộ trưởng Năng lượng Mỹ nói các đòn tấn công này không ảnh hưởng đến dòng dầu (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>).</li>
         <li class="thu-gon-an"><strong>Rủi ro chưa hết.</strong> Một quan chức cấp cao của Iran nói hai bên còn xa mới đạt thỏa thuận, và ING cho rằng có lẽ còn quá sớm để nghĩ rủi ro leo thang đã qua (<a href={TIN.reuters0311} rel="noopener">Reuters</a>). Từ đầu tháng đã có ít nhất 4 vụ tấn công tàu thương mại (<a href={TIN.cnbc0311} rel="noopener">CNBC</a>). Trong cuộc chiến này, đã có những lần giá giảm theo tin đồn thỏa thuận rồi tăng lại khi xung đột leo thang (<a href={TIN.cnbc0211} rel="noopener">CNBC</a>).</li>
-        <li class="thu-gon-an"><strong>Các mốc đang được theo dõi.</strong> Bài viết sáng 3/11 của FinanceFeeds nêu mốc 100 USD/thùng nếu đàm phán mở lại được eo Hormuz, và 113 USD/thùng nếu đàm phán đổ vỡ hoặc Iran đáp trả (<a href={TIN.financeFeeds} rel="noopener">FinanceFeeds</a>). Mô hình của Trading Economics ước tính khoảng 116,80 USD/thùng vào cuối quý 4 (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>). Đây là kịch bản và kết quả mô hình, không phải dự báo chắc chắn.</li>
+        <li><strong>Các mốc đang được theo dõi.</strong> Bài viết sáng 3/11 của FinanceFeeds nêu mốc 100 USD/thùng nếu đàm phán mở lại được eo Hormuz, và 113 USD/thùng nếu đàm phán đổ vỡ hoặc Iran đáp trả (<a href={TIN.financeFeeds} rel="noopener">FinanceFeeds</a>). Mô hình của Trading Economics ước tính khoảng 116,80 USD/thùng vào cuối quý 4 (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>). Đây là kịch bản và kết quả mô hình, không phải dự báo chắc chắn.</li>
         <li class="thu-gon-an"><strong>Với người mua dầu thủy lực.</strong> Giá dầu thô giảm không có nghĩa dầu thủy lực giảm ngay hoặc giảm cùng tỷ lệ. Bảng giá tháng 11 trên trang này chưa thay đổi theo các phiên giảm này.</li>
       </ul>
       <figure class="brent-chart">
