@@ -127,4 +127,4 @@ Thay dầu cả máy biến áp thì dùng phuy. Thêm bù sau khi lấy mẫu, 
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ và bảng chỉ tiêu kỹ thuật kèm hàng khi khách yêu cầu, dùng cho hồ sơ nghiệm thu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Unitrans%20Oil) kèm số lượng.
-- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.
+- **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

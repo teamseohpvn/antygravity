@@ -47,8 +47,14 @@ export const ADDRESS_FULL = `${ADDRESS_TEXT} (TP Hải Dương cũ)`;
 // đúng khu Thanh Bình, P. Lê Thanh Nghị. Không dùng tọa độ trong du-lieu-noi-bo/map.html (ghim nhầm vào P. Lê Chân, HP cũ).
 export const MAP_EMBED_URL = `https://maps.google.com/maps?q=${encodeURIComponent(ADDRESS_TEXT)}&z=16&output=embed`;
 // KCN gần kho trước, xa kho sau.
-export const KCN_NEAR = ['Đại An', 'Nam Sách', 'Phúc Điền', 'Tân Trường', 'Lai Vu'];
-export const KCN_FAR = ['Tràng Duệ', 'Nomura', 'Đình Vũ', 'VSIP', 'Quế Võ', 'Phố Nối'];
+// KCN giao trong ngày theo từng kho, người dùng duyệt 04/11/2026.
+export const KCN_THEO_KHO: { kho: string; kcn: string[] }[] = [
+  { kho: 'Kho chính (Hải Dương cũ)', kcn: ['Đại An', 'Nam Sách', 'Phúc Điền', 'Tân Trường', 'Lai Vu'] },
+  { kho: 'Kho Kiến An', kcn: ['Nomura', 'Tràng Duệ'] },
+  { kho: 'Kho Như Quỳnh', kcn: ['Phố Nối'] },
+];
+export const KCN_NEAR = KCN_THEO_KHO.flatMap((k) => k.kcn);
+export const KCN_FAR = ['Đình Vũ', 'VSIP', 'Quế Võ'];
 /** Google Analytics 4 (du-lieu-noi-bo/script_anylytics_google.md). Đổi bằng biến PUBLIC_GA4_ID khi build. */
 export const GA4_ID: string = import.meta.env.PUBLIC_GA4_ID || 'G-DSZVP9WS37';
 /** Google Ads (dạng AW-123456789). Đổi bằng biến PUBLIC_GADS_ID khi build. */
