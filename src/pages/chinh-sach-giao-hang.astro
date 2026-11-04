@@ -1,6 +1,6 @@
 ---
 import PolicyPage from '../components/PolicyPage.astro';
-import { BUSINESS, ADDRESS_FULL, KHO_GIAO_HANG, AREA_TEXT, LEGAL_NAME, KCN_NEAR, KCN_FAR } from '../lib/site';
+import { BUSINESS, ADDRESS_FULL, KHO_GIAO_HANG, AREA_TEXT, LEGAL_NAME, KCN_THEO_KHO, KCN_FAR } from '../lib/site';
 import { PROMO } from '../lib/promo';
 
 const CUTOFF = PROMO.sameDayCutoff;
@@ -11,7 +11,7 @@ const CUTOFF = PROMO.sameDayCutoff;
   title="Chính sách giao hàng"
   seoTitle="Chính Sách Giao Hàng Dầu Công Nghiệp – Hải Phòng và Miền Bắc"
   description={`Phạm vi, thời gian, phí giao hàng và cách kiểm tra khi nhận dầu nhớt, mỡ công nghiệp. Kho tại ${AREA_TEXT}, miễn phí vận chuyển trong 80 km.`}
-  updated="2026-11-02"
+  updated="2026-11-04"
 >
   <p>
     Chính sách này áp dụng cho mọi đơn hàng dầu nhớt và mỡ bôi trơn công nghiệp đặt với {LEGAL_NAME} qua website, điện thoại hoặc Zalo.
@@ -33,7 +33,7 @@ const CUTOFF = PROMO.sameDayCutoff;
     <table>
       <thead><tr><th>Khu vực</th><th>Thời gian</th></tr></thead>
       <tbody>
-        <tr><td>KCN gần kho: {KCN_NEAR.join(', ')}</td><td>Giao trong ngày khi chốt đơn trước {CUTOFF}, thứ Hai đến thứ Sáu</td></tr>
+        {KCN_THEO_KHO.map((k) => <tr><td>{k.kho}: KCN {k.kcn.join(', ')}</td><td>Giao trong ngày khi chốt đơn trước {CUTOFF}, thứ Hai đến thứ Sáu</td></tr>)}
         <tr><td>KCN xa hơn: {KCN_FAR.join(', ')}</td><td>Theo lịch hẹn, báo cụ thể khi xác nhận đơn</td></tr>
         <tr><td>Các tỉnh miền Bắc khác</td><td>Báo cùng báo giá, tùy tuyến xe</td></tr>
       </tbody>
@@ -46,8 +46,11 @@ const CUTOFF = PROMO.sameDayCutoff;
 
   <h2>3. Phí giao hàng</h2>
   <p>
-    <strong>Miễn phí vận chuyển trong bán kính 80 km tính từ kho chính</strong> {BUSINESS.streetAddress}, {BUSINESS.locality}, {BUSINESS.region}.
-    Ngoài 80 km, phí giao hàng phụ thuộc quãng đường, số lượng và quy cách (phuy 200–209 L, xô, can). Phí được ghi rõ trong báo giá trước khi bạn xác nhận đơn,
+    <strong>Miễn phí vận chuyển trong bán kính 80 km tính từ kho có hàng gần điểm giao nhất</strong>, không yêu cầu giá trị hay số lượng đơn tối thiểu.
+  </p>
+  <p>
+    Khách ở ngoài 80 km hoặc có đơn từ 2 phuy trở lên, vui lòng liên hệ trực tiếp qua hotline / Zalo <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> để được giải quyết.
+    Đơn lớn ở ngoài 80 km được xem xét miễn phí vận chuyển theo từng trường hợp. Phí vận chuyển, nếu có, được ghi rõ trong báo giá trước khi bạn xác nhận đơn,
     không phát sinh thêm khi giao.
   </p>
 

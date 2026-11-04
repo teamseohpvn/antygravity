@@ -96,7 +96,7 @@ const TIN = {
 // Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
-const NGAY_SUA_NOI_DUNG = '2026-11-02';
+const NGAY_SUA_NOI_DUNG = '2026-11-04';
 const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const tacGia = nguoiGia;
 const ARTICLE_ID = absUrl(pagePath) + '#article';
@@ -130,11 +130,13 @@ const quyTrinh = [
   { buoc: 'Thanh toán', viec: 'Chuyển khoản vào tài khoản đứng tên công ty, hoặc trả tiền mặt với đơn lẻ tại TP Hải Phòng. Thanh toán sau áp dụng theo thời hạn và hạn mức ghi trong hợp đồng.', nguoi: nguoiGia },
 ];
 
-const title = `Báo Giá Dầu Thủy Lực 68${thang ? ` Tháng ${thang}` : ''}`;
-const seoTitle = `${title} – Phuy 200 L, Xô 18 L`;
+const title = `Báo Giá Dầu Thủy Lực 68, 46${thang ? ` Tháng ${thang}` : ''}`;
+const seoTitle = `Báo Giá Dầu Thủy Lực 68, 46${thang ? ` T${thang}` : ''} – Miễn Phí Vận Chuyển`;
+// Giữ cụm miễn phí vận chuyển ở đầu mô tả và ở dòng 2 tóm tắt để lọt vào đoạn Google hiển thị.
+const BA_KHO = 'Hải Dương cũ, Kiến An, Như Quỳnh (Hưng Yên)';
 const description = coGia && phuyThap
-  ? `Báo giá dầu thủy lực 68${thang ? ` tháng ${thang}` : ''}: phuy từ ${fmtVnd(phuyThap)} đ (${vat}), ${soMa} mã ${hangs.slice(0, 3).join(', ')}… sẵn kho ${AREA_TEXT}. Ghi rõ hiệu lực, người duyệt.`
-  : `Báo giá dầu thủy lực 68 (ISO VG 68) phuy 200–209 L và xô 18 L, quy đổi theo lít. Hàng có sẵn tại kho ${AREA_TEXT}, có CO/CQ, VAT.`;
+  ? `Miễn phí vận chuyển 80 km từ 3 kho ${BA_KHO}. Phuy dầu thủy lực 68 từ ${fmtVnd(phuyThap)} đ (${vat}). Giao trong ngày KCN gần kho.`
+  : `Miễn phí vận chuyển 80 km từ 3 kho ${BA_KHO}. Báo giá dầu thủy lực 68, 46 phuy 200–209 L, xô 18 L. Giao trong ngày KCN gần kho.`;
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
@@ -253,11 +255,12 @@ const schemaData = [
         <div class="summary">
           <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}</p>
           <ul>
-            {phuyThap && <li>Phuy 200–209 L dầu thủy lực 68: <strong>{fmtVnd(phuyThap)} – {fmtVnd(phuyCao)} đ/phuy</strong> ({vat}), tùy mã.</li>}
+            {phuyThap && <li>Phuy dầu thủy lực 68: <strong>{fmtVnd(phuyThap)} – {fmtVnd(phuyCao)} đ</strong> ({vat}), tùy mã.</li>}
+            <li><strong><a href="/chinh-sach-giao-hang">Miễn phí vận chuyển 80 km</a></strong> từ 3 kho {BA_KHO}.</li>
+            <li>Giao trong ngày các KCN gần kho khi chốt đơn trước {PROMO.sameDayCutoff}, thứ Hai đến thứ Sáu. KCN xa hơn theo lịch hẹn.</li>
             {litThap && <li>Quy đổi theo lít: <strong>{fmtVnd(litThap)} – {fmtVnd(litCao)} đ/lít</strong>, xô 18 L đắt hơn phuy khi tính theo lít.</li>}
-            <li>{soMa} mã ISO VG 68 có sẵn tại kho {AREA_TEXT}: {hangs.join(', ')}.</li>
-            <li>Giá chính xác theo số phuy và nơi giao được gửi trong ngày làm việc.</li>
-            <li>Giao các KCN {KCN_NEAR.slice(0, 3).join(', ')} trong ngày. Có CO/CQ, TDS và hóa đơn VAT cho từng lô.</li>
+            <li>{soMa} mã ISO VG 68 có hàng tại hệ thống 3 kho, tùy mã từng kho: {hangs.join(', ')}. {MA_CO_46.length} mã có thêm cấp 46, nhận đặt, giá riêng theo mã.</li>
+            <li>Giá chính xác theo số phuy và nơi giao được gửi trong ngày làm việc. Có hóa đơn VAT, CO/CQ theo lô với hãng có cấp.</li>
           </ul>
         </div>
       )}
@@ -265,7 +268,7 @@ const schemaData = [
       {!coGia && (
         <ul class="trust">
           <li>Giao các KCN {KCN_NEAR.slice(0, 3).join(', ')} trong ngày</li>
-          <li>Có CO/CQ, TDS và hóa đơn VAT cho từng lô</li>
+          <li>Có hóa đơn VAT, CO/CQ theo lô với hãng có cấp</li>
         </ul>
       )}
       <QuoteCta item="Dầu thủy lực 68" compact />
@@ -273,7 +276,7 @@ const schemaData = [
     </header>
 
     <section class="price-body" id="bang-gia">
-      <h2>Bảng giá dầu thủy lực 68 tại kho</h2>
+      <h2>Bảng giá dầu thủy lực 68, 46 tại kho HT VINA</h2>
 
       {coGia ? (
         <>
@@ -288,7 +291,7 @@ const schemaData = [
 
       <ul class="notes">
         <li>Đây là <strong>báo giá sơ bộ</strong>, ghi khoảng tham khảo cho một đơn vị đóng gói, {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT. Giá chính xác phụ thuộc số lượng, quy cách và điểm giao.</li>
-        <li>Mã ghi "68, 46": khoảng giá trên bảng là của cấp 68. Cấp 46 có giá riêng, có thể thấp hoặc cao hơn, hãy ghi rõ cấp khi hỏi giá.</li>
+        <li>Mã ghi "68, 46": khoảng giá trên bảng là của cấp 68. Cấp 46 nhận đặt, có giá riêng, có thể thấp hoặc cao hơn, hãy ghi rõ cấp khi hỏi giá.</li>
         <li>Cột "Quy đổi" chia khoảng giá cho số lít trong phuy hoặc xô, để so sánh hai quy cách với nhau.</li>
         <li>"Có sẵn" không phải số tồn kho trực tiếp{TON_KHO_CAP_NHAT ? `, cập nhật ngày ${fmtNgay(TON_KHO_CAP_NHAT)}` : ''}. Hãy gọi xác nhận kho và số lượng trước khi chốt đơn.</li>
         <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
@@ -441,7 +444,7 @@ const schemaData = [
         <table class="match">
           <tbody>
             <tr><th scope="row">Kho xuất hàng</th><td>Kho chính {ADDRESS_TEXT}. {KHO_GIAO_HANG.map((k) => `${k.name}: ${k.addressText}.`).join(' ')}</td></tr>
-            <tr><th scope="row">Phí vận chuyển</th><td>Miễn phí trong bán kính 80 km tính từ kho chính. Ngoài 80 km, phí được ghi rõ trong báo giá trước khi bạn xác nhận đơn.</td></tr>
+            <tr><th scope="row">Phí vận chuyển</th><td>Miễn phí trong bán kính 80 km tính từ kho có hàng gần điểm giao nhất, không yêu cầu đơn tối thiểu. Ngoài 80 km hoặc đơn từ 2 phuy trở lên, vui lòng liên hệ trực tiếp để được giải quyết. Đơn lớn ngoài 80 km được xem xét miễn phí theo từng trường hợp.</td></tr>
             <tr><th scope="row">Thời gian</th><td>Giao trong ngày tới các KCN {KCN_NEAR.join(', ')} khi chốt đơn trước {PROMO.sameDayCutoff}, thứ Hai đến thứ Sáu, với hàng có sẵn. KCN xa hơn và các tỉnh khác theo lịch hẹn.</td></tr>
             <tr><th scope="row">Chứng từ</th><td>Phiếu giao hàng, hóa đơn VAT điện tử, CO/CQ theo lô với các hãng có cấp chứng từ này. TDS và SDS gửi kèm khi bạn yêu cầu.</td></tr>
             <tr><th scope="row">Khi nhận hàng</th><td>Kiểm tra tên hàng, cấp độ nhớt, số lượng, nắp và niêm phong. Đổi trả trong 7 ngày theo <a href="/chinh-sach-doi-tra">chính sách đổi trả</a>.</td></tr>
@@ -616,7 +619,7 @@ const schemaData = [
       <h3>Mua bao nhiêu thì được giá tốt?</h3>
       <p>Mua theo phuy tiết kiệm hơn mua xô. Đơn từ vài phuy trở lên hoặc hợp đồng định kỳ được báo giá riêng. Đừng mua vượt nhu cầu chỉ để được giá: cách tính lượng cần mua có ở mục <a href="#dat-bao-nhieu">nên đặt bao nhiêu dầu</a>. Doanh nghiệp cần mức riêng xem mục <a href="#chiet-khau">chiết khấu doanh nghiệp</a>.</p>
       <h3>Đơn nào được miễn phí vận chuyển?</h3>
-      <p>Đơn giao trong bán kính 80 km tính từ kho được miễn phí vận chuyển. Ngoài 80 km, phí được ghi rõ trong báo giá trước khi bạn xác nhận đơn.</p>
+      <p>Đơn giao trong bán kính 80 km tính từ kho có hàng gần điểm giao nhất được miễn phí vận chuyển, không yêu cầu đơn tối thiểu. Ngoài 80 km hoặc đơn từ 2 phuy trở lên, vui lòng liên hệ trực tiếp để được giải quyết. Đơn lớn ngoài 80 km được xem xét miễn phí theo từng trường hợp.</p>
       <h3>Có được thanh toán sau không?</h3>
       <p>Doanh nghiệp mua định kỳ được thỏa thuận thời hạn thanh toán và hạn mức công nợ trong hợp đồng hoặc đơn đặt hàng. Xem <a href="/chinh-sach-thanh-toan">chính sách thanh toán</a>.</p>
       <h3>Có giữ giá cho đơn đặt trước không?</h3>
