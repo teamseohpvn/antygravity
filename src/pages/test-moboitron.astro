@@ -27,6 +27,7 @@ const reviewer = timNhanSu('nguyen-thiet-lap')!;
 const NGAY = '2026-11-04';
 const NGAY_GIA = (giaJson as any).cau_hinh.ngay_ra_soat as string;
 const fmtNgay = (s: string) => s.split('-').reverse().join('/');
+const THANG_GIA = fmtNgay(NGAY_GIA).slice(3); // MM/YYYY, đổi theo ngày rà soát giá.
 
 // NGUỒN KHO DUY NHẤT của trang: stock_status + packaging trong src/content/sanpham/*.md (đọc tay 03/11/2026).
 // Không dùng san-pham-kho.json (chỉ có 3 dòng mỡ, sinh từ file kho tháng 10).
@@ -133,9 +134,13 @@ const schemaData = [
       <header class="dau">
         <h1>{title}</h1>
         <p class="byline">Bản nháp ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> (chờ duyệt)</p>
-        <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vị trí tra nóng liên tục trên 120–130 °C, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
+        <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vị trí tra nóng liên tục trên 120–130 °C, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <QuoteCta item="Mỡ bôi trơn (mỡ bò)" compact />
-        <p class="link-gia">Cần xem khoảng giá trước? Mở <a href={GIA}>bảng giá mỡ bôi trơn</a> theo từng mã và quy cách.</p>
+        <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
+          <a href="#san-pham">Danh sách các loại mỡ bôi trơn đang có</a>
+          <a href="#huong-dan">Hướng dẫn chọn và cách sử dụng mỡ bôi trơn</a>
+          <a href={GIA}>Bảng báo giá mỡ bôi trơn, mỡ bò tháng {THANG_GIA}</a>
+        </nav>
       </header>
 
       <section class="sp" id="san-pham" aria-labelledby="tieu-de-sp">
@@ -172,9 +177,52 @@ const schemaData = [
           ))}
         </div>
         <p class="loc-trong" id="loc-trong" hidden>Chưa có mã khớp với lựa chọn này. Bạn hãy bỏ bớt bộ lọc hoặc gọi <a href="tel:0901511313">0901 511 313</a> để chúng tôi kiểm tra.</p>
+        <button type="button" class="xem-them" id="xem-them-mo" aria-controls="luoi-mo" aria-expanded="false" hidden>Xem thêm</button>
+        <script is:inline>
+          // Đặt ngay sau lưới để thu gọn trước khi trang hiện, không gây giật bố cục. Không có JavaScript thì vẫn thấy đủ các thẻ.
+          (() => {
+            const loc = document.getElementById('loc-mo');
+            const luoi = document.getElementById('luoi-mo');
+            const cacThe = [...luoi.querySelectorAll('.the')];
+            const trong = document.getElementById('loc-trong');
+            const nut = document.getElementById('xem-them-mo');
+            const dienThoai = matchMedia('(max-width: 640px)');
+            let moRong = false;
+            // Máy tính: đúng một hàng. Điện thoại: thẻ xếp một cột nên hiện 3 thẻ.
+            const soGon = () => dienThoai.matches ? 3 : getComputedStyle(luoi).gridTemplateColumns.split(' ').length;
+            const chon = (nhom) => loc.querySelector(`[data-nhom="${nhom}"] button[aria-pressed="true"]`)?.getAttribute('data-gt') ?? '';
+            const khop = (gt, ds) => !gt || ds.includes(gt);
+            const capNhat = () => {
+              const viTri = chon('vi-tri'), hang = chon('hang'), cap = chon('cap');
+              const dangLoc = Boolean(viTri || hang || cap);
+              const gon = soGon();
+              const gioiHan = dangLoc || moRong ? Infinity : gon;
+              let con = 0;
+              cacThe.forEach((the) => {
+                const dung = khop(viTri, (the.dataset.viTri ?? '').split(' ')) && khop(hang, [the.dataset.hang]) && khop(cap, (the.dataset.cap ?? '').split(' '));
+                the.hidden = !dung || con >= gioiHan;
+                if (dung) con++;
+              });
+              trong.hidden = con > 0;
+              // Khi đang lọc thì hiện đủ các mã khớp, không cần nút.
+              nut.hidden = dangLoc || cacThe.length <= gon;
+              nut.textContent = moRong ? 'Thu gọn' : `Xem thêm ${cacThe.length - gon} mã mỡ`;
+              nut.setAttribute('aria-expanded', String(moRong));
+            };
+            loc.addEventListener('click', (e) => {
+              const bam = e.target.closest('button');
+              if (!bam) return;
+              bam.parentElement.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === bam)));
+              capNhat();
+            });
+            nut.addEventListener('click', () => { moRong = !moRong; capNhat(); });
+            addEventListener('resize', capNhat);
+            capNhat();
+          })();
+        </script>
       </section>
 
-      <div class="seo-content markdown-body">
+      <div class="seo-content markdown-body" id="huong-dan">
         <blockquote class="tom-tat">
           <p><strong>Tóm tắt</strong></p>
           <ul>
@@ -227,34 +275,17 @@ const schemaData = [
   </div>
 </Layout>
 
-<script>
-  // Lọc lưới sản phẩm theo vị trí, hãng, cấp NLGI. Không có JavaScript thì vẫn thấy đủ các thẻ.
-  const loc = document.getElementById('loc-mo');
-  const cacThe = document.querySelectorAll<HTMLElement>('#luoi-mo .the');
-  const trong = document.getElementById('loc-trong');
-  const khop = (the: HTMLElement, gt: string, thuocTinh: string) => !gt || (thuocTinh === 'data-hang' ? [the.getAttribute(thuocTinh)] : (the.getAttribute(thuocTinh) ?? '').split(' ')).includes(gt);
-  loc?.addEventListener('click', (e) => {
-    const nut = (e.target as HTMLElement).closest('button');
-    if (!nut) return;
-    nut.parentElement?.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === nut)));
-    const chon = (nhom: string) => loc.querySelector(`[data-nhom="${nhom}"] button[aria-pressed="true"]`)?.getAttribute('data-gt') ?? '';
-    const viTri = chon('vi-tri'), hang = chon('hang'), cap = chon('cap');
-    let con = 0;
-    cacThe.forEach((the) => {
-      const hien = khop(the, viTri, 'data-vi-tri') && khop(the, hang, 'data-hang') && khop(the, cap, 'data-cap');
-      the.hidden = !hien;
-      if (hien) con++;
-    });
-    if (trong) trong.hidden = con > 0;
-  });
-</script>
-
 <style>
   .trang { padding-block: 16px 48px; }
   .dau { background: white; padding: clamp(16px, 4vw, 32px); border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 24px; }
   .mo-dau { line-height: 1.7; font-size: 1.05rem; max-width: 80ch; }
   .dau a:not(.btn-primary):not(.btn-secondary), .sp a:not(.nut-gia), .loc-trong a { color: var(--color-accent); text-decoration: underline; }
-  .link-gia { margin-top: 12px; font-size: .98rem; }
+  .menu-nhanh { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+  .dau .menu-nhanh a { display: flex; align-items: center; min-height: 48px; padding: 10px 14px; background: #f3f5f7; border: 1px solid var(--border-color); border-radius: 8px; color: var(--color-primary); font-weight: 600; line-height: 1.35; text-decoration: none; }
+  .dau .menu-nhanh a:hover, .dau .menu-nhanh a:focus-visible { border-color: var(--color-accent); color: var(--color-accent); }
+  #san-pham, #huong-dan { scroll-margin-top: 90px; }
+  .xem-them { display: block; min-height: 44px; margin: 14px auto 0; padding: 8px 22px; background: white; border: 1px solid var(--color-primary); border-radius: 22px; color: var(--color-primary); font: inherit; font-weight: 600; cursor: pointer; }
+  .xem-them[hidden] { display: none; }
   .sp { margin-bottom: 28px; }
   .sp > h2 { color: var(--color-primary); font-size: 1.5rem; line-height: 1.3; margin-bottom: 14px; }
   .loc { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; display: grid; gap: 10px; }
@@ -304,6 +335,7 @@ const schemaData = [
   .o-cho em { display: block; margin-top: 6px; }
   .nho { font-size: .92rem; color: #555; }
   @media (max-width: 640px) {
+    .menu-nhanh { grid-template-columns: minmax(0, 1fr); }
     .muc-luc ol { columns: 1; }
     /* Bộ lọc gọn thành một hàng cuộn ngang, thẻ sản phẩm nằm ngang để không đẩy bài viết xuống quá xa. */
     .loc-nhom { grid-template-columns: minmax(0, 1fr); gap: 4px; }
