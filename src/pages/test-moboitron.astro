@@ -22,7 +22,7 @@ const CAT = '/mo-boi-tron-cong-nghiep';
 const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) NLGI 00 – 4';
 const description = 'Chọn mỡ bôi trơn, mỡ bò công nghiệp theo vị trí, nhiệt độ và tải: so sánh theo TDS, chi phí mỗi điểm tra, quy trình bơm mỡ an toàn, trạng thái kho từng mã.';
 const reviewer = timNhanSu('nguyen-thiet-lap')!;
-const NGAY = '2026-11-03';
+const NGAY = '2026-11-04';
 const NGAY_GIA = (giaJson as any).cau_hinh.ngay_ra_soat as string;
 const fmtNgay = (s: string) => s.split('-').reverse().join('/');
 
@@ -124,11 +124,11 @@ const schemaData = [
 
         <h2 id="so-sanh">So sánh các mã mỡ theo TDS và trạng thái kho</h2>
         <p>Số trong bảng là giá trị điển hình hoặc cam kết ghi trên TDS, có thể dao động nhẹ giữa các lô. Ô "–" là TDS không ghi chỉ tiêu đó. Cột cuối là trạng thái theo từng cấp và quy cách. Bạn vẫn nên hỏi lại số lượng trước khi đặt.</p>
-        <div class="bang"><table>
+        <div class="bang"><table class="the-dt">
           <thead><tr><th>Mã mỡ</th><th>Chất làm đặc</th><th>Cấp NLGI</th><th>Dầu gốc ở 40 °C</th><th>Nhỏ giọt</th><th>Nhiệt độ làm việc</th><th>Tải hàn dính 4 bi</th><th>Trạng thái kho</th></tr></thead>
           <tbody>{BANG.map((d) => <tr>
-            <td><a href={d.link}>{d.ten}</a></td><td>{d.lam_dac}</td><td>{d.cap}</td><td>{d.dau40}</td><td>{d.nho_giot}</td><td>{d.lam_viec}</td><td>{d.hbi}</td>
-            <td>{d.ghi_chu === 'cho' ? <span class="cho">{d.co_san}</span> : <><strong>Có sẵn:</strong> {d.co_san}</>}{d.nhan_dat && <><br /><strong>Nhận đặt:</strong> {d.nhan_dat}</>}</td>
+            <td class="the-ten"><a href={d.link}>{d.ten}</a></td><td data-nhan="Chất làm đặc">{d.lam_dac}</td><td data-nhan="Cấp NLGI">{d.cap}</td><td data-nhan="Dầu gốc ở 40 °C">{d.dau40}</td><td data-nhan="Nhỏ giọt">{d.nho_giot}</td><td data-nhan="Nhiệt độ làm việc">{d.lam_viec}</td><td data-nhan="Tải hàn dính 4 bi">{d.hbi}</td>
+            <td data-nhan="Trạng thái kho">{d.ghi_chu === 'cho' ? <span class="cho">{d.co_san}</span> : <><strong>Có sẵn:</strong> {d.co_san}</>}{d.nhan_dat && <><br /><strong>Nhận đặt:</strong> {d.nhan_dat}</>}</td>
           </tr>)}</tbody>
         </table></div>
         <ContentBody><DocBang /></ContentBody>
@@ -185,5 +185,15 @@ const schemaData = [
   .o-cho { background: #fff3cd; border: 2px dashed #b58900; border-radius: 8px; padding: 14px 16px; margin: 18px 0; line-height: 1.6; }
   .o-cho em { display: block; margin-top: 6px; }
   .nho { font-size: .92rem; color: #555; }
-  @media (max-width: 640px) { .muc-luc ol { columns: 1; } }
+  @media (max-width: 640px) {
+    .muc-luc ol { columns: 1; }
+    /* Điện thoại: bảng 8 cột thành thẻ, mỗi mã một thẻ, tên cột đứng đầu từng dòng. */
+    .seo-content .the-dt { display: block; overflow: visible; font-size: .95rem; }
+    .the-dt thead { display: none; }
+    .the-dt tbody, .the-dt tr { display: block; }
+    .the-dt tr { border: 1px solid var(--border-color); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; }
+    .seo-content .the-dt td { display: grid; grid-template-columns: 42% 1fr; gap: 8px; border: 0; border-top: 1px solid #eef1f4; padding: 6px 0; min-width: 0; }
+    .seo-content .the-dt td.the-ten { display: block; border-top: 0; padding-top: 0; font-weight: 700; }
+    .the-dt td[data-nhan]::before { content: attr(data-nhan); color: #555; font-size: .88rem; }
+  }
 </style>
