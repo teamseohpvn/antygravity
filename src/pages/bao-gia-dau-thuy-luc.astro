@@ -143,10 +143,11 @@ const duongBrent = diemBrent.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).j
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
 const NGAY_SUA_NOI_DUNG = '2026-11-04';
-const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat, TIN_MOI.capNhatLuc.slice(0, 10)].filter(Boolean).sort().at(-1)!;
-// Schema và thẻ meta dùng giờ thật của đợt tin nếu đợt tin là thay đổi mới nhất. Không gán giờ giả cho thay đổi khác.
-const lucSua = TIN_MOI.capNhatLuc.startsWith(ngaySua) ? TIN_MOI.capNhatLuc : ngaySua;
+const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const tacGia = nguoiGia;
+// Ngày cập nhật cuối gồm cả đợt tin. Schema và thẻ meta dùng giờ thật của đợt tin nếu đó là thay đổi mới nhất, không gán giờ giả cho thay đổi khác.
+const ngayCapNhat = [ngaySua, TIN_MOI.capNhatLuc.slice(0, 10)].sort().at(-1)!;
+const lucSua = TIN_MOI.capNhatLuc.startsWith(ngayCapNhat) ? TIN_MOI.capNhatLuc : ngayCapNhat;
 const ARTICLE_ID = absUrl(pagePath) + '#article';
 
 // Hiệu lực tính theo giờ Việt Nam lúc khách xem trang.
@@ -284,7 +285,7 @@ const schemaData = [
       <script is:inline>document.currentScript.parentElement.classList.add('co-thu-gon', 'is-thu-gon');</script>
       <p class="doc-tomtat">
         <span class="doc-tomtat__dong">Người viết: <a href={personUrl(nguoiGia)}>{bylineLabel(nguoiGia)}</a> ({nguoiGia.role.toLowerCase()})</span>
-        <span>Duyệt bởi: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a> (GĐ HT VINA) · Cập nhật: {fmtNgay(ngaySua)}{HIEU_LUC && (hetHieuLuc ? <> · Kỳ giá đã kết thúc</> : <> · Hiệu lực: Tháng {fmtNgay(HIEU_LUC.tu, 'thang')}</>)}</span>
+        <span>Duyệt bởi: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a> (GĐ HT VINA) · Cập nhật: {fmtNgay(ngayCapNhat)}{HIEU_LUC && (hetHieuLuc ? <> · Kỳ giá đã kết thúc</> : <> · Hiệu lực: Tháng {fmtNgay(HIEU_LUC.tu, 'thang')}</>)}</span>
       </p>
       <dl class="doc-info" id="doc-info">
         <div><dt>Người viết</dt><dd><a href={personUrl(nguoiGia)} rel="author">{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
@@ -300,7 +301,7 @@ const schemaData = [
           </div>
         )}
         {coGia && ngay && <div><dt>Giá rà soát</dt><dd><time datetime={cauHinh.ngay_ra_soat}>{ngay}</time></dd></div>}
-        <div><dt>Đăng / Cập nhật</dt><dd><time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> / <time datetime={ngaySua}>{fmtNgay(ngaySua)}</time></dd></div>
+        <div><dt>Đăng / Cập nhật</dt><dd><time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> / <time datetime={ngayCapNhat}>{fmtNgay(ngayCapNhat)}</time></dd></div>
         <div><dt>Đơn vị phát hành</dt><dd>{LEGAL_SHORT}, kho tại {AREA_TEXT}</dd></div>
       </dl>
       <button type="button" class="info-them" id="info-them" aria-controls="doc-info" aria-expanded="false" data-track="read_more_doc_info">… Xem thêm</button>
