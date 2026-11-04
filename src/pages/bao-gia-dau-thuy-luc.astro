@@ -96,13 +96,56 @@ const TIN = {
   reuters0311: 'https://www.reuters.com/markets/commodities/oil-rises-after-report-us-strike-irans-qeshm-island-2026-11-03/',
   cnbc0211: 'https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html',
   cnbc0311: 'https://www.cnbc.com/2026/11/03/oil-prices-climb-after-us-reportedly-strikes-irans-qeshm-island.html',
+  tradingEconomics: 'https://tradingeconomics.com/commodity/brent-crude-oil',
+  financeFeeds: 'https://financefeeds.com/brent-crude-oil-price-106-tuesday-after-7-6-percent-plunge-qeshm-strike-report-midterms-bull-113-bear-100/',
 };
+
+// Mỗi đợt tin có ngày riêng, mới nhất đứng đầu. capNhatLuc là lúc sửa thật, hiện trên trang và đưa vào schema, sitemap.
+// Khi thêm tin: thêm một dòng ở đây, thêm khối tin trong mục #nhan-dinh, thêm phiên vào BRENT_PHIEN nếu có giá mới.
+const CAP_NHAT_TIN = [
+  {
+    id: 'tin-2026-11-04',
+    capNhatLuc: '2026-11-04T09:23:00+07:00',
+    tieuDe: 'Cập nhật ngày 04/11/2026: Brent quanh 103 USD, giảm khoảng 9% so với phiên 30/10',
+    moTa: 'Brent giảm 7,63% phiên 2/11, chốt 103,60 USD/thùng phiên 3/11 và giao dịch quanh 103,12 USD/thùng ngày 4/11, trong khi đàm phán Mỹ và Iran chưa có kết quả.',
+    nguon: [TIN.reuters0211, TIN.reuters0311, TIN.cnbc0211, TIN.cnbc0311, TIN.tradingEconomics, TIN.financeFeeds],
+  },
+  {
+    id: 'tin-2026-11-01',
+    capNhatLuc: '2026-11-01',
+    tieuDe: 'Tin tức đáng chú ý (đến ngày 01/11/2026)',
+    moTa: 'Brent ở mức cao nhất 6 tháng sau tháng tăng thứ tư liên tiếp, giới giao dịch lo chiến sự leo thang sau bầu cử giữa kỳ Mỹ.',
+    nguon: [TIN.reuters, TIN.vietnamPlus],
+  },
+];
+const TIN_MOI = CAP_NHAT_TIN[0];
+
+// Biểu đồ tự vẽ, chỉ dùng mức giá có nguồn. loai 'chot' là giá chốt phiên, 'tham-khao' là giá CFD trong ngày.
+const BRENT_PHIEN = [
+  { ngay: '2026-10-30', gia: 113.43, loai: 'chot', nguon: 'Reuters', url: TIN.reuters },
+  { ngay: '2026-11-02', gia: 104.77, loai: 'chot', nguon: 'Reuters', url: TIN.reuters0211 },
+  { ngay: '2026-11-03', gia: 103.6, loai: 'chot', nguon: 'Reuters', url: TIN.reuters0311 },
+  { ngay: '2026-11-04', gia: 103.12, loai: 'tham-khao', nguon: 'Trading Economics', url: TIN.tradingEconomics },
+];
+const fmtUsd = (n: number) => n.toFixed(2).replace('.', ',');
+const ngayNgan = (iso: string) => fmtNgay(iso).slice(0, 5);
+const BD = { rong: 360, cao: 170, trai: 34, phai: 44, tren: 26, duoi: 30 };
+const giaMin = Math.min(...BRENT_PHIEN.map((p) => p.gia));
+const giaMax = Math.max(...BRENT_PHIEN.map((p) => p.gia));
+const diemBrent = BRENT_PHIEN.map((p, i) => ({
+  ...p,
+  x: BD.trai + (i * (BD.rong - BD.trai - BD.phai)) / Math.max(BRENT_PHIEN.length - 1, 1),
+  y: BD.tren + ((giaMax - p.gia) * (BD.cao - BD.tren - BD.duoi)) / Math.max(giaMax - giaMin, 1),
+}));
+const duongBrent = diemBrent.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
 
 // Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
 const NGAY_SUA_NOI_DUNG = '2026-11-04';
-const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
+const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat, TIN_MOI.capNhatLuc.slice(0, 10)].filter(Boolean).sort().at(-1)!;
+// Schema và thẻ meta dùng giờ thật của đợt tin nếu đợt tin là thay đổi mới nhất. Không gán giờ giả cho thay đổi khác.
+const lucSua = TIN_MOI.capNhatLuc.startsWith(ngaySua) ? TIN_MOI.capNhatLuc : ngaySua;
 const tacGia = nguoiGia;
 const ARTICLE_ID = absUrl(pagePath) + '#article';
 
@@ -156,7 +199,7 @@ const schemaData = [
     url: absUrl(pagePath),
     inLanguage: 'vi-VN',
     datePublished: NGAY_DANG,
-    dateModified: ngaySua,
+    dateModified: lucSua,
     ...(cauHinh.ngay_ra_soat ? { lastReviewed: cauHinh.ngay_ra_soat } : {}),
     author: personRef(tacGia),
     reviewedBy: personRef(nguoiDuyet),
@@ -190,9 +233,27 @@ const schemaData = [
       ...Object.values(TIN),
     ],
     datePublished: NGAY_DANG,
-    dateModified: ngaySua,
+    dateModified: lucSua,
     publisher: { '@id': ORG_ID },
+    hasPart: CAP_NHAT_TIN.map((t) => ({ '@id': `${absUrl(pagePath)}#${t.id}` })),
   },
+  ...CAP_NHAT_TIN.map((t) => ({
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    '@id': `${absUrl(pagePath)}#${t.id}`,
+    headline: t.tieuDe,
+    description: t.moTa,
+    url: `${absUrl(pagePath)}#${t.id}`,
+    mainEntityOfPage: absUrl(pagePath),
+    image: absUrl(IMAGE),
+    inLanguage: 'vi-VN',
+    datePublished: t.capNhatLuc,
+    dateModified: t.capNhatLuc,
+    author: personRef(tacGia),
+    publisher: { '@id': ORG_ID },
+    isPartOf: { '@id': ARTICLE_ID },
+    citation: t.nguon,
+  })),
   personSchema(tacGia),
   personSchema(nguoiDuyet),
   breadcrumbSchema(crumbs),
@@ -211,7 +272,7 @@ const schemaData = [
 ];
 ---
 
-<Layout {title} {seoTitle} {description} type="article" image={IMAGE} published={NGAY_DANG} modified={ngaySua} author={tacGia.name} {schemaData}>
+<Layout {title} {seoTitle} {description} type="article" image={IMAGE} published={NGAY_DANG} modified={lucSua} author={tacGia.name} {schemaData}>
   <div class="container price-page">
     <Breadcrumbs items={crumbs} />
 
@@ -331,20 +392,50 @@ const schemaData = [
       <script is:inline>
         (function (s) { s.classList.add('co-thu-gon'); if (location.hash !== '#nhan-dinh') s.classList.add('is-thu-gon'); })(document.currentScript.parentElement);
       </script>
-      <h2>Tin giá dầu tháng 11/2026: đã tăng 4 tháng liên tiếp</h2>
-      <h3>Cập nhật ngày 04/11/2026: giá dầu giảm hai phiên liên tiếp</h3>
+      <h2>Tin giá dầu tháng 11/2026: giảm mạnh đầu tháng sau 4 tháng tăng liên tiếp</h2>
+      <h3 id={TIN_MOI.id}>{TIN_MOI.tieuDe}</h3>
+      <p class="tin-gio">Cập nhật lúc <time datetime={TIN_MOI.capNhatLuc}>{TIN_MOI.capNhatLuc.slice(11, 16)}, {fmtNgay(TIN_MOI.capNhatLuc)}</time> (giờ Việt Nam)</p>
       <ul>
-        <li><strong>Brent về mức thấp nhất gần 4 tuần.</strong> Phiên 2/11, Brent giảm 7,63% xuống 104,77 USD/thùng (<a href={TIN.reuters0211} rel="noopener">Reuters</a>). Phiên 3/11 giảm tiếp 1%, còn 103,60 USD/thùng, mức chốt thấp nhất từ ngày 7/10 (<a href={TIN.reuters0311} rel="noopener">Reuters</a>). So với 113,43 USD/thùng phiên 30/10, Brent đã giảm khoảng 8,7%.</li>
+        <li><strong>Brent về mức thấp nhất gần 4 tuần.</strong> Phiên 2/11, Brent giảm 7,63% xuống 104,77 USD/thùng (<a href={TIN.reuters0211} rel="noopener">Reuters</a>). Phiên 3/11 giảm tiếp 1%, còn 103,60 USD/thùng, mức chốt thấp nhất từ ngày 7/10 (<a href={TIN.reuters0311} rel="noopener">Reuters</a>). Ngày 4/11, Brent giao dịch quanh 103,12 USD/thùng, thấp hơn khoảng 9,1% so với 113,43 USD/thùng phiên 30/10 (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>). Đây là giá CFD tham khảo, không phải giá chốt chính thức.</li>
         <li class="thu-gon-an"><strong>Lý do giảm.</strong> Tổng thống Mỹ nói Iran muốn đạt thỏa thuận, còn Tổng thống Iran nói muốn giải quyết vấn đề qua đối thoại (<a href={TIN.cnbc0211} rel="noopener">CNBC</a>). Qatar cho biết hai bên vẫn cam kết với nỗ lực trung gian và đang xem xét các đề xuất (<a href={TIN.reuters0311} rel="noopener">Reuters</a>).</li>
+        <li class="thu-gon-an"><strong>Giá dao động mạnh ngay trong một phiên.</strong> Ngày 3/11, Brent có lúc lên gần 106 USD/thùng sau tin Mỹ tấn công đảo Qeshm của Iran (<a href={TIN.financeFeeds} rel="noopener">FinanceFeeds</a>), có lúc xuống dưới 102 USD/thùng (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>), rồi chốt 103,60 USD/thùng. Bộ trưởng Năng lượng Mỹ nói các đòn tấn công này không ảnh hưởng đến dòng dầu (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>).</li>
         <li class="thu-gon-an"><strong>Rủi ro chưa hết.</strong> Một quan chức cấp cao của Iran nói hai bên còn xa mới đạt thỏa thuận, và ING cho rằng có lẽ còn quá sớm để nghĩ rủi ro leo thang đã qua (<a href={TIN.reuters0311} rel="noopener">Reuters</a>). Từ đầu tháng đã có ít nhất 4 vụ tấn công tàu thương mại (<a href={TIN.cnbc0311} rel="noopener">CNBC</a>). Trong cuộc chiến này, đã có những lần giá giảm theo tin đồn thỏa thuận rồi tăng lại khi xung đột leo thang (<a href={TIN.cnbc0211} rel="noopener">CNBC</a>).</li>
-        <li class="thu-gon-an"><strong>Với người mua dầu thủy lực.</strong> Giá dầu thô giảm không có nghĩa dầu thủy lực giảm ngay hoặc giảm cùng tỷ lệ. Bảng giá tháng 11 trên trang này chưa thay đổi theo hai phiên giảm này.</li>
+        <li class="thu-gon-an"><strong>Các mốc đang được theo dõi.</strong> Bài viết sáng 3/11 của FinanceFeeds nêu mốc 100 USD/thùng nếu đàm phán mở lại được eo Hormuz, và 113 USD/thùng nếu đàm phán đổ vỡ hoặc Iran đáp trả (<a href={TIN.financeFeeds} rel="noopener">FinanceFeeds</a>). Mô hình của Trading Economics ước tính khoảng 116,80 USD/thùng vào cuối quý 4 (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>). Đây là kịch bản và kết quả mô hình, không phải dự báo chắc chắn.</li>
+        <li class="thu-gon-an"><strong>Với người mua dầu thủy lực.</strong> Giá dầu thô giảm không có nghĩa dầu thủy lực giảm ngay hoặc giảm cùng tỷ lệ. Bảng giá tháng 11 trên trang này chưa thay đổi theo các phiên giảm này.</li>
       </ul>
+      <figure class="brent-chart">
+        <figcaption class="brent-chart__tieu-de">Giá dầu Brent các phiên gần đây (USD/thùng)</figcaption>
+        <svg viewBox={`0 0 ${BD.rong} ${BD.cao}`} role="img" aria-label={`Giá Brent giảm từ ${fmtUsd(diemBrent[0].gia)} USD/thùng ngày ${ngayNgan(diemBrent[0].ngay)} xuống ${fmtUsd(diemBrent.at(-1)!.gia)} USD/thùng ngày ${ngayNgan(diemBrent.at(-1)!.ngay)}.`}>
+          <line x1={BD.trai} x2={BD.rong - BD.phai} y1={BD.cao - BD.duoi + 8} y2={BD.cao - BD.duoi + 8} class="brent-chart__truc" />
+          <polyline points={duongBrent} class="brent-chart__duong" />
+          {diemBrent.map((p, i) => (
+            <g>
+              <title>{`${fmtNgay(p.ngay)}: ${fmtUsd(p.gia)} USD/thùng (${p.loai === 'chot' ? 'giá chốt' : 'giá CFD tham khảo'})`}</title>
+              <circle cx={p.x} cy={p.y} r="14" fill="transparent" />
+              <circle cx={p.x} cy={p.y} r="5" class={p.loai === 'chot' ? 'brent-chart__diem' : 'brent-chart__diem brent-chart__diem--mo'} />
+              {(i === 0 || i === diemBrent.length - 1) && <text x={p.x} y={p.y - 11} text-anchor="middle" class="brent-chart__gia">{fmtUsd(p.gia)}</text>}
+              <text x={p.x} y={BD.cao - 6} text-anchor="middle" class="brent-chart__ngay">{ngayNgan(p.ngay)}</text>
+            </g>
+          ))}
+        </svg>
+        <figcaption class="brent-chart__ghi-chu">Chấm đặc là giá chốt phiên, chấm rỗng là giá CFD tham khảo trong ngày. HT VINA vẽ từ các mức giá có nguồn, trục giá không bắt đầu từ 0. <a href={TIN.tradingEconomics} rel="noopener" data-track="click_brent_chart">Xem biểu đồ đầy đủ trên Trading Economics</a>.</figcaption>
+      </figure>
+      <div class="table-wrap thu-gon-an">
+        <table class="match">
+          <thead><tr><th scope="col">Ngày</th><th scope="col">Brent (USD/thùng)</th><th scope="col">Loại giá</th><th scope="col">Nguồn</th></tr></thead>
+          <tbody>
+            {BRENT_PHIEN.map((p) => (
+              <tr><td>{fmtNgay(p.ngay)}</td><td>{fmtUsd(p.gia)}</td><td>{p.loai === 'chot' ? 'Giá chốt phiên' : 'Giá CFD tham khảo'}</td><td><a href={p.url} rel="noopener">{p.nguon}</a></td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       <blockquote class="market-note">
         <p>Giá dầu tháng 11 diễn biến phức tạp và có khả năng tăng cao nếu chiến sự giữa Mỹ và Iran tái bùng phát.</p>
         <footer>Nhận định chủ quan của {displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}, ngày {fmtNgay(NGAY_NHAN_DINH)}. Đây không phải dự báo chắc chắn.</footer>
       </blockquote>
 
-      <h3 class="thu-gon-an">Tin tức đáng chú ý (đến ngày 01/11/2026)</h3>
+      <h3 class="thu-gon-an" id="tin-2026-11-01">Tin tức đáng chú ý (đến ngày 01/11/2026)</h3>
       <ul class="thu-gon-an">
         <li><strong>Giá dầu thô ở mức cao nhất 6 tháng.</strong> Phiên 30/10, Brent giao tháng 12 (đáo hạn cùng ngày) chốt 117,64 USD/thùng, hợp đồng tháng 1 chốt 113,43 USD/thùng. Cả tháng 10, Brent tăng 13,6% (<a href={TIN.reuters} rel="noopener">Reuters</a>), là tháng tăng thứ tư liên tiếp (<a href={TIN.vietnamPlus} rel="noopener">Vietnam+</a>).</li>
         <li><strong>Nguy cơ leo thang sau bầu cử Mỹ.</strong> Giới giao dịch lo chiến sự leo thang sau bầu cử giữa kỳ ngày 3/11. Cùng ngày 30/10, một tàu chở dầu ở eo biển Hormuz trúng thiết bị nổ (<a href={TIN.reuters} rel="noopener">Reuters</a>). Số vụ tấn công tàu thương mại trong tháng 10 ở Hormuz và vùng biển lân cận cao nhất từ năm 2017 (<a href={TIN.vietnamPlus} rel="noopener">Vietnam+</a>).</li>
@@ -751,6 +842,17 @@ const schemaData = [
   .doc-them { display: none; }
   .co-thu-gon > .doc-them { display: block; margin-top: 14px; min-height: 44px; padding: 8px 18px; background: #fff; color: var(--color-primary); border: 1px solid var(--color-primary); border-radius: 6px; font: inherit; font-weight: 700; cursor: pointer; }
   .doc-them:hover { background: #f1f5f9; }
+  .tin-gio { margin: -4px 0 10px; font-size: 0.9rem; color: var(--color-text-light); }
+  .brent-chart { margin: 14px 0; padding: 12px 14px; border: 1px solid #e2e8f0; border-radius: 6px; background: #fff; }
+  .brent-chart svg { display: block; width: 100%; max-width: 560px; height: auto; margin: 6px auto; }
+  .brent-chart__tieu-de { font-weight: 700; }
+  .brent-chart__ghi-chu { font-size: 0.85rem; color: var(--color-text-light); }
+  .brent-chart__truc { stroke: #cbd5e1; stroke-width: 1; }
+  .brent-chart__duong { fill: none; stroke: var(--color-primary); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .brent-chart__diem { fill: var(--color-primary); stroke: #fff; stroke-width: 2; }
+  .brent-chart__diem--mo { fill: #fff; stroke: var(--color-primary); }
+  .brent-chart__gia { font-size: 12px; font-weight: 700; fill: var(--color-text, #1e293b); }
+  .brent-chart__ngay { font-size: 11px; fill: var(--color-text-light); }
   .market-note { background: #f1f5f9; border-left: 4px solid var(--color-primary); padding: 12px 16px; border-radius: 4px; margin: 0; }
   .market-note footer { margin-top: 6px; font-size: 0.9rem; color: var(--color-text-light); }
   .notes { font-size: 0.93rem; color: var(--color-text-light); margin-top: 8px; }
