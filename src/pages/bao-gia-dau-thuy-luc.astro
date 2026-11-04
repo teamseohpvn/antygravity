@@ -129,7 +129,7 @@ const BRENT_PHIEN = [
 ];
 const fmtUsd = (n: number) => n.toFixed(2).replace('.', ',');
 const ngayNgan = (iso: string) => fmtNgay(iso).slice(0, 5);
-const BD = { rong: 360, cao: 170, trai: 34, phai: 44, tren: 26, duoi: 30 };
+const BD = { rong: 300, cao: 150, trai: 26, phai: 30, tren: 24, duoi: 28 };
 const giaMin = Math.min(...BRENT_PHIEN.map((p) => p.gia));
 const giaMax = Math.max(...BRENT_PHIEN.map((p) => p.gia));
 const diemBrent = BRENT_PHIEN.map((p, i) => ({
@@ -845,7 +845,7 @@ const schemaData = [
   .doc-them:hover { background: #f1f5f9; }
   .tin-gio { margin: -4px 0 10px; font-size: 0.9rem; color: var(--color-text-light); }
   .brent-chart { margin: 14px 0; padding: 12px 14px; border: 1px solid #e2e8f0; border-radius: 6px; background: #fff; }
-  .brent-chart svg { display: block; width: 100%; max-width: 560px; height: auto; margin: 6px auto; }
+  .brent-chart svg { display: block; width: 100%; max-width: 440px; height: auto; margin: 6px auto; }
   .brent-chart__tieu-de { font-weight: 700; }
   .brent-chart__ghi-chu { font-size: 0.85rem; color: var(--color-text-light); }
   .brent-chart__truc { stroke: #cbd5e1; stroke-width: 1; }
