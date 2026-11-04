@@ -91,12 +91,17 @@ const TIN = {
   vietnamPlus: 'https://www.vietnamplus.vn/gia-dau-the-gioi-len-muc-cao-nhat-6-thang-do-lo-ngai-tinh-hinh-my-iran-post1145330.vnp',
   lubes: 'https://www.lubesngreases.com/bor-asia/weekly-asia-base-oil-price-report-125/',
   tyGia: 'https://vov.vn/thi-truong/ty-gia-usd-hom-nay-3110-ty-gia-trung-tam-o-muc-25637-dongusd-post1346036.vov',
+  // Tin cập nhật 04/11/2026: giữ tin cũ, thêm khối mới theo ngày.
+  reuters0211: 'https://www.reuters.com/business/energy/oil-slips-more-than-1-talks-continue-ending-iran-war-2026-11-01/',
+  reuters0311: 'https://www.reuters.com/markets/commodities/oil-rises-after-report-us-strike-irans-qeshm-island-2026-11-03/',
+  cnbc0211: 'https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html',
+  cnbc0311: 'https://www.cnbc.com/2026/11/03/oil-prices-climb-after-us-reportedly-strikes-irans-qeshm-island.html',
 };
 
 // Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
-const NGAY_SUA_NOI_DUNG = '2026-11-02';
+const NGAY_SUA_NOI_DUNG = '2026-11-04';
 const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const tacGia = nguoiGia;
 const ARTICLE_ID = absUrl(pagePath) + '#article';
@@ -327,12 +332,19 @@ const schemaData = [
         (function (s) { s.classList.add('co-thu-gon'); if (location.hash !== '#nhan-dinh') s.classList.add('is-thu-gon'); })(document.currentScript.parentElement);
       </script>
       <h2>Tin giá dầu tháng 11/2026: đã tăng 4 tháng liên tiếp</h2>
+      <h3>Cập nhật ngày 04/11/2026: giá dầu giảm hai phiên liên tiếp</h3>
+      <ul>
+        <li><strong>Brent về mức thấp nhất gần 4 tuần.</strong> Phiên 2/11, Brent giảm 7,63% xuống 104,77 USD/thùng (<a href={TIN.reuters0211} rel="noopener">Reuters</a>). Phiên 3/11 giảm tiếp 1%, còn 103,60 USD/thùng, mức chốt thấp nhất từ ngày 7/10 (<a href={TIN.reuters0311} rel="noopener">Reuters</a>). So với 113,43 USD/thùng phiên 30/10, Brent đã giảm khoảng 8,7%.</li>
+        <li class="thu-gon-an"><strong>Lý do giảm.</strong> Tổng thống Mỹ nói Iran muốn đạt thỏa thuận, còn Tổng thống Iran nói muốn giải quyết vấn đề qua đối thoại (<a href={TIN.cnbc0211} rel="noopener">CNBC</a>). Qatar cho biết hai bên vẫn cam kết với nỗ lực trung gian và đang xem xét các đề xuất (<a href={TIN.reuters0311} rel="noopener">Reuters</a>).</li>
+        <li class="thu-gon-an"><strong>Rủi ro chưa hết.</strong> Một quan chức cấp cao của Iran nói hai bên còn xa mới đạt thỏa thuận, và ING cho rằng có lẽ còn quá sớm để nghĩ rủi ro leo thang đã qua (<a href={TIN.reuters0311} rel="noopener">Reuters</a>). Từ đầu tháng đã có ít nhất 4 vụ tấn công tàu thương mại (<a href={TIN.cnbc0311} rel="noopener">CNBC</a>). Trong cuộc chiến này, đã có những lần giá giảm theo tin đồn thỏa thuận rồi tăng lại khi xung đột leo thang (<a href={TIN.cnbc0211} rel="noopener">CNBC</a>).</li>
+        <li class="thu-gon-an"><strong>Với người mua dầu thủy lực.</strong> Giá dầu thô giảm không có nghĩa dầu thủy lực giảm ngay hoặc giảm cùng tỷ lệ. Bảng giá tháng 11 trên trang này chưa thay đổi theo hai phiên giảm này.</li>
+      </ul>
       <blockquote class="market-note">
         <p>Giá dầu tháng 11 diễn biến phức tạp và có khả năng tăng cao nếu chiến sự giữa Mỹ và Iran tái bùng phát.</p>
         <footer>Nhận định chủ quan của {displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}, ngày {fmtNgay(NGAY_NHAN_DINH)}. Đây không phải dự báo chắc chắn.</footer>
       </blockquote>
 
-      <h3 class="thu-gon-an">Tin tức đáng chú ý</h3>
+      <h3 class="thu-gon-an">Tin tức đáng chú ý (đến ngày 01/11/2026)</h3>
       <ul class="thu-gon-an">
         <li><strong>Giá dầu thô ở mức cao nhất 6 tháng.</strong> Phiên 30/10, Brent giao tháng 12 (đáo hạn cùng ngày) chốt 117,64 USD/thùng, hợp đồng tháng 1 chốt 113,43 USD/thùng. Cả tháng 10, Brent tăng 13,6% (<a href={TIN.reuters} rel="noopener">Reuters</a>), là tháng tăng thứ tư liên tiếp (<a href={TIN.vietnamPlus} rel="noopener">Vietnam+</a>).</li>
         <li><strong>Nguy cơ leo thang sau bầu cử Mỹ.</strong> Giới giao dịch lo chiến sự leo thang sau bầu cử giữa kỳ ngày 3/11. Cùng ngày 30/10, một tàu chở dầu ở eo biển Hormuz trúng thiết bị nổ (<a href={TIN.reuters} rel="noopener">Reuters</a>). Số vụ tấn công tàu thương mại trong tháng 10 ở Hormuz và vùng biển lân cận cao nhất từ năm 2017 (<a href={TIN.vietnamPlus} rel="noopener">Vietnam+</a>).</li>
