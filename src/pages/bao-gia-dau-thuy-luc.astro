@@ -132,10 +132,12 @@ const quyTrinh = [
 
 const title = `Báo Giá Dầu Thủy Lực 68, 46${thang ? ` Tháng ${thang}` : ''}`;
 const seoTitle = `Báo Giá Dầu Thủy Lực 68, 46${thang ? ` T${thang}` : ''} – Miễn Phí Vận Chuyển`;
-// Giữ cụm miễn phí vận chuyển ở đầu mô tả và ở dòng 2 tóm tắt để lọt vào đoạn Google hiển thị.
+// Giữ cụm miễn phí vận chuyển trong mô tả và ở dòng 2 tóm tắt để lọt vào đoạn Google hiển thị.
 const BA_KHO = 'Hải Dương cũ, Kiến An, Như Quỳnh (Hưng Yên)';
+// Làm tròn 1 chữ số thập phân: 5.410.000 -> 5,4; 10.590.000 -> 10,6.
+const trieu = (n: number) => (n / 1_000_000).toFixed(1).replace('.', ',');
 const description = coGia && phuyThap
-  ? `Miễn phí vận chuyển 80 km từ 3 kho ${BA_KHO}. Phuy dầu thủy lực 68 từ ${fmtVnd(phuyThap)} đ (${vat}). Giao trong ngày KCN gần kho.`
+  ? `Bảng báo giá dầu thủy lực 68${thang ? ` tháng ${thang}` : ''}: ${trieu(phuyThap)}–${trieu(phuyCao)} triệu/phuy tùy mã (${vat}). Miễn phí vận chuyển 80 km, giao trong ngày Hải Phòng, Hưng Yên.`
   : `Miễn phí vận chuyển 80 km từ 3 kho ${BA_KHO}. Báo giá dầu thủy lực 68, 46 phuy 200–209 L, xô 18 L. Giao trong ngày KCN gần kho.`;
 
 const crumbs = [
