@@ -41,6 +41,10 @@ export interface NhanSu {
   position?: string;
   /** Bài báo trích lời người này (đã mở bài kiểm tra), schema subjectOf */
   press?: { title: string; publisher: string; date: string; url: string }[];
+  /** Mô tả meta của trang hồ sơ (nhân viên HT VINA) */
+  metaDescription?: string;
+  /** Trang người này đứng tên viết hoặc duyệt, không tự suy ra được từ sản phẩm và bài viết */
+  trangPhuTrach?: { ten: string; url: string; vai: string }[];
   /** Nguồn xác nhận thông tin hồ sơ (ghi chú nội bộ, không hiển thị) */
   verifiedFrom?: string;
 }
@@ -94,6 +98,17 @@ export const NHAN_SU: NhanSu[] = [
     photo: '/images/nhan-su/vu-minh-toan.webp',
     sameAs: ['https://www.linkedin.com/in/v%C5%A9-minh-to%C3%A0n-htvina'],
     desc: 'Điều hành Công ty Cổ phần Thương mại Dịch vụ HT VINA. Chuyên môn sửa chữa, bảo dưỡng hệ thống thủy lực, động cơ đốt trong, bảo trì thiết bị cơ khí, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
+    metaDescription: 'Vũ Minh Toàn, Giám đốc HT VINA, kỹ sư Công nghệ ô tô. Chuyên môn về hệ thống thủy lực và hệ thống bôi trơn công nghiệp.',
+    bio: [
+      'Vũ Minh Toàn là Giám đốc Công ty Cổ phần Thương mại Dịch vụ HT VINA, kỹ sư Công nghệ ô tô tốt nghiệp Trường Đại học Công nghiệp Hà Nội năm 2009.',
+      'Chuyên môn của Vũ Minh Toàn gồm sửa chữa, bảo dưỡng hệ thống thủy lực và động cơ đốt trong, bảo trì thiết bị cơ khí, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
+      'Trên website, Vũ Minh Toàn duyệt nội dung các trang liệt kê ở cuối hồ sơ này.',
+    ],
+    method: [],
+    trangPhuTrach: [
+      { ten: 'Mỡ bôi trơn công nghiệp', url: '/mo-boi-tron-cong-nghiep', vai: 'Duyệt nội dung' },
+      { ten: 'Bảng giá dầu thủy lực', url: '/bao-gia-dau-thuy-luc', vai: 'Duyệt nội dung' },
+    ],
     knowsAbout: [
       'Sửa chữa, bảo dưỡng hệ thống thủy lực',
       'Thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp',
@@ -126,6 +141,16 @@ export const NHAN_SU: NhanSu[] = [
     // telephone: '<số điện thoại>',
     role: 'Quản lý bán hàng',
     desc: 'Phụ trách quản lý bán hàng, hóa đơn và các thủ tục liên quan.',
+    metaDescription: 'Nguyễn Thị Hồng, Quản lý bán hàng HT VINA. Phụ trách quản lý bán hàng, hóa đơn và các thủ tục liên quan.',
+    bio: [
+      'Nguyễn Thị Hồng là Quản lý bán hàng của Công ty Cổ phần Thương mại Dịch vụ HT VINA, phụ trách quản lý bán hàng, hóa đơn và các thủ tục liên quan.',
+      'Trên website, Nguyễn Thị Hồng đứng tên người viết các trang liệt kê ở cuối hồ sơ này.',
+    ],
+    method: [],
+    trangPhuTrach: [
+      { ten: 'Mỡ bôi trơn công nghiệp', url: '/mo-boi-tron-cong-nghiep', vai: 'Người viết' },
+      { ten: 'Bảng giá dầu thủy lực', url: '/bao-gia-dau-thuy-luc', vai: 'Người viết' },
+    ],
     knowsAbout: ['Giá bán dầu nhớt công nghiệp', 'Báo giá và hợp đồng mua bán', 'Hóa đơn, chứng từ bán hàng'],
   },
   {
