@@ -64,6 +64,7 @@ Số trong bảng là **giá trị điển hình hoặc giá trị cam kết** g
 | [Sinopec Crystal Grease T3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-t3) | Lithium | T3 (xuyên kim 200–230) | – | ≥ 180 °C | -20 đến 120 °C | – | Xô 17 kg, phuy 180 kg |
 | [Sinopec Golden Grease](/mo-boi-tron-cong-nghiep/sinopec-golden-grease) | Xà phòng kim loại | 2 / 3 | – | 152–155 °C | -20 đến 110 °C | – | Xô 17 kg, phuy 180 kg |
 | [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) | Lithium | 00 / 0 / 3 / 4 | 220 cSt | ≥ 190 °C | -10 đến 120 °C | 200 kg | L4 xô 17 kg (cấp khác nhận đặt) |
+| [VHP MP Grease](/mo-boi-tron-cong-nghiep/vhp-mp-grease) | Lithium | 2 / 3 / 4 | 150 cSt | ≥ 180 °C | -10 đến 120 °C | 200 kg | L2 phuy; L3 xô, phuy; L4 xô |
 | [VHP Licas Grease](/mo-boi-tron-cong-nghiep/licas-grease) | Lithium-canxi | 2 / 3 | 150 cSt | ≥ 130 °C | -10 đến 110 °C | 180 kg | No3 thùng 30 ống 400 g |
 | [VHP Caxilium Grease](/mo-boi-tron-cong-nghiep/vhp-caxilium-grease) | Lithium-canxi | 2 / 3 | – | 141 °C (No2) | -10 đến 110 °C | – | Phuy 180 kg |
 | [VHP Opal Grease](/mo-boi-tron-cong-nghiep/vhp-opal-grease) | Lithium-canxi | 3 / 4 | – | 140 °C (NLGI 3) | -10 đến 120 °C | – | NLGI 3 phuy 180 kg, NLGI 4 xô 15 kg |

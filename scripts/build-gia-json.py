@@ -104,6 +104,12 @@ DONG = [
     ("mo-boi-tron-cong-nghiep", "VHP Caxilium Grease No2", "VHP", "NLGI 2", "trong-nuoc", "Phuy 180 kg", 180, "vhp-caxilium-grease", 0, ("Mỡ VHP Caxilium Grease No2", "Phuy 180Kg")),
     ("mo-boi-tron-cong-nghiep", "VHP Caxilium Grease No3", "VHP", "NLGI 3", "trong-nuoc", "Phuy 180 kg", 180, "vhp-caxilium-grease", 0, ("Mỡ VHP Caxilium Grease No3", "Phuy 180Kg")),
     ("mo-boi-tron-cong-nghiep", "VHP Lithium Grease L4", "VHP", "NLGI 4", "trong-nuoc", "Xô 17 kg", 17, "vhp-lithium-grease", 1, ("Mỡ Lithium Grease L4", "Xô 17Kg")),
+    # 05/11/2026: VHP MP Grease, tên mã trong file kho không ghi hãng; TDS và trang chính thức của VHP xác nhận hãng.
+    ("mo-boi-tron-cong-nghiep", "VHP MP Grease L2", "VHP", "NLGI 2", "trong-nuoc", "Phuy 180 kg", 180, "vhp-mp-grease", 0, ("Mỡ MP Grease L2/phuy 180kg", "Phuy 180Kg")),
+    ("mo-boi-tron-cong-nghiep", "VHP MP Grease L3", "VHP", "NLGI 3", "trong-nuoc", "Phuy 180 kg", 180, "vhp-mp-grease", 0, ("Mỡ MP Grease L3/phuy 180kg", "Phuy 180kg")),
+    ("mo-boi-tron-cong-nghiep", "VHP MP Grease L3", "VHP", "NLGI 3", "trong-nuoc", "Xô 17 kg", 17, "vhp-mp-grease", 1, ("Mỡ MP Grease L3/xô 17Kg", "Xô 17KG")),
+    ("mo-boi-tron-cong-nghiep", "VHP MP Grease L3", "VHP", "NLGI 3", "trong-nuoc", "Xô 15 kg", 15, "vhp-mp-grease", 1, ("Mỡ MP Grease L3/xô 15Kg", "Xô 15Kg")),
+    ("mo-boi-tron-cong-nghiep", "VHP MP Grease L4", "VHP", "NLGI 4", "trong-nuoc", "Xô 17 kg", 17, "vhp-mp-grease", 1, ("Mỡ MP GREASE L4/ Xô 17Kg", "Xô 17KG")),
     ("mo-boi-tron-cong-nghiep", "VHP Opal Grease NLGI 3", "VHP", "NLGI 3", "trong-nuoc", "Phuy 180 kg", 180, "vhp-opal-grease", 0, ("Mỡ Opal Grease NLGI3", "Phuy 180Kg")),
     ("mo-boi-tron-cong-nghiep", "VHP Opal Grease NLGI 4", "VHP", "NLGI 4", "trong-nuoc", "Xô 15 kg", 15, "vhp-opal-grease", 1, ("Mỡ Opal Grease NLGI 4/ 15Kg", "Xô 15Kg")),
     # 05/11/2026: mỡ Sinopec không có dòng riêng trong file kho, khoảng giá do người dùng chốt ở GHI_DE_KHOANG.
