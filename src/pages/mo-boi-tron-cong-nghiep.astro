@@ -143,11 +143,11 @@ const schemaData = [
         <h1>{title}</h1>
         <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a></p>
         <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vị trí tra nóng liên tục trên 120–130 °C, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
-        <p class="goi-y-menu">Chọn xem nhanh theo menu dưới:</p>
+        <p class="goi-y-menu">Bạn đang cần gì? Bấm chọn nhanh bên dưới:</p>
         <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
-          <a href="#san-pham">Danh sách các loại mỡ bôi trơn đang có</a>
-          <a href="#huong-dan">Hướng dẫn chọn và cách sử dụng mỡ bôi trơn</a>
-          <a href="#chi-phi">Khoảng giá mỡ bôi trơn, mỡ bò tháng {THANG_GIA}</a>
+          <a class="nut-nhanh" href="#san-pham"><strong>Danh sách mỡ bôi trơn phổ biến</strong><span class="nut-phu">{THE.length} mã, lọc theo vị trí, hãng, cấp NLGI</span><span class="nut-xem">Xem ngay →</span></a>
+          <a class="nut-nhanh" href="#huong-dan"><strong>Hướng dẫn cách chọn mỡ</strong><span class="nut-phu">Theo cấp NLGI, nhiệt độ, vị trí làm việc</span><span class="nut-xem">Xem ngay →</span></a>
+          <a class="nut-nhanh" href="#chi-phi"><strong>Bảng giá mỡ bôi trơn tháng {THANG_GIA}</strong><span class="nut-phu">Khoảng giá theo kg, chưa gồm VAT</span><span class="nut-xem">Xem ngay →</span></a>
         </nav>
       </header>
 
@@ -283,10 +283,15 @@ const schemaData = [
   .dau { background: white; padding: clamp(16px, 4vw, 32px); border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 24px; }
   .mo-dau { line-height: 1.7; font-size: 1.05rem; max-width: 80ch; }
   .dau a:not(.btn-primary):not(.btn-secondary), .sp a:not(.nut-gia), .loc-trong a { color: var(--color-accent); text-decoration: underline; }
-  .goi-y-menu { margin: 16px 0 0; font-weight: 600; }
-  .menu-nhanh { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 8px; }
-  .dau .menu-nhanh a { display: flex; align-items: center; min-height: 48px; padding: 10px 14px; background: #f3f5f7; border: 1px solid var(--border-color); border-radius: 8px; color: var(--color-primary); font-weight: 600; line-height: 1.35; text-decoration: none; }
-  .dau .menu-nhanh a:hover, .dau .menu-nhanh a:focus-visible { border-color: var(--color-accent); color: var(--color-accent); }
+  .goi-y-menu { margin: 20px 0 0; font-size: 1.1rem; font-weight: 700; color: var(--color-primary); }
+  .menu-nhanh { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 10px; }
+  /* Chữ trắng trên nền navy, chữ navy trên nền cam: cùng đạt tương phản từ 4,5:1 trở lên. */
+  .dau nav.menu-nhanh a.nut-nhanh { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; background: var(--color-primary); border: 2px solid var(--color-primary); border-radius: 10px; color: #fff; line-height: 1.35; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+  .nut-nhanh strong { font-size: 1.08rem; }
+  .nut-phu { font-size: .88rem; opacity: .9; }
+  .nut-xem { align-self: flex-start; margin-top: auto; padding: 6px 14px; background: var(--color-accent); border-radius: 18px; color: var(--color-primary); font-weight: 700; font-size: .95rem; }
+  .dau nav.menu-nhanh a.nut-nhanh:hover, .dau nav.menu-nhanh a.nut-nhanh:focus-visible { border-color: var(--color-accent); box-shadow: 0 4px 12px rgba(0, 51, 102, .3); transform: translateY(-2px); }
+  @media (prefers-reduced-motion: reduce) { .dau nav.menu-nhanh a.nut-nhanh { transition: none; } .dau nav.menu-nhanh a.nut-nhanh:hover, .dau nav.menu-nhanh a.nut-nhanh:focus-visible { transform: none; } }
   #san-pham, #huong-dan { scroll-margin-top: 90px; }
   .xem-them { display: block; min-height: 44px; margin: 14px auto 0; padding: 8px 22px; background: white; border: 1px solid var(--color-primary); border-radius: 22px; color: var(--color-primary); font: inherit; font-weight: 600; cursor: pointer; }
   .xem-them[hidden] { display: none; }
