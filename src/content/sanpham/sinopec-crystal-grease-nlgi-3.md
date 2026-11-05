@@ -2,8 +2,8 @@
 ma: "SP-MO-010"
 active: true   # Bật 05/11/2026 theo yêu cầu người dùng, ảnh và TDS do người dùng cung cấp
 title: "Mỡ Sinopec Crystal Grease NLGI 3"
-seo_title: "Mỡ Sinopec NLGI 3 Crystal Grease – Xô 18 kg, Phuy 180 kg"
-description: "Mỡ Sinopec Crystal Grease NLGI 3 gốc lithium, làm việc -20 đến 120 °C cho vòng bi tải thường. Có sẵn xô 18 kg, phuy 180 kg, có CO/CQ, giao từ Hải Phòng."
+seo_title: "Mỡ Sinopec NLGI 3 Crystal Grease – Xô 17 kg, Phuy 180 kg"
+description: "Mỡ Sinopec Crystal Grease NLGI 3 gốc lithium, làm việc -20 đến 120 °C cho vòng bi tải thường. Có sẵn xô 17 kg, phuy 180 kg, có CO/CQ, giao từ Hải Phòng."
 keywords: ["mỡ sinopec nlgi 3", "sinopec crystal grease nlgi 3", "sinopec crystal grease", "mỡ sinopec", "mỡ bò sinopec", "mỡ bôi trơn sinopec"]
 category: "mo-boi-tron-cong-nghiep"
 categoryName: "Mỡ Bôi Trơn Công Nghiệp"
@@ -34,7 +34,7 @@ tds_url: "/tai-lieu/tds/sinopec-crystal-grease.pdf"
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
-  - { name: "Xô 18 kg" }
+  - { name: "Xô 17 kg" }
   - { name: "Phuy 180 kg" }
 stock_status: "co-san"
 so_sanh_chon_khi: "Vòng bi, trục lăn, ổ trượt tải thường tới 120 °C, cần mỡ lithium NLGI 3."
@@ -54,7 +54,7 @@ warnings:
 storage: "Để xô, phuy trong nhà hoặc có mái che, đậy kín nắp ngay sau khi lấy mỡ, tránh bụi và nước lọt vào."
 
 images:
-  - { src: "/images/san-pham/sinopec-crystal-grease-nlgi-3-xo-17kg.webp", alt: "Xô mỡ Sinopec Crystal Grease NLGI 3, nhãn ghi ngày 10/06/2026" }
+  - { src: "/images/san-pham/sinopec-crystal-grease-nlgi-3-xo-17kg.webp", alt: "Xô 17 kg mỡ Sinopec Crystal Grease NLGI 3, nhãn ghi ngày 10/06/2026" }
   - { src: "/images/san-pham/sinopec-crystal-grease-nlgi-3-xo-pallet.webp", alt: "Pallet xô mỡ Sinopec Crystal Grease NLGI 3 quấn màng nilon" }
   - { src: "/images/san-pham/sinopec-crystal-grease-nlgi-3-container.webp", alt: "Xô mỡ Sinopec Crystal Grease xếp nhiều tầng trong container" }
 
@@ -63,7 +63,7 @@ tom_tat:
   - "**Dùng được** cho vòng bi, trục lăn, ổ trượt tải thường, làm việc từ -20 °C đến 120 °C."
   - "**Không phải mỡ chịu tải nặng:** TDS ghi rõ dùng ở nơi không có yêu cầu chịu tải cao."
   - "**Không phải mỡ chịu nhiệt:** nhiệt độ nhỏ giọt tối thiểu 180 °C."
-  - "**Có sẵn tại kho** xô 18 kg, phuy 180 kg, sản xuất tại Singapore."
+  - "**Có sẵn tại kho** xô 17 kg, phuy 180 kg, sản xuất tại Singapore."
 tags: ["nlgi-3", "mo-lithium", "mo-da-dung", "sinopec"]
 date: "2026-11-05"
 updated: "2026-11-05"
@@ -71,7 +71,7 @@ updated: "2026-11-05"
 
 **Sinopec Crystal Grease NLGI 3** là mỡ bôi trơn đa dụng gốc lithium của Sinopec, pha từ dầu khoáng tinh chế với phụ gia chống ô xy hóa và chống gỉ. Mỡ dùng cho vòng bi, trục lăn và ổ trượt của ô tô, thiết bị cơ khí công nghiệp không có yêu cầu chịu tải cao, làm việc từ -20 °C đến 120 °C.
 
-Mã này **có sẵn tại kho** theo **xô 18 kg** và **phuy 180 kg**, nhãn xô ghi sản xuất tại Singapore. Có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT. Nếu cần mỡ đặc hơn, xem [Crystal Grease T3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-t3).
+Mã này **có sẵn tại kho** theo **xô 17 kg** và **phuy 180 kg**, nhãn xô ghi sản xuất tại Singapore. Có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT. Nếu cần mỡ đặc hơn, xem [Crystal Grease T3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-t3).
 
 ## Crystal Grease NLGI 3 có hợp với điểm bôi trơn của bạn không? {#phu-hop}
 
@@ -103,7 +103,7 @@ Theo cách phân nhóm của chúng tôi, Crystal không thuộc nhóm mỡ ch�
 | Độ xuyên kim (0,1 mm) | 220–250 | 200–230 | 235 |
 | Nhiệt độ nhỏ giọt | Tối thiểu 180 °C | Tối thiểu 180 °C | 155 °C |
 | Nhiệt độ làm việc | -20 đến 120 °C | -20 đến 120 °C | -20 đến 110 °C |
-| Có sẵn | Xô 18 kg, phuy 180 kg | Xô 18 kg, phuy 180 kg | Xô 18 kg, phuy 180 kg |
+| Có sẵn | Xô 17 kg, phuy 180 kg | Xô 17 kg, phuy 180 kg | Xô 17 kg, phuy 180 kg |
 
 Hai mã Crystal đo nhiệt độ nhỏ giọt bằng ASTM D566, còn Golden Grease đo bằng ASTM D2265, nên chênh lệch chỉ để tham khảo.
 
@@ -121,7 +121,7 @@ Chúng tôi **chưa tìm thấy ý kiến công khai đáng tin về đúng mã 
 
 **Chọn cấp đặc.** Trên diễn đàn xe cổ For B Bodies Only, một người dùng cho rằng [NLGI 2 là cấp thường dùng cho vòng bi bánh xe ô tô](https://www.forbbodiesonly.com/moparforum/threads/what-wheel-bearing-grease-to-use-ngli-2-or-3.269678/). Theo người này, NLGI 3 đặc hơn, khó chảy về đường lăn, hợp vòng bi lớn của xe nặng hơn.
 
-**Lời khuyên của chúng tôi:** với moay ơ, hãy theo tài liệu hướng dẫn sử dụng kèm theo xe. Nếu tài liệu ghi NLGI 2, đừng đổi sang NLGI 3 chỉ vì nghĩ mỡ đặc hơn sẽ bền hơn. Khi đó bạn chọn Crystal NLGI 2 cùng dòng, kho có sẵn xô 18 kg và phuy 180 kg.
+**Lời khuyên của chúng tôi:** với moay ơ, hãy theo tài liệu hướng dẫn sử dụng kèm theo xe. Nếu tài liệu ghi NLGI 2, đừng đổi sang NLGI 3 chỉ vì nghĩ mỡ đặc hơn sẽ bền hơn. Khi đó bạn chọn Crystal NLGI 2 cùng dòng, kho có sẵn xô 17 kg và phuy 180 kg.
 
 **Đổi loại mỡ.** Trong [một bình luận trên YouTube](https://www.youtube.com/watch?v=A4DaSUiKWEw), một thợ điều hòa thương mại kể đã thấy mỡ lithium được bơm vào động cơ quạt 40 HP đang dùng mỡ gốc polyurea. Mỡ cũ hóa lỏng và vòng bi hỏng. Đây là một lời kể, không có phân tích hỏng.
 
@@ -156,7 +156,7 @@ Chỉ nên châm thêm mỡ cùng gốc lithium. Với mỡ khác gốc, hãy l�
 
 ## Quy cách đóng gói, đơn hàng {#don-hang}
 
-- **Quy cách:** xô 18 kg và phuy 180 kg có sẵn tại kho. Cấp NLGI 2 cùng dòng cũng có sẵn xô 18 kg và phuy 180 kg. Cấp NLGI 1 nhận đặt theo yêu cầu.
+- **Quy cách:** xô 17 kg và phuy 180 kg có sẵn tại kho. Cấp NLGI 2 cùng dòng cũng có sẵn xô 17 kg và phuy 180 kg. Cấp NLGI 1 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Crystal%20Grease%20NLGI%203) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

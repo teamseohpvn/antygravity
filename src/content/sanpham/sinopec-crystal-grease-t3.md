@@ -2,8 +2,8 @@
 ma: "SP-MO-011"
 active: true   # Bật 05/11/2026 theo yêu cầu người dùng, ảnh và TDS do người dùng cung cấp
 title: "Mỡ Sinopec Crystal Grease T3 (No.T3)"
-seo_title: "Mỡ Sinopec Crystal Grease T3 – Xô 18 kg, Phuy 180 kg"
-description: "Mỡ Sinopec Crystal Grease T3 gốc lithium, đặc hơn NLGI 3, độ xuyên kim 200–230, làm việc -20 đến 120 °C. Có sẵn xô 18 kg, phuy 180 kg, giao từ Hải Phòng."
+seo_title: "Mỡ Sinopec Crystal Grease T3 – Xô 17 kg, Phuy 180 kg"
+description: "Mỡ Sinopec Crystal Grease T3 gốc lithium, đặc hơn NLGI 3, độ xuyên kim 200–230, làm việc -20 đến 120 °C. Có sẵn xô 17 kg, phuy 180 kg, giao từ Hải Phòng."
 keywords: ["sinopec crystal grease t3", "crystal grease no t3", "mỡ sinopec t3", "mỡ crystal t3", "mỡ sinopec", "mỡ bò sinopec"]
 category: "mo-boi-tron-cong-nghiep"
 categoryName: "Mỡ Bôi Trơn Công Nghiệp"
@@ -33,7 +33,7 @@ tds_url: "/tai-lieu/tds/sinopec-crystal-grease.pdf"
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
-  - { name: "Xô 18 kg" }
+  - { name: "Xô 17 kg" }
   - { name: "Phuy 180 kg" }
 stock_status: "co-san"
 so_sanh_chon_khi: "Ổ bi NLGI 3 vẫn chảy mỡ, tải thường, tới 120 °C; cần mỡ lithium đặc hơn."
@@ -61,7 +61,7 @@ tom_tat:
   - "**T3 đặc hơn NLGI 3:** độ xuyên kim 200–230, trong khi cấp NLGI 3 của cùng dòng là 220–250."
   - "**Dùng được** cho vòng bi, trục lăn, ổ trượt tải thường, từ -20 °C đến 120 °C."
   - "**Không dùng** cho hệ bơm mỡ tập trung, ổ tải nặng hoặc ổ nóng trên 120 °C."
-  - "**Có sẵn tại kho** xô 18 kg, phuy 180 kg, sản xuất tại Singapore."
+  - "**Có sẵn tại kho** xô 17 kg, phuy 180 kg, sản xuất tại Singapore."
 tags: ["nlgi-t3", "mo-lithium", "mo-da-dung", "sinopec"]
 date: "2026-11-05"
 updated: "2026-11-05"
@@ -69,7 +69,7 @@ updated: "2026-11-05"
 
 **Sinopec Crystal Grease T3** (nhãn phuy ghi **No.T3**) là cấp đặc nhất của dòng mỡ lithium đa dụng Crystal Grease. Mỡ có cùng chất làm đặc, dầu gốc và nhiệt độ làm việc -20 °C đến 120 °C với [Crystal Grease NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3), nhưng cứng hơn và tách dầu ít hơn trong phép thử của hãng.
 
-Mã này **có sẵn tại kho** theo **xô 18 kg** và **phuy 180 kg**, có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT.
+Mã này **có sẵn tại kho** theo **xô 17 kg** và **phuy 180 kg**, có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT.
 
 ## T3 là gì, có phải một cấp NLGI riêng không? {#t3-la-gi}
 
@@ -115,7 +115,7 @@ Trước khi đổi mỡ vì chảy, bạn hãy kiểm tra phớt, lượng mỡ
 | :--- | :--- | :--- | :--- | :--- |
 | Chất làm đặc | Lithium | Lithium | Lithium và canxi | Canxi tổng hợp |
 | Nhiệt độ làm việc | -20 đến 120 °C | -10 đến 120 °C | -10 đến 120 °C | -10 đến 100 °C |
-| Có sẵn | Xô 18 kg, phuy 180 kg | Xô 17 kg | Xô 15 kg | Phuy 180 kg |
+| Có sẵn | Xô 17 kg, phuy 180 kg | Xô 17 kg | Xô 15 kg | Phuy 180 kg |
 
 Bốn mã dùng các phương pháp thử khác nhau, nên bảng này chỉ so những gì TDS ghi rõ, không so nhiệt độ nhỏ giọt.
 
@@ -158,7 +158,7 @@ Hai cấp cùng dòng, cùng chất làm đặc lithium và dầu gốc khoáng,
 
 ## Quy cách đóng gói, đơn hàng {#don-hang}
 
-- **Quy cách:** xô 18 kg và phuy 180 kg có sẵn tại kho.
+- **Quy cách:** xô 17 kg và phuy 180 kg có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Crystal%20Grease%20T3) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
