@@ -2,8 +2,8 @@
 ma: "SP-MO-012"
 active: true   # Bật 05/11/2026 theo yêu cầu người dùng, ảnh và TDS do người dùng cung cấp
 title: "Mỡ Sinopec Golden Grease NLGI 3, NLGI 2"
-seo_title: "Mỡ Sinopec Golden Grease NLGI 3, 2 – Xô 15 kg, Phuy 180 kg"
-description: "Mỡ Sinopec Golden Grease NLGI 3, 2 cho máy công trình, nông nghiệp, gầm xe tốc độ thấp, -20 đến 110 °C. Có sẵn xô 15 kg, phuy 180 kg, giao từ Hải Phòng."
+seo_title: "Mỡ Sinopec Golden Grease NLGI 3, 2 – Xô 18 kg, Phuy 180 kg"
+description: "Mỡ Sinopec Golden Grease NLGI 3, 2 cho máy công trình, nông nghiệp, gầm xe tốc độ thấp, -20 đến 110 °C. Có sẵn xô 18 kg, phuy 180 kg, giao từ Hải Phòng."
 keywords: ["sinopec golden grease", "mỡ sinopec golden grease", "golden grease nlgi 3", "mỡ sinopec nlgi 3", "mỡ sinopec", "mỡ bò sinopec"]
 category: "mo-boi-tron-cong-nghiep"
 categoryName: "Mỡ Bôi Trơn Công Nghiệp"
@@ -34,9 +34,9 @@ tds_url: "/tai-lieu/tds/sinopec-golden-grease.pdf"
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
-  - { name: "NLGI 3 – Xô 15 kg" }
+  - { name: "NLGI 3 – Xô 18 kg" }
   - { name: "NLGI 3 – Phuy 180 kg" }
-  - { name: "NLGI 2 – Xô 15 kg" }
+  - { name: "NLGI 2 – Xô 18 kg" }
   - { name: "NLGI 2 – Phuy 180 kg" }
 stock_status: "co-san"
 so_sanh_chon_khi: "Thiết bị tốc độ thấp tới 110 °C: máy công trình, nông nghiệp, gầm xe, ẩm ướt."
@@ -57,9 +57,9 @@ warnings:
 storage: "Để xô, phuy trong nhà hoặc có mái che, đậy kín nắp sau khi lấy mỡ, tránh nước và bụi lọt vào."
 
 images:
-  - { src: "/images/san-pham/sinopec-golden-grease-nlgi-3-xo-15kg.webp", alt: "Xô 15 kg mỡ Sinopec Golden Grease NLGI 3, nhãn ghi ngày 23/07/2026" }
+  - { src: "/images/san-pham/sinopec-golden-grease-nlgi-3-xo-15kg.webp", alt: "Xô mỡ Sinopec Golden Grease NLGI 3, nhãn ghi ngày 23/07/2026" }
   - { src: "/images/san-pham/sinopec-golden-grease-nlgi-3-phuy-180kg.webp", alt: "Phuy 180 kg mỡ Sinopec Golden Grease NLGI 3, nhãn ghi ngày 20/08/2026" }
-  - { src: "/images/san-pham/sinopec-golden-grease-nlgi-3-xo-pallet.webp", alt: "Các pallet xô 15 kg mỡ Sinopec Golden Grease NLGI 3 xếp cạnh nhà xưởng" }
+  - { src: "/images/san-pham/sinopec-golden-grease-nlgi-3-xo-pallet.webp", alt: "Các pallet xô mỡ Sinopec Golden Grease NLGI 3 xếp cạnh nhà xưởng" }
   - { src: "/images/san-pham/sinopec-golden-grease-nlgi-3-phuy-container.webp", alt: "Phuy mỡ Sinopec Golden Grease NLGI 3 xếp trong container" }
 
 doc_gia: "Trang này dành cho chủ máy và tổ bảo trì cần mỡ đa dụng cho máy công trình, máy nông nghiệp, gầm xe và ổ trục tốc độ thấp."
@@ -67,7 +67,7 @@ tom_tat:
   - "**Dùng được** cho thiết bị tốc độ thấp: máy công trình, máy nông nghiệp, con lăn luyện kim, gầm xe, moay ơ."
   - "**Chịu nước tốt trong phép thử:** rửa trôi 0–0,1 % ở 38 °C."
   - "**Giới hạn nhiệt thấp hơn mỡ lithium:** làm việc tới 110 °C, nhỏ giọt 152–155 °C."
-  - "**Có sẵn tại kho** NLGI 3 và NLGI 2, xô 15 kg và phuy 180 kg."
+  - "**Có sẵn tại kho** NLGI 3 và NLGI 2, xô 18 kg và phuy 180 kg."
 tags: ["nlgi-2", "nlgi-3", "mo-da-dung", "may-cong-trinh", "sinopec"]
 date: "2026-11-05"
 updated: "2026-11-05"
@@ -75,7 +75,7 @@ updated: "2026-11-05"
 
 **Sinopec Golden Grease** là mỡ bôi trơn đa dụng dùng công nghệ NanoShield của Sinopec, tạo từ tiền chất nano và axit béo, thành các sợi xà phòng kim loại trong dầu khoáng. TDS ghi mỡ dùng cho thiết bị tốc độ thấp như máy xây dựng, máy nông nghiệp, gầm xe và moay ơ, làm việc từ -20 °C đến 110 °C.
 
-Hàng **có sẵn tại kho** gồm **NLGI 3** và **NLGI 2**, đóng **xô 15 kg** và **phuy 180 kg**, nhãn xô và phuy NLGI 3 ghi sản xuất tại Singapore. Có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT.
+Hàng **có sẵn tại kho** gồm **NLGI 3** và **NLGI 2**, đóng **xô 18 kg** và **phuy 180 kg**, nhãn xô và phuy NLGI 3 ghi sản xuất tại Singapore. Có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT.
 
 ## Golden Grease có hợp với máy của bạn không? {#phu-hop}
 
@@ -108,7 +108,7 @@ Hàng **có sẵn tại kho** gồm **NLGI 3** và **NLGI 2**, đóng **xô 15 k
 | Độ nhớt biểu kiến ở -15 °C | 385 Pa·s | 497 Pa·s |
 | Tách dầu ở 100 °C, 24 giờ | 1,2 % | 1,1 % |
 | Rửa trôi ở 38 °C | 0,1 % | 0 % |
-| Có sẵn | Xô 15 kg, phuy 180 kg | Xô 15 kg, phuy 180 kg |
+| Có sẵn | Xô 18 kg, phuy 180 kg | Xô 18 kg, phuy 180 kg |
 
 Bạn hãy chọn **NLGI 3** cho ổ lớn tốc độ chậm, vị trí dễ chảy mỡ. Chọn **NLGI 2** khi tài liệu máy yêu cầu cấp này, hoặc khi súng và đường dẫn khó bơm mỡ đặc.
 
@@ -120,7 +120,7 @@ Bạn hãy chọn **NLGI 3** cho ổ lớn tốc độ chậm, vị trí dễ ch
 | Nhiệt độ nhỏ giọt | 155 °C | Tối thiểu 180 °C | Tối thiểu 120 °C | 140 °C |
 | Phương pháp đo | ASTM D2265 | ASTM D566 | GOST 6793-74 | GOST 6793-74 |
 | Nhiệt độ làm việc | -20 đến 110 °C | -20 đến 120 °C | -10 đến 100 °C | -10 đến 120 °C |
-| Có sẵn | Xô 15 kg, phuy 180 kg | Xô 17 kg, phuy 180 kg | Phuy 180 kg | Phuy 180 kg |
+| Có sẵn | Xô 18 kg, phuy 180 kg | Xô 18 kg, phuy 180 kg | Phuy 180 kg | Phuy 180 kg |
 
 Phương pháp đo khác nhau nên chênh lệch nhiệt độ nhỏ giọt chỉ để tham khảo. Nhiệt độ làm việc theo khuyến nghị của từng hãng mới là mốc nên dùng khi chọn mỡ.
 
@@ -171,7 +171,7 @@ Không nên trộn khi chưa rõ gốc mỡ. TDS không ghi Golden Grease là li
 
 ## Quy cách đóng gói, đơn hàng {#don-hang}
 
-- **Quy cách:** NLGI 3 và NLGI 2 có sẵn tại kho, đóng xô 15 kg và phuy 180 kg.
+- **Quy cách:** NLGI 3 và NLGI 2 có sẵn tại kho, đóng xô 18 kg và phuy 180 kg.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Golden%20Grease) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

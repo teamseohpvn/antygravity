@@ -60,9 +60,9 @@ Số trong bảng là **giá trị điển hình hoặc giá trị cam kết** g
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) | Lithium | 2 | 220 cSt | 180 °C | -20 đến 130 °C | Có phụ gia EP (TDS không ghi số) | Xô 18 kg |
 | [ENEOS Epnoc Grease AP(N)](/mo-boi-tron-cong-nghiep/eneos-epnoc-ap) | Lithium | 0 / 1 / 2 / 3 | – | 195–203 °C | -20 đến 125 °C | 3.090 N (≈ 315 kg) | Can |
-| [Sinopec Crystal Grease NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3) | Lithium | 3 | – | ≥ 180 °C | -20 đến 120 °C | – | Xô 17 kg, phuy 180 kg |
-| [Sinopec Crystal Grease T3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-t3) | Lithium | T3 (xuyên kim 200–230) | – | ≥ 180 °C | -20 đến 120 °C | – | Xô 17 kg, phuy 180 kg |
-| [Sinopec Golden Grease](/mo-boi-tron-cong-nghiep/sinopec-golden-grease) | Xà phòng kim loại | 2 / 3 | – | 152–155 °C | -20 đến 110 °C | – | Xô 15 kg, phuy 180 kg |
+| [Sinopec Crystal Grease NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3) | Lithium | 3 | – | ≥ 180 °C | -20 đến 120 °C | – | Xô 18 kg, phuy 180 kg |
+| [Sinopec Crystal Grease T3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-t3) | Lithium | T3 (xuyên kim 200–230) | – | ≥ 180 °C | -20 đến 120 °C | – | Xô 18 kg, phuy 180 kg |
+| [Sinopec Golden Grease](/mo-boi-tron-cong-nghiep/sinopec-golden-grease) | Xà phòng kim loại | 2 / 3 | – | 152–155 °C | -20 đến 110 °C | – | Xô 18 kg, phuy 180 kg |
 | [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) | Lithium | 00 / 0 / 3 / 4 | 220 cSt | ≥ 190 °C | -10 đến 120 °C | 200 kg | L4 xô 17 kg (cấp khác nhận đặt) |
 | [VHP Licas Grease](/mo-boi-tron-cong-nghiep/licas-grease) | Lithium-canxi | 2 / 3 | 150 cSt | ≥ 130 °C | -10 đến 110 °C | 180 kg | No3 thùng 30 ống 400 g |
 | [VHP Caxilium Grease](/mo-boi-tron-cong-nghiep/vhp-caxilium-grease) | Lithium-canxi | 2 / 3 | – | 141 °C (No2) | -10 đến 110 °C | – | Phuy 180 kg |
