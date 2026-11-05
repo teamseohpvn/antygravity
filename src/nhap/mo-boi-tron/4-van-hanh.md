@@ -37,6 +37,34 @@ SKF cho biết bơm lúc máy đang chạy giúp thay mỡ cũ hiệu quả hơn
 
 **Khi đổi sang mỡ khác:** nếu chưa rõ hai loại có tương thích không, hãy **tháo ổ, làm sạch mỡ cũ rồi nạp mỡ mới**. [SKF lưu ý](https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/selecting-a-suitable-grease) mỡ không tương thích có thể đổi độ đặc mạnh và rò rỉ, gây hỏng vòng bi. Chỉ bơm đẩy mỡ cũ khi đủ ba điều kiện: hãng mỡ hoặc [bảng tương thích](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf) xác nhận hai mỡ hợp nhau, ổ có lỗ xả thông, và tốc độ không cao. Sau đó theo dõi nhiệt độ vỏ ổ.
 
+### Nhồi mỡ nhiều vòng bi bằng dụng cụ ép {#nhoi-mo-dung-cu-ep}
+
+Cách này dùng cho vòng bi hở **đang ở ngoài máy**, ví dụ cụm côn của vòng bi côn trước khi lắp. Nó khác với việc bơm bù qua vú mỡ khi vòng bi đã nằm trong gối đỡ.
+
+Khi phải nhồi mỡ cho nhiều vòng bi, dụng cụ ép có hai lợi ích:
+
+- **Đều:** lực ép đẩy mỡ vào khe giữa con lăn, vòng cách và vòng trong, nên mỡ đi hết một vòng thay vì chỉ dính ở mặt ngoài. Nhồi tay cũng làm được, nhưng phải vừa ấn vừa xoay cho tới khi mỡ trào đều ở đầu nhỏ, nên kết quả phụ thuộc vào tay thợ.
+- **Nhanh:** thợ đặt vòng bi vào, ép xuống rồi lấy ra, không phải xoay từng vòng bi như khi nhồi tay.
+
+<iframe src="https://www.youtube-nocookie.com/embed/dir69EUPOvU" title="Nhồi mỡ vòng bi bằng dụng cụ ép" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block;width:100%;max-width:315px;aspect-ratio:9/16;height:auto;margin:12px auto;border:0;border-radius:8px;background:#000"></iframe>
+
+Video trên kênh YouTube của HT VINA: [nhồi mỡ vòng bi bằng dụng cụ ép](https://www.youtube.com/shorts/dir69EUPOvU).
+
+Các bước dưới đây theo [hướng dẫn của Timken](https://www.timken.com/resources/cv14-packing-a-tapered-roller-bearing-with-grease/) cho vòng bi côn. Mỗi loại dụng cụ có cấu tạo khác nhau, nên bạn hãy đối chiếu thêm với hướng dẫn của dụng cụ đang dùng.
+
+1. Rửa sạch tay hoặc đeo găng mới.
+2. Đặt cụm côn vào phễu của dụng cụ, đầu nhỏ quay xuống dưới.
+3. Bịt lỗ ở đầu lớn bằng nắp côn.
+4. Ép chắc tay xuống để mỡ đi vào giữa con lăn, vòng cách và vòng trong.
+5. Lấy vòng bi ra, phết phần mỡ thừa lên mặt ngoài của cụm côn.
+
+**Lời khuyên của chúng tôi:**
+
+- **Nhồi đầy vòng bi, không nhồi đầy gối đỡ.** Timken khuyên thân ổ thường chỉ chứa 1/3 đến 1/2 mỡ khi lắp. Mỡ quá nhiều trong thân ổ sẽ bị khuấy và làm ổ nóng.
+- **Mỗi dụng cụ chỉ nên dùng một loại mỡ.** Khi đổi mỡ, hãy làm sạch hết mỡ cũ trong phễu để hai loại không lẫn vào nhau.
+- **Giữ sạch mỡ.** Lau sạch vòng bi và đậy kín dụng cụ, xô mỡ sau khi làm, vì bụi và cát lọt vào mỡ sẽ đi thẳng vào vòng bi.
+- **Không dùng khí nén để quay vòng bi.** Timken cảnh báo các chi tiết có thể văng ra, gây nguy hiểm.
+
 ## Kinh nghiệm từ người sử dụng {#kinh-nghiem}
 
 Các ý dưới đây là chia sẻ công khai của người dùng trên mạng, không phải khảo sát và không phải về riêng một mã trong kho của chúng tôi.

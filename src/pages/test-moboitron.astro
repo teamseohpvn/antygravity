@@ -128,6 +128,7 @@ const citation = [
 const schemaData = [
   { '@context': 'https://schema.org', '@type': ['CollectionPage', 'WebPage'], '@id': PAGE_ID, name: title, description, url: absUrl(pagePath), dateModified: NGAY, author: personRef(reviewer), citation, inLanguage: 'vi-VN', publisher: { '@id': ORG_ID } },
   personSchema(reviewer), breadcrumbSchema(crumbs),
+  { '@context': 'https://schema.org', '@type': 'VideoObject', name: 'Nhồi mỡ vòng bi bằng dụng cụ ép', description: 'Video trên kênh HT VINA: nhồi mỡ cho nhiều vòng bi côn bằng dụng cụ ép để mỡ vào đều và làm nhanh.', thumbnailUrl: 'https://i.ytimg.com/vi/dir69EUPOvU/maxresdefault.jpg', uploadDate: '2026-11-05T02:09:13-08:00', duration: 'PT0M39S', embedUrl: 'https://www.youtube.com/embed/dir69EUPOvU' },
   { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: THE.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: absUrl(t.d.link), name: t.ten })) },
 ];
 ---
