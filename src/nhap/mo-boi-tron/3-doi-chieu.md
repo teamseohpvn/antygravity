@@ -1,6 +1,6 @@
 Từ bảng trên, chúng tôi rút ra ba ý khi cân nhắc chi phí:
 
-- **Giá mỗi kg chưa nói hết.** Một điểm tra 15 g, bốn lần một năm chỉ dùng 60 g. Xưởng có 20 điểm như vậy dùng khoảng 1,2 kg mỗi năm, nên một phuy 180 kg là quá lớn dù giá mỗi kg thấp nhất. Trên diễn đàn thiết bị nặng, một người từng làm cho nhà phân phối dầu nhờn cho biết [hạn dùng 36 tháng là phổ biến](https://www.heavyequipmentforums.com/threads/what-grease-are-you-guys-using-for-bucket-pins-pivots-etc.86813/). Bạn hãy xem ngày trên nhãn của đúng lô hàng, rồi mua lượng dùng hết trong hạn đó.
+- **Giá mỗi kg chưa nói hết.** Một vị trí tra mỗi lần 15 g, bốn lần một năm, chỉ dùng hết 60 g. Xưởng có 20 vị trí như vậy dùng khoảng 1,2 kg mỗi năm, nên một phuy 180 kg là quá lớn dù giá mỗi kg thấp nhất. Trên diễn đàn thiết bị nặng, một người từng làm cho nhà phân phối dầu nhờn cho biết [hạn dùng 36 tháng là phổ biến](https://www.heavyequipmentforums.com/threads/what-grease-are-you-guys-using-for-bucket-pins-pivots-etc.86813/). Bạn hãy xem ngày trên nhãn của đúng lô hàng, rồi mua lượng dùng hết trong hạn đó.
 - **Nên trả thêm cho mỡ EP khi** ổ chịu tải nặng, va đập hoặc quay rất chậm. SKF khuyên dùng phụ gia EP/AW khi màng dầu không đủ dày (κ dưới 1). **Không cần trả thêm** nếu ổ tải thường và tốc độ đủ tạo màng dầu; còn trên 80 °C thì phụ gia EP lại cần được cân nhắc như đã nêu ở trên.
 - **Nên trả thêm cho mỡ lithium complex khi** vỏ ổ thường xuyên vượt khoảng làm việc của mỡ lithium. Nếu ổ mát, mỡ chịu nhiệt cao chưa chắc đem lại lợi ích tương xứng.
 
