@@ -113,6 +113,34 @@ Từ các kết quả trên, nếu ổ bi của bạn chạy nóng thường xuy
 
 **Chu kỳ tra mỡ** tính theo tốc độ và cỡ vòng bi, nhưng nhiệt độ ảnh hưởng mạnh nhất. Theo [hướng dẫn tra mỡ lại của SKF](https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/grease-life-and-relubrication), cứ mỗi 15 °C trên mức 70 °C thì chu kỳ tra mỡ phải giảm một nửa. Ổ đang tra mỗi 3 tháng khi chạy ở 70 °C sẽ cần tra khoảng mỗi 6 tuần nếu chạy ở 85 °C.
 
+### Nhồi mỡ nhiều vòng bi bằng dụng cụ ép
+
+Cách này dùng cho vòng bi hở **đang ở ngoài máy**, ví dụ cụm côn của vòng bi côn trước khi lắp. Nó khác với việc bơm bù qua vú mỡ khi vòng bi đã nằm trong gối đỡ.
+
+Khi phải nhồi mỡ cho nhiều vòng bi, dụng cụ ép có hai lợi ích:
+
+- **Đều:** lực ép đẩy mỡ vào khe giữa con lăn, vòng cách và vòng trong, nên mỡ đi hết một vòng thay vì chỉ dính ở mặt ngoài. Nhồi tay cũng làm được, nhưng phải vừa ấn vừa xoay cho tới khi mỡ trào đều ở đầu nhỏ, nên kết quả phụ thuộc vào tay thợ.
+- **Nhanh:** thợ đặt vòng bi vào, ép xuống rồi lấy ra, không phải xoay từng vòng bi như khi nhồi tay.
+
+<iframe src="https://www.youtube-nocookie.com/embed/dir69EUPOvU" title="Nhồi mỡ vòng bi bằng dụng cụ ép" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block;width:100%;max-width:315px;aspect-ratio:9/16;height:auto;margin:12px auto;border:0;border-radius:8px;background:#000"></iframe>
+
+Video trên kênh YouTube của HT VINA: [nhồi mỡ vòng bi bằng dụng cụ ép](https://www.youtube.com/shorts/dir69EUPOvU).
+
+Các bước dưới đây theo [hướng dẫn của Timken](https://www.timken.com/resources/cv14-packing-a-tapered-roller-bearing-with-grease/) cho vòng bi côn. Mỗi loại dụng cụ có cấu tạo khác nhau, nên bạn hãy đối chiếu thêm với hướng dẫn của dụng cụ đang dùng.
+
+1. Rửa sạch tay hoặc đeo găng mới.
+2. Đặt cụm côn vào phễu của dụng cụ, đầu nhỏ quay xuống dưới.
+3. Bịt lỗ ở đầu lớn bằng nắp côn.
+4. Ép chắc tay xuống để mỡ đi vào giữa con lăn, vòng cách và vòng trong.
+5. Lấy vòng bi ra, phết phần mỡ thừa lên mặt ngoài của cụm côn.
+
+**Lời khuyên của chúng tôi:**
+
+- **Nhồi đầy vòng bi, không nhồi đầy gối đỡ.** Timken khuyên thân ổ thường chỉ chứa 1/3 đến 1/2 mỡ khi lắp. Mỡ quá nhiều trong thân ổ sẽ bị khuấy và làm ổ nóng.
+- **Mỗi dụng cụ chỉ nên dùng một loại mỡ.** Khi đổi mỡ, hãy làm sạch hết mỡ cũ trong phễu để hai loại không lẫn vào nhau.
+- **Giữ sạch mỡ.** Lau sạch vòng bi và đậy kín dụng cụ, xô mỡ sau khi làm, vì bụi và cát lọt vào mỡ sẽ đi thẳng vào vòng bi.
+- **Không dùng khí nén để quay vòng bi.** Timken cảnh báo các chi tiết có thể văng ra, gây nguy hiểm.
+
 ### Kinh nghiệm từ người sử dụng
 
 **Người dùng chia sẻ:** Trên diễn đàn bảo trì công nghiệp [Reddit r/IndustrialMaintenance](https://www.reddit.com/r/IndustrialMaintenance/comments/1dsskbl/proper_bearing_greasing/), nhiều thợ bảo trì nhắc cùng một quy trình: việc đầu tiên luôn là tháo nút xả mỡ, bơm cho tới khi mỡ cũ bắt đầu trào ra ở lỗ xả, quay tay vòng bi vài vòng rồi mới lắp nút lại. Một người trong cùng luồng cảnh báo rằng bơm quá nhiều mỡ vào ổ có phớt cứng hoặc phớt mê cung "làm chết vòng bi nhanh hơn cả không bơm". Ở một [luồng khác](https://www.reddit.com/r/IndustrialMaintenance/comments/1pomqxm/sealed_bearing_question/), có người khuyên dùng dây rút nhựa thông lỗ xả trước khi bơm, vì mỡ cũ hay đóng cứng lại trong lỗ.
