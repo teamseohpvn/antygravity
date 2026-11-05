@@ -1,6 +1,6 @@
 ---
 ma: "SP-MO-013"
-active: true   # Tạo 05/11/2026; hãng và tồn kho chờ chủ site xác nhận trước khi merge
+active: true   # Bật 05/11/2026; chủ site xác nhận còn hàng và giá
 title: "Mỡ VHP MP Grease L2, L3, L4"
 seo_title: "Mỡ VHP MP Grease L2, L3, L4 – Xô 15, 17 kg, Phuy 180 kg"
 description: "Mỡ đa dụng VHP MP Grease L2, L3, L4 cho vòng bi tốc độ trung bình đến cao, -10 đến 120 °C, tải 4 bi 200 kg. Có xô 15, 17 kg, phuy 180 kg, giao từ Hải Phòng."
@@ -11,7 +11,7 @@ categoryName: "Mỡ Bôi Trơn Công Nghiệp"
 brand: "VHP"
 origin: "Việt Nam (nhà máy VHP, Cẩm Giàng, Hải Dương cũ)"
 nlgi: "2 / 3 / 4"
-base_oil: "Dầu gốc khoáng tinh chế, chất làm đặc lithium theo TDS"
+base_oil: "Dầu gốc khoáng tinh chế, chất làm đặc lithium"
 
 specs:
   - { name: "Cấp NLGI", value: "L2: 2 · L3: 3 · L4: 4" }
@@ -24,7 +24,7 @@ specs:
   - { name: "Tải 4 bi", value: "200 kg", method: "ASTM D2596" }
   - { name: "Ăn mòn tấm đồng", value: "Không", method: "IP 112" }
   - { name: "Nhiệt độ làm việc", value: "-10 °C đến 120 °C ở 75% tốc độ tối đa của vòng bi (ngắn hạn tới 135 °C)" }
-tds_date: "VHP MP Grease L, bản PDF không ghi ngày"
+tds_date: "VHP MP Grease L, file PDF tạo ngày 29/02/2024"
 tds_url: "/tai-lieu/tds/vhp-mp-grease.pdf"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
@@ -79,7 +79,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng **có sẵn tại kho** gồm *
 
 ## Thông số của MP Grease có ý nghĩa gì khi máy chạy? {#y-nghia}
 
-[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài lấy theo TDS VHP MP Grease L. Bản PDF này không ghi ngày.
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài lấy theo TDS VHP MP Grease L. Nội dung TDS không in ngày; file PDF được tạo ngày 29/02/2024.
 
 - **Dầu gốc 150 cSt.** Dầu gốc loãng hơn mức 220 cSt của VHP Lithium Grease nên hợp với ổ quay nhanh hơn. Ở ổ lớn quay chậm, tải nặng, dầu gốc đặc hơn thường giữ màng dầu tốt hơn.
 - **Làm việc tới 120 °C.** Mốc này ứng với 75% tốc độ tối đa của vòng bi. Ổ chạy sát tốc độ tối đa hoặc sát 120 °C thì bạn nên đo nhiệt độ vỏ ổ thực tế.
@@ -98,25 +98,13 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng **có sẵn tại kho** gồm *
 
 **Cấp bán lỏng L0, L00, L000.** Chúng tôi nhận đặt các cấp này cho hệ bơm mỡ tự động, nhưng chưa đưa số liệu lên trang. Lý do là các tài liệu VHP hiện có ghi khác nhau về dầu gốc và độ xuyên kim của cấp L0, L00, còn L000 chưa có bảng chỉ tiêu. Khi cần, bạn hãy [liên hệ](/bao-gia?sp=VHP%20MP%20Grease) để chúng tôi xin tài liệu đúng lô hàng.
 
-## Tài liệu của VHP ghi khác nhau ở những điểm nào? {#tai-lieu}
-
-Trang này lấy số theo TDS VHP MP Grease L. Trên [trang "MP Lithium Grease" của VHP](https://www.hoadauvhp.com/lithiumgrease-nid26.html), đăng ngày 29/06/2023, cùng dải sản phẩm L2, L3, L4 có ba chỉ tiêu khác:
-
-| Chỉ tiêu | TDS VHP MP Grease L | Trang web VHP (06/2023) |
-| :--- | :--- | :--- |
-| Chất làm đặc | Lithium | Lithium và canxi |
-| Nhiệt độ nhỏ giọt | Tối thiểu 180 °C | Tối thiểu 177 °C |
-| Làm việc ngắn hạn tới | 135 °C | 125 °C |
-
-Hai bên giống nhau ở cấp NLGI, dầu gốc 150 cSt, độ xuyên kim, tải 4 bi và nhiệt độ làm việc liên tục tới 120 °C. TDS không ghi ngày nên chúng tôi chưa xác định được bản nào mới hơn.
-
-**Lời khuyên của chúng tôi:** hãy lấy mức thận trọng hơn là 125 °C cho thời gian ngắn. Vì chưa chắc mỡ có canxi hay không, khi đổi từ mỡ khác sang, bạn nên đẩy hết mỡ cũ ra thay vì bơm đè lên.
+**Nếu bạn thấy số khác ở nơi khác.** [Trang "MP Lithium Grease" trên web VHP](https://www.hoadauvhp.com/lithiumgrease-nid26.html), đăng ngày 29/06/2023, ghi chất làm đặc lithium và canxi, nhỏ giọt tối thiểu 177 °C, ngắn hạn tới 125 °C. Chúng tôi dùng số trong TDS vì file TDS có ngày tạo muộn hơn. Trước khi đổi mỡ, bạn vẫn nên đẩy hết mỡ cũ ra thay vì bơm đè lên.
 
 ## MP Grease so với mỡ VHP khác và Gadus S2 như thế nào? {#so-sanh}
 
 | Chỉ tiêu | VHP MP Grease | [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) | [VHP Licas Grease](/mo-boi-tron-cong-nghiep/licas-grease) | [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) |
 | :--- | :--- | :--- | :--- | :--- |
-| Chất làm đặc | Lithium (TDS) | Lithium | Lithium và canxi | Lithium hydroxystearate |
+| Chất làm đặc | Lithium | Lithium | Lithium và canxi | Lithium hydroxystearate |
 | Dầu gốc ở 40 °C | 150 cSt | 220 cSt | 150 cSt | 220 cSt |
 | Nhiệt độ nhỏ giọt | Tối thiểu 180 °C | Tối thiểu 190 °C | Tối thiểu 130 °C | 180 °C |
 | Nhiệt độ làm việc | -10 đến 120 °C | -10 đến 120 °C | -10 đến 110 °C | -20 đến 130 °C |
@@ -130,7 +118,7 @@ Nhiệt độ nhỏ giọt của Shell đo theo phương pháp khác nên chỉ 
 
 Chúng tôi **chưa tìm thấy ý kiến công khai đáng tin về đúng mã MP Grease**, và chưa có hồ sơ phản hồi của khách HT VINA về mã này. Các ý dưới đây nói về mỡ nói chung, không phải đánh giá riêng sản phẩm.
 
-**Trộn mỡ khác gốc.** Trong [bình luận của một video YouTube](https://www.youtube.com/watch?v=A4DaSUiKWEw), một thợ điều hòa thương mại kể đã thấy mỡ lithium bơm vào ổ động cơ quạt 40 HP đang dùng mỡ polyurea, mỡ hóa lỏng và vòng bi hỏng. Đây là lời kể một trường hợp, không có phân tích hỏng. **Chúng tôi khuyên** bạn xác định gốc mỡ đang dùng trước khi đổi sang MP Grease, nhất là khi tài liệu của VHP chưa thống nhất về chất làm đặc.
+**Trộn mỡ khác gốc.** Trong [bình luận của một video YouTube](https://www.youtube.com/watch?v=A4DaSUiKWEw), một thợ điều hòa thương mại kể đã thấy mỡ lithium bơm vào ổ động cơ quạt 40 HP đang dùng mỡ polyurea, mỡ hóa lỏng và vòng bi hỏng. Đây là lời kể một trường hợp, không có phân tích hỏng. **Chúng tôi khuyên** bạn xác định gốc mỡ đang dùng trước khi đổi sang MP Grease.
 
 **Hệ bơm mỡ tập trung.** Một [người dùng trên YouTube](https://www.youtube.com/watch?v=sdOIyMchMN0) cảnh báo trộn mỡ có thể làm tắc đường ống của hệ bôi trơn tập trung. Đây là ý kiến của một người, không có ca cụ thể. **Chúng tôi khuyên** hỏi tài liệu của hệ thống và làm sạch đường ống trước khi đổi mỡ.
 
