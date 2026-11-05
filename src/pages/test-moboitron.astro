@@ -24,7 +24,7 @@ const GIA = '/bao-gia-mo-boi-tron'; // Trang giá sắp viết; trước khi có
 const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) Cấp NLGI Từ 0 Đến 4';
 const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo cấp NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, Caltex, VHP.';
 const reviewer = timNhanSu('nguyen-thiet-lap')!;
-const NGAY = '2026-11-04';
+const NGAY = '2026-11-05';
 const NGAY_GIA = (giaJson as any).cau_hinh.ngay_ra_soat as string;
 const fmtNgay = (s: string) => s.split('-').reverse().join('/');
 const THANG_GIA = fmtNgay(NGAY_GIA).slice(3); // MM/YYYY, đổi theo ngày rà soát giá.
@@ -38,7 +38,11 @@ type Dong = {
 const BANG: Dong[] = [
   { ten: 'Shell Gadus S2 V220 2', link: `${CAT}/shell-gadus-s2-v220-2`, lam_dac: 'Lithium', cap: '2', dau40: '220 cSt', nho_giot: '180 °C', lam_viec: '-20 đến 130 °C', hbi: 'Có phụ gia EP, TDS không ghi số', co_san: 'NLGI 2: xô 18 kg' },
   { ten: 'ENEOS Epnoc Grease AP(N)', link: `${CAT}/eneos-epnoc-ap`, lam_dac: 'Lithium', cap: '0 / 1 / 2 / 3', dau40: '– (TDS ghi ở 100 °C: 13,3–16,4 mm²/s)', nho_giot: '195–203 °C', lam_viec: '-20 đến 125 °C', hbi: '3.090 N (khoảng 315 kg)', co_san: 'Chờ xác nhận cấp và quy cách', ghi_chu: 'cho' },
+  { ten: 'Sinopec Crystal Grease NLGI 3', link: `${CAT}/sinopec-crystal-grease-nlgi-3`, lam_dac: 'Lithium', cap: '2 / 3', dau40: '– (TDS ghi ở 100 °C: 9–13 cSt)', nho_giot: '≥ 180 °C', lam_viec: '-20 đến 120 °C', hbi: '–', co_san: 'NLGI 2, NLGI 3: xô 17 kg, phuy 180 kg', nhan_dat: 'NLGI 1' },
+  { ten: 'Sinopec Crystal Grease T3', link: `${CAT}/sinopec-crystal-grease-t3`, lam_dac: 'Lithium', cap: 'T3', dau40: '–', nho_giot: '≥ 180 °C', lam_viec: '-20 đến 120 °C', hbi: '–', co_san: 'T3: xô 17 kg, phuy 180 kg' },
+  { ten: 'Sinopec Golden Grease', link: `${CAT}/sinopec-golden-grease`, lam_dac: 'Xà phòng kim loại', cap: '2 / 3', dau40: '–', nho_giot: '152–155 °C', lam_viec: '-20 đến 110 °C', hbi: '–', co_san: 'NLGI 2, NLGI 3: xô 17 kg, phuy 180 kg' },
   { ten: 'VHP Lithium Grease', link: `${CAT}/vhp-lithium-grease`, lam_dac: 'Lithium', cap: '00 / 0 / 3 / 4', dau40: '220 cSt', nho_giot: '≥ 190 °C', lam_viec: '-10 đến 120 °C', hbi: '200 kg', co_san: 'L4: xô 17 kg', nhan_dat: 'L00, L0, L3' },
+  { ten: 'VHP MP Grease', link: `${CAT}/vhp-mp-grease`, lam_dac: 'Lithium', cap: '2 / 3 / 4', dau40: '150 cSt', nho_giot: '≥ 180 °C', lam_viec: '-10 đến 120 °C', hbi: '200 kg', co_san: 'L2: phuy 180 kg · L3: xô 15 kg, xô 17 kg, phuy 180 kg · L4: xô 17 kg', nhan_dat: 'L0, L00, L000' },
   { ten: 'VHP Licas Grease', link: `${CAT}/licas-grease`, lam_dac: 'Lithium-canxi', cap: '2 / 3', dau40: '150 cSt', nho_giot: '≥ 130 °C', lam_viec: '-10 đến 110 °C', hbi: '180 kg', co_san: 'No3: thùng 30 ống 400 g', nhan_dat: 'No2' },
   { ten: 'VHP Caxilium Grease', link: `${CAT}/vhp-caxilium-grease`, lam_dac: 'Lithium-canxi', cap: '2 / 3', dau40: '–', nho_giot: '141 °C (No2)', lam_viec: '-10 đến 110 °C', hbi: '–', co_san: 'No2, No3: phuy 180 kg' },
   { ten: 'VHP Opal Grease', link: `${CAT}/vhp-opal-grease`, lam_dac: 'Lithium-canxi', cap: '3 / 4', dau40: '–', nho_giot: '140 °C (NLGI 3)', lam_viec: '-10 đến 120 °C', hbi: '–', co_san: 'NLGI 3: phuy 180 kg · NLGI 4: xô 15 kg' },
@@ -49,7 +53,7 @@ const BANG: Dong[] = [
 
 // Lưới sản phẩm: thứ tự và thông số lấy từ BANG, tên và ảnh lấy từ trang sản phẩm. Gadus S3 thuộc /mo-chiu-nhiet nên ghi rõ nhóm trên thẻ.
 const VI_TRI = [
-  { ma: 'goi-do', ten: 'Gối đỡ, khớp nối tải thường', ids: ['vhp-caxilium-grease', 'licas-grease', 'vhp-opal-grease'] },
+  { ma: 'goi-do', ten: 'Gối đỡ, khớp nối tải thường', ids: ['vhp-caxilium-grease', 'licas-grease', 'vhp-opal-grease', 'vhp-mp-grease', 'sinopec-crystal-grease-nlgi-3', 'sinopec-crystal-grease-t3', 'sinopec-golden-grease'] },
   { ma: 'tai-nang', ten: 'Tải nặng, va đập', ids: ['shell-gadus-s2-v220-2', 'eneos-epnoc-ap'] },
   { ma: 'bom-tap-trung', ten: 'Hệ bơm mỡ tập trung', ids: ['vhp-lithium-grease', 'eneos-epnoc-ap'] },
   { ma: 'o-nong', ten: 'Ổ nóng trên 120–130 °C', ids: ['shell-gadus-s3-v220c-2'] },
@@ -63,7 +67,7 @@ const THE = BANG.map((d) => {
   return { d, id, ten: p.data.title, hang: p.data.brand, anh: productImages(p.data)[0], caps, viTri: VI_TRI.filter((v) => v.ids.includes(id)).map((v) => v.ma), chiuNhiet: !d.link.startsWith(CAT) };
 }).filter(Boolean) as { d: Dong; id: string; ten: string; hang: string; anh?: { src: string; alt: string }; caps: string[]; viTri: string[]; chiuNhiet: boolean }[];
 const CAC_HANG = [...new Set(THE.map((t) => t.hang))].sort();
-const CAC_CAP = ['00', '0', '1', '2', '3', '4'].filter((c) => THE.some((t) => t.caps.includes(c)));
+const CAC_CAP = ['00', '0', '1', '2', '3', 'T3', '4'].filter((c) => THE.some((t) => t.caps.includes(c)));
 const NHOM_LOC = [
   { nhom: 'vi-tri', ten: 'Theo vị trí', muc: VI_TRI.map((v) => [v.ma, v.ten]) },
   { nhom: 'hang', ten: 'Theo hãng', muc: CAC_HANG.map((h) => [h, h]) },
@@ -92,6 +96,9 @@ const lam100 = (n: number) => Math.round(n / 100) * 100;
 const TDS = [
   { ten: 'Shell Gadus S2 V220 2, tờ giới thiệu tiếng Việt', ban: 'v3.1, 03/07/2016', tra: '03/11/2026', url: '/tai-lieu/tds/shell-gadus-s2-v220-2.pdf' },
   { ten: 'ENEOS Epnoc Grease AP(N)', ban: '02/2023', tra: '03/11/2026', url: 'https://www.eneos.co.jp/english/products/lubricants/pdf/grs-7037-2507e.pdf' },
+  { ten: 'Sinopec Crystal Grease', ban: '10/2012', tra: '05/11/2026', url: '/tai-lieu/tds/sinopec-crystal-grease.pdf' },
+  { ten: 'Sinopec Golden Grease', ban: '11/2022', tra: '05/11/2026', url: '/tai-lieu/tds/sinopec-golden-grease.pdf' },
+  { ten: 'VHP MP Grease L2, L3, L4', ban: 'Không in ngày, file PDF tạo 29/02/2024', tra: '05/11/2026', url: '/tai-lieu/tds/vhp-mp-grease.pdf' },
   { ten: 'VHP Lithium Grease', ban: 'Trang hãng, 29/06/2023', tra: '03/11/2026', url: 'https://hoadauvhp.com/lithiumgrease-nid24.html' },
   { ten: 'VHP Licas Grease', ban: 'Trang hãng, 29/06/2023', tra: '03/11/2026', url: 'https://hoadauvhp.com/licasgreaseno-nid23.html' },
   { ten: 'VHP Caxilium Grease', ban: 'Trang hãng, 27/06/2023', tra: '03/11/2026', url: 'https://hoadauvhp.com/caxiliumgreasenovhp-nid4.html' },
