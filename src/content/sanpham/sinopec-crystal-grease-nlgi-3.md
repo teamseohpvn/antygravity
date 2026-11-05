@@ -121,7 +121,7 @@ Chúng tôi **chưa tìm thấy ý kiến công khai đáng tin về đúng mã 
 
 **Chọn cấp đặc.** Trên diễn đàn xe cổ For B Bodies Only, một người dùng cho rằng [NLGI 2 là cấp thường dùng cho vòng bi bánh xe ô tô](https://www.forbbodiesonly.com/moparforum/threads/what-wheel-bearing-grease-to-use-ngli-2-or-3.269678/). Theo người này, NLGI 3 đặc hơn, khó chảy về đường lăn, hợp vòng bi lớn của xe nặng hơn.
 
-**Lời khuyên của chúng tôi:** với moay ơ, hãy theo tài liệu hướng dẫn sử dụng kèm theo xe. Nếu tài liệu ghi NLGI 2, đừng đổi sang NLGI 3 chỉ vì nghĩ mỡ đặc hơn sẽ bền hơn. TDS có cấp NLGI 2 của dòng Crystal, nhưng kho chưa có sẵn nên bạn cần hỏi trước.
+**Lời khuyên của chúng tôi:** với moay ơ, hãy theo tài liệu hướng dẫn sử dụng kèm theo xe. Nếu tài liệu ghi NLGI 2, đừng đổi sang NLGI 3 chỉ vì nghĩ mỡ đặc hơn sẽ bền hơn. Khi đó bạn chọn Crystal NLGI 2 cùng dòng, kho có sẵn xô 18 kg và phuy 180 kg.
 
 **Đổi loại mỡ.** Trong [một bình luận trên YouTube](https://www.youtube.com/watch?v=A4DaSUiKWEw), một thợ điều hòa thương mại kể đã thấy mỡ lithium được bơm vào động cơ quạt 40 HP đang dùng mỡ gốc polyurea. Mỡ cũ hóa lỏng và vòng bi hỏng. Đây là một lời kể, không có phân tích hỏng.
 
@@ -156,7 +156,7 @@ Chỉ nên châm thêm mỡ cùng gốc lithium. Với mỡ khác gốc, hãy l�
 
 ## Quy cách đóng gói, đơn hàng {#don-hang}
 
-- **Quy cách:** xô 18 kg và phuy 180 kg có sẵn tại kho. Các cấp NLGI 1, 2 cùng dòng nhận đặt theo yêu cầu.
+- **Quy cách:** xô 18 kg và phuy 180 kg có sẵn tại kho. Cấp NLGI 2 cùng dòng cũng có sẵn xô 18 kg và phuy 180 kg. Cấp NLGI 1 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Crystal%20Grease%20NLGI%203) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
