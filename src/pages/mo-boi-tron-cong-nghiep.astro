@@ -58,7 +58,8 @@ const VI_TRI = [
   { ma: 'goi-do', ten: 'Gối đỡ, khớp nối tải thường', ids: ['vhp-caxilium-grease', 'licas-grease', 'vhp-opal-grease', 'vhp-mp-grease', 'sinopec-crystal-grease-nlgi-3', 'sinopec-crystal-grease-t3', 'sinopec-golden-grease'] },
   { ma: 'tai-nang', ten: 'Tải nặng, va đập', ids: ['shell-gadus-s2-v220-2', 'eneos-epnoc-ap'] },
   { ma: 'bom-tap-trung', ten: 'Hệ bơm mỡ tập trung', ids: ['vhp-lithium-grease', 'eneos-epnoc-ap'] },
-  { ma: 'o-nong', ten: 'Ổ nóng trên 120–130 °C', ids: ['shell-gadus-s3-v220c-2'] },
+  { ma: 'vo-o-90-100', ten: 'Vỏ ổ 90–100 °C, tải thường', ids: ['vhp-mp-grease', 'sinopec-crystal-grease-nlgi-3', 'vhp-opal-grease'] },
+  { ma: 'o-nong', ten: 'Vỏ ổ 100–120 °C', ids: ['shell-gadus-s3-v220c-2'] },
 ];
 const sanPham = await getActiveProducts();
 const THE = BANG.map((d) => {
@@ -125,6 +126,8 @@ const citation = [
   'https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/grease-life-and-relubrication',
   'https://cdn.skfmediahub.skf.com/api/public/0901d1968024f02a/pdf_preview_medium/0901d1968024f02a_pdf_preview_medium.pdf',
   'https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf',
+  'https://www.machinerylubrication.com/Read/1865/grease-compatibility',
+  'https://www.lelubricants.com/wp-content/uploads/Grease-Compatibility-Chart-Domestic.pdf',
   'https://doi.org/10.1080/10402004.2021.1943088', 'https://doi.org/10.1016/j.triboint.2023.108785',
   'https://www.stle.org/files/TLTArchives/2010/10_October/Technical_Analysis.aspx', 'https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147',
 ];
@@ -143,7 +146,7 @@ const schemaData = [
         <h1>{title}</h1>
         <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a></p>
         <p class="mo-dau">Nhiều anh em thợ xưởng cứ thấy vòng bi kêu là với tay lấy súng bơm mỡ, bơm đến khi mỡ trào ra mép phớt mới thôi. Bơm quá đầy như vậy dễ làm ổ nóng rực ngay sau đó, mỡ chảy lòng thòng ra ngoài, lâu dần hỏng cả vòng bi. Lỗi nhiều khi không nằm ở chỗ lười tra mỡ, mà ở chỗ chọn sai cấp NLGI, bơm quá nhiều hoặc dùng lẫn các loại mỡ với nhau.</p>
-        <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vị trí tra nóng liên tục trên 120–130 °C, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
+        <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <p class="goi-y-menu">Bạn đang cần gì? Bấm chọn nhanh bên dưới:</p>
         <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
           <a class="nut-nhanh" href="#san-pham"><strong>Danh sách mỡ bôi trơn phổ biến</strong><span class="nut-xem">Xem ngay →</span></a>
@@ -236,6 +239,7 @@ const schemaData = [
           <p><strong>Tóm tắt</strong></p>
           <ul>
             <li>Gối đỡ tải thường, vỏ ổ dưới 90 °C: mỡ lithium-canxi là đủ.</li>
+            <li>Vỏ ổ 90–100 °C, tải thường: mỡ có TDS ghi tới 120 °C. Vỏ ổ 100–120 °C: mỡ lithium complex.</li>
             <li>Tải nặng, va đập: mỡ công bố phụ gia cực áp (EP).</li>
             <li><strong>Vòng bi động cơ điện: kho chưa có mã chuyên</strong>, hãy gửi mã vòng bi và tốc độ để chúng tôi tính.</li>
             <li>Bơm theo công thức, không bơm theo cảm giác. Không trộn mỡ khi chưa kiểm tra tương thích.</li>

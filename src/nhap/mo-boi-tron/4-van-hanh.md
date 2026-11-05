@@ -37,6 +37,28 @@ SKF cho biết bơm lúc máy đang chạy giúp thay mỡ cũ hiệu quả hơn
 
 **Khi đổi sang mỡ khác:** nếu chưa rõ hai loại có tương thích không, hãy **tháo ổ, làm sạch mỡ cũ rồi nạp mỡ mới**. [SKF lưu ý](https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/selecting-a-suitable-grease) mỡ không tương thích có thể đổi độ đặc mạnh và rò rỉ, gây hỏng vòng bi. Chỉ bơm đẩy mỡ cũ khi đủ ba điều kiện: hãng mỡ hoặc [bảng tương thích](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf) xác nhận hai mỡ hợp nhau, ổ có lỗ xả thông, và tốc độ không cao. Sau đó theo dõi nhiệt độ vỏ ổ.
 
+### Bảng tương thích khi trộn mỡ theo chất làm đặc {#tuong-thich}
+
+Bảng dưới gộp hai bảng công khai: bảng của [Machinery Lubrication](https://www.machinerylubrication.com/Read/1865/grease-compatibility) (bài năm 2009 của một chuyên gia Shell) và bảng của [LE Lubricants](https://www.lelubricants.com/wp-content/uploads/Grease-Compatibility-Chart-Domestic.pdf) (bản 10/2017). Cột lithium lấy theo lithium 12-hydroxy. Hai bảng này chỉ là điểm bắt đầu để tra cứu, và cùng một cặp mỡ đôi khi được xếp khác nhau. Hãy hỏi hãng mỡ hoặc thử theo [ASTM D6185](https://www.astm.org/d6185-11r17.html) trước khi trộn thật.
+
+| Mỡ sẽ trộn cùng | Với mỡ lithium | Với mỡ lithium complex |
+| :--- | :--- | :--- |
+| Lithium (12-hydroxy) | Hợp | Hợp |
+| Lithium complex | Hợp | Cùng loại |
+| Canxi 12-hydroxy | Hợp | Hợp |
+| Canxi thường | Giáp ranh | Hợp |
+| Canxi phức | Không hợp | Hợp |
+| Canxi sulfonat | Hai nguồn khác nhau: giáp ranh (Machinery Lubrication), hợp (LE) | Hợp |
+| Nhôm phức | Không hợp | Hợp |
+| Polyurea | Không hợp; riêng loại bền cắt được xếp là hợp (Machinery Lubrication) | Hai nguồn khác nhau: không hợp (Machinery Lubrication), giáp ranh (LE); riêng loại bền cắt được xếp là hợp (Machinery Lubrication) |
+| Đất sét bentonite | Không hợp | Không hợp |
+
+"Giáp ranh" nghĩa là hỗn hợp có thể dùng được hoặc không, tùy vị trí làm việc. Chúng tôi lưu ý thêm ba điều khi áp bảng này vào các mã trên trang:
+
+- **Mỡ lithium-canxi** (VHP Caxilium, VHP Licas, VHP Opal) không có mặt trong hai bảng, nên chúng tôi không suy ra kết quả cho nhóm này. Khi đổi sang hoặc đổi từ nhóm này, bạn hãy tháo ổ và làm sạch.
+- **Calix Ceno, Sinopec Golden và PV Grease** cũng nên làm như vậy, vì tài liệu của hãng chỉ ghi "canxi tổng hợp", "xà phòng kim loại" hoặc chưa công bố chất làm đặc, không đủ để tra bảng.
+- **Cùng chất làm đặc chưa chắc đã hợp.** Machinery Lubrication nhắc thêm rằng dầu gốc cũng ảnh hưởng đến tính tương thích, còn [tài liệu của Mobil](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf) nêu cả phụ gia cũng có thể phản ứng với nhau.
+
 ### Nhồi mỡ nhiều vòng bi bằng dụng cụ ép {#nhoi-mo-dung-cu-ep}
 
 Cách này dùng cho vòng bi hở **đang ở ngoài máy**, ví dụ cụm côn của vòng bi côn trước khi lắp. Nó khác với việc bơm bù qua vú mỡ khi vòng bi đã nằm trong gối đỡ.

@@ -57,9 +57,7 @@ const schemaData = [
 <Layout
   title={`${name}, ${p.role}`}
   seoTitle={`${name} – ${p.role} | ${SITE_NAME}`}
-  description={(p.external
-    ? `${name}, ${p.degree}, ${p.affiliation}. ${p.role} của ${LEGAL_SHORT}.`
-    : `${p.name}, ${p.degree ?? ''} ${p.role} tại ${LEGAL_SHORT}. ${p.since ? `Làm chuyên môn từ năm ${p.since}. ` : ''}Kiểm duyệt thông số kỹ thuật và khuyến cáo sử dụng dầu nhớt công nghiệp trên website.`).replace(/\s+/g, ' ')}
+  description={(p.metaDescription ?? `${name}, ${p.degree}, ${p.affiliation}. ${p.role} của ${LEGAL_SHORT}.`).slice(0, 160)}
   image={p.photo}
   noindex
   {schemaData}
@@ -114,9 +112,20 @@ const schemaData = [
         </>
       )}
 
-      <h2>{p.external ? 'Cách biên soạn nội dung' : 'Cách kiểm duyệt nội dung'}</h2>
-      <ol>{method.map((m) => <li>{m}</li>)}</ol>
+      {method.length > 0 && (
+        <>
+          <h2>{p.external ? 'Cách biên soạn nội dung' : 'Cách kiểm duyệt nội dung'}</h2>
+          <ol>{method.map((m) => <li>{m}</li>)}</ol>
+        </>
+      )}
       <p>Xem thêm <a href="/quy-trinh-bien-tap">quy trình biên soạn và rà soát nội dung</a> của {LEGAL_SHORT}.</p>
+
+      {p.trangPhuTrach && (
+        <>
+          <h2>Trang phụ trách trên website</h2>
+          <ul>{p.trangPhuTrach.map((t) => <li><a href={t.url}>{t.ten}</a> ({t.vai.toLowerCase()})</li>)}</ul>
+        </>
+      )}
 
       {posts.length > 0 && (
         <>
