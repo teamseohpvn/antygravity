@@ -22,7 +22,7 @@ const pagePath = '/mo-boi-tron-cong-nghiep';
 const CAT = '/mo-boi-tron-cong-nghiep';
 const IMAGE = '/images/danh-muc/mo-boi-tron-cong-nghiep.webp';
 const NGAY_DANG = '2026-09-21';
-const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) Cấp NLGI Từ 0 Đến 4';
+const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) | Chính Hãng Giá Tốt';
 const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo cấp NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, ENEOS, VHP.';
 const tacGia = timNhanSu('nguyen-thi-hong')!;
 const reviewer = timNhanSu('vu-minh-toan')!;
@@ -84,14 +84,14 @@ const dong = (ten: string, kg?: number) => {
   if (!r?.thap) return null;
   const thap = r.thap_don_vi ?? (kg ? r.thap / kg : null);
   const cao = r.cao_don_vi ?? (kg ? r.cao / kg : null);
-  return thap && cao ? { ten: r.ten, qc: r.quy_cach, thap, cao } : null;
+  return thap && cao ? { ten: r.ten, qc: r.quy_cach, link: `/${r.danh_muc}/${r.trang}`, thap, cao } : null;
 };
 const CHI_PHI = [
   dong('PVOIL PV Grease No2'), dong('PVOIL PV Grease No3'), dong('VHP Caxilium Grease No2'), dong('Calix Ceno Grease No3'),
   dong('VHP Opal Grease NLGI 3'), dong('VHP Licas Grease No3', 12), dong('VHP Opal Grease NLGI 4'), dong('VHP Lithium Grease L4'),
   dong('Shell Gadus S3 V220C 2'), dong('Shell Gadus S2 V220 2'),
   dong('VHP MP Grease L3'), dong('Sinopec Golden Grease NLGI 2, NLGI 3'), dong('Sinopec Crystal Grease NLGI 3'), dong('Sinopec Crystal Grease T3'),
-].filter(Boolean).sort((a: any, b: any) => a.thap - b.thap) as { ten: string; qc: string; thap: number; cao: number }[];
+].filter(Boolean).sort((a: any, b: any) => a.thap - b.thap) as { ten: string; qc: string; link: string; thap: number; cao: number }[];
 const vnd = (n: number) => n.toLocaleString('vi-VN');
 const lam100 = (n: number) => Math.round(n / 100) * 100;
 
@@ -113,7 +113,7 @@ const TDS = [
 
 const MUC_LUC = [
   ['chon-nhanh', 'Chọn nhanh theo vị trí'], ['nlgi', 'Chọn theo cấp NLGI'], ['chat-lam-dac', 'Chọn theo chất làm đặc'], ['so-sanh', 'So sánh và trạng thái kho'],
-  ['dong-co', 'Vòng bi động cơ điện'], ['chi-phi', 'Chi phí mỗi kg và mỗi điểm tra'], ['mo-kho', 'Vì sao mỡ bò khô cứng'], ['tra-mo', 'Tra bao nhiêu, bao lâu'],
+  ['dong-co', 'Vòng bi động cơ điện'], ['chi-phi', 'Giá mỗi kg và chi phí mỗi năm'], ['mo-kho', 'Vì sao mỡ bò khô cứng'], ['tra-mo', 'Tra bao nhiêu, bao lâu'],
   ['quy-trinh', 'Quy trình bơm mỡ bò an toàn'], ['kinh-nghiem', 'Kinh nghiệm người sử dụng'], ['su-co', 'Dấu hiệu mỡ hỏng'], ['nguon', 'Nguồn và người duyệt'], ['hoi-dap', 'Câu hỏi thường gặp'],
 ];
 
@@ -142,12 +142,13 @@ const schemaData = [
       <header class="dau">
         <h1>{title}</h1>
         <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a></p>
+        <p class="mo-dau">Nhiều anh em thợ xưởng cứ thấy vòng bi kêu là với tay lấy súng bơm mỡ, bơm đến khi mỡ trào ra mép phớt mới thôi. Bơm quá đầy như vậy dễ làm ổ nóng rực ngay sau đó, mỡ chảy lòng thòng ra ngoài, lâu dần hỏng cả vòng bi. Lỗi nhiều khi không nằm ở chỗ lười tra mỡ, mà ở chỗ chọn sai cấp NLGI, bơm quá nhiều hoặc dùng lẫn các loại mỡ với nhau.</p>
         <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vị trí tra nóng liên tục trên 120–130 °C, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <p class="goi-y-menu">Bạn đang cần gì? Bấm chọn nhanh bên dưới:</p>
         <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
-          <a class="nut-nhanh" href="#san-pham"><strong>Danh sách mỡ bôi trơn phổ biến</strong><span class="nut-phu">{THE.length} mã, lọc theo vị trí, hãng, cấp NLGI</span><span class="nut-xem">Xem ngay →</span></a>
-          <a class="nut-nhanh" href="#huong-dan"><strong>Hướng dẫn cách chọn mỡ</strong><span class="nut-phu">Theo cấp NLGI, nhiệt độ, vị trí làm việc</span><span class="nut-xem">Xem ngay →</span></a>
-          <a class="nut-nhanh" href="#chi-phi"><strong>Bảng giá mỡ bôi trơn tháng {THANG_GIA}</strong><span class="nut-phu">Khoảng giá theo kg, chưa gồm VAT</span><span class="nut-xem">Xem ngay →</span></a>
+          <a class="nut-nhanh" href="#san-pham"><strong>Danh sách mỡ bôi trơn phổ biến</strong><span class="nut-xem">Xem ngay →</span></a>
+          <a class="nut-nhanh" href="#huong-dan"><strong>Hướng dẫn cách chọn mỡ</strong><span class="nut-xem">Xem ngay →</span></a>
+          <a class="nut-nhanh" href="#chi-phi"><strong>Bảng giá mỡ bôi trơn tháng {THANG_GIA}</strong><span class="nut-xem">Xem ngay →</span></a>
         </nav>
       </header>
 
@@ -254,13 +255,13 @@ const schemaData = [
         </table></div>
         <ContentBody><DocBang /></ContentBody>
 
-        <h2 id="chi-phi">Chi phí mỡ tính theo kg và theo điểm tra mỗi năm</h2>
-        <p>Bảng dưới quy khoảng giá ra mỗi kg, rồi tính tiền mỡ cho <strong>một điểm tra dùng {G_DIEM_NAM} g mỗi năm</strong>. Đây là ví dụ vòng bi 6310 (Gp khoảng 15 g), tra bốn lần một năm, chỉ để so sánh. Giá chưa gồm VAT, là khoảng giá từ giá kho tới +15%, rà soát ngày {fmtNgay(NGAY_GIA)}. Mức thực tế tùy số lượng và lô hàng. Bảng này dùng để so chi phí; muốn biết giá theo từng xô, phuy, bạn hãy <a href="/bao-gia">gửi yêu cầu báo giá</a>.</p>
+        <h2 id="chi-phi">Giá mỡ mỗi kg và chi phí cho một vòng bi mỗi năm</h2>
+        <p>Bảng dưới đây quy khoảng giá của từng loại mỡ ra mỗi kg, rồi tính xem <strong>một vòng bi hết bao nhiêu tiền mỡ trong một năm</strong>. Để dễ so sánh, chúng tôi lấy ví dụ vòng bi 6310, mỗi lần tra khoảng 15 g, tra bốn lần một năm, tức là dùng hết {G_DIEM_NAM} g mỡ mỗi năm. Giá chưa gồm VAT, tính từ giá kho đến mức cao hơn giá kho 15%, rà soát ngày {fmtNgay(NGAY_GIA)}; giá thực tế còn tùy số lượng và lô hàng. Muốn biết giá theo từng xô, phuy, bạn hãy <a href="/bao-gia">gửi yêu cầu báo giá</a>.</p>
         <div class="bang"><table>
-          <thead><tr><th>Mã và quy cách</th><th>Giá mỗi kg (đồng)</th><th>Tiền mỡ mỗi điểm mỗi năm (đồng)</th></tr></thead>
-          <tbody>{CHI_PHI.map((c) => <tr><td>{c.ten} · {c.qc}</td><td>{vnd(lam100(c.thap))} – {vnd(lam100(c.cao))}</td><td>{vnd(lam100(c.thap * G_DIEM_NAM / 1000))} – {vnd(lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
+          <thead><tr><th>Loại mỡ và quy cách</th><th>Giá mỗi kg (đồng)</th><th>Tiền mỡ cho một vòng bi mỗi năm (đồng)</th></tr></thead>
+          <tbody>{CHI_PHI.map((c) => <tr><td><a href={c.link}>{c.ten}</a> · {c.qc}</td><td>{vnd(lam100(c.thap))} – {vnd(lam100(c.cao))}</td><td>{vnd(lam100(c.thap * G_DIEM_NAM / 1000))} – {vnd(lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
         </table></div>
-        <p class="nho">ENEOS Epnoc AP(N) chưa đưa vào bảng vì cần xác nhận cấp và quy cách theo lô. VHP Licas tính từ giá thùng 30 ống 400 g (12 kg).</p>
+        <p class="nho">Bảng chưa có <a href={`${CAT}/eneos-epnoc-ap`}>ENEOS Epnoc AP(N)</a> vì cấp và quy cách của loại mỡ này còn phải xác nhận theo từng lô. Giá mỗi kg của VHP Licas được quy đổi từ giá thùng 30 ống 400 g (12 kg).</p>
         <ContentBody><DoiChieu /></ContentBody>
         <ContentBody><VanHanh /></ContentBody>
         <ContentBody><SuCo /></ContentBody>
@@ -288,7 +289,6 @@ const schemaData = [
   /* Chữ trắng trên nền navy, chữ navy trên nền cam: cùng đạt tương phản từ 4,5:1 trở lên. */
   .dau nav.menu-nhanh a.nut-nhanh { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; background: var(--color-primary); border: 2px solid var(--color-primary); border-radius: 10px; color: #fff; line-height: 1.35; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
   .nut-nhanh strong { font-size: 1.08rem; }
-  .nut-phu { font-size: .88rem; opacity: .9; }
   .nut-xem { align-self: flex-start; margin-top: auto; padding: 6px 14px; background: var(--color-accent); border-radius: 18px; color: var(--color-primary); font-weight: 700; font-size: .95rem; }
   .dau nav.menu-nhanh a.nut-nhanh:hover, .dau nav.menu-nhanh a.nut-nhanh:focus-visible { border-color: var(--color-accent); box-shadow: 0 4px 12px rgba(0, 51, 102, .3); transform: translateY(-2px); }
   @media (prefers-reduced-motion: reduce) { .dau nav.menu-nhanh a.nut-nhanh { transition: none; } .dau nav.menu-nhanh a.nut-nhanh:hover, .dau nav.menu-nhanh a.nut-nhanh:focus-visible { transform: none; } }
@@ -342,6 +342,10 @@ const schemaData = [
   .nho { font-size: .92rem; color: #555; }
   @media (max-width: 640px) {
     .menu-nhanh { grid-template-columns: minmax(0, 1fr); }
+    /* Mobile: mỗi nút một hàng, tên bên trái, Xem ngay bên phải để cả menu thấp lại. */
+    .dau nav.menu-nhanh a.nut-nhanh { flex-direction: row; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; }
+    .nut-nhanh strong { font-size: 1rem; }
+    .nut-xem { flex: none; align-self: center; margin-top: 0; padding: 5px 10px; font-size: .88rem; }
     .muc-luc ol { columns: 1; }
     /* Bộ lọc gọn thành một hàng cuộn ngang, thẻ sản phẩm nằm ngang để không đẩy bài viết xuống quá xa. */
     .loc-nhom { grid-template-columns: minmax(0, 1fr); gap: 4px; }

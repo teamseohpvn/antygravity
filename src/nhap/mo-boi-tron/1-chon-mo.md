@@ -1,5 +1,7 @@
 ## Chọn mỡ bò, mỡ bôi trơn nhanh theo vị trí tra {#chon-nhanh}
 
+Dùng mỡ bôi trơn (mỡ bò) không đơn thuần là "bôi mỡ vào cho trơn". Thực tế, bạn phải cân nhắc dùng loại mỡ nào, của hãng nào, và thông số của mỡ có hợp với vị trí làm việc của vòng bi, ổ trục hay không. Chẳng hạn, vòng bi ở trục cầu sau chịu tải khác với vòng bi ở động cơ hay ở các trục phụ của máy, của xe. Lúc đó, chọn mỡ giữa hàng chục thương hiệu, với những mã như [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2), [ENEOS Epnoc Grease AP(N)](/mo-boi-tron-cong-nghiep/eneos-epnoc-ap) hay [Sinopec Crystal Grease NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3), không thể chỉ dựa vào cảm tính về màu sắc hay độ đặc.
+
 Bạn tìm đúng vị trí trong bảng, bấm vào mã để xem chi tiết, rồi đối chiếu thông số ở [bảng so sánh](#so-sanh). Nhiệt độ trong bảng là nhiệt độ **đo trên vỏ ổ khi máy chạy ổn định**.
 
 | Vị trí | Nên chọn | Vì sao | Đừng làm |
