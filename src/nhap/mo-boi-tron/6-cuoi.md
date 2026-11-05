@@ -17,7 +17,13 @@ Hai tên gọi này là một. "Mỡ bò" là cách gọi dân dã có từ ngà
 
 ### Mua mỡ bò bôi trơn ở đâu?
 
-Với máy trong xưởng, bạn nên mua ở nơi đưa được TDS và CO/CQ theo lô, để đối chiếu đúng cấp NLGI và nhiệt độ làm việc. HT VINA có kho tại TP Hải Phòng (Hải Dương cũ), giao Hải Phòng, Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc. Quy cách đang có là thùng 30 ống 400 g, xô 15–18 kg và phuy 180 kg, tùy mã. Nếu bạn chỉ cần một tuýp nhỏ cho xe hoặc đồ gia dụng, cửa hàng phụ tùng hay sàn thương mại điện tử sẽ tiện hơn.
+Với máy trong xưởng, bạn nên mua ở nơi đưa được TDS và CO/CQ theo lô, để đối chiếu đúng cấp NLGI và nhiệt độ làm việc. HT VINA có **3 kho**, giao Hải Phòng, Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc:
+
+- **Kho Hải Dương cũ:** 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.
+- **Kho Kiến An:** 145 Quán Trữ, P. Kiến An, TP Hải Phòng.
+- **Kho Như Quỳnh:** xã Như Quỳnh, tỉnh Hưng Yên (TT Như Quỳnh cũ). Kho nằm trong thôn, không có số nhà, nên bạn hãy gọi hotline để được chỉ đường trước khi đến.
+
+Quy cách đang có là thùng 30 ống 400 g, xô 15–18 kg và phuy 180 kg, tùy mã. Nếu bạn chỉ cần một tuýp nhỏ cho xe hoặc đồ gia dụng, cửa hàng phụ tùng hay sàn thương mại điện tử sẽ tiện hơn.
 
 ### Mỡ bò xanh, trắng, vàng khác nhau thế nào?
 
