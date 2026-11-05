@@ -35,7 +35,7 @@ Màu sắc không cho biết mỡ chịu nhiệt hay chịu tải đến đâu. 
 
 ### Có trộn hai loại mỡ khác nhau được không?
 
-Không nên, nhất là khi hai loại mỡ dùng chất làm đặc khác nhau (ví dụ lithium với polyurea). Mỡ có thể đổi độ đặc mạnh và rò rỉ khỏi ổ. Khi đổi loại, cách an toàn nhất là tháo ổ và làm sạch; xem điều kiện để bơm đẩy mỡ cũ ở [mục quy trình](#quy-trinh).
+Không nên, nhất là khi hai loại mỡ dùng chất làm đặc khác nhau (ví dụ lithium với polyurea). Mỡ có thể đổi độ đặc mạnh và rò rỉ khỏi ổ. Khi đổi loại, cách an toàn nhất là tháo ổ và làm sạch; xem điều kiện để bơm đẩy mỡ cũ ở [mục quy trình](#quy-trinh) và [bảng tương thích](#tuong-thich).
 
 ### Mỡ EP2 là gì?
 
