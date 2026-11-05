@@ -23,7 +23,8 @@ const CAT = '/mo-boi-tron-cong-nghiep';
 const GIA = '/bao-gia-mo-boi-tron'; // Trang giá sắp viết; trước khi có trang, link này báo 404 trên bản xem trước.
 const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) Cấp NLGI Từ 0 Đến 4';
 const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo cấp NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, Caltex, VHP.';
-const reviewer = timNhanSu('nguyen-thiet-lap')!;
+const tacGia = timNhanSu('nguyen-thi-hong')!;
+const reviewer = timNhanSu('vu-minh-toan')!;
 const NGAY = '2026-11-05';
 const NGAY_GIA = (giaJson as any).cau_hinh.ngay_ra_soat as string;
 const fmtNgay = (s: string) => s.split('-').reverse().join('/');
@@ -126,13 +127,13 @@ const citation = [
   'https://www.stle.org/files/TLTArchives/2010/10_October/Technical_Analysis.aspx', 'https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147',
 ];
 const schemaData = [
-  { '@context': 'https://schema.org', '@type': ['CollectionPage', 'WebPage'], '@id': PAGE_ID, name: title, description, url: absUrl(pagePath), dateModified: NGAY, author: personRef(reviewer), citation, inLanguage: 'vi-VN', publisher: { '@id': ORG_ID } },
-  personSchema(reviewer), breadcrumbSchema(crumbs),
+  { '@context': 'https://schema.org', '@type': ['CollectionPage', 'WebPage'], '@id': PAGE_ID, name: title, description, url: absUrl(pagePath), dateModified: NGAY, author: personRef(tacGia), reviewedBy: personRef(reviewer), citation, inLanguage: 'vi-VN', publisher: { '@id': ORG_ID } },
+  personSchema(tacGia), personSchema(reviewer), breadcrumbSchema(crumbs),
   { '@context': 'https://schema.org', '@type': 'VideoObject', name: 'Nhồi mỡ vòng bi bằng dụng cụ ép', description: 'Video trên kênh HT VINA: nhồi mỡ cho nhiều vòng bi côn bằng dụng cụ ép để mỡ vào đều và làm nhanh.', thumbnailUrl: 'https://i.ytimg.com/vi/dir69EUPOvU/maxresdefault.jpg', uploadDate: '2026-11-05T02:09:13-08:00', duration: 'PT0M39S', embedUrl: 'https://www.youtube.com/embed/dir69EUPOvU' },
   { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: THE.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: absUrl(t.d.link), name: t.ten })) },
 ];
 ---
-<Layout {title} seoTitle="Bản nháp: Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) NLGI 0-4 | Cách Chọn & TDS" {description} noindex modified={NGAY} author={reviewer.name} {schemaData}>
+<Layout {title} seoTitle="Bản nháp: Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) NLGI 0-4 | Cách Chọn & TDS" {description} noindex modified={NGAY} author={tacGia.name} {schemaData}>
   <div class="container trang">
     <aside class="khung-nhap" aria-label="Ghi chú bản nháp">
       <strong>BẢN NHÁP, chưa phát hành, không lập chỉ mục.</strong> Trang chính <a href={CAT}>/mo-boi-tron-cong-nghiep</a> chưa đổi. Link <code>{GIA}</code> sẽ báo 404 cho tới khi trang giá được viết. Còn chờ: trang sản phẩm, giá và TDS của mỡ Sinopec, Caltex (mô tả meta đã nêu hai hãng này, phải có trước khi phát hành); ca thật của HT VINA; cấp và quy cách ENEOS đang có; TS. Lập duyệt nội dung; xác nhận tồn kho từng mã; rà lại giá (rà soát {fmtNgay(NGAY_GIA)}).
@@ -141,7 +142,7 @@ const schemaData = [
     <NoiDungBai articleId={PAGE_ID} type={['CollectionPage', 'WebPage']} field="text">
       <header class="dau">
         <h1>{title}</h1>
-        <p class="byline">Bản nháp ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> (chờ duyệt)</p>
+        <p class="byline">Bản nháp ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> (chờ duyệt)</p>
         <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vị trí tra nóng liên tục trên 120–130 °C, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <p class="goi-y-menu">Chọn xem nhanh theo menu dưới:</p>
         <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
@@ -271,7 +272,7 @@ const schemaData = [
         <ContentBody><SuCo /></ContentBody>
 
         <h2 id="nguon">Nguồn số liệu và người duyệt nội dung</h2>
-        <p><strong>Duyệt kỹ thuật (đang chờ):</strong> <a href={personUrl(reviewer)}>{reviewer.name}</a>, {bylineTitle(reviewer)}. Khi duyệt, TS. Lập đối chiếu thông số với TDS và rà soát khuyến cáo sử dụng. Trang này chưa liệt kê phê duyệt của hãng sản xuất máy, vì chúng tôi chưa đối chiếu đủ tài liệu của từng mã.</p>
+        <p><strong>Duyệt nội dung (đang chờ):</strong> <a href={personUrl(reviewer)}>{reviewer.name}</a>, {bylineTitle(reviewer)}. Khi duyệt, người duyệt đối chiếu thông số với TDS và rà soát khuyến cáo sử dụng. Trang này chưa liệt kê phê duyệt của hãng sản xuất máy, vì chúng tôi chưa đối chiếu đủ tài liệu của từng mã.</p>
         <div class="bang"><table>
           <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
           <tbody>{TDS.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="nofollow noopener">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
