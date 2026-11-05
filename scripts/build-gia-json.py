@@ -106,6 +106,15 @@ DONG = [
     ("mo-boi-tron-cong-nghiep", "VHP Lithium Grease L4", "VHP", "NLGI 4", "trong-nuoc", "Xô 17 kg", 17, "vhp-lithium-grease", 1, ("Mỡ Lithium Grease L4", "Xô 17Kg")),
     ("mo-boi-tron-cong-nghiep", "VHP Opal Grease NLGI 3", "VHP", "NLGI 3", "trong-nuoc", "Phuy 180 kg", 180, "vhp-opal-grease", 0, ("Mỡ Opal Grease NLGI3", "Phuy 180Kg")),
     ("mo-boi-tron-cong-nghiep", "VHP Opal Grease NLGI 4", "VHP", "NLGI 4", "trong-nuoc", "Xô 15 kg", 15, "vhp-opal-grease", 1, ("Mỡ Opal Grease NLGI 4/ 15Kg", "Xô 15Kg")),
+    # 05/11/2026: mỡ Sinopec không có dòng riêng trong file kho, khoảng giá do người dùng chốt ở GHI_DE_KHOANG.
+    ("mo-boi-tron-cong-nghiep", "Sinopec Golden Grease NLGI 2, NLGI 3", "Sinopec", "NLGI 2, 3", "nhap-khau", "Phuy 180 kg", 180, "sinopec-golden-grease", 0, None),
+    ("mo-boi-tron-cong-nghiep", "Sinopec Golden Grease NLGI 2, NLGI 3", "Sinopec", "NLGI 2, 3", "nhap-khau", "Xô 15 kg", 15, "sinopec-golden-grease", 1, None),
+    ("mo-boi-tron-cong-nghiep", "Sinopec Crystal Grease NLGI 2", "Sinopec", "NLGI 2", "nhap-khau", "Phuy 180 kg", 180, "sinopec-crystal-grease-nlgi-3", 0, None),
+    ("mo-boi-tron-cong-nghiep", "Sinopec Crystal Grease NLGI 2", "Sinopec", "NLGI 2", "nhap-khau", "Xô 17 kg", 17, "sinopec-crystal-grease-nlgi-3", 1, None),
+    ("mo-boi-tron-cong-nghiep", "Sinopec Crystal Grease NLGI 3", "Sinopec", "NLGI 3", "nhap-khau", "Phuy 180 kg", 180, "sinopec-crystal-grease-nlgi-3", 0, None),
+    ("mo-boi-tron-cong-nghiep", "Sinopec Crystal Grease NLGI 3", "Sinopec", "NLGI 3", "nhap-khau", "Xô 17 kg", 17, "sinopec-crystal-grease-nlgi-3", 1, None),
+    ("mo-boi-tron-cong-nghiep", "Sinopec Crystal Grease T3", "Sinopec", "NLGI T3", "nhap-khau", "Phuy 180 kg", 180, "sinopec-crystal-grease-t3", 0, None),
+    ("mo-boi-tron-cong-nghiep", "Sinopec Crystal Grease T3", "Sinopec", "NLGI T3", "nhap-khau", "Xô 17 kg", 17, "sinopec-crystal-grease-t3", 1, None),
     # 14/10/2026: thiết bị kiểm tra dầu không có trong file kho, giá lấy ở GIA_NGOAI_KHO.
     ("thiet-bi-kiem-tra-dau", "Máy đo độ nhớt cầm tay LND-1", "OEM", "", "nhap-khau", "Bộ", None, "may-do-do-nhot-cam-tay-lnd-1", 0, ("LND-1", "Bộ")),
     ("thiet-bi-kiem-tra-dau", "Nhớt kế thủy tinh ống 3,5 mm", "OEM", "", "nhap-khau", "Cái", None, "nhot-ke-thuy-tinh-ong-3-5", 0, ("Nhớt kế ống 3,5", "Cái")),
@@ -131,6 +140,16 @@ SUA_GIA = {
 GHI_DE_KHOANG = {
     # 02/11/2026: người dùng chốt APEX TL 68 phuy 200 L là 5.410.000 – 7.500.000 đ (rộng hơn mức 15% thông thường).
     ("APEX TL 68", "Phuy 200 L"): (5_410_000, 7_500_000),
+    # 05/11/2026: người dùng chốt giá mỡ Sinopec. Tin nhắn ghi xô 18 kg, nhưng nhãn và file kho ghi Crystal 17 kg, Golden 15 kg,
+    # nên quy cách theo nhãn cho tới khi người dùng xác nhận. Giá theo kg tính từ khối lượng này.
+    ("Sinopec Golden Grease NLGI 2, NLGI 3", "Phuy 180 kg"): (15_000_000, 17_000_000),
+    ("Sinopec Golden Grease NLGI 2, NLGI 3", "Xô 15 kg"): (1_500_000, 1_600_000),
+    ("Sinopec Crystal Grease NLGI 2", "Phuy 180 kg"): (19_000_000, 20_500_000),
+    ("Sinopec Crystal Grease NLGI 2", "Xô 17 kg"): (2_000_000, 2_100_000),
+    ("Sinopec Crystal Grease NLGI 3", "Phuy 180 kg"): (20_000_000, 21_000_000),
+    ("Sinopec Crystal Grease NLGI 3", "Xô 17 kg"): (2_000_000, 2_150_000),
+    ("Sinopec Crystal Grease T3", "Phuy 180 kg"): (22_000_000, 22_800_000),
+    ("Sinopec Crystal Grease T3", "Xô 17 kg"): (2_050_000, 2_100_000),
 }
 
 
