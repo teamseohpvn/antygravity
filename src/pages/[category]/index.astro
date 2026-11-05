@@ -17,7 +17,8 @@ export async function getStaticPaths() {
   const products = await getActiveProducts();
   const categories = await getActiveCategories();
 
-  return categories.map((cat) => ({
+  // /mo-boi-tron-cong-nghiep dùng trang riêng src/pages/mo-boi-tron-cong-nghiep.astro.
+  return categories.filter((cat) => cat.id !== 'mo-boi-tron-cong-nghiep').map((cat) => ({
     params: { category: cat.id },
     props: {
       products: products.filter((p) => p.data.category === cat.id),
