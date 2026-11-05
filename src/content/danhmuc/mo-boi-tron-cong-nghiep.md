@@ -16,7 +16,7 @@ updated: "2026-11-05"
 
 **Mỡ bôi trơn công nghiệp**, ngoài xưởng quen gọi là **mỡ bò**, là chất bôi trơn dạng sệt pha từ dầu gốc (chiếm khoảng 70–95%), chất làm đặc (xà phòng lithium, canxi, polyurea…) và phụ gia. Chất làm đặc giữ dầu lại như miếng bọt biển ngậm nước, nên mỡ bám được ở những chỗ dầu lỏng chảy mất: vòng bi, gối đỡ, khớp nối, chốt, bạc trượt. Loại dùng nhiều nhất là **mỡ lithium chịu cực áp (EP) cấp NLGI 2**, thường gọi là mỡ đa dụng EP2. Còn nếu vị trí tra mỡ nóng trên khoảng 120 °C, bạn nên xem nhóm [mỡ chịu nhiệt](/mo-chiu-nhiet).
 
-Kho của HT VINA tại TP Hải Phòng (Hải Dương cũ) hiện **có sẵn 10 dòng mỡ bò** của VHP, Shell, ENEOS, Sinopec, PVOIL và Calix, từ ống 400 g đến phuy 180 kg, kèm CO/CQ và hóa đơn VAT. Bảng so sánh bên dưới lấy số từ TDS của từng hãng để bạn chọn theo tải, tốc độ và nhiệt độ của ổ bi.
+Kho của HT VINA tại TP Hải Phòng (Hải Dương cũ) hiện **có sẵn 11 dòng mỡ bò** của VHP, Shell, ENEOS, Sinopec, PVOIL và Calix, từ ống 400 g đến phuy 180 kg, kèm CO/CQ và hóa đơn VAT. Bảng so sánh bên dưới lấy số từ TDS của từng hãng để bạn chọn theo tải, tốc độ và nhiệt độ của ổ bi.
 
 > **Tóm tắt nhanh**
 > - Ổ bi, gối đỡ thông thường: mỡ lithium **NLGI 2**. Ổ lớn quay chậm, rung lắc: **NLGI 3**. Hệ bơm mỡ tự động: **NLGI 00–1**.
@@ -71,9 +71,9 @@ Số trong bảng là **giá trị điển hình hoặc giá trị cam kết** g
 | [PVOIL PV Grease](/mo-boi-tron-cong-nghiep/pvoil-pv-grease) | – | 2 / 3 | – | ≥ 140 °C | – | – | Phuy 180 kg |
 | [Calix Ceno No3](/mo-boi-tron-cong-nghiep/calix-ceno-grease) | Canxi tổng hợp | 3 | – | ≥ 120 °C | -10 đến 100 °C | – | Phuy 180 kg |
 
-Ngày số liệu TDS: Shell Gadus 10/2026, ENEOS 02/2023, Sinopec Crystal 10/2012, Sinopec Golden 11/2022, VHP Lithium, Caxilium, Opal 06/2023, VHP Licas, PVOIL, Calix 10/2026.
+Ngày số liệu TDS: Shell Gadus 10/2026, ENEOS 02/2023, Sinopec Crystal 10/2012, Sinopec Golden 11/2022, VHP Lithium, Caxilium, Opal 06/2023, VHP MP Grease 02/2024 (ngày tạo file PDF), VHP Licas, PVOIL, Calix 10/2026.
 
-**Đọc bảng cho đúng.** Nhiệt độ nhỏ giọt ở đây đo theo ba phương pháp khác nhau: Shell dùng IP 396, VHP Lithium, Licas và Sinopec Crystal dùng ASTM D566, Sinopec Golden dùng ASTM D2265, VHP Caxilium, Opal và Calix dùng GOST 6793. Các phương pháp gia nhiệt khác nhau nên chênh vài độ là chuyện bình thường; con số chỉ giúp bạn biết mỡ thuộc nhóm chịu nhiệt nào, không dùng để xếp hạng hơn kém từng độ. Con số quyết định khi chọn là **nhiệt độ làm việc** và **tải hàn dính 4 bi**.
+**Đọc bảng cho đúng.** Nhiệt độ nhỏ giọt ở đây đo theo ba phương pháp khác nhau: Shell dùng IP 396, VHP Lithium, MP Grease, Licas và Sinopec Crystal dùng ASTM D566, Sinopec Golden dùng ASTM D2265, VHP Caxilium, Opal và Calix dùng GOST 6793. Các phương pháp gia nhiệt khác nhau nên chênh vài độ là chuyện bình thường; con số chỉ giúp bạn biết mỡ thuộc nhóm chịu nhiệt nào, không dùng để xếp hạng hơn kém từng độ. Con số quyết định khi chọn là **nhiệt độ làm việc** và **tải hàn dính 4 bi**.
 
 ### Khi nào chọn mã nào
 
@@ -112,6 +112,34 @@ Từ các kết quả trên, nếu ổ bi của bạn chạy nóng thường xuy
 **Lượng mỡ mỗi lần bơm bù** có thể ước tính theo công thức của SKF: **Gp = 0,005 × D × B** (gam), trong đó D là đường kính ngoài và B là bề rộng vòng bi, tính bằng mm, khi bơm mỡ từ cạnh vòng bi. Ví dụ vòng bi 6310 (D = 110 mm, B = 27 mm) cần khoảng 0,005 × 110 × 27 ≈ 15 g mỗi lần. Nếu gối đỡ có lỗ bơm mỡ đi thẳng qua vòng ngoài hoặc vòng trong, hệ số giảm còn 0,002. Một nhát súng bơm mỡ tay thường ra vài gam tùy loại súng, nên bạn hãy cân thử vài nhát để biết súng của mình ra bao nhiêu.
 
 **Chu kỳ tra mỡ** tính theo tốc độ và cỡ vòng bi, nhưng nhiệt độ ảnh hưởng mạnh nhất. Theo [hướng dẫn tra mỡ lại của SKF](https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/grease-life-and-relubrication), cứ mỗi 15 °C trên mức 70 °C thì chu kỳ tra mỡ phải giảm một nửa. Ổ đang tra mỗi 3 tháng khi chạy ở 70 °C sẽ cần tra khoảng mỗi 6 tuần nếu chạy ở 85 °C.
+
+### Nhồi mỡ nhiều vòng bi bằng dụng cụ ép
+
+Cách này dùng cho vòng bi hở **đang ở ngoài máy**, ví dụ cụm côn của vòng bi côn trước khi lắp. Nó khác với việc bơm bù qua vú mỡ khi vòng bi đã nằm trong gối đỡ.
+
+Khi phải nhồi mỡ cho nhiều vòng bi, dụng cụ ép có hai lợi ích:
+
+- **Đều:** lực ép đẩy mỡ vào khe giữa con lăn, vòng cách và vòng trong, nên mỡ đi hết một vòng thay vì chỉ dính ở mặt ngoài. Nhồi tay cũng làm được, nhưng phải vừa ấn vừa xoay cho tới khi mỡ trào đều ở đầu nhỏ, nên kết quả phụ thuộc vào tay thợ.
+- **Nhanh:** thợ đặt vòng bi vào, ép xuống rồi lấy ra, không phải xoay từng vòng bi như khi nhồi tay.
+
+<iframe src="https://www.youtube-nocookie.com/embed/dir69EUPOvU" title="Nhồi mỡ vòng bi bằng dụng cụ ép" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block;width:100%;max-width:315px;aspect-ratio:9/16;height:auto;margin:12px auto;border:0;border-radius:8px;background:#000"></iframe>
+
+Video trên kênh YouTube của HT VINA: [nhồi mỡ vòng bi bằng dụng cụ ép](https://www.youtube.com/shorts/dir69EUPOvU).
+
+Các bước dưới đây theo [hướng dẫn của Timken](https://www.timken.com/resources/cv14-packing-a-tapered-roller-bearing-with-grease/) cho vòng bi côn. Mỗi loại dụng cụ có cấu tạo khác nhau, nên bạn hãy đối chiếu thêm với hướng dẫn của dụng cụ đang dùng.
+
+1. Rửa sạch tay hoặc đeo găng mới.
+2. Đặt cụm côn vào phễu của dụng cụ, đầu nhỏ quay xuống dưới.
+3. Bịt lỗ ở đầu lớn bằng nắp côn.
+4. Ép chắc tay xuống để mỡ đi vào giữa con lăn, vòng cách và vòng trong.
+5. Lấy vòng bi ra, phết phần mỡ thừa lên mặt ngoài của cụm côn.
+
+**Lời khuyên của chúng tôi:**
+
+- **Nhồi đầy vòng bi, không nhồi đầy gối đỡ.** Timken khuyên thân ổ thường chỉ chứa 1/3 đến 1/2 mỡ khi lắp. Mỡ quá nhiều trong thân ổ sẽ bị khuấy và làm ổ nóng.
+- **Mỗi dụng cụ chỉ nên dùng một loại mỡ.** Khi đổi mỡ, hãy làm sạch hết mỡ cũ trong phễu để hai loại không lẫn vào nhau.
+- **Giữ sạch mỡ.** Lau sạch vòng bi và đậy kín dụng cụ, xô mỡ sau khi làm, vì bụi và cát lọt vào mỡ sẽ đi thẳng vào vòng bi.
+- **Không dùng khí nén để quay vòng bi.** Timken cảnh báo các chi tiết có thể văng ra, gây nguy hiểm.
 
 ### Kinh nghiệm từ người sử dụng
 
