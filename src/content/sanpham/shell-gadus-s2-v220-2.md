@@ -45,7 +45,7 @@ warnings:
 storage: "Để xô trong nhà, đậy kín nắp, tránh bụi và nước lọt vào."
 
 images:
-  - { src: "/images/san-pham/shell-gadus-s2-v220-2-xo-18kg.webp", alt: "Xô 18 kg mỡ bò Shell Gadus S2 V220 2 tại kho Hải Phòng" }
+  - { src: "/images/san-pham/shell-gadus-s2-v220-2-xo-18kg.webp", alt: "Xô 18 kg mỡ bò Shell Gadus S2 V220 2, nhãn vàng ghi rõ tên mã và khối lượng 18 kg" }
   - { src: "/images/san-pham/shell-gadus-s2-v220-2-nhan.webp", alt: "Nhãn xô Shell Gadus S2 V220 2 ghi cấp NLGI 2" }
   - { src: "/images/san-pham/shell-gadus-s2-v220-2-mau-mo.webp", alt: "Màu và độ đặc của mỡ Shell Gadus S2 V220 2 khi mở nắp xô" }
 

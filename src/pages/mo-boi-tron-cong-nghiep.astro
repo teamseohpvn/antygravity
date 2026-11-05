@@ -330,7 +330,7 @@ const schemaData = [
   .seo-content :global(p) { margin-bottom: 15px; line-height: 1.7; font-size: 1.05rem; }
   .seo-content :global(ul), .seo-content :global(ol) { margin: 0 0 15px 22px; line-height: 1.7; }
   .seo-content :global(li) { margin-bottom: 8px; }
-  .seo-content :global(a) { color: var(--color-accent); text-decoration: underline; }
+  .seo-content :global(a:not(.btn-primary):not(.btn-secondary)) { color: var(--color-accent); text-decoration: underline; }
   .seo-content :global(table) { display: block; overflow-x: auto; border-collapse: collapse; margin: 10px 0 20px; font-size: .95rem; }
   .seo-content :global(th), .seo-content :global(td) { border: 1px solid var(--border-color); padding: 8px 10px; text-align: left; vertical-align: top; min-width: 90px; }
   .seo-content :global(th) { background: #f3f5f7; }
