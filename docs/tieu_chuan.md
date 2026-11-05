@@ -21,8 +21,9 @@ Bảng tra dùng khi viết trang sản phẩm: mỗi phương pháp thử trong
 | [ASTM D4052](https://www.astm.org/Standards/D4052.htm) | Khối lượng riêng (máy đo hiện số) | [TCVN 8314:2010](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+8314%3A2010) | IDT ASTM D4052-02 |
 | [ASTM D1298](https://www.astm.org/Standards/D1298.htm) | Khối lượng riêng (tỷ trọng kế) | [TCVN 6594:2007](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+6594%3A2007) | IDT ASTM D1298-05 |
 | [ASTM D97](https://www.astm.org/Standards/D97.htm) | Điểm đông đặc | [TCVN 3753:2011](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+3753%3A2011) | IDT ASTM D97-11 |
-| [ASTM D6749](https://www.astm.org/Standards/D6749.htm) | Điểm đông đặc (tự động, áp suất khí) | – | Chưa có TCVN tương đương; TCVN 3753 (D97) không quy định phương pháp tự động, báo cáo ghi số hiệu ASTM |
+| [ASTM D6749](https://www.astm.org/Standards/D6749.htm) | Điểm đông đặc (tự động, áp suất khí) | – | Chưa có TCVN tương đương |
 | [ASTM D2270](https://www.astm.org/Standards/D2270.htm) | Chỉ số độ nhớt | [TCVN 6019:2010](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+6019%3A2010) | IDT ASTM D2270-04 |
+| [ASTM D341](https://www.astm.org/Standards/D341.htm) | Biểu đồ độ nhớt – nhiệt độ (tính độ nhớt ở nhiệt độ khác) | – | Chưa có TCVN tương đương |
 | [ASTM D92](https://www.astm.org/Standards/D92.htm) | Điểm chớp cháy cốc hở Cleveland | [TCVN 7498:2005](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+7498%3A2005) | IDT ASTM D92-02b (tên TCVN ghi cho bitum, cùng phương pháp) |
 | [ASTM D93](https://www.astm.org/Standards/D93.htm) | Điểm chớp cháy cốc kín Pensky-Martens | [TCVN 2693:2007](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+2693%3A2007) | IDT ASTM D93-06 |
 | [ASTM D2896](https://www.astm.org/Standards/D2896.htm) | Trị số kiềm tổng TBN (chuẩn độ điện thế) | [TCVN 3167:2008](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+3167%3A2008) | IDT ASTM D2896-07a |
@@ -42,6 +43,10 @@ Bảng tra dùng khi viết trang sản phẩm: mỗi phương pháp thử trong
 | [ASTM D566](https://www.astm.org/Standards/D566.htm) | Nhiệt độ nhỏ giọt của mỡ | – | Chưa có TCVN tương đương |
 | [ASTM D2265](https://www.astm.org/Standards/D2265.htm) | Nhiệt độ nhỏ giọt của mỡ (dải rộng) | – | Chưa có TCVN tương đương |
 | [ASTM D2596](https://www.astm.org/Standards/D2596.htm) | Tải hàn dính bốn bi (mỡ) | – | Chưa có TCVN tương đương |
+| [ASTM D1264](https://www.astm.org/Standards/D1264.htm) | Khả năng chống rửa trôi bởi nước của mỡ | – | Chưa có TCVN tương đương |
+| [ASTM D1743](https://www.astm.org/Standards/D1743.htm) | Khả năng chống gỉ của mỡ trong vòng bi | – | Chưa có TCVN tương đương |
+| [ASTM D6184](https://www.astm.org/Standards/D6184.htm) | Tách dầu của mỡ (phương pháp côn) | – | Chưa có TCVN tương đương |
+| [ASTM D2266](https://www.astm.org/Standards/D2266.htm) | Mài mòn bốn bi của mỡ | – | Chưa có TCVN tương đương |
 | [ASTM D5293](https://www.astm.org/Standards/D5293.htm) | Độ nhớt khởi động lạnh CCS | – | Chưa có TCVN tương đương |
 | [ASTM D2983](https://www.astm.org/Standards/D2983.htm) | Độ nhớt Brookfield ở nhiệt độ thấp | – | Chưa có TCVN tương đương |
 | [ASTM D3427](https://www.astm.org/Standards/D3427.htm) | Khả năng thoát khí | – | Chưa có TCVN tương đương |

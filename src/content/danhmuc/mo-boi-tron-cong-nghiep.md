@@ -11,12 +11,12 @@ tags: ["mo-boi-tron", "mo-bo", "shell-gadus", "mo-vhp", "nlgi-2", "nlgi-3"]
 image: "/images/danh-muc/mo-boi-tron-cong-nghiep.webp"
 image_alt: "Bơm mỡ bò vào gối đỡ vòng bi bằng súng bơm mỡ"
 date: "2026-09-21"
-updated: "2026-10-21"
+updated: "2026-11-05"
 ---
 
 **Mỡ bôi trơn công nghiệp**, ngoài xưởng quen gọi là **mỡ bò**, là chất bôi trơn dạng sệt pha từ dầu gốc (chiếm khoảng 70–95%), chất làm đặc (xà phòng lithium, canxi, polyurea…) và phụ gia. Chất làm đặc giữ dầu lại như miếng bọt biển ngậm nước, nên mỡ bám được ở những chỗ dầu lỏng chảy mất: vòng bi, gối đỡ, khớp nối, chốt, bạc trượt. Loại dùng nhiều nhất là **mỡ lithium chịu cực áp (EP) cấp NLGI 2**, thường gọi là mỡ đa dụng EP2. Còn nếu vị trí tra mỡ nóng trên khoảng 120 °C, bạn nên xem nhóm [mỡ chịu nhiệt](/mo-chiu-nhiet).
 
-Kho của HT VINA tại TP Hải Phòng (Hải Dương cũ) hiện **có sẵn 8 dòng mỡ bò** của VHP, Shell, ENEOS, PVOIL và Calix, từ ống 400 g đến phuy 180 kg, kèm CO/CQ và hóa đơn VAT. Bảng so sánh bên dưới lấy số từ TDS của từng hãng để bạn chọn theo tải, tốc độ và nhiệt độ của ổ bi.
+Kho của HT VINA tại TP Hải Phòng (Hải Dương cũ) hiện **có sẵn 10 dòng mỡ bò** của VHP, Shell, ENEOS, Sinopec, PVOIL và Calix, từ ống 400 g đến phuy 180 kg, kèm CO/CQ và hóa đơn VAT. Bảng so sánh bên dưới lấy số từ TDS của từng hãng để bạn chọn theo tải, tốc độ và nhiệt độ của ổ bi.
 
 > **Tóm tắt nhanh**
 > - Ổ bi, gối đỡ thông thường: mỡ lithium **NLGI 2**. Ổ lớn quay chậm, rung lắc: **NLGI 3**. Hệ bơm mỡ tự động: **NLGI 00–1**.
@@ -60,6 +60,9 @@ Số trong bảng là **giá trị điển hình hoặc giá trị cam kết** g
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) | Lithium | 2 | 220 cSt | 180 °C | -20 đến 130 °C | Có phụ gia EP (TDS không ghi số) | Xô 18 kg |
 | [ENEOS Epnoc Grease AP(N)](/mo-boi-tron-cong-nghiep/eneos-epnoc-ap) | Lithium | 0 / 1 / 2 / 3 | – | 195–203 °C | -20 đến 125 °C | 3.090 N (≈ 315 kg) | Can |
+| [Sinopec Crystal Grease NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3) | Lithium | 3 | – | ≥ 180 °C | -20 đến 120 °C | – | Xô 17 kg |
+| [Sinopec Crystal Grease T3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-t3) | Lithium | T3 (xuyên kim 200–230) | – | ≥ 180 °C | -20 đến 120 °C | – | Phuy 180 kg |
+| [Sinopec Golden Grease](/mo-boi-tron-cong-nghiep/sinopec-golden-grease) | Xà phòng kim loại | 2 / 3 | – | 152–155 °C | -20 đến 110 °C | – | NLGI 3 xô 15 kg, phuy 180 kg (NLGI 2 nhận đặt) |
 | [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) | Lithium | 00 / 0 / 3 / 4 | 220 cSt | ≥ 190 °C | -10 đến 120 °C | 200 kg | L4 xô 17 kg (cấp khác nhận đặt) |
 | [VHP Licas Grease](/mo-boi-tron-cong-nghiep/licas-grease) | Lithium-canxi | 2 / 3 | 150 cSt | ≥ 130 °C | -10 đến 110 °C | 180 kg | No3 thùng 30 ống 400 g |
 | [VHP Caxilium Grease](/mo-boi-tron-cong-nghiep/vhp-caxilium-grease) | Lithium-canxi | 2 / 3 | – | 141 °C (No2) | -10 đến 110 °C | – | Phuy 180 kg |
@@ -67,9 +70,9 @@ Số trong bảng là **giá trị điển hình hoặc giá trị cam kết** g
 | [PVOIL PV Grease](/mo-boi-tron-cong-nghiep/pvoil-pv-grease) | – | 2 / 3 | – | ≥ 140 °C | – | – | Phuy 180 kg |
 | [Calix Ceno No3](/mo-boi-tron-cong-nghiep/calix-ceno-grease) | Canxi tổng hợp | 3 | – | ≥ 120 °C | -10 đến 100 °C | – | Phuy 180 kg |
 
-Ngày số liệu TDS: Shell Gadus 10/2026, ENEOS 02/2023, VHP Lithium, Caxilium, Opal 06/2023, VHP Licas, PVOIL, Calix 10/2026.
+Ngày số liệu TDS: Shell Gadus 10/2026, ENEOS 02/2023, Sinopec Crystal 10/2012, Sinopec Golden 11/2022, VHP Lithium, Caxilium, Opal 06/2023, VHP Licas, PVOIL, Calix 10/2026.
 
-**Đọc bảng cho đúng.** Nhiệt độ nhỏ giọt ở đây đo theo ba phương pháp khác nhau: Shell dùng IP 396, VHP Lithium và Licas dùng ASTM D566, VHP Caxilium, Opal và Calix dùng GOST 6793. Các phương pháp gia nhiệt khác nhau nên chênh vài độ là chuyện bình thường; con số chỉ giúp bạn biết mỡ thuộc nhóm chịu nhiệt nào, không dùng để xếp hạng hơn kém từng độ. Con số quyết định khi chọn là **nhiệt độ làm việc** và **tải hàn dính 4 bi**.
+**Đọc bảng cho đúng.** Nhiệt độ nhỏ giọt ở đây đo theo ba phương pháp khác nhau: Shell dùng IP 396, VHP Lithium, Licas và Sinopec Crystal dùng ASTM D566, Sinopec Golden dùng ASTM D2265, VHP Caxilium, Opal và Calix dùng GOST 6793. Các phương pháp gia nhiệt khác nhau nên chênh vài độ là chuyện bình thường; con số chỉ giúp bạn biết mỡ thuộc nhóm chịu nhiệt nào, không dùng để xếp hạng hơn kém từng độ. Con số quyết định khi chọn là **nhiệt độ làm việc** và **tải hàn dính 4 bi**.
 
 ### Khi nào chọn mã nào
 
