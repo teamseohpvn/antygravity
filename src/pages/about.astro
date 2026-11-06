@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import BanDoKho from '../components/BanDoKho.astro';
 import { getActiveCategories } from '../lib/content';
@@ -18,7 +19,7 @@ const crumbs = [
 ];
 
 // Cập nhật khi nội dung thay đổi thực chất (hãng, địa chỉ, danh mục), không đổi ngày chỉ để "làm mới".
-const UPDATED = '2026-10-06';
+const UPDATED = '2026-11-06';
 
 const schemaData = [
   {
@@ -56,21 +57,9 @@ const initials = (name: string) => name.split(' ').slice(-2).map((w) => w[0]).jo
         Lê Thanh Nghị, gồm nhiều hãng, quy cách phuy và xô, kèm CO/CQ, hóa đơn VAT, bảng thông số kỹ thuật (TDS) và phiếu an toàn (SDS).
       </p>
 
-      <p class="updated">Cập nhật: <time datetime={UPDATED}>06/10/2026</time></p>
+      <p class="updated">Cập nhật: <time datetime={UPDATED}>06/11/2026</time></p>
 
-      <h2>Thông tin doanh nghiệp</h2>
-      <div class="table-wrap">
-        <table>
-          <tbody>
-            <tr><th scope="row">Tên pháp lý</th><td>{LEGAL_NAME}</td></tr>
-            <tr><th scope="row">Tên viết tắt</th><td>{LEGAL_SHORT}</td></tr>
-            <tr><th scope="row">Thương hiệu website</th><td>{SITE_NAME}</td></tr>
-            <tr><th scope="row">Mã số thuế</th><td>{TAX_ID}</td></tr>
-            <tr><th scope="row">Địa chỉ kho</th><td>{ADDRESS_FULL}</td></tr>
-            <tr><th scope="row">Hotline / Zalo</th><td><a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></td></tr>
-          </tbody>
-        </table>
-      </div>
+      <ThongTinDoanhNghiep linkGioiThieu={false} />
 
       <h2>Chúng tôi cung cấp những gì</h2>
       <p>

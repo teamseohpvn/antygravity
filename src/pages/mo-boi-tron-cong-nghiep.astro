@@ -6,6 +6,9 @@ import Layout from '../layouts/Layout.astro';
 import NoiDungBai from '../components/NoiDungBai.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
+import ChinhSachGiaKho from '../components/ChinhSachGiaKho.astro';
+import CachVietBai from '../components/CachVietBai.astro';
+import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
 import ContentBody from '../components/ContentBody.astro';
 import { Content as ChonMo } from '../nhap/mo-boi-tron/1-chon-mo.md';
 import { Content as DocBang } from '../nhap/mo-boi-tron/2-doc-bang.md';
@@ -26,7 +29,7 @@ const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) | Chính Hãng Giá T�
 const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo cấp NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, ENEOS, VHP.';
 const tacGia = timNhanSu('nguyen-thi-hong')!;
 const reviewer = timNhanSu('vu-minh-toan')!;
-const NGAY = '2026-11-05';
+const NGAY = '2026-11-06';
 const NGAY_GIA = (giaJson as any).cau_hinh.ngay_ra_soat as string;
 const fmtNgay = (s: string) => s.split('-').reverse().join('/');
 const THANG_GIA = fmtNgay(NGAY_GIA).slice(3); // MM/YYYY, đổi theo ngày rà soát giá.
@@ -115,7 +118,7 @@ const TDS = [
 const MUC_LUC = [
   ['chon-nhanh', 'Chọn nhanh theo vị trí'], ['nlgi', 'Chọn theo cấp NLGI'], ['chat-lam-dac', 'Chọn theo chất làm đặc'], ['so-sanh', 'So sánh và trạng thái kho'],
   ['dong-co', 'Vòng bi động cơ điện'], ['chi-phi', 'Giá mỗi kg và chi phí mỗi năm'], ['mo-kho', 'Vì sao mỡ bò khô cứng'], ['tra-mo', 'Tra bao nhiêu, bao lâu'],
-  ['quy-trinh', 'Quy trình bơm mỡ bò an toàn'], ['kinh-nghiem', 'Kinh nghiệm người sử dụng'], ['su-co', 'Dấu hiệu mỡ hỏng'], ['nguon', 'Nguồn và người duyệt'], ['hoi-dap', 'Câu hỏi thường gặp'],
+  ['quy-trinh', 'Quy trình bơm mỡ bò an toàn'], ['kinh-nghiem', 'Kinh nghiệm người sử dụng'], ['su-co', 'Dấu hiệu mỡ hỏng'], ['hoi-dap', 'Câu hỏi thường gặp'], ['cach-viet-bai', 'Cách chúng tôi viết và cập nhật bài'],
 ];
 
 const crumbs = [{ name: 'Trang chủ', href: '/' }, { name: 'Mỡ bôi trơn (mỡ bò)', href: CAT }];
@@ -144,7 +147,7 @@ const schemaData = [
     <NoiDungBai articleId={PAGE_ID} type={['CollectionPage', 'WebPage']} field="text">
       <header class="dau">
         <h1>{title}</h1>
-        <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a></p>
+        <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></p>
         <p class="mo-dau">Nhiều anh em thợ xưởng cứ thấy vòng bi kêu là với tay lấy súng bơm mỡ, bơm đến khi mỡ trào ra mép phớt mới thôi. Bơm quá đầy như vậy dễ làm ổ nóng rực ngay sau đó, mỡ chảy lòng thòng ra ngoài, lâu dần hỏng cả vòng bi. Lỗi nhiều khi không nằm ở chỗ lười tra mỡ, mà ở chỗ chọn sai cấp NLGI, bơm quá nhiều hoặc dùng lẫn các loại mỡ với nhau.</p>
         <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <p class="goi-y-menu">Bạn đang cần gì? Bấm chọn nhanh bên dưới:</p>
@@ -260,7 +263,7 @@ const schemaData = [
         <ContentBody><DocBang /></ContentBody>
 
         <h2 id="chi-phi">Giá mỡ mỗi kg và chi phí cho một vòng bi mỗi năm</h2>
-        <p>Bảng dưới đây quy khoảng giá của từng loại mỡ ra mỗi kg, rồi tính xem <strong>một vòng bi hết bao nhiêu tiền mỡ trong một năm</strong>. Để dễ so sánh, chúng tôi lấy ví dụ vòng bi 6310, mỗi lần tra khoảng 15 g, tra bốn lần một năm, tức là dùng hết {G_DIEM_NAM} g mỡ mỗi năm. Giá chưa gồm VAT, tính từ giá kho đến mức cao hơn giá kho 15%, rà soát ngày {fmtNgay(NGAY_GIA)}; giá thực tế còn tùy số lượng và lô hàng. Muốn biết giá theo từng xô, phuy, bạn hãy <a href="/bao-gia">gửi yêu cầu báo giá</a>.</p>
+        <p>Bảng dưới đây quy khoảng giá của từng loại mỡ ra mỗi kg, rồi tính xem <strong>một vòng bi hết bao nhiêu tiền mỡ trong một năm</strong>. Để dễ so sánh, chúng tôi lấy ví dụ vòng bi 6310, mỗi lần tra khoảng 15 g, tra bốn lần một năm, tức là dùng hết {G_DIEM_NAM} g mỡ mỗi năm. Giá chưa gồm VAT, tính từ giá kho đến mức cao hơn giá kho 15%, rà soát ngày {fmtNgay(NGAY_GIA)}; giá thực tế còn tùy số lượng và lô hàng. Muốn biết giá theo từng xô, phuy, bạn hãy <a href="/bao-gia">gửi yêu cầu báo giá</a>. Giá chính thức được xác nhận khi đặt hàng, xem <a href="#chinh-sach-gia-kho">chính sách kiểm chứng giá và tồn kho</a>.</p>
         <div class="bang"><table>
           <thead><tr><th>Loại mỡ và quy cách</th><th>Giá mỗi kg (đồng)</th><th>Tiền mỡ cho một vòng bi mỗi năm (đồng)</th></tr></thead>
           <tbody>{CHI_PHI.map((c) => <tr><td><a href={c.link}>{c.ten}</a> · {c.qc}</td><td>{vnd(lam100(c.thap))} – {vnd(lam100(c.cao))}</td><td>{vnd(lam100(c.thap * G_DIEM_NAM / 1000))} – {vnd(lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
@@ -270,14 +273,19 @@ const schemaData = [
         <ContentBody><VanHanh /></ContentBody>
         <ContentBody><SuCo /></ContentBody>
 
-        <h2 id="nguon">Nguồn số liệu và người duyệt nội dung</h2>
-        <p><strong>Người viết:</strong> <a href={personUrl(tacGia)}>{tacGia.name}</a>. <strong>Duyệt nội dung:</strong> <a href={personUrl(reviewer)}>{reviewer.name}</a>, {bylineTitle(reviewer)}. Trang này chưa liệt kê phê duyệt của hãng sản xuất máy, vì chúng tôi chưa đối chiếu đủ tài liệu của từng mã.</p>
-        <div class="bang"><table>
-          <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
-          <tbody>{TDS.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="nofollow noopener">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
-        </table></div>
         <ContentBody><Cuoi /></ContentBody>
+
+        <CachVietBai tacGia={tacGia} nguoiDuyet={reviewer} chucDanhDuyet="kỹ sư Công nghệ ô tô" ngayGia={NGAY_GIA} ngayCapNhat={NGAY}>
+            <p slot="nguon">Trang này chưa liệt kê phê duyệt của hãng sản xuất máy, vì chúng tôi chưa đối chiếu đủ tài liệu của từng mã.</p>
+            <div class="bang" slot="nguon"><table>
+              <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
+              <tbody>{TDS.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="nofollow noopener">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
+            </table></div>
+        </CachVietBai>
         <QuoteCta item="Mỡ bôi trơn (mỡ bò)" />
+        <ChinhSachGiaKho />
+
+        <ThongTinDoanhNghiep />
       </div>
     </NoiDungBai>
   </div>

@@ -6,6 +6,9 @@ import Layout from '../layouts/Layout.astro';
 import NoiDungBai from '../components/NoiDungBai.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
+import CachVietBai from '../components/CachVietBai.astro';
+import ChinhSachGiaKho from '../components/ChinhSachGiaKho.astro';
+import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
 import PriceTable from '../components/PriceTable.astro';
 import { getActiveProducts } from '../lib/content';
 import { fmtNgay, fmtVnd } from '../lib/gia-tinh';
@@ -142,7 +145,7 @@ const duongBrent = diemBrent.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).j
 // Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
-const NGAY_SUA_NOI_DUNG = '2026-11-04';
+const NGAY_SUA_NOI_DUNG = '2026-11-06';
 const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const tacGia = nguoiGia;
 // Ngày cập nhật cuối gồm cả đợt tin. Schema và thẻ meta dùng giờ thật của đợt tin nếu đó là thay đổi mới nhất, không gán giờ giả cho thay đổi khác.
@@ -308,6 +311,7 @@ const schemaData = [
         {coGia && ngay && <div><dt>Giá rà soát</dt><dd><time datetime={cauHinh.ngay_ra_soat}>{ngay}</time></dd></div>}
         <div><dt>Đăng / Cập nhật</dt><dd><time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> / <time datetime={ngayCapNhat}>{fmtNgay(ngayCapNhat)}</time></dd></div>
         <div><dt>Đơn vị phát hành</dt><dd>{LEGAL_SHORT}, kho tại {AREA_TEXT}</dd></div>
+        <div><dt>Quy trình</dt><dd><a href="#cach-viet-bai">Cách chúng tôi viết và cập nhật bài</a> · <a href="#chinh-sach-gia-kho">Chính sách kiểm chứng giá và tồn kho</a></dd></div>
       </dl>
       <button type="button" class="info-them" id="info-them" aria-controls="doc-info" aria-expanded="false" data-track="read_more_doc_info">… Xem thêm</button>
       </div>
@@ -711,7 +715,7 @@ const schemaData = [
       <h2>Khoảng giá trên được lập thế nào</h2>
       <ul>
         <li>Khoảng giá lập từ giá bán tại kho HT VINA vào ngày rà soát ghi ở đầu trang. Biên độ của khoảng phản ánh số lượng, quy cách và điểm giao.</li>
-        <li>{displayName(nguoiGia)} ({nguoiGia.role.toLowerCase()}) rà soát lại bảng mỗi khi hãng đổi giá và ít nhất mỗi tháng.</li>
+        <li>{displayName(nguoiGia)} ({nguoiGia.role.toLowerCase()}) rà soát lại toàn bộ bảng mỗi tuần một lần, và cập nhật ngay trong ngày khi một mã bất kỳ đổi giá. Chi tiết ở mục <a href="#cach-viet-bai">cách chúng tôi viết và cập nhật bài</a>.</li>
         <li>Điều kiện giao hàng và thanh toán xem tại <a href="/chinh-sach-giao-hang">chính sách giao hàng</a> và <a href="/chinh-sach-thanh-toan">chính sách thanh toán</a>. Thông tin công ty, kho và đội ngũ ở trang <a href="/about">giới thiệu</a>.</li>
         {PROMO_ACTIVE && <li>Ưu đãi theo số lượng {PROMO.label} xem tại trang <a href={PROMO.path}>khuyến mại dầu thủy lực AW 68</a>.</li>}
       </ul>
@@ -736,8 +740,12 @@ const schemaData = [
       <h3>Máy đang dùng dầu 46, có dùng dầu 68 cho rẻ được không?</h3>
       <p>Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Các mã có cấp 46 ghi trong bảng giá, dầu 32 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.</p>
       <h3>Bảng giá cập nhật khi nào?</h3>
-      <p>Mỗi khi hãng thay đổi giá và được rà lại ít nhất mỗi tháng. Ngày rà soát gần nhất ghi ở đầu trang.</p>
+      <p>Bảng được rà soát toàn bộ mỗi tuần một lần. Ngoài kỳ rà soát, chỉ cần một mã bất kỳ đổi giá là chúng tôi cập nhật ngay trong ngày. Ngày rà soát gần nhất ghi ở đầu trang.</p>
     </section>
+
+    <CachVietBai tacGia={nguoiGia} nguoiDuyet={nguoiDuyet} ngayGia={cauHinh.ngay_ra_soat || undefined} ngayCapNhat={ngayCapNhat} />
+    <ChinhSachGiaKho />
+    <ThongTinDoanhNghiep />
     </NoiDungBai>
   </div>
 </Layout>
