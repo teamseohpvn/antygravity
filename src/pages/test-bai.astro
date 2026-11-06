@@ -193,11 +193,11 @@ const seoTitle = `${tenBaoGia} – Giá Theo Lít, Phuy, Xô`;
 const BA_KHO = 'Hải Dương cũ, Kiến An, Như Quỳnh (Hưng Yên)';
 // Làm tròn 1 chữ số thập phân: 5.410.000 -> 5.4; 10.590.000 -> 10.6.
 const trieu = (n: number) => (n / 1_000_000).toFixed(1);
-// 06/11/2026 (nháp): mô tả trả lời luôn "giá bao nhiêu 1 lít", số lấy từ bảng giá. Làm tròn ra ngoài để khoảng không hẹp hơn bảng.
+// 06/11/2026 (nháp, người dùng chốt): giữ "chiết khấu cao. Miễn phí vận chuyển 80km, đủ CO/CQ, VAT.", phần tỉnh giao trong ngày đặt cuối (điện thoại có thể bị cắt). Mô tả trả lời luôn "giá bao nhiêu 1 lít", số lấy từ bảng giá. Làm tròn ra ngoài để khoảng không hẹp hơn bảng.
 const nghin = (n: number, len: boolean) => String(len ? Math.ceil(n / 1000) : Math.floor(n / 1000));
 const trieuPhay = (n: number) => trieu(n).replace('.', ',');
 const description = coGia && phuyThap
-  ? `Giá dầu thủy lực 68, 46${thang ? ` tháng ${thang}` : ''}: ${litThap && litCao ? `${nghin(litThap, false)}–${nghin(litCao, true)} nghìn đ/lít, ` : ''}phuy ${trieuPhay(phuyThap)}–${trieuPhay(phuyCao!)} triệu (${vat}). Miễn phí vận chuyển 80 km, giao trong ngày Hải Phòng, Hưng Yên.`
+  ? `Giá dầu thủy lực 68, 46${thang ? ` tháng ${thang}` : ''}: ${litThap && litCao ? `${nghin(litThap, false)}–${nghin(litCao, true)} nghìn đ/lít, ` : ''}${trieuPhay(phuyThap)}–${trieuPhay(phuyCao!)}tr/phuy (${vat}), chiết khấu cao. Miễn phí vận chuyển 80km, đủ CO/CQ, VAT. Vận chuyển nhanh trong ngày Hà Nội, Hải Phòng, Hưng Yên, Ninh Bình, Quảng Ninh, Bắc Ninh.`
   : `Miễn phí vận chuyển 80 km từ 3 kho ${BA_KHO}. Báo giá dầu thủy lực 68, 46 phuy 200–209 L, xô 18 L. Giao trong ngày KCN gần kho.`;
 
 const crumbs = [
