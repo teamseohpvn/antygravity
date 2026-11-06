@@ -15,7 +15,7 @@ import { Content as SuCo } from '../nhap/mo-boi-tron/5-su-co.md';
 import { Content as Cuoi } from '../nhap/mo-boi-tron/6-cuoi.md';
 import giaJson from '../data/gia-cong-khai.json';
 import { timNhanSu, bylineLabel, personUrl, personRef, personSchema, bylineTitle } from '../lib/nhan-su';
-import { absUrl, breadcrumbSchema, ORG_ID, webpSrcset, productImages } from '../lib/site';
+import { absUrl, breadcrumbSchema, ORG_ID, webpSrcset, productImages, BUSINESS } from '../lib/site';
 import { getActiveProducts } from '../lib/content';
 
 const pagePath = '/mo-boi-tron-cong-nghiep';
@@ -26,7 +26,7 @@ const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) | Chính Hãng Giá T�
 const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo cấp NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, ENEOS, VHP.';
 const tacGia = timNhanSu('nguyen-thi-hong')!;
 const reviewer = timNhanSu('vu-minh-toan')!;
-const NGAY = '2026-11-05';
+const NGAY = '2026-11-06';
 const NGAY_GIA = (giaJson as any).cau_hinh.ngay_ra_soat as string;
 const fmtNgay = (s: string) => s.split('-').reverse().join('/');
 const THANG_GIA = fmtNgay(NGAY_GIA).slice(3); // MM/YYYY, đổi theo ngày rà soát giá.
@@ -115,7 +115,7 @@ const TDS = [
 const MUC_LUC = [
   ['chon-nhanh', 'Chọn nhanh theo vị trí'], ['nlgi', 'Chọn theo cấp NLGI'], ['chat-lam-dac', 'Chọn theo chất làm đặc'], ['so-sanh', 'So sánh và trạng thái kho'],
   ['dong-co', 'Vòng bi động cơ điện'], ['chi-phi', 'Giá mỗi kg và chi phí mỗi năm'], ['mo-kho', 'Vì sao mỡ bò khô cứng'], ['tra-mo', 'Tra bao nhiêu, bao lâu'],
-  ['quy-trinh', 'Quy trình bơm mỡ bò an toàn'], ['kinh-nghiem', 'Kinh nghiệm người sử dụng'], ['su-co', 'Dấu hiệu mỡ hỏng'], ['nguon', 'Nguồn và người duyệt'], ['hoi-dap', 'Câu hỏi thường gặp'],
+  ['quy-trinh', 'Quy trình bơm mỡ bò an toàn'], ['kinh-nghiem', 'Kinh nghiệm người sử dụng'], ['su-co', 'Dấu hiệu mỡ hỏng'], ['hoi-dap', 'Câu hỏi thường gặp'], ['cach-viet-bai', 'Cách chúng tôi viết bài'],
 ];
 
 const crumbs = [{ name: 'Trang chủ', href: '/' }, { name: 'Mỡ bôi trơn (mỡ bò)', href: CAT }];
@@ -144,7 +144,7 @@ const schemaData = [
     <NoiDungBai articleId={PAGE_ID} type={['CollectionPage', 'WebPage']} field="text">
       <header class="dau">
         <h1>{title}</h1>
-        <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a></p>
+        <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></p>
         <p class="mo-dau">Nhiều anh em thợ xưởng cứ thấy vòng bi kêu là với tay lấy súng bơm mỡ, bơm đến khi mỡ trào ra mép phớt mới thôi. Bơm quá đầy như vậy dễ làm ổ nóng rực ngay sau đó, mỡ chảy lòng thòng ra ngoài, lâu dần hỏng cả vòng bi. Lỗi nhiều khi không nằm ở chỗ lười tra mỡ, mà ở chỗ chọn sai cấp NLGI, bơm quá nhiều hoặc dùng lẫn các loại mỡ với nhau.</p>
         <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <p class="goi-y-menu">Bạn đang cần gì? Bấm chọn nhanh bên dưới:</p>
@@ -270,13 +270,42 @@ const schemaData = [
         <ContentBody><VanHanh /></ContentBody>
         <ContentBody><SuCo /></ContentBody>
 
-        <h2 id="nguon">Nguồn số liệu và người duyệt nội dung</h2>
-        <p><strong>Người viết:</strong> <a href={personUrl(tacGia)}>{tacGia.name}</a>. <strong>Duyệt nội dung:</strong> <a href={personUrl(reviewer)}>{reviewer.name}</a>, {bylineTitle(reviewer)}. Trang này chưa liệt kê phê duyệt của hãng sản xuất máy, vì chúng tôi chưa đối chiếu đủ tài liệu của từng mã.</p>
-        <div class="bang"><table>
-          <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
-          <tbody>{TDS.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="nofollow noopener">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
-        </table></div>
         <ContentBody><Cuoi /></ContentBody>
+
+        <section class="cach-viet" id="cach-viet-bai" aria-labelledby="tieu-de-cach-viet">
+          <h2 id="tieu-de-cach-viet">Cách chúng tôi viết bài này</h2>
+          <p><strong>Người viết:</strong> <a href={personUrl(tacGia)}>{tacGia.name}</a>, {tacGia.role.toLowerCase()} HT VINA. <strong>Người duyệt:</strong> <a href={personUrl(reviewer)}>{reviewer.name}</a>, {reviewer.role.toLowerCase()} HT VINA, kỹ sư Công nghệ ô tô. Bài chỉ được đăng sau khi người duyệt đã đối chiếu thông số kỹ thuật và khoảng giá.</p>
+          <ul>
+            <li><strong>Thông số kỹ thuật:</strong> sửa ngay khi nhà sản xuất cập nhật bất kỳ thông số nào của sản phẩm.</li>
+            <li><strong>Giá:</strong> rà soát mỗi tuần một lần, và cập nhật ngay trong ngày khi giá có biến động mới. Lần rà soát gần nhất: <time datetime={NGAY_GIA}>{fmtNgay(NGAY_GIA)}</time>.</li>
+            <li><strong>Nội dung bài:</strong> cập nhật lần gần nhất ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time>.</li>
+          </ul>
+          <details>
+            <summary><span class="mo">Xem đầy đủ quy trình</span><span class="dong">Thu gọn</span></summary>
+            <h3>Ai làm việc gì</h3>
+            <ol>
+              <li><strong>Thu thập thông số ({tacGia.name}).</strong> Mọi con số trong bảng so sánh và thẻ sản phẩm lấy từ TDS (bảng thông số kỹ thuật) của hãng, liệt kê ở bảng nguồn bên dưới. Số nào TDS không ghi thì chúng tôi để trống hoặc ghi "TDS không ghi", không tự điền theo mã tương tự.</li>
+              <li><strong>Viết hướng dẫn ({tacGia.name}).</strong> Phần cách chọn, cách tra mỡ dựa trên tài liệu của nhà sản xuất vòng bi và hãng dầu mỡ, có link nguồn ngay trong câu. Ý kiến người dùng lấy từ chia sẻ công khai trên mạng, ghi rõ nguồn và không coi là khảo sát.</li>
+              <li><strong>Lập khoảng giá ({tacGia.name}).</strong> Giá lấy từ bảng giá kho của HT VINA. Trang chỉ công bố khoảng giá, từ giá kho đến mức cao hơn giá kho 15%, chưa gồm VAT, vì giá thực tế còn tùy số lượng và lô hàng.</li>
+              <li><strong>Duyệt bài ({reviewer.name}).</strong> Đối chiếu từng thông số với TDS, kiểm tra các lời khuyên kỹ thuật và duyệt khoảng giá. Phần nào chưa đủ căn cứ thì trả lại để sửa, chưa đăng.</li>
+            </ol>
+            <h3>Khi nào chúng tôi cập nhật</h3>
+            <ul>
+              <li><strong>Thông số kỹ thuật:</strong> khi hãng phát hành TDS mới hoặc sửa bất kỳ thông số nào (cấp NLGI, độ nhớt dầu gốc, nhiệt độ nhỏ giọt, nhiệt độ làm việc, phụ gia…), chúng tôi sửa bảng so sánh, thẻ sản phẩm và trang sản phẩm liên quan, rồi ghi ngày tra cứu mới vào bảng nguồn.</li>
+              <li><strong>Giá:</strong> rà soát định kỳ mỗi tuần một lần. Khi hãng hoặc nhà phân phối báo giá mới, chúng tôi cập nhật ngay trong ngày, không chờ đến kỳ rà soát. Ngày rà soát giá ghi ở bảng giá và ở đầu mục này.</li>
+              <li><strong>Trạng thái kho:</strong> ghi theo hàng đang có ở kho; quy cách có thể thay đổi theo lô hàng.</li>
+              <li><strong>Ngày "Cập nhật" ở đầu bài</strong> chỉ đổi khi nội dung thật sự thay đổi, không đổi ngày khi chưa sửa gì.</li>
+            </ul>
+            <h3>Báo sai sót</h3>
+            <p>Nếu thấy thông số hoặc giá chưa đúng, bạn gọi hoặc nhắn Zalo <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a>, hoặc gửi email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>. Chúng tôi kiểm tra lại với TDS của hãng, sửa bài và ghi ngày cập nhật.</p>
+            <h3 id="nguon">Nguồn số liệu</h3>
+            <p>Trang này chưa liệt kê phê duyệt của hãng sản xuất máy, vì chúng tôi chưa đối chiếu đủ tài liệu của từng mã. Nguyên tắc biên tập chung của website có ở trang <a href="/quy-trinh-bien-tap">quy trình biên tập</a>.</p>
+            <div class="bang"><table>
+              <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
+              <tbody>{TDS.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="nofollow noopener">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
+            </table></div>
+          </details>
+        </section>
         <QuoteCta item="Mỡ bôi trơn (mỡ bò)" />
       </div>
     </NoiDungBai>
@@ -342,6 +371,16 @@ const schemaData = [
   .muc-luc { background: #f7f9fb; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 16px; margin-bottom: 18px; }
   .muc-luc ol { margin: 8px 0 0 20px; columns: 2; }
   .muc-luc li { margin-bottom: 4px; }
+  .cach-viet { margin-top: 32px; padding: 18px clamp(14px, 3vw, 24px); background: #f7f9fb; border: 1px solid var(--border-color); border-radius: 8px; }
+  .seo-content .cach-viet h2 { margin-top: 0; font-size: 1.35rem; }
+  .seo-content .cach-viet h3 { font-size: 1.1rem; }
+  .cach-viet summary { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 20px; margin-top: 4px; background: white; border: 1px solid var(--color-primary); border-radius: 22px; color: var(--color-primary); font-weight: 600; cursor: pointer; list-style: none; }
+  .cach-viet summary::-webkit-details-marker { display: none; }
+  .cach-viet summary::after { content: "▾"; margin-left: 8px; }
+  .cach-viet details[open] summary::after { content: "▴"; }
+  .cach-viet details .dong, .cach-viet details[open] .mo { display: none; }
+  .cach-viet details[open] .dong { display: inline; }
+  .cach-viet details[open] summary { margin-bottom: 6px; }
   .cho { background: #fff3cd; padding: 2px 4px; }
   .nho { font-size: .92rem; color: #555; }
   @media (max-width: 640px) {
