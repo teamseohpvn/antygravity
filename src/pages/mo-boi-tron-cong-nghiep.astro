@@ -15,7 +15,7 @@ import { Content as SuCo } from '../nhap/mo-boi-tron/5-su-co.md';
 import { Content as Cuoi } from '../nhap/mo-boi-tron/6-cuoi.md';
 import giaJson from '../data/gia-cong-khai.json';
 import { timNhanSu, bylineLabel, personUrl, personRef, personSchema, bylineTitle } from '../lib/nhan-su';
-import { absUrl, breadcrumbSchema, ORG_ID, webpSrcset, productImages, BUSINESS } from '../lib/site';
+import { absUrl, breadcrumbSchema, ORG_ID, webpSrcset, productImages, BUSINESS, LEGAL_NAME, TAX_ID, ADDRESS_TEXT, KHO_GIAO_HANG, GIO_LAM_VIEC } from '../lib/site';
 import { getActiveProducts } from '../lib/content';
 
 const pagePath = '/mo-boi-tron-cong-nghiep';
@@ -325,6 +325,20 @@ const schemaData = [
           </details>
         </section>
         <QuoteCta item="Mỡ bôi trơn (mỡ bò)" />
+
+        <section class="doanh-nghiep" id="thong-tin-doanh-nghiep" aria-labelledby="tieu-de-dn">
+          <h2 id="tieu-de-dn">Thông tin doanh nghiệp</h2>
+          <dl>
+            <div><dt>Tên công ty</dt><dd>{LEGAL_NAME}</dd></div>
+            <div><dt>Mã số thuế</dt><dd>{TAX_ID}</dd></div>
+            <div><dt>Địa chỉ đăng ký</dt><dd>{ADDRESS_TEXT}</dd></div>
+            <div><dt>Kho hàng</dt><dd>{ADDRESS_TEXT} (kho chính, Hải Dương cũ){KHO_GIAO_HANG.map((k) => <><br />{k.name}: {k.addressText}</>)}</dd></div>
+            <div><dt>Hotline, Zalo</dt><dd><a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> · <a href={BUSINESS.zaloUrl} rel="noopener" data-track="click_zalo">Nhắn Zalo</a></dd></div>
+            <div><dt>Email</dt><dd><a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></dd></div>
+            <div><dt>Giờ làm việc</dt><dd>{GIO_LAM_VIEC.map((g, i) => <>{i > 0 && <br />}{g.ngay}: {g.gio}</>)}</dd></div>
+          </dl>
+          <p class="chinh-sach"><strong>Chính sách:</strong> <a href="/chinh-sach-doi-tra">Đổi trả</a> · <a href="/chinh-sach-giao-hang">Giao hàng</a> · <a href="/chinh-sach-thanh-toan">Thanh toán</a> · <a href="/privacy-policy">Bảo mật thông tin</a> · <a href="/terms-of-service">Điều khoản sử dụng</a> · <a href="/about">Giới thiệu HT VINA</a></p>
+        </section>
       </div>
     </NoiDungBai>
   </div>
@@ -399,6 +413,15 @@ const schemaData = [
   .cach-viet details .dong, .cach-viet details[open] .mo { display: none; }
   .cach-viet details[open] .dong { display: inline; }
   .cach-viet details[open] summary { margin-bottom: 6px; }
+  .doanh-nghiep { margin-top: 24px; padding: 18px clamp(14px, 3vw, 24px); border: 1px solid var(--border-color); border-radius: 8px; }
+  .seo-content .doanh-nghiep h2 { margin-top: 0; font-size: 1.35rem; }
+  .doanh-nghiep dl { margin: 0 0 12px; }
+  .doanh-nghiep dl > div { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 10px; padding: 7px 0; border-top: 1px solid #eef1f4; line-height: 1.55; }
+  .doanh-nghiep dt { color: #555; font-weight: 600; }
+  .doanh-nghiep dd { margin: 0; }
+  .doanh-nghiep a { color: var(--color-accent); text-decoration: underline; }
+  .chinh-sach { margin: 0; line-height: 1.9; }
+  @media (max-width: 640px) { .doanh-nghiep dl > div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
   .cho { background: #fff3cd; padding: 2px 4px; }
   .nho { font-size: .92rem; color: #555; }
   @media (max-width: 640px) {

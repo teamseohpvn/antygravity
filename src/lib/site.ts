@@ -39,6 +39,14 @@ export const KHO_GIAO_HANG: { id: string; name: string; addressText: string; str
   { id: 'kho-nhu-quynh', name: 'Kho Như Quỳnh', addressText: 'Xã Như Quỳnh, tỉnh Hưng Yên (TT Như Quỳnh cũ)', locality: 'Xã Như Quỳnh', region: 'Hưng Yên' },
 ];
 
+// Giờ làm việc (người dùng cung cấp 06/11/2026): T2–T6 hai ca, T7 làm buổi sáng, Chủ nhật nghỉ.
+// Đối chiếu với giờ trên hồ sơ Google Business Profile; khi đổi giờ thì sửa cả hai nơi.
+export const GIO_LAM_VIEC = [
+  { ngay: 'Thứ Hai – Thứ Sáu', gio: '8:00 – 11:30 và 13:30 – 17:30' },
+  { ngay: 'Thứ Bảy', gio: '8:00 – 11:30' },
+  { ngay: 'Chủ nhật', gio: 'Nghỉ' },
+];
+
 export const ADDRESS_TEXT = `${BUSINESS.streetAddress}, ${BUSINESS.locality}, ${BUSINESS.region}`;
 // Kho nằm ở TP Hải Dương cũ (sáp nhập vào TP Hải Phòng từ 01/07/2025). Dùng ở lần nhắc địa bàn đầu tiên.
 export const AREA_TEXT = 'TP Hải Phòng (Hải Dương cũ)';
