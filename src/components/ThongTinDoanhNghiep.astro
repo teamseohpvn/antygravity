@@ -1,0 +1,40 @@
+---
+// Thông tin pháp lý doanh nghiệp đặt gần phần liên hệ (người dùng yêu cầu 06/11/2026).
+// Dùng trên trang giới thiệu, /mo-boi-tron-cong-nghiep, /bao-gia-dau-thuy-luc và trang báo giá mỡ khi có.
+import { BUSINESS, LEGAL_NAME, LEGAL_SHORT, TAX_ID, SITE_NAME, ADDRESS_TEXT, KHO_GIAO_HANG, GIO_LAM_VIEC, POLICY_LINKS } from '../lib/site';
+
+interface Props {
+  tieuDe?: string;
+  /** Ẩn link "Giới thiệu HT VINA" khi đang ở chính trang giới thiệu. */
+  linkGioiThieu?: boolean;
+}
+const { tieuDe = 'Thông tin doanh nghiệp', linkGioiThieu = true } = Astro.props;
+const CHINH_SACH = POLICY_LINKS.filter((l) => l.href !== '/tuy-chon-cookie');
+---
+
+<section class="ttdn" id="thong-tin-doanh-nghiep" aria-labelledby="tieu-de-ttdn">
+  <h2 id="tieu-de-ttdn">{tieuDe}</h2>
+  <dl>
+    <div><dt>Tên công ty</dt><dd>{LEGAL_NAME}</dd></div>
+    <div><dt>Tên viết tắt, thương hiệu</dt><dd>{LEGAL_SHORT} · website {SITE_NAME}</dd></div>
+    <div><dt>Mã số thuế</dt><dd>{TAX_ID}</dd></div>
+    <div><dt>Địa chỉ đăng ký</dt><dd>{ADDRESS_TEXT}</dd></div>
+    <div><dt>Kho hàng</dt><dd>Kho chính: {ADDRESS_TEXT} (Hải Dương cũ){KHO_GIAO_HANG.map((k) => <><br />{k.name}: {k.addressText}</>)}</dd></div>
+    <div><dt>Hotline, Zalo</dt><dd><a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> · <a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a></dd></div>
+    <div><dt>Email</dt><dd><a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></dd></div>
+    <div><dt>Giờ làm việc</dt><dd>{GIO_LAM_VIEC.map((g, i) => <>{i > 0 && <br />}{g.ngay}: {g.gio}</>)}</dd></div>
+  </dl>
+  <p class="ttdn__cs"><strong>Chính sách:</strong> {CHINH_SACH.map((l, i) => <>{i > 0 && ' · '}<a href={l.href}>{l.label.replace(/^Chính sách /, '').replace(/^./, (c) => c.toUpperCase())}</a></>)}{linkGioiThieu && <> · <a href="/about">Giới thiệu {LEGAL_SHORT}</a></>}</p>
+</section>
+
+<style>
+  .ttdn { margin: 24px 0; padding: 18px clamp(14px, 3vw, 24px); background: white; border: 1px solid var(--border-color); border-radius: 8px; }
+  .ttdn h2 { margin: 0 0 10px; font-size: 1.35rem; line-height: 1.3; color: var(--color-primary); }
+  .ttdn dl { margin: 0 0 12px; }
+  .ttdn dl > div { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 10px; padding: 7px 0; border-top: 1px solid #eef1f4; line-height: 1.55; }
+  .ttdn dt { color: #555; font-weight: 600; }
+  .ttdn dd { margin: 0; }
+  .ttdn a { color: var(--color-accent); text-decoration: underline; }
+  .ttdn__cs { margin: 0; line-height: 1.9; }
+  @media (max-width: 640px) { .ttdn dl > div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+</style>

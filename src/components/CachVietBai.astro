@@ -1,0 +1,99 @@
+---
+// Khối "Cách chúng tôi viết và cập nhật bài" cuối trang có giá và thông số (người dùng yêu cầu 06/11/2026).
+// Phần tóm tắt luôn hiện; quy trình đầy đủ nằm trong <details> (vẫn có trong HTML). Slot "nguon": bảng nguồn TDS của trang, nếu có.
+import { BUSINESS } from '../lib/site';
+import { personUrl, type NhanSu } from '../lib/nhan-su';
+import { fmtNgay } from '../lib/gia-tinh';
+
+interface Props {
+  tacGia: NhanSu;
+  nguoiDuyet: NhanSu;
+  /** Chức danh thêm sau tên người duyệt, ví dụ "kỹ sư Công nghệ ô tô". Trang giá không ghi. */
+  chucDanhDuyet?: string;
+  ngayGia?: string;
+  ngayCapNhat: string;
+}
+const { tacGia, nguoiDuyet, chucDanhDuyet, ngayGia, ngayCapNhat } = Astro.props;
+const viet = tacGia.name;
+const duyet = nguoiDuyet.name;
+const coNguon = Astro.slots.has('nguon');
+---
+
+<section class="cvb" id="cach-viet-bai" aria-labelledby="tieu-de-cvb">
+  <h2 id="tieu-de-cvb">Cách chúng tôi viết và cập nhật bài này</h2>
+  <p><strong>Người viết:</strong> <a href={personUrl(tacGia)}>{viet}</a>, {tacGia.role.toLowerCase()} HT VINA. <strong>Người duyệt:</strong> <a href={personUrl(nguoiDuyet)}>{duyet}</a>, {nguoiDuyet.role.toLowerCase()} HT VINA{chucDanhDuyet && `, ${chucDanhDuyet}`}. Mọi thay đổi về thông số và giá đều qua người duyệt trước khi lên trang.</p>
+  <ul>
+    <li><strong>Giá:</strong> rà soát toàn bộ <strong>mỗi tuần một lần</strong>. Ngoài kỳ rà soát, chỉ cần <strong>một mã bất kỳ đổi giá</strong> là chúng tôi cập nhật ngay trong ngày.{ngayGia && <> Lần rà soát gần nhất: <time datetime={ngayGia}>{fmtNgay(ngayGia)}</time>.</>}</li>
+    <li><strong>Thông số kỹ thuật:</strong> chỉ cần hãng sửa <strong>một thông số bất kỳ của một mã</strong> (phát hành TDS mới), chúng tôi sửa bài ngay khi nhận được TDS đó.</li>
+    <li><strong>Nội dung bài:</strong> sửa lần gần nhất ngày <time datetime={ngayCapNhat}>{fmtNgay(ngayCapNhat)}</time>.</li>
+  </ul>
+  <details>
+    <summary><span class="cvb__mo">Xem đầy đủ quy trình biên tập</span><span class="cvb__dong">Thu gọn</span></summary>
+
+    <h3>1. Quy trình biên tập một bài</h3>
+    <ol>
+      <li><strong>Thu thập tài liệu ({viet}).</strong> Lấy TDS (bảng thông số kỹ thuật) mới nhất của từng mã từ hãng hoặc nhà phân phối, ghi lại bản phát hành và ngày tra cứu.</li>
+      <li><strong>Nhập thông số ({viet}).</strong> Chép số từ TDS vào trang này và trang sản phẩm. Số nào TDS không ghi thì để trống hoặc ghi "TDS không ghi", không tự điền theo mã tương tự.</li>
+      <li><strong>Viết hướng dẫn ({viet}).</strong> Phần hướng dẫn chọn và dùng sản phẩm dựa trên tài liệu của hãng dầu mỡ và nhà sản xuất thiết bị, có link nguồn ngay trong câu. Ý kiến người dùng lấy từ chia sẻ công khai, ghi rõ nguồn và không coi là khảo sát.</li>
+      <li><strong>Lập khoảng giá ({viet}).</strong> Giá lấy từ bảng giá kho của HT VINA. Trang chỉ công bố khoảng giá, từ giá kho đến mức cao hơn giá kho 15%, chưa gồm VAT, vì giá thực tế còn tùy số lượng, quy cách và lô hàng.</li>
+      <li><strong>Duyệt ({duyet}).</strong> Đối chiếu từng thông số với TDS, kiểm tra lời khuyên kỹ thuật và duyệt khoảng giá. Phần nào chưa đủ căn cứ thì trả lại để sửa, chưa đăng.</li>
+      <li><strong>Đăng và ghi ngày.</strong> Bài lên trang cùng ngày sửa, ngày rà soát giá và ngày tra cứu TDS tương ứng.</li>
+    </ol>
+
+    <h3>2. Khi nào sửa bài và sửa những gì</h3>
+    <div class="cvb__bang"><table>
+      <thead><tr><th>Việc</th><th>Khi nào</th><th>Sửa những gì trên trang</th><th>Ai làm</th></tr></thead>
+      <tbody>
+        <tr><td>Rà soát giá định kỳ</td><td data-nhan="Khi nào">Mỗi tuần một lần, kể cả khi không mã nào đổi giá</td><td data-nhan="Sửa những gì">Kiểm tra lại giá kho của mọi mã; đổi ngày rà soát giá. Nếu không có giá nào đổi thì chỉ đổi ngày rà soát.</td><td data-nhan="Ai làm">{viet} rà soát, {duyet} duyệt</td></tr>
+        <tr><td>Một mã bất kỳ đổi giá</td><td data-nhan="Khi nào">Ngay trong ngày hãng hoặc nhà phân phối báo giá mới, không chờ kỳ rà soát tuần</td><td data-nhan="Sửa những gì">Giá của mã đó trên trang này, trên trang sản phẩm và các trang báo giá có mã đó; ngày rà soát giá</td><td data-nhan="Ai làm">{viet} cập nhật, {duyet} duyệt</td></tr>
+        <tr><td>Một mã bất kỳ đổi thông số</td><td data-nhan="Khi nào">Ngay khi nhận được TDS mới của hãng, dù chỉ đổi một con số</td><td data-nhan="Sửa những gì">Thông số của mã đó trên trang này và trang sản phẩm; bản phát hành và ngày tra cứu TDS; lời khuyên nào dựa trên số cũ thì viết lại</td><td data-nhan="Ai làm">{viet} sửa, {duyet} đối chiếu với TDS và duyệt</td></tr>
+        <tr><td>Kho đổi hàng hoặc quy cách</td><td data-nhan="Khi nào">Khi một mã hết hàng, có hàng lại, hoặc lô mới đổi quy cách</td><td data-nhan="Sửa những gì">Trạng thái có sẵn hay nhận đặt, quy cách xô, phuy</td><td data-nhan="Ai làm">{viet}</td></tr>
+        <tr><td>Thêm hoặc ngừng bán một mã</td><td data-nhan="Khi nào">Khi HT VINA bắt đầu hoặc ngừng nhập mã đó</td><td data-nhan="Sửa những gì">Danh sách sản phẩm, bảng giá, bảng thông số và nguồn TDS</td><td data-nhan="Ai làm">{viet} sửa, {duyet} duyệt</td></tr>
+        <tr><td>Có người báo sai sót</td><td data-nhan="Khi nào">Ngay khi nhận được báo</td><td data-nhan="Sửa những gì">Kiểm tra lại với TDS hoặc bảng giá kho; sai ở đâu sửa ở đó</td><td data-nhan="Ai làm">{viet} kiểm tra, {duyet} duyệt</td></tr>
+        <tr><td>Hướng dẫn kỹ thuật cần bổ sung</td><td data-nhan="Khi nào">Khi tài liệu tham khảo đổi khuyến nghị, hoặc khách hỏi một vấn đề bài chưa có</td><td data-nhan="Sửa những gì">Thêm hoặc sửa đoạn hướng dẫn, mục câu hỏi thường gặp, kèm link nguồn</td><td data-nhan="Ai làm">{viet} viết, {duyet} duyệt</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>3. Cách ghi ngày</h3>
+    <ul>
+      <li><strong>Ngày rà soát giá</strong> đổi sau mỗi lần rà soát hằng tuần và mỗi lần một mã đổi giá.</li>
+      <li><strong>Ngày "Cập nhật" ở đầu bài</strong> chỉ đổi khi nội dung bài thật sự thay đổi: thông số, giá, kho, hướng dẫn. Tuần nào rà soát mà không có gì đổi thì giữ nguyên ngày này.</li>
+      <li><strong>Ngày tra cứu TDS</strong> ghi ngày chúng tôi mở lại tài liệu của hãng gần nhất.</li>
+    </ul>
+
+    <h3>4. Báo sai sót</h3>
+    <p>Nếu thấy thông số hoặc giá chưa đúng, bạn gọi hoặc nhắn Zalo <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a>, hoặc gửi email <a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a>. Chúng tôi kiểm tra lại với TDS của hãng, sửa bài và ghi ngày cập nhật. Nguyên tắc biên tập chung của website có ở trang <a href="/quy-trinh-bien-tap">quy trình biên soạn nội dung</a>.</p>
+
+    {coNguon && <><h3 id="nguon">5. Nguồn số liệu</h3><slot name="nguon" /></>}
+  </details>
+</section>
+
+<style>
+  .cvb { margin: 24px 0; padding: 18px clamp(14px, 3vw, 24px); background: #f7f9fb; border: 1px solid var(--border-color); border-radius: 8px; overflow-wrap: anywhere; }
+  .cvb h2 { margin: 0 0 12px; font-size: 1.35rem; line-height: 1.3; color: var(--color-primary); }
+  .cvb h3 { margin: 20px 0 10px; font-size: 1.1rem; color: var(--color-primary); }
+  .cvb p, .cvb li { line-height: 1.7; }
+  .cvb ul, .cvb ol { margin: 0 0 14px 22px; }
+  .cvb li { margin-bottom: 6px; }
+  .cvb a { color: var(--color-accent); text-decoration: underline; }
+  .cvb summary { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 20px; margin-top: 4px; background: white; border: 1px solid var(--color-primary); border-radius: 22px; color: var(--color-primary); font-weight: 600; cursor: pointer; list-style: none; }
+  .cvb summary::-webkit-details-marker { display: none; }
+  .cvb summary::after { content: "▾"; margin-left: 8px; }
+  .cvb details[open] summary::after { content: "▴"; }
+  .cvb details .cvb__dong, .cvb details[open] .cvb__mo { display: none; }
+  .cvb details[open] .cvb__dong { display: inline; }
+  .cvb__bang { overflow-x: auto; }
+  .cvb table { border-collapse: collapse; width: 100%; font-size: .95rem; background: white; }
+  .cvb th, .cvb td { border: 1px solid var(--border-color); padding: 8px 10px; text-align: left; vertical-align: top; }
+  .cvb th { background: #f3f5f7; }
+  .cvb td:first-child { font-weight: 600; }
+  @media (max-width: 640px) {
+    /* Điện thoại: mỗi dòng bảng thành một thẻ, tên cột đứng đầu từng ô. */
+    .cvb thead { display: none; }
+    .cvb table, .cvb tbody, .cvb tr { display: block; }
+    .cvb tr { border: 1px solid var(--border-color); border-radius: 8px; padding: 8px 12px; margin-bottom: 10px; background: white; }
+    .cvb td { display: grid; grid-template-columns: 38% 1fr; gap: 8px; border: 0; border-top: 1px solid #eef1f4; padding: 6px 0; }
+    .cvb td:first-child { display: block; border-top: 0; }
+    .cvb td[data-nhan]::before { content: attr(data-nhan); color: #555; font-size: .88rem; font-weight: 400; }
+  }
+</style>

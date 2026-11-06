@@ -39,12 +39,19 @@ export const KHO_GIAO_HANG: { id: string; name: string; addressText: string; str
   { id: 'kho-nhu-quynh', name: 'Kho Như Quỳnh', addressText: 'Xã Như Quỳnh, tỉnh Hưng Yên (TT Như Quỳnh cũ)', locality: 'Xã Như Quỳnh', region: 'Hưng Yên' },
 ];
 
-// Giờ làm việc (người dùng cung cấp 06/11/2026): T2–T6 hai ca, T7 làm buổi sáng, Chủ nhật nghỉ.
-// Đối chiếu với giờ trên hồ sơ Google Business Profile; khi đổi giờ thì sửa cả hai nơi.
+// Giờ làm việc (người dùng chốt 06/11/2026): T2–T6 8:00–11:30 và 13:30–17:30, T7 8:00–11:30, Chủ nhật nghỉ.
+// Thay giờ cũ 8:00–17:00 / T7 8:00–15:00. Khi đổi giờ: sửa ở đây và trên hồ sơ Google Business Profile cho khớp.
 export const GIO_LAM_VIEC = [
   { ngay: 'Thứ Hai – Thứ Sáu', gio: '8:00 – 11:30 và 13:30 – 17:30' },
   { ngay: 'Thứ Bảy', gio: '8:00 – 11:30' },
   { ngay: 'Chủ nhật', gio: 'Nghỉ' },
+];
+export const GIO_LAM_VIEC_TEXT = GIO_LAM_VIEC.map((g) => `${g.ngay}: ${g.gio}`).join(' · ');
+const T2_T6 = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+export const GIO_LAM_VIEC_SCHEMA = [
+  { '@type': 'OpeningHoursSpecification', dayOfWeek: T2_T6, opens: '08:00', closes: '11:30' },
+  { '@type': 'OpeningHoursSpecification', dayOfWeek: T2_T6, opens: '13:30', closes: '17:30' },
+  { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '11:30' },
 ];
 
 export const ADDRESS_TEXT = `${BUSINESS.streetAddress}, ${BUSINESS.locality}, ${BUSINESS.region}`;
@@ -198,11 +205,8 @@ export function organizationSchema() {
       telephone,
       address,
       areaServed: ['Hải Phòng', 'Bắc Ninh', 'Hưng Yên', 'Quảng Ninh', 'Hà Nội'].map((name) => ({ '@type': 'AdministrativeArea', name })),
-      // Giờ mở cửa theo hồ sơ Google Business Profile (03/10/2026).
-      openingHoursSpecification: [
-        { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '17:00' },
-        { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' },
-      ],
+      // Giờ làm việc người dùng chốt 06/11/2026 (xem GIO_LAM_VIEC). Hồ sơ Google phải để cùng giờ.
+      openingHoursSpecification: GIO_LAM_VIEC_SCHEMA,
       email: BUSINESS.email,
       hasMap: BUSINESS.gbpUrl,
       sameAs: [BUSINESS.gbpUrl, BUSINESS.facebookUrl],

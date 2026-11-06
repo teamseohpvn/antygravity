@@ -3,7 +3,7 @@ import { getActiveCategories } from '../lib/content';
 // Font Inter tự host (có subset tiếng Việt), không chặn render như Google Fonts.
 import '@fontsource-variable/inter/wght.css';
 import SEO from '../components/SEO.astro';
-import { BUSINESS, ADDRESS_FULL, KHO_GIAO_HANG, AREA_TEXT, SITE_NAME, LEGAL_NAME, TAX_ID, GA4_ID, GADS_ID, CONSENT_KEY, POLICY_LINKS, organizationSchema, websiteSchema } from '../lib/site';
+import { BUSINESS, ADDRESS_FULL, KHO_GIAO_HANG, AREA_TEXT, SITE_NAME, LEGAL_NAME, TAX_ID, GA4_ID, GADS_ID, CONSENT_KEY, POLICY_LINKS, GIO_LAM_VIEC, organizationSchema, websiteSchema } from '../lib/site';
 import CookieBanner from '../components/CookieBanner.astro';
 
 interface Props {
@@ -261,6 +261,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
             </ul>
             <p>Hotline / Zalo: <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></p>
             <p>Email: <a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></p>
+            <p>Giờ làm việc:{GIO_LAM_VIEC.map((g) => <><br />{g.ngay}: {g.gio}</>)}</p>
             <p><a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a> · <a href={BUSINESS.facebookUrl} target="_blank" rel="noopener me" data-track="click_facebook">Facebook</a> · <a href="/bao-gia">Gửi yêu cầu báo giá</a></p>
           </div>
           <div>

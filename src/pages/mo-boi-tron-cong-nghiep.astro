@@ -7,6 +7,8 @@ import NoiDungBai from '../components/NoiDungBai.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import ChinhSachGiaKho from '../components/ChinhSachGiaKho.astro';
+import CachVietBai from '../components/CachVietBai.astro';
+import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
 import ContentBody from '../components/ContentBody.astro';
 import { Content as ChonMo } from '../nhap/mo-boi-tron/1-chon-mo.md';
 import { Content as DocBang } from '../nhap/mo-boi-tron/2-doc-bang.md';
@@ -16,7 +18,7 @@ import { Content as SuCo } from '../nhap/mo-boi-tron/5-su-co.md';
 import { Content as Cuoi } from '../nhap/mo-boi-tron/6-cuoi.md';
 import giaJson from '../data/gia-cong-khai.json';
 import { timNhanSu, bylineLabel, personUrl, personRef, personSchema, bylineTitle } from '../lib/nhan-su';
-import { absUrl, breadcrumbSchema, ORG_ID, webpSrcset, productImages, BUSINESS, LEGAL_NAME, TAX_ID, ADDRESS_TEXT, KHO_GIAO_HANG, GIO_LAM_VIEC } from '../lib/site';
+import { absUrl, breadcrumbSchema, ORG_ID, webpSrcset, productImages } from '../lib/site';
 import { getActiveProducts } from '../lib/content';
 
 const pagePath = '/mo-boi-tron-cong-nghiep';
@@ -273,74 +275,17 @@ const schemaData = [
 
         <ContentBody><Cuoi /></ContentBody>
 
-        <section class="cach-viet" id="cach-viet-bai" aria-labelledby="tieu-de-cach-viet">
-          <h2 id="tieu-de-cach-viet">Cách chúng tôi viết và cập nhật bài này</h2>
-          <p><strong>Người viết:</strong> <a href={personUrl(tacGia)}>{tacGia.name}</a>, {tacGia.role.toLowerCase()} HT VINA. <strong>Người duyệt:</strong> <a href={personUrl(reviewer)}>{reviewer.name}</a>, {reviewer.role.toLowerCase()} HT VINA, kỹ sư Công nghệ ô tô. Mọi thay đổi về thông số và giá đều qua người duyệt trước khi lên trang.</p>
-          <ul>
-            <li><strong>Giá:</strong> rà soát toàn bộ <strong>mỗi tuần một lần</strong>. Ngoài kỳ rà soát, chỉ cần <strong>một mã bất kỳ đổi giá</strong> là chúng tôi cập nhật ngay trong ngày. Lần rà soát gần nhất: <time datetime={NGAY_GIA}>{fmtNgay(NGAY_GIA)}</time>.</li>
-            <li><strong>Thông số kỹ thuật:</strong> chỉ cần hãng sửa <strong>một thông số bất kỳ của một mã</strong> (phát hành TDS mới), chúng tôi sửa bài ngay khi nhận được TDS đó.</li>
-            <li><strong>Nội dung bài:</strong> sửa lần gần nhất ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time>.</li>
-          </ul>
-          <details>
-            <summary><span class="mo">Xem đầy đủ quy trình biên tập</span><span class="dong">Thu gọn</span></summary>
-
-            <h3>1. Quy trình biên tập một bài</h3>
-            <ol>
-              <li><strong>Thu thập tài liệu ({tacGia.name}).</strong> Lấy TDS (bảng thông số kỹ thuật) mới nhất của từng mã từ hãng hoặc nhà phân phối, ghi lại bản phát hành và ngày tra cứu vào bảng nguồn ở cuối mục này.</li>
-              <li><strong>Nhập thông số ({tacGia.name}).</strong> Chép số từ TDS vào bảng so sánh, thẻ sản phẩm và trang sản phẩm. Số nào TDS không ghi thì để trống hoặc ghi "TDS không ghi", không tự điền theo mã tương tự.</li>
-              <li><strong>Viết hướng dẫn ({tacGia.name}).</strong> Phần cách chọn, cách tra mỡ dựa trên tài liệu của nhà sản xuất vòng bi và hãng dầu mỡ, có link nguồn ngay trong câu. Ý kiến người dùng lấy từ chia sẻ công khai trên mạng, ghi rõ nguồn và không coi là khảo sát.</li>
-              <li><strong>Lập khoảng giá ({tacGia.name}).</strong> Giá lấy từ bảng giá kho của HT VINA. Trang chỉ công bố khoảng giá, từ giá kho đến mức cao hơn giá kho 15%, chưa gồm VAT, vì giá thực tế còn tùy số lượng và lô hàng.</li>
-              <li><strong>Duyệt ({reviewer.name}).</strong> Đối chiếu từng thông số với TDS, kiểm tra lời khuyên kỹ thuật và duyệt khoảng giá. Phần nào chưa đủ căn cứ thì trả lại để sửa, chưa đăng.</li>
-              <li><strong>Đăng và ghi ngày.</strong> Bài lên trang cùng ngày sửa, ngày rà soát giá và ngày tra cứu TDS tương ứng.</li>
-            </ol>
-
-            <h3>2. Khi nào sửa bài và sửa những gì</h3>
-            <div class="bang"><table class="the-dt">
-              <thead><tr><th>Việc</th><th>Khi nào</th><th>Sửa những gì trên trang</th><th>Ai làm</th></tr></thead>
-              <tbody>
-                <tr><td class="the-ten">Rà soát giá định kỳ</td><td data-nhan="Khi nào">Mỗi tuần một lần, kể cả khi không mã nào đổi giá</td><td data-nhan="Sửa những gì">Kiểm tra lại giá kho của mọi mã; đổi ngày rà soát giá. Nếu không có giá nào đổi thì chỉ đổi ngày rà soát.</td><td data-nhan="Ai làm">{tacGia.name} rà soát, {reviewer.name} duyệt</td></tr>
-                <tr><td class="the-ten">Một mã bất kỳ đổi giá</td><td data-nhan="Khi nào">Ngay trong ngày hãng hoặc nhà phân phối báo giá mới, không chờ kỳ rà soát tuần</td><td data-nhan="Sửa những gì">Khoảng giá mỗi kg và chi phí mỗi năm của mã đó trong bảng chi phí, giá trên trang sản phẩm, ngày rà soát giá</td><td data-nhan="Ai làm">{tacGia.name} cập nhật, {reviewer.name} duyệt</td></tr>
-                <tr><td class="the-ten">Một mã bất kỳ đổi thông số</td><td data-nhan="Khi nào">Ngay khi nhận được TDS mới của hãng, dù chỉ đổi một con số</td><td data-nhan="Sửa những gì">Thông số trong bảng so sánh, thẻ sản phẩm, trang sản phẩm; bản phát hành và ngày tra cứu trong bảng nguồn; lời khuyên nào dựa trên số cũ thì viết lại</td><td data-nhan="Ai làm">{tacGia.name} sửa, {reviewer.name} đối chiếu với TDS và duyệt</td></tr>
-                <tr><td class="the-ten">Kho đổi hàng hoặc quy cách</td><td data-nhan="Khi nào">Khi một mã hết hàng, có hàng lại, hoặc lô mới đổi quy cách xô, phuy</td><td data-nhan="Sửa những gì">Cột trạng thái kho (có sẵn hay nhận đặt), quy cách trên thẻ sản phẩm</td><td data-nhan="Ai làm">{tacGia.name}</td></tr>
-                <tr><td class="the-ten">Thêm hoặc ngừng bán một mã</td><td data-nhan="Khi nào">Khi HT VINA bắt đầu hoặc ngừng nhập mã đó</td><td data-nhan="Sửa những gì">Lưới sản phẩm, bảng so sánh, bảng chi phí, bảng nguồn TDS</td><td data-nhan="Ai làm">{tacGia.name} sửa, {reviewer.name} duyệt</td></tr>
-                <tr><td class="the-ten">Có người báo sai sót</td><td data-nhan="Khi nào">Ngay khi nhận được báo</td><td data-nhan="Sửa những gì">Kiểm tra lại với TDS hoặc bảng giá kho; sai ở đâu sửa ở đó</td><td data-nhan="Ai làm">{tacGia.name} kiểm tra, {reviewer.name} duyệt</td></tr>
-                <tr><td class="the-ten">Hướng dẫn kỹ thuật cần bổ sung</td><td data-nhan="Khi nào">Khi tài liệu tham khảo đổi khuyến nghị, hoặc khách hỏi một vấn đề bài chưa có</td><td data-nhan="Sửa những gì">Thêm hoặc sửa đoạn hướng dẫn, mục câu hỏi thường gặp, kèm link nguồn</td><td data-nhan="Ai làm">{tacGia.name} viết, {reviewer.name} duyệt</td></tr>
-              </tbody>
-            </table></div>
-
-            <h3>3. Cách ghi ngày</h3>
-            <ul>
-              <li><strong>Ngày rà soát giá</strong> (ở bảng chi phí và đầu mục này) đổi sau mỗi lần rà soát hằng tuần và mỗi lần một mã đổi giá.</li>
-              <li><strong>Ngày "Cập nhật" ở đầu bài</strong> chỉ đổi khi nội dung bài thật sự thay đổi: thông số, giá, kho, hướng dẫn. Tuần nào rà soát mà không có gì đổi thì giữ nguyên ngày này.</li>
-              <li><strong>Ngày tra cứu TDS</strong> trong bảng nguồn ghi ngày chúng tôi mở lại tài liệu của hãng gần nhất.</li>
-            </ul>
-
-            <h3>4. Báo sai sót</h3>
-            <p>Nếu thấy thông số hoặc giá chưa đúng, bạn gọi hoặc nhắn Zalo <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a>, hoặc gửi email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>. Chúng tôi kiểm tra lại với TDS của hãng, sửa bài và ghi ngày cập nhật.</p>
-            <h3 id="nguon">5. Nguồn số liệu</h3>
-            <p>Trang này chưa liệt kê phê duyệt của hãng sản xuất máy, vì chúng tôi chưa đối chiếu đủ tài liệu của từng mã. Nguyên tắc biên tập chung của website có ở trang <a href="/quy-trinh-bien-tap">quy trình biên tập</a>.</p>
-            <div class="bang"><table>
+        <CachVietBai tacGia={tacGia} nguoiDuyet={reviewer} chucDanhDuyet="kỹ sư Công nghệ ô tô" ngayGia={NGAY_GIA} ngayCapNhat={NGAY}>
+            <p slot="nguon">Trang này chưa liệt kê phê duyệt của hãng sản xuất máy, vì chúng tôi chưa đối chiếu đủ tài liệu của từng mã.</p>
+            <div class="bang" slot="nguon"><table>
               <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
               <tbody>{TDS.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="nofollow noopener">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
             </table></div>
-          </details>
-        </section>
+        </CachVietBai>
         <QuoteCta item="Mỡ bôi trơn (mỡ bò)" />
-        <ChinhSachGiaKho lichCapNhat="#cach-viet-bai" />
+        <ChinhSachGiaKho />
 
-        <section class="doanh-nghiep" id="thong-tin-doanh-nghiep" aria-labelledby="tieu-de-dn">
-          <h2 id="tieu-de-dn">Thông tin doanh nghiệp</h2>
-          <dl>
-            <div><dt>Tên công ty</dt><dd>{LEGAL_NAME}</dd></div>
-            <div><dt>Mã số thuế</dt><dd>{TAX_ID}</dd></div>
-            <div><dt>Địa chỉ đăng ký</dt><dd>{ADDRESS_TEXT}</dd></div>
-            <div><dt>Kho hàng</dt><dd>{ADDRESS_TEXT} (kho chính, Hải Dương cũ){KHO_GIAO_HANG.map((k) => <><br />{k.name}: {k.addressText}</>)}</dd></div>
-            <div><dt>Hotline, Zalo</dt><dd><a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> · <a href={BUSINESS.zaloUrl} rel="noopener" data-track="click_zalo">Nhắn Zalo</a></dd></div>
-            <div><dt>Email</dt><dd><a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></dd></div>
-            <div><dt>Giờ làm việc</dt><dd>{GIO_LAM_VIEC.map((g, i) => <>{i > 0 && <br />}{g.ngay}: {g.gio}</>)}</dd></div>
-          </dl>
-          <p class="chinh-sach"><strong>Chính sách:</strong> <a href="/chinh-sach-doi-tra">Đổi trả</a> · <a href="/chinh-sach-giao-hang">Giao hàng</a> · <a href="/chinh-sach-thanh-toan">Thanh toán</a> · <a href="/privacy-policy">Bảo mật thông tin</a> · <a href="/terms-of-service">Điều khoản sử dụng</a> · <a href="/about">Giới thiệu HT VINA</a></p>
-        </section>
+        <ThongTinDoanhNghiep />
       </div>
     </NoiDungBai>
   </div>
@@ -405,25 +350,6 @@ const schemaData = [
   .muc-luc { background: #f7f9fb; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 16px; margin-bottom: 18px; }
   .muc-luc ol { margin: 8px 0 0 20px; columns: 2; }
   .muc-luc li { margin-bottom: 4px; }
-  .cach-viet { margin-top: 32px; padding: 18px clamp(14px, 3vw, 24px); background: #f7f9fb; border: 1px solid var(--border-color); border-radius: 8px; }
-  .seo-content .cach-viet h2 { margin-top: 0; font-size: 1.35rem; }
-  .seo-content .cach-viet h3 { font-size: 1.1rem; }
-  .cach-viet summary { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 20px; margin-top: 4px; background: white; border: 1px solid var(--color-primary); border-radius: 22px; color: var(--color-primary); font-weight: 600; cursor: pointer; list-style: none; }
-  .cach-viet summary::-webkit-details-marker { display: none; }
-  .cach-viet summary::after { content: "▾"; margin-left: 8px; }
-  .cach-viet details[open] summary::after { content: "▴"; }
-  .cach-viet details .dong, .cach-viet details[open] .mo { display: none; }
-  .cach-viet details[open] .dong { display: inline; }
-  .cach-viet details[open] summary { margin-bottom: 6px; }
-  .doanh-nghiep { margin-top: 24px; padding: 18px clamp(14px, 3vw, 24px); border: 1px solid var(--border-color); border-radius: 8px; }
-  .seo-content .doanh-nghiep h2 { margin-top: 0; font-size: 1.35rem; }
-  .doanh-nghiep dl { margin: 0 0 12px; }
-  .doanh-nghiep dl > div { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 10px; padding: 7px 0; border-top: 1px solid #eef1f4; line-height: 1.55; }
-  .doanh-nghiep dt { color: #555; font-weight: 600; }
-  .doanh-nghiep dd { margin: 0; }
-  .doanh-nghiep a { color: var(--color-accent); text-decoration: underline; }
-  .chinh-sach { margin: 0; line-height: 1.9; }
-  @media (max-width: 640px) { .doanh-nghiep dl > div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
   .cho { background: #fff3cd; padding: 2px 4px; }
   .nho { font-size: .92rem; color: #555; }
   @media (max-width: 640px) {

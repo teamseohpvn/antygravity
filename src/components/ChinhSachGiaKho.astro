@@ -4,10 +4,10 @@
 import { BUSINESS, LEGAL_SHORT } from '../lib/site';
 
 interface Props {
-  /** Link tới mục lịch cập nhật trên chính trang đó (ví dụ #cach-viet-bai). Bỏ trống thì trỏ tới /quy-trinh-bien-tap. */
+  /** Link tới mục lịch cập nhật trên chính trang đó (ví dụ #cach-viet-bai). Mặc định #cach-viet-bai (khối CachVietBai trên cùng trang). */
   lichCapNhat?: string;
 }
-const { lichCapNhat = '/quy-trinh-bien-tap' } = Astro.props;
+const { lichCapNhat = '#cach-viet-bai' } = Astro.props;
 ---
 
 <section class="cs-gia-kho" id="chinh-sach-gia-kho" aria-labelledby="tieu-de-cs-gia-kho">

@@ -3,8 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import {
-  BUSINESS, ADDRESS_FULL, AREA_TEXT, LEGAL_SHORT, KCN_NEAR, KCN_FAR, absUrl, breadcrumbSchema,
-} from '../lib/site';
+  BUSINESS, ADDRESS_FULL, AREA_TEXT, LEGAL_SHORT, KCN_NEAR, KCN_FAR, absUrl, breadcrumbSchema, GIO_LAM_VIEC_TEXT } from '../lib/site';
 
 import { PROMO } from '../lib/promo';
 
@@ -141,7 +140,7 @@ const schemaData = [
           <strong>Khu vực xa hơn</strong> như KCN {KCN_FAR.join(', ')} và các tỉnh Bắc Ninh, Hưng Yên, Quảng Ninh, Hà Nội: vẫn miễn
           phí vận chuyển, thời gian giao được xác nhận cùng báo giá.
         </li>
-        <li><strong>Giờ làm việc:</strong> thứ Hai đến thứ Sáu 8:00–17:00, thứ Bảy 8:00–15:00.</li>
+        <li><strong>Giờ làm việc:</strong> {GIO_LAM_VIEC_TEXT}.</li>
         <li><strong>Hồ sơ đi kèm:</strong> CO/CQ theo lô, hóa đơn VAT, TDS và SDS của hãng.</li>
       </ul>
       <p>Bạn cũng có thể đến kho xem hàng trực tiếp. Gọi trước để chúng tôi chuẩn bị đúng mã cần xem.</p>
