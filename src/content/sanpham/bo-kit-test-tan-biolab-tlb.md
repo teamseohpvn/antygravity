@@ -21,6 +21,8 @@ specs:
   - { name: "Đối chiếu", value: "ASTM D664", method: "Theo công bố của Biolab" }
 tds_url: "https://biolab.com.tr/en/prd/tlb-tan-total-acid-number-analysis-kit/"
 
+images:
+  - { src: "/images/san-pham/bo-kit-test-tan-biolab-tlb-bo-dung-cu.webp", alt: "Bộ kit test trị số axit TAN với hộp in Dexsil Titra-Lube TAN, ống thuốc thử và dụng cụ chuẩn độ, ảnh do Biolab công bố" }
 stock_status: "dat-hang"
 applications:
   - "Dầu thủy lực, dầu tuabin, dầu máy nén khí, dầu bơm, dầu tuần hoàn"
