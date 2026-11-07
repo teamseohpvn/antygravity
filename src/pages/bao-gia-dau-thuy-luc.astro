@@ -299,7 +299,7 @@ const schemaData = [
 
       {coGia && (
         <div class="summary">
-          <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}{ngay && <span class="summary__ngay"> · rà soát <time datetime={cauHinh.ngay_ra_soat}>{ngay}</time></span>}</p>
+          <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}{ngay && <span class="summary__ngay"> · cập nhật <time datetime={cauHinh.ngay_ra_soat}>{ngay}</time></span>}</p>
           <ul>
             {phuyThap && <li>Phuy dầu thủy lực 68: <strong>{fmtVnd(phuyThap)} – {fmtVnd(phuyCao)} đ</strong> ({vat}), tùy mã.</li>}
             <li><strong><a href="/chinh-sach-giao-hang">Miễn phí vận chuyển 80 km</a></strong> từ 3 kho {BA_KHO}.</li>
@@ -712,7 +712,7 @@ const schemaData = [
       <h3>Máy đang dùng dầu 46, có dùng dầu 68 cho rẻ được không?</h3>
       <p>Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Các mã có cấp 46 ghi trong bảng giá, dầu 32 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.</p>
       <h3>Bảng giá cập nhật khi nào?</h3>
-      <p>Bảng được rà soát toàn bộ mỗi tuần một lần. Ngoài kỳ rà soát, chỉ cần một mã bất kỳ đổi giá là chúng tôi cập nhật ngay trong ngày. Ngày rà soát gần nhất ghi ở phần tóm tắt giá đầu trang.</p>
+      <p>Bảng được rà soát toàn bộ mỗi tuần một lần. Ngoài kỳ rà soát, chỉ cần một mã bất kỳ đổi giá là chúng tôi cập nhật ngay trong ngày. Ngày cập nhật giá gần nhất ghi ở phần tóm tắt giá đầu trang.</p>
     </section>
 
     {/* 07/11/2026 (yêu cầu của người dùng): bỏ khối người viết, người duyệt, hiệu lực ở đầu bài để khách xem giá nhanh; thông tin dồn vào khối này. */}
