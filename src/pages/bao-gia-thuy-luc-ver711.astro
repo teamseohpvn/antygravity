@@ -229,13 +229,6 @@ const schemaData = [
       <p class="dong-duyet">Duyệt giá: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a> (GĐ HT VINA){HIEU_LUC && (hetHieuLuc
         ? <> · Kỳ giá đã kết thúc, đang rà lại</>
         : <> · Hiệu lực: tháng {fmtNgay(HIEU_LUC.tu, 'thang')}</>)} · <a href="#cach-viet-bai" data-track="click_cach_lap_gia">Cách chúng tôi lập giá</a></p>
-      <nav class="page-menu" aria-label="Lối tắt trong trang">
-        <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">XEM NHANH BÁO GIÁ</a>
-        <a href="#chiet-khau">Chiết khấu và giữ giá</a>
-        <a href="#nhan-dinh">Xu hướng giá tháng 11</a>
-        <a href="#dat-bao-nhieu" data-track="click_menu_tinh_dau">Tính lượng dầu cần mua</a>
-        <a href="#quy-trinh">Quy trình đặt hàng</a>
-      </nav>
 
 
       {coGia && (
@@ -316,20 +309,9 @@ const schemaData = [
         <li><strong>Chốt giá trước lịch thay dầu lớn,</strong> đừng đợi tới tuần thay dầu mới hỏi giá.</li>
       </ul>
       <p>Mức cọc, thời hạn lấy hàng và cách xử lý khi giá giảm mạnh trong kỳ được thỏa thuận theo số lượng của từng khách. Ghi chú "giữ giá" khi gửi <a href={QUOTE_THUONG}>form báo giá</a> để nhận phương án cụ thể.</p>
+      <p>Giá dầu thô, dầu gốc và tỷ giá ảnh hưởng tới bảng giá thế nào, xem bài <a href={BAI_TIN_GIA}>giá dầu thủy lực phụ thuộc giá dầu thô thế nào</a>.</p>
     </section>
 
-    <section class="price-body" id="nhan-dinh">
-      <h2>Xu hướng giá dầu tháng 11/2026</h2>
-      <ul>
-        <li><strong>Dầu thô giảm mạnh đầu tháng.</strong> Brent từ 113,43 USD/thùng phiên 30/10 (<a href={TIN.reuters} rel="noopener">Reuters</a>) xuống quanh 102,6 USD/thùng ngày 4/11, giảm khoảng 9,5% khi Mỹ và Iran nối lại đàm phán (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>).</li>
-        <li><strong>Bảng giá tháng 11 chưa đổi.</strong> Giá dầu thô giảm không có nghĩa dầu thủy lực giảm ngay hoặc giảm cùng tỷ lệ, vì giá còn phụ thuộc dầu gốc, tỷ giá và lô hàng của hãng.</li>
-      </ul>
-      <blockquote class="market-note">
-        <p>Giá dầu tháng 11 diễn biến phức tạp và có khả năng tăng cao nếu chiến sự giữa Mỹ và Iran tái bùng phát.</p>
-        <footer>Nhận định chủ quan của {displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}, ngày {fmtNgay(NGAY_NHAN_DINH)}. Đây không phải dự báo chắc chắn.</footer>
-      </blockquote>
-      <p>Diễn biến từng phiên, giá dầu gốc, tỷ giá và độ trễ từ dầu thô tới dầu thủy lực có trong bài <a href={BAI_TIN_GIA}>giá dầu thủy lực phụ thuộc giá dầu thô thế nào</a>.</p>
-    </section>
 
     <section class="price-body" id="dat-bao-nhieu">
       <h2>Nên đặt bao nhiêu dầu? Tính theo máy của bạn</h2>
