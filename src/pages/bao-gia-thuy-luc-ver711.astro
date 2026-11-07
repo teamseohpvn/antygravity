@@ -225,6 +225,10 @@ const schemaData = [
     <NoiDungBai articleId={ARTICLE_ID}>
     <header class="price-hero">
       <h1>{title}</h1>
+      {/* Một dòng trách nhiệm dưới H1; chi tiết người viết, ngày đăng, ngày rà soát nằm ở khối Cách chúng tôi viết bài cuối trang. */}
+      <p class="dong-duyet">Duyệt giá: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a> (GĐ HT VINA){HIEU_LUC && (hetHieuLuc
+        ? <> · Kỳ giá đã kết thúc, đang rà lại</>
+        : <> · Hiệu lực: tháng {fmtNgay(HIEU_LUC.tu, 'thang')}</>)} · <a href="#cach-viet-bai" data-track="click_cach_lap_gia">Cách chúng tôi lập giá</a></p>
       <nav class="page-menu" aria-label="Lối tắt trong trang">
         <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">XEM NHANH BÁO GIÁ</a>
         <a href="#chiet-khau">Chiết khấu và giữ giá</a>
@@ -616,6 +620,7 @@ const schemaData = [
     .page-menu { grid-template-columns: repeat(5, 1fr); }
     .page-menu a.page-menu__main { grid-column: auto; }
   }
+  .dong-duyet { margin: -4px 0 12px; font-size: 0.85rem; line-height: 1.5; color: var(--color-text-light); }
   .page-menu a { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 8px 10px; border: 1px solid var(--color-primary); border-radius: 8px; font-size: 0.92rem; font-weight: 600; line-height: 1.25; text-align: center; color: var(--color-primary); text-decoration: none; }
   .page-menu a:hover { background: #f1f5f9; }
   .price-hero .page-menu a.page-menu__main { background: var(--color-primary); color: #fff; font-size: 1rem; font-weight: 800; letter-spacing: 0.02em; }
