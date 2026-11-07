@@ -288,34 +288,6 @@ const schemaData = [
     <NoiDungBai articleId={ARTICLE_ID}>
     <header class="price-hero">
       <h1>{title}</h1>
-      <div class="doc-wrap">
-      {/* Thu gọn còn dòng tóm tắt, vẫn giữ tên người viết, người duyệt và ngày. Toàn bộ khối luôn nằm trong HTML. */}
-      <script is:inline>document.currentScript.parentElement.classList.add('co-thu-gon', 'is-thu-gon');</script>
-      <p class="doc-tomtat">
-        <span class="doc-tomtat__dong">Người viết: <a href={personUrl(nguoiGia)}>{bylineLabel(nguoiGia)}</a> ({nguoiGia.role.toLowerCase()})</span>
-        <span>Duyệt bởi: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a> (GĐ HT VINA) · Cập nhật: {fmtNgay(ngayCapNhat)}{HIEU_LUC && (hetHieuLuc ? <> · Kỳ giá đã kết thúc</> : <> · Hiệu lực: Tháng {fmtNgay(HIEU_LUC.tu, 'thang')}</>)}</span>
-      </p>
-      <dl class="doc-info" id="doc-info">
-        <div><dt>Người viết</dt><dd><a href={personUrl(nguoiGia)} rel="author">{bylineLabel(nguoiGia)}</a>, {nguoiGia.role.toLowerCase()}</dd></div>
-        <div><dt>Chịu trách nhiệm duyệt</dt><dd><a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a>, {nguoiDuyet.role.toLowerCase()} HT VINA</dd></div>
-        {HIEU_LUC && (
-          <div>
-            <dt>Hiệu lực</dt>
-            <dd>
-              {hetHieuLuc
-                ? <>Kỳ giá đã kết thúc ngày <time datetime={HIEU_LUC.den}>{fmtNgay(HIEU_LUC.den)}</time>, bảng đang được rà lại. Gọi để nhận giá hiện hành.</>
-                : <>Từ <time datetime={HIEU_LUC.tu}>{fmtNgay(HIEU_LUC.tu)}</time> đến hết <time datetime={HIEU_LUC.den}>{fmtNgay(HIEU_LUC.den)}</time></>}
-            </dd>
-          </div>
-        )}
-        {coGia && ngay && <div><dt>Giá rà soát</dt><dd><time datetime={cauHinh.ngay_ra_soat}>{ngay}</time></dd></div>}
-        <div><dt>Đăng / Cập nhật</dt><dd><time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> / <time datetime={ngayCapNhat}>{fmtNgay(ngayCapNhat)}</time></dd></div>
-        <div><dt>Đơn vị phát hành</dt><dd>{LEGAL_SHORT}, kho tại {AREA_TEXT}</dd></div>
-        <div><dt>Quy trình</dt><dd><a href="#cach-viet-bai">Cách chúng tôi viết và cập nhật bài</a> · <a href="#chinh-sach-gia-kho">Chính sách kiểm chứng giá và tồn kho</a></dd></div>
-      </dl>
-      <button type="button" class="info-them" id="info-them" aria-controls="doc-info" aria-expanded="false" data-track="read_more_doc_info">… Xem thêm</button>
-      </div>
-
       <nav class="page-menu" aria-label="Lối tắt trong trang">
         <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">XEM NHANH BÁO GIÁ</a>
         <a href="#chiet-khau">Chiết khấu doanh nghiệp</a>
@@ -327,7 +299,7 @@ const schemaData = [
 
       {coGia && (
         <div class="summary">
-          <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}</p>
+          <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}{ngay && <span class="summary__ngay"> · rà soát <time datetime={cauHinh.ngay_ra_soat}>{ngay}</time></span>}</p>
           <ul>
             {phuyThap && <li>Phuy dầu thủy lực 68: <strong>{fmtVnd(phuyThap)} – {fmtVnd(phuyCao)} đ</strong> ({vat}), tùy mã.</li>}
             <li><strong><a href="/chinh-sach-giao-hang">Miễn phí vận chuyển 80 km</a></strong> từ 3 kho {BA_KHO}.</li>
@@ -740,10 +712,21 @@ const schemaData = [
       <h3>Máy đang dùng dầu 46, có dùng dầu 68 cho rẻ được không?</h3>
       <p>Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Các mã có cấp 46 ghi trong bảng giá, dầu 32 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.</p>
       <h3>Bảng giá cập nhật khi nào?</h3>
-      <p>Bảng được rà soát toàn bộ mỗi tuần một lần. Ngoài kỳ rà soát, chỉ cần một mã bất kỳ đổi giá là chúng tôi cập nhật ngay trong ngày. Ngày rà soát gần nhất ghi ở đầu trang.</p>
+      <p>Bảng được rà soát toàn bộ mỗi tuần một lần. Ngoài kỳ rà soát, chỉ cần một mã bất kỳ đổi giá là chúng tôi cập nhật ngay trong ngày. Ngày rà soát gần nhất ghi ở phần tóm tắt giá đầu trang.</p>
     </section>
 
-    <CachVietBai tacGia={nguoiGia} nguoiDuyet={nguoiDuyet} ngayGia={cauHinh.ngay_ra_soat || undefined} ngayCapNhat={ngayCapNhat} />
+    {/* 07/11/2026 (yêu cầu của người dùng): bỏ khối người viết, người duyệt, hiệu lực ở đầu bài để khách xem giá nhanh; thông tin dồn vào khối này. */}
+    <CachVietBai tacGia={nguoiGia} nguoiDuyet={nguoiDuyet} ngayGia={cauHinh.ngay_ra_soat || undefined} ngayCapNhat={ngayCapNhat}>
+      <Fragment slot="thong-tin">
+        {HIEU_LUC && (
+          <li><strong>Hiệu lực bảng giá:</strong> {hetHieuLuc
+            ? <>kỳ giá đã kết thúc ngày <time datetime={HIEU_LUC.den}>{fmtNgay(HIEU_LUC.den)}</time>, bảng đang được rà lại. Gọi để nhận giá hiện hành.</>
+            : <>từ <time datetime={HIEU_LUC.tu}>{fmtNgay(HIEU_LUC.tu)}</time> đến hết <time datetime={HIEU_LUC.den}>{fmtNgay(HIEU_LUC.den)}</time>.</>}</li>
+        )}
+        <li><strong>Đăng / cập nhật:</strong> <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> / <time datetime={ngayCapNhat}>{fmtNgay(ngayCapNhat)}</time>.</li>
+        <li><strong>Đơn vị phát hành:</strong> {LEGAL_SHORT}, kho tại {AREA_TEXT}.</li>
+      </Fragment>
+    </CachVietBai>
     <ChinhSachGiaKho />
     <ThongTinDoanhNghiep />
     </NoiDungBai>
@@ -751,14 +734,6 @@ const schemaData = [
 </Layout>
 
 <script>
-  // Khối thông tin đầu trang trên điện thoại: bấm để mở hoặc thu gọn.
-  const nutInfo = document.getElementById('info-them');
-  nutInfo?.addEventListener('click', () => {
-    const thuGon = nutInfo.parentElement!.classList.toggle('is-thu-gon');
-    nutInfo.setAttribute('aria-expanded', String(!thuGon));
-    nutInfo.textContent = thuGon ? '… Xem thêm' : 'Thu gọn';
-  });
-
   // Mục tin giá dầu: vuốt qua thì thu gọn; bấm "Đọc chi tiết" hoặc lối tắt trên menu thì mở hết.
   const tinGia = document.getElementById('nhan-dinh');
   const nutTin = document.getElementById('doc-them-tin');
@@ -880,22 +855,7 @@ const schemaData = [
   .match { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
   .match th, .match td { border: 1px solid var(--border-color, #e2e8f0); padding: 10px 12px; text-align: left; vertical-align: top; }
   .match th { background: #f1f5f9; font-weight: 600; }
-  .doc-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 16px; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 12px 16px; margin: 0 0 14px; font-size: 0.95rem; }
-  .doc-tomtat, .info-them { display: none; }
-  .doc-wrap { margin: 0 0 14px; }
-  .doc-wrap .doc-info { margin-bottom: 0; }
-  .doc-wrap.is-thu-gon .doc-info { display: none; }
-  .price-hero .doc-wrap.is-thu-gon .doc-tomtat { display: inline; margin: 0; font-size: 0.9rem; line-height: 1.5; color: var(--color-text-light); }
-  .doc-wrap.co-thu-gon .info-them { display: inline-block; min-height: 40px; padding: 4px 0 4px 6px; background: none; border: 0; color: var(--color-primary); font: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer; }
-  .doc-tomtat__dong { display: block; }
-  @media (max-width: 700px) {
-    .price-hero .doc-wrap.is-thu-gon .doc-tomtat { font-size: 0.8rem; line-height: 1.45; }
-    .doc-wrap.co-thu-gon .info-them { font-size: 0.8rem; min-height: 32px; padding: 2px 0 2px 4px; }
-  }
-  .doc-tomtat a { color: var(--color-primary); font-weight: 600; text-decoration: underline; }
-  .doc-info dt { font-size: 0.82rem; color: var(--color-text-light); }
-  .doc-info dd { margin: 0; font-weight: 600; }
-  .doc-info a { color: var(--color-primary); text-decoration: underline; }
+  .summary__ngay { font-weight: 400; font-size: 0.85em; color: var(--color-text-light); }
   .page-menu { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 14px; }
   .page-menu a.page-menu__main { grid-column: 1 / -1; }
   @media (min-width: 768px) {
