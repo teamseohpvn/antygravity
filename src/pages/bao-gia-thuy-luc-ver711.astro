@@ -149,6 +149,12 @@ const trieu = (n: number) => (n / 1_000_000).toFixed(1);
 const xo = coSo.filter((r) => /xô/i.test(r.quy_cach));
 const xoThap = xo.length ? minOf(xo.map((r) => r.thap)) : null;
 const xoCao = xo.length ? maxOf(xo.map((r) => r.cao)) : null;
+// Tóm tắt: khoảng giá và quy đổi đ/lít riêng cho phuy và xô, lấy từ bảng.
+const litTu = (xs: typeof coSo) => xs.some((r) => r.thap_don_vi) ? [minOf(xs.map((r) => r.thap_don_vi)), maxOf(xs.map((r) => r.cao_don_vi))] : null;
+const coLit = (xs: typeof coSo) => [...new Set(xs.map((r) => Number(r.quy_cach.match(/(\d+)\s*L/i)?.[1])).filter(Boolean))].sort((x, y) => x - y);
+const nhanLit = (ls: number[]) => ls.length ? ` ${ls[0]}${ls.length > 1 ? `–${ls.at(-1)}` : ''} L` : '';
+const litPhuy = litTu(phuy);
+const litXo = litTu(xo);
 const litPhuyThap = phuy.some((r) => r.thap_don_vi) ? minOf(phuy.map((r) => r.thap_don_vi)) : null;
 const description = coGia && phuyThap
   ? `Phuy 200L ${trieu(phuyThap)}–${trieu(phuyCao!)}tr${xoThap ? `, xô 18L ${trieu(xoThap)}–${trieu(xoCao!)}tr` : ''} (${vat})${litPhuyThap ? `, quy ra từ ${Math.round(litPhuyThap / 1000)}k/lít` : ''}. Miễn phí vận chuyển 80 km, đủ CO/CQ, hóa đơn VAT, chiết khấu tốt cho nhà máy.`
@@ -235,10 +241,10 @@ const schemaData = [
         <div class="summary">
           <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}{ngay && <span class="summary__ngay"> · cập nhật <time datetime={cauHinh.ngay_ra_soat}>{ngay}</time></span>}</p>
           <ul>
-            {phuyThap && <li>Phuy dầu thủy lực 68: <strong>{fmtVnd(phuyThap)} – {fmtVnd(phuyCao)} đ</strong> ({vat}), tùy mã.</li>}
+            {phuyThap && <li>Phuy{nhanLit(coLit(phuy))} dầu thủy lực 68: <strong>{fmtVnd(phuyThap)} – {fmtVnd(phuyCao)} đ</strong> ({vat}), tùy mã{litPhuy && <>, quy ra <strong>{fmtVnd(litPhuy[0])} – {fmtVnd(litPhuy[1])} đ/lít</strong></>}.</li>}
+            {xoThap && <li>Xô{nhanLit(coLit(xo))}: <strong>{fmtVnd(xoThap)} – {fmtVnd(xoCao)} đ</strong> ({vat}), tùy mã{litXo && <>, quy ra <strong>{fmtVnd(litXo[0])} – {fmtVnd(litXo[1])} đ/lít</strong></>}.</li>}
             <li><strong><a href="/chinh-sach-giao-hang">Miễn phí vận chuyển 80 km</a></strong> từ 3 kho {BA_KHO}.</li>
             <li>Giao trong ngày các KCN gần kho khi chốt đơn trước {PROMO.sameDayCutoff}, thứ Hai đến thứ Sáu. KCN xa hơn theo lịch hẹn.</li>
-            {litThap && <li>Quy đổi theo lít: <strong>{fmtVnd(litThap)} – {fmtVnd(litCao)} đ/lít</strong>, xô 18 L đắt hơn phuy khi tính theo lít.</li>}
             <li>{soMa} mã ISO VG 68 có hàng tại hệ thống 3 kho, tùy mã từng kho: {hangs.join(', ')}. {MA_CO_46.length} mã có thêm cấp 46, nhận đặt, giá riêng theo mã.</li>
             <li>Giá chính xác theo số phuy và nơi giao được gửi trong ngày làm việc. Có hóa đơn VAT, CO/CQ theo lô với hãng có cấp.</li>
           </ul>
