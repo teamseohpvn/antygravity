@@ -167,7 +167,7 @@ Ngày của TDS dùng trong bảng: Super Hyrando bản tiếng Việt 10/2015, 
 
 Mọi lô hàng giao kèm **CO/CQ và hóa đơn VAT**. Giao sai hàng, hàng hỏng do vận chuyển hay lỗi chất lượng của nhà sản xuất được đổi trả trong **7 ngày** theo [chính sách đổi trả](/chinh-sach-doi-tra).
 
-Ngoài ra kho còn có các mã dầu 68 như Caltex AW 68, Cosmo Hydro AW 68, EMI AW 68, EMER LAW 68, X-One AW 68. Danh sách đầy đủ có trong danh mục [dầu thủy lực](/dau-thuy-luc), còn khoảng giá từng mã xem ở trang [báo giá dầu thủy lực](/bao-gia-dau-thuy-luc). Vận chuyển miễn phí trong 80 km từ kho có hàng gần điểm giao nhất.
+Ngoài ra kho còn có các mã dầu 68 như [Caltex AW 68](/dau-thuy-luc/caltex-hydraulic-aw-68), [Cosmo Hydro AW 68](/dau-thuy-luc/cosmo-hydro-aw-68), [EMI AW 68](/dau-thuy-luc/emi-aw-68), [EMER LAW 68](/dau-thuy-luc/emer-law-68), [X-One AW 68](/dau-thuy-luc/x-one-aw-68). Danh sách đầy đủ có trong danh mục [dầu thủy lực](/dau-thuy-luc), còn khoảng giá từng mã xem ở trang [báo giá dầu thủy lực](/bao-gia-dau-thuy-luc). Vận chuyển miễn phí trong 80 km từ kho có hàng gần điểm giao nhất.
 
 > **Nhận định của HT VINA**
 >

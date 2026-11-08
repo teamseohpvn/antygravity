@@ -84,7 +84,7 @@ Theo số giờ chạy khuyến cáo trên sổ tay máy và TDS của dầu, ho
 - Lượng dầu hao hụt tăng.
 - Chênh áp qua bình tách dầu tăng.
 
-Phân tích mẫu dầu (độ nhớt, chỉ số axit TAN, nước) giúp xác định thời điểm thay chính xác.
+[Phân tích mẫu dầu](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau) (độ nhớt, chỉ số axit TAN, nước) giúp xác định thời điểm thay chính xác.
 
 ### Máy nén khí trục vít dùng dầu thủy lực 46 thay được không?
 
