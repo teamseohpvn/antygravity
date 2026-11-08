@@ -16,7 +16,7 @@ tags: ["phân tích dầu", "nước trong dầu", "test nhanh"]
 
 Có ba cách **test nước trong dầu** ngay tại công trường mà không cần phòng thí nghiệm: **bộ kit ống lắc áp suất** dùng canxi hydrua (đo được khoảng 0,02–1%, tức 200–10.000 ppm), **máy đo điện môi cầm tay** cắm thẳng đầu dò vào dầu, và **kem thử nước** quét lên que thăm để tìm nước đọng ở đáy bồn. Ba cách này rẻ, cơ động, cho kết quả trong vài phút. Mỗi cách trả lời một câu hỏi khác nhau, nên chọn theo việc cần làm.
 
-Bài này nằm trong bộ [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau). Nước là một trong ba chỉ tiêu quyết định khi nào phải thay dầu, cùng với độ nhớt và trị số axit.
+Bài này nằm trong bộ [hướng dẫn test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau). Nước là một trong ba chỉ tiêu quyết định khi nào phải thay dầu, cùng với độ nhớt và [trị số axit](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb).
 
 ## Vì sao phải kiểm tra nước trong dầu
 
@@ -27,7 +27,7 @@ Nước lọt vào dầu qua nắp thở, phớt hỏng, bộ làm mát rò ho�
 - **Gỉ và rỗ bề mặt** trục bơm, van, ổ lăn.
 - **Thúc đẩy oxy hóa**, làm trị số axit tăng nhanh hơn.
 
-Theo bảng mức cảnh báo của ASTM D6224 (bản 2002) cho dầu đang sử dụng, hàm lượng nước **trên 0,05% (500 ppm)** là mức cảnh báo với dầu thủy lực và dầu tuabin; **trên 0,1% (1.000 ppm)** với dầu bánh răng và dầu tuần hoàn; **trên 0,2%** với dầu động cơ diesel. Các phương pháp dưới đây đủ nhạy để phát hiện các mức này.
+Theo bảng mức cảnh báo của ASTM D6224 (bản 2002) cho dầu đang sử dụng, hàm lượng nước **trên 0,05% (500 ppm)** là mức cảnh báo với [dầu thủy lực](/dau-thuy-luc) và dầu tuabin; **trên 0,1% (1.000 ppm)** với [dầu bánh răng](/dau-banh-rang) và dầu tuần hoàn; **trên 0,2%** với [dầu động cơ diesel](/dau-dong-co-diesel). Các phương pháp dưới đây đủ nhạy để phát hiện các mức này.
 
 ## Ba dạng nước trong dầu
 
@@ -103,7 +103,7 @@ Quét một lớp kem mỏng lên đầu que thăm dầu hoặc thước đo b�
 
 1. **Phuy và bồn chứa dầu mới:** dùng kem thử nước ở đáy trước khi bơm dầu vào máy, nhất là phuy để ngoài trời.
 2. **Máy đang chạy:** sàng lọc định kỳ bằng máy đo điện môi. Máy nào báo bất thường thì đo lại bằng kit áp suất.
-3. **Kết quả vượt ngưỡng:** tìm nguồn nước vào (nắp thở, bộ làm mát, phớt), xả nước đáy bồn, lọc tách nước hoặc thay dầu. Kiểm tra thêm độ nhớt và trị số axit theo [hướng dẫn test chất lượng dầu](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
+3. **Kết quả vượt ngưỡng:** tìm nguồn nước vào (nắp thở, bộ làm mát, phớt), xả nước đáy bồn, lọc tách nước hoặc [thay dầu](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc). Kiểm tra thêm độ nhớt và trị số axit theo [hướng dẫn test chất lượng dầu](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 
 Khi cần giám định hoặc kết quả chính xác ở mức vài chục ppm, gửi mẫu phòng thí nghiệm đo bằng phương pháp **Karl Fischer (ASTM D6304)**.
 

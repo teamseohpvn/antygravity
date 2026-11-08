@@ -21,8 +21,8 @@ Cách dùng từng thiết bị và ngưỡng nào thì nên thay dầu được
 
 | Chỉ tiêu | Dầu bị gì khi chỉ tiêu này đổi | Thiết bị đo nhanh | Phép đo phòng thí nghiệm đối chiếu |
 | :--- | :--- | :--- | :--- |
-| **Độ nhớt** | Tăng: dầu bị oxy hóa, lẫn dầu đặc hơn. Giảm: lẫn dầu loãng, nhiên liệu, phụ gia cắt mạch | Nhớt kế mao quản thủy tinh, cốc đo độ nhớt cầm tay | ASTM D445 / TCVN 3171 (độ nhớt động học) |
-| **Trị số axit (TAN)** | Dầu bị oxy hóa, phụ gia cạn, sinh axit ăn mòn | Bộ kit test TAN dạng ống thuốc thử | ASTM D664 (chuẩn độ điện thế), ASTM D974 |
+| **Độ nhớt** | Tăng: dầu bị oxy hóa, lẫn dầu đặc hơn. Giảm: lẫn dầu loãng, nhiên liệu, phụ gia cắt mạch | [Nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5), [cốc đo độ nhớt cầm tay](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) | ASTM D445 / TCVN 3171 (độ nhớt động học) |
+| **Trị số axit (TAN)** | Dầu bị oxy hóa, phụ gia cạn, sinh axit ăn mòn | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) dạng ống thuốc thử | ASTM D664 (chuẩn độ điện thế), ASTM D974 |
 | **Nước** | Phụ gia bị rửa trôi, dầu nhũ hóa, gỉ bơm, mòn ổ | Bộ kit áp suất canxi hydrua, đầu dò điện môi, kem thử nước | ASTM D6304 (Karl Fischer) |
 
 ## Thiết bị nào dùng cho loại dầu nào

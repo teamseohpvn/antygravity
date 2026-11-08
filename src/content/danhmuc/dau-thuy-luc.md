@@ -51,7 +51,7 @@ Thị phần từng hãng tại Việt Nam (có nguồn) và cách chọn giữa
 
 ### Castrol Hyspin
 
-- **Castrol Hyspin AWS:** dầu chống mài mòn loại HM, dải VG từ 10 đến 100. Tách nước và lọc tốt.
+- **[Castrol Hyspin AWS](/dau-thuy-luc/castrol-hyspin-aws-68):** dầu chống mài mòn loại HM, dải VG từ 10 đến 100. Tách nước và lọc tốt.
 - **Castrol Hyspin AWH-M:** chỉ số độ nhớt cao, dùng cho máy chịu dao động nhiệt độ lớn.
 
 **Lưu ý với chi tiết mạ bạc:** dầu chống mài mòn gốc kẽm thường không được khuyến nghị cho bơm có chi tiết mạ bạc. Trường hợp này cần chọn dầu không kẽm (zinc-free) theo khuyến cáo của nhà sản xuất bơm.
@@ -68,7 +68,7 @@ Thị phần từng hãng tại Việt Nam (có nguồn) và cách chọn giữa
 ## Ứng dụng theo ngành
 
 - **Ép nhựa:** dầu thủy lực 68 cho máy ép Haitian, Sumitomo, JSW, Nissei chạy 3 ca. Dầu thủy lực cho máy ép nhựa cần độ bền oxy hóa tốt vì bồn dầu thường nóng.
-- **Máy công trình:** máy xúc, máy đào, xe nâng thường dùng dầu thủy lực 46, loại HV nếu làm việc ngoài trời. Luôn kiểm tra sổ tay máy vì một số hãng yêu cầu dầu riêng.
+- **Máy công trình:** [máy xúc, máy đào](/ho-tro-ky-thuat/dau-thuy-luc-may-xuc), xe nâng thường dùng dầu thủy lực 46, loại HV nếu làm việc ngoài trời. Luôn kiểm tra sổ tay máy vì một số hãng yêu cầu dầu riêng.
 - **Gia công kim loại:** máy chấn tôn, máy dập thủy lực, máy cắt tôn.
 - **Cảng và hàng hải:** cẩu bờ, tời neo, sà lan tại Hải Phòng và Quảng Ninh. Cần dầu tách nước tốt.
 
@@ -94,7 +94,7 @@ Không có một con số chung. Chu kỳ phụ thuộc nhiệt độ bồn dầ
 
 ### Làm sao biết dầu thủy lực đã bị nhiễm bẩn?
 
-Dầu chuyển đục trắng là đã lẫn nước. Dầu chuyển nâu sẫm và có mùi khét là đã bị oxy hóa. Bọt nổi lâu tan trên mặt bồn là thoát khí kém hoặc máy bị hút khí. Khi thấy các dấu hiệu này, nên lấy mẫu dầu đi phân tích, xử lý nguyên nhân rồi súc rửa hệ thống trước khi châm dầu mới.
+Dầu chuyển đục trắng là đã lẫn nước. Dầu chuyển nâu sẫm và có mùi khét là đã bị oxy hóa. Bọt nổi lâu tan trên mặt bồn là thoát khí kém hoặc máy bị hút khí. Khi thấy các dấu hiệu này, nên lấy mẫu dầu đi [phân tích](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau), xử lý nguyên nhân rồi [súc rửa hệ thống](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc) trước khi châm dầu mới.
 
 ### Có trộn dầu thủy lực hai hãng khác nhau được không?
 
@@ -102,4 +102,4 @@ Châm bổ sung một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng c�
 
 ---
 
-**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau) · [Top 6 hãng dầu thủy lực](/top-6-dau-thuy-luc-2026) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot)
+**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau) · [Top 6 hãng dầu thủy lực](/top-6-dau-thuy-luc-2026) · [Bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot)

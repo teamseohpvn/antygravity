@@ -34,7 +34,7 @@ Trên thị trường có sản phẩm ghi "chịu 500 độ" hay "1000 độ". 
 
 ## Dòng sản phẩm
 
-- **Shell Gadus S3 V220C 2:** mỡ lithium phức, dầu gốc VG 220, phụ gia EP. Chịu nhiệt, kháng nước và bám dính tốt. Dùng cho moay-ơ, vòng bi chịu tải nặng ở nhiệt độ cao.
+- **[Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2):** mỡ lithium phức, dầu gốc VG 220, phụ gia EP. Chịu nhiệt, kháng nước và bám dính tốt. Dùng cho moay-ơ, vòng bi chịu tải nặng ở nhiệt độ cao.
 - **Shell Gadus S3 T100 2:** mỡ polyurea, dầu gốc VG 100. Tuổi thọ dài ở nhiệt độ cao, hợp với vòng bi động cơ điện và quạt.
 - **Castrol Tribol GR PD:** mỡ chịu tải nặng có công nghệ Microflux Trans (MFT) của Castrol, dùng cho vòng bi chịu va đập và nhiệt.
 - **Mobil Mobilith SHC 220:** mỡ lithium phức với dầu gốc tổng hợp PAO. Dải nhiệt rộng, tuổi thọ dài.

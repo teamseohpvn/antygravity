@@ -61,7 +61,7 @@ Nếu sổ tay cho phép cả hai cấp, xe chạy tải nặng, mùa hè nóng 
 Cùng là dầu bánh răng cho xe, nhưng yêu cầu khác nhau. Cầu xe dùng bánh răng hypoid nên cần GL-5. Hộp số tay thường dùng GL-4. Nhiều mã dầu đạt cả hai cấp, nên hãy xem TDS.
 
 ### Bao lâu thay dầu cầu xe tải?
-Theo lịch bảo dưỡng của hãng xe. Xe chở nặng, chạy đường dốc, lội nước nên kiểm tra dầu sớm hơn. Dầu có nước sẽ đục màu sữa, dầu có mạt kim loại sẽ ánh bạc.
+Theo lịch bảo dưỡng của hãng xe. Xe chở nặng, chạy đường dốc, lội nước nên [kiểm tra dầu](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau) sớm hơn. Dầu có nước sẽ đục màu sữa, dầu có mạt kim loại sẽ ánh bạc.
 
 ### Có trộn dầu cầu GL-4 với GL-5 được không?
 Không nên. Trộn làm thay đổi lượng phụ gia cực áp, dầu không đạt đúng cấp nào. Khi đổi loại, nên xả hết dầu cũ.
