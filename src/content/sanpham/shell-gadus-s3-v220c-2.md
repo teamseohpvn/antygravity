@@ -14,7 +14,7 @@ base_oil: "Dầu gốc khoáng chỉ số độ nhớt cao, chất làm đặc x
 standards: ["ASTM D4950 GC-LB", "SEB 18 12 53"]
 
 specs:
-  - { name: "Cấp NLGI", value: "2" }
+  - { name: "Chỉ số độ đặc NLGI", value: "2" }
   - { name: "Màu sắc", value: "Đỏ" }
   - { name: "Loại xà phòng", value: "Lithium complex" }
   - { name: "Độ nhớt dầu gốc ở 40 °C", value: "220 cSt", method: "ASTM D445" }

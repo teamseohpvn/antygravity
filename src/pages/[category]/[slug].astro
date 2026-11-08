@@ -110,7 +110,7 @@ const authorName = tacGia ? tacGia.name : `${SITE_NAME} (${LEGAL_SHORT})`;
 const tenNgan = (p: NonNullable<typeof tacGia>) => p.bylineName ?? displayName(p);
 
 const additionalProperty = [
-  ...(grade ? [{ '@type': 'PropertyValue', name: d.vg ? 'Cấp độ nhớt' : 'Cấp NLGI', value: grade }] : []),
+  ...(grade ? [{ '@type': 'PropertyValue', name: d.vg ? 'Cấp độ nhớt' : 'Chỉ số NLGI', value: grade }] : []),
   ...(d.sae ? [{ '@type': 'PropertyValue', name: 'Cấp SAE', value: d.sae }] : []),
   ...(d.api ? [{ '@type': 'PropertyValue', name: 'Cấp API', value: d.api }] : []),
   ...(d.specs ?? []).map((s) => ({ '@type': 'PropertyValue', name: s.name, value: s.value, ...(s.method ? { description: s.method } : {}) })),

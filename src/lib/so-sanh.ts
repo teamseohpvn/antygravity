@@ -71,7 +71,7 @@ const NHOM: Record<string, Nhom> = {
   mo: {
     ten: 'mỡ bôi trơn',
     cot: [
-      { ten: 'Cấp NLGI', lay: (d) => d.nlgi },
+      { ten: 'Chỉ số NLGI', lay: (d) => d.nlgi },
       { ten: 'Chất làm đặc', lay: spec(/^(Chất làm đặc|Loại xà phòng)/) },
       { ten: 'Nhiệt độ nhỏ giọt', lay: spec(/^(Nhiệt độ|Điểm) nhỏ giọt/) },
       { ten: 'Nhiệt độ làm việc', lay: spec(/^Nhiệt độ làm việc/) },

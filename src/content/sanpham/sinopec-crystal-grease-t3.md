@@ -15,7 +15,7 @@ base_oil: "Dầu khoáng tinh chế, chất làm đặc xà phòng lithium"
 standards: ["GB 7324"]
 
 specs:
-  - { name: "Cấp độ đặc theo TDS", value: "NLGI T3" }
+  - { name: "Chỉ số độ đặc theo TDS", value: "NLGI T3" }
   - { name: "Chất làm đặc", value: "Xà phòng lithium" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "9–13 cSt", method: "ASTM D445" }
   - { name: "Độ xuyên kim ở 25 °C, sau 60 lần giã", value: "200–230 (0,1 mm)", method: "ASTM D217" }
@@ -58,7 +58,7 @@ images:
 
 doc_gia: "Trang này dành cho tổ bảo trì đang dùng mỡ NLGI 3 nhưng mỡ vẫn chảy khỏi ổ, cần mỡ lithium đặc hơn."
 tom_tat:
-  - "**T3 đặc hơn NLGI 3:** độ xuyên kim 200–230, trong khi cấp NLGI 3 của cùng dòng là 220–250."
+  - "**T3 đặc hơn NLGI 3:** độ xuyên kim 200–230, trong khi loại NLGI 3 của cùng dòng là 220–250."
   - "**Dùng được** cho vòng bi, trục lăn, ổ trượt tải thường, từ -20 °C đến 120 °C."
   - "**Không dùng** cho hệ bơm mỡ tập trung, ổ tải nặng hoặc ổ nóng trên 120 °C."
   - "**Có sẵn tại kho** xô 17 kg, phuy 180 kg, sản xuất tại Singapore."
@@ -67,15 +67,15 @@ date: "2026-11-05"
 updated: "2026-11-05"
 ---
 
-**Sinopec Crystal Grease T3** (nhãn phuy ghi **No.T3**) là cấp đặc nhất của dòng mỡ lithium đa dụng Crystal Grease. Mỡ có cùng chất làm đặc, dầu gốc và nhiệt độ làm việc -20 °C đến 120 °C với [Crystal Grease NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3), nhưng cứng hơn và tách dầu ít hơn trong phép thử của hãng.
+**Sinopec Crystal Grease T3** (nhãn phuy ghi **No.T3**) là loại đặc nhất của dòng mỡ lithium đa dụng Crystal Grease. Mỡ có cùng chất làm đặc, dầu gốc và nhiệt độ làm việc -20 °C đến 120 °C với [Crystal Grease NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3), nhưng cứng hơn và tách dầu ít hơn trong phép thử của hãng.
 
 Mã này **có sẵn tại kho** theo **xô 17 kg** và **phuy 180 kg**, có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT.
 
-## T3 là gì, có phải một cấp NLGI riêng không? {#t3-la-gi}
+## T3 là gì, có phải một chỉ số NLGI riêng không? {#t3-la-gi}
 
-Thang NLGI thông dụng chỉ có các cấp số như 2, 3, 4, không có cấp "T3". T3 là cách Sinopec gọi một cấp trong dòng Crystal, và TDS chỉ ghi độ xuyên kim của cấp này là 200–230. Dải đó nằm giữa hai cấp NLGI:
+Thang NLGI thông dụng chỉ có các chỉ số như 2, 3, 4, không có chỉ số "T3". T3 là cách Sinopec gọi một loại trong dòng Crystal, và TDS chỉ ghi độ xuyên kim của loại này là 200–230. Dải đó nằm giữa hai chỉ số NLGI:
 
-| Cấp | Độ xuyên kim sau giã (0,1 mm) | Nguồn |
+| Loại | Độ xuyên kim sau giã (0,1 mm) | Nguồn |
 | :--- | :--- | :--- |
 | NLGI 2 | 265–295 | Thang NLGI |
 | NLGI 3 | 220–250 | Thang NLGI, TDS Crystal NLGI 3 |
@@ -148,13 +148,13 @@ Theo [SKF](https://www.skf.com/us/products/rolling-bearings/principles-of-rollin
 TDS không ghi mốc thời gian. Bạn hãy theo chu kỳ trong tài liệu kèm theo máy và rút ngắn khi vỏ ổ nóng trên 70 °C. Khi mỡ đổi màu, có mùi khét hoặc lẫn nước thì thay sớm hơn.
 
 ### Crystal T3 có thay được cho mỡ NLGI 4 không?
-Không nên coi là tương đương. Dải 200–230 của T3 mềm hơn phần lớn dải NLGI 4 (175–205). Nếu ổ bắt buộc dùng NLGI 4, hãy chọn mã ghi đúng cấp đó như [VHP Lithium L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) hoặc hỏi hãng máy.
+Không nên coi là tương đương. Dải 200–230 của T3 mềm hơn phần lớn dải NLGI 4 (175–205). Nếu ổ bắt buộc dùng NLGI 4, hãy chọn mã ghi đúng chỉ số đó như [VHP Lithium L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) hoặc hỏi hãng máy.
 
 ### Crystal T3 có bơm được bằng súng tay không?
 TDS không nói về việc này. Mỡ càng đặc thì bơm càng nặng tay, nhất là khi trời lạnh. Bạn nên thử trên súng và đường dẫn đang dùng trước khi đổi cả loạt điểm bôi trơn.
 
 ### Crystal T3 có trộn được với Crystal NLGI 3 không?
-Hai cấp cùng dòng, cùng chất làm đặc lithium và dầu gốc khoáng, nên rủi ro thấp hơn trộn khác gốc. TDS không nêu riêng việc trộn, nên khi đổi cấp, tốt nhất là đẩy mỡ cũ ra trước.
+Hai loại cùng dòng, cùng chất làm đặc lithium và dầu gốc khoáng, nên rủi ro thấp hơn trộn khác gốc. TDS không nêu riêng việc trộn, nên khi đổi loại, tốt nhất là đẩy mỡ cũ ra trước.
 
 ## Quy cách đóng gói, đơn hàng {#don-hang}
 

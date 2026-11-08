@@ -14,7 +14,7 @@ nlgi: "2 / 3"
 base_oil: "Dầu gốc khoáng tinh chế, chất làm đặc lithium và canxi"
 
 specs:
-  - { name: "Cấp NLGI", value: "2 / 3" }
+  - { name: "Chỉ số độ đặc NLGI", value: "2 / 3" }
   - { name: "Chất làm đặc", value: "Lithium và canxi" }
   - { name: "Độ nhớt dầu gốc ở 40 °C", value: "150 cSt", method: "ASTM D445" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "11 cSt", method: "ASTM D445" }
@@ -65,9 +65,9 @@ date: "2026-10-06"
 updated: "2026-10-30"
 ---
 
-**VHP Licas Grease** là mỡ bôi trơn (mỡ bò) đa dụng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Mỡ pha từ dầu gốc khoáng tinh chế, chất làm đặc lithium và canxi, cùng phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Mỡ có hai cấp: **No2** mềm hơn và **No3** đặc hơn.
+**VHP Licas Grease** là mỡ bôi trơn (mỡ bò) đa dụng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Mỡ pha từ dầu gốc khoáng tinh chế, chất làm đặc lithium và canxi, cùng phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Mỡ có hai loại: **No2** mềm hơn và **No3** đặc hơn.
 
-HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): cấp **No3, thùng 30 ống 400 g**. Xô 15 kg, xô 17 kg, phuy 180 kg (No2, No3) nhận đặt theo yêu cầu.
+HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): loại **No3, thùng 30 ống 400 g**. Xô 15 kg, xô 17 kg, phuy 180 kg (No2, No3) nhận đặt theo yêu cầu.
 
 ## Licas Grease có hợp với điểm bôi trơn của bạn không?
 
@@ -96,7 +96,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Ph
 | Bơm bằng súng mỡ | Dễ hơn | Cần lực bơm lớn hơn |
 | Thường dùng cho | Vòng bi, vú mỡ, hệ bơm mỡ ngắn | Sát xi, bản lề, ổ trượt, điểm hở dễ chảy mỡ |
 
-Cả hai cấp làm việc liên tục từ −10 °C đến 110 °C, ở mức 75% tốc độ tối đa của vòng bi, và chịu được 120 °C trong thời gian ngắn.
+Cả hai loại làm việc liên tục từ −10 °C đến 110 °C, ở mức 75% tốc độ tối đa của vòng bi, và chịu được 120 °C trong thời gian ngắn.
 
 > **Nhận định của HT VINA:** Ống 400 g tiện hơn xô vì mỡ sạch, không lẫn bụi khi nạp súng. Xưởng bơm mỡ hằng ngày cho hàng trăm điểm thì đặt xô 17 kg hoặc phuy để giảm giá theo kg.
 
