@@ -94,7 +94,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng **có sẵn tại kho** gồm *
 | L3 | 210–240 | Đặc | Vòng bi động cơ, quạt, bản lề, chỗ dễ chảy mỡ | Xô 15 kg, xô 17 kg, phuy 180 kg |
 | L4 | 190–210 | Đặc nhất | Ổ bi lớn, vị trí rung, dễ chảy mỡ | Xô 17 kg |
 
-> **Nhận định của HT VINA:** Bạn hãy chọn theo chỉ số NLGI ghi trong tài liệu của máy. Nếu tài liệu không ghi, vòng bi quay nhanh nên bắt đầu từ L2 hoặc L3, vì mỡ quá đặc làm ổ nóng hơn và khó bơm hơn. L4 chỉ nên dùng khi L3 bị chảy.
+> **Nhận định của HT VINA:** Bạn hãy chọn theo độ đặc/độ sệt NLGI ghi trong tài liệu của máy. Nếu tài liệu không ghi, vòng bi quay nhanh nên bắt đầu từ L2 hoặc L3, vì mỡ quá đặc làm ổ nóng hơn và khó bơm hơn. L4 chỉ nên dùng khi L3 bị chảy.
 
 **Loại bán lỏng L0, L00, L000.** Chúng tôi nhận đặt các loại này cho hệ bơm mỡ tự động, nhưng chưa đưa số liệu lên trang. Lý do là các tài liệu VHP hiện có ghi khác nhau về dầu gốc và độ xuyên kim của loại L0, L00, còn L000 chưa có bảng chỉ tiêu. Khi cần, bạn hãy [liên hệ](/bao-gia?sp=VHP%20MP%20Grease) để chúng tôi xin tài liệu đúng lô hàng.
 
@@ -145,11 +145,11 @@ Không. Hai dòng có TDS riêng. MP Grease dùng dầu gốc 150 cSt, nhỏ gi�
 Không. Mức làm việc liên tục tới 120 °C là của mỡ đa dụng. Ổ nóng liên tục cao hơn thì xem [mỡ chịu nhiệt](/mo-chiu-nhiet).
 
 ### L3 hay L2 dùng cho súng bơm mỡ?
-Cả hai đều dùng được. L2 mềm hơn nên bơm nhẹ tay hơn, L3 ít chảy hơn ở chỗ hở. Hãy ưu tiên chỉ số NLGI ghi trong tài liệu của máy.
+Cả hai đều dùng được. L2 mềm hơn nên bơm nhẹ tay hơn, L3 ít chảy hơn ở chỗ hở. Hãy ưu tiên độ đặc/độ sệt NLGI ghi trong tài liệu của máy.
 
 ## Quy cách đóng gói, đơn hàng {#don-hang}
 
 - **Quy cách có sẵn:** L2 phuy 180 kg; L3 xô 15 kg, xô 17 kg, phuy 180 kg; L4 xô 17 kg. L0, L00, L000 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20MP%20Grease) kèm chỉ số NLGI và số lượng.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20MP%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

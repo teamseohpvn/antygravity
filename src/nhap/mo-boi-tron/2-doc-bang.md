@@ -4,7 +4,7 @@
 
 - **Ổ chịu va đập, tải nặng:** chọn mỡ công bố có phụ gia cực áp. Shell Gadus S2 V220 2 có phụ gia EP theo TDS của Shell, nhưng TDS không ghi số tải hàn dính. ENEOS Epnoc AP(N) ghi 3.090 N (khoảng 315 kg). VHP Lithium ghi 200 kg, VHP Licas ghi 180 kg, và TDS hai mã này nêu phụ gia chống mài mòn, không nêu phụ gia EP.
 - **Gối đỡ, khớp nối tải thường, nhiều vị trí tra mỡ:** mỡ lithium-canxi đóng phuy (VHP Caxilium, VHP Opal) có giá mỗi kg thấp, đủ dùng khi vỏ ổ dưới 90 °C. PV Grease cùng tầm giá nhưng hãng chưa công bố chất làm đặc trong bảng thông số, nên chúng tôi xếp riêng.
-- **Hệ bơm mỡ tập trung, đường ống dài:** mỡ NLGI 0 hoặc 1, hoặc VHP Lithium L00, L0 (nhận đặt). Hãy kiểm tra hệ của bạn chấp nhận chỉ số NLGI nào.
+- **Hệ bơm mỡ tập trung, đường ống dài:** mỡ NLGI 0 hoặc 1, hoặc VHP Lithium L00, L0 (nhận đặt). Hãy kiểm tra hệ của bạn chấp nhận độ đặc/độ sệt NLGI nào.
 - **Vỏ ổ thường xuyên 90–100 °C, tải thường:** chuyển sang mỡ có TDS ghi tới 120 °C như VHP MP Grease L2, L3, Sinopec Crystal NLGI 2, 3 hoặc VHP Opal NLGI 3.
 - **Vỏ ổ thường xuyên 100–120 °C:** chuyển sang [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2), thuộc [nhóm mỡ chịu nhiệt](/mo-chiu-nhiet), làm việc tới 140 °C. Với tải nặng, va đập, Shell Gadus S2 V220 2 dùng được tới vỏ ổ 110 °C, cần lưu ý thử kỹ như SKF khuyên với mỡ EP trên 80 °C.
 - **Vỏ ổ thường xuyên trên 120 °C:** Shell Gadus S3 V220C 2 không còn đủ khoảng an toàn 20 °C, bạn hãy gửi nhiệt độ đo được để chúng tôi kiểm tra.

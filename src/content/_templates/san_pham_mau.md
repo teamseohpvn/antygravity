@@ -26,7 +26,7 @@ categoryName: "[Tên danh mục – vd: Dầu Thủy Lực]"
 brand: "[ENEOS]"
 origin: "[Nhật Bản / Việt Nam / Singapore...]"
 vg: 68                            # Dầu công nghiệp: cấp ISO VG
-# nlgi: "2"                       # Mỡ: chỉ số NLGI
+# nlgi: "2"                       # Mỡ: độ đặc/độ sệt NLGI
 # sae: "15W-40"                   # Dầu động cơ / dầu cầu
 # api: "CI-4"                     # Cấp API (CI-4, CF-4, GL-5...)
 base_oil: "[Dầu gốc khoáng / Tổng hợp PAO...]"
