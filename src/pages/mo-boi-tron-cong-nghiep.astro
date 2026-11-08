@@ -25,11 +25,11 @@ const pagePath = '/mo-boi-tron-cong-nghiep';
 const CAT = '/mo-boi-tron-cong-nghiep';
 const IMAGE = '/images/danh-muc/mo-boi-tron-cong-nghiep.webp';
 const NGAY_DANG = '2026-09-21';
-const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) | Chính Hãng Giá Tốt';
+const title = 'Mỡ Bôi Trơn (Mỡ Bò) | Chính Hãng Giá Tốt';
 const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo cấp NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, ENEOS, VHP.';
 const tacGia = timNhanSu('nguyen-thi-hong')!;
 const reviewer = timNhanSu('vu-minh-toan')!;
-const NGAY = '2026-11-06';
+const NGAY = '2026-11-08';
 const NGAY_GIA = (giaJson as any).cau_hinh.ngay_ra_soat as string;
 const fmtNgay = (s: string) => s.split('-').reverse().join('/');
 const THANG_GIA = fmtNgay(NGAY_GIA).slice(3); // MM/YYYY, đổi theo ngày rà soát giá.
@@ -144,7 +144,7 @@ const schemaData = [
   { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: THE.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: absUrl(t.d.link), name: t.ten })) },
 ];
 ---
-<Layout {title} seoTitle="Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò) NLGI 0-4 | Cách Chọn & TDS" {description} image={IMAGE} published={NGAY_DANG} modified={NGAY} author={tacGia.name} {schemaData}>
+<Layout {title} seoTitle="Mỡ Bôi Trơn (Mỡ Bò) Công Nghiệp NLGI 0-4 | Cách Chọn & TDS" {description} image={IMAGE} published={NGAY_DANG} modified={NGAY} author={tacGia.name} {schemaData}>
   <div class="container trang">
     <Breadcrumbs items={crumbs} />
     <NoiDungBai articleId={PAGE_ID} type={['CollectionPage', 'WebPage']} field="text">
@@ -152,7 +152,7 @@ const schemaData = [
         <h1>{title}</h1>
         <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></p>
         <p class="mo-dau">Nhiều anh em thợ xưởng cứ thấy vòng bi kêu là với tay lấy súng bơm mỡ, bơm đến khi mỡ trào ra mép phớt mới thôi. Bơm quá đầy như vậy dễ làm ổ nóng rực ngay sau đó, mỡ chảy lòng thòng ra ngoài, lâu dần hỏng cả vòng bi. Lỗi nhiều khi không nằm ở chỗ lười tra mỡ, mà ở chỗ chọn sai cấp NLGI, bơm quá nhiều hoặc dùng lẫn các loại mỡ với nhau.</p>
-        <p class="mo-dau"><strong>Mỡ bôi trơn công nghiệp</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
+        <p class="mo-dau"><strong>Mỡ bôi trơn</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, cấp phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <p class="goi-y-menu">Bạn đang cần gì? Bấm chọn nhanh bên dưới:</p>
         <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
           <a class="nut-nhanh" href="#san-pham"><strong>Danh sách mỡ bôi trơn phổ biến</strong><span class="nut-xem">Xem ngay →</span></a>
@@ -242,9 +242,9 @@ const schemaData = [
 
       <div class="seo-content markdown-body" id="huong-dan">
         <blockquote class="tom-tat">
-          <p><strong>Tóm tắt</strong></p>
+          <p><strong>Tóm tắt cách chọn mỡ bôi trơn</strong></p>
           <ul>
-            <li>Gối đỡ tải thường, vỏ ổ dưới 90 °C: mỡ lithium-canxi là đủ.</li>
+            <li>Gối đỡ tải thường, vỏ ổ dưới 90 °C: mỡ bôi trơn gốc lithium-canxi là đủ.</li>
             <li>Vỏ ổ 90–100 °C, tải thường: mỡ có TDS ghi tới 120 °C. Vỏ ổ 100–120 °C: mỡ lithium complex.</li>
             <li>Tải nặng, va đập: mỡ công bố phụ gia cực áp (EP).</li>
             <li><strong>Vòng bi động cơ điện: kho chưa có mã chuyên</strong>, hãy gửi mã vòng bi và tốc độ để chúng tôi tính.</li>

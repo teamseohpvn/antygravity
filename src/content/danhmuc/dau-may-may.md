@@ -52,4 +52,4 @@ Không nên. Dầu máy may quá loãng cho trục chính và rãnh trượt má
 
 ---
 
-**Xem thêm:** [Dầu chống gỉ](/dau-chong-gi-set) · [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep) · [Dầu thủy lực](/dau-thuy-luc)
+**Xem thêm:** [Dầu chống gỉ](/dau-chong-gi-set) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep) · [Dầu thủy lực](/dau-thuy-luc)

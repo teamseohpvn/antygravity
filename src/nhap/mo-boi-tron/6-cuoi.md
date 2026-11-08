@@ -13,7 +13,7 @@
 
 ### Mỡ bò và mỡ bôi trơn có khác nhau không?
 
-Hai tên gọi này là một. "Mỡ bò" là cách gọi dân dã có từ ngày trước, khi mỡ bôi trơn có màu và độ sệt trông giống mỡ động vật. Mỡ bôi trơn công nghiệp bây giờ pha từ dầu gốc khoáng hoặc tổng hợp với chất làm đặc, hoàn toàn không có mỡ động vật.
+Hai tên gọi này là một. "Mỡ bò" là cách gọi dân dã có từ ngày trước, khi mỡ bôi trơn có màu và độ sệt trông giống mỡ động vật. Mỡ bôi trơn bây giờ pha từ dầu gốc khoáng hoặc tổng hợp với chất làm đặc, hoàn toàn không có mỡ động vật.
 
 ### Mua mỡ bò bôi trơn ở đâu?
 

@@ -80,4 +80,4 @@ Với dầu khoáng, nhiều nhà sản xuất hộp số khuyến nghị thay s
 
 ---
 
-**Xem thêm:** [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep) · [Dầu thủy lực](/dau-thuy-luc) · [Dầu máy nén khí](/dau-may-nen-khi)
+**Xem thêm:** [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep) · [Dầu thủy lực](/dau-thuy-luc) · [Dầu máy nén khí](/dau-may-nen-khi)
