@@ -14,7 +14,7 @@ nlgi: "2 / 3"
 base_oil: "Dầu khoáng chất lượng cao, sợi xà phòng kim loại (công nghệ NanoShield theo TDS)"
 
 specs:
-  - { name: "Chỉ số độ đặc NLGI", value: "2 / 3" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "2 / 3" }
   - { name: "Chất làm đặc", value: "Xà phòng kim loại (TDS NLGI 2 ghi xà phòng canxi 17,5 %)" }
   - { name: "Ngoại quan", value: "Mịn, màu vàng nhạt đến nâu", method: "Quan sát" }
   - { name: "Độ xuyên kim ở 25 °C, sau nhào", value: "NLGI 2: 275 · NLGI 3: 235 (0,1 mm)", method: "ASTM D217" }
@@ -82,7 +82,7 @@ Hàng **có sẵn tại kho** gồm **NLGI 3** và **NLGI 2**, đóng **xô 17 k
 | Điểm bôi trơn | Dùng Golden Grease được không? |
 | :--- | :--- |
 | Thiết bị tốc độ thấp của máy xây dựng, máy nông nghiệp | **Được.** Đúng nhóm TDS ghi. |
-| Gầm xe, moay ơ ô tô | **Được** theo TDS. Moay ơ nên chọn chỉ số NLGI theo tài liệu của xe. |
+| Gầm xe, moay ơ ô tô | **Được** theo TDS. Moay ơ nên chọn độ đặc/độ sệt NLGI theo tài liệu của xe. |
 | Máy đánh bóng gốm, bàn con lăn luyện kim | **Được** khi nhiệt độ ổ không quá 110 °C. |
 | Điểm ẩm ướt, hay dính nước | **Được.** Rửa trôi 0–0,1 % ở 38 °C. |
 | Vòng bi động cơ điện, quạt quay nhanh | Không nên. Xem [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease). |
@@ -110,7 +110,7 @@ Hàng **có sẵn tại kho** gồm **NLGI 3** và **NLGI 2**, đóng **xô 17 k
 | Rửa trôi ở 38 °C | 0,1 % | 0 % |
 | Có sẵn | Xô 17 kg, phuy 180 kg | Xô 17 kg, phuy 180 kg |
 
-Bạn hãy chọn **NLGI 3** cho ổ lớn tốc độ chậm, vị trí dễ chảy mỡ. Chọn **NLGI 2** khi tài liệu máy yêu cầu chỉ số này, hoặc khi súng và đường dẫn khó bơm mỡ đặc.
+Bạn hãy chọn **NLGI 3** cho ổ lớn tốc độ chậm, vị trí dễ chảy mỡ. Chọn **NLGI 2** khi tài liệu máy yêu cầu độ đặc này, hoặc khi súng và đường dẫn khó bơm mỡ đặc.
 
 ## Golden Grease so với mỡ khác trong kho như thế nào? {#so-sanh}
 

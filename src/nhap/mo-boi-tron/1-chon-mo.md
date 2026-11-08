@@ -16,11 +16,11 @@ Bạn tìm đúng vị trí trong bảng, bấm vào mã để xem chi tiết, r
 | Vỏ ổ thường xuyên 100–120 °C (tải nặng: từ 110 °C) | Mỡ lithium complex: [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2), xem thêm [mỡ chịu nhiệt](/mo-chiu-nhiet) | TDS ghi làm việc tới 140 °C, cao hơn vỏ ổ ít nhất 20 °C. Mã này cũng có phụ gia EP, nên với vòng bi quay nhanh hãy thử kỹ theo lưu ý của SKF | So với nhiệt độ nhỏ giọt thay vì nhiệt độ làm việc |
 | Vỏ ổ thường xuyên trên 120 °C | Gửi nhiệt độ đo được để chúng tôi kiểm tra. [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2) vẫn dùng được tới 140 °C nhưng không còn đủ khoảng an toàn 20 °C | Trên 140 °C đã vượt nhiệt độ làm việc của mã này, cần loại mỡ khác ở trang [mỡ chịu nhiệt](/mo-chiu-nhiet) | Tiếp tục bơm thêm mỡ cũ thay vì đổi loại mỡ |
 
-## Chọn độ đặc của mỡ theo chỉ số NLGI {#nlgi}
+## Chọn độ đặc/độ sệt NLGI của mỡ {#nlgi}
 
-Chỉ số độ đặc NLGI cho biết mỡ cứng hay mềm, đo bằng độ lún của côn chuẩn vào mỡ ở 25 °C theo [ASTM D217](https://www.astm.org/Standards/D217.htm). Côn lún càng ít thì mỡ càng cứng và số NLGI càng lớn. [Theo SKF](https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/selecting-a-suitable-grease), mỡ cho vòng bi thường dùng NLGI 1, 2 hoặc 3, phổ biến nhất là NLGI 2.
+Độ đặc NLGI, còn gọi là độ sệt (nhiều nơi cũng ngầm hiểu là độ cứng của mỡ), cho biết mỡ cứng hay mềm, đo bằng độ lún của côn chuẩn vào mỡ ở 25 °C theo [ASTM D217](https://www.astm.org/Standards/D217.htm). Côn lún càng ít thì mỡ càng cứng và số NLGI càng lớn. [Theo SKF](https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/selecting-a-suitable-grease), mỡ cho vòng bi thường dùng NLGI 1, 2 hoặc 3, phổ biến nhất là NLGI 2.
 
-| Chỉ số NLGI | Độ xuyên kim (0,1 mm) | Thể chất | Dùng cho |
+| Độ đặc/độ sệt NLGI | Độ xuyên kim (0,1 mm) | Thể chất | Dùng cho |
 | :--- | :--- | :--- | :--- |
 | **000 / 00** | 400 – 475 | Bán lỏng | Hộp số nhỏ bôi trơn bằng mỡ, hệ thống bôi trơn tập trung đường ống dài |
 | **0 / 1** | 310 – 385 | Mềm, dễ bơm | Hệ thống bơm mỡ tự động, thiết bị làm việc ở nhiệt độ thấp |
@@ -28,9 +28,9 @@ Chỉ số độ đặc NLGI cho biết mỡ cứng hay mềm, đo bằng độ 
 | **3** | 220 – 250 | Cứng | Vòng bi trục đứng, vòng bi lớn quay chậm, vị trí rung lắc |
 | **4** | 175 – 205 | Rất cứng | Ổ bi lớn tốc độ chậm, chỗ cần mỡ không chảy khỏi ổ |
 
-Chọn đúng chỉ số NLGI mới được một nửa việc, vì thứ thực sự bôi trơn trong ổ bi là dầu gốc tiết ra từ mỡ. Ổ quay chậm, tải nặng cần dầu gốc có độ nhớt cao và phụ gia EP, như SKF nêu ở tài liệu trên. Với ổ quay nhanh, độ nhớt phù hợp phải tính theo tốc độ và nhiệt độ, không có một con số dùng chung cho mọi máy.
+Chọn đúng độ đặc/độ sệt NLGI mới được một nửa việc, vì thứ thực sự bôi trơn trong ổ bi là dầu gốc tiết ra từ mỡ. Ổ quay chậm, tải nặng cần dầu gốc có độ nhớt cao và phụ gia EP, như SKF nêu ở tài liệu trên. Với ổ quay nhanh, độ nhớt phù hợp phải tính theo tốc độ và nhiệt độ, không có một con số dùng chung cho mọi máy.
 
-Chỉ số NLGI cũng quyết định mỡ tiết dầu nhiều hay ít. [Theo TDS của ENEOS Epnoc Grease AP(N)](https://www.eneos.co.jp/english/products/lubricants/pdf/grs-7037-2507e.pdf), sau 24 giờ ở 100 °C, NLGI 0 tách ra 20,3% dầu, NLGI 2 chỉ 2,4% và NLGI 3 chỉ 0,4%. Vì vậy mỡ mềm hợp với đường ống bơm mỡ tự động, còn ổ bi tra tay thì nên dùng NLGI 2 hoặc 3 để mỡ không chảy ra ngoài.
+Độ đặc/độ sệt NLGI cũng quyết định mỡ tiết dầu nhiều hay ít. [Theo TDS của ENEOS Epnoc Grease AP(N)](https://www.eneos.co.jp/english/products/lubricants/pdf/grs-7037-2507e.pdf), sau 24 giờ ở 100 °C, NLGI 0 tách ra 20,3% dầu, NLGI 2 chỉ 2,4% và NLGI 3 chỉ 0,4%. Vì vậy mỡ mềm hợp với đường ống bơm mỡ tự động, còn ổ bi tra tay thì nên dùng NLGI 2 hoặc 3 để mỡ không chảy ra ngoài.
 
 ## Chọn mỡ theo chất làm đặc {#chat-lam-dac}
 

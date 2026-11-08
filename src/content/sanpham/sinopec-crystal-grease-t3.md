@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-011"
 active: true   # Bật 05/11/2026 theo yêu cầu người dùng, ảnh và TDS do người dùng cung cấp
-title: "Mỡ Sinopec Crystal Grease T3 (No.T3)"
+title: "Mỡ Sinopec Crystal Grease T3 (No.T3, độ đặc giữa NLGI 3 và 4)"
 seo_title: "Mỡ Sinopec Crystal Grease T3 – Xô 17 kg, Phuy 180 kg"
 description: "Mỡ Sinopec Crystal Grease T3 gốc lithium, đặc hơn NLGI 3, độ xuyên kim 200–230, làm việc -20 đến 120 °C. Có sẵn xô 17 kg, phuy 180 kg, giao từ Hải Phòng."
 keywords: ["sinopec crystal grease t3", "crystal grease no t3", "mỡ sinopec t3", "mỡ crystal t3", "mỡ sinopec", "mỡ bò sinopec"]
@@ -15,7 +15,7 @@ base_oil: "Dầu khoáng tinh chế, chất làm đặc xà phòng lithium"
 standards: ["GB 7324"]
 
 specs:
-  - { name: "Chỉ số độ đặc theo TDS", value: "NLGI T3" }
+  - { name: "Độ đặc/độ sệt theo TDS", value: "NLGI T3" }
   - { name: "Chất làm đặc", value: "Xà phòng lithium" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "9–13 cSt", method: "ASTM D445" }
   - { name: "Độ xuyên kim ở 25 °C, sau 60 lần giã", value: "200–230 (0,1 mm)", method: "ASTM D217" }
@@ -71,9 +71,9 @@ updated: "2026-11-05"
 
 Mã này **có sẵn tại kho** theo **xô 17 kg** và **phuy 180 kg**, có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT.
 
-## T3 là gì, có phải một chỉ số NLGI riêng không? {#t3-la-gi}
+## T3 là gì, có phải một mức độ đặc NLGI riêng không? {#t3-la-gi}
 
-Thang NLGI thông dụng chỉ có các chỉ số như 2, 3, 4, không có chỉ số "T3". T3 là cách Sinopec gọi một loại trong dòng Crystal, và TDS chỉ ghi độ xuyên kim của loại này là 200–230. Dải đó nằm giữa hai chỉ số NLGI:
+Thang NLGI thông dụng chỉ có các mức như 2, 3, 4, không có mức "T3". T3 là cách Sinopec gọi một loại trong dòng Crystal, và TDS chỉ ghi độ xuyên kim của loại này là 200–230. Dải đó nằm giữa hai mức độ đặc NLGI:
 
 | Loại | Độ xuyên kim sau giã (0,1 mm) | Nguồn |
 | :--- | :--- | :--- |
@@ -148,7 +148,7 @@ Theo [SKF](https://www.skf.com/us/products/rolling-bearings/principles-of-rollin
 TDS không ghi mốc thời gian. Bạn hãy theo chu kỳ trong tài liệu kèm theo máy và rút ngắn khi vỏ ổ nóng trên 70 °C. Khi mỡ đổi màu, có mùi khét hoặc lẫn nước thì thay sớm hơn.
 
 ### Crystal T3 có thay được cho mỡ NLGI 4 không?
-Không nên coi là tương đương. Dải 200–230 của T3 mềm hơn phần lớn dải NLGI 4 (175–205). Nếu ổ bắt buộc dùng NLGI 4, hãy chọn mã ghi đúng chỉ số đó như [VHP Lithium L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) hoặc hỏi hãng máy.
+Không nên coi là tương đương. Dải 200–230 của T3 mềm hơn phần lớn dải NLGI 4 (175–205). Nếu ổ bắt buộc dùng NLGI 4, hãy chọn mã ghi đúng độ đặc đó như [VHP Lithium L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) hoặc hỏi hãng máy.
 
 ### Crystal T3 có bơm được bằng súng tay không?
 TDS không nói về việc này. Mỡ càng đặc thì bơm càng nặng tay, nhất là khi trời lạnh. Bạn nên thử trên súng và đường dẫn đang dùng trước khi đổi cả loạt điểm bôi trơn.

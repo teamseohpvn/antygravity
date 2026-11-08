@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-007"
 active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
-title: "ENEOS Epnoc Grease AP(N)"
+title: "Mỡ ENEOS Epnoc Grease AP(N) NLGI 0, 1, 2, 3"
 seo_title: "ENEOS Epnoc Grease AP(N) – Mỡ Lithium Chịu Cực Áp"
 description: "Mỡ ENEOS Epnoc Grease AP(N) gốc lithium chịu cực áp, nhỏ giọt 195–203 °C, làm việc -20 đến 125 °C, hợp hệ bơm mỡ tập trung. CO/CQ, giao Hải Phòng."
 keywords: ["eneos epnoc grease ap", "epnoc grease ap(n)", "epnoc ap", "mỡ eneos", "mỡ epnoc", "mỡ chịu cực áp eneos"]
@@ -66,7 +66,7 @@ date: "2026-10-12"
 updated: "2026-10-14"
 ---
 
-**ENEOS Epnoc Grease AP(N)** là mỡ đa dụng chịu cực áp (EP) gốc lithium của ENEOS Nhật Bản. Mỡ màu nâu nhạt, ít mùi, không chứa chì. Mỡ dùng dầu gốc khoáng tinh chế cao và phụ gia chống oxy hóa, chống gỉ. Dòng này có bốn loại theo chỉ số độ đặc NLGI: 0, 1, 2 và 3. NLGI 0 và 1 đặc biệt hợp với hệ thống bơm mỡ tập trung.
+**ENEOS Epnoc Grease AP(N)** là mỡ đa dụng chịu cực áp (EP) gốc lithium của ENEOS Nhật Bản. Mỡ màu nâu nhạt, ít mùi, không chứa chì. Mỡ dùng dầu gốc khoáng tinh chế cao và phụ gia chống oxy hóa, chống gỉ. Dòng này có bốn loại theo độ đặc/độ sệt NLGI: 0, 1, 2 và 3. NLGI 0 và 1 đặc biệt hợp với hệ thống bơm mỡ tập trung.
 
 Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
@@ -87,18 +87,18 @@ Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàn
 - **Chịu tải và va đập tốt.** Thử 4 bi đạt tải hàn dính 3.090 N. Mỡ vẫn giữ màng bôi trơn ở máy tải nặng, tốc độ chậm.
 - **Dễ bơm khi trời lạnh.** Độ nhớt biểu kiến ở −10 °C thấp (NLGI 0: 61 Pa·s), nên mỡ chảy đều trong đường ống của hệ bơm mỡ tập trung.
 - **Bền cơ học.** Sau 100.000 lần giã, mỡ mềm đi ít. Mỡ không bị nhão, tách dầu hay tắc ống khi bơm qua ống nhỏ.
-- **Kháng nước tăng theo chỉ số NLGI.** Rửa trôi ở 38 °C: NLGI 0 mất 23%, NLGI 2 và 3 chỉ mất 1% khối lượng.
+- **Kháng nước tăng theo độ đặc/độ sệt NLGI.** Rửa trôi ở 38 °C: NLGI 0 mất 23%, NLGI 2 và 3 chỉ mất 1% khối lượng.
 
-## Nên chọn chỉ số NLGI nào?
+## Nên chọn độ đặc/độ sệt NLGI nào?
 
-| Chỉ số NLGI | Độ xuyên kim (60 lần giã) | Điểm nhỏ giọt | Thường dùng cho |
+| Độ đặc/độ sệt NLGI | Độ xuyên kim (60 lần giã) | Điểm nhỏ giọt | Thường dùng cho |
 | :--- | :--- | :--- | :--- |
 | 0 | 362 | 195 °C | Hệ bơm mỡ tập trung đường ống dài, nơi lạnh |
 | 1 | 322 | 196 °C | Hệ bơm mỡ tập trung, ổ bi tốc độ trung bình |
 | 2 | 276 | 200 °C | Ổ bi, ổ trượt, chốt; bơm bằng súng mỡ |
 | 3 | 232 | 203 °C | Ổ bi lớn, chỗ rung hoặc dễ chảy mỡ |
 
-> **Nhận định của HT VINA:** Luôn ưu tiên chỉ số NLGI ghi trong hướng dẫn sử dụng hệ bơm mỡ. NLGI 0 khá mềm và mất nhiều khi gặp nước (23% rửa trôi), nên chỉ dùng trong hệ kín; điểm bôi trơn hở, hay dính nước thì dùng NLGI 2.
+> **Nhận định của HT VINA:** Luôn ưu tiên độ đặc/độ sệt NLGI ghi trong hướng dẫn sử dụng hệ bơm mỡ. NLGI 0 khá mềm và mất nhiều khi gặp nước (23% rửa trôi), nên chỉ dùng trong hệ kín; điểm bôi trơn hở, hay dính nước thì dùng NLGI 2.
 
 ## Epnoc AP(N) hay mỡ lithium khác?
 
@@ -109,7 +109,7 @@ Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàn
 | Nhiệt độ làm việc | −20 đến 125 °C | −10 đến 120 °C | −20 đến 130 °C |
 | Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn L4 | Có sẵn |
 
-> **Nhận định của HT VINA:** Nhà máy đang dùng Epnoc trong hệ bơm mỡ tập trung thì đặt tiếp đúng mã và đúng chỉ số NLGI. Không trộn mỡ khác hãng trong hệ tập trung khi chưa xả sạch đường ống.
+> **Nhận định của HT VINA:** Nhà máy đang dùng Epnoc trong hệ bơm mỡ tập trung thì đặt tiếp đúng mã và đúng độ đặc/độ sệt NLGI. Không trộn mỡ khác hãng trong hệ tập trung khi chưa xả sạch đường ống.
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
 
@@ -134,8 +134,8 @@ Không hẳn. Điểm nhỏ giọt khoảng 200 °C và nhiệt độ làm việ
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** can, NLGI 0, 1, 2, 3. Có sẵn tại kho; báo rõ chỉ số NLGI khi đặt.
+- **Quy cách:** can, NLGI 0, 1, 2, 3. Có sẵn tại kho; báo rõ độ đặc/độ sệt NLGI khi đặt.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Epnoc%20Grease%20AP(N)) kèm chỉ số NLGI và số lượng.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Epnoc%20Grease%20AP(N)) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

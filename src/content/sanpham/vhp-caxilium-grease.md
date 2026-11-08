@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-005"
 active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
-title: "Mỡ VHP Caxilium Grease No2, No3"
+title: "Mỡ VHP Caxilium Grease No2, No3 (NLGI 2, NLGI 3)"
 seo_title: "Mỡ VHP Caxilium Grease No2, No3 – Mỡ Kháng Nước"
 description: "Mỡ VHP Caxilium Grease No2, No3 gốc lithium-canxi, kháng nước và muối, làm việc -10 đến 110 °C, cho đầu trục, sát xi, máy nông nghiệp. Phuy 180 kg."
 keywords: ["vhp caxilium grease", "mỡ caxilium", "caxilium no2", "caxilium no3", "mỡ vhp", "mỡ kháng nước"]
@@ -161,5 +161,5 @@ Có. Nước áp lực cao vẫn đẩy một phần mỡ ra và lọt vào ổ.
 - **Quy cách:** No2, No3 phuy 180 kg, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Caxilium%20Grease) kèm chỉ số NLGI và số lượng.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Caxilium%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

@@ -7,7 +7,7 @@
 - **Giao hàng:** Hải Phòng (gồm khu vực Hải Dương cũ), Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
 
-**Xem giá và nhận báo giá:** khoảng giá theo kg của các mã có ở [bảng chi phí](#chi-phi). Để nhận giá theo số lượng, bạn gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**, hoặc gửi [yêu cầu báo giá](/bao-gia) kèm tên mỡ đang dùng hoặc vị trí cần tra mỡ, chỉ số NLGI, số xô/phuy và địa chỉ giao.
+**Xem giá và nhận báo giá:** khoảng giá theo kg của các mã có ở [bảng chi phí](#chi-phi). Để nhận giá theo số lượng, bạn gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**, hoặc gửi [yêu cầu báo giá](/bao-gia) kèm tên mỡ đang dùng hoặc vị trí cần tra mỡ, độ đặc/độ sệt NLGI, số xô/phuy và địa chỉ giao.
 
 ## Câu hỏi thường gặp {#hoi-dap}
 
@@ -17,7 +17,7 @@ Hai tên gọi này là một. "Mỡ bò" là cách gọi dân dã có từ ngà
 
 ### Mua mỡ bò bôi trơn ở đâu?
 
-Với máy trong xưởng, bạn nên mua ở nơi đưa được TDS và CO/CQ theo lô, để đối chiếu đúng chỉ số NLGI và nhiệt độ làm việc. HT VINA có **3 kho**, giao Hải Phòng, Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc:
+Với máy trong xưởng, bạn nên mua ở nơi đưa được TDS và CO/CQ theo lô, để đối chiếu đúng độ đặc/độ sệt NLGI và nhiệt độ làm việc. HT VINA có **3 kho**, giao Hải Phòng, Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc:
 
 - **Kho Hải Dương cũ:** 108 đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng.
 - **Kho Kiến An:** 145 Quán Trữ, P. Kiến An, TP Hải Phòng.
@@ -27,7 +27,7 @@ Quy cách đang có là thùng 30 ống 400 g, xô 15–18 kg và phuy 180 kg, t
 
 ### Mỡ bò xanh, trắng, vàng khác nhau thế nào?
 
-Màu sắc không cho biết mỡ chịu nhiệt hay chịu tải đến đâu. [Tài liệu của ExxonMobil](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf) nêu thuốc nhuộm chỉ tạo màu, nên hai xô cùng màu xanh vẫn có thể khác hẳn nhau về chất làm đặc và nhiệt độ làm việc. Bạn hãy chọn theo chỉ số NLGI, chất làm đặc và nhiệt độ làm việc trên TDS, như ở [bảng so sánh](#so-sanh).
+Màu sắc không cho biết mỡ chịu nhiệt hay chịu tải đến đâu. [Tài liệu của ExxonMobil](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf) nêu thuốc nhuộm chỉ tạo màu, nên hai xô cùng màu xanh vẫn có thể khác hẳn nhau về chất làm đặc và nhiệt độ làm việc. Bạn hãy chọn theo độ đặc/độ sệt NLGI, chất làm đặc và nhiệt độ làm việc trên TDS, như ở [bảng so sánh](#so-sanh).
 
 ### Lần đầu lắp vòng bi thì nhồi bao nhiêu mỡ?
 

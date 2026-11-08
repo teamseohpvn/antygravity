@@ -26,7 +26,7 @@ const CAT = '/mo-boi-tron-cong-nghiep';
 const IMAGE = '/images/danh-muc/mo-boi-tron-cong-nghiep.webp';
 const NGAY_DANG = '2026-09-21';
 const title = 'Mỡ Bôi Trơn (Mỡ Bò) | Chính Hãng Giá Tốt';
-const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo chỉ số NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, ENEOS, VHP.';
+const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo độ đặc NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, ENEOS, VHP.';
 const tacGia = timNhanSu('nguyen-thi-hong')!;
 const reviewer = timNhanSu('vu-minh-toan')!;
 const NGAY = '2026-11-08';
@@ -42,7 +42,7 @@ type Dong = {
 };
 const BANG: Dong[] = [
   { ten: 'Shell Gadus S2 V220 2', link: `${CAT}/shell-gadus-s2-v220-2`, lam_dac: 'Lithium', cap: '2', dau40: '220 cSt', nho_giot: '180 °C', lam_viec: '-20 đến 130 °C', hbi: 'Có phụ gia EP, TDS không ghi số', co_san: 'NLGI 2: xô 18 kg' },
-  { ten: 'ENEOS Epnoc Grease AP(N)', link: `${CAT}/eneos-epnoc-ap`, lam_dac: 'Lithium', cap: '0 / 1 / 2 / 3', dau40: '– (TDS ghi ở 100 °C: 13,3–16,4 mm²/s)', nho_giot: '195–203 °C', lam_viec: '-20 đến 125 °C', hbi: '3.090 N (khoảng 315 kg)', co_san: 'Liên hệ để xác nhận chỉ số NLGI và quy cách', ghi_chu: 'cho' },
+  { ten: 'ENEOS Epnoc Grease AP(N)', link: `${CAT}/eneos-epnoc-ap`, lam_dac: 'Lithium', cap: '0 / 1 / 2 / 3', dau40: '– (TDS ghi ở 100 °C: 13,3–16,4 mm²/s)', nho_giot: '195–203 °C', lam_viec: '-20 đến 125 °C', hbi: '3.090 N (khoảng 315 kg)', co_san: 'Liên hệ để xác nhận độ đặc/độ sệt NLGI và quy cách', ghi_chu: 'cho' },
   { ten: 'Sinopec Crystal Grease NLGI 3', link: `${CAT}/sinopec-crystal-grease-nlgi-3`, lam_dac: 'Lithium', cap: '2 / 3', dau40: '– (TDS ghi ở 100 °C: 9–13 cSt)', nho_giot: '≥ 180 °C', lam_viec: '-20 đến 120 °C', hbi: '–', co_san: 'NLGI 2, NLGI 3: xô 17 kg, phuy 180 kg', nhan_dat: 'NLGI 1' },
   { ten: 'Sinopec Crystal Grease T3', link: `${CAT}/sinopec-crystal-grease-t3`, lam_dac: 'Lithium', cap: 'T3', dau40: '–', nho_giot: '≥ 180 °C', lam_viec: '-20 đến 120 °C', hbi: '–', co_san: 'T3: xô 17 kg, phuy 180 kg' },
   { ten: 'Sinopec Golden Grease', link: `${CAT}/sinopec-golden-grease`, lam_dac: 'Xà phòng kim loại', cap: '2 / 3', dau40: '–', nho_giot: '152–155 °C', lam_viec: '-20 đến 110 °C', hbi: '–', co_san: 'NLGI 2, NLGI 3: xô 17 kg, phuy 180 kg' },
@@ -80,7 +80,7 @@ const CAC_CAP = ['00', '0', '1', '2', '3', 'T3', '4'].filter((c) => THE.some((t)
 const NHOM_LOC = [
   { nhom: 'vi-tri', ten: 'Theo vị trí', muc: VI_TRI.map((v) => [v.ma, v.ten]) },
   { nhom: 'hang', ten: 'Theo hãng', muc: CAC_HANG.map((h) => [h, h]) },
-  { nhom: 'cap', ten: 'Theo chỉ số NLGI', muc: CAC_CAP.map((c) => [c, `NLGI ${c}`]) },
+  { nhom: 'cap', ten: 'Theo độ đặc NLGI', muc: CAC_CAP.map((c) => [c, `NLGI ${c}`]) },
 ];
 
 // Chi phí: chỉ lấy khoảng giá từ gia-cong-khai.json, không ghi tay.
@@ -119,7 +119,7 @@ const TDS = [
 ];
 
 const MUC_LUC = [
-  ['chon-nhanh', 'Chọn nhanh theo vị trí'], ['nlgi', 'Chọn theo chỉ số NLGI'], ['chat-lam-dac', 'Chọn theo chất làm đặc'], ['so-sanh', 'So sánh và trạng thái kho'],
+  ['chon-nhanh', 'Chọn nhanh theo vị trí'], ['nlgi', 'Chọn theo độ đặc/độ sệt NLGI'], ['chat-lam-dac', 'Chọn theo chất làm đặc'], ['so-sanh', 'So sánh và trạng thái kho'],
   ['dong-co', 'Vòng bi động cơ điện'], ['chi-phi', 'Giá mỗi kg và chi phí mỗi năm'], ['mo-kho', 'Vì sao mỡ bò khô cứng'], ['tra-mo', 'Tra bao nhiêu, bao lâu'],
   ['quy-trinh', 'Quy trình bơm mỡ bò an toàn'], ['kinh-nghiem', 'Kinh nghiệm người sử dụng'], ['su-co', 'Dấu hiệu mỡ hỏng'], ['hoi-dap', 'Câu hỏi thường gặp'], ['cach-viet-bai', 'Cách chúng tôi viết và cập nhật bài'],
 ];
@@ -151,8 +151,8 @@ const schemaData = [
       <header class="dau">
         <h1>{title}</h1>
         <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></p>
-        <p class="mo-dau">Nhiều anh em thợ xưởng cứ thấy vòng bi kêu là với tay lấy súng bơm mỡ, bơm đến khi mỡ trào ra mép phớt mới thôi. Bơm quá đầy như vậy dễ làm ổ nóng rực ngay sau đó, mỡ chảy lòng thòng ra ngoài, lâu dần hỏng cả vòng bi. Lỗi nhiều khi không nằm ở chỗ lười tra mỡ, mà ở chỗ chọn sai chỉ số NLGI, bơm quá nhiều hoặc dùng lẫn các loại mỡ với nhau.</p>
-        <p class="mo-dau"><strong>Mỡ bôi trơn</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, chỉ số phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
+        <p class="mo-dau">Nhiều anh em thợ xưởng cứ thấy vòng bi kêu là với tay lấy súng bơm mỡ, bơm đến khi mỡ trào ra mép phớt mới thôi. Bơm quá đầy như vậy dễ làm ổ nóng rực ngay sau đó, mỡ chảy lòng thòng ra ngoài, lâu dần hỏng cả vòng bi. Lỗi nhiều khi không nằm ở chỗ lười tra mỡ, mà ở chỗ chọn sai độ đặc/độ sệt NLGI, bơm quá nhiều hoặc dùng lẫn các loại mỡ với nhau.</p>
+        <p class="mo-dau"><strong>Mỡ bôi trơn</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, độ đặc/độ sệt phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <p class="goi-y-menu">Bạn đang cần gì? Bấm chọn nhanh bên dưới:</p>
         <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
           <a class="nut-nhanh" href="#san-pham"><strong>Danh sách mỡ bôi trơn phổ biến</strong><span class="nut-xem">Xem ngay →</span></a>
@@ -255,11 +255,11 @@ const schemaData = [
         <ContentBody><ChonMo /></ContentBody>
 
         <h2 id="so-sanh">So sánh các mã mỡ theo TDS và trạng thái kho</h2>
-        <p>Số trong bảng là giá trị điển hình hoặc cam kết ghi trên TDS, có thể dao động nhẹ giữa các lô. Ô "–" là TDS không ghi chỉ tiêu đó. Cột cuối là trạng thái theo từng chỉ số NLGI và quy cách. Bạn vẫn nên hỏi lại số lượng trước khi đặt.</p>
+        <p>Số trong bảng là giá trị điển hình hoặc cam kết ghi trên TDS, có thể dao động nhẹ giữa các lô. Ô "–" là TDS không ghi chỉ tiêu đó. Cột cuối là trạng thái theo từng độ đặc/độ sệt NLGI và quy cách. Bạn vẫn nên hỏi lại số lượng trước khi đặt.</p>
         <div class="bang"><table class="the-dt">
-          <thead><tr><th>Mã mỡ</th><th>Chất làm đặc</th><th>Chỉ số NLGI</th><th>Dầu gốc ở 40 °C</th><th>Nhỏ giọt</th><th>Nhiệt độ làm việc</th><th>Tải hàn dính 4 bi</th><th>Trạng thái kho</th><th>TDS</th></tr></thead>
+          <thead><tr><th>Mã mỡ</th><th>Chất làm đặc</th><th>Độ đặc/độ sệt NLGI</th><th>Dầu gốc ở 40 °C</th><th>Nhỏ giọt</th><th>Nhiệt độ làm việc</th><th>Tải hàn dính 4 bi</th><th>Trạng thái kho</th><th>TDS</th></tr></thead>
           <tbody>{BANG.map((d) => <tr>
-            <td class="the-ten"><a href={d.link}>{d.ten}</a></td><td data-nhan="Chất làm đặc">{d.lam_dac}</td><td data-nhan="Chỉ số NLGI">{d.cap}</td><td data-nhan="Dầu gốc ở 40 °C">{d.dau40}</td><td data-nhan="Nhỏ giọt">{d.nho_giot}</td><td data-nhan="Nhiệt độ làm việc">{d.lam_viec}</td><td data-nhan="Tải hàn dính 4 bi">{d.hbi}</td>
+            <td class="the-ten"><a href={d.link}>{d.ten}</a></td><td data-nhan="Chất làm đặc">{d.lam_dac}</td><td data-nhan="Độ đặc/độ sệt NLGI">{d.cap}</td><td data-nhan="Dầu gốc ở 40 °C">{d.dau40}</td><td data-nhan="Nhỏ giọt">{d.nho_giot}</td><td data-nhan="Nhiệt độ làm việc">{d.lam_viec}</td><td data-nhan="Tải hàn dính 4 bi">{d.hbi}</td>
             <td class="the-kho" data-nhan="Trạng thái kho"><div>{d.ghi_chu === 'cho' ? <span class="cho">{d.co_san}</span> : <><strong>Có sẵn:</strong> {d.co_san}</>}{d.nhan_dat && <><br /><strong>Nhận đặt:</strong> {d.nhan_dat}</>}</div></td>
             <td class="the-tds" data-nhan="TDS">{tdsCua(d.link)
               ? <a href={tdsCua(d.link)} class="tds-link" target="_blank" rel="noopener" data-track="download_tds">{laPdf(tdsCua(d.link)!) ? 'Tải TDS' : 'Xem TDS'}</a>
@@ -274,7 +274,7 @@ const schemaData = [
           <thead><tr><th>Loại mỡ và quy cách</th><th>Giá mỗi kg (đồng)</th><th>Tiền mỡ cho một vòng bi mỗi năm (đồng)</th></tr></thead>
           <tbody>{CHI_PHI.map((c) => <tr><td><a href={c.link}>{c.ten}</a> · {c.qc}</td><td>{vnd(lam100(c.thap))} – {vnd(lam100(c.cao))}</td><td>{vnd(lam100(c.thap * G_DIEM_NAM / 1000))} – {vnd(lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
         </table></div>
-        <p class="nho">Bảng chưa có <a href={`${CAT}/eneos-epnoc-ap`}>ENEOS Epnoc AP(N)</a> vì chỉ số NLGI và quy cách của loại mỡ này còn phải xác nhận theo từng lô. Giá mỗi kg của VHP Licas được quy đổi từ giá thùng 30 ống 400 g (12 kg).</p>
+        <p class="nho">Bảng chưa có <a href={`${CAT}/eneos-epnoc-ap`}>ENEOS Epnoc AP(N)</a> vì độ đặc/độ sệt NLGI và quy cách của loại mỡ này còn phải xác nhận theo từng lô. Giá mỗi kg của VHP Licas được quy đổi từ giá thùng 30 ống 400 g (12 kg).</p>
         <ContentBody><DoiChieu /></ContentBody>
         <ContentBody><VanHanh /></ContentBody>
         <ContentBody><SuCo /></ContentBody>

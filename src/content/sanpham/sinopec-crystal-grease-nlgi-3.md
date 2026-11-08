@@ -15,7 +15,7 @@ base_oil: "Dầu khoáng tinh chế, chất làm đặc xà phòng lithium"
 standards: ["GB 7324"]
 
 specs:
-  - { name: "Chỉ số độ đặc NLGI", value: "3" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "3" }
   - { name: "Chất làm đặc", value: "Xà phòng lithium" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "9–13 cSt", method: "ASTM D445" }
   - { name: "Độ xuyên kim ở 25 °C, sau 60 lần giã", value: "220–250 (0,1 mm)", method: "ASTM D217" }
@@ -79,7 +79,7 @@ Mã này **có sẵn tại kho** theo **xô 17 kg** và **phuy 180 kg**, nhãn x
 | :--- | :--- |
 | Vòng bi, trục lăn, ổ trượt tải thường trong nhà máy | **Được.** |
 | Điểm có hơi ẩm hoặc nước phun làm nguội | **Được.** TDS ghi rửa trôi 1 % ở 79 °C. |
-| Moay ơ ô tô, xe tải tải thường | Được theo TDS, nhưng nên xem chỉ số NLGI trong tài liệu của xe. Nhiều xe yêu cầu NLGI 2. |
+| Moay ơ ô tô, xe tải tải thường | Được theo TDS, nhưng nên xem độ đặc/độ sệt NLGI trong tài liệu của xe. Nhiều xe yêu cầu NLGI 2. |
 | Ổ bi chịu va đập, tải nặng (sàng rung, máy nghiền) | Không nên. Xem [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2). |
 | Ổ bi nóng trên 120 °C, gần lò, máy sấy | Không. Xem [mỡ chịu nhiệt](/mo-chiu-nhiet). |
 | Chốt, khớp, gầm máy tốc độ thấp ngoài công trường | Xem thêm [Sinopec Golden Grease](/mo-boi-tron-cong-nghiep/sinopec-golden-grease). |
@@ -119,7 +119,7 @@ Khác biệt rõ nhất là nhiệt độ thấp: Crystal ghi làm việc từ -
 
 Chúng tôi **chưa tìm thấy ý kiến công khai đáng tin về đúng mã Crystal Grease NLGI 3**, và chưa có hồ sơ phản hồi của khách HT VINA về mã này. Các ý dưới đây nói về mỡ cùng nhóm, không phải đánh giá riêng sản phẩm.
 
-**Chọn độ đặc.** Trên diễn đàn xe cổ For B Bodies Only, một người dùng cho rằng [NLGI 2 là chỉ số thường dùng cho vòng bi bánh xe ô tô](https://www.forbbodiesonly.com/moparforum/threads/what-wheel-bearing-grease-to-use-ngli-2-or-3.269678/). Theo người này, NLGI 3 đặc hơn, khó chảy về đường lăn, hợp vòng bi lớn của xe nặng hơn.
+**Chọn độ đặc.** Trên diễn đàn xe cổ For B Bodies Only, một người dùng cho rằng [NLGI 2 là độ đặc thường dùng cho vòng bi bánh xe ô tô](https://www.forbbodiesonly.com/moparforum/threads/what-wheel-bearing-grease-to-use-ngli-2-or-3.269678/). Theo người này, NLGI 3 đặc hơn, khó chảy về đường lăn, hợp vòng bi lớn của xe nặng hơn.
 
 **Lời khuyên của chúng tôi:** với moay ơ, hãy theo tài liệu hướng dẫn sử dụng kèm theo xe. Nếu tài liệu ghi NLGI 2, đừng đổi sang NLGI 3 chỉ vì nghĩ mỡ đặc hơn sẽ bền hơn. Khi đó bạn chọn Crystal NLGI 2 cùng dòng, kho có sẵn xô 17 kg và phuy 180 kg.
 

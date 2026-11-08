@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-008"
 active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
-title: "Mỡ PVOIL PV Grease No2, No3"
+title: "Mỡ PVOIL PV Grease No2, No3 (NLGI 2, NLGI 3)"
 seo_title: "Mỡ PV Grease No2, No3 PVOIL – Mỡ Bò Đa Dụng Phuy"
 description: "Mỡ đa dụng PV Grease No2, No3 của PVOIL Lube, dầu gốc khoáng, điểm nhỏ giọt tối thiểu 140 °C, cho vòng bi, khớp, xe và máy công nghiệp. Hàng phuy."
 keywords: ["pv grease", "mỡ pv grease", "pv grease no2", "pv grease no3", "mỡ pvoil", "pv grease lithium"]
@@ -16,7 +16,7 @@ base_oil: "Dầu gốc khoáng"
 specs:
   - { name: "Màu sắc", value: "Vàng" }
   - { name: "Dầu gốc", value: "Dầu gốc khoáng" }
-  - { name: "Chỉ số độ đặc NLGI", value: "No2: 2 · No3: 3" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "No2: 2 · No3: 3" }
   - { name: "Độ xuyên kim", value: "No2: 265–295 · No3: 220–250 (0,1 mm)", method: "ASTM D217" }
   - { name: "Điểm nhỏ giọt", value: "Tối thiểu 140 °C", method: "ASTM D2265" }
   - { name: "Ăn mòn tấm đồng (24 giờ, 100 °C)", value: "Loại 1", method: "ASTM D4048" }
@@ -57,7 +57,7 @@ date: "2026-10-12"
 updated: "2026-10-14"
 ---
 
-**PV Grease** là mỡ bôi trơn đa dụng của Công ty CP Dầu nhờn PVOIL (PVOIL Lube), thuộc Tổng công ty Dầu Việt Nam. Trên web hãng, dòng này có tên **PV Grease Lithium**, gồm ba loại theo chỉ số độ đặc NLGI: 1, 2 và 3. Mỡ màu vàng, pha từ dầu gốc khoáng và có điểm nhỏ giọt tối thiểu 140 °C.
+**PV Grease** là mỡ bôi trơn đa dụng của Công ty CP Dầu nhờn PVOIL (PVOIL Lube), thuộc Tổng công ty Dầu Việt Nam. Trên web hãng, dòng này có tên **PV Grease Lithium**, gồm ba loại theo độ đặc/độ sệt NLGI: 1, 2 và 3. Mỡ màu vàng, pha từ dầu gốc khoáng và có điểm nhỏ giọt tối thiểu 140 °C.
 
 Loại **No2** và **No3** đóng **phuy** **có sẵn tại kho**, có hóa đơn VAT; CO/CQ cung cấp theo lô khi khách yêu cầu. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
@@ -88,7 +88,7 @@ Loại **No2** và **No3** đóng **phuy** **có sẵn tại kho**, có hóa đ�
 | Bơm bằng súng mỡ | Dễ bơm | Cần lực bơm lớn hơn |
 | Thường dùng cho | Vòng bi, vú mỡ, ổ bi tốc độ trung bình | Khớp, chốt, bản lề, chỗ dễ chảy mỡ |
 
-> **Nhận định của HT VINA:** Với moay ơ bánh xe tải nặng, hãy kiểm tra chỉ số NLGI và nhiệt độ làm việc theo tài liệu hướng dẫn sử dụng kèm theo xe trước khi dùng PV Grease No3; moay ơ chạy nóng thường cần mỡ có điểm nhỏ giọt cao hơn.
+> **Nhận định của HT VINA:** Với moay ơ bánh xe tải nặng, hãy kiểm tra độ đặc/độ sệt NLGI và nhiệt độ làm việc theo tài liệu hướng dẫn sử dụng kèm theo xe trước khi dùng PV Grease No3; moay ơ chạy nóng thường cần mỡ có điểm nhỏ giọt cao hơn.
 
 ## PV Grease hay mỡ đa dụng khác?
 
@@ -119,12 +119,12 @@ Không bơm quá nhiều: ổ bi đầy mỡ chạy nóng hơn. Ổ bi động c
 Không. Điểm nhỏ giọt tối thiểu 140 °C là mức của mỡ đa dụng. Điểm bôi trơn nóng liên tục cần mỡ lithium complex hoặc mỡ chịu nhiệt chuyên dụng.
 
 ### PV Grease No3 dùng cho xe tải được không?
-Được, cho khớp, chốt, bản lề và sát xi. Với moay ơ bánh xe tải nặng, hãy kiểm tra chỉ số NLGI và nhiệt độ làm việc theo hướng dẫn sử dụng của xe trước khi dùng.
+Được, cho khớp, chốt, bản lề và sát xi. Với moay ơ bánh xe tải nặng, hãy kiểm tra độ đặc/độ sệt NLGI và nhiệt độ làm việc theo hướng dẫn sử dụng của xe trước khi dùng.
 
 ## Quy cách đóng gói, đơn hàng
 
 - **Quy cách:** No2, No3 phuy. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=PVOIL%20PV%20Grease) kèm chỉ số NLGI và số lượng.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=PVOIL%20PV%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
