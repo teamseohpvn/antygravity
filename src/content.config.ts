@@ -70,7 +70,7 @@ const sanphamCollection = defineCollection({
     sku: z.string().optional(), // Mã HH trong phần mềm kho (khi chỉ có 1 quy cách)
     vg: z.number().optional(), // Dầu: cấp ISO VG
     vg_khac: z.array(z.number()).optional(), // Cấp ISO VG khác cùng trang, ví dụ [46] cho trang "68, 46"
-    nlgi: z.string().optional(), // Mỡ: cấp NLGI, ví dụ "2" hoặc "0/1"
+    nlgi: z.string().optional(), // Mỡ: chỉ số NLGI, ví dụ "2" hoặc "0/1"
     sae: z.string().optional(), // Dầu động cơ / dầu cầu: "15W-40", "85W-140"
     api: z.string().optional(), // Cấp API: "CI-4", "GL-5"
     base_oil: z.string().optional(), // "Dầu gốc khoáng", "Tổng hợp PAO"

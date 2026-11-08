@@ -13,7 +13,7 @@ nlgi: "2"
 base_oil: "Dầu gốc khoáng chỉ số độ nhớt cao, chất làm đặc xà phòng lithium hydroxystearate"
 
 specs:
-  - { name: "Cấp NLGI", value: "2" }
+  - { name: "Chỉ số độ đặc NLGI", value: "2" }
   - { name: "Loại xà phòng", value: "Lithium" }
   - { name: "Độ nhớt dầu gốc ở 40 °C", value: "220 cSt", method: "ASTM D445" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "19 cSt", method: "ASTM D445" }
@@ -46,7 +46,7 @@ storage: "Để xô trong nhà, đậy kín nắp, tránh bụi và nước lọ
 
 images:
   - { src: "/images/san-pham/shell-gadus-s2-v220-2-xo-18kg.webp", alt: "Xô 18 kg mỡ bò Shell Gadus S2 V220 2, nhãn vàng ghi rõ tên mã và khối lượng 18 kg" }
-  - { src: "/images/san-pham/shell-gadus-s2-v220-2-nhan.webp", alt: "Nhãn xô Shell Gadus S2 V220 2 ghi cấp NLGI 2" }
+  - { src: "/images/san-pham/shell-gadus-s2-v220-2-nhan.webp", alt: "Nhãn xô Shell Gadus S2 V220 2 ghi chỉ số NLGI 2" }
   - { src: "/images/san-pham/shell-gadus-s2-v220-2-mau-mo.webp", alt: "Màu và độ đặc của mỡ Shell Gadus S2 V220 2 khi mở nắp xô" }
 
 doc_gia: "Trang này dành cho nhà máy cần mỡ lithium chịu cực áp cho ổ bi băng tải, sàng rung, máy nghiền và xe vận tải."
@@ -96,7 +96,7 @@ Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VA
 
 ## Gadus S2 hay mỡ lithium VHP?
 
-[VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) cùng gốc lithium, cùng dầu gốc 220 cSt, có sẵn cấp L4 xô 17 kg. Khác biệt chính: Gadus S2 có phụ gia cực áp theo TDS Shell; TDS Shell Việt Nam không ghi tải 4 bi nên không so được bằng số với mức 200 kg của VHP.
+[VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) cùng gốc lithium, cùng dầu gốc 220 cSt, có sẵn loại L4 xô 17 kg. Khác biệt chính: Gadus S2 có phụ gia cực áp theo TDS Shell; TDS Shell Việt Nam không ghi tải 4 bi nên không so được bằng số với mức 200 kg của VHP.
 
 > **Nhận định của HT VINA:** Ổ bi tải thường cần mỡ ngay thì dùng VHP Lithium Grease có sẵn. Ổ bi chịu va đập (sàng rung, máy nghiền) nên đặt Gadus S2 để có phụ gia cực áp.
 
@@ -138,7 +138,7 @@ Shell khuyến cáo: ổ bi chạy gần nhiệt độ tối đa thì nên rút 
 ## Câu hỏi thường gặp
 
 ### NLGI 2 nghĩa là gì?
-NLGI là thang độ đặc của mỡ, từ 000 (rất lỏng) đến 6 (rất cứng). Cấp 2 có độ đặc như bơ, là cấp phổ biến nhất cho ổ bi và vú mỡ bơm bằng súng.
+NLGI là thang độ đặc của mỡ, từ 000 (rất lỏng) đến 6 (rất cứng). NLGI 2 có độ đặc như bơ, là chỉ số phổ biến nhất cho ổ bi và vú mỡ bơm bằng súng.
 
 ### Gadus S2 V220 2 có trộn với mỡ khác được không?
 Chỉ nên trộn với mỡ cùng gốc lithium. Trộn với mỡ gốc khác như canxi, polyurea hay bentonite có thể làm mỡ chảy lỏng hoặc vón cục. Khi đổi loại mỡ, nên làm sạch mỡ cũ trong ổ bi.

@@ -89,7 +89,7 @@ Kho tại TP Hải Phòng (Hải Dương cũ) có Calix Ceno No3 đóng **phuy 1
 
 ## Calix Ceno No3 hay VHP Licas Grease No3?
 
-Hai mã cùng có sẵn tại kho, cùng cấp đặc No3:
+Hai mã cùng có sẵn tại kho, cùng độ đặc No3:
 
 | Chỉ tiêu | Calix Ceno No3 | [VHP Licas Grease No3](/mo-boi-tron-cong-nghiep/licas-grease) |
 | :--- | :--- | :--- |

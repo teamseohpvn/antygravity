@@ -13,7 +13,7 @@ Muốn kiểm tra nhanh tại chỗ, bạn lấy một ít mỡ cũ miết mỏn
 
 ## Chỉ tiêu cần xem trên bảng thông số (TDS) {#chi-tieu}
 
-- **Cấp NLGI và độ nhớt dầu gốc:** chọn theo tốc độ quay và tải của vòng bi.
+- **Chỉ số NLGI và độ nhớt dầu gốc:** chọn theo tốc độ quay và tải của vòng bi.
 - **Điểm nhỏ giọt ([ASTM D2265](https://www.astm.org/Standards/D2265.htm)):** nhiệt độ mỡ bắt đầu chảy thành giọt. Đây không phải nhiệt độ làm việc, vì mỡ luôn phải làm việc ở mức thấp hơn nhiều.
 - **Độ bay hơi ([ASTM D972](https://www.astm.org/Standards/D972.htm), [ASTM D2595](https://www.astm.org/Standards/D2595.htm)):** phần trăm khối lượng mỡ mất đi khi giữ nóng một thời gian. Số càng nhỏ, mỡ càng lâu khô.
 - **Chịu cực áp:** tải hàn dính bốn bi ([ASTM D2596](https://www.astm.org/Standards/D2596.htm)) và tải Timken OK ([ASTM D2509](https://www.astm.org/Standards/D2509.htm)).

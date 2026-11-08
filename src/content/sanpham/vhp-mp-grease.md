@@ -14,7 +14,7 @@ nlgi: "2 / 3 / 4"
 base_oil: "Dầu gốc khoáng tinh chế, chất làm đặc lithium"
 
 specs:
-  - { name: "Cấp NLGI", value: "L2: 2 · L3: 3 · L4: 4" }
+  - { name: "Chỉ số độ đặc NLGI", value: "L2: 2 · L3: 3 · L4: 4" }
   - { name: "Chất làm đặc", value: "Lithium" }
   - { name: "Loại dầu gốc", value: "Dầu gốc khoáng" }
   - { name: "Độ nhớt dầu gốc ở 40 °C", value: "150 cSt", method: "ASTM D445" }
@@ -54,7 +54,7 @@ storage: "Để nơi khô ráo, đậy kín nắp xô, phuy sau khi lấy mỡ, 
 doc_gia: "Trang này dành cho tổ bảo trì cần mỡ đa dụng cho vòng bi, ổ đỡ, bản lề của máy trong xưởng và xe vận tải."
 tom_tat:
   - "**Dùng được** cho vòng bi tốc độ trung bình đến cao, tải trung bình, làm việc liên tục từ -10 °C đến 120 °C."
-  - "**Ba cấp có thông số trong TDS:** L2 mềm nhất, L3 đặc hơn, L4 đặc nhất."
+  - "**Ba loại có thông số trong TDS:** L2 mềm nhất, L3 đặc hơn, L4 đặc nhất."
   - "**Không phải mỡ chịu nhiệt, cũng không phải mỡ chịu cực áp** theo TDS."
   - "**Có sẵn tại kho:** L2 phuy 180 kg; L3 xô 15 kg, xô 17 kg, phuy 180 kg; L4 xô 17 kg."
 tags: ["nlgi-2", "nlgi-3", "nlgi-4", "mo-lithium", "mo-da-dung", "vhp"]
@@ -86,17 +86,17 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng **có sẵn tại kho** gồm *
 - **Nhỏ giọt tối thiểu 180 °C.** Đây là mức nhiệt mỡ bắt đầu nhỏ giọt trong phép thử, không phải nhiệt độ làm việc.
 - **Tải 4 bi 200 kg, không ăn mòn tấm đồng.** Mức tải này bằng VHP Lithium Grease và cao hơn 180 kg của Licas Grease, nhưng TDS không xếp MP Grease vào nhóm chịu cực áp.
 
-## L2, L3 hay L4: chọn cấp nào của MP Grease? {#chon-cap}
+## L2, L3 hay L4: chọn loại nào của MP Grease? {#chon-cap}
 
-| Cấp | Độ xuyên kim (0,1 mm) | Độ đặc | Thường dùng cho | Có sẵn |
+| Loại | Độ xuyên kim (0,1 mm) | Độ đặc | Thường dùng cho | Có sẵn |
 | :--- | :--- | :--- | :--- | :--- |
-| L2 | 240–270 | Mềm nhất trong ba cấp | Vòng bi, vú mỡ, nơi súng bơm khó đẩy mỡ đặc | Phuy 180 kg |
+| L2 | 240–270 | Mềm nhất trong ba loại | Vòng bi, vú mỡ, nơi súng bơm khó đẩy mỡ đặc | Phuy 180 kg |
 | L3 | 210–240 | Đặc | Vòng bi động cơ, quạt, bản lề, chỗ dễ chảy mỡ | Xô 15 kg, xô 17 kg, phuy 180 kg |
 | L4 | 190–210 | Đặc nhất | Ổ bi lớn, vị trí rung, dễ chảy mỡ | Xô 17 kg |
 
-> **Nhận định của HT VINA:** Bạn hãy chọn theo cấp NLGI ghi trong tài liệu của máy. Nếu tài liệu không ghi, vòng bi quay nhanh nên bắt đầu từ L2 hoặc L3, vì mỡ quá đặc làm ổ nóng hơn và khó bơm hơn. L4 chỉ nên dùng khi L3 bị chảy.
+> **Nhận định của HT VINA:** Bạn hãy chọn theo chỉ số NLGI ghi trong tài liệu của máy. Nếu tài liệu không ghi, vòng bi quay nhanh nên bắt đầu từ L2 hoặc L3, vì mỡ quá đặc làm ổ nóng hơn và khó bơm hơn. L4 chỉ nên dùng khi L3 bị chảy.
 
-**Cấp bán lỏng L0, L00, L000.** Chúng tôi nhận đặt các cấp này cho hệ bơm mỡ tự động, nhưng chưa đưa số liệu lên trang. Lý do là các tài liệu VHP hiện có ghi khác nhau về dầu gốc và độ xuyên kim của cấp L0, L00, còn L000 chưa có bảng chỉ tiêu. Khi cần, bạn hãy [liên hệ](/bao-gia?sp=VHP%20MP%20Grease) để chúng tôi xin tài liệu đúng lô hàng.
+**Loại bán lỏng L0, L00, L000.** Chúng tôi nhận đặt các loại này cho hệ bơm mỡ tự động, nhưng chưa đưa số liệu lên trang. Lý do là các tài liệu VHP hiện có ghi khác nhau về dầu gốc và độ xuyên kim của loại L0, L00, còn L000 chưa có bảng chỉ tiêu. Khi cần, bạn hãy [liên hệ](/bao-gia?sp=VHP%20MP%20Grease) để chúng tôi xin tài liệu đúng lô hàng.
 
 **Nếu bạn thấy số khác ở nơi khác.** [Trang "MP Lithium Grease" trên web VHP](https://www.hoadauvhp.com/lithiumgrease-nid26.html), đăng ngày 29/06/2023, ghi chất làm đặc lithium và canxi, nhỏ giọt tối thiểu 177 °C, ngắn hạn tới 125 °C. Chúng tôi dùng số trong TDS vì file TDS có ngày tạo muộn hơn. Trước khi đổi mỡ, bạn vẫn nên đẩy hết mỡ cũ ra thay vì bơm đè lên.
 
@@ -145,11 +145,11 @@ Không. Hai dòng có TDS riêng. MP Grease dùng dầu gốc 150 cSt, nhỏ gi�
 Không. Mức làm việc liên tục tới 120 °C là của mỡ đa dụng. Ổ nóng liên tục cao hơn thì xem [mỡ chịu nhiệt](/mo-chiu-nhiet).
 
 ### L3 hay L2 dùng cho súng bơm mỡ?
-Cả hai đều dùng được. L2 mềm hơn nên bơm nhẹ tay hơn, L3 ít chảy hơn ở chỗ hở. Hãy ưu tiên cấp ghi trong tài liệu của máy.
+Cả hai đều dùng được. L2 mềm hơn nên bơm nhẹ tay hơn, L3 ít chảy hơn ở chỗ hở. Hãy ưu tiên chỉ số NLGI ghi trong tài liệu của máy.
 
 ## Quy cách đóng gói, đơn hàng {#don-hang}
 
 - **Quy cách có sẵn:** L2 phuy 180 kg; L3 xô 15 kg, xô 17 kg, phuy 180 kg; L4 xô 17 kg. L0, L00, L000 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20MP%20Grease) kèm cấp và số lượng.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20MP%20Grease) kèm chỉ số NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
