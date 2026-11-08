@@ -64,4 +64,4 @@ Chỉ khi nhãn dầu ghi cả cấp cho động cơ xăng (ví dụ "CI-4/SL").
 
 ---
 
-**Xem thêm:** [Dầu cầu, dầu hộp số](/dau-cau-hop-so) · [Dầu thủy lực](/dau-thuy-luc) · [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep)
+**Xem thêm:** [Dầu cầu, dầu hộp số](/dau-cau-hop-so) · [Dầu thủy lực](/dau-thuy-luc) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)

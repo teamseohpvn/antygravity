@@ -68,4 +68,4 @@ Không nên. Trộn làm thay đổi lượng phụ gia cực áp, dầu không 
 
 ---
 
-**Xem thêm:** [Dầu động cơ diesel](/dau-dong-co-diesel) · [Dầu thủy lực](/dau-thuy-luc) · [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep)
+**Xem thêm:** [Dầu động cơ diesel](/dau-dong-co-diesel) · [Dầu thủy lực](/dau-thuy-luc) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)

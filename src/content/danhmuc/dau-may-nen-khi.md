@@ -92,4 +92,4 @@ Không nên. Dầu máy nén khí được pha để chịu oxy hóa ở nhiệt
 
 ---
 
-**Xem thêm:** [Dầu thủy lực](/dau-thuy-luc) · [Dầu bánh răng](/dau-banh-rang) · [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep)
+**Xem thêm:** [Dầu thủy lực](/dau-thuy-luc) · [Dầu bánh răng](/dau-banh-rang) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)

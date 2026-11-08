@@ -14,7 +14,7 @@ date: "2026-09-21"
 updated: "2026-10-06"
 ---
 
-**Mỡ chịu nhiệt** (thường gọi là **mỡ bò chịu nhiệt**) là mỡ bôi trơn dùng cho vị trí nóng hơn khoảng 120 °C, nơi mỡ lithium thông thường nhanh chảy, khô và cháy thành cặn. Cách chọn đúng là **đo nhiệt độ thực tế tại vòng bi**, rồi chọn chất làm đặc và dầu gốc phù hợp. Với phần lớn quạt lò, lò sấy và máy sóng giấy chạy ở khoảng 150–180 °C, mỡ **polyurea** hoặc **lithium phức** tổng hợp là đủ. Từ khoảng 200–260 °C mới cần mỡ đặc chủng như **PFPE**.
+**Mỡ chịu nhiệt** (thường gọi là **mỡ bò chịu nhiệt**) là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) dùng cho vị trí nóng hơn khoảng 120 °C, nơi mỡ lithium thông thường nhanh chảy, khô và cháy thành cặn. Cách chọn đúng là **đo nhiệt độ thực tế tại vòng bi**, rồi chọn chất làm đặc và dầu gốc phù hợp. Với phần lớn quạt lò, lò sấy và máy sóng giấy chạy ở khoảng 150–180 °C, mỡ **polyurea** hoặc **lithium phức** tổng hợp là đủ. Từ khoảng 200–260 °C mới cần mỡ đặc chủng như **PFPE**.
 
 ## Chọn mỡ chịu nhiệt theo nhiệt độ làm việc
 
@@ -85,4 +85,4 @@ Không nên. Chất làm đặc khác nhau thường không tương thích, và 
 
 ---
 
-**Xem thêm:** [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep) · [Dầu truyền nhiệt](/dau-truyen-nhiet) · [Dầu bánh răng](/dau-banh-rang)
+**Xem thêm:** [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep) · [Dầu truyền nhiệt](/dau-truyen-nhiet) · [Dầu bánh răng](/dau-banh-rang)
