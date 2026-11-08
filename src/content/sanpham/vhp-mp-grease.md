@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-013"
 active: true   # Bật 05/11/2026; chủ site xác nhận còn hàng và giá
-title: "Mỡ VHP MP Grease L2, L3, L4"
+title: "Mỡ VHP MP Grease L2, L3, L4 (NLGI 2, 3, 4)"
 seo_title: "Mỡ VHP MP Grease L2, L3, L4 – Xô 15, 17 kg, Phuy 180 kg"
 description: "Mỡ đa dụng VHP MP Grease L2, L3, L4 cho vòng bi tốc độ trung bình đến cao, -10 đến 120 °C, tải 4 bi 200 kg. Có xô 15, 17 kg, phuy 180 kg, giao từ Hải Phòng."
 keywords: ["vhp mp grease", "mp grease l3", "mp grease l2", "mp grease l4", "mỡ mp grease", "mỡ bò vhp"]
@@ -14,7 +14,7 @@ nlgi: "2 / 3 / 4"
 base_oil: "Dầu gốc khoáng tinh chế, chất làm đặc lithium"
 
 specs:
-  - { name: "Chỉ số độ đặc NLGI", value: "L2: 2 · L3: 3 · L4: 4" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "L2: 2 · L3: 3 · L4: 4" }
   - { name: "Chất làm đặc", value: "Lithium" }
   - { name: "Loại dầu gốc", value: "Dầu gốc khoáng" }
   - { name: "Độ nhớt dầu gốc ở 40 °C", value: "150 cSt", method: "ASTM D445" }

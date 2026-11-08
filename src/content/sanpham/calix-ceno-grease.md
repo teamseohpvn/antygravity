@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-009"
 active: true   # Bật: có trong kho tháng 10/2026
-title: "Mỡ Calix Ceno No3"
+title: "Mỡ Calix Ceno No3 (NLGI 3)"
 seo_title: "Mỡ Calix Ceno No3 – Mỡ Canxi Tổng Hợp Đa Dụng Phuy 180 kg"
 description: "Mỡ nhờn công nghiệp Calix Ceno No3 gốc canxi tổng hợp, làm việc -10 đến 100 °C, cho ổ trục, chi tiết ma sát máy mỏ, xây dựng, vận tải. Phuy 180 kg."
 keywords: ["calix ceno no3", "mỡ ceno no3", "mỡ calix", "mỡ calix no3", "mỡ canxi tổng hợp"]

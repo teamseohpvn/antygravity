@@ -18,9 +18,9 @@ Bạn tìm đúng vị trí trong bảng, bấm vào mã để xem chi tiết, r
 
 ## Chọn độ đặc của mỡ theo chỉ số NLGI {#nlgi}
 
-Chỉ số độ đặc NLGI cho biết mỡ cứng hay mềm, đo bằng độ lún của côn chuẩn vào mỡ ở 25 °C theo [ASTM D217](https://www.astm.org/Standards/D217.htm). Côn lún càng ít thì mỡ càng cứng và số NLGI càng lớn. [Theo SKF](https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/selecting-a-suitable-grease), mỡ cho vòng bi thường dùng NLGI 1, 2 hoặc 3, phổ biến nhất là NLGI 2.
+Chỉ số độ đặc NLGI, còn gọi là độ sệt (nhiều nơi cũng ngầm hiểu là độ cứng của mỡ), cho biết mỡ cứng hay mềm, đo bằng độ lún của côn chuẩn vào mỡ ở 25 °C theo [ASTM D217](https://www.astm.org/Standards/D217.htm). Côn lún càng ít thì mỡ càng cứng và số NLGI càng lớn. [Theo SKF](https://www.skf.com/us/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/lubrication/selecting-a-suitable-grease), mỡ cho vòng bi thường dùng NLGI 1, 2 hoặc 3, phổ biến nhất là NLGI 2.
 
-| Chỉ số NLGI | Độ xuyên kim (0,1 mm) | Thể chất | Dùng cho |
+| Độ đặc/độ sệt NLGI | Độ xuyên kim (0,1 mm) | Thể chất | Dùng cho |
 | :--- | :--- | :--- | :--- |
 | **000 / 00** | 400 – 475 | Bán lỏng | Hộp số nhỏ bôi trơn bằng mỡ, hệ thống bôi trơn tập trung đường ống dài |
 | **0 / 1** | 310 – 385 | Mềm, dễ bơm | Hệ thống bơm mỡ tự động, thiết bị làm việc ở nhiệt độ thấp |

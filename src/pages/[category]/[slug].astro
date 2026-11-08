@@ -110,7 +110,7 @@ const authorName = tacGia ? tacGia.name : `${SITE_NAME} (${LEGAL_SHORT})`;
 const tenNgan = (p: NonNullable<typeof tacGia>) => p.bylineName ?? displayName(p);
 
 const additionalProperty = [
-  ...(grade ? [{ '@type': 'PropertyValue', name: d.vg ? 'Cấp độ nhớt' : 'Chỉ số NLGI', value: grade }] : []),
+  ...(grade ? [{ '@type': 'PropertyValue', name: d.vg ? 'Cấp độ nhớt' : 'Độ đặc/độ sệt NLGI', value: grade }] : []),
   ...(d.sae ? [{ '@type': 'PropertyValue', name: 'Cấp SAE', value: d.sae }] : []),
   ...(d.api ? [{ '@type': 'PropertyValue', name: 'Cấp API', value: d.api }] : []),
   ...(d.specs ?? []).map((s) => ({ '@type': 'PropertyValue', name: s.name, value: s.value, ...(s.method ? { description: s.method } : {}) })),
@@ -213,6 +213,7 @@ const schemaData = [
           {d.standards?.map((s) => <span class="badge badge-outline">{s}</span>)}
         </div>
         <p class="description">{d.description}</p>
+        {d.nlgi && <p class="giai-thich-nlgi"><strong>NLGI</strong> là chỉ số độ đặc của mỡ, còn gọi là độ sệt; nhiều nơi cũng ngầm hiểu là độ cứng của mỡ. Thang NLGI đi từ 000 (gần như lỏng) đến 6 (rất cứng), số càng lớn mỡ càng đặc. NLGI 2 có độ đặc như bơ, dùng phổ biến nhất cho vòng bi.</p>}
         {d.doc_gia && <p class="doc-gia">{d.doc_gia}</p>}
         {d.tom_tat && d.tom_tat.length > 0 && (
           <div class="tom-tat">
@@ -317,6 +318,7 @@ const schemaData = [
   .product-top { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-bottom: 30px; background: white; padding: clamp(20px, 4vw, 40px); border-radius: 8px; border: 1px solid var(--border-color); }
   @media (max-width: 860px) { .product-top { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
 
+  .giai-thich-nlgi { font-size: 0.92rem; color: var(--color-text-light, #555); border-left: 3px solid var(--color-primary); padding: 4px 0 4px 10px; margin: 8px 0 12px; }
   .product-summary h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); color: var(--color-primary); margin-bottom: 15px; line-height: 1.25; }
   .tags { margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 6px; }
   .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }

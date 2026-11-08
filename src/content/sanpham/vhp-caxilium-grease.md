@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-005"
 active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
-title: "Mỡ VHP Caxilium Grease No2, No3"
+title: "Mỡ VHP Caxilium Grease No2, No3 (NLGI 2, NLGI 3)"
 seo_title: "Mỡ VHP Caxilium Grease No2, No3 – Mỡ Kháng Nước"
 description: "Mỡ VHP Caxilium Grease No2, No3 gốc lithium-canxi, kháng nước và muối, làm việc -10 đến 110 °C, cho đầu trục, sát xi, máy nông nghiệp. Phuy 180 kg."
 keywords: ["vhp caxilium grease", "mỡ caxilium", "caxilium no2", "caxilium no3", "mỡ vhp", "mỡ kháng nước"]

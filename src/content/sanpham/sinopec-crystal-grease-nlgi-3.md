@@ -15,7 +15,7 @@ base_oil: "Dầu khoáng tinh chế, chất làm đặc xà phòng lithium"
 standards: ["GB 7324"]
 
 specs:
-  - { name: "Chỉ số độ đặc NLGI", value: "3" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "3" }
   - { name: "Chất làm đặc", value: "Xà phòng lithium" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "9–13 cSt", method: "ASTM D445" }
   - { name: "Độ xuyên kim ở 25 °C, sau 60 lần giã", value: "220–250 (0,1 mm)", method: "ASTM D217" }

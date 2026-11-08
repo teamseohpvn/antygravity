@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-007"
 active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
-title: "ENEOS Epnoc Grease AP(N)"
+title: "Mỡ ENEOS Epnoc Grease AP(N) NLGI 0, 1, 2, 3"
 seo_title: "ENEOS Epnoc Grease AP(N) – Mỡ Lithium Chịu Cực Áp"
 description: "Mỡ ENEOS Epnoc Grease AP(N) gốc lithium chịu cực áp, nhỏ giọt 195–203 °C, làm việc -20 đến 125 °C, hợp hệ bơm mỡ tập trung. CO/CQ, giao Hải Phòng."
 keywords: ["eneos epnoc grease ap", "epnoc grease ap(n)", "epnoc ap", "mỡ eneos", "mỡ epnoc", "mỡ chịu cực áp eneos"]
@@ -91,7 +91,7 @@ Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàn
 
 ## Nên chọn chỉ số NLGI nào?
 
-| Chỉ số NLGI | Độ xuyên kim (60 lần giã) | Điểm nhỏ giọt | Thường dùng cho |
+| Độ đặc/độ sệt NLGI | Độ xuyên kim (60 lần giã) | Điểm nhỏ giọt | Thường dùng cho |
 | :--- | :--- | :--- | :--- |
 | 0 | 362 | 195 °C | Hệ bơm mỡ tập trung đường ống dài, nơi lạnh |
 | 1 | 322 | 196 °C | Hệ bơm mỡ tập trung, ổ bi tốc độ trung bình |

@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-001"
 active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
-title: "Shell Gadus S2 V220 2"
+title: "Mỡ Shell Gadus S2 V220 2 (NLGI 2)"
 seo_title: "Shell Gadus S2 V220 2 – Mỡ Bò Chịu Cực Áp Xô 18kg"
 description: "Mỡ Shell Gadus S2 V220 2 gốc lithium, chịu cực áp, chống nước, làm việc -20 đến 130 °C cho vòng bi, ổ trượt. Xô 18 kg, có CO/CQ, VAT, giao Hải Phòng."
 keywords: ["shell gadus s2 v220 2", "gadus s2 v220 2", "mỡ shell gadus", "mỡ gadus s2", "shell gadus s2 v220"]
@@ -13,7 +13,7 @@ nlgi: "2"
 base_oil: "Dầu gốc khoáng chỉ số độ nhớt cao, chất làm đặc xà phòng lithium hydroxystearate"
 
 specs:
-  - { name: "Chỉ số độ đặc NLGI", value: "2" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "2" }
   - { name: "Loại xà phòng", value: "Lithium" }
   - { name: "Độ nhớt dầu gốc ở 40 °C", value: "220 cSt", method: "ASTM D445" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "19 cSt", method: "ASTM D445" }

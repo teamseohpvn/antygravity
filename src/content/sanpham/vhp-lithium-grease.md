@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-004"
 active: true   # Bật: có trong kho tháng 10/2026
-title: "Mỡ VHP Lithium Grease L00, L0, L3, L4"
+title: "Mỡ VHP Lithium Grease L00, L0, L3, L4 (NLGI 00, 0, 3, 4)"
 seo_title: "Mỡ VHP Lithium Grease L3, L4, L00 – Mỡ Lithium Đa Dụng"
 description: "Mỡ lithium đa dụng VHP Lithium Grease L3, L4 (nhỏ giọt tối thiểu 190 °C) cho vòng bi, gối đỡ, và mỡ bán lỏng L00, L0. L4 xô 17 kg có sẵn, giao từ Hải Phòng."
 keywords: ["vhp lithium grease", "mỡ lithium vhp", "mỡ lithium l3", "mỡ l3 vhp", "mỡ lithium l4", "mỡ l00", "mỡ bò lithium"]
@@ -14,7 +14,7 @@ nlgi: "00 / 0 / 3 / 4"
 base_oil: "Dầu gốc khoáng tinh chế, chất làm đặc lithium"
 
 specs:
-  - { name: "Chỉ số độ đặc NLGI (bảng Lithium Grease)", value: "L3: 3 · L4: 4" }
+  - { name: "Độ đặc/độ sệt NLGI (bảng Lithium Grease)", value: "L3: 3 · L4: 4" }
   - { name: "Chất làm đặc", value: "Lithium" }
   - { name: "Độ nhớt dầu gốc ở 40 °C", value: "220 cSt", method: "ASTM D445" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "16 cSt", method: "ASTM D445" }
