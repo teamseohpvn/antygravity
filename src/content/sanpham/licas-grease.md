@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-002"
 active: true   # Bật: có trong kho tháng 10/2026
-title: "Mỡ VHP Licas Grease No2, No3"
+title: "Mỡ VHP Licas Grease No2, No3 (NLGI 2, NLGI 3)"
 seo_title: "Mỡ Licas Grease No2, No3 VHP – Mỡ Bò Đa Dụng Xô, Phuy"
 description: "Mỡ bò đa dụng VHP Licas Grease No2, No3 gốc lithium-canxi, chống rửa trôi, làm việc từ -10 đến 110 °C. Có sẵn ống 400 g; xô, phuy đặt nhanh, giao từ Hải Phòng."
 keywords: ["licas grease", "mỡ licas", "mỡ licas no3", "mỡ licas no2", "mỡ vhp", "mỡ bò vhp"]
@@ -14,7 +14,7 @@ nlgi: "2 / 3"
 base_oil: "Dầu gốc khoáng tinh chế, chất làm đặc lithium và canxi"
 
 specs:
-  - { name: "Chỉ số độ đặc NLGI", value: "2 / 3" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "2 / 3" }
   - { name: "Chất làm đặc", value: "Lithium và canxi" }
   - { name: "Độ nhớt dầu gốc ở 40 °C", value: "150 cSt", method: "ASTM D445" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "11 cSt", method: "ASTM D445" }

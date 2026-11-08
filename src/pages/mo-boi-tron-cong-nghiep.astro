@@ -80,7 +80,7 @@ const CAC_CAP = ['00', '0', '1', '2', '3', 'T3', '4'].filter((c) => THE.some((t)
 const NHOM_LOC = [
   { nhom: 'vi-tri', ten: 'Theo vị trí', muc: VI_TRI.map((v) => [v.ma, v.ten]) },
   { nhom: 'hang', ten: 'Theo hãng', muc: CAC_HANG.map((h) => [h, h]) },
-  { nhom: 'cap', ten: 'Theo chỉ số NLGI', muc: CAC_CAP.map((c) => [c, `NLGI ${c}`]) },
+  { nhom: 'cap', ten: 'Theo độ đặc NLGI', muc: CAC_CAP.map((c) => [c, `NLGI ${c}`]) },
 ];
 
 // Chi phí: chỉ lấy khoảng giá từ gia-cong-khai.json, không ghi tay.
@@ -152,7 +152,7 @@ const schemaData = [
         <h1>{title}</h1>
         <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></p>
         <p class="mo-dau">Nhiều anh em thợ xưởng cứ thấy vòng bi kêu là với tay lấy súng bơm mỡ, bơm đến khi mỡ trào ra mép phớt mới thôi. Bơm quá đầy như vậy dễ làm ổ nóng rực ngay sau đó, mỡ chảy lòng thòng ra ngoài, lâu dần hỏng cả vòng bi. Lỗi nhiều khi không nằm ở chỗ lười tra mỡ, mà ở chỗ chọn sai chỉ số NLGI, bơm quá nhiều hoặc dùng lẫn các loại mỡ với nhau.</p>
-        <p class="mo-dau"><strong>Mỡ bôi trơn</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, chỉ số phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
+        <p class="mo-dau"><strong>Mỡ bôi trơn</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, chỉ số độ đặc (độ sệt) phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <p class="goi-y-menu">Bạn đang cần gì? Bấm chọn nhanh bên dưới:</p>
         <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
           <a class="nut-nhanh" href="#san-pham"><strong>Danh sách mỡ bôi trơn phổ biến</strong><span class="nut-xem">Xem ngay →</span></a>
@@ -257,9 +257,9 @@ const schemaData = [
         <h2 id="so-sanh">So sánh các mã mỡ theo TDS và trạng thái kho</h2>
         <p>Số trong bảng là giá trị điển hình hoặc cam kết ghi trên TDS, có thể dao động nhẹ giữa các lô. Ô "–" là TDS không ghi chỉ tiêu đó. Cột cuối là trạng thái theo từng chỉ số NLGI và quy cách. Bạn vẫn nên hỏi lại số lượng trước khi đặt.</p>
         <div class="bang"><table class="the-dt">
-          <thead><tr><th>Mã mỡ</th><th>Chất làm đặc</th><th>Chỉ số NLGI</th><th>Dầu gốc ở 40 °C</th><th>Nhỏ giọt</th><th>Nhiệt độ làm việc</th><th>Tải hàn dính 4 bi</th><th>Trạng thái kho</th><th>TDS</th></tr></thead>
+          <thead><tr><th>Mã mỡ</th><th>Chất làm đặc</th><th>Độ đặc/độ sệt NLGI</th><th>Dầu gốc ở 40 °C</th><th>Nhỏ giọt</th><th>Nhiệt độ làm việc</th><th>Tải hàn dính 4 bi</th><th>Trạng thái kho</th><th>TDS</th></tr></thead>
           <tbody>{BANG.map((d) => <tr>
-            <td class="the-ten"><a href={d.link}>{d.ten}</a></td><td data-nhan="Chất làm đặc">{d.lam_dac}</td><td data-nhan="Chỉ số NLGI">{d.cap}</td><td data-nhan="Dầu gốc ở 40 °C">{d.dau40}</td><td data-nhan="Nhỏ giọt">{d.nho_giot}</td><td data-nhan="Nhiệt độ làm việc">{d.lam_viec}</td><td data-nhan="Tải hàn dính 4 bi">{d.hbi}</td>
+            <td class="the-ten"><a href={d.link}>{d.ten}</a></td><td data-nhan="Chất làm đặc">{d.lam_dac}</td><td data-nhan="Độ đặc/độ sệt NLGI">{d.cap}</td><td data-nhan="Dầu gốc ở 40 °C">{d.dau40}</td><td data-nhan="Nhỏ giọt">{d.nho_giot}</td><td data-nhan="Nhiệt độ làm việc">{d.lam_viec}</td><td data-nhan="Tải hàn dính 4 bi">{d.hbi}</td>
             <td class="the-kho" data-nhan="Trạng thái kho"><div>{d.ghi_chu === 'cho' ? <span class="cho">{d.co_san}</span> : <><strong>Có sẵn:</strong> {d.co_san}</>}{d.nhan_dat && <><br /><strong>Nhận đặt:</strong> {d.nhan_dat}</>}</div></td>
             <td class="the-tds" data-nhan="TDS">{tdsCua(d.link)
               ? <a href={tdsCua(d.link)} class="tds-link" target="_blank" rel="noopener" data-track="download_tds">{laPdf(tdsCua(d.link)!) ? 'Tải TDS' : 'Xem TDS'}</a>

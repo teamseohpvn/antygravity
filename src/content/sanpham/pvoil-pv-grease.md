@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-008"
 active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
-title: "Mỡ PVOIL PV Grease No2, No3"
+title: "Mỡ PVOIL PV Grease No2, No3 (NLGI 2, NLGI 3)"
 seo_title: "Mỡ PV Grease No2, No3 PVOIL – Mỡ Bò Đa Dụng Phuy"
 description: "Mỡ đa dụng PV Grease No2, No3 của PVOIL Lube, dầu gốc khoáng, điểm nhỏ giọt tối thiểu 140 °C, cho vòng bi, khớp, xe và máy công nghiệp. Hàng phuy."
 keywords: ["pv grease", "mỡ pv grease", "pv grease no2", "pv grease no3", "mỡ pvoil", "pv grease lithium"]
@@ -16,7 +16,7 @@ base_oil: "Dầu gốc khoáng"
 specs:
   - { name: "Màu sắc", value: "Vàng" }
   - { name: "Dầu gốc", value: "Dầu gốc khoáng" }
-  - { name: "Chỉ số độ đặc NLGI", value: "No2: 2 · No3: 3" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "No2: 2 · No3: 3" }
   - { name: "Độ xuyên kim", value: "No2: 265–295 · No3: 220–250 (0,1 mm)", method: "ASTM D217" }
   - { name: "Điểm nhỏ giọt", value: "Tối thiểu 140 °C", method: "ASTM D2265" }
   - { name: "Ăn mòn tấm đồng (24 giờ, 100 °C)", value: "Loại 1", method: "ASTM D4048" }

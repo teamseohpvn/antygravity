@@ -14,7 +14,7 @@ nlgi: "2 / 3"
 base_oil: "Dầu khoáng chất lượng cao, sợi xà phòng kim loại (công nghệ NanoShield theo TDS)"
 
 specs:
-  - { name: "Chỉ số độ đặc NLGI", value: "2 / 3" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "2 / 3" }
   - { name: "Chất làm đặc", value: "Xà phòng kim loại (TDS NLGI 2 ghi xà phòng canxi 17,5 %)" }
   - { name: "Ngoại quan", value: "Mịn, màu vàng nhạt đến nâu", method: "Quan sát" }
   - { name: "Độ xuyên kim ở 25 °C, sau nhào", value: "NLGI 2: 275 · NLGI 3: 235 (0,1 mm)", method: "ASTM D217" }

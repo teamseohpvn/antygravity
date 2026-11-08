@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-003"
 active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
-title: "Shell Gadus S3 V220C 2"
+title: "Mỡ Shell Gadus S3 V220C 2 (NLGI 2)"
 seo_title: "Shell Gadus S3 V220C 2 – Mỡ Chịu Nhiệt Lithium Complex"
 description: "Mỡ chịu nhiệt Shell Gadus S3 V220C 2 gốc lithium complex, nhỏ giọt 240 °C, làm việc tới 140 °C cho ổ bi nóng, tải nặng. Xô 18 kg, CO/CQ, VAT."
 keywords: ["gadus s3 v220c 2", "shell gadus s3 v220c 2", "mỡ shell gadus s3", "mỡ chịu nhiệt shell", "shell gadus s3 v220"]
@@ -14,7 +14,7 @@ base_oil: "Dầu gốc khoáng chỉ số độ nhớt cao, chất làm đặc x
 standards: ["ASTM D4950 GC-LB", "SEB 18 12 53"]
 
 specs:
-  - { name: "Chỉ số độ đặc NLGI", value: "2" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "2" }
   - { name: "Màu sắc", value: "Đỏ" }
   - { name: "Loại xà phòng", value: "Lithium complex" }
   - { name: "Độ nhớt dầu gốc ở 40 °C", value: "220 cSt", method: "ASTM D445" }

@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-011"
 active: true   # Bật 05/11/2026 theo yêu cầu người dùng, ảnh và TDS do người dùng cung cấp
-title: "Mỡ Sinopec Crystal Grease T3 (No.T3)"
+title: "Mỡ Sinopec Crystal Grease T3 (No.T3, độ đặc giữa NLGI 3 và 4)"
 seo_title: "Mỡ Sinopec Crystal Grease T3 – Xô 17 kg, Phuy 180 kg"
 description: "Mỡ Sinopec Crystal Grease T3 gốc lithium, đặc hơn NLGI 3, độ xuyên kim 200–230, làm việc -20 đến 120 °C. Có sẵn xô 17 kg, phuy 180 kg, giao từ Hải Phòng."
 keywords: ["sinopec crystal grease t3", "crystal grease no t3", "mỡ sinopec t3", "mỡ crystal t3", "mỡ sinopec", "mỡ bò sinopec"]
