@@ -8,8 +8,9 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import NoiDungBai from '../../components/NoiDungBai.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import ThuVienAnh from '../../components/ThuVienAnh.astro';
+import XemThem from '../../components/XemThem.astro';
 import { getEntry, render } from 'astro:content';
-import { getActiveProducts } from '../../lib/content';
+import { getActiveProducts, getActivePosts, postPath } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
 import { giaSanPham } from '../../lib/gia-json';
 import { bangSoSanh } from '../../lib/so-sanh';
@@ -51,6 +52,23 @@ const equivalents = (d.equivalents ?? []).map((name) => {
   const match = activeProducts.find((p) => p.id !== product.id && norm(p.data.title) === norm(name));
   return { name, href: match ? `/${match.data.category}/${match.id}` : undefined };
 });
+// Khối "Xem thêm" cuối trang (thẻ có ảnh): danh mục, bảng giá, bài viết liên quan, rồi mã cùng danh mục
+// (ưu tiên cùng cấp VG/NLGI, sau đó cùng hãng).
+const baiLienQuan = (await getActivePosts())
+  .filter((b) => d.related_posts?.includes(b.id) || b.data.related_products?.includes(product.id))
+  .map(postPath);
+const capCua = (x: typeof d) => x.vg ?? x.nlgi;
+const cungDanhMuc = activeProducts
+  .filter((p) => p.id !== product.id && p.data.category === d.category)
+  .map((p) => ({ p, diem: (capCua(p.data) !== undefined && capCua(p.data) === capCua(d) ? 2 : 0) + (p.data.brand === d.brand ? 1 : 0) }))
+  .sort((a, b) => b.diem - a.diem)
+  .map(({ p }) => `/${p.data.category}/${p.id}`);
+const xemThem = [
+  { href: `/${d.category}`, tieuDe: categoryLabel },
+  ...(isThuyLuc ? ['/bao-gia-dau-thuy-luc'] : []),
+  ...baiLienQuan,
+  ...cungDanhMuc,
+];
 // So sánh với 2–4 mã cùng công dụng đang bán trên web (dầu thủy lực với dầu thủy lực, mỡ với mỡ…).
 const soSanh = bangSoSanh(product, activeProducts);
 // Mục lục: các mục cố định của template + tiêu đề H2 trong thân bài, đúng thứ tự trên trang.
@@ -306,7 +324,7 @@ const schemaData = [
         </>
       )}
       <QuoteCta item={d.title} />
-      <p class="back-link">Xem thêm các sản phẩm khác trong danh mục <a href={`/${d.category}`}>{categoryLabel}</a>.</p>
+      <XemThem muc={xemThem} boQua={[pagePath]} toiDa={4} />
     </section>
     </NoiDungBai>
   </div>
@@ -357,10 +375,8 @@ const schemaData = [
   .byline { font-size: 0.85rem; color: var(--color-text-light); margin: -4px 0 12px; }
   .byline a { color: inherit; }
   .note { margin-top: 10px; font-size: 0.9rem; color: var(--color-text-light); }
-  .back-link { margin-top: 24px; }
   .product-content > ul { margin: 0 0 16px 20px; }
   .product-content > ul li { margin-bottom: 6px; }
-  .back-link a { color: var(--color-accent); text-decoration: underline; }
 
   :global(.markdown-body h3) { margin: 20px 0 10px; color: var(--color-primary); }
   :global(.markdown-body p) { margin-bottom: 12px; }
