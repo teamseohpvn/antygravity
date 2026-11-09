@@ -129,14 +129,11 @@ const ANH_KHO = [
   { src: '/images/blog/kho-ht-vina-thanh-binh-3.webp', alt: 'Các xô dầu ENEOS màu xanh dương xếp chồng trong kho' },
 ];
 
+// ver711: rút 7 bước còn 3 bước, vẫn ghi người phụ trách.
 const quyTrinh = [
-  { buoc: 'Đặt hàng', viec: 'Gửi mã dầu đang dùng (hoặc loại máy), quy cách, số lượng và nơi giao qua điện thoại, Zalo hay form. Mã hết hàng hoặc giá cao thì được đề xuất mã cùng cấp ISO VG và tiêu chuẩn.', nguoi: nguoiGia },
-  { buoc: 'Chốt giá', viec: 'Nhận báo giá ghi rõ giá trước thuế, tiền thuế, phí giao và thời hạn hiệu lực. Đơn được xác nhận khi bạn đồng ý qua tin nhắn, email hoặc đơn đặt hàng (PO).', nguoi: nguoiGia },
-  { buoc: 'Lập hóa đơn', viec: 'Cung cấp tên công ty, mã số thuế, địa chỉ và email nhận hóa đơn. Hóa đơn VAT điện tử được gửi qua email.', nguoi: nguoiGia },
-  { buoc: 'Giao kho', viec: 'Xuất hàng tại kho theo đơn đã xác nhận, kèm phiếu giao hàng và chứng từ của lô.', nguoi: nguoiKho },
-  { buoc: 'Vận chuyển', viec: 'Xe chở hàng tới điểm giao. Nơi nhận không có xe nâng hoặc lối vào hạn chế thì báo trước để bố trí xe và người bốc xếp.', nguoi: nguoiKho },
-  { buoc: 'Giao hàng', viec: 'Cùng kiểm tra tên hàng, số lượng, nắp và niêm phong. Có sai lệch thì ghi ngay trên phiếu giao hàng và báo trong ngày.', nguoi: nguoiKho },
-  { buoc: 'Thanh toán', viec: 'Chuyển khoản vào tài khoản đứng tên công ty, hoặc trả tiền mặt với đơn lẻ tại TP Hải Phòng. Thanh toán sau áp dụng theo thời hạn và hạn mức ghi trong hợp đồng.', nguoi: nguoiGia },
+  { buoc: 'Gửi yêu cầu và chốt giá', viec: 'Gửi mã dầu đang dùng (hoặc loại máy), quy cách, số lượng và nơi giao qua điện thoại, Zalo hay form. Báo giá ghi rõ giá trước thuế, tiền thuế, phí giao và thời hạn hiệu lực; đơn được xác nhận qua tin nhắn, email hoặc đơn đặt hàng (PO).', nguoi: nguoiGia },
+  { buoc: 'Giao hàng', viec: 'Xuất kho kèm phiếu giao hàng và chứng từ của lô, xe chở tới nơi nhận. Nơi nhận không có xe nâng thì báo trước. Khi nhận, cùng kiểm tra tên hàng, số lượng, nắp và niêm phong; sai lệch ghi ngay trên phiếu giao hàng.', nguoi: nguoiKho },
+  { buoc: 'Hóa đơn và thanh toán', viec: 'Hóa đơn VAT điện tử gửi qua email theo tên công ty và mã số thuế. Chuyển khoản vào tài khoản đứng tên công ty, hoặc trả tiền mặt với đơn lẻ tại TP Hải Phòng; thanh toán sau theo thời hạn ghi trong hợp đồng.', nguoi: nguoiGia },
 ];
 
 const tenBaoGia = `Báo Giá Dầu Thủy Lực 68, 46${thang ? ` Tháng ${thang}` : ''}`;
@@ -412,7 +409,7 @@ const schemaData = [
     </section>
 
     <section class="price-body" id="quy-trinh">
-      <h2>Quy trình đặt hàng: ai phụ trách bước nào</h2>
+      <h2>Đặt hàng 3 bước: ai phụ trách bước nào</h2>
       <p>Mọi bước đều liên hệ qua số <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> (gọi hoặc Zalo) và email <a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a>. Hãy nói tên bước đang cần để được chuyển đúng người.</p>
       <ol class="steps">
         {quyTrinh.map((b) => (
@@ -459,8 +456,23 @@ const schemaData = [
           </tbody>
         </table>
       </div>
-      <p>Máy bắt buộc phê duyệt Parker Denison HF-0/HF-1/HF-2 hoặc Eaton thì chọn <a href="/dau-thuy-luc/castrol-hyspin-aws-68">Castrol Hyspin AWS 68</a> (TDS công bố các phê duyệt này). Máy ghi ISO VG 46 hoặc 32 thì không thay bằng 68, xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt 32, 46 hay 68</a>. Không còn tài liệu máy, hãy chụp nhãn phuy dầu đang dùng gửi qua Zalo để chúng tôi đối chiếu.</p>
       <p>Nếu máy bắt buộc phê duyệt riêng của hãng bơm, hãy kiểm tra phê duyệt đó trên TDS của mã mới. Trước khi đổi hãng, hỏi chúng tôi về việc thêm dầu mới vào dầu cũ hay súc rửa, vì câu trả lời phụ thuộc tình trạng dầu đang có trong máy. Các bước làm có trong <a href="/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc">hướng dẫn thay dầu thủy lực</a>.</p>
+    </section>
+
+    <section class="price-body" id="chon-cap">
+      <h2>Chọn đúng cấp dầu 32, 46 hay 68 trước khi so giá</h2>
+      <p>Mã rẻ nhất chỉ có lợi khi đúng loại máy cần. Xem cấp độ nhớt và phê duyệt trong tài liệu hướng dẫn sử dụng kèm theo máy, hoặc trên nhãn phuy dầu đang dùng.</p>
+      <div class="table-wrap">
+        <table class="match">
+          <thead><tr><th scope="col">Tài liệu máy ghi</th><th scope="col">Nên chọn</th></tr></thead>
+          <tbody>
+            <tr><td>ISO VG 68, HM, HLP 68, AW 68</td><td>Các mã trong bảng giá đều là dầu thủy lực chống mài mòn cấp 68.</td></tr>
+            <tr><td>Bắt buộc phê duyệt Parker Denison HF-0/HF-1/HF-2 hoặc Eaton</td><td><a href="/dau-thuy-luc/castrol-hyspin-aws-68">Castrol Hyspin AWS 68</a> (TDS công bố các phê duyệt này).</td></tr>
+            <tr><td>ISO VG 46 hoặc VG 32</td><td>Không thay bằng 68. Mã có cấp 46 ghi trong bảng giá, mã 32 nhận đặt. Xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt 32, 46 hay 68</a>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">Không còn tài liệu máy: chụp nhãn phuy dầu đang dùng hoặc tên, đời máy, gửi qua Zalo để chúng tôi đối chiếu.</p>
     </section>
 
     <section class="price-body">
