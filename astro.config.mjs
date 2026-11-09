@@ -113,7 +113,8 @@ export default defineConfig({
     sitemap({
       // Trang render phía server (giá đọc từ D1) không tự vào sitemap, phải khai báo tay.
       customPages: [`${SITE}/bao-gia-dau-thuy-luc`],
-      filter: (page) => !page.includes('/bao-gia-thanh-cong') && !page.includes('/api/') && !page.includes('/quan-tri') && !page.includes('/author/'),
+      // /bao-gia-mo-boi-tron: bản nháp noindex (09/11/2026), bỏ điều kiện này khi phát hành.
+      filter: (page) => !page.includes('/bao-gia-mo-boi-tron') && !page.includes('/bao-gia-thanh-cong') && !page.includes('/api/') && !page.includes('/quan-tri') && !page.includes('/author/'),
       serialize(item) {
         const url = item.url.replace(/\/+$/, '');
         const lastmod = LASTMOD.get(url);
