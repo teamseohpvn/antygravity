@@ -100,7 +100,7 @@ const NHOM_THEO_DANH_MUC: Record<string, string> = {
   'dau-may-nen-khi': 'may-nen',
 };
 
-const nhomCua = (d: Data) => d.nhom_so_sanh ?? NHOM_THEO_DANH_MUC[d.category];
+export const nhomCua = (d: Data) => d.nhom_so_sanh ?? NHOM_THEO_DANH_MUC[d.category];
 
 const capChung = (a?: string, b?: string) => {
   if (!a || !b) return false;

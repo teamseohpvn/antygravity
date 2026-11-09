@@ -12,8 +12,8 @@ import XemThem from '../../components/XemThem.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts, getActivePosts, postPath } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
-import { giaSanPham } from '../../lib/gia-json';
-import { bangSoSanh } from '../../lib/so-sanh';
+import { giaSanPham, phanKhucGia } from '../../lib/gia-json';
+import { bangSoSanh, nhomCua } from '../../lib/so-sanh';
 import { fmtVnd, fmtNgay } from '../../lib/gia-tinh';
 import { ngayBai } from '../../lib/ngay';
 import { timNhanSu, DEFAULT_REVIEWER_ID, DEFAULT_PRODUCT_AUTHOR_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
@@ -69,6 +69,41 @@ const xemThem = [
   ...baiLienQuan,
   ...cungDanhMuc,
 ];
+// Liên kết nội bộ cố định của trang sản phẩm (kế hoạch inlink 08/11/2026, docs/KE-HOACH-INLINK.md):
+// 1) Ngay dưới khung giá: về danh mục chính + trang có giá nhiều mã cùng loại (nếu danh mục đó có).
+// 2) Cuối bài: mã giá mềm hơn / phân khúc giá cao hơn (theo giá công khai mỗi lít/kg, cùng nhóm công dụng)
+//    và bài hướng dẫn kỹ thuật hợp với loại dầu. Link nào thân bài đã có thì không lặp lại.
+const tenLoai = categoryLabel.charAt(0).toLowerCase() + categoryLabel.slice(1);
+const TRANG_GIA: Record<string, { href: string; chu: string }> = {
+  'dau-thuy-luc': { href: '/bao-gia-dau-thuy-luc', chu: 'Xem báo giá nhiều mã dầu thủy lực khác' },
+  'mo-boi-tron-cong-nghiep': { href: '/mo-boi-tron-cong-nghiep#chi-phi', chu: 'Xem giá mỗi kg của các loại mỡ khác' },
+};
+const trangGia = TRANG_GIA[d.category];
+const nhomSp = nhomCua(d);
+// Dầu động cơ / dầu cầu: chỉ xếp với mã cùng cấp SAE (nếu có mã cùng cấp), tránh đặt 15W-40 cạnh 20W-50.
+const cungSae = (x: typeof d) => !d.sae || !x.sae || x.sae.split(/[,/\s]+/).filter(Boolean).some((v) => d.sae!.includes(v));
+const cungNhomGia = activeProducts
+  .filter((p) => (nhomSp ? nhomCua(p.data) === nhomSp : p.data.category === d.category) && cungSae(p.data))
+  .map((p) => ({ id: p.id, danhMuc: p.data.category, p }));
+const soMaCungDanhMuc = activeProducts.filter((p) => p.data.category === d.category).length;
+const { reHon, caoHon } = phanKhucGia({ id: product.id, danhMuc: d.category, p: product }, cungNhomGia);
+const linkThanBai = new Set([...(product.body ?? '').matchAll(/\]\((\/[^)#\s]*)/g)].map((m) => m[1]));
+const BAI_THEO_DANH_MUC: Record<string, string[]> = {
+  'dau-thuy-luc': ['dau-thuy-luc-32-46-68-khac-nhau', 'huong-dan-thay-dau-thuy-luc', 'dau-thuy-luc-may-xuc', 'top-6-dau-thuy-luc-pho-bien-nhat'],
+  'thiet-bi-kiem-tra-dau': ['huong-dan-test-chat-luong-dau', 'test-nuoc-trong-dau-tai-hien-truong'],
+};
+const KHONG_TEST = ['mo-boi-tron-cong-nghiep', 'mo-chiu-nhiet', 'nuoc-lam-mat', 'thiet-bi-kiem-tra-dau'];
+// Danh mục có nhiều bài: xoay vòng theo slug sản phẩm để link chia đều cho các bài, không dồn vào một bài.
+const dsBai = BAI_THEO_DANH_MUC[d.category] ?? (KHONG_TEST.includes(d.category) ? [] : ['huong-dan-test-chat-luong-dau']);
+const lech = [...product.id].reduce((t, c) => t + c.charCodeAt(0), 0) % Math.max(dsBai.length, 1);
+const thuTuBai = [...dsBai.slice(lech), ...dsBai.slice(0, lech)];
+const tatCaBai = await getActivePosts();
+const baiGoiY = thuTuBai
+  .map((id) => tatCaBai.find((b) => b.id === id))
+  .filter((b): b is NonNullable<typeof b> => !!b)
+  .map((b) => ({ href: postPath(b), ten: b.data.title }))
+  .filter((b) => !linkThanBai.has(b.href))
+  .slice(0, 2);
 // So sánh với 2–4 mã cùng công dụng đang bán trên web (dầu thủy lực với dầu thủy lực, mỡ với mỡ…).
 const soSanh = bangSoSanh(product, activeProducts);
 // Mục lục: các mục cố định của template + tiêu đề H2 trong thân bài, đúng thứ tự trên trang.
@@ -259,9 +294,13 @@ const schemaData = [
               <ul>
                 {gia.rows.map((r) => <li>{nhieuMa ? `${r.ten} – ${r.quy_cach}` : r.quy_cach}: {fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</li>)}
               </ul>
-              <p class="gia-note">Giá thay đổi theo số lượng và nơi giao.{d.category === 'dau-thuy-luc' && <> Xem <a href="/bao-gia-dau-thuy-luc">bảng giá dầu thủy lực</a>.</>}</p>
+              <p class="gia-note">Giá thay đổi theo số lượng và nơi giao.</p>
             </div>
           )}
+          <p class="dieu-huong">
+            <a href={`/${d.category}`}>{soMaCungDanhMuc > 1 ? <>Xem nhiều hơn các {tenLoai} cùng loại →</> : <>Xem danh mục {tenLoai} →</>}</a>
+            {trangGia && <a href={trangGia.href}>{trangGia.chu} →</a>}
+          </p>
           <p class="cta-row">
             <a href={`/bao-gia?sp=${encodeURIComponent(d.title)}`} class="btn-primary" data-track="add_to_quote">Nhận báo giá</a>
             <span>hoặc gọi <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></span>
@@ -323,6 +362,17 @@ const schemaData = [
           </ul>
         </>
       )}
+      {(reHon || caoHon || baiGoiY.length > 0) && (
+        <aside class="goi-y-chon" aria-label="Gợi ý chọn thêm">
+          <p class="goi-y-chon__tieu-de">Cân nhắc thêm trước khi chọn</p>
+          <ul>
+            {reHon && <li><strong>Muốn giá mềm hơn:</strong> <a href={`/${reHon.p.data.category}/${reHon.id}`}>{reHon.p.data.title}</a></li>}
+            {caoHon && <li><strong>Phân khúc giá cao hơn:</strong> <a href={`/${caoHon.p.data.category}/${caoHon.id}`}>{caoHon.p.data.title}</a></li>}
+            {baiGoiY.map((b) => <li><strong>Hướng dẫn:</strong> <a href={b.href}>{b.ten}</a></li>)}
+          </ul>
+          {(reHon || caoHon) && <p class="goi-y-chon__ghi-chu">Xếp theo giá thấp nhất mỗi {d.category.startsWith('mo-') ? 'kg' : 'lít'} trên bảng giá công khai của HT VINA; giá cao hơn không có nghĩa là hợp với máy của bạn hơn, hãy chọn theo cấp và tiêu chuẩn máy yêu cầu.</p>}
+        </aside>
+      )}
       <QuoteCta item={d.title} />
       <XemThem muc={xemThem} boQua={[pagePath]} toiDa={4} />
     </section>
@@ -355,6 +405,15 @@ const schemaData = [
   .gia ul { margin: 4px 0 4px 20px; }
   .gia p { margin: 4px 0; }
   .gia-note { font-size: 0.9rem; }
+  .dieu-huong { display: flex; flex-direction: column; gap: 6px; margin: 4px 0 14px; font-size: 0.95rem; }
+  .dieu-huong a { color: var(--color-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+  .dieu-huong a:hover { color: var(--color-accent); }
+  .goi-y-chon { background: #f8fafc; border: 1px solid var(--border-color); border-left: 4px solid var(--color-accent); border-radius: 8px; padding: 16px 18px; margin: 28px 0 8px; }
+  .goi-y-chon__tieu-de { font-weight: 700; color: var(--color-primary); margin-bottom: 8px; }
+  .goi-y-chon ul { margin: 0 0 0 20px; }
+  .goi-y-chon li { margin-bottom: 6px; }
+  .goi-y-chon a { color: var(--color-accent); text-decoration: underline; }
+  .goi-y-chon__ghi-chu { font-size: 0.85rem; color: var(--color-text-light); margin-top: 8px; }
   .docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 16px; }
   .btn-outline { display: block; text-align: center; padding: 10px; border: 1px solid var(--border-color); border-radius: 6px; background: white; font-size: 0.9rem; }
   .btn-outline:hover { background: #f1f5f9; }

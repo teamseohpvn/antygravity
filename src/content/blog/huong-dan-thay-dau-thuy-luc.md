@@ -128,7 +128,7 @@ Dầu thải gom vào phuy kín, giao cho đơn vị có chức năng thu gom ch
 
 Với lần thay định kỳ, dầu cũ vẫn còn tốt vừa phải và cùng mã với dầu mới, thì xả bồn một lần, thay lọc, nạp dầu mới là đủ. Phần dầu cũ còn trong ống sẽ hòa vào dầu mới; bộ lọc mới giữ lại cặn.
 
-Xả một lần **không đủ** trong ba trường hợp: dầu nhiễm nước, dầu cũ đã quá hạn nặng (đen, có cặn), hoặc đổi sang hãng hay loại dầu khác. Lý do là lượng dầu ngoài bồn không nhỏ. Trên Heavy Equipment Forums, chủ một máy xúc đào liên hợp cho biết xả bồn chỉ ra khoảng một nửa lượng dầu. Thử nghiệm thực địa do [Brendan Casey](https://www.powermotiontech.com/hydraulics-at-work/article/21886607/one-thing-you-must-do-before-you-change-your-hydraulic-oil) dẫn lại, trên nhiều máy xúc và máy xúc lật, cho thấy cần **ít nhất 4 lần thay bồn** (mỗi lần chạy 10–15 phút) thì dầu cũ mới còn dưới 5%.
+Xả một lần **không đủ** trong ba trường hợp: dầu nhiễm nước, dầu cũ đã quá hạn nặng (đen, có cặn), hoặc đổi sang hãng hay loại dầu khác. Lý do là lượng dầu ngoài bồn không nhỏ. Trên Heavy Equipment Forums, chủ một máy xúc đào liên hợp cho biết xả bồn chỉ ra khoảng một nửa lượng dầu. Thử nghiệm thực địa do [Brendan Casey](https://www.powermotiontech.com/hydraulics-at-work/article/21886607/one-thing-you-must-do-before-you-change-your-hydraulic-oil) dẫn lại, trên nhiều [máy xúc](/ho-tro-ky-thuat/dau-thuy-luc-may-xuc) và máy xúc lật, cho thấy cần **ít nhất 4 lần thay bồn** (mỗi lần chạy 10–15 phút) thì dầu cũ mới còn dưới 5%.
 
 Có ba cách xử lý, từ đơn giản tới kỹ:
 
@@ -186,4 +186,4 @@ Có. Thay dầu mà giữ lõi lọc cũ thì cặn và nước trong lọc đi 
 
 ### Mua dầu thủy lực ở đâu, giá bao nhiêu?
 
-HT VINA có sẵn [dầu thủy lực 68](/dau-thuy-luc) và 46 của ENEOS, Castrol và các hãng khác, phuy 200 L, kèm CO/CQ và hóa đơn VAT, giao từ kho tại TP Hải Phòng (Hải Dương cũ). Khoảng giá xem tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc). Để nhận **báo giá dầu thủy lực** theo số phuy, gửi tên mã dầu đang dùng (hoặc loại máy) qua [form báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c). Chưa rõ máy cần dầu gì, gửi kèm ảnh trang thông số dầu trong sổ tay máy để chúng tôi đối chiếu giúp.
+HT VINA có sẵn [dầu thủy lực 68](/dau-thuy-luc) và 46 của [ENEOS](/dau-thuy-luc/eneos-super-hyrando-68), [Castrol](/dau-thuy-luc/castrol-hyspin-aws-68) và các hãng khác, phuy 200 L, kèm CO/CQ và hóa đơn VAT, giao từ kho tại TP Hải Phòng (Hải Dương cũ). Khoảng giá xem tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc). Để nhận **báo giá dầu thủy lực** theo số phuy, gửi tên mã dầu đang dùng (hoặc loại máy) qua [form báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c). Chưa rõ máy cần dầu gì, gửi kèm ảnh trang thông số dầu trong sổ tay máy để chúng tôi đối chiếu giúp.

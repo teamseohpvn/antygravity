@@ -107,7 +107,7 @@ Theo [trang sản phẩm của Shell](https://www.shell.us/business-customers/lu
 Theo [TDS Chevron Rando HD](https://shop.sclubricants.com/pub/media/pds/chevron/Chevron-Rando-HD-46-Technical-Datasheet.pdf), dòng này đạt ISO 11158 L-HM, ASTM D6158 HM, DIN 51524-2 (cấp 32, 46, 68) và phê duyệt Parker Denison HF-0, HF-1, HF-2. Bản chỉ số độ nhớt cao có tên đầy đủ là **Rando HD Premium Oil MV**. Theo [brochure của Chevron](https://latinamerica.chevronlubricants.com/content/dam/external/industrial/en_us/sales-material/brochures/CH2012RANDMVBRE.pdf), đây là dầu đa cấp, chỉ số độ nhớt khoảng 200, đạt DIN 51524-3 ở cấp ISO 32.
 
 - **Nên dùng:** cẩu trục cảng, máy công trình, nhà máy chế biến gỗ, cao su.
-- **Lưu ý:** trên thị trường còn có dòng **Caltex Hydraulic Oil AW** (cấp phổ thông, khác Rando HD). Hai dòng này có tiêu chuẩn khác nhau, đừng coi là một.
+- **Lưu ý:** trên thị trường còn có dòng **[Caltex Hydraulic Oil AW](/dau-thuy-luc/caltex-hydraulic-aw-68)** (cấp phổ thông, khác Rando HD). Hai dòng này có tiêu chuẩn khác nhau, đừng coi là một.
 
 ### 6. Mobil DTE 20 Series và DTE 10 Excel
 

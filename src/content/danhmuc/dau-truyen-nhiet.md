@@ -47,7 +47,7 @@ updated: "2026-10-06"
 ## Vận hành và bảo dưỡng
 
 - **Bình giãn nở:** dầu nóng tiếp xúc không khí sẽ oxy hóa rất nhanh. Giữ nhiệt độ dầu trong bình giãn nở thấp (thường dưới khoảng 60 °C), hoặc phủ khí nitơ theo thiết kế.
-- **Khởi động lần đầu:** xả hết nước và hơi ẩm trong hệ thống bằng cách tăng nhiệt từ từ. Nước lẫn trong dầu nóng có thể gây sôi trào.
+- **Khởi động lần đầu:** xả hết nước và hơi ẩm trong hệ thống bằng cách tăng nhiệt từ từ. [Nước lẫn trong dầu](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) nóng có thể gây sôi trào.
 - **Phân tích dầu định kỳ** (6–12 tháng một lần): độ nhớt, chỉ số axit TAN, cặn carbon, điểm chớp cháy. Điểm chớp cháy giảm mạnh là dấu hiệu dầu bị phân hủy nhiệt.
 - **Không trộn dầu truyền nhiệt khác loại.** Khi thay dầu, xả sạch hệ thống. Nếu nhiều cặn, cần súc rửa bằng dầu súc rửa chuyên dụng.
 

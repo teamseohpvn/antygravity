@@ -32,7 +32,7 @@ Mục đích của test dầu là trả lời hai câu hỏi: **dầu còn dùng
 | [Dầu truyền nhiệt](/dau-truyen-nhiet) | Nên | Độ nhớt, TAN | Dầu nặng mùi khét là dấu hiệu nứt gãy nhiệt |
 | [Dầu động cơ diesel](/dau-dong-co-diesel) | Nên, với đội xe, máy phát lớn | Độ nhớt, TBN, nước | Dùng **trị số kiềm TBN** thay cho TAN |
 | [Dầu cầu, hộp số xe](/dau-cau-hop-so) | Ít khi | Độ nhớt, nước | Dung tích nhỏ, thường thay theo km |
-| Dầu cắt gọt nhũ tương, dầu xung điện | Theo chỉ tiêu riêng | Nồng độ, pH, cặn | Không áp dụng bộ test trong bài |
+| [Dầu cắt gọt](/dau-cat-got) nhũ tương, [dầu xung điện](/dau-xung-dien-edm) | Theo chỉ tiêu riêng | Nồng độ, pH, cặn | Không áp dụng bộ test trong bài |
 
 Quy tắc kinh tế đơn giản: **dung tích dầu càng lớn và máy càng quan trọng thì càng đáng test**. Bồn thủy lực vài trăm lít hoặc hộp số nghìn lít thì chi phí test nhỏ hơn nhiều so với tiền dầu thay sớm.
 
@@ -129,7 +129,7 @@ Các quan sát dưới đây không thay được ba phép đo trên nhưng giú
 | Cả ba chỉ tiêu trong ngưỡng, xu hướng ổn định | Tiếp tục dùng, giữ chu kỳ test |
 | Một chỉ tiêu tiến gần ngưỡng | Rút ngắn chu kỳ test (ví dụ từ hàng quý xuống hàng tháng) |
 | Nước vượt ngưỡng, độ nhớt và TAN còn tốt | Tìm và chặn nguồn nước, xả đáy bồn, lọc tách nước, đo lại |
-| TAN vượt ngưỡng, độ nhớt tăng | Dầu đã oxy hóa: lên kế hoạch thay dầu, súc rửa nếu có cặn |
+| TAN vượt ngưỡng, độ nhớt tăng | Dầu đã oxy hóa: lên kế hoạch [thay dầu, súc rửa](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc) nếu có cặn |
 | Độ nhớt lệch nhiều, TAN bình thường | Nghi châm nhầm dầu khác cấp: kiểm tra sổ châm dầu |
 | Hai chỉ tiêu cùng vượt ngưỡng | Thay dầu, đồng thời gửi mẫu phòng thí nghiệm để tìm nguyên nhân |
 
