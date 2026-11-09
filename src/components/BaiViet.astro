@@ -6,9 +6,10 @@ import NoiDungBai from '../components/NoiDungBai.astro';
 import MucLuc from '../components/MucLuc.astro';
 import { mucLuc } from '../lib/muc-luc';
 import { render } from 'astro:content';
-import { postPath } from '../lib/content';
+import { postPath, getActiveProducts } from '../lib/content';
 import type { CollectionEntry } from 'astro:content';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import XemThem from '../components/XemThem.astro';
 import { absUrl, breadcrumbSchema, ORG_ID, SITE_NAME } from '../lib/site';
 import { DEFAULT_REVIEWER_ID, bylineLabel, personRef, personSchema, personUrl, timNhanSu } from '../lib/nhan-su';
 import { ngayBai } from '../lib/ngay';
@@ -21,6 +22,12 @@ const { Content, headings } = await render(post);
 const tocItems = mucLuc(headings, { voiH3: true, tat: post.data.muc_luc === false });
 
 const pagePath = postPath(post);
+// Bài chưa tự viết mục "Xem thêm" thì thêm khối thẻ có ảnh: danh mục bài hỗ trợ + sản phẩm liên quan.
+const coXemThem = /^##\s*Xem thêm|\*\*Xem thêm:?\*\*/m.test(post.body ?? '');
+const spLienQuan = (await getActiveProducts())
+  .filter((p) => post.data.related_products?.includes(p.id))
+  .map((p) => `/${p.data.category}/${p.id}`);
+const xemThem = coXemThem ? [] : [...(post.data.category ? [`/${post.data.category}`] : []), ...spLienQuan];
 // Tác giả có hồ sơ trong nhan-su.ts (author = id hoặc họ tên) thì link tới trang hồ sơ và gắn schema Person đầy đủ.
 const authorP = timNhanSu(post.data.author);
 // Người duyệt nội dung: reviewed_by, mặc định TS. Lập (bỏ qua nếu trùng tác giả).
@@ -118,6 +125,7 @@ const schemaData = [
       <div class="markdown-body">
         <NoiDungBai articleId={ARTICLE_ID}>
           <ContentBody><Content /><MucLuc slot="sau-doan-dau" items={tocItems} /></ContentBody>
+          {xemThem.length > 0 && <XemThem muc={xemThem} boQua={[pagePath]} />}
         </NoiDungBai>
       </div>
     </article>

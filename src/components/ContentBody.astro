@@ -2,7 +2,9 @@
 // Bọc thân bài markdown (<Content />): bỏ thẻ <a> trỏ tới bài đang tắt (active: false), giữ nguyên chữ.
 // Nhờ vậy tắt một bài không để lại link 404 trong các bài khác.
 // Slot "sau-doan-dau": nội dung chèn sau đoạn đầu tiên (mục lục của bài blog).
+// Dòng "**Xem thêm:** [A](/a) · [B](/b)" và mục "## Xem thêm" + danh sách link được đổi thành thẻ có ảnh.
 import { getHiddenPaths } from '../lib/content';
+import { doiKhoiXemThem } from '../lib/xem-them';
 
 const hidden = await getHiddenPaths();
 const html = await Astro.slots.render('default');
@@ -12,6 +14,7 @@ const sauDoanDau = Astro.slots.has('sau-doan-dau') ? await Astro.slots.render('s
 let output = html.replace(/<a\s[^>]*href="(\/[^"]*)"[^>]*>([\s\S]*?)<\/a>/g, (tag, href, text) =>
   hidden.has(clean(href)) ? text : tag,
 );
+output = await doiKhoiXemThem(output);
 if (sauDoanDau) {
   const i = output.indexOf('</p>');
   output = i >= 0 ? output.slice(0, i + 4) + sauDoanDau + output.slice(i + 4) : sauDoanDau + output;

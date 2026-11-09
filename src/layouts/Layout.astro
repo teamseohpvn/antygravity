@@ -205,6 +205,33 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
       .site-footer a { color: #e2e8f0; }
       .site-footer a:hover { color: white; text-decoration: underline; }
       .footer-bottom { margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 0.9rem; color: #cbd5e1; }
+
+      /* Khối "Xem thêm" dạng thẻ có ảnh (src/lib/xem-them.ts). Bộ chọn có tên thẻ để thắng style của thân bài markdown. */
+      nav.xem-them { margin: 36px 0 8px; clear: both; }
+      nav.xem-them h2.xt-tieu-de { font-size: 1.3rem; color: var(--color-primary); margin: 0 0 14px; line-height: 1.3; }
+      nav.xem-them ul.xt-luoi { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px; max-width: none; }
+      ul.xt-luoi > li { margin: 0; padding: 0; list-style: none; }
+      ul.xt-luoi > li::before, ul.xt-luoi > li::marker { content: none; }
+      a.xt-the { display: flex; flex-direction: column; height: 100%; background: #fff; border: 1px solid var(--border-color); border-radius: 10px; overflow: hidden; color: inherit; text-decoration: none; transition: box-shadow .15s, transform .15s, border-color .15s; }
+      a.xt-the:hover, a.xt-the:focus-visible { border-color: #cbd5e1; box-shadow: 0 6px 18px rgba(0, 51, 102, .12); transform: translateY(-2px); }
+      a.xt-the:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+      a.xt-the .xt-anh { display: block; aspect-ratio: 16 / 9; background: #eef2f7; overflow: hidden; }
+      a.xt-the .xt-anh img { display: block; width: 100%; height: 100%; object-fit: cover; margin: 0; border: 0; border-radius: 0; max-width: none; }
+      a.xt-the .xt-khong-anh { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-weight: 700; color: #94a3b8; letter-spacing: .05em; }
+      a.xt-the .xt-chu { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px 14px; }
+      a.xt-the .xt-loai { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--color-accent); }
+      a.xt-the .xt-ten { font-weight: 600; color: var(--color-primary); line-height: 1.35; font-size: 1rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+      nav.xem-them ul.xt-luoi a.xt-the, nav.xem-them ul.xt-luoi a.xt-the span { text-decoration: none; }
+      nav.xem-them ul.xt-luoi a.xt-the:hover .xt-ten { text-decoration: underline; }
+      /* Điện thoại: mỗi thẻ một hàng, ảnh nhỏ bên trái, chữ bên phải */
+      @media (max-width: 640px) {
+        nav.xem-them ul.xt-luoi { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+        a.xt-the { flex-direction: row; align-items: stretch; }
+        a.xt-the:hover { transform: none; }
+        a.xt-the .xt-anh { flex: 0 0 112px; aspect-ratio: auto; min-height: 76px; }
+        a.xt-the .xt-chu { justify-content: center; padding: 10px 12px; min-width: 0; }
+        a.xt-the .xt-ten { font-size: .95rem; -webkit-line-clamp: 2; }
+      }
     </style>
   </head>
   <body>
