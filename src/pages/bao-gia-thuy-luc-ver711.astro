@@ -27,8 +27,9 @@ export const prerender = false;
 const CATEGORY = 'dau-thuy-luc';
 const pagePath = '/bao-gia-dau-thuy-luc';
 const BAI_TIN_GIA = '/ho-tro-ky-thuat/gia-dau-thuy-luc-va-gia-dau-tho';
-const IMAGE = '/images/blog/kho-ht-vina-thanh-binh-1.webp';
-const IMAGE_ALT = 'Lối đi trong kho HT VINA với xe nâng tay, hai bên là phuy và xô dầu các hãng';
+// Ảnh đại diện: hiện ngay dưới dòng duyệt giá (Google ưu tiên ảnh lớn gần đầu bài làm ảnh thu nhỏ), trùng og:image và schema.
+const IMAGE = '/images/blog/kho-ht-vina-thanh-binh-2.webp';
+const IMAGE_ALT = 'Phuy dầu Castrol màu xanh và phuy dầu ENEOS màu đỏ xếp trong kho HT VINA, phía sau là kệ hàng';
 
 // 01/11/2026 (quyết định của người dùng): báo giá là tài liệu kinh tế và trách nhiệm kinh doanh.
 // Chị Hồng (quản lý bán hàng) là người viết và rà soát giá.
@@ -125,7 +126,6 @@ const yeuCauTinh = (mua: string, tong: number) => `/bao-gia?sp=${encodeURICompon
 // Ảnh kho do người dùng cung cấp, chụp cập nhật ngày 01/11/2026.
 const ANH_KHO = [
   { src: '/images/blog/kho-ht-vina-thanh-binh-1.webp', alt: 'Lối đi trong kho với xe nâng tay, hai bên là phuy và xô dầu các hãng, kệ hàng ở cuối kho' },
-  { src: '/images/blog/kho-ht-vina-thanh-binh-2.webp', alt: 'Phuy dầu ENEOS màu đỏ và phuy dầu Castrol màu xanh xếp trong kho, phía sau là kệ hàng' },
   { src: '/images/blog/kho-ht-vina-thanh-binh-3.webp', alt: 'Các xô dầu ENEOS màu xanh dương xếp chồng trong kho' },
 ];
 
@@ -235,6 +235,10 @@ const schemaData = [
       <p class="dong-duyet">Duyệt giá: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a> (GĐ HT VINA){HIEU_LUC && (hetHieuLuc
         ? <> · Kỳ giá đã kết thúc, đang rà lại</>
         : <> · Hiệu lực: tháng {fmtNgay(HIEU_LUC.tu, 'thang')}</>)} · <a href="#cach-viet-bai" data-track="click_cach_lap_gia">Cách chúng tôi lập giá</a></p>
+      <figure class="anh-dau">
+        <img src={IMAGE} srcset={`${IMAGE.replace('.webp', '-600.webp')} 600w, ${IMAGE} 1200w`} sizes="(max-width: 760px) 100vw, 760px" alt={IMAGE_ALT} width="1200" height="900" loading="eager" fetchpriority="high" decoding="async" />
+        <figcaption>Phuy dầu Castrol và ENEOS tại kho HT VINA Thanh Bình, Hải Phòng.</figcaption>
+      </figure>
 
 
       {coGia && (
@@ -560,6 +564,10 @@ const schemaData = [
 </script>
 
 <style>
+  .anh-dau { margin: 1rem 0 1.25rem; max-width: 760px; }
+  .anh-dau img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; }
+  .anh-dau figcaption { font-size: .85rem; color: var(--muted, #666); margin-top: .4rem; }
+
   .price-page { margin-bottom: 60px; }
   @media (max-width: 640px) {
   }
