@@ -26,6 +26,7 @@ const CAT = '/mo-boi-tron-cong-nghiep';
 const IMAGE = '/images/danh-muc/mo-boi-tron-cong-nghiep.webp';
 const NGAY_DANG = '2026-09-21';
 const title = 'Mỡ Bôi Trơn (Mỡ Bò) | Chính Hãng Giá Tốt';
+const seoTitle = 'Mỡ Bôi Trơn (Mỡ Bò) Độ Đặc NLGI 0 - 4 | Cách Chọn & TDS';
 const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo độ đặc NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, ENEOS, VHP.';
 const tacGia = timNhanSu('nguyen-thi-hong')!;
 const reviewer = timNhanSu('vu-minh-toan')!;
@@ -138,13 +139,13 @@ const citation = [
   'https://www.stle.org/files/TLTArchives/2010/10_October/Technical_Analysis.aspx', 'https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147',
 ];
 const schemaData = [
-  { '@context': 'https://schema.org', '@type': ['CollectionPage', 'WebPage'], '@id': PAGE_ID, name: title, description, url: absUrl(pagePath), dateModified: NGAY, author: personRef(tacGia), reviewedBy: personRef(reviewer), citation, inLanguage: 'vi-VN', publisher: { '@id': ORG_ID } },
+  { '@context': 'https://schema.org', '@type': ['CollectionPage', 'WebPage'], '@id': PAGE_ID, name: seoTitle, description, url: absUrl(pagePath), datePublished: NGAY_DANG, dateModified: NGAY, author: personRef(tacGia), reviewedBy: personRef(reviewer), citation, inLanguage: 'vi-VN', publisher: { '@id': ORG_ID } },
   personSchema(tacGia), personSchema(reviewer), breadcrumbSchema(crumbs),
   { '@context': 'https://schema.org', '@type': 'VideoObject', name: 'Nhồi mỡ vòng bi bằng dụng cụ ép', description: 'Video trên kênh HT VINA: nhồi mỡ cho nhiều vòng bi côn bằng dụng cụ ép để mỡ vào đều và làm nhanh.', thumbnailUrl: 'https://i.ytimg.com/vi/dir69EUPOvU/maxresdefault.jpg', uploadDate: '2026-11-05T02:09:13-08:00', duration: 'PT0M39S', embedUrl: 'https://www.youtube.com/embed/dir69EUPOvU' },
   { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: THE.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: absUrl(t.d.link), name: t.ten })) },
 ];
 ---
-<Layout {title} seoTitle="Mỡ Bôi Trơn (Mỡ Bò) Độ Đặc NLGI 0 - 4 | Cách Chọn & TDS" {description} image={IMAGE} published={NGAY_DANG} modified={NGAY} author={tacGia.name} {schemaData}>
+<Layout {title} {seoTitle} {description} image={IMAGE} published={NGAY_DANG} modified={NGAY} author={tacGia.name} {schemaData}>
   <div class="container trang">
     <Breadcrumbs items={crumbs} />
     <NoiDungBai articleId={PAGE_ID} type={['CollectionPage', 'WebPage']} field="text">
