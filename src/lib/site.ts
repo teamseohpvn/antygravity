@@ -266,7 +266,8 @@ export function productImages(d: {
     .filter((img) => publicImageExists(img.src));
   if (found.length || !d.category) return found;
   const fallback = `/images/danh-muc/${d.category}.webp`;
-  return publicImageExists(fallback) ? [{ src: fallback, alt: d.categoryName ?? d.title }] : [];
+  // Ảnh danh mục dùng tạm: alt vẫn là tên sản phẩm, không lặp tên danh mục (tránh nhiều ảnh cùng alt "Mỡ Bôi Trơn Công Nghiệp").
+  return publicImageExists(fallback) ? [{ src: fallback, alt: d.title }] : [];
 }
 
 /** Tên quy cách để hiển thị, chấp nhận cả dạng chuỗi và dạng {name, weight, sku}. */
