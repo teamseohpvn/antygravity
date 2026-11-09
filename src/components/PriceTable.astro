@@ -17,9 +17,15 @@ interface Props {
   boLoc?: boolean;
   /** Có truyền thì dùng dạng gọn: hãng và TDS chung một dòng, trên điện thoại mỗi thẻ chỉ khoảng 4 dòng. */
   gon?: boolean;
+  /** Tên nút lọc quy cách. Mặc định theo dầu (phuy 200–209 L, xô 18–20 L); trang mỡ truyền "Phuy 180 kg", "Xô 15–18 kg". */
+  nhanPhuy?: string;
+  nhanXo?: string;
+  /** Link trang sản phẩm theo từng dòng, khi các dòng thuộc nhiều danh mục (ví dụ mỡ chịu nhiệt nằm ở /mo-chiu-nhiet). */
+  hrefSp?: (r: DongGiaCongKhai) => string | undefined;
 }
 
-const { rows, activePages, category, gomVat, tds, khoCuaDong, boLoc, gon } = Astro.props;
+const { rows, activePages, category, gomVat, tds, khoCuaDong, boLoc, gon, nhanPhuy = 'Phuy 200–209 L', nhanXo = 'Xô 18–20 L', hrefSp } = Astro.props;
+const linkSp = (r: DongGiaCongKhai) => hrefSp ? hrefSp(r) : (r.trang && activePages.has(r.trang) ? `/${category}/${r.trang}` : undefined);
 // Link PDF ghi là tải về; link trang web của hãng ghi là xem, không hứa có file.
 const laPdf = (u: string) => /\.pdf($|\?)|docFormat=PDF/i.test(u);
 const groups = new Map<string, DongGiaCongKhai[]>();
@@ -36,8 +42,8 @@ const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r
 const nhanLoc = (r: DongGiaCongKhai) => [/phuy/i.test(r.quy_cach) ? 'phuy' : /xô/i.test(r.quy_cach) ? 'xo' : '', r.nguon].filter(Boolean);
 const nutLoc = [
   { id: 'tat-ca', ten: 'Tất cả', so: rows.length },
-  { id: 'phuy', ten: 'Phuy 200–209 L', so: rows.filter((r) => nhanLoc(r).includes('phuy')).length },
-  { id: 'xo', ten: 'Xô 18–20 L', so: rows.filter((r) => nhanLoc(r).includes('xo')).length },
+  { id: 'phuy', ten: nhanPhuy, so: rows.filter((r) => nhanLoc(r).includes('phuy')).length },
+  { id: 'xo', ten: nhanXo, so: rows.filter((r) => nhanLoc(r).includes('xo')).length },
   { id: 'nhap-khau', ten: 'Hàng nhập khẩu', so: rows.filter((r) => r.nguon === 'nhap-khau').length },
   { id: 'trong-nuoc', ten: 'Hàng trong nước', so: rows.filter((r) => r.nguon === 'trong-nuoc').length },
 ].filter((n) => n.so > 0);
@@ -75,8 +81,8 @@ const nutLoc = [
           {list.map((r) => (
             <tr data-nhan={boLoc ? nhanLoc(r).join(' ') : undefined}>
               <td data-label="Sản phẩm">
-                {r.trang && activePages.has(r.trang)
-                  ? <a href={`/${category}/${r.trang}`}>{r.ten}</a>
+                {linkSp(r)
+                  ? <a href={linkSp(r)}>{r.ten}</a>
                   : <span>{r.ten}</span>}
                 <small>{r.hang} · {NGUON[r.nguon]}</small>
                 {tds && r.trang && (tds[r.trang]
