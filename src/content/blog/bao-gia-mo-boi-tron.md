@@ -1,5 +1,6 @@
 ---
 ma: "BV-012"
+duong_dan: "/bao-gia-mo-boi-tron-bannhap3"
 active: true
 loai: "kien-thuc"
 title: "Báo giá mỡ bôi trơn (mỡ bò) 11/2026: bảng giá theo độ đặc NLGI, giá theo kg, phuy và xô"
@@ -14,14 +15,14 @@ citations:
   - "https://www.lubesngreases.com/factbook/fb-article/grease-market-trends/"
   - "https://www.stle.org/files/TLTArchives/2024/12_December/Cover_Story.aspx"
 date: "2026-11-09"
-image: "/images/san-pham/vhp-lithium-grease-l4-xo-kho.webp"
+image: "/images/san-pham/vhp-lithium-grease-l4-xo-kho-og.webp"
 image_alt: "Xô mỡ VHP Lithium Grease L4 17 kg xếp trong kho, cạnh tấm danh thiếp của kho dầu công nghiệp Hải Phòng"
 tags: ["mỡ bôi trơn", "mỡ bò", "báo giá"]
 ---
 
 **Giá mỡ bôi trơn (mỡ bò) tháng 11/2026 tại kho HT VINA từ 36.900 đến 215.600 đồng/kg, chưa gồm VAT**, tùy hãng, độ đặc NLGI và quy cách. Mỡ sản xuất trong nước đóng phuy 180 kg rẻ nhất, khoảng 37.000–47.000 đ/kg. Mỡ nhập khẩu Sinopec đắt gấp hai đến ba lần, còn Shell Gadus S2 xô 18 kg là mã đắt nhất tính theo kg. Cùng một mã, mua xô có thể đắt hơn mua phuy tới hơn 40% mỗi kg, nhưng cũng có mã phuy lại đắt hơn xô.
 
-Bảng giá được rà soát ngày **04/11/2026**, kỳ rà soát tiếp theo dự kiến ngày **11/11/2026**. Mọi mức giá đều quy về đồng/kg để bạn so được phuy với xô, hàng trong nước với hàng nhập. NLGI là thang đo độ đặc của mỡ, còn gọi là độ sệt; nhiều nơi cũng ngầm hiểu là độ cứng của mỡ, từ 000 (gần như lỏng) tới 6 (rất cứng). Vòng bi trong xưởng thường dùng mỡ có độ đặc NLGI 2 hoặc 3.
+Bảng giá được rà soát ngày **04/11/2026**, kỳ rà soát tiếp theo dự kiến ngày **11/11/2026**. Mọi mức giá đều quy về đồng/kg để bạn so được phuy với xô, hàng trong nước với hàng nhập. NLGI là thang đo độ đặc của mỡ, còn gọi là độ sệt; nhiều nơi cũng ngầm hiểu là độ cứng của mỡ, từ 000 (gần như lỏng) tới 6 (rất cứng). Độ đặc NLGI được xếp theo độ xuyên kim đo bằng phương pháp [ASTM D217](https://www.astm.org/Standards/D217.htm). Vòng bi trong xưởng thường dùng mỡ có độ đặc NLGI 2 hoặc 3.
 
 > **Bài này có mục đích thương mại.** HT VINA là đơn vị bán các mã mỡ trong bảng, giá lấy từ kho của chính chúng tôi, nên chúng tôi có lợi ích khi bạn mua hàng. Phần so sánh và nhận định dựa trên bảng thông số kỹ thuật (TDS) của hãng và các nguồn ngoài có link, để bạn tự kiểm tra lại. Cách chúng tôi lập giá ghi ở mục [Chúng tôi thu thập và cập nhật giá thế nào](#cach-lap-gia).
 
@@ -29,67 +30,67 @@ Bảng giá được rà soát ngày **04/11/2026**, kỳ rà soát tiếp theo 
 > - Mỡ đa dụng trong nước (PVOIL, VHP Caxilium, Calix, VHP Opal) phuy 180 kg: khoảng **37.000–47.000 đ/kg**.
 > - Mỡ lithium VHP MP Grease phuy: khoảng **46.000–63.000 đ/kg** tùy độ đặc NLGI.
 > - Mỡ Sinopec nhập khẩu: Golden Grease khoảng **83.000–95.000 đ/kg**, Crystal Grease khoảng **106.000–127.000 đ/kg**; Shell Gadus S2 V220 2 khoảng **187.000–216.000 đ/kg**.
-> - Giá chưa gồm VAT. Giao trong ngày cho các khu công nghiệp dọc đường 5B cũ nếu đặt trước 16h; miễn phí vận chuyển 80 km, đơn từ 3 phuy được mở rộng tới 150 km.
+> - Giá chưa gồm VAT. Giao trong ngày cho các khu công nghiệp dọc đường 5 cũ nếu đặt trước 16h; miễn phí vận chuyển 80 km, đơn từ 3 phuy được mở rộng tới 150 km.
 > - Giá công bố là giá tham khảo, không phải giá hợp đồng: mỡ là sản phẩm dầu mỏ, giá đổi theo từng ngày.
 
 ## Bảng giá mỡ bôi trơn theo độ đặc NLGI {#bang-gia}
 
-Mỗi dòng là một mã và một quy cách, có khoảng giá cho cả phuy, xô hoặc thùng và giá quy ra mỗi kg. Bấm tên mã để xem thông số và TDS của hãng. Giá chốt cho từng đơn nằm trong khoảng này, tùy số lượng, quy cách, nơi giao và ngày đặt hàng.
+Mỗi dòng là một mã và một quy cách (ghi kèm hàng trong nước hay nhập khẩu), có khoảng giá cho cả phuy, xô hoặc thùng và giá quy ra mỗi kg. Bấm tên mã để xem thông số và TDS của hãng. Giá chốt cho từng đơn nằm trong khoảng này, tùy số lượng, quy cách, nơi giao và ngày đặt hàng.
 
 ### Mỡ độ đặc NLGI 2
 
-| Mã mỡ | Nguồn gốc | Quy cách | Khoảng giá (chưa VAT) | Quy ra đ/kg |
-| :--- | :--- | :--- | :--- | :--- |
-| [PVOIL PV Grease No2](/mo-boi-tron-cong-nghiep/pvoil-pv-grease) | Trong nước | Phuy 180 kg | 6.650.000–7.650.000 đ | 36.900–42.500 |
-| [VHP Caxilium Grease No2](/mo-boi-tron-cong-nghiep/vhp-caxilium-grease) | Trong nước | Phuy 180 kg | 7.000.000–8.050.000 đ | 38.800–44.800 |
-| [VHP MP Grease L2](/mo-boi-tron-cong-nghiep/vhp-mp-grease) | Trong nước | Phuy 180 kg | 9.900.000–11.390.000 đ | 55.000–63.300 |
-| [Sinopec Crystal Grease NLGI 2](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3) | Nhập khẩu | Phuy 180 kg | 19.000.000–20.500.000 đ | 105.500–113.900 |
-| Sinopec Crystal Grease NLGI 2 | Nhập khẩu | Xô 17 kg | 2.000.000–2.100.000 đ | 117.600–123.600 |
-| [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2) (chịu nhiệt) | Nhập khẩu | Xô 18 kg | 2.900.000–3.340.000 đ | 161.100–185.600 |
-| [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) | Nhập khẩu | Xô 18 kg | 3.360.000–3.880.000 đ | 186.600–215.600 |
+| Mã mỡ | Quy cách | Khoảng giá (chưa VAT) | Quy ra đ/kg |
+| :--- | :--- | :--- | :--- |
+| [PVOIL PV Grease No2](/mo-boi-tron-cong-nghiep/pvoil-pv-grease) · trong nước | Phuy 180 kg | 6.650.000–7.650.000 đ | 36.900–42.500 |
+| [VHP Caxilium Grease No2](/mo-boi-tron-cong-nghiep/vhp-caxilium-grease) · trong nước | Phuy 180 kg | 7.000.000–8.050.000 đ | 38.800–44.800 |
+| [VHP MP Grease L2](/mo-boi-tron-cong-nghiep/vhp-mp-grease) · trong nước | Phuy 180 kg | 9.900.000–11.390.000 đ | 55.000–63.300 |
+| [Sinopec Crystal Grease NLGI 2](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3) · nhập khẩu | Phuy 180 kg | 19.000.000–20.500.000 đ | 105.500–113.900 |
+| Sinopec Crystal Grease NLGI 2 · nhập khẩu | Xô 17 kg | 2.000.000–2.100.000 đ | 117.600–123.600 |
+| [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2) (chịu nhiệt) · nhập khẩu | Xô 18 kg | 2.900.000–3.340.000 đ | 161.100–185.600 |
+| [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) · nhập khẩu | Xô 18 kg | 3.360.000–3.880.000 đ | 186.600–215.600 |
 
 ### Mỡ độ đặc NLGI 2 hoặc 3 (cùng khoảng giá)
 
-| Mã mỡ | Nguồn gốc | Quy cách | Khoảng giá (chưa VAT) | Quy ra đ/kg |
-| :--- | :--- | :--- | :--- | :--- |
-| [Sinopec Golden Grease NLGI 2, NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-golden-grease) | Nhập khẩu | Phuy 180 kg | 15.000.000–17.000.000 đ | 83.300–94.500 |
-| Sinopec Golden Grease NLGI 2, NLGI 3 | Nhập khẩu | Xô 17 kg | 1.500.000–1.600.000 đ | 88.200–94.200 |
+| Mã mỡ | Quy cách | Khoảng giá (chưa VAT) | Quy ra đ/kg |
+| :--- | :--- | :--- | :--- |
+| [Sinopec Golden Grease NLGI 2, NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-golden-grease) · nhập khẩu | Phuy 180 kg | 15.000.000–17.000.000 đ | 83.300–94.500 |
+| Sinopec Golden Grease NLGI 2, NLGI 3 · nhập khẩu | Xô 17 kg | 1.500.000–1.600.000 đ | 88.200–94.200 |
 
 ### Mỡ độ đặc NLGI 3
 
-| Mã mỡ | Nguồn gốc | Quy cách | Khoảng giá (chưa VAT) | Quy ra đ/kg |
-| :--- | :--- | :--- | :--- | :--- |
-| PVOIL PV Grease No3 | Trong nước | Phuy 180 kg | 6.800.000–7.820.000 đ | 37.700–43.500 |
-| VHP Caxilium Grease No3 | Trong nước | Phuy 180 kg | 7.000.000–8.050.000 đ | 38.800–44.800 |
-| [Calix Ceno Grease No3](/mo-boi-tron-cong-nghiep/calix-ceno-grease) | Trong nước | Phuy 180 kg | 7.100.000–8.170.000 đ | 39.400–45.400 |
-| [VHP Opal Grease NLGI 3](/mo-boi-tron-cong-nghiep/vhp-opal-grease) | Trong nước | Phuy 180 kg | 7.400.000–8.510.000 đ | 41.100–47.300 |
-| [VHP Licas Grease No3](/mo-boi-tron-cong-nghiep/licas-grease) | Trong nước | Thùng 30 ống 400 g (12 kg) | 540.000–621.000 đ | 45.000–51.800 |
-| VHP MP Grease L3 | Trong nước | Phuy 180 kg | 8.200.000–9.430.000 đ | 45.500–52.400 |
-| VHP MP Grease L3 | Trong nước | Xô 17 kg | 1.100.000–1.270.000 đ | 64.700–74.800 |
-| VHP MP Grease L3 | Trong nước | Xô 15 kg | 986.000–1.135.000 đ | 65.700–75.700 |
-| Sinopec Crystal Grease NLGI 3 | Nhập khẩu | Phuy 180 kg | 20.000.000–21.000.000 đ | 111.100–116.700 |
-| Sinopec Crystal Grease NLGI 3 | Nhập khẩu | Xô 17 kg | 2.000.000–2.150.000 đ | 117.600–126.500 |
+| Mã mỡ | Quy cách | Khoảng giá (chưa VAT) | Quy ra đ/kg |
+| :--- | :--- | :--- | :--- |
+| PVOIL PV Grease No3 · trong nước | Phuy 180 kg | 6.800.000–7.820.000 đ | 37.700–43.500 |
+| VHP Caxilium Grease No3 · trong nước | Phuy 180 kg | 7.000.000–8.050.000 đ | 38.800–44.800 |
+| [Calix Ceno Grease No3](/mo-boi-tron-cong-nghiep/calix-ceno-grease) · trong nước | Phuy 180 kg | 7.100.000–8.170.000 đ | 39.400–45.400 |
+| [VHP Opal Grease NLGI 3](/mo-boi-tron-cong-nghiep/vhp-opal-grease) · trong nước | Phuy 180 kg | 7.400.000–8.510.000 đ | 41.100–47.300 |
+| [VHP Licas Grease No3](/mo-boi-tron-cong-nghiep/licas-grease) · trong nước | Thùng 30 ống 400 g (12 kg) | 540.000–621.000 đ | 45.000–51.800 |
+| VHP MP Grease L3 · trong nước | Phuy 180 kg | 8.200.000–9.430.000 đ | 45.500–52.400 |
+| VHP MP Grease L3 · trong nước | Xô 17 kg | 1.100.000–1.270.000 đ | 64.700–74.800 |
+| VHP MP Grease L3 · trong nước | Xô 15 kg | 986.000–1.135.000 đ | 65.700–75.700 |
+| Sinopec Crystal Grease NLGI 3 · nhập khẩu | Phuy 180 kg | 20.000.000–21.000.000 đ | 111.100–116.700 |
+| Sinopec Crystal Grease NLGI 3 · nhập khẩu | Xô 17 kg | 2.000.000–2.150.000 đ | 117.600–126.500 |
 
 ### Mỡ loại T3 (giữa NLGI 3 và NLGI 4)
 
-| Mã mỡ | Nguồn gốc | Quy cách | Khoảng giá (chưa VAT) | Quy ra đ/kg |
-| :--- | :--- | :--- | :--- | :--- |
-| [Sinopec Crystal Grease T3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-t3) | Nhập khẩu | Xô 17 kg | 2.050.000–2.100.000 đ | 120.500–123.600 |
-| Sinopec Crystal Grease T3 | Nhập khẩu | Phuy 180 kg | 22.000.000–22.800.000 đ | 122.200–126.700 |
+| Mã mỡ | Quy cách | Khoảng giá (chưa VAT) | Quy ra đ/kg |
+| :--- | :--- | :--- | :--- |
+| [Sinopec Crystal Grease T3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-t3) · nhập khẩu | Xô 17 kg | 2.050.000–2.100.000 đ | 120.500–123.600 |
+| Sinopec Crystal Grease T3 · nhập khẩu | Phuy 180 kg | 22.000.000–22.800.000 đ | 122.200–126.700 |
 
 ### Mỡ độ đặc NLGI 4
 
-| Mã mỡ | Nguồn gốc | Quy cách | Khoảng giá (chưa VAT) | Quy ra đ/kg |
-| :--- | :--- | :--- | :--- | :--- |
-| [VHP Opal Grease NLGI 4](/mo-boi-tron-cong-nghiep/vhp-opal-grease) | Trong nước | Xô 15 kg | 810.000–932.000 đ | 54.000–62.200 |
-| VHP MP Grease L4 | Trong nước | Xô 17 kg | 1.180.000–1.360.000 đ | 69.400–80.000 |
-| [VHP Lithium Grease L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) | Trong nước | Xô 17 kg | 1.250.000–1.450.000 đ | 73.500–85.300 |
+| Mã mỡ | Quy cách | Khoảng giá (chưa VAT) | Quy ra đ/kg |
+| :--- | :--- | :--- | :--- |
+| [VHP Opal Grease NLGI 4](/mo-boi-tron-cong-nghiep/vhp-opal-grease) · trong nước | Xô 15 kg | 810.000–932.000 đ | 54.000–62.200 |
+| VHP MP Grease L4 · trong nước | Xô 17 kg | 1.180.000–1.360.000 đ | 69.400–80.000 |
+| [VHP Lithium Grease L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) · trong nước | Xô 17 kg | 1.250.000–1.450.000 đ | 73.500–85.300 |
 
 Cột "Quy ra đ/kg" là giá cả gói chia cho khối lượng tịnh ghi trên bao bì, làm tròn tới trăm đồng; thùng Licas 30 ống 400 g tính là 12 kg. Mỡ ENEOS Epnoc Grease AP(N) dạng can không có trong bảng vì độ đặc NLGI và quy cách của mã này được xác nhận theo từng lô. Mã không có trong bảng vẫn có thể nhận đặt: gửi tên mỡ đang dùng, chúng tôi báo giá mã đó hoặc mã có thông số tương đương.
 
 ## Giá mỡ chịu nhiệt {#mo-chiu-nhiet}
 
-Chúng tôi chỉ gọi một mã là mỡ chịu nhiệt khi TDS của hãng ghi đủ hai điều: **chất làm đặc loại phức hợp** (complex), polyurea hoặc bentonite, và **nhiệt độ nhỏ giọt từ 230 °C trở lên**. Hiện kho có một mã đạt: [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2) (lithium complex, nhỏ giọt 240 °C), xô 18 kg giá **2.900.000–3.340.000 đ**, chưa VAT.
+Chúng tôi chỉ gọi một mã là mỡ chịu nhiệt khi TDS của hãng ghi đủ hai điều: **chất làm đặc loại phức hợp** (complex), polyurea hoặc bentonite, và **nhiệt độ nhỏ giọt từ 230 °C trở lên** (đo theo phương pháp như [ASTM D2265](https://www.astm.org/Standards/D2265.htm)). Hiện kho có một mã đạt: [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2) (lithium complex, nhỏ giọt 240 °C), xô 18 kg giá **2.900.000–3.340.000 đ**, chưa VAT.
 
 Các mã còn lại trong bảng có nhiệt độ nhỏ giọt theo TDS từ khoảng 120 °C đến dưới 210 °C, nên chúng tôi không xếp vào nhóm chịu nhiệt dù trên thị trường có nơi vẫn bán với tên đó. Khi so báo giá "mỡ chịu nhiệt", hãy hỏi chất làm đặc và nhiệt độ nhỏ giọt ghi trên TDS. Cách chọn theo nhiệt độ vỏ ổ xem ở trang [mỡ chịu nhiệt](/mo-chiu-nhiet).
 
@@ -157,9 +158,9 @@ Phần lớn chênh lệch đến từ **hãng và nguồn gốc** (trong nướ
 <figcaption>Khoảng giá theo nhóm mỡ, quy về nghìn đồng/kg. Nguồn: bảng khoảng giá công khai của kho, rà soát 04/11/2026.</figcaption>
 </figure>
 
-Ví dụ rõ nhất là hai mã cùng chất làm đặc lithium và đều ghi điểm nhỏ giọt khoảng 180 °C trên TDS của hãng: VHP MP Grease L3 xô 17 kg khoảng 64.700–74.800 đ/kg, còn Shell Gadus S2 V220 2 xô 18 kg khoảng 186.600–215.600 đ/kg, tức gấp gần ba lần dù cùng mua theo xô. Sinopec Golden Grease có điểm nhỏ giọt 152–155 °C, thấp hơn VHP MP Grease, nhưng tính theo phuy vẫn đắt hơn khoảng 1,8 lần. Nói đơn giản là khi trả thêm tiền cho mỡ nhập khẩu, bạn chủ yếu trả cho thương hiệu và chi phí vận chuyển quốc tế, chứ không phải cho một con số chịu nhiệt cao hơn.
+Ví dụ rõ nhất là hai mã cùng chất làm đặc lithium và đều ghi điểm nhỏ giọt khoảng 180 °C trên TDS của hãng ([TDS VHP MP Grease](/tai-lieu/tds/vhp-mp-grease.pdf), [TDS Shell Gadus S2 V220 2](/tai-lieu/tds/shell-gadus-s2-v220-2.pdf)): VHP MP Grease L3 xô 17 kg khoảng 64.700–74.800 đ/kg, còn Shell Gadus S2 V220 2 xô 18 kg khoảng 186.600–215.600 đ/kg, tức gấp gần ba lần dù cùng mua theo xô. Sinopec Golden Grease có điểm nhỏ giọt 152–155 °C ([TDS Sinopec Golden Grease](/tai-lieu/tds/sinopec-golden-grease.pdf)), thấp hơn VHP MP Grease, nhưng tính theo phuy vẫn đắt hơn khoảng 1,8 lần. Nói đơn giản là khi trả thêm tiền cho mỡ nhập khẩu, bạn chủ yếu trả cho thương hiệu và chi phí vận chuyển quốc tế, chứ không phải cho một con số chịu nhiệt cao hơn.
 
-Trong nhóm mỡ trong nước, thông số mới tạo ra khác biệt về giá. Calix Ceno No3 (chất làm đặc canxi) ghi điểm nhỏ giọt từ 120 °C trở lên, VHP Opal NLGI 3 ghi 140 °C, PVOIL PV Grease ghi tối thiểu 140 °C, và ba mã này đều ở mức 37.000–47.000 đ/kg. VHP MP Grease ghi tối thiểu 180 °C, dùng được cho vòng bi chạy nóng hơn, và giá mỗi kg cũng cao hơn tương ứng.
+Trong nhóm mỡ trong nước, thông số mới tạo ra khác biệt về giá. Theo thông số hãng công bố, [Calix Ceno No3](http://calixlube.com/mo-chiu-nhiet-calix-no3) (chất làm đặc canxi) ghi điểm nhỏ giọt từ 120 °C trở lên, [VHP Opal NLGI 3](https://hoadauvhp.com/opalgreaselvhpgremil-nid3.html) ghi 140 °C, [PVOIL PV Grease](http://pvoillube.vn/san-pham/san-pham-dan-dung/mo-da-dung/pv-grease-lithium-l1-l2-l3-mo-da-dung/) ghi tối thiểu 140 °C, và ba mã này đều ở mức 37.000–47.000 đ/kg. VHP MP Grease ghi tối thiểu 180 °C, dùng được cho vòng bi chạy nóng hơn, và giá mỗi kg cũng cao hơn tương ứng.
 
 Giá lithium hydroxide (nguyên liệu làm xà phòng lithium) cũng từng đẩy giá mỡ lithium lên. Tạp chí TLT của Hiệp hội các nhà ma sát học và kỹ sư bôi trơn Hoa Kỳ (STLE) số tháng 12/2024 cho biết giá lithium hydroxide đã giảm mạnh từ cuối năm 2023 và gần về mức trước đại dịch, khiến một số nhà sản xuất chuyển lại sang mỡ lithium ([STLE, TLT 12/2024](https://www.stle.org/files/TLTArchives/2024/12_December/Cover_Story.aspx)). Vì vậy áp lực tăng giá từ phía lithium hiện không còn lớn như giai đoạn 2022–2023. Giá dầu gốc thì vẫn đổi theo giá dầu thô hằng ngày, và đó là lý do bảng giá nào cũng cần có ngày.
 
@@ -219,7 +220,7 @@ Một mức giá "rẻ bất ngờ" thường là do hai bên đang không so c�
 
 ## Giao hàng và chính sách vận chuyển {#giao-hang}
 
-- **Giao trong ngày:** các khu công nghiệp dọc đường 5B cũ thuộc địa phận Hà Nội, Hưng Yên và Hải Phòng, nếu đơn được đặt trước 16h.
+- **Giao trong ngày:** các khu công nghiệp dọc đường 5 cũ thuộc địa phận Hà Nội, Hưng Yên và Hải Phòng, nếu đơn được đặt trước 16h.
 - **Miễn phí vận chuyển 80 km** tính từ kho có hàng gần điểm giao nhất. Đơn từ 3 phuy trở lên được mở rộng quãng đường miễn phí tới 150 km. Khách cần số lượng lớn có thể liên hệ để đề nghị vận chuyển miễn phí ở xa hơn.
 - **Kho xuất hàng:** kho chính 108 Đường Thanh Bình, P. Lê Thanh Nghị, TP Hải Phòng (Hải Dương cũ); kho Kiến An 145 Quán Trữ, P. Kiến An, TP Hải Phòng; kho Như Quỳnh, xã Như Quỳnh, tỉnh Hưng Yên. Mỗi mã có thể chỉ có ở một vài kho, hãy hỏi kho gần bạn trước khi chốt đơn.
 - **Khi nhận hàng:** kiểm tra tên mỡ, độ đặc NLGI trên nhãn, khối lượng tịnh, số lượng, nắp và niêm phong; sai lệch ghi ngay trên phiếu giao hàng.
