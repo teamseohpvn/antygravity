@@ -1,6 +1,7 @@
 ---
 ma: "BV-012"
 duong_dan: "/bao-gia-mo-boi-tron-bannhap3"
+noindex: true
 active: true
 loai: "kien-thuc"
 title: "Báo giá mỡ bôi trơn (mỡ bò) 11/2026: bảng giá theo độ đặc NLGI, giá theo kg, phuy và xô"
@@ -20,17 +21,17 @@ image_alt: "Xô mỡ VHP Lithium Grease L4 17 kg xếp trong kho, cạnh tấm d
 tags: ["mỡ bôi trơn", "mỡ bò", "báo giá"]
 ---
 
-**Giá mỡ bôi trơn (mỡ bò) tháng 11/2026 tại kho HT VINA từ 36.900 đến 215.600 đồng/kg, chưa gồm VAT**, tùy hãng, độ đặc NLGI và quy cách. Mỡ sản xuất trong nước đóng phuy 180 kg rẻ nhất, khoảng 37.000–47.000 đ/kg. Mỡ nhập khẩu Sinopec đắt gấp hai đến ba lần, còn Shell Gadus S2 xô 18 kg là mã đắt nhất tính theo kg. Cùng một mã, mua xô có thể đắt hơn mua phuy tới hơn 40% mỗi kg, nhưng cũng có mã phuy lại đắt hơn xô.
+**Giá mỡ bôi trơn (mỡ bò) tháng 11/2026 tại kho HT VINA từ 36.900 đến 215.600 đồng/kg, chưa gồm VAT**, tùy hãng, độ đặc NLGI và quy cách. Mỡ sản xuất trong nước đóng phuy 180 kg rẻ nhất, mỡ nhập khẩu Sinopec đắt gấp hai đến ba lần, còn Shell Gadus S2 xô 18 kg là mã đắt nhất tính theo kg.
 
 Bảng giá được rà soát ngày **04/11/2026**, kỳ rà soát tiếp theo dự kiến ngày **11/11/2026**. Mọi mức giá đều quy về đồng/kg để bạn so được phuy với xô, hàng trong nước với hàng nhập. NLGI là thang đo độ đặc của mỡ, còn gọi là độ sệt; nhiều nơi cũng ngầm hiểu là độ cứng của mỡ, từ 000 (gần như lỏng) tới 6 (rất cứng). Độ đặc NLGI được xếp theo độ xuyên kim đo bằng phương pháp [ASTM D217](https://www.astm.org/Standards/D217.htm). Vòng bi trong xưởng thường dùng mỡ có độ đặc NLGI 2 hoặc 3.
 
 > **Bài này có mục đích thương mại.** HT VINA là đơn vị bán các mã mỡ trong bảng, giá lấy từ kho của chính chúng tôi, nên chúng tôi có lợi ích khi bạn mua hàng. Phần so sánh và nhận định dựa trên bảng thông số kỹ thuật (TDS) của hãng và các nguồn ngoài có link, để bạn tự kiểm tra lại. Cách chúng tôi lập giá ghi ở mục [Chúng tôi thu thập và cập nhật giá thế nào](#cach-lap-gia).
 
 > **Điểm chính**
-> - Mỡ đa dụng trong nước (PVOIL, VHP Caxilium, Calix, VHP Opal) phuy 180 kg: khoảng **37.000–47.000 đ/kg**.
-> - Mỡ lithium VHP MP Grease phuy: khoảng **46.000–63.000 đ/kg** tùy độ đặc NLGI.
-> - Mỡ Sinopec nhập khẩu: Golden Grease khoảng **83.000–95.000 đ/kg**, Crystal Grease khoảng **106.000–127.000 đ/kg**; Shell Gadus S2 V220 2 khoảng **187.000–216.000 đ/kg**.
-> - Giá chưa gồm VAT. Giao trong ngày cho các khu công nghiệp dọc đường 5 cũ nếu đặt trước 16h; miễn phí vận chuyển 80 km, đơn từ 3 phuy được mở rộng tới 150 km.
+> - Theo kg, chưa VAT: mỡ trong nước phuy **37.000–47.000 đ**, mỡ lithium VHP phuy **46.000–63.000 đ**, mỡ Sinopec **83.000–127.000 đ**, Shell Gadus S2 **187.000–216.000 đ**.
+> - Cùng một mã, phuy thường rẻ hơn xô từ 6% đến khoảng 30% mỗi kg; riêng Sinopec Crystal T3 thì phuy lại đắt hơn xô một chút.
+> - Mỡ chịu nhiệt theo tiêu chí của chúng tôi (chất làm đặc phức hợp, nhỏ giọt từ 230 °C) hiện chỉ có Shell Gadus S3 V220C 2.
+> - Giao trong ngày cho các khu công nghiệp dọc đường 5 cũ nếu đặt trước 16h; miễn phí vận chuyển 80 km, đơn từ 3 phuy được mở rộng tới 150 km.
 > - Giá công bố là giá tham khảo, không phải giá hợp đồng: mỡ là sản phẩm dầu mỏ, giá đổi theo từng ngày.
 
 ## Bảng giá mỡ bôi trơn theo độ đặc NLGI {#bang-gia}
@@ -288,17 +289,9 @@ Phuy 180 kg mỡ trong nước (PVOIL, VHP, Calix) khoảng 6,65–11,39 triệu
 
 Xô 15–17 kg mỡ sản xuất trong nước khoảng 810.000–1.450.000 đ. Xô 17–18 kg mỡ nhập khẩu khoảng 1.500.000–3.880.000 đ. Giá chưa VAT.
 
-### Giá đã gồm VAT và vận chuyển chưa?
-
-Giá chưa gồm VAT. Giao trong bán kính 80 km từ kho có hàng gần nhất được miễn phí; đơn từ 3 phuy được miễn phí tới 150 km. Báo giá chính thức ghi rõ giá trước thuế, tiền thuế, phí giao (nếu có) và tổng tiền.
-
 ### Mỡ đắt hơn có bền hơn không?
 
 Không chắc, nếu xét ở đúng vị trí của bạn. Mỡ đắt thường có điểm nhỏ giọt cao hơn, chịu tải tốt hơn hoặc đến từ hãng lớn, nhưng nếu vòng bi chỉ chạy ở nhiệt độ thường thì mỡ lithium-canxi giá rẻ vẫn làm tốt việc. Hãy chọn theo nhiệt độ làm việc, tải và môi trường nước của điểm bôi trơn, rồi mới so giá trong nhóm mỡ đạt yêu cầu. Trang [mỡ bôi trơn (mỡ bò) theo độ đặc NLGI](/mo-boi-tron-cong-nghiep) có bảng so sánh thông số TDS của các mã đang bán.
-
-### Bảng giá cập nhật khi nào?
-
-Rà soát toàn bộ mỗi tuần một lần, và cập nhật ngay trong ngày khi một mã đổi giá. Lần gần nhất ngày 04/11/2026, kỳ tiếp theo dự kiến ngày 11/11/2026.
 
 ## Nhận báo giá mỡ theo đơn của bạn {#nhan-bao-gia}
 
