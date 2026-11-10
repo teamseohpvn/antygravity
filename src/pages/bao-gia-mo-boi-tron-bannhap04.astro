@@ -1,0 +1,419 @@
+---
+// BẢN NHÁP bannhap04 (10/11/2026, noindex, không vào sitemap, KHÔNG merge vào main).
+// Nội dung: bài hợp nhất của chủ site ("bản nháp/hợp nhất báo giá mỡ bôi trơn.md"), đã sửa thông tin doanh nghiệp, chính sách, số liệu.
+// Giao diện: theo khuôn trang /bao-gia-mo-boi-tron (PriceTable có bộ lọc, mỗi mục một khung), thay cho bản blog Markdown.
+import Layout from '../layouts/Layout.astro';
+import NoiDungBai from '../components/NoiDungBai.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import CachVietBai from '../components/CachVietBai.astro';
+import ChinhSachGiaKho from '../components/ChinhSachGiaKho.astro';
+import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
+import PriceTable from '../components/PriceTable.astro';
+import { getActiveProducts } from '../lib/content';
+import { fmtNgay, fmtVnd } from '../lib/gia-tinh';
+import type { DongGiaCongKhai } from '../lib/gia';
+import { bangGiaTuJson } from '../lib/gia-json';
+import { timNhanSu, bylineLabel, personUrl, personRef, personSchema } from '../lib/nhan-su';
+import { AN_DONG, KG_QUY_CACH } from '../data/bao-gia-mo-boi-tron';
+import { absUrl, breadcrumbSchema, ORG_ID, BUSINESS, ADDRESS_TEXT, KHO_GIAO_HANG } from '../lib/site';
+
+const pagePath = '/bao-gia-mo-boi-tron-bannhap04';
+const HUB = '/mo-boi-tron-cong-nghiep';
+const HUB_NHIET = '/mo-chiu-nhiet';
+const IMAGE = '/images/san-pham/vhp-lithium-grease-l4-xo-kho.webp';
+const IMAGE_ALT = 'Xô mỡ VHP Lithium Grease L4 màu vàng nâu xếp chồng trong kho, phía trước là thẻ thông tin HT VINA có địa chỉ và số điện thoại';
+
+const nguoiGia = timNhanSu('nguyen-thi-hong')!;
+const nguoiDuyet = timNhanSu('vu-minh-toan')!;
+const nguoiKho = timNhanSu('pham-van-huu')!;
+
+// Giá đọc từ gia-cong-khai.json, giống trang /bao-gia-mo-boi-tron.
+const thuong = bangGiaTuJson('mo-boi-tron-cong-nghiep');
+const nhiet = bangGiaTuJson('mo-chiu-nhiet');
+const cauHinh = thuong.cauHinh;
+const sanPham = await getActiveProducts();
+const danhMucCua = Object.fromEntries(sanPham.map((p) => [p.id, p.data.category as string]));
+const activePages = new Set(sanPham.map((p) => p.id));
+const tdsTheoTrang = Object.fromEntries(sanPham.map((p) => [p.id, p.data.tds_url as string | undefined]));
+const MA_NHIET = new Set(nhiet.rows.map((r) => r.trang));
+
+const lam100 = (n: number) => Math.round(n / 100) * 100;
+const kgTrongTen = (qc: string) => Number(qc.match(/(\d+)\s*kg/i)?.[1]) || KG_QUY_CACH[qc] || null;
+const rows: DongGiaCongKhai[] = [...nhiet.rows, ...thuong.rows]
+  .filter((r) => !AN_DONG.includes(r.ten) && r.thap && r.cao)
+  .map((r) => {
+    const kg = kgTrongTen(r.quy_cach);
+    const coKg = r.don_vi_do === 'kg' && r.thap_don_vi;
+    return {
+      ...r,
+      ten: MA_NHIET.has(r.trang) ? `${r.ten} (chịu nhiệt)` : r.ten,
+      ...(!coKg && kg ? { don_vi_do: 'kg', thap_don_vi: lam100(r.thap! / kg), cao_don_vi: lam100(r.cao! / kg) } : {}),
+    };
+  });
+const hrefSp = (r: DongGiaCongKhai) => (r.trang && activePages.has(r.trang) ? `/${danhMucCua[r.trang]}/${r.trang}` : undefined);
+
+type Khoang = { thap: number; cao: number; kgThap: number; kgCao: number };
+const khoang = (xs: DongGiaCongKhai[]): Khoang | null => xs.length ? {
+  thap: Math.min(...xs.map((r) => r.thap!)), cao: Math.max(...xs.map((r) => r.cao!)),
+  kgThap: Math.min(...xs.map((r) => r.thap_don_vi!)), kgCao: Math.max(...xs.map((r) => r.cao_don_vi!)),
+} : null;
+const laPhuy = (r: DongGiaCongKhai) => /phuy/i.test(r.quy_cach);
+const laXo = (r: DongGiaCongKhai) => /xô/i.test(r.quy_cach);
+const tatCa = khoang(rows)!;
+const kTrongNuocPhuy = khoang(rows.filter((r) => laPhuy(r) && r.nguon === 'trong-nuoc'))!;
+const kTrongNuocXo = khoang(rows.filter((r) => laXo(r) && r.nguon === 'trong-nuoc'))!;
+const kNhapPhuy = khoang(rows.filter((r) => laPhuy(r) && r.nguon === 'nhap-khau'))!;
+const kNhapXo = khoang(rows.filter((r) => laXo(r) && r.nguon === 'nhap-khau'))!;
+const kOng = khoang(rows.filter((r) => /ống/i.test(r.quy_cach)));
+const nghin = (n: number) => fmtVnd(n);
+
+// So phuy với xô của cùng một mã, cùng độ đặc, ở đầu thấp của khoảng.
+const SO_QC = [...new Set(rows.map((r) => `${r.trang}|${r.cap}`))]
+  .map((key) => {
+    const cung = rows.filter((r) => `${r.trang}|${r.cap}` === key);
+    const p = cung.find(laPhuy);
+    const x = cung.filter(laXo).sort((a, b) => b.thap_don_vi! - a.thap_don_vi!)[0];
+    return p && x ? { ten: p.ten, phuy: p.thap_don_vi!, xo: x.thap_don_vi!, xoQc: x.quy_cach, chenh: Math.round((p.thap_don_vi! / x.thap_don_vi! - 1) * 100) } : null;
+  })
+  .filter((x): x is NonNullable<typeof x> => !!x)
+  .sort((a, b) => a.chenh - b.chenh);
+
+const vat = cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT';
+const ngay = fmtNgay(cauHinh.ngay_ra_soat);
+const NGAY_DANG = '2026-11-10';
+const NGAY_SUA_NOI_DUNG = '2026-11-10';
+const ngayCapNhat = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
+const ARTICLE_ID = absUrl(pagePath) + '#article';
+
+const title = 'Báo giá mỡ bôi trơn (mỡ bò) công nghiệp 11/2026: bảng giá theo độ đặc NLGI và phân tích chi phí';
+const seoTitle = 'Báo Giá Mỡ Bôi Trơn (Mỡ Bò) 11/2026: Theo Độ Đặc NLGI';
+const description = `Báo giá mỡ bôi trơn, mỡ bò tháng 11/2026: ${nghin(tatCa.kgThap)}–${nghin(tatCa.kgCao)} đ/kg ${vat}, theo độ đặc NLGI, phuy 180 kg, xô 17 kg. Vì sao giá chênh, nên mua phuy hay xô.`;
+const QUOTE = `/bao-gia?sp=${encodeURIComponent('Mỡ bôi trơn (mỡ bò)')}`;
+
+const quyTrinh = [
+  { buoc: 'Gửi yêu cầu', viec: 'Cho chúng tôi biết mã mỡ đang dùng (hoặc chụp nhãn xô, phuy), hoặc loại máy, vị trí bôi trơn và nhiệt độ làm việc. Chúng tôi đối chiếu TDS để gợi ý mã tương đương nếu bạn cần giảm chi phí.', nguoi: nguoiGia },
+  { buoc: 'Nhận báo giá bằng văn bản', viec: 'Báo giá ghi rõ thời hạn hiệu lực, quy cách đóng gói, nơi giao, giá trước thuế, tiền thuế và các khoản phí, nếu có.', nguoi: nguoiGia },
+  { buoc: 'Giao hàng', viec: 'Đơn đặt trước 16h ngày làm việc được giao trong ngày cho các KCN dọc đường 5 cũ nếu mã có sẵn; nơi khác trong 80 km giao theo lịch hẹn, miễn phí vận chuyển.', nguoi: nguoiKho },
+  { buoc: 'Bàn giao chứng từ', viec: 'Hàng giao kèm phiếu giao hàng, hóa đơn VAT điện tử và CO/CQ theo lô với các hãng có cấp chứng từ này.', nguoi: nguoiGia },
+];
+
+const crumbs = [
+  { name: 'Trang chủ', href: '/' },
+  { name: 'Mỡ bôi trơn (mỡ bò)', href: HUB },
+  { name: 'Báo giá mỡ bôi trơn', href: pagePath },
+];
+const citation = [
+  ...new Set(rows.map((r) => tdsTheoTrang[r.trang ?? '']).filter(Boolean) as string[]),
+].map((u) => (u.startsWith('http') ? u : absUrl(u))).concat([
+  'https://www.lubesngreases.com/factbook/fb-article/grease-market-trends/',
+  'https://www.stle.org/files/TLTArchives/2024/12_December/Cover_Story.aspx',
+]);
+const schemaData = [
+  {
+    '@context': 'https://schema.org', '@type': 'Article', '@id': ARTICLE_ID, headline: seoTitle, description, url: absUrl(pagePath),
+    mainEntityOfPage: absUrl(pagePath), image: absUrl(IMAGE), inLanguage: 'vi-VN', author: personRef(nguoiGia), reviewedBy: personRef(nguoiDuyet),
+    citation, datePublished: NGAY_DANG, dateModified: ngayCapNhat, publisher: { '@id': ORG_ID },
+  },
+  personSchema(nguoiGia),
+  personSchema(nguoiDuyet),
+  breadcrumbSchema(crumbs),
+];
+---
+
+<Layout {title} {seoTitle} {description} noindex type="article" image={IMAGE} published={NGAY_DANG} modified={ngayCapNhat} author={nguoiGia.name} {schemaData}>
+  <div class="container price-page">
+    <Breadcrumbs items={crumbs} />
+
+    <NoiDungBai articleId={ARTICLE_ID}>
+    <header class="price-hero">
+      <h1>{title}</h1>
+      <p class="dong-duyet">
+        Lập giá: <a href={personUrl(nguoiGia)}>{bylineLabel(nguoiGia)}</a> · Duyệt giá: <a href={personUrl(nguoiDuyet)}>{bylineLabel(nguoiDuyet)}</a> (GĐ HT VINA) · Kỳ giá đang chờ duyệt · <a href="#cach-viet-bai">Cách chúng tôi lập giá</a>
+      </p>
+      <figure class="anh-dau">
+        <img src={IMAGE} srcset={`${IMAGE.replace('.webp', '-600.webp')} 600w, ${IMAGE} 1200w`} sizes="(max-width: 760px) 100vw, 760px" alt={IMAGE_ALT} width="1200" height="900" loading="eager" fetchpriority="high" decoding="async" />
+        <figcaption>Xô mỡ VHP Lithium Grease L4 17 kg tại kho HT VINA.</figcaption>
+      </figure>
+
+      <div class="minh-bach">
+        <p><strong>Minh bạch thương mại.</strong> Bảng giá và bài viết này do HT VINA lập với mục đích thương mại: cung cấp thông tin kỹ thuật tham khảo và chào giá trực tiếp từ kho của chính chúng tôi. Nội dung phản ánh mức giá tại kho HT VINA, <strong>không phải bảng khảo sát giá trung lập của một tổ chức độc lập</strong>. Chúng tôi công khai nguồn hàng, chứng từ CO/CQ và cách tính giá để bạn tự đối chiếu trước khi quyết định.</p>
+      </div>
+
+      <div class="summary">
+        <p class="summary__label">Tóm tắt khung giá tháng 11/2026 ({vat}){ngay && <span class="summary__ngay"> · rà soát <time datetime={cauHinh.ngay_ra_soat}>{ngay}</time></span>}</p>
+        <ul>
+          <li><strong>Quy đổi theo khối lượng:</strong> từ <strong>{nghin(tatCa.kgThap)} đ/kg đến {nghin(tatCa.kgCao)} đ/kg</strong>, chênh gần 6 lần tùy nguồn gốc, thương hiệu và quy cách đóng gói.</li>
+          <li><strong>Mỡ sản xuất trong nước (PVOIL, VHP, Calix):</strong> phuy 180 kg <strong>{fmtVnd(kTrongNuocPhuy.thap)} – {fmtVnd(kTrongNuocPhuy.cao)} đ</strong> ({nghin(kTrongNuocPhuy.kgThap)} – {nghin(kTrongNuocPhuy.kgCao)} đ/kg); xô 15–17 kg <strong>{fmtVnd(kTrongNuocXo.thap)} – {fmtVnd(kTrongNuocXo.cao)} đ</strong> ({nghin(kTrongNuocXo.kgThap)} – {nghin(kTrongNuocXo.kgCao)} đ/kg).</li>
+          <li><strong>Mỡ nhập khẩu (Sinopec, Shell):</strong> phuy 180 kg <strong>{fmtVnd(kNhapPhuy.thap)} – {fmtVnd(kNhapPhuy.cao)} đ</strong> ({nghin(kNhapPhuy.kgThap)} – {nghin(kNhapPhuy.kgCao)} đ/kg); xô 17–18 kg <strong>{fmtVnd(kNhapXo.thap)} – {fmtVnd(kNhapXo.cao)} đ</strong> ({nghin(kNhapXo.kgThap)} – {nghin(kNhapXo.kgCao)} đ/kg).</li>
+          {kOng && <li><strong>Mỡ đóng ống:</strong> thùng 30 ống 400 g (12 kg) <strong>{fmtVnd(kOng.thap)} – {fmtVnd(kOng.cao)} đ</strong> ({nghin(kOng.kgThap)} – {nghin(kOng.kgCao)} đ/kg).</li>}
+          <li><strong><a href="/chinh-sach-giao-hang">Miễn phí vận chuyển 80 km</a></strong> từ 3 kho tại Hải Phòng và Hưng Yên, không yêu cầu đơn tối thiểu.</li>
+        </ul>
+      </div>
+      <nav class="muc-luc" aria-label="Mục lục">
+        <a href="#cach-lap-gia">1. Cách lập giá</a>
+        <a href="#bang-gia">2. Bảng giá</a>
+        <a href="#chua-gom">3. Chưa gồm</a>
+        <a href="#giao-hang">4. Giao hàng</a>
+        <a href="#vi-sao-chenh">5. Vì sao chênh</a>
+        <a href="#phuy-hay-xo">6. Phuy hay xô</a>
+        <a href="#doc-thong-so">7. Đọc thông số</a>
+        <a href="#dat-hang">8. Đặt hàng</a>
+        <a href="#hoi-dap">9. Hỏi đáp</a>
+        <a href="#thong-tin-doanh-nghiep">10. Liên hệ</a>
+      </nav>
+    </header>
+
+    <section class="price-body" id="cach-lap-gia">
+      <h2>1. Cách lập giá và điều kiện áp dụng</h2>
+      <p>Để phòng vật tư và ban lãnh đạo nhà máy dễ đối chiếu, HT VINA công khai cách lập bảng giá này:</p>
+      <ul>
+        <li><strong>Nguồn giá:</strong> giá bán tại kho của HT VINA vào ngày rà soát {ngay}, không lấy từ giá niêm yết của hãng hay giá của nơi bán khác. Trang chỉ công bố khoảng giá, không công bố giá từng đơn.</li>
+        <li><strong>Đơn vị tính:</strong> mỗi mức giá tính cho <strong>một đơn vị đóng gói</strong> (một phuy, một xô hoặc một thùng ống). <strong>Không có đơn tối thiểu</strong>; quy cách nhỏ nhất là thùng 30 ống 400 g.</li>
+        <li><strong>Giá công bố không phải giá hợp đồng:</strong> mỡ bôi trơn làm từ dầu gốc và xà phòng kim loại (lithium, canxi), giá nguyên liệu đổi theo thị trường. Giá chính thức được chốt trên báo giá bằng văn bản có thời hạn do HT VINA gửi vào lúc chốt đơn.</li>
+      </ul>
+      <p><strong>Khi nào giá gần mức thấp, khi nào gần mức cao của khoảng:</strong></p>
+      <div class="table-wrap">
+        <table class="match">
+          <thead><tr><th scope="col">Giá chốt gần mức thấp khi</th><th scope="col">Giá chốt gần mức cao khi</th></tr></thead>
+          <tbody>
+            <tr><td>Mua nhiều phuy một lần, hoặc có hợp đồng lấy hàng định kỳ</td><td>Mua lẻ một xô hoặc một thùng</td></tr>
+            <tr><td>Nhận hàng tại kho hoặc giao gần kho có hàng</td><td>Giao xa, giao gấp hoặc giao theo khung giờ riêng</td></tr>
+            <tr><td>Thanh toán ngay khi nhận hàng</td><td>Thanh toán sau theo thời hạn dài</td></tr>
+            <tr><td>Lô đang có sẵn trong kho</td><td>Lô mới nhập sau khi giá dầu gốc hoặc tỷ giá tăng</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="price-body" id="bang-gia">
+      <h2>2. Bảng giá mỡ bôi trơn theo độ đặc NLGI</h2>
+      <p>Độ đặc NLGI (còn gọi là độ sệt) cho biết mỡ mềm hay cứng, từ 000 (gần như lỏng) tới 6 (rất cứng), xếp theo độ xuyên kim đo bằng phương pháp <a href="https://www.astm.org/Standards/D217.htm" target="_blank" rel="noopener">ASTM D217</a>. Vòng bi và gối đỡ trong nhà xưởng dùng nhiều nhất là mỡ có độ đặc <strong>NLGI 2</strong> và <strong>NLGI 3</strong>. Bảng dưới xếp từ mềm đến cứng; bấm nút lọc để chỉ xem phuy, xô, hàng nhập khẩu hoặc trong nước. Bấm tên mã để xem thông số, bấm "Tải TDS" hoặc "Xem TDS" để mở bảng thông số kỹ thuật của hãng.</p>
+      <PriceTable rows={rows} {activePages} category="mo-boi-tron-cong-nghiep" gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {hrefSp} nhanPhuy="Phuy 180 kg" nhanXo="Xô 15–18 kg" boLoc gon />
+      <ul class="notes">
+        <li>Cột "Quy đổi" là giá cả gói chia cho khối lượng tịnh ghi trên bao bì, làm tròn tới trăm đồng. Thùng 30 ống 400 g được tính là 12 kg.</li>
+        <li>NLGI 2 thường dùng cho vòng bi, moay-ơ, gối đỡ; NLGI 3 cho vòng bi trục đứng, chỗ rung lắc; T3 (loại riêng của Sinopec, giữa NLGI 3 và 4) và NLGI 4 cho vòng bi quay chậm, chỗ cần mỡ ít chảy.</li>
+        <li>Mã ghi "NLGI 2, 3" có cùng khoảng giá cho hai độ đặc. Khi hỏi giá, hãy ghi rõ độ đặc cần mua.</li>
+        <li>Mã không có trong bảng vẫn có thể nhận đặt: gửi tên mỡ đang dùng, chúng tôi báo giá mã đó hoặc mã có thông số tương đương.</li>
+      </ul>
+      <div class="ghi-chu-nhiet">
+        <p><strong>Về mỡ chịu nhiệt:</strong> chúng tôi chỉ gọi một mã là mỡ chịu nhiệt khi TDS ghi chất làm đặc loại phức hợp (complex), polyurea hoặc bentonite <strong>và</strong> nhiệt độ nhỏ giọt từ 230 °C trở lên. Trong bảng hiện chỉ có <a href="/mo-chiu-nhiet/shell-gadus-s3-v220c-2">Shell Gadus S3 V220C 2</a> đạt (lithium complex, nhỏ giọt 240 °C). Cách chọn theo nhiệt độ vỏ ổ xem ở trang <a href={HUB_NHIET}>mỡ chịu nhiệt</a>.</p>
+      </div>
+    </section>
+
+    <section class="price-body" id="chua-gom">
+      <h2>3. Những khoản chưa gồm trong bảng giá</h2>
+      <p>Để bộ phận mua hàng lập dự toán sát hơn, xin lưu ý các khoản dưới đây. Khoản nào phát sinh sẽ được ghi rõ trên báo giá chính thức trước khi bạn xác nhận đơn.</p>
+      <div class="table-wrap">
+        <table class="match">
+          <tbody>
+            <tr><th scope="row">Thuế VAT</th><td>Toàn bộ giá trong bài là giá <strong>chưa gồm VAT</strong>. Thuế tính theo thuế suất hiện hành và ghi riêng trên hóa đơn VAT điện tử.</td></tr>
+            <tr><th scope="row">Chiết khấu đơn lớn</th><td>Bảng chưa trừ chiết khấu. Đơn nhiều phuy, hợp đồng lấy hàng theo tháng hoặc quý được báo giá riêng theo mã, sản lượng và thời hạn thanh toán.</td></tr>
+            <tr><th scope="row">Bốc xếp đặc biệt</th><td>Phuy mỡ nặng khoảng 180 kg cả bì trở lên. Nếu nơi nhận không có xe nâng, lối vào hẹp hoặc cần đưa hàng lên tầng, vui lòng báo trước để chúng tôi bố trí xe và người bốc xếp phù hợp; chi phí, nếu có, ghi trên báo giá.</td></tr>
+            <tr><th scope="row">Giao ngoài lịch thường</th><td>Giao gấp, giao ngoài giờ làm việc hoặc theo khung giờ riêng của nhà máy: liên hệ để thống nhất thời gian và chi phí, nếu có.</td></tr>
+            <tr><th scope="row">Bảo hiểm hàng hóa</th><td>Chưa gồm. Nếu bạn cần mua bảo hiểm riêng cho đơn hàng, hai bên thỏa thuận trước khi giao.</td></tr>
+            <tr><th scope="row">CO/CQ</th><td>Gửi theo lô với các hãng có cấp chứng từ này; TDS và SDS gửi kèm khi bạn yêu cầu.</td></tr>
+            <tr><th scope="row">Đổi trả</th><td>Trong <strong>7 ngày tính từ ngày nhận hàng</strong> khi giao sai hàng, hư hỏng do vận chuyển hoặc lỗi chất lượng của nhà sản xuất; hàng còn nguyên nắp và niêm phong. Chi tiết ở <a href="/chinh-sach-doi-tra">chính sách đổi trả</a>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="price-body" id="giao-hang">
+      <h2>4. Giao nhận và vận chuyển</h2>
+      <div class="table-wrap">
+        <table class="match">
+          <tbody>
+            <tr><th scope="row">Giao trong ngày</th><td>Các khu công nghiệp dọc <strong>đường 5 cũ</strong> thuộc địa phận Hà Nội, Hưng Yên và Hải Phòng (ví dụ KCN Đài Tư, Phố Nối A, Nomura, Đình Vũ), nếu đơn được đặt <strong>trước 16h ngày làm việc</strong> và mã có sẵn ở kho.</td></tr>
+            <tr><th scope="row">Miễn phí vận chuyển</th><td><strong>80 km</strong> tính từ kho có hàng gần điểm giao nhất, không yêu cầu số lượng tối thiểu. Đơn từ <strong>3 phuy</strong> trở lên: mở rộng tới <strong>150 km</strong>. Đơn lớn ở xa hơn được xem xét miễn phí theo từng trường hợp; phí, nếu có, ghi rõ trên báo giá.</td></tr>
+            <tr><th scope="row">Kho xuất hàng</th><td>Kho chính {ADDRESS_TEXT} (Hải Dương cũ). {KHO_GIAO_HANG.map((k) => `${k.name}: ${k.addressText}.`).join(' ')} Mỗi mã có thể chỉ có ở một vài kho, hãy hỏi kho gần bạn trước khi chốt đơn.</td></tr>
+            <tr><th scope="row">Khi nhận hàng</th><td>Kiểm tra tên mỡ, độ đặc NLGI trên nhãn, khối lượng tịnh, số lượng, nắp và niêm phong; sai lệch ghi ngay trên phiếu giao hàng.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">Xem chi tiết ở <a href="/chinh-sach-giao-hang">chính sách giao hàng</a>, hoặc <a href="/contact">liên hệ</a> để đề nghị vận chuyển đơn hàng lớn.</p>
+    </section>
+
+    <section class="price-body" id="vi-sao-chenh">
+      <h2>5. Vì sao giá mỡ bôi trơn chênh nhau gần sáu lần?</h2>
+      <p>Nhìn vào cột quy đổi, giá đi từ <strong>{nghin(tatCa.kgThap)} đ/kg</strong> (PVOIL phuy) tới <strong>{nghin(tatCa.kgCao)} đ/kg</strong> (Shell Gadus S2 xô), chênh khoảng 5,8 lần. Chênh lệch này đến từ ba yếu tố.</p>
+
+      <h3>Thương hiệu quốc tế và chi phí nhập khẩu</h3>
+      <p>Phần lớn chênh lệch nằm ở thương hiệu và xuất xứ, không nằm ở khác biệt kỹ thuật:</p>
+      <ul>
+        <li><strong>VHP MP Grease L3</strong> (trong nước) và <strong>Shell Gadus S2 V220 2</strong> (nhập khẩu) đều dùng chất làm đặc lithium, TDS của hai hãng đều ghi điểm nhỏ giọt khoảng 180 °C (<a href="/tai-lieu/tds/vhp-mp-grease.pdf">TDS VHP MP Grease</a>, <a href="/tai-lieu/tds/shell-gadus-s2-v220-2.pdf">TDS Shell Gadus S2 V220 2</a>). Thế nhưng cùng mua theo xô, Shell đắt gần gấp 3 lần VHP (186.600 so với 64.700 đ/kg ở mức thấp).</li>
+        <li><strong>Sinopec Golden Grease</strong> có điểm nhỏ giọt 152–155 °C (<a href="/tai-lieu/tds/sinopec-golden-grease.pdf">TDS</a>), thấp hơn VHP MP Grease, nhưng tính theo phuy vẫn đắt hơn VHP MP Grease L3 khoảng 1,8 lần.</li>
+        <li>Mua mỡ nhập khẩu là trả thêm cho thuế nhập khẩu, cước vận tải quốc tế và giá trị thương hiệu toàn cầu.</li>
+      </ul>
+
+      <h3>Khác biệt thông số trong nhóm mỡ trong nước</h3>
+      <ul>
+        <li><strong>Nhóm điểm nhỏ giọt thấp:</strong> Calix Ceno No3 (canxi, từ 120 °C), VHP Opal NLGI 3 (lithium-canxi, 140 °C), VHP Caxilium (lithium-canxi, 141 °C) và PVOIL PV Grease (lithium, tối thiểu 140 °C). Nhóm này hợp với gối đỡ tải thường, máy nông nghiệp, chỗ ẩm ướt, nhiệt độ làm việc theo hãng khoảng 100–120 °C. Giá phuy khoảng <strong>37.000–47.000 đ/kg</strong>.</li>
+        <li><strong>VHP MP Grease (lithium):</strong> điểm nhỏ giọt tối thiểu 180 °C, hãng ghi nhiệt độ làm việc tới 120 °C (ngắn hạn 135 °C). Giá phuy tăng lên <strong>45.500–63.300 đ/kg</strong>.</li>
+      </ul>
+
+      <h3>Giá nguyên liệu lithium</h3>
+      <p>Theo khảo sát sản lượng mỡ năm 2024 của Viện Mỡ bôi trơn Quốc gia Hoa Kỳ (NLGI), do Lubes'N'Greases tổng hợp, mỡ lithium chiếm 38,3% và mỡ lithium phức chiếm 18,6%, tổng cộng gần <strong>57% sản lượng mỡ toàn cầu</strong> (<a href="https://www.lubesngreases.com/factbook/fb-article/grease-market-trends/" target="_blank" rel="noopener">Lubes'N'Greases, cập nhật 10/02/2026</a>). Vì vậy giá lithium hydroxide, nguyên liệu làm xà phòng lithium, ảnh hưởng tới giá phần lớn mỡ trên thị trường. Giai đoạn 2022–2023, nhu cầu pin xe điện đẩy giá lithium lên cao; tới cuối năm 2024, tạp chí TLT của STLE cho biết giá lithium hydroxide đã giảm mạnh và gần về mức trước đại dịch (<a href="https://www.stle.org/files/TLTArchives/2024/12_December/Cover_Story.aspx" target="_blank" rel="noopener">STLE, TLT 12/2024</a>). Giá dầu gốc thì vẫn đổi theo giá dầu thô, và đó là lý do bảng giá nào cũng cần ghi ngày rà soát.</p>
+    </section>
+
+    <section class="price-body" id="phuy-hay-xo">
+      <h2>6. Mua phuy 180 kg hay xô 17 kg: tính dòng tiền và kỹ thuật</h2>
+      <p>Nhiều quản đốc xưởng chọn mua xô vì số tiền bỏ ra mỗi lần ít hơn. Nhưng tính trên tổng chi phí cả năm, quy cách đóng gói có thể tạo ra khoản chênh đáng kể, tùy hãng:</p>
+      <div class="table-wrap">
+        <table class="match">
+          <thead><tr><th scope="col">Tiêu chí</th><th scope="col">Mua phuy 180 kg</th><th scope="col">Mua xô 15–18 kg</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Giá mỗi kg</th><td>Thường thấp hơn xô; mức chênh từ khoảng 6% (Sinopec) tới khoảng 30% (VHP MP Grease)</td><td>Cao hơn ở phần lớn mã; riêng Sinopec Crystal T3 thì xô lại rẻ hơn phuy khoảng 1%</td></tr>
+            <tr><th scope="row">Tiền chi một lần</th><td>Khoảng {fmtVnd(kTrongNuocPhuy.thap)} – {fmtVnd(kNhapPhuy.cao)} đ mỗi phuy</td><td>Khoảng {fmtVnd(kTrongNuocXo.thap)} – {fmtVnd(kNhapXo.cao)} đ mỗi xô</td></tr>
+            <tr><th scope="row">Dụng cụ lấy mỡ</th><td>Nên có bơm mỡ đặt trên phuy (bơm tay hoặc bơm khí nén) để lấy mỡ sạch</td><td>Dùng súng bơm mỡ cầm tay hoặc lấy trực tiếp</td></tr>
+            <tr><th scope="row">Rủi ro bảo quản</th><td>Phuy mở nắp lâu ngày dễ nhiễm bụi, nước; mỡ để lâu có thể tách dầu</td><td>Dùng hết nhanh, mỡ luôn mới</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>So hai quy cách của <strong>cùng một mã, cùng độ đặc NLGI</strong>, tính ở mức thấp của khoảng giá. Số âm là phuy rẻ hơn xô.</p>
+      <div class="table-wrap">
+        <table class="match">
+          <thead><tr><th scope="col">Mã</th><th scope="col">Phuy 180 kg (đ/kg)</th><th scope="col">Xô (đ/kg)</th><th scope="col">Phuy so với xô</th></tr></thead>
+          <tbody>
+            {SO_QC.map((s) => (
+              <tr class={s.chenh > 0 ? 'dat-hon' : ''}><td>{s.ten}</td><td class="num">{nghin(s.phuy)}</td><td class="num">{nghin(s.xo)} ({s.xoQc})</td><td class="num">{s.chenh > 0 ? '+' : ''}{s.chenh}%</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="vi-du">
+        <p class="vi-du__label">Ví dụ với VHP MP Grease L3</p>
+        <ul>
+          <li>Phuy 180 kg: 8.200.000 đ, tức <strong>45.500 đ/kg</strong>.</li>
+          <li>Xô 17 kg: 1.100.000 đ, tức <strong>64.700 đ/kg</strong>.</li>
+          <li>Mua theo xô đắt hơn mua theo phuy khoảng <strong>42% mỗi kg</strong> (hay nói ngược lại, phuy rẻ hơn xô khoảng 30%).</li>
+          <li>Nếu xưởng dùng đều 180 kg mỡ mỗi năm: mua một phuy hết <strong>8,2 triệu đồng</strong>; mua lượng tương đương bằng xô 17 kg (khoảng 10,6 xô) hết khoảng <strong>11,65 triệu đồng</strong>. Chênh khoảng <strong>3,45 triệu đồng mỗi năm</strong>.</li>
+        </ul>
+      </div>
+
+      <figure class="anh-giua">
+        <img src="/images/san-pham/sinopec-golden-grease-nlgi-3-xo-pallet.webp" srcset="/images/san-pham/sinopec-golden-grease-nlgi-3-xo-pallet-600.webp 600w, /images/san-pham/sinopec-golden-grease-nlgi-3-xo-pallet.webp 960w" sizes="(max-width: 640px) 100vw, 420px" alt="Xô mỡ Sinopec Golden Grease xếp chồng trên pallet gỗ trong sân kho, bên cạnh hàng xô khác cùng loại" width="480" height="640" loading="lazy" decoding="async" />
+        <figcaption>Xô mỡ Sinopec Golden Grease trên pallet tại kho.</figcaption>
+      </figure>
+
+      <p><strong>Lời khuyên của HT VINA:</strong></p>
+      <ul>
+        <li><strong>Nên mua phuy 180 kg</strong> khi nhà máy có nhiều máy chạy liên tục, có hệ thống bơm mỡ tập trung, hoặc dùng hết một phuy trong khoảng 6–9 tháng.</li>
+        <li><strong>Nên mua xô 15–17 kg</strong> khi xưởng chỉ tra mỡ bảo dưỡng định kỳ, lượng dùng ít. Tránh để phuy mỡ mở nắp cả năm trong mùa nồm ẩm, lớp mỡ phía trên dễ tách dầu, nhiễm bẩn trước khi kịp tra vào máy. Xưởng nhỏ dùng súng bơm nạp ống thì thùng ống 400 g là gọn nhất.</li>
+      </ul>
+      <p class="small">Lượng mỡ cho mỗi vị trí và chu kỳ tra xem ở mục <a href={`${HUB}#tra-mo`}>tra mỡ bao nhiêu và bao lâu một lần</a>.</p>
+    </section>
+
+    <section class="price-body" id="doc-thong-so">
+      <h2>7. Đọc thông số kỹ thuật khi xem báo giá</h2>
+      <p>Để bảng giá thành công cụ chọn mỡ đúng, bộ phận mua hàng nên đối chiếu ba thông số sau trước khi chốt mã:</p>
+      <ol class="steps">
+        <li>
+          <strong>Điểm nhỏ giọt không phải nhiệt độ làm việc</strong>
+          <p>Điểm nhỏ giọt là nhiệt độ mà giọt mỡ đầu tiên chảy ra khỏi cốc thử, đo theo <a href="https://www.astm.org/Standards/D2265.htm" target="_blank" rel="noopener">ASTM D566 hoặc ASTM D2265</a>. Đây là mốc mỡ bắt đầu mất kết cấu, không phải nhiệt độ được phép chạy lâu dài.</p>
+          <p>Mốc nên dùng là <strong>nhiệt độ làm việc hãng ghi trên TDS</strong>, và mốc này phải <strong>cao hơn nhiệt độ đo trên vỏ ổ ít nhất 20 °C</strong>. Ví dụ Shell Gadus S2 V220 2 có điểm nhỏ giọt 180 °C nhưng hãng chỉ khuyến nghị làm việc tới 130 °C; nghĩa là vỏ ổ chạy ổn định nên ở mức khoảng 110 °C trở xuống.</p>
+        </li>
+        <li>
+          <strong>Khả năng chịu cực áp (EP)</strong>
+          <p>Máy nghiền, sàng rung, máy ép có tải va đập mạnh nên ưu tiên mã có TDS công bố khả năng chịu cực áp (EP), như Shell Gadus S2 V220 2. Mỡ không có phụ gia EP, dù cùng độ đặc NLGI 2, dễ bị phá màng bôi trơn khi gặp tải va đập.</p>
+        </li>
+        <li>
+          <strong>Tính tương thích của chất làm đặc</strong>
+          <p>Không bơm mỡ mới vào ổ khi chưa làm sạch mỡ cũ nếu hai loại khác chất làm đặc mà chưa rõ có hợp nhau không. Theo bảng tương thích công khai, mỡ lithium <strong>không hợp</strong> với mỡ canxi phức, nhôm phức, polyurea hay đất sét bentonite; trộn lẫn có thể làm mỡ mềm ra, chảy khỏi phớt và hỏng vòng bi. Nhóm lithium-canxi (VHP Caxilium, Licas, Opal) không có trong các bảng này, nên khi đổi sang hoặc đổi từ nhóm này, hãy tháo ổ và làm sạch. Xem <a href={`${HUB}#tuong-thich`}>bảng tương thích khi trộn mỡ</a>.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="price-body" id="dat-hang">
+      <h2>8. Quy trình đặt hàng tại HT VINA</h2>
+      <p>Mọi bước đều liên hệ qua số <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> (gọi hoặc Zalo) và email <a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a>.</p>
+      <ol class="steps">
+        {quyTrinh.map((b) => (
+          <li>
+            <strong>{b.buoc}</strong>
+            <p>{b.viec}</p>
+            <p class="steps__who">Phụ trách: <a href={personUrl(b.nguoi)}>{bylineLabel(b.nguoi)}</a>, {b.nguoi.role.toLowerCase()}</p>
+          </li>
+        ))}
+      </ol>
+      <QuoteCta heading="Gửi yêu cầu báo giá mỡ" item="Mỡ bôi trơn (mỡ bò)" />
+    </section>
+
+    <section class="price-body" id="hoi-dap">
+      <h2>9. Câu hỏi thường gặp về giá mỡ bôi trơn</h2>
+      <h3>Giá trên bảng đã gồm VAT và cước vận chuyển chưa?</h3>
+      <p>Giá trên bảng <strong>chưa gồm VAT</strong>. Cước vận chuyển được miễn trong bán kính 80 km tính từ kho có hàng gần nhất, không yêu cầu số lượng tối thiểu; đơn từ 3 phuy được miễn phí tới 150 km.</p>
+      <h3>Nhà máy ở các KCN Hải Phòng đặt hàng bao lâu thì nhận được?</h3>
+      <p>Với các KCN dọc đường 5 cũ, nếu mã có sẵn ở kho và đơn chốt trước 16h ngày làm việc, hàng được giao trong ngày. Các nơi khác chúng tôi hẹn ngày giao khi gửi báo giá.</p>
+      <h3>Vì sao mỗi mã có một khoảng giá chứ không phải một con số?</h3>
+      <p>Giá chốt cho từng đơn phụ thuộc số lượng, nơi giao, thời hạn thanh toán và lô hàng (xem bảng ở mục 1). Mỡ nhập khẩu còn chịu ảnh hưởng của tỷ giá và cước vận chuyển quốc tế. Khoảng giá của Sinopec hẹp hơn các mã khác (khoảng 3–8%) vì do giám đốc chốt riêng. Giá chính xác được xác nhận trên báo giá văn bản vào ngày đặt hàng.</p>
+      <h3>Mỡ đắt hơn có bền hơn không?</h3>
+      <p>Không chắc, nếu xét ở đúng vị trí của bạn. Mỡ đắt thường có điểm nhỏ giọt cao hơn, chịu tải tốt hơn hoặc đến từ hãng lớn, nhưng nếu vòng bi chỉ chạy ở nhiệt độ thường thì mỡ lithium-canxi giá rẻ vẫn làm tốt việc. Hãy chọn theo nhiệt độ làm việc, tải và môi trường nước của điểm bôi trơn, rồi mới so giá trong nhóm mỡ đạt yêu cầu. Trang <a href={HUB}>mỡ bôi trơn (mỡ bò)</a> có bảng so sánh thông số TDS của các mã đang bán.</p>
+    </section>
+
+    <ThongTinDoanhNghiep tieuDe="10. Đơn vị phát hành và liên hệ báo giá" />
+    <CachVietBai tacGia={nguoiGia} nguoiDuyet={nguoiDuyet} ngayGia={cauHinh.ngay_ra_soat || undefined} ngayCapNhat={ngayCapNhat} />
+    <ChinhSachGiaKho />
+    <p class="small">Thấy giá hoặc thông số chưa đúng, bạn gọi, nhắn Zalo hoặc gửi email cho chúng tôi; chúng tôi kiểm tra lại với bảng giá kho và TDS, sửa bài và ghi ngày cập nhật. Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time>, cập nhật ngày <time datetime={ngayCapNhat}>{fmtNgay(ngayCapNhat)}</time>.</p>
+    </NoiDungBai>
+  </div>
+</Layout>
+
+<style>
+  .price-page { margin-bottom: 60px; }
+  .anh-dau { margin: 1rem 0 1.25rem; max-width: 760px; }
+  .anh-dau img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; }
+  .anh-dau figcaption, .anh-giua figcaption { font-size: .85rem; color: var(--color-text-light); margin-top: .4rem; }
+  .anh-giua { margin: 18px auto; max-width: 420px; }
+  .anh-giua img { display: block; width: 100%; height: auto; border-radius: 8px; }
+  .price-hero, .price-body { background: white; border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; padding: clamp(16px, 4vw, 32px); margin-bottom: 24px; }
+  .price-hero h1 { color: var(--color-primary); font-size: clamp(1.5rem, 4vw, 2.2rem); line-height: 1.25; margin-bottom: 10px; }
+  .dong-duyet { margin: -4px 0 12px; font-size: 0.85rem; line-height: 1.5; color: var(--color-text-light); }
+  .minh-bach { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 6px; padding: 12px 16px; margin-bottom: 14px; font-size: 0.95rem; }
+  .minh-bach p { margin: 0; }
+  .summary { background: #f1f5f9; border-left: 4px solid var(--color-primary); border-radius: 4px; padding: 14px 18px; margin-bottom: 14px; }
+  .summary__label { font-weight: 700; color: var(--color-primary); margin-bottom: 6px; }
+  .summary__ngay { font-weight: 400; font-size: 0.85em; color: var(--color-text-light); }
+  .summary ul { margin: 0 0 0 20px; }
+  .summary li { margin-bottom: 4px; }
+  .muc-luc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .price-hero .muc-luc a { display: inline-block; padding: 6px 12px; border: 1px solid var(--border-color, #e2e8f0); border-radius: 999px; font-size: 0.88rem; text-decoration: none; background: #f8fafc; }
+  .price-hero .muc-luc a:hover { border-color: var(--color-primary); }
+  .price-body h2 { color: var(--color-primary); margin-bottom: 16px; }
+  .price-body h3 { color: var(--color-primary); margin: 18px 0 6px; font-size: 1.05rem; }
+  .price-body p, .price-body li { margin-bottom: 8px; }
+  .price-body ul, .price-body ol { margin-left: 20px; }
+  .price-body a, .price-hero a { color: var(--color-primary); text-decoration: underline; }
+  .notes { font-size: 0.93rem; color: var(--color-text-light); margin-top: 8px; }
+  .small { font-size: 0.93rem; color: var(--color-text-light); margin-top: 12px; }
+  .ghi-chu-nhiet { background: #f1f5f9; border-radius: 6px; padding: 12px 16px; margin-top: 12px; }
+  .ghi-chu-nhiet p { margin: 0; }
+  .vi-du { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 12px 16px; margin: 16px 0; }
+  .vi-du__label { font-weight: 700; color: var(--color-primary); margin-bottom: 6px; }
+  .vi-du ul { margin-bottom: 0; }
+  .table-wrap { overflow-x: auto; margin: 8px 0 12px; }
+  .match { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  .match th, .match td { border: 1px solid var(--border-color, #e2e8f0); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .match th { background: #f1f5f9; font-weight: 600; }
+  .match tbody th[scope="row"] { width: 28%; }
+  .match td.num { white-space: nowrap; }
+  .match tr.dat-hon td { background: #fef2f2; }
+  .price-page section[id] { scroll-margin-top: 90px; }
+  .price-body ol.steps { list-style: none; margin: 16px 0 0; padding: 0; counter-reset: b; }
+  .steps li { counter-increment: b; position: relative; padding: 0 0 14px 44px; margin: 0; }
+  .steps li::before { content: counter(b); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
+  .steps li p { margin: 2px 0 6px; }
+  .steps__who { font-size: 0.92rem; color: var(--color-text-light); }
+  @media (max-width: 640px) {
+    .match { font-size: 0.88rem; }
+    .match th, .match td { padding: 8px; }
+    .match tbody th[scope="row"] { width: auto; }
+    /* Bảng 2 cột dạng "nhãn – nội dung": xếp dọc trên điện thoại để không phải cuộn ngang. */
+    .match:not(:has(thead)) tr { display: block; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; margin-bottom: 8px; }
+    .match:not(:has(thead)) th, .match:not(:has(thead)) td { display: block; border: 0; }
+    .match:not(:has(thead)) th { border-bottom: 1px solid var(--border-color, #e2e8f0); }
+    .price-body ul, .price-body ol { margin-left: 16px; }
+  }
+</style>
