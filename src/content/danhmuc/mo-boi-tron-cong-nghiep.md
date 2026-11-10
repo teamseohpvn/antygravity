@@ -9,7 +9,7 @@ description: "Cách chọn mỡ bôi trơn (mỡ bò) theo độ đặc NLGI, nh
 keywords: ["mỡ bôi trơn", "mỡ bò", "mỡ bò bôi trơn", "mỡ bôi trơn công nghiệp", "mỡ công nghiệp", "mỡ bò công nghiệp", "mỡ bôi trơn vòng bi", "mỡ vòng bi", "mỡ bôi trơn máy", "mỡ bơm máy xúc", "shell gadus s2 v220 2", "mỡ vhp", "mỡ đa dụng ep2", "mỡ bị khô cứng", "tra mỡ vòng bi bao nhiêu"]
 tags: ["mo-boi-tron", "mo-bo", "shell-gadus", "mo-vhp", "nlgi-2", "nlgi-3"]
 image: "/images/danh-muc/mo-boi-tron-cong-nghiep.webp"
-image_alt: "Bơm mỡ bò vào gối đỡ vòng bi bằng súng bơm mỡ"
+image_alt: "Phuy mỡ bôi trơn VHP Lithium Grease L3 180 kg tại kho HT VINA"
 date: "2026-09-21"
 updated: "2026-11-08"
 tac_gia: "nguyen-thi-hong"
