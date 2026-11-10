@@ -1,13 +1,13 @@
 // Dữ liệu riêng của trang /bao-gia-mo-boi-tron. Giá đọc từ src/data/gia-cong-khai.json (scripts/build-gia-json.py), không gõ ở đây.
 
 /**
- * Giám đốc đã duyệt giá mỡ của kỳ hiện tại chưa. 09/11/2026: CHƯA (kế hoạch 05/11, điểm chặn 3).
+ * Giám đốc đã duyệt giá mỡ của kỳ hiện tại chưa. 10/11/2026: ĐÃ DUYỆT (chủ site xác nhận), kỳ tháng 11/2026.
  * Khi chưa duyệt: dưới H1 ghi "đang chờ duyệt", không ghi kỳ hiệu lực. Duyệt xong thì đổi true và điền HIEU_LUC.
  */
-export const GIA_DA_DUYET = false;
+export const GIA_DA_DUYET = true;
 
 /** Kỳ hiệu lực (YYYY-MM-DD). Chỉ điền sau khi giám đốc duyệt; quá ngày `den` trang tự báo đang rà lại. */
-export const HIEU_LUC: { tu: string; den: string } | null = null;
+export const HIEU_LUC: { tu: string; den: string } | null = { tu: '2026-11-01', den: '2026-11-30' };
 
 /**
  * Dòng giá tạm ẩn, theo tên trên bảng giá.
