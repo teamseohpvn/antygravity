@@ -7,7 +7,7 @@
 - **Giao hàng:** Hải Phòng (gồm khu vực Hải Dương cũ), Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
 
-**Xem giá và nhận báo giá:** khoảng giá theo kg của các mã có ở [bảng chi phí](#chi-phi). Để nhận giá theo số lượng, bạn gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**, hoặc gửi [yêu cầu báo giá](/bao-gia) kèm tên mỡ đang dùng hoặc vị trí cần tra mỡ, độ đặc/độ sệt NLGI, số xô/phuy và địa chỉ giao.
+**Xem giá và nhận báo giá:** khoảng giá theo kg của các mã có ở [bảng chi phí](#chi-phi); bảng đầy đủ theo độ đặc NLGI, phuy và xô ở trang [báo giá mỡ bôi trơn (mỡ bò)](/bao-gia-mo-boi-tron). Để nhận giá theo số lượng, bạn gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**, hoặc gửi [yêu cầu báo giá](/bao-gia) kèm tên mỡ đang dùng hoặc vị trí cần tra mỡ, độ đặc/độ sệt NLGI, số xô/phuy và địa chỉ giao.
 
 ## Câu hỏi thường gặp {#hoi-dap}
 
