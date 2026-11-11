@@ -1,7 +1,7 @@
 ---
 // Thông tin pháp lý doanh nghiệp đặt gần phần liên hệ (người dùng yêu cầu 06/11/2026).
 // Dùng trên trang giới thiệu, /mo-boi-tron-cong-nghiep, /bao-gia-dau-thuy-luc và trang báo giá mỡ khi có.
-import { BUSINESS, LEGAL_NAME, LEGAL_SHORT, TAX_ID, SITE_NAME, ADDRESS_TEXT, KHO_GIAO_HANG, GIO_LAM_VIEC, POLICY_LINKS } from '../lib/site';
+import { BUSINESS, LEGAL_NAME, LEGAL_SHORT, TAX_ID, DKKD, SITE_NAME, ADDRESS_TEXT, KHO_GIAO_HANG, GIO_LAM_VIEC, POLICY_LINKS } from '../lib/site';
 
 interface Props {
   tieuDe?: string;
@@ -9,6 +9,7 @@ interface Props {
   linkGioiThieu?: boolean;
 }
 const { tieuDe = 'Thông tin doanh nghiệp', linkGioiThieu = true } = Astro.props;
+const ngayVN = (iso: string) => iso.split('-').reverse().join('/');
 const CHINH_SACH = POLICY_LINKS.filter((l) => l.href !== '/tuy-chon-cookie');
 ---
 
@@ -18,7 +19,8 @@ const CHINH_SACH = POLICY_LINKS.filter((l) => l.href !== '/tuy-chon-cookie');
     <div><dt>Tên công ty</dt><dd>{LEGAL_NAME}</dd></div>
     <div><dt>Tên viết tắt, thương hiệu</dt><dd>{LEGAL_SHORT} · website {SITE_NAME}</dd></div>
     <div><dt>Mã số thuế</dt><dd>{TAX_ID}</dd></div>
-    <div><dt>Địa chỉ đăng ký</dt><dd>{ADDRESS_TEXT}</dd></div>
+    <div><dt>Đăng ký kinh doanh</dt><dd>Nơi cấp: {DKKD.noiCap}<br />Đăng ký lần đầu ngày {ngayVN(DKKD.lanDau)}, đăng ký thay đổi lần {DKKD.thayDoi.lan} ngày {ngayVN(DKKD.thayDoi.ngay)}</dd></div>
+    <div><dt>Địa chỉ đăng ký, văn phòng</dt><dd>{ADDRESS_TEXT}</dd></div>
     <div><dt>Kho hàng</dt><dd>Kho chính: {ADDRESS_TEXT} (Hải Dương cũ){KHO_GIAO_HANG.map((k) => <><br />{k.name}: {k.addressText}</>)}</dd></div>
     <div><dt>Hotline, Zalo</dt><dd><a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> · <a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a></dd></div>
     <div><dt>Email</dt><dd><a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></dd></div>
