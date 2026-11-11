@@ -4,8 +4,8 @@ title: "Dầu Thủy Lực (Dầu Nhớt Thủy Lực) 32, 46, 68"
 nav_label: "Dầu thủy lực"
 order: 1
 summary: "Máy ép nhựa, máy công trình, hệ thống thủy lực"
-seo_title: "Dầu Thủy Lực 32, 46, 68 Chính Hãng – Báo Giá Sỉ Phuy, Xô"
-description: "Dầu nhớt thủy lực ISO VG 32, 46, 68 Shell Tellus, Castrol Hyspin, có CO/CQ và VAT. Báo giá sỉ phuy 209L, xô 18–20L, giao tại Hải Phòng và miền Bắc."
+seo_title: "Dầu Thủy Lực 68, 46, 32 Chính Hãng Castrol, ENEOS, Caltex, VHP"
+description: "Dầu nhớt thủy lực ISO VG 68, 46, 32 chính hãng Castrol Hyspin, ENEOS, Caltex, VHP, EMER, X-One. Có CO/CQ, VAT. Kho tại Hải Phòng và Hưng Yên, giao miền Bắc."
 keywords: ["dầu thủy lực", "dầu nhớt thủy lực", "nhớt thủy lực", "dầu thủy lực 68", "dầu thủy lực 46", "dầu thủy lực 32", "dầu thủy lực AW 68", "nhớt thủy lực 68", "dầu thủy lực vg 68", "dầu thủy lực shell", "dầu thủy lực castrol", "shell tellus s2 mx 68", "shell tellus s2 mx 46", "castrol hyspin aws 68"]
 tags: ["dau-thuy-luc", "shell-tellus", "castrol-hyspin", "iso-vg-68", "iso-vg-46", "iso-vg-32"]
 image: "/images/danh-muc/dau-thuy-luc-kho.webp"
