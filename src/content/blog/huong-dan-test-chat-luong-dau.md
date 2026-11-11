@@ -11,11 +11,11 @@ related_products: ["may-do-do-nhot-cam-tay-lnd-1", "nhot-ke-thuy-tinh-ong-3-5", 
 author: "Nguyen Huu Nhat"
 author_title: "Director, Analytical Instruments – Viet Instruments JSC, Phòng Dịch Vụ Nhận Mẫu Phân Tích Thí Nghiệm Xăng Dầu"
 date: "2026-10-06"
-updated: "2026-10-06"
+updated: "2026-11-11"
 tags: ["phân tích dầu", "thay dầu", "bảo trì"]
 ---
 
-**Bao lâu thì thay dầu?** Không có con số chung đúng cho mọi máy. Cùng một mã dầu thủy lực, máy ép nhựa chạy ba ca trong xưởng nóng ẩm sẽ làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca trong xưởng sạch, mát. Cách trả lời chính xác là **test dầu đang dùng** và so với dầu mới. Ba chỉ tiêu đủ để quyết định cho hầu hết dầu công nghiệp: **độ nhớt**, **trị số axit (TAN)** và **hàm lượng nước**. Cả ba đều đo được ngay cạnh máy bằng dụng cụ cầm tay, mỗi phép đo chỉ mất vài phút.
+**Bao lâu thì thay dầu?** Không có con số chung đúng cho mọi máy. Cùng một mã [dầu thủy lực](/dau-thuy-luc), máy ép nhựa chạy ba ca trong xưởng nóng ẩm sẽ làm dầu xuống cấp nhanh hơn nhiều so với máy chạy một ca trong xưởng sạch, mát. Cách trả lời chính xác là **test dầu đang dùng** và so với dầu mới. Ba chỉ tiêu đủ để quyết định cho hầu hết dầu công nghiệp: **độ nhớt**, **trị số axit (TAN)** và **hàm lượng nước**. Cả ba đều đo được ngay cạnh máy bằng dụng cụ cầm tay, mỗi phép đo chỉ mất vài phút.
 
 Bài này chỉ trình bày các phép test nhanh làm được tại hiện trường. Các phép phân tích chỉ làm được trong phòng thí nghiệm (quang phổ kim loại, đếm hạt ISO 4406, độ bền oxy hóa RPVOT…) được nhắc tới ở cuối bài để biết khi nào cần gửi mẫu.
 
@@ -50,17 +50,20 @@ Mỗi chỉ tiêu có phương pháp chuẩn của phòng thí nghiệm. Thiết
 
 ASTM D6224 là tài liệu hữu ích nhất cho xưởng vì có **bảng mức cảnh báo** theo từng nhóm dầu. Bảng dưới tóm tắt các mức trong bản 2002 của tiêu chuẩn này. Khi nhà sản xuất máy có quy định riêng, ưu tiên quy định của nhà sản xuất máy.
 
-| Chỉ tiêu (so với dầu mới) | Dầu thủy lực | Dầu tuabin | Dầu máy nén khí | Dầu bánh răng, tuần hoàn | Dầu động cơ diesel |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| TAN tăng thêm (mg KOH/g) | 0,2 | 0,2 | 0,2 | 0,5 | 0,2 |
-| Nước | > 0,05% | > 0,05% | – | > 0,1% | > 0,2% |
+| Nhóm dầu | TAN tăng thêm so với dầu mới (mg KOH/g) | Nước |
+| :--- | :--- | :--- |
+| [Dầu thủy lực](/dau-thuy-luc) | 0,2 | > 0,05% |
+| Dầu tuabin | 0,2 | > 0,05% |
+| [Dầu máy nén khí](/dau-may-nen-khi) | 0,2 | – |
+| [Dầu bánh răng](/dau-banh-rang), dầu tuần hoàn | 0,5 | > 0,1% |
+| [Dầu động cơ diesel](/dau-dong-co-diesel) | 0,2 | > 0,2% |
 
 Với độ nhớt, thực hành thông dụng trong ngành bảo trì là cảnh báo khi độ nhớt dầu đang dùng **lệch quá ±10%** so với dầu mới.
 
 ## Chuẩn bị trước khi test
 
 ### Giữ mẫu dầu mới làm mốc
-Mọi kết quả đều được đọc **theo độ thay đổi so với dầu mới cùng mã, cùng lô**. Khi nhận phuy dầu mới, rót ra một chai 250–500 ml, ghi tên dầu, số lô, ngày nhận, cất nơi mát. Không có mẫu mốc thì dùng số trên bảng thông số kỹ thuật (TDS), nhưng sai số lớn hơn.
+Mọi kết quả đều được đọc **theo độ thay đổi so với dầu mới cùng mã, cùng lô**. Khi nhận phuy dầu mới, rót ra một chai 250–500 ml, ghi tên dầu, số lô, ngày nhận, cất nơi mát. Không có mẫu mốc thì dùng số trên bảng thông số kỹ thuật (TDS), nhưng sai số lớn hơn. Mỗi trang sản phẩm trên web đều có TDS của hãng, ví dụ [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68) hay [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68).
 
 ### Lấy mẫu đúng cách
 - Lấy khi máy **đang chạy hoặc vừa dừng dưới 30 phút**, lúc dầu còn được khuấy đều.
@@ -76,7 +79,7 @@ Kết quả một lần đo ít ý nghĩa. **Xu hướng** qua nhiều lần đo
 Độ nhớt là chỉ tiêu quan trọng nhất của dầu bôi trơn. Độ nhớt sai thì màng dầu sai, dù các chỉ tiêu khác còn tốt.
 
 ### Độ nhớt thay đổi nói lên điều gì
-- **Tăng:** dầu bị oxy hóa (thường đi kèm TAN tăng, dầu sẫm màu), nhiễm bẩn rắn, lẫn nước tạo nhũ, hoặc bị châm dầu cấp cao hơn.
+- **Tăng:** dầu bị oxy hóa (thường đi kèm TAN tăng, dầu sẫm màu), nhiễm bẩn rắn, lẫn nước tạo nhũ, hoặc bị châm [dầu cấp độ nhớt cao hơn](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
 - **Giảm:** lẫn dầu cấp thấp hơn, lẫn dung môi, nhiên liệu (dầu động cơ), hoặc phụ gia cải thiện chỉ số độ nhớt bị cắt mạch (dầu đa cấp, dầu HV).
 
 ### Đo nhanh tại xưởng
@@ -88,7 +91,7 @@ Kết quả một lần đo ít ý nghĩa. **Xu hướng** qua nhiều lần đo
 - Dầu vừa xả từ máy còn nóng phải để nguội về nhiệt độ đo.
 - Dầu lẫn nhiều cặn phải lọc qua lưới trước khi cho vào nhớt kế.
 
-**Ngưỡng hành động:** lệch trên **±10%** so với dầu mới thì đo lại, kiểm tra TAN và nước, tìm nguyên nhân. Ví dụ dầu VG 46 mới đo 46 mm²/s: mẫu đang dùng dưới 41,4 hoặc trên 50,6 mm²/s là vượt ngưỡng.
+**Ngưỡng hành động:** lệch trên **±10%** so với dầu mới thì đo lại, kiểm tra TAN và nước, tìm nguyên nhân. Ví dụ [dầu VG 46](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau) mới đo 46 mm²/s: mẫu đang dùng dưới 41,4 hoặc trên 50,6 mm²/s là vượt ngưỡng.
 
 ## Test 2: Trị số axit (TAN)
 
@@ -104,11 +107,11 @@ Dầu làm việc ở nhiệt độ cao, tiếp xúc với không khí sẽ bị
 - TAN tăng nhanh bất thường giữa hai lần đo: kiểm tra nhiệt độ dầu, bộ làm mát, và nước trong dầu.
 
 ### Riêng dầu động cơ diesel
-Dầu động cơ chứa phụ gia kiềm để trung hòa axit sinh ra khi đốt nhiên liệu. Chỉ tiêu theo dõi là **trị số kiềm TBN**, giảm dần theo giờ chạy. Kit TAN dải 0–2 không phù hợp cho dầu động cơ. Nhiều phòng thí nghiệm khuyến nghị thay dầu khi TBN còn khoảng một nửa so với dầu mới, hoặc theo mốc của nhà sản xuất động cơ.
+[Dầu động cơ diesel](/dau-dong-co-diesel) chứa phụ gia kiềm để trung hòa axit sinh ra khi đốt nhiên liệu. Chỉ tiêu theo dõi là **trị số kiềm TBN**, giảm dần theo giờ chạy. Kit TAN dải 0–2 không phù hợp cho dầu động cơ. Nhiều phòng thí nghiệm khuyến nghị thay dầu khi TBN còn khoảng một nửa so với dầu mới, hoặc theo mốc của nhà sản xuất động cơ.
 
 ## Test 3: Nước trong dầu
 
-Nước rửa trôi phụ gia, tạo nhũ, gây gỉ và tăng tốc oxy hóa. Đây là nguyên nhân phổ biến nhất khiến dầu thủy lực và dầu bánh răng hỏng sớm ở khí hậu nóng ẩm miền Bắc.
+Nước rửa trôi phụ gia, tạo nhũ, gây gỉ và tăng tốc oxy hóa. Đây là nguyên nhân phổ biến nhất khiến dầu thủy lực và [dầu bánh răng](/dau-banh-rang) hỏng sớm ở khí hậu nóng ẩm miền Bắc.
 
 Có ba cách đo nhanh: **kit áp suất canxi hydrua** (định lượng 0,02–1%), **máy đo điện môi cầm tay** (sàng lọc nhanh) và **kem thử nước** (tìm nước đọng đáy bồn). Cách làm, ưu nhược điểm từng cách được trình bày đầy đủ trong bài [cách test nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong).
 
@@ -130,13 +133,15 @@ Các quan sát dưới đây không thay được ba phép đo trên nhưng giú
 | Một chỉ tiêu tiến gần ngưỡng | Rút ngắn chu kỳ test (ví dụ từ hàng quý xuống hàng tháng) |
 | Nước vượt ngưỡng, độ nhớt và TAN còn tốt | Tìm và chặn nguồn nước, xả đáy bồn, lọc tách nước, đo lại |
 | TAN vượt ngưỡng, độ nhớt tăng | Dầu đã oxy hóa: lên kế hoạch [thay dầu, súc rửa](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc) nếu có cặn |
-| Độ nhớt lệch nhiều, TAN bình thường | Nghi châm nhầm dầu khác cấp: kiểm tra sổ châm dầu |
+| Độ nhớt lệch nhiều, TAN bình thường | Nghi châm nhầm dầu khác cấp: kiểm tra sổ châm dầu, xem [cách phân biệt dầu 32, 46, 68](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau) |
 | Hai chỉ tiêu cùng vượt ngưỡng | Thay dầu, đồng thời gửi mẫu phòng thí nghiệm để tìm nguyên nhân |
+
+Khi đã quyết định thay, xem [8 bước thay dầu thủy lực đúng cách](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc), [các hãng dầu thủy lực phổ biến](/top-6-dau-thuy-luc-2026) để chọn dầu mới và [báo giá dầu thủy lực](/bao-gia-dau-thuy-luc) theo phuy, xô.
 
 ## Chu kỳ test gợi ý
 
 - **Dầu mới đưa vào máy:** test ngay để lấy mốc.
-- **Máy chạy liên tục (hai, ba ca):** test hàng tháng đến hàng quý.
+- **Máy chạy liên tục (hai, ba ca):** test hàng tháng đến hàng quý. Máy xúc, máy đào làm việc ngoài trời xem thêm [chọn dầu thủy lực cho máy xúc](/ho-tro-ky-thuat/dau-thuy-luc-may-xuc).
 - **Máy chạy một ca, môi trường sạch:** test mỗi quý đến nửa năm.
 - **Sau sự cố** (quá nhiệt, rò nước làm mát, châm dầu lạ): test ngay.
 
@@ -151,13 +156,13 @@ Test nhanh tại xưởng đủ để theo dõi hằng ngày. Gửi mẫu cho ph
 ## Câu hỏi thường gặp
 
 ### Có thể chỉ thay dầu theo giờ chạy, không cần test không?
-Được, nếu chấp nhận thay sớm hơn cần thiết để an toàn. Mốc giờ chạy của nhà sản xuất máy được tính cho điều kiện trung bình. Máy làm việc nặng, nóng, ẩm có thể cần thay sớm hơn mốc; máy làm việc nhẹ có thể kéo dài. Test giúp biết máy mình thuộc trường hợp nào.
+Được, nếu chấp nhận thay sớm hơn cần thiết để an toàn. Mốc giờ chạy của nhà sản xuất máy (ví dụ mốc của các hãng [máy xúc, máy công trình](/ho-tro-ky-thuat/dau-thuy-luc-may-xuc)) được tính cho điều kiện trung bình. Máy làm việc nặng, nóng, ẩm có thể cần thay sớm hơn mốc; máy làm việc nhẹ có thể kéo dài. Test giúp biết máy mình thuộc trường hợp nào.
 
 ### Châm thêm dầu mới có làm kết quả test sai không?
 Có. Châm nhiều dầu mới làm các chỉ tiêu "đẹp" lên. Ghi lại lượng dầu châm thêm vào sổ theo dõi để đọc xu hướng cho đúng.
 
 ### Ba thiết bị test nhanh có đắt không?
-Cốc đo độ nhớt cầm tay và nhớt kế thủy tinh là thiết bị dùng nhiều năm. Kit TAN và kit nước là vật tư tính theo lần đo. Với bồn dầu vài trăm lít trở lên, chi phí test thường nhỏ hơn nhiều so với một lần thay dầu sớm không cần thiết.
+[Cốc đo độ nhớt cầm tay](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) và [nhớt kế thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5) là thiết bị dùng nhiều năm. Các loại đang bán có ở mục [thiết bị kiểm tra dầu](/thiet-bi-kiem-tra-dau). Kit TAN và kit nước là vật tư tính theo lần đo. Với bồn dầu vài trăm lít trở lên, chi phí test thường nhỏ hơn nhiều so với một lần thay dầu sớm không cần thiết.
 
 ---
 
