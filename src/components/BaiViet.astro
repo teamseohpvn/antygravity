@@ -156,4 +156,27 @@ const schemaData = [
   .markdown-body ul, .markdown-body ol { margin-left: 20px; margin-bottom: 20px; }
   .markdown-body li { margin-bottom: 10px; }
   .markdown-body strong { color: #111; }
+
+  /* Bảng trong bài (khung do src/lib/bang-markdown.mjs bọc), cùng kiểu bảng trang /bao-gia-mo-boi-tron. */
+  .markdown-body :global(.table-wrap) { overflow-x: auto; margin: 8px 0 20px; }
+  .markdown-body :global(table.match) { width: 100%; border-collapse: collapse; font-size: 0.95rem; line-height: 1.55; }
+  .markdown-body :global(.match th), .markdown-body :global(.match td) { border: 1px solid var(--border-color, #e2e8f0); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .markdown-body :global(.match th) { background: #f1f5f9; font-weight: 600; }
+  .markdown-body :global(.match a) { color: var(--color-primary); text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .blog-container { margin: 16px auto; }
+    .blog-post { padding: 20px 16px; }
+    .post-header h1 { font-size: 1.7rem; }
+    .markdown-body { font-size: 1rem; }
+    .markdown-body h2 { font-size: 1.45rem; }
+    .markdown-body h3 { font-size: 1.2rem; }
+    /* Mỗi dòng bảng thành một thẻ: ô đầu làm tiêu đề thẻ, các ô sau ghi "Tên cột: giá trị". */
+    .markdown-body :global(.match thead) { display: none; }
+    .markdown-body :global(.match), .markdown-body :global(.match tbody), .markdown-body :global(.match tr), .markdown-body :global(.match td) { display: block; width: 100%; }
+    .markdown-body :global(.match tr) { border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; margin-bottom: 10px; overflow: hidden; }
+    .markdown-body :global(.match td) { border: 0; border-top: 1px solid #eef1f4; padding: 8px 12px; }
+    .markdown-body :global(.match td:first-child) { border-top: 0; background: #f1f5f9; font-weight: 600; color: var(--color-primary); }
+    .markdown-body :global(.match td[data-label]:not(:first-child)::before) { content: attr(data-label) ': '; font-weight: 600; color: #555; }
+  }
 </style>

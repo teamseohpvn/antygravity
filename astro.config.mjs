@@ -9,6 +9,7 @@ import { contentPages } from './src/lib/active-pages.mjs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import headingIdNgan from './src/lib/heading-id-ngan.mjs';
+import bangMarkdown from './src/lib/bang-markdown.mjs';
 
 // Domain chính thức: đặt PUBLIC_SITE_URL khi build production (https://daucongnghiephp.com.vn).
 const SITE = (process.env.PUBLIC_SITE_URL || 'https://daucongnghiephp.com.vn').replace(/\/+$/, '');
@@ -110,6 +111,8 @@ export default defineConfig({
   integrations: [
     // Id ngắn cho tiêu đề: "## Tiêu đề {#id-ngan}" (docs/CAU-TRUC-NOI-DUNG.md mục 6.6).
     headingIdNgan(),
+    // Bảng Markdown: khung cuộn + kiểu bảng trang báo giá mỡ + thẻ trên điện thoại (src/lib/bang-markdown.mjs).
+    bangMarkdown(),
     sitemap({
       // Trang render phía server (giá đọc từ D1) không tự vào sitemap, phải khai báo tay.
       customPages: [`${SITE}/bao-gia-dau-thuy-luc`],
