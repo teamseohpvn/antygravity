@@ -3,7 +3,7 @@ ma: "SP-THL-002"
 active: true   # Bật: có trong kho tháng 10/2026
 title: "ENEOS Super Hyrando 68"
 seo_title: "ENEOS Super Hyrando 68: Dầu Thủy Lực 68 Chống Mài Mòn"
-description: "ENEOS Super Hyrando 68 (HM, DIN 51524-2): đối chiếu hướng dẫn sử dụng của máy, so với Castrol AWS 68, chọn 46 hay 68, bản SE và mức phải thay dầu đo được tại xưởng."
+description: "ENEOS Super Hyrando 68 (HM, DIN 51524-2): đối chiếu hướng dẫn sử dụng của máy, so với Castrol AWS 68, chọn 46 hay 68, bản SE và mức phải thay dầu."
 keywords: ["eneos super hyrando 68", "dầu thủy lực 68", "super hyrando 68", "dầu thủy lực eneos 68", "super hyrando se 68", "eneos super hyrando 46"]
 category: "dau-thuy-luc"
 categoryName: "Dầu Thủy Lực"
