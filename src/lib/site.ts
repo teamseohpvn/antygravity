@@ -11,6 +11,12 @@ export const SITE_NAME = 'Dầu Công Nghiệp HP';
 export const LEGAL_NAME = 'Công ty Cổ phần Thương mại Dịch vụ HT VINA';
 export const LEGAL_SHORT = 'HT VINA';
 export const TAX_ID = '0801139564';
+// Đăng ký kinh doanh (chủ doanh nghiệp cung cấp 11/11/2026). Ngày theo ISO để dùng cho schema foundingDate.
+export const DKKD = {
+  noiCap: 'Phòng Đăng ký kinh doanh, Sở Tài chính TP Hải Phòng',
+  lanDau: '2015-05-22',
+  thayDoi: { lan: 2, ngay: '2025-08-13' },
+};
 
 export const BUSINESS = {
   name: SITE_NAME,
@@ -159,6 +165,7 @@ export function organizationSchema() {
       alternateName: LEGAL_SHORT,
       legalName: LEGAL_NAME,
       taxID: TAX_ID,
+      foundingDate: DKKD.lanDau,
       url: SITE_URL + '/',
       logo: absUrl(BUSINESS.logo),
       image: absUrl(BUSINESS.image),

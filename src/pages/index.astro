@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import PromoBanner from '../components/PromoBanner.astro';
+import MuaHangMinhBach from '../components/MuaHangMinhBach.astro';
 import { getActiveProducts, getActiveCategories, getActivePosts, postPath } from '../lib/content';
 import { AREA_TEXT, BRANDS, KCN_NEAR, KCN_FAR, publicImageExists, webpSrcset, productImages } from '../lib/site';
 
@@ -81,6 +82,8 @@ const grade = (p: (typeof products)[number]) =>
     </ul>
     <QuoteCta />
   </section>
+
+  <MuaHangMinhBach />
 
   {products.length > 0 && (
     <section class="products container" aria-labelledby="prod-title">
