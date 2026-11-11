@@ -150,6 +150,11 @@ const schemaData = [
   
   /* Markdown Content Styles */
   .markdown-body { font-size: 1.1rem; line-height: 1.8; color: var(--color-text); }
+  /* Khối "Tóm tắt" viết bằng blockquote trong Markdown. */
+  .markdown-body :global(blockquote) { margin: 20px 0 28px; padding: 14px 18px; background: #f8fafc; border: 1px solid var(--border-color, #e2e8f0); border-left: 4px solid var(--color-primary); border-radius: 6px; }
+  .markdown-body :global(blockquote p) { margin: 0 0 6px; }
+  .markdown-body :global(blockquote ul) { margin: 0 0 0 20px; }
+  .markdown-body :global(blockquote li) { margin-bottom: 6px; }
   .markdown-body h2 { color: var(--color-primary); margin: 30px 0 15px; font-size: 1.8rem; }
   .markdown-body h3 { color: var(--color-primary); margin: 25px 0 10px; font-size: 1.4rem; }
   .markdown-body p { margin-bottom: 20px; }
