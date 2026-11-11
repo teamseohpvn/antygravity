@@ -10,7 +10,7 @@ description: "Dầu cầu, dầu hộp số (nhớt cầu) API GL-4, GL-5 cấp 
 keywords: ["dầu cầu", "dầu hộp số", "nhớt hộp số", "nhớt cầu", "dầu cầu 85w140", "dầu 80w90", "dầu cầu 90", "dầu cầu 140", "dầu hộp số xe nâng", "dầu atf", "dầu cầu xe tải", "dầu gl5", "dầu gl4"]
 tags: ["dau-cau", "dau-hop-so", "gl-4", "gl-5", "atf"]
 image: "/images/danh-muc/dau-cau-hop-so.webp"
-image_alt: "Thợ bảo dưỡng châm dầu hộp số vào xe nâng trong kho"
+image_alt: "Thợ bảo dưỡng thêm dầu hộp số vào xe nâng trong kho"
 date: "2026-10-06"
 updated: "2026-10-06"
 ---

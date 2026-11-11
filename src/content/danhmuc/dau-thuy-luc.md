@@ -26,7 +26,7 @@ updated: "2026-10-06"
 | **ISO VG 46** | 41,4 – 50,6 | Dầu thủy lực 46, AW 46 | Máy xúc, máy đào, xe nâng, máy dập, hệ thống thủy lực nhà xưởng tải trung bình |
 | **ISO VG 68** | 61,2 – 74,8 | Dầu thủy lực 68, AW 68, nhớt thủy lực 68 | Máy ép nhựa, máy ép thủy lực tải nặng, máy chấn tôn, tời và cẩu cảng |
 
-**Cách chọn nhanh:** luôn ưu tiên cấp độ nhớt ghi trong sổ tay máy hoặc trên nhãn bơm. Nếu nhiệt độ dầu trong bồn thường xuyên trên 55–60 °C, cấp 68 giữ màng dầu tốt hơn. Nếu máy khởi động nguội hoặc đường ống dài, cấp 32 hoặc 46 bơm dễ hơn. Không nên tự đổi cấp độ nhớt khi chưa hỏi nhà sản xuất máy.
+**Cách chọn nhanh:** luôn ưu tiên cấp độ nhớt ghi trong sổ tay máy hoặc trên nhãn bơm. Nếu nhiệt độ dầu trong thùng thường xuyên trên 55–60 °C, cấp 68 giữ màng dầu tốt hơn. Nếu máy khởi động nguội hoặc đường ống dài, cấp 32 hoặc 46 bơm dễ hơn. Không nên tự đổi cấp độ nhớt khi chưa hỏi nhà sản xuất máy.
 
 Chữ **"AW"** (anti-wear) nghĩa là dầu có phụ gia chống mài mòn. Theo tiêu chuẩn, dầu AW tương ứng loại **HM** trong ISO 11158 và **HLP** trong DIN 51524-2. Dầu chỉ số độ nhớt cao dùng cho máy làm việc ngoài trời là loại **HV / HVLP**.
 
@@ -37,7 +37,7 @@ Chữ **"AW"** (anti-wear) nghĩa là dầu có phụ gia chống mài mòn. The
 | Chống mài mòn (HM / HLP) | Tellus S2 MX 32 / 46 / 68 | Hyspin AWS 32 / 46 / 68 | DTE 24 / 25 / 26 | Azolla ZS 32 / 46 / 68 |
 | Chỉ số độ nhớt cao (HV / HVLP) | Tellus S2 VX 32 / 46 / 68 | Hyspin AWH-M 32 / 46 / 68 | Univis N 32 / 46 / 68 | Equivis ZS 32 / 46 / 68 |
 
-Các sản phẩm cùng hàng trong bảng có cùng cấp độ nhớt và cùng loại tiêu chuẩn, nên thường thay thế được cho nhau. Trước khi chuyển hãng, nên đối chiếu phê duyệt của nhà sản xuất bơm (ví dụ Bosch Rexroth, Parker, Eaton) ghi trên bảng thông số kỹ thuật (TDS). Khi đổi sang dầu khác hãng, nên xả sạch dầu cũ thay vì châm lẫn.
+Các sản phẩm cùng hàng trong bảng có cùng cấp độ nhớt và cùng loại tiêu chuẩn, nên thường thay thế được cho nhau. Trước khi chuyển hãng, nên đối chiếu phê duyệt của nhà sản xuất bơm (ví dụ Bosch Rexroth, Parker, Eaton) ghi trên bảng thông số kỹ thuật (TDS). Khi đổi sang dầu khác hãng, nên xả sạch dầu cũ thay vì thêm lẫn.
 
 Thị phần từng hãng tại Việt Nam (có nguồn) và cách chọn giữa các dòng trên có trong bài [top 6 hãng dầu thủy lực phổ biến nhất Việt Nam](/top-6-dau-thuy-luc-2026).
 
@@ -60,14 +60,14 @@ Thị phần từng hãng tại Việt Nam (có nguồn) và cách chọn giữa
 
 - **Độ nhớt ở 40 °C và chỉ số độ nhớt (VI):** VI càng cao thì độ nhớt càng ít thay đổi khi nhiệt độ lên xuống.
 - **Chống mài mòn:** thể hiện qua phép thử bơm cánh gạt và phép thử FZG (A/8.3/90). Dầu HLP theo DIN 51524-2 phải đạt tối thiểu cấp tải hỏng 10.
-- **Tách nước (ASTM D1401):** thời gian nước và dầu tách lớp. Nước tách nhanh thì dễ xả đáy bồn.
+- **Tách nước (ASTM D1401):** thời gian nước và dầu tách lớp. Nước tách nhanh thì dễ xả đáy thùng.
 - **Thoát khí (ASTM D3427):** khí thoát chậm dễ gây xâm thực (cavitation), làm rỗ mặt bơm.
 - **Độ bền oxy hóa (TOST, ASTM D943):** số giờ đến khi chỉ số axit tăng tới ngưỡng. Càng dài thì dầu càng bền.
 - **Độ sạch:** mã độ sạch ISO 4406. Bơm piston và van servo cần dầu sạch hơn bơm bánh răng.
 
 ## Ứng dụng theo ngành
 
-- **Ép nhựa:** dầu thủy lực 68 cho máy ép Haitian, Sumitomo, JSW, Nissei chạy 3 ca. Dầu thủy lực cho máy ép nhựa cần độ bền oxy hóa tốt vì bồn dầu thường nóng.
+- **Ép nhựa:** dầu thủy lực 68 cho máy ép Haitian, Sumitomo, JSW, Nissei chạy 3 ca. Dầu thủy lực cho máy ép nhựa cần độ bền oxy hóa tốt vì thùng dầu thường nóng.
 - **Máy công trình:** [máy xúc, máy đào](/ho-tro-ky-thuat/dau-thuy-luc-may-xuc), xe nâng thường dùng dầu thủy lực 46, loại HV nếu làm việc ngoài trời. Luôn kiểm tra sổ tay máy vì một số hãng yêu cầu dầu riêng.
 - **Gia công kim loại:** máy chấn tôn, máy dập thủy lực, máy cắt tôn.
 - **Cảng và hàng hải:** cẩu bờ, tời neo, sà lan tại Hải Phòng và Quảng Ninh. Cần dầu tách nước tốt.
@@ -86,19 +86,19 @@ Máy CNC có hệ thống bôi trơn băng trượt riêng: không dùng dầu t
 
 ### Dầu thủy lực 46 và 68 khác nhau thế nào?
 
-Dầu 68 đặc hơn dầu 46 khoảng 1,5 lần ở cùng nhiệt độ (68 so với 46 cSt ở 40 °C). Dầu 68 giữ màng dầu dày hơn khi bồn dầu nóng và tải nặng. Dầu 46 bơm nhẹ hơn khi khởi động và hợp với máy làm việc ở nhiệt độ vừa phải. Không nên tự đổi 46 sang 68 hay ngược lại nếu nhà sản xuất máy không cho phép.
+Dầu 68 đặc hơn dầu 46 khoảng 1,5 lần ở cùng nhiệt độ (68 so với 46 cSt ở 40 °C). Dầu 68 giữ màng dầu dày hơn khi thùng dầu nóng và tải nặng. Dầu 46 bơm nhẹ hơn khi khởi động và hợp với máy làm việc ở nhiệt độ vừa phải. Không nên tự đổi 46 sang 68 hay ngược lại nếu nhà sản xuất máy không cho phép.
 
 ### Bao lâu thì thay dầu thủy lực?
 
-Không có một con số chung. Chu kỳ phụ thuộc nhiệt độ bồn dầu, độ sạch và loại dầu. Nhiều nhà máy thay sau khoảng 4.000–8.000 giờ chạy hoặc 1–2 năm. Cách chính xác nhất là **phân tích mẫu dầu định kỳ** (độ nhớt, chỉ số axit TAN, hàm lượng nước, độ sạch) và thay khi các chỉ số vượt ngưỡng cảnh báo.
+Không có một con số chung. Chu kỳ phụ thuộc nhiệt độ dầu trong thùng, độ sạch và loại dầu. Nhiều nhà máy thay sau khoảng 4.000–8.000 giờ chạy hoặc 1–2 năm. Cách chính xác nhất là **phân tích mẫu dầu định kỳ** (độ nhớt, chỉ số axit TAN, hàm lượng nước, độ sạch) và thay khi các chỉ số vượt ngưỡng cảnh báo.
 
 ### Làm sao biết dầu thủy lực đã bị nhiễm bẩn?
 
-Dầu chuyển đục trắng là đã lẫn nước. Dầu chuyển nâu sẫm và có mùi khét là đã bị oxy hóa. Bọt nổi lâu tan trên mặt bồn là thoát khí kém hoặc máy bị hút khí. Khi thấy các dấu hiệu này, nên lấy mẫu dầu đi [phân tích](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau), xử lý nguyên nhân rồi [súc rửa hệ thống](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc) trước khi châm dầu mới.
+Dầu chuyển đục trắng là đã lẫn nước. Dầu chuyển nâu sẫm và có mùi khét là đã bị oxy hóa. Bọt nổi lâu tan trên mặt thùng là thoát khí kém hoặc máy bị hút khí. Khi thấy các dấu hiệu này, nên lấy mẫu dầu đi [phân tích](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau), xử lý nguyên nhân rồi [súc rửa hệ thống](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc) trước khi thêm dầu mới.
 
 ### Có trộn dầu thủy lực hai hãng khác nhau được không?
 
-Châm bổ sung một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng cấp VG) thường không gây sự cố. Tuy vậy, phụ gia của các hãng khác nhau, nên khi chuyển hãng hẳn thì nên xả sạch dầu cũ. Tuyệt đối không trộn dầu gốc khoáng với dầu chống cháy gốc nước glycol (HFC) hoặc dầu gốc ester.
+Thêm một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng cấp VG) thường không gây sự cố. Tuy vậy, phụ gia của các hãng khác nhau, nên khi chuyển hãng hẳn thì nên xả sạch dầu cũ. Tuyệt đối không trộn dầu gốc khoáng với dầu chống cháy gốc nước glycol (HFC) hoặc dầu gốc ester.
 
 ---
 

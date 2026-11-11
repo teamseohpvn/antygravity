@@ -45,7 +45,7 @@ Xưởng may mặc, giày da, túi xách, đồ bảo hộ lao động trong cá
 ## Câu hỏi thường gặp
 
 ### Bao lâu thay dầu máy may?
-Kiểm tra mức dầu hằng ngày trên mắt thăm dầu và châm thêm khi thiếu. Thay toàn bộ dầu theo khuyến cáo của hãng máy (Juki, Brother, Pegasus…), sớm hơn nếu dầu chuyển màu sẫm.
+Kiểm tra mức dầu hằng ngày trên mắt thăm dầu và thêm dầu khi thiếu. Thay toàn bộ dầu theo khuyến cáo của hãng máy (Juki, Brother, Pegasus…), sớm hơn nếu dầu chuyển màu sẫm.
 
 ### Có dùng dầu máy may cho máy tiện, máy phay được không?
 Không nên. Dầu máy may quá loãng cho trục chính và rãnh trượt máy công cụ. Máy công cụ dùng [dầu rãnh trượt](/dau-ranh-truot) hoặc [dầu thủy lực](/dau-thuy-luc) theo sổ tay.

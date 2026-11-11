@@ -152,7 +152,7 @@ TDS phát hành 10/2012 ghi mỡ mịn, đồng nhất, màu nâu. Trong khi đ�
 TDS không ghi chứng nhận cấp thực phẩm. Điểm bôi trơn có thể tiếp xúc với thực phẩm thì không nên dùng mã này khi chưa có giấy xác nhận phù hợp từ hãng.
 
 ### Crystal Grease NLGI 3 có trộn với mỡ khác được không?
-Chỉ nên châm thêm mỡ cùng gốc lithium. Với mỡ khác gốc, hãy làm sạch ổ trước khi đổi, vì mỡ có thể chảy lỏng hoặc vón cục.
+Chỉ nên thêm mỡ cùng gốc lithium. Với mỡ khác gốc, hãy làm sạch ổ trước khi đổi, vì mỡ có thể chảy lỏng hoặc vón cục.
 
 ## Quy cách đóng gói, đơn hàng {#don-hang}
 

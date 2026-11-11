@@ -14,7 +14,7 @@ date: "2026-09-28"
 updated: "2026-10-06"
 ---
 
-**Dầu truyền nhiệt** (còn gọi là **dầu tải nhiệt**) là chất lỏng mang nhiệt từ lò đốt tới thiết bị sử dụng nhiệt trong một vòng tuần hoàn kín: máy ép gỗ, máy sấy, trục cán nóng, bồn nấu nhựa đường, máy nhuộm, lô sấy. Hệ thống dầu tải nhiệt làm việc ở **áp suất thấp** mà vẫn đạt nhiệt độ cao, thường **200–300 °C**, cao hơn nhiều so với lò hơi nước ở cùng áp suất. Chọn dầu theo **nhiệt độ dầu tối đa (bulk temperature)** của hệ thống. **Dầu gốc khoáng** dùng cho phần lớn hệ thống tới khoảng 300 °C. **Dầu tổng hợp** dùng cho mức nhiệt cao hơn.
+**Dầu truyền nhiệt** (còn gọi là **dầu tải nhiệt**) là chất lỏng mang nhiệt từ lò đốt tới thiết bị sử dụng nhiệt trong một vòng tuần hoàn kín: máy ép gỗ, máy sấy, trục cán nóng, thùng nấu nhựa đường, máy nhuộm, lô sấy. Hệ thống dầu tải nhiệt làm việc ở **áp suất thấp** mà vẫn đạt nhiệt độ cao, thường **200–300 °C**, cao hơn nhiều so với lò hơi nước ở cùng áp suất. Chọn dầu theo **nhiệt độ dầu tối đa (bulk temperature)** của hệ thống. **Dầu gốc khoáng** dùng cho phần lớn hệ thống tới khoảng 300 °C. **Dầu tổng hợp** dùng cho mức nhiệt cao hơn.
 
 ## Chọn dầu truyền nhiệt theo nhiệt độ
 
@@ -57,7 +57,7 @@ updated: "2026-10-06"
 - **Dệt nhuộm:** máy căng định hình, máy sấy, máy nhuộm cao áp.
 - **Nhựa, cao su:** trục cán, khuôn gia nhiệt, máy đùn.
 - **Thực phẩm:** chiên công nghiệp, sấy. Vị trí có nguy cơ tiếp xúc thực phẩm cần dầu cấp thực phẩm.
-- **Nhựa đường, hóa chất:** gia nhiệt bồn chứa, thiết bị phản ứng.
+- **Nhựa đường, hóa chất:** gia nhiệt thùng chứa, thiết bị phản ứng.
 
 ## Quy cách và báo giá
 

@@ -95,9 +95,9 @@ Bảng dưới là cách chọn thường gặp. **Tài liệu hướng dẫn s�
 
 **Lời khuyên của chúng tôi:** miền Bắc Việt Nam có mùa hè nóng ẩm, gần với điều kiện mà tài liệu máy đó dành cho cấp 68. Tuy vậy, nếu thùng dầu thường xuyên trên 60 °C, hãy kiểm tra két làm mát trước, đừng chỉ đổi sang dầu đặc hơn để "chữa".
 
-**Châm bù khác cấp.** Trên diễn đàn [Practical Machinist](https://practicalmachinist.com/forum/threads/mixing-hydraulic-oils.445702/) (01/2026), chủ một máy tiện CNC Okuma quy định dầu AW 32 hỏi có được châm dầu AW 46 không. Một thợ có 30 năm làm với 80–100 máy tiện CNC cho biết chưa gặp sự cố khi trộn hai cấp gần nhau; một thành viên khác lưu ý hệ phụ gia đáng lo hơn chênh lệch nhỏ về cấp độ nhớt.
+**Thêm dầu khác cấp.** Trên diễn đàn [Practical Machinist](https://practicalmachinist.com/forum/threads/mixing-hydraulic-oils.445702/) (01/2026), chủ một máy tiện CNC Okuma quy định dầu AW 32 hỏi có được thêm dầu AW 46 không. Một thợ có 30 năm làm với 80–100 máy tiện CNC cho biết chưa gặp sự cố khi trộn hai cấp gần nhau; một thành viên khác lưu ý hệ phụ gia đáng lo hơn chênh lệch nhỏ về cấp độ nhớt.
 
-**Lời khuyên của chúng tôi:** châm bù một lượng nhỏ dầu cùng loại, cấp kế bên trong trường hợp gấp thì chấp nhận được, nhưng lần thay dầu tới nên đưa về đúng một cấp. Sau vài lần châm khác cấp, dầu trong thùng không còn đúng cấp nào; muốn biết chắc, đo độ nhớt bằng [máy đo cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
+**Lời khuyên của chúng tôi:** thêm một lượng nhỏ dầu cùng loại, cấp kế bên trong trường hợp gấp thì chấp nhận được, nhưng lần thay dầu tới nên đưa về đúng một cấp. Sau vài lần thêm dầu khác cấp, dầu trong thùng không còn đúng cấp nào; muốn biết chắc, đo độ nhớt bằng [máy đo cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1).
 
 ## Sai lầm hay gặp khi đổi cấp {#sai-lam}
 
@@ -115,7 +115,7 @@ Khác ở độ nhớt: ở 40 °C, dầu 46 nằm trong khoảng 41,4–50,6 mm
 Theo hướng dẫn sử dụng của máy. Nếu máy cho phép cả hai và thùng dầu thường trên 50 °C, dầu 68 giữ độ nhớt gần khoảng tối ưu của bơm hơn. Máy ép nhỏ, xưởng mát, thùng dầu dưới 45 °C thì 46 là đủ.
 
 ### Có đổ lẫn dầu 46 với dầu 68 được không?
-Châm một lượng nhỏ cùng hãng, cùng loại (cùng HM) thì không gây hư hỏng ngay, nhưng độ nhớt hỗn hợp nằm giữa hai cấp. Không nên trộn khác hãng vì hệ phụ gia có thể không hợp nhau.
+Thêm một lượng nhỏ cùng hãng, cùng loại (cùng HM) thì không gây hư hỏng ngay, nhưng độ nhớt hỗn hợp nằm giữa hai cấp. Không nên trộn khác hãng vì hệ phụ gia có thể không hợp nhau.
 
 ### Đổi từ 46 sang 68 có cần súc rửa không?
 Nên xả hết dầu cũ và thay lõi lọc. Nếu dầu cũ đã bẩn hoặc đổi cả hãng, súc rửa một lượt bằng dầu mới rồi mới nạp đầy.

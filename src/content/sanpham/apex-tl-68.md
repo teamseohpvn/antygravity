@@ -79,9 +79,9 @@ Với thùng 200 L, chênh lệch giữa hai mã khoảng 0,7–1,7 triệu đ�
 
 ## Máy rò rỉ dầu: tính đúng chi phí trước khi chọn dầu rẻ {#chi-phi}
 
-APEX TL 68 hợp nhất với máy rò rỉ phải thêm dầu thường xuyên. Với nhóm máy này, tiền dầu châm thêm mỗi tháng có khi lớn hơn tiền thay cả thùng. Bảng dưới tính theo khoảng giá đã nêu ở mục so sánh (chưa VAT):
+APEX TL 68 hợp nhất với máy rò rỉ phải thêm dầu thường xuyên. Với nhóm máy này, tiền dầu thêm vào mỗi tháng có khi lớn hơn tiền thay cả thùng. Bảng dưới tính theo khoảng giá đã nêu ở mục so sánh (chưa VAT):
 
-| Lượng dầu châm thêm mỗi tháng | APEX TL 68 (27.000–37.500 đ/L) | EMI AW 68 (35.500–40.900 đ/L) | Chênh lệch mỗi năm |
+| Lượng dầu thêm vào mỗi tháng | APEX TL 68 (27.000–37.500 đ/L) | EMI AW 68 (35.500–40.900 đ/L) | Chênh lệch mỗi năm |
 | :--- | :--- | :--- | :--- |
 | 20 L | 540.000–750.000 đ | 710.000–818.000 đ | khoảng 0,8–2 triệu đ |
 | 50 L | 1,35–1,88 triệu đ | 1,78–2,05 triệu đ | khoảng 2–5,1 triệu đ |
