@@ -122,7 +122,7 @@ Theo [PDS Mobil DTE 20 Series](https://www.mobil.com/en-us/industrial/pds/gl-xx-
 
 **Việt Nam.** Mordor Intelligence ước tính thị trường dầu nhờn Việt Nam năm 2025 đạt **380,2 triệu lít** và tăng bình quân 4,83%/năm giai đoạn 2026–2031. Các báo cáo khác cho con số thấp hơn, khoảng 320 triệu lít, vì cách tính khác nhau. Khoảng 30% lượng dầu dành cho máy móc công nghiệp, tàu thủy và thiết bị nặng, trong đó có dầu thủy lực. Mordor dự báo nhóm khách hàng công nghiệp tăng 5,08%/năm, nhanh hơn nhóm ô tô. Năm 2023, Việt Nam nhập hơn **243.000 tấn** dầu gốc, mức cao nhất trong hơn bốn năm (Base Oil News, theo số liệu hải quan).
 
-**Cấp độ nhớt.** Theo kinh nghiệm bán hàng của HT VINA, **ISO VG 68** là cấp được mua nhiều nhất ở Việt Nam, sau đó là VG 46. Lý do: khí hậu nóng ẩm, máy chạy liên tục nhiều ca làm dầu trong bồn luôn nóng. VG 46 đang được dùng nhiều hơn ở máy ép đời mới vì bơm chạy nhẹ và đỡ tốn điện. VG 32 chủ yếu dùng cho máy CNC và cụm van servo. Cách chọn giữa 32, 46 và 68 theo nhiệt độ dầu thực tế có trong bài [chọn độ nhớt dầu thủy lực](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
+**Cấp độ nhớt.** Theo kinh nghiệm bán hàng của HT VINA, **ISO VG 68** là cấp được mua nhiều nhất ở Việt Nam, sau đó là VG 46. Lý do: khí hậu nóng ẩm, máy chạy liên tục nhiều ca làm dầu trong thùng luôn nóng. VG 46 đang được dùng nhiều hơn ở máy ép đời mới vì bơm chạy nhẹ và đỡ tốn điện. VG 32 chủ yếu dùng cho máy CNC và cụm van servo. Cách chọn giữa 32, 46 và 68 theo nhiệt độ dầu thực tế có trong bài [chọn độ nhớt dầu thủy lực](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
 
 ## Nên chọn dòng nào theo ngành và loại máy?
 
@@ -156,7 +156,7 @@ Ngoài ra kho có sẵn [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyran
 
 ### Dầu thủy lực nào tốt nhất?
 
-Không có dòng nào tốt nhất cho mọi máy. Dầu tốt nhất cho máy của bạn là dầu đạt đúng tiêu chuẩn (HM/HLP hoặc HV/HVLP), đúng cấp độ nhớt và có phê duyệt mà sổ tay máy yêu cầu. Giữa các dòng HM của hãng lớn, chênh lệch thực tế thường nhỏ hơn chênh lệch do bảo dưỡng: thay lọc đúng hạn, giữ bồn kín, không để nước lọt vào.
+Không có dòng nào tốt nhất cho mọi máy. Dầu tốt nhất cho máy của bạn là dầu đạt đúng tiêu chuẩn (HM/HLP hoặc HV/HVLP), đúng cấp độ nhớt và có phê duyệt mà sổ tay máy yêu cầu. Giữa các dòng HM của hãng lớn, chênh lệch thực tế thường nhỏ hơn chênh lệch do bảo dưỡng: thay lọc đúng hạn, giữ thùng kín, không để nước lọt vào.
 
 ### Castrol Hyspin AWS 68 và Shell Tellus S2 MX 68 có dùng thay nhau được không?
 
@@ -164,11 +164,11 @@ Không có dòng nào tốt nhất cho mọi máy. Dầu tốt nhất cho máy c
 
 ### Có pha trộn hai hãng dầu thủy lực được không?
 
-Không nên. Hai dầu cùng tiêu chuẩn vẫn có thể dùng gói phụ gia khác nhau. Trộn lẫn có thể gây bọt, cặn hoặc làm giảm khả năng tách nước. Nếu buộc phải châm bù bằng hãng khác, hãy trộn thử một ít trong lọ thủy tinh, để một ngày xem có vẩn đục, lắng cặn không, và lên kế hoạch thay toàn bộ sớm.
+Không nên. Hai dầu cùng tiêu chuẩn vẫn có thể dùng gói phụ gia khác nhau. Trộn lẫn có thể gây bọt, cặn hoặc làm giảm khả năng tách nước. Nếu buộc phải thêm dầu của hãng khác, hãy trộn thử một ít trong lọ thủy tinh, để một ngày xem có vẩn đục, lắng cặn không, và lên kế hoạch thay toàn bộ sớm.
 
 ### Máy ép nhựa nên dùng dầu thủy lực 46 hay 68?
 
-Theo đúng sổ tay máy. Nếu sổ tay cho phép cả hai: xưởng nóng, máy chạy liên tục nhiều ca, dầu trong bồn luôn nóng thì dùng 68; xưởng có làm mát dầu tốt, máy đời mới thì 46 giúp bơm chạy nhẹ và đỡ tốn điện hơn. Cách đo nhiệt độ dầu để chọn có trong bài [chọn độ nhớt dầu thủy lực](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
+Theo đúng sổ tay máy. Nếu sổ tay cho phép cả hai: xưởng nóng, máy chạy liên tục nhiều ca, dầu trong thùng luôn nóng thì dùng 68; xưởng có làm mát dầu tốt, máy đời mới thì 46 giúp bơm chạy nhẹ và đỡ tốn điện hơn. Cách đo nhiệt độ dầu để chọn có trong bài [chọn độ nhớt dầu thủy lực](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
 
 ### Bao lâu thì phải thay dầu thủy lực?
 

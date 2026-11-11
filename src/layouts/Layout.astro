@@ -228,7 +228,9 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
         nav.xem-them ul.xt-luoi { grid-template-columns: minmax(0, 1fr); gap: 10px; }
         a.xt-the { flex-direction: row; align-items: stretch; }
         a.xt-the:hover { transform: none; }
-        a.xt-the .xt-anh { flex: 0 0 112px; aspect-ratio: auto; min-height: 76px; }
+        /* Ảnh nằm tuyệt đối trong ô: ảnh dọc không kéo thẻ cao hơn thẻ khác. */
+        a.xt-the .xt-anh { flex: 0 0 112px; aspect-ratio: auto; min-height: 84px; position: relative; }
+        a.xt-the .xt-anh img { position: absolute; inset: 0; }
         a.xt-the .xt-chu { justify-content: center; padding: 10px 12px; min-width: 0; }
         a.xt-the .xt-ten { font-size: .95rem; -webkit-line-clamp: 2; }
       }

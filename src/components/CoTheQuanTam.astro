@@ -1,0 +1,78 @@
+---
+// Khối "Có thể bạn cũng quan tâm" cuối mỗi bài blog (người dùng yêu cầu 11/11/2026):
+// 1. Thẻ ảnh: danh mục bài hỗ trợ, trang báo giá của danh mục (nếu có), sản phẩm liên quan.
+// 2. Danh sách link các bài cùng chủ đề (cùng `category`), mới nhất trước.
+// Bài đã tự viết mục "Xem thêm" (thẻ ảnh trong thân bài) thì bỏ phần thẻ, chỉ giữ danh sách bài.
+import type { CollectionEntry } from 'astro:content';
+import { getActiveCategories, getActivePosts, getActiveProducts, postPath } from '../lib/content';
+import { htmlLuoiThe, theXemThem } from '../lib/xem-them';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  /** Bài đã có mục "Xem thêm" dạng thẻ trong thân bài. */
+  boThe?: boolean;
+}
+const { post, boThe = false } = Astro.props;
+
+// Trang báo giá riêng của từng danh mục (trang viết tay, không nằm trong content collection).
+const BAO_GIA: Record<string, string> = {
+  'dau-thuy-luc': '/bao-gia-dau-thuy-luc',
+  'mo-boi-tron-cong-nghiep': '/bao-gia-mo-boi-tron',
+};
+const SO_SAN_PHAM = 3;
+
+const cat = post.data.category;
+const pagePath = postPath(post);
+const danhMuc = cat ? (await getActiveCategories()).find((c) => c.id === cat) : undefined;
+const tenChuDe = (danhMuc?.data.nav_label ?? danhMuc?.data.title ?? '').toLowerCase();
+
+// Sản phẩm: ưu tiên related_products của bài; bài chưa khai báo thì lấy vài mã cùng danh mục.
+const sanPham = (await getActiveProducts()).filter((p) => p.data.category === cat);
+const chon = post.data.related_products?.length
+  ? sanPham.filter((p) => post.data.related_products!.includes(p.id))
+  : [...sanPham].sort((a, b) => a.data.title.localeCompare(b.data.title, 'vi')).slice(0, SO_SAN_PHAM);
+
+const duongDan = [
+  ...(cat ? [`/${cat}`] : []),
+  ...(cat && BAO_GIA[cat] ? [BAO_GIA[cat]] : []),
+  ...chon.map((p) => `/${p.data.category}/${p.id}`),
+];
+const the = boThe ? [] : (await theXemThem(duongDan, [pagePath])).slice(0, 6);
+
+const cungChuDe = cat
+  ? (await getActivePosts())
+      .filter((p) => p.data.category === cat && postPath(p) !== pagePath)
+      .sort((a, b) => String(b.data.updated ?? b.data.date).localeCompare(String(a.data.updated ?? a.data.date)))
+  : [];
+const coNoiDung = the.length > 0 || cungChuDe.length > 0;
+---
+
+{coNoiDung && (
+  <section class="quan-tam" aria-labelledby="quan-tam">
+    <h2 id="quan-tam" class="quan-tam__tieu-de">Có thể bạn cũng quan tâm</h2>
+    {the.length > 0 && <Fragment set:html={htmlLuoiThe(the, `Danh mục và sản phẩm ${tenChuDe}`.trim(), undefined, 3)} />}
+    {cungChuDe.length > 0 && (
+      <nav class="quan-tam__bai" aria-label={`Bài viết cùng chủ đề ${tenChuDe}`}>
+        <h3>Bài viết cùng chủ đề {tenChuDe}</h3>
+        <ul>
+          {cungChuDe.map((p) => <li><a href={postPath(p)}>{p.data.title}</a></li>)}
+        </ul>
+      </nav>
+    )}
+  </section>
+)}
+
+<style>
+  .quan-tam { margin: 40px 0 8px; padding-top: 24px; border-top: 2px solid var(--border-color, #e2e8f0); clear: both; }
+  .quan-tam h2.quan-tam__tieu-de { font-size: 1.6rem; color: var(--color-primary); margin: 0 0 16px; line-height: 1.3; }
+  .quan-tam :global(nav.xem-them) { margin-top: 0; }
+  .quan-tam :global(nav.xem-them h3.xt-tieu-de) { font-size: 1.15rem; color: var(--color-primary); margin: 0 0 12px; }
+  .quan-tam__bai { margin-top: 24px; }
+  .quan-tam__bai h3 { font-size: 1.15rem; color: var(--color-primary); margin: 0 0 10px; }
+  .quan-tam__bai ul { margin: 0; padding-left: 20px; }
+  .quan-tam__bai li { margin-bottom: 8px; line-height: 1.5; }
+  .quan-tam__bai a { color: var(--color-primary); text-decoration: underline; }
+  @media (max-width: 640px) {
+    .quan-tam h2.quan-tam__tieu-de { font-size: 1.35rem; }
+  }
+</style>

@@ -93,7 +93,7 @@ export async function theXemThem(
 const esc = (t: string) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
 
 /** HTML của lưới thẻ. Dùng chung cho component XemThem.astro và phần đổi khối trong thân bài. */
-export function htmlLuoiThe(cards: TheXemThem[], tieuDe = 'Xem thêm', id?: string): string {
+export function htmlLuoiThe(cards: TheXemThem[], tieuDe = 'Xem thêm', id?: string, cap: 2 | 3 = 2): string {
   if (!cards.length) return '';
   const the = cards
     .map((c) => {
@@ -104,7 +104,7 @@ export function htmlLuoiThe(cards: TheXemThem[], tieuDe = 'Xem thêm', id?: stri
       return `<li><a class="xt-the" href="${esc(c.href)}"><span class="xt-anh">${anh}</span><span class="xt-chu"><span class="xt-loai">${c.loai}</span><span class="xt-ten">${esc(c.tieuDe)}</span></span></a></li>`;
     })
     .join('');
-  return `<nav class="xem-them" aria-label="${esc(tieuDe)}"><h2 class="xt-tieu-de"${id ? ` id="${id}"` : ''}>${esc(tieuDe)}</h2><ul class="xt-luoi">${the}</ul></nav>`;
+  return `<nav class="xem-them" aria-label="${esc(tieuDe)}"><h${cap} class="xt-tieu-de"${id ? ` id="${id}"` : ''}>${esc(tieuDe)}</h${cap}><ul class="xt-luoi">${the}</ul></nav>`;
 }
 
 const LINK = /<a\s[^>]*href="(\/[^"]*)"[^>]*>([\s\S]*?)<\/a>/g;

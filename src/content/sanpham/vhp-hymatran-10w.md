@@ -97,7 +97,7 @@ Hymatran 10W chủ yếu được mua cho hộp số powershift và biến mô c
 
 - Một người hoài nghi chuyện dầu đặc hơn sẽ hết trượt; anh nhắc tới đợt triệu hồi thay gioăng chữ O trong ly hợp của hộp số này.
 - Một chủ thầu dầu khí cho biết dầu hộp số **đã quá hạn chắc chắn gây trượt**: khi dầu mất độ bền cắt và phụ gia ma sát (vốn bị phá vỡ theo thời gian và chu kỳ nóng lạnh), nó không còn giữ được ly hợp. Anh cũng nói "nhiệt là kẻ thù của mọi hộp số".
-- Người hỏi tự nghi việc châm bù dầu khác loại có thể góp phần làm trượt.
+- Người hỏi tự nghi việc thêm dầu khác loại có thể góp phần làm trượt.
 
 **Lời khuyên của chúng tôi:**
 
@@ -107,7 +107,7 @@ Hymatran 10W chủ yếu được mua cho hộp số powershift và biến mô c
 | Trượt ngay cả khi nguội | Áp suất ly hợp, gioăng, lá ly hợp | Đổi dầu khó giải quyết |
 | Dầu đen, mùi khét | Nhiệt độ dầu, két làm mát hộp số | Thay dầu, lọc và tìm nguyên nhân nóng |
 
-Căn cứ: VHP công bố Hymatran 10W đáp ứng **Caterpillar TO-2**, tức dầu được thử ma sát cho ly hợp ướt. Máy có hướng dẫn sử dụng ghi TO-4 thì chúng tôi chưa xác nhận được, vì VHP chưa công bố TO-4. Khi thay sang Hymatran 10W, xả hết dầu cũ và thay lọc; đừng châm Hymatran vào hộp số đang dùng ATF.
+Căn cứ: VHP công bố Hymatran 10W đáp ứng **Caterpillar TO-2**, tức dầu được thử ma sát cho ly hợp ướt. Máy có hướng dẫn sử dụng ghi TO-4 thì chúng tôi chưa xác nhận được, vì VHP chưa công bố TO-4. Khi thay sang Hymatran 10W, xả hết dầu cũ và thay lọc; đừng thêm Hymatran vào hộp số đang dùng ATF.
 
 ## Khi nào cần thay dầu?
 

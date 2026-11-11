@@ -47,7 +47,7 @@ Khi ma sát tĩnh lớn hơn ma sát động, bàn máy sẽ "dính" rồi "nh�
 
 ### Tách khỏi dung dịch tưới nguội
 
-Dầu rãnh trượt chảy xuống bồn dung dịch tưới nguội. Dầu tốt sẽ **nổi lên và tách riêng** để máy vớt dầu thu gom. Dầu kém chất lượng bị nhũ hóa vào dung dịch, làm vi khuẩn phát triển, dung dịch bốc mùi hôi và phôi bị ố. Xem thêm [dầu cắt gọt](/dau-cat-got).
+Dầu rãnh trượt chảy xuống thùng dung dịch tưới nguội. Dầu tốt sẽ **nổi lên và tách riêng** để máy vớt dầu thu gom. Dầu kém chất lượng bị nhũ hóa vào dung dịch, làm vi khuẩn phát triển, dung dịch bốc mùi hôi và phôi bị ố. Xem thêm [dầu cắt gọt](/dau-cat-got).
 
 ## Ứng dụng
 
@@ -76,7 +76,7 @@ Một số máy thiết kế để dùng chung dầu. Khi đó nhà sản xuất
 
 ### Vì sao dung dịch tưới nguội bốc mùi hôi khi dùng dầu rãnh trượt?
 
-Dầu rãnh trượt và dầu thủy lực rò rỉ vào bồn tưới nguội (gọi là "tramp oil") tạo lớp váng ngăn oxy. Vi khuẩn kỵ khí phát triển dưới lớp váng và tạo mùi hôi. Nên dùng dầu rãnh trượt tách tốt khỏi dung dịch, vớt váng dầu thường xuyên và giữ nồng độ dung dịch đúng.
+Dầu rãnh trượt và dầu thủy lực rò rỉ vào thùng tưới nguội (gọi là "tramp oil") tạo lớp váng ngăn oxy. Vi khuẩn kỵ khí phát triển dưới lớp váng và tạo mùi hôi. Nên dùng dầu rãnh trượt tách tốt khỏi dung dịch, vớt váng dầu thường xuyên và giữ nồng độ dung dịch đúng.
 
 ---
 

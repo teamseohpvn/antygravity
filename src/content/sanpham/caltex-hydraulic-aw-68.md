@@ -112,7 +112,7 @@ Chevron bán hai dòng dầu thủy lực chống mài mòn ở châu Á. Chính
 
 Nguyên văn TDS: Hydraulic Oil AW dành cho hệ thống "có mức tiêu hao cao do rò rỉ, hỏng phớt hoặc vỡ ống, nơi dầu không cần chứng minh chu kỳ thay kéo dài". Nếu máy chạy ở nhiệt độ cao, cần thay thưa hoặc cần đầy đủ phê duyệt của hãng máy, Chevron khuyên xem xét Rando HD.
 
-> **Nhận định của HT VINA:** Đây là điểm ít người bán nói ra. Caltex AW 68 không phải dầu kém, nhưng nó được thiết kế cho máy "uống dầu": thùng dầu được châm mới liên tục nên dầu ít khi phải sống lâu. Máy kín, ít rò rỉ, chạy 3 ca và muốn thay dầu thưa thì chúng tôi khuyên chọn mã có số liệu bền oxy hóa và phê duyệt hãng bơm, như [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68).
+> **Nhận định của HT VINA:** Đây là điểm ít người bán nói ra. Caltex AW 68 không phải dầu kém, nhưng nó được thiết kế cho máy "uống dầu": thùng dầu được thêm mới liên tục nên dầu ít khi phải sống lâu. Máy kín, ít rò rỉ, chạy 3 ca và muốn thay dầu thưa thì chúng tôi khuyên chọn mã có số liệu bền oxy hóa và phê duyệt hãng bơm, như [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68).
 
 ## Chọn cấp 32, 46, 68 hay 100 trong dòng Caltex AW {#chon-cap}
 
