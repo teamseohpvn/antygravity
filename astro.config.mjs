@@ -102,7 +102,8 @@ export default defineConfig({
   session: false,
   vite: {
     // __BUILD_ID__: mã bản build, gắn vào trang bảng giá tĩnh trong KV để bỏ bản cũ sau mỗi lần deploy.
-    define: { __PUBLIC_IMAGES__: JSON.stringify(PUBLIC_IMAGES), __BUILD_ID__: JSON.stringify(Date.now().toString(36)) },
+    // __PREVIEW_BUILD__: bản build cho nhánh khác main (link xem trước *.workers.dev của Workers Builds) → mọi trang gắn meta noindex.
+    define: { __PUBLIC_IMAGES__: JSON.stringify(PUBLIC_IMAGES), __BUILD_ID__: JSON.stringify(Date.now().toString(36)), __PREVIEW_BUILD__: JSON.stringify(Boolean(process.env.WORKERS_CI_BRANCH) && process.env.WORKERS_CI_BRANCH !== 'main') },
     // Giữ cú pháp @media (max-width: …) cũ: cú pháp mới (width<=…) không chạy trên iPhone iOS < 16.4
     // và công cụ kiểm tra SEO báo "không dùng media query".
     build: { cssTarget: ['chrome87', 'safari14', 'firefox78', 'edge88'] },
