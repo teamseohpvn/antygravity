@@ -104,11 +104,33 @@ const TIN = {
   cnbc0311: 'https://www.cnbc.com/2026/11/03/oil-prices-climb-after-us-reportedly-strikes-irans-qeshm-island.html',
   tradingEconomics: 'https://tradingeconomics.com/commodity/brent-crude-oil',
   financeFeeds: 'https://financefeeds.com/brent-crude-oil-price-106-tuesday-after-7-6-percent-plunge-qeshm-strike-report-midterms-bull-113-bear-100/',
+  // Tin cập nhật 12/11/2026 (đọc lúc 09:00–09:30 giờ Việt Nam).
+  cnbc0611: 'https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html',
+  reuters1111: 'https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/',
+  reuters1211: 'https://www.reuters.com/business/energy/oil-prices-drop-more-than-1-hopes-iran-ukraine-peace-talks-pressure-markets-2026-11-12/',
+  lubes0211: 'https://www.lubesngreases.com/bor-asia/weekly-asia-base-oil-price-report-127/',
+  lubes0911: 'https://www.lubesngreases.com/bor-asia/weekly-asia-base-oil-price-report-128/',
 };
+
+// Giá dầu gốc châu Á (FOB Asia, USD/tấn) theo báo cáo tuần của Lubes'N'Greases. Chỉ ghi số có trong báo cáo.
+const DAU_GOC = [
+  { loai: 'Nhóm I SN150', tuanTruoc: '1.310–1.350', tuanNay: '1.320–1.360', xuHuong: 'Tăng 10' },
+  { loai: 'Nhóm I SN500', tuanTruoc: '1.340–1.380', tuanNay: '1.350–1.390', xuHuong: 'Tăng 10' },
+  { loai: 'Nhóm II 150N', tuanTruoc: '1.520–1.560', tuanNay: '1.500–1.540', xuHuong: 'Giảm 20' },
+  { loai: 'Nhóm II 500N', tuanTruoc: '1.560–1.600', tuanNay: '1.560–1.600', xuHuong: 'Đi ngang' },
+  { loai: 'Nhóm III 4 cSt', tuanTruoc: '3.670–3.710', tuanNay: '3.680–3.720', xuHuong: 'Tăng 10' },
+];
 
 // Mỗi đợt tin có ngày riêng, mới nhất đứng đầu. capNhatLuc là lúc sửa thật, hiện trên trang và đưa vào schema, sitemap.
 // Khi thêm tin: thêm một dòng ở đây, thêm khối tin trong mục #nhan-dinh, thêm phiên vào BRENT_PHIEN nếu có giá mới.
 const CAP_NHAT_TIN = [
+  {
+    id: 'tin-2026-11-12',
+    capNhatLuc: '2026-11-12T09:30:00+07:00',
+    tieuDe: 'Cập nhật ngày 12/11/2026: Brent quanh 91–93 USD, giảm khoảng 21% từ đầu tháng; dầu gốc nhóm I vẫn tăng nhẹ',
+    moTa: 'Brent chốt 92,76 USD/thùng phiên 11/11 sau khi chạm đáy 2 tháng phiên 10/11, sáng 12/11 giao dịch quanh 91,62 USD/thùng (Reuters). Từ đầu tháng Brent giảm khoảng 21%. Báo cáo dầu gốc châu Á ngày 9/11: nhóm I tăng khoảng 10 USD/tấn, nhóm II đi ngang hoặc giảm nhẹ, nhóm III vẫn chịu áp lực tăng (Lubes\'N\'Greases).',
+    nguon: [TIN.cnbc0611, TIN.reuters1111, TIN.reuters1211, TIN.lubes0211, TIN.lubes0911],
+  },
   {
     id: 'tin-2026-11-04',
     capNhatLuc: '2026-11-04T09:59:00+07:00',
@@ -132,6 +154,11 @@ const BRENT_PHIEN = [
   { ngay: '2026-11-02', gia: 104.77, loai: 'chot', nguon: 'Reuters', url: TIN.reuters0211 },
   { ngay: '2026-11-03', gia: 103.6, loai: 'chot', nguon: 'Reuters', url: TIN.reuters0311 },
   { ngay: '2026-11-04', gia: 102.61, loai: 'tham-khao', nguon: 'Trading Economics', url: TIN.tradingEconomics },
+  { ngay: '2026-11-06', gia: 98.32, loai: 'chot', nguon: 'CNBC', url: TIN.cnbc0611 },
+  // 10/11: Reuters ngày 11/11 ghi Brent chốt 92,76 USD, tăng 1,27 USD so với phiên trước, nên phiên 10/11 chốt 91,49 USD.
+  { ngay: '2026-11-10', gia: 91.49, loai: 'chot', nguon: 'Reuters', url: TIN.reuters1111 },
+  { ngay: '2026-11-11', gia: 92.76, loai: 'chot', nguon: 'Reuters', url: TIN.reuters1111 },
+  { ngay: '2026-11-12', gia: 91.62, loai: 'tham-khao', nguon: 'Reuters', url: TIN.reuters1211 },
 ];
 const fmtUsd = (n: number) => n.toFixed(2).replace('.', ',');
 const ngayNgan = (iso: string) => fmtNgay(iso).slice(0, 5);
@@ -420,10 +447,30 @@ const schemaData = [
       <script is:inline>
         (function (s) { s.classList.add('co-thu-gon'); if (location.hash !== '#nhan-dinh') s.classList.add('is-thu-gon'); })(document.currentScript.parentElement);
       </script>
-      <h2>Tin giá dầu tháng 11/2026: giảm mạnh đầu tháng sau 4 tháng tăng liên tiếp</h2>
+      <h2>Tin giá dầu tháng 11/2026: Brent giảm khoảng 21% từ đầu tháng, dầu gốc chưa giảm theo</h2>
       <h3 id={TIN_MOI.id}>{TIN_MOI.tieuDe}</h3>
       <p class="tin-gio">Cập nhật lúc <time datetime={TIN_MOI.capNhatLuc}>{TIN_MOI.capNhatLuc.slice(11, 16)}, {fmtNgay(TIN_MOI.capNhatLuc)}</time> (giờ Việt Nam)</p>
       <ul>
+        <li><strong>Brent về quanh 91–93 USD/thùng.</strong> Phiên 6/11, Brent chốt 98,32 USD/thùng (<a href={TIN.cnbc0611} rel="noopener">CNBC</a>). Phiên 10/11 giá xuống mức thấp nhất 2 tháng, phiên 11/11 tăng lại 1,39% lên 92,76 USD/thùng (<a href={TIN.reuters1111} rel="noopener">Reuters</a>). Sáng 12/11 (8h41 giờ Việt Nam), Brent giảm 1,14 USD còn 91,62 USD/thùng (<a href={TIN.reuters1211} rel="noopener">Reuters</a>). Tính từ đầu tháng, Brent giảm khoảng 21% (<a href={TIN.reuters1111} rel="noopener">Reuters</a>).</li>
+        <li class="thu-gon-an"><strong>Lý do giá lên xuống.</strong> Giá giảm vì kỳ vọng đàm phán chấm dứt chiến sự Mỹ – Iran và đàm phán Nga – Ukraine. Giá tăng lại khi phía Iran nói không cho vật liệu hạt nhân đã làm giàu rời khỏi nước này, trong khi Mỹ muốn vấn đề hạt nhân nằm trong đàm phán ban đầu (<a href={TIN.reuters1111} rel="noopener">Reuters</a>, <a href={TIN.reuters1211} rel="noopener">Reuters</a>).</li>
+        <li class="thu-gon-an"><strong>Eo Hormuz vẫn chưa thông.</strong> Riêng tháng 10 có 37 tàu bị tấn công, nhiều nhất kể từ khi chiến sự bắt đầu hồi tháng 2. LSEG cho rằng kể cả khi có thỏa thuận, lượng dầu qua eo biển còn phụ thuộc rà phá thủy lôi, chi phí bảo hiểm và việc chủ tàu có dám đi hay không (<a href={TIN.reuters1111} rel="noopener">Reuters</a>). Ngày 6/11, Rapidan Energy Group đánh giá khả năng giao tranh tái diễn là 80% và giá có thể vượt lại 100 USD/thùng (<a href={TIN.cnbc0611} rel="noopener">CNBC</a>).</li>
+        <li><strong>Dầu gốc chưa giảm theo dầu thô.</strong> Báo cáo dầu gốc châu Á ngày 9/11 ghi nhận dầu gốc nhóm I tiếp tục tăng khoảng 10 USD/tấn vì nhà sản xuất vẫn lo thiếu dầu thô và ưu tiên giao hàng theo hợp đồng. Nhóm II đi ngang hoặc giảm nhẹ do nhu cầu ở Ấn Độ và Trung Quốc chậm lại. Nhóm III vẫn thiếu hàng vì nguồn từ Trung Đông gần như chưa xuất được (<a href={TIN.lubes0911} rel="noopener">Lubes'N'Greases</a>). Dầu thủy lực gốc khoáng thường pha từ dầu gốc nhóm I và nhóm II.</li>
+        <li><strong>Với người mua dầu thủy lực.</strong> Dầu thô giảm mạnh nhưng dầu gốc, nguyên liệu chính của dầu thủy lực, vẫn đứng ở mức cao. Bảng giá tháng 11 trên trang này chưa thay đổi.</li>
+      </ul>
+      <div class="table-wrap">
+        <table class="match">
+          <caption>Giá dầu gốc châu Á (FOB Asia, USD/tấn), báo cáo ngày 2/11 và 9/11/2026 của <a href={TIN.lubes0911} rel="noopener">Lubes'N'Greases</a></caption>
+          <thead><tr><th scope="col">Loại dầu gốc</th><th scope="col">Tuần 2/11</th><th scope="col">Tuần 9/11</th><th scope="col">Thay đổi (USD/tấn)</th></tr></thead>
+          <tbody>
+            {DAU_GOC.map((d) => (
+              <tr><td>{d.loai}</td><td>{d.tuanTruoc}</td><td>{d.tuanNay}</td><td>{d.xuHuong}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="thu-gon-an" id="tin-2026-11-04">Cập nhật ngày 04/11/2026: Brent quanh 102,6 USD, thấp nhất 4 tuần</h3>
+      <ul class="thu-gon-an">
         <li><strong>Brent về mức thấp nhất gần 4 tuần.</strong> Phiên 2/11, Brent giảm 7,63% xuống 104,77 USD/thùng (<a href={TIN.reuters0211} rel="noopener">Reuters</a>). Phiên 3/11 giảm tiếp 1%, còn 103,60 USD/thùng, mức chốt thấp nhất từ ngày 7/10 (<a href={TIN.reuters0311} rel="noopener">Reuters</a>). Ngày 4/11, Brent giao dịch quanh 102,61 USD/thùng, mức thấp nhất 4 tuần, thấp hơn khoảng 9,5% so với 113,43 USD/thùng phiên 30/10 (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>). Đây là giá CFD tham khảo, không phải giá chốt chính thức.</li>
         <li class="thu-gon-an"><strong>Lý do giảm.</strong> Tổng thống Mỹ nói Iran muốn đạt thỏa thuận, còn Tổng thống Iran nói muốn giải quyết vấn đề qua đối thoại (<a href={TIN.cnbc0211} rel="noopener">CNBC</a>). Qatar cho biết hai bên vẫn cam kết với nỗ lực trung gian và đang xem xét các đề xuất (<a href={TIN.reuters0311} rel="noopener">Reuters</a>).</li>
         <li><strong>Giá dao động mạnh ngay trong một phiên.</strong> Ngày 3/11, Brent có lúc lên gần 106 USD/thùng sau tin Mỹ tấn công đảo Qeshm của Iran (<a href={TIN.financeFeeds} rel="noopener">FinanceFeeds</a>), có lúc xuống dưới 102 USD/thùng (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>), rồi chốt 103,60 USD/thùng. Bộ trưởng Năng lượng Mỹ nói các đòn tấn công này không ảnh hưởng đến dòng dầu (<a href={TIN.tradingEconomics} rel="noopener">Trading Economics</a>).</li>
@@ -477,7 +524,7 @@ const schemaData = [
             <tr><th scope="col">Yếu tố</th><th scope="col">Đang diễn ra</th><th scope="col">Ảnh hưởng tới doanh nghiệp</th></tr>
           </thead>
           <tbody>
-            <tr><td><strong>Dầu gốc</strong></td><td>Báo cáo ngày 19/10 cho biết giá dầu gốc châu Á chịu áp lực tăng, nhà máy lọc ưu tiên nhiên liệu và hạn chế chào hàng giao ngay. Với dầu gốc nhóm II, giá tuần đó đi ngang hoặc tăng nhẹ (<a href={TIN.lubes} rel="noopener">Lubes'N'Greases</a>).</td><td>Giá dầu thô tăng không có nghĩa dầu thủy lực tăng cùng tỷ lệ. Rủi ro là hãng điều chỉnh giá, hoặc nguồn hàng một số mã nhập khẩu khan hơn.</td></tr>
+            <tr><td><strong>Dầu gốc</strong></td><td>Báo cáo ngày 9/11 cho biết dầu gốc nhóm I ở châu Á vẫn tăng khoảng 10 USD/tấn dù dầu thô giảm, nhóm II đi ngang hoặc giảm nhẹ (<a href={TIN.lubes0911} rel="noopener">Lubes'N'Greases</a>).</td><td>Giá dầu thô tăng không có nghĩa dầu thủy lực tăng cùng tỷ lệ. Rủi ro là hãng điều chỉnh giá, hoặc nguồn hàng một số mã nhập khẩu khan hơn.</td></tr>
             <tr class="thu-gon-an"><td><strong>Cước và bảo hiểm</strong></td><td>Cước vận tải và bảo hiểm qua vùng rủi ro ở mức cao kỷ lục (<a href={TIN.lubes} rel="noopener">Lubes'N'Greases</a>).</td><td>Lô nhập mới có thể tốn chi phí và thời gian hơn.</td></tr>
             <tr class="thu-gon-an"><td><strong>Tỷ giá</strong></td><td>Ngày 31/10, Vietcombank bán USD ở mức 25.990 đồng (<a href={TIN.tyGia} rel="noopener">VOV</a>).</td><td>Dầu gốc và phụ gia phần lớn phải nhập khẩu, nên USD tăng sẽ cộng thêm vào giá vốn.</td></tr>
             <tr class="thu-gon-an"><td><strong>Mua trữ quá nhu cầu</strong></td><td>Giá có thể giảm nếu đàm phán tiến triển. Saxo Bank dự kiến dầu thô giao dịch quanh 70–90 USD/thùng sau khi xung đột kết thúc (<a href={TIN.reuters} rel="noopener">Reuters</a>).</td><td>Tiền nằm trong kho và có thể mua đúng lúc giá đỉnh. Đây là rủi ro ngược chiều cần tính cùng lúc.</td></tr>
