@@ -58,13 +58,16 @@ const khoCuaDong = (r: DongGiaCongKhai) => (TON_KHO[`${r.trang}|${r.quy_cach}`] 
 
 // Trang chỉ nói về cấp ISO VG 68; mã 32 nhận đặt theo yêu cầu (xem FAQ). Cấp 46 ghi kèm ở các dòng phuy dưới đây.
 const rows = all.filter((r) => /VG\s*68\b/i.test(r.cap ?? '') && (!r.trang || coSan.has(r.trang)));
-// 02/11/2026 (yêu cầu của người dùng): các mã phuy có thêm cấp 46 ghi kèm trên bảng. Khoảng giá vẫn là của cấp 68.
+// 12/11/2026 (yêu cầu của người dùng): cấp 46 tách thành bảng riêng, khoảng giá như cấp 68 của cùng mã.
+// Mã nào đã có dòng giá VG 46 riêng trong dữ liệu giá (ví dụ ENEOS Super Mulpus DX 46) thì dùng dòng đó.
 const MA_CO_46 = ['Castrol Hyspin AWS 68', 'X-One AW 68', 'ENEOS Super Hyrando 68', 'ENEOS Super Mulpus DX 68', 'EMI AW 68', 'VHP Spinax AW 68'];
-const rowsBang = rows.map((r) => ({
-  ...r,
-  cap: 'ISO VG 68, ISO VG 46',
-  ten: MA_CO_46.includes(r.ten) && /phuy/i.test(r.quy_cach) ? `${r.ten}, 46` : r.ten,
-}));
+const ten46 = (ten: string) => ten.replace(/68$/, '46');
+const rowsBang = rows;
+const rows46: DongGiaCongKhai[] = rows
+  .filter((r) => MA_CO_46.includes(r.ten) && /phuy/i.test(r.quy_cach))
+  .map((r) => all.find((x) => x.ten === ten46(r.ten) && /VG\s*46\b/i.test(x.cap ?? '') && x.quy_cach === r.quy_cach)
+    ?? { ...r, ten: ten46(r.ten), cap: 'ISO VG 46' });
+const phuy46 = rows46.filter((r) => r.thap && r.cao);
 const coGia = !loiDb && rows.some((r) => r.thap);
 
 // Tháng trên tiêu đề theo kỳ hiệu lực; ngày rà soát vẫn hiện riêng ở đầu trang.
@@ -145,7 +148,7 @@ const duongBrent = diemBrent.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).j
 // Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
-const NGAY_SUA_NOI_DUNG = '2026-11-06';
+const NGAY_SUA_NOI_DUNG = '2026-11-12';
 const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const tacGia = nguoiGia;
 // Ngày cập nhật cuối gồm cả đợt tin. Schema và thẻ meta dùng giờ thật của đợt tin nếu đó là thay đổi mới nhất, không gán giờ giả cho thay đổi khác.
@@ -318,6 +321,7 @@ const schemaData = [
 
       <nav class="page-menu" aria-label="Lối tắt trong trang">
         <a href="#bang-gia" class="page-menu__main" data-track="click_menu_bang_gia">XEM NHANH BÁO GIÁ</a>
+        <a href="#bang-gia-46">Bảng giá dầu 46</a>
         <a href="#chiet-khau">Chiết khấu doanh nghiệp</a>
         <a href="#nhan-dinh">Tin giá dầu tháng 11</a>
         <a href="#dat-bao-nhieu" data-track="click_menu_tinh_dau">Tính lượng dầu cần mua</a>
@@ -330,10 +334,11 @@ const schemaData = [
           <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}</p>
           <ul>
             {phuyThap && <li>Phuy dầu thủy lực 68: <strong>{fmtVnd(phuyThap)} – {fmtVnd(phuyCao)} đ</strong> ({vat}), tùy mã.</li>}
+            {phuy46.length > 0 && <li>Phuy dầu thủy lực 46: <strong>{fmtVnd(minOf(phuy46.map((r) => r.thap)))} – {fmtVnd(maxOf(phuy46.map((r) => r.cao)))} đ</strong> ({vat}), tùy mã. Xem <a href="#bang-gia-46">bảng giá dầu 46</a>.</li>}
             <li><strong><a href="/chinh-sach-giao-hang">Miễn phí vận chuyển 80 km</a></strong> từ 3 kho {BA_KHO}.</li>
             <li>Giao trong ngày các KCN gần kho khi chốt đơn trước {PROMO.sameDayCutoff}, thứ Hai đến thứ Sáu. KCN xa hơn theo lịch hẹn.</li>
             {litThap && <li>Quy đổi theo lít: <strong>{fmtVnd(litThap)} – {fmtVnd(litCao)} đ/lít</strong>, xô 18 L đắt hơn phuy khi tính theo lít.</li>}
-            <li>{soMa} mã ISO VG 68 có hàng tại hệ thống 3 kho, tùy mã từng kho: {hangs.join(', ')}. {MA_CO_46.length} mã có thêm cấp 46, nhận đặt, giá riêng theo mã.</li>
+            <li>{soMa} mã ISO VG 68 có hàng tại hệ thống 3 kho, tùy mã từng kho: {hangs.join(', ')}. {rows46.length} mã có thêm cấp 46, nhận đặt.</li>
             <li>Giá chính xác theo số phuy và nơi giao được gửi trong ngày làm việc. Có hóa đơn VAT, CO/CQ theo lô với hãng có cấp.</li>
           </ul>
         </div>
@@ -350,7 +355,7 @@ const schemaData = [
     </header>
 
     <section class="price-body" id="bang-gia">
-      <h2>Bảng giá dầu thủy lực 68, 46 tại kho HT VINA</h2>
+      <h2>Bảng giá dầu thủy lực 68 tại kho HT VINA</h2>
 
       {coGia ? (
         <>
@@ -365,11 +370,23 @@ const schemaData = [
 
       <ul class="notes">
         <li>Đây là <strong>báo giá sơ bộ</strong>, ghi khoảng tham khảo cho một đơn vị đóng gói, {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT. Giá chính xác phụ thuộc số lượng, quy cách và điểm giao.</li>
-        <li>Mã ghi "68, 46": khoảng giá trên bảng là của cấp 68. Cấp 46 nhận đặt, có giá riêng, có thể thấp hoặc cao hơn, hãy ghi rõ cấp khi hỏi giá.</li>
+        <li>Cấp 46 của các mã trên có bảng giá riêng ngay bên dưới. Khi hỏi giá, hãy ghi rõ cấp 68 hay 46.</li>
         <li>Cột "Quy đổi" chia khoảng giá cho số lít trong phuy hoặc xô, để so sánh hai quy cách với nhau.</li>
         <li>"Có sẵn" không phải số tồn kho trực tiếp{TON_KHO_CAP_NHAT ? `, cập nhật ngày ${fmtNgay(TON_KHO_CAP_NHAT)}` : ''}. Hãy gọi xác nhận kho và số lượng trước khi chốt đơn.</li>
         <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
       </ul>
+
+      {coGia && rows46.length > 0 && (
+        <>
+          <h2 id="bang-gia-46">Bảng giá dầu thủy lực 46</h2>
+          <p>Dầu thủy lực 46 dùng cho máy xúc, máy đào, xe nâng và hệ thống thủy lực tải trung bình. Các mã dưới đây là cấp ISO VG 46 của cùng dòng dầu ở bảng 68, đóng phuy.</p>
+          <PriceTable rows={rows46} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} gon />
+          <ul class="notes">
+            <li>Cấp 46 nhận đặt theo đơn. Gọi xác nhận kho và thời gian giao trước khi chốt.</li>
+            <li>Máy đang dùng dầu 46 thì không thay bằng 68 cho rẻ. Xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt 32, 46 hay 68</a>.</li>
+          </ul>
+        </>
+      )}
 
       <figure class="photo">
         <div class="delivery-grid">
@@ -659,7 +676,7 @@ const schemaData = [
             </tr>
             <tr>
               <td>ISO VG 46 hoặc VG 32</td>
-              <td>Không thay bằng 68. Xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt 32, 46 hay 68</a>; các mã có cấp 46 ghi trong bảng giá, mã 32 nhận đặt theo yêu cầu.</td>
+              <td>Không thay bằng 68. Xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt 32, 46 hay 68</a>; các mã có cấp 46 xem <a href="#bang-gia-46">bảng giá dầu 46</a>, mã 32 nhận đặt theo yêu cầu.</td>
             </tr>
             <tr>
               <td>Không còn tài liệu máy</td>
@@ -738,7 +755,7 @@ const schemaData = [
       <h3>Dầu thủy lực để trong kho được bao lâu?</h3>
       <p>Phuy còn nguyên niêm, để trong nhà khô ráo thường dùng tốt khoảng 5 năm theo khuyến cáo của ExxonMobil. Hạn trên nhãn phuy là con số chính thức. Phuy đã mở nên dùng hết sớm và luôn đậy kín.</p>
       <h3>Máy đang dùng dầu 46, có dùng dầu 68 cho rẻ được không?</h3>
-      <p>Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Các mã có cấp 46 ghi trong bảng giá, dầu 32 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.</p>
+      <p>Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Các mã có cấp 46 có <a href="#bang-gia-46">bảng giá riêng</a>, dầu 32 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.</p>
       <h3>Bảng giá cập nhật khi nào?</h3>
       <p>Bảng được rà soát toàn bộ mỗi tuần một lần. Ngoài kỳ rà soát, chỉ cần một mã bất kỳ đổi giá là chúng tôi cập nhật ngay trong ngày. Ngày rà soát gần nhất ghi ở đầu trang.</p>
     </section>

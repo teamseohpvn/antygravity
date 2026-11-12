@@ -49,6 +49,7 @@ const nutLoc = [
 ].filter((n) => n.so > 0);
 ---
 
+<div class="bang-gia-box">
 {boLoc && (
   <>
     <div class="bo-loc" role="group" aria-label="Lọc bảng giá" hidden>
@@ -58,7 +59,7 @@ const nutLoc = [
     </div>
     {/* Không có JS thì nút lọc không dùng được nên không hiện; chạy trước khi vẽ để bảng không bị đẩy xuống. */}
     <script is:inline>document.currentScript.previousElementSibling.hidden = false;</script>
-    <p class="sr-only" role="status" id="bo-loc-kq"></p>
+    <p class="sr-only bo-loc-kq" role="status"></p>
   </>
 )}
 
@@ -112,14 +113,17 @@ const nutLoc = [
     </div>
   </section>
 ))}
+</div>
 
 <script>
-  const nutLoc = document.querySelectorAll<HTMLButtonElement>('.bo-loc button');
+  // Mỗi bảng lọc riêng: một trang có thể có nhiều bảng (ví dụ bảng dầu 68 và bảng dầu 46).
+  document.querySelectorAll<HTMLElement>('.bang-gia-box').forEach((box) => {
+  const nutLoc = box.querySelectorAll<HTMLButtonElement>('.bo-loc button');
   nutLoc.forEach((nut) => nut.addEventListener('click', () => {
     const loc = nut.dataset.loc!;
     nutLoc.forEach((n) => n.setAttribute('aria-pressed', String(n === nut)));
     let con = 0;
-    document.querySelectorAll<HTMLElement>('.price-group').forEach((nhom) => {
+    box.querySelectorAll<HTMLElement>('.price-group').forEach((nhom) => {
       let conTrongNhom = 0;
       nhom.querySelectorAll<HTMLElement>('tbody tr').forEach((tr) => {
         tr.hidden = loc !== 'tat-ca' && !(tr.dataset.nhan ?? '').split(' ').includes(loc);
@@ -128,8 +132,9 @@ const nutLoc = [
       nhom.hidden = conTrongNhom === 0;
       con += conTrongNhom;
     });
-    document.getElementById('bo-loc-kq')!.textContent = `Đang hiện ${con} dòng`;
+    box.querySelector('.bo-loc-kq')!.textContent = `Đang hiện ${con} dòng`;
   }));
+  });
 </script>
 
 <style>
