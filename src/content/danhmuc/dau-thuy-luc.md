@@ -37,7 +37,7 @@ Kho HT VINA đang có dầu thủy lực chống mài mòn cấp 68 của các h
 - **Thương hiệu quốc tế:** [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68), [Castrol Hyspin AWS 68, AWS 46](/dau-thuy-luc/castrol-hyspin-aws-68), [Castrol Hyspin HLP-Z 68](/dau-thuy-luc/castrol-hyspin-hlpz-68), [Caltex Hydraulic Oil AW 68](/dau-thuy-luc/caltex-hydraulic-aw-68), [Cosmo Hydro AW 68](/dau-thuy-luc/cosmo-hydro-aw-68). [ENEOS Super Mulpus DX 68, 46](/dau-thuy-luc/eneos-super-mulpus-dx) là dầu đa dụng, dùng chung cho hệ thủy lực, hộp số, ổ đỡ và rãnh trượt.
 - **Thương hiệu trong nước:** [VHP Spinax AW 68](/dau-thuy-luc/vhp-spinax-aw), [X-One AW 68](/dau-thuy-luc/x-one-aw-68), [EMER LAW 68](/dau-thuy-luc/emer-law-68), [EMI AW 68](/dau-thuy-luc/emi-aw-68), [APEX TL 68](/dau-thuy-luc/apex-tl-68), [Maxima 68](/dau-thuy-luc/maxima-68).
 
-Theo TDS của hãng, Castrol Hyspin AWS và Cosmo Hydro AW 68 công bố phê duyệt Parker Denison (HF-0, HF-1, HF-2) và Eaton. Castrol Hyspin AWS, Castrol Hyspin HLP-Z, Cosmo Hydro AW 68 và ENEOS Super Hyrando 68 công bố đạt DIN 51524-2 (HLP). Mã chưa có TDS công khai, chúng tôi gửi tài liệu của nhà cung cấp kèm báo giá.
+Theo TDS của hãng, Castrol Hyspin AWS và Cosmo Hydro AW 68 công bố phê duyệt Parker Denison (HF-0, HF-1, HF-2) và Eaton. Castrol Hyspin AWS, Castrol Hyspin HLP-Z, Cosmo Hydro AW 68 và ENEOS Super Hyrando 68 công bố đạt DIN 51524-2 (HLP). Mã chưa có TDS công khai, chúng tôi gửi tài liệu của nhà cung cấp khi tư vấn.
 
 Thị phần từng hãng tại Việt Nam (có nguồn) có trong bài [top 6 hãng dầu thủy lực phổ biến nhất Việt Nam](/top-6-dau-thuy-luc-2026).
 
@@ -119,4 +119,4 @@ Thêm một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng cấp VG) th�
 
 ---
 
-**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau) · [Top 6 hãng dầu thủy lực](/top-6-dau-thuy-luc-2026) · [Bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)
+**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau) · [Top 6 hãng dầu thủy lực](/top-6-dau-thuy-luc-2026) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)
