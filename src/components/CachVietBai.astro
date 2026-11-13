@@ -1,6 +1,7 @@
 ---
 // Khối "Cách chúng tôi viết và cập nhật bài" cuối trang có giá và thông số (người dùng yêu cầu 06/11/2026).
 // Phần tóm tắt luôn hiện; quy trình đầy đủ nằm trong <details> (vẫn có trong HTML). Slot "nguon": bảng nguồn TDS của trang, nếu có.
+// Slot "thong-tin": các dòng <li> thông tin bài (hiệu lực, ngày đăng, đơn vị phát hành) khi trang không để khối này ở đầu bài (07/11/2026).
 import { BUSINESS } from '../lib/site';
 import { personUrl, type NhanSu } from '../lib/nhan-su';
 import { fmtNgay } from '../lib/gia-tinh';
@@ -12,8 +13,10 @@ interface Props {
   chucDanhDuyet?: string;
   ngayGia?: string;
   ngayCapNhat: string;
+  /** Chỉ hiện phần tóm tắt, quy trình đầy đủ thay bằng link sang /quy-trinh-bien-tap (trang giá cần ngắn gọn). */
+  gon?: boolean;
 }
-const { tacGia, nguoiDuyet, chucDanhDuyet, ngayGia, ngayCapNhat } = Astro.props;
+const { tacGia, nguoiDuyet, chucDanhDuyet, ngayGia, ngayCapNhat, gon } = Astro.props;
 const viet = tacGia.name;
 const duyet = nguoiDuyet.name;
 const coNguon = Astro.slots.has('nguon');
@@ -26,7 +29,11 @@ const coNguon = Astro.slots.has('nguon');
     <li><strong>Giá:</strong> rà soát toàn bộ <strong>mỗi tuần một lần</strong>. Ngoài kỳ rà soát, chỉ cần <strong>một mã bất kỳ đổi giá</strong> là chúng tôi cập nhật ngay trong ngày.{ngayGia && <> Lần rà soát gần nhất: <time datetime={ngayGia}>{fmtNgay(ngayGia)}</time>.</>}</li>
     <li><strong>Thông số kỹ thuật:</strong> chỉ cần hãng sửa <strong>một thông số bất kỳ của một mã</strong> (phát hành TDS mới), chúng tôi sửa bài ngay khi nhận được TDS đó.</li>
     <li><strong>Nội dung bài:</strong> sửa lần gần nhất ngày <time datetime={ngayCapNhat}>{fmtNgay(ngayCapNhat)}</time>.</li>
+    <slot name="thong-tin" />
   </ul>
+  {gon ? (
+    <p>Quy trình biên tập đầy đủ, cách ghi ngày và cách báo sai sót xem tại trang <a href="/quy-trinh-bien-tap">quy trình biên soạn nội dung</a>. Thấy giá hoặc thông số chưa đúng, hãy gọi hoặc nhắn Zalo <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a>.</p>
+  ) : (
   <details>
     <summary><span class="cvb__mo">Xem đầy đủ quy trình biên tập</span><span class="cvb__dong">Thu gọn</span></summary>
 
@@ -66,6 +73,7 @@ const coNguon = Astro.slots.has('nguon');
 
     {coNguon && <><h3 id="nguon">5. Nguồn số liệu</h3><slot name="nguon" /></>}
   </details>
+  )}
 </section>
 
 <style>
