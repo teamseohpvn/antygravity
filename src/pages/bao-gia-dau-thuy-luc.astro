@@ -18,7 +18,8 @@ import { timNhanSu, bylineLabel, personUrl, personRef, personSchema, displayName
 import { traTieuChuan } from '../lib/tieu-chuan';
 import { tinhLuongDau, moTaMua, LIT_PHUY, LIT_XO } from '../lib/tinh-luong-dau';
 import { PROMO, PROMO_ACTIVE } from '../lib/promo';
-import { HIEU_LUC, CHUYEN_GIAO, DANH_GIA_GOOGLE } from '../data/bao-gia-dau-thuy-luc';
+import { HIEU_LUC, CHUYEN_GIAO } from '../data/bao-gia-dau-thuy-luc';
+import DanhGiaGoogle from '../components/DanhGiaGoogle.astro';
 import { absUrl, LEGAL_SHORT, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR, ADDRESS_TEXT, KHO_GIAO_HANG } from '../lib/site';
 
 export const prerender = false;
@@ -605,21 +606,7 @@ const schemaData = [
     </section>
 
     <section class="price-body" id="danh-gia">
-      <h2>Khách hàng đánh giá trên Google</h2>
-      <p>Hồ sơ Google của HT VINA đạt <strong>{DANH_GIA_GOOGLE.diem}/5 từ {DANH_GIA_GOOGLE.soLuong} đánh giá</strong> (số liệu ngày {fmtNgay(DANH_GIA_GOOGLE.ngayXem)}). Số đánh giá còn ít vì hồ sơ mới bắt đầu nhận đánh giá từ tháng 10/2026. Dưới đây là ba đánh giá Google hiển thị đầu tiên, giữ nguyên văn:</p>
-      <div class="reviews">
-        {DANH_GIA_GOOGLE.hienThi.map((r) => (
-          <blockquote>
-            <p class="reviews__stars" aria-label={`${r.sao} sao`}>{'★'.repeat(r.sao)}</p>
-            <p>“{r.noiDung}”</p>
-            <footer>{r.ten}{r.ghiChu ? ` (${r.ghiChu})` : ''}</footer>
-          </blockquote>
-        ))}
-      </div>
-      <div class="discount__actions">
-        <a href={DANH_GIA_GOOGLE.vietDanhGiaUrl} class="btn-primary" target="_blank" rel="noopener">Viết đánh giá trên Google</a>
-        <a href={BUSINESS.gbpUrl} class="btn-secondary" target="_blank" rel="noopener">Xem tất cả đánh giá</a>
-      </div>
+      <DanhGiaGoogle heading="Khách hàng đánh giá trên Google: giao hàng, phục vụ, chất lượng" chuDe={['giao-hang', 'phuc-vu', 'chat-luong']} moTaNhom="nói về tốc độ phục vụ, cách phục vụ và chất lượng hàng" />
     </section>
 
     <section class="price-body" id="doi-chieu">
@@ -921,9 +908,4 @@ const schemaData = [
   .steps li::before { content: counter(b); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
   .steps li p { margin: 2px 0 0; }
   .steps__who { font-size: 0.92rem; color: var(--color-text-light); }
-  .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 12px; }
-  .reviews blockquote { margin: 0; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 12px 14px; }
-  .reviews p { margin-bottom: 4px; }
-  .price-body .reviews__stars { color: #b45309; letter-spacing: 1px; margin: 0; }
-  .reviews footer { font-size: 0.88rem; color: var(--color-text-light); }
 </style>

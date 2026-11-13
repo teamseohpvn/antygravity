@@ -9,6 +9,7 @@ import CachVietBai from '../components/CachVietBai.astro';
 import ChinhSachGiaKho from '../components/ChinhSachGiaKho.astro';
 import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
 import PriceTable from '../components/PriceTable.astro';
+import DanhGiaGoogle from '../components/DanhGiaGoogle.astro';
 import { getActiveProducts } from '../lib/content';
 import { fmtNgay, fmtVnd } from '../lib/gia-tinh';
 import type { DongGiaCongKhai } from '../lib/gia';
@@ -231,6 +232,7 @@ const schemaData = [
         </table>
       </div>
       <p class="small">Xem chi tiết ở <a href="/chinh-sach-giao-hang">chính sách giao hàng</a>, hoặc <a href="/contact">liên hệ</a> để đề nghị vận chuyển đơn hàng lớn.</p>
+      <DanhGiaGoogle level={3} heading="Khách hàng nói gì về giao hàng và chất lượng (đánh giá trên Google)" chuDe={['mo', 'giao-hang', 'phuc-vu', 'chat-luong']} moTaNhom="nói về mỡ bôi trơn, tốc độ phục vụ và chất lượng hàng" />
     </section>
 
     <section class="price-body" id="vi-sao-chenh">
