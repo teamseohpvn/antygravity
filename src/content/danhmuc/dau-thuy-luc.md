@@ -11,7 +11,7 @@ tags: ["dau-thuy-luc", "shell-tellus", "castrol-hyspin", "iso-vg-68", "iso-vg-46
 image: "/images/danh-muc/dau-thuy-luc-kho.webp"
 image_alt: "Phuy 200 lít dầu thủy lực ENEOS Super Hyrando 68 bọc màng co, xếp trong kho HT VINA tại Hải Phòng"
 date: "2026-09-21"
-updated: "2026-10-06"
+updated: "2026-11-12"
 ---
 
 **Dầu thủy lực** (còn gọi là **dầu nhớt thủy lực** hay **nhớt thủy lực**) là chất lỏng truyền áp lực trong bơm, van và xi-lanh, đồng thời bôi trơn, làm mát và chống gỉ cho hệ thống. Ba cấp phổ biến nhất là **ISO VG 32, 46 và 68**. Chọn cấp nào phụ thuộc vào nhiệt độ dầu khi máy chạy và khuyến cáo của nhà sản xuất bơm. Với máy ép nhựa và máy ép thủy lực chạy liên tục trong nhà xưởng ở miền Bắc, **dầu thủy lực 68** là lựa chọn thường gặp nhất. Máy công trình và hệ thống làm việc ngoài trời hay dùng **dầu thủy lực 46**.
@@ -26,7 +26,7 @@ updated: "2026-10-06"
 | **ISO VG 46** | 41,4 – 50,6 | Dầu thủy lực 46, AW 46 | Máy xúc, máy đào, xe nâng, máy dập, hệ thống thủy lực nhà xưởng tải trung bình |
 | **ISO VG 68** | 61,2 – 74,8 | Dầu thủy lực 68, AW 68, nhớt thủy lực 68 | Máy ép nhựa, máy ép thủy lực tải nặng, máy chấn tôn, tời và cẩu cảng |
 
-**Cách chọn nhanh:** luôn ưu tiên cấp độ nhớt ghi trong sổ tay máy hoặc trên nhãn bơm. Nếu nhiệt độ dầu trong thùng thường xuyên trên 55–60 °C, cấp 68 giữ màng dầu tốt hơn. Nếu máy khởi động nguội hoặc đường ống dài, cấp 32 hoặc 46 bơm dễ hơn. Không nên tự đổi cấp độ nhớt khi chưa hỏi nhà sản xuất máy.
+**Cách chọn nhanh:** luôn ưu tiên cấp độ nhớt ghi trong tài liệu hướng dẫn sử dụng kèm theo máy hoặc trên nhãn bơm. Nếu nhiệt độ dầu trong thùng thường xuyên trên 55–60 °C, cấp 68 giữ màng dầu tốt hơn. Nếu máy khởi động nguội hoặc đường ống dài, cấp 32 hoặc 46 bơm dễ hơn. Không nên tự đổi cấp độ nhớt khi chưa hỏi nhà sản xuất máy.
 
 Chữ **"AW"** (anti-wear) nghĩa là dầu có phụ gia chống mài mòn. Theo tiêu chuẩn, dầu AW tương ứng loại **HM** trong ISO 11158 và **HLP** trong DIN 51524-2. Dầu chỉ số độ nhớt cao dùng cho máy làm việc ngoài trời là loại **HV / HVLP**.
 
@@ -56,6 +56,17 @@ Thị phần từng hãng tại Việt Nam (có nguồn) và cách chọn giữa
 
 **Lưu ý với chi tiết mạ bạc:** dầu chống mài mòn gốc kẽm thường không được khuyến nghị cho bơm có chi tiết mạ bạc. Trường hợp này cần chọn dầu không kẽm (zinc-free) theo khuyến cáo của nhà sản xuất bơm.
 
+## Đối chiếu tài liệu máy trước khi chọn mã
+
+Mở tài liệu hướng dẫn sử dụng kèm theo máy (hoặc nhãn trên thùng dầu) và xem ba thông tin: **cấp độ nhớt**, **loại dầu** và **phê duyệt của hãng bơm**.
+
+| Tài liệu máy ghi | Mã nên xem |
+| :--- | :--- |
+| ISO VG 68, HM, HLP 68, AW 68, DIN 51524-2 | Các mã chống mài mòn cấp 68 ở trên. Mã có TDS công bố DIN 51524-2: ENEOS Super Hyrando 68, Castrol Hyspin AWS 68, Castrol Hyspin HLP-Z 68, Cosmo Hydro AW 68. |
+| Bắt buộc phê duyệt Parker Denison HF-0/HF-1/HF-2 hoặc Eaton | [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68), [Cosmo Hydro AW 68](/dau-thuy-luc/cosmo-hydro-aw-68) (TDS công bố các phê duyệt này). |
+| ISO VG 46 hoặc VG 32 | Không thay bằng 68. Cấp 46 có ở Castrol Hyspin AWS, ENEOS Super Hyrando, ENEOS Super Mulpus DX, X-One AW, EMI AW, VHP Spinax AW (nhận đặt). Xem [hướng dẫn chọn độ nhớt 32, 46 hay 68](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau). |
+| Không còn tài liệu máy | Chụp nhãn phuy dầu đang dùng hoặc tên, đời máy, gửi qua Zalo **[0901 511 313](tel:0901511313)** để chúng tôi đối chiếu. |
+
 ## Chỉ tiêu cần xem trên bảng thông số (TDS)
 
 - **Độ nhớt ở 40 °C và chỉ số độ nhớt (VI):** VI càng cao thì độ nhớt càng ít thay đổi khi nhiệt độ lên xuống.
@@ -68,19 +79,26 @@ Thị phần từng hãng tại Việt Nam (có nguồn) và cách chọn giữa
 ## Ứng dụng theo ngành
 
 - **Ép nhựa:** dầu thủy lực 68 cho máy ép Haitian, Sumitomo, JSW, Nissei chạy 3 ca. Dầu thủy lực cho máy ép nhựa cần độ bền oxy hóa tốt vì thùng dầu thường nóng.
-- **Máy công trình:** [máy xúc, máy đào](/ho-tro-ky-thuat/dau-thuy-luc-may-xuc), xe nâng thường dùng dầu thủy lực 46, loại HV nếu làm việc ngoài trời. Luôn kiểm tra sổ tay máy vì một số hãng yêu cầu dầu riêng.
+- **Máy công trình:** [máy xúc, máy đào](/ho-tro-ky-thuat/dau-thuy-luc-may-xuc), xe nâng thường dùng dầu thủy lực 46, loại HV nếu làm việc ngoài trời. Luôn kiểm tra tài liệu hướng dẫn sử dụng kèm theo máy vì một số hãng yêu cầu dầu riêng.
 - **Gia công kim loại:** máy chấn tôn, máy dập thủy lực, máy cắt tôn.
 - **Cảng và hàng hải:** cẩu bờ, tời neo, sà lan tại Hải Phòng và Quảng Ninh. Cần dầu tách nước tốt.
 
 Máy CNC có hệ thống bôi trơn băng trượt riêng: không dùng dầu thủy lực thay dầu rãnh trượt. Xem [dầu rãnh trượt](/dau-ranh-truot).
 
-## Quy cách và báo giá
+## Bảo quản dầu thủy lực trong kho
 
-- **Quy cách:** phuy 209 lít; xô 18 lít (Castrol) hoặc 20 lít (Shell). Quy cách thực tế tùy mã hàng.
+- **Hạn dùng:** theo [khuyến cáo của ExxonMobil](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/shelf-life-recommendations.pdf), dầu nhờn thường dùng tốt trong khoảng 5 năm nếu còn nguyên thùng niêm và bảo quản đúng cách. Hạn ghi trên nhãn của từng phuy là con số chính thức.
+- **Để phuy trong nhà,** khô, tránh nắng mưa. Buộc phải để ngoài trời thì đặt phuy nằm ngang, hai lỗ nắp ở vị trí 3 giờ và 9 giờ để nước mưa không đọng trên nắp rồi bị hút vào (theo [hướng dẫn bảo quản của Petro-Canada](https://petrocanadalubricants.com/lube-source-handbook/introduction/lubricants-handling-and-storage)).
+- **Nhập trước dùng trước.** Ghi ngày nhận lên phuy, lấy phuy cũ trước.
+- **Phuy đã mở:** đậy kín sau mỗi lần lấy, dùng bơm, can, phễu riêng cho dầu thủy lực. Dầu bẩn từ dụng cụ dùng chung làm hỏng cả phuy.
+
+## Quy cách, chứng từ và giao hàng
+
+- **Quy cách:** phuy 200–209 lít; xô 18 lít hoặc 20 lít. Quy cách thực tế tùy mã hàng.
 - **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS (phiếu an toàn hóa chất) bản tiếng Việt hoặc tiếng Anh.
 - **Giao hàng:** Hải Phòng (gồm khu vực Hải Dương cũ), Quảng Ninh, Bắc Ninh, Hưng Yên và các tỉnh miền Bắc.
 
-**Nhận báo giá dầu thủy lực:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**. Gửi kèm mã dầu hoặc tên máy, cấp độ nhớt, số phuy/xô cần mua và địa chỉ giao. Nếu chưa biết chọn loại nào, gửi ảnh nhãn dầu đang dùng để được tư vấn sản phẩm tương đương.
+Giá từng mã theo phuy, xô có ở [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc). Cần tư vấn chọn dầu, gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**, gửi kèm tên máy hoặc ảnh nhãn dầu đang dùng.
 
 ## Câu hỏi thường gặp
 
@@ -102,4 +120,4 @@ Thêm một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng cấp VG) th�
 
 ---
 
-**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau) · [Top 6 hãng dầu thủy lực](/top-6-dau-thuy-luc-2026) · [Bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)
+**Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau) · [Top 6 hãng dầu thủy lực](/top-6-dau-thuy-luc-2026) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)
