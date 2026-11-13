@@ -1,0 +1,57 @@
+---
+// Khối trích đánh giá Google Business. Trích CHỌN theo chủ đề nên luôn ghi rõ "trích" + tổng số + link xem tất cả.
+// Không gắn schema (Google không cho rich result sao với review công ty tự đăng trên site mình).
+import { DANH_GIA_GOOGLE, type ChuDeDanhGia } from '../data/danh-gia-google';
+import { fmtNgay } from '../lib/gia-tinh';
+
+interface Props {
+  heading: string;
+  /** h2 khi là một mục riêng, h3 khi nằm trong mục khác. */
+  level?: 2 | 3;
+  /** Thứ tự ưu tiên chủ đề; đánh giá khớp chủ đề đứng trước được xếp trước. */
+  chuDe: ChuDeDanhGia[];
+  /** Mô tả nhóm đánh giá được trích, ví dụ "về giao hàng, phục vụ và chất lượng hàng". */
+  moTaNhom: string;
+  toiDa?: number;
+}
+
+const { heading, level = 2, chuDe, moTaNhom, toiDa = 4 } = Astro.props;
+const H = level === 2 ? 'h2' : 'h3';
+const hang = (cd: ChuDeDanhGia[]) => {
+  const i = chuDe.findIndex((c) => cd.includes(c));
+  return i === -1 ? Infinity : i;
+};
+const chon = DANH_GIA_GOOGLE.danhSach
+  .filter((r) => hang(r.chuDe) !== Infinity)
+  .sort((a, b) => hang(a.chuDe) - hang(b.chuDe))
+  .slice(0, toiDa);
+---
+<div class="gg-reviews">
+  <H>{heading}</H>
+  <p>Hồ sơ Google của HT VINA hiện có <strong>{DANH_GIA_GOOGLE.diem}/5 sao từ {DANH_GIA_GOOGLE.soLuong} đánh giá</strong> (xem ngày {fmtNgay(DANH_GIA_GOOGLE.ngayXem)}). Hồ sơ bắt đầu nhận đánh giá từ tháng 10/2026 nên số lượng còn ít. Dưới đây trích {chon.length} đánh giá {moTaNhom}, giữ nguyên văn khách viết; các đánh giá còn lại xem đầy đủ trên Google Maps.</p>
+  <div class="gg-reviews__list">
+    {chon.map((r) => (
+      <blockquote>
+        <p class="gg-reviews__stars" aria-label={`${r.sao} trên 5 sao`}>{'★'.repeat(r.sao)}</p>
+        <p>“{r.noiDung}”</p>
+        <footer>{r.ten}, tháng {r.thang}{r.ghiChu ? ` (${r.ghiChu})` : ''}</footer>
+      </blockquote>
+    ))}
+  </div>
+  <p class="gg-reviews__src">Nguồn: <a href={DANH_GIA_GOOGLE.xemTatCaUrl} target="_blank" rel="noopener">đánh giá trên Google Maps</a>. Tên người đánh giá được viết tắt.</p>
+  <div class="gg-reviews__actions">
+    <a href={DANH_GIA_GOOGLE.xemTatCaUrl} class="btn-secondary" target="_blank" rel="noopener">Xem tất cả {DANH_GIA_GOOGLE.soLuong} đánh giá</a>
+    <a href={DANH_GIA_GOOGLE.vietDanhGiaUrl} class="btn-secondary" target="_blank" rel="noopener">Viết đánh giá trên Google</a>
+  </div>
+</div>
+
+<style>
+  .gg-reviews__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 12px 0; }
+  .gg-reviews__list blockquote { margin: 0; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 12px 14px; }
+  .gg-reviews__list p { margin: 0 0 4px; }
+  .gg-reviews__stars { color: #b45309; letter-spacing: 1px; }
+  .gg-reviews__list footer { font-size: 0.88rem; color: var(--color-text-light); }
+  .gg-reviews__src { font-size: 0.88rem; color: var(--color-text-light); }
+  .gg-reviews__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+  .gg-reviews__actions a { text-decoration: none; }
+</style>
