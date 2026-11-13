@@ -26,6 +26,12 @@ const TRANG_RIENG: TheXemThem[] = [
     loai: 'Bảng giá',
     anh: { src: '/images/blog/kho-ht-vina-thanh-binh-1.webp', alt: 'Kho HT VINA với phuy và xô dầu các hãng' },
   },
+  {
+    href: '/bao-gia-mo-boi-tron',
+    tieuDe: 'Bảng giá mỡ bôi trơn',
+    loai: 'Bảng giá',
+    anh: { src: '/images/san-pham/vhp-lithium-grease-l4-xo-kho.webp', alt: 'Xô mỡ VHP Lithium Grease L4 xếp trong kho HT VINA' },
+  },
 ];
 
 let cache: Promise<Map<string, TheXemThem>> | undefined;

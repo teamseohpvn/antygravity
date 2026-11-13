@@ -150,5 +150,5 @@ Theo bảng tương thích của ExxonMobil, mỡ canxi với mỡ lithium thôn
 - **Quy cách có sẵn:** phuy 180 kg.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=Calix%20Ceno%20No3).
+- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Calix%20Ceno%20No3).
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

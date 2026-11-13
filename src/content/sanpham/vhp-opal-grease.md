@@ -154,5 +154,5 @@ Mỡ lưu kho đúng cách (trong nhà, đậy kín, tránh nắng nóng) giữ 
 - **Quy cách:** NLGI 3 phuy 180 kg, NLGI 4 xô 15 kg. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Opal%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
+- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Opal%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

@@ -62,7 +62,7 @@ date: "2026-10-12"
 updated: "2026-10-14"
 ---
 
-**Cosmo Hydro AW 68** là dầu thủy lực chống mài mòn loại tuổi thọ dài của Cosmo Oil Lubricants (Nhật Bản). Theo hãng, dầu tương đương các tiêu chuẩn ISO 11158 HM, ASTM D6158 HM và DIN 51524-2 HLP. Dầu cũng tương đương tiêu chuẩn dầu thủy lực của hai hãng bơm Denison và Eaton. Điểm mạnh của dầu là ít tạo cặn khi dùng lâu và chịu được nhiệt độ, áp suất cao.
+**Cosmo Hydro AW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn loại tuổi thọ dài của Cosmo Oil Lubricants (Nhật Bản). Theo hãng, dầu tương đương các tiêu chuẩn ISO 11158 HM, ASTM D6158 HM và DIN 51524-2 HLP. Dầu cũng tương đương tiêu chuẩn dầu thủy lực của hai hãng bơm Denison và Eaton. Điểm mạnh của dầu là ít tạo cặn khi dùng lâu và chịu được nhiệt độ, áp suất cao.
 
 Mã này **có sẵn tại kho** theo phuy 200 L, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
@@ -126,5 +126,5 @@ Hiện chúng tôi có sẵn loại phuy 200 L. Nếu cần quy cách khác, hã
 - **Quy cách:** phuy 200 L cấp 68, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Cosmo%20Hydro%20AW%2068) kèm số lượng.
+- **Giá:** xem khoảng giá tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Cosmo%20Hydro%20AW%2068) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

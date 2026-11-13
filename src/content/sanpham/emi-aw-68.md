@@ -52,7 +52,7 @@ date: "2026-10-12"
 updated: "2026-10-14"
 ---
 
-**EMI AW 68** là dầu thủy lực chống mài mòn cấp **ISO VG 68**, pha từ dầu gốc khoáng với hệ phụ gia chống mài mòn. Theo nhà cung cấp, phụ gia thuộc nhóm gốc kẽm (ZDDP), loại phổ biến nhất cho dầu thủy lực HM. Dầu hợp với hệ thống chạy áp cao, nhiệt độ làm việc ổn định.
+**EMI AW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp **ISO VG 68**, pha từ dầu gốc khoáng với hệ phụ gia chống mài mòn. Theo nhà cung cấp, phụ gia thuộc nhóm gốc kẽm (ZDDP), loại phổ biến nhất cho dầu thủy lực HM. Dầu hợp với hệ thống chạy áp cao, nhiệt độ làm việc ổn định.
 
 Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** và **xô 18 L**, có hóa đơn VAT.
 

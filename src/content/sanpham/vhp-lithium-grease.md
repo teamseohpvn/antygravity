@@ -65,7 +65,7 @@ date: "2026-10-06"
 updated: "2026-10-30"
 ---
 
-**VHP Lithium Grease** là mỡ bôi trơn đa dụng gốc lithium do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Mỡ dùng dầu gốc khoáng có độ nhớt 220 cSt ở 40 °C, kèm phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Với loại L3 và L4, nhiệt độ nhỏ giọt tối thiểu là 190 °C.
+**VHP Lithium Grease** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng gốc lithium do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Mỡ dùng dầu gốc khoáng có độ nhớt 220 cSt ở 40 °C, kèm phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Với loại L3 và L4, nhiệt độ nhỏ giọt tối thiểu là 190 °C.
 
 HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): loại **L4, xô 17 kg**, có CO/CQ và hóa đơn VAT. Loại L3, L00, L0 và phuy 180 kg nhận đặt theo yêu cầu.
 
@@ -162,5 +162,5 @@ Theo độ đặc/độ sệt NLGI ghi trong tài liệu của hãng hệ thốn
 - **Quy cách có sẵn:** L4 xô 17 kg. L3, L00, L0 và phuy 180 kg nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Lithium%20Grease) kèm độ đặc/độ sệt NLGI.
+- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Lithium%20Grease) kèm độ đặc/độ sệt NLGI.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

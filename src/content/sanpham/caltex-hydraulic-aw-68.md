@@ -60,7 +60,7 @@ date: "2026-10-12"
 updated: "2026-10-30"
 ---
 
-**Caltex Hydraulic Oil AW 68** là dầu thủy lực chống mài mòn của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho hệ thủy lực cố định và hệ thủy lực trên máy di động. Mục tiêu của dòng này là bảo vệ tốt với chi phí hợp lý.
+**Caltex Hydraulic Oil AW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho hệ thủy lực cố định và hệ thủy lực trên máy di động. Mục tiêu của dòng này là bảo vệ tốt với chi phí hợp lý.
 
 Mã này **có sẵn tại kho** theo phuy 208 lít, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
@@ -169,5 +169,5 @@ Không. Mục phê duyệt trong TDS ghi "N/A". Nếu hướng dẫn sử dụng
 - **Quy cách:** phuy 208 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Caltex%20Hydraulic%20Oil%20AW%2068) kèm số lượng.
+- **Giá:** xem khoảng giá tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Caltex%20Hydraulic%20Oil%20AW%2068) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

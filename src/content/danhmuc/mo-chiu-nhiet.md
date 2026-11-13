@@ -63,6 +63,8 @@ Trên thị trường có sản phẩm ghi "chịu 500 độ" hay "1000 độ". 
 - **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS.
 - **Tư vấn:** gửi nhiệt độ đo được tại vòng bi, tốc độ quay và loại mỡ đang dùng. Đo bằng súng đo nhiệt hồng ngoại khi máy đang chạy ổn định.
 
+Khoảng giá các mã mỡ đang có ở kho xem tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron).
+
 **Nhận báo giá mỡ bò chịu nhiệt:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**.
 
 ## Câu hỏi thường gặp

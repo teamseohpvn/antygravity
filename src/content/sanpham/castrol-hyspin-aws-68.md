@@ -65,7 +65,7 @@ date: "2026-09-21"
 updated: "2026-10-14"
 ---
 
-**Castrol Hyspin AWS 68** là dầu thủy lực chống mài mòn cấp [độ nhớt](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99_nh%E1%BB%9Bt) ISO VG 68 của Castrol, pha chế từ dầu gốc khoáng tinh chế cao cùng phụ gia chống mài mòn gốc kẽm ([ZDDP](https://en.wikipedia.org/wiki/Zinc_dithiophosphate)) đã được ổn định hóa. Dầu đạt loại **HM** theo [ISO 11158](https://www.iso.org/standard/84812.html) (tương đương [TCVN 12416:2019](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+12416%3A2019)) và **HLP** theo DIN 51524-2, nên bôi trơn và bảo vệ được hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và pít-tông.
+**Castrol Hyspin AWS 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp [độ nhớt](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99_nh%E1%BB%9Bt) ISO VG 68 của Castrol, pha chế từ dầu gốc khoáng tinh chế cao cùng phụ gia chống mài mòn gốc kẽm ([ZDDP](https://en.wikipedia.org/wiki/Zinc_dithiophosphate)) đã được ổn định hóa. Dầu đạt loại **HM** theo [ISO 11158](https://www.iso.org/standard/84812.html) (tương đương [TCVN 12416:2019](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+12416%3A2019)) và **HLP** theo DIN 51524-2, nên bôi trơn và bảo vệ được hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và pít-tông.
 
 Sản phẩm này chúng tôi luôn có sẵn tại kho: Castrol Hyspin AWS 68 **phuy 209 lít**, có CO/CQ và hóa đơn VAT. Cấp **AWS 46** nhận đặt theo yêu cầu số lượng tùy chọn, giao hàng tùy chọn lịch đặt trước hẹn giao. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ). Miễn phí vận chuyển trong 80 km kể từ kho của chúng tôi.
 

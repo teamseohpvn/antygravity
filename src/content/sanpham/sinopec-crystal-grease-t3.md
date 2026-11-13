@@ -160,5 +160,5 @@ Hai loại cùng dòng, cùng chất làm đặc lithium và dầu gốc khoáng
 
 - **Quy cách:** xô 17 kg và phuy 180 kg có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Crystal%20Grease%20T3) kèm số lượng.
+- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Crystal%20Grease%20T3) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

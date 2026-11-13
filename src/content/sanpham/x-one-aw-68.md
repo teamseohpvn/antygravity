@@ -62,7 +62,7 @@ date: "2026-10-12"
 updated: "2026-11-02"
 ---
 
-**X-One AW 68** là dầu thủy lực chống mài mòn cấp độ nhớt **ISO VG 68**. Chữ "AW" (anti-wear) nghĩa là dầu có phụ gia chống mài mòn để bảo vệ bơm và van khi hệ thống chạy áp cao. Dầu dùng cho máy ép, máy công trình và hầu hết hệ thủy lực công nghiệp yêu cầu dầu cấp 68.
+**X-One AW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp độ nhớt **ISO VG 68**. Chữ "AW" (anti-wear) nghĩa là dầu có phụ gia chống mài mòn để bảo vệ bơm và van khi hệ thống chạy áp cao. Dầu dùng cho máy ép, máy công trình và hầu hết hệ thủy lực công nghiệp yêu cầu dầu cấp 68.
 
 Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** và **xô 18 L**, có hóa đơn VAT.
 

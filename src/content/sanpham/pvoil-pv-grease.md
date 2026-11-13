@@ -57,7 +57,7 @@ date: "2026-10-12"
 updated: "2026-10-14"
 ---
 
-**PV Grease** là mỡ bôi trơn đa dụng của Công ty CP Dầu nhờn PVOIL (PVOIL Lube), thuộc Tổng công ty Dầu Việt Nam. Trên web hãng, dòng này có tên **PV Grease Lithium**, gồm ba loại theo độ đặc/độ sệt NLGI: 1, 2 và 3. Mỡ màu vàng, pha từ dầu gốc khoáng và có điểm nhỏ giọt tối thiểu 140 °C.
+**PV Grease** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng của Công ty CP Dầu nhờn PVOIL (PVOIL Lube), thuộc Tổng công ty Dầu Việt Nam. Trên web hãng, dòng này có tên **PV Grease Lithium**, gồm ba loại theo độ đặc/độ sệt NLGI: 1, 2 và 3. Mỡ màu vàng, pha từ dầu gốc khoáng và có điểm nhỏ giọt tối thiểu 140 °C.
 
 Loại **No2** và **No3** đóng **phuy** **có sẵn tại kho**, có hóa đơn VAT; CO/CQ cung cấp theo lô khi khách yêu cầu. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
@@ -126,5 +126,5 @@ Không. Điểm nhỏ giọt tối thiểu 140 °C là mức của mỡ đa dụ
 - **Quy cách:** No2, No3 phuy. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=PVOIL%20PV%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
+- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=PVOIL%20PV%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

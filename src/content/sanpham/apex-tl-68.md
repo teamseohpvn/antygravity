@@ -46,7 +46,7 @@ date: "2026-10-12"
 updated: "2026-11-02"
 ---
 
-**APEX TL 68** là dầu thủy lực cấp **ISO VG 68** do Quốc Trung sản xuất trong nước. Dầu truyền năng lượng và bôi trơn cho hệ thủy lực công nghiệp, máy ép, máy đùn và máy công trình chịu áp lực cao. Trong nhóm dầu thủy lực 68 có sẵn tại kho HT VINA, đây là mã có giá theo lít thấp nhất.
+**APEX TL 68** là [dầu thủy lực](/dau-thuy-luc) cấp **ISO VG 68** do Quốc Trung sản xuất trong nước. Dầu truyền năng lượng và bôi trơn cho hệ thủy lực công nghiệp, máy ép, máy đùn và máy công trình chịu áp lực cao. Trong nhóm dầu thủy lực 68 có sẵn tại kho HT VINA, đây là mã có giá theo lít thấp nhất.
 
 Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L**, có hóa đơn VAT.
 

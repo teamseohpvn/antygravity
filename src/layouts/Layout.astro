@@ -251,7 +251,15 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
               </div>
             </details>
           </li>
-          <li><a href="/bao-gia-dau-thuy-luc" class="nav-bao-gia">BÁO GIÁ</a></li>
+          <li>
+            <details class="dropdown">
+              <summary class="nav-bao-gia">BÁO GIÁ ▾</summary>
+              <div class="dropdown-content">
+                <a href="/bao-gia-dau-thuy-luc">Báo giá dầu thủy lực</a>
+                <a href="/bao-gia-mo-boi-tron">Báo giá mỡ bôi trơn</a>
+              </div>
+            </details>
+          </li>
           <li><a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a></li>
           <li><a href="/about">Giới thiệu</a></li>
           <li><a href="/contact">Liên hệ</a></li>
@@ -263,7 +271,8 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
           <nav aria-label="Menu chính">
             <a href="/">Trang chủ</a>
             {categories.map((c) => <a href={`/${c.id}`}>{c.data.nav_label ?? c.data.title}</a>)}
-            <a href="/bao-gia-dau-thuy-luc" class="nav-bao-gia">BÁO GIÁ</a>
+            <a href="/bao-gia-dau-thuy-luc" class="nav-bao-gia">Báo giá dầu thủy lực</a>
+            <a href="/bao-gia-mo-boi-tron" class="nav-bao-gia">Báo giá mỡ bôi trơn</a>
             <a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a>
             <a href="/about">Giới thiệu</a>
             <a href="/contact">Liên hệ</a>
@@ -305,7 +314,9 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
               <li><a href="/about">Giới thiệu HT VINA</a></li>
               <li><a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a></li>
               <li><a href="/contact">Liên hệ</a></li>
-              <li><a href="/bao-gia">Báo giá</a></li>
+              <li><a href="/bao-gia-dau-thuy-luc">Báo giá dầu thủy lực</a></li>
+              <li><a href="/bao-gia-mo-boi-tron">Báo giá mỡ bôi trơn</a></li>
+              <li><a href="/bao-gia">Gửi yêu cầu báo giá</a></li>
             </ul>
           </div>
           <div>
