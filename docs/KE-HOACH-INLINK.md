@@ -40,3 +40,14 @@ Lập ngày 08/11/2026. Áp dụng cho danh mục, sản phẩm, bài hướng d
 2. Khi có dữ liệu thật (số đơn theo mã, đánh giá trên Google Business Profile): mới thêm nhóm "mã được chọn nhiều". Chưa có thì không ghi.
 3. Bài mới: trước khi đăng, kiểm tra theo mục 2 và thêm ít nhất 1 link **tới** bài mới từ danh mục hoặc bài liên quan (bài mới không được để mồ côi).
 4. Đo lại sau 4–6 tuần trong Google Search Console (Liên kết → Liên kết nội bộ) xem các trang trước đây ít link đã được Google ghi nhận chưa.
+
+## 6. Đẩy 4 trang trụ cột (13/11/2026)
+
+Trang trụ cột: `/dau-thuy-luc`, `/bao-gia-dau-thuy-luc`, `/mo-boi-tron-cong-nghiep`, `/bao-gia-mo-boi-tron`.
+
+- **Menu và footer:** nút BÁO GIÁ thành danh sách xổ xuống gồm báo giá dầu thủy lực và báo giá mỡ bôi trơn. Footer và menu điện thoại có cả hai trang giá. Trước đó `/bao-gia-mo-boi-tron` chỉ có 1 trang link tới.
+- **Khung sản phẩm mỡ** (`mo-boi-tron-cong-nghiep`, `mo-chiu-nhiet`): dòng dưới khung giá và thẻ "Xem thêm" trỏ về `/bao-gia-mo-boi-tron` (thay cho `/mo-boi-tron-cong-nghiep#chi-phi`). Sản phẩm mỡ chịu nhiệt có thêm thẻ hub mỡ bôi trơn.
+- **Thân bài sản phẩm:** gắn link vào cụm "dầu thủy lực" / "mỡ bôi trơn" ở câu mở đầu (câu có sẵn, không viết thêm). Dòng "**Giá:**" trong khối đặt hàng đổi thành "xem khoảng giá tại [bảng giá …], hoặc gửi yêu cầu báo giá", vì mọi mã đã có giá công khai (trừ ENEOS Epnoc AP đang ẩn trên bảng giá mỡ, giữ nguyên).
+- **Trang khác:** trang chủ (mục "Giá công khai theo khoảng" + link "Dầu thủy lực" ở đầu trang), danh mục mỡ chịu nhiệt, trang khuyến mãi AW 68.
+- **Đo trên bản build (103 trang, đếm số trang có link, trong `<main>`):** báo giá dầu thủy lực 19 → 21; báo giá mỡ 1 → 16 (toàn trang 1 → 102); hub mỡ 23 → 24; hub dầu thủy lực giữ 37. Trang chính sách chỉ nằm ở footer.
+- **Lưu ý khi đọc GSC:** báo cáo Liên kết nội bộ chậm vài tuần và chỉ đếm số trang trỏ tới (không đếm số link), nên con số tối đa bằng số trang của site. Trang có link ở menu luôn ngang nhau; khác biệt nằm ở link trong nội dung. Đo lại khoảng 01–08/12/2026.

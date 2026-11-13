@@ -69,7 +69,7 @@ date: "2026-11-05"
 updated: "2026-11-05"
 ---
 
-**Sinopec Crystal Grease NLGI 3** là mỡ bôi trơn đa dụng gốc lithium của Sinopec, pha từ dầu khoáng tinh chế với phụ gia chống ô xy hóa và chống gỉ. Mỡ dùng cho vòng bi, trục lăn và ổ trượt của ô tô, thiết bị cơ khí công nghiệp không có yêu cầu chịu tải cao, làm việc từ -20 °C đến 120 °C.
+**Sinopec Crystal Grease NLGI 3** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng gốc lithium của Sinopec, pha từ dầu khoáng tinh chế với phụ gia chống ô xy hóa và chống gỉ. Mỡ dùng cho vòng bi, trục lăn và ổ trượt của ô tô, thiết bị cơ khí công nghiệp không có yêu cầu chịu tải cao, làm việc từ -20 °C đến 120 °C.
 
 Mã này **có sẵn tại kho** theo **xô 17 kg** và **phuy 180 kg**, nhãn xô ghi sản xuất tại Singapore. Có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT. Nếu cần mỡ đặc hơn, xem [Crystal Grease T3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-t3).
 
@@ -158,5 +158,5 @@ Chỉ nên thêm mỡ cùng gốc lithium. Với mỡ khác gốc, hãy làm s�
 
 - **Quy cách:** xô 17 kg và phuy 180 kg có sẵn tại kho. Loại NLGI 2 cùng dòng cũng có sẵn xô 17 kg và phuy 180 kg. Loại NLGI 1 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Crystal%20Grease%20NLGI%203) kèm số lượng.
+- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Crystal%20Grease%20NLGI%203) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

@@ -48,7 +48,7 @@ date: "2026-10-12"
 updated: "2026-10-30"
 ---
 
-**EMER LAW 68** là dầu thủy lực chống mài mòn cấp **ISO VG 68** dùng cho hệ thủy lực nâng hạ, máy ép và máy cơ giới. Cấp 68 là cấp phổ biến nhất cho máy chạy trong xưởng nóng và hệ thống áp cao ở miền Bắc.
+**EMER LAW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp **ISO VG 68** dùng cho hệ thủy lực nâng hạ, máy ép và máy cơ giới. Cấp 68 là cấp phổ biến nhất cho máy chạy trong xưởng nóng và hệ thống áp cao ở miền Bắc.
 
 Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** và **xô 18 L**, có hóa đơn VAT.
 

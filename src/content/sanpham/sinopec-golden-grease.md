@@ -73,7 +73,7 @@ date: "2026-11-05"
 updated: "2026-11-05"
 ---
 
-**Sinopec Golden Grease** là mỡ bôi trơn đa dụng dùng công nghệ NanoShield của Sinopec, tạo từ tiền chất nano và axit béo, thành các sợi xà phòng kim loại trong dầu khoáng. TDS ghi mỡ dùng cho thiết bị tốc độ thấp như máy xây dựng, máy nông nghiệp, gầm xe và moay ơ, làm việc từ -20 °C đến 110 °C.
+**Sinopec Golden Grease** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng dùng công nghệ NanoShield của Sinopec, tạo từ tiền chất nano và axit béo, thành các sợi xà phòng kim loại trong dầu khoáng. TDS ghi mỡ dùng cho thiết bị tốc độ thấp như máy xây dựng, máy nông nghiệp, gầm xe và moay ơ, làm việc từ -20 °C đến 110 °C.
 
 Hàng **có sẵn tại kho** gồm **NLGI 3** và **NLGI 2**, đóng **xô 17 kg** và **phuy 180 kg**, nhãn xô và phuy NLGI 3 ghi sản xuất tại Singapore. Có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT.
 
@@ -173,5 +173,5 @@ Không nên trộn khi chưa rõ gốc mỡ. TDS không ghi Golden Grease là li
 
 - **Quy cách:** NLGI 3 và NLGI 2 có sẵn tại kho, đóng xô 17 kg và phuy 180 kg.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Golden%20Grease) kèm số lượng.
+- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Golden%20Grease) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

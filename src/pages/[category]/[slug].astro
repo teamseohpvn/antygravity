@@ -66,6 +66,9 @@ const cungDanhMuc = activeProducts
 const xemThem = [
   { href: `/${d.category}`, tieuDe: categoryLabel },
   ...(isThuyLuc ? ['/bao-gia-dau-thuy-luc'] : []),
+  // Mỡ: bảng giá mỡ; mỡ chịu nhiệt thêm hub mỡ bôi trơn (trang trụ cột của cả nhóm mỡ).
+  ...(d.category.startsWith('mo-') ? ['/bao-gia-mo-boi-tron'] : []),
+  ...(d.category === 'mo-chiu-nhiet' ? ['/mo-boi-tron-cong-nghiep'] : []),
   ...baiLienQuan,
   ...cungDanhMuc,
 ];
@@ -76,7 +79,8 @@ const xemThem = [
 const tenLoai = categoryLabel.charAt(0).toLowerCase() + categoryLabel.slice(1);
 const TRANG_GIA: Record<string, { href: string; chu: string }> = {
   'dau-thuy-luc': { href: '/bao-gia-dau-thuy-luc', chu: 'Xem báo giá nhiều mã dầu thủy lực khác' },
-  'mo-boi-tron-cong-nghiep': { href: '/mo-boi-tron-cong-nghiep#chi-phi', chu: 'Xem giá mỗi kg của các loại mỡ khác' },
+  'mo-boi-tron-cong-nghiep': { href: '/bao-gia-mo-boi-tron', chu: 'Xem báo giá mỡ bôi trơn các hãng' },
+  'mo-chiu-nhiet': { href: '/bao-gia-mo-boi-tron', chu: 'Xem báo giá mỡ bôi trơn các hãng' },
 };
 const trangGia = TRANG_GIA[d.category];
 const nhomSp = nhomCua(d);

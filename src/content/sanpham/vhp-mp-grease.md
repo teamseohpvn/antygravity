@@ -62,7 +62,7 @@ date: "2026-11-05"
 updated: "2026-11-05"
 ---
 
-**VHP MP Grease** là mỡ bôi trơn đa dụng do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). TDS ghi mỡ dùng dầu gốc khoáng tinh chế 150 cSt ở 40 °C, chất làm đặc lithium, kèm phụ gia chống mài mòn, chống oxy hóa, chống gỉ và ăn mòn.
+**VHP MP Grease** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). TDS ghi mỡ dùng dầu gốc khoáng tinh chế 150 cSt ở 40 °C, chất làm đặc lithium, kèm phụ gia chống mài mòn, chống oxy hóa, chống gỉ và ăn mòn.
 
 HT VINA là **đại lý dầu mỡ VHP**. Hàng **có sẵn tại kho** gồm **L2** phuy 180 kg, **L3** xô 15 kg, xô 17 kg, phuy 180 kg và **L4** xô 17 kg. Có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT.
 
@@ -151,5 +151,5 @@ Cả hai đều dùng được. L2 mềm hơn nên bơm nhẹ tay hơn, L3 ít c
 
 - **Quy cách có sẵn:** L2 phuy 180 kg; L3 xô 15 kg, xô 17 kg, phuy 180 kg; L4 xô 17 kg. L0, L00, L000 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20MP%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
+- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20MP%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

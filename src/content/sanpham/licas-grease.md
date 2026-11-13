@@ -65,7 +65,7 @@ date: "2026-10-06"
 updated: "2026-10-30"
 ---
 
-**VHP Licas Grease** là mỡ bôi trơn (mỡ bò) đa dụng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Mỡ pha từ dầu gốc khoáng tinh chế, chất làm đặc lithium và canxi, cùng phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Mỡ có hai loại: **No2** mềm hơn và **No3** đặc hơn.
+**VHP Licas Grease** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) (mỡ bò) đa dụng do Công ty CP Hóa dầu VHP sản xuất tại nhà máy Lai Cách, Cẩm Giàng (Hải Dương cũ). Mỡ pha từ dầu gốc khoáng tinh chế, chất làm đặc lithium và canxi, cùng phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Mỡ có hai loại: **No2** mềm hơn và **No3** đặc hơn.
 
 HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): loại **No3, thùng 30 ống 400 g**. Xô 15 kg, xô 17 kg, phuy 180 kg (No2, No3) nhận đặt theo yêu cầu.
 
@@ -162,5 +162,5 @@ Tùy loại súng, nên tự cân: bơm 10 nhát vào túi ni lông, cân rồi 
 - **Quy cách có sẵn:** No3 thùng 30 ống 400 g. Xô 15 kg, 17 kg, phuy 180 kg (No2, No3) nhận đặt; nhà máy VHP ở gần nên hàng về nhanh.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) tới các KCN Đại An, Nam Sách, Phúc Điền, Tân Trường và các tỉnh miền Bắc.
-- **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Licas%20Grease).
+- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Licas%20Grease).
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
