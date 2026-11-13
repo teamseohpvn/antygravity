@@ -189,9 +189,14 @@ const seoTitle = `${tenBaoGia} | Phuy 200L, Xô 18L`;
 const BA_KHO = 'Hải Dương cũ, Kiến An, Như Quỳnh (Hưng Yên)';
 // Làm tròn 1 chữ số thập phân: 5.410.000 -> 5.4; 10.590.000 -> 10.6.
 const trieu = (n: number) => (n / 1_000_000).toFixed(1);
+// 07/11/2026 (yêu cầu của người dùng): title và H1 đã có từ khóa chính, mô tả không nhắc lại mà dành chỗ cho số liệu: giá phuy, giá xô, giá quy ra lít.
+const xo = coSo.filter((r) => /xô/i.test(r.quy_cach));
+const xoThap = xo.length ? minOf(xo.map((r) => r.thap)) : null;
+const xoCao = xo.length ? maxOf(xo.map((r) => r.cao)) : null;
+const litPhuyThap = phuy.some((r) => r.thap_don_vi) ? minOf(phuy.map((r) => r.thap_don_vi)) : null;
 const description = coGia && phuyThap
-  ? `Báo giá dầu thủy lực 68, 46${thang ? ` tháng ${thang}` : ''}. Giá ${trieu(phuyThap)} - ${trieu(phuyCao)}tr/phuy (${vat}), chiết khấu cao. Miễn phí vận chuyển 80km, đủ CO/CQ, VAT.`
-  : `Miễn phí vận chuyển 80 km từ 3 kho ${BA_KHO}. Báo giá dầu thủy lực 68, 46 phuy 200–209 L, xô 18 L. Giao trong ngày KCN gần kho.`;
+  ? `Phuy 200L ${trieu(phuyThap)}–${trieu(phuyCao!)}tr${xoThap ? `, xô 18L ${trieu(xoThap)}–${trieu(xoCao!)}tr` : ''} (${vat})${litPhuyThap ? `, quy ra từ ${Math.round(litPhuyThap / 1000)}k/lít` : ''}. Miễn phí vận chuyển 80 km, đủ CO/CQ, hóa đơn VAT, chiết khấu tốt cho nhà máy.`
+  : `Miễn phí vận chuyển 80 km từ 3 kho ${BA_KHO}. Phuy 200–209 L, xô 18 L, đủ CO/CQ, hóa đơn VAT. Giao trong ngày KCN gần kho.`;
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
