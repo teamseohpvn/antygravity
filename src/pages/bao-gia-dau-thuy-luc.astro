@@ -161,7 +161,7 @@ const duongBrent = diemBrent.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).j
 // Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
-const NGAY_SUA_NOI_DUNG = '2026-11-12';
+const NGAY_SUA_NOI_DUNG = '2026-11-13';
 const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const tacGia = nguoiGia;
 // Ngày cập nhật cuối gồm cả đợt tin. Schema và thẻ meta dùng giờ thật của đợt tin nếu đó là thay đổi mới nhất, không gán giờ giả cho thay đổi khác.
@@ -336,7 +336,6 @@ const schemaData = [
       </div>
 
 
-
       {coGia && (
         <div class="summary">
           <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}</p>
@@ -421,49 +420,6 @@ const schemaData = [
         <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
         <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
       </div>
-    </section>
-
-    <section class="price-body" id="nhan-dinh">
-      <h2>Tin giá dầu thế giới và dầu gốc tháng 11/2026</h2>
-      <h3 id={TIN_MOI.id}>{TIN_MOI.tieuDe}</h3>
-      <p class="tin-gio">Cập nhật lúc <time datetime={TIN_MOI.capNhatLuc}>{TIN_MOI.capNhatLuc.slice(11, 16)}, {fmtNgay(TIN_MOI.capNhatLuc)}</time> (giờ Việt Nam)</p>
-      <ul>
-        <li><strong>Dầu thô Brent quanh 91–93 USD/thùng,</strong> giảm khoảng 21% từ đầu tháng vì kỳ vọng đàm phán chấm dứt chiến sự Mỹ – Iran. Phiên 11/11 chốt 92,76 USD/thùng, sáng 12/11 khoảng 91,62 USD/thùng (<a href={TIN.reuters1111} rel="noopener">Reuters</a>, <a href={TIN.reuters1211} rel="noopener">Reuters</a>).</li>
-        <li><strong>Dầu gốc chưa giảm theo dầu thô.</strong> Báo cáo ngày 9/11: dầu gốc nhóm I ở châu Á tăng khoảng 10 USD/tấn, nhóm II đi ngang hoặc giảm nhẹ (<a href={TIN.lubes0911} rel="noopener">Lubes'N'Greases</a>). Dầu thủy lực gốc khoáng thường pha từ dầu gốc nhóm I và nhóm II.</li>
-        <li><strong>Với người mua:</strong> bảng giá tháng 11 trên trang này chưa thay đổi. Nếu đã rõ lượng dầu dùng trong tháng, có thể <a href="#giu-gia">chốt giá và lấy hàng chia đợt</a>; chưa rõ thì <a href="#dat-bao-nhieu">tính theo nhu cầu của máy</a> thay vì mua trữ.</li>
-      </ul>
-      <div class="table-wrap">
-        <table class="match">
-          <caption>Giá dầu gốc châu Á (FOB Asia, USD/tấn), báo cáo ngày 2/11 và 9/11/2026 của <a href={TIN.lubes0911} rel="noopener">Lubes'N'Greases</a></caption>
-          <thead><tr><th scope="col">Loại dầu gốc</th><th scope="col">Tuần 2/11</th><th scope="col">Tuần 9/11</th><th scope="col">Thay đổi (USD/tấn)</th></tr></thead>
-          <tbody>
-            {DAU_GOC.map((d) => (
-              <tr><td>{d.loai}</td><td>{d.tuanTruoc}</td><td>{d.tuanNay}</td><td>{d.xuHuong}</td></tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <figure class="brent-chart">
-        <figcaption class="brent-chart__tieu-de">Giá dầu Brent các phiên gần đây (USD/thùng)</figcaption>
-        <svg viewBox={`0 0 ${BD.rong} ${BD.cao}`} role="img" aria-label={`Giá Brent giảm từ ${fmtUsd(diemBrent[0].gia)} USD/thùng ngày ${ngayNgan(diemBrent[0].ngay)} xuống ${fmtUsd(diemBrent.at(-1)!.gia)} USD/thùng ngày ${ngayNgan(diemBrent.at(-1)!.ngay)}.`}>
-          <line x1={BD.trai} x2={BD.rong - BD.phai} y1={BD.cao - BD.duoi + 8} y2={BD.cao - BD.duoi + 8} class="brent-chart__truc" />
-          <polyline points={duongBrent} class="brent-chart__duong" />
-          {diemBrent.map((p, i) => (
-            <g>
-              <title>{`${fmtNgay(p.ngay)}: ${fmtUsd(p.gia)} USD/thùng (${p.loai === 'chot' ? 'giá chốt' : 'giá CFD tham khảo'})`}</title>
-              <circle cx={p.x} cy={p.y} r="14" fill="transparent" />
-              <circle cx={p.x} cy={p.y} r="5" class={p.loai === 'chot' ? 'brent-chart__diem' : 'brent-chart__diem brent-chart__diem--mo'} />
-              {(i === 0 || i === diemBrent.length - 1) && <text x={p.x} y={p.y - 11} text-anchor="middle" class="brent-chart__gia">{fmtUsd(p.gia)}</text>}
-              <text x={p.x} y={BD.cao - 6} text-anchor="middle" class="brent-chart__ngay">{ngayNgan(p.ngay)}</text>
-            </g>
-          ))}
-        </svg>
-        <figcaption class="brent-chart__ghi-chu">Chấm đặc là giá chốt phiên, chấm rỗng là giá CFD tham khảo trong ngày. HT VINA vẽ từ các mức giá có nguồn, trục giá không bắt đầu từ 0. <a href={TIN.tradingEconomics} rel="noopener" data-track="click_brent_chart">Xem biểu đồ đầy đủ trên Trading Economics</a>.</figcaption>
-      </figure>
-      <blockquote class="market-note">
-        <p>Giá dầu tháng 11 diễn biến phức tạp và có khả năng tăng cao nếu chiến sự giữa Mỹ và Iran tái bùng phát.</p>
-        <footer>Nhận định chủ quan của {displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}, ngày {fmtNgay(NGAY_NHAN_DINH)}. Đây không phải dự báo chắc chắn.</footer>
-      </blockquote>
     </section>
 
     <section class="price-body" id="dat-bao-nhieu">
@@ -649,6 +605,53 @@ const schemaData = [
       <p>Mức cọc, thời hạn và các điều khoản trên được thỏa thuận theo số lượng của từng khách. Mục tiêu là bạn có giá ổn định để lập ngân sách, mà không phải trữ dầu quá nhu cầu. Gọi <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a> hoặc gửi <a href={QUOTE_THUONG}>form báo giá</a> với ghi chú "giữ giá" để nhận phương án cụ thể.</p>
     </section>
 
+    <section class="price-body tin-gia" id="nhan-dinh" aria-labelledby="tieu-de-tin">
+      <h2 id="tieu-de-tin">Tin giá dầu thế giới và dầu gốc tháng 11/2026</h2>
+      <h3 id={TIN_MOI.id}>{TIN_MOI.tieuDe}</h3>
+      <p class="tin-gio">Cập nhật lúc <time datetime={TIN_MOI.capNhatLuc}>{TIN_MOI.capNhatLuc.slice(11, 16)}, {fmtNgay(TIN_MOI.capNhatLuc)}</time> (giờ Việt Nam)</p>
+      <p class="tin-tom-tat">Brent quanh 91–93 USD/thùng, giảm khoảng 21% từ đầu tháng; dầu gốc châu Á chưa giảm theo. Bảng giá dầu thủy lực tháng 11 ở trên chưa thay đổi.</p>
+      <details class="tin-chi-tiet">
+        <summary data-track="click_tin_gia_dau">Đọc chi tiết: số liệu, biểu đồ Brent và nhận định</summary>
+      <ul>
+        <li><strong>Dầu thô Brent quanh 91–93 USD/thùng,</strong> giảm khoảng 21% từ đầu tháng vì kỳ vọng đàm phán chấm dứt chiến sự Mỹ – Iran. Phiên 11/11 chốt 92,76 USD/thùng, sáng 12/11 khoảng 91,62 USD/thùng (<a href={TIN.reuters1111} rel="noopener">Reuters</a>, <a href={TIN.reuters1211} rel="noopener">Reuters</a>).</li>
+        <li><strong>Dầu gốc chưa giảm theo dầu thô.</strong> Báo cáo ngày 9/11: dầu gốc nhóm I ở châu Á tăng khoảng 10 USD/tấn, nhóm II đi ngang hoặc giảm nhẹ (<a href={TIN.lubes0911} rel="noopener">Lubes'N'Greases</a>). Dầu thủy lực gốc khoáng thường pha từ dầu gốc nhóm I và nhóm II.</li>
+        <li><strong>Với người mua:</strong> bảng giá tháng 11 trên trang này chưa thay đổi. Nếu đã rõ lượng dầu dùng trong tháng, có thể <a href="#giu-gia">chốt giá và lấy hàng chia đợt</a>; chưa rõ thì <a href="#dat-bao-nhieu">tính theo nhu cầu của máy</a> thay vì mua trữ.</li>
+      </ul>
+      <div class="table-wrap">
+        <table class="match">
+          <caption>Giá dầu gốc châu Á (FOB Asia, USD/tấn), báo cáo ngày 2/11 và 9/11/2026 của <a href={TIN.lubes0911} rel="noopener">Lubes'N'Greases</a></caption>
+          <thead><tr><th scope="col">Loại dầu gốc</th><th scope="col">Tuần 2/11</th><th scope="col">Tuần 9/11</th><th scope="col">Thay đổi (USD/tấn)</th></tr></thead>
+          <tbody>
+            {DAU_GOC.map((d) => (
+              <tr><td>{d.loai}</td><td>{d.tuanTruoc}</td><td>{d.tuanNay}</td><td>{d.xuHuong}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <figure class="brent-chart">
+        <figcaption class="brent-chart__tieu-de">Giá dầu Brent các phiên gần đây (USD/thùng)</figcaption>
+        <svg viewBox={`0 0 ${BD.rong} ${BD.cao}`} role="img" aria-label={`Giá Brent giảm từ ${fmtUsd(diemBrent[0].gia)} USD/thùng ngày ${ngayNgan(diemBrent[0].ngay)} xuống ${fmtUsd(diemBrent.at(-1)!.gia)} USD/thùng ngày ${ngayNgan(diemBrent.at(-1)!.ngay)}.`}>
+          <line x1={BD.trai} x2={BD.rong - BD.phai} y1={BD.cao - BD.duoi + 8} y2={BD.cao - BD.duoi + 8} class="brent-chart__truc" />
+          <polyline points={duongBrent} class="brent-chart__duong" />
+          {diemBrent.map((p, i) => (
+            <g>
+              <title>{`${fmtNgay(p.ngay)}: ${fmtUsd(p.gia)} USD/thùng (${p.loai === 'chot' ? 'giá chốt' : 'giá CFD tham khảo'})`}</title>
+              <circle cx={p.x} cy={p.y} r="14" fill="transparent" />
+              <circle cx={p.x} cy={p.y} r="5" class={p.loai === 'chot' ? 'brent-chart__diem' : 'brent-chart__diem brent-chart__diem--mo'} />
+              {(i === 0 || i === diemBrent.length - 1) && <text x={p.x} y={p.y - 11} text-anchor="middle" class="brent-chart__gia">{fmtUsd(p.gia)}</text>}
+              <text x={p.x} y={BD.cao - 6} text-anchor="middle" class="brent-chart__ngay">{ngayNgan(p.ngay)}</text>
+            </g>
+          ))}
+        </svg>
+        <figcaption class="brent-chart__ghi-chu">Chấm đặc là giá chốt phiên, chấm rỗng là giá CFD tham khảo trong ngày. HT VINA vẽ từ các mức giá có nguồn, trục giá không bắt đầu từ 0. <a href={TIN.tradingEconomics} rel="noopener" data-track="click_brent_chart">Xem biểu đồ đầy đủ trên Trading Economics</a>.</figcaption>
+      </figure>
+      <blockquote class="market-note">
+        <p>Giá dầu tháng 11 diễn biến phức tạp và có khả năng tăng cao nếu chiến sự giữa Mỹ và Iran tái bùng phát.</p>
+        <footer>Nhận định chủ quan của {displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}, ngày {fmtNgay(NGAY_NHAN_DINH)}. Đây không phải dự báo chắc chắn.</footer>
+      </blockquote>
+      </details>
+    </section>
+
     <section class="price-body">
       <h2>Khoảng giá trên được lập thế nào</h2>
       <ul>
@@ -696,26 +699,6 @@ const schemaData = [
     nutInfo.setAttribute('aria-expanded', String(!thuGon));
     nutInfo.textContent = thuGon ? '… Xem thêm' : 'Thu gọn';
   });
-
-  // Mục tin giá dầu: vuốt qua thì thu gọn; bấm "Đọc chi tiết" hoặc lối tắt trên menu thì mở hết.
-  const tinGia = document.getElementById('nhan-dinh');
-  const nutTin = document.getElementById('doc-them-tin');
-  if (tinGia && nutTin) {
-    const dat = (thuGon: boolean) => {
-      tinGia.classList.toggle('is-thu-gon', thuGon);
-      nutTin.setAttribute('aria-expanded', String(!thuGon));
-      nutTin.textContent = thuGon ? '… Đọc chi tiết' : 'Thu gọn';
-    };
-    dat(tinGia.classList.contains('is-thu-gon'));
-    nutTin.addEventListener('click', () => {
-      const thuGon = !tinGia.classList.contains('is-thu-gon');
-      dat(thuGon);
-      if (thuGon && tinGia.getBoundingClientRect().top < 0) tinGia.scrollIntoView();
-    });
-    // Mở trước khi trình duyệt nhảy tới neo, để vị trí cuộn đúng.
-    document.querySelectorAll('a[href="#nhan-dinh"]').forEach((a) => a.addEventListener('click', () => dat(false)));
-    window.addEventListener('hashchange', () => { if (location.hash === '#nhan-dinh') dat(false); });
-  }
 </script>
 
 <script>
@@ -796,6 +779,13 @@ const schemaData = [
   .doc-them { display: none; }
   .co-thu-gon > .doc-them { display: block; margin-top: 14px; min-height: 44px; padding: 8px 18px; background: #fff; color: var(--color-primary); border: 1px solid var(--color-primary); border-radius: 6px; font: inherit; font-weight: 700; cursor: pointer; }
   .doc-them:hover { background: #f1f5f9; }
+  .tin-gia { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px 18px; background: #f8fafc; }
+  .tin-gia h2 { font-size: 1.15rem; margin-bottom: 6px; }
+  .tin-gia h3 { margin-top: 4px; font-size: 1rem; }
+  .tin-tom-tat { margin-bottom: 6px; }
+  .tin-chi-tiet > summary { display: inline-block; margin-top: 6px; min-height: 44px; padding: 10px 18px; background: #fff; color: var(--color-primary); border: 1px solid var(--color-primary); border-radius: 6px; font-weight: 700; cursor: pointer; list-style: none; }
+  .tin-chi-tiet > summary::-webkit-details-marker { display: none; }
+  .tin-chi-tiet[open] > summary { margin-bottom: 12px; }
   .tin-gio { margin: -4px 0 10px; font-size: 0.9rem; color: var(--color-text-light); }
   .brent-chart { margin: 14px 0; padding: 12px 14px; border: 1px solid #e2e8f0; border-radius: 6px; background: #fff; }
   .brent-chart svg { display: block; width: 100%; max-width: 440px; height: auto; margin: 6px auto; }
