@@ -108,7 +108,8 @@ export const SITE_URL = (import.meta.env.PUBLIC_SITE_URL || FALLBACK_SITE).repla
  * Công bố cho Google index từ 06/10/2026: mặc định mọi trang "index, follow".
  * Muốn chặn lại (bảo trì, staging riêng) thì build với PUBLIC_INDEXABLE=false.
  */
-export const INDEXABLE = import.meta.env.PUBLIC_INDEXABLE !== 'false';
+// NHÁP (draft/nut-bao-gia-danh-muc): noindex toàn bộ bản xem trước. BỎ commit này khi phát hành.
+export const INDEXABLE = false;
 
 /**
  * Chuẩn hoá đường dẫn: bỏ đuôi ".html", "/index" và "/" cuối (trừ trang chủ).
