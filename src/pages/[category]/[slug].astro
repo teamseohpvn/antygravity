@@ -7,6 +7,8 @@ import { mucLuc } from '../../lib/muc-luc';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import NoiDungBai from '../../components/NoiDungBai.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
+import NutBaoGia from '../../components/NutBaoGia.astro';
+import { trangBaoGiaCua } from '../../lib/bao-gia-danh-muc';
 import ThuVienAnh from '../../components/ThuVienAnh.astro';
 import XemThem from '../../components/XemThem.astro';
 import { getEntry, render } from 'astro:content';
@@ -77,12 +79,7 @@ const xemThem = [
 // 2) Cuối bài: mã giá mềm hơn / phân khúc giá cao hơn (theo giá công khai mỗi lít/kg, cùng nhóm công dụng)
 //    và bài hướng dẫn kỹ thuật hợp với loại dầu. Link nào thân bài đã có thì không lặp lại.
 const tenLoai = categoryLabel.charAt(0).toLowerCase() + categoryLabel.slice(1);
-const TRANG_GIA: Record<string, { href: string; chu: string }> = {
-  'dau-thuy-luc': { href: '/bao-gia-dau-thuy-luc', chu: 'Xem báo giá nhiều mã dầu thủy lực khác' },
-  'mo-boi-tron-cong-nghiep': { href: '/bao-gia-mo-boi-tron', chu: 'Xem báo giá mỡ bôi trơn các hãng' },
-  'mo-chiu-nhiet': { href: '/bao-gia-mo-boi-tron', chu: 'Xem báo giá mỡ bôi trơn các hãng' },
-};
-const trangGia = TRANG_GIA[d.category];
+const trangGia = trangBaoGiaCua(d.category);
 const nhomSp = nhomCua(d);
 // Dầu động cơ / dầu cầu: chỉ xếp với mã cùng cấp SAE (nếu có mã cùng cấp), tránh đặt 15W-40 cạnh 20W-50.
 const cungSae = (x: typeof d) => !d.sae || !x.sae || x.sae.split(/[,/\s]+/).filter(Boolean).some((v) => d.sae!.includes(v));
@@ -303,10 +300,10 @@ const schemaData = [
           )}
           <p class="dieu-huong">
             <a href={`/${d.category}`}>{soMaCungDanhMuc > 1 ? <>Xem nhiều hơn các {tenLoai} cùng loại →</> : <>Xem danh mục {tenLoai} →</>}</a>
-            {trangGia && <a href={trangGia.href}>{trangGia.chu} →</a>}
+            {trangGia && <a href={trangGia.href}>{trangGia.chuSanPham} →</a>}
           </p>
           <p class="cta-row">
-            <a href={`/bao-gia?sp=${encodeURIComponent(d.title)}`} class="btn-primary" data-track="add_to_quote">Nhận báo giá</a>
+            <NutBaoGia sp={d.title} danhMuc={d.category} kieu="link" class="btn-primary">Nhận báo giá</NutBaoGia>
             <span>hoặc gọi <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></span>
           </p>
           {(d.tds_url || d.sds_url) && (
@@ -377,7 +374,7 @@ const schemaData = [
           {(reHon || caoHon) && <p class="goi-y-chon__ghi-chu">Xếp theo giá thấp nhất mỗi {d.category.startsWith('mo-') ? 'kg' : 'lít'} trên bảng giá công khai của HT VINA; giá cao hơn không có nghĩa là hợp với máy của bạn hơn, hãy chọn theo cấp và tiêu chuẩn máy yêu cầu.</p>}
         </aside>
       )}
-      <QuoteCta item={d.title} />
+      <QuoteCta item={d.title} danhMuc={d.category} />
       <XemThem muc={xemThem} boQua={[pagePath]} toiDa={4} />
     </section>
     </NoiDungBai>

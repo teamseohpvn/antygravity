@@ -6,6 +6,8 @@ import Layout from '../layouts/Layout.astro';
 import NoiDungBai from '../components/NoiDungBai.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import NutBaoGia from '../components/NutBaoGia.astro';
 import CachVietBai from '../components/CachVietBai.astro';
 import ChinhSachGiaKho from '../components/ChinhSachGiaKho.astro';
 import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
@@ -157,14 +159,14 @@ const ARTICLE_ID = absUrl(pagePath) + '#article';
 // Hiệu lực tính theo giờ Việt Nam lúc khách xem trang.
 const homNay = new Date(Date.now() + 7 * 3600 * 1000).toISOString().slice(0, 10);
 const hetHieuLuc = HIEU_LUC ? homNay > HIEU_LUC.den : false;
-const QUOTE_DN = `/bao-gia?sp=${encodeURIComponent('Dầu thủy lực 68 (đề nghị chiết khấu doanh nghiệp)')}`;
-const QUOTE_THUONG = '/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c%2068';
+// Form báo giá nằm ngay trên trang (mục #gui-yeu-cau, dưới bảng giá); các nút trên trang cuộn tới đó và điền sẵn sản phẩm.
+const FORM = '#gui-yeu-cau';
 
 // Giá trị mặc định của công cụ tính trùng ví dụ minh họa trong mục "Nên đặt bao nhiêu dầu".
 const TINH_MAC_DINH = { soMay: 1, litBon: 200, litNgoaiBon: 40, chamBuThang: 36, soThang: 1, sucRua: false };
 const kqMacDinh = tinhLuongDau(TINH_MAC_DINH);
 const fmtLit = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 1 });
-const yeuCauTinh = (mua: string, tong: number) => `/bao-gia?sp=${encodeURIComponent(`Dầu thủy lực 68: ${mua} (tính trên trang báo giá, tổng ${fmtLit(tong)} L)`)}`;
+const yeuCauTinh = (mua: string, tong: number) => `Dầu thủy lực 68: ${mua} (tính trên trang báo giá, tổng ${fmtLit(tong)} L)`;
 
 // Ảnh kho do người dùng cung cấp, chụp cập nhật ngày 01/11/2026.
 const ANH_KHO = [
@@ -346,7 +348,7 @@ const schemaData = [
           <li>Có hóa đơn VAT, CO/CQ theo lô với hãng có cấp</li>
         </ul>
       )}
-      <QuoteCta item="Dầu thủy lực 68" compact />
+      <QuoteCta item="Dầu thủy lực 68" danhMuc={CATEGORY} compact />
 
     </header>
 
@@ -360,7 +362,7 @@ const schemaData = [
       ) : (
         <div class="empty">
           <p><strong>Bảng giá đang được cập nhật.</strong> Gửi tên dầu và số lượng cần mua để nhận báo giá trong ngày.</p>
-          <QuoteCta item="Dầu thủy lực 68" compact />
+          <QuoteCta item="Dầu thủy lực 68" danhMuc={CATEGORY} compact />
         </div>
       )}
 
@@ -371,6 +373,12 @@ const schemaData = [
         <li>"Có sẵn" không phải số tồn kho trực tiếp{TON_KHO_CAP_NHAT ? `, cập nhật ngày ${fmtNgay(TON_KHO_CAP_NHAT)}` : ''}. Hãy gọi xác nhận kho và số lượng trước khi chốt đơn.</li>
         <li>Mã không có trong bảng vẫn nhận đặt hàng. Gửi tên mã đang dùng, chúng tôi báo giá mã đó hoặc mã tương đương cùng cấp ISO VG.</li>
       </ul>
+
+      <div class="gui-yeu-cau" id="gui-yeu-cau">
+        <h3>Gửi yêu cầu báo giá dầu thủy lực</h3>
+        <p>Bấm "Báo giá" ở dòng nào trong bảng, mã đó được điền sẵn vào form dưới đây; bấm thêm dòng khác để hỏi nhiều mã một lần. Nhân viên kinh doanh gọi lại hoặc nhắn Zalo trong giờ làm việc.</p>
+        <QuoteForm />
+      </div>
 
       <figure class="photo">
         <div class="delivery-grid">
@@ -393,7 +401,7 @@ const schemaData = [
         <li>Thời hạn thanh toán đề nghị, tên công ty và mã số thuế.</li>
       </ul>
       <div class="discount__actions">
-        <a href={QUOTE_DN} class="btn-primary" data-track="add_to_quote">Gửi yêu cầu riêng</a>
+        <NutBaoGia sp="Dầu thủy lực 68 (đề nghị chiết khấu doanh nghiệp)" danhMuc={CATEGORY} class="btn-primary">Gửi yêu cầu riêng</NutBaoGia>
         <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
         <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
       </div>
@@ -491,7 +499,7 @@ const schemaData = [
           <p>Nên mua: <strong id="tinh-mua">{moTaMua(kqMacDinh)}</strong></p>
           <p class="small" id="tinh-du">Dư {fmtLit(kqMacDinh.du)} L, đủ thêm dầu khoảng {fmtLit(kqMacDinh.thangDu ?? 0)} tháng.</p>
         </div>
-        <a id="tinh-gui" href={yeuCauTinh(moTaMua(kqMacDinh), kqMacDinh.tong)} class="btn-primary" data-track="click_tinh_dau_gui_yeu_cau">Gửi yêu cầu giá cho số lượng này</a>
+        <a id="tinh-gui" href={FORM} data-sp={yeuCauTinh(moTaMua(kqMacDinh), kqMacDinh.tong)} class="btn-primary" data-track="click_tinh_dau_gui_yeu_cau">Gửi yêu cầu giá cho số lượng này</a>
         <p class="small">Kết quả là ước lượng theo phuy {LIT_PHUY} L và xô {LIT_XO} L. Hãy lấy dung tích từ tài liệu máy và đối chiếu lại trước khi đặt hàng.</p>
       </form>
 
@@ -546,7 +554,7 @@ const schemaData = [
           </tbody>
         </table>
       </div>
-      <p>Kho HT VINA ở {AREA_TEXT}, giao trong ngày tới các KCN {KCN_NEAR.slice(0, 3).join(', ')}. Vì vậy xưởng gần kho không cần trữ nhiều dầu. Gửi số máy, dung tích thùng và lượng dầu thêm hằng tháng qua <a href={QUOTE_THUONG}>form báo giá</a>, chúng tôi tính giúp số phuy, số xô và lịch giao hợp lý.</p>
+      <p>Kho HT VINA ở {AREA_TEXT}, giao trong ngày tới các KCN {KCN_NEAR.slice(0, 3).join(', ')}. Vì vậy xưởng gần kho không cần trữ nhiều dầu. Gửi số máy, dung tích thùng và lượng dầu thêm hằng tháng qua <a href={FORM} data-sp="Dầu thủy lực 68">form báo giá</a>, chúng tôi tính giúp số phuy, số xô và lịch giao hợp lý.</p>
       <p>Các bước xả, súc rửa và nạp dầu mới có trong <a href="/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc">hướng dẫn thay dầu thủy lực</a>. Chưa chắc dầu trong máy đã cần thay thì xem <a href="/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau">hướng dẫn test chất lượng dầu tại xưởng</a> trước khi mua: không thay sớm cũng là một cách tiết kiệm.</p>
     </section>
 
@@ -602,7 +610,7 @@ const schemaData = [
           </li>
         ))}
       </ol>
-      <QuoteCta heading="Bắt đầu từ bước đặt hàng" item="Dầu thủy lực 68" />
+      <QuoteCta heading="Bắt đầu từ bước đặt hàng" item="Dầu thủy lực 68" danhMuc={CATEGORY} />
     </section>
 
     <section class="price-body" id="danh-gia">
@@ -650,7 +658,7 @@ const schemaData = [
             </tr>
             <tr>
               <td>Không còn tài liệu máy</td>
-              <td>Chụp nhãn phuy dầu đang dùng hoặc tên, đời máy, gửi qua <a href={QUOTE_THUONG}>form báo giá</a> hoặc Zalo để chúng tôi đối chiếu.</td>
+              <td>Chụp nhãn phuy dầu đang dùng hoặc tên, đời máy, gửi qua <a href={FORM} data-sp="Dầu thủy lực 68">form báo giá</a> hoặc Zalo để chúng tôi đối chiếu.</td>
             </tr>
           </tbody>
         </table>
@@ -695,7 +703,7 @@ const schemaData = [
         <li>Lịch giao từng đợt và cách báo lấy hàng.</li>
         <li>Cách xử lý khi lấy không hết số lượng trong thời hạn, và khi giá thị trường giảm mạnh trong kỳ.</li>
       </ul>
-      <p>Mức cọc, thời hạn và các điều khoản trên được thỏa thuận theo số lượng của từng khách. Mục tiêu là bạn có giá ổn định để lập ngân sách, mà không phải trữ dầu quá nhu cầu. Gọi <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a> hoặc gửi <a href={QUOTE_THUONG}>form báo giá</a> với ghi chú "giữ giá" để nhận phương án cụ thể.</p>
+      <p>Mức cọc, thời hạn và các điều khoản trên được thỏa thuận theo số lượng của từng khách. Mục tiêu là bạn có giá ổn định để lập ngân sách, mà không phải trữ dầu quá nhu cầu. Gọi <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a> hoặc gửi <a href={FORM} data-sp="Dầu thủy lực 68">form báo giá</a> với ghi chú "giữ giá" để nhận phương án cụ thể.</p>
     </section>
 
     <section class="price-body">
@@ -793,7 +801,7 @@ const schemaData = [
         ? `Dư ${fmt(k.du)} L${k.thangDu ? `, đủ thêm dầu khoảng ${fmt(k.thangDu)} tháng` : ''}.`
         : '';
       gui.hidden = !mua;
-      gui.href = `/bao-gia?sp=${encodeURIComponent(`Dầu thủy lực 68: ${mua} (tính trên trang báo giá, tổng ${fmt(k.tong)} L)`)}`;
+      gui.dataset.sp = `Dầu thủy lực 68: ${mua} (tính trên trang báo giá, tổng ${fmt(k.tong)} L)`;
     };
     form.addEventListener('input', () => {
       capNhat();
@@ -858,6 +866,9 @@ const schemaData = [
   .market-note { background: #f1f5f9; border-left: 4px solid var(--color-primary); padding: 12px 16px; border-radius: 4px; margin: 0; }
   .market-note footer { margin-top: 6px; font-size: 0.9rem; color: var(--color-text-light); }
   .notes { font-size: 0.93rem; color: var(--color-text-light); margin-top: 8px; }
+  .gui-yeu-cau { margin-top: 24px; padding: clamp(16px, 3vw, 24px); border: 2px solid var(--color-accent); border-radius: 8px; background: #fff; scroll-margin-top: 90px; }
+  .gui-yeu-cau h3 { color: var(--color-primary); margin: 0 0 6px; font-size: 1.2rem; }
+  .gui-yeu-cau > p { color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 14px; }
   .small { font-size: 0.93rem; color: var(--color-text-light); margin-top: 12px; }
   .empty { background: #f8fafc; border: 1px dashed var(--border-color, #e2e8f0); padding: 20px; border-radius: 8px; margin-bottom: 16px; }
   .photo { margin: 20px 0 0; }

@@ -130,6 +130,10 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
         text-align: center;
       }
       .btn-primary:hover { opacity: 0.9; }
+      /* Nút "Báo giá" dạng <button> (NutBaoGia): bỏ kiểu mặc định của trình duyệt, giữ kiểu của class đi kèm. */
+      :where(button.nut-bao-gia) { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: inherit; }
+      button.nut-bao-gia.btn-primary, button.nut-bao-gia.btn-secondary { font: inherit; font-weight: 600; cursor: pointer; }
+      button.nut-bao-gia.btn-primary { border: 0; }
       .btn-secondary {
         display: inline-block;
         background: white;
@@ -348,10 +352,29 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
         const gtag = (window as any).gtag;
         if (!el || typeof gtag !== 'function') return;
         const track = el.dataset.track!;
-        gtag('event', track, { link_url: (el as HTMLAnchorElement).href, page_path: location.pathname });
+        gtag('event', track, { link_url: (el as HTMLAnchorElement).href ?? el.dataset.den, page_path: location.pathname });
         if (GADS_CONVERSION && GADS_CONVERSION_EVENTS.includes(track)) {
           gtag('event', 'conversion', { send_to: GADS_CONVERSION, value: 1.0, currency: 'VND', transport_type: 'beacon' });
         }
+      });
+      // Nút "Báo giá" (NutBaoGia, xem src/lib/bao-gia-danh-muc.ts): mang tên sản phẩm sang form báo giá.
+      // Cùng trang với form thì điền thẳng và cuộn tới form; khác trang thì lưu tạm rồi chuyển trang.
+      document.addEventListener('click', (e) => {
+        const el = (e.target as HTMLElement | null)?.closest<HTMLElement>('[data-sp]');
+        if (!el) return;
+        const sp = el.dataset.sp!;
+        const den = new URL(el.dataset.den ?? el.getAttribute('href') ?? '/bao-gia', location.href);
+        const duongDan = (p: string) => p.replace(/\.html$/, '').replace(/\/+$/, '') || '/';
+        const form = den.hash ? document.getElementById(den.hash.slice(1)) : null;
+        if (form && duongDan(den.pathname) === duongDan(location.pathname)) {
+          e.preventDefault();
+          window.dispatchEvent(new CustomEvent('dien-bao-gia', { detail: sp }));
+          form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.replaceState(null, '', den.hash);
+          return;
+        }
+        try { sessionStorage.setItem('bao-gia-sp', sp); } catch {}
+        if (el.tagName === 'BUTTON') location.href = den.href;
       });
       // Đóng menu thả xuống khi bấm ra ngoài.
       document.addEventListener('click', (e) => {
