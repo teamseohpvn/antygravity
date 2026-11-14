@@ -1,0 +1,28 @@
+---
+// Nút "Báo giá" dùng chung. Xem quy tắc ở src/lib/bao-gia-danh-muc.ts.
+// - Danh mục chưa có trang báo giá: link /bao-gia?sp=... như trước.
+// - Danh mục có trang báo giá, kieu="nut" (mặc định): <button>, bấm thì sang form trên trang báo giá
+//   (hoặc cuộn tới form nếu đang ở chính trang đó). Không phải link nên không bị đếm là link lặp.
+// - kieu="link": link thật tới form trên trang báo giá, dùng khi trang chỉ có một nút như vậy.
+// Tên sản phẩm (sp) được mang sang form qua sessionStorage, xử lý trong script của Layout.
+import { dichBaoGia, trangBaoGiaCua } from '../lib/bao-gia-danh-muc';
+
+interface Props {
+  sp: string;
+  danhMuc?: string;
+  kieu?: 'nut' | 'link';
+  class?: string;
+  track?: string;
+}
+
+// ...rest mang thuộc tính phạm vi CSS (data-astro-cid-*) của trang cha, để kiểu .btn-quote, .btn-row... vẫn áp dụng.
+const { sp, danhMuc, kieu = 'nut', class: lop, track = 'add_to_quote', ...rest } = Astro.props;
+const den = dichBaoGia(danhMuc, sp);
+const coTrangGia = !!trangBaoGiaCua(danhMuc);
+---
+
+{coTrangGia && kieu === 'nut' ? (
+  <button type="button" class:list={[lop, 'nut-bao-gia']} data-den={den} data-sp={sp} data-track={track} {...rest}><slot /></button>
+) : (
+  <a href={den} class={lop} data-sp={coTrangGia ? sp : undefined} data-track={track} {...rest}><slot /></a>
+)}

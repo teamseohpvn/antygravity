@@ -2,6 +2,7 @@
 // Bảng khoảng giá đọc từ D1, nhóm theo cấp (VG 32, 46, 68...). Mỗi dòng có nút "Báo giá" điền sẵn form.
 import type { DongGiaCongKhai } from '../lib/gia';
 import { fmtVnd } from '../lib/gia';
+import NutBaoGia from './NutBaoGia.astro';
 
 interface Props {
   rows: DongGiaCongKhai[];
@@ -37,7 +38,7 @@ for (const r of rows) {
 const capNum = (c: string) => Number(/\d+/.exec(c)?.[0] ?? 1e9);
 const sortedGroups = [...groups].sort(([a], [b]) => capNum(a) - capNum(b) || a.localeCompare(b));
 const NGUON = { 'nhap-khau': 'Nhập khẩu', 'trong-nuoc': 'Sản xuất trong nước' } as const;
-const quoteHref = (r: DongGiaCongKhai) => `/bao-gia?sp=${encodeURIComponent(`${r.ten} – ${r.quy_cach}`)}`;
+const tenBaoGia = (r: DongGiaCongKhai) => `${r.ten} – ${r.quy_cach}`;
 // Nhãn lọc của một dòng, số trên nút đếm từ chính bảng giá, không gõ tay.
 const nhanLoc = (r: DongGiaCongKhai) => [/phuy/i.test(r.quy_cach) ? 'phuy' : /xô/i.test(r.quy_cach) ? 'xo' : '', r.nguon].filter(Boolean);
 const nutLoc = [
@@ -103,7 +104,7 @@ const nutLoc = [
                 </td>
               )}
               <td class="act">
-                <a href={quoteHref(r)} class="btn-row" data-track="add_to_quote">Báo giá<span class="btn-row__them"> trong ngày</span></a>
+                <NutBaoGia sp={tenBaoGia(r)} danhMuc={category} class="btn-row">Báo giá<span class="btn-row__them"> trong ngày</span></NutBaoGia>
               </td>
             </tr>
           ))}

@@ -3,6 +3,7 @@
 // Dữ liệu: src/data/san-pham-kho.json (sinh bằng scripts/build-product-table.py, không có giá, không có tồn kho).
 // Dòng nào có trang sản phẩm riêng (trường `trang`) thì tên là link.
 import rows from '../data/san-pham-kho.json';
+import NutBaoGia from './NutBaoGia.astro';
 
 interface Row {
   ten: string;
@@ -49,7 +50,7 @@ const href = (r: Row) => (r.trang && pages.includes(r.trang) ? `/${category}/${r
                   <td>{r.hang}</td>
                   <td>{r.cap || '–'}</td>
                   <td>{r.quy_cach.join(' · ')}</td>
-                  <td><a class="quote" href={`/bao-gia?sp=${encodeURIComponent(r.ten)}`} data-track="add_to_quote">Báo giá</a></td>
+                  <td><NutBaoGia sp={r.ten} danhMuc={category} class="quote">Báo giá</NutBaoGia></td>
                 </tr>
               ))}
             </tbody>
