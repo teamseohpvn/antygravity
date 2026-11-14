@@ -15,13 +15,14 @@ interface Props {
   track?: string;
 }
 
-const { sp, danhMuc, kieu = 'nut', class: lop, track = 'add_to_quote' } = Astro.props;
+// ...rest mang thuộc tính phạm vi CSS (data-astro-cid-*) của trang cha, để kiểu .btn-quote, .btn-row... vẫn áp dụng.
+const { sp, danhMuc, kieu = 'nut', class: lop, track = 'add_to_quote', ...rest } = Astro.props;
 const den = dichBaoGia(danhMuc, sp);
 const coTrangGia = !!trangBaoGiaCua(danhMuc);
 ---
 
 {coTrangGia && kieu === 'nut' ? (
-  <button type="button" class:list={[lop, 'nut-bao-gia']} data-den={den} data-sp={sp} data-track={track}><slot /></button>
+  <button type="button" class:list={[lop, 'nut-bao-gia']} data-den={den} data-sp={sp} data-track={track} {...rest}><slot /></button>
 ) : (
-  <a href={den} class={lop} data-sp={coTrangGia ? sp : undefined} data-track={track}><slot /></a>
+  <a href={den} class={lop} data-sp={coTrangGia ? sp : undefined} data-track={track} {...rest}><slot /></a>
 )}
