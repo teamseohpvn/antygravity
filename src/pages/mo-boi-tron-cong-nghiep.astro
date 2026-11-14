@@ -6,6 +6,7 @@ import Layout from '../layouts/Layout.astro';
 import NoiDungBai from '../components/NoiDungBai.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
+import NutBaoGia from '../components/NutBaoGia.astro';
 import ChinhSachGiaKho from '../components/ChinhSachGiaKho.astro';
 import CachVietBai from '../components/CachVietBai.astro';
 import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
@@ -189,7 +190,7 @@ const schemaData = [
                 </dl>
                 <div class="the-nut">
                   <a href={t.d.link}>Xem chi tiết →</a>
-                  <a class="nut-gia" href="/bao-gia-mo-boi-tron">Báo giá</a>
+                  <NutBaoGia sp={t.ten} danhMuc="mo-boi-tron-cong-nghiep" class="nut-gia">Báo giá</NutBaoGia>
                 </div>
               </div>
             </article>
@@ -270,7 +271,7 @@ const schemaData = [
         <ContentBody><DocBang /></ContentBody>
 
         <h2 id="chi-phi">Giá mỡ mỗi kg và chi phí cho một vòng bi mỗi năm</h2>
-        <p>Bảng dưới đây quy khoảng giá của từng loại mỡ ra mỗi kg, rồi tính xem <strong>một vòng bi hết bao nhiêu tiền mỡ trong một năm</strong>. Để dễ so sánh, chúng tôi lấy ví dụ vòng bi 6310, mỗi lần tra khoảng 15 g, tra bốn lần một năm, tức là dùng hết {G_DIEM_NAM} g mỡ mỗi năm. Giá chưa gồm VAT, tính từ giá kho đến mức cao hơn giá kho 15%, rà soát ngày {fmtNgay(NGAY_GIA)}; giá thực tế còn tùy số lượng và lô hàng. Muốn biết giá theo từng xô, phuy, bạn hãy <a href="/bao-gia">gửi yêu cầu báo giá</a>. Giá chính thức được xác nhận khi đặt hàng, xem <a href="#chinh-sach-gia-kho">chính sách kiểm chứng giá và tồn kho</a>.</p>
+        <p>Bảng dưới đây quy khoảng giá của từng loại mỡ ra mỗi kg, rồi tính xem <strong>một vòng bi hết bao nhiêu tiền mỡ trong một năm</strong>. Để dễ so sánh, chúng tôi lấy ví dụ vòng bi 6310, mỗi lần tra khoảng 15 g, tra bốn lần một năm, tức là dùng hết {G_DIEM_NAM} g mỡ mỗi năm. Giá chưa gồm VAT, tính từ giá kho đến mức cao hơn giá kho 15%, rà soát ngày {fmtNgay(NGAY_GIA)}; giá thực tế còn tùy số lượng và lô hàng. Muốn biết giá theo từng xô, phuy, bạn hãy <a href="/bao-gia-mo-boi-tron#gui-yeu-cau">gửi yêu cầu báo giá</a>. Giá chính thức được xác nhận khi đặt hàng, xem <a href="#chinh-sach-gia-kho">chính sách kiểm chứng giá và tồn kho</a>.</p>
         <div class="bang"><table>
           <thead><tr><th>Loại mỡ và quy cách</th><th>Giá mỗi kg (đồng)</th><th>Tiền mỡ cho một vòng bi mỗi năm (đồng)</th></tr></thead>
           <tbody>{CHI_PHI.map((c) => <tr><td><a href={c.link}>{c.ten}</a> · {c.qc}</td><td>{vnd(lam100(c.thap))} – {vnd(lam100(c.cao))}</td><td>{vnd(lam100(c.thap * G_DIEM_NAM / 1000))} – {vnd(lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
@@ -289,7 +290,7 @@ const schemaData = [
               <tbody>{TDS.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="nofollow noopener">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
             </table></div>
         </CachVietBai>
-        <QuoteCta item="Mỡ bôi trơn (mỡ bò)" />
+        <QuoteCta item="Mỡ bôi trơn (mỡ bò)" danhMuc="mo-boi-tron-cong-nghiep" />
         <ChinhSachGiaKho />
 
         <ThongTinDoanhNghiep />

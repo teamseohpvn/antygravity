@@ -3,6 +3,7 @@
 // Dữ liệu: src/data/san-pham-kho.json (sinh bằng scripts/build-product-table.py, không có giá, không có tồn kho).
 // Dòng nào có trang sản phẩm riêng (trường `trang`) thì tên là link.
 import rows from '../data/san-pham-kho.json';
+import NutBaoGia from './NutBaoGia.astro';
 
 interface Row {
   ten: string;
