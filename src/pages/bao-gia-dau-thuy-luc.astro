@@ -201,7 +201,8 @@ const quyTrinh = [
 // 12/11/2026 (người dùng chốt): tiêu đề nhắm "báo giá dầu thủy lực" + giá sỉ, H1 nhắm "giá dầu thủy lực 46, 68".
 const thangText = thang ? ` Tháng ${thang}` : '';
 const title = `Báo Giá Dầu Thủy Lực 46, 68${thangText}`;
-const seoTitle = `Báo Giá Dầu Thủy Lực${thangText} – Giá Sỉ Phuy 200L, Xô 18L`;
+// 15/11/2026 (người dùng chốt): title có 68, 46 và tháng viết gọn "T11/2026" (63 ký tự).
+const seoTitle = `Báo Giá Dầu Thủy Lực 68, 46${thang ? ` T${thang}` : ''} – Giá Sỉ Phuy 200L, Xô 18L`;
 // Giữ cụm miễn phí vận chuyển trong mô tả và ở dòng 2 tóm tắt để lọt vào đoạn Google hiển thị.
 const BA_KHO = 'Hải Dương cũ, Kiến An, Như Quỳnh (Hưng Yên)';
 // Làm tròn 1 chữ số thập phân: 5.410.000 -> 5.4; 10.590.000 -> 10.6.
