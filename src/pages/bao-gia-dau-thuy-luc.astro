@@ -91,7 +91,7 @@ const vat = cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT';
 const iso11158 = traTieuChuan('ISO 11158');
 
 // Nguồn tin cho mục nhận định, đã đọc ngày 01/11/2026. Tin thay đổi nhanh: cập nhật cùng NGAY_NHAN_DINH.
-const NGAY_NHAN_DINH = '2026-11-01';
+const NGAY_NHAN_DINH = '2026-11-15';
 const TIN = {
   reuters: 'https://finance.yahoo.com/news/oil-rises-supply-concerns-houthis-022725347.html',
   vietnamPlus: 'https://www.vietnamplus.vn/gia-dau-the-gioi-len-muc-cao-nhat-6-thang-do-lo-ngai-tinh-hinh-my-iran-post1145330.vnp',
@@ -646,7 +646,7 @@ const schemaData = [
         <figcaption class="brent-chart__ghi-chu">Chấm đặc là giá chốt phiên, chấm rỗng là giá CFD tham khảo trong ngày. HT VINA vẽ từ các mức giá có nguồn, trục giá không bắt đầu từ 0. <a href={TIN.tradingEconomics} rel="noopener" data-track="click_brent_chart">Xem biểu đồ đầy đủ trên Trading Economics</a>.</figcaption>
       </figure>
       <blockquote class="market-note">
-        <p>Giá dầu tháng 11 diễn biến phức tạp và có khả năng tăng cao nếu chiến sự giữa Mỹ và Iran tái bùng phát.</p>
+        <p>Tuy giá xăng dầu nhiên liệu đã giảm trong những ngày gần đây nhưng hiện tại các sản phẩm liên quan tới dầu gốc vẫn giữ giá chưa giảm ngay do độ delay của sản xuất.</p>
         <footer>Nhận định chủ quan của {displayName(nguoiGia)}, {nguoiGia.role.toLowerCase()}, ngày {fmtNgay(NGAY_NHAN_DINH)}. Đây không phải dự báo chắc chắn.</footer>
       </blockquote>
       </details>
