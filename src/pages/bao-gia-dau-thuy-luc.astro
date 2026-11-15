@@ -345,7 +345,7 @@ const schemaData = [
             <li><strong><a href="/chinh-sach-giao-hang">Miễn phí vận chuyển 80 km</a></strong> từ 3 kho {BA_KHO}.</li>
             <li>Giao trong ngày các KCN gần kho khi chốt đơn trước {PROMO.sameDayCutoff}, thứ Hai đến thứ Sáu. KCN xa hơn theo lịch hẹn.</li>
             {litThap && <li>Quy đổi theo lít: <strong>{fmtVnd(litThap)} – {fmtVnd(litCao)} đ/lít</strong>, xô 18 L đắt hơn phuy khi tính theo lít.</li>}
-            <li>{soMa} mã ISO VG 68 có hàng tại hệ thống 3 kho, tùy mã từng kho: {hangs.join(', ')}. {rows46.length} mã có thêm cấp 46, nhận đặt.</li>
+            <li>{soMa} mã ISO VG 68 có hàng tại hệ thống 3 kho, tùy mã từng kho: {hangs.join(', ')}. {rows46.length} mã có thêm cấp 46, cũng có sẵn tại kho.</li>
             <li>Giá chính xác theo số phuy và nơi giao được gửi trong ngày làm việc. Có hóa đơn VAT, CO/CQ theo lô với hãng có cấp.</li>
           </ul>
         </div>
@@ -389,7 +389,7 @@ const schemaData = [
           <p>Dầu thủy lực 46 dùng cho máy xúc, máy đào, xe nâng và hệ thống thủy lực tải trung bình. Các mã dưới đây là cấp ISO VG 46 của cùng dòng dầu ở bảng 68, đóng phuy.</p>
           <PriceTable rows={rows46} {activePages} category={CATEGORY} gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} gon />
           <ul class="notes">
-            <li>Cấp 46 nhận đặt theo đơn. Gọi xác nhận kho và thời gian giao trước khi chốt.</li>
+            <li>Cấp 46 có sẵn tại kho, phuy. Gọi xác nhận kho và số lượng trước khi chốt.</li>
             <li>Máy đang dùng dầu 46 thì không thay bằng 68 cho rẻ. Xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt 32, 46 hay 68</a>.</li>
           </ul>
         </>

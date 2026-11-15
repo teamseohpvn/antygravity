@@ -64,7 +64,7 @@ Mở tài liệu hướng dẫn sử dụng kèm theo máy (hoặc nhãn trên t
 | :--- | :--- |
 | ISO VG 68, HM, HLP 68, AW 68, DIN 51524-2 | Các mã chống mài mòn cấp 68 ở trên. Mã có TDS công bố DIN 51524-2: ENEOS Super Hyrando 68, Castrol Hyspin AWS 68, Castrol Hyspin HLP-Z 68, Cosmo Hydro AW 68. |
 | Bắt buộc phê duyệt Parker Denison HF-0/HF-1/HF-2 hoặc Eaton | [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68), [Cosmo Hydro AW 68](/dau-thuy-luc/cosmo-hydro-aw-68) (TDS công bố các phê duyệt này). |
-| ISO VG 46 hoặc VG 32 | Không thay bằng 68. Cấp 46 có ở Castrol Hyspin AWS, ENEOS Super Hyrando, ENEOS Super Mulpus DX, X-One AW, EMI AW, VHP Spinax AW (nhận đặt). Xem [hướng dẫn chọn độ nhớt 32, 46 hay 68](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau). |
+| ISO VG 46 hoặc VG 32 | Không thay bằng 68. Cấp 46 có ở Castrol Hyspin AWS, ENEOS Super Hyrando, ENEOS Super Mulpus DX, X-One AW, EMI AW, VHP Spinax AW, đều có sẵn tại kho. Xem [hướng dẫn chọn độ nhớt 32, 46 hay 68](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau). |
 | Không còn tài liệu máy | Chụp nhãn phuy dầu đang dùng hoặc tên, đời máy, gửi qua Zalo **[0901 511 313](tel:0901511313)** để chúng tôi đối chiếu. |
 
 ## Chỉ tiêu cần xem trên bảng thông số (TDS)

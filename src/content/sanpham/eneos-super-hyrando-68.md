@@ -65,7 +65,7 @@ updated: "2026-10-14"
 
 **ENEOS Super Hyrando 68** là dầu thủy lực 68 chống mài mòn (loại HM, đạt DIN 51524-2), dùng cho máy ép nhựa, máy dập, máy chấn, máy công cụ NC và máy công trình. Hướng dẫn sử dụng máy của bạn ghi "ISO VG 68", "HM", "HLP 68" hay "AW 68" thì đây là loại dầu đúng cấp.
 
-Kho HT VINA tại TP Hải Phòng (Hải Dương cũ) có sẵn **phuy 200 L**, giao kèm CO/CQ và hóa đơn VAT; cấp 46 và bản SE 68 thì nhận đặt theo yêu cầu.
+Kho HT VINA tại TP Hải Phòng (Hải Dương cũ) có sẵn **phuy 200 L**, giao kèm CO/CQ và hóa đơn VAT; cấp 46 cũng có sẵn; bản SE 68 thì nhận đặt theo yêu cầu.
 
 
 ## Super Hyrando 68 có hợp với máy của bạn không?
@@ -75,7 +75,7 @@ Cách chắc nhất là mở hướng dẫn sử dụng của máy ra và đối
 | Hướng dẫn sử dụng của máy ghi | Dùng Super Hyrando 68 được không? |
 | :--- | :--- |
 | ISO VG 68, HM, HLP 68, AW 68, DIN 51524-2 | **Được**, đây đúng là loại dầu này. |
-| ISO VG 46 hoặc 32 | Không, nên dùng đúng cấp hướng dẫn sử dụng ghi (Super Hyrando 46 nhận đặt). |
+| ISO VG 46 hoặc 32 | Không, nên dùng đúng cấp hướng dẫn sử dụng ghi (Super Hyrando 46 có sẵn tại kho). |
 | Dầu không kẽm (zinc-free, ashless) | Dùng bản **Super Hyrando SE 68**. |
 | Bắt buộc dầu được Parker Denison HF-0/1/2 hoặc Eaton chấp thuận | Chọn mã đã được các hãng này chấp thuận, ví dụ [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
 | HV, HVLP (dầu chỉ số độ nhớt cao cho máy ngoài trời lạnh) | Không, vì Super Hyrando 68 là loại HM. |
@@ -243,7 +243,7 @@ Dầu gốc chiếm phần lớn thành phần của dầu thủy lực, nên gi
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách có sẵn:** phuy 200 L cấp 68 (mã kho AW2). Cấp 46 và bản SE 68 nhận đặt theo yêu cầu.
+- **Quy cách có sẵn:** phuy 200 L cấp 68 (mã kho AW2) và cấp 46. Bản SE 68 nhận đặt theo yêu cầu.
 - **Giấy tờ:** mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** xem khoảng giá tham khảo tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Super%20Hyrando%2068) theo số lượng của bạn.

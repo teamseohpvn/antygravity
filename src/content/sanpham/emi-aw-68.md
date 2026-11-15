@@ -64,7 +64,7 @@ Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** v�
 | Máy ép nhựa, máy ép thủy lực, máy dập chạy nóng | **Được.** Màng dầu cấp 68 đủ dày khi dầu trong thùng lên 50–60 °C. |
 | Dầu không kẽm, bơm có chi tiết mạ bạc | Không. EMI AW 68 dùng phụ gia gốc kẽm. |
 | Bắt buộc dầu được Parker Denison, Eaton chấp thuận | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
-| ISO VG 46 | Dùng EMI AW 46 (nhận đặt). |
+| ISO VG 46 | Dùng EMI AW 46 (có sẵn tại kho). |
 
 Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của EMI cho mã này, nên trang chưa có bảng chỉ tiêu.
 
@@ -106,7 +106,7 @@ Hai cấp chỉ khác độ nhớt. Cấp 68 đặc hơn, hợp xưởng nóng v
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách có sẵn:** phuy 200 L và xô 18 L cấp 68. Cấp 46 nhận đặt theo yêu cầu.
+- **Quy cách có sẵn:** phuy 200 L và xô 18 L cấp 68; phuy 200 L cấp 46.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** xem khoảng giá tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=EMI%20AW%2068) theo số lượng của bạn.
