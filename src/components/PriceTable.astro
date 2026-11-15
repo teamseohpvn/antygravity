@@ -13,6 +13,8 @@ interface Props {
   tds?: Record<string, string | undefined>;
   /** Có truyền thì thêm cột Tình trạng. Trả về tên các kho có dòng hàng này; mảng rỗng là chưa có dữ liệu kho. */
   khoCuaDong?: (r: DongGiaCongKhai) => string[];
+  /** Dòng tạm hết hàng: cột Tình trạng ghi "Tạm hết hàng" thay cho "Có sẵn". */
+  hetHang?: (r: DongGiaCongKhai) => boolean;
   /** Có truyền thì hiện nút lọc nhanh theo quy cách và nguồn hàng trên đầu bảng. */
   boLoc?: boolean;
   /** Có truyền thì dùng dạng gọn: hãng và TDS chung một dòng, trên điện thoại mỗi thẻ chỉ khoảng 4 dòng. */
@@ -24,7 +26,7 @@ interface Props {
   hrefSp?: (r: DongGiaCongKhai) => string | undefined;
 }
 
-const { rows, activePages, category, gomVat, tds, khoCuaDong, boLoc, gon, nhanPhuy = 'Phuy 200–209 L', nhanXo = 'Xô 18–20 L', hrefSp } = Astro.props;
+const { rows, activePages, category, gomVat, tds, khoCuaDong, hetHang, boLoc, gon, nhanPhuy = 'Phuy 200–209 L', nhanXo = 'Xô 18–20 L', hrefSp } = Astro.props;
 const linkSp = (r: DongGiaCongKhai) => hrefSp ? hrefSp(r) : (r.trang && activePages.has(r.trang) ? `/${category}/${r.trang}` : undefined);
 // Link PDF ghi là tải về; link trang web của hãng ghi là xem, không hứa có file.
 const laPdf = (u: string) => /\.pdf($|\?)|docFormat=PDF/i.test(u);
@@ -99,8 +101,9 @@ const nutLoc = [
               </td>
               {khoCuaDong && (
                 <td data-label="Tình trạng" class="stock">
-                  <span class="stock__on">Có sẵn</span>
-                  <small>{khoCuaDong(r).length ? `Kho ${khoCuaDong(r).join(', ')}` : 'Hỏi kho gần bạn'}</small>
+                  {hetHang?.(r)
+                    ? <><span class="stock__off">Tạm hết hàng</span><small>Hỏi ngày về hàng</small></>
+                    : <><span class="stock__on">Có sẵn</span><small>{khoCuaDong(r).length ? `Kho ${khoCuaDong(r).join(', ')}` : 'Hỏi kho gần bạn'}</small></>}
                 </td>
               )}
               <td class="act">
@@ -160,6 +163,8 @@ const nutLoc = [
   .price-table .nowrap { white-space: nowrap; }
   .stock__on { color: #166534; font-weight: 600; white-space: nowrap; }
   .stock__on::before { content: ''; display: inline-block; width: 8px; height: 8px; margin-right: 6px; border-radius: 50%; background: #16a34a; vertical-align: 1px; }
+  .stock__off { color: #9a3412; font-weight: 600; white-space: nowrap; }
+  .stock__off::before { content: ''; display: inline-block; width: 8px; height: 8px; margin-right: 6px; border-radius: 50%; background: #ea580c; vertical-align: 1px; }
   .btn-row { display: inline-block; padding: 7px 12px; border-radius: 6px; background: var(--color-accent); color: white !important; text-decoration: none !important; font-size: 0.88rem; font-weight: 600; }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
