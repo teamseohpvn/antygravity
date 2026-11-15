@@ -19,9 +19,11 @@ interface Props {
   label: string;
   /** Slug các trang sản phẩm đang có trong danh mục, để không link tới trang chưa tồn tại. */
   pages: string[];
+  /** Danh mục có trang báo giá riêng: bỏ cột nút "Báo giá", giá xem ở trang báo giá. */
+  coTrangGia?: boolean;
 }
 
-const { category, label, pages } = Astro.props;
+const { category, label, pages, coTrangGia = false } = Astro.props;
 const list = (rows as Row[]).filter((r) => r.danh_muc === category);
 const groups = [
   { title: 'Hàng nhập khẩu', items: list.filter((r) => r.nguon === 'nhap-khau') },
@@ -34,14 +36,16 @@ const href = (r: Row) => (r.trang && pages.includes(r.trang) ? `/${category}/${r
   <section class="stock-table" aria-labelledby="stock-title">
     <h2 id="stock-title">{label} có tại kho</h2>
     <p class="stock-note">
-      {list.length} dòng sản phẩm đang kinh doanh. Bấm "Báo giá" để nhận giá và thời gian giao. Quy cách theo thực tế từng lô hàng.
+      {coTrangGia
+        ? <>Quy cách theo thực tế từng lô hàng. Gọi xác nhận kho gần bạn trước khi chốt đơn.</>
+        : <>{list.length} dòng sản phẩm đang kinh doanh. Bấm "Báo giá" để nhận giá và thời gian giao. Quy cách theo thực tế từng lô hàng.</>}
     </p>
     {groups.map((g) => (
       <>
         <h3>{g.title}</h3>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Sản phẩm</th><th>Hãng</th><th>Cấp</th><th>Quy cách</th><th><span class="sr-only">Báo giá</span></th></tr></thead>
+            <thead><tr><th>Sản phẩm</th><th>Hãng</th><th>Cấp</th><th>Quy cách</th>{!coTrangGia && <th><span class="sr-only">Báo giá</span></th>}</tr></thead>
             <tbody>
               {g.items.map((r) => (
                 <tr>
@@ -49,7 +53,7 @@ const href = (r: Row) => (r.trang && pages.includes(r.trang) ? `/${category}/${r
                   <td>{r.hang}</td>
                   <td>{r.cap || '–'}</td>
                   <td>{r.quy_cach.join(' · ')}</td>
-                  <td><a class="quote" href={`/bao-gia?sp=${encodeURIComponent(r.ten)}`} data-track="add_to_quote">Báo giá</a></td>
+                  {!coTrangGia && <td><a class="quote" href={`/bao-gia?sp=${encodeURIComponent(r.ten)}`} data-track="add_to_quote">Báo giá</a></td>}
                 </tr>
               ))}
             </tbody>

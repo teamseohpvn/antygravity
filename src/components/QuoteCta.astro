@@ -6,16 +6,21 @@ interface Props {
   item?: string;
   heading?: string;
   compact?: boolean;
+  /** Danh mục đã có trang báo giá riêng: nút chính dẫn sang trang đó thay cho form "Nhận giá sỉ" (12/11/2026, chia vai danh mục và báo giá). */
+  bangGia?: { href: string; label: string };
 }
 
-const { item, heading = 'Nhận báo giá sỉ', compact = false } = Astro.props;
+const { item, compact = false, bangGia } = Astro.props;
+const heading = Astro.props.heading ?? (bangGia ? 'Cần tư vấn chọn dầu?' : 'Nhận báo giá sỉ');
 const quoteHref = item ? `/bao-gia?sp=${encodeURIComponent(item)}` : '/bao-gia';
 ---
 
 <div class:list={['quote-cta', { compact }]}>
   {!compact && <p class="quote-cta__heading">{heading}</p>}
   <div class="quote-cta__actions">
-    <a href={quoteHref} class="btn-primary" data-track="add_to_quote">Nhận giá sỉ</a>
+    {bangGia
+      ? <a href={bangGia.href} class="btn-primary" data-track="click_price_page">{bangGia.label}</a>
+      : <a href={quoteHref} class="btn-primary" data-track="add_to_quote">Nhận giá sỉ</a>}
     <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
     <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
   </div>

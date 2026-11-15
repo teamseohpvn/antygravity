@@ -20,7 +20,11 @@ interface Props {
   author?: string;
 }
 
-const { title, seoTitle, description, canonical, image, type, noindex, schemaData, published, modified, author } = Astro.props;
+const { title, seoTitle, description, canonical, image, type, schemaData, published, modified, author } = Astro.props;
+// Bản nháp xem trước (nhánh khác main, hoặc chạy trên *.workers.dev) luôn noindex, kể cả khi header X-Robots-Tag bị thiếu.
+declare const __PREVIEW_BUILD__: boolean;
+const laBanXemTruoc = (typeof __PREVIEW_BUILD__ !== 'undefined' && __PREVIEW_BUILD__) || Astro.url.hostname.endsWith('.workers.dev');
+const noindex = Astro.props.noindex || laBanXemTruoc;
 
 // Menu danh mục sinh từ content collection, sắp theo trường `order`.
 const categories = (await getActiveCategories()).sort(

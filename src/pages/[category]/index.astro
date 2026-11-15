@@ -36,6 +36,12 @@ const ngay = ngayBai(categoryInfo.data);
 const image = publicImageExists(categoryInfo.data.image) ? categoryInfo.data.image : undefined;
 const pagePath = `/${category}`;
 const hasStock = stockRows.some((r) => r.danh_muc === category);
+// Danh mục có trang báo giá riêng (12/11/2026): trang danh mục lo chọn và mua, không đặt nút "Báo giá"/"Nhận giá sỉ";
+// thay bằng link sang trang báo giá để hai trang không tranh từ khóa giá.
+const BANG_GIA: Record<string, { href: string; label: string; tuVan: string }> = {
+  'dau-thuy-luc': { href: '/bao-gia-dau-thuy-luc', label: 'Xem bảng giá dầu thủy lực', tuVan: 'Cần tư vấn chọn dầu thủy lực?' },
+};
+const bangGia = category ? BANG_GIA[category] : undefined;
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
@@ -125,7 +131,7 @@ const schemaData = [
         </p>
       )}
       <p>{description}</p>
-      <QuoteCta item={nav_label ?? title} compact />
+      <QuoteCta item={nav_label ?? title} compact bangGia={bangGia} />
     </header>
 
     {category === 'dau-thuy-luc' && <PromoBanner />}
@@ -168,7 +174,7 @@ const schemaData = [
                   <p>{product.data.description.length > 110 ? product.data.description.slice(0, 110) + '…' : product.data.description}</p>
                   <div class="card-actions">
                     <a href={`/${category}/${product.id}`} class="btn-view">Xem chi tiết →</a>
-                    <a href={`/bao-gia?sp=${encodeURIComponent(product.data.title)}`} class="btn-quote" data-track="add_to_quote">Báo giá</a>
+                    {!bangGia && <a href={`/bao-gia?sp=${encodeURIComponent(product.data.title)}`} class="btn-quote" data-track="add_to_quote">Báo giá</a>}
                   </div>
                 </div>
               </article>
@@ -182,11 +188,11 @@ const schemaData = [
           </div>
         )}
 
-        <StockTable category={category!} label={nav_label ?? title} pages={products.map((p) => p.id)} />
+        <StockTable category={category!} label={nav_label ?? title} pages={products.map((p) => p.id)} coTrangGia={Boolean(bangGia)} />
 
         <div class="seo-content markdown-body">
           <ContentBody><Content /></ContentBody>
-          <QuoteCta item={nav_label ?? title} />
+          <QuoteCta item={nav_label ?? title} bangGia={bangGia} heading={bangGia?.tuVan} />
           {!tacGia && (reviewed_by || updated) && (
             <p class="review-meta">
               {reviewed_by && <>Nội dung được duyệt kỹ thuật bởi {reviewed_by}. </>}

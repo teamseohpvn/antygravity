@@ -39,7 +39,7 @@ DONG = [
     ("dau-thuy-luc", "Caltex Hydraulic Oil AW 68", "Caltex", "ISO VG 68", "nhap-khau", "Phuy 208 L", 208, "caltex-hydraulic-aw-68", 0, ("Dầu Thủy lực Caltex Hydraulic AW 68", "Phuy 208L")),
     ("dau-thuy-luc", "Cosmo Hydro AW 68", "Cosmo", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "cosmo-hydro-aw-68", 0, ("Dầu thuỷ lực Cosmo hydro AW68", "Phuy 200L")),
     ("dau-thuy-luc", "ENEOS Super Mulpus DX 68", "ENEOS", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "eneos-super-mulpus-dx", 0, ("ENEOS Super Mulpus DX68", "Phuy 200L")),
-    ("dau-thuy-luc", "ENEOS Super Mulpus DX 46", "ENEOS", "ISO VG 46", "nhap-khau", "Phuy 200 L", 200, "eneos-super-mulpus-dx", 0, ("ENEOS Super Mulpus DX46", "Phuy 200L")),
+    ("dau-thuy-luc", "ENEOS Super Mulpus DX 46", "ENEOS", "ISO VG 46", "nhap-khau", "Phuy 200 L", 200, "eneos-super-mulpus-dx", 0, ("ENEOS Super Mulpus DX68", "Phuy 200L")),  # 15/11/2026: người dùng yêu cầu giá cấp 46 bằng cấp 68
     ("dau-thuy-luc", "Castrol Hyspin HLP-Z 68", "Castrol", "ISO VG 68", "nhap-khau", "Xô 20 L", 20, "castrol-hyspin-hlpz-68", 1, ("Dầu  rãnh trượt Hyspin HLPZ 68", "Xô 20L")),
     ("dau-thuy-luc", "VHP Spinax AW 68", "VHP", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "vhp-spinax-aw", 0, ("Dầu Spinax AW68  (200L)", "Phuy 200L")),
     ("dau-thuy-luc", "VHP Spinax AW Super 68", "VHP", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "vhp-spinax-aw", 0, ("Dầu Spinax AW68 Super (200L)", "Phuy 200L")),
