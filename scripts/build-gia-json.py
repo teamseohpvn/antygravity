@@ -160,19 +160,31 @@ GHI_DE_KHOANG = {
 }
 
 
-# Tăng giá phuy dầu thủy lực theo hãng (đ/phuy), cộng vào giá kho (hoặc cả hai đầu khoảng chốt ở GHI_DE_KHOANG)
-# trước khi tính khoảng. Hãng không có tên ở đây dùng mức "khac". Xô không đổi.
-# 15/11/2026: người dùng yêu cầu ENEOS, Castrol tăng 1.000.000 đ/phuy, các hãng còn lại tăng 500.000 đ/phuy.
+# Tăng giá dầu thủy lực theo hãng (đ/phuy hoặc đ/xô), cộng vào giá kho (hoặc cả hai đầu khoảng chốt ở GHI_DE_KHOANG)
+# trước khi tính khoảng. Hãng không có tên ở đây dùng mức "khac".
+# 15/11/2026: người dùng yêu cầu phuy ENEOS, Castrol tăng 1.000.000 đ/phuy, các hãng còn lại tăng 500.000 đ/phuy.
 TANG_GIA_PHUY = {
     "dau-thuy-luc": {"ENEOS": 1_000_000, "Castrol": 1_000_000, "khac": 500_000},
 }
+# 15/11/2026: xô TẠM GIỮ NGUYÊN, người dùng gửi giá xô chính xác sau (dự kiến 16/11, merge đầu tuần).
+# Cách điền khi có giá:
+#   - Có mức tăng theo hãng (đ/xô): điền vào đây, ví dụ {"ENEOS": 100_000, "Castrol": 100_000, "khac": 50_000}.
+#   - Có giá xô chính xác từng mã: điền GIA_XO_MOI bên dưới (giá này đã là giá mới, không cộng thêm TANG_GIA_XO).
+TANG_GIA_XO = {
+    "dau-thuy-luc": {"khac": 0},
+}
+# Giá kho xô mới chính xác theo từng mã, khóa (tên, quy cách) trong DONG, ví dụ ("EMI AW 68", "Xô 18 L"): 1_350_000.
+# Ghi đè giá file kho; khoảng vẫn = giá → × HE_SO. Để trống = dùng giá file kho.
+GIA_XO_MOI = {
+}
 
 
-def tang_phuy(dm, hang, qc):
-    bang = TANG_GIA_PHUY.get(dm)
-    if not bang or not qc.lower().startswith("phuy"):
+def tang_gia(dm, hang, qc):
+    q = qc.lower()
+    bang = TANG_GIA_PHUY.get(dm) if q.startswith("phuy") else TANG_GIA_XO.get(dm) if q.startswith("xô") else None
+    if not bang:
         return 0
-    return bang.get(hang, bang["khac"])
+    return bang.get(hang, bang.get("khac", 0))
 
 
 # Mã không có trong file kho: giá bán thị trường công khai làm mốc thấp (vẫn → × HE_SO). Ghi nguồn và ngày xem.
@@ -239,7 +251,10 @@ def main():
             gia = SUA_GIA.get(khop, gia_theo.get(khop))
             if gia and khop in NHAN_GIA:
                 gia *= NHAN_GIA[khop]
-        tang = tang_phuy(dm, hang, qc)
+        if (ten, qc) in GIA_XO_MOI:
+            gia, tang = GIA_XO_MOI[(ten, qc)], 0
+        else:
+            tang = tang_gia(dm, hang, qc)
         if gia and tang:
             gia += tang
         rows.append({
@@ -247,6 +262,8 @@ def main():
             "quy_cach": qc, "trang": trang, "don_vi_do": "kg" if "kg" in qc else "L", "thu_tu": thu_tu,
             **(khoang_chot((ten, qc), dt, tang) if (ten, qc) in GHI_DE_KHOANG else khoang_gia(gia, dt)),
         })
+    khoa_dong = {(d[1], d[5]) for d in DONG}
+    loi += [f"GIA_XO_MOI: không có dòng {k} trong DONG" for k in GIA_XO_MOI if k not in khoa_dong]
     if loi:
         sys.exit("\n".join(loi))
 
