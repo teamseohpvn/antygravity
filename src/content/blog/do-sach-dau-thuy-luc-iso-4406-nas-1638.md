@@ -135,7 +135,7 @@ Có hai cách đếm phổ biến: **máy đếm hạt tự động** theo ISO 1
 
 Khi đọc phiếu kết quả, hãy so ba số với mức của linh kiện khó tính nhất trong máy. Chỉ cần một số vượt (ví dụ số giữa là 18 trong khi van cần 16) là đã cần lọc tuần hoàn hoặc tìm nguồn bẩn: lọc thở hỏng, phớt cần xi lanh mòn, lõi lọc bỏ qua (bypass) vì tắc.
 
-Cần mua dầu cho máy có van servo, bạn có thể xem khoảng giá các mã dầu thủy lực trong bài ở [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc); giá chính thức xác nhận khi đặt hàng.
+Cần mua dầu cho máy có van servo, bạn có thể xem khoảng giá các mã dầu thủy lực ở [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc); giá chính thức xác nhận khi đặt hàng.
 
 ## Câu hỏi thường gặp {#hoi-dap}
 
