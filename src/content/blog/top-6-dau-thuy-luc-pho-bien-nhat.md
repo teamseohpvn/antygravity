@@ -142,7 +142,7 @@ Ngành đúc, luyện kim là trường hợp duy nhất trong bảng **không**
 1. **Tiêu chuẩn đúng loại.** Máy xưởng thường cần **HM** theo ISO 11158 (tương đương [TCVN 12416:2019](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+12416%3A2019)) hoặc **HLP** theo DIN 51524-2. Máy ngoài trời cần **HV/HVLP** (DIN 51524-3). Dầu ghi chung chung "dầu thủy lực AW" mà không có tiêu chuẩn thì nên hỏi lại.
 2. **Phê duyệt của hãng bơm, hãng máy.** Bơm Parker Denison, Eaton Vickers, Bosch Rexroth thường ghi rõ trong sổ tay danh sách dầu được duyệt (HF-0, E-FDGN-TB002-E, RDE 90245…). Máy còn bảo hành thì bám đúng danh sách này.
 3. **Có kẽm hay không kẽm.** Đa số dầu HM dùng phụ gia chống mài mòn gốc kẽm. Bơm có chi tiết đồng, bạc hoặc hệ van servo nhạy cặn có thể yêu cầu dầu không kẽm (ashless). Sổ tay máy sẽ ghi.
-4. **Độ sạch và độ bền oxy hóa.** Van servo, van tỷ lệ cần dầu sạch theo cấp ISO 4406 ghi trong datasheet của van. Dầu mới từ phuy chưa chắc đạt, nên nạp qua lọc. Chỉ số TOST (ASTM D943) trên TDS càng cao thì dầu càng lâu bị oxy hóa, ví dụ Castrol Hyspin AWS 68 ghi trên 2.500 giờ.
+4. **Độ sạch và độ bền oxy hóa.** Van servo, van tỷ lệ cần dầu sạch theo cấp ISO 4406 ghi trong datasheet của van. [Dầu mới từ phuy chưa chắc đạt](/ho-tro-ky-thuat/do-sach-dau-thuy-luc-iso-4406-nas-1638), nên nạp qua lọc. Chỉ số TOST (ASTM D943) trên TDS càng cao thì dầu càng lâu bị oxy hóa, ví dụ Castrol Hyspin AWS 68 ghi trên 2.500 giờ.
 
 Sau khi đã dùng, cách kiểm tra dầu còn tốt hay không ngay tại xưởng có trong bài [hướng dẫn test chất lượng dầu](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau).
 

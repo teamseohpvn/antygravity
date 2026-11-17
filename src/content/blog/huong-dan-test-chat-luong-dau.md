@@ -150,7 +150,7 @@ Khi đã quyết định thay, xem [8 bước thay dầu thủy lực đúng cá
 Test nhanh tại xưởng đủ để theo dõi hằng ngày. Gửi mẫu cho phòng thí nghiệm khi:
 
 - Kết quả test nhanh vượt ngưỡng và cần xác nhận trước khi thay cả thùng dầu lớn.
-- Cần biết **nguồn gốc mài mòn** (phân tích kim loại bằng quang phổ) hoặc **độ sạch** theo ISO 4406 cho hệ servo, van tỉ lệ.
+- Cần biết **nguồn gốc mài mòn** (phân tích kim loại bằng quang phổ) hoặc **độ sạch** [theo ISO 4406](/ho-tro-ky-thuat/do-sach-dau-thuy-luc-iso-4406-nas-1638) cho hệ servo, van tỉ lệ.
 - Cần phiếu kết quả có giá trị pháp lý để bảo hành máy hoặc khiếu nại chất lượng dầu.
 
 ## Câu hỏi thường gặp

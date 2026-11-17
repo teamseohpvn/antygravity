@@ -55,7 +55,7 @@ ASTM D6224 là tiêu chuẩn hướng dẫn theo dõi dầu đang dùng trong th
 | [Dầu bánh răng](/dau-banh-rang), dầu tuần hoàn | Trên 0,1% | 1.000 ppm |
 | [Dầu động cơ diesel](/dau-dong-co-diesel) | Trên 0,2% | 2.000 ppm |
 
-Hệ thủy lực có van servo, van tỷ lệ thường được hãng máy đặt mức chặt hơn, vì các khe van rất hẹp và dễ kẹt khi có gỉ. Khi tài liệu hướng dẫn sử dụng kèm theo máy có quy định riêng, hãy làm theo tài liệu của hãng máy.
+Hệ thủy lực có [van servo, van tỷ lệ](/ho-tro-ky-thuat/do-sach-dau-thuy-luc-iso-4406-nas-1638) thường được hãng máy đặt mức chặt hơn, vì các khe van rất hẹp và dễ kẹt khi có gỉ. Khi tài liệu hướng dẫn sử dụng kèm theo máy có quy định riêng, hãy làm theo tài liệu của hãng máy.
 
 ## Dấu hiệu dầu nhiễm nước nhìn bằng mắt {#dau-hieu}
 
