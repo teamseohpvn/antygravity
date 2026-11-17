@@ -68,7 +68,7 @@ updated: "2026-10-14"
 
 **ENEOS Epnoc Grease AP(N)** là mỡ đa dụng chịu cực áp (EP) gốc lithium của ENEOS Nhật Bản. Mỡ màu nâu nhạt, ít mùi, không chứa chì. Mỡ dùng dầu gốc khoáng tinh chế cao và phụ gia chống oxy hóa, chống gỉ. Dòng này có bốn loại theo độ đặc/độ sệt NLGI: 0, 1, 2 và 3. NLGI 0 và 1 đặc biệt hợp với hệ thống bơm mỡ tập trung.
 
-Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàng giao từ ba kho: 108 Thanh Bình, TP Hải Phòng (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên).
 
 ## Epnoc Grease AP(N) có hợp với điểm bôi trơn của bạn không?
 
@@ -141,6 +141,6 @@ Không hẳn. Điểm nhỏ giọt khoảng 200 °C và nhiệt độ làm việ
 
 - **Quy cách:** can, NLGI 0, 1, 2, 3. Có sẵn tại kho; báo rõ độ đặc/độ sệt NLGI khi đặt.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Epnoc%20Grease%20AP(N)) kèm độ đặc/độ sệt NLGI và số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

@@ -5,6 +5,7 @@ import '@fontsource-variable/inter/wght.css';
 import SEO from '../components/SEO.astro';
 import { BUSINESS, ADDRESS_FULL, KHO_GIAO_HANG, AREA_TEXT, SITE_NAME, LEGAL_NAME, TAX_ID, GA4_ID, GADS_ID, CONSENT_KEY, POLICY_LINKS, GIO_LAM_VIEC, organizationSchema, websiteSchema } from '../lib/site';
 import CookieBanner from '../components/CookieBanner.astro';
+import { TRANG_BAO_GIA, trangBaoGiaCua, ID_FORM_BAO_GIA } from '../lib/bao-gia-danh-muc';
 
 interface Props {
   title: string;
@@ -25,6 +26,12 @@ const { title, seoTitle, description, canonical, image, type, schemaData, publis
 declare const __PREVIEW_BUILD__: boolean;
 const laBanXemTruoc = (typeof __PREVIEW_BUILD__ !== 'undefined' && __PREVIEW_BUILD__) || Astro.url.hostname.endsWith('.workers.dev');
 const noindex = Astro.props.noindex || laBanXemTruoc;
+// Nút/menu "Báo giá" ở đầu trang, menu điện thoại, chân trang, thanh dưới cùng (17/11/2026):
+// trang thuộc danh mục có trang báo giá riêng (hoặc chính trang báo giá đó) thì dẫn tới form trên trang báo giá
+// của danh mục (#gui-yeu-cau); trang khác vẫn dùng /bao-gia chung. Danh sách ở src/lib/bao-gia-danh-muc.ts.
+const doanDau = Astro.url.pathname.split('/')[1]?.replace(/\.html$/, '') ?? '';
+const trangGiaCuaTrang = trangBaoGiaCua(doanDau) ?? Object.values(TRANG_BAO_GIA).find((t) => t.href === `/${doanDau}`);
+const linkBaoGia = trangGiaCuaTrang ? `${trangGiaCuaTrang.href}#${ID_FORM_BAO_GIA}` : '/bao-gia';
 
 // Menu danh mục sinh từ content collection, sắp theo trường `order`.
 const categories = (await getActiveCategories()).sort(
@@ -96,6 +103,10 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
       }
 
       a { text-decoration: none; color: inherit; }
+      /* Link trong thân bài (markdown của sản phẩm, danh mục, blog, hướng dẫn): chữ đậm, xanh dương, gạch chân để khác hẳn chữ thường.
+         Chỉ áp cho thẻ <a> không có class, nên thẻ "Xem thêm", nút bấm, link TDS dạng nút giữ kiểu riêng (17/11/2026). */
+      .markdown-body a:not([class]) { color: #0b5cad; font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+      .markdown-body a:not([class]):hover { color: #c2410c; text-decoration-thickness: 2px; }
       img { max-width: 100%; height: auto; }
 
       .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
@@ -272,7 +283,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
           <li><a href="/about">Giới thiệu</a></li>
           <li><a href="/contact">Liên hệ</a></li>
         </ul>
-        <a href="/bao-gia" class="btn-primary header-cta" data-track="add_to_quote">Nhận Báo Giá</a>
+        <a href={linkBaoGia} class="btn-primary header-cta" data-track="add_to_quote">Nhận Báo Giá</a>
 
         <details class="mobile-menu">
           <summary aria-label="Mở menu">☰ Menu</summary>
@@ -284,7 +295,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
             <a href="/ho-tro-ky-thuat">Hỗ trợ kỹ thuật</a>
             <a href="/about">Giới thiệu</a>
             <a href="/contact">Liên hệ</a>
-            <a href="/bao-gia">Nhận báo giá</a>
+            <a href={linkBaoGia}>Nhận báo giá</a>
           </nav>
         </details>
       </div>
@@ -308,7 +319,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
             <p>Hotline / Zalo: <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></p>
             <p>Email: <a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></p>
             <p>Giờ làm việc:{GIO_LAM_VIEC.map((g) => <><br />{g.ngay}: {g.gio}</>)}</p>
-            <p><a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a> · <a href={BUSINESS.facebookUrl} target="_blank" rel="noopener me" data-track="click_facebook">Facebook</a> · <a href="/bao-gia">Gửi yêu cầu báo giá</a></p>
+            <p><a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a> · <a href={BUSINESS.facebookUrl} target="_blank" rel="noopener me" data-track="click_facebook">Facebook</a> · <a href={linkBaoGia}>Gửi yêu cầu báo giá</a></p>
           </div>
           <div>
             <h2>Sản phẩm</h2>
@@ -324,7 +335,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
               <li><a href="/contact">Liên hệ</a></li>
               <li><a href="/bao-gia-dau-thuy-luc">Báo giá dầu thủy lực</a></li>
               <li><a href="/bao-gia-mo-boi-tron">Báo giá mỡ bôi trơn</a></li>
-              <li><a href="/bao-gia">Gửi yêu cầu báo giá</a></li>
+              <li><a href={linkBaoGia}>Gửi yêu cầu báo giá</a></li>
             </ul>
           </div>
           <div>
@@ -343,7 +354,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
     <div class="mobile-cta" aria-label="Liên hệ nhanh">
       <a href={`tel:${BUSINESS.phone}`} class="btn-secondary" data-track="click_tel">Gọi</a>
       <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Zalo</a>
-      <a href="/bao-gia" class="btn-primary" data-track="add_to_quote">Báo giá</a>
+      <a href={linkBaoGia} class="btn-primary" data-track="add_to_quote">Báo giá</a>
     </div>
 
     <script>
