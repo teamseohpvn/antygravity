@@ -25,6 +25,8 @@ OUT = Path(__file__).resolve().parent.parent / "src" / "data" / "gia-cong-khai.j
 # (danh_muc, ten, hang, cap, nguon, quy_cach, dung_tich, trang, thu_tu, (tên trong file kho, quy cách trong file kho))
 DONG = [
     ("dau-thuy-luc", "ENEOS Super Hyrando 68", "ENEOS", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "eneos-super-hyrando-68", 0, ("ENEOS Super Hyrando 68", "Phuy 200L")),
+    # 15/11/2026: xô 18 L ENEOS Super Hyrando 68 (file kho ghi "Can 18L") lên bảng giá xô.
+    ("dau-thuy-luc", "ENEOS Super Hyrando 68", "ENEOS", "ISO VG 68", "nhap-khau", "Xô 18 L", 18, "eneos-super-hyrando-68", 1, ("ENEOS Super Hyrando 68", "Can 18L")),
     ("dau-thuy-luc", "Castrol Hyspin AWS 68", "Castrol", "ISO VG 68", "nhap-khau", "Phuy 209 L", 209, "castrol-hyspin-aws-68", 0, ("Dầu Hyspin AWS 68/209L (Castrol)", "Phuy 209 L")),
     ("dau-thuy-luc", "Maxima 68", "Maxima", "ISO VG 68", "nhap-khau", "Xô 18 L", 18, "maxima-68", 1, ("Dầu MAXIMA 68", "Xô 18L")),
     ("dau-thuy-luc", "EMER LAW 68", "EMER", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "emer-law-68", 0, ("Dầu thủy lực LAW68 (200L)", "Phuy")),
@@ -158,6 +160,33 @@ GHI_DE_KHOANG = {
 }
 
 
+# Tăng giá dầu thủy lực theo hãng (đ/phuy hoặc đ/xô), cộng vào giá kho (hoặc cả hai đầu khoảng chốt ở GHI_DE_KHOANG)
+# trước khi tính khoảng. Hãng không có tên ở đây dùng mức "khac".
+# 15/11/2026: người dùng yêu cầu phuy ENEOS, Castrol tăng 1.000.000 đ/phuy, các hãng còn lại tăng 500.000 đ/phuy.
+TANG_GIA_PHUY = {
+    "dau-thuy-luc": {"ENEOS": 1_000_000, "Castrol": 1_000_000, "khac": 500_000},
+}
+# 15/11/2026: xô TẠM GIỮ NGUYÊN, người dùng gửi giá xô chính xác sau (dự kiến 16/11, merge đầu tuần).
+# Cách điền khi có giá:
+#   - Có mức tăng theo hãng (đ/xô): điền vào đây, ví dụ {"ENEOS": 100_000, "Castrol": 100_000, "khac": 50_000}.
+#   - Có giá xô chính xác từng mã: điền GIA_XO_MOI bên dưới (giá này đã là giá mới, không cộng thêm TANG_GIA_XO).
+TANG_GIA_XO = {
+    "dau-thuy-luc": {"khac": 0},
+}
+# Giá kho xô mới chính xác theo từng mã, khóa (tên, quy cách) trong DONG, ví dụ ("EMI AW 68", "Xô 18 L"): 1_350_000.
+# Ghi đè giá file kho; khoảng vẫn = giá → × HE_SO. Để trống = dùng giá file kho.
+GIA_XO_MOI = {
+}
+
+
+def tang_gia(dm, hang, qc):
+    q = qc.lower()
+    bang = TANG_GIA_PHUY.get(dm) if q.startswith("phuy") else TANG_GIA_XO.get(dm) if q.startswith("xô") else None
+    if not bang:
+        return 0
+    return bang.get(hang, bang.get("khac", 0))
+
+
 # Mã không có trong file kho: giá bán thị trường công khai làm mốc thấp (vẫn → × HE_SO). Ghi nguồn và ngày xem.
 GIA_NGOAI_KHO = {
     # 14/10/2026: anphatkd.com/san-pham/may-do-do-nhot-cam-tay-lnd-1 bán 1.600.000 đ.
@@ -190,8 +219,9 @@ def khoang_gia(gia, dung_tich):
     }
 
 
-def khoang_chot(khoa, dung_tich):
+def khoang_chot(khoa, dung_tich, tang=0):
     thap, cao = GHI_DE_KHOANG[khoa]
+    thap, cao = thap + tang, cao + tang
     return {
         "thap": thap,
         "cao": cao,
@@ -221,11 +251,19 @@ def main():
             gia = SUA_GIA.get(khop, gia_theo.get(khop))
             if gia and khop in NHAN_GIA:
                 gia *= NHAN_GIA[khop]
+        if (ten, qc) in GIA_XO_MOI:
+            gia, tang = GIA_XO_MOI[(ten, qc)], 0
+        else:
+            tang = tang_gia(dm, hang, qc)
+        if gia and tang:
+            gia += tang
         rows.append({
             "danh_muc": dm, "ten": ten, "hang": hang, "cap": cap, "nguon": nguon,
             "quy_cach": qc, "trang": trang, "don_vi_do": "kg" if "kg" in qc else "L", "thu_tu": thu_tu,
-            **(khoang_chot((ten, qc), dt) if (ten, qc) in GHI_DE_KHOANG else khoang_gia(gia, dt)),
+            **(khoang_chot((ten, qc), dt, tang) if (ten, qc) in GHI_DE_KHOANG else khoang_gia(gia, dt)),
         })
+    khoa_dong = {(d[1], d[5]) for d in DONG}
+    loi += [f"GIA_XO_MOI: không có dòng {k} trong DONG" for k in GIA_XO_MOI if k not in khoa_dong]
     if loi:
         sys.exit("\n".join(loi))
 
