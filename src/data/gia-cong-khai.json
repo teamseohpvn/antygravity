@@ -24,6 +24,21 @@
     },
     {
       "danh_muc": "dau-thuy-luc",
+      "ten": "ENEOS Super Hyrando 68",
+      "hang": "ENEOS",
+      "cap": "ISO VG 68",
+      "nguon": "nhap-khau",
+      "quy_cach": "Xô 18 L",
+      "trang": "eneos-super-hyrando-68",
+      "don_vi_do": "L",
+      "thu_tu": 1,
+      "thap": 937000,
+      "cao": 1079000,
+      "thap_don_vi": 52000,
+      "cao_don_vi": 60000
+    },
+    {
+      "danh_muc": "dau-thuy-luc",
       "ten": "Castrol Hyspin AWS 68",
       "hang": "Castrol",
       "cap": "ISO VG 68",
@@ -51,6 +66,21 @@
       "cao": 950000,
       "thap_don_vi": 52800,
       "cao_don_vi": 52800
+    },
+    {
+      "danh_muc": "dau-thuy-luc",
+      "ten": "Maxima 68",
+      "hang": "Maxima",
+      "cap": "ISO VG 68",
+      "nguon": "nhap-khau",
+      "quy_cach": "Phuy 200 L",
+      "trang": "maxima-68",
+      "don_vi_do": "L",
+      "thu_tu": 0,
+      "thap": 9000000,
+      "cao": 9000000,
+      "thap_don_vi": 45000,
+      "cao_don_vi": 45000
     },
     {
       "danh_muc": "dau-thuy-luc",

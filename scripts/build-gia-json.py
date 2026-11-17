@@ -25,11 +25,13 @@ OUT = Path(__file__).resolve().parent.parent / "src" / "data" / "gia-cong-khai.j
 # (danh_muc, ten, hang, cap, nguon, quy_cach, dung_tich, trang, thu_tu, (tên trong file kho, quy cách trong file kho))
 DONG = [
     ("dau-thuy-luc", "ENEOS Super Hyrando 68", "ENEOS", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "eneos-super-hyrando-68", 0, ("ENEOS Super Hyrando 68", "Phuy 200L")),
-    # 17/11/2026: bỏ dòng xô 18 L ENEOS Super Hyrando 68 (thêm ngày 15/11 từ giá file kho): báo giá văn bản 15/11 không có
-    # xô ENEOS, giá file kho ra rẻ hơn phuy tính theo lít, trang sản phẩm ghi xô nhận đặt.
+    # 15/11/2026: xô 18 L ENEOS Super Hyrando 68 (file kho ghi "Can 18L") lên bảng giá xô.
+    # 17/11/2026: người dùng giữ nguyên dòng này theo giá file kho (báo giá văn bản 15/11 không có xô ENEOS).
+    ("dau-thuy-luc", "ENEOS Super Hyrando 68", "ENEOS", "ISO VG 68", "nhap-khau", "Xô 18 L", 18, "eneos-super-hyrando-68", 1, ("ENEOS Super Hyrando 68", "Can 18L")),
     ("dau-thuy-luc", "Castrol Hyspin AWS 68", "Castrol", "ISO VG 68", "nhap-khau", "Phuy 209 L", 209, "castrol-hyspin-aws-68", 0, ("Dầu Hyspin AWS 68/209L (Castrol)", "Phuy 209 L")),
     ("dau-thuy-luc", "Maxima 68", "Maxima", "ISO VG 68", "nhap-khau", "Xô 18 L", 18, "maxima-68", 1, ("Dầu MAXIMA 68", "Xô 18L")),
     # 17/11/2026: các dòng dưới có trong báo giá văn bản 15/11/2026, chưa có trong file kho; giá ở GIA_BAO_GIA.
+    ("dau-thuy-luc", "Maxima 68", "Maxima", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "maxima-68", 0, None),
     ("dau-thuy-luc", "Castrol Hyspin AWS 46", "Castrol", "ISO VG 46", "nhap-khau", "Phuy 209 L", 209, "castrol-hyspin-aws-68", 0, None),
     ("dau-thuy-luc", "ENEOS Super Hyrando 46", "ENEOS", "ISO VG 46", "nhap-khau", "Phuy 200 L", 200, "eneos-super-hyrando-68", 0, None),
     ("dau-thuy-luc", "EMER LAW 68", "EMER", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "emer-law-68", 0, ("Dầu thủy lực LAW68 (200L)", "Phuy")),
@@ -224,7 +226,7 @@ GIA_BAO_GIA = {
     ("X-One AW 68", "Xô 18 L"): 1_000_000,
     ("EMER LAW 68", "Phuy 200 L"): 10_500_000,
     ("EMER LAW 68", "Xô 18 L"): 1_500_000,
-    # Maxima 68 phuy 200 L (9.000.000 đ) có trong báo giá nhưng trang maxima-68 ghi "chỉ có xô 18 L": chưa lên web, chờ người dùng xác nhận.
+    ("Maxima 68", "Phuy 200 L"): 9_000_000,  # 17/11/2026: người dùng xác nhận giữ cả phuy
     ("Maxima 68", "Xô 18 L"): 950_000,
     # Mỡ bôi trơn
     ("VHP Lithium Grease L3", "Xô 17 kg"): 1_350_000,
