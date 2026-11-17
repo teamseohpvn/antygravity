@@ -2,7 +2,7 @@
 ma: "BV-014"
 active: true
 loai: "kien-thuc"
-title: "Độ sạch NAS / ISO 4406: Tại sao dầu mới khui phuy vẫn chưa đủ độ sạch cho van servo và van tỷ lệ? Cách đọc cấp độ sạch NAS 1638"
+title: "Độ sạch dầu thủy lực ISO 4406, NAS 1638: vì sao dầu mới mở phuy chưa đủ sạch cho van servo, van tỷ lệ?"
 seo_title: "Độ Sạch Dầu Thủy Lực ISO 4406, NAS 1638: Vì Sao Dầu Mới Chưa Sạch"
 description: "Cách đọc mã độ sạch ISO 4406 (18/16/13) và cấp NAS 1638; vì sao dầu thủy lực mới mở phuy chưa đủ sạch cho van servo, van tỷ lệ và cách nạp dầu qua lọc."
 keywords: ["độ sạch dầu thủy lực", "iso 4406", "nas 1638", "cấp độ sạch dầu", "độ sạch dầu iso 4406", "dầu thủy lực cho van servo", "van tỷ lệ", "lọc dầu thủy lực mới"]

@@ -49,6 +49,7 @@ const schemaData = [
     url: absUrl(pagePath),
     ...(post.data.image ? { image: absUrl(post.data.image) } : {}),
     mainEntityOfPage: absUrl(pagePath),
+    inLanguage: 'vi-VN',
     // Chưa có tác giả thật thì ghi doanh nghiệp, không dùng tên giả định.
     author: authorP
       ? personRef(authorP)
