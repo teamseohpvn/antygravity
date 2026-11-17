@@ -62,7 +62,7 @@ updated: "2026-10-30"
 
 **Shell Gadus S2 V220 2** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng chịu cực áp (EP) của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng lithium hydroxystearate. Mỡ dùng cho vòng bi, ổ trượt, bản lề và bề mặt trượt trong hầu hết các ngành công nghiệp và vận tải. Tên cũ của dòng này là Shell Alvania EP(LF) 2 và Shell Retinax EP 2.
 
-Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Hàng giao từ ba kho của HT VINA ở Thanh Bình (Hải Dương cũ), Kiến An (TP Hải Phòng) và Như Quỳnh (Hưng Yên).
 
 ## Gadus S2 V220 2 có hợp với điểm bôi trơn của bạn không?
 
@@ -92,6 +92,8 @@ Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VA
 | Nhiệt độ làm việc | -20 đến 130 °C | -20 đến 140 °C (đỉnh 150 °C) |
 | Dùng cho | Ổ bi, ổ trượt đa dụng | Ổ bi nóng, tải nặng, rung mạnh |
 
+Hai mã Shell chênh nhau bao nhiêu mỗi kg, bạn xem ở [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron).
+
 > **Nhận định của HT VINA:** Ổ bi dưới khoảng 120 °C thì Gadus S2 là đủ và tiết kiệm hơn. Ổ bi quạt lò, con lăn lò sấy chạy nóng liên tục thì dùng Gadus S3.
 
 ## Gadus S2 hay mỡ lithium VHP?
@@ -116,7 +118,7 @@ Gadus S2 V220 2 hay được chọn cho vòng bi động cơ điện, quạt, b�
 | Dưới 70 °C | Theo mốc của hãng động cơ |
 | Khoảng 85 °C | Còn khoảng một nửa |
 | Khoảng 100 °C | Còn khoảng một phần tư |
-| Trên 120 °C kéo dài | Nên chuyển sang mỡ chịu nhiệt cao hơn như [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2) |
+| Trên 120 °C kéo dài | Nên chuyển sang [mỡ chịu nhiệt](/mo-chiu-nhiet) cao hơn như [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2) |
 
 **Lời khuyên của chúng tôi:** mua một súng đo nhiệt hồng ngoại, đo vỏ ổ mỗi tháng và ghi vào sổ. Ổ nóng lên rõ ngay sau khi bơm mỡ là dấu hiệu đã bơm thừa: tháo nút xả, cho động cơ chạy để mỡ thừa thoát ra, đừng bơm thêm.
 
@@ -150,6 +152,6 @@ Thường là do bơm quá nhiều mỡ vào ổ quay nhanh. Mỡ thừa bị nh
 
 - **Quy cách:** xô 18 kg, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Shell%20Gadus%20S2%20V220%202) kèm số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

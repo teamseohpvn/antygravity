@@ -63,7 +63,7 @@ updated: "2026-10-30"
 
 **Shell Gadus S3 V220C 2** là mỡ chịu nhiệt, chịu cực áp cao cấp của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng **lithium complex**, có **màu đỏ**. Nhiệt độ nhỏ giọt là **240 °C**. Mỡ làm việc liên tục tới **140 °C**, đỉnh tới 150 °C, nên dùng cho các ổ bi chạy nóng, tải nặng và rung mạnh. Tên cũ của dòng này là Shell Albida EP 2 và Shell Retinax LX 2.
 
-Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Hàng giao từ ba kho của HT VINA ở Thanh Bình (Hải Dương cũ), Kiến An (TP Hải Phòng) và Như Quỳnh (Hưng Yên).
 
 ## Gadus S3 V220C 2 có hợp với điểm bôi trơn của bạn không?
 
@@ -74,7 +74,7 @@ Theo Shell, mỡ dùng cho ổ bi tải nặng trong máy đúc liên tục, sà
 | Ổ bi quạt lò, con lăn lò sấy, máy nghiền xi măng, gạch, thép | **Được.** |
 | Moay ơ bánh xe tải (ASTM D4950 GC-LB) | **Được.** |
 | Ổ bi rung mạnh, nhiều nước (mỏ đá, máy đúc có nước làm mát) | **Được.** |
-| Ổ bi chạy dưới 120 °C | Dùng được, nhưng [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) đủ và tiết kiệm hơn. |
+| Ổ bi chạy dưới 120 °C | Dùng được, nhưng [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) hoặc một loại [mỡ bôi trơn đa dụng](/mo-boi-tron-cong-nghiep) khác là đủ và tiết kiệm hơn. |
 | Hệ bơm mỡ tập trung đường ống dài | Hỏi trước: Shell đánh giá khả năng bơm xa ở mức "trung bình". |
 
 ## Thông số này có ý nghĩa gì khi máy chạy?
@@ -99,6 +99,8 @@ Không. Nhiều nơi quảng cáo mỡ "chịu nhiệt 300 °C" hay "500 °C" d�
 | Chất làm đặc | Lithium | Lithium complex |
 | Nhiệt độ nhỏ giọt | 180 °C | 240 °C |
 | Nhiệt độ làm việc | −20 đến 130 °C | −20 đến 140 °C (đỉnh 150 °C) |
+
+Hai mã Shell này chênh nhau bao nhiêu mỗi kg, bạn xem ở [bảng giá mỡ chịu nhiệt và mỡ bôi trơn](/bao-gia-mo-boi-tron).
 
 > **Nhận định của HT VINA:** Mỡ lithium complex và mỡ lithium thường trộn lẫn với nhau khá ổn. Dù vậy, khi chuyển hẳn sang Gadus S3 cho ổ bi nóng, nên đẩy hết mỡ cũ ra để có đủ khả năng chịu nhiệt.
 
@@ -146,6 +148,6 @@ Theo bảng tương thích của ExxonMobil, mỡ lithium và lithium complex th
 
 - **Quy cách:** xô 18 kg, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Shell%20Gadus%20S3%20V220C%202) kèm số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

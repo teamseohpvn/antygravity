@@ -105,6 +105,8 @@ Theo cách phân nhóm của chúng tôi, Crystal không thuộc nhóm mỡ ch�
 | Nhiệt độ làm việc | -20 đến 120 °C | -20 đến 120 °C | -20 đến 110 °C |
 | Có sẵn | Xô 17 kg, phuy 180 kg | Xô 17 kg, phuy 180 kg | Xô 17 kg, phuy 180 kg |
 
+Giá theo kg của ba mã Sinopec này xếp cạnh nhau trong [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron).
+
 Hai mã Crystal đo nhiệt độ nhỏ giọt bằng ASTM D566, còn Golden Grease đo bằng ASTM D2265, nên chênh lệch chỉ để tham khảo.
 
 > **Nhận định của HT VINA:** Vòng bi trong nhà máy mà ít khi nóng quá 100 °C thì Crystal NLGI 3 là lựa chọn đơn giản nhất trong ba mã. Golden Grease hợp với thiết bị tốc độ thấp như TDS của nó ghi. Crystal T3 chỉ nên chọn khi NLGI 3 vẫn chảy khỏi ổ.
@@ -158,5 +160,6 @@ Chỉ nên thêm mỡ cùng gốc lithium. Với mỡ khác gốc, hãy làm s�
 
 - **Quy cách:** xô 17 kg và phuy 180 kg có sẵn tại kho. Loại NLGI 2 cùng dòng cũng có sẵn xô 17 kg và phuy 180 kg. Loại NLGI 1 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Crystal%20Grease%20NLGI%203) kèm số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

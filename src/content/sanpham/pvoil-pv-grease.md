@@ -59,7 +59,7 @@ updated: "2026-10-14"
 
 **PV Grease** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng của Công ty CP Dầu nhờn PVOIL (PVOIL Lube), thuộc Tổng công ty Dầu Việt Nam. Trên web hãng, dòng này có tên **PV Grease Lithium**, gồm ba loại theo độ đặc/độ sệt NLGI: 1, 2 và 3. Mỡ màu vàng, pha từ dầu gốc khoáng và có điểm nhỏ giọt tối thiểu 140 °C.
 
-Loại **No2** và **No3** đóng **phuy** **có sẵn tại kho**, có hóa đơn VAT; CO/CQ cung cấp theo lô khi khách yêu cầu. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Loại **No2** và **No3** đóng **phuy** **có sẵn tại kho**, có hóa đơn VAT; CO/CQ cung cấp theo lô khi khách yêu cầu. Hàng giao từ ba kho của HT VINA ở Thanh Bình (Hải Dương cũ), Kiến An (TP Hải Phòng) và Như Quỳnh (Hưng Yên).
 
 ## PV Grease có hợp với điểm bôi trơn của bạn không?
 
@@ -98,6 +98,8 @@ Loại **No2** và **No3** đóng **phuy** **có sẵn tại kho**, có hóa đ�
 | Điểm nhỏ giọt | Tối thiểu 140 °C | Tối thiểu 130 °C | ≥ 120 °C |
 | Tình trạng kho tháng 10/2026 | Có sẵn phuy | Có sẵn ống 400 g | Có sẵn phuy 180 kg |
 
+Cả ba mã đều có khoảng giá theo kg trên [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron), nên đổi mã nào cũng dễ ước chi phí.
+
 > **Nhận định của HT VINA:** Ba mã cùng nhóm mỡ đa dụng NLGI 3. Xưởng đang dùng PV Grease thì đặt tiếp; cần mỡ ngay thì dùng mã có sẵn, nhưng nên đẩy hết mỡ cũ ra khi đổi loại.
 
 ## Khi nào cần bơm bù hoặc thay mỡ?
@@ -116,7 +118,7 @@ Không bơm quá nhiều: ổ bi đầy mỡ chạy nóng hơn. Ổ bi động c
 ## Câu hỏi thường gặp
 
 ### PV Grease có phải mỡ chịu nhiệt không?
-Không. Điểm nhỏ giọt tối thiểu 140 °C là mức của mỡ đa dụng. Điểm bôi trơn nóng liên tục cần mỡ lithium complex hoặc mỡ chịu nhiệt chuyên dụng.
+Không. Điểm nhỏ giọt tối thiểu 140 °C là mức của mỡ đa dụng. Điểm bôi trơn nóng liên tục cần mỡ lithium complex hoặc [mỡ chịu nhiệt](/mo-chiu-nhiet) chuyên dụng.
 
 ### PV Grease No3 dùng cho xe tải được không?
 Được, cho khớp, chốt, bản lề và sát xi. Với moay ơ bánh xe tải nặng, hãy kiểm tra độ đặc/độ sệt NLGI và nhiệt độ làm việc theo hướng dẫn sử dụng của xe trước khi dùng.
@@ -125,6 +127,6 @@ Không. Điểm nhỏ giọt tối thiểu 140 °C là mức của mỡ đa dụ
 
 - **Quy cách:** No2, No3 phuy. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=PVOIL%20PV%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
