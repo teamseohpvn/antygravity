@@ -28,8 +28,14 @@ export const prerender = false;
 
 const CATEGORY = 'dau-thuy-luc';
 const pagePath = '/bao-gia-dau-thuy-luc';
-const IMAGE = '/images/blog/kho-ht-vina-thanh-binh-1.webp';
-const IMAGE_ALT = 'Lối đi trong kho HT VINA với xe nâng tay, hai bên là phuy và xô dầu các hãng';
+// 17/11/2026 (người dùng quyết định): ảnh đại diện = ảnh báo giá văn bản có dấu, chữ ký, lập ngày 15/11/2026
+// (anh-goc/bao-gia-dau-thuy-luc.jpg/.pdf), để Google hiện ảnh báo giá khi tìm "báo giá dầu thủy lực". Ảnh ghi giá đúng, chưa VAT.
+const IMAGE = '/images/bao-gia/bao-gia-dau-thuy-luc-ht-vina-15-11-2026.webp';
+const IMAGE_W = 1600;
+const IMAGE_H = 1153;
+const IMAGE_ALT = 'Báo giá dầu thủy lực HT VINA cập nhật 15/11/2026, giá chưa VAT phuy 200L và xô 18L: Apex 68, Castrol Hyspin AWS 46 và 68, Emi AW68, ENEOS Super Hyrando 46 và 68, VHP Spinax AW68, Xone 68, Amer LAW68, Maxima 68, AIO HM46 và HM68, có dấu công ty và chữ ký giám đốc';
+const IMAGE_NGAY = '2026-11-15';
+const PDF_BAO_GIA = '/tai-lieu/bao-gia/bao-gia-dau-thuy-luc.pdf';
 
 // 01/11/2026 (quyết định của người dùng): báo giá là tài liệu kinh tế và trách nhiệm kinh doanh.
 // Chị Hồng (quản lý bán hàng) là người viết và rà soát giá.
@@ -235,6 +241,10 @@ const crumbs = [
   { name: 'Báo giá dầu thủy lực', href: pagePath },
 ];
 
+const anhBaoGia = {
+  '@type': 'ImageObject', url: absUrl(IMAGE), contentUrl: absUrl(IMAGE), width: IMAGE_W, height: IMAGE_H,
+  caption: IMAGE_ALT, datePublished: IMAGE_NGAY, creator: { '@id': ORG_ID }, copyrightHolder: { '@id': ORG_ID },
+};
 const schemaData = [
   {
     '@context': 'https://schema.org',
@@ -249,7 +259,7 @@ const schemaData = [
     author: personRef(tacGia),
     reviewedBy: personRef(nguoiDuyet),
     about: { '@type': 'Thing', name: 'Dầu thủy lực ISO VG 68' },
-    primaryImageOfPage: { '@type': 'ImageObject', url: absUrl(IMAGE), caption: IMAGE_ALT },
+    primaryImageOfPage: anhBaoGia,
     isPartOf: { '@id': absUrl('/') + '#website' },
     publisher: { '@id': ORG_ID },
   },
@@ -261,7 +271,7 @@ const schemaData = [
     description,
     url: absUrl(pagePath),
     mainEntityOfPage: absUrl(pagePath),
-    image: absUrl(IMAGE),
+    image: anhBaoGia,
     inLanguage: 'vi-VN',
     author: personRef(tacGia),
     reviewedBy: personRef(nguoiDuyet),
@@ -346,6 +356,11 @@ const schemaData = [
       </dl>
       <button type="button" class="info-them" id="info-them" aria-controls="doc-info" aria-expanded="false" data-track="read_more_doc_info">… Xem thêm</button>
       </div>
+
+      <figure class="anh-bao-gia" id="anh-bao-gia">
+        <a href={IMAGE} target="_blank" rel="noopener"><img src={IMAGE} srcset={`${IMAGE.replace('.webp', '-800.webp')} 800w, ${IMAGE} 1600w`} sizes="(max-width: 860px) 100vw, 820px" alt={IMAGE_ALT} width={IMAGE_W} height={IMAGE_H} loading="eager" fetchpriority="high" decoding="async" /></a>
+        <figcaption>Báo giá dầu thủy lực bằng văn bản do HT VINA lập ngày <time datetime={IMAGE_NGAY}>15/11/2026</time>, giá chưa VAT, có dấu công ty và chữ ký giám đốc. Bấm vào ảnh để xem cỡ lớn hoặc <a href={PDF_BAO_GIA} download>tải bản PDF</a>.</figcaption>
+      </figure>
 
 
       {coGia && (
@@ -782,6 +797,9 @@ const schemaData = [
   .price-hero, .price-body { background: white; border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; padding: clamp(20px, 4vw, 32px); margin-bottom: 24px; }
   .price-hero h1 { color: var(--color-primary); font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.25; margin-bottom: 10px; }
   .price-hero .sapo { margin: 0 0 12px; font-size: 1.05rem; line-height: 1.6; }
+  .anh-bao-gia { margin: 1rem 0 1.25rem; max-width: 820px; }
+  .anh-bao-gia img { display: block; width: 100%; height: auto; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; background: #fff; }
+  .anh-bao-gia figcaption { font-size: .85rem; color: var(--color-text-light); margin-top: .4rem; }
   .summary { background: #f1f5f9; border-left: 4px solid var(--color-primary); border-radius: 4px; padding: 14px 18px; margin-bottom: 14px; }
   .summary__label { font-weight: 700; color: var(--color-primary); margin-bottom: 6px; }
   .summary ul { margin: 0 0 0 20px; }
