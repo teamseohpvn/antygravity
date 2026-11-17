@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Độ nhớt theo nhiệt độ của ba mã dầu thủy lực 68 có chỉ số độ nhớt 93, 104 và 147</title>
+<desc id="d">Tính theo ASTM D341 từ độ nhớt ở 40 °C và 100 °C trong TDS. Ở 0 °C: khoảng 1.089, 1.013 và 753 mm²/s. Ở 70 °C: khoảng 20, 21 và 25 mm²/s.</desc>
+<rect width="760" height="440" fill="#fff"/>
+<text x="20" y="28" font-size="16" font-weight="700" fill="#003366">Độ nhớt dầu thủy lực 68 theo nhiệt độ (mm²/s, thang log)</text>
+<line x1="70" x2="740" y1="370.0" y2="370.0" stroke="#e2e8f0"/><text x="62" y="374.0" font-size="12" text-anchor="end" fill="#475569">10</text>
+<line x1="70" x2="740" y1="328.1" y2="328.1" stroke="#e2e8f0"/><text x="62" y="332.1" font-size="12" text-anchor="end" fill="#475569">20</text>
+<line x1="70" x2="740" y1="272.8" y2="272.8" stroke="#e2e8f0"/><text x="62" y="276.8" font-size="12" text-anchor="end" fill="#475569">50</text>
+<line x1="70" x2="740" y1="230.9" y2="230.9" stroke="#e2e8f0"/><text x="62" y="234.9" font-size="12" text-anchor="end" fill="#475569">100</text>
+<line x1="70" x2="740" y1="189.1" y2="189.1" stroke="#e2e8f0"/><text x="62" y="193.1" font-size="12" text-anchor="end" fill="#475569">200</text>
+<line x1="70" x2="740" y1="133.7" y2="133.7" stroke="#e2e8f0"/><text x="62" y="137.7" font-size="12" text-anchor="end" fill="#475569">500</text>
+<line x1="70" x2="740" y1="91.9" y2="91.9" stroke="#e2e8f0"/><text x="62" y="95.9" font-size="12" text-anchor="end" fill="#475569">1.000</text>
+<line x1="70" x2="740" y1="50.0" y2="50.0" stroke="#e2e8f0"/><text x="62" y="54.0" font-size="12" text-anchor="end" fill="#475569">2.000</text>
+<line x1="70.0" x2="70.0" y1="50" y2="370" stroke="#f1f5f9"/><text x="70.0" y="388" font-size="12" text-anchor="middle" fill="#475569">0 °C</text>
+<line x1="153.8" x2="153.8" y1="50" y2="370" stroke="#f1f5f9"/><text x="153.8" y="388" font-size="12" text-anchor="middle" fill="#475569">10 °C</text>
+<line x1="237.5" x2="237.5" y1="50" y2="370" stroke="#f1f5f9"/><text x="237.5" y="388" font-size="12" text-anchor="middle" fill="#475569">20 °C</text>
+<line x1="321.2" x2="321.2" y1="50" y2="370" stroke="#f1f5f9"/><text x="321.2" y="388" font-size="12" text-anchor="middle" fill="#475569">30 °C</text>
+<line x1="405.0" x2="405.0" y1="50" y2="370" stroke="#f1f5f9"/><text x="405.0" y="388" font-size="12" text-anchor="middle" fill="#475569">40 °C</text>
+<line x1="488.8" x2="488.8" y1="50" y2="370" stroke="#f1f5f9"/><text x="488.8" y="388" font-size="12" text-anchor="middle" fill="#475569">50 °C</text>
+<line x1="572.5" x2="572.5" y1="50" y2="370" stroke="#f1f5f9"/><text x="572.5" y="388" font-size="12" text-anchor="middle" fill="#475569">60 °C</text>
+<line x1="656.2" x2="656.2" y1="50" y2="370" stroke="#f1f5f9"/><text x="656.2" y="388" font-size="12" text-anchor="middle" fill="#475569">70 °C</text>
+<line x1="740.0" x2="740.0" y1="50" y2="370" stroke="#f1f5f9"/><text x="740.0" y="388" font-size="12" text-anchor="middle" fill="#475569">80 °C</text>
+<text x="405.0" y="408" font-size="12" text-anchor="middle" fill="#475569">Nhiệt độ dầu</text>
+<polyline points="70.0,86.7 86.8,97.9 103.5,108.7 120.2,119.2 137.0,129.3 153.8,139.1 170.5,148.6 187.2,157.8 204.0,166.6 220.8,175.3 237.5,183.6 254.3,191.7 271.0,199.5 287.8,207.1 304.5,214.4 321.2,221.6 338.0,228.5 354.8,235.2 371.5,241.7 388.2,248.1 405.0,254.2 421.8,260.2 438.5,266.0 455.2,271.7 472.0,277.2 488.8,282.5 505.5,287.7 522.2,292.7 539.0,297.7 555.8,302.5 572.5,307.1 589.2,311.7 606.0,316.1 622.8,320.4 639.5,324.6 656.2,328.7 673.0,332.7 689.8,336.6 706.5,340.4 723.2,344.1 740.0,347.8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="6 4"/>
+<line x1="20" x2="46" y1="418" y2="418" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 4"/><text x="52" y="422" font-size="12" fill="#1e293b">Castrol Hyspin HLP-Z 68 (VI 93)</text>
+<polyline points="70.0,91.1 86.8,101.8 103.5,112.2 120.2,122.3 137.0,132.0 153.8,141.4 170.5,150.6 187.2,159.4 204.0,168.0 220.8,176.3 237.5,184.4 254.3,192.2 271.0,199.7 287.8,207.1 304.5,214.2 321.2,221.2 338.0,227.9 354.8,234.4 371.5,240.8 388.2,246.9 405.0,252.9 421.8,258.7 438.5,264.4 455.2,269.9 472.0,275.3 488.8,280.5 505.5,285.6 522.2,290.5 539.0,295.3 555.8,300.0 572.5,304.6 589.2,309.0 606.0,313.4 622.8,317.6 639.5,321.8 656.2,325.8 673.0,329.7 689.8,333.6 706.5,337.3 723.2,341.0 740.0,344.5" fill="none" stroke="#0b5cad" stroke-width="2.5"/>
+<line x1="270" x2="296" y1="418" y2="418" stroke="#0b5cad" stroke-width="3"/><text x="302" y="422" font-size="12" fill="#1e293b">ENEOS Super Hyrando 68 (VI 104)</text>
+<polyline points="70.0,109.0 86.8,118.0 103.5,126.8 120.2,135.2 137.0,143.5 153.8,151.5 170.5,159.2 187.2,166.8 204.0,174.1 220.8,181.3 237.5,188.2 254.3,195.0 271.0,201.5 287.8,207.9 304.5,214.2 321.2,220.2 338.0,226.1 354.8,231.9 371.5,237.5 388.2,242.9 405.0,248.2 421.8,253.4 438.5,258.5 455.2,263.4 472.0,268.2 488.8,272.9 505.5,277.5 522.2,281.9 539.0,286.3 555.8,290.6 572.5,294.7 589.2,298.8 606.0,302.7 622.8,306.6 639.5,310.4 656.2,314.1 673.0,317.8 689.8,321.3 706.5,324.8 723.2,328.2 740.0,331.5" fill="none" stroke="#f97316" stroke-width="2.5"/>
+<line x1="520" x2="546" y1="418" y2="418" stroke="#f97316" stroke-width="3"/><text x="552" y="422" font-size="12" fill="#1e293b">X-One AW 68 (VI 147)</text>
+</svg>

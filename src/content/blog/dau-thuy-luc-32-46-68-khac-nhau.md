@@ -52,7 +52,7 @@ Hai điều hay bị hiểu nhầm:
 
 Đọc bảng theo hàng ngang: **dầu 68 ở 60 °C chỉ còn loãng gần bằng dầu 46 ở 50 °C.** Nói cách khác, mỗi bậc cấp độ nhớt "bù" được khoảng 10 °C nhiệt độ thùng dầu. Đây là lý do xưởng nóng chọn dầu đặc hơn, còn xưởng mát hoặc máy khởi động lạnh chọn dầu loãng hơn.
 
-Số liệu trên là ước tính cho dầu có chỉ số độ nhớt khoảng 95–105. Dầu chỉ số độ nhớt cao (loại HV, khoảng 140 trở lên) thay đổi độ nhớt chậm hơn khi nhiệt độ đổi.
+Số liệu trên là ước tính cho dầu có chỉ số độ nhớt khoảng 95–105. Dầu [chỉ số độ nhớt cao](/ho-tro-ky-thuat/chi-so-do-nhot-vi-dau-thuy-luc) (loại HV, khoảng 140 trở lên) thay đổi độ nhớt chậm hơn khi nhiệt độ đổi.
 
 ## Hãng bơm cần độ nhớt bao nhiêu? {#hang-bom}
 

@@ -69,7 +69,7 @@ Mở tài liệu hướng dẫn sử dụng kèm theo máy (hoặc nhãn trên t
 
 ## Chỉ tiêu cần xem trên bảng thông số (TDS)
 
-- **Độ nhớt ở 40 °C và chỉ số độ nhớt (VI):** VI càng cao thì độ nhớt càng ít thay đổi khi nhiệt độ lên xuống.
+- **Độ nhớt ở 40 °C và chỉ số độ nhớt (VI):** VI càng cao thì [độ nhớt càng ít thay đổi khi nhiệt độ lên xuống](/ho-tro-ky-thuat/chi-so-do-nhot-vi-dau-thuy-luc).
 - **Chống mài mòn:** thể hiện qua phép thử bơm cánh gạt và phép thử FZG (A/8.3/90). Dầu HLP theo DIN 51524-2 phải đạt tối thiểu cấp tải hỏng 10.
 - **Tách nước (ASTM D1401):** thời gian nước và dầu tách lớp. Nước tách nhanh thì dễ xả đáy thùng.
 - **Thoát khí (ASTM D3427):** khí thoát chậm dễ gây xâm thực (cavitation), làm rỗ mặt bơm.

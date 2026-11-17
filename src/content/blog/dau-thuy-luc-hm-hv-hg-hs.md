@@ -78,7 +78,7 @@ Bơm bánh răng, bơm cánh gạt và bơm piston chạy áp cao có những ch
 
 ### HV: dầu HM giữ độ nhớt ổn định khi nhiệt độ thay đổi
 
-Dầu HV có thêm phụ gia cải thiện chỉ số độ nhớt, nên sáng sớm trời lạnh dầu không quá đặc, trưa nắng thùng dầu nóng thì dầu không quá loãng. ISO 6743-4 ghi công dụng điển hình là thiết bị xây dựng và hàng hải. Ngặt một nỗi, phụ gia này là những chuỗi phân tử dài, bị bơm và van "cắt" dần trong lúc chạy, nên chỉ số độ nhớt cao lúc mới giảm dần theo thời gian. Bosch Rexroth khuyên với dầu có chỉ số độ nhớt dưới 160, độ nhớt ở 100 °C không nên giảm quá 15% sau phép thử cắt theo DIN 51350-6, và **chỉ nên dùng HVLP khi dải nhiệt độ của máy thật sự đòi hỏi**.
+Dầu HV có thêm phụ gia cải thiện [chỉ số độ nhớt](/ho-tro-ky-thuat/chi-so-do-nhot-vi-dau-thuy-luc), nên sáng sớm trời lạnh dầu không quá đặc, trưa nắng thùng dầu nóng thì dầu không quá loãng. ISO 6743-4 ghi công dụng điển hình là thiết bị xây dựng và hàng hải. Ngặt một nỗi, phụ gia này là những chuỗi phân tử dài, bị bơm và van "cắt" dần trong lúc chạy, nên chỉ số độ nhớt cao lúc mới giảm dần theo thời gian. Bosch Rexroth khuyên với dầu có chỉ số độ nhớt dưới 160, độ nhớt ở 100 °C không nên giảm quá 15% sau phép thử cắt theo DIN 51350-6, và **chỉ nên dùng HVLP khi dải nhiệt độ của máy thật sự đòi hỏi**.
 
 Ở miền Bắc, máy đặt trong nhà xưởng chạy quanh năm thường không cần HV. Máy công trình làm ngoài trời, xe cẩu, máy có thùng dầu nhỏ nóng lên nhanh là những chỗ đáng cân nhắc HV, nhưng vẫn phải theo hướng dẫn của hãng máy. Máy xúc Nhật, Hàn còn có các ký hiệu riêng như JCMAS HK hay SAE 10W, xem thêm bài [chọn dầu thủy lực cho máy xúc](/ho-tro-ky-thuat/dau-thuy-luc-may-xuc).
 

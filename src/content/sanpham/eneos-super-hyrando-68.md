@@ -151,7 +151,7 @@ Hai mã cùng loại HM, cùng cấp 68 và đều có sẵn tại kho HT VINA, 
 
 [Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS. Với người đứng máy, có bốn điểm đáng quan tâm nhất.
 
-- **Độ nhớt khi dầu nóng lên.** Chỉ số độ nhớt 104 là mức thông thường của dầu khoáng HM, nghĩa là dầu vẫn loãng đi khi thùng nóng. Vì vậy, giữ nhiệt độ thùng ổn định là cách để áp suất và tốc độ xi lanh đều suốt ca; máy cần độ nhớt ổn định hơn thì xem bản SE (chỉ số 109).
+- **Độ nhớt khi dầu nóng lên.** [Chỉ số độ nhớt 104](/ho-tro-ky-thuat/chi-so-do-nhot-vi-dau-thuy-luc) là mức thông thường của dầu khoáng HM, nghĩa là dầu vẫn loãng đi khi thùng nóng. Vì vậy, giữ nhiệt độ thùng ổn định là cách để áp suất và tốc độ xi lanh đều suốt ca; máy cần độ nhớt ổn định hơn thì xem bản SE (chỉ số 109).
 - **Tách nước nhanh.** TCCS 14:2014 yêu cầu nước tách khỏi dầu trong không quá 30 phút ở 54 °C ([ASTM D1401](https://www.astm.org/Standards/D1401.htm)). Nhờ vậy, nước lẫn vào ít thường lắng xuống đáy thùng để xả ra, chứ không quyện vào dầu.
 - **Chịu nhiệt.** Theo TDS ENEOS Nhật (IND-4001), dầu không tạo cặn kết tủa sau phép thử ổn định nhiệt ở 120 °C trong 70 giờ, tức gấp đôi mức 50–60 °C thường gặp ở xưởng. ENEOS không công bố kết quả thử [ASTM D2070](https://www.astm.org/Standards/D2070.htm) (135 °C, 168 giờ) cho mã này.
 - **Chống gỉ, không ăn mòn đồng.** Dầu đạt phép thử gỉ với nước biển nhân tạo ở 60 °C trong 24 giờ, ăn mòn tấm đồng cấp 1.
