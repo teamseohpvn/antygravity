@@ -91,6 +91,8 @@ Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàn
 
 ## Nên chọn độ đặc/độ sệt NLGI nào?
 
+Số NLGI càng lớn thì mỡ càng cứng, độ xuyên kim càng nhỏ. Cách chọn độ đặc/độ sệt NLGI theo nhiệt độ, tải và vị trí làm việc cho các loại [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) khác có ở trang danh mục.
+
 | Độ đặc/độ sệt NLGI | Độ xuyên kim (60 lần giã) | Điểm nhỏ giọt | Thường dùng cho |
 | :--- | :--- | :--- | :--- |
 | 0 | 362 | 195 °C | Hệ bơm mỡ tập trung đường ống dài, nơi lạnh |
@@ -108,6 +110,8 @@ Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàn
 | Điểm nhỏ giọt | 200 °C | Tối thiểu 190 °C | 180 °C |
 | Nhiệt độ làm việc | −20 đến 125 °C | −10 đến 120 °C | −20 đến 130 °C |
 | Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn L4 | Có sẵn |
+
+Giá theo kg của VHP Lithium Grease L4 và Shell Gadus S2 V220 2 có trong [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron). Epnoc AP(N) báo giá theo từng đơn, kèm độ đặc/độ sệt NLGI và số lượng.
 
 > **Nhận định của HT VINA:** Nhà máy đang dùng Epnoc trong hệ bơm mỡ tập trung thì đặt tiếp đúng mã và đúng độ đặc/độ sệt NLGI. Không trộn mỡ khác hãng trong hệ tập trung khi chưa xả sạch đường ống.
 
