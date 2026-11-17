@@ -28,7 +28,7 @@ updated: "2026-11-12"
 
 **Cách chọn nhanh:** luôn ưu tiên cấp độ nhớt ghi trong tài liệu hướng dẫn sử dụng kèm theo máy hoặc trên nhãn bơm. Nếu nhiệt độ dầu trong thùng thường xuyên trên 55–60 °C, cấp 68 giữ màng dầu tốt hơn. Nếu máy khởi động nguội hoặc đường ống dài, cấp 32 hoặc 46 bơm dễ hơn. Không nên tự đổi cấp độ nhớt khi chưa hỏi nhà sản xuất máy.
 
-Chữ **"AW"** (anti-wear) nghĩa là dầu có phụ gia chống mài mòn. Theo tiêu chuẩn, dầu AW tương ứng loại **HM** trong ISO 11158 và **HLP** trong DIN 51524-2. Dầu chỉ số độ nhớt cao dùng cho máy làm việc ngoài trời là loại **HV / HVLP**.
+Chữ **"AW"** (anti-wear) nghĩa là dầu có phụ gia chống mài mòn. Theo tiêu chuẩn, dầu AW tương ứng loại **HM** trong ISO 11158 và **HLP** trong DIN 51524-2. Dầu chỉ số độ nhớt cao dùng cho máy làm việc ngoài trời là loại [HV / HVLP](/ho-tro-ky-thuat/dau-thuy-luc-hm-hv-hg-hs).
 
 ## Dòng sản phẩm và sản phẩm tương đương
 
