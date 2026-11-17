@@ -381,6 +381,7 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
         const den = new URL(el.dataset.den ?? el.getAttribute('href') ?? '/bao-gia', location.href);
         const duongDan = (p: string) => p.replace(/\.html$/, '').replace(/\/+$/, '') || '/';
         const form = den.hash ? document.getElementById(den.hash.slice(1)) : null;
+        if (form instanceof HTMLDetailsElement) form.open = true;
         if (form && duongDan(den.pathname) === duongDan(location.pathname)) {
           e.preventDefault();
           window.dispatchEvent(new CustomEvent('dien-bao-gia', { detail: sp }));
@@ -390,6 +391,18 @@ const schemas = [...organizationSchema(), websiteSchema(), ...pageSchemas];
         }
         try { sessionStorage.setItem('bao-gia-sp', sp); } catch {}
         if (el.tagName === 'BUTTON') location.href = den.href;
+      });
+      // Khối thu gọn (<details>, ví dụ form #gui-yeu-cau trên trang báo giá): tự mở khi địa chỉ trỏ tới nó
+      // (vào trang bằng link có #id, đổi #id, hoặc bấm link #id cùng trang).
+      const moKhung = (hash: string) => {
+        const el = hash.length > 1 ? document.getElementById(decodeURIComponent(hash.slice(1))) : null;
+        if (el instanceof HTMLDetailsElement && !el.open) { el.open = true; el.scrollIntoView({ block: 'start' }); }
+      };
+      moKhung(location.hash);
+      window.addEventListener('hashchange', () => moKhung(location.hash));
+      document.addEventListener('click', (e) => {
+        const a = (e.target as HTMLElement | null)?.closest<HTMLAnchorElement>('a[href*="#"]');
+        if (a && a.pathname === location.pathname) moKhung(a.hash);
       });
       // Đóng menu thả xuống khi bấm ra ngoài.
       document.addEventListener('click', (e) => {
