@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+  <title id="t">Sơ đồ phân loại dầu thủy lực gốc khoáng theo ISO 6743-4 và DIN 51524</title>
+  <desc id="d">HH thêm phụ gia chống gỉ, chống ô xy hóa thành HL; HL thêm phụ gia chống mài mòn thành HM; HM cải thiện chỉ số độ nhớt thành HV, thêm tính chống rung giật thành HG. HL tương ứng DIN 51524-1 HL, HM tương ứng DIN 51524-2 HLP, HV tương ứng DIN 51524-3 HVLP, HG không có phần riêng trong DIN 51524.</desc>
+  <rect width="760" height="420" fill="#ffffff"/>
+  <text x="20" y="32" font-size="17" font-weight="700" fill="#003366">ISO 6743-4 (TCVN 8939-4:2019)</text>
+  <text x="520" y="32" font-size="17" font-weight="700" fill="#003366">DIN 51524</text>
+  <g font-size="14">
+    <rect x="20" y="56" width="120" height="54" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="80" y="80" text-anchor="middle" font-weight="700" fill="#1e293b">HH</text>
+    <text x="80" y="99" text-anchor="middle" font-size="12" fill="#475569">dầu khoáng trơn</text>
+
+    <rect x="200" y="56" width="120" height="54" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="260" y="80" text-anchor="middle" font-weight="700" fill="#1e293b">HL</text>
+    <text x="260" y="99" text-anchor="middle" font-size="12" fill="#475569">+ chống gỉ, ô xy hóa</text>
+
+    <rect x="200" y="176" width="120" height="54" rx="8" fill="#dbeafe" stroke="#0b5cad" stroke-width="2"/>
+    <text x="260" y="200" text-anchor="middle" font-weight="700" fill="#0b3d75">HM</text>
+    <text x="260" y="219" text-anchor="middle" font-size="12" fill="#0b3d75">+ chống mài mòn</text>
+
+    <rect x="80" y="300" width="150" height="58" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="155" y="324" text-anchor="middle" font-weight="700" fill="#1e293b">HV</text>
+    <text x="155" y="344" text-anchor="middle" font-size="12" fill="#475569">HM + chỉ số độ nhớt cao</text>
+
+    <rect x="270" y="300" width="170" height="58" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="355" y="324" text-anchor="middle" font-weight="700" fill="#1e293b">HG</text>
+    <text x="355" y="344" text-anchor="middle" font-size="12" fill="#475569">HM + chống rung giật</text>
+
+    <rect x="520" y="56" width="220" height="54" rx="8" fill="#fff7ed" stroke="#f97316"/>
+    <text x="630" y="80" text-anchor="middle" font-weight="700" fill="#9a3412">HL · Phần 1</text>
+    <text x="630" y="99" text-anchor="middle" font-size="12" fill="#9a3412">không có phép thử mài mòn</text>
+
+    <rect x="520" y="176" width="220" height="54" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+    <text x="630" y="200" text-anchor="middle" font-weight="700" fill="#9a3412">HLP · Phần 2</text>
+    <text x="630" y="219" text-anchor="middle" font-size="12" fill="#9a3412">FZG ≥ 10, thử bơm cánh gạt</text>
+
+    <rect x="520" y="300" width="220" height="58" rx="8" fill="#fff7ed" stroke="#f97316"/>
+    <text x="630" y="324" text-anchor="middle" font-weight="700" fill="#9a3412">HVLP · Phần 3</text>
+    <text x="630" y="344" text-anchor="middle" font-size="12" fill="#9a3412">HLP + VI ≥ 140, thử cắt</text>
+  </g>
+  <g stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#m)">
+    <path d="M140 83 H196"/>
+    <path d="M260 110 V172"/>
+    <path d="M240 230 L170 296"/>
+    <path d="M285 230 L340 296"/>
+  </g>
+  <g stroke="#f97316" stroke-width="1.5" stroke-dasharray="5 4" fill="none">
+    <path d="M320 83 H516"/>
+    <path d="M320 203 H516"/>
+    <path d="M230 329 Q 380 395 516 340"/>
+  </g>
+  <text x="380" y="398" font-size="12" fill="#9a3412">tương đương</text>
+  <text x="20" y="400" font-size="12" fill="#475569">HG: DIN 51524 không có phần riêng.</text>
+  <text x="20" y="415" font-size="12" fill="#475569">HS, HR: không còn trong bảng ISO 6743-4:2015.</text>
+  <defs>
+    <marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

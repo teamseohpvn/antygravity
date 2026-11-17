@@ -35,7 +35,7 @@ Tiêu chuẩn [ISO 3448](https://www.iso.org/obp/ui/#iso:std:iso:3448:en) (Việ
 
 Hai điều hay bị hiểu nhầm:
 
-- **Cấp VG chỉ nói độ nhớt, không nói chất lượng.** Một dầu 68 có thể là loại HL (chỉ chống gỉ, chống oxy hóa) hay HM (có thêm phụ gia chống mài mòn). Máy ép, máy dập, máy công trình áp cao cần loại **HM** theo [ISO 11158](https://www.iso.org/standard/84812.html), còn gọi là HLP theo DIN 51524-2 hoặc "AW".
+- **Cấp VG chỉ nói độ nhớt, không nói chất lượng.** Một dầu 68 có thể là loại HL (chỉ chống gỉ, chống oxy hóa) hay HM (có thêm phụ gia chống mài mòn). Máy ép, máy dập, máy công trình áp cao cần loại **HM** theo [ISO 11158](https://www.iso.org/standard/84812.html), còn gọi là [HLP theo DIN 51524-2](/ho-tro-ky-thuat/dau-thuy-luc-hm-hv-hg-hs) hoặc "AW".
 - **Độ nhớt ghi trên TDS là đo ở 40 °C**, trong khi thùng dầu máy ép mùa hè thường nóng hơn nhiều. Chính chênh lệch này quyết định nên chọn cấp nào.
 
 ## Máy nóng lên, độ nhớt giảm bao nhiêu? {#nhiet-do}
