@@ -447,6 +447,9 @@ const schemaData = [
   :global(.markdown-body li) { margin-bottom: 8px; }
   :global(.markdown-body blockquote) { margin: 16px 0 20px; padding: 12px 16px; background: #fff7ed; border-left: 4px solid var(--color-accent); border-radius: 4px; }
   :global(.markdown-body blockquote p:last-child) { margin-bottom: 0; }
+  /* Link trong thân bài: chữ đậm, xanh dương, gạch chân để khác hẳn chữ thường (global `a` đang để color: inherit). Bỏ qua thẻ có class như thẻ "Xem thêm". */
+  :global(.markdown-body a:not([class])) { color: #0b5cad; font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  :global(.markdown-body a:not([class]):hover) { color: #c2410c; text-decoration-thickness: 2px; }
   :global(.markdown-body table) { border-collapse: collapse; width: 100%; font-size: 0.95rem; margin: 8px 0 16px; display: block; overflow-x: auto; }
   :global(.markdown-body th), :global(.markdown-body td) { border: 1px solid var(--border-color); padding: 8px 12px; text-align: left; vertical-align: top; }
   :global(.markdown-body th) { background: #f1f5f9; }
