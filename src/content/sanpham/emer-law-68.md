@@ -45,7 +45,7 @@ tom_tat:
   - "**Chưa có TDS** của hãng: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "emer"]
 date: "2026-10-12"
-updated: "2026-10-30"
+updated: "2026-11-17"
 ---
 
 **EMER LAW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp **ISO VG 68** dùng cho hệ thủy lực nâng hạ, máy ép và máy cơ giới. Cấp 68 là cấp phổ biến nhất cho máy chạy trong xưởng nóng và hệ thống áp cao ở miền Bắc.
@@ -65,20 +65,20 @@ Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của hãng cho mã 
 
 ## Phuy 200 L hay xô 18 L?
 
-EMER LAW 68 là một trong số ít mã dầu thủy lực 68 tại kho có cả hai quy cách. Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (rà soát 02/10/2026, chưa VAT):
+EMER LAW 68 là một trong số ít mã dầu thủy lực 68 tại kho có cả hai quy cách. Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (theo báo giá ngày 15/11/2026, chưa VAT):
 
-| Quy cách | Khoảng giá | Quy ra mỗi lít |
+| Quy cách | Giá | Quy ra mỗi lít |
 | :--- | :--- | :--- |
-| Phuy 200 L | 9,20–10,59 triệu đ | 46.000–53.000 đ |
-| Xô 18 L | 1,03–1,19 triệu đ | 57.200–66.200 đ |
+| Phuy 200 L | 10,50 triệu đ | 52.500 đ |
+| Xô 18 L | 1,50 triệu đ | khoảng 83.300 đ |
 
-Tính theo lít, xô cao hơn phuy khoảng 24–25%. Xô bù lại ở chỗ dễ mang tới máy, ít rơi vãi và dầu không phải để lâu sau khi mở.
+Tính theo lít, xô cao hơn phuy khoảng 59%. Xô bù lại ở chỗ dễ mang tới máy, ít rơi vãi và dầu không phải để lâu sau khi mở.
 
 > **Nhận định của HT VINA:** Kho có một đến hai xe nâng hoặc bàn nâng, mỗi lần chỉ thêm vài lít thì mua xô. Thay cả thùng máy ép từ 100 L trở lên thì mua phuy.
 
 ## EMER LAW 68 hay EMI AW 68?
 
-Hai mã cùng cấp 68, cùng sản xuất trong nước và cùng có phuy, xô tại kho. Theo bảng giá tháng 10/2026, phuy EMI AW 68 có giá theo lít 35.500–40.900 đ, thấp hơn phuy EMER LAW 68 (46.000–53.000 đ/L). Cả hai hãng đều chưa gửi TDS, nên chưa có số liệu để so chất lượng.
+Hai mã cùng cấp 68, cùng sản xuất trong nước và cùng có phuy, xô tại kho. Theo báo giá ngày 15/11/2026, phuy EMI AW 68 có giá theo lít 55.000–60.000 đ, cao hơn phuy EMER LAW 68 (52.500 đ/L) khoảng 5–14%. Cả hai hãng đều chưa gửi TDS, nên chưa có số liệu để so chất lượng.
 
 > **Nhận định của HT VINA:** Nếu đội máy đang dùng sẵn EMER LAW 68 và chạy ổn, giữ nguyên mã để không phải súc rửa khi đổi. Mua mới cho máy không yêu cầu dầu được hãng bơm chấp thuận thì có thể so thêm [EMI AW 68](/dau-thuy-luc/emi-aw-68) hoặc [X-One AW 68](/dau-thuy-luc/x-one-aw-68).
 

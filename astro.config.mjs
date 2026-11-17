@@ -27,9 +27,15 @@ const BAO_GIA_LASTMOD = [
   ...[...readFileSync('src/pages/bao-gia-dau-thuy-luc.astro', 'utf8').matchAll(/(?:NGAY_SUA_NOI_DUNG = |capNhatLuc: )'(\d{4}-\d{2}-\d{2})/g)].map((m) => m[1]),
   JSON.parse(readFileSync('src/data/gia-cong-khai.json', 'utf8')).cau_hinh?.ngay_ra_soat,
 ].filter(Boolean).sort().at(-1);
+// Trang báo giá mỡ (prerender): ngày sửa nội dung hoặc ngày rà giá, trùng dateModified trên trang.
+const BAO_GIA_MO_LASTMOD = [
+  readFileSync('src/pages/bao-gia-mo-boi-tron.astro', 'utf8').match(/NGAY_SUA_NOI_DUNG = '(\d{4}-\d{2}-\d{2})'/)?.[1],
+  JSON.parse(readFileSync('src/data/gia-cong-khai.json', 'utf8')).cau_hinh?.ngay_ra_soat,
+].filter(Boolean).sort().at(-1);
 const LASTMOD = new Map([
   ...STATIC_LASTMOD,
   [`${SITE}/bao-gia-dau-thuy-luc`, BAO_GIA_LASTMOD],
+  [`${SITE}/bao-gia-mo-boi-tron`, BAO_GIA_MO_LASTMOD],
   ...contentPages().filter((p) => p.updated || p.date).map((p) => [SITE + p.path, p.updated || p.date]),
 ]);
 
@@ -50,6 +56,13 @@ const SITEMAP_IMAGES = new Map(
     return [SITE + p.path, imgs];
   }),
 );
+// Ảnh báo giá văn bản (ảnh đại diện) của 2 trang báo giá: đọc IMAGE và IMAGE_ALT ngay trong file trang.
+for (const trang of ['bao-gia-dau-thuy-luc', 'bao-gia-mo-boi-tron']) {
+  const src = readFileSync(`src/pages/${trang}.astro`, 'utf8');
+  const anh = src.match(/^const IMAGE = '([^']+)'/m)?.[1];
+  const alt = src.match(/^const IMAGE_ALT = '([^']+)'/m)?.[1];
+  if (anh && PUBLIC_IMAGE_SET.has(anh)) SITEMAP_IMAGES.set(`${SITE}/${trang}`, [{ url: SITE + anh, ...(alt ? { caption: alt } : {}) }]);
+}
 
 // Ảnh giữ nguyên tên khi thay ảnh mới, trình duyệt lại cache /images/* 7 ngày (public/_headers),
 // nên khách cũ vẫn thấy ảnh cũ. Sau khi build, gắn ?v=<mã nội dung> vào mọi đường dẫn /images/...

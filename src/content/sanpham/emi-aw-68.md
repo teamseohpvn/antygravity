@@ -49,7 +49,7 @@ tom_tat:
   - "**Chưa có TDS** của EMI: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "emi"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-11-17"
 ---
 
 **EMI AW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp **ISO VG 68**, pha từ dầu gốc khoáng với hệ phụ gia chống mài mòn. Theo nhà cung cấp, phụ gia thuộc nhóm gốc kẽm (ZDDP), loại phổ biến nhất cho dầu thủy lực HM. Dầu hợp với hệ thống chạy áp cao, nhiệt độ làm việc ổn định.
@@ -70,19 +70,19 @@ Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của EMI cho mã n�
 
 ## EMI AW 68 hay Castrol Hyspin AWS 68?
 
-Hai mã cùng cấp 68, cùng dùng phụ gia chống mài mòn gốc kẽm. Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (rà soát 02/10/2026, chưa VAT):
+Hai mã cùng cấp 68, cùng dùng phụ gia chống mài mòn gốc kẽm. Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (theo báo giá ngày 15/11/2026, chưa VAT):
 
 | | EMI AW 68 | [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68) |
 | :--- | :--- | :--- |
-| Phuy | 200 L: 7,10–8,17 triệu đ | 209 L: 9,00–10,35 triệu đ |
-| Quy ra mỗi lít (phuy) | 35.500–40.900 đ | 43.000–49.600 đ |
-| Xô 18 L | 710.000–817.000 đ (39.400–45.400 đ/L) | Không có sẵn |
+| Phuy | 200 L: 11,00–12,00 triệu đ | 209 L: 12,00 triệu đ |
+| Quy ra mỗi lít (phuy) | 55.000–60.000 đ | khoảng 57.400 đ |
+| Xô 18 L | 1,10–1,25 triệu đ (61.100–69.500 đ/L) | Không có sẵn |
 | Được hãng bơm chấp thuận | Chưa công bố | Parker Denison HF-0/HF-1/HF-2, Eaton |
 | Số liệu TDS | Chưa có | Đủ: độ nhớt, TOST, FZG, tách nước |
 
-Tính theo lít, phuy EMI thấp hơn Castrol khoảng 17–18%. Với thùng 200 L, chênh lệch khoảng 1,5–1,7 triệu đồng mỗi lần thay dầu.
+Tính theo lít, phuy EMI và Castrol gần ngang nhau: EMI thấp hơn khoảng 4% ở mức 11 triệu, cao hơn khoảng 5% ở mức 12 triệu. Với thùng 200 L, chênh lệch chỉ khoảng 0,5 triệu đồng mỗi lần thay dầu.
 
-> **Nhận định của HT VINA:** Máy chỉ ghi "dầu thủy lực 68" hoặc AW 68, không ghi yêu cầu hãng bơm chấp thuận, thì EMI AW 68 là lựa chọn hợp lý về chi phí. Máy có bơm Parker Denison, Eaton hoặc đang bảo hành thì dùng Castrol Hyspin AWS 68.
+> **Nhận định của HT VINA:** Máy chỉ ghi "dầu thủy lực 68" hoặc AW 68, không ghi yêu cầu hãng bơm chấp thuận, thì dùng EMI AW 68 được. Máy có bơm Parker Denison, Eaton hoặc đang bảo hành thì dùng Castrol Hyspin AWS 68.
 
 ## Khi nào cần thay dầu?
 
