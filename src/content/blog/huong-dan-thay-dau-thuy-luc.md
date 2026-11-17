@@ -21,7 +21,7 @@ Bài này dành cho thợ bảo trì và chủ xưởng có máy ép nhựa, má
 > **Tóm tắt nhanh**
 > - Xả thùng chỉ ra được một phần dầu. Theo bảng bảo dưỡng của Yanmar, phần dầu nằm ngoài thùng (ống, xi lanh) có thể chiếm khoảng 37–48% tổng lượng dầu.
 > - Mỗi lần thay dầu đều thay lõi lọc và vệ sinh lưới lọc hút. Thay dầu mà giữ lọc cũ thì dầu mới bẩn ngay.
-> - Dầu mới từ phuy vẫn mang hạt bẩn. Nên nạp qua xe lọc hoặc qua lọc hồi, nhất là máy có van tỷ lệ, van servo.
+> - [Dầu mới từ phuy vẫn mang hạt bẩn](/ho-tro-ky-thuat/do-sach-dau-thuy-luc-iso-4406-nas-1638). Nên nạp qua xe lọc hoặc qua lọc hồi, nhất là máy có van tỷ lệ, van servo.
 > - Dầu trắng đục thì phải tìm và chặn chỗ nước vào trước. Thay dầu không chữa được nhiễm nước.
 > - Đổi sang hãng dầu khác thì xả kỹ, súc ít nhất một lượt và thử trộn dầu cũ với dầu mới trước.
 
