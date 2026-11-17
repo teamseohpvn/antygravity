@@ -398,11 +398,15 @@ const schemaData = [
           </ul>
         </>
       )}
-      <div class="gui-yeu-cau" id="gui-yeu-cau">
-        <h3>Gửi yêu cầu báo giá dầu thủy lực</h3>
+      <details class="gui-yeu-cau" id="gui-yeu-cau">
+        <summary>
+          <span class="gui-yeu-cau__tieu-de">Gửi yêu cầu báo giá dầu thủy lực</span>
+          <span class="gui-yeu-cau__goi-y">Điền mã, quy cách và số lượng, nhân viên kinh doanh gọi lại trong giờ làm việc.</span>
+          <span class="gui-yeu-cau__nut" aria-hidden="true"><span class="mo">Mở mẫu gửi yêu cầu ▾</span><span class="dong">Thu gọn ▴</span></span>
+        </summary>
         <p>Bấm "Báo giá" ở dòng nào trong bảng, mã đó được điền sẵn vào form dưới đây; bấm thêm dòng khác để hỏi nhiều mã một lần. Nhân viên kinh doanh gọi lại hoặc nhắn Zalo trong giờ làm việc.</p>
         <QuoteForm />
-      </div>
+      </details>
 
       <figure class="photo">
         <div class="delivery-grid">
@@ -796,7 +800,16 @@ const schemaData = [
   .market-note footer { margin-top: 6px; font-size: 0.9rem; color: var(--color-text-light); }
   .notes { font-size: 0.93rem; color: var(--color-text-light); margin-top: 8px; }
   .gui-yeu-cau { margin-top: 24px; padding: clamp(16px, 3vw, 24px); border: 2px solid var(--color-accent); border-radius: 8px; background: #fff; scroll-margin-top: 90px; }
-  .gui-yeu-cau h3 { color: var(--color-primary); margin: 0 0 6px; font-size: 1.2rem; }
+  /* Form thu gọn mặc định (17/11/2026); tự mở khi vào bằng #gui-yeu-cau hoặc bấm nút Báo giá (script trong Layout). */
+  .gui-yeu-cau > summary { list-style: none; cursor: pointer; display: grid; gap: 4px; }
+  .gui-yeu-cau > summary::-webkit-details-marker { display: none; }
+  .gui-yeu-cau__tieu-de { color: var(--color-primary); font-size: 1.2rem; font-weight: 700; }
+  .gui-yeu-cau__goi-y { color: var(--color-text-light); font-size: 0.95rem; }
+  .gui-yeu-cau__nut { justify-self: start; margin-top: 6px; padding: 8px 16px; border-radius: 6px; background: var(--color-accent); color: #fff; font-weight: 600; }
+  .gui-yeu-cau__nut .dong, .gui-yeu-cau[open] .gui-yeu-cau__nut .mo { display: none; }
+  .gui-yeu-cau[open] .gui-yeu-cau__nut .dong { display: inline; }
+  .gui-yeu-cau[open] .gui-yeu-cau__nut { background: #fff; color: var(--color-primary); border: 1px solid var(--color-primary); }
+  .gui-yeu-cau[open] > summary { margin-bottom: 14px; }
   .gui-yeu-cau > p { color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 14px; }
   .small { font-size: 0.93rem; color: var(--color-text-light); margin-top: 12px; }
   .empty { background: #f8fafc; border: 1px dashed var(--border-color, #e2e8f0); padding: 20px; border-radius: 8px; margin-bottom: 16px; }

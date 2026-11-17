@@ -196,11 +196,15 @@ const schemaData = [
         <li>Mã ghi "NLGI 2, 3" có cùng khoảng giá cho hai độ đặc. Khi hỏi giá, hãy ghi rõ độ đặc cần mua.</li>
         <li>Mã không có trong bảng vẫn có thể nhận đặt: gửi tên mỡ đang dùng, chúng tôi báo giá mã đó hoặc mã có thông số tương đương.</li>
       </ul>
-      <div class="gui-yeu-cau" id="gui-yeu-cau">
-        <h3>Gửi yêu cầu báo giá mỡ bôi trơn</h3>
+      <details class="gui-yeu-cau" id="gui-yeu-cau">
+        <summary>
+          <span class="gui-yeu-cau__tieu-de">Gửi yêu cầu báo giá mỡ bôi trơn</span>
+          <span class="gui-yeu-cau__goi-y">Điền mã, quy cách và số lượng, nhân viên kinh doanh gọi lại trong giờ làm việc.</span>
+          <span class="gui-yeu-cau__nut" aria-hidden="true"><span class="mo">Mở mẫu gửi yêu cầu ▾</span><span class="dong">Thu gọn ▴</span></span>
+        </summary>
         <p>Bấm "Báo giá" ở dòng nào trong bảng, mã đó được điền sẵn vào form dưới đây; bấm thêm dòng khác để hỏi nhiều mã một lần. Ghi rõ độ đặc NLGI và số xô, phuy cần mua.</p>
         <QuoteForm />
-      </div>
+      </details>
       <div class="ghi-chu-nhiet">
         <p><strong>Về mỡ chịu nhiệt:</strong> chúng tôi chỉ gọi một mã là mỡ chịu nhiệt khi TDS ghi chất làm đặc loại phức hợp (complex), polyurea hoặc bentonite <strong>và</strong> nhiệt độ nhỏ giọt từ 230 °C trở lên. Trong bảng hiện chỉ có <a href="/mo-chiu-nhiet/shell-gadus-s3-v220c-2">Shell Gadus S3 V220C 2</a> đạt (lithium complex, nhỏ giọt 240 °C). Cách chọn theo nhiệt độ vỏ ổ xem ở trang <a href={HUB_NHIET}>mỡ chịu nhiệt</a>.</p>
       </div>
@@ -423,7 +427,16 @@ const schemaData = [
   .price-body a, .price-hero a { color: var(--color-primary); text-decoration: underline; }
   .notes { font-size: 0.93rem; color: var(--color-text-light); margin-top: 8px; }
   .gui-yeu-cau { margin-top: 24px; padding: clamp(16px, 3vw, 24px); border: 2px solid var(--color-accent); border-radius: 8px; background: #fff; scroll-margin-top: 90px; }
-  .gui-yeu-cau h3 { color: var(--color-primary); margin: 0 0 6px; font-size: 1.2rem; }
+  /* Form thu gọn mặc định (17/11/2026); tự mở khi vào bằng #gui-yeu-cau hoặc bấm nút Báo giá (script trong Layout). */
+  .gui-yeu-cau > summary { list-style: none; cursor: pointer; display: grid; gap: 4px; }
+  .gui-yeu-cau > summary::-webkit-details-marker { display: none; }
+  .gui-yeu-cau__tieu-de { color: var(--color-primary); font-size: 1.2rem; font-weight: 700; }
+  .gui-yeu-cau__goi-y { color: var(--color-text-light); font-size: 0.95rem; }
+  .gui-yeu-cau__nut { justify-self: start; margin-top: 6px; padding: 8px 16px; border-radius: 6px; background: var(--color-accent); color: #fff; font-weight: 600; }
+  .gui-yeu-cau__nut .dong, .gui-yeu-cau[open] .gui-yeu-cau__nut .mo { display: none; }
+  .gui-yeu-cau[open] .gui-yeu-cau__nut .dong { display: inline; }
+  .gui-yeu-cau[open] .gui-yeu-cau__nut { background: #fff; color: var(--color-primary); border: 1px solid var(--color-primary); }
+  .gui-yeu-cau[open] > summary { margin-bottom: 14px; }
   .gui-yeu-cau > p { color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 14px; }
   .small { font-size: 0.93rem; color: var(--color-text-light); margin-top: 12px; }
   .ghi-chu-nhiet { background: #f1f5f9; border-radius: 6px; padding: 12px 16px; margin-top: 12px; }
