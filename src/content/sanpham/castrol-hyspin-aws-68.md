@@ -62,7 +62,7 @@ tom_tat:
 related_posts: ["dau-thuy-luc-32-46-68-khac-nhau"]
 tags: ["iso-vg-68", "chong-mai-mon", "goc-kem"]
 date: "2026-09-21"
-updated: "2026-10-14"
+updated: "2026-11-17"
 ---
 
 **Castrol Hyspin AWS 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp [độ nhớt](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99_nh%E1%BB%9Bt) ISO VG 68 của Castrol, pha chế từ dầu gốc khoáng tinh chế cao cùng phụ gia chống mài mòn gốc kẽm ([ZDDP](https://en.wikipedia.org/wiki/Zinc_dithiophosphate)) đã được ổn định hóa. Dầu đạt loại **HM** theo [ISO 11158](https://www.iso.org/standard/84812.html) (tương đương [TCVN 12416:2019](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+12416%3A2019)) và **HLP** theo DIN 51524-2, nên bôi trơn và bảo vệ được hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và pít-tông.
@@ -121,9 +121,9 @@ Hai mã cùng loại HM, cùng cấp 68 và đều có sẵn tại kho HT VINA. 
 | Thử tải bánh răng FZG | Cấp 12 | Không công bố |
 | Được hãng bơm chấp thuận | Parker Denison HF-0/HF-1/HF-2, Eaton | Không công bố |
 | Quy cách | Phuy 209 L | Phuy 200 L |
-| Giá tham khảo tháng 10/2026 (chưa VAT) | 9,00–10,35 triệu đ/phuy, tức 43.000–49.600 đ/L | 8,99–10,35 triệu đ/phuy, tức 44.900–51.800 đ/L |
+| Giá theo báo giá 15/11/2026 (chưa VAT) | 12,00 triệu đ/phuy, tức khoảng 57.400 đ/L | 13,00 triệu đ/phuy, tức 65.000 đ/L |
 
-- **So giá theo lít.** Giá mỗi phuy gần như ngang nhau, nhưng phuy Castrol chứa nhiều hơn 9 L, nên tính theo lít thì Castrol thấp hơn khoảng 4%.
+- **So giá theo lít.** Phuy Castrol rẻ hơn phuy ENEOS 1 triệu đồng mà lại chứa nhiều hơn 9 L, nên tính theo lít thì Castrol thấp hơn khoảng 12%.
 - **"Không công bố" không có nghĩa là kém.** ENEOS không đưa TOST, FZG hay danh sách hãng bơm chấp thuận vào TDS, nên không có số để so.
 - **ENEOS có khoảng nhiệt độ làm việc rộng hơn** ở hai chỉ tiêu cả hai hãng đều công bố: điểm chớp cháy và điểm đông đặc.
 

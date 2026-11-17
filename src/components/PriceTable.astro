@@ -2,6 +2,7 @@
 // Bảng khoảng giá đọc từ D1, nhóm theo cấp (VG 32, 46, 68...). Mỗi dòng có nút "Báo giá" điền sẵn form.
 import type { DongGiaCongKhai } from '../lib/gia';
 import { fmtVnd } from '../lib/gia';
+import { fmtKhoang } from '../lib/gia-tinh';
 import NutBaoGia from './NutBaoGia.astro';
 
 interface Props {
@@ -95,10 +96,10 @@ const nutLoc = [
               </td>
               <td data-label="Quy cách" class="nowrap">{r.quy_cach}</td>
               <td data-label="Khoảng giá" class="num">
-                {r.thap ? <>{fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</> : <span class="muted">Liên hệ</span>}
+                {r.thap ? <>{fmtKhoang(r.thap, r.cao)} đ</> : <span class="muted">Liên hệ</span>}
               </td>
               <td data-label="Quy đổi" class="num">
-                {r.thap_don_vi ? <>{fmtVnd(r.thap_don_vi)} – {fmtVnd(r.cao_don_vi)} đ/{r.don_vi_do === 'kg' ? 'kg' : 'lít'}</> : <span class="muted">–</span>}
+                {r.thap_don_vi ? <>{fmtKhoang(r.thap_don_vi, r.cao_don_vi)} đ/{r.don_vi_do === 'kg' ? 'kg' : 'lít'}</> : <span class="muted">–</span>}
               </td>
               {khoCuaDong && (
                 <td data-label="Tình trạng" class="stock">

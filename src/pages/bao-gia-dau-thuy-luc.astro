@@ -177,7 +177,8 @@ const duongBrent = diemBrent.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).j
 // Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
-const NGAY_SUA_NOI_DUNG = '2026-11-15';
+// 17/11/2026: ảnh báo giá văn bản 15/11 + giá trên trang khớp báo giá đó.
+const NGAY_SUA_NOI_DUNG = '2026-11-17';
 const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const tacGia = nguoiGia;
 // Ngày cập nhật cuối gồm cả đợt tin. Schema và thẻ meta dùng giờ thật của đợt tin nếu đó là thay đổi mới nhất, không gán giờ giả cho thay đổi khác.

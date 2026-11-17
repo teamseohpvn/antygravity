@@ -16,7 +16,7 @@ import { getActiveProducts, getActivePosts, postPath } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
 import { giaSanPham, phanKhucGia } from '../../lib/gia-json';
 import { bangSoSanh, nhomCua } from '../../lib/so-sanh';
-import { fmtVnd, fmtNgay } from '../../lib/gia-tinh';
+import { fmtVnd, fmtNgay, fmtKhoang } from '../../lib/gia-tinh';
 import { ngayBai } from '../../lib/ngay';
 import { timNhanSu, DEFAULT_REVIEWER_ID, DEFAULT_PRODUCT_AUTHOR_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
 import { BUSINESS, KHO_GIAO_HANG, absUrl, breadcrumbSchema, packagingLabel, productImages, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
@@ -303,7 +303,7 @@ const schemaData = [
             <div class="gia">
               <p><strong>Giá tham khảo tháng {fmtNgay(gia.cauHinh.ngay_ra_soat, 'thang')} ({gia.cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT'}):</strong></p>
               <ul>
-                {gia.rows.map((r) => <li>{nhieuMa ? `${r.ten} – ${r.quy_cach}` : r.quy_cach}: {fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</li>)}
+                {gia.rows.map((r) => <li>{nhieuMa ? `${r.ten} – ${r.quy_cach}` : r.quy_cach}: {fmtKhoang(r.thap, r.cao)} đ</li>)}
               </ul>
               <p class="gia-note">Giá thay đổi theo số lượng và nơi giao.</p>
             </div>

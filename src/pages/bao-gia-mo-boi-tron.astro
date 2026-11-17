@@ -12,7 +12,7 @@ import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
 import PriceTable from '../components/PriceTable.astro';
 import DanhGiaGoogle from '../components/DanhGiaGoogle.astro';
 import { getActiveProducts } from '../lib/content';
-import { fmtNgay, fmtVnd } from '../lib/gia-tinh';
+import { fmtNgay, fmtVnd, fmtKhoang } from '../lib/gia-tinh';
 import type { DongGiaCongKhai } from '../lib/gia';
 import { bangGiaTuJson } from '../lib/gia-json';
 import { timNhanSu, bylineLabel, personUrl, personRef, personSchema } from '../lib/nhan-su';
@@ -76,6 +76,7 @@ const kNhapPhuy = khoang(rows.filter((r) => laPhuy(r) && r.nguon === 'nhap-khau'
 const kNhapXo = khoang(rows.filter((r) => laXo(r) && r.nguon === 'nhap-khau'))!;
 const kOng = khoang(rows.filter((r) => /ống/i.test(r.quy_cach)));
 const nghin = (n: number) => fmtVnd(n);
+const nghinKhoang = (a: number, b: number) => fmtKhoang(a, b);
 
 // So phuy với xô của cùng một mã, cùng độ đặc, ở đầu thấp của khoảng.
 const SO_QC = [...new Set(rows.map((r) => `${r.trang}|${r.cap}`))]
@@ -91,7 +92,8 @@ const SO_QC = [...new Set(rows.map((r) => `${r.trang}|${r.cap}`))]
 const vat = cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT';
 const ngay = fmtNgay(cauHinh.ngay_ra_soat);
 const NGAY_DANG = '2026-11-10';
-const NGAY_SUA_NOI_DUNG = '2026-11-10';
+// 17/11/2026: ảnh báo giá văn bản 15/11 + giá trên trang khớp báo giá đó.
+const NGAY_SUA_NOI_DUNG = '2026-11-17';
 const ngayCapNhat = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const ARTICLE_ID = absUrl(pagePath) + '#article';
 
@@ -125,6 +127,8 @@ const anhBaoGia = {
 const schemaData = [
   {
     '@context': 'https://schema.org', '@type': 'WebPage', name: seoTitle, description, url: absUrl(pagePath), inLanguage: 'vi-VN',
+    datePublished: NGAY_DANG, dateModified: ngayCapNhat, ...(cauHinh.ngay_ra_soat ? { lastReviewed: cauHinh.ngay_ra_soat } : {}),
+    author: personRef(nguoiGia), reviewedBy: personRef(nguoiDuyet),
     primaryImageOfPage: anhBaoGia, isPartOf: { '@id': absUrl('/') + '#website' }, publisher: { '@id': ORG_ID },
   },
   {
@@ -158,9 +162,9 @@ const schemaData = [
         <p class="summary__label">Tóm tắt khung giá tháng 11/2026 ({vat}){ngay && <span class="summary__ngay"> · rà soát <time datetime={cauHinh.ngay_ra_soat}>{ngay}</time></span>}</p>
         <ul>
           <li><strong>Quy đổi theo khối lượng:</strong> từ <strong>{nghin(tatCa.kgThap)} đ/kg đến {nghin(tatCa.kgCao)} đ/kg</strong>, chênh gần 6 lần tùy nguồn gốc, thương hiệu và quy cách đóng gói.</li>
-          <li><strong>Mỡ sản xuất trong nước (PVOIL, VHP, Calix):</strong> phuy 180 kg <strong>{fmtVnd(kTrongNuocPhuy.thap)} – {fmtVnd(kTrongNuocPhuy.cao)} đ</strong> ({nghin(kTrongNuocPhuy.kgThap)} – {nghin(kTrongNuocPhuy.kgCao)} đ/kg); xô 15–17 kg <strong>{fmtVnd(kTrongNuocXo.thap)} – {fmtVnd(kTrongNuocXo.cao)} đ</strong> ({nghin(kTrongNuocXo.kgThap)} – {nghin(kTrongNuocXo.kgCao)} đ/kg).</li>
-          <li><strong>Mỡ nhập khẩu (Sinopec, Shell):</strong> phuy 180 kg <strong>{fmtVnd(kNhapPhuy.thap)} – {fmtVnd(kNhapPhuy.cao)} đ</strong> ({nghin(kNhapPhuy.kgThap)} – {nghin(kNhapPhuy.kgCao)} đ/kg); xô 17–18 kg <strong>{fmtVnd(kNhapXo.thap)} – {fmtVnd(kNhapXo.cao)} đ</strong> ({nghin(kNhapXo.kgThap)} – {nghin(kNhapXo.kgCao)} đ/kg).</li>
-          {kOng && <li><strong>Mỡ đóng ống:</strong> thùng 30 ống 400 g (12 kg) <strong>{fmtVnd(kOng.thap)} – {fmtVnd(kOng.cao)} đ</strong> ({nghin(kOng.kgThap)} – {nghin(kOng.kgCao)} đ/kg).</li>}
+          <li><strong>Mỡ sản xuất trong nước (PVOIL, VHP, Calix):</strong> phuy 180 kg <strong>{fmtKhoang(kTrongNuocPhuy.thap, kTrongNuocPhuy.cao)} đ</strong> ({nghinKhoang(kTrongNuocPhuy.kgThap, kTrongNuocPhuy.kgCao)} đ/kg); xô 15–17 kg <strong>{fmtKhoang(kTrongNuocXo.thap, kTrongNuocXo.cao)} đ</strong> ({nghinKhoang(kTrongNuocXo.kgThap, kTrongNuocXo.kgCao)} đ/kg).</li>
+          <li><strong>Mỡ nhập khẩu (Sinopec, Shell):</strong> phuy 180 kg <strong>{fmtKhoang(kNhapPhuy.thap, kNhapPhuy.cao)} đ</strong> ({nghinKhoang(kNhapPhuy.kgThap, kNhapPhuy.kgCao)} đ/kg); xô 17–18 kg <strong>{fmtKhoang(kNhapXo.thap, kNhapXo.cao)} đ</strong> ({nghinKhoang(kNhapXo.kgThap, kNhapXo.kgCao)} đ/kg).</li>
+          {kOng && <li><strong>Mỡ đóng ống:</strong> thùng 30 ống 400 g (12 kg) <strong>{fmtKhoang(kOng.thap, kOng.cao)} đ</strong> ({nghinKhoang(kOng.kgThap, kOng.kgCao)} đ/kg).</li>}
           <li><strong><a href="/chinh-sach-giao-hang">Miễn phí vận chuyển 80 km</a></strong> từ 3 kho tại Hải Phòng và Hưng Yên, không yêu cầu đơn tối thiểu.</li>
         </ul>
       </div>
@@ -276,15 +280,15 @@ const schemaData = [
       <h3>Thương hiệu quốc tế và chi phí nhập khẩu</h3>
       <p>Phần lớn chênh lệch nằm ở thương hiệu và xuất xứ, không nằm ở khác biệt kỹ thuật:</p>
       <ul>
-        <li><strong>VHP MP Grease L3</strong> (trong nước) và <strong>Shell Gadus S2 V220 2</strong> (nhập khẩu) đều dùng chất làm đặc lithium, TDS của hai hãng đều ghi điểm nhỏ giọt khoảng 180 °C (<a href="/tai-lieu/tds/vhp-mp-grease.pdf">TDS VHP MP Grease</a>, <a href="/tai-lieu/tds/shell-gadus-s2-v220-2.pdf">TDS Shell Gadus S2 V220 2</a>). Thế nhưng cùng mua theo xô, Shell đắt gần gấp 3 lần VHP (186.600 so với 64.700 đ/kg ở mức thấp).</li>
-        <li><strong>Sinopec Golden Grease</strong> có điểm nhỏ giọt 152–155 °C (<a href="/tai-lieu/tds/sinopec-golden-grease.pdf">TDS</a>), thấp hơn VHP MP Grease, nhưng tính theo phuy vẫn đắt hơn VHP MP Grease L3 khoảng 1,8 lần.</li>
+        <li><strong>VHP MP Grease L3</strong> (trong nước) và <strong>Shell Gadus S2 V220 2</strong> (nhập khẩu) đều dùng chất làm đặc lithium, TDS của hai hãng đều ghi điểm nhỏ giọt khoảng 180 °C (<a href="/tai-lieu/tds/vhp-mp-grease.pdf">TDS VHP MP Grease</a>, <a href="/tai-lieu/tds/shell-gadus-s2-v220-2.pdf">TDS Shell Gadus S2 V220 2</a>). Thế nhưng cùng mua theo xô, Shell đắt khoảng 2,5 lần VHP (186.600 so với 73.500 đ/kg ở mức thấp).</li>
+        <li><strong>Sinopec Golden Grease</strong> có điểm nhỏ giọt 152–155 °C (<a href="/tai-lieu/tds/sinopec-golden-grease.pdf">TDS</a>), thấp hơn VHP MP Grease, nhưng tính theo phuy vẫn đắt hơn VHP MP Grease L3 khoảng 15% (83.300 so với 72.200 đ/kg).</li>
         <li>Mua mỡ nhập khẩu là trả thêm cho thuế nhập khẩu, cước vận tải quốc tế và giá trị thương hiệu toàn cầu.</li>
       </ul>
 
       <h3>Khác biệt thông số trong nhóm mỡ trong nước</h3>
       <ul>
-        <li><strong>Nhóm điểm nhỏ giọt thấp:</strong> Calix Ceno No3 (canxi, từ 120 °C), VHP Opal NLGI 3 (lithium-canxi, 140 °C), VHP Caxilium (lithium-canxi, 141 °C) và PVOIL PV Grease (lithium, tối thiểu 140 °C). Nhóm này hợp với gối đỡ tải thường, máy nông nghiệp, chỗ ẩm ướt, nhiệt độ làm việc theo hãng khoảng 100–120 °C. Giá phuy khoảng <strong>37.000–47.000 đ/kg</strong>.</li>
-        <li><strong>VHP MP Grease (lithium):</strong> điểm nhỏ giọt tối thiểu 180 °C, hãng ghi nhiệt độ làm việc tới 120 °C (ngắn hạn 135 °C). Giá phuy tăng lên <strong>45.500–63.300 đ/kg</strong>.</li>
+        <li><strong>Nhóm điểm nhỏ giọt thấp:</strong> Calix Ceno No3 (canxi, từ 120 °C), VHP Opal NLGI 3 (lithium-canxi, 140 °C), VHP Caxilium (lithium-canxi, 141 °C) và PVOIL PV Grease (lithium, tối thiểu 140 °C). Nhóm này hợp với gối đỡ tải thường, máy nông nghiệp, chỗ ẩm ướt, nhiệt độ làm việc theo hãng khoảng 100–120 °C. Giá phuy khoảng <strong>36.900–61.100 đ/kg</strong>.</li>
+        <li><strong>VHP MP Grease (lithium):</strong> điểm nhỏ giọt tối thiểu 180 °C, hãng ghi nhiệt độ làm việc tới 120 °C (ngắn hạn 135 °C). Giá phuy tăng lên <strong>55.000–72.200 đ/kg</strong>.</li>
       </ul>
 
       <h3>Giá nguyên liệu lithium</h3>
@@ -298,7 +302,7 @@ const schemaData = [
         <table class="match">
           <thead><tr><th scope="col">Tiêu chí</th><th scope="col">Mua phuy 180 kg</th><th scope="col">Mua xô 15–18 kg</th></tr></thead>
           <tbody>
-            <tr><th scope="row">Giá mỗi kg</th><td>Thường thấp hơn xô; mức chênh từ khoảng 6% (Sinopec) tới khoảng 30% (VHP MP Grease)</td><td>Cao hơn ở phần lớn mã; riêng Sinopec Crystal T3 thì xô lại rẻ hơn phuy khoảng 1%</td></tr>
+            <tr><th scope="row">Giá mỗi kg</th><td>Thấp hơn hoặc bằng xô; phần lớn mã chỉ chênh 0–6%, nhiều nhất khoảng 22% (VHP MP Grease L2)</td><td>Cao hơn ở phần lớn mã; riêng Sinopec Crystal T3 thì xô lại rẻ hơn phuy khoảng 1%</td></tr>
             <tr><th scope="row">Tiền chi một lần</th><td>Khoảng {fmtVnd(kTrongNuocPhuy.thap)} – {fmtVnd(kNhapPhuy.cao)} đ mỗi phuy</td><td>Khoảng {fmtVnd(kTrongNuocXo.thap)} – {fmtVnd(kNhapXo.cao)} đ mỗi xô</td></tr>
             <tr><th scope="row">Dụng cụ lấy mỡ</th><td>Nên có bơm mỡ đặt trên phuy (bơm tay hoặc bơm khí nén) để lấy mỡ sạch</td><td>Dùng súng bơm mỡ cầm tay hoặc lấy trực tiếp</td></tr>
             <tr><th scope="row">Rủi ro bảo quản</th><td>Phuy mở nắp lâu ngày dễ nhiễm bụi, nước; mỡ để lâu có thể tách dầu</td><td>Dùng hết nhanh, mỡ luôn mới</td></tr>
@@ -321,10 +325,10 @@ const schemaData = [
       <div class="vi-du">
         <p class="vi-du__label">Ví dụ với VHP MP Grease L3</p>
         <ul>
-          <li>Phuy 180 kg: 8.200.000 đ, tức <strong>45.500 đ/kg</strong>.</li>
-          <li>Xô 17 kg: 1.100.000 đ, tức <strong>64.700 đ/kg</strong>.</li>
-          <li>Mua theo xô đắt hơn mua theo phuy khoảng <strong>42% mỗi kg</strong> (hay nói ngược lại, phuy rẻ hơn xô khoảng 30%).</li>
-          <li>Nếu xưởng dùng đều 180 kg mỡ mỗi năm: mua một phuy hết <strong>8,2 triệu đồng</strong>; mua lượng tương đương bằng xô 17 kg (khoảng 10,6 xô) hết khoảng <strong>11,65 triệu đồng</strong>. Chênh khoảng <strong>3,45 triệu đồng mỗi năm</strong>.</li>
+          <li>Phuy 180 kg: 13.000.000 đ, tức <strong>72.200 đ/kg</strong>.</li>
+          <li>Xô 17 kg: 1.250.000 đ, tức <strong>73.500 đ/kg</strong>.</li>
+          <li>Mua theo xô đắt hơn mua theo phuy khoảng <strong>2% mỗi kg</strong>.</li>
+          <li>Nếu xưởng dùng đều 180 kg mỡ mỗi năm: mua một phuy hết <strong>13 triệu đồng</strong>; mua lượng tương đương bằng xô 17 kg (khoảng 10,6 xô) hết khoảng <strong>13,24 triệu đồng</strong>. Chênh khoảng <strong>240 nghìn đồng mỗi năm</strong>, nên với mã này nên chọn quy cách theo tốc độ dùng hết và cách bảo quản hơn là theo giá.</li>
         </ul>
       </div>
 

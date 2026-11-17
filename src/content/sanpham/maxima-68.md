@@ -42,7 +42,7 @@ tom_tat:
   - "**Chưa có TDS** của hãng: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "maxima"]
 date: "2026-10-12"
-updated: "2026-10-30"
+updated: "2026-11-17"
 ---
 
 **Maxima 68** là dầu bôi trơn cấp **ISO VG 68** cho hệ thủy lực và hệ tuần hoàn dầu công nghiệp chịu tải trung bình đến nặng. Dầu đóng **xô 18 L**, tiện cho tổ bảo trì thêm dầu bổ sung hoặc cho máy có thùng thủy lực nhỏ.
@@ -63,16 +63,16 @@ Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của hãng cho mã 
 
 ## Maxima 68 xô hay dầu 68 dạng phuy?
 
-Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (rà soát 02/10/2026, chưa VAT):
+Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (theo báo giá ngày 15/11/2026, chưa VAT):
 
 | Mã | Quy cách | Quy ra mỗi lít |
 | :--- | :--- | :--- |
-| Maxima 68 | Xô 18 L: 710.000–817.000 đ | 39.400–45.400 đ |
-| [EMI AW 68](/dau-thuy-luc/emi-aw-68) | Phuy 200 L: 7,10–8,17 triệu đ | 35.500–40.900 đ |
-| [X-One AW 68](/dau-thuy-luc/x-one-aw-68) | Phuy 200 L: 7,95–9,15 triệu đ | 39.700–45.800 đ |
-| [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68) | Phuy 200 L: 8,99–10,35 triệu đ | 44.900–51.800 đ |
+| Maxima 68 | Xô 18 L: 950.000 đ | khoảng 52.800 đ |
+| [EMI AW 68](/dau-thuy-luc/emi-aw-68) | Phuy 200 L: 11,00–12,00 triệu đ | 55.000–60.000 đ |
+| [X-One AW 68](/dau-thuy-luc/x-one-aw-68) | Phuy 200 L: 10,00 triệu đ | 50.000 đ |
+| [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68) | Phuy 200 L: 13,00 triệu đ | 65.000 đ |
 
-Giá theo lít của xô Maxima 68 nằm trong cùng khoảng với phuy X-One, cao hơn phuy EMI khoảng 11%.
+Tính theo lít, xô Maxima 68 cao hơn phuy X-One khoảng 6%, nhưng vẫn thấp hơn phuy EMI và ENEOS.
 
 > **Nhận định của HT VINA:** Mỗi năm dùng dưới một phuy dầu 68, hoặc dầu phải để lâu sau khi mở, thì xô 18 L kinh tế hơn tính trên tổng chi phí: không tồn dầu mở nắp, không cần bơm rót phuy. Dùng nhiều hơn thì chuyển sang phuy.
 

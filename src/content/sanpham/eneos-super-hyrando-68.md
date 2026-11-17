@@ -60,7 +60,7 @@ related_posts: ["dau-thuy-luc-32-46-68-khac-nhau"]
 tags: ["iso-vg-68", "iso-vg-46", "chong-mai-mon", "eneos"]
 reviewed_by: "nguyen-thiet-lap"
 date: "2026-10-06"
-updated: "2026-10-14"
+updated: "2026-11-17"
 ---
 
 **ENEOS Super Hyrando 68** là dầu thủy lực 68 chống mài mòn (loại HM, đạt DIN 51524-2), dùng cho máy ép nhựa, máy dập, máy chấn, máy công cụ NC và máy công trình. Hướng dẫn sử dụng máy của bạn ghi "ISO VG 68", "HM", "HLP 68" hay "AW 68" thì đây là loại dầu đúng cấp.
@@ -137,11 +137,11 @@ Hai mã cùng loại HM, cùng cấp 68 và đều có sẵn tại kho HT VINA, 
 | Thử tải bánh răng FZG | Không công bố | Cấp 12 |
 | Được hãng bơm chấp thuận | Không công bố | Parker Denison HF-0/HF-1/HF-2, Eaton |
 | Quy cách | Phuy 200 L | Phuy 209 L |
-| Giá tham khảo tháng 10/2026 (chưa VAT) | 8,99–10,35 triệu đ/phuy, tức 44.900–51.800 đ/L | 9,00–10,35 triệu đ/phuy, tức 43.000–49.600 đ/L |
+| Giá theo báo giá 15/11/2026 (chưa VAT) | 13,00 triệu đ/phuy, tức 65.000 đ/L | 12,00 triệu đ/phuy, tức khoảng 57.400 đ/L |
 
 Đọc bảng này thế nào?
 
-- **So giá theo lít, đừng so theo phuy.** Giá mỗi phuy của hai mã gần như ngang nhau, nhưng phuy Castrol chứa nhiều hơn 9 L, nên tính theo lít thì Castrol thấp hơn khoảng 4%. Với thùng 200 L, mỗi lần thay dầu chênh khoảng 380.000–440.000 đ.
+- **So giá theo lít, đừng so theo phuy.** Phuy Castrol rẻ hơn phuy ENEOS 1 triệu đồng mà lại chứa nhiều hơn 9 L, nên tính theo lít thì Castrol thấp hơn khoảng 12%. Với thùng 200 L, mỗi lần thay dầu chênh khoảng 1,5 triệu đồng.
 - **"Không công bố" không có nghĩa là kém.** ENEOS không đưa kết quả TOST, FZG hay danh sách hãng bơm chấp thuận vào TDS nên không có số để so, còn Castrol thì công bố đủ các phép thử về tuổi thọ oxy hóa và chống mài mòn bánh răng.
 - **ENEOS có biên nhiệt độ cao hơn ở hai chỉ tiêu được công bố:** điểm chớp cháy cao hơn 33 °C, điểm đông đặc thấp hơn 4 °C, chỉ số độ nhớt cao hơn một chút.
 
@@ -229,11 +229,11 @@ Nếu như máy móc thiết bị thủy lực của các bạn sử dụng bơm
 Ý kiến chung của các khách hàng sử dụng dầu thủy lực do HT VINA cung cấp. Phần lớn các khách hàng đều không dùng (pha) chung 2 loại dầu khác nhau. Lý do đưa ra: hệ phụ gia mỗi hãng khác nhau, trộn lẫn có thể làm dầu đục, tạo cặn hoặc giảm khả năng tách nước. Khi đổi mã, xả hết dầu cũ, súc rửa và thay lõi lọc.
 
 ### Can 18 L hay phuy 200 L thì kinh tế hơn?
-Đây là bài toán kinh tế trong thực tế sản xuất, nếu bạn có nhu cầu tiêu hao lớn hãy chọn phuy vì giá phuy thường rẻ hơn. Thực tế [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) của công ty chúng tôi cho sản phẩm ENEOS Super Hyrando 68 trong tháng 10/2026:
+Đây là bài toán kinh tế trong thực tế sản xuất, nếu bạn có nhu cầu tiêu hao lớn hãy chọn phuy vì giá phuy thường rẻ hơn. Thực tế [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) của công ty chúng tôi cho sản phẩm ENEOS Super Hyrando 68 theo báo giá ngày 15/11/2026:
 
-| Quy cách | Khoảng giá tháng 10/2026 (chưa VAT) | Quy ra mỗi lít |
+| Quy cách | Giá theo báo giá 15/11/2026 (chưa VAT) | Quy ra mỗi lít |
 | :--- | :--- | :--- |
-| Phuy 200 lít | 8,99–10,35 triệu đồng | khoảng 44.900–51.800 đ |
+| Phuy 200 lít | 13,00 triệu đồng | 65.000 đ |
 
 Thùng (xô) 18 lít hiện nhận đặt theo yêu cầu, và tính theo lít thì giá xô luôn cao hơn phuy. Giá thay đổi theo tháng và theo số lượng, nên muốn có giá chính xác cho đơn hàng của bạn, hãy gửi yêu cầu [báo giá](/bao-gia?sp=ENEOS%20Super%20Hyrando%2068).
 

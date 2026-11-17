@@ -103,6 +103,7 @@ const CHI_PHI = [
 ].filter(Boolean).sort((a: any, b: any) => a.thap - b.thap) as { ten: string; qc: string; link: string; thap: number; cao: number }[];
 const vnd = (n: number) => n.toLocaleString('vi-VN');
 const lam100 = (n: number) => Math.round(n / 100) * 100;
+const khoangVnd = (a: number, b: number) => (a === b ? vnd(a) : `${vnd(a)} – ${vnd(b)}`);
 
 // Danh sách TDS hiển thị (audit #6). "Ngày tra cứu" là ngày đã mở lại nguồn.
 const TDS = [
@@ -274,7 +275,7 @@ const schemaData = [
         <p>Bảng dưới đây quy khoảng giá của từng loại mỡ ra mỗi kg, rồi tính xem <strong>một vòng bi hết bao nhiêu tiền mỡ trong một năm</strong>. Để dễ so sánh, chúng tôi lấy ví dụ vòng bi 6310, mỗi lần tra khoảng 15 g, tra bốn lần một năm, tức là dùng hết {G_DIEM_NAM} g mỡ mỗi năm. Giá chưa gồm VAT, tính từ giá kho đến mức cao hơn giá kho 15%, rà soát ngày {fmtNgay(NGAY_GIA)}; giá thực tế còn tùy số lượng và lô hàng. Muốn biết giá theo từng xô, phuy, bạn hãy <a href="/bao-gia-mo-boi-tron#gui-yeu-cau">gửi yêu cầu báo giá</a>. Giá chính thức được xác nhận khi đặt hàng, xem <a href="#chinh-sach-gia-kho">chính sách kiểm chứng giá và tồn kho</a>.</p>
         <div class="bang"><table>
           <thead><tr><th>Loại mỡ và quy cách</th><th>Giá mỗi kg (đồng)</th><th>Tiền mỡ cho một vòng bi mỗi năm (đồng)</th></tr></thead>
-          <tbody>{CHI_PHI.map((c) => <tr><td><a href={c.link}>{c.ten}</a> · {c.qc}</td><td>{vnd(lam100(c.thap))} – {vnd(lam100(c.cao))}</td><td>{vnd(lam100(c.thap * G_DIEM_NAM / 1000))} – {vnd(lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
+          <tbody>{CHI_PHI.map((c) => <tr><td><a href={c.link}>{c.ten}</a> · {c.qc}</td><td>{khoangVnd(lam100(c.thap), lam100(c.cao))}</td><td>{khoangVnd(lam100(c.thap * G_DIEM_NAM / 1000), lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
         </table></div>
         <p class="nho">Bảng chưa có <a href={`${CAT}/eneos-epnoc-ap`}>ENEOS Epnoc AP(N)</a> vì độ đặc/độ sệt NLGI và quy cách của loại mỡ này còn phải xác nhận theo từng lô. Giá mỗi kg của VHP Licas được quy đổi từ giá thùng 30 ống 400 g (12 kg).</p>
         <ContentBody><DoiChieu /></ContentBody>

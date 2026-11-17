@@ -17,25 +17,10 @@
       "trang": "eneos-super-hyrando-68",
       "don_vi_do": "L",
       "thu_tu": 0,
-      "thap": 9990000,
-      "cao": 11500000,
-      "thap_don_vi": 49900,
-      "cao_don_vi": 57500
-    },
-    {
-      "danh_muc": "dau-thuy-luc",
-      "ten": "ENEOS Super Hyrando 68",
-      "hang": "ENEOS",
-      "cap": "ISO VG 68",
-      "nguon": "nhap-khau",
-      "quy_cach": "Xô 18 L",
-      "trang": "eneos-super-hyrando-68",
-      "don_vi_do": "L",
-      "thu_tu": 1,
-      "thap": 937000,
-      "cao": 1079000,
-      "thap_don_vi": 52000,
-      "cao_don_vi": 60000
+      "thap": 13000000,
+      "cao": 13000000,
+      "thap_don_vi": 65000,
+      "cao_don_vi": 65000
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -47,10 +32,10 @@
       "trang": "castrol-hyspin-aws-68",
       "don_vi_do": "L",
       "thu_tu": 0,
-      "thap": 10000000,
-      "cao": 11500000,
-      "thap_don_vi": 47800,
-      "cao_don_vi": 55100
+      "thap": 12000000,
+      "cao": 12000000,
+      "thap_don_vi": 57400,
+      "cao_don_vi": 57400
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -62,10 +47,40 @@
       "trang": "maxima-68",
       "don_vi_do": "L",
       "thu_tu": 1,
-      "thap": 710000,
-      "cao": 817000,
-      "thap_don_vi": 39400,
-      "cao_don_vi": 45400
+      "thap": 950000,
+      "cao": 950000,
+      "thap_don_vi": 52800,
+      "cao_don_vi": 52800
+    },
+    {
+      "danh_muc": "dau-thuy-luc",
+      "ten": "Castrol Hyspin AWS 46",
+      "hang": "Castrol",
+      "cap": "ISO VG 46",
+      "nguon": "nhap-khau",
+      "quy_cach": "Phuy 209 L",
+      "trang": "castrol-hyspin-aws-68",
+      "don_vi_do": "L",
+      "thu_tu": 0,
+      "thap": 13000000,
+      "cao": 13000000,
+      "thap_don_vi": 62200,
+      "cao_don_vi": 62200
+    },
+    {
+      "danh_muc": "dau-thuy-luc",
+      "ten": "ENEOS Super Hyrando 46",
+      "hang": "ENEOS",
+      "cap": "ISO VG 46",
+      "nguon": "nhap-khau",
+      "quy_cach": "Phuy 200 L",
+      "trang": "eneos-super-hyrando-68",
+      "don_vi_do": "L",
+      "thu_tu": 0,
+      "thap": 14000000,
+      "cao": 14000000,
+      "thap_don_vi": 70000,
+      "cao_don_vi": 70000
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -77,10 +92,10 @@
       "trang": "emer-law-68",
       "don_vi_do": "L",
       "thu_tu": 0,
-      "thap": 9700000,
-      "cao": 11170000,
-      "thap_don_vi": 48500,
-      "cao_don_vi": 55900
+      "thap": 10500000,
+      "cao": 10500000,
+      "thap_don_vi": 52500,
+      "cao_don_vi": 52500
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -92,10 +107,10 @@
       "trang": "emer-law-68",
       "don_vi_do": "L",
       "thu_tu": 1,
-      "thap": 1030000,
-      "cao": 1190000,
-      "thap_don_vi": 57200,
-      "cao_don_vi": 66200
+      "thap": 1500000,
+      "cao": 1500000,
+      "thap_don_vi": 83300,
+      "cao_don_vi": 83300
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -107,10 +122,10 @@
       "trang": "x-one-aw-68",
       "don_vi_do": "L",
       "thu_tu": 0,
-      "thap": 8450000,
-      "cao": 9720000,
-      "thap_don_vi": 42200,
-      "cao_don_vi": 48600
+      "thap": 10000000,
+      "cao": 10000000,
+      "thap_don_vi": 50000,
+      "cao_don_vi": 50000
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -122,10 +137,10 @@
       "trang": "x-one-aw-68",
       "don_vi_do": "L",
       "thu_tu": 1,
-      "thap": 580000,
-      "cao": 667000,
-      "thap_don_vi": 32200,
-      "cao_don_vi": 37100
+      "thap": 1000000,
+      "cao": 1000000,
+      "thap_don_vi": 55600,
+      "cao_don_vi": 55600
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -137,10 +152,10 @@
       "trang": "emi-aw-68",
       "don_vi_do": "L",
       "thu_tu": 0,
-      "thap": 7600000,
-      "cao": 8740000,
-      "thap_don_vi": 38000,
-      "cao_don_vi": 43700
+      "thap": 11000000,
+      "cao": 12000000,
+      "thap_don_vi": 55000,
+      "cao_don_vi": 60000
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -152,10 +167,10 @@
       "trang": "emi-aw-68",
       "don_vi_do": "L",
       "thu_tu": 1,
-      "thap": 710000,
-      "cao": 817000,
-      "thap_don_vi": 39400,
-      "cao_don_vi": 45400
+      "thap": 1100000,
+      "cao": 1250000,
+      "thap_don_vi": 61100,
+      "cao_don_vi": 69500
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -167,10 +182,10 @@
       "trang": "apex-tl-68",
       "don_vi_do": "L",
       "thu_tu": 0,
-      "thap": 5910000,
-      "cao": 8000000,
-      "thap_don_vi": 29500,
-      "cao_don_vi": 40000
+      "thap": 7000000,
+      "cao": 7000000,
+      "thap_don_vi": 35000,
+      "cao_don_vi": 35000
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -257,10 +272,10 @@
       "trang": "vhp-spinax-aw",
       "don_vi_do": "L",
       "thu_tu": 0,
-      "thap": 6000000,
-      "cao": 6900000,
-      "thap_don_vi": 30000,
-      "cao_don_vi": 34500
+      "thap": 8500000,
+      "cao": 8500000,
+      "thap_don_vi": 42500,
+      "cao_don_vi": 42500
     },
     {
       "danh_muc": "dau-thuy-luc",
@@ -272,10 +287,10 @@
       "trang": "vhp-spinax-aw",
       "don_vi_do": "L",
       "thu_tu": 0,
-      "thap": 7400000,
-      "cao": 8510000,
-      "thap_don_vi": 37000,
-      "cao_don_vi": 42600
+      "thap": 10000000,
+      "cao": 10000000,
+      "thap_don_vi": 50000,
+      "cao_don_vi": 50000
     },
     {
       "danh_muc": "dau-dong-co-diesel",
@@ -1082,8 +1097,8 @@
       "trang": "licas-grease",
       "don_vi_do": "L",
       "thu_tu": 1,
-      "thap": 540000,
-      "cao": 621000,
+      "thap": 780000,
+      "cao": 780000,
       "thap_don_vi": null,
       "cao_don_vi": null
     },
@@ -1172,10 +1187,10 @@
       "trang": "vhp-caxilium-grease",
       "don_vi_do": "kg",
       "thu_tu": 0,
-      "thap": 7000000,
-      "cao": 8050000,
-      "thap_don_vi": 38800,
-      "cao_don_vi": 44800
+      "thap": 8500000,
+      "cao": 8500000,
+      "thap_don_vi": 47200,
+      "cao_don_vi": 47200
     },
     {
       "danh_muc": "mo-boi-tron-cong-nghiep",
@@ -1187,10 +1202,190 @@
       "trang": "vhp-lithium-grease",
       "don_vi_do": "kg",
       "thu_tu": 1,
-      "thap": 1250000,
-      "cao": 1450000,
-      "thap_don_vi": 73500,
-      "cao_don_vi": 85300
+      "thap": 1400000,
+      "cao": 1400000,
+      "thap_don_vi": 82400,
+      "cao_don_vi": 82400
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP Lithium Grease L4",
+      "hang": "VHP",
+      "cap": "NLGI 4",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Phuy 180 kg",
+      "trang": "vhp-lithium-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 0,
+      "thap": 14800000,
+      "cao": 14800000,
+      "thap_don_vi": 82200,
+      "cao_don_vi": 82200
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP Lithium Grease L3",
+      "hang": "VHP",
+      "cap": "NLGI 3",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Xô 17 kg",
+      "trang": "vhp-lithium-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 1,
+      "thap": 1350000,
+      "cao": 1350000,
+      "thap_don_vi": 79400,
+      "cao_don_vi": 79400
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP Lithium Grease L3",
+      "hang": "VHP",
+      "cap": "NLGI 3",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Phuy 180 kg",
+      "trang": "vhp-lithium-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 0,
+      "thap": 14000000,
+      "cao": 14000000,
+      "thap_don_vi": 77800,
+      "cao_don_vi": 77800
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP Lithium Grease L00",
+      "hang": "VHP",
+      "cap": "NLGI 00",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Xô 17 kg",
+      "trang": "vhp-lithium-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 1,
+      "thap": 1100000,
+      "cao": 1100000,
+      "thap_don_vi": 64700,
+      "cao_don_vi": 64700
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP Lithium Grease L0",
+      "hang": "VHP",
+      "cap": "NLGI 0",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Xô 17 kg",
+      "trang": "vhp-lithium-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 1,
+      "thap": 1000000,
+      "cao": 1000000,
+      "thap_don_vi": 58800,
+      "cao_don_vi": 58800
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP MP Grease L2",
+      "hang": "VHP",
+      "cap": "NLGI 2",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Xô 17 kg",
+      "trang": "vhp-mp-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 1,
+      "thap": 1200000,
+      "cao": 1200000,
+      "thap_don_vi": 70600,
+      "cao_don_vi": 70600
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP MP Grease L4",
+      "hang": "VHP",
+      "cap": "NLGI 4",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Phuy 180 kg",
+      "trang": "vhp-mp-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 0,
+      "thap": 12500000,
+      "cao": 12500000,
+      "thap_don_vi": 69400,
+      "cao_don_vi": 69400
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP Licas Grease No2",
+      "hang": "VHP",
+      "cap": "NLGI 2",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Phuy 180 kg",
+      "trang": "licas-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 0,
+      "thap": 11000000,
+      "cao": 11000000,
+      "thap_don_vi": 61100,
+      "cao_don_vi": 61100
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP Licas Grease No2",
+      "hang": "VHP",
+      "cap": "NLGI 2",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Xô 17 kg",
+      "trang": "licas-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 1,
+      "thap": 1080000,
+      "cao": 1080000,
+      "thap_don_vi": 63500,
+      "cao_don_vi": 63500
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP Licas Grease No2",
+      "hang": "VHP",
+      "cap": "NLGI 2",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Xô 15 kg",
+      "trang": "licas-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 1,
+      "thap": 920000,
+      "cao": 920000,
+      "thap_don_vi": 61300,
+      "cao_don_vi": 61300
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP Licas Grease No3",
+      "hang": "VHP",
+      "cap": "NLGI 3",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Xô 17 kg",
+      "trang": "licas-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 1,
+      "thap": 1000000,
+      "cao": 1000000,
+      "thap_don_vi": 58800,
+      "cao_don_vi": 58800
+    },
+    {
+      "danh_muc": "mo-boi-tron-cong-nghiep",
+      "ten": "VHP Licas Grease No3",
+      "hang": "VHP",
+      "cap": "NLGI 3",
+      "nguon": "trong-nuoc",
+      "quy_cach": "Xô 15 kg",
+      "trang": "licas-grease",
+      "don_vi_do": "kg",
+      "thu_tu": 1,
+      "thap": 900000,
+      "cao": 900000,
+      "thap_don_vi": 60000,
+      "cao_don_vi": 60000
     },
     {
       "danh_muc": "mo-boi-tron-cong-nghiep",
@@ -1217,10 +1412,10 @@
       "trang": "vhp-mp-grease",
       "don_vi_do": "kg",
       "thu_tu": 0,
-      "thap": 8200000,
-      "cao": 9430000,
-      "thap_don_vi": 45500,
-      "cao_don_vi": 52400
+      "thap": 13000000,
+      "cao": 13000000,
+      "thap_don_vi": 72200,
+      "cao_don_vi": 72200
     },
     {
       "danh_muc": "mo-boi-tron-cong-nghiep",
@@ -1232,10 +1427,10 @@
       "trang": "vhp-mp-grease",
       "don_vi_do": "kg",
       "thu_tu": 1,
-      "thap": 1100000,
-      "cao": 1270000,
-      "thap_don_vi": 64700,
-      "cao_don_vi": 74800
+      "thap": 1250000,
+      "cao": 1250000,
+      "thap_don_vi": 73500,
+      "cao_don_vi": 73500
     },
     {
       "danh_muc": "mo-boi-tron-cong-nghiep",
@@ -1247,10 +1442,10 @@
       "trang": "vhp-mp-grease",
       "don_vi_do": "kg",
       "thu_tu": 1,
-      "thap": 986000,
-      "cao": 1135000,
-      "thap_don_vi": 65700,
-      "cao_don_vi": 75700
+      "thap": 1134000,
+      "cao": 1134000,
+      "thap_don_vi": 75600,
+      "cao_don_vi": 75600
     },
     {
       "danh_muc": "mo-boi-tron-cong-nghiep",
@@ -1277,10 +1472,10 @@
       "trang": "vhp-opal-grease",
       "don_vi_do": "kg",
       "thu_tu": 0,
-      "thap": 7400000,
-      "cao": 8510000,
-      "thap_don_vi": 41100,
-      "cao_don_vi": 47300
+      "thap": 11000000,
+      "cao": 11000000,
+      "thap_don_vi": 61100,
+      "cao_don_vi": 61100
     },
     {
       "danh_muc": "mo-boi-tron-cong-nghiep",
