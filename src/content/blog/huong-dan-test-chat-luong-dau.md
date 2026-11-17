@@ -80,7 +80,7 @@ Kết quả một lần đo ít ý nghĩa. **Xu hướng** qua nhiều lần đo
 
 ### Độ nhớt thay đổi nói lên điều gì
 - **Tăng:** dầu bị oxy hóa (thường đi kèm TAN tăng, dầu sẫm màu), nhiễm bẩn rắn, lẫn nước tạo nhũ, hoặc bị thêm nhầm [dầu cấp độ nhớt cao hơn](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
-- **Giảm:** lẫn dầu cấp thấp hơn, lẫn dung môi, nhiên liệu (dầu động cơ), hoặc phụ gia cải thiện chỉ số độ nhớt bị cắt mạch (dầu đa cấp, dầu HV).
+- **Giảm:** lẫn dầu cấp thấp hơn, lẫn dung môi, nhiên liệu (dầu động cơ), hoặc phụ gia cải thiện [chỉ số độ nhớt](/ho-tro-ky-thuat/chi-so-do-nhot-vi-dau-thuy-luc) bị cắt mạch (dầu đa cấp, dầu HV).
 
 ### Đo nhanh tại xưởng
 - **[Máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1):** cốc chảy inox, không cần điện, đo cạnh máy. Kết quả là giây chảy, dùng để so dầu cũ với dầu mới ở cùng nhiệt độ. Hợp với dầu thủy lực và dầu loãng.

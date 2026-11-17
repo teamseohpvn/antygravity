@@ -48,7 +48,7 @@ Mỗi hãng máy công trình dùng một cách ghi riêng, nên cùng một lo�
 | **ISO VG 46 (SAE 10W)** | Hyundai | Dầu thủy lực VG 46 "long life" của Hyundai | Được, nếu đúng cấp VG 46. Hyundai dặn không trộn hai hãng dầu |
 | **SAE 10W, EO10-CD, HYDO 10** | Komatsu (máy xúc lật, máy ủi), CAT | Dầu gốc dầu động cơ, độ nhớt cấp SAE 10W | Không tự đổi khi máy còn bảo hành. Xem [mục dầu 10W](#dau-10w) |
 | **HLP 46 (DIN 51524-2)** | Putzmeister, Schwing, máy khoan dùng bơm Rexroth | Dầu chống mài mòn theo tiêu chuẩn Đức, tương đương HM | Được, nếu TDS ghi đạt DIN 51524-2 |
-| **HV, HVLP** | Một số cẩu, máy làm việc nơi lạnh | Dầu chỉ số độ nhớt cao, ít loãng khi nóng | Chỉ dùng khi tài liệu của máy ghi HV |
+| **HV, HVLP** | Một số cẩu, máy làm việc nơi lạnh | Dầu [chỉ số độ nhớt cao](/ho-tro-ky-thuat/chi-so-do-nhot-vi-dau-thuy-luc), ít loãng khi nóng | Chỉ dùng khi tài liệu của máy ghi HV |
 
 **JCMAS HK** là tiêu chuẩn dầu thủy lực cho máy xây dựng do Hiệp hội Cơ giới hóa Xây dựng Nhật Bản lập. Theo [bài giới thiệu tiêu chuẩn](https://www.researchgate.net/publication/293069493_A_new_hydraulic_fluid_specification_JCMAS_HK) của nhóm tác giả Ohkawa (2005), JCMAS HK chia hai nhóm đơn cấp và đa cấp, mỗi nhóm có VG 32 và VG 46. Dầu đạt chuẩn phải qua các phép thử mài mòn, hệ số ma sát, ô xy hóa, gỉ và độ trương nở của phớt. Chữ **W** ở cuối (VG46W) là bản đa cấp, chạy được cả khi trời lạnh. Khác với dầu HM thông thường, JCMAS HK có phép thử ma sát và phớt riêng cho bơm, mô tơ di chuyển của máy xúc.
 

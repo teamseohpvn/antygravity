@@ -76,7 +76,7 @@ Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** v�
 | Bắt buộc dầu được Parker Denison, Eaton chấp thuận | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
 | HV, HVLP (máy ngoài trời lạnh sâu, dải nhiệt rộng) | Không. |
 
-Bảng thông số kỹ thuật (TDS) số TDS-XONE-AW68 do HT VINA phát hành ngày 12/10/2026 ghi dầu thuộc loại HM theo ISO 6743-4, độ nhớt 75,10 cSt ở 40 °C và chỉ số độ nhớt 147. TDS cho biết đây là giá trị tiêu biểu, thử tại phòng thử nghiệm được công nhận VILAS. Độ nhớt này cao hơn nhẹ cận trên 74,8 cSt của cấp ISO VG 68, nên máy cần bám sát cấp 68 hãy đo lô đầu tiên trước khi nạp. TDS không ghi đạt DIN 51524-2 hay phê duyệt của hãng bơm.
+Bảng thông số kỹ thuật (TDS) số TDS-XONE-AW68 do HT VINA phát hành ngày 12/10/2026 ghi dầu thuộc loại HM theo ISO 6743-4, độ nhớt 75,10 cSt ở 40 °C và [chỉ số độ nhớt 147](/ho-tro-ky-thuat/chi-so-do-nhot-vi-dau-thuy-luc). TDS cho biết đây là giá trị tiêu biểu, thử tại phòng thử nghiệm được công nhận VILAS. Độ nhớt này cao hơn nhẹ cận trên 74,8 cSt của cấp ISO VG 68, nên máy cần bám sát cấp 68 hãy đo lô đầu tiên trước khi nạp. TDS không ghi đạt DIN 51524-2 hay phê duyệt của hãng bơm.
 
 ## X-One AW 68 hay ENEOS Super Hyrando 68?
 

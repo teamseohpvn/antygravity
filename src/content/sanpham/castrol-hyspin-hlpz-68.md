@@ -84,7 +84,7 @@ Mã này **có sẵn tại kho** theo **xô 20 L**, có CO/CQ và hóa đơn VAT
 
 - **Chống mài mòn và chống ăn mòn.** Bảo vệ bơm và van thủy lực. Ăn mòn đồng cấp 1, đạt thử gỉ với nước cất 24 giờ.
 - **Tách nước, tách khí, ít bọt.** Tách nước 25 phút ở 54 °C, tách khí trong 8 phút, bọt Seq I 30/0 ml, giúp bơm chạy êm, ít xâm thực.
-- **Chỉ số độ nhớt 93.** Thấp hơn một chút so với các dầu HM khác cùng cấp: dầu loãng đi nhanh hơn khi thùng nóng, nên giữ nhiệt độ thùng ổn định.
+- **Chỉ số độ nhớt 93.** Thấp hơn một chút so với các dầu HM khác cùng cấp: [dầu loãng đi nhanh hơn khi thùng nóng](/ho-tro-ky-thuat/chi-so-do-nhot-vi-dau-thuy-luc), nên giữ nhiệt độ thùng ổn định.
 - **Không làm hỏng gioăng phớt.** Dùng được với gioăng cao su nitrile (NBR), cao su silicone và cao su flo (FKM, Viton).
 
 ## HLP-Z 68 hay Hyspin AWS 68?
