@@ -96,7 +96,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng **có sẵn tại kho** gồm *
 
 > **Nhận định của HT VINA:** Bạn hãy chọn theo độ đặc/độ sệt NLGI ghi trong tài liệu của máy. Nếu tài liệu không ghi, vòng bi quay nhanh nên bắt đầu từ L2 hoặc L3, vì mỡ quá đặc làm ổ nóng hơn và khó bơm hơn. L4 chỉ nên dùng khi L3 bị chảy.
 
-**Loại bán lỏng L0, L00, L000.** Chúng tôi nhận đặt các loại này cho hệ bơm mỡ tự động, nhưng chưa đưa số liệu lên trang. Lý do là các tài liệu VHP hiện có ghi khác nhau về dầu gốc và độ xuyên kim của loại L0, L00, còn L000 chưa có bảng chỉ tiêu. Khi cần, bạn hãy [liên hệ](/bao-gia?sp=VHP%20MP%20Grease) để chúng tôi xin tài liệu đúng lô hàng.
+**Loại bán lỏng L0, L00, L000.** Chúng tôi nhận đặt các loại này cho hệ bơm mỡ tự động, nhưng chưa đưa số liệu lên trang. Lý do là các tài liệu VHP hiện có ghi khác nhau về dầu gốc và độ xuyên kim của loại L0, L00, còn L000 chưa có bảng chỉ tiêu. Khi cần, bạn hãy [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) để chúng tôi xin tài liệu đúng lô hàng.
 
 **Nếu bạn thấy số khác ở nơi khác.** [Trang "MP Lithium Grease" trên web VHP](https://www.hoadauvhp.com/lithiumgrease-nid26.html), đăng ngày 29/06/2023, ghi chất làm đặc lithium và canxi, nhỏ giọt tối thiểu 177 °C, ngắn hạn tới 125 °C. Chúng tôi dùng số trong TDS vì file TDS có ngày tạo muộn hơn. Trước khi đổi mỡ, bạn vẫn nên đẩy hết mỡ cũ ra thay vì bơm đè lên.
 
@@ -109,6 +109,8 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng **có sẵn tại kho** gồm *
 | Nhiệt độ nhỏ giọt | Tối thiểu 180 °C | Tối thiểu 190 °C | Tối thiểu 130 °C | 180 °C |
 | Nhiệt độ làm việc | -10 đến 120 °C | -10 đến 120 °C | -10 đến 110 °C | -20 đến 130 °C |
 | Tải 4 bi | 200 kg | 200 kg | 180 kg | Có phụ gia cực áp (TDS không ghi số) |
+
+Cả bốn mã đều có khoảng giá theo kg trên [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron); riêng MP Grease có đủ L2, L3 và L4.
 
 Nhiệt độ nhỏ giọt của Shell đo theo phương pháp khác nên chỉ để tham khảo. Khi chọn mỡ, bạn nên dựa vào nhiệt độ làm việc do từng hãng khuyến nghị.
 
@@ -151,5 +153,6 @@ Cả hai đều dùng được. L2 mềm hơn nên bơm nhẹ tay hơn, L3 ít c
 
 - **Quy cách có sẵn:** L2 phuy 180 kg; L3 xô 15 kg, xô 17 kg, phuy 180 kg; L4 xô 17 kg. L0, L00, L000 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20MP%20Grease) kèm độ đặc/độ sệt NLGI và số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

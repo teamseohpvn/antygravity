@@ -5,6 +5,7 @@ import Layout from '../layouts/Layout.astro';
 import NoiDungBai from '../components/NoiDungBai.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
+import QuoteForm from '../components/QuoteForm.astro';
 import CachVietBai from '../components/CachVietBai.astro';
 import ChinhSachGiaKho from '../components/ChinhSachGiaKho.astro';
 import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
@@ -90,7 +91,6 @@ const title = 'Báo giá mỡ bôi trơn (mỡ bò) T 11/2026: bảng giá theo 
 const hetHieuLuc = HIEU_LUC ? new Date().toISOString().slice(0, 10) > HIEU_LUC.den : false;
 const seoTitle = 'Báo Giá Mỡ Bôi Trơn (Mỡ Bò) 11/2026: Theo Độ Đặc NLGI';
 const description = `Báo giá mỡ bôi trơn, mỡ bò tháng 11/2026: ${nghin(tatCa.kgThap)}–${nghin(tatCa.kgCao)} đ/kg ${vat}, theo độ đặc NLGI, phuy 180 kg, xô 17 kg. Vì sao giá chênh, nên mua phuy hay xô.`;
-const QUOTE = `/bao-gia?sp=${encodeURIComponent('Mỡ bôi trơn (mỡ bò)')}`;
 
 const quyTrinh = [
   { buoc: 'Gửi yêu cầu', viec: 'Cho chúng tôi biết mã mỡ đang dùng (hoặc chụp nhãn xô, phuy), hoặc loại máy, vị trí bôi trơn và nhiệt độ làm việc. Chúng tôi đối chiếu TDS để gợi ý mã tương đương nếu bạn cần giảm chi phí.', nguoi: nguoiGia },
@@ -196,6 +196,11 @@ const schemaData = [
         <li>Mã ghi "NLGI 2, 3" có cùng khoảng giá cho hai độ đặc. Khi hỏi giá, hãy ghi rõ độ đặc cần mua.</li>
         <li>Mã không có trong bảng vẫn có thể nhận đặt: gửi tên mỡ đang dùng, chúng tôi báo giá mã đó hoặc mã có thông số tương đương.</li>
       </ul>
+      <div class="gui-yeu-cau" id="gui-yeu-cau">
+        <h3>Gửi yêu cầu báo giá mỡ bôi trơn</h3>
+        <p>Bấm "Báo giá" ở dòng nào trong bảng, mã đó được điền sẵn vào form dưới đây; bấm thêm dòng khác để hỏi nhiều mã một lần. Ghi rõ độ đặc NLGI và số xô, phuy cần mua.</p>
+        <QuoteForm />
+      </div>
       <div class="ghi-chu-nhiet">
         <p><strong>Về mỡ chịu nhiệt:</strong> chúng tôi chỉ gọi một mã là mỡ chịu nhiệt khi TDS ghi chất làm đặc loại phức hợp (complex), polyurea hoặc bentonite <strong>và</strong> nhiệt độ nhỏ giọt từ 230 °C trở lên. Trong bảng hiện chỉ có <a href="/mo-chiu-nhiet/shell-gadus-s3-v220c-2">Shell Gadus S3 V220C 2</a> đạt (lithium complex, nhỏ giọt 240 °C). Cách chọn theo nhiệt độ vỏ ổ xem ở trang <a href={HUB_NHIET}>mỡ chịu nhiệt</a>.</p>
       </div>
@@ -339,7 +344,7 @@ const schemaData = [
           </li>
         ))}
       </ol>
-      <QuoteCta heading="Gửi yêu cầu báo giá mỡ" item="Mỡ bôi trơn (mỡ bò)" />
+      <QuoteCta heading="Gửi yêu cầu báo giá mỡ" item="Mỡ bôi trơn (mỡ bò)" danhMuc="mo-boi-tron-cong-nghiep" />
     </section>
 
     <section class="price-body" id="hoi-dap">
@@ -417,6 +422,9 @@ const schemaData = [
   .price-body ul, .price-body ol { margin-left: 20px; }
   .price-body a, .price-hero a { color: var(--color-primary); text-decoration: underline; }
   .notes { font-size: 0.93rem; color: var(--color-text-light); margin-top: 8px; }
+  .gui-yeu-cau { margin-top: 24px; padding: clamp(16px, 3vw, 24px); border: 2px solid var(--color-accent); border-radius: 8px; background: #fff; scroll-margin-top: 90px; }
+  .gui-yeu-cau h3 { color: var(--color-primary); margin: 0 0 6px; font-size: 1.2rem; }
+  .gui-yeu-cau > p { color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 14px; }
   .small { font-size: 0.93rem; color: var(--color-text-light); margin-top: 12px; }
   .ghi-chu-nhiet { background: #f1f5f9; border-radius: 6px; padding: 12px 16px; margin-top: 12px; }
   .ghi-chu-nhiet p { margin: 0; }

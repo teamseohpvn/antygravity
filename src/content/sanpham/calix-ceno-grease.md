@@ -66,7 +66,7 @@ updated: "2026-10-30"
 
 **Calix Ceno No3** là mỡ nhờn công nghiệp đa dụng mang thương hiệu Calix, do Công ty TNHH SXTM La Thu So nhập khẩu và phân phối. Mỡ pha từ dầu khoáng tinh luyện, chất làm đặc canxi tổng hợp, phụ gia chống oxy hóa và chống gỉ. Bảng chỉ tiêu của hãng theo các phương pháp thử GOST.
 
-Kho tại TP Hải Phòng (Hải Dương cũ) có Calix Ceno No3 đóng **phuy 180 kg**. Hàng có hóa đơn VAT.
+Kho HT VINA có sẵn Calix Ceno No3 đóng **phuy 180 kg**. Hàng có hóa đơn VAT.
 
 ## Ceno No3 có hợp với điểm bôi trơn của bạn không?
 
@@ -99,11 +99,13 @@ Hai mã cùng có sẵn tại kho, cùng độ đặc No3:
 | Nhiệt độ làm việc | −10 đến 100 °C | −10 đến 110 °C (ngắn hạn 120 °C) |
 | Quy cách có sẵn | Phuy 180 kg | Thùng 30 ống 400 g |
 
+Giá theo kg của Calix Ceno No3 và Licas No3 đều có trong [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron), tiện so trước khi chọn phuy hay ống.
+
 > **Nhận định của HT VINA:** Máy xây dựng, máy mỏ bơm mỡ hằng ngày cho nhiều chốt, bản lề thì phuy Ceno No3 kinh tế. Chỗ hay dính nước, hơi nóng hơn, hoặc tổ bảo trì cần ống 400 g lắp súng mỡ cho sạch thì chọn Licas.
 
 ## Đổi từ mỡ khác sang mỡ canxi: trộn lẫn có sao không? {#tron-mo}
 
-Calix Ceno No3 là **mỡ canxi**. Trong khi đó, phần lớn mỡ bò đang dùng ở các xưởng là mỡ lithium hoặc lithium-canxi. Khi đổi sang Ceno, mỡ mới sẽ trộn với phần mỡ cũ còn trong ổ, nên cần biết hai loại có hợp nhau không.
+Calix Ceno No3 là **mỡ canxi**. Trong khi đó, phần lớn [mỡ bò](/mo-boi-tron-cong-nghiep) đang dùng ở các xưởng là mỡ lithium hoặc lithium-canxi. Khi đổi sang Ceno, mỡ mới sẽ trộn với phần mỡ cũ còn trong ổ, nên cần biết hai loại có hợp nhau không.
 
 **Căn cứ kỹ thuật.** Tài liệu ["Grease: its components, consistency and compatibility"](https://www.mobil.com/lubricants/-/media/project/wep/mobil/mobil-row-us-1/new-pdf/82414-technical-topic-grease-its-components-consistency-and-compatibility-en.pdf) của ExxonMobil (bản 2024) giải thích: mỡ không tương thích là do chất làm đặc hoặc hệ phụ gia của hai loại phản ứng với nhau; hỗn hợp sẽ **cứng lại hoặc nhão ra bất thường**, và hiện tượng này càng rõ khi nhiệt độ càng cao, tốc độ càng lớn; mỡ không hợp còn dễ **tách dầu** khi nóng. Theo bảng tương thích trong tài liệu, với mỡ canxi:
 
@@ -149,6 +151,6 @@ Theo bảng tương thích của ExxonMobil, mỡ canxi với mỡ lithium thôn
 
 - **Quy cách có sẵn:** phuy 180 kg.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô.
-- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** xem khoảng giá tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Calix%20Ceno%20No3).
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau).
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

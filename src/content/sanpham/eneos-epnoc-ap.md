@@ -68,7 +68,7 @@ updated: "2026-10-14"
 
 **ENEOS Epnoc Grease AP(N)** là mỡ đa dụng chịu cực áp (EP) gốc lithium của ENEOS Nhật Bản. Mỡ màu nâu nhạt, ít mùi, không chứa chì. Mỡ dùng dầu gốc khoáng tinh chế cao và phụ gia chống oxy hóa, chống gỉ. Dòng này có bốn loại theo độ đặc/độ sệt NLGI: 0, 1, 2 và 3. NLGI 0 và 1 đặc biệt hợp với hệ thống bơm mỡ tập trung.
 
-Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàng giao từ ba kho: 108 Thanh Bình, TP Hải Phòng (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên).
 
 ## Epnoc Grease AP(N) có hợp với điểm bôi trơn của bạn không?
 
@@ -78,6 +78,7 @@ Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàn
 | Ổ bi, ổ trượt, chốt bơm bằng súng mỡ | **Được** (NLGI 2). |
 | Máy cán, máy rèn tải nặng tốc độ chậm | **Được.** Mỡ chịu cực áp. |
 | Ổ bi nóng trên 125 °C | Không. Dùng [mỡ chịu nhiệt](/mo-chiu-nhiet). |
+| Bơm thủy lực, xi lanh, van thủy lực | Không. Mỡ chỉ bôi trơn chốt, khớp, ổ bi bên ngoài; hệ thủy lực dùng [dầu thủy lực](/dau-thuy-luc) đúng độ nhớt ghi trong tài liệu hướng dẫn sử dụng của máy. Giá phuy, xô xem ở [báo giá dầu thủy lực](/bao-gia-dau-thuy-luc). |
 | Chỉ cần mỡ lithium đa dụng không chịu cực áp | Dùng được, nhưng [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) có sẵn và kinh tế hơn. |
 
 ## Thông số này có ý nghĩa gì khi máy chạy?
@@ -90,6 +91,8 @@ Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàn
 - **Kháng nước tăng theo độ đặc/độ sệt NLGI.** Rửa trôi ở 38 °C: NLGI 0 mất 23%, NLGI 2 và 3 chỉ mất 1% khối lượng.
 
 ## Nên chọn độ đặc/độ sệt NLGI nào?
+
+Số NLGI càng lớn thì mỡ càng cứng, độ xuyên kim càng nhỏ. Cách chọn độ đặc/độ sệt NLGI theo nhiệt độ, tải và vị trí làm việc cho các loại [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) khác có ở trang danh mục.
 
 | Độ đặc/độ sệt NLGI | Độ xuyên kim (60 lần giã) | Điểm nhỏ giọt | Thường dùng cho |
 | :--- | :--- | :--- | :--- |
@@ -108,6 +111,8 @@ Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàn
 | Điểm nhỏ giọt | 200 °C | Tối thiểu 190 °C | 180 °C |
 | Nhiệt độ làm việc | −20 đến 125 °C | −10 đến 120 °C | −20 đến 130 °C |
 | Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn L4 | Có sẵn |
+
+Giá theo kg của VHP Lithium Grease L4 và Shell Gadus S2 V220 2 có trong [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron). Epnoc AP(N) báo giá theo từng đơn, kèm độ đặc/độ sệt NLGI và số lượng.
 
 > **Nhận định của HT VINA:** Nhà máy đang dùng Epnoc trong hệ bơm mỡ tập trung thì đặt tiếp đúng mã và đúng độ đặc/độ sệt NLGI. Không trộn mỡ khác hãng trong hệ tập trung khi chưa xả sạch đường ống.
 
@@ -136,6 +141,6 @@ Không hẳn. Điểm nhỏ giọt khoảng 200 °C và nhiệt độ làm việ
 
 - **Quy cách:** can, NLGI 0, 1, 2, 3. Có sẵn tại kho; báo rõ độ đặc/độ sệt NLGI khi đặt.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Epnoc%20Grease%20AP(N)) kèm độ đặc/độ sệt NLGI và số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

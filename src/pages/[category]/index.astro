@@ -6,6 +6,8 @@ import NoiDungBai from '../../components/NoiDungBai.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import PromoBanner from '../../components/PromoBanner.astro';
 import StockTable from '../../components/StockTable.astro';
+import NutBaoGia from '../../components/NutBaoGia.astro';
+import { trangBaoGiaCua } from '../../lib/bao-gia-danh-muc';
 import stockRows from '../../data/san-pham-kho.json';
 import { render } from 'astro:content';
 import { getActiveProducts, getActiveCategories } from '../../lib/content';
@@ -28,6 +30,8 @@ export async function getStaticPaths() {
 }
 
 const { category } = Astro.params;
+// Danh mục có trang báo giá riêng: một link chữ rõ nghĩa trước lưới; các nút "Báo giá" là <button> (NutBaoGia).
+const trangGia = trangBaoGiaCua(category);
 const { products, categoryInfo } = Astro.props;
 const { Content } = await render(categoryInfo);
 const { title, nav_label, description, seo_title, reviewed_by, tac_gia, updated } = categoryInfo.data;
@@ -131,7 +135,8 @@ const schemaData = [
         </p>
       )}
       <p>{description}</p>
-      <QuoteCta item={nav_label ?? title} compact bangGia={bangGia} />
+      {!bangGia && trangGia && <p class="link-bang-gia"><a href={trangGia.href}>{trangGia.chuDanhMuc} →</a></p>}
+      <QuoteCta item={nav_label ?? title} danhMuc={category} compact bangGia={bangGia} />
     </header>
 
     {category === 'dau-thuy-luc' && <PromoBanner />}
@@ -174,7 +179,7 @@ const schemaData = [
                   <p>{product.data.description.length > 110 ? product.data.description.slice(0, 110) + '…' : product.data.description}</p>
                   <div class="card-actions">
                     <a href={`/${category}/${product.id}`} class="btn-view">Xem chi tiết →</a>
-                    {!bangGia && <a href={`/bao-gia?sp=${encodeURIComponent(product.data.title)}`} class="btn-quote" data-track="add_to_quote">Báo giá</a>}
+                    {!bangGia && <NutBaoGia sp={product.data.title} danhMuc={category} class="btn-quote">Báo giá</NutBaoGia>}
                   </div>
                 </div>
               </article>
@@ -184,7 +189,7 @@ const schemaData = [
           <div class="empty-state">
             <p><strong>Danh sách sản phẩm {(nav_label ?? title).toLowerCase()} đang được cập nhật.</strong></p>
             <p>Các mã hàng phổ biến và sản phẩm tương đương được liệt kê trong phần nội dung bên dưới. Gửi yêu cầu để nhận báo giá và kiểm tra tồn kho.</p>
-            <QuoteCta item={nav_label ?? title} compact />
+            <QuoteCta item={nav_label ?? title} danhMuc={category} compact />
           </div>
         )}
 
@@ -192,7 +197,7 @@ const schemaData = [
 
         <div class="seo-content markdown-body">
           <ContentBody><Content /></ContentBody>
-          <QuoteCta item={nav_label ?? title} bangGia={bangGia} heading={bangGia?.tuVan} />
+          <QuoteCta item={nav_label ?? title} danhMuc={category} bangGia={bangGia} heading={bangGia?.tuVan} />
           {!tacGia && (reviewed_by || updated) && (
             <p class="review-meta">
               {reviewed_by && <>Nội dung được duyệt kỹ thuật bởi {reviewed_by}. </>}
@@ -250,6 +255,8 @@ const schemaData = [
   .card-actions { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
   .btn-view { color: var(--color-primary); font-weight: 600; }
   .btn-quote { color: var(--color-accent); font-weight: 600; }
+  .link-bang-gia { margin: 6px 0 0; }
+  .link-bang-gia a { color: var(--color-accent); font-weight: 600; }
   .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-right: 5px; }
   .badge-outline { background: transparent; border: 1px solid #cbd5e1; }
 
