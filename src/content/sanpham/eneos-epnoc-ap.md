@@ -78,6 +78,7 @@ Mã này **có sẵn tại kho**, đóng can, có CO/CQ và hóa đơn VAT. Hàn
 | Ổ bi, ổ trượt, chốt bơm bằng súng mỡ | **Được** (NLGI 2). |
 | Máy cán, máy rèn tải nặng tốc độ chậm | **Được.** Mỡ chịu cực áp. |
 | Ổ bi nóng trên 125 °C | Không. Dùng [mỡ chịu nhiệt](/mo-chiu-nhiet). |
+| Bơm thủy lực, xi lanh, van thủy lực | Không. Mỡ chỉ bôi trơn chốt, khớp, ổ bi bên ngoài; hệ thủy lực dùng [dầu thủy lực](/dau-thuy-luc) đúng độ nhớt ghi trong tài liệu hướng dẫn sử dụng của máy. Giá phuy, xô xem ở [báo giá dầu thủy lực](/bao-gia-dau-thuy-luc). |
 | Chỉ cần mỡ lithium đa dụng không chịu cực áp | Dùng được, nhưng [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) có sẵn và kinh tế hơn. |
 
 ## Thông số này có ý nghĩa gì khi máy chạy?
