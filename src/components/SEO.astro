@@ -48,5 +48,8 @@ const schemas = schemaData ? (Array.isArray(schemaData) ? schemaData : [schemaDa
 <meta property="og:url" content={canonicalHref} />
 {ogImage && <meta property="og:image" content={ogImage} />}
 <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+{ogImage && <meta name="twitter:image" content={ogImage} />}
 
 {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}

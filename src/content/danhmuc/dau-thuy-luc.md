@@ -74,7 +74,7 @@ Mở tài liệu hướng dẫn sử dụng kèm theo máy (hoặc nhãn trên t
 - **Tách nước (ASTM D1401):** thời gian nước và dầu tách lớp. Nước tách nhanh thì dễ xả đáy thùng.
 - **Thoát khí (ASTM D3427):** khí thoát chậm dễ gây xâm thực (cavitation), làm rỗ mặt bơm.
 - **Độ bền oxy hóa (TOST, ASTM D943):** số giờ đến khi chỉ số axit tăng tới ngưỡng. Càng dài thì dầu càng bền.
-- **Độ sạch:** mã độ sạch ISO 4406. Bơm piston và van servo cần dầu sạch hơn bơm bánh răng.
+- **Độ sạch:** [mã độ sạch ISO 4406](/ho-tro-ky-thuat/do-sach-dau-thuy-luc-iso-4406-nas-1638). Bơm piston và van servo cần dầu sạch hơn bơm bánh răng.
 
 ## Ứng dụng theo ngành
 
