@@ -54,7 +54,7 @@ Thị phần từng hãng tại Việt Nam (có nguồn) và cách chọn giữa
 - **[Castrol Hyspin AWS](/dau-thuy-luc/castrol-hyspin-aws-68):** dầu chống mài mòn loại HM, dải VG từ 10 đến 100. Tách nước và lọc tốt.
 - **Castrol Hyspin AWH-M:** chỉ số độ nhớt cao, dùng cho máy chịu dao động nhiệt độ lớn.
 
-**Lưu ý với chi tiết mạ bạc:** dầu chống mài mòn gốc kẽm thường không được khuyến nghị cho bơm có chi tiết mạ bạc. Trường hợp này cần chọn dầu không kẽm (zinc-free) theo khuyến cáo của nhà sản xuất bơm.
+**Lưu ý với chi tiết mạ bạc:** dầu chống mài mòn gốc kẽm thường không được khuyến nghị cho bơm có chi tiết mạ bạc. Trường hợp này cần chọn [dầu không kẽm (zinc-free)](/ho-tro-ky-thuat/dau-thuy-luc-khong-kem-ashless-zddp) theo khuyến cáo của nhà sản xuất bơm.
 
 ## Đối chiếu tài liệu máy trước khi chọn mã
 

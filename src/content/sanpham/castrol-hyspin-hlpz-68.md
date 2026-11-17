@@ -113,7 +113,7 @@ Chữ "Z" là điểm khác biệt chính của mã này, nên đáng nói kỹ 
 | Bơm pít-tông có nhiều chi tiết đồng, đồng thau; hãng bơm ghi "zinc-free" hoặc "ashless" | Dầu không kẽm, ví dụ [ENEOS Super Hyrando SE 68](/dau-thuy-luc/eneos-super-hyrando-68) (bản không kẽm theo TDS ENEOS, nhận đặt theo yêu cầu) hoặc dòng Castrol Hyspin HLP-AF. |
 | Máy đang dùng dầu không kẽm | Đừng thêm HLP-Z vào. Hai hệ phụ gia khác nhau có thể làm giảm tác dụng của nhau; đổi loại thì xả, súc rửa và thay lọc. |
 
-Căn cứ: Castrol phân loại HLP-Z theo DIN 51524-2 (HLP) và ISO 11158 (HM). Cả hai tiêu chuẩn này cho phép dầu có hoặc không có kẽm, nên tài liệu hướng dẫn của hãng bơm mới là chỗ quyết định.
+Căn cứ: Castrol phân loại HLP-Z theo DIN 51524-2 (HLP) và ISO 11158 (HM). Cả hai tiêu chuẩn này cho phép [dầu có hoặc không có kẽm](/ho-tro-ky-thuat/dau-thuy-luc-khong-kem-ashless-zddp), nên tài liệu hướng dẫn của hãng bơm mới là chỗ quyết định.
 
 ## Kinh nghiệm từ người sử dụng {#kinh-nghiem}
 
