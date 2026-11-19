@@ -110,6 +110,9 @@ const sanphamCollection = defineCollection({
     tom_tat: z.array(z.string()).optional(), // Tóm tắt cho người cần quyết định, hiện dưới tiêu đề; **đậm** được hỗ trợ
     tds_url: z.string().optional(),
     sds_url: z.string().optional(),
+    // Bảng nguồn TDS cho khối "Cách chúng tôi viết và cập nhật bài này" (B3a). Có trường này thì trang hiện đủ 3 khối cuối bài:
+    // CachVietBai → QuoteCta → ChinhSachGiaKho → ThongTinDoanhNghiep. ten: tên tài liệu; ban: bản/ngày phát hành; tra: ngày tra cứu.
+    nguon_tds: z.array(z.object({ ten: z.string(), ban: z.string(), tra: z.string(), url: z.string().optional() })).optional(),
     image: z.string().optional(), // Dạng cũ, dùng khi chưa có images
     images: z.array(imageItem).optional(), // Ảnh đầu tiên là ảnh chính
     related_posts: z.array(z.string()).optional(), // Slug bài trong blog/
