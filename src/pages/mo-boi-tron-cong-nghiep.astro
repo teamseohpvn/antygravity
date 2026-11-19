@@ -31,10 +31,9 @@ const seoTitle = 'Mỡ Bôi Trơn (Mỡ Bò) Độ Đặc NLGI 0 - 4 | Cách Ch�
 const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo độ đặc NLGI, nhiệt độ, vị trí làm việc, tải và loại máy. TDS từng mã Shell, Sinopec, ENEOS, VHP. Kho Hải Phòng.';
 const tacGia = timNhanSu('nguyen-thi-hong')!;
 const reviewer = timNhanSu('vu-minh-toan')!;
-const NGAY = '2026-11-08';
+const NGAY = '2026-11-19';
 const NGAY_GIA = (giaJson as any).cau_hinh.ngay_ra_soat as string;
 const fmtNgay = (s: string) => s.split('-').reverse().join('/');
-const THANG_GIA = fmtNgay(NGAY_GIA).slice(3); // MM/YYYY, đổi theo ngày rà soát giá.
 
 // NGUỒN KHO DUY NHẤT của trang: stock_status + packaging trong src/content/sanpham/*.md (đọc tay 03/11/2026).
 // Không dùng san-pham-kho.json (chỉ có 3 dòng mỡ, sinh từ file kho tháng 10).
@@ -154,13 +153,11 @@ const schemaData = [
       <header class="dau">
         <h1>{title}</h1>
         <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></p>
-        <p class="mo-dau">Nhiều anh em thợ xưởng cứ thấy vòng bi kêu là với tay lấy súng bơm mỡ, bơm đến khi mỡ trào ra mép phớt mới thôi. Bơm quá đầy như vậy dễ làm ổ nóng rực ngay sau đó, mỡ chảy lòng thòng ra ngoài, lâu dần hỏng cả vòng bi. Lỗi nhiều khi không nằm ở chỗ lười tra mỡ, mà ở chỗ chọn sai độ đặc/độ sệt NLGI, bơm quá nhiều hoặc dùng lẫn các loại mỡ với nhau.</p>
         <p class="mo-dau"><strong>Mỡ bôi trơn</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, độ đặc/độ sệt phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <p class="goi-y-menu">Bạn đang cần gì? Bấm chọn nhanh bên dưới:</p>
         <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
           <a class="nut-nhanh" href="/bao-gia-mo-boi-tron"><strong>Xem nhanh bảng báo giá</strong></a>
-          <a class="nut-nhanh" href="#huong-dan"><strong>Hướng dẫn cách chọn mỡ</strong><span class="nut-xem">Xem ngay →</span></a>
-          <a class="nut-nhanh" href="#chi-phi"><strong>Bảng giá mỡ bôi trơn tháng {THANG_GIA}</strong><span class="nut-xem">Xem ngay →</span></a>
+          <a class="nut-nhanh" href="#huong-dan"><strong>Hướng dẫn cách chọn mỡ</strong></a>
         </nav>
       </header>
 
@@ -306,11 +303,10 @@ const schemaData = [
   .mo-dau { line-height: 1.7; font-size: 1.05rem; max-width: 80ch; }
   .dau a:not(.btn-primary):not(.btn-secondary), .sp a:not(.nut-gia), .loc-trong a { color: var(--color-accent); text-decoration: underline; }
   .goi-y-menu { margin: 20px 0 0; font-size: 1.1rem; font-weight: 700; color: var(--color-primary); }
-  .menu-nhanh { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 10px; }
+  .menu-nhanh { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 10px; }
   /* Chữ trắng trên nền navy, chữ navy trên nền cam: cùng đạt tương phản từ 4,5:1 trở lên. */
-  .dau nav.menu-nhanh a.nut-nhanh { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; background: var(--color-primary); border: 2px solid var(--color-primary); border-radius: 10px; color: #fff; line-height: 1.35; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
-  .nut-nhanh strong { font-size: 1.08rem; }
-  .nut-xem { align-self: flex-start; margin-top: auto; padding: 6px 14px; background: var(--color-accent); border-radius: 18px; color: var(--color-primary); font-weight: 700; font-size: .95rem; }
+  .dau nav.menu-nhanh a.nut-nhanh { display: flex; align-items: center; justify-content: center; padding: 8px 14px; background: var(--color-primary); border: 2px solid var(--color-primary); border-radius: 10px; color: #fff; line-height: 1.35; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+  .nut-nhanh strong { font-size: 1.02rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .dau nav.menu-nhanh a.nut-nhanh:hover, .dau nav.menu-nhanh a.nut-nhanh:focus-visible { border-color: var(--color-accent); box-shadow: 0 4px 12px rgba(0, 51, 102, .3); transform: translateY(-2px); }
   @media (prefers-reduced-motion: reduce) { .dau nav.menu-nhanh a.nut-nhanh { transition: none; } .dau nav.menu-nhanh a.nut-nhanh:hover, .dau nav.menu-nhanh a.nut-nhanh:focus-visible { transform: none; } }
   #san-pham, #huong-dan { scroll-margin-top: 90px; }
@@ -365,11 +361,10 @@ const schemaData = [
   .cho { background: #fff3cd; padding: 2px 4px; }
   .nho { font-size: .92rem; color: #555; }
   @media (max-width: 640px) {
-    .menu-nhanh { grid-template-columns: minmax(0, 1fr); }
-    /* Mobile: mỗi nút một hàng, tên bên trái, Xem ngay bên phải để cả menu thấp lại. */
-    .dau nav.menu-nhanh a.nut-nhanh { flex-direction: row; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; }
+    .menu-nhanh { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+    /* Mobile: hai nút xếp dọc, mỗi nút cao đúng một dòng chữ. */
+    .dau nav.menu-nhanh a.nut-nhanh { padding: 8px 10px; }
     .nut-nhanh strong { font-size: 1rem; }
-    .nut-xem { flex: none; align-self: center; margin-top: 0; padding: 5px 10px; font-size: .88rem; }
     .muc-luc ol { columns: 1; }
     /* Bộ lọc gọn thành một hàng cuộn ngang, thẻ sản phẩm nằm ngang để không đẩy bài viết xuống quá xa. */
     .loc-nhom { grid-template-columns: minmax(0, 1fr); gap: 4px; }
