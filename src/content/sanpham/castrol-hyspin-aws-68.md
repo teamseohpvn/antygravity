@@ -78,7 +78,7 @@ Bạn chỉ cần mở tài liệu hướng dẫn sử dụng kèm theo máy và
 | ISO VG 68, HM, HLP 68, AW 68, DIN 51524-2 | **Được.** |
 | Bắt buộc dầu được Parker Denison HF-0/HF-1/HF-2 hoặc Eaton chấp thuận | **Được**, vì Castrol công bố dòng Hyspin AWS đã được các hãng này chấp thuận. |
 | ISO VG 46 | Dùng Hyspin AWS 46 (có sẵn tại kho). |
-| Dầu không kẽm (zinc-free, ashless), bơm có chi tiết mạ bạc | Không, nên chọn dầu không kẽm theo yêu cầu của hãng bơm. |
+| Dầu không kẽm (zinc-free, ashless), bơm có chi tiết mạ bạc | Không, nên chọn [dầu không kẽm](/ho-tro-ky-thuat/dau-thuy-luc-khong-kem-ashless-zddp) theo yêu cầu của hãng bơm. |
 | HV, HVLP (máy ngoài trời lạnh, dải nhiệt rộng) | Không, vì Hyspin AWS là loại HM. |
 
 Nếu chưa chắc hướng dẫn sử dụng của máy ghi gì, bạn cứ chụp trang thông số dầu gửi qua [mẫu yêu cầu báo giá](/bao-gia?sp=Castrol%20Hyspin%20AWS%2068), chúng tôi sẽ đối chiếu giúp trước khi bạn mua.
