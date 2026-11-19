@@ -2,8 +2,8 @@
 ma: "SP-THL-015"
 active: true   # Bật 19/11/2026: dòng dầu thủy lực thương hiệu AIO của HT VINA, ra mắt 30/10/2026 (aioil.vn)
 title: "Dầu Thủy Lực AIO HM 68, HM 46"
-seo_title: "Dầu Thủy Lực AIO HM 68, 46 – Chống Mài Mòn | Xô 18 L, Phuy 200 L"
-description: "Dầu thủy lực AIO HM 68 và HM 46 chống mài mòn, cấp L-HM (ISO 6743-4), sản xuất tại Việt Nam, COA theo lô. Xô 18 L, phuy 200 L, giao từ Hải Phòng."
+seo_title: "Dầu Thủy Lực AIO HM 68, 46 – Chống Mài Mòn L-HM | Phuy 200 L"
+description: "Dầu thủy lực AIO HM 68 và HM 46 chống mài mòn, cấp L-HM (ISO 6743-4), sản xuất tại Việt Nam, COA theo lô. Phuy 200 L có sẵn, giao từ Hải Phòng."
 keywords: ["dầu thủy lực aio", "aio hm 68", "aio hm 46", "dầu thủy lực hm 68", "dầu thủy lực hm 46", "ai oil hm 68"]
 category: "dau-thuy-luc"
 categoryName: "Dầu Thủy Lực"
@@ -44,12 +44,12 @@ nguon_tds:
 thong_so_cuoi: true
 
 packaging:
-  - { name: "Xô 18 L", weight: "~15,3 kg" }
-  - { name: "Phuy 200 L", weight: "~170 kg" }
+  - { name: "Phuy 200 L (có sẵn)", weight: "~170 kg" }
+  - { name: "Xô 18 L (tạm hết hàng)", weight: "~15,3 kg" }
 stock_status: "co-san"
 shelf_life: "4 năm khi chưa mở nắp (MSDS mục 9)."
 equivalents: ["Castrol Hyspin AWS 68", "ENEOS Super Hyrando 68", "Maxima 68", "Caltex Hydraulic Oil AW 68", "Cosmo Hydro AW 68", "EMI AW 68"]
-so_sanh_chon_khi: "Máy chỉ yêu cầu dầu HM/AW cấp 46 hoặc 68, không bắt buộc dầu được hãng bơm phê duyệt, và cần phiếu kiểm nghiệm (COA) theo từng lô."
+so_sanh_chon_khi: "Máy chỉ yêu cầu dầu HM/AW cấp 46 hoặc 68, không bắt buộc dầu được hãng bơm phê duyệt, và cần phiếu kiểm nghiệm (COA) theo từng lô; cấp 46 và 68 cùng giá phuy."
 
 applications:
   - "Thiết bị: máy ép phun nhựa, máy ép, máy đột, máy chấn thủy lực trong nhà xưởng; hệ thủy lực thiết bị di động"
@@ -78,6 +78,7 @@ tom_tat:
   - "**Số liệu TDS đáng chú ý:** tách nước 15 phút (cấp 68), thoát khí 5 phút, ăn mòn đồng 1A, không gỉ sau 24 giờ."
   - "**Chưa có** phê duyệt của hãng bơm, chưa công bố TOST và FZG: máy bắt buộc dầu được hãng bơm phê duyệt thì chọn mã khác."
   - "**Mới ra mắt 30/10/2026:** chưa có ý kiến người dùng công khai; mỗi lô có COA, nên giữ COA và đo độ nhớt lô đầu làm mốc."
+  - "**Phuy 200 L có sẵn** tại kho, cấp 46 và 68 cùng giá; **xô 18 L tạm hết hàng**."
   - "**Minh bạch:** AIO là thương hiệu của chính HT VINA, nên các so sánh trên trang chỉ dùng số liệu TDS của từng hãng."
 related_posts: ["dau-thuy-luc-32-46-68-khac-nhau", "dau-thuy-luc-hm-hv-hg-hs"]
 tags: ["iso-vg-68", "iso-vg-46", "chong-mai-mon", "san-xuat-viet-nam"]
@@ -89,7 +90,7 @@ updated: "2026-11-19"
 
 **Xin nói rõ trước:** AIO (AI OIL) là thương hiệu của chính Công ty Cổ phần Thương mại Dịch vụ HT VINA, đơn vị vận hành website này. Công thức do AI LUBRICANT LAB, bộ phận nghiên cứu phát triển của HT VINA, xây dựng; dầu được sản xuất tại nhà máy ở KCN Hải Sơn, Đức Hòa, Tây Ninh. Vì là hàng của mình, chúng tôi chỉ đưa số liệu in trong [TDS](/tai-lieu/tds/aio-hm-68.pdf) và để bạn tự so với các hãng khác bằng số, không dùng lời khen.
 
-Hàng có hai quy cách cho cả hai cấp: **xô 18 lít** (khoảng 15,3 kg dầu) và **phuy 200 lít** (khoảng 170 kg dầu), có hóa đơn VAT và phiếu kiểm nghiệm (COA) theo số lô in trên bao bì. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ). Miễn phí vận chuyển trong 80 km kể từ kho của chúng tôi.
+Hiện chúng tôi có sẵn **phuy 200 lít** (khoảng 170 kg dầu) cho cả cấp 68 và cấp 46, cùng giá theo báo giá ngày 19/11/2026 là **12,5 triệu đồng/phuy, chưa VAT**, tức khoảng 62.500 đ/lít; giá chính thức xác nhận khi đặt hàng, theo [chính sách kiểm chứng giá và tồn kho](#chinh-sach-gia-kho). **Xô 18 lít tạm hết hàng.** Mỗi lô có hóa đơn VAT và phiếu kiểm nghiệm (COA) theo số lô in trên bao bì. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ). Miễn phí vận chuyển trong 80 km kể từ kho của chúng tôi.
 
 ## AIO HM có hợp với máy của bạn không? {#hop-may}
 
@@ -153,11 +154,14 @@ Cả ba mã cùng loại HM, cùng cấp 68 và đều có tại kho HT VINA. S�
 | Độ bền oxy hóa TOST | Không công bố | > 2.500 giờ | Không công bố |
 | Phê duyệt của hãng bơm | Không công bố | Parker Denison HF-0/HF-1/HF-2, Eaton | Không công bố |
 | Xuất xứ | Việt Nam | Thương hiệu Anh | Thương hiệu Nhật Bản |
-| Quy cách | Xô 18 L, phuy 200 L | Phuy 209 L | Xô 18 L, phuy 200 L |
+| Quy cách đang bán | Phuy 200 L (xô 18 L tạm hết) | Phuy 209 L | Xô 18 L, phuy 200 L |
+| Giá phuy, chưa VAT | 12,50 triệu đ/phuy, khoảng 62.500 đ/L (báo giá 19/11/2026) | 12,00 triệu đ/phuy, khoảng 57.400 đ/L (báo giá 15/11/2026) | 13,00 triệu đ/phuy, khoảng 65.000 đ/L (báo giá 15/11/2026) |
 
-> **Nhận định của HT VINA:** Chọn **Castrol Hyspin AWS 68** khi máy bắt buộc dầu được hãng bơm phê duyệt hoặc bạn cần số TOST để lập kế hoạch bảo trì. Chọn **ENEOS Super Hyrando 68** khi cần điểm chớp cháy và điểm đông đặc rộng nhất trong ba mã. Chọn **AIO HM 68** khi máy chỉ ghi HM/AW 68, bạn cần xô 18 L lẫn phuy 200 L cùng một mã và muốn có COA theo từng lô. Máy đang chạy ổn với một mã thì cứ giữ mã đó, không cần đổi.
+**So giá theo lít:** AIO HM 68 rẻ hơn ENEOS khoảng 4% nhưng đắt hơn Castrol khoảng 9%, vì phuy Castrol chứa 209 L. Với cấp 46 thì khác: AIO HM 46 cùng giá với HM 68, còn phuy ENEOS 46 và Castrol 46 đắt hơn phuy 68 của chính hãng đó 1 triệu đồng (bảng giá 15/11/2026).
 
-Giá các mã trên xem tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc). Giá AIO HM gửi theo số lượng khi bạn [yêu cầu báo giá](/bao-gia?sp=AIO%20HM%2068); giá chính thức xác nhận khi đặt hàng, theo [chính sách kiểm chứng giá và tồn kho](#chinh-sach-gia-kho).
+> **Nhận định của HT VINA:** Chọn **Castrol Hyspin AWS 68** khi máy bắt buộc dầu được hãng bơm phê duyệt hoặc bạn cần số TOST để lập kế hoạch bảo trì. Chọn **ENEOS Super Hyrando 68** khi cần điểm chớp cháy và điểm đông đặc rộng nhất trong ba mã. Chọn **AIO HM 68** khi máy chỉ ghi HM/AW 68, bạn muốn có COA theo từng lô, hoặc xưởng dùng cả cấp 46 lẫn 68 và muốn cùng một giá phuy. Máy đang chạy ổn với một mã thì cứ giữ mã đó, không cần đổi.
+
+Giá các mã khác xem tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc). Giá thay đổi theo số lượng và nơi giao, hãy [gửi yêu cầu báo giá](/bao-gia?sp=AIO%20HM%2068); giá chính thức xác nhận khi đặt hàng, theo [chính sách kiểm chứng giá và tồn kho](#chinh-sach-gia-kho).
 
 ## Kinh nghiệm sử dụng AIO HM: đã có gì, chưa có gì? {#kinh-nghiem}
 
@@ -203,9 +207,9 @@ Theo MSDS, hạn sử dụng là 4 năm khi chưa mở nắp, bảo quản trong
 
 ## Quy cách, giấy tờ và giao hàng {#quy-cach}
 
-- **Quy cách:** xô 18 L (khoảng 15,3 kg) và phuy 200 L (khoảng 170 kg), cho cả cấp 68 và cấp 46.
+- **Quy cách:** phuy 200 L (khoảng 170 kg) có sẵn cho cả cấp 68 và cấp 46. Xô 18 L (khoảng 15,3 kg) tạm hết hàng; cần xô thì [để lại yêu cầu](/bao-gia?sp=AIO%20HM%2068), chúng tôi báo lại khi có hàng.
 - **Giấy tờ:** hóa đơn VAT; COA theo số lô; [TDS](/tai-lieu/tds/aio-hm-68.pdf) và [MSDS](/tai-lieu/sds/aio-hm-68.pdf) tải ngay trên trang này.
-- **Giá:** gửi theo số lượng và nơi giao khi bạn [yêu cầu báo giá](/bao-gia?sp=AIO%20HM%2068); giá chính thức xác nhận khi đặt hàng.
+- **Giá:** phuy 200 L cấp 68 và cấp 46 cùng giá 12,5 triệu đồng/phuy, chưa VAT (báo giá 19/11/2026). Giá thay đổi theo số lượng và nơi giao; giá chính thức xác nhận khi đặt hàng, theo [chính sách kiểm chứng giá và tồn kho](#chinh-sach-gia-kho).
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc, theo [chính sách giao hàng](/chinh-sach-giao-hang).
 - **Vận chuyển:** miễn phí 80 km từ kho 108 đường Thanh Bình, P. Lê Thanh Nghị.
 - **Trang thương hiệu:** thông tin gốc của AIO tại [aioil.vn](https://aioil.vn/).
