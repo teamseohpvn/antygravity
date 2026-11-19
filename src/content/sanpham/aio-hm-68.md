@@ -67,8 +67,9 @@ warnings:
 storage: "Đậy kín nắp, để trong kho khô ráo, thoáng mát, tránh nắng và nguồn nhiệt. Phuy phải để ngoài trời thì đặt nằm ngang để nước không đọng trên nắp. Không để lẫn nước, tạp chất, không trộn với dầu khác."
 
 images:
+  - { src: "/images/san-pham/aio-hm-68-phuy-200l-xuong-may-ep-gach.webp", alt: "Hai phuy 200 lít dầu thủy lực AIO đặt trước dây chuyền máy ép gạch trong nhà xưởng" }
+  - { src: "/images/san-pham/aio-hm-68-phuy-200l-nha-xuong.webp", alt: "Phuy 200 lít dầu thủy lực AIO logo xanh trên nền nhà xưởng, phía sau là máy ép gạch" }
   - { src: "/images/san-pham/aio-hm-68-xo-18l.webp", alt: "Hình minh họa xô 18 lít dầu thủy lực chống mài mòn AIO HM 68, ISO VG 68, L-HM" }
-  - { src: "/images/san-pham/aio-hm-68-phuy-200l.webp", alt: "Hình minh họa phuy 200 lít dầu thủy lực AIO HM 68" }
   - { src: "/images/san-pham/aio-hm-68-xo-18l-cap-46.webp", alt: "Hình minh họa xô 18 lít dầu thủy lực chống mài mòn AIO HM 46, ISO VG 46" }
 
 doc_gia: "Trang này dành cho tổ bảo trì và người mua hàng cần một mã dầu thủy lực HM 46 hoặc 68 sản xuất trong nước, có số liệu thử nghiệm công khai và phiếu kiểm nghiệm theo lô."
