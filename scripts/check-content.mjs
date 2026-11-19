@@ -42,7 +42,8 @@ for (const e of Object.values(entries).flat()) {
   for (const [, href] of body.matchAll(/\]\((\/[^)#?\s]*)[^)]*\)/g)) {
     const path = href.replace(/\/+$/, '') || '/';
     if (hiddenRoutes.has(path)) hiddenLinks.push(`${e.file}: ${href}`);
-    else if (!routes.has(path)) problems.push(`${e.file}: link nội bộ hỏng ${href}`);
+    // File tĩnh trong public/ (PDF TDS, SDS…) cũng là link hợp lệ.
+    else if (!routes.has(path) && !existsSync(join(ROOT, 'public', path))) problems.push(`${e.file}: link nội bộ hỏng ${href}`);
   }
 }
 

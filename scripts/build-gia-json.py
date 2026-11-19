@@ -32,6 +32,9 @@ DONG = [
     ("dau-thuy-luc", "Maxima 68", "Maxima", "ISO VG 68", "nhap-khau", "Xô 18 L", 18, "maxima-68", 1, ("Dầu MAXIMA 68", "Xô 18L")),
     # 17/11/2026: các dòng dưới có trong báo giá văn bản 15/11/2026, chưa có trong file kho; giá ở GIA_BAO_GIA.
     ("dau-thuy-luc", "Maxima 68", "Maxima", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "maxima-68", 0, None),
+    # 19/11/2026: AIO HM 68, HM 46 (thương hiệu AIO của HT VINA), người dùng báo giá phuy 12.500.000 đ; xô 18 L đang hết hàng nên chưa có dòng xô.
+    ("dau-thuy-luc", "AIO HM 68", "AIO", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "aio-hm-68", 0, None),
+    ("dau-thuy-luc", "AIO HM 46", "AIO", "ISO VG 46", "trong-nuoc", "Phuy 200 L", 200, "aio-hm-68", 0, None),
     ("dau-thuy-luc", "Castrol Hyspin AWS 46", "Castrol", "ISO VG 46", "nhap-khau", "Phuy 209 L", 209, "castrol-hyspin-aws-68", 0, None),
     ("dau-thuy-luc", "ENEOS Super Hyrando 46", "ENEOS", "ISO VG 46", "nhap-khau", "Phuy 200 L", 200, "eneos-super-hyrando-68", 0, None),
     ("dau-thuy-luc", "EMER LAW 68", "EMER", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "emer-law-68", 0, ("Dầu thủy lực LAW68 (200L)", "Phuy")),
@@ -212,6 +215,8 @@ def tang_gia(dm, hang, qc):
 # Khi có báo giá văn bản mới: sửa bảng này, thay ảnh + PDF, chạy lại script.
 GIA_BAO_GIA = {
     # Dầu thủy lực
+    ("AIO HM 68", "Phuy 200 L"): 12_500_000,  # 19/11/2026: người dùng báo giá
+    ("AIO HM 46", "Phuy 200 L"): 12_500_000,  # 19/11/2026: cùng giá phuy với HM 68
     ("APEX TL 68", "Phuy 200 L"): 7_000_000,
     ("Castrol Hyspin AWS 46", "Phuy 209 L"): 13_000_000,
     ("Castrol Hyspin AWS 68", "Phuy 209 L"): 12_000_000,

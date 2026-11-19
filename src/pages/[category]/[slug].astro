@@ -11,6 +11,9 @@ import NutBaoGia from '../../components/NutBaoGia.astro';
 import { trangBaoGiaCua } from '../../lib/bao-gia-danh-muc';
 import ThuVienAnh from '../../components/ThuVienAnh.astro';
 import XemThem from '../../components/XemThem.astro';
+import CachVietBai from '../../components/CachVietBai.astro';
+import ChinhSachGiaKho from '../../components/ChinhSachGiaKho.astro';
+import ThongTinDoanhNghiep from '../../components/ThongTinDoanhNghiep.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts, getActivePosts, postPath } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
@@ -111,6 +114,8 @@ const soSanh = bangSoSanh(product, activeProducts);
 const coSpecs = !!d.specs?.length;
 const coUngDung = !!(d.applications?.length || d.not_for?.length);
 const coBaoQuan = !!(d.warnings?.length || d.storage || d.shelf_life);
+// Khối cuối bài B3a (QUY-TRINH-VIET-BAI-EEAT.md): bật khi trang khai báo nguon_tds (bảng nguồn TDS kèm ngày tra cứu).
+const coKhoiCuoi = !!d.nguon_tds?.length;
 const mucThongSo = [
   ...(coSpecs ? [{ depth: 2, slug: 'thong-so-ky-thuat', text: 'Thông số kỹ thuật điển hình' }] : []),
   ...(coUngDung ? [{ depth: 2, slug: 'ung-dung', text: 'Ứng dụng và khuyến cáo sử dụng' }] : []),
@@ -125,6 +130,7 @@ const tocItems = mucLuc([
   ...(soSanh ? [{ depth: 2, slug: 'so-sanh-cung-loai', text: `So sánh với các ${soSanh.tenNhom} khác` }] : []),
   ...(equivalents.length ? [{ depth: 2, slug: 'san-pham-tuong-duong', text: 'Sản phẩm tương đương' }] : []),
   ...(coBaoQuan ? [{ depth: 2, slug: 'bao-quan-an-toan', text: 'Bảo quản và an toàn' }] : []),
+  ...(coKhoiCuoi ? [{ depth: 2, slug: 'cach-viet-bai', text: 'Cách chúng tôi viết và cập nhật bài này' }] : []),
 ], { tat: d.muc_luc === false });
 // **đậm** trong tom_tat → <strong>, phần còn lại được escape.
 const dam = (t: string) =>
@@ -179,6 +185,7 @@ const additionalProperty = [
 const citation = [
   ...new Set([
     ...(d.tds_url ? [d.tds_url.startsWith('/') ? absUrl(d.tds_url) : d.tds_url] : []),
+    ...(d.nguon_tds ?? []).flatMap((t) => (t.url ? [t.url.startsWith('/') ? absUrl(t.url) : t.url] : [])),
     ...(d.specs ?? []).flatMap((s) => (s.method ? tachPhuongPhap(s.method) : []).flatMap((x) => [x.tc?.url, x.tc?.tcvnUrl])),
   ].filter((u): u is string => Boolean(u))),
 ];
@@ -261,6 +268,7 @@ const schemaData = [
           {ngay.modified && ngay.modified !== ngay.published && <> · Cập nhật ngày <time datetime={ngay.modified}>{ngay.modifiedText}</time></>}
           {' · '}<a href={personUrl(tacGia!)} rel="author">{tenNgan(tacGia!)}</a>
           {reviewer && reviewer.id !== tacGia?.id && <> · Duyệt nội dung: <a href={personUrl(reviewer)}>{tenNgan(reviewer)}</a></>}
+          {coKhoiCuoi && <> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></>}
         </p>
         <div class="tags">
           {isThuyLuc && <a class="badge" href="/dau-thuy-luc">Dầu thủy lực</a>}
@@ -384,7 +392,17 @@ const schemaData = [
           {(reHon || caoHon) && <p class="goi-y-chon__ghi-chu">Xếp theo giá thấp nhất mỗi {d.category.startsWith('mo-') ? 'kg' : 'lít'} trên bảng giá công khai của HT VINA; giá cao hơn không có nghĩa là hợp với máy của bạn hơn, hãy chọn theo cấp và tiêu chuẩn máy yêu cầu.</p>}
         </aside>
       )}
+      {coKhoiCuoi && tacGia && reviewer && (
+        <CachVietBai tacGia={tacGia} nguoiDuyet={reviewer} ngayGia={gia.rows.length ? gia.cauHinh.ngay_ra_soat : undefined} ngayCapNhat={ngay.modified ?? ngay.published!}>
+          <div class="table-wrap" slot="nguon"><table>
+            <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
+            <tbody>{d.nguon_tds!.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="noopener" target="_blank">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
+          </table></div>
+        </CachVietBai>
+      )}
       <QuoteCta item={d.title} danhMuc={d.category} />
+      {coKhoiCuoi && <ChinhSachGiaKho />}
+      {coKhoiCuoi && <ThongTinDoanhNghiep />}
       <XemThem muc={xemThem} boQua={[pagePath]} toiDa={4} />
     </section>
     </NoiDungBai>
