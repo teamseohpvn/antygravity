@@ -6,8 +6,16 @@
 import { getHiddenPaths } from '../lib/content';
 import { doiKhoiXemThem } from '../lib/xem-them';
 
+interface Props {
+  /** Bài chia hai phần bằng dòng <!-- phan-sau -->: 'truoc' lấy phần trên, 'sau' lấy phần dưới. Bỏ trống = cả bài. */
+  phan?: 'truoc' | 'sau';
+}
+const { phan } = Astro.props;
+const DAU_TACH = '<!-- phan-sau -->';
 const hidden = await getHiddenPaths();
-const html = await Astro.slots.render('default');
+const toanBai = await Astro.slots.render('default');
+const viTriTach = toanBai.indexOf(DAU_TACH);
+const html = !phan || viTriTach < 0 ? toanBai : phan === 'truoc' ? toanBai.slice(0, viTriTach) : toanBai.slice(viTriTach + DAU_TACH.length);
 const clean = (href: string) => href.split(/[?#]/)[0].replace(/\.html$/, '').replace(/\/+$/, '') || '/';
 // Slot "sau-doan-dau" (ví dụ mục lục) chèn ngay sau đoạn văn đầu tiên của thân bài.
 const sauDoanDau = Astro.slots.has('sau-doan-dau') ? await Astro.slots.render('sau-doan-dau') : '';
