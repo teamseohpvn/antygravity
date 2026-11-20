@@ -49,6 +49,22 @@ const danhmucCollection = defineCollection({
     muc_luc: z.boolean().optional(), // false = tắt mục lục tự động (mặc định: bật khi bài có từ 4 mục H2) // Chỉ dùng khi cần canonical khác URL của trang
     tac_gia: z.string().optional(), // Tác giả (id trong nhan-su.ts); mặc định Ms. Hồng
     reviewed_by: z.string().optional(), // Người duyệt nội dung; mặc định TS. Nguyễn Thiết Lập
+    // 20/11/2026: danh mục gộp báo giá (danh mục chưa có trang báo giá riêng). Có trường này thì trang hiện bảng giá
+    // từ gia-cong-khai.json ngay sau đoạn đầu của bài, bài chia hai phần bằng dòng <!-- phan-sau --> (phần sau nằm dưới lưới sản phẩm),
+    // cuối trang có khối CachVietBai + ChinhSachGiaKho + ThongTinDoanhNghiep. Chuỗi {thang} trong title/seo_title/description/tieu_de
+    // được thay bằng tháng rà soát giá (MM/YYYY), tự đổi khi sang kỳ giá mới.
+    bang_gia: z.object({
+      tieu_de: z.string(), // H2 của mục bảng giá
+      // Mã có hàng nhưng chưa công bố giá: hiện trong bảng với chữ "Liên hệ".
+      lien_he: z.array(z.object({
+        ten: z.string(),
+        hang: z.string(),
+        cap: z.string(), // Trùng nhóm của bảng giá, ví dụ "SAE 15W-40"
+        quy_cach: z.string(),
+        nguon: z.enum(['nhap-khau', 'trong-nuoc']),
+        trang: z.string().optional(),
+      })).optional(),
+    }).optional(),
     date: ngay.optional(), // Ngày đăng
     updated: ngay.optional(), // Ngày cập nhật
   }).superRefine(kiemTraNgay),

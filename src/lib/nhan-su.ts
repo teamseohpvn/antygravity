@@ -108,6 +108,7 @@ export const NHAN_SU: NhanSu[] = [
     trangPhuTrach: [
       { ten: 'Mỡ bôi trơn công nghiệp', url: '/mo-boi-tron-cong-nghiep', vai: 'Duyệt nội dung' },
       { ten: 'Bảng giá dầu thủy lực', url: '/bao-gia-dau-thuy-luc', vai: 'Duyệt nội dung' },
+      { ten: 'Nhớt xe tải, dầu động cơ diesel (kèm bảng giá)', url: '/dau-dong-co-diesel', vai: 'Duyệt nội dung' },
     ],
     knowsAbout: [
       'Sửa chữa, bảo dưỡng hệ thống thủy lực',
@@ -150,6 +151,7 @@ export const NHAN_SU: NhanSu[] = [
     trangPhuTrach: [
       { ten: 'Mỡ bôi trơn công nghiệp', url: '/mo-boi-tron-cong-nghiep', vai: 'Người viết' },
       { ten: 'Bảng giá dầu thủy lực', url: '/bao-gia-dau-thuy-luc', vai: 'Người viết' },
+      { ten: 'Nhớt xe tải, dầu động cơ diesel (kèm bảng giá)', url: '/dau-dong-co-diesel', vai: 'Người viết' },
     ],
     knowsAbout: ['Giá bán dầu nhớt công nghiệp', 'Báo giá và hợp đồng mua bán', 'Hóa đơn, chứng từ bán hàng'],
   },
