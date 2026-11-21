@@ -17,7 +17,7 @@ import type { DongGiaCongKhai } from '../lib/gia';
 import { bangGiaTuJson } from '../lib/gia-json';
 import { timNhanSu, bylineLabel, personUrl, personRef, personSchema } from '../lib/nhan-su';
 import { AN_DONG, KG_QUY_CACH, GIA_DA_DUYET, HIEU_LUC } from '../data/bao-gia-mo-boi-tron';
-import { absUrl, breadcrumbSchema, ORG_ID, BUSINESS, ADDRESS_TEXT, KHO_GIAO_HANG } from '../lib/site';
+import { absUrl, breadcrumbSchema, ORG_ID, BUSINESS, ADDRESS_TEXT, KHO_GIAO_HANG, LEGAL_NAME, LEGAL_SHORT } from '../lib/site';
 
 const pagePath = '/bao-gia-mo-boi-tron';
 const HUB = '/mo-boi-tron-cong-nghiep';
@@ -122,7 +122,11 @@ const citation = [
 ]);
 const anhBaoGia = {
   '@type': 'ImageObject', url: absUrl(IMAGE), contentUrl: absUrl(IMAGE), width: IMAGE_W, height: IMAGE_H,
-  caption: IMAGE_ALT, datePublished: IMAGE_NGAY, creator: { '@id': ORG_ID }, copyrightHolder: { '@id': ORG_ID },
+  caption: IMAGE_ALT, datePublished: IMAGE_NGAY,
+  // Google Search Console (Siêu dữ liệu hình ảnh) yêu cầu creditText; creator ghi đủ tên để không chỉ là tham chiếu @id.
+  creator: { '@type': 'Organization', '@id': ORG_ID, name: LEGAL_NAME }, copyrightHolder: { '@id': ORG_ID },
+  creditText: LEGAL_SHORT, copyrightNotice: `© ${IMAGE_NGAY.slice(0, 4)} ${LEGAL_NAME}`,
+  license: absUrl('/terms-of-service#noi-dung'), acquireLicensePage: absUrl('/contact'),
 };
 const schemaData = [
   {
