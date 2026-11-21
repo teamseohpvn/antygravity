@@ -22,7 +22,7 @@ import { tinhLuongDau, moTaMua, LIT_PHUY, LIT_XO } from '../lib/tinh-luong-dau';
 import { PROMO, PROMO_ACTIVE } from '../lib/promo';
 import { HIEU_LUC, CHUYEN_GIAO } from '../data/bao-gia-dau-thuy-luc';
 import DanhGiaGoogle from '../components/DanhGiaGoogle.astro';
-import { absUrl, LEGAL_SHORT, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR, ADDRESS_TEXT, KHO_GIAO_HANG } from '../lib/site';
+import { absUrl, LEGAL_SHORT, breadcrumbSchema, ORG_ID, BUSINESS, AREA_TEXT, KCN_NEAR, ADDRESS_TEXT, KHO_GIAO_HANG, LEGAL_NAME } from '../lib/site';
 
 export const prerender = false;
 
@@ -252,7 +252,10 @@ const crumbs = [
 
 const anhBaoGia = {
   '@type': 'ImageObject', url: absUrl(IMAGE), contentUrl: absUrl(IMAGE), width: IMAGE_W, height: IMAGE_H,
-  caption: IMAGE_ALT, datePublished: IMAGE_NGAY, creator: { '@id': ORG_ID }, copyrightHolder: { '@id': ORG_ID },
+  caption: IMAGE_ALT, datePublished: IMAGE_NGAY,
+  // Google Search Console (Siêu dữ liệu hình ảnh) yêu cầu creditText; creator ghi đủ tên để không chỉ là tham chiếu @id.
+  creator: { '@type': 'Organization', '@id': ORG_ID, name: LEGAL_NAME }, copyrightHolder: { '@id': ORG_ID },
+  creditText: LEGAL_SHORT, copyrightNotice: `© ${IMAGE_NGAY.slice(0, 4)} ${LEGAL_NAME}`,
 };
 const schemaData = [
   {
