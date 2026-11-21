@@ -45,6 +45,8 @@ export interface NhanSu {
   metaDescription?: string;
   /** Trang người này đứng tên viết hoặc duyệt, không tự suy ra được từ sản phẩm và bài viết */
   trangPhuTrach?: { ten: string; url: string; vai: string }[];
+  /** Quá trình làm việc (mới nhất ở cuối), hiển thị mục "Kinh nghiệm làm việc" và schema hasOccupation. Chỉ ghi điều người đó xác nhận. */
+  kinhNghiem?: { tu: number; den?: number; viTri: string; donVi: string; diaDiem?: string; linhVuc?: string }[];
   /** Nguồn xác nhận thông tin hồ sơ (ghi chú nội bộ, không hiển thị) */
   verifiedFrom?: string;
 }
@@ -91,20 +93,32 @@ export const NHAN_SU: NhanSu[] = [
   {
     id: 'vu-minh-toan',
     name: 'Vũ Minh Toàn',
-    // Theo hồ sơ LinkedIn công khai (19/10/2026): President, HT VINA từ 10/2026; kỹ sư Công nghệ ô tô, Trường Đại học Công nghiệp Hà Nội, tốt nghiệp 2009 (anh/chị xác nhận 20/10/2026, thay thông tin ĐH Sao Đỏ 2011 trước đó). Ảnh cắt từ du-lieu-noi-bo/bot2.jpg, bỏ logo nền.
+    // Theo hồ sơ LinkedIn công khai (19/10/2026): President, HT VINA; kỹ sư Công nghệ ô tô, Trường Đại học Công nghiệp Hà Nội, tốt nghiệp 2009 (anh/chị xác nhận 20/10/2026). Ảnh cắt từ du-lieu-noi-bo/bot2.jpg, bỏ logo nền.
+    verifiedFrom: 'Anh/chị xác nhận 21/11/2026: vào Khoa Cơ khí Ô tô ĐH Công nghiệp Hà Nội năm 2005; 2009–2015 làm tại nhà máy Ngọc Đỉnh (玉鼎電機實業有限公司), Đại Lý, Đài Trung, chế tạo thiết bị làm mát và điều nhiệt, phụ trách dầu làm mát, bôi trơn; 2015 thành lập HT VINA. Chưa có số liệu ca xử lý cụ thể nên không ghi.',
     role: 'Giám đốc',
     degree: 'Kỹ sư Công nghệ ô tô, Trường Đại học Công nghiệp Hà Nội',
-    alumniOf: [{ degree: 'Kỹ sư', field: 'Công nghệ ô tô', school: 'Trường Đại học Công nghiệp Hà Nội', year: 2009 }],
+    since: 2009,
+    alumniOf: [{ degree: 'Kỹ sư', field: 'Công nghệ ô tô (Khoa Cơ khí Ô tô, học từ 2005)', school: 'Trường Đại học Công nghiệp Hà Nội', year: 2009 }],
+    kinhNghiem: [
+      { tu: 2009, den: 2015, viTri: 'Phụ trách dầu làm mát và dầu mỡ bôi trơn', donVi: 'Nhà máy Ngọc Đỉnh (玉鼎電機實業有限公司)', diaDiem: 'Đại Lý, Đài Trung (Đài Loan)', linhVuc: 'sản xuất, chế tạo thiết bị làm mát và điều nhiệt' },
+      { tu: 2015, viTri: 'Người sáng lập, Giám đốc', donVi: 'Công ty Cổ phần Thương mại Dịch vụ HT VINA', linhVuc: 'cung cấp dầu nhớt, mỡ bôi trơn công nghiệp' },
+    ],
     photo: '/images/nhan-su/vu-minh-toan.webp',
     sameAs: ['https://www.linkedin.com/in/v%C5%A9-minh-to%C3%A0n-htvina'],
-    desc: 'Điều hành Công ty Cổ phần Thương mại Dịch vụ HT VINA. Chuyên môn sửa chữa, bảo dưỡng hệ thống thủy lực, động cơ đốt trong, bảo trì thiết bị cơ khí, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
-    metaDescription: 'Vũ Minh Toàn, Giám đốc HT VINA, kỹ sư Công nghệ ô tô. Chuyên môn về hệ thống thủy lực và hệ thống bôi trơn công nghiệp.',
+    desc: 'Người sáng lập, điều hành Công ty Cổ phần Thương mại Dịch vụ HT VINA. Kỹ sư Công nghệ ô tô, 6 năm phụ trách dầu làm mát và bôi trơn tại nhà máy chế tạo thiết bị làm mát (2009–2015) trước khi thành lập HT VINA.',
+    metaDescription: 'Vũ Minh Toàn, Giám đốc HT VINA, kỹ sư Công nghệ ô tô; 2009–2015 phụ trách dầu làm mát, bôi trơn tại nhà máy thiết bị làm mát Ngọc Đỉnh (Đài Loan).',
     bio: [
-      'Vũ Minh Toàn là Giám đốc Công ty Cổ phần Thương mại Dịch vụ HT VINA, kỹ sư Công nghệ ô tô tốt nghiệp Trường Đại học Công nghiệp Hà Nội năm 2009.',
-      'Chuyên môn của Vũ Minh Toàn gồm sửa chữa, bảo dưỡng hệ thống thủy lực và động cơ đốt trong, bảo trì thiết bị cơ khí, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
-      'Trên website, Vũ Minh Toàn duyệt nội dung các trang liệt kê ở cuối hồ sơ này.',
+      'Vũ Minh Toàn là người sáng lập và Giám đốc Công ty Cổ phần Thương mại Dịch vụ HT VINA. Anh học Khoa Cơ khí Ô tô, Trường Đại học Công nghiệp Hà Nội từ năm 2005 và tốt nghiệp kỹ sư Công nghệ ô tô năm 2009.',
+      'Từ năm 2009 đến năm 2015, anh Toàn làm việc tại nhà máy Ngọc Đỉnh (玉鼎電機實業有限公司) ở Đại Lý, Đài Trung, đơn vị sản xuất, chế tạo thiết bị làm mát và điều nhiệt. Tại đây anh phụ trách mảng dầu làm mát và dầu mỡ bôi trơn của nhà máy. Kinh nghiệm về bôi trơn của anh vì vậy có từ trước khi thành lập HT VINA.',
+      'Năm 2015, anh Toàn thành lập HT VINA, cung cấp dầu nhớt và mỡ bôi trơn công nghiệp cho nhà máy, xưởng cơ khí ở miền Bắc. Chuyên môn của anh gồm sửa chữa, bảo dưỡng hệ thống thủy lực và động cơ đốt trong, bảo trì thiết bị cơ khí, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
+      'Trên website, anh Toàn duyệt nội dung các trang liệt kê ở cuối hồ sơ này, trong đó có trang mỡ bôi trơn công nghiệp.',
     ],
-    method: [],
+    method: [
+      'Đối chiếu thông số trên trang (độ đặc NLGI, điểm nhỏ giọt, độ nhớt dầu gốc, giới hạn nhiệt độ) với bảng thông số kỹ thuật (TDS) bản mới nhất của hãng, ghi trong bảng nguồn của từng trang.',
+      'Rà soát khuyến cáo chọn dầu, mỡ theo điều kiện làm việc của máy và các trường hợp không nên dùng.',
+      'Duyệt khoảng giá và trạng thái kho trước khi đăng.',
+      'Ghi ngày cập nhật khi nội dung thay đổi thực chất.',
+    ],
     trangPhuTrach: [
       { ten: 'Mỡ bôi trơn công nghiệp', url: '/mo-boi-tron-cong-nghiep', vai: 'Duyệt nội dung' },
       { ten: 'Bảng giá dầu thủy lực', url: '/bao-gia-dau-thuy-luc', vai: 'Duyệt nội dung' },
@@ -112,6 +126,8 @@ export const NHAN_SU: NhanSu[] = [
     ],
     knowsAbout: [
       'Sửa chữa, bảo dưỡng hệ thống thủy lực',
+      'Dầu làm mát và dầu mỡ bôi trơn cho nhà máy chế tạo thiết bị làm mát',
+      'Mỡ bôi trơn công nghiệp',
       'Thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp',
       'Sửa chữa, bảo dưỡng động cơ đốt trong',
       'Bảo trì thiết bị cơ khí',
@@ -212,6 +228,9 @@ export function personSchema(p: NhanSu) {
         ? { hasCredential: { '@type': 'EducationalOccupationalCredential', credentialCategory: 'degree', name: p.degree } }
         : {}),
     ...(p.knowsAbout ? { knowsAbout: p.knowsAbout } : {}),
+    ...(p.kinhNghiem
+      ? { hasOccupation: p.kinhNghiem.map((k) => ({ '@type': 'Occupation', name: k.viTri, description: `${k.donVi}${k.diaDiem ? `, ${k.diaDiem}` : ''}${k.linhVuc ? `, ${k.linhVuc}` : ''}, ${k.tu}–${k.den ?? 'nay'}` })) }
+      : {}),
     ...(p.sameAs ? { sameAs: p.sameAs } : {}),
     ...(p.email ? { email: p.email } : {}),
     ...(p.telephone ? { telephone: p.telephone } : {}),

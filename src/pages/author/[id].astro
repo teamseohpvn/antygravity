@@ -6,7 +6,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getActivePosts, getActiveProducts, postPath } from '../../lib/content';
 import { NHAN_SU, DEFAULT_REVIEWER_ID, displayName, hasProfile, personSchema, personUrl, profileLabel, timNhanSu, yearsOf, type NhanSu } from '../../lib/nhan-su';
-import { LEGAL_SHORT, SITE_NAME, absUrl, breadcrumbSchema } from '../../lib/site';
+import { BUSINESS, LEGAL_SHORT, SITE_NAME, absUrl, breadcrumbSchema } from '../../lib/site';
 
 export async function getStaticPaths() {
   return NHAN_SU.filter(hasProfile).map((p) => ({ params: { id: p.id }, props: { person: p } }));
@@ -83,6 +83,13 @@ const schemaData = [
       <h2>Giới thiệu</h2>
       {p.bio?.map((t) => <p>{t}</p>)}
 
+      {p.kinhNghiem && (
+        <>
+          <h2>Kinh nghiệm làm việc</h2>
+          <ul class="kinh-nghiem">{p.kinhNghiem.map((k) => <li><strong>{k.tu}–{k.den ?? 'nay'}:</strong> {k.viTri}, {k.donVi}{k.diaDiem && `, ${k.diaDiem}`}{k.linhVuc && `, ${k.linhVuc}`}.</li>)}</ul>
+        </>
+      )}
+
       {p.knowsAbout && (
         <>
           <h2>Lĩnh vực chuyên môn</h2>
@@ -140,6 +147,13 @@ const schemaData = [
           <ul class="products">
             {products.map((x) => <li><a href={`/${x.data.category}/${x.id}`}>{x.data.title}</a></li>)}
           </ul>
+        </>
+      )}
+
+      {!p.external && (
+        <>
+          <h2>Liên hệ tư vấn kỹ thuật</h2>
+          <p>Cần hỏi chọn dầu, mỡ cho máy hoặc đối chiếu thông số: gọi hotline <a href={`tel:${BUSINESS.phone}`}>{BUSINESS.phoneDisplay}</a>, nhắn <a href={BUSINESS.zaloUrl} rel="nofollow noopener" target="_blank">Zalo {LEGAL_SHORT}</a>, hoặc gửi yêu cầu qua <a href="/contact">trang liên hệ</a>. Câu hỏi kỹ thuật được chuyển tới người duyệt nội dung phụ trách mảng đó.</p>
         </>
       )}
 
