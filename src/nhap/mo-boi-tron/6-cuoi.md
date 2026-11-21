@@ -1,6 +1,6 @@
 ## Quy cách, giấy tờ và giao hàng {#giao-hang}
 
-- **Quy cách:** theo cột "Trạng thái kho" ở [bảng so sánh](#so-sanh). Quy cách có thể thay đổi theo lô hàng.
+- **Quy cách:** theo cột "Tình trạng kho" ở [bảng so sánh](#so-sanh). Quy cách có thể thay đổi theo lô hàng.
 - **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS. HT VINA là đại lý dầu mỡ VHP; mỡ Shell, ENEOS, PVOIL, Calix là hàng chính hãng, có CO/CQ theo lô.
 - **Đổi trả:** trong 7 ngày theo [chính sách đổi trả](/chinh-sach-doi-tra), với hàng còn nguyên nắp, nguyên niêm phong.
 - **Bảo quản:** để xô, phuy trong nhà, đậy kín nắp, tránh bụi và nước. Lấy mỡ bằng dụng cụ sạch, không để mỡ đã dính bụi quay lại xô.
