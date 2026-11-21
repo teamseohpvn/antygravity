@@ -234,7 +234,7 @@ Bài dài **bắt buộc có mục lục** để người đọc bấm nhảy t�
 
 | Loại trang | Khi nào hiện | Gồm | Vị trí |
 |---|---|---|---|
-| Bài viết (`blog/`) | Từ 4 mục H2 trở lên | H2 và H3 (trừ các câu hỏi con trong mục "Câu hỏi thường gặp") | Ngay sau đoạn mở đầu |
+| Bài viết (`blog/`) | Từ 4 mục H2 trở lên | H2 và H3 (trừ các câu hỏi con trong mục "Câu hỏi thường gặp") | Màn hình ≥ 1100px: **cột phải cố định** (`src/components/MucLucBen.astro`), mục đang đọc tô đậm theo vị trí cuộn, có nút "Lên đầu trang"; mục lục trong thân bài ẩn đi. Màn hình hẹp hơn: ngay sau đoạn mở đầu |
 | Sản phẩm (`sanpham/`) | Từ 4 mục H2 trở lên (tính cả các mục cố định của template) | H2 | Ngay dưới khối ảnh và nút báo giá |
 | Danh mục (`danhmuc/`) | Chưa áp dụng | | |
 
