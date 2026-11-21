@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+  <title id="t">Lượng mỡ cho mỗi lần bơm bổ sung theo cỡ vòng bi</title>
+  <desc id="d">Tính theo G = 0,005 × D × B: 6205 khoảng 3,9 g, 6308 khoảng 10,4 g, 6310 khoảng 14,9 g, 6312 khoảng 20,2 g, 6316 khoảng 33,2 g.</desc>
+  <rect width="760" height="380" fill="#ffffff"/>
+  <text x="40" y="34" font-size="19" font-weight="700" fill="#1f2937">Mỗi lần bơm bổ sung cần bao nhiêu gam mỡ?</text>
+  <text x="40" y="58" font-size="13" fill="#4b5563">G = 0,005 × D × B (D: đường kính ngoài, B: bề rộng vòng bi, mm)</text>
+  <!-- axis: 0..35 g over 260 px height, baseline y=320 -->
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="90" y1="320" x2="720" y2="320"/>
+    <line x1="90" y1="245.7" x2="720" y2="245.7"/>
+    <line x1="90" y1="171.4" x2="720" y2="171.4"/>
+    <line x1="90" y1="97.1" x2="720" y2="97.1"/>
+  </g>
+  <g font-size="12" fill="#6b7280" text-anchor="end">
+    <text x="82" y="324">0 g</text>
+    <text x="82" y="250">10 g</text>
+    <text x="82" y="176">20 g</text>
+    <text x="82" y="101">30 g</text>
+  </g>
+  <g fill="#1d4ed8">
+    <rect x="120" y="291.0" width="80" height="29.0"/>
+    <rect x="240" y="242.7" width="80" height="77.3"/>
+    <rect x="360" y="209.3" width="80" height="110.7"/>
+    <rect x="480" y="169.9" width="80" height="150.1"/>
+    <rect x="600" y="73.4" width="80" height="246.6"/>
+  </g>
+  <g font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">
+    <text x="160" y="283">3,9 g</text>
+    <text x="280" y="235">10,4 g</text>
+    <text x="400" y="201">14,9 g</text>
+    <text x="520" y="162">20,2 g</text>
+    <text x="640" y="65">33,2 g</text>
+  </g>
+  <g font-size="13" fill="#1f2937" text-anchor="middle">
+    <text x="160" y="340">6205</text>
+    <text x="280" y="340">6308</text>
+    <text x="400" y="340">6310</text>
+    <text x="520" y="340">6312</text>
+    <text x="640" y="340">6316</text>
+  </g>
+  <text x="40" y="368" font-size="11" fill="#6b7280">Nguồn công thức: Mobil (theo SKF). Tính toán: HT VINA, 21/11/2026 · daucongnghiephp.com.vn</text>
+</svg>
