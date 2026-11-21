@@ -47,6 +47,12 @@ export interface NhanSu {
   trangPhuTrach?: { ten: string; url: string; vai: string }[];
   /** Quá trình làm việc (mới nhất ở cuối), hiển thị mục "Kinh nghiệm làm việc" và schema hasOccupation. Chỉ ghi điều người đó xác nhận. */
   kinhNghiem?: { tu: number; den?: number; viTri: string; donVi: string; diaDiem?: string; linhVuc?: string }[];
+  /** Chức danh chuyên môn thêm vào schema jobTitle và dòng dưới tên (role vẫn là chức danh chính) */
+  chucDanhChuyenMon?: string;
+  /** Kinh nghiệm thực tế: các bài toán đã xử lý, hiển thị mục "Kinh nghiệm thực tế" */
+  thucTe?: string[];
+  /** Tài liệu, tiêu chuẩn áp dụng khi kiểm duyệt (mã có trong tieu-chuan.ts thì tự gắn link) */
+  tieuChuan?: { ma: string; moTa: string }[];
   /** Nguồn xác nhận thông tin hồ sơ (ghi chú nội bộ, không hiển thị) */
   verifiedFrom?: string;
 }
@@ -94,40 +100,57 @@ export const NHAN_SU: NhanSu[] = [
     id: 'vu-minh-toan',
     name: 'Vũ Minh Toàn',
     // Theo hồ sơ LinkedIn công khai (19/10/2026): President, HT VINA; kỹ sư Công nghệ ô tô, Trường Đại học Công nghiệp Hà Nội, tốt nghiệp 2009 (anh/chị xác nhận 20/10/2026). Ảnh cắt từ du-lieu-noi-bo/bot2.jpg, bỏ logo nền.
-    verifiedFrom: 'Anh/chị xác nhận 21/11/2026: vào Khoa Cơ khí Ô tô ĐH Công nghiệp Hà Nội năm 2005; 2009–2015 làm tại nhà máy Ngọc Đỉnh (玉鼎電機實業有限公司), Đại Lý, Đài Trung, chế tạo thiết bị làm mát và điều nhiệt, phụ trách dầu làm mát, bôi trơn; 2015 thành lập HT VINA. Chưa có số liệu ca xử lý cụ thể nên không ghi.',
+    verifiedFrom: 'Anh/chị xác nhận 21/11/2026: vào Khoa Cơ khí Ô tô ĐH Công nghiệp Hà Nội năm 2005; 2009–2015 làm tại 玉鼎電機實業有限公司 (Dali District, Taichung, Taiwan), chế tạo thiết bị làm mát và điều nhiệt, phụ trách dầu làm mát, bôi trơn; 2015 thành lập HT VINA. Cùng ngày anh/chị đồng ý giữ toàn bộ gợi ý: ngành đã làm việc, các bài toán thực tế, tiêu chuẩn áp dụng, chức danh chuyên môn, khung kiểm duyệt trên hub mỡ.',
     role: 'Giám đốc',
+    chucDanhChuyenMon: 'Chuyên viên kỹ thuật dầu mỡ bôi trơn công nghiệp',
     degree: 'Kỹ sư Công nghệ ô tô, Trường Đại học Công nghiệp Hà Nội',
     since: 2009,
     alumniOf: [{ degree: 'Kỹ sư', field: 'Công nghệ ô tô (Khoa Cơ khí Ô tô, học từ 2005)', school: 'Trường Đại học Công nghiệp Hà Nội', year: 2009 }],
     kinhNghiem: [
-      { tu: 2009, den: 2015, viTri: 'Phụ trách dầu làm mát và dầu mỡ bôi trơn', donVi: 'Nhà máy Ngọc Đỉnh (玉鼎電機實業有限公司)', diaDiem: 'Đại Lý, Đài Trung (Đài Loan)', linhVuc: 'sản xuất, chế tạo thiết bị làm mát và điều nhiệt' },
+      { tu: 2009, den: 2015, viTri: 'Phụ trách dầu làm mát và dầu mỡ bôi trơn', donVi: 'Nhà máy 玉鼎電機實業有限公司', diaDiem: 'Dali District, Taichung, Taiwan', linhVuc: 'sản xuất, chế tạo thiết bị làm mát và điều nhiệt' },
       { tu: 2015, viTri: 'Người sáng lập, Giám đốc', donVi: 'Công ty Cổ phần Thương mại Dịch vụ HT VINA', linhVuc: 'cung cấp dầu nhớt, mỡ bôi trơn công nghiệp' },
     ],
     photo: '/images/nhan-su/vu-minh-toan.webp',
     sameAs: ['https://www.linkedin.com/in/v%C5%A9-minh-to%C3%A0n-htvina'],
-    desc: 'Người sáng lập, điều hành Công ty Cổ phần Thương mại Dịch vụ HT VINA. Kỹ sư Công nghệ ô tô, 6 năm phụ trách dầu làm mát và bôi trơn tại nhà máy chế tạo thiết bị làm mát (2009–2015) trước khi thành lập HT VINA.',
-    metaDescription: 'Vũ Minh Toàn, Giám đốc HT VINA, kỹ sư Công nghệ ô tô; 2009–2015 phụ trách dầu làm mát, bôi trơn tại nhà máy thiết bị làm mát Ngọc Đỉnh (Đài Loan).',
+    desc: 'Người sáng lập, điều hành Công ty Cổ phần Thương mại Dịch vụ HT VINA. Kỹ sư Công nghệ ô tô, phụ trách dầu làm mát và bôi trơn tại nhà máy chế tạo thiết bị làm mát ở Taiwan từ 2009 trước khi thành lập HT VINA; duyệt nội dung kỹ thuật mảng mỡ bôi trơn.',
+    metaDescription: 'Vũ Minh Toàn, Giám đốc HT VINA, kỹ sư Công nghệ ô tô; từ 2009 phụ trách dầu làm mát, bôi trơn tại nhà máy thiết bị làm mát ở Taiwan; duyệt nội dung mỡ bôi trơn.',
     bio: [
       'Vũ Minh Toàn là người sáng lập và Giám đốc Công ty Cổ phần Thương mại Dịch vụ HT VINA. Anh học Khoa Cơ khí Ô tô, Trường Đại học Công nghiệp Hà Nội từ năm 2005 và tốt nghiệp kỹ sư Công nghệ ô tô năm 2009.',
-      'Từ năm 2009 đến năm 2015, anh Toàn làm việc tại nhà máy Ngọc Đỉnh (玉鼎電機實業有限公司) ở Đại Lý, Đài Trung, đơn vị sản xuất, chế tạo thiết bị làm mát và điều nhiệt. Tại đây anh phụ trách mảng dầu làm mát và dầu mỡ bôi trơn của nhà máy. Kinh nghiệm về bôi trơn của anh vì vậy có từ trước khi thành lập HT VINA.',
-      'Năm 2015, anh Toàn thành lập HT VINA, cung cấp dầu nhớt và mỡ bôi trơn công nghiệp cho nhà máy, xưởng cơ khí ở miền Bắc. Chuyên môn của anh gồm sửa chữa, bảo dưỡng hệ thống thủy lực và động cơ đốt trong, bảo trì thiết bị cơ khí, thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp.',
-      'Trên website, anh Toàn duyệt nội dung các trang liệt kê ở cuối hồ sơ này, trong đó có trang mỡ bôi trơn công nghiệp.',
+      'Từ năm 2009 đến năm 2015, anh Toàn làm việc tại nhà máy 玉鼎電機實業有限公司 (Dali District, Taichung, Taiwan), đơn vị sản xuất, chế tạo thiết bị làm mát và điều nhiệt. Tại đây anh phụ trách mảng dầu làm mát và dầu mỡ bôi trơn của nhà máy. Kinh nghiệm về bôi trơn của anh vì vậy có từ trước khi thành lập HT VINA.',
+      'Năm 2015, anh Toàn thành lập HT VINA. Từ đó đến nay anh làm việc trực tiếp với các nhà máy cơ khí, xi măng, khai khoáng, ép nhựa, dệt may ở miền Bắc về chọn và dùng dầu, mỡ bôi trơn. Tính từ năm 2009, anh có hơn 17 năm làm việc với dầu làm mát và dầu mỡ bôi trơn công nghiệp.',
+      'Trên website, anh Toàn là người kiểm duyệt kỹ thuật các trang về mỡ bôi trơn và các trang liệt kê ở cuối hồ sơ này.',
+    ],
+    thucTe: [
+      'Đo nhiệt độ vỏ ổ thực tế bằng súng đo nhiệt hồng ngoại để chọn loại mỡ và độ đặc NLGI phù hợp, thay vì chọn theo thói quen.',
+      'Xử lý mỡ bị khô cứng, tách dầu hoặc cháy ổ bi do trộn lẫn mỡ khác chất làm đặc (lithium với canxi hoặc polyurea).',
+      'Tính lượng mỡ bơm bổ sung và chu kỳ bơm theo mã vòng bi (kích thước ổ) và hệ số tốc độ n·dm.',
+      'Chọn mỡ cho vòng bi, gối đỡ, máy nghiền làm việc ở nhiệt độ cao và môi trường bụi, ẩm.',
+    ],
+    tieuChuan: [
+      { ma: 'TDS, MSDS của hãng', moTa: 'đọc và đối chiếu tài liệu kỹ thuật của Shell, ENEOS, Sinopec, VHP, Calix' },
+      { ma: 'ASTM D217', moTa: 'độ xuyên kim, căn cứ phân độ đặc NLGI' },
+      { ma: 'ASTM D566', moTa: 'điểm nhỏ giọt của mỡ (cùng IP 396)' },
+      { ma: 'ASTM D2596', moTa: 'tải hàn dính bốn bi (4-ball weld load)' },
+      { ma: 'Khuyến nghị bôi trơn của SKF', moTa: 'lượng mỡ và chu kỳ bôi trơn lại cho vòng bi' },
     ],
     method: [
-      'Đối chiếu thông số trên trang (độ đặc NLGI, điểm nhỏ giọt, độ nhớt dầu gốc, giới hạn nhiệt độ) với bảng thông số kỹ thuật (TDS) bản mới nhất của hãng, ghi trong bảng nguồn của từng trang.',
+      'Rà soát toàn bộ thông số kỹ thuật trên trang (độ đặc NLGI, điểm nhỏ giọt, độ nhớt dầu gốc, giới hạn nhiệt độ), kiểm chứng với bảng thông số kỹ thuật (TDS) gốc bản mới nhất của nhà sản xuất, ghi trong bảng nguồn của từng trang.',
+      'Hiệu đính các quy tắc an toàn trước khi xuất bản, ví dụ quy tắc khoảng an toàn 20 °C: nhiệt độ làm việc hãng ghi trên TDS phải cao hơn nhiệt độ đo trên vỏ ổ ít nhất 20 °C.',
       'Rà soát khuyến cáo chọn dầu, mỡ theo điều kiện làm việc của máy và các trường hợp không nên dùng.',
-      'Duyệt khoảng giá và trạng thái kho trước khi đăng.',
-      'Ghi ngày cập nhật khi nội dung thay đổi thực chất.',
+      'Duyệt khoảng giá và trạng thái kho trước khi đăng; ghi ngày cập nhật khi nội dung thay đổi thực chất.',
     ],
     trangPhuTrach: [
       { ten: 'Mỡ bôi trơn công nghiệp', url: '/mo-boi-tron-cong-nghiep', vai: 'Duyệt nội dung' },
       { ten: 'Bảng giá dầu thủy lực', url: '/bao-gia-dau-thuy-luc', vai: 'Duyệt nội dung' },
       { ten: 'Nhớt xe tải, dầu động cơ diesel (kèm bảng giá)', url: '/dau-dong-co-diesel', vai: 'Duyệt nội dung' },
+      { ten: 'Báo giá mỡ bôi trơn', url: '/bao-gia-mo-boi-tron', vai: 'Duyệt nội dung' },
     ],
     knowsAbout: [
       'Sửa chữa, bảo dưỡng hệ thống thủy lực',
       'Dầu làm mát và dầu mỡ bôi trơn cho nhà máy chế tạo thiết bị làm mát',
       'Mỡ bôi trơn công nghiệp',
+      'Bôi trơn vòng bi, gối đỡ',
+      'Tiêu chuẩn thử mỡ ASTM D217, ASTM D566, ASTM D2596',
       'Thiết kế và bảo dưỡng hệ thống bôi trơn công nghiệp',
       'Sửa chữa, bảo dưỡng động cơ đốt trong',
       'Bảo trì thiết bị cơ khí',
@@ -213,7 +236,7 @@ export function personSchema(p: NhanSu) {
     '@type': 'Person',
     '@id': personId(p),
     name: p.name,
-    jobTitle: p.role,
+    jobTitle: p.chucDanhChuyenMon ? [p.role, p.chucDanhChuyenMon] : p.role,
     url: `${SITE_URL}${personUrl(p)}`,
     ...(p.honorificPrefix ? { honorificPrefix: p.honorificPrefix } : {}),
     // Cộng tác viên: nơi công tác chính là worksFor, HT VINA ghi ở affiliation. Nhân viên: worksFor HT VINA.
