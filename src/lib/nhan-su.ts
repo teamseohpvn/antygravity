@@ -144,6 +144,7 @@ export const NHAN_SU: NhanSu[] = [
       { ten: 'Bảng giá dầu thủy lực', url: '/bao-gia-dau-thuy-luc', vai: 'Duyệt nội dung' },
       { ten: 'Nhớt xe tải, dầu động cơ diesel (kèm bảng giá)', url: '/dau-dong-co-diesel', vai: 'Duyệt nội dung' },
       { ten: 'Báo giá mỡ bôi trơn', url: '/bao-gia-mo-boi-tron', vai: 'Duyệt nội dung' },
+      { ten: 'Mỡ bôi trơn vòng bi: chọn loại, số gam mỗi lần bơm, khoảng cách bơm', url: '/ho-tro-ky-thuat/mo-boi-tron-vong-bi', vai: 'Viết bài' },
     ],
     knowsAbout: [
       'Sửa chữa, bảo dưỡng hệ thống thủy lực',

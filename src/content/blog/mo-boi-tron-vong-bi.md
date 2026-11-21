@@ -8,7 +8,7 @@ description: "Chọn mỡ bôi trơn vòng bi theo dầu gốc, NLGI; tính lư�
 keywords: ["mỡ bôi trơn vòng bi", "mỡ vòng bi", "bơm mỡ vòng bi", "lượng mỡ bôi trơn vòng bi", "chu kỳ bơm mỡ vòng bi", "mỡ bò vòng bi", "mỡ lithium"]
 category: "mo-boi-tron-cong-nghiep"
 related_products: ["vhp-lithium-grease", "eneos-epnoc-ap", "shell-gadus-s2-v220-2"]
-author: "nguyen-thiet-lap"
+author: "vu-minh-toan"
 citations:
   - "https://www.mobil.com/en/lubricants/for-businesses/industrial/lubricant-expertise/resources/determining-relubrication-intervals"
   - "https://www.stle.org/images/pdf/STLE_ORG/BOK/LS/Grease/Lubricant%20Application_Grease%20Volumes%20and%20Frequencies_tlt%20article_April09.pdf"
