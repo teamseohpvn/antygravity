@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import ContentBody from '../components/ContentBody.astro';
 import NoiDungBai from '../components/NoiDungBai.astro';
 import MucLuc from '../components/MucLuc.astro';
+import MucLucBen from '../components/MucLucBen.astro';
 import { mucLuc } from '../lib/muc-luc';
 import { render } from 'astro:content';
 import { postPath } from '../lib/content';
@@ -93,6 +94,7 @@ const schemaData = [
   <div class="container blog-container">
     <Breadcrumbs items={crumbs} />
 
+    <div class:list={['bai-luoi', { 'co-muc-luc-ben': tocItems.length > 0 }]}>
     <article class="blog-post">
       <header class="post-header">
         <h1>{post.data.title}</h1>
@@ -126,11 +128,26 @@ const schemaData = [
         </NoiDungBai>
       </div>
     </article>
+    {tocItems.length > 0 && (
+      <aside class="cot-muc-luc">
+        <MucLucBen items={tocItems} />
+      </aside>
+    )}
+    </div>
   </div>
 </Layout>
 
 <style>
   .blog-container { max-width: 900px; margin: 40px auto; }
+  /* Mục lục cố định cột phải: chỉ trên màn hình rộng; màn hẹp dùng mục lục trong thân bài. */
+  .cot-muc-luc { display: none; }
+  @media (min-width: 1100px) {
+    .blog-container:has(.co-muc-luc-ben) { max-width: 1200px; }
+    .co-muc-luc-ben { display: grid; grid-template-columns: minmax(0, 900px) 260px; gap: 32px; align-items: start; justify-content: center; }
+    .co-muc-luc-ben .cot-muc-luc { display: block; align-self: stretch; }
+    /* Đã có cột phải thì ẩn mục lục trong thân bài để khỏi lặp. */
+    .co-muc-luc-ben .markdown-body :global(.muc-luc) { display: none; }
+  }
   .breadcrumbs { margin-bottom: 30px; color: var(--color-text-light); font-size: 0.9rem; }
   .breadcrumbs a { color: var(--color-primary); }
   
