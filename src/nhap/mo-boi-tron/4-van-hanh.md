@@ -1,16 +1,16 @@
-## Vì sao mỡ bò bị khô và cứng lại trong ổ bi {#mo-kho}
+## Vì sao mỡ bò bị khô cứng trong ổ bi? {#mo-kho}
 
-Mỡ trong vòng bi hỏng chủ yếu vì **mất dầu gốc**, chứ ít khi vì chất làm đặc. Dầu gốc mất dần theo ba đường: bay hơi, bị ô xy hóa và rò ra khỏi ổ. Khi lượng dầu còn lại không đủ tiết ra để tạo màng bôi trơn, phần còn lại trong ổ là chất làm đặc khô, sẫm màu và cứng dần, đến lúc đó vòng bi bắt đầu nóng và kêu.
+Mỡ trong vòng bi hỏng chủ yếu vì **mất dầu gốc**, chứ ít khi vì chất làm đặc. Dầu gốc mất dần theo ba đường: bay hơi, bị ô-xi hóa và rò ra khỏi ổ. Khi lượng dầu còn lại không đủ tiết ra để tạo màng bôi trơn, phần còn lại trong ổ là chất làm đặc khô, sẫm màu và cứng dần, đến lúc đó vòng bi bắt đầu nóng và kêu.
 
 **Bay hơi tăng mạnh khi ổ nóng trên 100 °C.** Trong bài báo của nhóm nghiên cứu Đại học Twente và SKF ([Shetty, Meijer và Lugt, *Tribology Transactions* 64(5), 2021](https://doi.org/10.1080/10402004.2021.1943088)), các tác giả dẫn lại thí nghiệm của Booser và Baker những năm 1970: với mỡ gốc dầu khoáng, lượng dầu bay hơi chỉ đáng kể khi nhiệt độ vượt khoảng 100 °C. Mô hình trong bài cũng cho thấy dầu mất nhanh hơn khi ổ chạy nóng, nhiệt độ lên xuống liên tục (ổ "thở" ra hơi dầu) và nắp che bụi của vòng bi hở. Nói đơn giản, mỡ có dầu gốc khó bay hơi và vòng bi kín tốt sẽ giữ dầu được lâu hơn.
 
-**Trên khoảng 160 °C, ô xy hóa làm mỡ hóa cứng.** Theo phân tích của Booser và Khonsari đăng trên tạp chí *Tribology & Lubrication Technology* của STLE ([tháng 10/2010](https://www.stle.org/files/TLTArchives/2010/10_October/Technical_Analysis.aspx)), ở vùng nhiệt này mỡ bị ô xy hóa, khô và cứng lại, và tuổi thọ mỡ giảm khoảng một nửa khi nhiệt độ tăng thêm 10 °C. Ở vùng 70–160 °C, mỡ thường hết tác dụng khi đã mất khoảng một nửa lượng dầu ban đầu do bay hơi và tiết dầu, và tuổi thọ giảm khoảng 1,5 lần mỗi 10 °C. Thế nên chỉ cần hạ nhiệt ổ bi từ 90 °C xuống 80 °C, các tác giả ước tính mỡ dùng được lâu hơn khoảng 50%.
+**Trên khoảng 160 °C, ô-xi hóa làm mỡ hóa cứng.** Theo phân tích của Booser và Khonsari đăng trên tạp chí *Tribology & Lubrication Technology* của STLE ([tháng 10/2010](https://www.stle.org/files/TLTArchives/2010/10_October/Technical_Analysis.aspx)), ở vùng nhiệt này mỡ bị ô-xi hóa, khô và cứng lại, và tuổi thọ mỡ giảm khoảng một nửa khi nhiệt độ tăng thêm 10 °C. Ở vùng 70–160 °C, mỡ thường hết tác dụng khi đã mất khoảng một nửa lượng dầu ban đầu do bay hơi và tiết dầu, và tuổi thọ giảm khoảng 1,5 lần mỗi 10 °C. Thế nên chỉ cần hạ nhiệt ổ bi từ 90 °C xuống 80 °C, các tác giả ước tính mỡ dùng được lâu hơn khoảng 50%.
 
-**Phụ gia chống ô xy hóa cạn là mỡ xuống cấp nhanh.** Thí nghiệm trên vòng bi tra mỡ lithium của [Lugt, Holgerson và Reinholdsson (*Tribology International* 188, 2023)](https://doi.org/10.1016/j.triboint.2023.108785) so sánh vòng bi chạy trong không khí và trong khí nitơ, và kết luận tuổi thọ mỡ chịu chi phối mạnh nhất bởi ô xy hóa. Ô xy hóa chỉ bắt đầu khi phụ gia chống ô xy hóa trong mỡ đã dùng hết, sau đó mỡ mất dầu gốc và mất dần khả năng bôi trơn.
+**Phụ gia chống ô-xi hóa cạn là mỡ xuống cấp nhanh.** Thí nghiệm trên vòng bi tra mỡ lithium của [Lugt, Holgerson và Reinholdsson (*Tribology International* 188, 2023)](https://doi.org/10.1016/j.triboint.2023.108785) so sánh vòng bi chạy trong không khí và trong khí nitơ, và kết luận tuổi thọ mỡ chịu chi phối mạnh nhất bởi ô-xi hóa. Ô-xi hóa chỉ bắt đầu khi phụ gia chống ô-xi hóa trong mỡ đã dùng hết, sau đó mỡ mất dầu gốc và mất dần khả năng bôi trơn.
 
 Từ các kết quả trên, nếu ổ bi của bạn chạy nóng thường xuyên, chúng tôi khuyên nên làm ba việc: chọn mỡ có nhiệt độ làm việc trên TDS cao hơn hẳn nhiệt độ ổ, xem chỉ tiêu bay hơi nếu TDS có ghi, và rút ngắn chu kỳ tra mỡ thay vì đợi đến khi mỡ khô cứng mới tra.
 
-## Tra mỡ bao nhiêu và bao lâu một lần? {#tra-mo}
+## Bơm mỡ vòng bi bao nhiêu gam, bao lâu một lần? {#tra-mo}
 
 **Lượng mỡ mỗi lần bơm bù** tính theo [hướng dẫn của SKF](https://cdn.skfmediahub.skf.com/api/public/0901d1968024f02a/pdf_preview_medium/0901d1968024f02a_pdf_preview_medium.pdf): **Gp = 0,005 × D × B** (gam), trong đó D là đường kính ngoài và B là bề rộng vòng bi, tính bằng mm, khi bơm mỡ từ cạnh vòng bi. Ví dụ vòng bi 6310 (D = 110 mm, B = 27 mm) cần khoảng 0,005 × 110 × 27 ≈ 15 g mỗi lần. Nếu bơm qua rãnh và lỗ ở vòng ngoài hoặc vòng trong, hệ số giảm còn 0,002. Một nhát súng bơm mỡ tay thường ra vài gam tùy loại súng, nên bạn hãy cân thử vài nhát để biết súng của mình ra bao nhiêu.
 
@@ -87,7 +87,7 @@ Các bước dưới đây theo [hướng dẫn của Timken](https://www.timken
 - **Giữ sạch mỡ.** Lau sạch vòng bi và đậy kín dụng cụ, xô mỡ sau khi làm, vì bụi và cát lọt vào mỡ sẽ đi thẳng vào vòng bi.
 - **Không dùng khí nén để quay vòng bi.** Timken cảnh báo các chi tiết có thể văng ra, gây nguy hiểm.
 
-## Kinh nghiệm từ người sử dụng {#kinh-nghiem}
+## Thợ máy chia sẻ: trộn mỡ, bơm mỡ máy xúc, chọn mỡ theo màu {#kinh-nghiem}
 
 Các ý dưới đây là chia sẻ công khai của người dùng trên mạng, không phải khảo sát và không phải về riêng một mã trong kho của chúng tôi.
 

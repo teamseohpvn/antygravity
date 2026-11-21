@@ -1,4 +1,4 @@
-## Dấu hiệu mỡ hỏng và cách xử lý {#su-co}
+## Mỡ chảy lỏng, khô đen, trắng đục: nguyên nhân và cách xử lý {#su-co}
 
 | Bạn thấy gì | Nguyên nhân hay gặp | Nên làm |
 | :--- | :--- | :--- |
