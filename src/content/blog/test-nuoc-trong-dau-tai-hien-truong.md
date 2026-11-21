@@ -17,13 +17,13 @@ citations:
   - "https://www.machinerylubrication.com/Read/301/visual-crackle-oil-test"
   - "https://store.astm.org/d1401-21.html"
 date: "2026-10-06"
-updated: "2026-11-11"
+updated: "2026-11-21"
 tags: ["phân tích dầu", "nước trong dầu", "dầu thủy lực", "bảo trì"]
 ---
 
 Sau mấy ngày nồm, nhiều xưởng gặp cùng một cảnh: mở nắp thùng dầu máy ép thì thấy dầu đục như nước vo gạo, que thăm lấm tấm gỉ. Câu hỏi khi đó luôn là dầu có nhiễm nước thật không, nhiều tới mức nào, và đã phải thay dầu chưa.
 
-Bạn có thể trả lời cả ba câu ngay cạnh máy, không cần gửi phòng thí nghiệm. **Kit đo áp suất dùng canxi hydrua** cho ra con số phần trăm hoặc ppm trong khoảng 3 phút. **Máy đo điện môi cầm tay** sàng lọc nhanh nhiều máy trong vài giây. **Kem thử nước** tìm lớp nước lắng ở đáy thùng, đáy phuy. Ba cách này đo ba việc khác nhau, nên chọn theo câu hỏi bạn cần trả lời, rồi so kết quả với mức cảnh báo của từng loại dầu.
+Thực ra bạn có thể trả lời cả ba câu ngay cạnh máy mà không cần gửi phòng thí nghiệm. **Kit đo áp suất dùng canxi hydrua** cho ra con số phần trăm hoặc ppm trong khoảng 3 phút, **máy đo điện môi cầm tay** rà nhanh được nhiều máy, mỗi máy vài giây, còn **kem thử nước** thì tìm lớp nước lắng ở đáy thùng, đáy phuy. Ba cách này đo ba việc khác nhau, nên hãy chọn theo câu hỏi bạn đang cần trả lời, rồi so kết quả với mức cảnh báo của từng loại dầu.
 
 > **Tóm tắt**
 > - Dầu thủy lực có trên **0,05% nước (500 ppm)** là tới mức cảnh báo theo ASTM D6224; dầu bánh răng là 0,1%, dầu động cơ diesel là 0,2%.
@@ -66,7 +66,7 @@ Trước khi đo, vài dấu hiệu dưới đây đã đủ để nghi dầu c�
 - **Gỉ trên que thăm, mặt trong nắp thùng**, nhất là ở máy để lâu không chạy.
 - **Lõi lọc tắc nhanh hơn thường lệ**, bơm kêu và dầu nóng hơn dù tải không đổi.
 
-Một cách thử không cần dụng cụ là **thử lách tách (crackle test)**: nhỏ vài giọt dầu lên tấm kim loại đặt trên bếp điện, giữ khoảng 160 °C. Theo Machinery Lubrication, bọt rất nhỏ (khoảng 0,5 mm) nổi lên rồi tan nhanh ứng với khoảng 0,05–0,1% nước; bọt 2–4 mm ứng với 0,1–0,2%; bọt sôi mạnh kèm tiếng lách tách rõ là trên 0,2% ([nguồn](https://www.machinerylubrication.com/Read/301/visual-crackle-oil-test)). Cách này chỉ để ước lượng, không ra con số và không thấy được nước đã hòa tan trong dầu. Đừng thử trên bếp gas hay lửa trần.
+Một cách thử không cần dụng cụ là **thử lách tách (crackle test)**: nhỏ vài giọt dầu lên tấm kim loại đặt trên bếp điện, giữ khoảng 160 °C. Theo Machinery Lubrication, bọt rất nhỏ (khoảng 0,5 mm) nổi lên rồi tan nhanh ứng với khoảng 0,05–0,1% nước; bọt 2–4 mm ứng với 0,1–0,2%; bọt sôi mạnh kèm tiếng lách tách rõ là trên 0,2% ([nguồn](https://www.machinerylubrication.com/Read/301/visual-crackle-oil-test)). Cách này chỉ để ước lượng, không ra con số và không thấy được nước đã hòa tan trong dầu; nhớ là đừng thử trên bếp ga hay lửa trần.
 
 ## Nước tồn tại trong dầu ở ba dạng {#ba-dang}
 
@@ -78,15 +78,15 @@ Mỗi cách đo chỉ thấy được một số dạng nước, nên cần bi�
 | **Nước nhũ tương** | Dầu đục, màu sữa | Kit đo áp suất, máy đo điện môi |
 | **Nước tự do** | Lắng thành lớp ở đáy thùng, đáy phuy | Kem thử nước; kit đo áp suất nếu lấy mẫu ở đáy |
 
-## Cách 1: kit đo áp suất dùng canxi hydrua {#kit-ap-suat}
+## Kit đo áp suất dùng canxi hydrua {#kit-ap-suat}
 
 Đây là cách đo **ra con số** phổ biến nhất ngoài hiện trường. Bộ kit gồm một bình kín, nắp gắn đồng hồ áp suất (kim hoặc màn hình số), kèm thuốc thử chứa **canxi hydrua (CaH₂)** và dung môi pha loãng mẫu. Parker Kittiwake là một trong các hãng làm loại kit này.
 
 ### Kit đo theo nguyên lý nào
 
-Nước trong mẫu dầu phản ứng với canxi hydrua sinh ra **khí hydro**. Bình đóng kín nên lượng khí sinh ra làm áp suất tăng, và áp suất tăng bao nhiêu thì tỷ lệ với lượng nước bấy nhiêu. Đồng hồ đã được chia sẵn theo phần trăm hoặc ppm nước.
+Nước trong mẫu dầu phản ứng với canxi hydrua sinh ra **khí hydro**. Bình đóng kín nên khí sinh ra làm áp suất tăng lên, nước càng nhiều thì áp suất tăng càng cao, và đồng hồ đã được chia vạch sẵn theo phần trăm hoặc ppm nước.
 
-Một số tài liệu tiếng Việt viết phản ứng này tạo khí axetilen. Thực ra axetilen sinh ra khi nước gặp **canxi cacbua** (đất đèn), không phải canxi hydrua. Kit dùng canxi hydrua sinh khí hydro, là khí dễ cháy, nên phải xả bình ở nơi thoáng, xa lửa.
+Một số tài liệu tiếng Việt viết rằng phản ứng này tạo khí axetilen, nhưng axetilen chỉ sinh ra khi nước gặp **canxi cacbua** (đất đèn), không phải canxi hydrua. Kit dùng canxi hydrua sinh khí hydro, là khí dễ cháy, nên phải xả bình ở nơi thoáng, xa lửa.
 
 Theo tài liệu của Parker cho bộ DIGI Cell, kit đo nước có các dải **0,02–1%**, 0,1–10%, 0,1–20%, 100–3.000 ppm và 200–10.000 ppm; lượng mẫu từ 0,25 ml đến 20 ml tùy dải đo; thời gian đo khoảng **3 phút** ([tài liệu Parker](https://www.parker.com/content/dam/Parker-com/Literature/Hydraulic-Filter-Division-Europe/Websphere-Literature/Oil-Test-Solutions-DIGI--Cell-MA-K27467-KW-iss-17.pdf)). Dải 0,02–1% đủ nhạy để thấy mức cảnh báo 0,05% của dầu thủy lực.
 
@@ -100,7 +100,7 @@ Theo tài liệu của Parker cho bộ DIGI Cell, kit đo nước có các dải
 
 Kit đo áp suất thấy được cả ba dạng nước và không phụ thuộc màu dầu, nên dầu đen vẫn đo được. Đổi lại, mỗi lần đo tốn một gói thuốc thử và người đo phải cẩn thận ở bước đong mẫu và xả khí.
 
-## Cách 2: máy đo điện môi cầm tay {#dien-moi}
+## Máy đo điện môi cầm tay {#dien-moi}
 
 Máy đo điện môi là loại máy số có đầu dò nhúng thẳng vào mẫu dầu hoặc vào thùng. Có loại chỉ báo còi, đèn khi vượt mức đặt trước; có loại hiện phần trăm nước ước tính hoặc độ bão hòa nước của dầu.
 
@@ -108,9 +108,9 @@ Theo Machinery Lubrication, dầu bôi trơn gốc hydrocacbon có hằng số �
 
 Điểm mạnh của máy là đo trong vài giây, không tốn thuốc thử, đi một vòng có thể rà cả dàn máy ép. Điểm yếu là kết quả chỉ là **ước tính**: dầu bị oxy hóa, lẫn mạt kim loại hay đổi sang mã dầu khác cũng làm hằng số điện môi thay đổi. Máy cần được chỉnh theo đúng loại dầu đang dùng, và khi máy báo có nước thì nên đo lại bằng kit áp suất trước khi quyết định.
 
-## Cách 3: kem thử nước {#kem-thu-nuoc}
+## Kem thử nước {#kem-thu-nuoc}
 
-Kem thử nước (water finding paste) đựng trong tuýp, các nhãn hay gặp là Kolor Kut và McCabe. Kem có màu vàng nâu, gặp nước thì **chuyển ngay sang đỏ tươi**.
+Kem thử nước (water finding paste) đựng trong tuýp, nhãn hay gặp là Kolor Kut và McCabe. Kem có màu vàng nâu, hễ gặp nước là **chuyển ngay sang đỏ tươi**.
 
 Cách dùng rất đơn giản: quét một lớp kem mỏng lên đầu que thăm hoặc thước đo thùng, thả xuống chạm đáy thùng hoặc đáy phuy, giữ vài giây rồi rút lên. Đoạn kem đổi màu đỏ cho biết có nước, và chiều cao vệt đỏ là bề dày lớp nước đọng ở đáy.
 
@@ -180,4 +180,4 @@ Thường là do nước tạo nhũ, nhưng bọt khí mịn cũng làm dầu đ
 Dùng được để tìm nước đọng ở đáy thùng dầu, nhưng không thấy nước đã hòa tan hay tạo nhũ, mà đây lại là dạng nước hay gặp nhất trong dầu đang chạy. Với máy đang làm việc, nên dùng kem để kiểm tra đáy thùng và phuy, còn mức nước trong dầu thì đo bằng kit áp suất.
 
 ### Bao lâu nên kiểm tra nước trong dầu một lần?
-Không có mốc chung cho mọi máy. Máy chạy nhiều ca, đặt ở xưởng ẩm hoặc làm việc ngoài trời nên kiểm tra dày hơn máy chạy một ca trong xưởng khô. Ngoài lịch định kỳ, hãy kiểm tra ngay sau những đợt nồm, sau khi rửa máy bằng vòi nước hoặc khi thấy dầu đổi màu.
+Không có mốc chung cho mọi máy: máy chạy nhiều ca, đặt ở xưởng ẩm hoặc làm việc ngoài trời nên kiểm tra dày hơn máy chạy một ca trong xưởng khô. Ngoài lịch định kỳ, hãy kiểm tra ngay sau những đợt nồm, sau khi rửa máy bằng vòi nước hoặc khi thấy dầu đổi màu.

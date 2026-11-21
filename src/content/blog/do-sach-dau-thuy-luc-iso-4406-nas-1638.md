@@ -25,6 +25,7 @@ citations:
   - "https://www.machinerylubrication.com/Articles/Print/31668"
   - "https://www.chevronlubricants.com/en_us/home/learning/from-chevron/industrial-machinery/check-the-third-spec-dont-assume-new-oil-is-clean.html"
 date: "2026-11-17"
+updated: "2026-11-21"
 image: "/images/danh-muc/dau-thuy-luc-kho.webp"
 image_alt: "Phuy dầu thủy lực xếp trong kho HT VINA"
 tags: ["dầu thủy lực", "độ sạch", "ISO 4406", "van servo"]
@@ -36,7 +37,7 @@ Máy ép có van tỷ lệ vừa thay dầu mới xong, vài tuần sau bàn ép
 
 **Tóm tắt**
 
-- Mã ISO 4406 đọc từ trái sang phải: hạt ≥ 4 µm(c) / ≥ 6 µm(c) / ≥ 14 µm(c). Số càng nhỏ, dầu càng sạch.
+- Mã ISO 4406 đọc từ trái sang phải: hạt ≥ 4 µm(c) / ≥ 6 µm(c) / ≥ 14 µm(c), số càng nhỏ thì dầu càng sạch.
 - Chênh 3 mã là chênh khoảng 8 lần số hạt, nên dầu 21/19/16 so với 18/16/13 không phải "gần bằng" mà bẩn hơn khoảng 8 lần.
 - Bosch Rexroth viết thẳng: dầu thủy lực **thường không đạt** mức sạch yêu cầu khi giao, nên phải lọc kỹ lúc nạp.
 - NAS 1638 đếm theo từng khoảng cỡ hạt trong 100 mL; quy đổi sang ISO 4406 chỉ là gần đúng. Gặp yêu cầu ghi NAS, hãy hỏi lại mã ISO 4406.
@@ -96,7 +97,7 @@ Các mã dầu thủy lực chúng tôi đang bán, kể cả những mã công 
 
 ## Van servo, van tỷ lệ cần dầu sạch tới đâu? {#muc-yeu-cau}
 
-Van servo và van tỷ lệ điều khiển dòng dầu bằng một con trượt chạy trong ống lót với khe hở rất nhỏ. Bennett Fitch (Noria) viết trên [Machinery Lubrication](https://www.machinerylubrication.com/Articles/Print/31668) rằng với van servo, chênh áp lớn qua khe hẹp tạo nguy cơ hạt bẩn **ép kẹt con trượt** vào thân van. Hạt lớn gây kẹt, hỏng đột ngột; hạt nhỏ làm mòn dần mép điều khiển, van đáp ứng chậm, rò trong tăng, áp và vị trí dao động. Bosch Rexroth tóm lại: hạt rắn là nguyên nhân chính gây sự cố trong hệ thủy lực.
+Van servo và van tỷ lệ điều khiển dòng dầu bằng một con trượt chạy trong ống lót với khe hở rất nhỏ. Bennett Fitch (Noria) viết trên [Machinery Lubrication](https://www.machinerylubrication.com/Articles/Print/31668) rằng với van servo, chênh áp lớn qua khe hẹp tạo nguy cơ hạt bẩn **ép kẹt con trượt** vào thân van. Hạt lớn gây kẹt, hỏng đột ngột; hạt nhỏ thì làm mòn dần mép điều khiển, khiến van phản hồi chậm, rò trong tăng, áp và vị trí dao động. Bosch Rexroth tóm lại: hạt rắn là nguyên nhân chính gây sự cố trong hệ thủy lực.
 
 | Nguồn | Hệ hoặc linh kiện | Mức ISO 4406 khuyến nghị |
 | :--- | :--- | :--- |
@@ -110,9 +111,9 @@ Van servo và van tỷ lệ điều khiển dòng dầu bằng một con trượ
 
 <img src="/images/blog/do-sach-dau-moi-va-van-servo.svg" alt="Biểu đồ cột so sánh số hạt từ 4 micromet mỗi mL của dầu mới theo DIN 51524 với mức yêu cầu của van servo theo Bosch Rexroth và Moog" width="760" height="400" loading="lazy" decoding="async" style="width:100%;height:auto" />
 
-Đặt cạnh nhau, khoảng cách rất rõ: dầu mới vừa đạt mức tối thiểu 21/19/16 có thể chứa tới 20.000 hạt từ 4 µm trong mỗi mL, trong khi van servo đặc biệt theo Bosch Rexroth cần không quá 2.500 hạt (mã 18), theo Moog là khoảng 1.300 hạt (mã 17) hoặc 640 hạt (mã 16). Nói cách khác, dầu mới có thể bẩn gấp khoảng 8 đến 30 lần mức van cần. Bosch Rexroth còn nhấn mạnh: **linh kiện đòi sạch nhất quyết định mức sạch của cả hệ**. Máy ép chỉ có một van tỷ lệ thì cả thùng dầu phải giữ theo mức của van đó.
+Đặt cạnh nhau, khoảng cách rất rõ: dầu mới vừa đạt mức tối thiểu 21/19/16 có thể chứa tới 20.000 hạt từ 4 µm trong mỗi mL, trong khi van servo đặc biệt theo Bosch Rexroth cần không quá 2.500 hạt (mã 18), theo Moog là khoảng 1.300 hạt (mã 17) hoặc 640 hạt (mã 16). Nói cách khác, dầu mới có thể bẩn gấp khoảng 8 đến 30 lần mức van cần. Bosch Rexroth còn nhấn mạnh rằng **linh kiện đòi sạch nhất quyết định mức sạch của cả hệ**, nên máy ép dù chỉ có một van tỷ lệ thì cả thùng dầu cũng phải giữ theo mức của van đó.
 
-Mức sạch tốt hơn cũng kéo dài tuổi thọ. Bài của [Loren Green](https://www.machinerylubrication.com/Articles/Print/31436?id=31436) dẫn ở trên viết rằng làm sạch dầu thêm chỉ một mã đã có thể tăng tuổi thọ thiết bị khoảng 35%. Mức cụ thể cho từng van luôn nằm trong bảng thông số của chính van đó, nên hãy lấy số trong tài liệu hướng dẫn sử dụng kèm theo máy trước khi áp các mức tham khảo ở trên.
+Giữ dầu sạch hơn cũng giúp máy bền hơn. Bài của [Loren Green](https://www.machinerylubrication.com/Articles/Print/31436?id=31436) dẫn ở trên viết rằng làm sạch dầu thêm chỉ một mã đã có thể tăng tuổi thọ thiết bị khoảng 35%. Mức cụ thể cho từng van luôn nằm trong bảng thông số của chính van đó, nên hãy lấy số trong tài liệu hướng dẫn sử dụng kèm theo máy trước khi áp các mức tham khảo ở trên.
 
 ## Nạp dầu mới cho máy có van servo thế nào cho sạch? {#nap-dau}
 
@@ -153,9 +154,9 @@ Với máy có van servo, van tỷ lệ thì có. Bosch Rexroth và Moog đều 
 
 ### Vì sao dầu trong vắt vẫn có thể bẩn? {#dau-trong-van-ban}
 
-Phần lớn hạt bẩn trong dầu nhỏ hơn ngưỡng mắt thường nhìn thấy, trong khi chính các hạt cỡ vài micromet (mã 4 µm và 6 µm trong ISO 4406) là thứ làm mòn và bám cặn ở van. Dầu trong vắt vẫn có thể ở mã 21/19/16 hoặc bẩn hơn; chỉ đếm hạt mới biết.
+Phần lớn hạt bẩn trong dầu nhỏ hơn ngưỡng mắt thường nhìn thấy, trong khi chính các hạt cỡ vài micromet (mã 4 µm và 6 µm trong ISO 4406) là thứ làm mòn và bám cặn ở van. Dầu trong vắt vẫn có thể ở mã 21/19/16 hoặc bẩn hơn, chỉ đếm hạt mới biết được.
 
 ### Bao lâu nên kiểm tra độ sạch dầu một lần? {#chu-ky-kiem-tra}
 
-Không có chu kỳ chung cho mọi máy. Nên đếm hạt sau mỗi lần thay hoặc thêm nhiều dầu, sau khi sửa chữa mở hệ thống, và định kỳ theo hướng dẫn của hãng máy; máy có van servo chạy liên tục nên kiểm tra dày hơn máy chỉ có van đóng mở thông thường.
+Không có chu kỳ chung cho mọi máy, nhưng nên đếm hạt sau mỗi lần thay hoặc thêm nhiều dầu, sau khi sửa chữa mở hệ thống, và định kỳ theo hướng dẫn của hãng máy; máy có van servo chạy liên tục nên kiểm tra dày hơn máy chỉ có van đóng mở thông thường.
 
