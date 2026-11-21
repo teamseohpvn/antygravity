@@ -20,12 +20,13 @@ citations:
   - "https://www.astm.org/Standards/D6158.htm"
   - "https://www.castrol.com/content/dam/castrol/country-sites-new/en_us/united-states/home/documents/product/castrol-hyspin-aws-range-pds.pdf"
 date: "2026-11-17"
+updated: "2026-11-21"
 image: "/images/danh-muc/dau-thuy-luc-kho.webp"
 image_alt: "Phuy dầu thủy lực xếp trong kho HT VINA"
 tags: ["dầu thủy lực", "tiêu chuẩn", "ISO 6743-4", "DIN 51524"]
 ---
 
-Cầm phuy dầu mới về, thợ bảo trì thường gặp ba cách ghi khác nhau cho cùng một việc: hướng dẫn sử dụng máy Đức ghi **HLP 46**, máy Nhật ghi **ISO VG 46 HM**, còn nhãn phuy lại ghi **AW 46**. Đọc lệch một chữ là có thể đổ nhầm dầu không có phụ gia chống mài mòn vào bơm piston áp cao.
+Cầm phuy dầu mới về, thợ bảo trì thường gặp ba cách ghi khác nhau cho cùng một việc: hướng dẫn sử dụng máy Đức ghi **HLP 46**, máy Nhật ghi **ISO VG 46 HM**, còn nhãn phuy lại ghi **AW 46**. Chỉ cần đọc lệch một chữ là có thể đổ nhầm dầu không có phụ gia chống mài mòn vào bơm pít-tông áp cao.
 
 **Trả lời nhanh:** HM, HV, HG là tên **loại** dầu thủy lực gốc khoáng theo [ISO 6743-4](https://cdn.standards.iteh.ai/samples/60483/c15f6a97af6b4e94ae52d24e44fe4158/ISO-6743-4-2015.pdf) (Việt Nam áp dụng nguyên văn là TCVN 8939-4:2019). **HM** là dầu có phụ gia chống gỉ, chống ô xy hóa và chống mài mòn, dùng cho phần lớn máy ép, máy dập, máy công trình. **HV** là HM có chỉ số độ nhớt cao, cho máy làm việc ngoài trời trong khoảng nhiệt độ rộng. **HG** là HM có thêm tính chống rung giật, cho máy công cụ dùng chung một dầu cho thủy lực và băng trượt. **HS** (dầu tổng hợp) chỉ có trong bản ISO 6743-4 cũ, bảng phân loại bản 2015 không còn ký hiệu này. Bên Đức, DIN 51524 chia thành ba phần: **phần 1 HL, phần 2 HLP (tương đương HM), phần 3 HVLP (tương đương HV)**; DIN 51524 không có phần riêng cho HG và HS.
 
@@ -35,7 +36,7 @@ Cầm phuy dầu mới về, thợ bảo trì thường gặp ba cách ghi khác
 - **HM = HLP = "AW"** trên thực tế mua bán. Máy ghi một trong ba ký hiệu này thì chọn dầu công bố HM theo ISO 11158 hoặc HLP theo DIN 51524-2.
 - **HV = HVLP**: chỉ dùng khi máy thật sự chạy trong khoảng nhiệt độ rộng. Bosch Rexroth khuyên chỉ dùng HVLP khi dải nhiệt độ của máy đòi hỏi.
 - **ISO 6743-4 chỉ đặt tên**, không đặt chỉ tiêu. Chỉ tiêu nằm ở ISO 11158 và DIN 51524, nên hãy đọc dòng tiêu chuẩn đạt trên bảng thông số kỹ thuật (TDS), không chỉ đọc chữ trên nhãn.
-- Chỉ số độ nhớt cao chưa đủ để gọi là HV. Dầu phải công bố đạt HV hoặc HVLP.
+- Chỉ số độ nhớt cao chưa đủ để gọi là HV, dầu phải được hãng công bố đạt HV hoặc HVLP.
 - Các mã dầu thủy lực đang có sẵn tại kho chúng tôi đều thuộc loại **HM/HLP**.
 
 <img src="/images/blog/so-do-phan-loai-dau-thuy-luc-iso-din.svg" alt="Sơ đồ phân loại dầu thủy lực: HH, HL, HM, HV, HG theo ISO 6743-4 và HL, HLP, HVLP theo DIN 51524 phần 1, 2, 3" width="760" height="420" loading="lazy" decoding="async" style="width:100%;height:auto" />
@@ -52,7 +53,7 @@ Theo mục 3.3 của ISO 6743-4:2015, một loại dầu được ghi đầy đ�
 | Chữ sau H | Loại dầu: thành phần và tính năng | M, V, G… |
 | Con số | Cấp độ nhớt theo ISO 3448, đo ở 40 °C | 32, 46, 68 |
 
-Như vậy **HM 68** và **ISO VG 68** không phải hai thông tin trùng nhau. "HM" cho biết dầu có những phụ gia gì, còn "68" cho biết dầu đặc hay loãng. Hai dầu cùng VG 68 vẫn có thể khác loại (HL hay HM). Cách chọn con số độ nhớt chúng tôi đã viết riêng trong bài [dầu thủy lực 32, 46, 68 khác nhau thế nào](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau); bài này chỉ bàn về phần chữ.
+Như vậy **HM 68** và **ISO VG 68** không phải hai thông tin trùng nhau. "HM" cho biết dầu có những phụ gia gì, còn "68" cho biết dầu đặc hay loãng, nên hai dầu cùng VG 68 vẫn có thể khác loại (HL hay HM). Cách chọn con số độ nhớt chúng tôi đã viết riêng trong bài [dầu thủy lực 32, 46, 68 khác nhau thế nào](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau); bài này chỉ bàn về phần chữ.
 
 ## ISO 6743-4 chia dầu thủy lực thành những loại nào? {#iso-6743-4}
 
@@ -74,7 +75,7 @@ Hai nhóm còn lại có tiêu chuẩn chỉ tiêu riêng: dầu thân thiện m
 
 ### HM: dầu chống mài mòn cho hệ thủy lực chung
 
-Bơm bánh răng, bơm cánh gạt và bơm piston chạy áp cao có những chỗ kim loại cọ vào kim loại khi màng dầu mỏng đi (lúc khởi động, lúc tải đỉnh). Phụ gia chống mài mòn trong dầu HM bám lên bề mặt đó, giúp bơm ít mòn hơn. Máy ép nhựa, máy dập, máy chấn, máy xúc, xe nâng trong xưởng phần lớn dùng HM cấp 46 hoặc 68. Ở thị trường Việt Nam, dầu HM thường được bán dưới tên "AW" (anti-wear), cách gọi này đến từ Mỹ; tiêu chuẩn Mỹ tương ứng là [ASTM D6158](https://www.astm.org/Standards/D6158.htm), cũng dùng chữ HM.
+Bơm bánh răng, bơm cánh gạt và bơm pít-tông chạy áp cao có những chỗ kim loại cọ vào kim loại khi màng dầu mỏng đi (lúc khởi động, lúc tải đỉnh). Phụ gia chống mài mòn trong dầu HM bám lên bề mặt đó, giúp bơm ít mòn hơn. Máy ép nhựa, máy dập, máy chấn, máy xúc, xe nâng trong xưởng phần lớn dùng HM cấp 46 hoặc 68. Ở thị trường Việt Nam, dầu HM thường được bán dưới tên "AW" (anti-wear), cách gọi này đến từ Mỹ; tiêu chuẩn Mỹ tương ứng là [ASTM D6158](https://www.astm.org/Standards/D6158.htm), cũng dùng chữ HM.
 
 ### HV: dầu HM giữ độ nhớt ổn định khi nhiệt độ thay đổi
 
@@ -86,7 +87,7 @@ Dầu HV có thêm phụ gia cải thiện [chỉ số độ nhớt](/ho-tro-ky-
 
 Ở tốc độ chạy dao rất chậm, bàn máy phay, máy mài có thể bị "dính rồi trượt" (stick-slip): bàn đứng yên, lực tăng dần rồi giật lên một đoạn, để lại vết sóng trên chi tiết. Dầu HG có thêm phụ gia làm hệ số ma sát tĩnh và ma sát động gần nhau, giúp bàn máy đi êm. Loại này dành cho máy dùng **một thùng dầu cho cả hệ thủy lực và băng trượt**.
 
-ISO 6743-4 có một ghi chú đáng nhớ cho HG: dầu được pha để dùng nhiều việc, nhưng **không chạy tốt trong mọi ứng dụng thủy lực**. Máy có thùng dầu thủy lực và bơm bôi trơn băng trượt riêng thì nên dùng dầu HM cho thủy lực và [dầu rãnh trượt](/dau-ranh-truot) đúng cấp cho băng trượt, thay vì một dầu HG cho cả hai.
+ISO 6743-4 có một ghi chú đáng nhớ cho HG: dầu được pha để dùng nhiều việc, nhưng **không chạy tốt trong mọi hệ thủy lực**. Máy có thùng dầu thủy lực và bơm bôi trơn băng trượt riêng thì nên dùng dầu HM cho thủy lực và [dầu rãnh trượt](/dau-ranh-truot) đúng cấp cho băng trượt, thay vì một dầu HG cho cả hai.
 
 ### HS: dầu tổng hợp, ký hiệu đã bị bỏ khỏi bản 2015
 
@@ -154,13 +155,13 @@ Khi đổi từ loại này sang loại khác (HM sang HV, HLP sang HLPD), đừ
 
 ## Những nhầm lẫn hay gặp khi đọc ký hiệu {#nham-lan}
 
-**"HM 68 và VG 68 là một."** Không. VG 68 chỉ nói độ nhớt; HM nói dầu có phụ gia chống mài mòn. Dầu HL 68 cũng là VG 68 nhưng không hợp với bơm piston áp cao.
+**"HM 68 và VG 68 là một."** Không phải vậy: VG 68 chỉ nói độ nhớt, còn HM nói dầu có phụ gia chống mài mòn. Dầu HL 68 cũng là VG 68 nhưng không hợp với bơm pít-tông áp cao.
 
-**"Dầu ghi AW là đạt DIN 51524-2."** Chưa chắc. AW là cách gọi thương mại. Muốn chắc thì đọc dòng tiêu chuẩn trên TDS; nhiều dầu AW chỉ công bố ISO 6743-4 HM hoặc ISO 11158 HM.
+**"Dầu ghi AW là đạt DIN 51524-2."** Chưa chắc, vì AW chỉ là cách gọi thương mại. Muốn chắc thì đọc dòng tiêu chuẩn trên TDS, nhiều dầu AW chỉ công bố ISO 6743-4 HM hoặc ISO 11158 HM.
 
-**"HV tốt hơn HM nên dùng HV cho chắc."** Không hẳn. Phụ gia chỉ số độ nhớt bị cắt dần, và với máy trong xưởng chạy nhiệt độ ổn định thì không có lợi rõ rệt. Bosch Rexroth cũng khuyên chỉ dùng HVLP khi dải nhiệt độ đòi hỏi.
+**"HV tốt hơn HM nên dùng HV cho chắc."** Không hẳn, vì phụ gia chỉ số độ nhớt bị cắt dần, mà máy trong xưởng chạy ở nhiệt độ ổn định thì cũng không được lợi gì rõ rệt. Bosch Rexroth cũng khuyên chỉ dùng HVLP khi dải nhiệt độ đòi hỏi.
 
-**"HLPD là HLP loại tốt hơn."** Không. Chữ D là phụ gia tẩy rửa, phân tán, hợp với máy dễ bám cặn nhưng kém hợp ở nơi dầu dễ nhiễm nước. Đây là một loại khác, không phải bậc cao hơn.
+**"HLPD là HLP loại tốt hơn."** Không phải. Chữ D là phụ gia tẩy rửa, phân tán, hợp với máy dễ bám cặn nhưng lại kém hợp ở nơi dầu dễ nhiễm nước, nên đây là một loại khác chứ không phải bậc cao hơn.
 
 ## Câu hỏi thường gặp {#hoi-dap}
 
@@ -174,7 +175,7 @@ Với máy trong xưởng hướng dẫn ghi HM hoặc HLP thì không cần HV.
 
 ### ISO 6743-4 và ISO 11158 khác nhau thế nào?
 
-ISO 6743-4 là bảng phân loại, đặt tên HH, HL, HM, HV, HG… ISO 11158 là bộ chỉ tiêu kỹ thuật (độ nhớt, chống gỉ, chống mài mòn, tách nước…) mà dầu thuộc từng loại phải đạt. TDS ghi "ISO 11158 HM" cho biết nhiều hơn TDS chỉ ghi "ISO 6743-4 HM".
+ISO 6743-4 là bảng phân loại, đặt tên HH, HL, HM, HV, HG…, còn ISO 11158 là bộ chỉ tiêu kỹ thuật (độ nhớt, chống gỉ, chống mài mòn, tách nước…) mà dầu thuộc từng loại phải đạt. TDS ghi "ISO 11158 HM" cho biết nhiều hơn TDS chỉ ghi "ISO 6743-4 HM".
 
 ### Có TCVN cho các loại dầu thủy lực này không?
 

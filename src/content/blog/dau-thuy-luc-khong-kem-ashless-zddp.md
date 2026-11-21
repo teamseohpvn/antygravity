@@ -29,6 +29,7 @@ citations:
   - "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=338972&docFormat=PDF"
   - "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/7F11F8ABD67B12B8802584BB0056F949/$File/bpxe-bjaedc.pdf"
 date: "2026-11-17"
+updated: "2026-11-21"
 image: "/images/blog/dau-thuy-luc-khong-kem-og.webp"
 image_alt: "Sơ đồ 4 câu hỏi chọn dầu thủy lực có kẽm ZDDP hay không kẽm ashless"
 tags: ["dầu thủy lực", "phụ gia", "không kẽm", "ZDDP"]
@@ -82,7 +83,7 @@ Dầu không kẽm không phải loại "cao cấp hơn, dùng đâu cũng đư�
 
 Ngoài các trường hợp hãng máy ghi rõ, Noria khuyên: nếu không có lý do cụ thể về vật liệu chi tiết hay điều kiện vận hành, môi trường, thì dùng dầu gốc kẽm là hợp lý, vì lợi ích thường lớn hơn rủi ro.
 
-Còn chuyện "không kẽm thì chống mòn kém"? Theo [tờ giới thiệu Tellus S3 M của Shell](https://shell.co.uk/content/dam/shell/assets/en/united-kingdom/business/documents/shell-tellus-s3-m-product-leaflet.pdf), dòng này (không kẽm) đạt DIN 51524-2, ISO 11158 HM, đạt yêu cầu HF-0, HF-1, HF-2 của Parker (Denison), và có mức mòn thấp hơn tới 81% so với giới hạn trong phép thử bơm cánh gạt Eaton 35VQ25. Nghĩa là dầu không kẽm tốt vẫn bảo vệ bơm đầy đủ. Chênh lệch nằm ở giá, ở chỗ dễ mua hay không, và ở việc máy của bạn có cần hay không.
+Còn chuyện "không kẽm thì chống mòn kém"? Theo [tờ giới thiệu Tellus S3 M của Shell](https://shell.co.uk/content/dam/shell/assets/en/united-kingdom/business/documents/shell-tellus-s3-m-product-leaflet.pdf), dòng này (không kẽm) đạt DIN 51524-2, ISO 11158 HM, đạt yêu cầu HF-0, HF-1, HF-2 của Parker (Denison), và có mức mòn thấp hơn tới 81% so với giới hạn trong phép thử bơm cánh gạt Eaton 35VQ25. Nói cách khác, dầu không kẽm loại tốt vẫn bảo vệ bơm đầy đủ; chỗ khác nhau nằm ở giá, ở chuyện có dễ mua hay không, và ở việc máy của bạn có thật sự cần hay không.
 
 ## Đọc tên dầu thế nào để biết có kẽm hay không? {#doc-ten}
 
@@ -146,7 +147,7 @@ Không nhất thiết, vì dầu không kẽm tốt như Shell Tellus S3 M vẫn
 
 ### Chữ "Z" trong tên dầu có nghĩa là không kẽm? {#chu-z}
 
-Không có quy ước chung giữa các hãng: Castrol Hyspin HLP-Z và Chevron Rando HDZ đều là dầu **có kẽm**. Luôn đọc dòng mô tả phụ gia trong TDS, đừng đoán theo tên.
+Không, các hãng không có quy ước chung nào cả: Castrol Hyspin HLP-Z và Chevron Rando HDZ đều là dầu **có kẽm**. Vì vậy hãy đọc dòng mô tả phụ gia trong TDS, đừng đoán theo tên.
 
 ### Máy ép nhựa trong xưởng có cần dầu không kẽm không? {#may-ep-nhua}
 

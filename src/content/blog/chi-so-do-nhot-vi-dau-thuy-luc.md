@@ -19,6 +19,7 @@ citations:
   - "https://www.dinmedia.de/en/standard/din-51524-3/272262707"
   - "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/7F11F8ABD67B12B8802584BB0056F949/$File/bpxe-bjaedc.pdf"
 date: "2026-11-17"
+updated: "2026-11-21"
 image: "/images/danh-muc/dau-thuy-luc-kho.webp"
 image_alt: "Phuy dầu thủy lực xếp trong kho HT VINA"
 tags: ["dầu thủy lực", "độ nhớt", "chỉ số độ nhớt"]
@@ -30,15 +31,15 @@ Máy ép chạy ba ca thì sau khoảng một giờ khởi động, thùng dầu
 
 **Tóm tắt**
 
-- VI không nói dầu đặc hay loãng. Cấp ISO VG nói độ nhớt ở 40 °C; VI nói độ nhớt đổi nhanh hay chậm khi nhiệt độ rời khỏi 40 °C.
+- VI không cho biết dầu đặc hay loãng: cấp ISO VG mới nói độ nhớt ở 40 °C, còn VI nói độ nhớt đổi nhanh hay chậm khi nhiệt độ rời khỏi 40 °C.
 - Theo tính toán từ TDS, ở 0 °C dầu 68 có VI 147 loãng hơn dầu 68 có VI 104 khoảng một phần tư; ở 70 °C lại đặc hơn khoảng 20%.
 - Máy chạy 24/7: đo nhiệt độ thùng dầu trước khi bàn tới VI. Theo Machinery Lubrication, trên 60 °C cứ nóng thêm 10 °C thì tuổi thọ dầu giảm khoảng một nửa.
 - Máy ngoài trời, nhiệt độ thất thường: VI cao có ích thật, nhưng chọn dầu HV/HVLP có công bố độ bền cắt, vì phụ gia tăng VI bị cắt dần khi chạy.
-- VI trên TDS là số của dầu mới. Theo dõi độ nhớt định kỳ mới biết VI của dầu đang chạy còn giữ được hay không.
+- VI trên TDS là số của dầu mới, phải theo dõi độ nhớt định kỳ thì mới biết dầu đang chạy còn giữ được VI đó hay không.
 
 ## Chỉ số độ nhớt là gì và đọc trên TDS thế nào? {#vi-la-gi}
 
-Mọi loại dầu đều loãng đi khi nóng và đặc lại khi lạnh. Chỉ số độ nhớt là một con số không có đơn vị, tính từ **hai lần đo độ nhớt ở 40 °C và 100 °C**, để so sánh tốc độ thay đổi đó giữa các loại dầu. Thang VI được đặt ra từ hai loại dầu gốc làm mốc: một loại đổi độ nhớt rất nhanh theo nhiệt độ được gán VI 0, một loại đổi chậm được gán VI 100. Dầu ngày nay tinh chế tốt hơn và có phụ gia, nên VI vượt 100 là chuyện thường. ASTM D2270 có hai cách tính: cách A cho VI tới 100 và cách B cho VI từ 100 trở lên. Việt Nam áp dụng ASTM D2270 là TCVN 6019:2010.
+Mọi loại dầu đều loãng đi khi nóng và đặc lại khi lạnh. Chỉ số độ nhớt là một con số không có đơn vị, tính từ **hai lần đo độ nhớt ở 40 °C và 100 °C**, để so sánh tốc độ thay đổi đó giữa các loại dầu. Thang VI được đặt ra từ hai loại dầu gốc làm mốc: một loại đổi độ nhớt rất nhanh theo nhiệt độ được gán VI 0, một loại đổi chậm được gán VI 100. Dầu ngày nay tinh chế tốt hơn lại có phụ gia, nên VI vượt 100 là chuyện thường. ASTM D2270 có hai cách tính, cách A cho VI tới 100 và cách B cho VI từ 100 trở lên. Việt Nam áp dụng ASTM D2270 là TCVN 6019:2010.
 
 Bảng dưới là VI của các mã dầu thủy lực 68 đang có tại kho, chép từ TDS của từng hãng:
 
@@ -73,11 +74,11 @@ Bảng và biểu đồ dưới do chúng tôi tính theo phương pháp [ASTM D
 
 Đọc bảng theo cột sẽ thấy rõ ý nghĩa của VI. Từ 40 °C xuống 0 °C, dầu VI 104 đặc lên khoảng 15 lần, dầu VI 147 chỉ đặc lên khoảng 10 lần. Từ 40 °C lên 70 °C, dầu VI 104 còn khoảng 30% độ nhớt ban đầu, dầu VI 147 còn khoảng 34%. Khác biệt lớn nhất nằm ở **đầu lạnh**; ở đầu nóng, VI cao giúp giữ thêm khoảng 8 °C trước khi dầu loãng tới 16 mm²/s.
 
-Hai dầu VI 93 và VI 104 gần như trùng nhau trong khoảng 20–80 °C. Chênh 10 điểm VI giữa các mã HM không đáng để đổi dầu; cấp độ nhớt và nhiệt độ thùng dầu ảnh hưởng nhiều hơn. Cách chọn cấp 32, 46 hay 68 theo nhiệt độ có trong bài [dầu thủy lực 32, 46, 68 khác nhau thế nào](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
+Hai dầu VI 93 và VI 104 gần như trùng nhau trong khoảng 20–80 °C, nên chênh nhau 10 điểm VI giữa các mã HM không đáng để đổi dầu; cấp độ nhớt và nhiệt độ thùng dầu ảnh hưởng nhiều hơn hẳn. Cách chọn cấp 32, 46 hay 68 theo nhiệt độ có trong bài [dầu thủy lực 32, 46, 68 khác nhau thế nào](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau).
 
 ## Máy chạy liên tục 24/7: VI có quan trọng không? {#chay-24-7}
 
-Máy ép nhựa, máy đùn, dây chuyền dập chạy ba ca có một đặc điểm: sau giai đoạn khởi động, nhiệt độ thùng dầu gần như đứng yên ở một mức. Dầu chỉ đi qua một khoảng nhiệt độ hẹp, nên chênh lệch giữa VI 100 và VI 150 ít có tác dụng. Điều quyết định là **nhiệt độ ổn định đó cao hay thấp** và dầu có chịu được nhiệt độ đó lâu dài không.
+Máy ép nhựa, máy đùn, dây chuyền dập chạy ba ca có chung một đặc điểm: qua giai đoạn khởi động, nhiệt độ thùng dầu gần như đứng yên ở một mức. Dầu chỉ làm việc trong một khoảng nhiệt độ hẹp, nên VI 100 hay VI 150 cũng không khác nhau là mấy. Điều quyết định là **nhiệt độ ổn định đó cao hay thấp** và dầu có chịu được nhiệt độ đó lâu dài không.
 
 Theo bài viết của E. C. Fitch trên [Machinery Lubrication](https://www.machinerylubrication.com/Read/367/temperature-stability), dưới 60 °C (140 °F) phản ứng ô xy hóa dầu diễn ra tương đối chậm; trên mức đó, theo phương trình Arrhenius, cứ tăng 10 °C (18 °F) thì tuổi thọ dầu giảm khoảng 50%. Một máy ép giữ thùng dầu ở 70 °C quanh năm sẽ làm dầu già nhanh hơn nhiều so với máy giữ ở 55 °C, dù cả hai dùng cùng một mã dầu.
 
@@ -92,7 +93,7 @@ Có một điểm cần cẩn thận với dầu VI cao dùng cho máy chạy li
 
 ## Máy ngoài trời, nhiệt độ lạnh nóng thất thường: VI giúp được gì? {#ngoai-troi}
 
-Máy xúc, cẩu, xe bơm bê tông, máy móc ở cảng phải chịu hai đầu nhiệt độ trong cùng một ngày. Lúc khởi động, dầu còn lạnh và đặc; bơm phải hút được dầu mà không bị xâm thực. Lúc chạy nặng giữa trưa, dầu nóng lên và loãng đi; bơm cần màng dầu đủ dày để không mòn và không rò nhiều bên trong. VI cao làm hai đầu này gần nhau hơn.
+Máy xúc, cẩu, xe bơm bê tông, máy móc ở cảng phải chịu hai đầu nhiệt độ trong cùng một ngày. Lúc khởi động, dầu còn lạnh và đặc, bơm phải hút được dầu mà không bị xâm thực; đến lúc chạy nặng giữa trưa thì dầu nóng lên và loãng đi, bơm lại cần màng dầu đủ dày để không mòn và không rò nhiều bên trong. VI cao kéo hai đầu này lại gần nhau hơn.
 
 Bài viết của Mike Johnson trên tạp chí [TLT của STLE (11/2008)](https://www.stle.org/images/pdf/STLE_ORG/BOK/OM_OA/Base%20Oils/Hydraulic%20Systems_Selecting%20the%20Correct%20Lubricant_tlt%20article_Nov08.pdf) tổng hợp giới hạn độ nhớt khi khởi động mà các hãng bơm công bố; trong các dòng chúng tôi trích ở bài 32-46-68, mức thấp nhất là 432 mm²/s với bơm pít-tông tải vừa của Eaton. Ghép với bảng ở trên:
 
@@ -100,7 +101,7 @@ Bài viết của Mike Johnson trên tạp chí [TLT của STLE (11/2008)](https
 - **Dầu 68 VI 147 ở 10 °C** khoảng 370 mm²/s, còn dư dưới giới hạn đó.
 - **Ở 0 °C**, cả ba mã 68 đều vượt 700 mm²/s. Máy phải khởi động ở nhiệt độ quanh 0 °C nên theo hướng dẫn của hãng máy về cấp dầu loãng hơn, dầu HV, hoặc chạy không tải cho dầu ấm lên trước khi tăng tải.
 
-Với khí hậu miền Bắc, máy đặt ngoài trời hiếm khi khởi động ở 0 °C, nhưng những sáng rét đậm vẫn có thể làm dầu 68 VI 100 tới gần giới hạn của một số bơm. Đó là lúc VI cao đáng giá nhất. Ở đầu nóng, VI cao giúp giữ độ nhớt thêm vài độ, nhưng không thay được việc làm mát tốt. Cách chọn dầu theo từng hãng máy công trình có trong bài [chọn dầu thủy lực cho máy xúc](/ho-tro-ky-thuat/dau-thuy-luc-may-xuc).
+Với khí hậu miền Bắc, máy đặt ngoài trời hiếm khi khởi động ở 0 °C, nhưng những sáng rét đậm vẫn có thể làm dầu 68 VI 100 tới gần giới hạn của một số bơm. Đó là lúc VI cao đáng tiền nhất. Còn ở đầu nóng, VI cao chỉ giúp giữ độ nhớt thêm vài độ, không thay được một hệ làm mát tốt. Cách chọn dầu theo từng hãng máy công trình có trong bài [chọn dầu thủy lực cho máy xúc](/ho-tro-ky-thuat/dau-thuy-luc-may-xuc).
 
 Khi cần dầu VI cao cho máy ngoài trời, hãy chọn dầu **công bố đạt HV theo ISO 11158 hoặc HVLP theo DIN 51524-3** và xem dòng độ bền cắt trên TDS. [DIN 51524-3](https://www.dinmedia.de/en/standard/din-51524-3/272262707) yêu cầu VI tối thiểu 140 nhưng để nhà cung cấp tự công bố mức giảm độ nhớt sau 20 giờ thử cắt, nên hai dầu cùng ghi HVLP 46 có thể giữ độ nhớt rất khác nhau sau vài tháng. Kho chúng tôi hiện chưa có mã HV/HVLP; X-One AW 68 có VI 147 nhưng TDS không công bố độ bền cắt, nên chưa đủ căn cứ để coi là dầu HVLP.
 
@@ -108,7 +109,7 @@ Khi cần dầu VI cao cho máy ngoài trời, hãy chọn dầu **công bố đ
 
 Có hai cách để dầu có VI cao. Cách thứ nhất là dùng dầu gốc tinh chế sâu hoặc dầu gốc tổng hợp, vốn có VI cao sẵn; VI loại này bền, không bị cắt mất. Cách thứ hai là thêm phụ gia polymer cải thiện chỉ số độ nhớt vào dầu gốc thông thường; cách này rẻ hơn nhưng phần VI tăng thêm giảm dần khi dầu chạy qua bơm, van.
 
-TDS thường không ghi VI đến từ đâu. Hai cách để đoán: (1) TDS có công bố độ bền cắt (DIN 51350-6, CEC L-45, ASTM D5621) và mức giảm độ nhớt nhỏ thì phần VI do phụ gia ít bị mất; (2) dầu ghi rõ gốc tổng hợp hoặc nhóm dầu gốc cao cấp. Không có cả hai thông tin thì nên coi VI trên TDS là VI của dầu mới, và đo lại độ nhớt sau vài tháng chạy.
+TDS thường không ghi VI đến từ đâu, nhưng có hai cách để đoán: (1) TDS có công bố độ bền cắt (DIN 51350-6, CEC L-45, ASTM D5621) và mức giảm độ nhớt nhỏ thì phần VI do phụ gia ít bị mất; (2) dầu ghi rõ gốc tổng hợp hoặc nhóm dầu gốc cao cấp. Không có cả hai thông tin thì nên coi VI trên TDS là VI của dầu mới, và đo lại độ nhớt sau vài tháng chạy.
 
 Đo độ nhớt định kỳ cũng là cách phát hiện VI đã "tụt". Nếu độ nhớt ở 40 °C của dầu đang chạy giảm hơn 10% so với dầu mới mà không có dầu khác lẫn vào, phụ gia tăng VI bị cắt là một nguyên nhân cần nghĩ tới. Cách lấy mẫu và đọc kết quả có trong bài [hướng dẫn kiểm tra chất lượng dầu](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau); ở xưởng có thể dùng [máy đo độ nhớt cầm tay LND-1](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) để so mẫu đang chạy với dầu mới.
 
@@ -132,7 +133,7 @@ Không hẳn. VI chỉ nói độ nhớt đổi nhanh hay chậm theo nhiệt đ
 
 ### VI 104 và VI 147 thì dầu nào đặc hơn?
 
-Không so được chỉ bằng VI. Độ đặc phải xem cấp độ nhớt ở 40 °C. Cùng cấp 68, dầu VI 147 loãng hơn dầu VI 104 khi lạnh (khoảng 750 so với 1.010 mm²/s ở 0 °C) và đặc hơn khi nóng (khoảng 25 so với 21 mm²/s ở 70 °C).
+Chỉ nhìn VI thì không so được, độ đặc phải xem cấp độ nhớt ở 40 °C. Cùng cấp 68 thì dầu VI 147 loãng hơn dầu VI 104 khi lạnh (khoảng 750 so với 1.010 mm²/s ở 0 °C) và đặc hơn khi nóng (khoảng 25 so với 21 mm²/s ở 70 °C).
 
 ### Máy chạy 24/7 có nên dùng dầu HV cho bền không?
 
@@ -140,8 +141,8 @@ Thường là không cần. Nhiệt độ dầu của máy chạy liên tục g�
 
 ### VI của dầu có giảm trong khi dùng không?
 
-Có thể giảm, nhất là với dầu có VI cao nhờ phụ gia polymer. Phụ gia bị cắt mạch khi đi qua bơm, van, làm độ nhớt giảm dần. Đo độ nhớt định kỳ và so với dầu mới; giảm quá 10% thì cần tìm nguyên nhân.
+Có thể giảm, nhất là với dầu có VI cao nhờ phụ gia polymer, vì phụ gia bị cắt mạch khi đi qua bơm, van, làm độ nhớt giảm dần. Bạn nên đo độ nhớt định kỳ và so với dầu mới, giảm quá 10% thì cần tìm nguyên nhân.
 
 ### Bao lâu thì phải thay dầu thủy lực?
 
-Không có số giờ cố định cho mọi máy. Nên thay khi độ nhớt lệch quá ±10% so với dầu mới, trị số axit tăng hoặc nước trong dầu vượt mức cho phép. Máy chạy 24/7 với thùng dầu trên 60 °C cần lấy mẫu dày hơn vì dầu già nhanh hơn.
+Không có số giờ cố định cho mọi máy, nên thay khi độ nhớt lệch quá ±10% so với dầu mới, trị số axit tăng hoặc nước trong dầu vượt mức cho phép. Máy chạy 24/7 với thùng dầu trên 60 °C cần lấy mẫu dày hơn vì dầu già nhanh hơn.
