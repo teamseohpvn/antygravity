@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" role="img" aria-labelledby="t d" font-family="Arial, sans-serif" font-size="13">
+<title id="t">Độ nhớt dầu thủy lực ENEOS Super Hyrando 46 và 68 theo nhiệt độ</title>
+<desc id="d">Đường độ nhớt tính từ TDS ENEOS theo ASTM D341. Vùng xanh là khoảng độ nhớt tối ưu 16–36 mm²/s của bơm piston Rexroth A10VSO. Dầu 46 xuống dưới 16 mm²/s ở khoảng 68 °C, dầu 68 ở khoảng 78 °C.</desc>
+<rect width="760" height="460" fill="#fff"/>
+<rect x="70" y="188.1" width="660" height="74.7" fill="#dbeafe"/>
+<text x="724" y="204.1" text-anchor="end" fill="#1e40af">Vùng tối ưu của bơm 16–36 mm²/s (Rexroth)</text>
+<line x1="70" x2="730" y1="306.1" y2="306.1" stroke="#b91c1c" stroke-dasharray="6 4"/>
+<text x="76" y="300.1" text-anchor="start" fill="#b91c1c">10 mm²/s: mức tối thiểu khi chạy liên tục (Rexroth)</text>
+<line x1="581.5" x2="581.5" y1="30" y2="370" stroke="#92400e" stroke-dasharray="3 3"/>
+<text x="577.5" y="44" text-anchor="end" fill="#92400e">82 °C: hại phớt, dầu nhanh hỏng</text>
+<line x1="70" x2="730" y1="370.0" y2="370.0" stroke="#e5e7eb"/>
+<text x="64" y="374.0" text-anchor="end">5</text>
+<text x="64" y="310.1" text-anchor="end">10</text>
+<text x="64" y="266.8" text-anchor="end">16</text>
+<line x1="70" x2="730" y1="242.2" y2="242.2" stroke="#e5e7eb"/>
+<text x="64" y="246.2" text-anchor="end">20</text>
+<text x="64" y="192.1" text-anchor="end">36</text>
+<line x1="70" x2="730" y1="157.8" y2="157.8" stroke="#e5e7eb"/>
+<text x="64" y="161.8" text-anchor="end">50</text>
+<line x1="70" x2="730" y1="93.9" y2="93.9" stroke="#e5e7eb"/>
+<text x="64" y="97.9" text-anchor="end">100</text>
+<line x1="70" x2="730" y1="30.0" y2="30.0" stroke="#e5e7eb"/>
+<text x="64" y="34.0" text-anchor="end">200</text>
+<text x="70.0" y="388" text-anchor="middle">20</text>
+<text x="152.5" y="388" text-anchor="middle">30</text>
+<text x="235.0" y="388" text-anchor="middle">40</text>
+<text x="317.5" y="388" text-anchor="middle">50</text>
+<text x="400.0" y="388" text-anchor="middle">60</text>
+<text x="482.5" y="388" text-anchor="middle">70</text>
+<text x="565.0" y="388" text-anchor="middle">80</text>
+<text x="647.5" y="388" text-anchor="middle">90</text>
+<text x="730.0" y="388" text-anchor="middle">100</text>
+<text x="400.0" y="410" text-anchor="middle">Nhiệt độ dầu (°C)</text>
+<text transform="translate(18 200.0) rotate(-90)" text-anchor="middle">Độ nhớt (mm²/s, thang log)</text>
+<line x1="70" x2="70" y1="30" y2="370" stroke="#374151"/><line x1="70" x2="730" y1="370" y2="370" stroke="#374151"/>
+<polyline points="70.0,66.3 86.5,77.5 103.0,88.4 119.5,98.9 136.0,109.1 152.5,119.0 169.0,128.7 185.5,138.0 202.0,147.1 218.5,155.9 235.0,164.5 251.5,172.8 268.0,180.9 284.5,188.8 301.0,196.4 317.5,203.9 334.0,211.1 350.5,218.2 367.0,225.0 383.5,231.7 400.0,238.3 416.5,244.6 433.0,250.8 449.5,256.9 466.0,262.8 482.5,268.5 499.0,274.1 515.5,279.6 532.0,285.0 548.5,290.2 565.0,295.3 581.5,300.3 598.0,305.1 614.5,309.9 631.0,314.6 647.5,319.1 664.0,323.6 680.5,327.9 697.0,332.2 713.5,336.4 730.0,340.4" fill="none" stroke="#ea580c" stroke-width="3"/>
+<text x="119.5" y="120.9" fill="#ea580c" font-weight="bold">ISO VG 46</text>
+<polyline points="70.0,22.8 86.5,34.7 103.0,46.3 119.5,57.5 136.0,68.4 152.5,79.0 169.0,89.2 185.5,99.2 202.0,108.9 218.5,118.3 235.0,127.4 251.5,136.3 268.0,145.0 284.5,153.4 301.0,161.5 317.5,169.5 334.0,177.3 350.5,184.8 367.0,192.2 383.5,199.3 400.0,206.3 416.5,213.1 433.0,219.7 449.5,226.2 466.0,232.5 482.5,238.6 499.0,244.6 515.5,250.5 532.0,256.2 548.5,261.8 565.0,267.3 581.5,272.6 598.0,277.8 614.5,282.9 631.0,287.9 647.5,292.7 664.0,297.5 680.5,302.1 697.0,306.7 713.5,311.2 730.0,315.5" fill="none" stroke="#15803d" stroke-width="3"/>
+<text x="119.5" y="49.5" fill="#15803d" font-weight="bold">ISO VG 68</text>
+<text x="70" y="448" fill="#6b7280" font-size="11">Tính từ TDS ENEOS Super Hyrando 46 (46,5 / 6,89 mm²/s) và 68 (69,5 / 9,03 mm²/s) theo ASTM D341 · daucongnghiephp.com.vn</text>
+</svg>
