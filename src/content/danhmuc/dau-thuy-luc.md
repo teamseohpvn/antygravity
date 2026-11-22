@@ -16,6 +16,8 @@ updated: "2026-11-22"
 
 **Dầu thủy lực** (còn gọi là **dầu nhớt thủy lực** hay **nhớt thủy lực**) là chất lỏng truyền áp lực trong bơm, van và xi-lanh, đồng thời bôi trơn, làm mát và chống gỉ cho hệ thống. Ba cấp phổ biến nhất là **ISO VG 32, 46 và 68**. Chọn cấp nào phụ thuộc vào nhiệt độ dầu khi máy chạy và khuyến cáo của nhà sản xuất bơm. Với máy ép nhựa và máy ép thủy lực chạy liên tục trong nhà xưởng ở miền Bắc, **dầu thủy lực 68** là lựa chọn thường gặp nhất. Máy công trình và hệ thống làm việc ngoài trời hay dùng **dầu thủy lực 46**.
 
+<!-- phan-sau -->
+
 ## Chọn độ nhớt dầu thủy lực: 32, 46 hay 68?
 
 Độ nhớt được đo ở 40 °C theo ISO 3448. Mỗi cấp VG cho phép sai lệch ±10% quanh giá trị danh định.
