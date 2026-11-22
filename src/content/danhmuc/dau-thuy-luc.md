@@ -11,7 +11,7 @@ tags: ["dau-thuy-luc", "shell-tellus", "castrol-hyspin", "iso-vg-68", "iso-vg-46
 image: "/images/danh-muc/dau-thuy-luc-kho.webp"
 image_alt: "Phuy 200 lít dầu thủy lực ENEOS Super Hyrando 68 bọc màng co, xếp trong kho HT VINA tại Hải Phòng"
 date: "2026-09-21"
-updated: "2026-11-12"
+updated: "2026-11-22"
 ---
 
 **Dầu thủy lực** (còn gọi là **dầu nhớt thủy lực** hay **nhớt thủy lực**) là chất lỏng truyền áp lực trong bơm, van và xi-lanh, đồng thời bôi trơn, làm mát và chống gỉ cho hệ thống. Ba cấp phổ biến nhất là **ISO VG 32, 46 và 68**. Chọn cấp nào phụ thuộc vào nhiệt độ dầu khi máy chạy và khuyến cáo của nhà sản xuất bơm. Với máy ép nhựa và máy ép thủy lực chạy liên tục trong nhà xưởng ở miền Bắc, **dầu thủy lực 68** là lựa chọn thường gặp nhất. Máy công trình và hệ thống làm việc ngoài trời hay dùng **dầu thủy lực 46**.
@@ -56,16 +56,16 @@ Thị phần từng hãng tại Việt Nam (có nguồn) và cách chọn giữa
 
 **Lưu ý với chi tiết mạ bạc:** dầu chống mài mòn gốc kẽm thường không được khuyến nghị cho bơm có chi tiết mạ bạc. Trường hợp này cần chọn [dầu không kẽm (zinc-free)](/ho-tro-ky-thuat/dau-thuy-luc-khong-kem-ashless-zddp) theo khuyến cáo của nhà sản xuất bơm.
 
-## Đối chiếu tài liệu máy trước khi chọn mã
+## Đối chiếu hướng dẫn sử dụng của máy trước khi chọn mã
 
 Mở tài liệu hướng dẫn sử dụng kèm theo máy (hoặc nhãn trên thùng dầu) và xem ba thông tin: **cấp độ nhớt**, **loại dầu** và **phê duyệt của hãng bơm**.
 
-| Tài liệu máy ghi | Mã nên xem |
+| Hướng dẫn sử dụng của máy\* ghi | Mã nên xem |
 | :--- | :--- |
 | ISO VG 68, HM, HLP 68, AW 68, DIN 51524-2 | Các mã chống mài mòn cấp 68 ở trên. Mã có TDS công bố DIN 51524-2: ENEOS Super Hyrando 68, Castrol Hyspin AWS 68, Castrol Hyspin HLP-Z 68, Cosmo Hydro AW 68. |
 | Bắt buộc phê duyệt Parker Denison HF-0/HF-1/HF-2 hoặc Eaton | [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68), [Cosmo Hydro AW 68](/dau-thuy-luc/cosmo-hydro-aw-68) (TDS công bố các phê duyệt này). |
 | ISO VG 46 hoặc VG 32 | Không thay bằng 68. Cấp 46 có ở Castrol Hyspin AWS, ENEOS Super Hyrando, ENEOS Super Mulpus DX, X-One AW, EMI AW, VHP Spinax AW, đều có sẵn tại kho. Xem [hướng dẫn chọn độ nhớt 32, 46 hay 68](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau). |
-| Không còn tài liệu máy | Chụp nhãn phuy dầu đang dùng hoặc tên, đời máy, gửi qua Zalo **[0901 511 313](tel:0901511313)** để chúng tôi đối chiếu. |
+| Không còn hướng dẫn sử dụng của máy\* | Chụp nhãn phuy dầu đang dùng hoặc tên, đời máy, gửi qua Zalo **[0901 511 313](tel:0901511313)** để chúng tôi đối chiếu. |
 
 ## Chỉ tiêu cần xem trên bảng thông số (TDS)
 
@@ -121,3 +121,5 @@ Thêm một lượng nhỏ dầu cùng loại (cùng HM/HLP, cùng cấp VG) th�
 ---
 
 **Xem thêm:** [Hướng dẫn chọn độ nhớt](/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau) · [Top 6 hãng dầu thủy lực](/top-6-dau-thuy-luc-2026) · [Dầu bánh răng](/dau-banh-rang) · [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu rãnh trượt](/dau-ranh-truot) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)
+
+<p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của máy là gì? Là tài liệu hãng máy giao kèm theo máy, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng máy, hoặc liên hệ đại lý của hãng máy đang sử dụng để xin lại nếu bị mất.</small></p>
