@@ -103,6 +103,13 @@ const soMa = new Set(coSo.map((r) => r.ten)).size;
 // Hãng quốc tế (ENEOS, Castrol) lên trước: đó là tên khách hay tìm.
 const hangs = [...new Set([...coSo].sort((a, b) => Number(a.nguon !== 'nhap-khau') - Number(b.nguon !== 'nhap-khau')).map((r) => r.hang))];
 const vat = cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT';
+// 21/11/2026 (người dùng chốt): tóm tắt ghi rõ dung tích phuy, xô theo đúng dữ liệu ("Phuy 200–209 L"), không ghi chung "phuy".
+const dungTich = (ds: DongGiaCongKhai[], loai: string) => {
+  const so = [...new Set(ds.map((r) => Number(r.quy_cach.match(/(\d+)\s*L/i)?.[1])).filter(Boolean))].sort((a, b) => a - b);
+  return so.length ? `${loai} ${so.length > 1 ? `${so[0]}–${so.at(-1)}` : so[0]} L` : loai;
+};
+const khoangGia = (ds: DongGiaCongKhai[]) => `${fmtVnd(minOf(ds.map((r) => r.thap)))} – ${fmtVnd(maxOf(ds.map((r) => r.cao)))} đ`;
+const khoangLit = (ds: DongGiaCongKhai[]) => `${fmtVnd(minOf(ds.map((r) => r.thap_don_vi)))} – ${fmtVnd(maxOf(ds.map((r) => r.cao_don_vi)))} đ/lít`;
 
 const iso11158 = traTieuChuan('ISO 11158');
 
@@ -177,8 +184,8 @@ const duongBrent = diemBrent.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).j
 // Ngày đăng: trang lên web lần đầu 06/10/2026 (URL cũ /bang-gia-dau-thuy-luc, ngày commit đầu trong git). Không đổi.
 // Ngày cập nhật: ngày sửa NỘI DUNG gần nhất (không phải ngày rà giá). Sửa đoạn văn, bảng, FAQ thì đổi ngày này.
 const NGAY_DANG = '2026-10-06';
-// 17/11/2026: ảnh báo giá văn bản 15/11 + giá trên trang khớp báo giá đó.
-const NGAY_SUA_NOI_DUNG = '2026-11-17';
+// 21/11/2026: thêm 6 câu FAQ theo truy vấn GSC, tóm tắt giá ghi rõ dung tích phuy, xô.
+const NGAY_SUA_NOI_DUNG = '2026-11-21';
 const ngaySua = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const tacGia = nguoiGia;
 // Ngày cập nhật cuối gồm cả đợt tin. Schema và thẻ meta dùng giờ thật của đợt tin nếu đó là thay đổi mới nhất, không gán giờ giả cho thay đổi khác.
@@ -243,6 +250,81 @@ const khoang = (a: number, b: number) => a >= 1_000_000 && b >= 1_000_000 ? `${t
 const description = coGia && phuyThap && phuyCao
   ? `Phuy 200L từ ${khoang(phuyThap, phuyCao)}${xoThap && xoCao ? `, xô 18L từ ${khoang(xoThap, xoCao)}` : ''} (${vat}). Miễn phí vận chuyển 80 km, đủ CO/CQ, VAT. Có sẵn tại 3 kho Kiến An, Hải Dương, Như Quỳnh. Giao trong ngày KCN gần kho, chiết khấu theo số phuy.`
   : `Phuy 200L, xô 18L dầu thủy lực 68, 46. Miễn phí vận chuyển 80 km, đủ CO/CQ, VAT. Có sẵn tại 3 kho Kiến An, Hải Dương, Như Quỳnh. Giao trong ngày KCN gần kho.`;
+
+// FAQ: một mảng dùng chung cho phần hiển thị và schema FAQPage, nên chữ trên trang và trong schema luôn khớp nhau.
+// 21/11/2026: thêm 6 câu từ truy vấn GSC 90 ngày (giá 1 lít, giá phuy 68, giá 46, Castrol/ENEOS 68, giá rẻ, giao KCN).
+// Cách viết: câu đầu trả lời thẳng, mỗi câu đọc riêng vẫn hiểu, có số tính từ bảng giá, khoảng 40–70 từ.
+const giaDong = (r: DongGiaCongKhai) => (r.thap === r.cao ? `${fmtVnd(r.thap!)} đ` : `${fmtVnd(r.thap!)} – ${fmtVnd(r.cao!)} đ`);
+const trangSp = (r: DongGiaCongKhai) => (r.trang ? `<a href="/${CATEGORY}/${r.trang}">${r.ten}</a>` : r.ten);
+const phuyRe = [...phuy].sort((a, b) => a.thap! - b.thap!)[0];
+const phuyDat = [...phuy].sort((a, b) => b.cao! - a.cao!)[0];
+const hangQuocTe = phuy.filter((r) => ['Castrol', 'ENEOS'].includes(r.hang));
+const quyCachNho = (r: DongGiaCongKhai) => r.quy_cach.charAt(0).toLowerCase() + r.quy_cach.slice(1);
+const FAQ: { hoi: string; dap: string }[] = [
+  ...(coGia && phuyRe && phuyDat ? [
+    {
+      hoi: 'Dầu thủy lực giá bao nhiêu 1 lít?',
+      dap: `Dầu thủy lực 68 mua theo phuy giá khoảng ${khoangLit(phuy)} (${vat}), tùy mã, theo bảng giá rà soát ngày ${ngay}.${xo.length ? ` Mua ${dungTich(xo, 'xô')} giá khoảng ${khoangLit(xo)}, đắt hơn phuy cùng mã.` : ''} Giá theo lít của từng mã ghi ở cột "Quy đổi" trong <a href="#bang-gia">bảng giá phuy</a>.`,
+    },
+    {
+      hoi: 'Giá dầu thủy lực 68 bao nhiêu một phuy?',
+      dap: `${dungTich(phuy, 'Phuy')} dầu thủy lực 68 giá ${fmtVnd(phuyThap!)} – ${fmtVnd(phuyCao!)} đ (${vat}), tùy mã. Thấp nhất là ${trangSp(phuyRe)} (${giaDong(phuyRe)}), cao nhất là ${trangSp(phuyDat)} (${giaDong(phuyDat)}). Đơn từ 3 phuy được miễn phí vận chuyển tới 150 km. Giá từng mã xem ở <a href="#bang-gia">bảng giá phuy dầu 68</a>.`,
+    },
+  ] : []),
+  ...(phuy46.length ? [{
+    hoi: 'Dầu thủy lực 46 giá bao nhiêu?',
+    dap: `${dungTich(phuy46, 'Phuy')} dầu thủy lực 46 giá ${khoangGia(phuy46)} (${vat}), tùy mã, quy đổi khoảng ${khoangLit(phuy46)}. Hiện ${new Set(phuy46.map((r) => r.ten)).size} mã cấp 46 có sẵn tại kho${xo46.length ? `, xô giá ${khoangGia(xo46)}` : ''}. Giá từng mã xem ở <a href="#bang-gia-46">bảng giá dầu 46</a>.`,
+  }] : []),
+  ...(hangQuocTe.length ? [{
+    hoi: 'Dầu thủy lực Castrol 68, ENEOS 68 giá bao nhiêu?',
+    dap: `Giá ${vat} tại kho HT VINA ngày ${ngay}: ${hangQuocTe.map((r) => `${trangSp(r)} ${quyCachNho(r)} ${giaDong(r)}`).join('; ')}. Đây là các hãng nhập khẩu; giá xô xem ở <a href="#bang-gia-xo">bảng giá xô</a>. Nếu máy không bắt buộc đúng hãng, các mã cùng cấp ISO VG 68 giá thấp hơn có ở <a href="#bang-gia">bảng giá phuy</a>.`,
+  }] : []),
+  ...(phuyRe ? [{
+    hoi: 'Dầu thủy lực giá rẻ có nên mua không?',
+    dap: `Nên mua nếu mã đó đạt đúng cấp độ nhớt và tiêu chuẩn máy yêu cầu, không nên chọn chỉ vì giá. Mã rẻ nhất đang có sẵn tại kho là ${trangSp(phuyRe)}, ${quyCachNho(phuyRe)} giá ${giaDong(phuyRe)} (${vat}). Trước khi mua, xem trên TDS cấp ISO VG, chỉ số độ nhớt và tiêu chuẩn đạt (ISO 11158 HM, DIN 51524-2 HLP). TDS của từng mã có ở trang sản phẩm.`,
+  }] : []),
+  {
+    hoi: 'Có giao dầu thủy lực tới các KCN ở Hải Phòng, Hải Dương, Hưng Yên không?',
+    dap: `Có. HT VINA giao từ 3 kho ${BA_KHO}, miễn phí vận chuyển trong bán kính 80 km, đơn từ 3 phuy miễn phí tới 150 km. Các KCN ${KCN_NEAR.join(', ')} được giao trong ngày nếu chốt đơn trước ${PROMO.sameDayCutoff}, thứ Hai đến thứ Sáu. KCN xa hơn giao theo lịch hẹn. Xem <a href="/chinh-sach-giao-hang">chính sách giao hàng</a>.`,
+  },
+  {
+    hoi: 'Giá trên bảng đã gồm VAT chưa?',
+    dap: `Giá trên bảng ${cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} thuế VAT. Báo giá chính thức ghi rõ giá trước thuế, tiền thuế và tổng tiền.`,
+  },
+  {
+    hoi: 'Vì sao chỉ ghi khoảng giá, không ghi giá chính xác?',
+    dap: 'Giá thực tế phụ thuộc số lượng, quy cách và điểm giao. Khoảng giá giúp bạn dự trù ngân sách; giá chính xác được gửi trong ngày khi bạn cho biết số lượng.',
+  },
+  {
+    hoi: 'Mua bao nhiêu thì được giá tốt?',
+    dap: 'Mua theo phuy tiết kiệm hơn mua xô. Đơn từ vài phuy trở lên hoặc hợp đồng định kỳ được báo giá riêng. Đừng mua vượt nhu cầu chỉ để được giá: cách tính lượng cần mua có ở mục <a href="#dat-bao-nhieu">nên đặt bao nhiêu dầu</a>. Doanh nghiệp cần mức riêng xem mục <a href="#chiet-khau">chiết khấu doanh nghiệp</a>.',
+  },
+  {
+    hoi: 'Đơn nào được miễn phí vận chuyển?',
+    dap: 'Đơn giao trong bán kính 80 km tính từ kho có hàng gần điểm giao nhất được miễn phí vận chuyển, không yêu cầu đơn tối thiểu. Đơn từ 3 phuy trở lên được miễn phí tới 150 km. Xa hơn hoặc đơn số lượng lớn, vui lòng liên hệ trực tiếp để yêu cầu vận chuyển miễn phí theo từng trường hợp.',
+  },
+  {
+    hoi: 'Có được thanh toán sau không?',
+    dap: 'Doanh nghiệp mua định kỳ được thỏa thuận thời hạn thanh toán và hạn mức công nợ trong hợp đồng hoặc đơn đặt hàng. Xem <a href="/chinh-sach-thanh-toan">chính sách thanh toán</a>.',
+  },
+  {
+    hoi: 'Có giữ giá cho đơn đặt trước không?',
+    dap: 'Có. HT VINA nhận đặt cọc để chốt giá đầu tháng, sau đó bạn lấy hàng chia đợt với giá đã chốt. Mức cọc và thời hạn thỏa thuận theo số lượng, xem mục <a href="#giu-gia">cách giữ giá</a>.',
+  },
+  {
+    hoi: 'Dầu thủy lực để trong kho được bao lâu?',
+    dap: 'Phuy còn nguyên niêm, để trong nhà khô ráo thường dùng tốt khoảng 5 năm theo khuyến cáo của ExxonMobil. Hạn trên nhãn phuy là con số chính thức. Phuy đã mở nên dùng hết sớm và luôn đậy kín.',
+  },
+  {
+    hoi: 'Máy đang dùng dầu 46, có dùng dầu 68 cho rẻ được không?',
+    dap: 'Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Các mã có cấp 46 có <a href="#bang-gia-46">bảng giá riêng</a>, dầu 32 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.',
+  },
+  {
+    hoi: 'Bảng giá cập nhật khi nào?',
+    dap: 'Bảng được rà soát toàn bộ mỗi tuần một lần. Ngoài kỳ rà soát, chỉ cần một mã bất kỳ đổi giá là chúng tôi cập nhật ngay trong ngày. Ngày rà soát gần nhất ghi ở đầu trang.',
+  },
+];
+const boThe = (html: string) => html.replace(/<[^>]+>/g, '');
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
@@ -316,6 +398,18 @@ const schemaData = [
     isPartOf: { '@id': ARTICLE_ID },
     citation: t.nguon,
   })),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${absUrl(pagePath)}#hoi-dap`,
+    inLanguage: 'vi-VN',
+    isPartOf: { '@id': ARTICLE_ID },
+    mainEntity: FAQ.map((f) => ({
+      '@type': 'Question',
+      name: f.hoi,
+      acceptedAnswer: { '@type': 'Answer', text: boThe(f.dap) },
+    })),
+  },
   personSchema(tacGia),
   personSchema(nguoiDuyet),
   breadcrumbSchema(crumbs),
@@ -381,13 +475,15 @@ const schemaData = [
         <div class="summary">
           <p class="summary__label">Tóm tắt giá{thang ? ` tháng ${thang}` : ''}</p>
           <ul>
-            {phuyThap && <li>Phuy dầu thủy lực 68: <strong>{fmtVnd(phuyThap)} – {fmtVnd(phuyCao)} đ</strong> ({vat}), tùy mã.</li>}
-            {phuy46.length > 0 && <li>Phuy dầu thủy lực 46: <strong>{fmtVnd(minOf(phuy46.map((r) => r.thap)))} – {fmtVnd(maxOf(phuy46.map((r) => r.cao)))} đ</strong> ({vat}), tùy mã. Xem <a href="#bang-gia-46">bảng giá dầu 46</a>.</li>}
+            {/* 21/11/2026 (người dùng chốt thứ tự): phuy → xô → quy đổi lít → miễn phí vận chuyển → số mã trong kho → giao trong ngày.
+                Google đang lấy dòng tóm tắt làm đoạn mô tả, nên dòng đầu phải là giá phuy và ghi rõ dung tích. */}
+            {phuyThap && <li>{dungTich(phuy, 'Phuy')} dầu thủy lực 68: <strong>{fmtVnd(phuyThap)} – {fmtVnd(phuyCao)} đ</strong> ({vat}), tùy mã.</li>}
+            {phuy46.length > 0 && <li>{dungTich(phuy46, 'Phuy')} dầu thủy lực 46: <strong>{khoangGia(phuy46)}</strong> ({vat}), tùy mã. Xem <a href="#bang-gia-46">bảng giá dầu 46</a>.</li>}
+            {xoThap && xoCao && <li>{dungTich(xo, 'Xô')} dầu thủy lực 68: <strong>{fmtVnd(xoThap)} – {fmtVnd(xoCao)} đ</strong>{xo46.length > 0 && <>, dầu 46: <strong>{khoangGia(xo46)}</strong></>} ({vat}). Xem <a href="#bang-gia-xo">bảng giá xô</a>.</li>}
+            {litThap && <li>Quy đổi theo lít: <strong>{fmtVnd(litThap)} – {fmtVnd(litCao)} đ/lít</strong>, mua xô đắt hơn mua phuy khi tính theo lít.</li>}
             <li><strong><a href="/chinh-sach-giao-hang">Miễn phí vận chuyển 80 km</a></strong> từ 3 kho {BA_KHO}.</li>
-            <li>Giao trong ngày các KCN gần kho khi chốt đơn trước {PROMO.sameDayCutoff}, thứ Hai đến thứ Sáu. KCN xa hơn theo lịch hẹn.</li>
-            {xoThap && xoCao && <li>Xô 18 L dầu thủy lực 68: <strong>{fmtVnd(xoThap)} – {fmtVnd(xoCao)} đ</strong>{xo46.length > 0 && <>, dầu 46: <strong>{fmtVnd(minOf(xo46.map((r) => r.thap)))} – {fmtVnd(maxOf(xo46.map((r) => r.cao)))} đ</strong></>} ({vat}). Xem <a href="#bang-gia-xo">bảng giá xô</a>.</li>}
-            {litThap && <li>Quy đổi theo lít: <strong>{fmtVnd(litThap)} – {fmtVnd(litCao)} đ/lít</strong>, xô 18 L đắt hơn phuy khi tính theo lít.</li>}
             <li>{soMa} mã ISO VG 68 có hàng tại hệ thống 3 kho, tùy mã từng kho: {hangs.join(', ')}. {rows46.length} mã có thêm cấp 46, cũng có sẵn tại kho.</li>
+            <li>Giao trong ngày các KCN gần kho khi chốt đơn trước {PROMO.sameDayCutoff}, thứ Hai đến thứ Sáu. KCN xa hơn theo lịch hẹn.</li>
             <li>Giá chính xác theo số phuy và nơi giao được gửi trong ngày làm việc. Có hóa đơn VAT, CO/CQ theo lô với hãng có cấp.</li>
           </ul>
         </div>
@@ -731,24 +827,12 @@ const schemaData = [
 
     <section class="price-body" id="hoi-dap">
       <h2>Câu hỏi thường gặp</h2>
-      <h3>Giá trên bảng đã gồm VAT chưa?</h3>
-      <p>Giá trên bảng {cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} thuế VAT. Báo giá chính thức ghi rõ giá trước thuế, tiền thuế và tổng tiền.</p>
-      <h3>Vì sao chỉ ghi khoảng giá, không ghi giá chính xác?</h3>
-      <p>Giá thực tế phụ thuộc số lượng, quy cách và điểm giao. Khoảng giá giúp bạn dự trù ngân sách; giá chính xác được gửi trong ngày khi bạn cho biết số lượng.</p>
-      <h3>Mua bao nhiêu thì được giá tốt?</h3>
-      <p>Mua theo phuy tiết kiệm hơn mua xô. Đơn từ vài phuy trở lên hoặc hợp đồng định kỳ được báo giá riêng. Đừng mua vượt nhu cầu chỉ để được giá: cách tính lượng cần mua có ở mục <a href="#dat-bao-nhieu">nên đặt bao nhiêu dầu</a>. Doanh nghiệp cần mức riêng xem mục <a href="#chiet-khau">chiết khấu doanh nghiệp</a>.</p>
-      <h3>Đơn nào được miễn phí vận chuyển?</h3>
-      <p>Đơn giao trong bán kính 80 km tính từ kho có hàng gần điểm giao nhất được miễn phí vận chuyển, không yêu cầu đơn tối thiểu. Đơn từ 3 phuy trở lên được miễn phí tới 150 km. Xa hơn hoặc đơn số lượng lớn, vui lòng liên hệ trực tiếp để yêu cầu vận chuyển miễn phí theo từng trường hợp.</p>
-      <h3>Có được thanh toán sau không?</h3>
-      <p>Doanh nghiệp mua định kỳ được thỏa thuận thời hạn thanh toán và hạn mức công nợ trong hợp đồng hoặc đơn đặt hàng. Xem <a href="/chinh-sach-thanh-toan">chính sách thanh toán</a>.</p>
-      <h3>Có giữ giá cho đơn đặt trước không?</h3>
-      <p>Có. HT VINA nhận đặt cọc để chốt giá đầu tháng, sau đó bạn lấy hàng chia đợt với giá đã chốt. Mức cọc và thời hạn thỏa thuận theo số lượng, xem mục <a href="#giu-gia">cách giữ giá</a>.</p>
-      <h3>Dầu thủy lực để trong kho được bao lâu?</h3>
-      <p>Phuy còn nguyên niêm, để trong nhà khô ráo thường dùng tốt khoảng 5 năm theo khuyến cáo của ExxonMobil. Hạn trên nhãn phuy là con số chính thức. Phuy đã mở nên dùng hết sớm và luôn đậy kín.</p>
-      <h3>Máy đang dùng dầu 46, có dùng dầu 68 cho rẻ được không?</h3>
-      <p>Không nên. Cấp độ nhớt theo yêu cầu của máy và nhiệt độ làm việc, không theo giá. Các mã có cấp 46 có <a href="#bang-gia-46">bảng giá riêng</a>, dầu 32 vẫn nhận đặt; xem <a href="/ho-tro-ky-thuat/dau-thuy-luc-32-46-68-khac-nhau">hướng dẫn chọn độ nhớt</a> để biết khi nào được đổi cấp.</p>
-      <h3>Bảng giá cập nhật khi nào?</h3>
-      <p>Bảng được rà soát toàn bộ mỗi tuần một lần. Ngoài kỳ rà soát, chỉ cần một mã bất kỳ đổi giá là chúng tôi cập nhật ngay trong ngày. Ngày rà soát gần nhất ghi ở đầu trang.</p>
+      {FAQ.map((f) => (
+        <>
+          <h3>{f.hoi}</h3>
+          <p set:html={f.dap} />
+        </>
+      ))}
     </section>
 
     <CachVietBai tacGia={nguoiGia} nguoiDuyet={nguoiDuyet} ngayGia={cauHinh.ngay_ra_soat || undefined} ngayCapNhat={ngayCapNhat} />
