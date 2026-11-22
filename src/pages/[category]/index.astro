@@ -41,6 +41,8 @@ const { category } = Astro.params;
 const trangGia = trangBaoGiaCua(category);
 const { products, categoryInfo } = Astro.props;
 const { Content } = await render(categoryInfo);
+// Danh mục không có bảng giá gộp: phần trên dòng <!-- phan-sau --> (đoạn trả lời ngắn) hiện trước lưới sản phẩm.
+const coTachDau = Boolean(categoryInfo.body?.includes('<!-- phan-sau -->'));
 const { nav_label, reviewed_by, tac_gia, updated, bang_gia } = categoryInfo.data;
 
 // Danh mục gộp báo giá (trường bang_gia, 20/11/2026): bảng giá nằm ngay trong trang danh mục.
@@ -191,6 +193,12 @@ const schemaData = [
       </div>
     )}
 
+    {!bang_gia && coTachDau && (
+      <div class="seo-content markdown-body gop-truoc">
+        <ContentBody phan="truoc"><Content /></ContentBody>
+      </div>
+    )}
+
     <div class:list={['layout-grid', { 'no-filter': !showFilter }]}>
       {showFilter && (
         <aside class="sidebar">
@@ -213,7 +221,7 @@ const schemaData = [
       )}
 
       <div class="products-area">
-        {bang_gia && products.length > 0 && <h2 class="tieu-de-luoi">Các mã {(nav_label ?? title).toLowerCase()} có tại kho</h2>}
+        {products.length > 0 && <h2 class="tieu-de-luoi">{bang_gia ? `Các mã ${(nav_label ?? title).toLowerCase()} có tại kho` : `Sản phẩm ${(nav_label ?? title).toLowerCase()}`}</h2>}
         {products.length > 0 ? (
           <div class="grid" id="product-grid">
             {products.map((product) => (
@@ -226,9 +234,7 @@ const schemaData = [
                     <span class="badge">{product.data.brand}</span>
                     {productGrade(product) && <span class="badge badge-outline">{productGrade(product)}</span>}
                   </div>
-                  {bang_gia
-                    ? <h3 class="ten-sp"><a href={`/${category}/${product.id}`}>{product.data.title}</a></h3>
-                    : <h2><a href={`/${category}/${product.id}`}>{product.data.title}</a></h2>}
+                  <h3 class="ten-sp"><a href={`/${category}/${product.id}`}>{product.data.title}</a></h3>
                   <p>{catGon(product.data.description, 110)}</p>
                   <div class="card-actions">
                     <a href={`/${category}/${product.id}`} class="btn-view">Xem chi tiết →</a>
@@ -249,7 +255,7 @@ const schemaData = [
         {!bang_gia && <StockTable category={category!} label={nav_label ?? title} pages={products.map((p) => p.id)} coTrangGia={Boolean(bangGia)} />}
 
         <div class="seo-content markdown-body">
-          <ContentBody phan={bang_gia ? 'sau' : undefined}><Content /></ContentBody>
+          <ContentBody phan={bang_gia || coTachDau ? 'sau' : undefined}><Content /></ContentBody>
           <QuoteCta item={nav_label ?? title} danhMuc={category} bangGia={bangGia} heading={bangGia?.tuVan} />
           {!tacGia && (reviewed_by || updated) && (
             <p class="review-meta">
