@@ -5,10 +5,17 @@ import { BUSINESS, LEGAL_NAME, LEGAL_SHORT, TAX_ID, DKKD, SITE_NAME, ADDRESS_TEX
 
 interface Props {
   tieuDe?: string;
-  /** Ẩn link "Giới thiệu HT VINA" khi đang ở chính trang giới thiệu. */
-  linkGioiThieu?: boolean;
 }
-const { tieuDe = 'Thông tin doanh nghiệp', linkGioiThieu = true } = Astro.props;
+const { tieuDe = 'Thông tin doanh nghiệp' } = Astro.props;
+// 22/11/2026 (người dùng chốt): dòng Chính sách chỉ còn 4 chính sách mua hàng + link trang tổng hợp /chinh-sach.
+// Bỏ Điều khoản sử dụng, Quy trình biên soạn, Giới thiệu HT VINA (vẫn có trong /chinh-sach, footer, menu). Footer không đổi.
+const CHINH_SACH = [
+  { href: '/chinh-sach-giao-hang', label: 'Giao hàng' },
+  { href: '/chinh-sach-thanh-toan', label: 'Thanh toán' },
+  { href: '/chinh-sach-doi-tra', label: 'Đổi trả và hoàn tiền' },
+  { href: '/privacy-policy', label: 'Bảo mật' },
+  { href: '/chinh-sach', label: 'Tất cả chính sách' },
+];
 const ngayVN = (iso: string) => iso.split('-').reverse().join('/');
 ---
 
@@ -25,8 +32,7 @@ const ngayVN = (iso: string) => iso.split('-').reverse().join('/');
     <div><dt>Email</dt><dd><a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></dd></div>
     <div><dt>Giờ làm việc</dt><dd>{GIO_LAM_VIEC.map((g, i) => <>{i > 0 && <br />}{g.ngay}: {g.gio}</>)}</dd></div>
   </dl>
-  {/* 22/11/2026 (người dùng yêu cầu): một link tới trang tổng hợp /chinh-sach thay cho 6 link chính sách riêng lẻ. */}
-  <p class="ttdn__cs"><strong>Chính sách:</strong> <a href="/chinh-sach">Giao hàng, thanh toán, đổi trả, bảo mật và điều khoản</a>{linkGioiThieu && <> · <a href="/about">Giới thiệu {LEGAL_SHORT}</a></>}</p>
+  <p class="ttdn__cs"><strong>Chính sách:</strong> {CHINH_SACH.map((l, i) => <>{i > 0 && ' · '}<a href={l.href}>{l.label}</a></>)}</p>
 </section>
 
 <style>
