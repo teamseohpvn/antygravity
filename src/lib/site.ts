@@ -33,7 +33,8 @@ export const BUSINESS = {
   // postalCode: bỏ mã 6 số cũ (180000). Tra mã 5 số mới trên VNPost rồi thêm lại.
   country: 'VN',
   logo: '/images/logo-ht-vina-512.png',
-  image: '/images/hero-trang-chu.webp',
+  // Ảnh thật kho 108 Thanh Bình (phuy ENEOS, Castrol), thay ảnh AI cũ 22/11/2026. Dùng cho og:image và schema.
+  image: '/images/og-kho-ht-vina.jpg',
   // Hồ sơ Google Business Profile chính (đã xác minh, kiểm tra 03/10/2026).
   gbpUrl: 'https://www.google.com/maps?cid=7563996296023599602',
 };

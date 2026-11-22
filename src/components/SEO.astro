@@ -1,5 +1,5 @@
 ---
-import { SITE_NAME, INDEXABLE, absUrl, normalizePath } from '../lib/site';
+import { SITE_NAME, INDEXABLE, BUSINESS, absUrl, normalizePath } from '../lib/site';
 
 interface Props {
   title: string;
@@ -24,7 +24,8 @@ const fullTitle = seoTitle ?? `${title} | ${SITE_NAME}`;
 // Canonical luôn sinh từ domain chính thức + đường dẫn hiện tại (không "/" cuối),
 // trừ khi trang truyền vào một canonical khác có chủ đích.
 const canonicalHref = canonical ? absUrl(canonical) : absUrl(normalizePath(Astro.url.pathname));
-const ogImage = image ? absUrl(image) : undefined;
+// Trang không có ảnh riêng thì dùng ảnh thật kho hàng, để link gửi qua Zalo/Messenger luôn có ảnh xem trước.
+const ogImage = absUrl(image ?? BUSINESS.image);
 const robots = !INDEXABLE || noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large';
 const schemas = schemaData ? (Array.isArray(schemaData) ? schemaData : [schemaData]) : [];
 ---
@@ -46,10 +47,10 @@ const schemas = schemaData ? (Array.isArray(schemaData) ? schemaData : [schemaDa
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonicalHref} />
-{ogImage && <meta property="og:image" content={ogImage} />}
-<meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+<meta property="og:image" content={ogImage} />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
-{ogImage && <meta name="twitter:image" content={ogImage} />}
+<meta name="twitter:image" content={ogImage} />
 
 {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
