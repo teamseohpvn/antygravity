@@ -12,17 +12,17 @@ tags: ["dau-cau", "dau-hop-so", "gl-4", "gl-5", "atf"]
 image: "/images/danh-muc/dau-cau-hop-so.webp"
 image_alt: "Thợ bảo dưỡng thêm dầu hộp số vào xe nâng trong kho"
 date: "2026-10-06"
-updated: "2026-11-22"
+updated: "2026-10-06"
 ---
 
-**Dầu cầu** và **dầu hộp số** (còn gọi là **nhớt cầu**, **nhớt hộp số**) bôi trơn bánh răng trong cầu xe, hộp số tay, hộp số phụ và bộ truyền động cuối. Chọn dầu theo hai thông số ghi trong hướng dẫn sử dụng của xe\*: **cấp chất lượng API** (GL-4 hay GL-5) và **cấp độ nhớt SAE** (80W-90, 85W-140, 90, 140). Xe tải, máy công trình ở miền Bắc dùng nhiều nhất là **85W-140 GL-5 cho cầu** và **80W-90 cho hộp số**. Hộp số tự động và hộp số xe nâng thường dùng **ATF** hoặc dầu truyền động riêng.
+**Dầu cầu** và **dầu hộp số** (còn gọi là **nhớt cầu**, **nhớt hộp số**) bôi trơn bánh răng trong cầu xe, hộp số tay, hộp số phụ và bộ truyền động cuối. Chọn dầu theo hai thông số ghi trong sổ tay xe: **cấp chất lượng API** (GL-4 hay GL-5) và **cấp độ nhớt SAE** (80W-90, 85W-140, 90, 140). Xe tải, máy công trình ở miền Bắc dùng nhiều nhất là **85W-140 GL-5 cho cầu** và **80W-90 cho hộp số**. Hộp số tự động và hộp số xe nâng thường dùng **ATF** hoặc dầu truyền động riêng.
 
 ## GL-4 hay GL-5: khác nhau thế nào?
 
 | Cấp API | Phụ gia cực áp (EP) | Dùng cho | Lưu ý |
 | :--- | :--- | :--- | :--- |
 | **GL-4** | Trung bình | Hộp số tay có đồng tốc, bánh răng côn xoắn tải vừa | Không thay được dầu GL-5 ở cầu xe tải tải nặng |
-| **GL-5** | Cao | Cầu xe (bánh răng hypoid), tải nặng, va đập | Một số hộp số tay đời cũ có đồng tốc bằng đồng thau chỉ cho phép GL-4. Kiểm tra hướng dẫn sử dụng của xe\* trước khi đổi |
+| **GL-5** | Cao | Cầu xe (bánh răng hypoid), tải nặng, va đập | Một số hộp số tay đời cũ có đồng tốc bằng đồng thau chỉ cho phép GL-4. Kiểm tra sổ tay trước khi đổi |
 
 **Quy tắc nhanh:** cầu sau xe tải, xe ben, máy xúc lật gần như luôn yêu cầu GL-5. Hộp số tay ghi "GL-4" thì dùng đúng GL-4, trừ khi dầu ghi rõ đạt cả GL-4 và GL-5.
 
@@ -34,11 +34,11 @@ updated: "2026-11-22"
 | **85W-140** | Đa cấp, đặc ở nhiệt độ cao | Cầu xe tải nặng, xe ben, xe chở quá tải, đường đèo dốc |
 | **SAE 90 / SAE 140** | Đơn cấp | Xe và máy đời cũ, hộp số máy nông nghiệp, bánh răng hở có vỏ che theo khuyến cáo |
 
-Nếu hướng dẫn sử dụng của xe\* cho phép cả hai cấp, xe chạy tải nặng, mùa hè nóng nên chọn cấp đặc hơn (85W-140). Xe chạy nhẹ, cần sang số êm thì chọn 80W-90.
+Nếu sổ tay cho phép cả hai cấp, xe chạy tải nặng, mùa hè nóng nên chọn cấp đặc hơn (85W-140). Xe chạy nhẹ, cần sang số êm thì chọn 80W-90.
 
 ## Dầu ATF và dầu truyền động cho xe nâng
 
-- **ATF (Dexron II, III):** dùng cho hộp số tự động, bộ biến mô, trợ lực lái và một số hộp số xe nâng động cơ. Chọn đúng tiêu chuẩn ghi trong hướng dẫn sử dụng của xe\*.
+- **ATF (Dexron II, III):** dùng cho hộp số tự động, bộ biến mô, trợ lực lái và một số hộp số xe nâng động cơ. Chọn đúng tiêu chuẩn ghi trong sổ tay xe.
 - **Dầu truyền động SAE 10W:** dùng cho hộp số powershift và hệ thủy lực của một số xe nâng, máy công trình yêu cầu dầu loại này.
 - **Không dùng dầu động cơ thay ATF.** Đặc tính ma sát khác nhau sẽ làm trượt ly hợp.
 
@@ -69,5 +69,3 @@ Không nên. Trộn làm thay đổi lượng phụ gia cực áp, dầu không 
 ---
 
 **Xem thêm:** [Dầu động cơ diesel](/dau-dong-co-diesel) · [Dầu thủy lực](/dau-thuy-luc) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)
-
-<p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của xe là gì? Là sổ hướng dẫn hãng xe giao kèm theo xe, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng xe, hoặc liên hệ đại lý của hãng xe đang sử dụng để xin lại nếu bị mất.</small></p>

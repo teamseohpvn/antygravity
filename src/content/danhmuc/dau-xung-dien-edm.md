@@ -11,7 +11,7 @@ tags: ["dau-xung-dien", "edm", "khuon-mau"]
 image: "/images/danh-muc/dau-xung-dien-edm.webp"
 image_alt: "Điện cực đồng máy xung điện EDM ngâm trong bể dầu điện môi"
 date: "2026-09-21"
-updated: "2026-11-22"
+updated: "2026-10-06"
 ---
 
 **Dầu xung điện EDM** (còn gọi là **dầu máy bắn điện** hay **dầu điện môi**) là chất lỏng cách điện dùng trong **máy xung định hình** (sinker EDM). Dầu có ba nhiệm vụ: cách điện giữa điện cực và phôi cho tới khi tia lửa phóng, làm nguội vùng gia công và cuốn phoi kim loại ra khỏi khe hở. Dầu xung điện tốt có **độ nhớt thấp** để len vào khe hẹp, **điểm chớp cháy cao** để an toàn, và **hàm lượng hợp chất thơm thấp** để ít mùi, ít kích ứng da.
@@ -41,7 +41,7 @@ Các con số trên chỉ mang tính tham khảo. Thông số của từng sản
 - **Khuôn dập:** gia công hợp kim cứng, thép gió.
 - **Chi tiết chính xác:** y tế, hàng không, dụng cụ.
 
-Máy **cắt dây** (wire EDM) phần lớn dùng **nước khử ion** làm chất điện môi, không dùng dầu xung điện. Một số máy cắt dây đặc biệt dùng dầu: hãy theo hướng dẫn sử dụng của máy\*.
+Máy **cắt dây** (wire EDM) phần lớn dùng **nước khử ion** làm chất điện môi, không dùng dầu xung điện. Một số máy cắt dây đặc biệt dùng dầu: hãy theo sổ tay máy.
 
 ## An toàn khi dùng dầu xung điện
 
@@ -66,7 +66,7 @@ Tùy khối lượng gia công và hệ thống lọc. Nếu thay lõi lọc đ�
 
 ### Dầu xung điện dùng cho máy cắt dây được không?
 
-Phần lớn máy cắt dây dùng nước khử ion, không dùng dầu xung điện. Chỉ một số dòng máy cắt dây chuyên dụng dùng dầu. Hãy kiểm tra hướng dẫn sử dụng của máy\*.
+Phần lớn máy cắt dây dùng nước khử ion, không dùng dầu xung điện. Chỉ một số dòng máy cắt dây chuyên dụng dùng dầu. Hãy kiểm tra sổ tay máy.
 
 ### Có dùng dầu hỏa hoặc dầu diesel thay dầu xung điện được không?
 
@@ -75,5 +75,3 @@ Không nên. Dầu hỏa và diesel có điểm chớp cháy thấp hơn nhiều
 ---
 
 **Xem thêm:** [Dầu rãnh trượt](/dau-ranh-truot) · [Dầu cắt gọt](/dau-cat-got) · [Dầu chống gỉ](/dau-chong-gi-set)
-
-<p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của máy là gì? Là tài liệu hãng máy giao kèm theo máy, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng máy, hoặc liên hệ đại lý của hãng máy đang sử dụng để xin lại nếu bị mất.</small></p>

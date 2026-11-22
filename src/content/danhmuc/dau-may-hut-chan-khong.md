@@ -12,7 +12,7 @@ tags: ["dau-bom-chan-khong", "iso-vg-100"]
 image: "/images/danh-muc/dau-may-hut-chan-khong.webp"
 image_alt: "Bơm chân không nối với dây chuyền đóng gói hút chân không thực phẩm"
 date: "2026-10-06"
-updated: "2026-11-22"
+updated: "2026-10-06"
 ---
 
 **Dầu máy hút chân không** (dầu bơm chân không) là dầu gốc khoáng tinh chế sâu, có **áp suất hơi rất thấp**, dùng cho bơm chân không cánh gạt ngâm dầu và bơm piston xoay. Dầu vừa bôi trơn, vừa làm kín khe hở giữa cánh gạt và thân bơm, vừa giải nhiệt. Dầu không đạt yêu cầu sẽ bay hơi trong buồng bơm, làm bơm **không xuống được độ chân không** cần thiết và gây khói ở cửa xả.
@@ -30,7 +30,7 @@ updated: "2026-11-22"
 | **ISO VG 68** | Bơm nhỏ, bơm chạy ở nơi mát, khi hãng bơm yêu cầu |
 | **ISO VG 100** | Cấp phổ biến cho bơm cánh gạt ngâm dầu cỡ vừa và lớn (Busch, Becker, Leybold… tùy model) |
 
-Luôn ưu tiên cấp độ nhớt ghi trên nhãn bơm hoặc hướng dẫn sử dụng của máy\*.
+Luôn ưu tiên cấp độ nhớt ghi trên nhãn bơm hoặc sổ tay máy.
 
 ## Chỉ tiêu cần xem trên TDS
 
@@ -57,5 +57,3 @@ Do bơm hút hơi ẩm và nước ngưng tụ lẫn vào dầu. Cho bơm chạy
 ---
 
 **Xem thêm:** [Dầu máy nén khí](/dau-may-nen-khi) · [Dầu thủy lực](/dau-thuy-luc) · [Dầu cách điện](/dau-cach-dien)
-
-<p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của máy là gì? Là tài liệu hãng máy giao kèm theo máy, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng máy, hoặc liên hệ đại lý của hãng máy đang sử dụng để xin lại nếu bị mất.</small></p>
