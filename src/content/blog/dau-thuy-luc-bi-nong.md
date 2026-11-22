@@ -107,7 +107,7 @@ Casey kết luận rất rõ: **hệ thủy lực bắt đầu quá nóng thì d
 1. **Mức dầu:** đổ đúng mức. Mức thấp vừa làm giảm khả năng tỏa nhiệt, vừa làm bơm hút lẫn khí.
 2. **Không gian quanh thùng và két:** dọn vật che chắn, lau bụi trên thùng và lá tản nhiệt.
 3. **Két làm mát:** đo nhiệt độ dầu vào và ra khỏi két bằng súng đo nhiệt hồng ngoại. Công suất két đang tỏa ra xấp xỉ **0,027 × lưu lượng (L/phút) × độ chênh nhiệt (°C)**, tính bằng kW ([cách tính](#cach-tinh)). Ví dụ: 90 L/phút, dầu ra mát hơn dầu vào 4 °C, két đang tỏa khoảng 10 kW. Két tỏa ít hơn thiết kế là két bẩn hoặc yếu; két tỏa nhiều hơn hẳn bình thường (ví dụ 90 L/phút, chênh 10 °C, khoảng 25 kW) nghĩa là hệ đang sinh nhiều nhiệt hơn trước, phải tìm chỗ mất công suất.
-4. **Van an toàn và bộ bù áp của bơm:** kiểm tra lại mức đặt theo tài liệu máy. Nghe tiếng dầu xả rít liên tục qua van an toàn khi máy không làm việc.
+4. **Van an toàn và bộ bù áp của bơm:** kiểm tra lại mức đặt theo hướng dẫn sử dụng của máy. Nghe tiếng dầu xả rít liên tục qua van an toàn khi máy không làm việc.
 5. **Rò rỉ bên trong:** dùng súng đo nhiệt dò dọc các van, xi lanh, đường hồi. Chỗ nào nóng bất thường so với xung quanh thường là chỗ dầu đang lọt từ áp cao về áp thấp. Xi lanh tụt khi giữ tải, bơm phải chạy lâu hơn để đạt áp cũng là dấu hiệu.
 6. **Đường ống:** đường ống dài, ống nhỏ hơn thiết kế, nhiều cút gấp làm tăng sụt áp và sinh nhiệt.
 
