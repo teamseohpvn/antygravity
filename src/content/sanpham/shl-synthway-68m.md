@@ -76,7 +76,7 @@ Hàng có sẵn **can 20 L**, kèm CO/CQ và hóa đơn VAT, giao từ kho tại
 [Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS của SHL.
 
 - **Bảo vệ băng trượt.** Dầu tạo màng bôi trơn giữa bàn máy và sống trượt, giảm mòn để máy giữ độ chính xác gia công.
-- **Chống gỉ, chống ăn mòn.** Quan trọng với máy dùng dung dịch cắt gọt pha nước, nơi băng trượt thường xuyên bị nước bắn vào.
+- **Chống gỉ, chống ăn mòn.** Quan trọng với máy dùng [dung dịch cắt gọt pha nước](/dau-cat-got/vhp-lotus-oil-ls), nơi băng trượt thường xuyên bị nước bắn vào.
 - **Không ăn mòn đồng.** Ăn mòn tấm đồng cấp 1b, an toàn cho bạc, ống dẫn dầu bằng đồng.
 - **Chảy đều khi lạnh.** Chỉ số độ nhớt 105, điểm đông đặc dưới −20 °C: dầu chảy đều qua bơm định lượng ngay cả khi xưởng lạnh.
 

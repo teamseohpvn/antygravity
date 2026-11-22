@@ -61,7 +61,7 @@ updated: "2026-10-30"
 | Dầu bánh răng công nghiệp VG 220–680, dầu tuần hoàn đặc | **Hợp.** |
 | Dầu cầu 85W-140, SAE 140 | **Hợp.** |
 | Dầu thủy lực VG 32–68 | Thường chảy quá nhanh: cần ống nhỏ hơn. |
-| Dầu EDM, dầu cách điện rất loãng | Không. Cần ống rất nhỏ. |
+| [Dầu EDM](/dau-xung-dien-edm/shl-edm-32), dầu cách điện rất loãng | Không. Cần ống rất nhỏ. |
 
 > **Nhận định của HT VINA:** Xưởng dùng nhiều loại dầu (thủy lực VG 46, bánh răng VG 220…) thường cần hai đến ba cỡ ống. Báo các cấp độ nhớt đang dùng khi đặt hàng để chúng tôi chọn bộ ống phù hợp, tránh mua một ống không đo được dầu chính.
 
