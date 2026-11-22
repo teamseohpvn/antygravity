@@ -109,7 +109,7 @@ Luôn theo cấp độ nhớt ghi trong tài liệu hướng dẫn sử dụng k
 | Chỉ số độ nhớt | 103 | 104 |
 | Điểm chớp cháy cốc hở | 252 °C | 258 °C |
 | Điểm đông đặc | −27,5 °C | −25 °C |
-| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn phuy 200 L |
+| Tình trạng kho | Có sẵn | Có sẵn phuy 200 L |
 
 > **Nhận định của HT VINA:** Chọn Super Mulpus DX khi một máy có cả hệ thủy lực, hộp số và rãnh trượt, hoặc khi xưởng muốn gom nhiều mã dầu về một mã. Nếu máy chỉ có hệ thủy lực, Super Hyrando 68 là lựa chọn đơn giản hơn.
 

@@ -109,7 +109,7 @@ VHP công bố bảng chỉ tiêu cho loại No2. Nếu cần phiếu kiểm ngh
 | Chất làm đặc | Lithium và canxi | Lithium và canxi |
 | Nhiệt độ làm việc | −10 đến 110 °C | −10 đến 110 °C (ngắn hạn 120 °C) |
 | Định hướng của VHP | Chỗ hở, nhiều nước, nước muối | Mỡ bôi trơn đa dụng, chống rửa trôi |
-| Tình trạng kho tháng 10/2026 | Có sẵn phuy 180 kg | Có sẵn No3 ống 400 g |
+| Tình trạng kho | Có sẵn phuy 180 kg | Có sẵn No3 ống 400 g |
 
 Khoảng giá theo kg của Caxilium No2, No3 và Licas No3 có trong [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron).
 

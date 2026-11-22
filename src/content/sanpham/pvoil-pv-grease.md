@@ -20,7 +20,7 @@ specs:
   - { name: "Độ xuyên kim", value: "No2: 265–295 · No3: 220–250 (0,1 mm)", method: "ASTM D217" }
   - { name: "Điểm nhỏ giọt", value: "Tối thiểu 140 °C", method: "ASTM D2265" }
   - { name: "Ăn mòn tấm đồng (24 giờ, 100 °C)", value: "Loại 1", method: "ASTM D4048" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 tds_url: "http://pvoillube.vn/san-pham/san-pham-dan-dung/mo-da-dung/pv-grease-lithium-l1-l2-l3-mo-da-dung/"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
@@ -96,7 +96,7 @@ Loại **No2** và **No3** đóng **phuy** **có sẵn tại kho**, có hóa đ�
 | :--- | :--- | :--- | :--- |
 | Độ xuyên kim (0,1 mm) | 220–250 | 220–250 | 180–250 |
 | Điểm nhỏ giọt | Tối thiểu 140 °C | Tối thiểu 130 °C | ≥ 120 °C |
-| Tình trạng kho tháng 10/2026 | Có sẵn phuy | Có sẵn ống 400 g | Có sẵn phuy 180 kg |
+| Tình trạng kho | Có sẵn phuy | Có sẵn ống 400 g | Có sẵn phuy 180 kg |
 
 Cả ba mã đều có khoảng giá theo kg trên [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron), nên đổi mã nào cũng dễ ước chi phí.
 

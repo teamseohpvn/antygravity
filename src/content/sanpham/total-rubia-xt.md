@@ -22,7 +22,7 @@ specs:
   - { name: "Điểm chớp cháy cốc hở", value: "230 °C", method: "ASTM D92" }
   - { name: "Điểm đông đặc", value: "-21 °C", method: "ASTM D97" }
   - { name: "Trị số kiềm tổng (TBN)", value: "6,8 mg KOH/g", method: "ASTM D2896" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 tds_url: "https://total-cdn-lmdb.afineo.io/tdsV2/TDS_TOTAL_RUBIA-XT-20W-50_755_VN_VNM.pdf"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích

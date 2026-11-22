@@ -32,7 +32,7 @@ thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 
 packaging:
   - { name: "Phuy 200 L", sku: "COSMO AW68" }
-stock_status: "co-san"
+stock_status: "dat-hang"   # 15/11/2026 phuy 200 L tạm hết hàng
 so_sanh_chon_khi: "Máy đang dùng Cosmo, hoặc máy xúc, máy ép làm việc nóng, áp cao."
 
 applications:
@@ -56,15 +56,15 @@ tom_tat:
   - "**Dùng được** cho hệ thủy lực yêu cầu ISO 11158 HM, DIN 51524-2 HLP cấp 68, kể cả máy xúc làm việc nóng."
   - "**Tương đương tiêu chuẩn** dầu thủy lực của Denison (HF-0, HF-1, HF-2) và Eaton theo công bố của Cosmo."
   - "**Đang dùng Cosmo** thì thêm tiếp đúng mã; đổi sang mã khác thì xả hết dầu cũ."
-  - "**Có sẵn tại kho** (phuy 200 L)."
+  - "**Tạm hết hàng** phuy 200 L từ 15/11/2026, nhận đặt trước."
 tags: ["iso-vg-68", "chong-mai-mon", "cosmo"]
 date: "2026-10-12"
-updated: "2026-10-14"
+updated: "2026-11-22"
 ---
 
 **Cosmo Hydro AW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn loại tuổi thọ dài của Cosmo Oil Lubricants (Nhật Bản). Theo hãng, dầu tương đương các tiêu chuẩn ISO 11158 HM, ASTM D6158 HM và DIN 51524-2 HLP. Dầu cũng tương đương tiêu chuẩn dầu thủy lực của hai hãng bơm Denison và Eaton. Điểm mạnh của dầu là ít tạo cặn khi dùng lâu và chịu được nhiệt độ, áp suất cao.
 
-Mã này **có sẵn tại kho** theo phuy 200 L, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **tạm hết hàng** phuy 200 L từ 15/11/2026; chúng tôi vẫn nhận đặt và báo ngày hàng về. Hàng có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
 ## Cosmo Hydro AW 68 có hợp với máy của bạn không?
 
@@ -97,7 +97,7 @@ Hai mã đều của hãng Nhật, cùng cấp 68, cùng loại HM. ENEOS Super 
 | Điểm chớp cháy cốc hở | 250 °C | 258 °C |
 | Điểm đông đặc | −22,5 °C | −25 °C |
 | Tiêu chuẩn hãng bơm | Tương đương Denison, Eaton | Không công bố |
-| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn phuy 200 L |
+| Tình trạng kho | Có sẵn | Tạm hết hàng phuy 200 L (từ 15/11/2026) |
 
 > **Nhận định của HT VINA:** Thông số chính của hai mã rất gần nhau. Xưởng đang dùng Cosmo thì đặt tiếp đúng mã. Cần hàng ngay cho máy chỉ ghi HM 68 thì ENEOS có sẵn; khi đổi mã, xả hết dầu cũ thay vì đổ lẫn, nhất là với máy áp cao.
 
@@ -119,11 +119,11 @@ Cách lấy mẫu, đo và đọc kết quả xem bài [hướng dẫn kiểm tr
 Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C ra ngoài khoảng 61,8–75,5 mm²/s, TAN tăng thêm 0,2 mg KOH/g, hoặc nước trên 0,05%. Bảng mức cho phép ở mục "Khi nào cần thay dầu?" phía trên.
 
 ### Có loại can nhỏ không?
-Hiện chúng tôi có sẵn loại phuy 200 L. Nếu cần quy cách khác, hãy [liên hệ](/contact) để kiểm tra hàng.
+Phuy 200 L đang tạm hết hàng, nhận đặt trước. Nếu cần quy cách khác, hãy [liên hệ](/contact) để kiểm tra hàng.
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách:** phuy 200 L cấp 68, có sẵn tại kho.
+- **Quy cách:** phuy 200 L cấp 68, tạm hết hàng từ 15/11/2026, nhận đặt trước.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** xem khoảng giá tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Cosmo%20Hydro%20AW%2068) kèm số lượng.

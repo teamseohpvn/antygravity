@@ -23,7 +23,7 @@ specs:
   - { name: "Nhiệt độ nhỏ giọt", value: "240 °C", method: "IP 396" }
   - { name: "Tải hàn dính 4 bi", value: "315 kg (tối thiểu)", method: "ASTM D2596" }
   - { name: "Nhiệt độ làm việc", value: "-20 °C đến 140 °C (đỉnh 150 °C)" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích
 

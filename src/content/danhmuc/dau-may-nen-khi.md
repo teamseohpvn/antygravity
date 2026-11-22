@@ -5,13 +5,13 @@ nav_label: "Dầu máy nén khí"
 order: 8
 summary: "Máy nén khí trục vít, piston"
 seo_title: "Dầu Máy Nén Khí Trục Vít, Piston 32, 46, 68 – Báo Giá Sỉ"
-description: "Dầu nén khí trục vít, piston ISO VG 32, 46, 68, 100: Shell Corena, Castrol Aircol, dầu tương đương cho Kobelco, Hitachi, Atlas Copco. Có CO/CQ, VAT."
+description: "Dầu nén khí trục vít, piston ISO VG 32, 46: ENEOS Faircol RA, Idemitsu Daphne Super Screw, VHP Rosia CPR, dùng cho Kobelco, Hitachi, Atlas Copco."
 keywords: ["dầu máy nén khí", "dầu nén khí", "nhớt máy nén khí", "dầu máy nén khí trục vít", "nhớt máy nén khí trục vít", "dầu máy nén khí piston", "dầu máy nén khí kobelco", "dầu máy nén khí hitachi", "dầu máy nén khí atlas copco", "shell corena s3 r 46", "mobil rarus 425", "total dacnis sh 46"]
 tags: ["dau-may-nen-khi", "shell-corena", "castrol-aircol", "truc-vit", "piston"]
 image: "/images/danh-muc/dau-may-nen-khi.webp"
 image_alt: "Kỹ thuật viên thêm dầu máy nén khí vào máy nén khí trục vít"
 date: "2026-09-21"
-updated: "2026-10-06"
+updated: "2026-11-22"
 ---
 
 **Dầu máy nén khí** (còn gọi là **dầu nén khí** hay **nhớt máy nén khí**) vừa bôi trơn, vừa làm mát và làm kín khe hở trong buồng nén. Loại dầu phụ thuộc vào kiểu máy. **Máy nén khí trục vít ngâm dầu** thường dùng dầu **ISO VG 46**, một số dùng VG 32 hoặc 68. **Máy nén khí piston** thường dùng VG 68 hoặc 100. Dầu gốc khoáng có chu kỳ thay ngắn hơn. Dầu tổng hợp đắt hơn nhưng chạy được lâu hơn nhiều giờ, hợp với máy chạy 24/7.
@@ -23,9 +23,9 @@ updated: "2026-10-06"
 | **Trục vít ngâm dầu** | ISO VG 46 (có máy dùng 32 hoặc 68) | Dầu tuần hoàn liên tục, đi qua bình tách dầu | Cần thoát khí, tách nước và chống oxy hóa tốt |
 | **Piston (pít-tông)** | ISO VG 68 / 100 | Nhiệt độ xả cao, dễ đóng cặn ở van xả | Cần dầu ít tạo cặn carbon |
 | **Cánh gạt (vane)** | ISO VG 68 / 100 | Cánh gạt trượt trên thành stator | Theo khuyến cáo nhà sản xuất |
-| **Trục vít không dầu** | Chỉ bôi trơn hộp số và vòng bi | Không có dầu trong buồng nén | Dùng dầu hộp số theo sổ tay máy |
+| **Trục vít không dầu** | Chỉ bôi trơn hộp số và vòng bi | Không có dầu trong buồng nén | Dùng dầu hộp số theo hướng dẫn sử dụng của máy\* |
 
-**Dầu khoáng hay tổng hợp?** Tùy nhiệt độ đầu nén và số giờ chạy mỗi năm. Dầu khoáng thường thay sau khoảng 2.000–4.000 giờ, dầu tổng hợp PAO sau khoảng 6.000–8.000 giờ trở lên. Số giờ cụ thể lấy theo TDS, sổ tay máy và kết quả phân tích dầu.
+**Dầu khoáng hay tổng hợp?** Tùy nhiệt độ đầu nén và số giờ chạy mỗi năm. Dầu khoáng thường thay sau khoảng 2.000–4.000 giờ, dầu tổng hợp PAO sau khoảng 6.000–8.000 giờ trở lên. Số giờ cụ thể lấy theo TDS, hướng dẫn sử dụng của máy\* và kết quả phân tích dầu.
 
 ## Dòng sản phẩm và sản phẩm tương đương
 
@@ -77,7 +77,7 @@ Tùy loại dầu tổng hợp. Dầu gốc **PAG (polyglycol)** không tương 
 
 ### Khi nào cần thay dầu máy nén khí?
 
-Theo số giờ chạy khuyến cáo trên sổ tay máy và TDS của dầu, hoặc sớm hơn nếu thấy các dấu hiệu sau:
+Theo số giờ chạy khuyến cáo trong hướng dẫn sử dụng của máy\* và TDS của dầu, hoặc sớm hơn nếu thấy các dấu hiệu sau:
 
 - Nhiệt độ đầu nén thường xuyên cao hơn bình thường.
 - Dầu sẫm màu, có mùi khét.
@@ -93,3 +93,5 @@ Không nên. Dầu máy nén khí được pha để chịu oxy hóa ở nhiệt
 ---
 
 **Xem thêm:** [Dầu thủy lực](/dau-thuy-luc) · [Dầu bánh răng](/dau-banh-rang) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)
+
+<p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của máy là gì? Là tài liệu hãng máy giao kèm theo máy, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng máy, hoặc liên hệ đại lý của hãng máy đang sử dụng để xin lại nếu bị mất.</small></p>

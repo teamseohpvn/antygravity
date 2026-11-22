@@ -90,7 +90,7 @@ Mã này **có sẵn tại kho** theo phuy 208 L, kèm CO/CQ và hóa đơn VAT.
 | Cấp API | CF-4, CF / SG | CF-4 | CF-4 |
 | Độ nhớt ở 100 °C | 19,1 mm²/s | 18,44 mm²/s | Chưa có TDS |
 | Trị số kiềm tổng | 10,3 mg KOH/g | 8,01 mg KOH/g | Chưa có TDS |
-| Tình trạng kho tháng 10/2026 | Có sẵn phuy 208 L | Có sẵn can 18 L | Có sẵn phuy 200 L |
+| Tình trạng kho | Có sẵn phuy 208 L | Có sẵn can 18 L | Có sẵn phuy 200 L |
 
 > **Nhận định của HT VINA:** Đội xe đang dùng Delo Silver, nhất là đội có cả máy xăng, thì đặt tiếp đúng mã. Cần dầu ngay cho máy diesel CF-4 thì dùng mã có sẵn; khi đổi mã nên thay toàn bộ ở lần bảo dưỡng, không đổ lẫn thường xuyên.
 

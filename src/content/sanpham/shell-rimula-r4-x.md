@@ -91,7 +91,7 @@ Mã này **có sẵn tại kho** theo phuy 200 L, kèm CO/CQ và hóa đơn VAT.
 | Chỉ số độ nhớt | 139 | 139 | 136 |
 | Trị số kiềm tổng | 10,5 mg KOH/g | 12,3 mg KOH/g | 11 mg KOH/g |
 | Tro sunphat | 1,45% | 1,5% | 1,45% |
-| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn phuy 209 L | Có sẵn |
+| Tình trạng kho | Có sẵn | Có sẵn phuy 209 L | Có sẵn |
 
 > **Nhận định của HT VINA:** Ba mã cùng nhóm chất lượng, chọn theo chuẩn mà hướng dẫn sử dụng của xe yêu cầu. Đội xe đang dùng Shell thì đặt tiếp R4 X. Cần dầu ngay thì Vecton 15W-40 có sẵn và có TBN cao hơn; đổi mã ở lần thay dầu toàn bộ, không đổ lẫn thường xuyên.
 

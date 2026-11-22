@@ -96,7 +96,7 @@ ENEOS Super Hyrando 68 cùng cấp, cùng loại chống mài mòn và có sẵn
 | Chỉ số độ nhớt | 95 (tối thiểu) | 104 |
 | Điểm chớp cháy | 240 °C | 258 °C |
 | Điểm đông đặc | −21 °C | −25 °C |
-| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn phuy 200 L |
+| Tình trạng kho | Có sẵn | Có sẵn phuy 200 L |
 
 > **Nhận định của HT VINA:** Máy đang dùng Caltex AW 68 và chạy ổn thì đặt tiếp đúng mã để khỏi súc rửa. Cần dầu ngay, hoặc máy chạy nóng liên tục, thì ENEOS Super Hyrando 68 có sẵn và có chỉ số độ nhớt, điểm chớp cháy cao hơn. Khi đổi mã, xả hết dầu cũ và thay lọc.
 

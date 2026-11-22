@@ -21,7 +21,7 @@ specs:
   - { name: "Chỉ số độ nhớt", value: "15W-40: 138 · 20W-50: 128" }
   - { name: "Điểm chớp cháy cốc hở (COC)", value: "15W-40: 246 °C · 20W-50: 264 °C" }
   - { name: "Trị số kiềm tổng (TBN)", value: "15W-40: 9,18 mg KOH/g · 20W-50: 9,13 mg KOH/g" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 tds_url: "https://eneos.com.vn/en/product/diesel-engine-oil-ci-4-dh-1-15w-40/"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích

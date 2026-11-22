@@ -21,7 +21,7 @@ specs:
   - { name: "Điểm chớp cháy cốc hở", value: "Tối thiểu 220 °C", method: "ASTM D92" }
   - { name: "Điểm đông đặc", value: "Tối đa -9 °C", method: "ASTM D97" }
   - { name: "Độ tạo bọt (SEQ I / SEQ II)", value: "Tối đa 50/0 · 20/0 ml", method: "ASTM D892" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 tds_url: "https://pvoillube.vn/san-pham/san-pham-dan-dung/dau-truyen-dong/pv-transmission-140ep_gl4-dau-truyen-dong-chiu-cuc-ap-cao-cap/"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích

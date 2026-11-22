@@ -102,7 +102,7 @@ Mã này **có sẵn tại kho**: phuy 209 L (20W-50 hoặc 15W-40) và xô 18 L
 | Độ nhớt ở 100 °C | 18,7 mm²/s | 20,5 mm²/s |
 | Trị số kiềm tổng | 6,6 mg KOH/g | 10 mg KOH/g |
 | Dùng cho động cơ có EGR | Không | Có |
-| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn phuy 209 L |
+| Tình trạng kho | Có sẵn | Có sẵn phuy 209 L |
 
 > **Nhận định của HT VINA:** Máy cũ không có EGR dùng CRB CF-4 là đủ. Cần dầu ngay, hoặc đội xe lẫn cả máy đời mới, thì Turbomax CI-4 có sẵn và dùng thay được cho CF-4.
 

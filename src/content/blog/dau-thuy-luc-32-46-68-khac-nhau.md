@@ -16,7 +16,7 @@ citations:
   - "https://www.astm.org/Standards/D341.htm"
   - "https://www.iso.org/standard/84812.html"
 date: "2026-10-30"
-updated: "2026-11-21"
+updated: "2026-11-22"
 image: "/images/danh-muc/dau-thuy-luc-kho.webp"
 image_alt: "Phuy dầu thủy lực xếp trong kho HT VINA"
 tags: ["dầu thủy lực", "độ nhớt", "so sánh"]
@@ -94,7 +94,7 @@ Bảng dưới là cách chọn thường gặp. **Tài liệu hướng dẫn s�
 
 **"68 dùng cho khí hậu cận nhiệt đới."** Trên diễn đàn [Heavy Equipment Forums](https://www.heavyequipmentforums.com/threads/iso-46-or-iso-68-hydraulic-fluid.107106/) (02/2024), chủ một máy xúc mini Kubota ở bắc Ohio (Mỹ) hỏi nên dùng 46 hay 68. Tài liệu của máy ghi ISO 46 cho 20–70 °F (khoảng −7 đến 21 °C) và ISO 68 cho nhiệt độ tới 90 °F (khoảng 32 °C). Một thành viên kỳ cựu trả lời nên dùng 46 cho khí hậu đó, vì "68 dùng cho điều kiện cận nhiệt đới". Người này nhắc thêm rằng dầu nóng là do két làm mát, dùng cấp nào cũng vậy, nên phải giữ két sạch.
 
-**Lời khuyên của chúng tôi:** miền Bắc Việt Nam có mùa hè nóng ẩm, gần với điều kiện mà tài liệu máy đó dành cho cấp 68. Dù vậy, nếu thùng dầu thường xuyên trên 60 °C thì hãy kiểm tra két làm mát trước, đừng vội đổi sang dầu đặc hơn để "chữa".
+**Lời khuyên của chúng tôi:** miền Bắc Việt Nam có mùa hè nóng ẩm, gần với điều kiện mà hướng dẫn sử dụng của máy\* đó dành cho cấp 68. Dù vậy, nếu thùng dầu thường xuyên trên 60 °C thì hãy kiểm tra két làm mát trước, đừng vội đổi sang dầu đặc hơn để "chữa".
 
 **Thêm dầu khác cấp.** Trên diễn đàn [Practical Machinist](https://practicalmachinist.com/forum/threads/mixing-hydraulic-oils.445702/) (01/2026), chủ một máy tiện CNC Okuma quy định dầu AW 32 hỏi có được thêm dầu AW 46 không. Một thợ có 30 năm làm với 80–100 máy tiện CNC cho biết chưa gặp sự cố khi trộn hai cấp gần nhau; một thành viên khác lưu ý hệ phụ gia đáng lo hơn chênh lệch nhỏ về cấp độ nhớt.
 
@@ -125,3 +125,5 @@ Nên xả hết dầu cũ và thay lõi lọc; nếu dầu cũ đã bẩn hoặc
 Khi hướng dẫn sử dụng của máy ghi 32, thường là máy công cụ, máy CNC, xe nâng, hệ thủy lực nhỏ hoặc làm việc ở nơi lạnh. Kho HT VINA hiện chủ yếu có cấp 68 và một số mã cấp 46; cấp 32 đặt theo yêu cầu riêng, [gửi yêu cầu báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c%2032) kèm tên máy.
 
 Xem khoảng giá các mã dầu thủy lực đang có tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) hoặc toàn bộ danh mục [dầu thủy lực](/dau-thuy-luc).
+
+<p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của máy là gì? Là tài liệu hãng máy giao kèm theo máy, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng máy, hoặc liên hệ đại lý của hãng máy đang sử dụng để xin lại nếu bị mất.</small></p>

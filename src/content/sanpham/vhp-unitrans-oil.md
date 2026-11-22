@@ -31,7 +31,7 @@ specs:
   - { name: "Hàm lượng PCB", value: "Không phát hiện" }
   - { name: "Hợp chất furfural", value: "0,0015 ppm", method: "ASTM D5387" }
   - { name: "Sức căng bề mặt ở 25 °C", value: "51,1 mN/m", method: "ASTM D971" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 tds_url: "https://hoadauvhp.com/unitrans-oil-hi-volt--tvai-nid7.html"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích

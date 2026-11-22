@@ -5,13 +5,13 @@ nav_label: "Dầu bánh răng"
 order: 7
 summary: "Hộp giảm tốc, hộp số công nghiệp"
 seo_title: "Dầu Bánh Răng Công Nghiệp 220, 320 Chính Hãng – Báo Giá Sỉ"
-description: "Dầu bánh răng, dầu hộp giảm tốc công nghiệp ISO VG 150–680 Shell Omala, Castrol Alpha SP, Mobilgear 600 XP. Có CO/CQ, VAT. Báo giá sỉ phuy 209L, xô 20L."
+description: "Dầu bánh răng, dầu hộp giảm tốc công nghiệp ISO VG 100–320: ENEOS Bonnoc TS, VHP Rosia EP có sẵn tại kho. Có CO/CQ, VAT. Tư vấn chọn cấp theo hộp số."
 keywords: ["dầu bánh răng", "dầu bánh răng công nghiệp", "dầu bánh răng 220", "dầu bánh răng 320", "dầu bánh răng 150", "dầu hộp giảm tốc", "dầu bánh răng tổng hợp", "shell omala s2 gx 220", "shell omala s2 gx 320", "mobilgear 600 xp 220", "castrol alpha sp 220", "total carter ep 220"]
 tags: ["dau-banh-rang", "dau-hop-giam-toc", "shell-omala", "castrol-alpha", "iso-vg-220", "iso-vg-320"]
 image: "/images/danh-muc/dau-banh-rang.webp"
 image_alt: "Hộp giảm tốc công nghiệp mở nắp, bánh răng nghiêng phủ dầu bánh răng"
 date: "2026-09-21"
-updated: "2026-10-06"
+updated: "2026-11-22"
 ---
 
 **Dầu bánh răng công nghiệp** dùng cho hộp số kín và **hộp giảm tốc** của băng tải, máy khuấy, máy đùn, máy nghiền, cẩu trục. Phần lớn là **dầu chịu cực áp (EP)** loại **CLP** theo DIN 51517-3. Cấp phổ biến nhất là **ISO VG 220**, tiếp theo là **320**. Cấp độ nhớt đúng luôn là cấp ghi trên nhãn hộp số, vì nhà sản xuất tính theo tốc độ, tải và nhiệt độ làm việc.
@@ -26,7 +26,7 @@ updated: "2026-10-06"
 | **460** | 7 EP | 414 – 506 | Máy nghiền, máy cán, hộp số trục vít – bánh vít |
 | **680** | 8 EP | 612 – 748 | Tải rất nặng, tốc độ rất chậm, trục vít – bánh vít lớn |
 
-**Hộp số trục vít – bánh vít** (bánh vít bằng đồng) cần lưu ý thêm. Một số dầu EP chứa lưu huỳnh – phốt pho có thể không phù hợp với bánh vít đồng ở nhiệt độ cao. Nhiều nhà sản xuất khuyến nghị dầu tổng hợp PAG hoặc dầu bánh răng chuyên cho trục vít. Hãy đối chiếu sổ tay hộp số.
+**Hộp số trục vít – bánh vít** (bánh vít bằng đồng) cần lưu ý thêm. Một số dầu EP chứa lưu huỳnh – phốt pho có thể không phù hợp với bánh vít đồng ở nhiệt độ cao. Nhiều nhà sản xuất khuyến nghị dầu tổng hợp PAG hoặc dầu bánh răng chuyên cho trục vít. Hãy đối chiếu hướng dẫn sử dụng của máy\* (phần hộp số).
 
 ## Dòng sản phẩm và sản phẩm tương đương
 
@@ -81,3 +81,5 @@ Với dầu khoáng, nhiều nhà sản xuất hộp số khuyến nghị thay s
 ---
 
 **Xem thêm:** [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep) · [Dầu thủy lực](/dau-thuy-luc) · [Dầu máy nén khí](/dau-may-nen-khi) · [Test chất lượng dầu tại xưởng](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau)
+
+<p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của máy là gì? Là tài liệu hãng máy giao kèm theo máy, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng máy, hoặc liên hệ đại lý của hãng máy đang sử dụng để xin lại nếu bị mất.</small></p>

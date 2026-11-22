@@ -31,7 +31,7 @@ packaging:
   - { name: "Phuy 200 L", sku: "AW68-Xone ( Phuy)" }
   - { name: "Xô 18 L", sku: "AW68-Xone ( Xô 18L)" }
 stock_status: "co-san"
-so_sanh_chon_khi: "Cần phuy AW 68 giá theo lít thấp hơn Castrol AWS 68 khoảng 8% (bảng giá 10/2026)."
+so_sanh_chon_khi: "Cần phuy AW 68 giá theo lít thấp hơn Castrol AWS 68 khoảng 13% (bảng giá tháng 11/2026)."
 
 applications:
   - "Máy ép nhựa, máy ép thủy lực, máy dập chạy liên tục trong xưởng"
@@ -55,11 +55,11 @@ doc_gia: "Trang này dành cho người mua hàng cần dầu thủy lực chố
 tom_tat:
   - "**Dùng được** cho máy ép, máy công trình, xe nâng yêu cầu dầu thủy lực ISO VG 68 loại HM/AW."
   - "**Không dùng** cho bơm yêu cầu dầu không kẽm, hoặc máy ngoài trời lạnh sâu cần dầu HV."
-  - "**Giá theo lít** của phuy thấp hơn khoảng 8% so với Castrol Hyspin AWS 68 (bảng giá tháng 10/2026)."
+  - "**Giá theo lít** của phuy thấp hơn khoảng 13% so với Castrol Hyspin AWS 68 (bảng giá tháng 11/2026)."
   - "**Theo TDS 12/10/2026:** độ nhớt 75,10 cSt ở 40 °C, chỉ số độ nhớt 147, chớp cháy cốc hở 242 °C. Độ nhớt này cao hơn nhẹ cận trên 74,8 cSt của cấp ISO VG 68, nên đo lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "x-one"]
 date: "2026-10-12"
-updated: "2026-11-17"
+updated: "2026-11-22"
 ---
 
 **X-One AW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp độ nhớt **ISO VG 68**. Chữ "AW" (anti-wear) nghĩa là dầu có phụ gia chống mài mòn để bảo vệ bơm và van khi hệ thống chạy áp cao. Dầu dùng cho máy ép, máy công trình và hầu hết hệ thủy lực công nghiệp yêu cầu dầu cấp 68.
