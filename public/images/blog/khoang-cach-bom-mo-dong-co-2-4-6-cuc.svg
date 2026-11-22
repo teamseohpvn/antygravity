@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+  <title id="t">Khoảng cách bơm mỡ vòng bi 6310 theo số cực động cơ</title>
+  <desc id="d">Theo công thức Mobil, vòng bi cầu, dưới 71 °C, môi trường sạch: động cơ 2 cực khoảng 4.700 giờ, 4 cực khoảng 11.400 giờ, 6 cực khoảng 18.200 giờ. Mobil khuyên động cơ chạy liên tục bơm ít nhất mỗi năm một lần (khoảng 8.760 giờ).</desc>
+  <rect width="760" height="380" fill="#ffffff"/>
+  <text x="40" y="34" font-size="19" font-weight="700" fill="#1f2937">Vòng bi 6310: bao nhiêu giờ chạy thì bơm mỡ một lần?</text>
+  <text x="40" y="58" font-size="13" fill="#4b5563">Công thức Mobil, vòng bi cầu, dưới 71 °C, môi trường sạch, điện 50 Hz</text>
+  <!-- scale: 0..20000 h over 240 px, baseline 320 -->
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="100" y1="320" x2="720" y2="320"/>
+    <line x1="100" y1="260" x2="720" y2="260"/>
+    <line x1="100" y1="200" x2="720" y2="200"/>
+    <line x1="100" y1="140" x2="720" y2="140"/>
+    <line x1="100" y1="80" x2="720" y2="80"/>
+  </g>
+  <g font-size="12" fill="#6b7280" text-anchor="end">
+    <text x="92" y="324">0</text>
+    <text x="92" y="264">5.000 h</text>
+    <text x="92" y="204">10.000 h</text>
+    <text x="92" y="144">15.000 h</text>
+    <text x="92" y="84">20.000 h</text>
+  </g>
+  <g fill="#1d4ed8">
+    <rect x="160" y="263.6" width="110" height="56.4"/>
+    <rect x="345" y="183.2" width="110" height="136.8"/>
+    <rect x="530" y="101.6" width="110" height="218.4"/>
+  </g>
+  <line x1="100" y1="214.9" x2="720" y2="214.9" stroke="#c2410c" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="104" y="233" font-size="12" fill="#c2410c">Mobil: ít nhất 1 lần/năm (≈ 8.760 h)</text>
+  <g font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">
+    <text x="215" y="255">≈ 4.700 h</text>
+    <text x="400" y="175">≈ 11.400 h</text>
+    <text x="585" y="93">≈ 18.200 h</text>
+  </g>
+  <g font-size="13" fill="#1f2937" text-anchor="middle">
+    <text x="215" y="340">2 cực (≈ 2.960 v/ph)</text>
+    <text x="400" y="340">4 cực (≈ 1.480 v/ph)</text>
+    <text x="585" y="340">6 cực (≈ 980 v/ph)</text>
+  </g>
+  <text x="40" y="368" font-size="11" fill="#6b7280">Nguồn công thức: Mobil, Guide to Electric Motor Bearing Lubrication. Tính toán: HT VINA, 21/11/2026</text>
+</svg>
