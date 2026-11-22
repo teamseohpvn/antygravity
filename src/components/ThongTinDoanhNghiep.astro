@@ -1,7 +1,7 @@
 ---
 // Thông tin pháp lý doanh nghiệp đặt gần phần liên hệ (người dùng yêu cầu 06/11/2026).
 // Dùng trên trang giới thiệu, /mo-boi-tron-cong-nghiep, /bao-gia-dau-thuy-luc và trang báo giá mỡ khi có.
-import { BUSINESS, LEGAL_NAME, LEGAL_SHORT, TAX_ID, DKKD, SITE_NAME, ADDRESS_TEXT, KHO_GIAO_HANG, GIO_LAM_VIEC, POLICY_LINKS } from '../lib/site';
+import { BUSINESS, LEGAL_NAME, LEGAL_SHORT, TAX_ID, DKKD, SITE_NAME, ADDRESS_TEXT, KHO_GIAO_HANG, GIO_LAM_VIEC } from '../lib/site';
 
 interface Props {
   tieuDe?: string;
@@ -10,7 +10,6 @@ interface Props {
 }
 const { tieuDe = 'Thông tin doanh nghiệp', linkGioiThieu = true } = Astro.props;
 const ngayVN = (iso: string) => iso.split('-').reverse().join('/');
-const CHINH_SACH = POLICY_LINKS.filter((l) => l.href !== '/tuy-chon-cookie');
 ---
 
 <section class="ttdn" id="thong-tin-doanh-nghiep" aria-labelledby="tieu-de-ttdn">
@@ -26,7 +25,8 @@ const CHINH_SACH = POLICY_LINKS.filter((l) => l.href !== '/tuy-chon-cookie');
     <div><dt>Email</dt><dd><a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></dd></div>
     <div><dt>Giờ làm việc</dt><dd>{GIO_LAM_VIEC.map((g, i) => <>{i > 0 && <br />}{g.ngay}: {g.gio}</>)}</dd></div>
   </dl>
-  <p class="ttdn__cs"><strong>Chính sách:</strong> {CHINH_SACH.map((l, i) => <>{i > 0 && ' · '}<a href={l.href}>{l.label.replace(/^Chính sách /, '').replace(/^./, (c) => c.toUpperCase())}</a></>)}{linkGioiThieu && <> · <a href="/about">Giới thiệu {LEGAL_SHORT}</a></>}</p>
+  {/* 22/11/2026 (người dùng yêu cầu): một link tới trang tổng hợp /chinh-sach thay cho 6 link chính sách riêng lẻ. */}
+  <p class="ttdn__cs"><strong>Chính sách:</strong> <a href="/chinh-sach">Giao hàng, thanh toán, đổi trả, bảo mật và điều khoản</a>{linkGioiThieu && <> · <a href="/about">Giới thiệu {LEGAL_SHORT}</a></>}</p>
 </section>
 
 <style>

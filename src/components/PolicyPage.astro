@@ -13,9 +13,11 @@ interface Props {
   /** Ngày cập nhật dạng YYYY-MM-DD. Chỉ đổi khi nội dung chính sách thay đổi thực chất. */
   updated: string;
   noindex?: boolean;
+  /** Trang tổng hợp /chinh-sach đã liệt kê đủ, không cần khối "Chính sách khác". */
+  anChinhSachKhac?: boolean;
 }
 
-const { path, title, seoTitle, description, updated, noindex } = Astro.props;
+const { path, title, seoTitle, description, updated, noindex, anChinhSachKhac } = Astro.props;
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
   { name: title, href: path },
@@ -44,10 +46,12 @@ const others = POLICY_LINKS.filter((l) => l.href !== path);
       <h1>{title}</h1>
       <p class="updated">Cập nhật: <time datetime={updated}>{d}/{m}/{y}</time></p>
       <slot />
-      <nav class="policy-others" aria-label="Chính sách khác">
-        <h2>Chính sách khác</h2>
-        <ul>{others.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
-      </nav>
+      {!anChinhSachKhac && (
+        <nav class="policy-others" aria-label="Chính sách khác">
+          <h2>Chính sách khác</h2>
+          <ul>{others.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+        </nav>
+      )}
     </article>
   </div>
 </Layout>
