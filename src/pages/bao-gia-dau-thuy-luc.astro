@@ -242,13 +242,14 @@ const BA_KHO = 'Hải Dương cũ, Kiến An, Như Quỳnh (Hưng Yên)';
 const trieu = (n: number) => (n / 1_000_000).toFixed(1);
 // Mô tả meta (người dùng chốt 12/11/2026): không lặp "báo giá dầu thủy lực" (tiêu đề, H1 đã có), chỉ ghi khoảng giá phuy, xô,
 // vận chuyển, chứng từ và 3 kho. Số tự tính từ bảng giá dầu 68 (hàng có sẵn).
+// 22/11/2026 (người dùng duyệt): dung tích phuy, xô tính từ dữ liệu như khối tóm tắt (Phuy 200–209 L, xô 18–20 L).
 const xo = coSo.filter((r) => /xô/i.test(r.quy_cach));
 const xoThap = xo.length ? minOf(xo.map((r) => r.thap)) : null;
 const xoCao = xo.length ? maxOf(xo.map((r) => r.cao)) : null;
 const tien = (n: number) => n >= 1_000_000 ? `${(Math.round(n / 100_000) / 10).toString().replace('.', ',')} triệu` : `${Math.round(n / 1000)} nghìn`;
 const khoang = (a: number, b: number) => a >= 1_000_000 && b >= 1_000_000 ? `${tien(a).replace(' triệu', '')} – ${tien(b)}` : `${tien(a)} – ${tien(b)}`;
 const description = coGia && phuyThap && phuyCao
-  ? `Phuy 200L từ ${khoang(phuyThap, phuyCao)}${xoThap && xoCao ? `, xô 18L từ ${khoang(xoThap, xoCao)}` : ''} (${vat}). Miễn phí vận chuyển 80 km, đủ CO/CQ, VAT. Có sẵn tại 3 kho Kiến An, Hải Dương, Như Quỳnh. Giao trong ngày KCN gần kho, chiết khấu theo số phuy.`
+  ? `${dungTich(phuy, 'Phuy')} từ ${khoang(phuyThap, phuyCao)}${xoThap && xoCao ? `, ${dungTich(xo, 'xô')} từ ${khoang(xoThap, xoCao)}` : ''} (${vat}). Miễn phí vận chuyển 80 km, đủ CO/CQ, VAT. Có sẵn tại 3 kho Kiến An, Hải Dương, Như Quỳnh. Giao trong ngày KCN gần kho, chiết khấu theo số phuy.`
   : `Phuy 200L, xô 18L dầu thủy lực 68, 46. Miễn phí vận chuyển 80 km, đủ CO/CQ, VAT. Có sẵn tại 3 kho Kiến An, Hải Dương, Như Quỳnh. Giao trong ngày KCN gần kho.`;
 
 // FAQ: một mảng dùng chung cho phần hiển thị và schema FAQPage, nên chữ trên trang và trong schema luôn khớp nhau.
