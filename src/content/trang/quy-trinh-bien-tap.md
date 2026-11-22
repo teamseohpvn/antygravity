@@ -23,7 +23,7 @@ Mỗi trang ghi tên tác giả và người duyệt nội dung ở đầu trang
 - Thông số sản phẩm chép từ bảng thông số kỹ thuật (TDS) hoặc catalog bản mới nhất của hãng. Trang sản phẩm ghi rõ phương pháp thử của từng chỉ tiêu.
 - Phương pháp thử được đối chiếu với công bố gốc của ASTM, ISO và tiêu chuẩn TCVN tương đương (tra trên cổng tiêu chuẩn quốc gia VSQI).
 - Mã nào chưa có TDS công khai thì trang ghi rõ và gửi TDS kèm báo giá, không tự điền thông số.
-- Khuyến cáo trong sổ tay thiết bị và của nhà sản xuất dầu được ưu tiên hơn nội dung trên website.
+- Khuyến cáo trong hướng dẫn sử dụng của thiết bị và của nhà sản xuất dầu được ưu tiên hơn nội dung trên website.
 
 ## 3. Cách lập bảng giá
 

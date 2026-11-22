@@ -20,7 +20,7 @@ citations:
   - "https://www.mordorintelligence.com/industry-reports/vietnam-lubricants-market"
   - "https://www.grandviewresearch.com/industry-analysis/hydraulic-fluids-market-report"
 date: "2026-10-10"
-updated: "2026-11-21"
+updated: "2026-11-22"
 image: "/images/blog/top-6-dau-thuy-luc-pho-bien-nhat-thi-phan.webp"
 image_alt: "Biểu đồ thị phần dầu nhờn tại Việt Nam của Castrol, Petrolimex, Shell, TotalEnergies, Caltex theo Kline 2014, DNSG 2015, Báo Đầu tư 2021"
 tags: ["dầu thủy lực", "so sánh", "thương hiệu"]
@@ -148,7 +148,7 @@ Sau khi đã dùng, cách kiểm tra dầu còn tốt hay không ngay tại xư�
 
 ## Những dòng HT VINA đang có sẵn
 
-Để bạn tự đánh giá mức khách quan của bài: HT VINA là đơn vị bán dầu công nghiệp. Trong 6 hãng ở trên, kho của chúng tôi hiện chỉ có **Castrol Hyspin AWS 68** (phuy 209 L). Chúng tôi **không** bán Shell Tellus, Mobil DTE, Total Azolla, Caltex Rando hay PLC, nên thứ hạng trong bài không gắn với hàng chúng tôi bán.
+Để bạn tự đánh giá mức khách quan của bài: HT VINA là đơn vị bán dầu công nghiệp. Trong 6 hãng ở trên, kho của chúng tôi hiện có hai hãng: **Castrol** ([Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68) phuy 209 L, [Hyspin HLP-Z 68](/dau-thuy-luc/castrol-hyspin-hlpz-68) xô 20 L) và **Caltex** ([Hydraulic Oil AW 68](/dau-thuy-luc/caltex-hydraulic-aw-68) phuy 208 L). Chúng tôi **không** bán Shell Tellus, Mobil DTE, Total Azolla, Caltex Rando hay PLC. Thứ tự 6 hãng trong bài xếp theo các nguồn thị phần đã dẫn, không theo hàng chúng tôi bán.
 
 Ngoài ra kho có sẵn [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68), dòng HM đạt DIN 51524-2 của ENEOS (Nhật Bản), không nằm trong top 6. Với máy ép, máy dập không đòi phê duyệt riêng, đây là lựa chọn thay cho Shell Tellus S2 MX 68 hoặc Castrol Hyspin AWS 68. Khoảng giá các mã có ở [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc); nếu cần báo giá theo số phuy và nơi giao, bạn gửi qua [mẫu yêu cầu báo giá](/bao-gia?sp=D%E1%BA%A7u%20th%E1%BB%A7y%20l%E1%BB%B1c).
 

@@ -12,7 +12,7 @@ tags: ["dau-may-may", "iso-vg-10", "det-may"]
 image: "/images/danh-muc/dau-may-may.webp"
 image_alt: "Tra dầu máy may vào cơ cấu kim của máy may công nghiệp trong xưởng may"
 date: "2026-10-06"
-updated: "2026-10-06"
+updated: "2026-11-22"
 ---
 
 **Dầu máy may** (dầu máy khâu) là dầu bôi trơn rất loãng, thường cấp **ISO VG 10**, dùng cho kim, trụ kim, ổ chao và các bánh răng nhỏ trong máy may công nghiệp. Dầu tốt phải **trong, nhạt màu**, ít bay hơi và ít để lại vết bẩn khi lỡ dính lên vải. Dầu cũng phải bám đủ tốt để không văng ra khi máy chạy hàng nghìn mũi mỗi phút.
@@ -28,7 +28,7 @@ updated: "2026-10-06"
 | Loại máy | Độ nhớt thường dùng | Ghi chú |
 | :--- | :--- | :--- |
 | Máy may 1 kim, 2 kim, máy vắt sổ, máy trần đè | ISO VG 10 | Bơm dầu tự động từ đáy máy |
-| Máy dệt kim, máy thêu | ISO VG 10–22 (theo hãng máy) | Kiểm tra sổ tay máy |
+| Máy dệt kim, máy thêu | ISO VG 10–22 (theo hãng máy) | Kiểm tra hướng dẫn sử dụng của máy\* |
 | Máy may khô đầu (dry-head) | Không cần dầu ở đầu máy | Chỉ tra dầu các điểm hãng quy định |
 
 ## Chỉ tiêu cần xem trên TDS
@@ -48,8 +48,10 @@ Xưởng may mặc, giày da, túi xách, đồ bảo hộ lao động trong cá
 Kiểm tra mức dầu hằng ngày trên mắt thăm dầu và thêm dầu khi thiếu. Thay toàn bộ dầu theo khuyến cáo của hãng máy (Juki, Brother, Pegasus…), sớm hơn nếu dầu chuyển màu sẫm.
 
 ### Có dùng dầu máy may cho máy tiện, máy phay được không?
-Không nên. Dầu máy may quá loãng cho trục chính và rãnh trượt máy công cụ. Máy công cụ dùng [dầu rãnh trượt](/dau-ranh-truot) hoặc [dầu thủy lực](/dau-thuy-luc) theo sổ tay.
+Không nên. Dầu máy may quá loãng cho trục chính và rãnh trượt máy công cụ. Máy công cụ dùng [dầu rãnh trượt](/dau-ranh-truot) hoặc [dầu thủy lực](/dau-thuy-luc) theo hướng dẫn sử dụng của máy\*.
 
 ---
 
 **Xem thêm:** [Dầu chống gỉ](/dau-chong-gi-set) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep) · [Dầu thủy lực](/dau-thuy-luc)
+
+<p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của máy là gì? Là tài liệu hãng máy giao kèm theo máy, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng máy, hoặc liên hệ đại lý của hãng máy đang sử dụng để xin lại nếu bị mất.</small></p>

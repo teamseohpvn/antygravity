@@ -110,7 +110,7 @@ Số NLGI càng lớn thì mỡ càng cứng, độ xuyên kim càng nhỏ. Các
 | Chịu cực áp | Có (4 bi 3.090 N) | Tải 4 bi 200 kg | Có (4 bi 315 kg) |
 | Điểm nhỏ giọt | 200 °C | Tối thiểu 190 °C | 180 °C |
 | Nhiệt độ làm việc | −20 đến 125 °C | −10 đến 120 °C | −20 đến 130 °C |
-| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn L4 | Có sẵn |
+| Tình trạng kho | Có sẵn | Có sẵn L4 | Có sẵn |
 
 Giá theo kg của VHP Lithium Grease L4 và Shell Gadus S2 V220 2 có trong [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron). Epnoc AP(N) báo giá theo từng đơn, kèm độ đặc/độ sệt NLGI và số lượng.
 

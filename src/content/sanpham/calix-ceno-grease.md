@@ -27,7 +27,7 @@ specs:
   - { name: "Tạp chất cơ học", value: "Không có", method: "GOST 6479-73" }
   - { name: "Độ xuyên kim ở 25 °C, nhào trộn 60 nhịp", value: "180–250 (0,1 mm)", method: "GOST 5346-78" }
   - { name: "Nhiệt độ làm việc", value: "-10 °C đến 100 °C" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 tds_url: "http://calixlube.com/mo-chiu-nhiet-calix-no3"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích

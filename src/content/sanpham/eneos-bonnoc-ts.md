@@ -106,7 +106,7 @@ Hộp giảm tốc của các hãng phổ biến (SEW, Nord, Sumitomo, Bonfiglio
 | Độ nhớt ở 100 °C | 19,3 mm²/s | 19 cSt |
 | Chỉ số độ nhớt | 99 | 98 |
 | Điểm chớp cháy | 280 °C | > 220 °C |
-| Tình trạng kho tháng 10/2026 | Có sẵn xô 18 L | Có sẵn (xô, phuy) |
+| Tình trạng kho | Có sẵn xô 18 L | Có sẵn (xô, phuy) |
 
 > **Nhận định của HT VINA:** Nhà sản xuất máy chỉ định dầu ngoại hoặc cần hồ sơ hãng quốc tế thì dùng Bonnoc TS. Hộp giảm tốc thông dụng tiêu hao nhiều dầu, cần phuy thì Rosia EP sản xuất trong nước là phương án đặt trước.
 

@@ -85,7 +85,7 @@ Mã này **có sẵn tại kho**: cấp 20W-50 (can 18 L, phuy 200 L) và cấp 
 
 ## Nên chọn cấp CD, CF-4 hay CI-4?
 
-| Dòng ENEOS | Cấp API | Trị số kiềm tổng | Hợp với | Kho tháng 10/2026 |
+| Dòng ENEOS | Cấp API | Trị số kiềm tổng | Hợp với | Tình trạng kho |
 | :--- | :--- | :--- | :--- | :--- |
 | DEO CD 20W-50 | CD | 6,3 mg KOH/g | Máy cũ hút khí tự nhiên, máy phát, máy nông nghiệp | Có sẵn |
 | [DEO CF-4](/dau-dong-co-diesel/eneos-deo-cf-4) 20W-50 | CF-4 | 8,01 mg KOH/g | Xe tải, máy công trình có turbo, đời chưa có EGR | Có sẵn can 18 L |

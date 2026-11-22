@@ -64,7 +64,7 @@ tom_tat:
   - "**Có sẵn tại kho** xô 17 kg, phuy 180 kg, sản xuất tại Singapore."
 tags: ["nlgi-t3", "mo-lithium", "mo-da-dung", "sinopec"]
 date: "2026-11-05"
-updated: "2026-11-05"
+updated: "2026-11-22"
 ---
 
 **Sinopec Crystal Grease T3** (nhãn phuy ghi **No.T3**) là loại đặc nhất của dòng mỡ lithium đa dụng Crystal Grease. Mỡ có cùng chất làm đặc, dầu gốc và nhiệt độ làm việc -20 °C đến 120 °C với [Crystal Grease NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3), nhưng cứng hơn và tách dầu ít hơn trong phép thử của hãng.
@@ -84,7 +84,7 @@ Thang NLGI thông dụng chỉ có các mức như 2, 3, 4, không có mức "T3
 
 Cách đọc thang NLGI và chọn độ đặc cho từng vị trí bôi trơn có ở trang [mỡ bôi trơn](/mo-boi-tron-cong-nghiep).
 
-Số càng nhỏ thì mỡ càng đặc. Vì vậy, khi tài liệu máy yêu cầu đúng NLGI 3 hoặc NLGI 4, bạn **không nên coi T3 là tương đương chính xác**. Hãy so độ xuyên kim hoặc hỏi hãng máy trước.
+Số càng nhỏ thì mỡ càng đặc. Vì vậy, khi hướng dẫn sử dụng của máy\* yêu cầu đúng NLGI 3 hoặc NLGI 4, bạn **không nên coi T3 là tương đương chính xác**. Hãy so độ xuyên kim hoặc hỏi hãng máy trước.
 
 ## Khi nào nên chọn Crystal Grease T3 thay vì NLGI 3? {#chon-t3}
 
@@ -168,3 +168,5 @@ Hai loại cùng dòng, cùng chất làm đặc lithium và dầu gốc khoáng
 - **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
 - **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.
+
+<p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của máy là gì? Là tài liệu hãng máy giao kèm theo máy, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng máy, hoặc liên hệ đại lý của hãng máy đang sử dụng để xin lại nếu bị mất.</small></p>

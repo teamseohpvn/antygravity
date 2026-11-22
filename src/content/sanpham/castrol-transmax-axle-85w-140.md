@@ -89,7 +89,7 @@ Mã này **có sẵn tại kho** theo phuy 209 L, kèm CO/CQ, hóa đơn VAT. H�
 | Độ nhớt ở 100 °C | 26,4 mm²/s | 25,6 mm²/s |
 | Chỉ số độ nhớt | 96 | 94 |
 | Điểm chớp cháy | 226 °C | 215 °C |
-| Tình trạng kho tháng 10/2026 | Có sẵn phuy 209 L | Có sẵn xô 20 L |
+| Tình trạng kho | Có sẵn phuy 209 L | Có sẵn xô 20 L |
 
 > **Nhận định của HT VINA:** Hai mã cùng cấp, thông số gần nhau, thay thế được cho nhau trong đa số cầu xe. Đội xe lớn đang dùng Castrol thì đặt phuy. Cần dầu ngay hoặc lượng nhỏ thì dùng xô Shell có sẵn. Cầu đã mòn, kêu hú mà đổi lên 85W-140 chỉ là giải pháp tạm, cần kiểm tra bánh răng và phớt.
 

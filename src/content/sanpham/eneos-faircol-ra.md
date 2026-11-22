@@ -99,7 +99,7 @@ Hàng có sẵn cấp **ISO VG 32**, đóng **can 18 L**, kèm CO/CQ và hóa đ
 | Độ nhớt ở 100 °C | 6,01 mm²/s | 5,5 mm²/s |
 | Điểm chớp cháy cốc hở | 244 °C | 228 °C |
 | Kiểu máy nén | Trục vít, cánh gạt, xoắn ốc | Trục vít ngâm dầu |
-| Tình trạng kho tháng 10/2026 | Có sẵn can 18 L | Có sẵn thùng 20 L |
+| Tình trạng kho | Có sẵn can 18 L | Có sẵn thùng 20 L |
 
 > **Nhận định của HT VINA:** Cả hai là dầu máy nén khí cấp 32 của thương hiệu Nhật, thông số gần nhau. Máy đang dùng Faircol thì giữ nguyên. Máy đặt sát khu gia công nhiều sương dầu cắt gọt thì có thể cân nhắc Daphne Super Screw, dòng Idemitsu nhấn mạnh khả năng chịu tác nhân này.
 

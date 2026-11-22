@@ -21,7 +21,7 @@ specs:
   - { name: "Cảm quan khi pha nước", value: "Nhũ trắng sữa ánh xanh", method: "Quan sát" }
   - { name: "Tỷ lệ pha", value: "3,5–10 % (khuyến cáo 5–8 %)" }
   - { name: "Độ cứng nước pha cho phép", value: "Tới 600 ppm" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 tds_url: "https://hoadauvhp.com/lotusoills-nid11.html"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích

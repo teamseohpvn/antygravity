@@ -20,7 +20,7 @@ specs:
   - { name: "Điểm chớp cháy", value: "> 240 °C" }
   - { name: "Điểm đông đặc", value: "< -20 °C" }
   - { name: "Ăn mòn tấm đồng", value: "1b" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 tds_url: "https://shlasean.com/products/dau-ranh-truot"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích

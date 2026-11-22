@@ -22,7 +22,7 @@ packaging:
   - { name: "Phuy 200 L", sku: "EMI AW68 P" }
   - { name: "Xô 18 L", sku: "EMI AW68 X" }
 stock_status: "co-san"
-so_sanh_chon_khi: "Cần dầu AW 68 giá theo lít thấp hơn Castrol AWS 68 khoảng 17–18% (bảng giá 10/2026)."
+so_sanh_chon_khi: "Cần dầu AW 68 thương hiệu trong nước cho máy không đòi phê duyệt hãng bơm; giá theo lít gần ngang Castrol AWS 68 (bảng giá tháng 11/2026)."
 
 applications:
   - "Hệ thủy lực công nghiệp chạy áp suất cao, nhiệt độ làm việc ổn định"
@@ -45,11 +45,11 @@ doc_gia: "Trang này dành cho người mua hàng và tổ bảo trì cần mộ
 tom_tat:
   - "**Dùng được** cho máy yêu cầu dầu thủy lực AW/HM cấp 68: máy ép, máy dập, máy công trình, xe nâng."
   - "**Phụ gia chống mài mòn gốc kẽm** (theo nhà cung cấp), nên **không dùng** cho bơm yêu cầu dầu không kẽm."
-  - "**Giá theo lít** thấp hơn khoảng 17–18% so với Castrol Hyspin AWS 68 (bảng giá tháng 10/2026)."
+  - "**Giá theo lít** gần ngang Castrol Hyspin AWS 68: từ thấp hơn khoảng 4% đến cao hơn khoảng 5% (bảng giá tháng 11/2026)."
   - "**Chưa có TDS** của EMI: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "emi"]
 date: "2026-10-12"
-updated: "2026-11-17"
+updated: "2026-11-22"
 ---
 
 **EMI AW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp **ISO VG 68**, pha từ dầu gốc khoáng với hệ phụ gia chống mài mòn. Theo nhà cung cấp, phụ gia thuộc nhóm gốc kẽm (ZDDP), loại phổ biến nhất cho dầu thủy lực HM. Dầu hợp với hệ thống chạy áp cao, nhiệt độ làm việc ổn định.

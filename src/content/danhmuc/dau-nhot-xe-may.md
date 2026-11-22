@@ -27,10 +27,10 @@ Không đổ nhớt MB vào xe số: dễ trượt côn, xe yếu và mòn bố 
 
 ## Chọn độ nhớt
 
-- **10W-30, 10W-40**: xe đời mới, máy còn tốt, sổ tay khuyến nghị.
+- **10W-30, 10W-40**: xe đời mới, máy còn tốt, hướng dẫn sử dụng của xe\* khuyến nghị.
 - **20W-40, 20W-50**: xe chạy lâu, khí hậu nóng, chở nặng.
 
-Luôn ưu tiên cấp ghi trong sổ tay xe.
+Luôn ưu tiên cấp ghi trong hướng dẫn sử dụng của xe\*.
 
 ## Mua sỉ cho cửa hàng, gara, đội xe
 
@@ -39,3 +39,5 @@ Chúng tôi bán theo chai và theo thùng, có hóa đơn VAT, giao từ kho TP
 ---
 
 **Xem thêm:** [Dầu động cơ diesel](/dau-dong-co-diesel) · [Nước làm mát](/nuoc-lam-mat)
+
+<p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của xe là gì? Là sổ hướng dẫn hãng xe giao kèm theo xe, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng xe, hoặc liên hệ đại lý của hãng xe đang sử dụng để xin lại nếu bị mất.</small></p>

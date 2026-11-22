@@ -105,7 +105,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **80W-90** và **85W-140**,
 | Độ nhớt ở 100 °C | 25,6 cSt | 25,6 mm²/s | 26,4 mm²/s |
 | Chỉ số độ nhớt | 94 | 94 | 96 |
 | Điểm chớp cháy | 200 °C | 215 °C | 226 °C |
-| Tình trạng kho tháng 10/2026 | Có sẵn | Có sẵn xô 20 L | Có sẵn |
+| Tình trạng kho | Có sẵn | Có sẵn xô 20 L | Có sẵn |
 
 > **Nhận định của HT VINA:** Độ nhớt và chỉ số độ nhớt của ba mã gần như trùng nhau, nên dùng thay thế được trong đa số cầu xe. Cần hàng ngay thì xô Shell Spirax S2 A có sẵn.
 

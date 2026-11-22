@@ -25,7 +25,7 @@ specs:
   - { name: "Tách dầu", value: "5,0 % khối lượng", method: "ASTM D1742" }
   - { name: "Ăn mòn tấm đồng", value: "Không", method: "IP 112" }
   - { name: "Nhiệt độ làm việc", value: "-10 °C đến 110 °C (ngắn hạn tới 120 °C)" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 tds_url: "https://hoadauvhp.com/licasgreaseno-nid23.html"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích

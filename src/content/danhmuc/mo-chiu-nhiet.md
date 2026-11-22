@@ -5,7 +5,7 @@ nav_label: "Mỡ chịu nhiệt"
 order: 3
 summary: "Quạt lò, lò sấy, máy cán nóng"
 seo_title: "Mỡ Bò Chịu Nhiệt Độ Cao 150–300 Độ C – Báo Giá Sỉ"
-description: "Mỡ bò chịu nhiệt cho vòng bi quạt lò, lò sấy, máy cán: lithium phức, polyurea, bentonite, PFPE. Shell Gadus S3, Castrol Tribol. Tư vấn chọn theo nhiệt độ."
+description: "Mỡ bò chịu nhiệt cho vòng bi quạt lò, lò sấy, máy cán: lithium phức, polyurea, bentonite, PFPE. Có sẵn Shell Gadus S3 V220C 2. Tư vấn chọn theo nhiệt độ."
 keywords: ["mỡ chịu nhiệt", "mỡ bò chịu nhiệt", "mỡ bôi trơn chịu nhiệt", "mỡ chịu nhiệt độ cao", "mỡ bò chịu nhiệt cao cấp", "mỡ chịu nhiệt 300 độ", "mỡ bò chịu nhiệt 500 độ", "mỡ bôi trơn vòng bi chịu nhiệt", "mỡ chịu nhiệt cho vòng bi", "mỡ bò trắng chịu nhiệt", "giá mỡ chịu nhiệt", "shell gadus s3 v220c 2"]
 tags: ["mo-chiu-nhiet", "mo-bo-chiu-nhiet", "shell-gadus", "castrol-tribol", "polyurea", "lithium-complex"]
 image: "/images/danh-muc/mo-chiu-nhiet-shell-gadus-s3.webp"

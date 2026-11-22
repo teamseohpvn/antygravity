@@ -20,7 +20,7 @@ specs:
   - { name: "Nhiệt độ tự bốc cháy", value: "462 °C" }
   - { name: "Điểm đông đặc", value: "< -35 °C" }
   - { name: "Ăn mòn tấm đồng", value: "1" }
-tds_date: "10/2026"
+tds_date: "bản tải về 10/2026"
 tds_url: "https://shlasean.com/products/dau-truyen-nhiet"
 
 thong_so_cuoi: true   # Bảng thông số TDS đặt sau phần phân tích

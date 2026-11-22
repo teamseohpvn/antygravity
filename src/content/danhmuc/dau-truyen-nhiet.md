@@ -5,7 +5,7 @@ nav_label: "Dầu truyền nhiệt"
 order: 4
 summary: "Lò dầu tải nhiệt, máy ép gỗ, máy sấy"
 seo_title: "Dầu Truyền Nhiệt, Dầu Tải Nhiệt Chính Hãng – Báo Giá Sỉ"
-description: "Dầu truyền nhiệt cho lò dầu tải nhiệt, máy sấy, ép gỗ, nhuộm: Shell Heat Transfer Oil S2, Castrol Perfecto HT 5. Tư vấn chọn theo nhiệt độ. Có CO/CQ, VAT."
+description: "Dầu truyền nhiệt cho lò dầu tải nhiệt, máy sấy, ép gỗ, nhuộm: SHL Syn Therm 32L, VHP Heatrans Oil 32, 46 có sẵn tại kho. Tư vấn chọn theo nhiệt độ."
 image: "/images/danh-muc/dau-truyen-nhiet.webp"
 image_alt: "Lò dầu tải nhiệt với đường ống bọc bảo ôn và bơm tuần hoàn"
 keywords: ["dầu truyền nhiệt", "dầu tải nhiệt", "dầu truyền nhiệt shell", "shell heat transfer oil s2", "dầu lò dầu tải nhiệt", "dầu truyền nhiệt tổng hợp", "castrol perfecto ht 5", "mobiltherm 605"]
