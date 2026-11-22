@@ -93,7 +93,7 @@ const vat = cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT';
 const ngay = fmtNgay(cauHinh.ngay_ra_soat);
 const NGAY_DANG = '2026-11-10';
 // 17/11/2026: ảnh báo giá văn bản 15/11 + giá trên trang khớp báo giá đó.
-const NGAY_SUA_NOI_DUNG = '2026-11-17';
+const NGAY_SUA_NOI_DUNG = '2026-11-22';
 const ngayCapNhat = [NGAY_SUA_NOI_DUNG, cauHinh.ngay_ra_soat].filter(Boolean).sort().at(-1)!;
 const ARTICLE_ID = absUrl(pagePath) + '#article';
 
@@ -173,21 +173,21 @@ const schemaData = [
         </ul>
       </div>
       <nav class="muc-luc" aria-label="Mục lục">
-        <a href="#cach-lap-gia">1. Cách lập giá</a>
-        <a href="#bang-gia">2. Bảng giá</a>
-        <a href="#chua-gom">3. Chưa gồm</a>
-        <a href="#giao-hang">4. Giao hàng</a>
-        <a href="#vi-sao-chenh">5. Vì sao chênh</a>
-        <a href="#phuy-hay-xo">6. Phuy hay xô</a>
-        <a href="#doc-thong-so">7. Đọc thông số</a>
-        <a href="#dat-hang">8. Đặt hàng</a>
-        <a href="#hoi-dap">9. Hỏi đáp</a>
-        <a href="#thong-tin-doanh-nghiep">10. Liên hệ</a>
+        <a href="#cach-lap-gia">Cách lập giá</a>
+        <a href="#bang-gia">Bảng giá</a>
+        <a href="#chua-gom">Chưa gồm</a>
+        <a href="#giao-hang">Giao hàng</a>
+        <a href="#vi-sao-chenh">Vì sao chênh</a>
+        <a href="#phuy-hay-xo">Phuy hay xô</a>
+        <a href="#doc-thong-so">Đọc thông số</a>
+        <a href="#dat-hang">Đặt hàng</a>
+        <a href="#hoi-dap">Hỏi đáp</a>
+        <a href="#thong-tin-doanh-nghiep">Liên hệ</a>
       </nav>
     </header>
 
     <section class="price-body" id="cach-lap-gia">
-      <h2>1. Cách lập giá và điều kiện áp dụng</h2>
+      <h2>Cách lập giá và điều kiện áp dụng</h2>
       <div class="minh-bach" data-nosnippet>
         <p><strong>Minh bạch thương mại.</strong> Bảng giá và bài viết này do HT VINA lập với mục đích thương mại: cung cấp thông tin kỹ thuật tham khảo và chào giá trực tiếp từ kho của chính chúng tôi. Nội dung phản ánh mức giá tại kho HT VINA, <strong>không phải bảng khảo sát giá trung lập của một tổ chức độc lập</strong>. Chúng tôi công khai nguồn hàng, chứng từ CO/CQ và cách tính giá để bạn tự đối chiếu trước khi quyết định.</p>
       </div>
@@ -216,7 +216,7 @@ const schemaData = [
     </section>
 
     <section class="price-body" id="bang-gia">
-      <h2>2. Bảng giá mỡ bôi trơn theo độ đặc NLGI</h2>
+      <h2>Bảng giá mỡ bôi trơn theo độ đặc NLGI</h2>
       <p>Độ đặc NLGI (còn gọi là độ sệt) cho biết mỡ mềm hay cứng, từ 000 (gần như lỏng) tới 6 (rất cứng), xếp theo độ xuyên kim đo bằng phương pháp <a href="https://www.astm.org/Standards/D217.htm" target="_blank" rel="noopener">ASTM D217</a>. Vòng bi và gối đỡ trong nhà xưởng dùng nhiều nhất là mỡ có độ đặc <strong>NLGI 2</strong> và <strong>NLGI 3</strong>. Bảng dưới xếp từ mềm đến cứng; bấm nút lọc để chỉ xem phuy, xô, hàng nhập khẩu hoặc trong nước. Bấm tên mã để xem thông số, bấm "Tải TDS" hoặc "Xem TDS" để mở bảng thông số kỹ thuật của hãng.</p>
       <PriceTable rows={rows} {activePages} category="mo-boi-tron-cong-nghiep" gomVat={cauHinh.gom_vat} tds={tdsTheoTrang} {hrefSp} nhanPhuy="Phuy 180 kg" nhanXo="Xô 15–18 kg" boLoc gon />
       <ul class="notes">
@@ -240,7 +240,7 @@ const schemaData = [
     </section>
 
     <section class="price-body" id="chua-gom">
-      <h2>3. Những khoản chưa gồm trong bảng giá</h2>
+      <h2>Những khoản chưa gồm trong bảng giá</h2>
       <p>Để bộ phận mua hàng lập dự toán sát hơn, xin lưu ý các khoản dưới đây. Khoản nào phát sinh sẽ được ghi rõ trên báo giá chính thức trước khi bạn xác nhận đơn.</p>
       <div class="table-wrap">
         <table class="match">
@@ -258,7 +258,7 @@ const schemaData = [
     </section>
 
     <section class="price-body" id="giao-hang">
-      <h2>4. Giao nhận và vận chuyển</h2>
+      <h2>Giao nhận và vận chuyển</h2>
       <div class="table-wrap">
         <table class="match">
           <tbody>
@@ -278,7 +278,7 @@ const schemaData = [
     </section>
 
     <section class="price-body" id="vi-sao-chenh">
-      <h2>5. Vì sao giá mỡ bôi trơn chênh nhau gần sáu lần?</h2>
+      <h2>Vì sao giá mỡ bôi trơn chênh nhau gần sáu lần?</h2>
       <p>Nhìn vào cột quy đổi, giá đi từ <strong>{nghin(tatCa.kgThap)} đ/kg</strong> (PVOIL phuy) tới <strong>{nghin(tatCa.kgCao)} đ/kg</strong> (Shell Gadus S2 xô), chênh khoảng 5,8 lần. Chênh lệch này đến từ ba yếu tố.</p>
 
       <h3>Thương hiệu quốc tế và chi phí nhập khẩu</h3>
@@ -300,7 +300,7 @@ const schemaData = [
     </section>
 
     <section class="price-body" id="phuy-hay-xo">
-      <h2>6. Mua phuy 180 kg hay xô 17 kg: tính dòng tiền và kỹ thuật</h2>
+      <h2>Mua phuy 180 kg hay xô 17 kg: tính dòng tiền và kỹ thuật</h2>
       <p>Nhiều quản đốc xưởng chọn mua xô vì số tiền bỏ ra mỗi lần ít hơn. Nhưng tính trên tổng chi phí cả năm, quy cách đóng gói có thể tạo ra khoản chênh đáng kể, tùy hãng:</p>
       <div class="table-wrap">
         <table class="match">
@@ -350,7 +350,7 @@ const schemaData = [
     </section>
 
     <section class="price-body" id="doc-thong-so">
-      <h2>7. Đọc thông số kỹ thuật khi xem báo giá</h2>
+      <h2>Đọc thông số kỹ thuật khi xem báo giá</h2>
       <p>Để bảng giá thành công cụ chọn mỡ đúng, bộ phận mua hàng nên đối chiếu ba thông số sau trước khi chốt mã:</p>
       <ol class="steps">
         <li>
@@ -370,7 +370,7 @@ const schemaData = [
     </section>
 
     <section class="price-body" id="dat-hang">
-      <h2>8. Quy trình đặt hàng tại HT VINA</h2>
+      <h2>Quy trình đặt hàng tại HT VINA</h2>
       <p>Mọi bước đều liên hệ qua số <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> (gọi hoặc Zalo) và email <a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a>.</p>
       <ol class="steps">
         {quyTrinh.map((b) => (
@@ -385,13 +385,13 @@ const schemaData = [
     </section>
 
     <section class="price-body" id="hoi-dap">
-      <h2>9. Câu hỏi thường gặp về giá mỡ bôi trơn</h2>
+      <h2>Câu hỏi thường gặp về giá mỡ bôi trơn</h2>
       <h3>Giá trên bảng đã gồm VAT và cước vận chuyển chưa?</h3>
       <p>Giá trên bảng <strong>chưa gồm VAT</strong>. Cước vận chuyển được miễn trong bán kính 80 km tính từ kho có hàng gần nhất, không yêu cầu số lượng tối thiểu; đơn từ 3 phuy được miễn phí tới 150 km.</p>
       <h3>Nhà máy ở các KCN Hải Phòng đặt hàng bao lâu thì nhận được?</h3>
       <p>Với các KCN dọc đường 5 cũ, nếu mã có sẵn ở kho và đơn chốt trước 16h ngày làm việc, hàng được giao trong ngày. Các nơi khác chúng tôi hẹn ngày giao khi gửi báo giá.</p>
       <h3>Vì sao mỗi mã có một khoảng giá chứ không phải một con số?</h3>
-      <p>Giá chốt cho từng đơn phụ thuộc số lượng, nơi giao, thời hạn thanh toán và lô hàng (xem bảng ở mục 1). Mỡ nhập khẩu còn chịu ảnh hưởng của tỷ giá và cước vận chuyển quốc tế. Khoảng giá của Sinopec hẹp hơn các mã khác (khoảng 3–8%) vì do giám đốc chốt riêng. Giá chính xác được xác nhận trên báo giá văn bản vào ngày đặt hàng.</p>
+      <p>Giá chốt cho từng đơn phụ thuộc số lượng, nơi giao, thời hạn thanh toán và lô hàng (xem bảng ở phần <a href="#cach-lap-gia">Cách lập giá</a>). Mỡ nhập khẩu còn chịu ảnh hưởng của tỷ giá và cước vận chuyển quốc tế. Khoảng giá của Sinopec hẹp hơn các mã khác (khoảng 3–8%) vì do giám đốc chốt riêng. Giá chính xác được xác nhận trên báo giá văn bản vào ngày đặt hàng.</p>
       <h3>Mỡ đắt hơn có bền hơn không?</h3>
       <p>Không chắc, nếu xét ở đúng vị trí của bạn. Mỡ đắt thường có điểm nhỏ giọt cao hơn, chịu tải tốt hơn hoặc đến từ hãng lớn, nhưng nếu vòng bi chỉ chạy ở nhiệt độ thường thì mỡ lithium-canxi giá rẻ vẫn làm tốt việc. Hãy chọn theo nhiệt độ làm việc, tải và môi trường nước của điểm bôi trơn, rồi mới so giá trong nhóm mỡ đạt yêu cầu. Trang <a href={HUB}>mỡ bôi trơn (mỡ bò)</a> có bảng so sánh thông số TDS của các mã đang bán.</p>
 
@@ -419,13 +419,13 @@ const schemaData = [
             </svg>
             <figcaption>Tỷ lệ sản lượng mỡ toàn cầu năm 2024 theo chất làm đặc. Nguồn: khảo sát NLGI 2024, Lubes'N'Greases tổng hợp (cập nhật 10/02/2026). "Loại khác" gồm mỡ canxi, canxi sulfonate, nhôm phức và các loại còn lại.</figcaption>
           </figure>
-          <p>Con số này giải thích vì sao mỡ lithium dễ mua và có nhiều hãng để so giá: trong bảng giá ở mục 2, phần lớn các mã là mỡ lithium hoặc lithium-canxi. Cũng theo khảo sát đó, sản lượng mỡ canxi sulfonate tăng 7,7% trong năm 2024.</p>
+          <p>Con số này giải thích vì sao mỡ lithium dễ mua và có nhiều hãng để so giá: trong <a href="#bang-gia">bảng giá</a> ở trên, phần lớn các mã là mỡ lithium hoặc lithium-canxi. Cũng theo khảo sát đó, sản lượng mỡ canxi sulfonate tăng 7,7% trong năm 2024.</p>
           <p>Về giá nguyên liệu, tạp chí TLT của Hiệp hội các nhà ma sát học và kỹ sư bôi trơn Hoa Kỳ (STLE) số tháng 12/2024 cho biết giá lithium hydroxide đã giảm mạnh từ cuối năm 2023 và gần về mức trước đại dịch, khiến một số nhà sản xuất chuyển lại sang mỡ lithium (<a href="https://www.stle.org/files/TLTArchives/2024/12_December/Cover_Story.aspx" target="_blank" rel="noopener">STLE, TLT 12/2024</a>). Theo nhận định của chúng tôi, mỡ lithium và lithium-canxi sẽ vẫn là nhóm có nhiều lựa chọn và giá dễ so sánh nhất ở thị trường Việt Nam trong thời gian tới.</p>
         </div>
       </details>
     </section>
 
-    <ThongTinDoanhNghiep tieuDe="10. Đơn vị phát hành và liên hệ báo giá" />
+    <ThongTinDoanhNghiep tieuDe="Đơn vị phát hành và liên hệ báo giá" />
     <CachVietBai tacGia={nguoiGia} nguoiDuyet={nguoiDuyet} ngayGia={cauHinh.ngay_ra_soat || undefined} ngayCapNhat={ngayCapNhat} />
     <ChinhSachGiaKho />
     <p class="small">Thấy giá hoặc thông số chưa đúng, bạn gọi, nhắn Zalo hoặc gửi email cho chúng tôi; chúng tôi kiểm tra lại với bảng giá kho và TDS, sửa bài và ghi ngày cập nhật. Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time>, cập nhật ngày <time datetime={ngayCapNhat}>{fmtNgay(ngayCapNhat)}</time>.</p>

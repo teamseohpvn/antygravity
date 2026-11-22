@@ -57,8 +57,8 @@ Mỗi bộ đủ cho **một lần thử**, thuốc thử đã định lượng 
 | Loại dầu | Dùng kit TAN được không? |
 | :--- | :--- |
 | Dầu thủy lực, dầu máy nén khí, dầu tuabin | **Được.** Đây là nhóm dầu TAN báo sớm nhất. |
-| Dầu bánh răng công nghiệp, dầu tuần hoàn | **Được.** |
-| Dầu truyền nhiệt, dầu cách điện | **Được**, trong dải 0–2 mg KOH/g. |
+| [Dầu bánh răng công nghiệp](/dau-banh-rang/eneos-bonnoc-ts), dầu tuần hoàn | **Được.** |
+| [Dầu truyền nhiệt](/dau-truyen-nhiet/shl-syn-therm), [dầu cách điện](/dau-cach-dien/vhp-unitrans-oil) | **Được**, trong dải 0–2 mg KOH/g. |
 | Dầu động cơ diesel | Không. Theo dõi trị số kiềm (TBN); TAN của dầu động cơ cũng thường vượt dải đo. |
 
 ## Vì sao phải đo trị số axit?
