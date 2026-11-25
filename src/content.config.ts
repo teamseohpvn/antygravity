@@ -149,6 +149,16 @@ const blogCollection = defineCollection({
     tags: z.array(z.string()).optional(),
     canonical_url: z.string().optional(),
     muc_luc: z.boolean().optional(), // false = tắt mục lục tự động (mặc định: bật khi bài có từ 4 mục H2)
+    // Quy trình B3a (06/11/2026): bài có giá, sản phẩm hoặc thông số thì cuối bài có khối Cách viết bài,
+    // Chính sách giá và tồn kho, Thông tin doanh nghiệp. Mặc định bật khi có co_gia, related_products hoặc nguon_tds.
+    co_gia: z.boolean().optional(), // Bài nêu giá: hiện ngày rà soát giá lấy từ gia-cong-khai.json
+    khoi_bien_tap: z.boolean().optional(), // Ghi false để tắt 3 khối cuối bài
+    nguon_tds: z.array(z.object({
+      ten: z.string(), // Tên tài liệu
+      ban: z.string(), // Bản hoặc ngày phát hành
+      tra: z.string(), // Ngày tra cứu
+      url: z.string().optional(),
+    })).optional(),
   }).superRefine(kiemTraNgay),
 });
 

@@ -12,6 +12,11 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { absUrl, breadcrumbSchema, ORG_ID, SITE_NAME } from '../lib/site';
 import { DEFAULT_REVIEWER_ID, bylineLabel, personRef, personSchema, personUrl, timNhanSu } from '../lib/nhan-su';
 import { ngayBai } from '../lib/ngay';
+import CachVietBai from './CachVietBai.astro';
+import ChinhSachGiaKho from './ChinhSachGiaKho.astro';
+import ThongTinDoanhNghiep from './ThongTinDoanhNghiep.astro';
+import QuoteCta from './QuoteCta.astro';
+import giaJson from '../data/gia-cong-khai.json';
 
 interface Props { post: CollectionEntry<'blog'> }
 
@@ -28,6 +33,11 @@ const reviewerRaw = timNhanSu(post.data.reviewed_by) ?? timNhanSu(DEFAULT_REVIEW
 const reviewerP = reviewerRaw && reviewerRaw.id !== authorP?.id ? reviewerRaw : undefined;
 // Ngày đăng / cập nhật: cùng một giá trị cho chữ trên trang, schema và thẻ meta.
 const ngay = ngayBai(post.data);
+// Khối cuối bài theo quy trình B3a: bài có giá, sản phẩm hoặc thông số TDS.
+const nguonTds = post.data.nguon_tds ?? [];
+const coKhoiBienTap = post.data.khoi_bien_tap ?? Boolean(post.data.co_gia || post.data.related_products?.length || nguonTds.length);
+const khoiBienTap = coKhoiBienTap && authorP && reviewerP;
+const ngayGia = post.data.co_gia ? ((giaJson as any).cau_hinh?.ngay_ra_soat as string | undefined) || undefined : undefined;
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
   { name: 'Hỗ trợ kỹ thuật', href: '/ho-tro-ky-thuat' },
@@ -99,6 +109,7 @@ const schemaData = [
             ? <a href={personUrl(authorP)} rel="author">{bylineLabel(authorP)}</a>
             : <span>{post.data.author ?? SITE_NAME}</span>}
           {reviewerP && <> · Duyệt nội dung: <a href={personUrl(reviewerP)}>{bylineLabel(reviewerP)}</a></>}
+          {khoiBienTap && <> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></>}
         </div>
         {post.data.tags && (
           <div class="tags">
@@ -119,6 +130,21 @@ const schemaData = [
         <NoiDungBai articleId={ARTICLE_ID}>
           <ContentBody><Content /><MucLuc slot="sau-doan-dau" items={tocItems} /></ContentBody>
         </NoiDungBai>
+        {khoiBienTap && (
+          <div class="khoi-cuoi">
+            <CachVietBai tacGia={authorP!} nguoiDuyet={reviewerP!} ngayGia={ngayGia} ngayCapNhat={ngay.modified}>
+              {nguonTds.length > 0 && (
+                <div class="bang-nguon" slot="nguon"><table>
+                  <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
+                  <tbody>{nguonTds.map((t) => <tr><td>{t.ten}</td><td data-nhan="Bản phát hành">{t.ban}</td><td data-nhan="Ngày tra cứu">{t.tra}</td><td data-nhan="Liên kết">{t.url ? <a href={t.url} rel="nofollow noopener">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
+                </table></div>
+              )}
+            </CachVietBai>
+            <QuoteCta item={post.data.category === 'dau-thuy-luc' ? 'Dầu thủy lực' : undefined} />
+            <ChinhSachGiaKho />
+            <ThongTinDoanhNghiep />
+          </div>
+        )}
       </div>
     </article>
   </div>
@@ -148,4 +174,9 @@ const schemaData = [
   .markdown-body ul, .markdown-body ol { margin-left: 20px; margin-bottom: 20px; }
   .markdown-body li { margin-bottom: 10px; }
   .markdown-body strong { color: #111; }
+  .khoi-cuoi { margin-top: 32px; font-size: 1rem; }
+  .bang-nguon { overflow-x: auto; }
+  .bang-nguon :global(table) { border-collapse: collapse; width: 100%; font-size: .95rem; background: white; }
+  .bang-nguon :global(th), .bang-nguon :global(td) { border: 1px solid var(--border-color); padding: 8px 10px; text-align: left; vertical-align: top; }
+  .bang-nguon :global(th) { background: #f3f5f7; }
 </style>
