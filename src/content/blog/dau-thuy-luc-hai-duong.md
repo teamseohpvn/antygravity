@@ -1,5 +1,5 @@
 ---
-ma: "BV-017"
+ma: "BV-027"
 active: true
 loai: "huong-dan-su-dung"
 title: "Mua Dầu Thủy Lực Tại Hải Dương: Kho Thanh Bình, Giao Trong Ngày Các KCN"
