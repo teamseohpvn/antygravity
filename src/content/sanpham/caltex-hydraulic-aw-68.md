@@ -60,7 +60,7 @@ date: "2026-10-12"
 updated: "2026-10-30"
 ---
 
-**Caltex Hydraulic Oil AW 68** là dầu thủy lực chống mài mòn của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho hệ thủy lực cố định và hệ thủy lực trên máy di động. Mục tiêu của dòng này là bảo vệ tốt với chi phí hợp lý.
+**Caltex Hydraulic Oil AW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn của Chevron, bán dưới thương hiệu Caltex. Dầu dùng cho hệ thủy lực cố định và hệ thủy lực trên máy di động. Mục tiêu của dòng này là bảo vệ tốt với chi phí hợp lý.
 
 Mã này **có sẵn tại kho** theo phuy 208 lít, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
@@ -112,7 +112,7 @@ Chevron bán hai dòng dầu thủy lực chống mài mòn ở châu Á. Chính
 
 Nguyên văn TDS: Hydraulic Oil AW dành cho hệ thống "có mức tiêu hao cao do rò rỉ, hỏng phớt hoặc vỡ ống, nơi dầu không cần chứng minh chu kỳ thay kéo dài". Nếu máy chạy ở nhiệt độ cao, cần thay thưa hoặc cần đầy đủ phê duyệt của hãng máy, Chevron khuyên xem xét Rando HD.
 
-> **Nhận định của HT VINA:** Đây là điểm ít người bán nói ra. Caltex AW 68 không phải dầu kém, nhưng nó được thiết kế cho máy "uống dầu": thùng dầu được châm mới liên tục nên dầu ít khi phải sống lâu. Máy kín, ít rò rỉ, chạy 3 ca và muốn thay dầu thưa thì chúng tôi khuyên chọn mã có số liệu bền oxy hóa và phê duyệt hãng bơm, như [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68).
+> **Nhận định của HT VINA:** Đây là điểm ít người bán nói ra. Caltex AW 68 không phải dầu kém, nhưng nó được thiết kế cho máy "uống dầu": thùng dầu được thêm mới liên tục nên dầu ít khi phải sống lâu. Máy kín, ít rò rỉ, chạy 3 ca và muốn thay dầu thưa thì chúng tôi khuyên chọn mã có số liệu bền oxy hóa và phê duyệt hãng bơm, như [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68).
 
 ## Chọn cấp 32, 46, 68 hay 100 trong dòng Caltex AW {#chon-cap}
 
@@ -169,5 +169,5 @@ Không. Mục phê duyệt trong TDS ghi "N/A". Nếu hướng dẫn sử dụng
 - **Quy cách:** phuy 208 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Caltex%20Hydraulic%20Oil%20AW%2068) kèm số lượng.
+- **Giá:** xem khoảng giá tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Caltex%20Hydraulic%20Oil%20AW%2068) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

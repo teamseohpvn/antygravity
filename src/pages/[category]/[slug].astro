@@ -7,17 +7,22 @@ import { mucLuc } from '../../lib/muc-luc';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import NoiDungBai from '../../components/NoiDungBai.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
+import NutBaoGia from '../../components/NutBaoGia.astro';
+import { trangBaoGiaCua } from '../../lib/bao-gia-danh-muc';
 import ThuVienAnh from '../../components/ThuVienAnh.astro';
 import XemThem from '../../components/XemThem.astro';
+import CachVietBai from '../../components/CachVietBai.astro';
+import ChinhSachGiaKho from '../../components/ChinhSachGiaKho.astro';
+import ThongTinDoanhNghiep from '../../components/ThongTinDoanhNghiep.astro';
 import { getEntry, render } from 'astro:content';
 import { getActiveProducts, getActivePosts, postPath } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
 import { giaSanPham, phanKhucGia } from '../../lib/gia-json';
 import { bangSoSanh, nhomCua } from '../../lib/so-sanh';
-import { fmtVnd, fmtNgay } from '../../lib/gia-tinh';
+import { fmtVnd, fmtNgay, fmtKhoang } from '../../lib/gia-tinh';
 import { ngayBai } from '../../lib/ngay';
 import { timNhanSu, DEFAULT_REVIEWER_ID, DEFAULT_PRODUCT_AUTHOR_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
-import { BUSINESS, absUrl, breadcrumbSchema, packagingLabel, productImages, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
+import { BUSINESS, KHO_GIAO_HANG, absUrl, breadcrumbSchema, packagingLabel, productImages, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
   const products = await getActiveProducts();
@@ -41,7 +46,7 @@ const isThuyLuc = d.category === 'dau-thuy-luc';
 const cacCapVg = [d.vg, ...(d.vg_khac ?? [])].filter((v): v is number => !!v);
 const sku = d.sku ?? d.packaging?.map((p) => (typeof p === 'string' ? undefined : p.sku)).find(Boolean);
 const STOCK_TEXT = {
-  'co-san': 'Có sẵn tại kho TP Hải Phòng (Hải Dương cũ). Liên hệ để nhận báo giá.',
+  'co-san': 'Có sẵn tại kho. Liên hệ để nhận báo giá.',
   'dat-hang': 'Hàng đặt theo yêu cầu. Liên hệ để biết thời gian giao.',
   'ngung-ban': 'Sản phẩm đã ngừng kinh doanh. Liên hệ để được tư vấn mã thay thế.',
 } as const;
@@ -66,6 +71,9 @@ const cungDanhMuc = activeProducts
 const xemThem = [
   { href: `/${d.category}`, tieuDe: categoryLabel },
   ...(isThuyLuc ? ['/bao-gia-dau-thuy-luc'] : []),
+  // Mỡ: bảng giá mỡ; mỡ chịu nhiệt thêm hub mỡ bôi trơn (trang trụ cột của cả nhóm mỡ).
+  ...(d.category.startsWith('mo-') ? ['/bao-gia-mo-boi-tron'] : []),
+  ...(d.category === 'mo-chiu-nhiet' ? ['/mo-boi-tron-cong-nghiep'] : []),
   ...baiLienQuan,
   ...cungDanhMuc,
 ];
@@ -74,11 +82,7 @@ const xemThem = [
 // 2) Cuối bài: mã giá mềm hơn / phân khúc giá cao hơn (theo giá công khai mỗi lít/kg, cùng nhóm công dụng)
 //    và bài hướng dẫn kỹ thuật hợp với loại dầu. Link nào thân bài đã có thì không lặp lại.
 const tenLoai = categoryLabel.charAt(0).toLowerCase() + categoryLabel.slice(1);
-const TRANG_GIA: Record<string, { href: string; chu: string }> = {
-  'dau-thuy-luc': { href: '/bao-gia-dau-thuy-luc', chu: 'Xem báo giá nhiều mã dầu thủy lực khác' },
-  'mo-boi-tron-cong-nghiep': { href: '/mo-boi-tron-cong-nghiep#chi-phi', chu: 'Xem giá mỗi kg của các loại mỡ khác' },
-};
-const trangGia = TRANG_GIA[d.category];
+const trangGia = trangBaoGiaCua(d.category);
 const nhomSp = nhomCua(d);
 // Dầu động cơ / dầu cầu: chỉ xếp với mã cùng cấp SAE (nếu có mã cùng cấp), tránh đặt 15W-40 cạnh 20W-50.
 const cungSae = (x: typeof d) => !d.sae || !x.sae || x.sae.split(/[,/\s]+/).filter(Boolean).some((v) => d.sae!.includes(v));
@@ -110,6 +114,8 @@ const soSanh = bangSoSanh(product, activeProducts);
 const coSpecs = !!d.specs?.length;
 const coUngDung = !!(d.applications?.length || d.not_for?.length);
 const coBaoQuan = !!(d.warnings?.length || d.storage || d.shelf_life);
+// Khối cuối bài B3a (QUY-TRINH-VIET-BAI-EEAT.md): bật khi trang khai báo nguon_tds (bảng nguồn TDS kèm ngày tra cứu).
+const coKhoiCuoi = !!d.nguon_tds?.length;
 const mucThongSo = [
   ...(coSpecs ? [{ depth: 2, slug: 'thong-so-ky-thuat', text: 'Thông số kỹ thuật điển hình' }] : []),
   ...(coUngDung ? [{ depth: 2, slug: 'ung-dung', text: 'Ứng dụng và khuyến cáo sử dụng' }] : []),
@@ -124,6 +130,7 @@ const tocItems = mucLuc([
   ...(soSanh ? [{ depth: 2, slug: 'so-sanh-cung-loai', text: `So sánh với các ${soSanh.tenNhom} khác` }] : []),
   ...(equivalents.length ? [{ depth: 2, slug: 'san-pham-tuong-duong', text: 'Sản phẩm tương đương' }] : []),
   ...(coBaoQuan ? [{ depth: 2, slug: 'bao-quan-an-toan', text: 'Bảo quản và an toàn' }] : []),
+  ...(coKhoiCuoi ? [{ depth: 2, slug: 'cach-viet-bai', text: 'Cách chúng tôi viết và cập nhật bài này' }] : []),
 ], { tat: d.muc_luc === false });
 // **đậm** trong tom_tat → <strong>, phần còn lại được escape.
 const dam = (t: string) =>
@@ -147,6 +154,11 @@ const offers = gia.rows.length
     }
   : undefined;
 const stockText = d.stock_status ? STOCK_TEXT[d.stock_status] : 'Liên hệ để nhận báo giá và kiểm tra tồn kho.';
+// Ba kho của HT VINA (17/11/2026): hiện dưới dòng "Có sẵn tại kho". Kho chính lấy từ BUSINESS, hai kho còn lại từ KHO_GIAO_HANG.
+const danhSachKho = [
+  { ten: 'Kho chính', diaChi: `${BUSINESS.streetAddress.replace('Đường ', '')}, ${BUSINESS.locality}, ${BUSINESS.region} (Hải Dương cũ)` },
+  ...KHO_GIAO_HANG.map((k) => ({ ten: k.name, diaChi: k.addressText })),
+];
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
@@ -173,6 +185,7 @@ const additionalProperty = [
 const citation = [
   ...new Set([
     ...(d.tds_url ? [d.tds_url.startsWith('/') ? absUrl(d.tds_url) : d.tds_url] : []),
+    ...(d.nguon_tds ?? []).flatMap((t) => (t.url ? [t.url.startsWith('/') ? absUrl(t.url) : t.url] : [])),
     ...(d.specs ?? []).flatMap((s) => (s.method ? tachPhuongPhap(s.method) : []).flatMap((x) => [x.tc?.url, x.tc?.tcvnUrl])),
   ].filter((u): u is string => Boolean(u))),
 ];
@@ -255,6 +268,7 @@ const schemaData = [
           {ngay.modified && ngay.modified !== ngay.published && <> · Cập nhật ngày <time datetime={ngay.modified}>{ngay.modifiedText}</time></>}
           {' · '}<a href={personUrl(tacGia!)} rel="author">{tenNgan(tacGia!)}</a>
           {reviewer && reviewer.id !== tacGia?.id && <> · Duyệt nội dung: <a href={personUrl(reviewer)}>{tenNgan(reviewer)}</a></>}
+          {coKhoiCuoi && <> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></>}
         </p>
         <div class="tags">
           {isThuyLuc && <a class="badge" href="/dau-thuy-luc">Dầu thủy lực</a>}
@@ -288,21 +302,26 @@ const schemaData = [
 
         <div class="cta-box">
           <p class="status">{stockText}</p>
+          {d.stock_status === 'co-san' && (
+            <ul class="kho-list">
+              {danhSachKho.map((k) => <li><strong>{k.ten}:</strong> {k.diaChi}</li>)}
+            </ul>
+          )}
           {gia.rows.length > 0 && (
             <div class="gia">
               <p><strong>Giá tham khảo tháng {fmtNgay(gia.cauHinh.ngay_ra_soat, 'thang')} ({gia.cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT'}):</strong></p>
               <ul>
-                {gia.rows.map((r) => <li>{nhieuMa ? `${r.ten} – ${r.quy_cach}` : r.quy_cach}: {fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</li>)}
+                {gia.rows.map((r) => <li>{nhieuMa ? `${r.ten} – ${r.quy_cach}` : r.quy_cach}: {fmtKhoang(r.thap, r.cao)} đ</li>)}
               </ul>
               <p class="gia-note">Giá thay đổi theo số lượng và nơi giao.</p>
             </div>
           )}
           <p class="dieu-huong">
             <a href={`/${d.category}`}>{soMaCungDanhMuc > 1 ? <>Xem nhiều hơn các {tenLoai} cùng loại →</> : <>Xem danh mục {tenLoai} →</>}</a>
-            {trangGia && <a href={trangGia.href}>{trangGia.chu} →</a>}
+            {trangGia && <a href={trangGia.href}>{trangGia.chuSanPham} →</a>}
           </p>
           <p class="cta-row">
-            <a href={`/bao-gia?sp=${encodeURIComponent(d.title)}`} class="btn-primary" data-track="add_to_quote">Nhận báo giá</a>
+            <NutBaoGia sp={d.title} danhMuc={d.category} kieu="link" class="btn-primary">Nhận báo giá</NutBaoGia>
             <span>hoặc gọi <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></span>
           </p>
           {(d.tds_url || d.sds_url) && (
@@ -373,7 +392,17 @@ const schemaData = [
           {(reHon || caoHon) && <p class="goi-y-chon__ghi-chu">Xếp theo giá thấp nhất mỗi {d.category.startsWith('mo-') ? 'kg' : 'lít'} trên bảng giá công khai của HT VINA; giá cao hơn không có nghĩa là hợp với máy của bạn hơn, hãy chọn theo cấp và tiêu chuẩn máy yêu cầu.</p>}
         </aside>
       )}
-      <QuoteCta item={d.title} />
+      {coKhoiCuoi && tacGia && reviewer && (
+        <CachVietBai tacGia={tacGia} nguoiDuyet={reviewer} ngayGia={gia.rows.length ? gia.cauHinh.ngay_ra_soat : undefined} ngayCapNhat={ngay.modified ?? ngay.published!}>
+          <div class="table-wrap" slot="nguon"><table>
+            <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
+            <tbody>{d.nguon_tds!.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="noopener" target="_blank">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
+          </table></div>
+        </CachVietBai>
+      )}
+      <QuoteCta item={d.title} danhMuc={d.category} />
+      {coKhoiCuoi && <ChinhSachGiaKho />}
+      {coKhoiCuoi && <ThongTinDoanhNghiep />}
       <XemThem muc={xemThem} boQua={[pagePath]} toiDa={4} />
     </section>
     </NoiDungBai>
@@ -442,6 +471,8 @@ const schemaData = [
   :global(.markdown-body ul) { margin-left: 20px; margin-bottom: 20px; }
   :global(.markdown-body li) { margin-bottom: 8px; }
   :global(.markdown-body blockquote) { margin: 16px 0 20px; padding: 12px 16px; background: #fff7ed; border-left: 4px solid var(--color-accent); border-radius: 4px; }
+  .kho-list { margin: -4px 0 12px 18px; font-size: .9rem; line-height: 1.5; }
+  .kho-list li { margin-bottom: 2px; }
   :global(.markdown-body blockquote p:last-child) { margin-bottom: 0; }
   :global(.markdown-body table) { border-collapse: collapse; width: 100%; font-size: 0.95rem; margin: 8px 0 16px; display: block; overflow-x: auto; }
   :global(.markdown-body th), :global(.markdown-body td) { border: 1px solid var(--border-color); padding: 8px 12px; text-align: left; vertical-align: top; }

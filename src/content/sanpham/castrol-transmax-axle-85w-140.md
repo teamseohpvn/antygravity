@@ -107,7 +107,7 @@ Transmax Axle 85W-140 hay dùng cho cầu xe ben, xe công trình. Đây cũng l
 
 1. Kiểm tra lỗ thông hơi cầu mỗi lần bảo dưỡng: không tắc bùn, ống nối (nếu có) không gãy gập. Lỗ thông hơi tắc gây rò dầu ở phớt, lỗ thông hơi hở thấp thì hút nước.
 2. Xe ben chạy công trường hay lội nước nên cho xe nghỉ vài phút trước khi xuống nước sâu nếu điều kiện cho phép, để cầu bớt nóng.
-3. Sau khi lội nước sâu: tháo nút châm dầu, lấy một ít dầu ra xem. Dầu đục màu sữa hoặc có bọt thì thay ngay, đừng đợi tới mốc km. Có thể [kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong).
+3. Sau khi lội nước sâu: tháo nút nạp dầu, lấy một ít dầu ra xem. Dầu đục màu sữa hoặc có bọt thì thay ngay, đừng đợi tới mốc km. Có thể [kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong).
 4. Đội xe hay lội nước nên đặt dầu theo phuy: một phuy 209 L đủ thay nhiều cầu khi cần thay ngoài lịch.
 
 ## Khi nào cần thay dầu?

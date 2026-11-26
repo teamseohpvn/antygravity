@@ -74,7 +74,7 @@ HT VINA là **đại lý dầu mỡ VHP**. Hai cấp **Heatrans 32** và **Heatr
 | Tình huống | Dùng Heatrans được không? |
 | :--- | :--- |
 | Hệ tuần hoàn kín, dầu trong hệ không quá 300 °C, màng dầu không quá 320 °C | **Được.** |
-| Lò dầu gia nhiệt cho máy ép, máy sấy, nồi nấu, bồn chứa nhựa đường | **Được**, trong giới hạn nhiệt độ trên. |
+| Lò dầu gia nhiệt cho máy ép, máy sấy, nồi nấu, thùng chứa nhựa đường | **Được**, trong giới hạn nhiệt độ trên. |
 | Hệ hở (dầu tiếp xúc không khí ở nhiệt độ cao) | Không. Dầu chỉ dùng cho hệ tuần hoàn kín. |
 | Dầu trong hệ trên 300 °C | Không. Cần dầu truyền nhiệt tổng hợp chịu nhiệt cao hơn. |
 

@@ -6,6 +6,15 @@ import NoiDungBai from '../../components/NoiDungBai.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import PromoBanner from '../../components/PromoBanner.astro';
 import StockTable from '../../components/StockTable.astro';
+import NutBaoGia from '../../components/NutBaoGia.astro';
+import PriceTable from '../../components/PriceTable.astro';
+import CachVietBai from '../../components/CachVietBai.astro';
+import ChinhSachGiaKho from '../../components/ChinhSachGiaKho.astro';
+import ThongTinDoanhNghiep from '../../components/ThongTinDoanhNghiep.astro';
+import { bangGiaTuJson } from '../../lib/gia-json';
+import { fmtNgay, fmtKhoang } from '../../lib/gia-tinh';
+import type { DongGiaCongKhai } from '../../lib/gia';
+import { trangBaoGiaCua } from '../../lib/bao-gia-danh-muc';
 import stockRows from '../../data/san-pham-kho.json';
 import { render } from 'astro:content';
 import { getActiveProducts, getActiveCategories } from '../../lib/content';
@@ -28,14 +37,50 @@ export async function getStaticPaths() {
 }
 
 const { category } = Astro.params;
+// Danh mục có trang báo giá riêng: một link chữ rõ nghĩa trước lưới; các nút "Báo giá" là <button> (NutBaoGia).
+const trangGia = trangBaoGiaCua(category);
 const { products, categoryInfo } = Astro.props;
 const { Content } = await render(categoryInfo);
-const { title, nav_label, description, seo_title, reviewed_by, tac_gia, updated } = categoryInfo.data;
+// Danh mục không có bảng giá gộp: phần trên dòng <!-- phan-sau --> (đoạn trả lời ngắn) hiện trước lưới sản phẩm.
+const coTachDau = Boolean(categoryInfo.body?.includes('<!-- phan-sau -->'));
+const { nav_label, reviewed_by, tac_gia, updated, bang_gia } = categoryInfo.data;
+
+// Danh mục gộp báo giá (trường bang_gia, 20/11/2026): bảng giá nằm ngay trong trang danh mục.
+const giaJson = bang_gia ? bangGiaTuJson(category!) : undefined;
+const thangGia = fmtNgay(giaJson?.cauHinh.ngay_ra_soat, 'thang');
+const coThang = (t: string) => t.replace('{thang}', thangGia).replace(/\s*\{thang\}/, '');
+const title = coThang(categoryInfo.data.title);
+const seo_title = categoryInfo.data.seo_title ? coThang(categoryInfo.data.seo_title) : undefined;
+const description = coThang(categoryInfo.data.description);
+const rowsGia: DongGiaCongKhai[] = giaJson ? [
+  ...giaJson.rows.filter((r) => r.thap && r.cao),
+  ...(bang_gia?.lien_he ?? []).map((r) => ({ ...r, trang: r.trang ?? null, thap: null, cao: null, thap_don_vi: null, cao_don_vi: null, don_vi_do: 'L' as const })),
+] : [];
+type Khoang = { thap: number; cao: number; lThap: number; lCao: number };
+const khoangCua = (xs: DongGiaCongKhai[]): Khoang | null => {
+  const co = xs.filter((r) => r.thap && r.cao && r.thap_don_vi && r.cao_don_vi);
+  return co.length ? {
+    thap: Math.min(...co.map((r) => r.thap!)), cao: Math.max(...co.map((r) => r.cao!)),
+    lThap: Math.min(...co.map((r) => r.thap_don_vi!)), lCao: Math.max(...co.map((r) => r.cao_don_vi!)),
+  } : null;
+};
+const kPhuy = khoangCua(rowsGia.filter((r) => /phuy/i.test(r.quy_cach)));
+const kCan = khoangCua(rowsGia.filter((r) => /can|xô/i.test(r.quy_cach)));
 const ngay = ngayBai(categoryInfo.data);
 // Bỏ ảnh khi file chưa được tạo (tránh og:image và schema trỏ tới ảnh 404).
 const image = publicImageExists(categoryInfo.data.image) ? categoryInfo.data.image : undefined;
 const pagePath = `/${category}`;
 const hasStock = stockRows.some((r) => r.danh_muc === category);
+// Cắt mô tả ở ranh giới từ, không cắt giữa chữ.
+const catGon = (t: string, n: number) => (t.length > n ? t.slice(0, t.lastIndexOf(' ', n) > 0 ? t.lastIndexOf(' ', n) : n) + '…' : t);
+const activePages = new Set(products.map((p) => p.id));
+const tdsTheoTrang = Object.fromEntries(products.map((p) => [p.id, p.data.tds_url as string | undefined]));
+// Danh mục có trang báo giá riêng (12/11/2026): trang danh mục lo chọn và mua, không đặt nút "Báo giá"/"Nhận giá sỉ";
+// thay bằng link sang trang báo giá để hai trang không tranh từ khóa giá.
+const BANG_GIA: Record<string, { href: string; label: string; tuVan: string }> = {
+  'dau-thuy-luc': { href: '/bao-gia-dau-thuy-luc', label: 'Xem bảng giá dầu thủy lực', tuVan: 'Cần tư vấn chọn dầu thủy lực?' },
+};
+const bangGia = category ? BANG_GIA[category] : undefined;
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
@@ -125,10 +170,34 @@ const schemaData = [
         </p>
       )}
       <p>{description}</p>
-      <QuoteCta item={nav_label ?? title} compact />
+      {!bangGia && trangGia && <p class="link-bang-gia"><a href={trangGia.href}>{trangGia.chuDanhMuc} →</a></p>}
+      <QuoteCta item={nav_label ?? title} danhMuc={category} compact bangGia={bangGia} />
     </header>
 
     {category === 'dau-thuy-luc' && <PromoBanner />}
+
+    {bang_gia && (
+      <div class="seo-content markdown-body gop-truoc">
+        <ContentBody phan="truoc">
+          <Content />
+          <section slot="sau-doan-dau" class="gia-gop" id="bang-gia" aria-labelledby="tieu-de-bang-gia">
+            <h2 id="tieu-de-bang-gia">{coThang(bang_gia.tieu_de)}</h2>
+            <ul class="gia-gop__tom-tat">
+              {kPhuy && <li><strong>Phuy 200–209 L:</strong> {fmtKhoang(kPhuy.thap, kPhuy.cao)} đ/phuy, quy đổi {fmtKhoang(kPhuy.lThap, kPhuy.lCao)} đ/lít.</li>}
+              {kCan && <li><strong>Can, xô 18 L:</strong> {fmtKhoang(kCan.thap, kCan.cao)} đ/can, quy đổi {fmtKhoang(kCan.lThap, kCan.lCao)} đ/lít.</li>}
+              <li>Giá {giaJson!.cauHinh.gom_vat ? 'đã gồm' : 'chưa gồm'} VAT, rà soát ngày <time datetime={giaJson!.cauHinh.ngay_ra_soat}>{fmtNgay(giaJson!.cauHinh.ngay_ra_soat)}</time>. Mỗi dòng là khoảng từ giá kho đến giá kho cộng 15%, giá chốt theo số lượng và nơi giao.</li>
+            </ul>
+            <PriceTable rows={rowsGia} {activePages} category={category!} gomVat={giaJson!.cauHinh.gom_vat} tds={tdsTheoTrang} gon />
+          </section>
+        </ContentBody>
+      </div>
+    )}
+
+    {!bang_gia && coTachDau && (
+      <div class="seo-content markdown-body gop-truoc">
+        <ContentBody phan="truoc"><Content /></ContentBody>
+      </div>
+    )}
 
     <div class:list={['layout-grid', { 'no-filter': !showFilter }]}>
       {showFilter && (
@@ -152,6 +221,7 @@ const schemaData = [
       )}
 
       <div class="products-area">
+        {products.length > 0 && <h2 class="tieu-de-luoi">{bang_gia ? `Các mã ${(nav_label ?? title).toLowerCase()} có tại kho` : `Sản phẩm ${(nav_label ?? title).toLowerCase()}`}</h2>}
         {products.length > 0 ? (
           <div class="grid" id="product-grid">
             {products.map((product) => (
@@ -164,11 +234,11 @@ const schemaData = [
                     <span class="badge">{product.data.brand}</span>
                     {productGrade(product) && <span class="badge badge-outline">{productGrade(product)}</span>}
                   </div>
-                  <h2><a href={`/${category}/${product.id}`}>{product.data.title}</a></h2>
-                  <p>{product.data.description.length > 110 ? product.data.description.slice(0, 110) + '…' : product.data.description}</p>
+                  <h3 class="ten-sp"><a href={`/${category}/${product.id}`}>{product.data.title}</a></h3>
+                  <p>{catGon(product.data.description, 110)}</p>
                   <div class="card-actions">
                     <a href={`/${category}/${product.id}`} class="btn-view">Xem chi tiết →</a>
-                    <a href={`/bao-gia?sp=${encodeURIComponent(product.data.title)}`} class="btn-quote" data-track="add_to_quote">Báo giá</a>
+                    {!bangGia && <NutBaoGia sp={product.data.title} danhMuc={category} class="btn-quote">Báo giá</NutBaoGia>}
                   </div>
                 </div>
               </article>
@@ -178,20 +248,27 @@ const schemaData = [
           <div class="empty-state">
             <p><strong>Danh sách sản phẩm {(nav_label ?? title).toLowerCase()} đang được cập nhật.</strong></p>
             <p>Các mã hàng phổ biến và sản phẩm tương đương được liệt kê trong phần nội dung bên dưới. Gửi yêu cầu để nhận báo giá và kiểm tra tồn kho.</p>
-            <QuoteCta item={nav_label ?? title} compact />
+            <QuoteCta item={nav_label ?? title} danhMuc={category} compact />
           </div>
         )}
 
-        <StockTable category={category!} label={nav_label ?? title} pages={products.map((p) => p.id)} />
+        {!bang_gia && <StockTable category={category!} label={nav_label ?? title} pages={products.map((p) => p.id)} coTrangGia={Boolean(bangGia)} />}
 
         <div class="seo-content markdown-body">
-          <ContentBody><Content /></ContentBody>
-          <QuoteCta item={nav_label ?? title} />
+          <ContentBody phan={bang_gia || coTachDau ? 'sau' : undefined}><Content /></ContentBody>
+          <QuoteCta item={nav_label ?? title} danhMuc={category} bangGia={bangGia} heading={bangGia?.tuVan} />
           {!tacGia && (reviewed_by || updated) && (
             <p class="review-meta">
               {reviewed_by && <>Nội dung được duyệt kỹ thuật bởi {reviewed_by}. </>}
               {ngay.modified && <>Cập nhật: <time datetime={ngay.modified}>{ngay.modifiedText}</time>.</>}
             </p>
+          )}
+          {bang_gia && tacGia && reviewer && ngay.modified && (
+            <>
+              <CachVietBai tacGia={tacGia} nguoiDuyet={reviewer} chucDanhDuyet={reviewer.id === 'vu-minh-toan' ? 'kỹ sư Công nghệ ô tô, 6 năm phụ trách dầu làm mát và bôi trơn tại nhà máy (2009–2015)' : undefined} ngayGia={giaJson!.cauHinh.ngay_ra_soat || undefined} ngayCapNhat={ngay.modified} />
+              <ChinhSachGiaKho />
+              <ThongTinDoanhNghiep />
+            </>
           )}
         </div>
       </div>
@@ -239,17 +316,23 @@ const schemaData = [
   .product-card[hidden] { display: none; }
   .product-card img { width: 100%; height: 200px; object-fit: cover; }
   .product-info { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+  .tieu-de-luoi { color: var(--color-primary); margin: 0 0 16px; font-size: 1.5rem; }
+  .product-info .ten-sp { margin: 12px 0 8px; font-size: 1.1rem; color: var(--color-primary); }
   .product-info h2 { margin: 12px 0 8px; font-size: 1.1rem; color: var(--color-primary); }
   .product-info p { color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 16px; flex-grow: 1; }
   .card-actions { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
   .btn-view { color: var(--color-primary); font-weight: 600; }
   .btn-quote { color: var(--color-accent); font-weight: 600; }
+  .link-bang-gia { margin: 6px 0 0; }
+  .link-bang-gia a { color: var(--color-accent); font-weight: 600; }
   .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-right: 5px; }
   .badge-outline { background: transparent; border: 1px solid #cbd5e1; }
 
   .empty-state { background: white; border: 1px dashed #cbd5e1; border-radius: 8px; padding: 24px; margin-bottom: 30px; }
   .empty-state p + p { margin-top: 8px; color: var(--color-text-light); }
 
+  .gop-truoc { margin-bottom: 30px; }
+  .gia-gop__tom-tat { background: #f8fafc; border: 1px solid var(--border-color); border-radius: 8px; padding: 14px 18px 14px 34px; }
   .seo-content { background: white; padding: clamp(20px, 4vw, 40px); border-radius: 8px; border: 1px solid var(--border-color); overflow-wrap: anywhere; }
   .review-meta { margin-top: 20px; font-size: 0.9rem; color: var(--color-text-light); }
   :global(.seo-content h2) { color: var(--color-primary); margin: 32px 0 14px; font-size: 1.6rem; line-height: 1.3; }

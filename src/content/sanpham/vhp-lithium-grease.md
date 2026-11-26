@@ -65,9 +65,9 @@ date: "2026-10-06"
 updated: "2026-10-30"
 ---
 
-**VHP Lithium Grease** là mỡ bôi trơn đa dụng gốc lithium do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Mỡ dùng dầu gốc khoáng có độ nhớt 220 cSt ở 40 °C, kèm phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Với loại L3 và L4, nhiệt độ nhỏ giọt tối thiểu là 190 °C.
+**VHP Lithium Grease** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng gốc lithium do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Mỡ dùng dầu gốc khoáng có độ nhớt 220 cSt ở 40 °C, kèm phụ gia chống mài mòn, chống oxy hóa và chống gỉ. Với loại L3 và L4, nhiệt độ nhỏ giọt tối thiểu là 190 °C.
 
-HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): loại **L4, xô 17 kg**, có CO/CQ và hóa đơn VAT. Loại L3, L00, L0 và phuy 180 kg nhận đặt theo yêu cầu.
+HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho: loại **L4, xô 17 kg**, có CO/CQ và hóa đơn VAT. Loại L3, L00, L0 và phuy 180 kg nhận đặt theo yêu cầu.
 
 ## Lithium Grease có hợp với điểm bôi trơn của bạn không?
 
@@ -110,6 +110,8 @@ HT VINA là **đại lý dầu mỡ VHP**. Hàng có sẵn tại kho TP Hải Ph
 | Nhiệt độ nhỏ giọt | Tối thiểu 190 °C | 180 °C |
 | Tải 4 bi | 200 kg | Có phụ gia cực áp (TDS Shell Việt Nam không ghi số) |
 | Nhiệt độ làm việc | −10 đến 120 °C | −20 đến 130 °C |
+
+Giá theo kg của Lithium Grease L4 và Gadus S2 có trong [giá mỡ bôi trơn tại kho](/bao-gia-mo-boi-tron).
 
 > **Nhận định của HT VINA:** Ổ bi tải thường thì Lithium Grease đủ dùng. Ổ bi băng tải, sàng rung, máy nghiền chịu tải va đập thì mỡ chịu cực áp như Gadus S2 bảo vệ tốt hơn.
 
@@ -155,12 +157,12 @@ L00 lỏng hơn L0 và chảy gần giống dầu bánh răng đặc. L00 hợp 
 Mỡ lithium thường trộn được với mỡ lithium hoặc lithium-canxi khác. Tuy vậy, khi đổi loại mỡ, nên bơm đẩy hết mỡ cũ ra khỏi ổ bi. Không trộn với mỡ gốc sét hoặc polyurea khi chưa kiểm tra.
 
 ### Hệ bơm mỡ tự động của máy ép dùng mỡ lithium có độ đặc/độ sệt NLGI nào?
-Theo độ đặc/độ sệt NLGI ghi trong tài liệu của hãng hệ thống bơm mỡ, thường là NLGI 00 hoặc 0. VHP Lithium Grease có L00 và L0 (nhận đặt). Xem mục [mỡ cho hệ bơm mỡ tập trung](#tap-trung).
+Theo độ đặc/độ sệt NLGI ghi trong tài liệu của hãng hệ thống bơm mỡ, thường là NLGI 00 hoặc 0. VHP Lithium Grease có L00 và L0 (nhận đặt). Xem mục [mỡ cho hệ bơm mỡ tập trung](#tap-trung). Còn thùng dầu của máy ép thì dùng [dầu thủy lực](/dau-thuy-luc) theo cấp độ nhớt hãng máy ghi, khoảng giá có ở trang [giá dầu thủy lực](/bao-gia-dau-thuy-luc).
 
 ## Quy cách đóng gói, đơn hàng
 
 - **Quy cách có sẵn:** L4 xô 17 kg. L3, L00, L0 và phuy 180 kg nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo số lượng, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Lithium%20Grease) kèm độ đặc/độ sệt NLGI.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm độ đặc/độ sệt NLGI.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

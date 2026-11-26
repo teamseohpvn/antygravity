@@ -121,7 +121,7 @@ DEO CD hay được mua cho máy phát điện dự phòng của nhà xưởng, 
 1. Máy phát dự phòng ở miền Bắc nên thay dầu **ít nhất mỗi năm một lần**, kể cả khi chưa đủ giờ chạy. Mùa nồm ẩm chính là điều kiện ngưng tụ hơi nước mà kỹ thuật viên trên diễn đàn mô tả.
 2. Lịch chạy thử hằng tháng nên có tải (bật một phần phụ tải nhà xưởng) để máy đủ nóng.
 3. Trước mùa mưa bão, rút que thăm xem dầu có đục, có giọt nước hay không. Nghi ngờ thì [kiểm tra nước trong dầu tại hiện trường](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong).
-4. Chỉ đổ dầu động cơ vào động cơ. Trên cùng chủ đề, việc một người châm dầu thủy lực vào máy phát để "súc" đã bị phản đối gay gắt.
+4. Chỉ đổ dầu động cơ vào động cơ. Trên cùng chủ đề, việc một người thêm dầu thủy lực vào máy phát để "súc" đã bị phản đối gay gắt.
 
 ## Khi nào cần thay dầu?
 

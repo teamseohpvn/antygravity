@@ -6,6 +6,7 @@ import Layout from '../layouts/Layout.astro';
 import NoiDungBai from '../components/NoiDungBai.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import QuoteCta from '../components/QuoteCta.astro';
+import NutBaoGia from '../components/NutBaoGia.astro';
 import ChinhSachGiaKho from '../components/ChinhSachGiaKho.astro';
 import CachVietBai from '../components/CachVietBai.astro';
 import ThongTinDoanhNghiep from '../components/ThongTinDoanhNghiep.astro';
@@ -25,15 +26,14 @@ const pagePath = '/mo-boi-tron-cong-nghiep';
 const CAT = '/mo-boi-tron-cong-nghiep';
 const IMAGE = '/images/danh-muc/mo-boi-tron-cong-nghiep.webp';
 const NGAY_DANG = '2026-09-21';
-const title = 'Mỡ Bôi Trơn (Mỡ Bò) | Chính Hãng Giá Tốt';
+const title = 'Mỡ Bôi Trơn Công Nghiệp (Mỡ Bò): Cẩm Nang Chọn, Tra Mỡ & Bảng TDS';
 const seoTitle = 'Mỡ Bôi Trơn (Mỡ Bò) Độ Đặc NLGI 0 - 4 | Cách Chọn & TDS';
-const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo độ đặc NLGI, nhiệt độ & vị trí làm việc, tải gối đỡ & trục, loại máy. Xem TDS từng mã các hãng Shell, Sinopec, ENEOS, VHP.';
+const description = 'Cách chọn mỡ bôi trơn (mỡ bò) theo độ đặc NLGI, nhiệt độ, vị trí làm việc, tải và loại máy. TDS từng mã Shell, Sinopec, ENEOS, VHP. Kho Hải Phòng.';
 const tacGia = timNhanSu('nguyen-thi-hong')!;
 const reviewer = timNhanSu('vu-minh-toan')!;
-const NGAY = '2026-11-08';
+const NGAY = '2026-11-21';
 const NGAY_GIA = (giaJson as any).cau_hinh.ngay_ra_soat as string;
 const fmtNgay = (s: string) => s.split('-').reverse().join('/');
-const THANG_GIA = fmtNgay(NGAY_GIA).slice(3); // MM/YYYY, đổi theo ngày rà soát giá.
 
 // NGUỒN KHO DUY NHẤT của trang: stock_status + packaging trong src/content/sanpham/*.md (đọc tay 03/11/2026).
 // Không dùng san-pham-kho.json (chỉ có 3 dòng mỡ, sinh từ file kho tháng 10).
@@ -61,7 +61,7 @@ const BANG: Dong[] = [
 const VI_TRI = [
   { ma: 'goi-do', ten: 'Gối đỡ, khớp nối tải thường', ids: ['vhp-caxilium-grease', 'licas-grease', 'vhp-opal-grease', 'vhp-mp-grease', 'sinopec-crystal-grease-nlgi-3', 'sinopec-crystal-grease-t3', 'sinopec-golden-grease'] },
   { ma: 'tai-nang', ten: 'Tải nặng, va đập', ids: ['shell-gadus-s2-v220-2', 'eneos-epnoc-ap'] },
-  { ma: 'bom-tap-trung', ten: 'Hệ bơm mỡ tập trung', ids: ['vhp-lithium-grease', 'eneos-epnoc-ap'] },
+  { ma: 'bom-tap-trung', ten: 'Hệ thống bơm mỡ tự động', ids: ['vhp-lithium-grease', 'eneos-epnoc-ap'] },
   { ma: 'vo-o-90-100', ten: 'Vỏ ổ 90–100 °C, tải thường', ids: ['vhp-mp-grease', 'sinopec-crystal-grease-nlgi-3', 'vhp-opal-grease'] },
   { ma: 'o-nong', ten: 'Vỏ ổ 100–120 °C', ids: ['shell-gadus-s3-v220c-2'] },
 ];
@@ -102,6 +102,7 @@ const CHI_PHI = [
 ].filter(Boolean).sort((a: any, b: any) => a.thap - b.thap) as { ten: string; qc: string; link: string; thap: number; cao: number }[];
 const vnd = (n: number) => n.toLocaleString('vi-VN');
 const lam100 = (n: number) => Math.round(n / 100) * 100;
+const khoangVnd = (a: number, b: number) => (a === b ? vnd(a) : `${vnd(a)} – ${vnd(b)}`);
 
 // Danh sách TDS hiển thị (audit #6). "Ngày tra cứu" là ngày đã mở lại nguồn.
 const TDS = [
@@ -120,9 +121,9 @@ const TDS = [
 ];
 
 const MUC_LUC = [
-  ['chon-nhanh', 'Chọn nhanh theo vị trí'], ['nlgi', 'Chọn theo độ đặc/độ sệt NLGI'], ['chat-lam-dac', 'Chọn theo chất làm đặc'], ['so-sanh', 'So sánh và trạng thái kho'],
-  ['dong-co', 'Vòng bi động cơ điện'], ['chi-phi', 'Giá mỗi kg và chi phí mỗi năm'], ['mo-kho', 'Vì sao mỡ bò khô cứng'], ['tra-mo', 'Tra bao nhiêu, bao lâu'],
-  ['quy-trinh', 'Quy trình bơm mỡ bò an toàn'], ['kinh-nghiem', 'Kinh nghiệm người sử dụng'], ['su-co', 'Dấu hiệu mỡ hỏng'], ['hoi-dap', 'Câu hỏi thường gặp'], ['cach-viet-bai', 'Cách chúng tôi viết và cập nhật bài'],
+  ['chon-nhanh', 'Chọn mỡ theo vị trí'], ['nlgi', 'Chọn mỡ NLGI 0, 1, 2 hay 3'], ['chat-lam-dac', 'Mỡ lithium, canxi, lithium complex'], ['so-sanh', 'Bảng so sánh TDS và tình trạng kho'],
+  ['chi-phi', 'Chi phí mỡ cho một vòng bi'], ['doi-chieu-mobil', 'Đối chiếu với mỡ Mobil'], ['mo-kho', 'Vì sao mỡ bò khô cứng'], ['tra-mo', 'Bơm mỡ bao nhiêu gam, bao lâu'],
+  ['quy-trinh', 'Quy trình bơm mỡ bò an toàn'], ['kinh-nghiem', 'Thợ máy chia sẻ'], ['su-co', 'Mỡ chảy lỏng, khô đen, trắng đục'], ['chi-tieu', 'Chỉ tiêu cần xem trên TDS'], ['giao-hang', 'Quy cách, giấy tờ, giao hàng'], ['hoi-dap', 'Câu hỏi thường gặp'], ['cach-viet-bai', 'Cách chúng tôi viết và cập nhật bài'],
 ];
 
 const crumbs = [{ name: 'Trang chủ', href: '/' }, { name: 'Mỡ bôi trơn (mỡ bò)', href: CAT }];
@@ -152,18 +153,16 @@ const schemaData = [
       <header class="dau">
         <h1>{title}</h1>
         <p class="byline">Đăng ngày <time datetime={NGAY_DANG}>{fmtNgay(NGAY_DANG)}</time> · Cập nhật ngày <time datetime={NGAY}>{fmtNgay(NGAY)}</time> · <a href={personUrl(tacGia)} rel="author">{bylineLabel(tacGia)}</a> · Duyệt nội dung: <a href={personUrl(reviewer)}>{bylineLabel(reviewer)}</a> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></p>
-        <p class="mo-dau">Nhiều anh em thợ xưởng cứ thấy vòng bi kêu là với tay lấy súng bơm mỡ, bơm đến khi mỡ trào ra mép phớt mới thôi. Bơm quá đầy như vậy dễ làm ổ nóng rực ngay sau đó, mỡ chảy lòng thòng ra ngoài, lâu dần hỏng cả vòng bi. Lỗi nhiều khi không nằm ở chỗ lười tra mỡ, mà ở chỗ chọn sai độ đặc/độ sệt NLGI, bơm quá nhiều hoặc dùng lẫn các loại mỡ với nhau.</p>
         <p class="mo-dau"><strong>Mỡ bôi trơn</strong>, ngoài xưởng quen gọi là <strong>mỡ bò</strong>, là chất bôi trơn máy móc dạng sệt pha từ dầu gốc, chất làm đặc và phụ gia, không phải mỡ động vật. Công dụng chính của mỡ là giảm ma sát và mài mòn, bám lại ở vị trí tra, làm kín ổ trước bụi, nước và chống gỉ cho chi tiết máy. Bạn nên chọn theo ba điều: <strong>nhiệt độ đo trên vỏ ổ</strong>, <strong>tải và tốc độ</strong> của vị trí tra, rồi mới đến giá. Với vòng bi và gối đỡ thông thường, độ đặc/độ sệt phổ biến nhất là NLGI 2. Nếu vỏ ổ nóng liên tục từ 100 °C trở lên, hãy xem <a href="/mo-chiu-nhiet">mỡ chịu nhiệt</a>.</p>
         <p class="goi-y-menu">Bạn đang cần gì? Bấm chọn nhanh bên dưới:</p>
         <nav class="menu-nhanh" aria-label="Đi nhanh tới nội dung">
-          <a class="nut-nhanh" href="#san-pham"><strong>Danh sách mỡ bôi trơn phổ biến</strong><span class="nut-xem">Xem ngay →</span></a>
-          <a class="nut-nhanh" href="#huong-dan"><strong>Hướng dẫn cách chọn mỡ</strong><span class="nut-xem">Xem ngay →</span></a>
-          <a class="nut-nhanh" href="#chi-phi"><strong>Bảng giá mỡ bôi trơn tháng {THANG_GIA}</strong><span class="nut-xem">Xem ngay →</span></a>
+          <a class="link-nhanh link-gia" href="/bao-gia-mo-boi-tron">Xem nhanh bảng báo giá</a>
+          <a class="link-nhanh link-chon" href="#huong-dan">Hướng dẫn cách chọn mỡ</a>
         </nav>
       </header>
 
       <section class="sp" id="san-pham" aria-labelledby="tieu-de-sp">
-        <h2 id="tieu-de-sp">Các mã mỡ bôi trơn, mỡ bò HT VINA đang cung cấp</h2>
+        <h2 id="tieu-de-sp">Các loại mỡ bôi trơn (mỡ bò) có sẵn tại kho HT VINA</h2>
         <div class="loc" id="loc-mo">
           {NHOM_LOC.map((n) => (
             <div class="loc-nhom" data-nhom={n.nhom} role="group" aria-label={n.ten}>
@@ -189,7 +188,7 @@ const schemaData = [
                 </dl>
                 <div class="the-nut">
                   <a href={t.d.link}>Xem chi tiết →</a>
-                  <a class="nut-gia" href={`/bao-gia?sp=${encodeURIComponent(t.ten)}`} data-track="add_to_quote">Báo giá</a>
+                  <NutBaoGia sp={t.ten} danhMuc="mo-boi-tron-cong-nghiep" class="nut-gia">Báo giá</NutBaoGia>
                 </div>
               </div>
             </article>
@@ -255,13 +254,13 @@ const schemaData = [
         <nav class="muc-luc" aria-label="Mục lục"><strong>Mục lục</strong><ol>{MUC_LUC.map(([id, ten]) => <li><a href={`#${id}`}>{ten}</a></li>)}</ol></nav>
         <ContentBody><ChonMo /></ContentBody>
 
-        <h2 id="so-sanh">So sánh các mã mỡ theo TDS và trạng thái kho</h2>
-        <p>Số trong bảng là giá trị điển hình hoặc cam kết ghi trên TDS, có thể dao động nhẹ giữa các lô. Ô "–" là TDS không ghi chỉ tiêu đó. Cột cuối là trạng thái theo từng độ đặc/độ sệt NLGI và quy cách. Bạn vẫn nên hỏi lại số lượng trước khi đặt.</p>
+        <h2 id="so-sanh">Bảng so sánh thông số (TDS) và tình trạng kho các loại mỡ</h2>
+        <p>Số trong bảng là giá trị điển hình hoặc cam kết ghi trên TDS, có thể dao động nhẹ giữa các lô. Ô "–" là TDS không ghi chỉ tiêu đó. Cột cuối là tình trạng kho theo từng độ đặc/độ sệt NLGI và quy cách. Bạn vẫn nên hỏi lại số lượng trước khi đặt.</p>
         <div class="bang"><table class="the-dt">
-          <thead><tr><th>Mã mỡ</th><th>Chất làm đặc</th><th>Độ đặc/độ sệt NLGI</th><th>Dầu gốc ở 40 °C</th><th>Nhỏ giọt</th><th>Nhiệt độ làm việc</th><th>Tải hàn dính 4 bi</th><th>Trạng thái kho</th><th>TDS</th></tr></thead>
+          <thead><tr><th>Mã mỡ</th><th>Chất làm đặc</th><th>Độ đặc/độ sệt NLGI</th><th>Độ nhớt dầu gốc ở 40 °C</th><th>Điểm nhỏ giọt</th><th>Nhiệt độ làm việc</th><th>Tải hàn dính 4 bi</th><th>Tình trạng kho</th><th>TDS</th></tr></thead>
           <tbody>{BANG.map((d) => <tr>
-            <td class="the-ten"><a href={d.link}>{d.ten}</a></td><td data-nhan="Chất làm đặc">{d.lam_dac}</td><td data-nhan="Độ đặc/độ sệt NLGI">{d.cap}</td><td data-nhan="Dầu gốc ở 40 °C">{d.dau40}</td><td data-nhan="Nhỏ giọt">{d.nho_giot}</td><td data-nhan="Nhiệt độ làm việc">{d.lam_viec}</td><td data-nhan="Tải hàn dính 4 bi">{d.hbi}</td>
-            <td class="the-kho" data-nhan="Trạng thái kho"><div>{d.ghi_chu === 'cho' ? <span class="cho">{d.co_san}</span> : <><strong>Có sẵn:</strong> {d.co_san}</>}{d.nhan_dat && <><br /><strong>Nhận đặt:</strong> {d.nhan_dat}</>}</div></td>
+            <td class="the-ten"><a href={d.link}>{d.ten}</a></td><td data-nhan="Chất làm đặc">{d.lam_dac}</td><td data-nhan="Độ đặc/độ sệt NLGI">{d.cap}</td><td data-nhan="Độ nhớt dầu gốc ở 40 °C">{d.dau40}</td><td data-nhan="Điểm nhỏ giọt">{d.nho_giot}</td><td data-nhan="Nhiệt độ làm việc">{d.lam_viec}</td><td data-nhan="Tải hàn dính 4 bi">{d.hbi}</td>
+            <td class="the-kho" data-nhan="Tình trạng kho"><div>{d.ghi_chu === 'cho' ? <span class="cho">{d.co_san}</span> : <><strong>Có sẵn:</strong> {d.co_san}</>}{d.nhan_dat && <><br /><strong>Nhận đặt:</strong> {d.nhan_dat}</>}</div></td>
             <td class="the-tds" data-nhan="TDS">{tdsCua(d.link)
               ? <a href={tdsCua(d.link)} class="tds-link" target="_blank" rel="noopener" data-track="download_tds">{laPdf(tdsCua(d.link)!) ? 'Tải TDS' : 'Xem TDS'}</a>
               : <small class="muted">Chưa có TDS của hãng</small>}</td>
@@ -269,11 +268,11 @@ const schemaData = [
         </table></div>
         <ContentBody><DocBang /></ContentBody>
 
-        <h2 id="chi-phi">Giá mỡ mỗi kg và chi phí cho một vòng bi mỗi năm</h2>
-        <p>Bảng dưới đây quy khoảng giá của từng loại mỡ ra mỗi kg, rồi tính xem <strong>một vòng bi hết bao nhiêu tiền mỡ trong một năm</strong>. Để dễ so sánh, chúng tôi lấy ví dụ vòng bi 6310, mỗi lần tra khoảng 15 g, tra bốn lần một năm, tức là dùng hết {G_DIEM_NAM} g mỡ mỗi năm. Giá chưa gồm VAT, tính từ giá kho đến mức cao hơn giá kho 15%, rà soát ngày {fmtNgay(NGAY_GIA)}; giá thực tế còn tùy số lượng và lô hàng. Muốn biết giá theo từng xô, phuy, bạn hãy <a href="/bao-gia">gửi yêu cầu báo giá</a>. Giá chính thức được xác nhận khi đặt hàng, xem <a href="#chinh-sach-gia-kho">chính sách kiểm chứng giá và tồn kho</a>.</p>
+        <h2 id="chi-phi">Chi phí mỡ cho một vòng bi mỗi năm</h2>
+        <p>Bảng dưới đây quy khoảng giá của từng loại mỡ ra mỗi kg, rồi tính xem <strong>một vòng bi hết bao nhiêu tiền mỡ trong một năm</strong>. Để dễ so sánh, chúng tôi lấy ví dụ vòng bi 6310, mỗi lần tra khoảng 15 g, tra bốn lần một năm, tức là dùng hết {G_DIEM_NAM} g mỡ mỗi năm. Giá chưa gồm VAT, tính từ giá kho đến mức cao hơn giá kho 15%, rà soát ngày {fmtNgay(NGAY_GIA)}; giá thực tế còn tùy số lượng và lô hàng. Muốn biết giá theo từng xô, phuy, bạn hãy <a href="/bao-gia-mo-boi-tron#gui-yeu-cau">gửi yêu cầu báo giá</a>. Giá chính thức được xác nhận khi đặt hàng, xem <a href="#chinh-sach-gia-kho">chính sách kiểm chứng giá và tồn kho</a>.</p>
         <div class="bang"><table>
           <thead><tr><th>Loại mỡ và quy cách</th><th>Giá mỗi kg (đồng)</th><th>Tiền mỡ cho một vòng bi mỗi năm (đồng)</th></tr></thead>
-          <tbody>{CHI_PHI.map((c) => <tr><td><a href={c.link}>{c.ten}</a> · {c.qc}</td><td>{vnd(lam100(c.thap))} – {vnd(lam100(c.cao))}</td><td>{vnd(lam100(c.thap * G_DIEM_NAM / 1000))} – {vnd(lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
+          <tbody>{CHI_PHI.map((c) => <tr><td><a href={c.link}>{c.ten}</a> · {c.qc}</td><td>{khoangVnd(lam100(c.thap), lam100(c.cao))}</td><td>{khoangVnd(lam100(c.thap * G_DIEM_NAM / 1000), lam100(c.cao * G_DIEM_NAM / 1000))}</td></tr>)}</tbody>
         </table></div>
         <p class="nho">Bảng chưa có <a href={`${CAT}/eneos-epnoc-ap`}>ENEOS Epnoc AP(N)</a> vì độ đặc/độ sệt NLGI và quy cách của loại mỡ này còn phải xác nhận theo từng lô. Giá mỗi kg của VHP Licas được quy đổi từ giá thùng 30 ống 400 g (12 kg).</p>
         <ContentBody><DoiChieu /></ContentBody>
@@ -282,14 +281,15 @@ const schemaData = [
 
         <ContentBody><Cuoi /></ContentBody>
 
-        <CachVietBai tacGia={tacGia} nguoiDuyet={reviewer} chucDanhDuyet="kỹ sư Công nghệ ô tô" ngayGia={NGAY_GIA} ngayCapNhat={NGAY}>
+        <CachVietBai tacGia={tacGia} nguoiDuyet={reviewer} chucDanhDuyet="kỹ sư Công nghệ ô tô, 6 năm phụ trách dầu làm mát và bôi trơn tại nhà máy (2009–2015)" ngayGia={NGAY_GIA} ngayCapNhat={NGAY}>
+            <p slot="kiem-duyet"><strong>Kiểm duyệt chuyên môn bởi <a href={personUrl(reviewer)}>Vũ Minh Toàn</a>.</strong> Anh Toàn là kỹ sư Công nghệ ô tô (Trường Đại học Công nghiệp Hà Nội, 2009); từ 2009 đến 2015, trước khi thành lập HT VINA, anh phụ trách dầu làm mát và dầu mỡ bôi trơn tại nhà máy chế tạo thiết bị làm mát và điều nhiệt 玉鼎電機實業有限公司 (Taichung, Taiwan). Toàn bộ thông số độ nhớt dầu gốc, điểm nhỏ giọt và giới hạn nhiệt độ trong bài được đối chiếu trực tiếp với tài liệu kỹ thuật (TDS) mới nhất của hãng (mục 5, Nguồn số liệu) và kinh nghiệm xử lý bôi trơn thực tế cho hệ thống vòng bi, gối đỡ, máy nghiền của đội ngũ kỹ thuật HT VINA.</p>
             <p slot="nguon">Trang này chưa liệt kê phê duyệt của hãng sản xuất máy, vì chúng tôi chưa đối chiếu đủ tài liệu của từng mã.</p>
             <div class="bang" slot="nguon"><table>
               <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
               <tbody>{TDS.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="nofollow noopener">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
             </table></div>
         </CachVietBai>
-        <QuoteCta item="Mỡ bôi trơn (mỡ bò)" />
+        <QuoteCta item="Mỡ bôi trơn (mỡ bò)" danhMuc="mo-boi-tron-cong-nghiep" />
         <ChinhSachGiaKho />
 
         <ThongTinDoanhNghiep />
@@ -304,13 +304,12 @@ const schemaData = [
   .mo-dau { line-height: 1.7; font-size: 1.05rem; max-width: 80ch; }
   .dau a:not(.btn-primary):not(.btn-secondary), .sp a:not(.nut-gia), .loc-trong a { color: var(--color-accent); text-decoration: underline; }
   .goi-y-menu { margin: 20px 0 0; font-size: 1.1rem; font-weight: 700; color: var(--color-primary); }
-  .menu-nhanh { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 10px; }
-  /* Chữ trắng trên nền navy, chữ navy trên nền cam: cùng đạt tương phản từ 4,5:1 trở lên. */
-  .dau nav.menu-nhanh a.nut-nhanh { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; background: var(--color-primary); border: 2px solid var(--color-primary); border-radius: 10px; color: #fff; line-height: 1.35; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
-  .nut-nhanh strong { font-size: 1.08rem; }
-  .nut-xem { align-self: flex-start; margin-top: auto; padding: 6px 14px; background: var(--color-accent); border-radius: 18px; color: var(--color-primary); font-weight: 700; font-size: .95rem; }
-  .dau nav.menu-nhanh a.nut-nhanh:hover, .dau nav.menu-nhanh a.nut-nhanh:focus-visible { border-color: var(--color-accent); box-shadow: 0 4px 12px rgba(0, 51, 102, .3); transform: translateY(-2px); }
-  @media (prefers-reduced-motion: reduce) { .dau nav.menu-nhanh a.nut-nhanh { transition: none; } .dau nav.menu-nhanh a.nut-nhanh:hover, .dau nav.menu-nhanh a.nut-nhanh:focus-visible { transform: none; } }
+  .menu-nhanh { display: flex; flex-wrap: wrap; gap: 6px 28px; margin-top: 8px; }
+  /* Menu dạng link chữ: đậm, nghiêng, gạch chân, mỗi link một màu (đều đạt tương phản ≥ 4,5:1 trên nền trắng). */
+  .dau nav.menu-nhanh a.link-nhanh { font-weight: 700; font-style: italic; font-size: 1.08rem; text-decoration: underline; text-underline-offset: 3px; line-height: 1.4; }
+  .dau nav.menu-nhanh a.link-gia { color: #c2410c; }
+  .dau nav.menu-nhanh a.link-chon { color: #1d4ed8; }
+  .dau nav.menu-nhanh a.link-nhanh:hover, .dau nav.menu-nhanh a.link-nhanh:focus-visible { text-decoration-thickness: 2px; }
   #san-pham, #huong-dan { scroll-margin-top: 90px; }
   .xem-them { display: block; min-height: 44px; margin: 14px auto 0; padding: 8px 22px; background: white; border: 1px solid var(--color-primary); border-radius: 22px; color: var(--color-primary); font: inherit; font-weight: 600; cursor: pointer; }
   .xem-them[hidden] { display: none; }
@@ -363,11 +362,7 @@ const schemaData = [
   .cho { background: #fff3cd; padding: 2px 4px; }
   .nho { font-size: .92rem; color: #555; }
   @media (max-width: 640px) {
-    .menu-nhanh { grid-template-columns: minmax(0, 1fr); }
-    /* Mobile: mỗi nút một hàng, tên bên trái, Xem ngay bên phải để cả menu thấp lại. */
-    .dau nav.menu-nhanh a.nut-nhanh { flex-direction: row; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; }
-    .nut-nhanh strong { font-size: 1rem; }
-    .nut-xem { flex: none; align-self: center; margin-top: 0; padding: 5px 10px; font-size: .88rem; }
+    .menu-nhanh { flex-direction: column; gap: 4px; } /* Mobile: hai link xếp dọc, mỗi link một dòng. */
     .muc-luc ol { columns: 1; }
     /* Bộ lọc gọn thành một hàng cuộn ngang, thẻ sản phẩm nằm ngang để không đẩy bài viết xuống quá xa. */
     .loc-nhom { grid-template-columns: minmax(0, 1fr); gap: 4px; }

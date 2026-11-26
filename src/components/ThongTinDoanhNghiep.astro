@@ -1,15 +1,22 @@
 ---
 // Thông tin pháp lý doanh nghiệp đặt gần phần liên hệ (người dùng yêu cầu 06/11/2026).
 // Dùng trên trang giới thiệu, /mo-boi-tron-cong-nghiep, /bao-gia-dau-thuy-luc và trang báo giá mỡ khi có.
-import { BUSINESS, LEGAL_NAME, LEGAL_SHORT, TAX_ID, SITE_NAME, ADDRESS_TEXT, KHO_GIAO_HANG, GIO_LAM_VIEC, POLICY_LINKS } from '../lib/site';
+import { BUSINESS, LEGAL_NAME, LEGAL_SHORT, TAX_ID, DKKD, SITE_NAME, ADDRESS_TEXT, KHO_GIAO_HANG, GIO_LAM_VIEC } from '../lib/site';
 
 interface Props {
   tieuDe?: string;
-  /** Ẩn link "Giới thiệu HT VINA" khi đang ở chính trang giới thiệu. */
-  linkGioiThieu?: boolean;
 }
-const { tieuDe = 'Thông tin doanh nghiệp', linkGioiThieu = true } = Astro.props;
-const CHINH_SACH = POLICY_LINKS.filter((l) => l.href !== '/tuy-chon-cookie');
+const { tieuDe = 'Thông tin doanh nghiệp' } = Astro.props;
+// 22/11/2026 (người dùng chốt): dòng Chính sách chỉ còn 4 chính sách mua hàng + link trang tổng hợp /chinh-sach.
+// Bỏ Điều khoản sử dụng, Quy trình biên soạn, Giới thiệu HT VINA (vẫn có trong /chinh-sach, footer, menu). Footer không đổi.
+const CHINH_SACH = [
+  { href: '/chinh-sach-giao-hang', label: 'Giao hàng' },
+  { href: '/chinh-sach-thanh-toan', label: 'Thanh toán' },
+  { href: '/chinh-sach-doi-tra', label: 'Đổi trả và hoàn tiền' },
+  { href: '/privacy-policy', label: 'Bảo mật' },
+  { href: '/chinh-sach', label: 'Tất cả chính sách' },
+];
+const ngayVN = (iso: string) => iso.split('-').reverse().join('/');
 ---
 
 <section class="ttdn" id="thong-tin-doanh-nghiep" aria-labelledby="tieu-de-ttdn">
@@ -18,13 +25,14 @@ const CHINH_SACH = POLICY_LINKS.filter((l) => l.href !== '/tuy-chon-cookie');
     <div><dt>Tên công ty</dt><dd>{LEGAL_NAME}</dd></div>
     <div><dt>Tên viết tắt, thương hiệu</dt><dd>{LEGAL_SHORT} · website {SITE_NAME}</dd></div>
     <div><dt>Mã số thuế</dt><dd>{TAX_ID}</dd></div>
-    <div><dt>Địa chỉ đăng ký</dt><dd>{ADDRESS_TEXT}</dd></div>
+    <div><dt>Đăng ký kinh doanh</dt><dd>Nơi cấp: {DKKD.noiCap}<br />Đăng ký lần đầu ngày {ngayVN(DKKD.lanDau)}, đăng ký thay đổi lần {DKKD.thayDoi.lan} ngày {ngayVN(DKKD.thayDoi.ngay)}</dd></div>
+    <div><dt>Địa chỉ đăng ký, văn phòng</dt><dd>{ADDRESS_TEXT}</dd></div>
     <div><dt>Kho hàng</dt><dd>Kho chính: {ADDRESS_TEXT} (Hải Dương cũ){KHO_GIAO_HANG.map((k) => <><br />{k.name}: {k.addressText}</>)}</dd></div>
     <div><dt>Hotline, Zalo</dt><dd><a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a> · <a href={BUSINESS.zaloUrl} target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a></dd></div>
     <div><dt>Email</dt><dd><a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></dd></div>
     <div><dt>Giờ làm việc</dt><dd>{GIO_LAM_VIEC.map((g, i) => <>{i > 0 && <br />}{g.ngay}: {g.gio}</>)}</dd></div>
   </dl>
-  <p class="ttdn__cs"><strong>Chính sách:</strong> {CHINH_SACH.map((l, i) => <>{i > 0 && ' · '}<a href={l.href}>{l.label.replace(/^Chính sách /, '').replace(/^./, (c) => c.toUpperCase())}</a></>)}{linkGioiThieu && <> · <a href="/about">Giới thiệu {LEGAL_SHORT}</a></>}</p>
+  <p class="ttdn__cs"><strong>Chính sách:</strong> {CHINH_SACH.map((l, i) => <>{i > 0 && ' · '}<a href={l.href}>{l.label}</a></>)}</p>
 </section>
 
 <style>

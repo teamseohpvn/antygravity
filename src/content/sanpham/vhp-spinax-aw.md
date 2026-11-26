@@ -60,7 +60,7 @@ date: "2026-10-12"
 updated: "2026-10-14"
 ---
 
-**VHP Spinax AW** là dầu thủy lực chống mài mòn do nhà máy VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu đạt phân loại HM theo ISO 11158 và ISO 6743/4, dùng cho hệ thủy lực trong xưởng lẫn máy xúc, xe cẩu. Dòng có hai phiên bản: **Spinax AW** pha từ dầu gốc khoáng và **Spinax AW Super** pha từ dầu gốc nhóm II.
+**VHP Spinax AW** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn do nhà máy VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Dầu đạt phân loại HM theo ISO 11158 và ISO 6743/4, dùng cho hệ thủy lực trong xưởng lẫn máy xúc, xe cẩu. Dòng có hai phiên bản: **Spinax AW** pha từ dầu gốc khoáng và **Spinax AW Super** pha từ dầu gốc nhóm II.
 
 **Spinax AW 68** và **Spinax AW Super 68** **có sẵn tại kho**, đều là phuy 200 L. HT VINA là đại lý dầu mỡ VHP. Hàng có CO/CQ, hóa đơn VAT và giao từ kho tại TP Hải Phòng (Hải Dương cũ).
 
@@ -127,5 +127,5 @@ VHP sản xuất Spinax AW các cấp 32, 46, 68 và 100. Cấp khác vui lòng 
 - **Quy cách:** Spinax AW 68 và Spinax AW Super 68, phuy 200 L, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Spinax%20AW) kèm số lượng.
+- **Giá:** xem khoảng giá tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Spinax%20AW) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

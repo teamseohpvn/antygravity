@@ -4,12 +4,13 @@ import Layout from '../layouts/Layout.astro';
 import ContentBody from '../components/ContentBody.astro';
 import NoiDungBai from '../components/NoiDungBai.astro';
 import MucLuc from '../components/MucLuc.astro';
+import MucLucBen from '../components/MucLucBen.astro';
 import { mucLuc } from '../lib/muc-luc';
 import { render } from 'astro:content';
-import { postPath, getActiveProducts } from '../lib/content';
+import { postPath } from '../lib/content';
 import type { CollectionEntry } from 'astro:content';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import XemThem from '../components/XemThem.astro';
+import CoTheQuanTam from '../components/CoTheQuanTam.astro';
 import { absUrl, breadcrumbSchema, ORG_ID, SITE_NAME } from '../lib/site';
 import { DEFAULT_REVIEWER_ID, bylineLabel, personRef, personSchema, personUrl, timNhanSu } from '../lib/nhan-su';
 import { ngayBai } from '../lib/ngay';
@@ -22,12 +23,8 @@ const { Content, headings } = await render(post);
 const tocItems = mucLuc(headings, { voiH3: true, tat: post.data.muc_luc === false });
 
 const pagePath = postPath(post);
-// Bài chưa tự viết mục "Xem thêm" thì thêm khối thẻ có ảnh: danh mục bài hỗ trợ + sản phẩm liên quan.
+// Bài đã tự viết mục "Xem thêm" (thẻ ảnh trong thân bài) thì khối "Có thể bạn cũng quan tâm" bỏ phần thẻ.
 const coXemThem = /^##\s*Xem thêm|\*\*Xem thêm:?\*\*/m.test(post.body ?? '');
-const spLienQuan = (await getActiveProducts())
-  .filter((p) => post.data.related_products?.includes(p.id))
-  .map((p) => `/${p.data.category}/${p.id}`);
-const xemThem = coXemThem ? [] : [...(post.data.category ? [`/${post.data.category}`] : []), ...spLienQuan];
 // Tác giả có hồ sơ trong nhan-su.ts (author = id hoặc họ tên) thì link tới trang hồ sơ và gắn schema Person đầy đủ.
 const authorP = timNhanSu(post.data.author);
 // Người duyệt nội dung: reviewed_by, mặc định TS. Lập (bỏ qua nếu trùng tác giả).
@@ -53,6 +50,7 @@ const schemaData = [
     url: absUrl(pagePath),
     ...(post.data.image ? { image: absUrl(post.data.image) } : {}),
     mainEntityOfPage: absUrl(pagePath),
+    inLanguage: 'vi-VN',
     // Chưa có tác giả thật thì ghi doanh nghiệp, không dùng tên giả định.
     author: authorP
       ? personRef(authorP)
@@ -96,6 +94,7 @@ const schemaData = [
   <div class="container blog-container">
     <Breadcrumbs items={crumbs} />
 
+    <div class:list={['bai-luoi', { 'co-muc-luc-ben': tocItems.length > 0 }]}>
     <article class="blog-post">
       <header class="post-header">
         <h1>{post.data.title}</h1>
@@ -125,15 +124,30 @@ const schemaData = [
       <div class="markdown-body">
         <NoiDungBai articleId={ARTICLE_ID}>
           <ContentBody><Content /><MucLuc slot="sau-doan-dau" items={tocItems} /></ContentBody>
-          {xemThem.length > 0 && <XemThem muc={xemThem} boQua={[pagePath]} />}
+          <CoTheQuanTam {post} boThe={coXemThem} />
         </NoiDungBai>
       </div>
     </article>
+    {tocItems.length > 0 && (
+      <aside class="cot-muc-luc">
+        <MucLucBen items={tocItems} />
+      </aside>
+    )}
+    </div>
   </div>
 </Layout>
 
 <style>
   .blog-container { max-width: 900px; margin: 40px auto; }
+  /* Mục lục cố định cột phải: chỉ trên màn hình rộng; màn hẹp dùng mục lục trong thân bài. */
+  .cot-muc-luc { display: none; }
+  @media (min-width: 1100px) {
+    .blog-container:has(.co-muc-luc-ben) { max-width: 1200px; }
+    .co-muc-luc-ben { display: grid; grid-template-columns: minmax(0, 900px) 260px; gap: 32px; align-items: start; justify-content: center; }
+    .co-muc-luc-ben .cot-muc-luc { display: block; align-self: stretch; }
+    /* Đã có cột phải thì ẩn mục lục trong thân bài để khỏi lặp. */
+    .co-muc-luc-ben .markdown-body :global(.muc-luc) { display: none; }
+  }
   .breadcrumbs { margin-bottom: 30px; color: var(--color-text-light); font-size: 0.9rem; }
   .breadcrumbs a { color: var(--color-primary); }
   
@@ -150,10 +164,38 @@ const schemaData = [
   
   /* Markdown Content Styles */
   .markdown-body { font-size: 1.1rem; line-height: 1.8; color: var(--color-text); }
+  /* Khối "Tóm tắt" viết bằng blockquote trong Markdown. */
+  .markdown-body :global(blockquote) { margin: 20px 0 28px; padding: 14px 18px; background: #f8fafc; border: 1px solid var(--border-color, #e2e8f0); border-left: 4px solid var(--color-primary); border-radius: 6px; }
+  .markdown-body :global(blockquote p) { margin: 0 0 6px; }
+  .markdown-body :global(blockquote ul) { margin: 0 0 0 20px; }
+  .markdown-body :global(blockquote li) { margin-bottom: 6px; }
   .markdown-body h2 { color: var(--color-primary); margin: 30px 0 15px; font-size: 1.8rem; }
   .markdown-body h3 { color: var(--color-primary); margin: 25px 0 10px; font-size: 1.4rem; }
   .markdown-body p { margin-bottom: 20px; }
   .markdown-body ul, .markdown-body ol { margin-left: 20px; margin-bottom: 20px; }
   .markdown-body li { margin-bottom: 10px; }
   .markdown-body strong { color: #111; }
+
+  /* Bảng trong bài (khung do src/lib/bang-markdown.mjs bọc), cùng kiểu bảng trang /bao-gia-mo-boi-tron. */
+  .markdown-body :global(.table-wrap) { overflow-x: auto; margin: 8px 0 20px; }
+  .markdown-body :global(table.match) { width: 100%; border-collapse: collapse; font-size: 0.95rem; line-height: 1.55; }
+  .markdown-body :global(.match th), .markdown-body :global(.match td) { border: 1px solid var(--border-color, #e2e8f0); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .markdown-body :global(.match th) { background: #f1f5f9; font-weight: 600; }
+  .markdown-body :global(.match a) { color: var(--color-primary); text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .blog-container { margin: 16px auto; }
+    .blog-post { padding: 20px 16px; }
+    .post-header h1 { font-size: 1.7rem; }
+    .markdown-body { font-size: 1rem; }
+    .markdown-body h2 { font-size: 1.45rem; }
+    .markdown-body h3 { font-size: 1.2rem; }
+    /* Mỗi dòng bảng thành một thẻ: ô đầu làm tiêu đề thẻ, các ô sau ghi "Tên cột: giá trị". */
+    .markdown-body :global(.match thead) { display: none; }
+    .markdown-body :global(.match), .markdown-body :global(.match tbody), .markdown-body :global(.match tr), .markdown-body :global(.match td) { display: block; width: 100%; }
+    .markdown-body :global(.match tr) { border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; margin-bottom: 10px; overflow: hidden; }
+    .markdown-body :global(.match td) { border: 0; border-top: 1px solid #eef1f4; padding: 8px 12px; }
+    .markdown-body :global(.match td:first-child) { border-top: 0; background: #f1f5f9; font-weight: 600; color: var(--color-primary); }
+    .markdown-body :global(.match td[data-label]:not(:first-child)::before) { content: attr(data-label) ': '; font-weight: 600; color: #555; }
+  }
 </style>

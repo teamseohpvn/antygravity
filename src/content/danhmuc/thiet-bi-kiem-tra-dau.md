@@ -35,6 +35,6 @@ Cách dùng từng thiết bị và ngưỡng nào thì nên thay dầu được
 
 - Kết quả đo nhanh dùng để **so sánh với chính dầu mới cùng mã**, không thay được phiếu kết quả của phòng thí nghiệm khi cần giám định hoặc khiếu nại chất lượng.
 - Luôn giữ một chai **mẫu dầu mới** của lô đang dùng để đo đối chứng.
-- Lấy mẫu khi máy đang chạy hoặc vừa dừng, ở đường hồi hoặc giữa bồn, không lấy ở đáy bồn (trừ khi muốn tìm nước tự do).
+- Lấy mẫu khi máy đang chạy hoặc vừa dừng, ở đường hồi hoặc giữa thùng, không lấy ở đáy thùng (trừ khi muốn tìm nước tự do).
 
 Cần chọn dầu thay thế sau khi kiểm tra, xem các danh mục [dầu thủy lực](/dau-thuy-luc), [dầu bánh răng](/dau-banh-rang) và [dầu máy nén khí](/dau-may-nen-khi).

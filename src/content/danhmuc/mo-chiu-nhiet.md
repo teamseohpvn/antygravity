@@ -8,8 +8,8 @@ seo_title: "Mỡ Bò Chịu Nhiệt Độ Cao 150–300 Độ C – Báo Giá S�
 description: "Mỡ bò chịu nhiệt cho vòng bi quạt lò, lò sấy, máy cán: lithium phức, polyurea, bentonite, PFPE. Shell Gadus S3, Castrol Tribol. Tư vấn chọn theo nhiệt độ."
 keywords: ["mỡ chịu nhiệt", "mỡ bò chịu nhiệt", "mỡ bôi trơn chịu nhiệt", "mỡ chịu nhiệt độ cao", "mỡ bò chịu nhiệt cao cấp", "mỡ chịu nhiệt 300 độ", "mỡ bò chịu nhiệt 500 độ", "mỡ bôi trơn vòng bi chịu nhiệt", "mỡ chịu nhiệt cho vòng bi", "mỡ bò trắng chịu nhiệt", "giá mỡ chịu nhiệt", "shell gadus s3 v220c 2"]
 tags: ["mo-chiu-nhiet", "mo-bo-chiu-nhiet", "shell-gadus", "castrol-tribol", "polyurea", "lithium-complex"]
-image: "/images/danh-muc/mo-chiu-nhiet.webp"
-image_alt: "Kỹ thuật viên tra mỡ chịu nhiệt cho vòng bi quạt lò"
+image: "/images/danh-muc/mo-chiu-nhiet-shell-gadus-s3.webp"
+image_alt: "Xô mỡ chịu nhiệt Shell Gadus S3 V220C 2, nhãn ghi Extra Protection, High Temperature"
 date: "2026-09-21"
 updated: "2026-10-06"
 ---
@@ -62,6 +62,8 @@ Trên thị trường có sản phẩm ghi "chịu 500 độ" hay "1000 độ". 
 - **Quy cách:** tuýp 400 g, hộp 1 kg, xô 16–18 kg, phuy 180 kg. Quy cách tùy mã hàng.
 - **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS.
 - **Tư vấn:** gửi nhiệt độ đo được tại vòng bi, tốc độ quay và loại mỡ đang dùng. Đo bằng súng đo nhiệt hồng ngoại khi máy đang chạy ổn định.
+
+Khoảng giá các mã mỡ đang có ở kho xem tại [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron).
 
 **Nhận báo giá mỡ bò chịu nhiệt:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**.
 

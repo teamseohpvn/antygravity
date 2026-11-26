@@ -14,7 +14,7 @@ import { contentPages } from '../src/lib/active-pages.mjs';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const DIRS = { danhmuc: 'src/content/danhmuc', sanpham: 'src/content/sanpham', blog: 'src/content/blog' };
-const STATIC_ROUTES = ['/', '/bao-gia', '/bao-gia-thanh-cong', '/contact', '/about', '/privacy-policy', '/terms-of-service', '/ho-tro-ky-thuat', '/bao-gia-dau-thuy-luc', '/khuyen-mai-dau-thuy-luc-aw-68', '/chinh-sach-giao-hang', '/chinh-sach-doi-tra', '/chinh-sach-thanh-toan', '/tuy-chon-cookie', '/quy-trinh-bien-tap'];
+const STATIC_ROUTES = ['/', '/bao-gia', '/bao-gia-thanh-cong', '/contact', '/about', '/privacy-policy', '/terms-of-service', '/ho-tro-ky-thuat', '/bao-gia-dau-thuy-luc', '/bao-gia-mo-boi-tron', '/khuyen-mai-dau-thuy-luc-aw-68', '/chinh-sach-giao-hang', '/chinh-sach-doi-tra', '/chinh-sach-thanh-toan', '/tuy-chon-cookie', '/quy-trinh-bien-tap'];
 
 const read = (dir) =>
   existsSync(join(ROOT, dir))
@@ -42,7 +42,8 @@ for (const e of Object.values(entries).flat()) {
   for (const [, href] of body.matchAll(/\]\((\/[^)#?\s]*)[^)]*\)/g)) {
     const path = href.replace(/\/+$/, '') || '/';
     if (hiddenRoutes.has(path)) hiddenLinks.push(`${e.file}: ${href}`);
-    else if (!routes.has(path)) problems.push(`${e.file}: link nội bộ hỏng ${href}`);
+    // File tĩnh trong public/ (PDF TDS, SDS…) cũng là link hợp lệ.
+    else if (!routes.has(path) && !existsSync(join(ROOT, 'public', path))) problems.push(`${e.file}: link nội bộ hỏng ${href}`);
   }
 }
 

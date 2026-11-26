@@ -69,7 +69,7 @@ date: "2026-11-05"
 updated: "2026-11-05"
 ---
 
-**Sinopec Crystal Grease NLGI 3** là mỡ bôi trơn đa dụng gốc lithium của Sinopec, pha từ dầu khoáng tinh chế với phụ gia chống ô xy hóa và chống gỉ. Mỡ dùng cho vòng bi, trục lăn và ổ trượt của ô tô, thiết bị cơ khí công nghiệp không có yêu cầu chịu tải cao, làm việc từ -20 °C đến 120 °C.
+**Sinopec Crystal Grease NLGI 3** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng gốc lithium của Sinopec, pha từ dầu khoáng tinh chế với phụ gia chống ô xy hóa và chống gỉ. Mỡ dùng cho vòng bi, trục lăn và ổ trượt của ô tô, thiết bị cơ khí công nghiệp không có yêu cầu chịu tải cao, làm việc từ -20 °C đến 120 °C.
 
 Mã này **có sẵn tại kho** theo **xô 17 kg** và **phuy 180 kg**, nhãn xô ghi sản xuất tại Singapore. Có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT. Nếu cần mỡ đặc hơn, xem [Crystal Grease T3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-t3).
 
@@ -104,6 +104,8 @@ Theo cách phân nhóm của chúng tôi, Crystal không thuộc nhóm mỡ ch�
 | Nhiệt độ nhỏ giọt | Tối thiểu 180 °C | Tối thiểu 180 °C | 155 °C |
 | Nhiệt độ làm việc | -20 đến 120 °C | -20 đến 120 °C | -20 đến 110 °C |
 | Có sẵn | Xô 17 kg, phuy 180 kg | Xô 17 kg, phuy 180 kg | Xô 17 kg, phuy 180 kg |
+
+Giá theo kg của ba mã Sinopec này xếp cạnh nhau trong [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron).
 
 Hai mã Crystal đo nhiệt độ nhỏ giọt bằng ASTM D566, còn Golden Grease đo bằng ASTM D2265, nên chênh lệch chỉ để tham khảo.
 
@@ -152,11 +154,12 @@ TDS phát hành 10/2012 ghi mỡ mịn, đồng nhất, màu nâu. Trong khi đ�
 TDS không ghi chứng nhận cấp thực phẩm. Điểm bôi trơn có thể tiếp xúc với thực phẩm thì không nên dùng mã này khi chưa có giấy xác nhận phù hợp từ hãng.
 
 ### Crystal Grease NLGI 3 có trộn với mỡ khác được không?
-Chỉ nên châm thêm mỡ cùng gốc lithium. Với mỡ khác gốc, hãy làm sạch ổ trước khi đổi, vì mỡ có thể chảy lỏng hoặc vón cục.
+Chỉ nên thêm mỡ cùng gốc lithium. Với mỡ khác gốc, hãy làm sạch ổ trước khi đổi, vì mỡ có thể chảy lỏng hoặc vón cục.
 
 ## Quy cách đóng gói, đơn hàng {#don-hang}
 
 - **Quy cách:** xô 17 kg và phuy 180 kg có sẵn tại kho. Loại NLGI 2 cùng dòng cũng có sẵn xô 17 kg và phuy 180 kg. Loại NLGI 1 nhận đặt theo yêu cầu.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Crystal%20Grease%20NLGI%203) kèm số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

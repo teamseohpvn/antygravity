@@ -1,0 +1,111 @@
+---
+// Khối tăng uy tín trên trang chủ (người dùng yêu cầu 11/11/2026): quy trình hóa đơn và giao hàng, chính sách tóm tắt,
+// thông tin pháp lý, lời mời tư vấn kỹ thuật. Mọi cam kết tóm tắt từ 3 trang chính sách: khi sửa chính sách thì sửa cả ở đây.
+import ThongTinDoanhNghiep from './ThongTinDoanhNghiep.astro';
+import { BUSINESS, KCN_NEAR, KCN_FAR, LEGAL_SHORT } from '../lib/site';
+import { PROMO } from '../lib/promo';
+
+const CUTOFF = PROMO.sameDayCutoff;
+---
+
+<section class="mhmb container" aria-labelledby="quy-trinh-title">
+  <h2 class="mhmb__title" id="quy-trinh-title">Quy trình lập hóa đơn và giao hàng</h2>
+  <div class="mhmb__grid mhmb__grid--2">
+    <div class="mhmb__card">
+      <h3>Lập hóa đơn VAT</h3>
+      <ol>
+        <li>Khi đặt hàng, bạn gửi tên công ty, mã số thuế, địa chỉ và email nhận hóa đơn.</li>
+        <li>Báo giá ghi rõ giá đã hay chưa gồm VAT, phí giao hàng nếu có và thời hạn hiệu lực.</li>
+        <li>Đơn được xác nhận khi bạn đồng ý báo giá qua tin nhắn, email hoặc đơn đặt hàng (PO).</li>
+        <li>Chúng tôi lập hóa đơn giá trị gia tăng điện tử và gửi qua email.</li>
+        <li>Nếu cần sửa thông tin, bạn báo sớm để chúng tôi điều chỉnh theo quy định về hóa đơn điện tử.</li>
+      </ol>
+      <a class="mhmb__more" href="/chinh-sach-thanh-toan">Xem chính sách thanh toán và hóa đơn</a>
+    </div>
+    <div class="mhmb__card">
+      <h3>Xuất kho và giao hàng</h3>
+      <ol>
+        <li>Hàng xuất từ kho chính hoặc kho giao hàng, tùy mã còn hàng và điểm giao.</li>
+        <li>Đi kèm hàng có phiếu giao hàng và CO/CQ theo lô với các hãng có cấp. TDS và SDS gửi khi bạn yêu cầu.</li>
+        <li>Nơi nhận không có xe nâng hoặc lối vào hạn chế, bạn báo trước để chúng tôi bố trí xe và người bốc xếp.</li>
+        <li>Khi nhận, hai bên cùng kiểm tra tên hàng, cấp độ nhớt, quy cách, số lượng, nắp và niêm phong.</li>
+        <li>Có sai lệch thì ghi ngay trên phiếu giao hàng và báo cho chúng tôi trong ngày.</li>
+      </ol>
+      <a class="mhmb__more" href="/chinh-sach-giao-hang">Xem chính sách giao hàng đầy đủ</a>
+    </div>
+  </div>
+</section>
+
+<section class="mhmb container" aria-labelledby="chinh-sach-title">
+  <h2 class="mhmb__title" id="chinh-sach-title">Chính sách giao hàng, vận chuyển, bảo hành và hoàn trả</h2>
+  <div class="mhmb__grid">
+    <div class="mhmb__card">
+      <h3>Giao hàng</h3>
+      <ul>
+        <li>Giao tại TP Hải Phòng (gồm khu vực Hải Dương cũ), Bắc Ninh, Hưng Yên, Quảng Ninh, Hà Nội, Vĩnh Phúc. Các tỉnh miền Bắc khác giao qua nhà xe hoặc đơn vị vận chuyển.</li>
+        <li>Hàng có sẵn, chốt đơn trước {CUTOFF} từ thứ Hai đến thứ Sáu: giao trong ngày tới KCN {KCN_NEAR.join(', ')}.</li>
+        <li>KCN {KCN_FAR.join(', ')}: giao theo lịch hẹn khi xác nhận đơn.</li>
+      </ul>
+    </div>
+    <div class="mhmb__card">
+      <h3>Vận chuyển</h3>
+      <ul>
+        <li>Miễn phí trong bán kính 80 km tính từ kho có hàng gần điểm giao nhất, không yêu cầu đơn tối thiểu.</li>
+        <li>Đơn từ 3 phuy trở lên được miễn phí tới 150 km.</li>
+        <li>Xa hơn, chúng tôi xem xét theo từng trường hợp. Phí vận chuyển, nếu có, ghi rõ trong báo giá và không phát sinh thêm khi giao.</li>
+      </ul>
+    </div>
+    <div class="mhmb__card">
+      <h3>Bảo hành chất lượng</h3>
+      <ul>
+        <li>Dầu và mỡ là hàng tiêu hao nên không có thời hạn bảo hành như máy móc. Lỗi chất lượng được xử lý theo chính sách đổi trả.</li>
+        <li>Khi nghi có lỗi, bạn ngừng sử dụng, giữ nguyên vỏ và chụp nhãn, số lô. Chúng tôi lấy mẫu để kiểm tra.</li>
+        <li>Nếu lỗi do sản phẩm, trong thời hạn 7 ngày kể từ ngày nhận, bạn được đổi hàng mới hoặc hoàn tiền, kể cả hàng đã mở nắp.</li>
+      </ul>
+    </div>
+    <div class="mhmb__card">
+      <h3>Đổi trả và hoàn tiền</h3>
+      <ul>
+        <li>Thời hạn 7 ngày kể từ ngày nhận hàng.</li>
+        <li>Miễn phí khi giao sai hàng, hư hỏng do vận chuyển hoặc lỗi của nhà sản xuất.</li>
+        <li>Đặt nhầm hoặc không còn nhu cầu: nhận lại hàng còn nguyên nắp, niêm phong, bạn chịu phí chuyển về kho.</li>
+        <li>Hoàn tiền bằng chuyển khoản trong 7 ngày làm việc kể từ khi nhận lại hàng hoặc có kết quả kiểm tra.</li>
+      </ul>
+      <a class="mhmb__more" href="/chinh-sach-doi-tra">Xem chính sách đổi trả đầy đủ</a>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <ThongTinDoanhNghiep tieuDe="Thông tin pháp lý công khai" />
+</div>
+
+<section class="mhmb container" aria-labelledby="ho-tro-title">
+  <div class="mhmb__cta">
+    <h2 id="ho-tro-title">Cần hỗ trợ kỹ thuật? {LEGAL_SHORT} sẵn sàng tư vấn</h2>
+    <p>
+      Máy mới chưa biết dùng dầu gì, mỡ đang dùng nhanh hết hoặc chi phí bôi trơn cứ tăng dần, bạn cứ gửi cho chúng tôi loại máy, mã dầu mỡ đang dùng và điều kiện làm việc.{' '}
+      {LEGAL_SHORT} sẵn sàng tư vấn để bạn dùng đúng dầu, đúng mỡ, tối ưu chi phí và tránh lãng phí, như mua loại cao cấp hơn mức máy cần hay thay dầu khi dầu vẫn còn dùng được.
+    </p>
+    <div class="mhmb__actions">
+      <a href={`tel:${BUSINESS.phone}`} class="btn-primary" data-track="click_tel">Gọi {BUSINESS.phoneDisplay}</a>
+      <a href={BUSINESS.zaloUrl} class="btn-secondary" target="_blank" rel="noopener" data-track="click_zalo">Nhắn Zalo</a>
+      <a href="/ho-tro-ky-thuat" class="btn-secondary">Xem hướng dẫn kỹ thuật</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .mhmb__title { text-align: center; font-size: 2rem; margin: 60px 0 30px; color: var(--color-primary); }
+  .mhmb__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px; }
+  .mhmb__grid--2 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+  .mhmb__card { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; }
+  .mhmb__card h3 { color: var(--color-primary); font-size: 1.2rem; margin: 0 0 10px; }
+  .mhmb__card ol, .mhmb__card ul { margin: 0 0 12px; padding-left: 20px; line-height: 1.55; }
+  .mhmb__card li { margin-bottom: 6px; }
+  .mhmb__more { margin-top: auto; color: var(--color-accent); text-decoration: underline; }
+  .mhmb__cta { margin-top: 24px; padding: clamp(20px, 4vw, 32px); background: var(--color-primary); color: white; border-radius: 8px; text-align: center; }
+  .mhmb__cta h2 { color: white; font-size: 1.6rem; line-height: 1.3; margin: 0 0 12px; }
+  .mhmb__cta p { max-width: 760px; margin: 0 auto 20px; line-height: 1.6; }
+  .mhmb__actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+</style>
