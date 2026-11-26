@@ -76,7 +76,7 @@ Mỡ bôi trơn (mỡ bò) đặc sệt, không đong được bằng ca như d�
 
 ## Dầu thủy lực giá bao nhiêu 1 lít? Cách đổi giá phuy ra giá lít {#gia-lit}
 
-**Giá mỗi lít = giá một phuy (hoặc một xô) chia cho số lít ghi trên nhãn.** Lỗi hay gặp nhất là chia mọi phuy cho 200, trong khi phuy Castrol có 209 lít và phuy Caltex có 208 lít. Bảng dưới lấy khoảng giá công khai trên [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc#bang-gia), tính từ giá kho đến mức cao hơn giá kho 15%, chưa gồm VAT, rà soát gần nhất ngày 04/11/2026. Giá chính thức được xác nhận khi đặt hàng, xem [chính sách kiểm chứng giá và tồn kho](#chinh-sach-gia-kho).
+**Giá mỗi lít = giá một phuy (hoặc một xô) chia cho số lít ghi trên nhãn.** Lỗi hay gặp nhất là chia mọi phuy cho 200, trong khi phuy Castrol có 209 lít và phuy Caltex có 208 lít. Bảng dưới lấy khoảng giá công khai trên [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc#bang-gia), tính từ giá kho đến mức cao hơn giá kho 15%, chưa gồm VAT, rà soát gần nhất ngày 04/11/2026. Giá chính thức được xác nhận khi đặt hàng, xem [chính sách kiểm chứng giá và tồn kho](/bao-gia-dau-thuy-luc#chinh-sach-gia-kho).
 
 | Mã dầu thủy lực 68 | Quy cách | Giá một phuy, xô (đ) | Giá mỗi lít (đ) |
 | :--- | :--- | :--- | :--- |

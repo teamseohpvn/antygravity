@@ -42,7 +42,7 @@ Hiểu năm thứ này thì bạn biết khi nào trả thêm tiền là đáng,
 
 ## Giá dầu thủy lực 68 tại kho đang chênh nhau thế nào? {#bang-gia}
 
-Bảng dưới xếp các mã dầu thủy lực 68 đóng phuy đang có tại kho theo giá mỗi lít, kèm loại dầu gốc theo tài liệu của hãng. Giá tính từ giá kho đến mức cao hơn giá kho 15%, chưa VAT. Giá chính thức được xác nhận khi đặt hàng, theo [chính sách kiểm chứng giá và tồn kho](#chinh-sach-gia-kho).
+Bảng dưới xếp các mã dầu thủy lực 68 đóng phuy đang có tại kho theo giá mỗi lít, kèm loại dầu gốc theo tài liệu của hãng. Giá tính từ giá kho đến mức cao hơn giá kho 15%, chưa VAT. Giá chính thức được xác nhận khi đặt hàng, theo [chính sách kiểm chứng giá và tồn kho](/bao-gia-dau-thuy-luc#chinh-sach-gia-kho).
 
 | Mã (phuy) | Nguồn hàng | Dầu gốc theo tài liệu hãng | Giá mỗi lít (đ) |
 | :--- | :--- | :--- | :--- |

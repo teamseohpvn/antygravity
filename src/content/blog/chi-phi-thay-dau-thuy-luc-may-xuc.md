@@ -49,7 +49,7 @@ Tài liệu của hãng máy thường ghi hai con số: **thùng dầu thủy l
 
 ## Thay dầu một lần hết bao nhiêu tiền dầu? {#mot-lan}
 
-**Tiền dầu một lần thay = số lít × giá mỗi lít.** Bảng dưới tính cho hai mức thùng dầu 135 lít và 160 lít, với ba mã dầu thủy lực HM cấp 68 đóng phuy đang có sẵn tại kho. Giá tính từ giá kho đến mức cao hơn giá kho 15%, chưa VAT. Giá chính thức được xác nhận khi đặt hàng, xem [chính sách kiểm chứng giá và tồn kho](#chinh-sach-gia-kho).
+**Tiền dầu một lần thay = số lít × giá mỗi lít.** Bảng dưới tính cho hai mức thùng dầu 135 lít và 160 lít, với ba mã dầu thủy lực HM cấp 68 đóng phuy đang có sẵn tại kho. Giá tính từ giá kho đến mức cao hơn giá kho 15%, chưa VAT. Giá chính thức được xác nhận khi đặt hàng, xem [chính sách kiểm chứng giá và tồn kho](/bao-gia-dau-thuy-luc#chinh-sach-gia-kho).
 
 | Mã dầu (phuy 200–209 L) | Giá mỗi lít (đ) | Thùng 135 L (đ) | Thùng 160 L (đ) |
 | :--- | :--- | :--- | :--- |
