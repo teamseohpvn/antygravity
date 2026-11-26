@@ -11,6 +11,12 @@ export const SITE_NAME = 'Dầu Công Nghiệp HP';
 export const LEGAL_NAME = 'Công ty Cổ phần Thương mại Dịch vụ HT VINA';
 export const LEGAL_SHORT = 'HT VINA';
 export const TAX_ID = '0801139564';
+// Đăng ký kinh doanh (chủ doanh nghiệp cung cấp 11/11/2026). Ngày theo ISO để dùng cho schema foundingDate.
+export const DKKD = {
+  noiCap: 'Phòng Đăng ký kinh doanh, Sở Tài chính TP Hải Phòng',
+  lanDau: '2015-05-22',
+  thayDoi: { lan: 2, ngay: '2025-08-13' },
+};
 
 export const BUSINESS = {
   name: SITE_NAME,
@@ -27,7 +33,8 @@ export const BUSINESS = {
   // postalCode: bỏ mã 6 số cũ (180000). Tra mã 5 số mới trên VNPost rồi thêm lại.
   country: 'VN',
   logo: '/images/logo-ht-vina-512.png',
-  image: '/images/hero-trang-chu.webp',
+  // Ảnh thật kho 108 Thanh Bình (phuy ENEOS, Castrol), thay ảnh AI cũ 22/11/2026. Dùng cho og:image và schema.
+  image: '/images/og-kho-ht-vina.jpg',
   // Hồ sơ Google Business Profile chính (đã xác minh, kiểm tra 03/10/2026).
   gbpUrl: 'https://www.google.com/maps?cid=7563996296023599602',
 };
@@ -159,6 +166,7 @@ export function organizationSchema() {
       alternateName: LEGAL_SHORT,
       legalName: LEGAL_NAME,
       taxID: TAX_ID,
+      foundingDate: DKKD.lanDau,
       url: SITE_URL + '/',
       logo: absUrl(BUSINESS.logo),
       image: absUrl(BUSINESS.image),
@@ -266,7 +274,8 @@ export function productImages(d: {
     .filter((img) => publicImageExists(img.src));
   if (found.length || !d.category) return found;
   const fallback = `/images/danh-muc/${d.category}.webp`;
-  return publicImageExists(fallback) ? [{ src: fallback, alt: d.categoryName ?? d.title }] : [];
+  // Ảnh danh mục dùng tạm: alt vẫn là tên sản phẩm, không lặp tên danh mục (tránh nhiều ảnh cùng alt "Mỡ Bôi Trơn Công Nghiệp").
+  return publicImageExists(fallback) ? [{ src: fallback, alt: d.title }] : [];
 }
 
 /** Tên quy cách để hiển thị, chấp nhận cả dạng chuỗi và dạng {name, weight, sku}. */

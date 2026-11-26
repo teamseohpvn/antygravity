@@ -1,0 +1,77 @@
+# Kế hoạch liên kết nội bộ (inlink) toàn site
+
+Lập ngày 08/11/2026. Áp dụng cho danh mục, sản phẩm, bài hướng dẫn kỹ thuật và blog.
+
+## 1. Hiện trạng trước khi sửa (đo trên file nội dung, chỉ đếm link trong thân bài)
+
+| Nhóm trang | Tình trạng |
+| :--- | :--- |
+| Bài hướng dẫn | `test-nuoc-trong-dau-tai-hien-truong` chỉ 1 link / 1.494 chữ. Bài `top-6-dau-thuy-luc-2026` và `dau-thuy-luc-may-xuc` mỗi bài chỉ được 1 trang khác link tới. |
+| Danh mục | 16/18 danh mục chỉ có 3 link trong bài (đều nằm ở dòng "Xem thêm"), không link tới bài hướng dẫn nào. |
+| Sản phẩm | 18 trang sản phẩm không được thân bài nào khác link tới (chỉ có lưới sản phẩm của danh mục). Trang sản phẩm có link về danh mục duy nhất ở cuối trang. |
+| Phân bố | Bài test chất lượng dầu nhận 53 link, máy đo LND-1 nhận 31 link (do một câu mẫu lặp ở nhiều trang sản phẩm), trong khi nhiều trang khác gần như không có. |
+
+## 2. Quy tắc (để không bị coi là nhồi link)
+
+1. **Link nằm trong câu sẵn có.** Gắn link vào cụm từ đã có trong bài, không viết thêm câu chỉ để chèn link, không sửa văn của người viết.
+2. **Mật độ:** trung bình không quá 1 link nội bộ trong thân bài trên khoảng 100–150 chữ. Một đoạn văn tối đa 2–3 link, trừ đoạn liệt kê tên mã hàng.
+3. **Mỗi trang đích chỉ link 1 lần trong thân bài**, ở chỗ nhắc tới đầu tiên và tự nhiên nhất. Không lặp lại link mà khối mẫu (template) đã có.
+4. **Chữ link mô tả đúng trang đích** ("dầu bánh răng", "thay dầu, súc rửa", "Cosmo Hydro AW 68"). Không dùng "tại đây", "click". Một chữ link chỉ trỏ về một URL.
+5. **Chỉ link khi người đọc cần trang đó:** ví dụ bài nói tới chỉ tiêu nước trong dầu thì link bài test nước, không link sản phẩm cho có.
+6. **Không nói quá:** không gắn nhãn "bán chạy", "được đánh giá cao" khi chưa có số liệu thật (đơn hàng, đánh giá Google). Phân khúc giá chỉ dựa trên giá công khai.
+
+## 3. Khung link cố định trên trang sản phẩm (template, tự áp dụng cho mọi sản phẩm)
+
+| Vị trí | Link | Ghi chú |
+| :--- | :--- | :--- |
+| Dưới khung giá | "Xem nhiều hơn các {loại dầu} cùng loại" → danh mục | Danh mục chỉ có 1 mã thì ghi "Xem danh mục {loại dầu}". |
+| Dưới khung giá | "Xem báo giá nhiều mã dầu thủy lực khác" → `/bao-gia-dau-thuy-luc` | Chỉ dầu thủy lực. Mỡ bôi trơn link tới bảng giá mỗi kg `/mo-boi-tron-cong-nghiep#chi-phi`. Danh mục khác chưa có trang giá nên không có dòng này. |
+| Cuối bài, khối "Cân nhắc thêm trước khi chọn" | "Muốn giá mềm hơn" / "Phân khúc giá cao hơn" → mã gần nhất phía dưới / phía trên | Cùng nhóm công dụng, cùng cấp SAE với dầu động cơ / dầu cầu. Tính theo giá thấp nhất mỗi lít/kg trong `src/data/gia-cong-khai.json`; chênh dưới 3% thì bỏ qua. Có câu ghi rõ giá cao hơn không có nghĩa là hợp máy hơn. |
+| Cuối bài, cùng khối | "Hướng dẫn" → tối đa 2 bài kỹ thuật hợp loại dầu | Dầu thủy lực: xoay vòng 4 bài (chọn độ nhớt, thay dầu, máy xúc, top 6 hãng) theo slug để chia đều link. Thiết bị kiểm tra: 2 bài test. Dầu tuần hoàn khác: bài test chất lượng dầu. Thân bài đã link bài nào thì không lặp lại. |
+
+## 4. Việc đã làm trên nội dung (08/11/2026)
+
+- **Bài hướng dẫn:** test nước trong dầu (+5 link: dầu thủy lực, dầu bánh răng, dầu động cơ diesel, kit TAN, bài thay dầu); thay dầu thủy lực (+3: ENEOS, Castrol, bài máy xúc); test chất lượng dầu (+3: dầu cắt gọt, dầu xung điện, bài thay dầu); top 6 hãng (+1: Caltex Hydraulic Oil AW); máy xúc (+5: các mã 68 có ở kho).
+- **Danh mục:** dầu thủy lực (+5: Castrol Hyspin AWS, bài máy xúc, bài test, bài thay dầu, bảng giá); dầu cầu hộp số, máy nén khí, truyền nhiệt (link bài test / bài test nước ngay chỗ nói về kiểm tra dầu); dầu bánh răng và dầu động cơ diesel (thêm bài test vào dòng "Xem thêm"); mỡ chịu nhiệt (+1 sản phẩm); thiết bị kiểm tra dầu (+3 sản phẩm trong bảng).
+
+## 5. Việc làm tiếp
+
+1. Khi có trang báo giá mỡ, dầu động cơ…: thêm vào `TRANG_GIA` trong `src/pages/[category]/[slug].astro`.
+2. Khi có dữ liệu thật (số đơn theo mã, đánh giá trên Google Business Profile): mới thêm nhóm "mã được chọn nhiều". Chưa có thì không ghi.
+3. Bài mới: trước khi đăng, kiểm tra theo mục 2 và thêm ít nhất 1 link **tới** bài mới từ danh mục hoặc bài liên quan (bài mới không được để mồ côi).
+4. Đo lại sau 4–6 tuần trong Google Search Console (Liên kết → Liên kết nội bộ) xem các trang trước đây ít link đã được Google ghi nhận chưa.
+
+## 6. Đẩy 4 trang trụ cột (13/11/2026)
+
+Trang trụ cột: `/dau-thuy-luc`, `/bao-gia-dau-thuy-luc`, `/mo-boi-tron-cong-nghiep`, `/bao-gia-mo-boi-tron`.
+
+- **Menu và footer:** nút BÁO GIÁ thành danh sách xổ xuống gồm báo giá dầu thủy lực và báo giá mỡ bôi trơn. Footer và menu điện thoại có cả hai trang giá. Trước đó `/bao-gia-mo-boi-tron` chỉ có 1 trang link tới.
+- **Khung sản phẩm mỡ** (`mo-boi-tron-cong-nghiep`, `mo-chiu-nhiet`): dòng dưới khung giá và thẻ "Xem thêm" trỏ về `/bao-gia-mo-boi-tron` (thay cho `/mo-boi-tron-cong-nghiep#chi-phi`). Sản phẩm mỡ chịu nhiệt có thêm thẻ hub mỡ bôi trơn.
+- **Thân bài sản phẩm:** gắn link vào cụm "dầu thủy lực" / "mỡ bôi trơn" ở câu mở đầu (câu có sẵn, không viết thêm). Dòng "**Giá:**" trong khối đặt hàng đổi thành "xem khoảng giá tại [bảng giá …], hoặc gửi yêu cầu báo giá", vì mọi mã đã có giá công khai (trừ ENEOS Epnoc AP đang ẩn trên bảng giá mỡ, giữ nguyên).
+- **Trang khác:** trang chủ (mục "Giá công khai theo khoảng" + link "Dầu thủy lực" ở đầu trang), danh mục mỡ chịu nhiệt, trang khuyến mãi AW 68.
+- **Đo trên bản build (103 trang, đếm số trang có link, trong `<main>`):** báo giá dầu thủy lực 19 → 21; báo giá mỡ 1 → 16 (toàn trang 1 → 102); hub mỡ 23 → 24; hub dầu thủy lực giữ 37. Trang chính sách chỉ nằm ở footer.
+- **Lưu ý khi đọc GSC:** báo cáo Liên kết nội bộ chậm vài tuần và chỉ đếm số trang trỏ tới (không đếm số link), nên con số tối đa bằng số trang của site. Trang có link ở menu luôn ngang nhau; khác biệt nằm ở link trong nội dung. Đo lại khoảng 01–08/12/2026.
+
+## 7. Vị trí chèn link trong thân bài và cách hiển thị (17/11/2026, mẫu: ENEOS Epnoc AP, PR #144)
+
+"Thân bài" là phần nội dung markdown. Không tính menu, đầu trang, câu mở đầu (sapo), khung giá, khối "Xem thêm" / "Có thể bạn cũng quan tâm" cuối bài và chân trang.
+
+**Trang đích ưu tiên:** `/dau-thuy-luc`, `/bao-gia-dau-thuy-luc`, `/mo-boi-tron-cong-nghiep`, `/mo-chiu-nhiet`, `/bao-gia-mo-boi-tron`. Mỗi trang sản phẩm, bài hướng dẫn, bài blog nên link tới các trang này **ở chỗ người đọc thật sự cần**, không link cho đủ.
+
+**Vị trí nên đặt (theo thứ tự ưu tiên):**
+
+| Vị trí | Link tới | Ví dụ |
+| :--- | :--- | :--- |
+| Bảng "Mã này có hợp với … của bạn không?", dòng trả lời "Không. Dùng …" | Danh mục khác đúng việc hơn | Ổ bi trên 125 °C → [mỡ chịu nhiệt]; bơm, xi lanh thủy lực → [dầu thủy lực] + [báo giá dầu thủy lực] |
+| Câu dẫn đầu mục chọn cấp (NLGI, ISO VG, SAE) | Hub danh mục | "…cho các loại [mỡ bôi trơn] khác có ở trang danh mục." |
+| Câu ngay dưới bảng so sánh mã | Trang báo giá của danh mục | "Giá theo kg của A và B có trong [báo giá mỡ bôi trơn]." Mã đang ẩn trên bảng giá thì ghi "báo giá theo từng đơn", không hứa có giá. |
+| Dòng "**Giá:**" trong khối đặt hàng | Form trên trang báo giá danh mục (`/bao-gia-…#gui-yeu-cau`) | "[gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau)" |
+| Câu hỏi thường gặp | Chỉ khi trang đích chưa được link ở trên | |
+
+**Không đặt:** trong tiêu đề H2/H3, trong câu mở đầu chỉ để chèn link, nhiều link cùng một trang đích trong thân bài.
+
+**Quy tắc chữ link:** mô tả đúng trang đích, dùng từ miền Bắc ("mỡ chịu nhiệt", "giá dầu thủy lực 68"), đổi chữ giữa các bài để không trùng một cụm; không dùng "tại đây", "click". Câu viết thêm để mang link phải đúng kỹ thuật và có ích (ví dụ: mỡ không dùng cho bơm thủy lực).
+
+**Hiển thị (tự động):** mọi link chữ trong `.markdown-body` (sản phẩm, danh mục, blog, hướng dẫn) hiện **chữ đậm, xanh dương #0b5cad, gạch chân**; rê chuột thì đổi màu cam đậm. CSS nằm trong `src/layouts/Layout.astro` (`.markdown-body a:not([class])`). Người viết chỉ viết `[chữ link](/duong-dan)` như thường, **không** tự bọc `**…**`, không in nghiêng, không chèn HTML màu. In nghiêng không dùng cho link vì chữ Việt có dấu in nghiêng khó đọc, nhất là trong bảng.
+
+**Nút / menu "Báo giá":** trên trang thuộc danh mục đã có trang báo giá (dầu thủy lực, mỡ bôi trơn, mỡ chịu nhiệt) và trên chính trang báo giá, nút "Nhận Báo Giá" ở đầu trang, menu điện thoại, chân trang, thanh dưới cùng và nút trong trang đều dẫn tới form `#gui-yeu-cau` trên trang báo giá của danh mục; tên sản phẩm được điền sẵn khi bấm từ trang sản phẩm. Trang khác vẫn dùng `/bao-gia`. Thêm danh mục mới: thêm một dòng trong `src/lib/bao-gia-danh-muc.ts`.

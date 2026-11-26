@@ -25,8 +25,18 @@ OUT = Path(__file__).resolve().parent.parent / "src" / "data" / "gia-cong-khai.j
 # (danh_muc, ten, hang, cap, nguon, quy_cach, dung_tich, trang, thu_tu, (tên trong file kho, quy cách trong file kho))
 DONG = [
     ("dau-thuy-luc", "ENEOS Super Hyrando 68", "ENEOS", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "eneos-super-hyrando-68", 0, ("ENEOS Super Hyrando 68", "Phuy 200L")),
+    # 15/11/2026: xô 18 L ENEOS Super Hyrando 68 (file kho ghi "Can 18L") lên bảng giá xô.
+    # 17/11/2026: người dùng giữ nguyên dòng này theo giá file kho (báo giá văn bản 15/11 không có xô ENEOS).
+    ("dau-thuy-luc", "ENEOS Super Hyrando 68", "ENEOS", "ISO VG 68", "nhap-khau", "Xô 18 L", 18, "eneos-super-hyrando-68", 1, ("ENEOS Super Hyrando 68", "Can 18L")),
     ("dau-thuy-luc", "Castrol Hyspin AWS 68", "Castrol", "ISO VG 68", "nhap-khau", "Phuy 209 L", 209, "castrol-hyspin-aws-68", 0, ("Dầu Hyspin AWS 68/209L (Castrol)", "Phuy 209 L")),
     ("dau-thuy-luc", "Maxima 68", "Maxima", "ISO VG 68", "nhap-khau", "Xô 18 L", 18, "maxima-68", 1, ("Dầu MAXIMA 68", "Xô 18L")),
+    # 17/11/2026: các dòng dưới có trong báo giá văn bản 15/11/2026, chưa có trong file kho; giá ở GIA_BAO_GIA.
+    ("dau-thuy-luc", "Maxima 68", "Maxima", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "maxima-68", 0, None),
+    # 19/11/2026: AIO HM 68, HM 46 (thương hiệu AIO của HT VINA), người dùng báo giá phuy 12.500.000 đ; xô 18 L đang hết hàng nên chưa có dòng xô.
+    ("dau-thuy-luc", "AIO HM 68", "AIO", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "aio-hm-68", 0, None),
+    ("dau-thuy-luc", "AIO HM 46", "AIO", "ISO VG 46", "trong-nuoc", "Phuy 200 L", 200, "aio-hm-68", 0, None),
+    ("dau-thuy-luc", "Castrol Hyspin AWS 46", "Castrol", "ISO VG 46", "nhap-khau", "Phuy 209 L", 209, "castrol-hyspin-aws-68", 0, None),
+    ("dau-thuy-luc", "ENEOS Super Hyrando 46", "ENEOS", "ISO VG 46", "nhap-khau", "Phuy 200 L", 200, "eneos-super-hyrando-68", 0, None),
     ("dau-thuy-luc", "EMER LAW 68", "EMER", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "emer-law-68", 0, ("Dầu thủy lực LAW68 (200L)", "Phuy")),
     ("dau-thuy-luc", "EMER LAW 68", "EMER", "ISO VG 68", "trong-nuoc", "Xô 18 L", 18, "emer-law-68", 1, ("Dầu thủy lực LAW68 (18L)", "Xô")),
     ("dau-thuy-luc", "X-One AW 68", "X-One", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "x-one-aw-68", 0, ("Dầu thủy lực Xone 68", "Phuy 200L")),
@@ -39,7 +49,7 @@ DONG = [
     ("dau-thuy-luc", "Caltex Hydraulic Oil AW 68", "Caltex", "ISO VG 68", "nhap-khau", "Phuy 208 L", 208, "caltex-hydraulic-aw-68", 0, ("Dầu Thủy lực Caltex Hydraulic AW 68", "Phuy 208L")),
     ("dau-thuy-luc", "Cosmo Hydro AW 68", "Cosmo", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "cosmo-hydro-aw-68", 0, ("Dầu thuỷ lực Cosmo hydro AW68", "Phuy 200L")),
     ("dau-thuy-luc", "ENEOS Super Mulpus DX 68", "ENEOS", "ISO VG 68", "nhap-khau", "Phuy 200 L", 200, "eneos-super-mulpus-dx", 0, ("ENEOS Super Mulpus DX68", "Phuy 200L")),
-    ("dau-thuy-luc", "ENEOS Super Mulpus DX 46", "ENEOS", "ISO VG 46", "nhap-khau", "Phuy 200 L", 200, "eneos-super-mulpus-dx", 0, ("ENEOS Super Mulpus DX46", "Phuy 200L")),
+    ("dau-thuy-luc", "ENEOS Super Mulpus DX 46", "ENEOS", "ISO VG 46", "nhap-khau", "Phuy 200 L", 200, "eneos-super-mulpus-dx", 0, ("ENEOS Super Mulpus DX68", "Phuy 200L")),  # 15/11/2026: người dùng yêu cầu giá cấp 46 bằng cấp 68
     ("dau-thuy-luc", "Castrol Hyspin HLP-Z 68", "Castrol", "ISO VG 68", "nhap-khau", "Xô 20 L", 20, "castrol-hyspin-hlpz-68", 1, ("Dầu  rãnh trượt Hyspin HLPZ 68", "Xô 20L")),
     ("dau-thuy-luc", "VHP Spinax AW 68", "VHP", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "vhp-spinax-aw", 0, ("Dầu Spinax AW68  (200L)", "Phuy 200L")),
     ("dau-thuy-luc", "VHP Spinax AW Super 68", "VHP", "ISO VG 68", "trong-nuoc", "Phuy 200 L", 200, "vhp-spinax-aw", 0, ("Dầu Spinax AW68 Super (200L)", "Phuy 200L")),
@@ -104,6 +114,19 @@ DONG = [
     ("mo-boi-tron-cong-nghiep", "VHP Caxilium Grease No2", "VHP", "NLGI 2", "trong-nuoc", "Phuy 180 kg", 180, "vhp-caxilium-grease", 0, ("Mỡ VHP Caxilium Grease No2", "Phuy 180Kg")),
     ("mo-boi-tron-cong-nghiep", "VHP Caxilium Grease No3", "VHP", "NLGI 3", "trong-nuoc", "Phuy 180 kg", 180, "vhp-caxilium-grease", 0, ("Mỡ VHP Caxilium Grease No3", "Phuy 180Kg")),
     ("mo-boi-tron-cong-nghiep", "VHP Lithium Grease L4", "VHP", "NLGI 4", "trong-nuoc", "Xô 17 kg", 17, "vhp-lithium-grease", 1, ("Mỡ Lithium Grease L4", "Xô 17Kg")),
+    # 17/11/2026: các dòng dưới có trong báo giá văn bản 15/11/2026, giá ở GIA_BAO_GIA.
+    ("mo-boi-tron-cong-nghiep", "VHP Lithium Grease L4", "VHP", "NLGI 4", "trong-nuoc", "Phuy 180 kg", 180, "vhp-lithium-grease", 0, None),
+    ("mo-boi-tron-cong-nghiep", "VHP Lithium Grease L3", "VHP", "NLGI 3", "trong-nuoc", "Xô 17 kg", 17, "vhp-lithium-grease", 1, None),
+    ("mo-boi-tron-cong-nghiep", "VHP Lithium Grease L3", "VHP", "NLGI 3", "trong-nuoc", "Phuy 180 kg", 180, "vhp-lithium-grease", 0, None),
+    ("mo-boi-tron-cong-nghiep", "VHP Lithium Grease L00", "VHP", "NLGI 00", "trong-nuoc", "Xô 17 kg", 17, "vhp-lithium-grease", 1, None),
+    ("mo-boi-tron-cong-nghiep", "VHP Lithium Grease L0", "VHP", "NLGI 0", "trong-nuoc", "Xô 17 kg", 17, "vhp-lithium-grease", 1, None),
+    ("mo-boi-tron-cong-nghiep", "VHP MP Grease L2", "VHP", "NLGI 2", "trong-nuoc", "Xô 17 kg", 17, "vhp-mp-grease", 1, None),
+    ("mo-boi-tron-cong-nghiep", "VHP MP Grease L4", "VHP", "NLGI 4", "trong-nuoc", "Phuy 180 kg", 180, "vhp-mp-grease", 0, None),
+    ("mo-boi-tron-cong-nghiep", "VHP Licas Grease No2", "VHP", "NLGI 2", "trong-nuoc", "Phuy 180 kg", 180, "licas-grease", 0, None),
+    ("mo-boi-tron-cong-nghiep", "VHP Licas Grease No2", "VHP", "NLGI 2", "trong-nuoc", "Xô 17 kg", 17, "licas-grease", 1, None),
+    ("mo-boi-tron-cong-nghiep", "VHP Licas Grease No2", "VHP", "NLGI 2", "trong-nuoc", "Xô 15 kg", 15, "licas-grease", 1, None),
+    ("mo-boi-tron-cong-nghiep", "VHP Licas Grease No3", "VHP", "NLGI 3", "trong-nuoc", "Xô 17 kg", 17, "licas-grease", 1, None),
+    ("mo-boi-tron-cong-nghiep", "VHP Licas Grease No3", "VHP", "NLGI 3", "trong-nuoc", "Xô 15 kg", 15, "licas-grease", 1, None),
     # 05/11/2026: VHP MP Grease, tên mã trong file kho không ghi hãng; TDS và trang chính thức của VHP xác nhận hãng.
     ("mo-boi-tron-cong-nghiep", "VHP MP Grease L2", "VHP", "NLGI 2", "trong-nuoc", "Phuy 180 kg", 180, "vhp-mp-grease", 0, ("Mỡ MP Grease L2/phuy 180kg", "Phuy 180Kg")),
     ("mo-boi-tron-cong-nghiep", "VHP MP Grease L3", "VHP", "NLGI 3", "trong-nuoc", "Phuy 180 kg", 180, "vhp-mp-grease", 0, ("Mỡ MP Grease L3/phuy 180kg", "Phuy 180kg")),
@@ -158,6 +181,93 @@ GHI_DE_KHOANG = {
 }
 
 
+# Tăng giá dầu thủy lực theo hãng (đ/phuy hoặc đ/xô), cộng vào giá kho (hoặc cả hai đầu khoảng chốt ở GHI_DE_KHOANG)
+# trước khi tính khoảng. Hãng không có tên ở đây dùng mức "khac".
+# 15/11/2026: người dùng yêu cầu phuy ENEOS, Castrol tăng 1.000.000 đ/phuy, các hãng còn lại tăng 500.000 đ/phuy.
+TANG_GIA_PHUY = {
+    "dau-thuy-luc": {"ENEOS": 1_000_000, "Castrol": 1_000_000, "khac": 500_000},
+}
+# 15/11/2026: xô TẠM GIỮ NGUYÊN, người dùng gửi giá xô chính xác sau (dự kiến 16/11, merge đầu tuần).
+# Cách điền khi có giá:
+#   - Có mức tăng theo hãng (đ/xô): điền vào đây, ví dụ {"ENEOS": 100_000, "Castrol": 100_000, "khac": 50_000}.
+#   - Có giá xô chính xác từng mã: điền GIA_XO_MOI bên dưới (giá này đã là giá mới, không cộng thêm TANG_GIA_XO).
+TANG_GIA_XO = {
+    "dau-thuy-luc": {"khac": 0},
+}
+# Giá kho xô mới chính xác theo từng mã, khóa (tên, quy cách) trong DONG, ví dụ ("EMI AW 68", "Xô 18 L"): 1_350_000.
+# Ghi đè giá file kho; khoảng vẫn = giá → × HE_SO. Để trống = dùng giá file kho.
+GIA_XO_MOI = {
+}
+
+
+def tang_gia(dm, hang, qc):
+    q = qc.lower()
+    bang = TANG_GIA_PHUY.get(dm) if q.startswith("phuy") else TANG_GIA_XO.get(dm) if q.startswith("xô") else None
+    if not bang:
+        return 0
+    return bang.get(hang, bang.get("khac", 0))
+
+
+# 17/11/2026 (người dùng yêu cầu): giá trên web phải KHỚP báo giá văn bản đã đăng ảnh trên 2 trang báo giá
+# (anh-goc/bao-gia-dau-thuy-luc.pdf, bao-gia-mo-boi-tron.pdf, lập 15/11/2026, giá chưa VAT, đơn lẻ).
+# Mỗi mã có trong báo giá dùng đúng con số đó, thay cho file kho, GHI_DE_KHOANG và mức tăng TANG_GIA_*.
+# Một số = một giá (web hiện một con số); cặp (thấp, cao) khi báo giá ghi hai mức cho cùng mã.
+# Khi có báo giá văn bản mới: sửa bảng này, thay ảnh + PDF, chạy lại script.
+GIA_BAO_GIA = {
+    # Dầu thủy lực
+    ("AIO HM 68", "Phuy 200 L"): 12_500_000,  # 19/11/2026: người dùng báo giá
+    ("AIO HM 46", "Phuy 200 L"): 12_500_000,  # 19/11/2026: cùng giá phuy với HM 68
+    ("APEX TL 68", "Phuy 200 L"): 7_000_000,
+    ("Castrol Hyspin AWS 46", "Phuy 209 L"): 13_000_000,
+    ("Castrol Hyspin AWS 68", "Phuy 209 L"): 12_000_000,
+    # EMI AW68 có hai dòng trong báo giá (dòng 3–4: 12.000.000 / 1.250.000; dòng 15–16: 11.000.000 / 1.100.000) → ghi cả hai mức.
+    ("EMI AW 68", "Phuy 200 L"): (11_000_000, 12_000_000),
+    ("EMI AW 68", "Xô 18 L"): (1_100_000, 1_250_000),
+    ("ENEOS Super Hyrando 68", "Phuy 200 L"): 13_000_000,
+    ("ENEOS Super Hyrando 46", "Phuy 200 L"): 14_000_000,
+    ("VHP Spinax AW Super 68", "Phuy 200 L"): 10_000_000,
+    ("VHP Spinax AW 68", "Phuy 200 L"): 8_500_000,
+    ("X-One AW 68", "Phuy 200 L"): 10_000_000,
+    ("X-One AW 68", "Xô 18 L"): 1_000_000,
+    ("EMER LAW 68", "Phuy 200 L"): 10_500_000,
+    ("EMER LAW 68", "Xô 18 L"): 1_500_000,
+    ("Maxima 68", "Phuy 200 L"): 9_000_000,  # 17/11/2026: người dùng xác nhận giữ cả phuy
+    ("Maxima 68", "Xô 18 L"): 950_000,
+    # Mỡ bôi trơn
+    ("VHP Lithium Grease L3", "Xô 17 kg"): 1_350_000,
+    ("VHP Lithium Grease L3", "Phuy 180 kg"): 14_000_000,
+    ("VHP Lithium Grease L4", "Xô 17 kg"): 1_400_000,
+    ("VHP Lithium Grease L4", "Phuy 180 kg"): 14_800_000,
+    ("VHP Lithium Grease L00", "Xô 17 kg"): 1_100_000,
+    ("VHP Lithium Grease L0", "Xô 17 kg"): 1_000_000,
+    # Báo giá ghi "Mỡ bôi trơn NLGI3 (thùng 30 ống x400g)" 26.000 đ/ống → thùng 30 ống = 780.000 đ.
+    ("VHP Licas Grease No3", "Thùng 30 ống 400 g"): 780_000,
+    ("VHP Opal Grease NLGI 3", "Phuy 180 kg"): 11_000_000,
+    ("VHP MP Grease L2", "Xô 17 kg"): 1_200_000,
+    ("VHP MP Grease L3", "Xô 15 kg"): 1_134_000,
+    ("VHP MP Grease L3", "Xô 17 kg"): 1_250_000,
+    ("VHP MP Grease L3", "Phuy 180 kg"): 13_000_000,
+    ("VHP MP Grease L4", "Phuy 180 kg"): 12_500_000,
+    ("VHP Licas Grease No2", "Xô 17 kg"): 1_080_000,
+    ("VHP Licas Grease No2", "Phuy 180 kg"): 11_000_000,
+    ("VHP Licas Grease No2", "Xô 15 kg"): 920_000,
+    ("VHP Licas Grease No3", "Xô 15 kg"): 900_000,
+    ("VHP Licas Grease No3", "Xô 17 kg"): 1_000_000,
+    ("VHP Caxilium Grease No3", "Phuy 180 kg"): 8_500_000,
+}
+
+
+def khoang_bao_gia(khoa, dung_tich):
+    v = GIA_BAO_GIA[khoa]
+    thap, cao = v if isinstance(v, tuple) else (v, v)
+    if not dung_tich:
+        return {"thap": thap, "cao": cao, "thap_don_vi": None, "cao_don_vi": None}
+    if thap == cao:
+        dv = round(thap / dung_tich / 100) * 100
+        return {"thap": thap, "cao": cao, "thap_don_vi": dv, "cao_don_vi": dv}
+    return {"thap": thap, "cao": cao, "thap_don_vi": floor_to(thap / dung_tich, 100), "cao_don_vi": ceil_to(cao / dung_tich, 100)}
+
+
 # Mã không có trong file kho: giá bán thị trường công khai làm mốc thấp (vẫn → × HE_SO). Ghi nguồn và ngày xem.
 GIA_NGOAI_KHO = {
     # 14/10/2026: anphatkd.com/san-pham/may-do-do-nhot-cam-tay-lnd-1 bán 1.600.000 đ.
@@ -190,8 +300,9 @@ def khoang_gia(gia, dung_tich):
     }
 
 
-def khoang_chot(khoa, dung_tich):
+def khoang_chot(khoa, dung_tich, tang=0):
     thap, cao = GHI_DE_KHOANG[khoa]
+    thap, cao = thap + tang, cao + tang
     return {
         "thap": thap,
         "cao": cao,
@@ -221,11 +332,21 @@ def main():
             gia = SUA_GIA.get(khop, gia_theo.get(khop))
             if gia and khop in NHAN_GIA:
                 gia *= NHAN_GIA[khop]
+        if (ten, qc) in GIA_XO_MOI:
+            gia, tang = GIA_XO_MOI[(ten, qc)], 0
+        else:
+            tang = tang_gia(dm, hang, qc)
+        if gia and tang:
+            gia += tang
         rows.append({
             "danh_muc": dm, "ten": ten, "hang": hang, "cap": cap, "nguon": nguon,
             "quy_cach": qc, "trang": trang, "don_vi_do": "kg" if "kg" in qc else "L", "thu_tu": thu_tu,
-            **(khoang_chot((ten, qc), dt) if (ten, qc) in GHI_DE_KHOANG else khoang_gia(gia, dt)),
+            **(khoang_bao_gia((ten, qc), dt) if (ten, qc) in GIA_BAO_GIA
+               else khoang_chot((ten, qc), dt, tang) if (ten, qc) in GHI_DE_KHOANG else khoang_gia(gia, dt)),
         })
+    khoa_dong = {(d[1], d[5]) for d in DONG}
+    loi += [f"GIA_XO_MOI: không có dòng {k} trong DONG" for k in GIA_XO_MOI if k not in khoa_dong]
+    loi += [f"GIA_BAO_GIA: không có dòng {k} trong DONG" for k in GIA_BAO_GIA if k not in khoa_dong]
     if loi:
         sys.exit("\n".join(loi))
 

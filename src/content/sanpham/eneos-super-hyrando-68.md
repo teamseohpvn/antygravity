@@ -3,7 +3,7 @@ ma: "SP-THL-002"
 active: true   # Bật: có trong kho tháng 10/2026
 title: "ENEOS Super Hyrando 68"
 seo_title: "ENEOS Super Hyrando 68: Dầu Thủy Lực 68 Chống Mài Mòn"
-description: "ENEOS Super Hyrando 68 (HM, DIN 51524-2): đối chiếu hướng dẫn sử dụng của máy, so với Castrol AWS 68, chọn 46 hay 68, bản SE và mức phải thay dầu đo được tại xưởng."
+description: "ENEOS Super Hyrando 68 (HM, DIN 51524-2): đối chiếu hướng dẫn sử dụng của máy, so với Castrol AWS 68, chọn 46 hay 68, bản SE và mức phải thay dầu."
 keywords: ["eneos super hyrando 68", "dầu thủy lực 68", "super hyrando 68", "dầu thủy lực eneos 68", "super hyrando se 68", "eneos super hyrando 46"]
 category: "dau-thuy-luc"
 categoryName: "Dầu Thủy Lực"
@@ -60,12 +60,12 @@ related_posts: ["dau-thuy-luc-32-46-68-khac-nhau"]
 tags: ["iso-vg-68", "iso-vg-46", "chong-mai-mon", "eneos"]
 reviewed_by: "nguyen-thiet-lap"
 date: "2026-10-06"
-updated: "2026-10-14"
+updated: "2026-11-17"
 ---
 
 **ENEOS Super Hyrando 68** là dầu thủy lực 68 chống mài mòn (loại HM, đạt DIN 51524-2), dùng cho máy ép nhựa, máy dập, máy chấn, máy công cụ NC và máy công trình. Hướng dẫn sử dụng máy của bạn ghi "ISO VG 68", "HM", "HLP 68" hay "AW 68" thì đây là loại dầu đúng cấp.
 
-Kho HT VINA tại TP Hải Phòng (Hải Dương cũ) có sẵn **phuy 200 L**, giao kèm CO/CQ và hóa đơn VAT; cấp 46 và bản SE 68 thì nhận đặt theo yêu cầu.
+Kho HT VINA tại TP Hải Phòng (Hải Dương cũ) có sẵn **phuy 200 L**, giao kèm CO/CQ và hóa đơn VAT; cấp 46 cũng có sẵn; bản SE 68 thì nhận đặt theo yêu cầu.
 
 
 ## Super Hyrando 68 có hợp với máy của bạn không?
@@ -75,7 +75,7 @@ Cách chắc nhất là mở hướng dẫn sử dụng của máy ra và đối
 | Hướng dẫn sử dụng của máy ghi | Dùng Super Hyrando 68 được không? |
 | :--- | :--- |
 | ISO VG 68, HM, HLP 68, AW 68, DIN 51524-2 | **Được**, đây đúng là loại dầu này. |
-| ISO VG 46 hoặc 32 | Không, nên dùng đúng cấp hướng dẫn sử dụng ghi (Super Hyrando 46 nhận đặt). |
+| ISO VG 46 hoặc 32 | Không, nên dùng đúng cấp hướng dẫn sử dụng ghi (Super Hyrando 46 có sẵn tại kho). |
 | Dầu không kẽm (zinc-free, ashless) | Dùng bản **Super Hyrando SE 68**. |
 | Bắt buộc dầu được Parker Denison HF-0/1/2 hoặc Eaton chấp thuận | Chọn mã đã được các hãng này chấp thuận, ví dụ [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
 | HV, HVLP (dầu chỉ số độ nhớt cao cho máy ngoài trời lạnh) | Không, vì Super Hyrando 68 là loại HM. |
@@ -137,11 +137,11 @@ Hai mã cùng loại HM, cùng cấp 68 và đều có sẵn tại kho HT VINA, 
 | Thử tải bánh răng FZG | Không công bố | Cấp 12 |
 | Được hãng bơm chấp thuận | Không công bố | Parker Denison HF-0/HF-1/HF-2, Eaton |
 | Quy cách | Phuy 200 L | Phuy 209 L |
-| Giá tham khảo tháng 10/2026 (chưa VAT) | 8,99–10,35 triệu đ/phuy, tức 44.900–51.800 đ/L | 9,00–10,35 triệu đ/phuy, tức 43.000–49.600 đ/L |
+| Giá theo báo giá 15/11/2026 (chưa VAT) | 13,00 triệu đ/phuy, tức 65.000 đ/L | 12,00 triệu đ/phuy, tức khoảng 57.400 đ/L |
 
 Đọc bảng này thế nào?
 
-- **So giá theo lít, đừng so theo phuy.** Giá mỗi phuy của hai mã gần như ngang nhau, nhưng phuy Castrol chứa nhiều hơn 9 L, nên tính theo lít thì Castrol thấp hơn khoảng 4%. Với thùng 200 L, mỗi lần thay dầu chênh khoảng 380.000–440.000 đ.
+- **So giá theo lít, đừng so theo phuy.** Phuy Castrol rẻ hơn phuy ENEOS 1 triệu đồng mà lại chứa nhiều hơn 9 L, nên tính theo lít thì Castrol thấp hơn khoảng 12%. Với thùng 200 L, mỗi lần thay dầu chênh khoảng 1,5 triệu đồng.
 - **"Không công bố" không có nghĩa là kém.** ENEOS không đưa kết quả TOST, FZG hay danh sách hãng bơm chấp thuận vào TDS nên không có số để so, còn Castrol thì công bố đủ các phép thử về tuổi thọ oxy hóa và chống mài mòn bánh răng.
 - **ENEOS có biên nhiệt độ cao hơn ở hai chỉ tiêu được công bố:** điểm chớp cháy cao hơn 33 °C, điểm đông đặc thấp hơn 4 °C, chỉ số độ nhớt cao hơn một chút.
 
@@ -151,7 +151,7 @@ Hai mã cùng loại HM, cùng cấp 68 và đều có sẵn tại kho HT VINA, 
 
 [Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là giá trị điển hình theo TDS. Với người đứng máy, có bốn điểm đáng quan tâm nhất.
 
-- **Độ nhớt khi dầu nóng lên.** Chỉ số độ nhớt 104 là mức thông thường của dầu khoáng HM, nghĩa là dầu vẫn loãng đi khi thùng nóng. Vì vậy, giữ nhiệt độ thùng ổn định là cách để áp suất và tốc độ xi lanh đều suốt ca; máy cần độ nhớt ổn định hơn thì xem bản SE (chỉ số 109).
+- **Độ nhớt khi dầu nóng lên.** [Chỉ số độ nhớt 104](/ho-tro-ky-thuat/chi-so-do-nhot-vi-dau-thuy-luc) là mức thông thường của dầu khoáng HM, nghĩa là dầu vẫn loãng đi khi thùng nóng. Vì vậy, giữ nhiệt độ thùng ổn định là cách để áp suất và tốc độ xi lanh đều suốt ca; máy cần độ nhớt ổn định hơn thì xem bản SE (chỉ số 109).
 - **Tách nước nhanh.** TCCS 14:2014 yêu cầu nước tách khỏi dầu trong không quá 30 phút ở 54 °C ([ASTM D1401](https://www.astm.org/Standards/D1401.htm)). Nhờ vậy, nước lẫn vào ít thường lắng xuống đáy thùng để xả ra, chứ không quyện vào dầu.
 - **Chịu nhiệt.** Theo TDS ENEOS Nhật (IND-4001), dầu không tạo cặn kết tủa sau phép thử ổn định nhiệt ở 120 °C trong 70 giờ, tức gấp đôi mức 50–60 °C thường gặp ở xưởng. ENEOS không công bố kết quả thử [ASTM D2070](https://www.astm.org/Standards/D2070.htm) (135 °C, 168 giờ) cho mã này.
 - **Chống gỉ, không ăn mòn đồng.** Dầu đạt phép thử gỉ với nước biển nhân tạo ở 60 °C trong 24 giờ, ăn mòn tấm đồng cấp 1.
@@ -229,11 +229,11 @@ Nếu như máy móc thiết bị thủy lực của các bạn sử dụng bơm
 Ý kiến chung của các khách hàng sử dụng dầu thủy lực do HT VINA cung cấp. Phần lớn các khách hàng đều không dùng (pha) chung 2 loại dầu khác nhau. Lý do đưa ra: hệ phụ gia mỗi hãng khác nhau, trộn lẫn có thể làm dầu đục, tạo cặn hoặc giảm khả năng tách nước. Khi đổi mã, xả hết dầu cũ, súc rửa và thay lõi lọc.
 
 ### Can 18 L hay phuy 200 L thì kinh tế hơn?
-Đây là bài toán kinh tế trong thực tế sản xuất, nếu bạn có nhu cầu tiêu hao lớn hãy chọn phuy vì giá phuy thường rẻ hơn. Thực tế [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) của công ty chúng tôi cho sản phẩm ENEOS Super Hyrando 68 trong tháng 10/2026:
+Đây là bài toán kinh tế trong thực tế sản xuất, nếu bạn có nhu cầu tiêu hao lớn hãy chọn phuy vì giá phuy thường rẻ hơn. Thực tế [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) của công ty chúng tôi cho sản phẩm ENEOS Super Hyrando 68 theo báo giá ngày 15/11/2026:
 
-| Quy cách | Khoảng giá tháng 10/2026 (chưa VAT) | Quy ra mỗi lít |
+| Quy cách | Giá theo báo giá 15/11/2026 (chưa VAT) | Quy ra mỗi lít |
 | :--- | :--- | :--- |
-| Phuy 200 lít | 8,99–10,35 triệu đồng | khoảng 44.900–51.800 đ |
+| Phuy 200 lít | 13,00 triệu đồng | 65.000 đ |
 
 Thùng (xô) 18 lít hiện nhận đặt theo yêu cầu, và tính theo lít thì giá xô luôn cao hơn phuy. Giá thay đổi theo tháng và theo số lượng, nên muốn có giá chính xác cho đơn hàng của bạn, hãy gửi yêu cầu [báo giá](/bao-gia?sp=ENEOS%20Super%20Hyrando%2068).
 
@@ -243,7 +243,7 @@ Dầu gốc chiếm phần lớn thành phần của dầu thủy lực, nên gi
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách có sẵn:** phuy 200 L cấp 68 (mã kho AW2). Cấp 46 và bản SE 68 nhận đặt theo yêu cầu.
+- **Quy cách có sẵn:** phuy 200 L cấp 68 (mã kho AW2) và cấp 46. Bản SE 68 nhận đặt theo yêu cầu.
 - **Giấy tờ:** mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** xem khoảng giá tham khảo tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=ENEOS%20Super%20Hyrando%2068) theo số lượng của bạn.

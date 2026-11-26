@@ -124,7 +124,7 @@ Tùy khối lượng gia công và chất lượng hệ lọc. Dấu hiệu cầ
 Không nên. Dầu hỏa, dầu DO không được pha chế cho gia công xung điện, thường có điểm chớp cháy thấp hơn và nhiều mùi. Dầu EDM chuyên dụng an toàn hơn cho thợ đứng máy.
 
 ### Mỗi năm một máy xung điện tiêu tốn bao nhiêu dầu EDM?
-Tùy kích thước bể, số ca chạy và lượng dầu bám theo chi tiết. Trường hợp được tạp chí Modern Machine Shop nêu ở trên dùng 4–5 phuy mỗi năm cho 5 máy với dầu cũ, và khoảng 1 phuy sau khi đổi dầu ít bay hơi hơn. Theo dõi lượng dầu châm thêm mỗi tháng là cách đơn giản để biết dầu đang hao vì bay hơi hay vì bám theo chi tiết.
+Tùy kích thước bể, số ca chạy và lượng dầu bám theo chi tiết. Trường hợp được tạp chí Modern Machine Shop nêu ở trên dùng 4–5 phuy mỗi năm cho 5 máy với dầu cũ, và khoảng 1 phuy sau khi đổi dầu ít bay hơi hơn. Theo dõi lượng dầu thêm vào mỗi tháng là cách đơn giản để biết dầu đang hao vì bay hơi hay vì bám theo chi tiết.
 
 ## Quy cách đóng gói, đơn hàng
 

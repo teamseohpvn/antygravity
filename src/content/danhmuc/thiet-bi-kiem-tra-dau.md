@@ -21,8 +21,8 @@ Cách dùng từng thiết bị và ngưỡng nào thì nên thay dầu được
 
 | Chỉ tiêu | Dầu bị gì khi chỉ tiêu này đổi | Thiết bị đo nhanh | Phép đo phòng thí nghiệm đối chiếu |
 | :--- | :--- | :--- | :--- |
-| **Độ nhớt** | Tăng: dầu bị oxy hóa, lẫn dầu đặc hơn. Giảm: lẫn dầu loãng, nhiên liệu, phụ gia cắt mạch | Nhớt kế mao quản thủy tinh, cốc đo độ nhớt cầm tay | ASTM D445 / TCVN 3171 (độ nhớt động học) |
-| **Trị số axit (TAN)** | Dầu bị oxy hóa, phụ gia cạn, sinh axit ăn mòn | Bộ kit test TAN dạng ống thuốc thử | ASTM D664 (chuẩn độ điện thế), ASTM D974 |
+| **Độ nhớt** | Tăng: dầu bị oxy hóa, lẫn dầu đặc hơn. Giảm: lẫn dầu loãng, nhiên liệu, phụ gia cắt mạch | [Nhớt kế mao quản thủy tinh](/thiet-bi-kiem-tra-dau/nhot-ke-thuy-tinh-ong-3-5), [cốc đo độ nhớt cầm tay](/thiet-bi-kiem-tra-dau/may-do-do-nhot-cam-tay-lnd-1) | ASTM D445 / TCVN 3171 (độ nhớt động học) |
+| **Trị số axit (TAN)** | Dầu bị oxy hóa, phụ gia cạn, sinh axit ăn mòn | [Bộ kit test TAN](/thiet-bi-kiem-tra-dau/bo-kit-test-tan-biolab-tlb) dạng ống thuốc thử | ASTM D664 (chuẩn độ điện thế), ASTM D974 |
 | **Nước** | Phụ gia bị rửa trôi, dầu nhũ hóa, gỉ bơm, mòn ổ | Bộ kit áp suất canxi hydrua, đầu dò điện môi, kem thử nước | ASTM D6304 (Karl Fischer) |
 
 ## Thiết bị nào dùng cho loại dầu nào
@@ -35,6 +35,6 @@ Cách dùng từng thiết bị và ngưỡng nào thì nên thay dầu được
 
 - Kết quả đo nhanh dùng để **so sánh với chính dầu mới cùng mã**, không thay được phiếu kết quả của phòng thí nghiệm khi cần giám định hoặc khiếu nại chất lượng.
 - Luôn giữ một chai **mẫu dầu mới** của lô đang dùng để đo đối chứng.
-- Lấy mẫu khi máy đang chạy hoặc vừa dừng, ở đường hồi hoặc giữa bồn, không lấy ở đáy bồn (trừ khi muốn tìm nước tự do).
+- Lấy mẫu khi máy đang chạy hoặc vừa dừng, ở đường hồi hoặc giữa thùng, không lấy ở đáy thùng (trừ khi muốn tìm nước tự do).
 
 Cần chọn dầu thay thế sau khi kiểm tra, xem các danh mục [dầu thủy lực](/dau-thuy-luc), [dầu bánh răng](/dau-banh-rang) và [dầu máy nén khí](/dau-may-nen-khi).

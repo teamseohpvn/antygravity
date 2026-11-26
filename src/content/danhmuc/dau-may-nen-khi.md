@@ -9,7 +9,7 @@ description: "Dầu nén khí trục vít, piston ISO VG 32, 46, 68, 100: Shell 
 keywords: ["dầu máy nén khí", "dầu nén khí", "nhớt máy nén khí", "dầu máy nén khí trục vít", "nhớt máy nén khí trục vít", "dầu máy nén khí piston", "dầu máy nén khí kobelco", "dầu máy nén khí hitachi", "dầu máy nén khí atlas copco", "shell corena s3 r 46", "mobil rarus 425", "total dacnis sh 46"]
 tags: ["dau-may-nen-khi", "shell-corena", "castrol-aircol", "truc-vit", "piston"]
 image: "/images/danh-muc/dau-may-nen-khi.webp"
-image_alt: "Kỹ thuật viên châm dầu máy nén khí vào máy nén khí trục vít"
+image_alt: "Kỹ thuật viên thêm dầu máy nén khí vào máy nén khí trục vít"
 date: "2026-09-21"
 updated: "2026-10-06"
 ---
@@ -39,7 +39,7 @@ updated: "2026-10-06"
 
 ### Dầu tương đương cho máy Kobelco, Hitachi, Atlas Copco
 
-Nhiều máy nén khí trục vít được châm dầu chính hãng của nhà sản xuất máy lúc xuất xưởng. Khi hết bảo hành, có thể chuyển sang dầu thương hiệu dầu nhớt (Shell, Castrol, Mobil…) **có cùng gốc dầu và cùng cấp độ nhớt**. Cần lưu ý:
+Nhiều máy nén khí trục vít được nạp sẵn dầu chính hãng của nhà sản xuất máy lúc xuất xưởng. Khi hết bảo hành, có thể chuyển sang dầu thương hiệu dầu nhớt (Shell, Castrol, Mobil…) **có cùng gốc dầu và cùng cấp độ nhớt**. Cần lưu ý:
 
 - Xác định **gốc dầu hiện tại** (khoáng, PAO hay PAG). Dầu gốc PAG **không tương thích** với dầu khoáng và PAO.
 - Trong thời gian bảo hành, dùng đúng dầu nhà sản xuất máy yêu cầu.
@@ -84,7 +84,7 @@ Theo số giờ chạy khuyến cáo trên sổ tay máy và TDS của dầu, ho
 - Lượng dầu hao hụt tăng.
 - Chênh áp qua bình tách dầu tăng.
 
-Phân tích mẫu dầu (độ nhớt, chỉ số axit TAN, nước) giúp xác định thời điểm thay chính xác.
+[Phân tích mẫu dầu](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau) (độ nhớt, chỉ số axit TAN, nước) giúp xác định thời điểm thay chính xác.
 
 ### Máy nén khí trục vít dùng dầu thủy lực 46 thay được không?
 
@@ -92,4 +92,4 @@ Không nên. Dầu máy nén khí được pha để chịu oxy hóa ở nhiệt
 
 ---
 
-**Xem thêm:** [Dầu thủy lực](/dau-thuy-luc) · [Dầu bánh răng](/dau-banh-rang) · [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep)
+**Xem thêm:** [Dầu thủy lực](/dau-thuy-luc) · [Dầu bánh răng](/dau-banh-rang) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)

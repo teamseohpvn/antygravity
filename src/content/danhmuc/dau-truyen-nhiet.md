@@ -14,7 +14,7 @@ date: "2026-09-28"
 updated: "2026-10-06"
 ---
 
-**Dầu truyền nhiệt** (còn gọi là **dầu tải nhiệt**) là chất lỏng mang nhiệt từ lò đốt tới thiết bị sử dụng nhiệt trong một vòng tuần hoàn kín: máy ép gỗ, máy sấy, trục cán nóng, bồn nấu nhựa đường, máy nhuộm, lô sấy. Hệ thống dầu tải nhiệt làm việc ở **áp suất thấp** mà vẫn đạt nhiệt độ cao, thường **200–300 °C**, cao hơn nhiều so với lò hơi nước ở cùng áp suất. Chọn dầu theo **nhiệt độ dầu tối đa (bulk temperature)** của hệ thống. **Dầu gốc khoáng** dùng cho phần lớn hệ thống tới khoảng 300 °C. **Dầu tổng hợp** dùng cho mức nhiệt cao hơn.
+**Dầu truyền nhiệt** (còn gọi là **dầu tải nhiệt**) là chất lỏng mang nhiệt từ lò đốt tới thiết bị sử dụng nhiệt trong một vòng tuần hoàn kín: máy ép gỗ, máy sấy, trục cán nóng, thùng nấu nhựa đường, máy nhuộm, lô sấy. Hệ thống dầu tải nhiệt làm việc ở **áp suất thấp** mà vẫn đạt nhiệt độ cao, thường **200–300 °C**, cao hơn nhiều so với lò hơi nước ở cùng áp suất. Chọn dầu theo **nhiệt độ dầu tối đa (bulk temperature)** của hệ thống. **Dầu gốc khoáng** dùng cho phần lớn hệ thống tới khoảng 300 °C. **Dầu tổng hợp** dùng cho mức nhiệt cao hơn.
 
 ## Chọn dầu truyền nhiệt theo nhiệt độ
 
@@ -47,7 +47,7 @@ updated: "2026-10-06"
 ## Vận hành và bảo dưỡng
 
 - **Bình giãn nở:** dầu nóng tiếp xúc không khí sẽ oxy hóa rất nhanh. Giữ nhiệt độ dầu trong bình giãn nở thấp (thường dưới khoảng 60 °C), hoặc phủ khí nitơ theo thiết kế.
-- **Khởi động lần đầu:** xả hết nước và hơi ẩm trong hệ thống bằng cách tăng nhiệt từ từ. Nước lẫn trong dầu nóng có thể gây sôi trào.
+- **Khởi động lần đầu:** xả hết nước và hơi ẩm trong hệ thống bằng cách tăng nhiệt từ từ. [Nước lẫn trong dầu](/ho-tro-ky-thuat/test-nuoc-trong-dau-tai-hien-truong) nóng có thể gây sôi trào.
 - **Phân tích dầu định kỳ** (6–12 tháng một lần): độ nhớt, chỉ số axit TAN, cặn carbon, điểm chớp cháy. Điểm chớp cháy giảm mạnh là dấu hiệu dầu bị phân hủy nhiệt.
 - **Không trộn dầu truyền nhiệt khác loại.** Khi thay dầu, xả sạch hệ thống. Nếu nhiều cặn, cần súc rửa bằng dầu súc rửa chuyên dụng.
 
@@ -57,7 +57,7 @@ updated: "2026-10-06"
 - **Dệt nhuộm:** máy căng định hình, máy sấy, máy nhuộm cao áp.
 - **Nhựa, cao su:** trục cán, khuôn gia nhiệt, máy đùn.
 - **Thực phẩm:** chiên công nghiệp, sấy. Vị trí có nguy cơ tiếp xúc thực phẩm cần dầu cấp thực phẩm.
-- **Nhựa đường, hóa chất:** gia nhiệt bồn chứa, thiết bị phản ứng.
+- **Nhựa đường, hóa chất:** gia nhiệt thùng chứa, thiết bị phản ứng.
 
 ## Quy cách và báo giá
 

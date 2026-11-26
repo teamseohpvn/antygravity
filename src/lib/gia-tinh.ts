@@ -20,6 +20,8 @@ export function khoangGia(gia: number | null, dungTich: number | null, heSo: num
 
 const VND = new Intl.NumberFormat('vi-VN');
 export const fmtVnd = (n: number | null) => (n == null ? '' : VND.format(n));
+/** Khoảng giá "a – b"; khi hai đầu bằng nhau (mã có giá đúng theo báo giá văn bản) chỉ hiện một con số. */
+export const fmtKhoang = (a: number | null, b: number | null) => (a != null && a === b ? VND.format(a) : `${fmtVnd(a)} – ${fmtVnd(b)}`);
 
 /** "2026-10-06" → "06/10/2026"; "2026-10" → "10/2026". */
 export function fmtNgay(iso: string | null | undefined, kieu: 'ngay' | 'thang' = 'ngay'): string {

@@ -9,6 +9,7 @@ import { contentPages } from './src/lib/active-pages.mjs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import headingIdNgan from './src/lib/heading-id-ngan.mjs';
+import bangMarkdown from './src/lib/bang-markdown.mjs';
 
 // Domain chính thức: đặt PUBLIC_SITE_URL khi build production (https://daucongnghiephp.com.vn).
 const SITE = (process.env.PUBLIC_SITE_URL || 'https://daucongnghiephp.com.vn').replace(/\/+$/, '');
@@ -26,9 +27,15 @@ const BAO_GIA_LASTMOD = [
   ...[...readFileSync('src/pages/bao-gia-dau-thuy-luc.astro', 'utf8').matchAll(/(?:NGAY_SUA_NOI_DUNG = |capNhatLuc: )'(\d{4}-\d{2}-\d{2})/g)].map((m) => m[1]),
   JSON.parse(readFileSync('src/data/gia-cong-khai.json', 'utf8')).cau_hinh?.ngay_ra_soat,
 ].filter(Boolean).sort().at(-1);
+// Trang báo giá mỡ (prerender): ngày sửa nội dung hoặc ngày rà giá, trùng dateModified trên trang.
+const BAO_GIA_MO_LASTMOD = [
+  readFileSync('src/pages/bao-gia-mo-boi-tron.astro', 'utf8').match(/NGAY_SUA_NOI_DUNG = '(\d{4}-\d{2}-\d{2})'/)?.[1],
+  JSON.parse(readFileSync('src/data/gia-cong-khai.json', 'utf8')).cau_hinh?.ngay_ra_soat,
+].filter(Boolean).sort().at(-1);
 const LASTMOD = new Map([
   ...STATIC_LASTMOD,
   [`${SITE}/bao-gia-dau-thuy-luc`, BAO_GIA_LASTMOD],
+  [`${SITE}/bao-gia-mo-boi-tron`, BAO_GIA_MO_LASTMOD],
   ...contentPages().filter((p) => p.updated || p.date).map((p) => [SITE + p.path, p.updated || p.date]),
 ]);
 
@@ -49,6 +56,13 @@ const SITEMAP_IMAGES = new Map(
     return [SITE + p.path, imgs];
   }),
 );
+// Ảnh báo giá văn bản (ảnh đại diện) của 2 trang báo giá: đọc IMAGE và IMAGE_ALT ngay trong file trang.
+for (const trang of ['bao-gia-dau-thuy-luc', 'bao-gia-mo-boi-tron']) {
+  const src = readFileSync(`src/pages/${trang}.astro`, 'utf8');
+  const anh = src.match(/^const IMAGE = '([^']+)'/m)?.[1];
+  const alt = src.match(/^const IMAGE_ALT = '([^']+)'/m)?.[1];
+  if (anh && PUBLIC_IMAGE_SET.has(anh)) SITEMAP_IMAGES.set(`${SITE}/${trang}`, [{ url: SITE + anh, ...(alt ? { caption: alt } : {}) }]);
+}
 
 // Ảnh giữ nguyên tên khi thay ảnh mới, trình duyệt lại cache /images/* 7 ngày (public/_headers),
 // nên khách cũ vẫn thấy ảnh cũ. Sau khi build, gắn ?v=<mã nội dung> vào mọi đường dẫn /images/...
@@ -101,7 +115,8 @@ export default defineConfig({
   session: false,
   vite: {
     // __BUILD_ID__: mã bản build, gắn vào trang bảng giá tĩnh trong KV để bỏ bản cũ sau mỗi lần deploy.
-    define: { __PUBLIC_IMAGES__: JSON.stringify(PUBLIC_IMAGES), __BUILD_ID__: JSON.stringify(Date.now().toString(36)) },
+    // __PREVIEW_BUILD__: bản build cho nhánh khác main (link xem trước *.workers.dev của Workers Builds) → mọi trang gắn meta noindex.
+    define: { __PUBLIC_IMAGES__: JSON.stringify(PUBLIC_IMAGES), __BUILD_ID__: JSON.stringify(Date.now().toString(36)), __PREVIEW_BUILD__: JSON.stringify(Boolean(process.env.WORKERS_CI_BRANCH) && process.env.WORKERS_CI_BRANCH !== 'main') },
     // Giữ cú pháp @media (max-width: …) cũ: cú pháp mới (width<=…) không chạy trên iPhone iOS < 16.4
     // và công cụ kiểm tra SEO báo "không dùng media query".
     build: { cssTarget: ['chrome87', 'safari14', 'firefox78', 'edge88'] },
@@ -110,6 +125,8 @@ export default defineConfig({
   integrations: [
     // Id ngắn cho tiêu đề: "## Tiêu đề {#id-ngan}" (docs/CAU-TRUC-NOI-DUNG.md mục 6.6).
     headingIdNgan(),
+    // Bảng Markdown: khung cuộn + kiểu bảng trang báo giá mỡ + thẻ trên điện thoại (src/lib/bang-markdown.mjs).
+    bangMarkdown(),
     sitemap({
       // Trang render phía server (giá đọc từ D1) không tự vào sitemap, phải khai báo tay.
       customPages: [`${SITE}/bao-gia-dau-thuy-luc`],

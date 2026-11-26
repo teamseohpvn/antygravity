@@ -71,7 +71,7 @@ const NHOM: Record<string, Nhom> = {
   mo: {
     ten: 'mỡ bôi trơn',
     cot: [
-      { ten: 'Cấp NLGI', lay: (d) => d.nlgi },
+      { ten: 'Độ đặc/độ sệt NLGI', lay: (d) => d.nlgi },
       { ten: 'Chất làm đặc', lay: spec(/^(Chất làm đặc|Loại xà phòng)/) },
       { ten: 'Nhiệt độ nhỏ giọt', lay: spec(/^(Nhiệt độ|Điểm) nhỏ giọt/) },
       { ten: 'Nhiệt độ làm việc', lay: spec(/^Nhiệt độ làm việc/) },
@@ -100,7 +100,7 @@ const NHOM_THEO_DANH_MUC: Record<string, string> = {
   'dau-may-nen-khi': 'may-nen',
 };
 
-const nhomCua = (d: Data) => d.nhom_so_sanh ?? NHOM_THEO_DANH_MUC[d.category];
+export const nhomCua = (d: Data) => d.nhom_so_sanh ?? NHOM_THEO_DANH_MUC[d.category];
 
 const capChung = (a?: string, b?: string) => {
   if (!a || !b) return false;

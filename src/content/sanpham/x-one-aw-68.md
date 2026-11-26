@@ -59,10 +59,10 @@ tom_tat:
   - "**Theo TDS 12/10/2026:** độ nhớt 75,10 cSt ở 40 °C, chỉ số độ nhớt 147, chớp cháy cốc hở 242 °C. Độ nhớt này cao hơn nhẹ cận trên 74,8 cSt của cấp ISO VG 68, nên đo lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "chong-mai-mon", "x-one"]
 date: "2026-10-12"
-updated: "2026-11-02"
+updated: "2026-11-17"
 ---
 
-**X-One AW 68** là dầu thủy lực chống mài mòn cấp độ nhớt **ISO VG 68**. Chữ "AW" (anti-wear) nghĩa là dầu có phụ gia chống mài mòn để bảo vệ bơm và van khi hệ thống chạy áp cao. Dầu dùng cho máy ép, máy công trình và hầu hết hệ thủy lực công nghiệp yêu cầu dầu cấp 68.
+**X-One AW 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp độ nhớt **ISO VG 68**. Chữ "AW" (anti-wear) nghĩa là dầu có phụ gia chống mài mòn để bảo vệ bơm và van khi hệ thống chạy áp cao. Dầu dùng cho máy ép, máy công trình và hầu hết hệ thủy lực công nghiệp yêu cầu dầu cấp 68.
 
 Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** và **xô 18 L**, có hóa đơn VAT.
 
@@ -76,19 +76,19 @@ Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L** v�
 | Bắt buộc dầu được Parker Denison, Eaton chấp thuận | Không. Chọn [Castrol Hyspin AWS 68](/dau-thuy-luc/castrol-hyspin-aws-68). |
 | HV, HVLP (máy ngoài trời lạnh sâu, dải nhiệt rộng) | Không. |
 
-Bảng thông số kỹ thuật (TDS) số TDS-XONE-AW68 do HT VINA phát hành ngày 12/10/2026 ghi dầu thuộc loại HM theo ISO 6743-4, độ nhớt 75,10 cSt ở 40 °C và chỉ số độ nhớt 147. TDS cho biết đây là giá trị tiêu biểu, thử tại phòng thử nghiệm được công nhận VILAS. Độ nhớt này cao hơn nhẹ cận trên 74,8 cSt của cấp ISO VG 68, nên máy cần bám sát cấp 68 hãy đo lô đầu tiên trước khi nạp. TDS không ghi đạt DIN 51524-2 hay phê duyệt của hãng bơm.
+Bảng thông số kỹ thuật (TDS) số TDS-XONE-AW68 do HT VINA phát hành ngày 12/10/2026 ghi dầu thuộc loại HM theo ISO 6743-4, độ nhớt 75,10 cSt ở 40 °C và [chỉ số độ nhớt 147](/ho-tro-ky-thuat/chi-so-do-nhot-vi-dau-thuy-luc). TDS cho biết đây là giá trị tiêu biểu, thử tại phòng thử nghiệm được công nhận VILAS. Độ nhớt này cao hơn nhẹ cận trên 74,8 cSt của cấp ISO VG 68, nên máy cần bám sát cấp 68 hãy đo lô đầu tiên trước khi nạp. TDS không ghi đạt DIN 51524-2 hay phê duyệt của hãng bơm.
 
 ## X-One AW 68 hay ENEOS Super Hyrando 68?
 
-Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (rà soát 02/10/2026, chưa VAT):
+Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (theo báo giá ngày 15/11/2026, chưa VAT):
 
 | | X-One AW 68 | [ENEOS Super Hyrando 68](/dau-thuy-luc/eneos-super-hyrando-68) |
 | :--- | :--- | :--- |
-| Phuy 200 L | 7,95–9,15 triệu đ (39.700–45.800 đ/L) | 8,99–10,35 triệu đ (44.900–51.800 đ/L) |
-| Xô 18 L | 580.000–667.000 đ | Nhận đặt |
+| Phuy 200 L | 10,00 triệu đ (50.000 đ/L) | 13,00 triệu đ (65.000 đ/L) |
+| Xô 18 L | 1,00 triệu đ (khoảng 55.600 đ/L) | Nhận đặt |
 | Tiêu chuẩn công bố | ISO 6743-4 HM | DIN 51524-2, TCCS 14:2014 |
 
-Tính theo lít, phuy X-One thấp hơn ENEOS khoảng 12%. ENEOS công bố thêm DIN 51524-2 và tiêu chuẩn cơ sở, nên dễ đối chiếu với hướng dẫn sử dụng của máy hơn.
+Tính theo lít, phuy X-One thấp hơn ENEOS khoảng 23%. ENEOS công bố thêm DIN 51524-2 và tiêu chuẩn cơ sở, nên dễ đối chiếu với hướng dẫn sử dụng của máy hơn.
 
 > **Nhận định của HT VINA:** Chọn X-One AW 68 khi hướng dẫn sử dụng chỉ ghi ISO VG 68 loại HM/AW và bạn cần một mã có giá hợp lý cho máy chạy nhiều ca. Máy Nhật đang dùng sẵn ENEOS, hoặc cần giấy tờ tiêu chuẩn để nộp kiểm tra, thì giữ ENEOS.
 
@@ -128,8 +128,8 @@ Theo kết quả đo, không theo lịch cố định: độ nhớt ở 40 °C l
 ### Thêm X-One AW 68 vào máy đang dùng dầu hãng khác được không?
 Hai dầu cùng cấp VG 68 loại AW gốc khoáng thường trộn được khi thêm dầu bổ sung một lượng nhỏ. Khi đổi hẳn sang mã mới, nên xả hết dầu cũ và thay lọc để dễ theo dõi chất lượng dầu. Cách làm xem [hướng dẫn thay dầu thủy lực](/ho-tro-ky-thuat/huong-dan-thay-dau-thuy-luc).
 
-### Vì sao xô 18 L X-One tính theo lít lại thấp hơn phuy?
-Theo bảng giá rà soát 02/10/2026, xô 18 L có khoảng giá 580.000–667.000 đ (khoảng 32.200–37.100 đ/L), còn phuy là 39.700–45.800 đ/L. Mức giá xô có thể thay đổi theo lô nhập; hãy [gửi yêu cầu báo giá](/bao-gia?sp=X-One%20AW%2068) để có giá đúng tại thời điểm mua.
+### Xô 18 L X-One tính theo lít cao hơn phuy bao nhiêu?
+Theo báo giá ngày 15/11/2026, xô 18 L giá 1.000.000 đ (khoảng 55.600 đ/L), còn phuy 10.000.000 đ (50.000 đ/L), tức xô cao hơn phuy khoảng 11% mỗi lít. Mức giá xô có thể thay đổi theo lô nhập; hãy [gửi yêu cầu báo giá](/bao-gia?sp=X-One%20AW%2068) để có giá đúng tại thời điểm mua.
 
 ## Quy cách đóng gói, đơn hàng
 

@@ -7,16 +7,22 @@ import { mucLuc } from '../../lib/muc-luc';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import NoiDungBai from '../../components/NoiDungBai.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
+import NutBaoGia from '../../components/NutBaoGia.astro';
+import { trangBaoGiaCua } from '../../lib/bao-gia-danh-muc';
 import ThuVienAnh from '../../components/ThuVienAnh.astro';
+import XemThem from '../../components/XemThem.astro';
+import CachVietBai from '../../components/CachVietBai.astro';
+import ChinhSachGiaKho from '../../components/ChinhSachGiaKho.astro';
+import ThongTinDoanhNghiep from '../../components/ThongTinDoanhNghiep.astro';
 import { getEntry, render } from 'astro:content';
-import { getActiveProducts } from '../../lib/content';
+import { getActiveProducts, getActivePosts, postPath } from '../../lib/content';
 import { tachPhuongPhap } from '../../lib/tieu-chuan';
-import { giaSanPham } from '../../lib/gia-json';
-import { bangSoSanh } from '../../lib/so-sanh';
-import { fmtVnd, fmtNgay } from '../../lib/gia-tinh';
+import { giaSanPham, phanKhucGia } from '../../lib/gia-json';
+import { bangSoSanh, nhomCua } from '../../lib/so-sanh';
+import { fmtVnd, fmtNgay, fmtKhoang } from '../../lib/gia-tinh';
 import { ngayBai } from '../../lib/ngay';
 import { timNhanSu, DEFAULT_REVIEWER_ID, DEFAULT_PRODUCT_AUTHOR_ID, displayName, personRef, personUrl, personSchema, bylineTitle } from '../../lib/nhan-su';
-import { BUSINESS, absUrl, breadcrumbSchema, packagingLabel, productImages, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
+import { BUSINESS, KHO_GIAO_HANG, absUrl, breadcrumbSchema, packagingLabel, productImages, ORG_ID, SITE_NAME, LEGAL_SHORT } from '../../lib/site';
 
 export async function getStaticPaths() {
   const products = await getActiveProducts();
@@ -40,7 +46,7 @@ const isThuyLuc = d.category === 'dau-thuy-luc';
 const cacCapVg = [d.vg, ...(d.vg_khac ?? [])].filter((v): v is number => !!v);
 const sku = d.sku ?? d.packaging?.map((p) => (typeof p === 'string' ? undefined : p.sku)).find(Boolean);
 const STOCK_TEXT = {
-  'co-san': 'Có sẵn tại kho TP Hải Phòng (Hải Dương cũ). Liên hệ để nhận báo giá.',
+  'co-san': 'Có sẵn tại kho. Liên hệ để nhận báo giá.',
   'dat-hang': 'Hàng đặt theo yêu cầu. Liên hệ để biết thời gian giao.',
   'ngung-ban': 'Sản phẩm đã ngừng kinh doanh. Liên hệ để được tư vấn mã thay thế.',
 } as const;
@@ -51,12 +57,65 @@ const equivalents = (d.equivalents ?? []).map((name) => {
   const match = activeProducts.find((p) => p.id !== product.id && norm(p.data.title) === norm(name));
   return { name, href: match ? `/${match.data.category}/${match.id}` : undefined };
 });
+// Khối "Xem thêm" cuối trang (thẻ có ảnh): danh mục, bảng giá, bài viết liên quan, rồi mã cùng danh mục
+// (ưu tiên cùng cấp VG/NLGI, sau đó cùng hãng).
+const baiLienQuan = (await getActivePosts())
+  .filter((b) => d.related_posts?.includes(b.id) || b.data.related_products?.includes(product.id))
+  .map(postPath);
+const capCua = (x: typeof d) => x.vg ?? x.nlgi;
+const cungDanhMuc = activeProducts
+  .filter((p) => p.id !== product.id && p.data.category === d.category)
+  .map((p) => ({ p, diem: (capCua(p.data) !== undefined && capCua(p.data) === capCua(d) ? 2 : 0) + (p.data.brand === d.brand ? 1 : 0) }))
+  .sort((a, b) => b.diem - a.diem)
+  .map(({ p }) => `/${p.data.category}/${p.id}`);
+const xemThem = [
+  { href: `/${d.category}`, tieuDe: categoryLabel },
+  ...(isThuyLuc ? ['/bao-gia-dau-thuy-luc'] : []),
+  // Mỡ: bảng giá mỡ; mỡ chịu nhiệt thêm hub mỡ bôi trơn (trang trụ cột của cả nhóm mỡ).
+  ...(d.category.startsWith('mo-') ? ['/bao-gia-mo-boi-tron'] : []),
+  ...(d.category === 'mo-chiu-nhiet' ? ['/mo-boi-tron-cong-nghiep'] : []),
+  ...baiLienQuan,
+  ...cungDanhMuc,
+];
+// Liên kết nội bộ cố định của trang sản phẩm (kế hoạch inlink 08/11/2026, docs/KE-HOACH-INLINK.md):
+// 1) Ngay dưới khung giá: về danh mục chính + trang có giá nhiều mã cùng loại (nếu danh mục đó có).
+// 2) Cuối bài: mã giá mềm hơn / phân khúc giá cao hơn (theo giá công khai mỗi lít/kg, cùng nhóm công dụng)
+//    và bài hướng dẫn kỹ thuật hợp với loại dầu. Link nào thân bài đã có thì không lặp lại.
+const tenLoai = categoryLabel.charAt(0).toLowerCase() + categoryLabel.slice(1);
+const trangGia = trangBaoGiaCua(d.category);
+const nhomSp = nhomCua(d);
+// Dầu động cơ / dầu cầu: chỉ xếp với mã cùng cấp SAE (nếu có mã cùng cấp), tránh đặt 15W-40 cạnh 20W-50.
+const cungSae = (x: typeof d) => !d.sae || !x.sae || x.sae.split(/[,/\s]+/).filter(Boolean).some((v) => d.sae!.includes(v));
+const cungNhomGia = activeProducts
+  .filter((p) => (nhomSp ? nhomCua(p.data) === nhomSp : p.data.category === d.category) && cungSae(p.data))
+  .map((p) => ({ id: p.id, danhMuc: p.data.category, p }));
+const soMaCungDanhMuc = activeProducts.filter((p) => p.data.category === d.category).length;
+const { reHon, caoHon } = phanKhucGia({ id: product.id, danhMuc: d.category, p: product }, cungNhomGia);
+const linkThanBai = new Set([...(product.body ?? '').matchAll(/\]\((\/[^)#\s]*)/g)].map((m) => m[1]));
+const BAI_THEO_DANH_MUC: Record<string, string[]> = {
+  'dau-thuy-luc': ['dau-thuy-luc-32-46-68-khac-nhau', 'huong-dan-thay-dau-thuy-luc', 'dau-thuy-luc-may-xuc', 'top-6-dau-thuy-luc-pho-bien-nhat'],
+  'thiet-bi-kiem-tra-dau': ['huong-dan-test-chat-luong-dau', 'test-nuoc-trong-dau-tai-hien-truong'],
+};
+const KHONG_TEST = ['mo-boi-tron-cong-nghiep', 'mo-chiu-nhiet', 'nuoc-lam-mat', 'thiet-bi-kiem-tra-dau'];
+// Danh mục có nhiều bài: xoay vòng theo slug sản phẩm để link chia đều cho các bài, không dồn vào một bài.
+const dsBai = BAI_THEO_DANH_MUC[d.category] ?? (KHONG_TEST.includes(d.category) ? [] : ['huong-dan-test-chat-luong-dau']);
+const lech = [...product.id].reduce((t, c) => t + c.charCodeAt(0), 0) % Math.max(dsBai.length, 1);
+const thuTuBai = [...dsBai.slice(lech), ...dsBai.slice(0, lech)];
+const tatCaBai = await getActivePosts();
+const baiGoiY = thuTuBai
+  .map((id) => tatCaBai.find((b) => b.id === id))
+  .filter((b): b is NonNullable<typeof b> => !!b)
+  .map((b) => ({ href: postPath(b), ten: b.data.title }))
+  .filter((b) => !linkThanBai.has(b.href))
+  .slice(0, 2);
 // So sánh với 2–4 mã cùng công dụng đang bán trên web (dầu thủy lực với dầu thủy lực, mỡ với mỡ…).
 const soSanh = bangSoSanh(product, activeProducts);
 // Mục lục: các mục cố định của template + tiêu đề H2 trong thân bài, đúng thứ tự trên trang.
 const coSpecs = !!d.specs?.length;
 const coUngDung = !!(d.applications?.length || d.not_for?.length);
 const coBaoQuan = !!(d.warnings?.length || d.storage || d.shelf_life);
+// Khối cuối bài B3a (QUY-TRINH-VIET-BAI-EEAT.md): bật khi trang khai báo nguon_tds (bảng nguồn TDS kèm ngày tra cứu).
+const coKhoiCuoi = !!d.nguon_tds?.length;
 const mucThongSo = [
   ...(coSpecs ? [{ depth: 2, slug: 'thong-so-ky-thuat', text: 'Thông số kỹ thuật điển hình' }] : []),
   ...(coUngDung ? [{ depth: 2, slug: 'ung-dung', text: 'Ứng dụng và khuyến cáo sử dụng' }] : []),
@@ -71,6 +130,7 @@ const tocItems = mucLuc([
   ...(soSanh ? [{ depth: 2, slug: 'so-sanh-cung-loai', text: `So sánh với các ${soSanh.tenNhom} khác` }] : []),
   ...(equivalents.length ? [{ depth: 2, slug: 'san-pham-tuong-duong', text: 'Sản phẩm tương đương' }] : []),
   ...(coBaoQuan ? [{ depth: 2, slug: 'bao-quan-an-toan', text: 'Bảo quản và an toàn' }] : []),
+  ...(coKhoiCuoi ? [{ depth: 2, slug: 'cach-viet-bai', text: 'Cách chúng tôi viết và cập nhật bài này' }] : []),
 ], { tat: d.muc_luc === false });
 // **đậm** trong tom_tat → <strong>, phần còn lại được escape.
 const dam = (t: string) =>
@@ -94,6 +154,11 @@ const offers = gia.rows.length
     }
   : undefined;
 const stockText = d.stock_status ? STOCK_TEXT[d.stock_status] : 'Liên hệ để nhận báo giá và kiểm tra tồn kho.';
+// Ba kho của HT VINA (17/11/2026): hiện dưới dòng "Có sẵn tại kho". Kho chính lấy từ BUSINESS, hai kho còn lại từ KHO_GIAO_HANG.
+const danhSachKho = [
+  { ten: 'Kho chính', diaChi: `${BUSINESS.streetAddress.replace('Đường ', '')}, ${BUSINESS.locality}, ${BUSINESS.region} (Hải Dương cũ)` },
+  ...KHO_GIAO_HANG.map((k) => ({ ten: k.name, diaChi: k.addressText })),
+];
 
 const crumbs = [
   { name: 'Trang chủ', href: '/' },
@@ -110,7 +175,7 @@ const authorName = tacGia ? tacGia.name : `${SITE_NAME} (${LEGAL_SHORT})`;
 const tenNgan = (p: NonNullable<typeof tacGia>) => p.bylineName ?? displayName(p);
 
 const additionalProperty = [
-  ...(grade ? [{ '@type': 'PropertyValue', name: d.vg ? 'Cấp độ nhớt' : 'Cấp NLGI', value: grade }] : []),
+  ...(grade ? [{ '@type': 'PropertyValue', name: d.vg ? 'Cấp độ nhớt' : 'Độ đặc/độ sệt NLGI', value: grade }] : []),
   ...(d.sae ? [{ '@type': 'PropertyValue', name: 'Cấp SAE', value: d.sae }] : []),
   ...(d.api ? [{ '@type': 'PropertyValue', name: 'Cấp API', value: d.api }] : []),
   ...(d.specs ?? []).map((s) => ({ '@type': 'PropertyValue', name: s.name, value: s.value, ...(s.method ? { description: s.method } : {}) })),
@@ -120,6 +185,7 @@ const additionalProperty = [
 const citation = [
   ...new Set([
     ...(d.tds_url ? [d.tds_url.startsWith('/') ? absUrl(d.tds_url) : d.tds_url] : []),
+    ...(d.nguon_tds ?? []).flatMap((t) => (t.url ? [t.url.startsWith('/') ? absUrl(t.url) : t.url] : [])),
     ...(d.specs ?? []).flatMap((s) => (s.method ? tachPhuongPhap(s.method) : []).flatMap((x) => [x.tc?.url, x.tc?.tcvnUrl])),
   ].filter((u): u is string => Boolean(u))),
 ];
@@ -202,6 +268,7 @@ const schemaData = [
           {ngay.modified && ngay.modified !== ngay.published && <> · Cập nhật ngày <time datetime={ngay.modified}>{ngay.modifiedText}</time></>}
           {' · '}<a href={personUrl(tacGia!)} rel="author">{tenNgan(tacGia!)}</a>
           {reviewer && reviewer.id !== tacGia?.id && <> · Duyệt nội dung: <a href={personUrl(reviewer)}>{tenNgan(reviewer)}</a></>}
+          {coKhoiCuoi && <> · <a href="#cach-viet-bai">Cách chúng tôi viết bài</a></>}
         </p>
         <div class="tags">
           {isThuyLuc && <a class="badge" href="/dau-thuy-luc">Dầu thủy lực</a>}
@@ -213,6 +280,7 @@ const schemaData = [
           {d.standards?.map((s) => <span class="badge badge-outline">{s}</span>)}
         </div>
         <p class="description">{d.description}</p>
+        {d.nlgi && <p class="giai-thich-nlgi"><strong>NLGI</strong> là thang đo độ đặc của mỡ, còn gọi là độ sệt; nhiều nơi cũng ngầm hiểu là độ cứng của mỡ. Thang NLGI đi từ 000 (gần như lỏng) đến 6 (rất cứng), số càng lớn mỡ càng đặc. NLGI 2 có độ đặc như bơ, dùng phổ biến nhất cho vòng bi.</p>}
         {d.doc_gia && <p class="doc-gia">{d.doc_gia}</p>}
         {d.tom_tat && d.tom_tat.length > 0 && (
           <div class="tom-tat">
@@ -234,17 +302,26 @@ const schemaData = [
 
         <div class="cta-box">
           <p class="status">{stockText}</p>
+          {d.stock_status === 'co-san' && (
+            <ul class="kho-list">
+              {danhSachKho.map((k) => <li><strong>{k.ten}:</strong> {k.diaChi}</li>)}
+            </ul>
+          )}
           {gia.rows.length > 0 && (
             <div class="gia">
               <p><strong>Giá tham khảo tháng {fmtNgay(gia.cauHinh.ngay_ra_soat, 'thang')} ({gia.cauHinh.gom_vat ? 'đã gồm VAT' : 'chưa VAT'}):</strong></p>
               <ul>
-                {gia.rows.map((r) => <li>{nhieuMa ? `${r.ten} – ${r.quy_cach}` : r.quy_cach}: {fmtVnd(r.thap)} – {fmtVnd(r.cao)} đ</li>)}
+                {gia.rows.map((r) => <li>{nhieuMa ? `${r.ten} – ${r.quy_cach}` : r.quy_cach}: {fmtKhoang(r.thap, r.cao)} đ</li>)}
               </ul>
-              <p class="gia-note">Giá thay đổi theo số lượng và nơi giao.{d.category === 'dau-thuy-luc' && <> Xem <a href="/bao-gia-dau-thuy-luc">bảng giá dầu thủy lực</a>.</>}</p>
+              <p class="gia-note">Giá thay đổi theo số lượng và nơi giao.</p>
             </div>
           )}
+          <p class="dieu-huong">
+            <a href={`/${d.category}`}>{soMaCungDanhMuc > 1 ? <>Xem nhiều hơn các {tenLoai} cùng loại →</> : <>Xem danh mục {tenLoai} →</>}</a>
+            {trangGia && <a href={trangGia.href}>{trangGia.chuSanPham} →</a>}
+          </p>
           <p class="cta-row">
-            <a href={`/bao-gia?sp=${encodeURIComponent(d.title)}`} class="btn-primary" data-track="add_to_quote">Nhận báo giá</a>
+            <NutBaoGia sp={d.title} danhMuc={d.category} kieu="link" class="btn-primary">Nhận báo giá</NutBaoGia>
             <span>hoặc gọi <a href={`tel:${BUSINESS.phone}`} data-track="click_tel">{BUSINESS.phoneDisplay}</a></span>
           </p>
           {(d.tds_url || d.sds_url) && (
@@ -304,8 +381,29 @@ const schemaData = [
           </ul>
         </>
       )}
-      <QuoteCta item={d.title} />
-      <p class="back-link">Xem thêm các sản phẩm khác trong danh mục <a href={`/${d.category}`}>{categoryLabel}</a>.</p>
+      {(reHon || caoHon || baiGoiY.length > 0) && (
+        <aside class="goi-y-chon" aria-label="Gợi ý chọn thêm">
+          <p class="goi-y-chon__tieu-de">Cân nhắc thêm trước khi chọn</p>
+          <ul>
+            {reHon && <li><strong>Muốn giá mềm hơn:</strong> <a href={`/${reHon.p.data.category}/${reHon.id}`}>{reHon.p.data.title}</a></li>}
+            {caoHon && <li><strong>Phân khúc giá cao hơn:</strong> <a href={`/${caoHon.p.data.category}/${caoHon.id}`}>{caoHon.p.data.title}</a></li>}
+            {baiGoiY.map((b) => <li><strong>Hướng dẫn:</strong> <a href={b.href}>{b.ten}</a></li>)}
+          </ul>
+          {(reHon || caoHon) && <p class="goi-y-chon__ghi-chu">Xếp theo giá thấp nhất mỗi {d.category.startsWith('mo-') ? 'kg' : 'lít'} trên bảng giá công khai của HT VINA; giá cao hơn không có nghĩa là hợp với máy của bạn hơn, hãy chọn theo cấp và tiêu chuẩn máy yêu cầu.</p>}
+        </aside>
+      )}
+      {coKhoiCuoi && tacGia && reviewer && (
+        <CachVietBai tacGia={tacGia} nguoiDuyet={reviewer} ngayGia={gia.rows.length ? gia.cauHinh.ngay_ra_soat : undefined} ngayCapNhat={ngay.modified ?? ngay.published!}>
+          <div class="table-wrap" slot="nguon"><table>
+            <thead><tr><th>Tài liệu</th><th>Bản hoặc ngày phát hành</th><th>Ngày tra cứu</th><th>Liên kết</th></tr></thead>
+            <tbody>{d.nguon_tds!.map((t) => <tr><td>{t.ten}</td><td>{t.ban}</td><td>{t.tra}</td><td>{t.url ? <a href={t.url} rel="noopener" target="_blank">Mở tài liệu</a> : '–'}</td></tr>)}</tbody>
+          </table></div>
+        </CachVietBai>
+      )}
+      <QuoteCta item={d.title} danhMuc={d.category} />
+      {coKhoiCuoi && <ChinhSachGiaKho />}
+      {coKhoiCuoi && <ThongTinDoanhNghiep />}
+      <XemThem muc={xemThem} boQua={[pagePath]} toiDa={4} />
     </section>
     </NoiDungBai>
   </div>
@@ -317,6 +415,7 @@ const schemaData = [
   .product-top { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-bottom: 30px; background: white; padding: clamp(20px, 4vw, 40px); border-radius: 8px; border: 1px solid var(--border-color); }
   @media (max-width: 860px) { .product-top { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
 
+  .giai-thich-nlgi { font-size: 0.92rem; color: var(--color-text-light, #555); border-left: 3px solid var(--color-primary); padding: 4px 0 4px 10px; margin: 8px 0 12px; }
   .product-summary h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); color: var(--color-primary); margin-bottom: 15px; line-height: 1.25; }
   .tags { margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 6px; }
   .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
@@ -335,6 +434,15 @@ const schemaData = [
   .gia ul { margin: 4px 0 4px 20px; }
   .gia p { margin: 4px 0; }
   .gia-note { font-size: 0.9rem; }
+  .dieu-huong { display: flex; flex-direction: column; gap: 6px; margin: 4px 0 14px; font-size: 0.95rem; }
+  .dieu-huong a { color: var(--color-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+  .dieu-huong a:hover { color: var(--color-accent); }
+  .goi-y-chon { background: #f8fafc; border: 1px solid var(--border-color); border-left: 4px solid var(--color-accent); border-radius: 8px; padding: 16px 18px; margin: 28px 0 8px; }
+  .goi-y-chon__tieu-de { font-weight: 700; color: var(--color-primary); margin-bottom: 8px; }
+  .goi-y-chon ul { margin: 0 0 0 20px; }
+  .goi-y-chon li { margin-bottom: 6px; }
+  .goi-y-chon a { color: var(--color-accent); text-decoration: underline; }
+  .goi-y-chon__ghi-chu { font-size: 0.85rem; color: var(--color-text-light); margin-top: 8px; }
   .docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 16px; }
   .btn-outline { display: block; text-align: center; padding: 10px; border: 1px solid var(--border-color); border-radius: 6px; background: white; font-size: 0.9rem; }
   .btn-outline:hover { background: #f1f5f9; }
@@ -355,16 +463,16 @@ const schemaData = [
   .byline { font-size: 0.85rem; color: var(--color-text-light); margin: -4px 0 12px; }
   .byline a { color: inherit; }
   .note { margin-top: 10px; font-size: 0.9rem; color: var(--color-text-light); }
-  .back-link { margin-top: 24px; }
   .product-content > ul { margin: 0 0 16px 20px; }
   .product-content > ul li { margin-bottom: 6px; }
-  .back-link a { color: var(--color-accent); text-decoration: underline; }
 
   :global(.markdown-body h3) { margin: 20px 0 10px; color: var(--color-primary); }
   :global(.markdown-body p) { margin-bottom: 12px; }
   :global(.markdown-body ul) { margin-left: 20px; margin-bottom: 20px; }
   :global(.markdown-body li) { margin-bottom: 8px; }
   :global(.markdown-body blockquote) { margin: 16px 0 20px; padding: 12px 16px; background: #fff7ed; border-left: 4px solid var(--color-accent); border-radius: 4px; }
+  .kho-list { margin: -4px 0 12px 18px; font-size: .9rem; line-height: 1.5; }
+  .kho-list li { margin-bottom: 2px; }
   :global(.markdown-body blockquote p:last-child) { margin-bottom: 0; }
   :global(.markdown-body table) { border-collapse: collapse; width: 100%; font-size: 0.95rem; margin: 8px 0 16px; display: block; overflow-x: auto; }
   :global(.markdown-body th), :global(.markdown-body td) { border: 1px solid var(--border-color); padding: 8px 12px; text-align: left; vertical-align: top; }

@@ -56,7 +56,7 @@ updated: "2026-10-06"
 
 - **Quy cách:** xô 18–20 lít, phuy 200–209 lít. Quy cách tùy mã hàng.
 - **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS.
-- **Tư vấn:** gửi loại máy, vật liệu gia công chính, dung tích bồn và loại dầu đang dùng. Có hỗ trợ kiểm tra nồng độ và pH dung dịch tại xưởng.
+- **Tư vấn:** gửi loại máy, vật liệu gia công chính, dung tích thùng và loại dầu đang dùng. Có hỗ trợ kiểm tra nồng độ và pH dung dịch tại xưởng.
 
 **Nhận báo giá dầu cắt gọt:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**.
 
@@ -68,7 +68,7 @@ Theo khuyến cáo trên TDS cho từng nguyên công. Thường là 4–8% cho 
 
 ### Vì sao dung dịch tưới nguội bốc mùi hôi?
 
-Do vi khuẩn phát triển. Nguyên nhân thường gặp là nồng độ quá thấp, váng dầu rò rỉ phủ kín mặt bồn, máy dừng lâu ngày không tuần hoàn, hoặc bồn bẩn. Cách xử lý: vớt váng dầu, chỉnh nồng độ, cho dung dịch tuần hoàn khi nghỉ dài ngày. Nếu dung dịch đã hỏng nặng thì xả, vệ sinh bồn bằng chất tẩy rửa hệ thống rồi pha mới.
+Do vi khuẩn phát triển. Nguyên nhân thường gặp là nồng độ quá thấp, váng dầu rò rỉ phủ kín mặt thùng, máy dừng lâu ngày không tuần hoàn, hoặc thùng bẩn. Cách xử lý: vớt váng dầu, chỉnh nồng độ, cho dung dịch tuần hoàn khi nghỉ dài ngày. Nếu dung dịch đã hỏng nặng thì xả, vệ sinh thùng bằng chất tẩy rửa hệ thống rồi pha mới.
 
 ### Khi nào nên dùng dầu cắt gọt không pha nước?
 

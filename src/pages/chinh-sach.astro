@@ -1,0 +1,42 @@
+---
+// Trang tổng hợp chính sách (người dùng yêu cầu 22/11/2026): khối "Thông tin doanh nghiệp" cuối trang sản phẩm,
+// báo giá chỉ dẫn một link tới đây thay cho 6 link chính sách riêng lẻ.
+import PolicyPage from '../components/PolicyPage.astro';
+import { POLICY_LINKS, LEGAL_NAME, TAX_ID } from '../lib/site';
+
+// Mô tả ngắn từng trang, viết theo nội dung hiện có của trang đó. Thứ tự theo POLICY_LINKS.
+const MO_TA: Record<string, string> = {
+  '/chinh-sach-giao-hang': 'Miễn phí vận chuyển trong 80 km từ kho gần nhất, đơn từ 3 phuy miễn phí tới 150 km, giao trong ngày các KCN gần kho, cách kiểm hàng khi nhận.',
+  '/chinh-sach-thanh-toan': 'Cách báo giá, thanh toán chuyển khoản hoặc tiền mặt, thanh toán theo hợp đồng cho doanh nghiệp và xuất hóa đơn VAT điện tử.',
+  '/chinh-sach-doi-tra': 'Đổi trả trong 7 ngày khi giao sai hàng, hư hỏng do vận chuyển hoặc lỗi chất lượng của nhà sản xuất; điều kiện, hoàn tiền và điều chỉnh hóa đơn.',
+  '/privacy-policy': 'Dữ liệu cá nhân thu thập khi bạn gửi yêu cầu báo giá hoặc truy cập website, mục đích sử dụng, thời gian lưu và quyền của bạn.',
+  '/terms-of-service': 'Phạm vi thông tin sản phẩm và thông số kỹ thuật, giá và báo giá, nhãn hiệu, giới hạn trách nhiệm và luật áp dụng khi dùng website.',
+  '/tuy-chon-cookie': 'Website dùng những cookie nào; bật hoặc tắt cookie thống kê Google Analytics và cookie quảng cáo Google Ads.',
+  '/quy-trinh-bien-tap': 'Ai viết, ai kiểm duyệt nội dung; cách đối chiếu TDS của hãng và tiêu chuẩn ASTM, ISO, TCVN, cách lập khoảng giá, ghi ngày cập nhật và sửa lỗi.',
+};
+---
+
+<PolicyPage
+  path="/chinh-sach"
+  title="Chính sách"
+  seoTitle="Chính Sách Mua Hàng, Giao Hàng, Đổi Trả – Dầu Công Nghiệp HP"
+  description="Tổng hợp chính sách của HT VINA: giao hàng, thanh toán, đổi trả, bảo mật, điều khoản sử dụng, tùy chọn cookie và quy trình biên soạn nội dung."
+  updated="2026-11-22"
+  anChinhSachKhac
+>
+  <p>Các chính sách dưới đây áp dụng cho đơn hàng đặt với {LEGAL_NAME} (MST {TAX_ID}) qua website, điện thoại hoặc Zalo, và cho việc sử dụng website này.</p>
+  <ul class="ds-chinh-sach">
+    {POLICY_LINKS.map((l) => (
+      <li>
+        <a href={l.href} rel={l.rel}><strong>{l.label}</strong></a>
+        {MO_TA[l.href] && <p>{MO_TA[l.href]}</p>}
+      </li>
+    ))}
+  </ul>
+</PolicyPage>
+
+<style>
+  .ds-chinh-sach { list-style: none; margin: 0 !important; padding: 0; }
+  .ds-chinh-sach li { padding: 14px 0; border-top: 1px solid var(--border-color); margin: 0 !important; }
+  .ds-chinh-sach p { margin: 4px 0 0 !important; color: var(--color-text-light); }
+</style>

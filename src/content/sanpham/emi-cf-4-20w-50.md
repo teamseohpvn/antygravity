@@ -98,7 +98,7 @@ EMI CF-4 20W-50 thường được mua cho máy đã chạy lâu. Câu hỏi hay
 | Khói xanh ở máy chạy non tải nhiều (máy phát, máy bơm) | Thành xi lanh bị bóng | Ít tác dụng; cho máy chạy đủ tải định kỳ |
 | Dầu bị đẩy ra lỗ thông hơi các-te | Lọt khí nhiều, ống thông hơi tắc | Không; kiểm tra hệ thông hơi các-te |
 
-Căn cứ: dầu 20W-50 có độ nhớt ở nhiệt độ làm việc cao hơn dầu 15W-40, nên màng dầu dày hơn ở khe hở đã rộng. Nhưng dầu không phục hồi được chi tiết đã mòn. Hãy dùng EMI CF-4 20W-50 như một giải pháp kinh tế để máy cũ chạy tiếp tới kỳ đại tu, và theo dõi lượng dầu châm thêm mỗi tuần: lượng này tăng nhanh là lúc nên lên lịch sửa máy.
+Căn cứ: dầu 20W-50 có độ nhớt ở nhiệt độ làm việc cao hơn dầu 15W-40, nên màng dầu dày hơn ở khe hở đã rộng. Nhưng dầu không phục hồi được chi tiết đã mòn. Hãy dùng EMI CF-4 20W-50 như một giải pháp kinh tế để máy cũ chạy tiếp tới kỳ đại tu, và theo dõi lượng dầu thêm vào mỗi tuần: lượng này tăng nhanh là lúc nên lên lịch sửa máy.
 
 ## Khi nào cần thay dầu?
 

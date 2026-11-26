@@ -118,7 +118,7 @@ Nhiều đội xe tải, xe ben ở miền Bắc có cả xe đời cũ (yêu c�
 
 Căn cứ: cấp API mới hơn được thiết kế để dùng thay cho cấp cũ hơn trong cùng nhóm diesel, trong khi dầu CF-4 không được thử với khí xả tuần hoàn (EGR) làm muội than tăng. Đó là lý do trang này không khuyên CRB CF-4 cho máy có EGR.
 
-**Lời khuyên của chúng tôi:** với đội xe trộn lẫn, rủi ro lớn nhất không phải là chất lượng dầu mà là **đổ nhầm**. Nếu trữ hai loại, hãy sơn màu nắp thùng hoặc dán nhãn biển số xe dùng loại nào ngay tại chỗ châm dầu.
+**Lời khuyên của chúng tôi:** với đội xe trộn lẫn, rủi ro lớn nhất không phải là chất lượng dầu mà là **đổ nhầm**. Nếu trữ hai loại, hãy sơn màu nắp thùng hoặc dán nhãn biển số xe dùng loại nào ngay tại chỗ nạp dầu.
 
 ## Nhiên liệu không đều: dầu CF-4 giúp được gì? {#nhien-lieu}
 

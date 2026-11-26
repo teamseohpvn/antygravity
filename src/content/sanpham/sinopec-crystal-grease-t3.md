@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-011"
 active: true   # Bật 05/11/2026 theo yêu cầu người dùng, ảnh và TDS do người dùng cung cấp
-title: "Mỡ Sinopec Crystal Grease T3 (No.T3)"
+title: "Mỡ Sinopec Crystal Grease T3 (No.T3, độ đặc giữa NLGI 3 và 4)"
 seo_title: "Mỡ Sinopec Crystal Grease T3 – Xô 17 kg, Phuy 180 kg"
 description: "Mỡ Sinopec Crystal Grease T3 gốc lithium, đặc hơn NLGI 3, độ xuyên kim 200–230, làm việc -20 đến 120 °C. Có sẵn xô 17 kg, phuy 180 kg, giao từ Hải Phòng."
 keywords: ["sinopec crystal grease t3", "crystal grease no t3", "mỡ sinopec t3", "mỡ crystal t3", "mỡ sinopec", "mỡ bò sinopec"]
@@ -15,7 +15,7 @@ base_oil: "Dầu khoáng tinh chế, chất làm đặc xà phòng lithium"
 standards: ["GB 7324"]
 
 specs:
-  - { name: "Cấp độ đặc theo TDS", value: "NLGI T3" }
+  - { name: "Độ đặc/độ sệt theo TDS", value: "NLGI T3" }
   - { name: "Chất làm đặc", value: "Xà phòng lithium" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "9–13 cSt", method: "ASTM D445" }
   - { name: "Độ xuyên kim ở 25 °C, sau 60 lần giã", value: "200–230 (0,1 mm)", method: "ASTM D217" }
@@ -58,7 +58,7 @@ images:
 
 doc_gia: "Trang này dành cho tổ bảo trì đang dùng mỡ NLGI 3 nhưng mỡ vẫn chảy khỏi ổ, cần mỡ lithium đặc hơn."
 tom_tat:
-  - "**T3 đặc hơn NLGI 3:** độ xuyên kim 200–230, trong khi cấp NLGI 3 của cùng dòng là 220–250."
+  - "**T3 đặc hơn NLGI 3:** độ xuyên kim 200–230, trong khi loại NLGI 3 của cùng dòng là 220–250."
   - "**Dùng được** cho vòng bi, trục lăn, ổ trượt tải thường, từ -20 °C đến 120 °C."
   - "**Không dùng** cho hệ bơm mỡ tập trung, ổ tải nặng hoặc ổ nóng trên 120 °C."
   - "**Có sẵn tại kho** xô 17 kg, phuy 180 kg, sản xuất tại Singapore."
@@ -67,20 +67,22 @@ date: "2026-11-05"
 updated: "2026-11-05"
 ---
 
-**Sinopec Crystal Grease T3** (nhãn phuy ghi **No.T3**) là cấp đặc nhất của dòng mỡ lithium đa dụng Crystal Grease. Mỡ có cùng chất làm đặc, dầu gốc và nhiệt độ làm việc -20 °C đến 120 °C với [Crystal Grease NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3), nhưng cứng hơn và tách dầu ít hơn trong phép thử của hãng.
+**Sinopec Crystal Grease T3** (nhãn phuy ghi **No.T3**) là loại đặc nhất của dòng mỡ lithium đa dụng Crystal Grease. Mỡ có cùng chất làm đặc, dầu gốc và nhiệt độ làm việc -20 °C đến 120 °C với [Crystal Grease NLGI 3](/mo-boi-tron-cong-nghiep/sinopec-crystal-grease-nlgi-3), nhưng cứng hơn và tách dầu ít hơn trong phép thử của hãng.
 
 Mã này **có sẵn tại kho** theo **xô 17 kg** và **phuy 180 kg**, có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT.
 
-## T3 là gì, có phải một cấp NLGI riêng không? {#t3-la-gi}
+## T3 là gì, có phải một mức độ đặc NLGI riêng không? {#t3-la-gi}
 
-Thang NLGI thông dụng chỉ có các cấp số như 2, 3, 4, không có cấp "T3". T3 là cách Sinopec gọi một cấp trong dòng Crystal, và TDS chỉ ghi độ xuyên kim của cấp này là 200–230. Dải đó nằm giữa hai cấp NLGI:
+Thang NLGI thông dụng chỉ có các mức như 2, 3, 4, không có mức "T3". T3 là cách Sinopec gọi một loại trong dòng Crystal, và TDS chỉ ghi độ xuyên kim của loại này là 200–230. Dải đó nằm giữa hai mức độ đặc NLGI:
 
-| Cấp | Độ xuyên kim sau giã (0,1 mm) | Nguồn |
+| Loại | Độ xuyên kim sau giã (0,1 mm) | Nguồn |
 | :--- | :--- | :--- |
 | NLGI 2 | 265–295 | Thang NLGI |
 | NLGI 3 | 220–250 | Thang NLGI, TDS Crystal NLGI 3 |
 | **Crystal T3** | **200–230** | **TDS Crystal Grease** |
 | NLGI 4 | 175–205 | Thang NLGI |
+
+Cách đọc thang NLGI và chọn độ đặc cho từng vị trí bôi trơn có ở trang [mỡ bôi trơn](/mo-boi-tron-cong-nghiep).
 
 Số càng nhỏ thì mỡ càng đặc. Vì vậy, khi tài liệu máy yêu cầu đúng NLGI 3 hoặc NLGI 4, bạn **không nên coi T3 là tương đương chính xác**. Hãy so độ xuyên kim hoặc hỏi hãng máy trước.
 
@@ -93,6 +95,7 @@ Số càng nhỏ thì mỡ càng đặc. Vì vậy, khi tài liệu máy yêu c�
 | Hệ bơm mỡ tập trung | Không dùng T3. Xem [VHP Lithium Grease L00, L0](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) |
 | Ổ tải nặng, va đập | Không dùng T3. Xem [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2) |
 | Moay ơ xe yêu cầu NLGI 2 | Không dùng T3. Theo đúng tài liệu của xe |
+| Ổ bi nóng liên tục trên 120 °C | Không dùng T3. Xem [mỡ chịu nhiệt](/mo-chiu-nhiet) |
 
 Trước khi đổi mỡ vì chảy, bạn hãy kiểm tra phớt, lượng mỡ bơm và nhiệt độ ổ. Bơm quá nhiều cũng làm mỡ trào ra, và khi đó mỡ đặc hơn không xử lý được nguyên nhân.
 
@@ -116,6 +119,8 @@ Trước khi đổi mỡ vì chảy, bạn hãy kiểm tra phớt, lượng mỡ
 | Chất làm đặc | Lithium | Lithium | Lithium và canxi | Canxi tổng hợp |
 | Nhiệt độ làm việc | -20 đến 120 °C | -10 đến 120 °C | -10 đến 120 °C | -10 đến 100 °C |
 | Có sẵn | Xô 17 kg, phuy 180 kg | Xô 17 kg | Xô 15 kg | Phuy 180 kg |
+
+Giá theo kg của các mã mỡ đặc này có trong [bảng giá mỡ bôi trơn](/bao-gia-mo-boi-tron).
 
 Bốn mã dùng các phương pháp thử khác nhau, nên bảng này chỉ so những gì TDS ghi rõ, không so nhiệt độ nhỏ giọt.
 
@@ -148,17 +153,18 @@ Theo [SKF](https://www.skf.com/us/products/rolling-bearings/principles-of-rollin
 TDS không ghi mốc thời gian. Bạn hãy theo chu kỳ trong tài liệu kèm theo máy và rút ngắn khi vỏ ổ nóng trên 70 °C. Khi mỡ đổi màu, có mùi khét hoặc lẫn nước thì thay sớm hơn.
 
 ### Crystal T3 có thay được cho mỡ NLGI 4 không?
-Không nên coi là tương đương. Dải 200–230 của T3 mềm hơn phần lớn dải NLGI 4 (175–205). Nếu ổ bắt buộc dùng NLGI 4, hãy chọn mã ghi đúng cấp đó như [VHP Lithium L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) hoặc hỏi hãng máy.
+Không nên coi là tương đương. Dải 200–230 của T3 mềm hơn phần lớn dải NLGI 4 (175–205). Nếu ổ bắt buộc dùng NLGI 4, hãy chọn mã ghi đúng độ đặc đó như [VHP Lithium L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) hoặc hỏi hãng máy.
 
 ### Crystal T3 có bơm được bằng súng tay không?
 TDS không nói về việc này. Mỡ càng đặc thì bơm càng nặng tay, nhất là khi trời lạnh. Bạn nên thử trên súng và đường dẫn đang dùng trước khi đổi cả loạt điểm bôi trơn.
 
 ### Crystal T3 có trộn được với Crystal NLGI 3 không?
-Hai cấp cùng dòng, cùng chất làm đặc lithium và dầu gốc khoáng, nên rủi ro thấp hơn trộn khác gốc. TDS không nêu riêng việc trộn, nên khi đổi cấp, tốt nhất là đẩy mỡ cũ ra trước.
+Hai loại cùng dòng, cùng chất làm đặc lithium và dầu gốc khoáng, nên rủi ro thấp hơn trộn khác gốc. TDS không nêu riêng việc trộn, nên khi đổi loại, tốt nhất là đẩy mỡ cũ ra trước.
 
 ## Quy cách đóng gói, đơn hàng {#don-hang}
 
 - **Quy cách:** xô 17 kg và phuy 180 kg có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Crystal%20Grease%20T3) kèm số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

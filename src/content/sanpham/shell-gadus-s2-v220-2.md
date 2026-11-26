@@ -1,7 +1,7 @@
 ---
 ma: "SP-MO-001"
 active: true   # Bật 12/10/2026; chuyển sang có sẵn tại kho 14/10/2026
-title: "Shell Gadus S2 V220 2"
+title: "Mỡ Shell Gadus S2 V220 2 (NLGI 2)"
 seo_title: "Shell Gadus S2 V220 2 – Mỡ Bò Chịu Cực Áp Xô 18kg"
 description: "Mỡ Shell Gadus S2 V220 2 gốc lithium, chịu cực áp, chống nước, làm việc -20 đến 130 °C cho vòng bi, ổ trượt. Xô 18 kg, có CO/CQ, VAT, giao Hải Phòng."
 keywords: ["shell gadus s2 v220 2", "gadus s2 v220 2", "mỡ shell gadus", "mỡ gadus s2", "shell gadus s2 v220"]
@@ -13,7 +13,7 @@ nlgi: "2"
 base_oil: "Dầu gốc khoáng chỉ số độ nhớt cao, chất làm đặc xà phòng lithium hydroxystearate"
 
 specs:
-  - { name: "Cấp NLGI", value: "2" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "2" }
   - { name: "Loại xà phòng", value: "Lithium" }
   - { name: "Độ nhớt dầu gốc ở 40 °C", value: "220 cSt", method: "ASTM D445" }
   - { name: "Độ nhớt dầu gốc ở 100 °C", value: "19 cSt", method: "ASTM D445" }
@@ -46,7 +46,7 @@ storage: "Để xô trong nhà, đậy kín nắp, tránh bụi và nước lọ
 
 images:
   - { src: "/images/san-pham/shell-gadus-s2-v220-2-xo-18kg.webp", alt: "Xô 18 kg mỡ bò Shell Gadus S2 V220 2, nhãn vàng ghi rõ tên mã và khối lượng 18 kg" }
-  - { src: "/images/san-pham/shell-gadus-s2-v220-2-nhan.webp", alt: "Nhãn xô Shell Gadus S2 V220 2 ghi cấp NLGI 2" }
+  - { src: "/images/san-pham/shell-gadus-s2-v220-2-nhan.webp", alt: "Nhãn xô Shell Gadus S2 V220 2 ghi NLGI 2" }
   - { src: "/images/san-pham/shell-gadus-s2-v220-2-mau-mo.webp", alt: "Màu và độ đặc của mỡ Shell Gadus S2 V220 2 khi mở nắp xô" }
 
 doc_gia: "Trang này dành cho nhà máy cần mỡ lithium chịu cực áp cho ổ bi băng tải, sàng rung, máy nghiền và xe vận tải."
@@ -60,9 +60,9 @@ date: "2026-10-12"
 updated: "2026-10-30"
 ---
 
-**Shell Gadus S2 V220 2** là mỡ bôi trơn đa dụng chịu cực áp (EP) của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng lithium hydroxystearate. Mỡ dùng cho vòng bi, ổ trượt, bản lề và bề mặt trượt trong hầu hết các ngành công nghiệp và vận tải. Tên cũ của dòng này là Shell Alvania EP(LF) 2 và Shell Retinax EP 2.
+**Shell Gadus S2 V220 2** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng chịu cực áp (EP) của Shell. Mỡ pha từ dầu gốc khoáng chỉ số độ nhớt cao, làm đặc bằng xà phòng lithium hydroxystearate. Mỡ dùng cho vòng bi, ổ trượt, bản lề và bề mặt trượt trong hầu hết các ngành công nghiệp và vận tải. Tên cũ của dòng này là Shell Alvania EP(LF) 2 và Shell Retinax EP 2.
 
-Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VAT. Hàng giao từ ba kho của HT VINA ở Thanh Bình (Hải Dương cũ), Kiến An (TP Hải Phòng) và Như Quỳnh (Hưng Yên).
 
 ## Gadus S2 V220 2 có hợp với điểm bôi trơn của bạn không?
 
@@ -92,11 +92,13 @@ Mã này **có sẵn tại kho** theo **xô 18 kg**, có CO/CQ và hóa đơn VA
 | Nhiệt độ làm việc | -20 đến 130 °C | -20 đến 140 °C (đỉnh 150 °C) |
 | Dùng cho | Ổ bi, ổ trượt đa dụng | Ổ bi nóng, tải nặng, rung mạnh |
 
+Hai mã Shell chênh nhau bao nhiêu mỗi kg, bạn xem ở [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron).
+
 > **Nhận định của HT VINA:** Ổ bi dưới khoảng 120 °C thì Gadus S2 là đủ và tiết kiệm hơn. Ổ bi quạt lò, con lăn lò sấy chạy nóng liên tục thì dùng Gadus S3.
 
 ## Gadus S2 hay mỡ lithium VHP?
 
-[VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) cùng gốc lithium, cùng dầu gốc 220 cSt, có sẵn cấp L4 xô 17 kg. Khác biệt chính: Gadus S2 có phụ gia cực áp theo TDS Shell; TDS Shell Việt Nam không ghi tải 4 bi nên không so được bằng số với mức 200 kg của VHP.
+[VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) cùng gốc lithium, cùng dầu gốc 220 cSt, có sẵn loại L4 xô 17 kg. Khác biệt chính: Gadus S2 có phụ gia cực áp theo TDS Shell; TDS Shell Việt Nam không ghi tải 4 bi nên không so được bằng số với mức 200 kg của VHP.
 
 > **Nhận định của HT VINA:** Ổ bi tải thường cần mỡ ngay thì dùng VHP Lithium Grease có sẵn. Ổ bi chịu va đập (sàng rung, máy nghiền) nên đặt Gadus S2 để có phụ gia cực áp.
 
@@ -116,7 +118,7 @@ Gadus S2 V220 2 hay được chọn cho vòng bi động cơ điện, quạt, b�
 | Dưới 70 °C | Theo mốc của hãng động cơ |
 | Khoảng 85 °C | Còn khoảng một nửa |
 | Khoảng 100 °C | Còn khoảng một phần tư |
-| Trên 120 °C kéo dài | Nên chuyển sang mỡ chịu nhiệt cao hơn như [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2) |
+| Trên 120 °C kéo dài | Nên chuyển sang [mỡ chịu nhiệt](/mo-chiu-nhiet) cao hơn như [Shell Gadus S3 V220C 2](/mo-chiu-nhiet/shell-gadus-s3-v220c-2) |
 
 **Lời khuyên của chúng tôi:** mua một súng đo nhiệt hồng ngoại, đo vỏ ổ mỗi tháng và ghi vào sổ. Ổ nóng lên rõ ngay sau khi bơm mỡ là dấu hiệu đã bơm thừa: tháo nút xả, cho động cơ chạy để mỡ thừa thoát ra, đừng bơm thêm.
 
@@ -138,7 +140,7 @@ Shell khuyến cáo: ổ bi chạy gần nhiệt độ tối đa thì nên rút 
 ## Câu hỏi thường gặp
 
 ### NLGI 2 nghĩa là gì?
-NLGI là thang độ đặc của mỡ, từ 000 (rất lỏng) đến 6 (rất cứng). Cấp 2 có độ đặc như bơ, là cấp phổ biến nhất cho ổ bi và vú mỡ bơm bằng súng.
+NLGI là thang độ đặc của mỡ, từ 000 (rất lỏng) đến 6 (rất cứng). NLGI 2 có độ đặc như bơ, là độ đặc phổ biến nhất cho ổ bi và vú mỡ bơm bằng súng.
 
 ### Gadus S2 V220 2 có trộn với mỡ khác được không?
 Chỉ nên trộn với mỡ cùng gốc lithium. Trộn với mỡ gốc khác như canxi, polyurea hay bentonite có thể làm mỡ chảy lỏng hoặc vón cục. Khi đổi loại mỡ, nên làm sạch mỡ cũ trong ổ bi.
@@ -150,6 +152,6 @@ Thường là do bơm quá nhiều mỡ vào ổ quay nhanh. Mỡ thừa bị nh
 
 - **Quy cách:** xô 18 kg, có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Shell%20Gadus%20S2%20V220%202) kèm số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

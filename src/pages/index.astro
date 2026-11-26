@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import PromoBanner from '../components/PromoBanner.astro';
+import MuaHangMinhBach from '../components/MuaHangMinhBach.astro';
 import { getActiveProducts, getActiveCategories, getActivePosts, postPath } from '../lib/content';
 import { AREA_TEXT, BRANDS, KCN_NEAR, KCN_FAR, publicImageExists, webpSrcset, productImages } from '../lib/site';
 
@@ -18,10 +19,10 @@ const grade = (p: (typeof products)[number]) =>
 ---
 
 <Layout
-  title="Dầu Nhớt Công Nghiệp, Mỡ Bôi Trơn Chính Hãng"
-  seoTitle="Dầu Nhớt Công Nghiệp, Mỡ Bôi Trơn – Hải Phòng (Hải Dương cũ)"
+  title="Phân Phối Dầu Nhớt Công Nghiệp Miền Bắc"
+  seoTitle="Dầu Nhớt, Dầu Mỡ Công Nghiệp Hải Phòng – Tổng Kho Miền Bắc"
   description="Dầu thủy lực, mỡ bò, dầu bánh răng, dầu máy nén khí Shell, Castrol, Mobil cho nhà máy. Kho tại TP Hải Phòng (Hải Dương cũ). Có CO/CQ, VAT, báo giá sỉ."
-  image="/images/hero-trang-chu.webp"
+  image="/images/og-kho-ht-vina.jpg"
 >
   <section class="hero">
     <img
@@ -36,8 +37,8 @@ const grade = (p: (typeof products)[number]) =>
       decoding="async"
     />
     <div class="container hero-content">
-      <h1>Dầu nhớt công nghiệp và mỡ bôi trơn chính hãng cho nhà máy</h1>
-      <p>Kho tại {AREA_TEXT}. Dầu thủy lực, mỡ bò, dầu bánh răng, dầu truyền nhiệt, dầu máy nén khí {BRANDS.slice(0, 4).join(', ')}. Có CO/CQ, hóa đơn VAT, tư vấn chọn sản phẩm tương đương. Giao tại các KCN Hải Phòng và các tỉnh miền Bắc.</p>
+      <h1>Phân Phối Dầu Nhớt Công Nghiệp: Hải Phòng – Hải Dương – Hưng Yên – Hà Nội</h1>
+      <p>3 kho tại {AREA_TEXT}, 145 Quán Trữ (Kiến An) và Như Quỳnh (Hưng Yên). <a href="/dau-thuy-luc">Dầu thủy lực</a>, <a href="/mo-boi-tron-cong-nghiep">mỡ bôi trơn (mỡ bò)</a>, dầu bánh răng, dầu truyền nhiệt, dầu máy nén khí {BRANDS.slice(0, 4).join(', ')}. Có CO/CQ, hóa đơn VAT, tư vấn chọn sản phẩm tương đương. Giao tại các KCN Hải Phòng và các tỉnh miền Bắc.</p>
       <div class="hero-actions">
         <a href="/bao-gia" class="btn-primary" data-track="add_to_quote">Nhận báo giá sỉ</a>
         <a href="/dau-thuy-luc" class="btn-secondary">Xem dầu thủy lực</a>
@@ -77,10 +78,13 @@ const grade = (p: (typeof products)[number]) =>
     <ul class="why-grid">
       <li><strong>Hàng chính hãng, đủ giấy tờ</strong><span>CO/CQ theo lô, hóa đơn VAT, TDS và SDS cho hồ sơ mua hàng.</span></li>
       <li><strong>Tư vấn sản phẩm tương đương</strong><span>Đối chiếu {BRANDS.join(', ')} theo cấp độ nhớt và tiêu chuẩn.</span></li>
+      <li><strong>Giá công khai theo khoảng</strong><span>Xem <a href="/bao-gia-dau-thuy-luc">bảng giá dầu thủy lực</a> và <a href="/bao-gia-mo-boi-tron">bảng giá mỡ bôi trơn</a> theo hãng và quy cách, có ghi ngày rà soát.</span></li>
       <li><strong>Kho tại Hải Dương cũ, giao nhanh KCN lân cận</strong><span>Phục vụ KCN {KCN_NEAR.slice(0, 3).join(', ')}, và {KCN_FAR.slice(0, 4).join(', ')}.</span></li>
     </ul>
     <QuoteCta />
   </section>
+
+  <MuaHangMinhBach />
 
   {products.length > 0 && (
     <section class="products container" aria-labelledby="prod-title">

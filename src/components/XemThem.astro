@@ -1,0 +1,17 @@
+---
+// Khối "Xem thêm" dạng thẻ có ảnh (ảnh + tên bài + link). Style chung trong Layout.astro.
+// muc: danh sách đường dẫn (hoặc {href, tieuDe}); trang tắt và trang hiện tại tự bị bỏ.
+import { theXemThem, htmlLuoiThe } from '../lib/xem-them';
+
+interface Props {
+  muc: (string | { href: string; tieuDe?: string })[];
+  boQua?: string[];
+  tieuDe?: string;
+  id?: string;
+  toiDa?: number;
+}
+const { muc, boQua = [Astro.url.pathname], tieuDe = 'Xem thêm', id, toiDa = 6 } = Astro.props;
+const cards = (await theXemThem(muc, boQua)).slice(0, toiDa);
+---
+
+<Fragment set:html={htmlLuoiThe(cards, tieuDe, id)} />

@@ -44,7 +44,7 @@ applications:
   - "Thiết bị hàng hải cần mỡ kháng nước"
 not_for:
   - "Ổ bi chạy liên tục trên 120 °C (dùng mỡ chịu nhiệt)"
-  - "Hệ bơm mỡ tập trung đường ống dài (cần mỡ mềm hơn, cấp 00 đến 1)"
+  - "Hệ bơm mỡ tập trung đường ống dài (cần mỡ mềm hơn, NLGI 00 đến 1)"
 warnings:
   - "Tránh để mỡ tiếp xúc trực tiếp với da. Dùng găng tay khi xử lý mỡ thải; dính da thì rửa ngay bằng nước và xà phòng."
   - "Mỡ thải phải giao cho đơn vị xử lý môi trường, không xả ra đất, nước hay cống rãnh."
@@ -64,9 +64,9 @@ date: "2026-10-12"
 updated: "2026-10-30"
 ---
 
-**VHP Opal Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Cấp NLGI 3 còn mang tên **VHP GRE MIL 3**. Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. VHP định hướng mỡ cho đầu trục, ổ bi tải nặng và các cơ cấu chuyển động kín.
+**VHP Opal Grease** là mỡ đa dụng gốc lithium-canxi do Công ty CP Hóa dầu VHP sản xuất tại Cẩm Giàng (Hải Dương cũ). Loại NLGI 3 còn mang tên **VHP GRE MIL 3**. Công thức phụ gia do Lubrizol (Hoa Kỳ) cung cấp. VHP định hướng mỡ cho đầu trục, ổ bi tải nặng và các cơ cấu chuyển động kín.
 
-HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 xô 15 kg** **có sẵn tại kho**, có CO/CQ và hóa đơn VAT. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ).
+HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 xô 15 kg** **có sẵn tại kho**, có CO/CQ và hóa đơn VAT. Hàng giao từ ba kho của HT VINA ở Thanh Bình (Hải Dương cũ), Kiến An (TP Hải Phòng) và Như Quỳnh (Hưng Yên).
 
 ## Opal Grease có hợp với điểm bôi trơn của bạn không?
 
@@ -80,7 +80,7 @@ HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 x
 
 ## Thông số này có ý nghĩa gì khi máy chạy?
 
-[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là bảng VHP công bố cho cấp NLGI 3 (VHP GRE MIL 3), kèm mức cam kết.
+[Bảng thông số kỹ thuật](#thong-so-ky-thuat) ở cuối bài là bảng VHP công bố cho loại NLGI 3 (VHP GRE MIL 3), kèm mức cam kết.
 
 - **Bền cơ học, ít tách dầu.** Mẫu NLGI 3 chỉ tách 8% dầu, thấp hơn nhiều mức cam kết dưới 18%. Mỡ ít chảy, ít văng nên đỡ phải bơm bù.
 - **Khô và sạch.** Mẫu NLGI 3 có hàm lượng nước bằng 0 và không có tạp chất cơ học.
@@ -88,6 +88,8 @@ HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 x
 - **Kháng nước, chống gỉ.** Mỡ đạt thử ăn mòn kim loại theo GOST 9080-77.
 
 ## Nên chọn NLGI 3 hay NLGI 4?
+
+NLGI 4 đặc hơn NLGI 3 một bậc. Muốn so với các loại [mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep) khác theo độ đặc và nhiệt độ làm việc, bạn xem trang danh mục.
 
 | | Opal Grease NLGI 3 | Opal Grease NLGI 4 |
 | :--- | :--- | :--- |
@@ -104,6 +106,8 @@ HT VINA là **đại lý dầu mỡ VHP**. **NLGI 3 phuy 180 kg** và **NLGI 4 x
 | Chất làm đặc | Lithium và canxi | Lithium và canxi |
 | Nhiệt độ làm việc | −10 đến 120 °C | −10 đến 110 °C |
 | Định hướng của VHP | Ổ bi tải nặng trong cơ cấu kín | Chỗ hở, nhiều nước, nước muối |
+
+Giá theo kg của Opal NLGI 3, NLGI 4 và Caxilium đều có trong [báo giá mỡ bôi trơn](/bao-gia-mo-boi-tron).
 
 > **Nhận định của HT VINA:** Ổ bi kín, tải nặng thì Opal; điểm bôi trơn hở ngoài trời, ven biển thì Caxilium. Cần mỡ đặc ngay thì [VHP Lithium Grease L4](/mo-boi-tron-cong-nghiep/vhp-lithium-grease) có sẵn xô 17 kg.
 
@@ -144,7 +148,7 @@ Không bơm quá nhiều: ổ bi đầy mỡ chạy nóng hơn. Ổ bi động c
 Không. Nhiệt độ nhỏ giọt 140 °C và làm việc tới 120 °C là mức của mỡ đa dụng. Ổ bi nóng hơn cần mỡ lithium complex hoặc mỡ chịu nhiệt chuyên dụng.
 
 ### Có phiếu chỉ tiêu riêng cho NLGI 4 không?
-Bảng thông số trên trang là của cấp NLGI 3. Nếu cần phiếu chỉ tiêu riêng của cấp NLGI 4, hãy [liên hệ](/contact) để nhận theo lô.
+Bảng thông số trên trang là của loại NLGI 3. Nếu cần phiếu chỉ tiêu riêng của loại NLGI 4, hãy [liên hệ](/contact) để nhận theo lô.
 
 ### Mỡ Opal để lâu có bị hỏng không?
 Mỡ lưu kho đúng cách (trong nhà, đậy kín, tránh nắng nóng) giữ chất lượng lâu. Lớp dầu mỏng nổi trên mặt là bình thường, trộn lại trước khi dùng. Xem mục [dầu nổi trên mặt mỡ](#tach-dau).
@@ -153,6 +157,6 @@ Mỡ lưu kho đúng cách (trong nhà, đậy kín, tránh nắng nóng) giữ 
 
 - **Quy cách:** NLGI 3 phuy 180 kg, NLGI 4 xô 15 kg. Có sẵn tại kho.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=VHP%20Opal%20Grease) kèm cấp và số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm độ đặc/độ sệt NLGI và số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

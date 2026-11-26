@@ -78,3 +78,12 @@ npx wrangler d1 execute gia-dau --local --file migrations-seed/seed-san-pham.sql
 # .dev.vars (không commit): ADMIN_PASSWORD=..., ADMIN_SECRET=<64 ký tự hex>
 npx astro dev --background
 ```
+
+## Đổi giá xô dầu thủy lực (chuẩn bị 15/11/2026)
+
+Trong `scripts/build-gia-json.py`:
+
+- **Tăng theo hãng** (đ/xô): sửa `TANG_GIA_XO["dau-thuy-luc"]`, ví dụ `{"ENEOS": 100_000, "Castrol": 100_000, "khac": 50_000}`.
+- **Giá xô mới chính xác từng mã**: thêm vào `GIA_XO_MOI`, khóa `(tên, quy cách)` như trong `DONG`, ví dụ `("EMI AW 68", "Xô 18 L"): 1_350_000`. Giá này không cộng thêm `TANG_GIA_XO`.
+- Bảng xô 46 dùng giá xô 68 cùng mã, nên tự đổi theo.
+- Chạy lại: `python3 scripts/build-gia-json.py ../du-lieu-noi-bo/kho-2026-09.json --ngay <ngày rà soát>` rồi build.

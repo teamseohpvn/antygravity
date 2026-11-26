@@ -10,7 +10,7 @@ description: "Dầu cầu, dầu hộp số (nhớt cầu) API GL-4, GL-5 cấp 
 keywords: ["dầu cầu", "dầu hộp số", "nhớt hộp số", "nhớt cầu", "dầu cầu 85w140", "dầu 80w90", "dầu cầu 90", "dầu cầu 140", "dầu hộp số xe nâng", "dầu atf", "dầu cầu xe tải", "dầu gl5", "dầu gl4"]
 tags: ["dau-cau", "dau-hop-so", "gl-4", "gl-5", "atf"]
 image: "/images/danh-muc/dau-cau-hop-so.webp"
-image_alt: "Thợ bảo dưỡng châm dầu hộp số vào xe nâng trong kho"
+image_alt: "Thợ bảo dưỡng thêm dầu hộp số vào xe nâng trong kho"
 date: "2026-10-06"
 updated: "2026-10-06"
 ---
@@ -61,11 +61,11 @@ Nếu sổ tay cho phép cả hai cấp, xe chạy tải nặng, mùa hè nóng 
 Cùng là dầu bánh răng cho xe, nhưng yêu cầu khác nhau. Cầu xe dùng bánh răng hypoid nên cần GL-5. Hộp số tay thường dùng GL-4. Nhiều mã dầu đạt cả hai cấp, nên hãy xem TDS.
 
 ### Bao lâu thay dầu cầu xe tải?
-Theo lịch bảo dưỡng của hãng xe. Xe chở nặng, chạy đường dốc, lội nước nên kiểm tra dầu sớm hơn. Dầu có nước sẽ đục màu sữa, dầu có mạt kim loại sẽ ánh bạc.
+Theo lịch bảo dưỡng của hãng xe. Xe chở nặng, chạy đường dốc, lội nước nên [kiểm tra dầu](/ho-tro-ky-thuat/huong-dan-test-chat-luong-dau) sớm hơn. Dầu có nước sẽ đục màu sữa, dầu có mạt kim loại sẽ ánh bạc.
 
 ### Có trộn dầu cầu GL-4 với GL-5 được không?
 Không nên. Trộn làm thay đổi lượng phụ gia cực áp, dầu không đạt đúng cấp nào. Khi đổi loại, nên xả hết dầu cũ.
 
 ---
 
-**Xem thêm:** [Dầu động cơ diesel](/dau-dong-co-diesel) · [Dầu thủy lực](/dau-thuy-luc) · [Mỡ bôi trơn công nghiệp](/mo-boi-tron-cong-nghiep)
+**Xem thêm:** [Dầu động cơ diesel](/dau-dong-co-diesel) · [Dầu thủy lực](/dau-thuy-luc) · [Mỡ bôi trơn (mỡ bò)](/mo-boi-tron-cong-nghiep)

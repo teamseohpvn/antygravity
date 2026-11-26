@@ -56,13 +56,13 @@ Máy **cắt dây** (wire EDM) phần lớn dùng **nước khử ion** làm ch�
 - **Giấy tờ:** CO/CQ theo lô, hóa đơn VAT, TDS và SDS.
 - **Giao hàng:** xưởng khuôn mẫu tại Hải Phòng, Hải Dương cũ, Bắc Ninh, Hưng Yên, Vĩnh Phúc, Hà Nội.
 
-**Nhận báo giá dầu xung điện:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**. Gửi hãng và model máy EDM, dung tích bồn và loại dầu đang dùng.
+**Nhận báo giá dầu xung điện:** gọi hoặc nhắn Zalo **[0901 511 313](tel:0901511313)**. Gửi hãng và model máy EDM, dung tích thùng và loại dầu đang dùng.
 
 ## Câu hỏi thường gặp
 
 ### Bao lâu thì thay dầu xung điện?
 
-Tùy khối lượng gia công và hệ thống lọc. Nếu thay lõi lọc đúng hạn, dầu có thể dùng khá lâu, và thường chỉ cần châm bù phần hao hụt. Cần thay dầu khi dầu sẫm màu, có mùi khét, nhiều cặn lơ lửng làm tốc độ gia công giảm, hoặc máy hay phóng hồ quang làm hỏng bề mặt phôi.
+Tùy khối lượng gia công và hệ thống lọc. Nếu thay lõi lọc đúng hạn, dầu có thể dùng khá lâu, và thường chỉ cần thêm phần hao hụt. Cần thay dầu khi dầu sẫm màu, có mùi khét, nhiều cặn lơ lửng làm tốc độ gia công giảm, hoặc máy hay phóng hồ quang làm hỏng bề mặt phôi.
 
 ### Dầu xung điện dùng cho máy cắt dây được không?
 

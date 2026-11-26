@@ -62,12 +62,12 @@ tom_tat:
 related_posts: ["dau-thuy-luc-32-46-68-khac-nhau"]
 tags: ["iso-vg-68", "chong-mai-mon", "goc-kem"]
 date: "2026-09-21"
-updated: "2026-10-14"
+updated: "2026-11-17"
 ---
 
-**Castrol Hyspin AWS 68** là dầu thủy lực chống mài mòn cấp [độ nhớt](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99_nh%E1%BB%9Bt) ISO VG 68 của Castrol, pha chế từ dầu gốc khoáng tinh chế cao cùng phụ gia chống mài mòn gốc kẽm ([ZDDP](https://en.wikipedia.org/wiki/Zinc_dithiophosphate)) đã được ổn định hóa. Dầu đạt loại **HM** theo [ISO 11158](https://www.iso.org/standard/84812.html) (tương đương [TCVN 12416:2019](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+12416%3A2019)) và **HLP** theo DIN 51524-2, nên bôi trơn và bảo vệ được hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và pít-tông.
+**Castrol Hyspin AWS 68** là [dầu thủy lực](/dau-thuy-luc) chống mài mòn cấp [độ nhớt](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99_nh%E1%BB%9Bt) ISO VG 68 của Castrol, pha chế từ dầu gốc khoáng tinh chế cao cùng phụ gia chống mài mòn gốc kẽm ([ZDDP](https://en.wikipedia.org/wiki/Zinc_dithiophosphate)) đã được ổn định hóa. Dầu đạt loại **HM** theo [ISO 11158](https://www.iso.org/standard/84812.html) (tương đương [TCVN 12416:2019](https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+12416%3A2019)) và **HLP** theo DIN 51524-2, nên bôi trơn và bảo vệ được hầu hết hệ thủy lực công nghiệp chạy bơm bánh răng, cánh gạt và pít-tông.
 
-Sản phẩm này chúng tôi luôn có sẵn tại kho: Castrol Hyspin AWS 68 **phuy 209 lít**, có CO/CQ và hóa đơn VAT. Cấp **AWS 46** nhận đặt theo yêu cầu số lượng tùy chọn, giao hàng tùy chọn lịch đặt trước hẹn giao. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ). Miễn phí vận chuyển trong 80 km kể từ kho của chúng tôi.
+Sản phẩm này chúng tôi luôn có sẵn tại kho: Castrol Hyspin AWS 68 **phuy 209 lít**, có CO/CQ và hóa đơn VAT. Cấp **AWS 46** cũng có sẵn tại kho. Hàng giao từ kho tại TP Hải Phòng (Hải Dương cũ). Miễn phí vận chuyển trong 80 km kể từ kho của chúng tôi.
 
 ## Hyspin AWS 68 có hợp với máy của bạn không?
 
@@ -77,8 +77,8 @@ Bạn chỉ cần mở tài liệu hướng dẫn sử dụng kèm theo máy và
 | :--- | :--- |
 | ISO VG 68, HM, HLP 68, AW 68, DIN 51524-2 | **Được.** |
 | Bắt buộc dầu được Parker Denison HF-0/HF-1/HF-2 hoặc Eaton chấp thuận | **Được**, vì Castrol công bố dòng Hyspin AWS đã được các hãng này chấp thuận. |
-| ISO VG 46 | Dùng Hyspin AWS 46 (nhận đặt). |
-| Dầu không kẽm (zinc-free, ashless), bơm có chi tiết mạ bạc | Không, nên chọn dầu không kẽm theo yêu cầu của hãng bơm. |
+| ISO VG 46 | Dùng Hyspin AWS 46 (có sẵn tại kho). |
+| Dầu không kẽm (zinc-free, ashless), bơm có chi tiết mạ bạc | Không, nên chọn [dầu không kẽm](/ho-tro-ky-thuat/dau-thuy-luc-khong-kem-ashless-zddp) theo yêu cầu của hãng bơm. |
 | HV, HVLP (máy ngoài trời lạnh, dải nhiệt rộng) | Không, vì Hyspin AWS là loại HM. |
 
 Nếu chưa chắc hướng dẫn sử dụng của máy ghi gì, bạn cứ chụp trang thông số dầu gửi qua [mẫu yêu cầu báo giá](/bao-gia?sp=Castrol%20Hyspin%20AWS%2068), chúng tôi sẽ đối chiếu giúp trước khi bạn mua.
@@ -121,9 +121,9 @@ Hai mã cùng loại HM, cùng cấp 68 và đều có sẵn tại kho HT VINA. 
 | Thử tải bánh răng FZG | Cấp 12 | Không công bố |
 | Được hãng bơm chấp thuận | Parker Denison HF-0/HF-1/HF-2, Eaton | Không công bố |
 | Quy cách | Phuy 209 L | Phuy 200 L |
-| Giá tham khảo tháng 10/2026 (chưa VAT) | 9,00–10,35 triệu đ/phuy, tức 43.000–49.600 đ/L | 8,99–10,35 triệu đ/phuy, tức 44.900–51.800 đ/L |
+| Giá theo báo giá 15/11/2026 (chưa VAT) | 12,00 triệu đ/phuy, tức khoảng 57.400 đ/L | 13,00 triệu đ/phuy, tức 65.000 đ/L |
 
-- **So giá theo lít.** Giá mỗi phuy gần như ngang nhau, nhưng phuy Castrol chứa nhiều hơn 9 L, nên tính theo lít thì Castrol thấp hơn khoảng 4%.
+- **So giá theo lít.** Phuy Castrol rẻ hơn phuy ENEOS 1 triệu đồng mà lại chứa nhiều hơn 9 L, nên tính theo lít thì Castrol thấp hơn khoảng 12%.
 - **"Không công bố" không có nghĩa là kém.** ENEOS không đưa TOST, FZG hay danh sách hãng bơm chấp thuận vào TDS, nên không có số để so.
 - **ENEOS có khoảng nhiệt độ làm việc rộng hơn** ở hai chỉ tiêu cả hai hãng đều công bố: điểm chớp cháy và điểm đông đặc.
 
@@ -171,7 +171,7 @@ Có, dòng Hyspin AWS được Parker Denison chấp thuận cho dùng theo các
 
 ## Quy cách đóng gói, đơn hàng
 
-- **Quy cách có sẵn:** phuy 209 L cấp 68. Cấp 46 nhận đặt theo yêu cầu.
+- **Quy cách có sẵn:** phuy 209 L cấp 68 và cấp 46.
 - **Giấy tờ:** mỗi lô giao kèm hóa đơn VAT. CO/CQ cung cấp theo lô khi khách yêu cầu.
 - **Giao hàng:** từ kho tại TP Hải Phòng (Hải Dương cũ) đi các tỉnh miền Bắc.
 - **Giá:** xem khoảng giá tham khảo tại [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc), hoặc [gửi yêu cầu báo giá](/bao-gia?sp=Castrol%20Hyspin%20AWS%2068) theo số lượng của bạn.

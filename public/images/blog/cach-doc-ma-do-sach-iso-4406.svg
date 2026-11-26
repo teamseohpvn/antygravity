@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" role="img" aria-labelledby="t1 d1" font-family="Arial, Helvetica, sans-serif">
+<title id="t1">Cách đọc mã độ sạch ISO 4406 18/16/13</title>
+<desc id="d1">Số thứ nhất 18 là số hạt từ 4 µm(c) trở lên, 1.300 đến 2.500 hạt mỗi mL; số thứ hai 16 là hạt từ 6 µm(c), 320 đến 640 hạt mỗi mL; số thứ ba 13 là hạt từ 14 µm(c), 40 đến 80 hạt mỗi mL. Tăng một mã thì số hạt tăng khoảng gấp đôi.</desc>
+<rect width="760" height="330" fill="#fff"/>
+<text x="380" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#003366">ISO 4406</text>
+<text x="380" y="110" text-anchor="middle" font-size="64" font-weight="700" fill="#0b5cad">18 / 16 / 13</text>
+<g stroke="#64748b" stroke-width="2" fill="none"><path d="M265 125 L130 185"/><path d="M380 125 L380 185"/><path d="M495 125 L630 185"/></g>
+<g font-size="14" text-anchor="middle">
+<rect x="20" y="190" width="220" height="96" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="130" y="216" font-weight="700" fill="#1e293b">Hạt từ 4 µm(c) trở lên</text>
+<text x="130" y="242" fill="#334155">mã 18 = 1.300–2.500 hạt/mL</text>
+<text x="130" y="266" font-size="12" fill="#64748b">bụi mịn, mài mòn từ từ</text>
+<rect x="270" y="190" width="220" height="96" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="380" y="216" font-weight="700" fill="#1e293b">Hạt từ 6 µm(c) trở lên</text>
+<text x="380" y="242" fill="#334155">mã 16 = 320–640 hạt/mL</text>
+<text x="380" y="266" font-size="12" fill="#64748b">cỡ khe hở van, dễ bám cặn</text>
+<rect x="520" y="190" width="220" height="96" rx="8" fill="#fff7ed" stroke="#f97316"/>
+<text x="630" y="216" font-weight="700" fill="#9a3412">Hạt từ 14 µm(c) trở lên</text>
+<text x="630" y="242" fill="#9a3412">mã 13 = 40–80 hạt/mL</text>
+<text x="630" y="266" font-size="12" fill="#9a3412">hạt lớn, dễ kẹt con trượt van</text>
+</g>
+<text x="380" y="316" text-anchor="middle" font-size="13" fill="#475569">Tăng 1 mã ≈ gấp đôi số hạt. Số càng nhỏ, dầu càng sạch.</text>
+</svg>

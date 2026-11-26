@@ -43,10 +43,10 @@ tom_tat:
   - "**Chưa có TDS** của Quốc Trung: trang chưa có bảng thông số, nên đo độ nhớt lô đầu tiên làm mốc."
 tags: ["iso-vg-68", "gia-kinh-te", "quoc-trung"]
 date: "2026-10-12"
-updated: "2026-11-02"
+updated: "2026-11-17"
 ---
 
-**APEX TL 68** là dầu thủy lực cấp **ISO VG 68** do Quốc Trung sản xuất trong nước. Dầu truyền năng lượng và bôi trơn cho hệ thủy lực công nghiệp, máy ép, máy đùn và máy công trình chịu áp lực cao. Trong nhóm dầu thủy lực 68 có sẵn tại kho HT VINA, đây là mã có giá theo lít thấp nhất.
+**APEX TL 68** là [dầu thủy lực](/dau-thuy-luc) cấp **ISO VG 68** do Quốc Trung sản xuất trong nước. Dầu truyền năng lượng và bôi trơn cho hệ thủy lực công nghiệp, máy ép, máy đùn và máy công trình chịu áp lực cao. Trong nhóm dầu thủy lực 68 có sẵn tại kho HT VINA, đây là mã có giá theo lít thấp nhất.
 
 Hàng có sẵn tại kho TP Hải Phòng (Hải Dương cũ): **phuy 200 L**, có hóa đơn VAT.
 
@@ -64,28 +64,28 @@ Chúng tôi chưa có bảng thông số kỹ thuật (TDS) của Quốc Trung c
 
 ## APEX TL 68 hay EMI AW 68?
 
-Cả hai là dầu thủy lực 68 sản xuất trong nước, có sẵn phuy 200 L tại kho. Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (rà soát 02/10/2026, riêng APEX TL 68 cập nhật 02/11/2026, chưa VAT):
+Cả hai là dầu thủy lực 68 sản xuất trong nước, có sẵn phuy 200 L tại kho. Giá tham khảo theo [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc) (theo báo giá ngày 15/11/2026, chưa VAT):
 
 | | APEX TL 68 | [EMI AW 68](/dau-thuy-luc/emi-aw-68) |
 | :--- | :--- | :--- |
-| Phuy 200 L | 5,41–7,50 triệu đ | 7,10–8,17 triệu đ |
-| Quy ra mỗi lít | 27.000–37.500 đ | 35.500–40.900 đ |
+| Phuy 200 L | 7,00 triệu đ | 11,00–12,00 triệu đ |
+| Quy ra mỗi lít | 35.000 đ | 55.000–60.000 đ |
 | Phụ gia công bố | Chưa có TDS | Chống mài mòn gốc kẽm (theo nhà cung cấp) |
 | Xô nhỏ | Không | Có |
 
-Với thùng 200 L, chênh lệch giữa hai mã khoảng 0,7–1,7 triệu đồng mỗi lần thay. Máy rò rỉ phải thêm vài chục lít mỗi tháng thì khoản chênh này cộng dồn đáng kể.
+Với thùng 200 L, chênh lệch giữa hai mã khoảng 4–5 triệu đồng mỗi lần thay. Máy rò rỉ phải thêm vài chục lít mỗi tháng thì khoản chênh này cộng dồn đáng kể.
 
 > **Nhận định của HT VINA:** Khi chưa có TDS, chúng tôi chỉ khuyên dùng APEX TL 68 cho máy mà hướng dẫn sử dụng chỉ ghi cấp 68, không ghi loại HM/HLP hay yêu cầu hãng bơm chấp thuận. Máy ép nhựa chạy ba ca, áp cao, nên dùng mã công bố rõ phụ gia chống mài mòn như EMI AW 68 hoặc mã có TDS đầy đủ.
 
 ## Máy rò rỉ dầu: tính đúng chi phí trước khi chọn dầu rẻ {#chi-phi}
 
-APEX TL 68 hợp nhất với máy rò rỉ phải thêm dầu thường xuyên. Với nhóm máy này, tiền dầu châm thêm mỗi tháng có khi lớn hơn tiền thay cả thùng. Bảng dưới tính theo khoảng giá đã nêu ở mục so sánh (chưa VAT):
+APEX TL 68 hợp nhất với máy rò rỉ phải thêm dầu thường xuyên. Với nhóm máy này, tiền dầu thêm vào mỗi tháng có khi lớn hơn tiền thay cả thùng. Bảng dưới tính theo khoảng giá đã nêu ở mục so sánh (chưa VAT):
 
-| Lượng dầu châm thêm mỗi tháng | APEX TL 68 (27.000–37.500 đ/L) | EMI AW 68 (35.500–40.900 đ/L) | Chênh lệch mỗi năm |
+| Lượng dầu thêm vào mỗi tháng | APEX TL 68 (35.000 đ/L) | EMI AW 68 (55.000–60.000 đ/L) | Chênh lệch mỗi năm |
 | :--- | :--- | :--- | :--- |
-| 20 L | 540.000–750.000 đ | 710.000–818.000 đ | khoảng 0,8–2 triệu đ |
-| 50 L | 1,35–1,88 triệu đ | 1,78–2,05 triệu đ | khoảng 2–5,1 triệu đ |
-| 100 L | 2,70–3,75 triệu đ | 3,55–4,09 triệu đ | khoảng 4,1–10,2 triệu đ |
+| 20 L | 700.000 đ | 1,10–1,20 triệu đ | khoảng 4,8–6 triệu đ |
+| 50 L | 1,75 triệu đ | 2,75–3,00 triệu đ | khoảng 12–15 triệu đ |
+| 100 L | 3,50 triệu đ | 5,50–6,00 triệu đ | khoảng 24–30 triệu đ |
 
 **Lời khuyên của chúng tôi:** con số ở cột cuối là lý do nhiều xưởng chọn dầu kinh tế cho máy cũ. Tuy vậy, nếu máy rò 50–100 L mỗi tháng, tiền thay phớt và ống thường hoàn vốn trong vài tháng, chưa kể dầu rò làm trơn sàn và bám bụi. Chúng tôi khuyên vừa dùng dầu kinh tế, vừa lên lịch sửa chỗ rò lớn nhất.
 

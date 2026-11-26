@@ -14,7 +14,7 @@ nlgi: "2 / 3"
 base_oil: "Dầu khoáng chất lượng cao, sợi xà phòng kim loại (công nghệ NanoShield theo TDS)"
 
 specs:
-  - { name: "Cấp NLGI", value: "2 / 3" }
+  - { name: "Độ đặc/độ sệt NLGI", value: "2 / 3" }
   - { name: "Chất làm đặc", value: "Xà phòng kim loại (TDS NLGI 2 ghi xà phòng canxi 17,5 %)" }
   - { name: "Ngoại quan", value: "Mịn, màu vàng nhạt đến nâu", method: "Quan sát" }
   - { name: "Độ xuyên kim ở 25 °C, sau nhào", value: "NLGI 2: 275 · NLGI 3: 235 (0,1 mm)", method: "ASTM D217" }
@@ -73,7 +73,7 @@ date: "2026-11-05"
 updated: "2026-11-05"
 ---
 
-**Sinopec Golden Grease** là mỡ bôi trơn đa dụng dùng công nghệ NanoShield của Sinopec, tạo từ tiền chất nano và axit béo, thành các sợi xà phòng kim loại trong dầu khoáng. TDS ghi mỡ dùng cho thiết bị tốc độ thấp như máy xây dựng, máy nông nghiệp, gầm xe và moay ơ, làm việc từ -20 °C đến 110 °C.
+**Sinopec Golden Grease** là [mỡ bôi trơn](/mo-boi-tron-cong-nghiep) đa dụng dùng công nghệ NanoShield của Sinopec, tạo từ tiền chất nano và axit béo, thành các sợi xà phòng kim loại trong dầu khoáng. TDS ghi mỡ dùng cho thiết bị tốc độ thấp như máy xây dựng, máy nông nghiệp, gầm xe và moay ơ, làm việc từ -20 °C đến 110 °C.
 
 Hàng **có sẵn tại kho** gồm **NLGI 3** và **NLGI 2**, đóng **xô 17 kg** và **phuy 180 kg**, nhãn xô và phuy NLGI 3 ghi sản xuất tại Singapore. Có CO/CQ theo lô khi khách yêu cầu và hóa đơn VAT.
 
@@ -82,11 +82,12 @@ Hàng **có sẵn tại kho** gồm **NLGI 3** và **NLGI 2**, đóng **xô 17 k
 | Điểm bôi trơn | Dùng Golden Grease được không? |
 | :--- | :--- |
 | Thiết bị tốc độ thấp của máy xây dựng, máy nông nghiệp | **Được.** Đúng nhóm TDS ghi. |
-| Gầm xe, moay ơ ô tô | **Được** theo TDS. Moay ơ nên chọn cấp theo tài liệu của xe. |
+| Gầm xe, moay ơ ô tô | **Được** theo TDS. Moay ơ nên chọn độ đặc/độ sệt NLGI theo tài liệu của xe. |
 | Máy đánh bóng gốm, bàn con lăn luyện kim | **Được** khi nhiệt độ ổ không quá 110 °C. |
 | Điểm ẩm ướt, hay dính nước | **Được.** Rửa trôi 0–0,1 % ở 38 °C. |
 | Vòng bi động cơ điện, quạt quay nhanh | Không nên. Xem [VHP Lithium Grease](/mo-boi-tron-cong-nghiep/vhp-lithium-grease). |
 | Chốt gầu, ổ chịu va đập rất nặng | TDS không ghi tải hàn dính. Xem [Shell Gadus S2 V220 2](/mo-boi-tron-cong-nghiep/shell-gadus-s2-v220-2). |
+| Bơm, xi lanh thủy lực của máy xúc, máy ủi | Không. Hệ thủy lực dùng [dầu thủy lực](/dau-thuy-luc) đúng cấp ISO VG trong tài liệu của máy; khoảng giá phuy, xô có ở [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc). |
 | Ổ gần lò, máy sấy, trên 110 °C | Không. Xem [mỡ chịu nhiệt](/mo-chiu-nhiet). |
 
 ## Thông số của Golden Grease có ý nghĩa gì khi máy chạy? {#y-nghia}
@@ -100,7 +101,7 @@ Hàng **có sẵn tại kho** gồm **NLGI 3** và **NLGI 2**, đóng **xô 17 k
 
 **Golden Grease không ghi là mỡ lithium.** TDS chỉ nói "metal soap" (xà phòng kim loại), riêng bản NLGI 2 ghi hàm lượng xà phòng canxi 17,5 %. Vì vậy, khi đổi từ mỡ lithium sang mã này, bạn nên làm sạch mỡ cũ thay vì bơm đè lên.
 
-## NLGI 3 hay NLGI 2: chọn cấp nào của Golden Grease? {#chon-cap}
+## NLGI 3 hay NLGI 2: chọn loại nào của Golden Grease? {#chon-cap}
 
 | Chỉ tiêu | NLGI 2 | NLGI 3 |
 | :--- | :--- | :--- |
@@ -110,7 +111,7 @@ Hàng **có sẵn tại kho** gồm **NLGI 3** và **NLGI 2**, đóng **xô 17 k
 | Rửa trôi ở 38 °C | 0,1 % | 0 % |
 | Có sẵn | Xô 17 kg, phuy 180 kg | Xô 17 kg, phuy 180 kg |
 
-Bạn hãy chọn **NLGI 3** cho ổ lớn tốc độ chậm, vị trí dễ chảy mỡ. Chọn **NLGI 2** khi tài liệu máy yêu cầu cấp này, hoặc khi súng và đường dẫn khó bơm mỡ đặc.
+Bạn hãy chọn **NLGI 3** cho ổ lớn tốc độ chậm, vị trí dễ chảy mỡ. Chọn **NLGI 2** khi tài liệu máy yêu cầu độ đặc này, hoặc khi súng và đường dẫn khó bơm mỡ đặc.
 
 ## Golden Grease so với mỡ khác trong kho như thế nào? {#so-sanh}
 
@@ -121,6 +122,8 @@ Bạn hãy chọn **NLGI 3** cho ổ lớn tốc độ chậm, vị trí dễ ch
 | Phương pháp đo | ASTM D2265 | ASTM D566 | GOST 6793-74 | GOST 6793-74 |
 | Nhiệt độ làm việc | -20 đến 110 °C | -20 đến 120 °C | -10 đến 100 °C | -10 đến 120 °C |
 | Có sẵn | Xô 17 kg, phuy 180 kg | Xô 17 kg, phuy 180 kg | Phuy 180 kg | Phuy 180 kg |
+
+Khoảng giá theo kg của cả bốn mã đều có trong [báo giá mỡ bôi trơn (mỡ bò)](/bao-gia-mo-boi-tron).
 
 Phương pháp đo khác nhau nên chênh lệch nhiệt độ nhỏ giọt chỉ để tham khảo. Nhiệt độ làm việc theo khuyến nghị của từng hãng mới là mốc nên dùng khi chọn mỡ.
 
@@ -173,5 +176,6 @@ Không nên trộn khi chưa rõ gốc mỡ. TDS không ghi Golden Grease là li
 
 - **Quy cách:** NLGI 3 và NLGI 2 có sẵn tại kho, đóng xô 17 kg và phuy 180 kg.
 - **Giấy tờ:** hóa đơn VAT cho mỗi lô. CO/CQ cung cấp theo lô khi khách yêu cầu.
-- **Giá:** báo theo từng đơn, [gửi yêu cầu báo giá](/bao-gia?sp=Sinopec%20Golden%20Grease) kèm số lượng.
+- **Giao hàng:** từ ba kho 108 Thanh Bình (Hải Dương cũ), 145 Quán Trữ (Kiến An, TP Hải Phòng) và Như Quỳnh (Hưng Yên) đi các tỉnh miền Bắc.
+- **Giá:** khoảng giá theo kg có trên trang báo giá mỡ bôi trơn. Cần giá chốt theo đơn thì [gửi yêu cầu báo giá](/bao-gia-mo-boi-tron#gui-yeu-cau) kèm số lượng.
 - **Vận chuyển:** theo [chính sách giao hàng](/chinh-sach-giao-hang) của HT VINA, chúng tôi miễn phí vận chuyển tối đa 80 km kể từ kho có hàng gần điểm giao nhất.

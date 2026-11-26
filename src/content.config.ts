@@ -49,6 +49,22 @@ const danhmucCollection = defineCollection({
     muc_luc: z.boolean().optional(), // false = tắt mục lục tự động (mặc định: bật khi bài có từ 4 mục H2) // Chỉ dùng khi cần canonical khác URL của trang
     tac_gia: z.string().optional(), // Tác giả (id trong nhan-su.ts); mặc định Ms. Hồng
     reviewed_by: z.string().optional(), // Người duyệt nội dung; mặc định TS. Nguyễn Thiết Lập
+    // 20/11/2026: danh mục gộp báo giá (danh mục chưa có trang báo giá riêng). Có trường này thì trang hiện bảng giá
+    // từ gia-cong-khai.json ngay sau đoạn đầu của bài, bài chia hai phần bằng dòng <!-- phan-sau --> (phần sau nằm dưới lưới sản phẩm),
+    // cuối trang có khối CachVietBai + ChinhSachGiaKho + ThongTinDoanhNghiep. Chuỗi {thang} trong title/seo_title/description/tieu_de
+    // được thay bằng tháng rà soát giá (MM/YYYY), tự đổi khi sang kỳ giá mới.
+    bang_gia: z.object({
+      tieu_de: z.string(), // H2 của mục bảng giá
+      // Mã có hàng nhưng chưa công bố giá: hiện trong bảng với chữ "Liên hệ".
+      lien_he: z.array(z.object({
+        ten: z.string(),
+        hang: z.string(),
+        cap: z.string(), // Trùng nhóm của bảng giá, ví dụ "SAE 15W-40"
+        quy_cach: z.string(),
+        nguon: z.enum(['nhap-khau', 'trong-nuoc']),
+        trang: z.string().optional(),
+      })).optional(),
+    }).optional(),
     date: ngay.optional(), // Ngày đăng
     updated: ngay.optional(), // Ngày cập nhật
   }).superRefine(kiemTraNgay),
@@ -70,7 +86,7 @@ const sanphamCollection = defineCollection({
     sku: z.string().optional(), // Mã HH trong phần mềm kho (khi chỉ có 1 quy cách)
     vg: z.number().optional(), // Dầu: cấp ISO VG
     vg_khac: z.array(z.number()).optional(), // Cấp ISO VG khác cùng trang, ví dụ [46] cho trang "68, 46"
-    nlgi: z.string().optional(), // Mỡ: cấp NLGI, ví dụ "2" hoặc "0/1"
+    nlgi: z.string().optional(), // Mỡ: độ đặc/độ sệt NLGI, ví dụ "2" hoặc "0/1"
     sae: z.string().optional(), // Dầu động cơ / dầu cầu: "15W-40", "85W-140"
     api: z.string().optional(), // Cấp API: "CI-4", "GL-5"
     base_oil: z.string().optional(), // "Dầu gốc khoáng", "Tổng hợp PAO"
@@ -110,6 +126,9 @@ const sanphamCollection = defineCollection({
     tom_tat: z.array(z.string()).optional(), // Tóm tắt cho người cần quyết định, hiện dưới tiêu đề; **đậm** được hỗ trợ
     tds_url: z.string().optional(),
     sds_url: z.string().optional(),
+    // Bảng nguồn TDS cho khối "Cách chúng tôi viết và cập nhật bài này" (B3a). Có trường này thì trang hiện đủ 3 khối cuối bài:
+    // CachVietBai → QuoteCta → ChinhSachGiaKho → ThongTinDoanhNghiep. ten: tên tài liệu; ban: bản/ngày phát hành; tra: ngày tra cứu.
+    nguon_tds: z.array(z.object({ ten: z.string(), ban: z.string(), tra: z.string(), url: z.string().optional() })).optional(),
     image: z.string().optional(), // Dạng cũ, dùng khi chưa có images
     images: z.array(imageItem).optional(), // Ảnh đầu tiên là ảnh chính
     related_posts: z.array(z.string()).optional(), // Slug bài trong blog/
@@ -149,10 +168,10 @@ const blogCollection = defineCollection({
     tags: z.array(z.string()).optional(),
     canonical_url: z.string().optional(),
     muc_luc: z.boolean().optional(), // false = tắt mục lục tự động (mặc định: bật khi bài có từ 4 mục H2)
-    // Quy trình B3a (06/11/2026): bài có giá, sản phẩm hoặc thông số thì cuối bài có khối Cách viết bài,
-    // Chính sách giá và tồn kho, Thông tin doanh nghiệp. Mặc định bật khi có co_gia, related_products hoặc nguon_tds.
+    // Quy trình B3a (06/11/2026): bài có giá, sản phẩm hoặc thông số thì cuối bài có khối Cách viết bài
+    // và nút báo giá (blog không gắn Chính sách giá và tồn kho, Thông tin doanh nghiệp, 26/11/2026). Mặc định bật khi có co_gia, related_products hoặc nguon_tds.
     co_gia: z.boolean().optional(), // Bài nêu giá: hiện ngày rà soát giá lấy từ gia-cong-khai.json
-    khoi_bien_tap: z.boolean().optional(), // Ghi false để tắt 3 khối cuối bài
+    khoi_bien_tap: z.boolean().optional(), // Ghi false để tắt khối cuối bài
     nguon_tds: z.array(z.object({
       ten: z.string(), // Tên tài liệu
       ban: z.string(), // Bản hoặc ngày phát hành
