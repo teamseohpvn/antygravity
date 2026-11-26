@@ -48,7 +48,7 @@ Tài liệu của hãng máy thường ghi hai con số: **thùng dầu thủy l
 
 ## Thay dầu một lần hết bao nhiêu tiền dầu? {#mot-lan}
 
-**Tiền dầu một lần thay = số lít × giá mỗi lít.** Bảng dưới tính cho hai mức thùng dầu 135 lít và 160 lít, với ba mã dầu thủy lực HM cấp 68 đóng phuy đang có sẵn tại kho. Giá tính từ giá kho đến mức cao hơn giá kho 15%, chưa VAT. Giá chính thức được xác nhận khi đặt hàng, xem [chính sách kiểm chứng giá và tồn kho](/bao-gia-dau-thuy-luc#chinh-sach-gia-kho).
+**Tiền dầu một lần thay = số lít × giá mỗi lít.** Bảng dưới tính cho hai mức thùng dầu 135 lít và 160 lít, với ba mã [dầu thủy lực HM cấp 68](/dau-thuy-luc) đóng phuy đang có sẵn tại kho. Giá tính từ giá kho đến mức cao hơn giá kho 15%, chưa VAT. Giá chính thức được xác nhận khi đặt hàng, xem [chính sách kiểm chứng giá và tồn kho](/bao-gia-dau-thuy-luc#chinh-sach-gia-kho).
 
 | Mã dầu (phuy 200–209 L) | Giá mỗi lít (đ) | Thùng 135 L (đ) | Thùng 160 L (đ) |
 | :--- | :--- | :--- | :--- |
@@ -119,6 +119,6 @@ Komatsu và Hitachi ghi 5.000 giờ với dầu chính hãng của họ. Với d
 
 ### Giá dầu thủy lực máy xúc bao nhiêu?
 
-Dầu thủy lực HM cấp 68 đóng phuy tại kho HT VINA hiện khoảng 50.000 – 74.800 đ/lít với ba mã trong bài, chưa VAT, rà soát ngày 15/11/2026. Giá đủ các mã có trên [bảng giá dầu thủy lực](/bao-gia-dau-thuy-luc#bang-gia).
+Dầu thủy lực HM cấp 68 đóng phuy tại kho HT VINA hiện khoảng 50.000 – 74.800 đ/lít với ba mã trong bài, chưa VAT, rà soát ngày 15/11/2026. Giá đủ các mã có trên bảng giá dầu thủy lực.
 
 <p id="chu-thich-hdsd"><small>* Hướng dẫn sử dụng của máy là gì? Là tài liệu hãng máy giao kèm theo máy, thường ở dạng sách, bìa, giấy, đôi khi kèm theo cả file PDF. Bạn có thể tìm tài liệu này trên trang chủ của mỗi hãng máy, hoặc liên hệ đại lý của hãng máy đang sử dụng để xin lại nếu bị mất.</small></p>
