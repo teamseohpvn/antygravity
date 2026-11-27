@@ -50,6 +50,8 @@ const crumbs = [
         <dd><a href={`mailto:${BUSINESS.email}`} data-track="click_email">{BUSINESS.email}</a></dd>
         <dt>Facebook</dt>
         <dd><a href={BUSINESS.facebookUrl} target="_blank" rel="noopener me" data-track="click_facebook">Dầu Nhớt Công Nghiệp | Hai Duong</a></dd>
+        <dt>Bảng giá</dt>
+        <dd><a href="/bao-gia-dau-thuy-luc">Bảng giá dầu thủy lực</a> · <a href="/bao-gia-mo-boi-tron">Bảng giá mỡ bôi trơn</a></dd>
         <dt>Giờ làm việc</dt>
         <dd>{GIO_LAM_VIEC.map((g, i) => <>{i > 0 && <br />}{g.ngay}: {g.gio}</>)}</dd>
         <dt>Khu vực giao hàng</dt>
