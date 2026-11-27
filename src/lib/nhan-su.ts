@@ -144,6 +144,9 @@ export const NHAN_SU: NhanSu[] = [
       { ten: 'Bảng giá dầu thủy lực', url: '/bao-gia-dau-thuy-luc', vai: 'Duyệt nội dung' },
       { ten: 'Nhớt xe tải, dầu động cơ diesel (kèm bảng giá)', url: '/dau-dong-co-diesel', vai: 'Duyệt nội dung' },
       { ten: 'Báo giá mỡ bôi trơn', url: '/bao-gia-mo-boi-tron', vai: 'Duyệt nội dung' },
+      { ten: 'Mỡ cho vòng bi động cơ điện', url: '/ho-tro-ky-thuat/mo-vong-bi-dong-co-dien', vai: 'Viết bài' },
+      { ten: 'Trộn hai loại mỡ bôi trơn được không?', url: '/ho-tro-ky-thuat/tron-mo-boi-tron', vai: 'Viết bài' },
+      { ten: 'Mỡ bôi trơn bị chảy, khô cứng, tách dầu', url: '/ho-tro-ky-thuat/mo-boi-tron-bi-chay-kho-tach-dau', vai: 'Viết bài' },
     ],
     knowsAbout: [
       'Sửa chữa, bảo dưỡng hệ thống thủy lực',
