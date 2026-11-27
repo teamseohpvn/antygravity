@@ -233,3 +233,4 @@ Tùy điều khoản bảo hành của từng hãng và đại lý. Hyundai cho 
 - [Dầu động cơ diesel cho máy công trình](/dau-dong-co-diesel)
 - [Dầu cầu, dầu hộp số cho xe tải, máy công trình](/dau-cau-hop-so)
 - [Mỡ bôi trơn cho chốt, khớp máy xúc](/mo-boi-tron-cong-nghiep)
+- [Bảng giá mỡ bôi trơn đóng xô, phuy](/bao-gia-mo-boi-tron)
