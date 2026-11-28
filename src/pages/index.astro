@@ -219,6 +219,8 @@ const grade = (p: (typeof products)[number]) =>
   .why-grid li { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 6px; }
   .why-grid strong { color: var(--color-primary); }
   .why-grid span { color: var(--color-text-light); }
+  .post-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+  @media (min-width: 1000px) { .post-grid { grid-template-columns: repeat(3, 1fr); } }
   .post-card { position: relative; display: flex; flex-direction: column; background: white; border: 1px solid var(--border-color); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
   .post-card:hover, .post-card:focus-within { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0, 51, 102, 0.12); border-color: #bcd0e6; }
   .post-card:focus-within { outline: 3px solid var(--color-accent, #f59e0b); outline-offset: 2px; }
