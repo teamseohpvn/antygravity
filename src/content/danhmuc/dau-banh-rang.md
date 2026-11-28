@@ -4,6 +4,7 @@ title: "Dầu Bánh Răng Công Nghiệp 150, 220, 320, 460"
 nav_label: "Dầu bánh răng"
 order: 7
 summary: "Hộp giảm tốc, hộp số công nghiệp"
+mo_ta_the: "Dầu hộp giảm tốc, hộp số công nghiệp ISO VG 150–680: Shell Omala, Castrol Alpha SP, Mobilgear 600 XP. Phuy 209 L, xô 20 L."
 seo_title: "Dầu Bánh Răng Công Nghiệp 220, 320 Chính Hãng – Báo Giá Sỉ"
 description: "Dầu bánh răng, dầu hộp giảm tốc công nghiệp ISO VG 150–680 Shell Omala, Castrol Alpha SP, Mobilgear 600 XP. Có CO/CQ, VAT. Báo giá sỉ phuy 209L, xô 20L."
 keywords: ["dầu bánh răng", "dầu bánh răng công nghiệp", "dầu bánh răng 220", "dầu bánh răng 320", "dầu bánh răng 150", "dầu hộp giảm tốc", "dầu bánh răng tổng hợp", "shell omala s2 gx 220", "shell omala s2 gx 320", "mobilgear 600 xp 220", "castrol alpha sp 220", "total carter ep 220"]

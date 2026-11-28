@@ -5,6 +5,7 @@ title: "Thiết Bị Kiểm Tra Chất Lượng Dầu Nhớt Tại Xưởng"
 nav_label: "Thiết bị kiểm tra dầu"
 order: 18
 summary: "Đo độ nhớt, trị số axit, nước trong dầu"
+mo_ta_the: "Nhớt kế, cốc đo độ nhớt, bộ kit test trị số axit và nước trong dầu, giúp biết khi nào cần thay dầu ngay tại xưởng."
 seo_title: "Thiết Bị Kiểm Tra Dầu Nhớt: Đo Độ Nhớt, Axit, Nước"
 description: "Nhớt kế, cốc đo độ nhớt, bộ kit test trị số axit TAN dùng tại xưởng để biết khi nào cần thay dầu thủy lực, dầu bánh răng, dầu máy nén khí. Tư vấn chọn thiết bị."
 keywords: ["thiết bị kiểm tra dầu nhớt", "dụng cụ đo độ nhớt dầu", "test dầu thủy lực tại chỗ", "kit test trị số axit", "kiểm tra chất lượng dầu"]

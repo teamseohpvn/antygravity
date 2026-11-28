@@ -6,6 +6,7 @@ title: "Nhớt Xe Tải 15W-40, 20W-50 (Dầu Động Cơ Diesel) – Báo Giá 
 nav_label: "Dầu động cơ diesel"
 order: 5
 summary: "Xe tải, máy công trình, máy phát điện"
+mo_ta_the: "Nhớt xe tải 15W-40, 20W-50 cho xe tải, máy công trình, máy phát điện. Castrol, Shell, Total, ENEOS, Caltex, phuy 200 L và can 18 L."
 seo_title: "Nhớt Xe Tải 15W-40, 20W-50 – Báo Giá Phuy 200L, Can 18L T{thang}"
 description: "Báo giá nhớt xe tải, dầu động cơ diesel 15W-40, 20W-50 tháng {thang}: Castrol, Shell, Total, ENEOS, Caltex, phuy 200 L và can 18 L. Miễn phí giao trong 80 km."
 keywords: ["nhớt xe tải", "dầu động cơ diesel", "giá nhớt xe tải", "giá nhớt 15w40", "giá nhớt 20w50", "nhớt 15w40", "nhớt 20w50", "giá nhớt castrol 15w40 18l", "giá nhớt phuy", "nhớt máy dầu", "dầu nhớt ci-4", "dầu nhớt ck-4", "dầu nhớt cf-4"]

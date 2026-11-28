@@ -5,6 +5,7 @@ title: "Dầu Cầu, Dầu Hộp Số (Nhớt Cầu) GL-4, GL-5: 80W-90, 85W-140
 nav_label: "Dầu cầu, hộp số"
 order: 6
 summary: "Xe tải, xe nâng, máy công trình: GL-4, GL-5, ATF"
+mo_ta_the: "Dầu cầu, dầu hộp số API GL-4, GL-5 cấp 80W-90, 85W-140 và ATF cho xe tải, xe nâng, máy công trình."
 seo_title: "Dầu Cầu, Dầu Hộp Số GL-4, GL-5 80W-90, 85W-140 – Phuy, Xô"
 description: "Dầu cầu, dầu hộp số (nhớt cầu) API GL-4, GL-5 cấp 80W-90, 85W-140, 90, 140 và ATF cho xe tải, xe nâng. ENEOS, Shell, Castrol, VHP. Giao Hải Phòng."
 keywords: ["dầu cầu", "dầu hộp số", "nhớt hộp số", "nhớt cầu", "dầu cầu 85w140", "dầu 80w90", "dầu cầu 90", "dầu cầu 140", "dầu hộp số xe nâng", "dầu atf", "dầu cầu xe tải", "dầu gl5", "dầu gl4"]

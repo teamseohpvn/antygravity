@@ -4,6 +4,7 @@ title: "Dầu Chống Gỉ, Chống Rỉ Sét Kim Loại"
 nav_label: "Dầu chống gỉ"
 order: 11
 summary: "Bảo quản chi tiết, khuôn, hàng xuất khẩu"
+mo_ta_the: "Dầu chống gỉ bảo quản chi tiết cơ khí, khuôn, hàng xuất khẩu: loại tách nước màng mỏng, màng dầu, màng sáp. Castrol Rustilo."
 seo_title: "Dầu Chống Gỉ, Chống Rỉ Sét Kim Loại Công Nghiệp – Báo Giá"
 description: "Dầu chống rỉ sét cho chi tiết cơ khí, khuôn, hàng xuất khẩu: loại tách nước màng mỏng, màng dầu, màng sáp. Castrol Rustilo. Có CO/CQ, VAT, phuy và xô."
 keywords: ["dầu chống gỉ", "dầu chống rỉ", "dầu chống rỉ sét", "dầu chống gỉ sét", "dầu chống rỉ sét kim loại", "dầu chống gỉ kim loại", "dầu chống gỉ khuôn", "dầu bôi trơn chống rỉ sét", "castrol rustilo dwx 30", "báo giá dầu chống gỉ phuy"]

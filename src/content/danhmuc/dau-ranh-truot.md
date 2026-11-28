@@ -4,6 +4,7 @@ title: "Dầu Rãnh Trượt Máy CNC 68, 220"
 nav_label: "Dầu rãnh trượt"
 order: 12
 summary: "Băng trượt máy CNC"
+mo_ta_the: "Dầu băng trượt máy CNC ISO VG 68, 220, chống rung giật, tách khỏi dung dịch tưới nguội. Shell Tonna, Mobil Vactra, Castrol Magna."
 seo_title: "Dầu Rãnh Trượt Máy CNC 68, 220 – Shell Tonna, Mobil Vactra"
 description: "Dầu rãnh trượt, dầu băng trượt máy CNC ISO VG 68, 220 chống rung giật stick-slip, tách khỏi dung dịch tưới nguội. Shell Tonna, Mobil Vactra, Castrol Magna."
 keywords: ["dầu rãnh trượt", "dầu rãnh trượt 68", "dầu băng trượt máy CNC", "dầu bôi trơn máy CNC", "mobil vactra no 2", "shell tonna s2 m 68", "total drosera ms 68", "castrol magna bd 68"]

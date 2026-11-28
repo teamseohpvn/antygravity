@@ -4,6 +4,7 @@ title: "Dầu Cắt Gọt Kim Loại (Dầu Tưới Nguội) Pha Nước & Khôn
 nav_label: "Dầu cắt gọt"
 order: 10
 summary: "Dầu tưới nguội máy CNC, tiện, phay"
+mo_ta_the: "Dầu tưới nguội pha nước và không pha nước cho máy CNC, tiện, phay, taro. Castrol Hysol, Shell Adrana, tư vấn tỷ lệ pha."
 seo_title: "Dầu Cắt Gọt Kim Loại, Dầu Tưới Nguội CNC – Báo Giá Sỉ"
 description: "Dầu cắt gọt pha nước (nhũ tương, bán tổng hợp) và dầu cắt gọt không pha nước cho máy CNC, tiện, phay, taro. Castrol Hysol, Shell Adrana. Có CO/CQ, VAT."
 image: "/images/danh-muc/dau-cat-got.webp"

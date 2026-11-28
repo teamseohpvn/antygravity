@@ -5,6 +5,7 @@ title: "Dầu Nhớt Xe Máy 4 Thì (Xe Số, Xe Tay Ga)"
 nav_label: "Dầu nhớt xe máy"
 order: 16
 summary: "Nhớt xe số (JASO MA), xe tay ga (JASO MB)"
+mo_ta_the: "Nhớt xe máy 4 thì ENEOS cho xe số (JASO MA) và xe tay ga (JASO MB). Bán sỉ theo thùng cho cửa hàng, gara, đội xe."
 seo_title: "Dầu Nhớt Xe Máy ENEOS – Xe Số, Xe Tay Ga | Giá Sỉ"
 description: "Dầu nhớt xe máy 4 thì cho xe số (JASO MA) và xe tay ga (JASO MB), hàng ENEOS chính hãng. Bán sỉ theo thùng cho cửa hàng, gara, đội xe. Giao từ Hải Phòng."
 keywords: ["dầu nhớt xe máy", "nhớt xe máy eneos", "nhớt xe số", "nhớt xe tay ga", "nhớt xe máy giá sỉ"]
