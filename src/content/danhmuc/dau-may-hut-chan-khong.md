@@ -5,6 +5,7 @@ title: "Dầu Máy Hút Chân Không (Dầu Bơm Chân Không) ISO VG 100"
 nav_label: "Dầu bơm chân không"
 order: 14
 summary: "Bơm chân không vòng dầu, cánh gạt, piston xoay"
+mo_ta_the: "Dầu bơm chân không ISO VG 100 áp suất hơi thấp cho bơm cánh gạt, piston xoay trong máy đóng gói, ép nhựa, sấy."
 seo_title: "Dầu Máy Hút Chân Không, Dầu Bơm Chân Không ISO VG 100"
 description: "Dầu máy hút chân không, dầu bơm chân không ISO VG 100 áp suất hơi thấp cho bơm cánh gạt, piston xoay trong máy đóng gói, ép nhựa, sấy. Xô 18 L."
 keywords: ["dầu máy hút chân không", "dầu bơm chân không", "dầu máy bơm chân không", "dầu chân không", "dầu bơm chân không 100"]

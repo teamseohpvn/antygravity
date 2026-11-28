@@ -5,6 +5,7 @@ title: "Nước Làm Mát Động Cơ (Dung Dịch Làm Mát)"
 nav_label: "Nước làm mát"
 order: 17
 summary: "Nước làm mát cho ô tô, xe tải, máy phát, máy công trình"
+mo_ta_the: "Nước làm mát cho ô tô, xe tải, máy phát điện, máy công trình: chống sôi, chống gỉ, chống ăn mòn két nước."
 seo_title: "Nước Làm Mát Động Cơ – Chống Sôi, Chống Gỉ | Can 5 L"
 description: "Nước làm mát động cơ cho ô tô, xe tải, máy phát điện, máy công trình: chống sôi, chống gỉ, chống ăn mòn két nước. Có hóa đơn VAT, giao từ Hải Phòng."
 keywords: ["nước làm mát", "nước làm mát động cơ", "dung dịch làm mát", "nước làm mát xe tải", "nước làm mát máy phát điện"]

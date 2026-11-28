@@ -38,6 +38,7 @@ const danhmucCollection = defineCollection({
     title: z.string(), // H1
     nav_label: z.string().optional(), // Tên ngắn trên menu
     summary: z.string().optional(), // Mô tả ngắn trên thẻ danh mục ở trang chủ
+    mo_ta_the: z.string().optional(), // Đoạn mô tả 1–2 câu trên thẻ danh mục trang chủ (dưới tên), kèm "Xem thêm"
     order: z.number().optional(), // Thứ tự trên menu và trang chủ
     seo_title: z.string().optional(),
     description: z.string(),

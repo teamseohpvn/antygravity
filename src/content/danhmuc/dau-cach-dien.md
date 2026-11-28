@@ -5,6 +5,7 @@ title: "Dầu Cách Điện (Dầu Máy Biến Áp, Dầu Biến Thế)"
 nav_label: "Dầu cách điện"
 order: 15
 summary: "Máy biến áp, tủ điện ngâm dầu, máy cắt"
+mo_ta_the: "Dầu máy biến áp (dầu biến thế) gốc khoáng cho máy biến áp phân phối, máy cắt, tụ điện. Phuy 210 L, xô 18 L."
 seo_title: "Dầu Cách Điện, Dầu Máy Biến Áp, Dầu Biến Thế – Phuy, Xô"
 description: "Dầu cách điện, dầu máy biến áp (dầu biến thế) gốc khoáng cho máy biến áp phân phối, máy cắt, tụ điện. Có CO/CQ, VAT. Phuy 210 L, xô 18 L, giao miền Bắc."
 keywords: ["dầu máy biến áp", "dầu cách điện", "dầu biến áp", "dầu biến thế", "dầu máy biến thế", "dầu cách điện máy biến áp"]

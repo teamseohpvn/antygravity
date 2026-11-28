@@ -50,25 +50,32 @@ const grade = (p: (typeof products)[number]) =>
 
   <section class="categories container" aria-labelledby="cat-title">
     <h2 class="section-title" id="cat-title">Danh mục sản phẩm</h2>
-    <div class="grid">
+    <div class="grid cat-grid">
       {categories.map((c) => (
-        <a href={`/${c.id}`} class="category-card">
-          {publicImageExists(c.data.image) && (
-            <img
-              class="card-bg"
-              src={c.data.image}
-              srcset={webpSrcset(c.data.image)}
-              sizes="(max-width: 600px) 100vw, 380px"
-              alt=""
-              width="600"
-              height="400"
-              loading="lazy"
-              decoding="async"
-            />
-          )}
-          <h3>{c.data.nav_label ?? c.data.title}</h3>
-          {c.data.summary && <p>{c.data.summary}</p>}
-        </a>
+        <article class="category-card">
+          <div class="cat-media">
+            {publicImageExists(c.data.image) ? (
+              <img
+                src={c.data.image}
+                srcset={webpSrcset(c.data.image)}
+                sizes="(max-width: 600px) 100vw, 380px"
+                alt={c.data.image_alt ?? ''}
+                width="600"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              />
+            ) : (
+              <span class="cat-media-empty" aria-hidden="true">{(c.data.nav_label ?? c.data.title).charAt(0)}</span>
+            )}
+          </div>
+          <div class="cat-body">
+            {c.data.summary && <p class="cat-use">{c.data.summary}</p>}
+            <h3><a href={`/${c.id}`}>{c.data.nav_label ?? c.data.title}</a></h3>
+            {c.data.mo_ta_the && <p class="cat-desc">{c.data.mo_ta_the}</p>}
+            <span class="cat-more" aria-hidden="true">Xem thêm <span class="cat-arrow">→</span></span>
+          </div>
+        </article>
       ))}
     </div>
   </section>
@@ -128,11 +135,9 @@ const grade = (p: (typeof products)[number]) =>
     padding: 100px 0;
     text-align: center;
   }
-  .hero-bg, .card-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
   .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)); z-index: 1; }
   .hero-content { position: relative; z-index: 2; }
-  .category-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)); z-index: 1; }
-  .category-card > h3, .category-card > p { position: relative; z-index: 2; }
   .hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); margin-bottom: 20px; line-height: 1.2; text-wrap: balance; }
   .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
   .hero-actions .btn-primary, .hero-actions .btn-secondary { padding: 14px 26px; font-size: 1.05rem; }
@@ -142,29 +147,36 @@ const grade = (p: (typeof products)[number]) =>
   
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 30px; margin-bottom: 40px; }
   
-  .category-card { 
+  .cat-grid { gap: 24px; }
+  .category-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
     overflow: hidden;
-    background-color: #333; 
-    background-size: cover; 
-    background-position: center; 
-    padding: 60px 20px; 
-    text-align: center; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-    transition: transform 0.2s, box-shadow 0.2s; 
-    border: none; 
-    color: white; 
-    text-decoration: none; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    min-height: 220px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   }
-  .category-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-  .category-card h3 { color: white; margin-bottom: 10px; font-size: 1.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.7); }
-  .category-card p { text-shadow: 0 1px 3px rgba(0,0,0,0.7); font-size: 1rem; opacity: 0.9; color: white; }
-  
+  .category-card:hover, .category-card:focus-within { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0, 51, 102, 0.12); border-color: #bcd0e6; }
+  .cat-media { aspect-ratio: 3 / 2; background: #e8eef5; overflow: hidden; }
+  .cat-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s; }
+  .category-card:hover .cat-media img { transform: scale(1.04); }
+  .cat-media-empty { display: flex; align-items: center; justify-content: center; height: 100%; font-size: 3rem; font-weight: 700; color: var(--color-primary); opacity: 0.35; }
+  .cat-body { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px 20px; flex: 1; }
+  .cat-use { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; color: #c2410c; text-transform: uppercase; }
+  .category-card h3 { font-size: 1.25rem; line-height: 1.3; margin: 0; }
+  .category-card h3 a { color: var(--color-primary); text-decoration: none; }
+  .category-card h3 a::after { content: ''; position: absolute; inset: 0; z-index: 1; }
+  .category-card h3 a:focus-visible { outline: none; }
+  .category-card:focus-within { outline: 3px solid var(--color-accent, #f59e0b); outline-offset: 2px; }
+  .cat-desc { color: var(--color-text-light); font-size: 0.95rem; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .cat-more { margin-top: auto; padding-top: 6px; font-weight: 600; font-size: 0.95rem; color: #1d4ed8; }
+  .cat-arrow { display: inline-block; transition: transform 0.2s; }
+  .category-card:hover .cat-arrow { transform: translateX(4px); }
+  .category-card:hover h3 a { color: #1d4ed8; }
+
   .product-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid var(--border-color); }
   .product-card img { width: 100%; height: 200px; object-fit: cover; }
   .product-info { padding: 20px; }
@@ -174,7 +186,6 @@ const grade = (p: (typeof products)[number]) =>
   .badge { background: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-right: 5px; }
   .badge-outline { background: transparent; border: 1px solid #cbd5e1; }
   .hero { padding: clamp(60px, 10vw, 100px) 0; }
-  .category-card { background-color: var(--color-primary); }
   .why-grid { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px; }
   .why-grid li { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 6px; }
   .why-grid strong { color: var(--color-primary); }

@@ -5,6 +5,7 @@ title: "Dầu Máy May (Dầu Máy Khâu) Công Nghiệp ISO VG 10"
 nav_label: "Dầu máy may"
 order: 9
 summary: "Máy may công nghiệp, máy vắt sổ, máy dệt kim"
+mo_ta_the: "Dầu máy may ISO VG 10 trong, ít bám bẩn vải, dùng cho máy may công nghiệp, máy vắt sổ, máy dệt kim. Xô 18 L, phuy 200 L."
 seo_title: "Dầu Máy May Công Nghiệp ISO VG 10 – Xô 18L, Phuy 200L"
 description: "Dầu máy may, dầu máy khâu công nghiệp ISO VG 10 trong, ít bám bẩn vải, cho máy may, máy vắt sổ, máy dệt kim. Xô 18 L, phuy 200 L, giao KCN miền Bắc."
 keywords: ["dầu máy may", "dầu máy khâu", "dầu máy may công nghiệp", "dầu máy may công nghiệp loại nào tốt", "dầu máy may 10", "dầu máy khâu công nghiệp"]
