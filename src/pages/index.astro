@@ -11,8 +11,10 @@ const categories = (await getActiveCategories()).sort(
   (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99),
 );
 const posts = (await getActivePosts())
-  .sort((a, b) => new Date(b.data.date ?? 0).valueOf() - new Date(a.data.date ?? 0).valueOf())
-  .slice(0, 3);
+  .sort((a, b) => new Date(b.data.date ?? 0).valueOf() - new Date(a.data.date ?? 0).valueOf());
+const SO_BAI_TRANG_CHU = 9;
+const postsShown = posts.slice(0, SO_BAI_TRANG_CHU);
+const ngayVN = (d?: Date) => (d ? new Date(d).toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Asia/Ho_Chi_Minh' }) : '');
 
 const grade = (p: (typeof products)[number]) =>
   p.data.vg ? `VG ${p.data.vg}` : p.data.nlgi ? `NLGI ${p.data.nlgi}` : null;
@@ -117,11 +119,38 @@ const grade = (p: (typeof products)[number]) =>
   {posts.length > 0 && (
     <section class="posts container" aria-labelledby="post-title">
       <h2 class="section-title" id="post-title">Kiến thức kỹ thuật</h2>
-      <ul class="post-list">
-        {posts.map((post) => (
-          <li><a href={postPath(post)}>{post.data.title}</a><span>{post.data.description}</span></li>
+      <p class="section-lead">Hướng dẫn chọn, thay và kiểm tra dầu thủy lực, mỡ bôi trơn tại xưởng, viết từ kinh nghiệm giao hàng và hỗ trợ kỹ thuật cho nhà máy.</p>
+      <div class="grid post-grid">
+        {postsShown.map((post) => (
+          <article class="post-card">
+            <div class="cat-media">
+              {post.data.image && publicImageExists(post.data.image) ? (
+                <img
+                  src={post.data.image}
+                  srcset={webpSrcset(post.data.image)}
+                  sizes="(max-width: 600px) 100vw, 380px"
+                  alt={post.data.image_alt ?? ''}
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              ) : (
+                <span class="post-media-empty" aria-hidden="true">Hỗ trợ kỹ thuật</span>
+              )}
+            </div>
+            <div class="cat-body">
+              {post.data.date && <time class="post-date" datetime={new Date(post.data.date).toISOString().slice(0, 10)}>{ngayVN(post.data.date)}</time>}
+              <h3><a href={postPath(post)}>{post.data.title}</a></h3>
+              <p class="cat-desc">{post.data.description}</p>
+              <span class="cat-more" aria-hidden="true">Đọc tiếp <span class="cat-arrow">→</span></span>
+            </div>
+          </article>
         ))}
-      </ul>
+      </div>
+      {posts.length > SO_BAI_TRANG_CHU && (
+        <p class="post-all"><a href="/ho-tro-ky-thuat" class="btn-secondary post-all-btn">Xem tất cả {posts.length} bài kiến thức kỹ thuật →</a></p>
+      )}
     </section>
   )}
 </Layout>
@@ -190,8 +219,21 @@ const grade = (p: (typeof products)[number]) =>
   .why-grid li { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 6px; }
   .why-grid strong { color: var(--color-primary); }
   .why-grid span { color: var(--color-text-light); }
-  .post-list { list-style: none; display: grid; gap: 12px; }
-  .post-list li { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px 20px; display: flex; flex-direction: column; gap: 4px; }
-  .post-list a { color: var(--color-primary); font-weight: 600; }
-  .post-list span { color: var(--color-text-light); font-size: 0.95rem; }
+  .post-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+  @media (min-width: 1000px) { .post-grid { grid-template-columns: repeat(3, 1fr); } }
+  .post-card { position: relative; display: flex; flex-direction: column; background: white; border: 1px solid var(--border-color); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+  .post-card:hover, .post-card:focus-within { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0, 51, 102, 0.12); border-color: #bcd0e6; }
+  .post-card:focus-within { outline: 3px solid var(--color-accent, #f59e0b); outline-offset: 2px; }
+  .post-card:hover .cat-media img { transform: scale(1.04); }
+  .post-card h3 { font-size: 1.1rem; line-height: 1.4; margin: 0; }
+  .post-card h3 a { color: var(--color-primary); text-decoration: none; }
+  .post-card h3 a::after { content: ''; position: absolute; inset: 0; z-index: 1; }
+  .post-card h3 a:focus-visible { outline: none; }
+  .post-card:hover h3 a { color: #1d4ed8; }
+  .post-card:hover .cat-arrow { transform: translateX(4px); }
+  .post-date { font-size: 0.85rem; color: var(--color-text-light); }
+  .post-media-empty { display: flex; align-items: center; justify-content: center; height: 100%; font-weight: 700; color: var(--color-primary); opacity: 0.4; letter-spacing: 0.03em; text-transform: uppercase; background: linear-gradient(135deg, #e8eef5, #d6e2ef); }
+  .section-lead { text-align: center; color: var(--color-text-light); max-width: 720px; margin: -14px auto 28px; }
+  .post-all { text-align: center; margin: -10px 0 50px; }
+  .post-all-btn { display: inline-block; padding: 12px 24px; }
 </style>
